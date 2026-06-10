@@ -19,9 +19,12 @@
       "id": 213,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://meals-pairing.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/meals-pairing",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "steakhouse-guide",
@@ -34,9 +37,12 @@
       "id": 214,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://steakhouse-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/steakhouse-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bbq-smokehouse",
@@ -49,9 +55,12 @@
       "id": 215,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://bbq-smokehouse.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/bbq-smokehouse",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "seafood-guide",
@@ -64,9 +73,12 @@
       "id": 216,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://seafood-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/seafood-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pasta-italian",
@@ -79,9 +91,12 @@
       "id": 217,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pasta-italian.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pasta-italian",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sushi-sake",
@@ -94,9 +109,12 @@
       "id": 218,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sushi-sake.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sushi-sake",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "french-cuisine",
@@ -109,9 +127,12 @@
       "id": 219,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://french-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/french-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mexican-cuisine",
@@ -124,9 +145,12 @@
       "id": 220,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://mexican-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/mexican-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "thai-cuisine",
@@ -139,9 +163,12 @@
       "id": 221,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://thai-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/thai-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indian-cuisine",
@@ -154,9 +181,12 @@
       "id": 222,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://indian-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/indian-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "southern-cuisine",
@@ -169,9 +199,12 @@
       "id": 223,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://southern-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/southern-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "farm-to-table",
@@ -184,9 +217,12 @@
       "id": 224,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://farm-to-table.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/farm-to-table",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "artisan-cheese",
@@ -199,9 +235,12 @@
       "id": 225,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://artisan-cheese.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/artisan-cheese",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chocolate-connoisseur",
@@ -214,9 +253,12 @@
       "id": 226,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://chocolate-connoisseur.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/chocolate-connoisseur",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coffee-specialist",
@@ -229,9 +271,12 @@
       "id": 227,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://coffee-specialist.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/coffee-specialist",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tea-collection",
@@ -244,9 +289,12 @@
       "id": 228,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://tea-collection.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/tea-collection",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hot-sauce",
@@ -259,9 +307,12 @@
       "id": 229,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://hot-sauce.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/hot-sauce",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spice-rack",
@@ -274,9 +325,12 @@
       "id": 230,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://spice-rack.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/spice-rack",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "baking-pastry",
@@ -289,9 +343,12 @@
       "id": 231,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://baking-pastry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/baking-pastry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "charcuterie",
@@ -304,9 +361,12 @@
       "id": 232,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://charcuterie.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/charcuterie",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vegetarian-plant",
@@ -319,9 +379,12 @@
       "id": 233,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://vegetarian-plant.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/vegetarian-plant",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "meal-prep",
@@ -334,9 +397,12 @@
       "id": 234,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://meal-prep.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/meal-prep",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "restaurant-guide",
@@ -349,9 +415,12 @@
       "id": 235,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://restaurant-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/restaurant-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-trucks",
@@ -364,9 +433,12 @@
       "id": 236,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-trucks.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-trucks",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "culinary-travel",
@@ -379,9 +451,12 @@
       "id": 237,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://culinary-travel.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/culinary-travel",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "asian-spices",
@@ -394,9 +469,12 @@
       "id": 238,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://asian-spices.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/asian-spices",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mediterranean-cuisine",
@@ -409,9 +487,12 @@
       "id": 239,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://mediterranean-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/mediterranean-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "korean-cuisine",
@@ -424,9 +505,12 @@
       "id": 240,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://korean-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/korean-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chinese-cuisine",
@@ -439,9 +523,12 @@
       "id": 241,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://chinese-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/chinese-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vietnamese-cuisine",
@@ -454,9 +541,12 @@
       "id": 242,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://vietnamese-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/vietnamese-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "greek-cuisine",
@@ -469,9 +559,12 @@
       "id": 243,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://greek-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/greek-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spanish-tapas",
@@ -484,9 +577,12 @@
       "id": 244,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://spanish-tapas.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/spanish-tapas",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "portuguese-cuisine",
@@ -499,9 +595,12 @@
       "id": 245,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://portuguese-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/portuguese-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "moroccan-cuisine",
@@ -514,9 +613,12 @@
       "id": 246,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://moroccan-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/moroccan-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ethiopian-cuisine",
@@ -529,9 +631,12 @@
       "id": 247,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ethiopian-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ethiopian-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "peruvian-cuisine",
@@ -544,9 +649,12 @@
       "id": 248,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://peruvian-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/peruvian-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "brazilian-cuisine",
@@ -559,9 +667,12 @@
       "id": 249,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://brazilian-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/brazilian-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cajun-creole",
@@ -574,9 +685,12 @@
       "id": 250,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://cajun-creole.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/cajun-creole",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "new-england-seafood",
@@ -589,9 +703,12 @@
       "id": 251,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://new-england-seafood.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/new-england-seafood",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pacific-northwest-food",
@@ -604,9 +721,12 @@
       "id": 252,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pacific-northwest-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pacific-northwest-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tex-mex-cuisine",
@@ -619,9 +739,12 @@
       "id": 253,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://tex-mex-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/tex-mex-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "california-cuisine",
@@ -634,9 +757,12 @@
       "id": 254,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://california-cuisine.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/california-cuisine",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nyc-dining",
@@ -649,9 +775,12 @@
       "id": 255,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://nyc-dining.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/nyc-dining",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chicago-dining",
@@ -664,9 +793,12 @@
       "id": 256,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://chicago-dining.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/chicago-dining",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "deep-dish-pizza",
@@ -679,9 +811,12 @@
       "id": 257,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://deep-dish-pizza.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/deep-dish-pizza",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "neapolitan-pizza",
@@ -694,9 +829,12 @@
       "id": 258,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://neapolitan-pizza.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/neapolitan-pizza",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "burger-authority",
@@ -709,9 +847,12 @@
       "id": 259,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://burger-authority.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/burger-authority",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sandwich-craft",
@@ -724,9 +865,12 @@
       "id": 260,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sandwich-craft.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sandwich-craft",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "breakfast-brunch",
@@ -739,9 +883,12 @@
       "id": 261,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://breakfast-brunch.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/breakfast-brunch",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dessert-pastry",
@@ -754,9 +901,12 @@
       "id": 262,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://dessert-pastry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/dessert-pastry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ice-cream-guide",
@@ -769,9 +919,12 @@
       "id": 263,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ice-cream-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ice-cream-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gelato-guide",
@@ -784,9 +937,12 @@
       "id": 264,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://gelato-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/gelato-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "donut-guide",
@@ -799,9 +955,12 @@
       "id": 265,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://donut-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/donut-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bread-baking",
@@ -814,9 +973,12 @@
       "id": 266,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://bread-baking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/bread-baking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sourdough-bread",
@@ -829,9 +991,12 @@
       "id": 267,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sourdough-bread.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sourdough-bread",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fermentation-food",
@@ -844,9 +1009,12 @@
       "id": 268,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://fermentation-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/fermentation-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "canning-preserving",
@@ -859,9 +1027,12 @@
       "id": 269,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://canning-preserving.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/canning-preserving",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "molecular-gastronomy",
@@ -874,9 +1045,12 @@
       "id": 270,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://molecular-gastronomy.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/molecular-gastronomy",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "knife-skills",
@@ -889,9 +1063,12 @@
       "id": 271,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://knife-skills.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/knife-skills",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cast-iron-cooking",
@@ -904,9 +1081,12 @@
       "id": 272,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://cast-iron-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/cast-iron-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wok-cooking",
@@ -919,9 +1099,12 @@
       "id": 273,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://wok-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/wok-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "grill-mastery",
@@ -934,9 +1117,12 @@
       "id": 274,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://grill-mastery.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/grill-mastery",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sous-vide-cooking",
@@ -949,9 +1135,12 @@
       "id": 275,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sous-vide-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sous-vide-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "instant-pot",
@@ -964,9 +1153,12 @@
       "id": 276,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://instant-pot.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/instant-pot",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "air-fryer",
@@ -979,9 +1171,12 @@
       "id": 277,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://air-fryer.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/air-fryer",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "slow-cooker",
@@ -994,9 +1189,12 @@
       "id": 278,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://slow-cooker.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/slow-cooker",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "one-pot-meals",
@@ -1009,9 +1207,12 @@
       "id": 279,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://one-pot-meals.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/one-pot-meals",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sheet-pan-meals",
@@ -1024,9 +1225,12 @@
       "id": 280,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sheet-pan-meals.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sheet-pan-meals",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "salad-craft",
@@ -1039,9 +1243,12 @@
       "id": 281,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://salad-craft.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/salad-craft",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soup-stew",
@@ -1054,9 +1261,12 @@
       "id": 282,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://soup-stew.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/soup-stew",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ramen-guide",
@@ -1069,9 +1279,12 @@
       "id": 283,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ramen-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ramen-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pho-guide",
@@ -1084,9 +1297,12 @@
       "id": 284,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pho-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pho-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dumpling-guide",
@@ -1099,9 +1315,12 @@
       "id": 285,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://dumpling-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/dumpling-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "taco-authority",
@@ -1114,9 +1333,12 @@
       "id": 286,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://taco-authority.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/taco-authority",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "burrito-guide",
@@ -1129,9 +1351,12 @@
       "id": 287,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://burrito-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/burrito-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-allergies",
@@ -1144,9 +1369,12 @@
       "id": 288,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-allergies.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-allergies",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gluten-free-cooking",
@@ -1159,9 +1387,12 @@
       "id": 289,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://gluten-free-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/gluten-free-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "keto-cooking",
@@ -1174,9 +1405,12 @@
       "id": 290,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://keto-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/keto-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "paleo-cooking",
@@ -1189,9 +1423,12 @@
       "id": 291,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://paleo-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/paleo-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "diabetic-cooking",
@@ -1204,9 +1441,12 @@
       "id": 292,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://diabetic-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/diabetic-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kids-cooking",
@@ -1219,9 +1459,12 @@
       "id": 293,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://kids-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/kids-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "couples-cooking",
@@ -1234,9 +1477,12 @@
       "id": 294,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://couples-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/couples-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dinner-party",
@@ -1249,9 +1495,12 @@
       "id": 295,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://dinner-party.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/dinner-party",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holiday-feasts",
@@ -1264,9 +1513,12 @@
       "id": 296,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://holiday-feasts.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/holiday-feasts",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "picnic-guide",
@@ -1279,9 +1531,12 @@
       "id": 297,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://picnic-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/picnic-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "camping-cooking",
@@ -1294,9 +1549,12 @@
       "id": 298,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://camping-cooking.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/camping-cooking",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tailgate-food",
@@ -1309,9 +1567,12 @@
       "id": 299,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://tailgate-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/tailgate-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stadium-food",
@@ -1324,9 +1585,12 @@
       "id": 300,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://stadium-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/stadium-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "airline-food",
@@ -1339,9 +1603,12 @@
       "id": 301,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://airline-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/airline-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hotel-dining",
@@ -1354,9 +1621,12 @@
       "id": 302,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://hotel-dining.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/hotel-dining",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "michelin-guide",
@@ -1369,9 +1639,12 @@
       "id": 303,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://michelin-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/michelin-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "james-beard",
@@ -1384,9 +1657,12 @@
       "id": 304,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://james-beard.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/james-beard",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chef-profiles",
@@ -1399,9 +1675,12 @@
       "id": 305,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://chef-profiles.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/chef-profiles",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-network-culture",
@@ -1414,9 +1693,12 @@
       "id": 306,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-network-culture.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-network-culture",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-photography",
@@ -1429,9 +1711,12 @@
       "id": 307,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-photography.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-photography",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-influencer",
@@ -1444,9 +1729,12 @@
       "id": 308,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-influencer.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-influencer",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "instagram-food",
@@ -1459,9 +1747,12 @@
       "id": 309,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://instagram-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/instagram-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "recipe-box",
@@ -1474,9 +1765,12 @@
       "id": 310,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://recipe-box.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/recipe-box",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "family-recipes",
@@ -1489,9 +1783,12 @@
       "id": 311,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://family-recipes.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/family-recipes",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-history",
@@ -1504,9 +1801,12 @@
       "id": 312,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-history.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-history",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-science",
@@ -1519,9 +1819,12 @@
       "id": 313,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-science.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-science",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "umami-guide",
@@ -1534,9 +1837,12 @@
       "id": 314,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://umami-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/umami-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "menu-engineering",
@@ -1549,9 +1855,12 @@
       "id": 315,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://menu-engineering.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/menu-engineering",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-costing",
@@ -1564,9 +1873,12 @@
       "id": 316,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-costing.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-costing",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "catering-guide",
@@ -1579,9 +1891,12 @@
       "id": 317,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://catering-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/catering-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-startup",
@@ -1594,9 +1909,12 @@
       "id": 318,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-startup.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-startup",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ghost-kitchen",
@@ -1609,9 +1927,12 @@
       "id": 319,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ghost-kitchen.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ghost-kitchen",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-delivery",
@@ -1624,9 +1945,12 @@
       "id": 320,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-delivery.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-delivery",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "meal-kit",
@@ -1639,9 +1963,12 @@
       "id": 321,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://meal-kit.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/meal-kit",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "grocery-optimizer",
@@ -1654,9 +1981,12 @@
       "id": 322,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://grocery-optimizer.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/grocery-optimizer",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "farmers-market",
@@ -1669,9 +1999,12 @@
       "id": 323,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://farmers-market.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/farmers-market",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "csa-guide",
@@ -1684,9 +2017,12 @@
       "id": 324,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://csa-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/csa-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "urban-garden-food",
@@ -1699,9 +2035,12 @@
       "id": 325,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://urban-garden-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/urban-garden-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mushroom-foraging-food",
@@ -1714,9 +2053,12 @@
       "id": 326,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://mushroom-foraging-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/mushroom-foraging-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "truffle-guide",
@@ -1729,9 +2071,12 @@
       "id": 327,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://truffle-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/truffle-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "caviar-guide",
@@ -1744,9 +2089,12 @@
       "id": 328,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://caviar-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/caviar-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lobster-guide",
@@ -1759,9 +2107,12 @@
       "id": 329,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://lobster-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/lobster-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "oyster-guide",
@@ -1774,9 +2125,12 @@
       "id": 330,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://oyster-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/oyster-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sushi-grade",
@@ -1789,9 +2143,12 @@
       "id": 331,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sushi-grade.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sushi-grade",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wagyu-beef",
@@ -1804,9 +2161,12 @@
       "id": 332,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://wagyu-beef.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/wagyu-beef",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lamb-game",
@@ -1819,9 +2179,12 @@
       "id": 333,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://lamb-game.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/lamb-game",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "plant-meat-alt",
@@ -1834,9 +2197,12 @@
       "id": 334,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://plant-meat-alt.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/plant-meat-alt",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dairy-craft",
@@ -1849,9 +2215,12 @@
       "id": 335,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://dairy-craft.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/dairy-craft",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "olive-oil",
@@ -1864,9 +2233,12 @@
       "id": 336,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://olive-oil.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/olive-oil",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vinegar-pantry",
@@ -1879,9 +2251,12 @@
       "id": 337,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://vinegar-pantry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/vinegar-pantry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "salt-pepper",
@@ -1894,9 +2269,12 @@
       "id": 338,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://salt-pepper.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/salt-pepper",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "honey-pantry",
@@ -1909,9 +2287,12 @@
       "id": 339,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://honey-pantry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/honey-pantry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pantry-essentials",
@@ -1924,9 +2305,12 @@
       "id": 340,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pantry-essentials.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pantry-essentials",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spice-blends",
@@ -1939,9 +2323,12 @@
       "id": 341,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://spice-blends.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/spice-blends",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rub-marinade",
@@ -1954,9 +2341,12 @@
       "id": 342,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://rub-marinade.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/rub-marinade",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sauce-mastery",
@@ -1969,9 +2359,12 @@
       "id": 343,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://sauce-mastery.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/sauce-mastery",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stock-broth",
@@ -1984,9 +2377,12 @@
       "id": 344,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://stock-broth.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/stock-broth",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-waste",
@@ -1999,9 +2395,12 @@
       "id": 345,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-waste.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-waste",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-sustainability",
@@ -2014,9 +2413,12 @@
       "id": 346,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-sustainability.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-sustainability",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "zero-waste-kitchen",
@@ -2029,9 +2431,12 @@
       "id": 347,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://zero-waste-kitchen.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/zero-waste-kitchen",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "compost-kitchen",
@@ -2044,9 +2449,12 @@
       "id": 348,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://compost-kitchen.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/compost-kitchen",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-safety",
@@ -2059,9 +2467,12 @@
       "id": 349,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-safety.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-safety",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "servsafe-prep",
@@ -2074,9 +2485,12 @@
       "id": 350,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://servsafe-prep.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/servsafe-prep",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "culinary-school",
@@ -2089,9 +2503,12 @@
       "id": 351,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://culinary-school.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/culinary-school",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-competitions",
@@ -2104,9 +2521,12 @@
       "id": 352,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-competitions.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-competitions",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bbq-competition",
@@ -2119,9 +2539,12 @@
       "id": 353,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://bbq-competition.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/bbq-competition",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chili-cookoff",
@@ -2134,9 +2557,12 @@
       "id": 354,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://chili-cookoff.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/chili-cookoff",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pie-baking-contest",
@@ -2149,9 +2575,12 @@
       "id": 355,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pie-baking-contest.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pie-baking-contest",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-clubs",
@@ -2164,9 +2593,12 @@
       "id": 356,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-clubs.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-clubs",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-social-network",
@@ -2179,9 +2611,12 @@
       "id": 357,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-social-network.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-social-network",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-expert-badges",
@@ -2194,9 +2629,12 @@
       "id": 358,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-expert-badges.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-expert-badges",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ai-meal-planner",
@@ -2209,9 +2647,12 @@
       "id": 359,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ai-meal-planner.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ai-meal-planner",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ai-recipe-gen",
@@ -2224,9 +2665,12 @@
       "id": 360,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ai-recipe-gen.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ai-recipe-gen",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ai-pairing-meals",
@@ -2239,9 +2683,12 @@
       "id": 361,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ai-pairing-meals.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ai-pairing-meals",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cross-app-meals",
@@ -2254,9 +2701,12 @@
       "id": 362,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://cross-app-meals.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/cross-app-meals",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-gift-curator",
@@ -2269,9 +2719,12 @@
       "id": 363,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-gift-curator.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-gift-curator",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "corporate-catering",
@@ -2284,9 +2737,12 @@
       "id": 364,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://corporate-catering.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/corporate-catering",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wedding-menu",
@@ -2299,9 +2755,12 @@
       "id": 365,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://wedding-menu.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/wedding-menu",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "brunch-clubs",
@@ -2314,9 +2773,12 @@
       "id": 366,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://brunch-clubs.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/brunch-clubs",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "supper-clubs",
@@ -2329,9 +2791,12 @@
       "id": 367,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://supper-clubs.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/supper-clubs",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pop-up-dining",
@@ -2344,9 +2809,12 @@
       "id": 368,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://pop-up-dining.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/pop-up-dining",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "supper-experiences",
@@ -2359,9 +2827,12 @@
       "id": 369,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://supper-experiences.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/supper-experiences",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-tours",
@@ -2374,9 +2845,12 @@
       "id": 370,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-tours.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-tours",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "street-food-world",
@@ -2389,9 +2863,12 @@
       "id": 371,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://street-food-world.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/street-food-world",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "night-market",
@@ -2404,9 +2881,12 @@
       "id": 372,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://night-market.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/night-market",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-map-local",
@@ -2419,9 +2899,12 @@
       "id": 373,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-map-local.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-map-local",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "seasonal-ingredients",
@@ -2434,9 +2917,12 @@
       "id": 374,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://seasonal-ingredients.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/seasonal-ingredients",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spring-produce",
@@ -2449,9 +2935,12 @@
       "id": 375,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://spring-produce.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/spring-produce",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "summer-produce",
@@ -2464,9 +2953,12 @@
       "id": 376,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://summer-produce.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/summer-produce",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fall-produce",
@@ -2479,9 +2971,12 @@
       "id": 377,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://fall-produce.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/fall-produce",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "winter-comfort-food",
@@ -2494,9 +2989,12 @@
       "id": 378,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://winter-comfort-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/winter-comfort-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "global-pantry",
@@ -2509,9 +3007,12 @@
       "id": 379,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://global-pantry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/global-pantry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-subscription",
@@ -2524,9 +3025,12 @@
       "id": 380,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-subscription.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-subscription",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "snack-authority",
@@ -2539,9 +3043,12 @@
       "id": 381,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://snack-authority.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/snack-authority",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "energy-bars",
@@ -2554,9 +3061,12 @@
       "id": 382,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://energy-bars.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/energy-bars",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "smoothie-juice",
@@ -2569,9 +3079,12 @@
       "id": 383,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://smoothie-juice.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/smoothie-juice",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cocktail-food-bridge",
@@ -2584,9 +3097,12 @@
       "id": 384,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://cocktail-food-bridge.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/cocktail-food-bridge",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-dinner-planner",
@@ -2599,9 +3115,12 @@
       "id": 385,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://wine-dinner-planner.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/wine-dinner-planner",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-dinner-planner",
@@ -2614,9 +3133,12 @@
       "id": 386,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://beer-dinner-planner.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/beer-dinner-planner",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-dinner",
@@ -2629,9 +3151,12 @@
       "id": 387,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://spirits-dinner.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/spirits-dinner",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-mood-pairing",
@@ -2644,9 +3169,12 @@
       "id": 388,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-mood-pairing.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-mood-pairing",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-and-film-night",
@@ -2659,9 +3187,12 @@
       "id": 389,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-and-film-night.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-and-film-night",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-and-music-night",
@@ -2674,9 +3205,12 @@
       "id": 390,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-and-music-night.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-and-music-night",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-and-books-night",
@@ -2689,9 +3223,12 @@
       "id": 391,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-and-books-night.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-and-books-night",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-food-calendar",
@@ -2704,9 +3241,12 @@
       "id": 392,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://cultural-food-calendar.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/cultural-food-calendar",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lunar-new-year-food",
@@ -2719,9 +3259,12 @@
       "id": 393,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://lunar-new-year-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/lunar-new-year-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "thanksgiving-feast",
@@ -2734,9 +3277,12 @@
       "id": 394,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://thanksgiving-feast.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/thanksgiving-feast",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "christmas-feast",
@@ -2749,9 +3295,12 @@
       "id": 395,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://christmas-feast.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/christmas-feast",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "passover-food",
@@ -2764,9 +3313,12 @@
       "id": 396,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://passover-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/passover-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ramadan-food",
@@ -2779,9 +3331,12 @@
       "id": 397,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://ramadan-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/ramadan-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "diwali-sweets",
@@ -2794,9 +3349,12 @@
       "id": 398,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://diwali-sweets.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/diwali-sweets",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-memory-journal",
@@ -2809,9 +3367,12 @@
       "id": 399,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-memory-journal.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-memory-journal",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "restaurant-reservations",
@@ -2824,9 +3385,12 @@
       "id": 400,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://restaurant-reservations.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/restaurant-reservations",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-critic-notes",
@@ -2839,9 +3403,12 @@
       "id": 401,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-critic-notes.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-critic-notes",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hidden-gems-dining",
@@ -2854,9 +3421,12 @@
       "id": 402,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://hidden-gems-dining.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/hidden-gems-dining",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "late-night-eats",
@@ -2869,9 +3439,12 @@
       "id": 403,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://late-night-eats.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/late-night-eats",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "airport-food-guide",
@@ -2884,9 +3457,12 @@
       "id": 404,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://airport-food-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/airport-food-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-food",
@@ -2899,9 +3475,12 @@
       "id": 405,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://travel-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/travel-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rv-kitchen",
@@ -2914,9 +3493,12 @@
       "id": 406,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://rv-kitchen.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/rv-kitchen",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "boat-galley",
@@ -2929,9 +3511,12 @@
       "id": 407,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://boat-galley.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/boat-galley",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "food-packing",
@@ -2944,9 +3529,12 @@
       "id": 408,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://food-packing.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/food-packing",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lunchbox-guide",
@@ -2959,9 +3547,12 @@
       "id": 409,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://lunchbox-guide.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/lunchbox-guide",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "office-pantry",
@@ -2974,9 +3565,12 @@
       "id": 410,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://office-pantry.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/office-pantry",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-food",
@@ -2989,9 +3583,12 @@
       "id": 411,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://college-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/college-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "senior-nutrition",
@@ -3004,9 +3601,12 @@
       "id": 412,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://senior-nutrition.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/senior-nutrition",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "baby-food",
@@ -3019,9 +3619,12 @@
       "id": 413,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://baby-food.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/baby-food",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "parenting-meals",
@@ -3034,9 +3637,12 @@
       "id": 414,
       "vertical_id": "food-culinary",
       "vertical_slug": "food-culinary",
-      "site_url": "https://parenting-meals.foundryos.app",
+      "vertical_domain": "food.foundryos.com",
+      "topic_url": "https://food.foundryos.com/parenting-meals",
+      "site_url": "https://food.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

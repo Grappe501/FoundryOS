@@ -19,9 +19,12 @@
       "id": 1859,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photography-concert.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "portrait-photography",
@@ -34,9 +37,12 @@
       "id": 1860,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://portrait-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wedding-photography",
@@ -49,9 +55,12 @@
       "id": 1861,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://wedding-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "street-photography",
@@ -64,9 +73,12 @@
       "id": 1862,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://street-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wildlife-photography",
@@ -79,9 +91,12 @@
       "id": 1863,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://wildlife-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "macro-photography",
@@ -94,9 +109,12 @@
       "id": 1864,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://macro-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "astrophotography",
@@ -109,9 +127,12 @@
       "id": 1865,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://astrophotography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "film-photography",
@@ -124,9 +145,12 @@
       "id": 1866,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://film-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-editing",
@@ -139,9 +163,12 @@
       "id": 1867,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-editing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lightroom-workflow",
@@ -154,9 +181,12 @@
       "id": 1868,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://lightroom-workflow.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "video-production",
@@ -169,9 +199,12 @@
       "id": 1869,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://video-production.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "youtube-creator",
@@ -184,9 +217,12 @@
       "id": 1870,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://youtube-creator.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "content-creator-hub",
@@ -199,9 +235,12 @@
       "id": 1871,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://content-creator-hub.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "influencer-business",
@@ -214,9 +253,12 @@
       "id": 1872,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://influencer-business.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "media-clubs",
@@ -229,9 +271,12 @@
       "id": 1873,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://media-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-01",
@@ -243,9 +288,12 @@
       "id": 1874,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-02",
@@ -257,9 +305,12 @@
       "id": 1875,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-03",
@@ -271,9 +322,12 @@
       "id": 1876,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-04",
@@ -285,9 +339,12 @@
       "id": 1877,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-05",
@@ -299,9 +356,12 @@
       "id": 1878,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-06",
@@ -313,9 +373,12 @@
       "id": 1879,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-07",
@@ -327,9 +390,12 @@
       "id": 1880,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-08",
@@ -341,9 +407,12 @@
       "id": 1881,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-09",
@@ -355,9 +424,12 @@
       "id": 1882,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-10",
@@ -369,9 +441,12 @@
       "id": 1883,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-11",
@@ -383,9 +458,12 @@
       "id": 1884,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photo-genre-12",
@@ -397,9 +475,12 @@
       "id": 1885,
       "vertical_id": "photography-media",
       "vertical_slug": "photography-media",
-      "site_url": "https://photo-genre-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

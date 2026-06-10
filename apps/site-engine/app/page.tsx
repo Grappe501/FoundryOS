@@ -1,39 +1,42 @@
 import { headers } from 'next/headers';
 
-export default async function SiteHomePage() {
+export default async function VerticalHomePage() {
   const headersList = await headers();
-  const slug = headersList.get('x-foundry-site-slug') || 'unknown';
+  const vertical = headersList.get('x-foundry-vertical') || 'unknown';
+  const topic = headersList.get('x-foundry-topic');
+  const host = headersList.get('x-foundry-host') || `${vertical}.foundryos.com`;
+
+  if (topic) {
+    return (
+      <main style={{ minHeight: '100vh', background: '#0A0A0B', color: '#F0F0F2', padding: '2rem', fontFamily: 'system-ui' }}>
+        <p style={{ color: '#6B6B70', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+          {host} / topic
+        </p>
+        <h1 style={{ fontWeight: 300, fontSize: '1.75rem', textTransform: 'capitalize' }}>
+          {topic.replace(/-/g, ' ')}
+        </h1>
+        <p style={{ color: '#8A8A8E', marginTop: 12, fontSize: 14 }}>
+          Topic page under vertical domain. Programmatic SEO paths: /collections, /rankings, /reviews, /best-of…
+        </p>
+      </main>
+    );
+  }
 
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'var(--foundry-bg, #0A0A0B)',
-        color: 'var(--foundry-text, #F0F0F2)',
-        fontFamily: 'var(--foundry-font-sans, system-ui, sans-serif)',
-        padding: '2rem',
-      }}
-    >
-      <p style={{ color: '#8A8A8E', fontSize: 12, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-        Standalone Site
+    <main style={{ minHeight: '100vh', background: '#0A0A0B', color: '#F0F0F2', padding: '2rem', fontFamily: 'system-ui' }}>
+      <p style={{ color: '#6B6B70', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+        Vertical Domain
       </p>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8, textTransform: 'capitalize' }}>
-        {slug.replace(/-/g, ' ')}
+      <h1 style={{ fontWeight: 300, fontSize: '2rem', textTransform: 'capitalize' }}>
+        {vertical.replace(/-/g, ' ')}
       </h1>
-      <p style={{ color: '#6B6B70', marginTop: 16, textAlign: 'center', maxWidth: 400 }}>
-        Hostname-driven site engine. Admin provisions each app at {slug}.foundryos.app
+      <p style={{ color: '#8A8A8E', marginTop: 12 }}>{host}</p>
+      <p style={{ color: '#6B6B70', marginTop: 24, fontSize: 13, maxWidth: 480 }}>
+        Thousands of topics live as paths beneath this domain — not separate websites.
       </p>
-      <div style={{ marginTop: 24, padding: '12px 20px', border: '1px solid #2A2A2E', borderRadius: 8 }}>
-        <span style={{ color: '#C8A96E', fontSize: 13 }}>Tier 1 Catalog</span>
-        <span style={{ color: '#4A4A4E', margin: '0 8px' }}>→</span>
-        <span style={{ color: '#8A8A8E', fontSize: 13 }}>$4 Personal</span>
-        <span style={{ color: '#4A4A4E', margin: '0 8px' }}>→</span>
-        <span style={{ color: '#8A8A8E', fontSize: 13 }}>$18 Expert</span>
-      </div>
+      <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 16 }}>
+        Example: {host}/fantasy · {host}/science-fiction · {host}/authors
+      </p>
     </main>
   );
 }

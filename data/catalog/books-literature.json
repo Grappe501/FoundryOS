@@ -19,9 +19,12 @@
       "id": 602,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-fantasy.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-fantasy",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-scifi",
@@ -34,9 +37,12 @@
       "id": 603,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-scifi.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-scifi",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-mystery",
@@ -49,9 +55,12 @@
       "id": 604,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-mystery.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-mystery",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-romance",
@@ -64,9 +73,12 @@
       "id": 605,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-romance.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-romance",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-horror",
@@ -79,9 +91,12 @@
       "id": 606,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-horror.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-horror",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-literary",
@@ -94,9 +109,12 @@
       "id": 607,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-literary.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-literary",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-historical",
@@ -109,9 +127,12 @@
       "id": 608,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-historical.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-historical",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-crime",
@@ -124,9 +145,12 @@
       "id": 609,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-crime.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-crime",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-western",
@@ -139,9 +163,12 @@
       "id": 610,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-western.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-western",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-war",
@@ -154,9 +181,12 @@
       "id": 611,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-war.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-war",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-gothic",
@@ -169,9 +199,12 @@
       "id": 612,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-gothic.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-gothic",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-dystopian",
@@ -184,9 +217,12 @@
       "id": 613,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-dystopian.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-dystopian",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-satire",
@@ -199,9 +235,12 @@
       "id": 614,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-satire.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-satire",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-magical-realism",
@@ -214,9 +253,12 @@
       "id": 615,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-magical-realism.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-magical-realism",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-short-stories",
@@ -229,9 +271,12 @@
       "id": 616,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-short-stories.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-short-stories",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-ya",
@@ -244,9 +289,12 @@
       "id": 617,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-ya.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-ya",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-children",
@@ -259,9 +307,12 @@
       "id": 618,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-children.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-children",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-graphic-novels",
@@ -274,9 +325,12 @@
       "id": 619,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-graphic-novels.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-graphic-novels",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-manga",
@@ -289,9 +343,12 @@
       "id": 620,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-manga.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-manga",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-urban-fantasy",
@@ -304,9 +361,12 @@
       "id": 621,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-urban-fantasy.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-urban-fantasy",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-history",
@@ -319,9 +379,12 @@
       "id": 622,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-history.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-history",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-science",
@@ -334,9 +397,12 @@
       "id": 623,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-science.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-science",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-biography",
@@ -349,9 +415,12 @@
       "id": 624,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-biography.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-biography",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-business",
@@ -364,9 +433,12 @@
       "id": 625,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-business.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-business",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-psychology",
@@ -379,9 +451,12 @@
       "id": 626,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-psychology.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-psychology",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-true-crime",
@@ -394,9 +469,12 @@
       "id": 627,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-true-crime.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-true-crime",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-travel",
@@ -409,9 +487,12 @@
       "id": 628,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-travel.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-travel",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-food",
@@ -424,9 +505,12 @@
       "id": 629,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-food.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-food",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-nature",
@@ -439,9 +523,12 @@
       "id": 630,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-nature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-nature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-politics",
@@ -454,9 +541,12 @@
       "id": 631,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-politics.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-politics",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-self-help",
@@ -469,9 +559,12 @@
       "id": 632,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-self-help.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-self-help",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-technology",
@@ -484,9 +577,12 @@
       "id": 633,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-technology.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-technology",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-art",
@@ -499,9 +595,12 @@
       "id": 634,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-art.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-art",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-religion",
@@ -514,9 +613,12 @@
       "id": 635,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-religion.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-religion",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-sports",
@@ -529,9 +631,12 @@
       "id": 636,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-sports.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-sports",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-music",
@@ -544,9 +649,12 @@
       "id": 637,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-music.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-music",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-film",
@@ -559,9 +667,12 @@
       "id": 638,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-film.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-film",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-philosophy",
@@ -574,9 +685,12 @@
       "id": 639,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-philosophy.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-philosophy",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-poetry",
@@ -589,9 +703,12 @@
       "id": 640,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-poetry.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-poetry",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nonfiction-essays",
@@ -604,9 +721,12 @@
       "id": 641,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nonfiction-essays.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nonfiction-essays",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-shakespeare",
@@ -619,9 +739,12 @@
       "id": 642,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-shakespeare.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-shakespeare",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-hemingway",
@@ -634,9 +757,12 @@
       "id": 643,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-hemingway.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-hemingway",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-tolkien",
@@ -649,9 +775,12 @@
       "id": 644,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-tolkien.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-tolkien",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-stephen-king",
@@ -664,9 +793,12 @@
       "id": 645,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-stephen-king.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-stephen-king",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-agatha-christie",
@@ -679,9 +811,12 @@
       "id": 646,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-agatha-christie.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-agatha-christie",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-jane-austen",
@@ -694,9 +829,12 @@
       "id": 647,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-jane-austen.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-jane-austen",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-dickens",
@@ -709,9 +847,12 @@
       "id": 648,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-dickens.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-dickens",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-murakami",
@@ -724,9 +865,12 @@
       "id": 649,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-murakami.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-murakami",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-grisham",
@@ -739,9 +883,12 @@
       "id": 650,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-grisham.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-grisham",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-atwood",
@@ -754,9 +901,12 @@
       "id": 651,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-atwood.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-atwood",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-morrison",
@@ -769,9 +919,12 @@
       "id": 652,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-morrison.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-morrison",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-orwell",
@@ -784,9 +937,12 @@
       "id": 653,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-orwell.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-orwell",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-borges",
@@ -799,9 +955,12 @@
       "id": 654,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-borges.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-borges",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-poe",
@@ -814,9 +973,12 @@
       "id": 655,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-poe.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-poe",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-doyle",
@@ -829,9 +991,12 @@
       "id": 656,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-doyle.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-doyle",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "classic-literature",
@@ -844,9 +1009,12 @@
       "id": 657,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://classic-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/classic-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rare-books",
@@ -859,9 +1027,12 @@
       "id": 658,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://rare-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/rare-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "signed-books",
@@ -874,9 +1045,12 @@
       "id": 659,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://signed-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/signed-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "audiobook-guide",
@@ -889,9 +1063,12 @@
       "id": 660,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://audiobook-guide.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/audiobook-guide",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-clubs",
@@ -904,9 +1081,12 @@
       "id": 661,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-clubs.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-clubs",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-reviews-network",
@@ -919,9 +1099,12 @@
       "id": 662,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-reviews-network.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-reviews-network",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "reading-journal",
@@ -934,9 +1117,12 @@
       "id": 663,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://reading-journal.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/reading-journal",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "library-builder",
@@ -949,9 +1135,12 @@
       "id": 664,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://library-builder.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/library-builder",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-awards",
@@ -964,9 +1153,12 @@
       "id": 665,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-awards.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-awards",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pulitzer-books",
@@ -979,9 +1171,12 @@
       "id": 666,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://pulitzer-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/pulitzer-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "booker-prize",
@@ -994,9 +1189,12 @@
       "id": 667,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://booker-prize.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/booker-prize",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nobel-literature",
@@ -1009,9 +1207,12 @@
       "id": 668,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://nobel-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/nobel-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "independent-press",
@@ -1024,9 +1225,12 @@
       "id": 669,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://independent-press.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/independent-press",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "literary-magazines",
@@ -1039,9 +1243,12 @@
       "id": 670,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://literary-magazines.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/literary-magazines",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-fairs",
@@ -1054,9 +1261,12 @@
       "id": 671,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-fairs.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-fairs",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "children-books",
@@ -1069,9 +1279,12 @@
       "id": 672,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://children-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/children-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "middle-grade-books",
@@ -1084,9 +1297,12 @@
       "id": 673,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://middle-grade-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/middle-grade-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cookbook-collection",
@@ -1099,9 +1315,12 @@
       "id": 674,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://cookbook-collection.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/cookbook-collection",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coffee-table-books",
@@ -1114,9 +1333,12 @@
       "id": 675,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://coffee-table-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/coffee-table-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "reference-encyclopedia",
@@ -1129,9 +1351,12 @@
       "id": 676,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://reference-encyclopedia.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/reference-encyclopedia",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "textbooks-academic",
@@ -1144,9 +1369,12 @@
       "id": 677,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://textbooks-academic.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/textbooks-academic",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "writing-craft-books",
@@ -1159,9 +1387,12 @@
       "id": 678,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://writing-craft-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/writing-craft-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "publishing-industry",
@@ -1174,9 +1405,12 @@
       "id": 679,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://publishing-industry.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/publishing-industry",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-illustration",
@@ -1189,9 +1423,12 @@
       "id": 680,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-illustration.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-illustration",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "calligraphy-lettering",
@@ -1204,9 +1441,12 @@
       "id": 681,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://calligraphy-lettering.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/calligraphy-lettering",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "antiquarian-books",
@@ -1219,9 +1459,12 @@
       "id": 682,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://antiquarian-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/antiquarian-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "manuscripts-archive",
@@ -1234,9 +1477,12 @@
       "id": 683,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://manuscripts-archive.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/manuscripts-archive",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "world-literature",
@@ -1249,9 +1495,12 @@
       "id": 684,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://world-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/world-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "african-literature",
@@ -1264,9 +1513,12 @@
       "id": 685,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://african-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/african-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "latin-american-lit",
@@ -1279,9 +1531,12 @@
       "id": 686,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://latin-american-lit.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/latin-american-lit",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "asian-literature",
@@ -1294,9 +1549,12 @@
       "id": 687,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://asian-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/asian-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "russian-literature",
@@ -1309,9 +1567,12 @@
       "id": 688,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://russian-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/russian-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "french-literature",
@@ -1324,9 +1585,12 @@
       "id": 689,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://french-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/french-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "german-literature",
@@ -1339,9 +1603,12 @@
       "id": 690,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://german-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/german-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indian-literature",
@@ -1354,9 +1621,12 @@
       "id": 691,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://indian-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/indian-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "middle-eastern-lit",
@@ -1369,9 +1639,12 @@
       "id": 692,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://middle-eastern-lit.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/middle-eastern-lit",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indigenous-literature",
@@ -1384,9 +1657,12 @@
       "id": 693,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://indigenous-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/indigenous-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lgbtq-literature",
@@ -1399,9 +1675,12 @@
       "id": 694,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://lgbtq-literature.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/lgbtq-literature",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "speculative-fiction",
@@ -1414,9 +1693,12 @@
       "id": 695,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://speculative-fiction.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/speculative-fiction",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-to-film",
@@ -1429,9 +1711,12 @@
       "id": 696,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-to-film.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-to-film",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-to-tv",
@@ -1444,9 +1729,12 @@
       "id": 697,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-to-tv.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-to-tv",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "literary-prizes-hub",
@@ -1459,9 +1747,12 @@
       "id": 698,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://literary-prizes-hub.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/literary-prizes-hub",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "speed-reading",
@@ -1474,9 +1765,12 @@
       "id": 699,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://speed-reading.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/speed-reading",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-binding",
@@ -1489,9 +1783,12 @@
       "id": 700,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-binding.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-binding",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "typography-books",
@@ -1504,9 +1801,12 @@
       "id": 701,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://typography-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/typography-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "zines-indie",
@@ -1519,9 +1819,12 @@
       "id": 702,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://zines-indie.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/zines-indie",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "storytelling-oral",
@@ -1534,9 +1837,12 @@
       "id": 703,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://storytelling-oral.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/storytelling-oral",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mythology-folklore",
@@ -1549,9 +1855,12 @@
       "id": 704,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://mythology-folklore.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/mythology-folklore",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fairy-tales",
@@ -1564,9 +1873,12 @@
       "id": 705,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fairy-tales.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fairy-tales",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "detective-fiction",
@@ -1579,9 +1891,12 @@
       "id": 706,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://detective-fiction.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/detective-fiction",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "espionage-fiction",
@@ -1594,9 +1909,12 @@
       "id": 707,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://espionage-fiction.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/espionage-fiction",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fiction-thriller",
@@ -1609,9 +1927,12 @@
       "id": 708,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://fiction-thriller.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/fiction-thriller",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-collecting",
@@ -1624,9 +1945,12 @@
       "id": 709,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-collecting.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-collecting",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "author-studies",
@@ -1639,9 +1963,12 @@
       "id": 710,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://author-studies.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/author-studies",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "literary-criticism",
@@ -1654,9 +1981,12 @@
       "id": 711,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://literary-criticism.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/literary-criticism",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "booktok-culture",
@@ -1669,9 +1999,12 @@
       "id": 712,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://booktok-culture.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/booktok-culture",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "little-free-library",
@@ -1684,9 +2017,12 @@
       "id": 713,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://little-free-library.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/little-free-library",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-reading",
@@ -1699,9 +2035,12 @@
       "id": 714,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://community-reading.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/community-reading",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "blind-date-books",
@@ -1714,9 +2053,12 @@
       "id": 715,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://blind-date-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/blind-date-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "serial-fiction",
@@ -1729,9 +2071,12 @@
       "id": 716,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://serial-fiction.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/serial-fiction",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "interactive-fiction",
@@ -1744,9 +2089,12 @@
       "id": 717,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://interactive-fiction.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/interactive-fiction",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-quotations",
@@ -1759,9 +2107,12 @@
       "id": 718,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-quotations.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-quotations",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "literary-travel",
@@ -1774,9 +2125,12 @@
       "id": 719,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://literary-travel.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/literary-travel",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "shakespeare-stage",
@@ -1789,9 +2143,12 @@
       "id": 720,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://shakespeare-stage.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/shakespeare-stage",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "theater-stage",
@@ -1804,9 +2161,12 @@
       "id": 721,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://theater-stage.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/theater-stage",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "poetry-slams",
@@ -1819,9 +2179,12 @@
       "id": 722,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://poetry-slams.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/poetry-slams",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "haiku-poetry",
@@ -1834,9 +2197,12 @@
       "id": 723,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://haiku-poetry.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/haiku-poetry",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sonnets-poetry",
@@ -1849,9 +2215,12 @@
       "id": 724,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://sonnets-poetry.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/sonnets-poetry",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-deals-tracker",
@@ -1864,9 +2233,12 @@
       "id": 725,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://book-deals-tracker.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/book-deals-tracker",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "used-bookstores",
@@ -1879,9 +2251,12 @@
       "id": 726,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://used-bookstores.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/used-bookstores",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "digital-books",
@@ -1894,9 +2269,12 @@
       "id": 727,
       "vertical_id": "books-literature",
       "vertical_slug": "books-literature",
-      "site_url": "https://digital-books.foundryos.app",
+      "vertical_domain": "books.foundryos.com",
+      "topic_url": "https://books.foundryos.com/digital-books",
+      "site_url": "https://books.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -115,4 +115,4 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | Pass | Date | Author | Summary |
 |------|------|--------|---------|
 | 0 | 2026-06-10 | Burt | Foundation: docs, rules, folder structure, H: drive, git init |
-| 1 | 2026-06-10 | Burt | 1,961-app catalog, mega verticals (books/music/film/tv), admin + site-engine architecture |
+| 1 | 2026-06-10 | Burt | 1,961-topic registry, course correction: vertical domains, SEO/KG engines, mission control |

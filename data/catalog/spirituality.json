@@ -19,9 +19,12 @@
       "id": 1886,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://astrology-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tarot-guide",
@@ -34,9 +37,12 @@
       "id": 1887,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://tarot-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mindfulness-retreats",
@@ -49,9 +55,12 @@
       "id": 1888,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://mindfulness-retreats.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "yoga-philosophy",
@@ -64,9 +73,12 @@
       "id": 1889,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://yoga-philosophy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "buddhism-study",
@@ -79,9 +91,12 @@
       "id": 1890,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://buddhism-study.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "christian-study",
@@ -94,9 +109,12 @@
       "id": 1891,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://christian-study.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jewish-study",
@@ -109,9 +127,12 @@
       "id": 1892,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://jewish-study.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "islamic-study",
@@ -124,9 +145,12 @@
       "id": 1893,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://islamic-study.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hindu-study",
@@ -139,9 +163,12 @@
       "id": 1894,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://hindu-study.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "interfaith-dialogue",
@@ -154,9 +181,12 @@
       "id": 1895,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://interfaith-dialogue.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "prayer-practice",
@@ -169,9 +199,12 @@
       "id": 1896,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://prayer-practice.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-clubs",
@@ -184,9 +217,12 @@
       "id": 1897,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-01",
@@ -198,9 +234,12 @@
       "id": 1898,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-02",
@@ -212,9 +251,12 @@
       "id": 1899,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-03",
@@ -226,9 +268,12 @@
       "id": 1900,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-04",
@@ -240,9 +285,12 @@
       "id": 1901,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-05",
@@ -254,9 +302,12 @@
       "id": 1902,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-06",
@@ -268,9 +319,12 @@
       "id": 1903,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-07",
@@ -282,9 +336,12 @@
       "id": 1904,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-08",
@@ -296,9 +353,12 @@
       "id": 1905,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-09",
@@ -310,9 +370,12 @@
       "id": 1906,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spiritual-tradition-10",
@@ -324,9 +387,12 @@
       "id": 1907,
       "vertical_id": "spirituality",
       "vertical_slug": "spirituality",
-      "site_url": "https://spiritual-tradition-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

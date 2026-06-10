@@ -19,9 +19,12 @@
       "id": 1908,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://cigar-aficionado.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pipe-tobacco",
@@ -34,9 +37,12 @@
       "id": 1909,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://pipe-tobacco.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wedding-planner",
@@ -49,9 +55,12 @@
       "id": 1910,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://wedding-planner.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gift-curator",
@@ -64,9 +73,12 @@
       "id": 1911,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://gift-curator.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-experts",
@@ -79,9 +91,12 @@
       "id": 1912,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://local-experts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "event-planner",
@@ -94,9 +109,12 @@
       "id": 1913,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://event-planner.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "party-planning",
@@ -109,9 +127,12 @@
       "id": 1914,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://party-planning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "etiquette-modern",
@@ -124,9 +145,12 @@
       "id": 1915,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://etiquette-modern.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "conversation-skills",
@@ -139,9 +163,12 @@
       "id": 1916,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://conversation-skills.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "friendship-social",
@@ -154,9 +181,12 @@
       "id": 1917,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://friendship-social.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dating-guide",
@@ -169,9 +199,12 @@
       "id": 1918,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://dating-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "marriage-resources",
@@ -184,9 +217,12 @@
       "id": 1919,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://marriage-resources.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "senior-living",
@@ -199,9 +235,12 @@
       "id": 1920,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://senior-living.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "disability-resources",
@@ -214,9 +253,12 @@
       "id": 1921,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://disability-resources.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "accessibility-universal",
@@ -229,9 +271,12 @@
       "id": 1922,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://accessibility-universal.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "volunteer-local",
@@ -244,9 +289,12 @@
       "id": 1923,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://volunteer-local.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-building",
@@ -259,9 +307,12 @@
       "id": 1924,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-building.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "neighborhood-guide",
@@ -274,9 +325,12 @@
       "id": 1925,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://neighborhood-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "seasonal-living",
@@ -289,9 +343,12 @@
       "id": 1926,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://seasonal-living.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-milestones",
@@ -304,9 +361,12 @@
       "id": 1927,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-milestones.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "legacy-planning",
@@ -319,9 +379,12 @@
       "id": 1928,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://legacy-planning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hobby-discovery",
@@ -334,9 +397,12 @@
       "id": 1929,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://hobby-discovery.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lifestyle-clubs",
@@ -349,9 +415,12 @@
       "id": 1930,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://lifestyle-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "expert-attribution-hub",
@@ -364,9 +433,12 @@
       "id": 1931,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://expert-attribution-hub.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tier3-expert-badges",
@@ -379,9 +451,12 @@
       "id": 1932,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://tier3-expert-badges.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cross-app-social-hub",
@@ -394,9 +469,12 @@
       "id": 1933,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://cross-app-social-hub.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "foundry-community",
@@ -409,9 +487,12 @@
       "id": 1934,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://foundry-community.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-01",
@@ -423,9 +504,12 @@
       "id": 1935,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-02",
@@ -437,9 +521,12 @@
       "id": 1936,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-03",
@@ -451,9 +538,12 @@
       "id": 1937,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-04",
@@ -465,9 +555,12 @@
       "id": 1938,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-05",
@@ -479,9 +572,12 @@
       "id": 1939,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-06",
@@ -493,9 +589,12 @@
       "id": 1940,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-07",
@@ -507,9 +606,12 @@
       "id": 1941,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-08",
@@ -521,9 +623,12 @@
       "id": 1942,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-09",
@@ -535,9 +640,12 @@
       "id": 1943,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-10",
@@ -549,9 +657,12 @@
       "id": 1944,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-11",
@@ -563,9 +674,12 @@
       "id": 1945,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-12",
@@ -577,9 +691,12 @@
       "id": 1946,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-13",
@@ -591,9 +708,12 @@
       "id": 1947,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-14",
@@ -605,9 +725,12 @@
       "id": 1948,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "life-skill-15",
@@ -619,9 +742,12 @@
       "id": 1949,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://life-skill-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-01",
@@ -633,9 +759,12 @@
       "id": 1950,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-02",
@@ -647,9 +776,12 @@
       "id": 1951,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-03",
@@ -661,9 +793,12 @@
       "id": 1952,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-04",
@@ -675,9 +810,12 @@
       "id": 1953,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-05",
@@ -689,9 +827,12 @@
       "id": 1954,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-06",
@@ -703,9 +844,12 @@
       "id": 1955,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-07",
@@ -717,9 +861,12 @@
       "id": 1956,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-08",
@@ -731,9 +878,12 @@
       "id": 1957,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-09",
@@ -745,9 +895,12 @@
       "id": 1958,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-10",
@@ -759,9 +912,12 @@
       "id": 1959,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-11",
@@ -773,9 +929,12 @@
       "id": 1960,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "community-niche-12",
@@ -787,9 +946,12 @@
       "id": 1961,
       "vertical_id": "lifestyle-misc",
       "vertical_slug": "lifestyle-misc",
-      "site_url": "https://community-niche-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

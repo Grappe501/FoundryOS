@@ -7,6 +7,11 @@
     "apps/*",
     "packages/*"
   ],
+  "foundry": {
+    "version": "0.1.0-course-correction",
+    "current_pass": "PASS-001",
+    "next_pass": "PASS-002"
+  },
   "scripts": {
     "setup": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-h-drive.ps1",
     "dev": "turbo dev",

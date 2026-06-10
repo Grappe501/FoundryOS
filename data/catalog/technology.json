@@ -19,9 +19,12 @@
       "id": 1367,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://tech-gadgets.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "smart-home",
@@ -34,9 +37,12 @@
       "id": 1368,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://smart-home.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-theater",
@@ -49,9 +55,12 @@
       "id": 1369,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://home-theater.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photography-gear",
@@ -64,9 +73,12 @@
       "id": 1370,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://photography-gear.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "drone-piloting",
@@ -79,9 +91,12 @@
       "id": 1371,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://drone-piloting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pc-building",
@@ -94,9 +109,12 @@
       "id": 1372,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://pc-building.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mechanical-keyboards",
@@ -109,9 +127,12 @@
       "id": 1373,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://mechanical-keyboards.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "3d-printing",
@@ -124,9 +145,12 @@
       "id": 1374,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://3d-printing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "maker-crafts",
@@ -139,9 +163,12 @@
       "id": 1375,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://maker-crafts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "woodworking-shop",
@@ -154,9 +181,12 @@
       "id": 1376,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://woodworking-shop.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coding-projects",
@@ -169,9 +199,12 @@
       "id": 1377,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://coding-projects.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ai-tools-guide",
@@ -184,9 +217,12 @@
       "id": 1378,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://ai-tools-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cybersecurity",
@@ -199,9 +235,12 @@
       "id": 1379,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://cybersecurity.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "retro-computing",
@@ -214,9 +253,12 @@
       "id": 1380,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://retro-computing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-setup",
@@ -229,9 +271,12 @@
       "id": 1381,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://streaming-setup.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "smartphone-guide",
@@ -244,9 +289,12 @@
       "id": 1382,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://smartphone-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tablet-guide",
@@ -259,9 +307,12 @@
       "id": 1383,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://tablet-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wearable-tech",
@@ -274,9 +325,12 @@
       "id": 1384,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://wearable-tech.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cloud-storage",
@@ -289,9 +343,12 @@
       "id": 1385,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://cloud-storage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vpn-privacy",
@@ -304,9 +361,12 @@
       "id": 1386,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://vpn-privacy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-networking",
@@ -319,9 +379,12 @@
       "id": 1387,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://home-networking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nas-storage",
@@ -334,9 +397,12 @@
       "id": 1388,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://nas-storage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "raspberry-pi",
@@ -349,9 +415,12 @@
       "id": 1389,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://raspberry-pi.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "arduino-projects",
@@ -364,9 +433,12 @@
       "id": 1390,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://arduino-projects.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "robotics-hobby",
@@ -379,9 +451,12 @@
       "id": 1391,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://robotics-hobby.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tech-startups",
@@ -394,9 +469,12 @@
       "id": 1392,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://tech-startups.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "saas-reviews",
@@ -409,9 +487,12 @@
       "id": 1393,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://saas-reviews.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "productivity-apps",
@@ -424,9 +505,12 @@
       "id": 1394,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://productivity-apps.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "note-taking-apps",
@@ -439,9 +523,12 @@
       "id": 1395,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://note-taking-apps.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tech-news-digest",
@@ -454,9 +541,12 @@
       "id": 1396,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://tech-news-digest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "open-source",
@@ -469,9 +559,12 @@
       "id": 1397,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://open-source.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "linux-guide",
@@ -484,9 +577,12 @@
       "id": 1398,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://linux-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "devops-guide",
@@ -499,9 +595,12 @@
       "id": 1399,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://devops-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tech-clubs",
@@ -514,9 +613,12 @@
       "id": 1400,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://tech-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-01",
@@ -528,9 +630,12 @@
       "id": 1401,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-02",
@@ -542,9 +647,12 @@
       "id": 1402,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-03",
@@ -556,9 +664,12 @@
       "id": 1403,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-04",
@@ -570,9 +681,12 @@
       "id": 1404,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-05",
@@ -584,9 +698,12 @@
       "id": 1405,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-06",
@@ -598,9 +715,12 @@
       "id": 1406,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-07",
@@ -612,9 +732,12 @@
       "id": 1407,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-08",
@@ -626,9 +749,12 @@
       "id": 1408,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-09",
@@ -640,9 +766,12 @@
       "id": 1409,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-10",
@@ -654,9 +783,12 @@
       "id": 1410,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-11",
@@ -668,9 +800,12 @@
       "id": 1411,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-12",
@@ -682,9 +817,12 @@
       "id": 1412,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-13",
@@ -696,9 +834,12 @@
       "id": 1413,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-14",
@@ -710,9 +851,12 @@
       "id": 1414,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-15",
@@ -724,9 +868,12 @@
       "id": 1415,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-16",
@@ -738,9 +885,12 @@
       "id": 1416,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-17",
@@ -752,9 +902,12 @@
       "id": 1417,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-18",
@@ -766,9 +919,12 @@
       "id": 1418,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-19",
@@ -780,9 +936,12 @@
       "id": 1419,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gadget-category-20",
@@ -794,9 +953,12 @@
       "id": 1420,
       "vertical_id": "technology",
       "vertical_slug": "technology",
-      "site_url": "https://gadget-category-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -1,6 +1,8 @@
-# FoundryOS — Admin & Multi-Site Architecture
+# FoundryOS — Admin & Vertical Domain Architecture
 
-> **One admin dashboard. Every app its own standalone website. One database.**
+> **UPDATED PASS-001 Course Correction** — See [COURSE_CORRECTION.md](./COURSE_CORRECTION.md)
+
+> **One admin dashboard. Vertical domains with topic pages. One database.**
 
 ---
 
@@ -27,9 +29,11 @@
                     └───────────────────────┘
 ```
 
-**Every app = one row in `categories` + one row in `app_sites` + one hostname.**
+**Every topic = one row in `topics`. Every vertical domain = one row in `vertical_sites`.**
 
-Same codebase (`apps/site-engine`). Different config per domain. Admin provisions all.
+Same codebase (`apps/site-engine`). Vertical hostname + topic path. Admin provisions vertical domains only.
+
+**NOT:** 1,961 subdomains. **YES:** ~10–40 vertical domains with thousands of topic paths.
 
 ---
 
@@ -70,9 +74,12 @@ Same codebase (`apps/site-engine`). Different config per domain. Admin provision
 | **AI Config** | OpenAI prompts per category |
 | **Themes** | Colors, logos, typography per site |
 | **Deploy** | Netlify site provisioning, rebuild |
-| **Self-Build** | Trigger app generation from manifest |
-| **Analytics** | Per-app traffic, conversion, retention |
-| **Cross-Refs** | Pairing links between apps |
+| **Self-Build** | Topics ready / published / pending |
+| **Knowledge Graph** | Entities, relationships, growth |
+| **SEO** | Indexed pages, generated pages, internal links, topic authority |
+| **AI Brain** | Expert personas, prompt packs, usage, cost |
+| **Analytics** | Per-vertical traffic, conversion, retention |
+| **Cross-Refs** | KG relationships across verticals |
 
 ---
 

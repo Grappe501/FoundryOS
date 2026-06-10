@@ -19,9 +19,12 @@
       "id": 1322,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://classic-cars.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "muscle-cars",
@@ -34,9 +37,12 @@
       "id": 1323,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://muscle-cars.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "exotic-supercars",
@@ -49,9 +55,12 @@
       "id": 1324,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://exotic-supercars.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "motorcycle-guide",
@@ -64,9 +73,12 @@
       "id": 1325,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://motorcycle-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "offroad-4x4",
@@ -79,9 +91,12 @@
       "id": 1326,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://offroad-4x4.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "electric-vehicles",
@@ -94,9 +109,12 @@
       "id": 1327,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://electric-vehicles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "auto-restoration",
@@ -109,9 +127,12 @@
       "id": 1328,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://auto-restoration.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "auto-auctions",
@@ -124,9 +145,12 @@
       "id": 1329,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://auto-auctions.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nascar-collectibles",
@@ -139,9 +163,12 @@
       "id": 1330,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://nascar-collectibles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "formula-one-fan",
@@ -154,9 +181,12 @@
       "id": 1331,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://formula-one-fan.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "truck-custom",
@@ -169,9 +199,12 @@
       "id": 1332,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://truck-custom.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "karting-racing",
@@ -184,9 +217,12 @@
       "id": 1333,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://karting-racing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "auto-tech",
@@ -199,9 +235,12 @@
       "id": 1334,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://auto-tech.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-detailing",
@@ -214,9 +253,12 @@
       "id": 1335,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-detailing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "road-trip-cars",
@@ -229,9 +271,12 @@
       "id": 1336,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://road-trip-cars.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-motorcycles",
@@ -244,9 +289,12 @@
       "id": 1337,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://vintage-motorcycles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-audio",
@@ -259,9 +307,12 @@
       "id": 1338,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-audio.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tires-wheels",
@@ -274,9 +325,12 @@
       "id": 1339,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://tires-wheels.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "oem-parts",
@@ -289,9 +343,12 @@
       "id": 1340,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://oem-parts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "aftermarket-parts",
@@ -304,9 +361,12 @@
       "id": 1341,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://aftermarket-parts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-insurance",
@@ -319,9 +379,12 @@
       "id": 1342,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-insurance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lease-vs-buy",
@@ -334,9 +397,12 @@
       "id": 1343,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://lease-vs-buy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-review-youtube",
@@ -349,9 +415,12 @@
       "id": 1344,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-review-youtube.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "autocross-track",
@@ -364,9 +433,12 @@
       "id": 1345,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://autocross-track.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-clubs-auto",
@@ -379,9 +451,12 @@
       "id": 1346,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-clubs-auto.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-01",
@@ -393,9 +468,12 @@
       "id": 1347,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-02",
@@ -407,9 +485,12 @@
       "id": 1348,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-03",
@@ -421,9 +502,12 @@
       "id": 1349,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-04",
@@ -435,9 +519,12 @@
       "id": 1350,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-05",
@@ -449,9 +536,12 @@
       "id": 1351,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-06",
@@ -463,9 +553,12 @@
       "id": 1352,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-07",
@@ -477,9 +570,12 @@
       "id": 1353,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-08",
@@ -491,9 +587,12 @@
       "id": 1354,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-09",
@@ -505,9 +604,12 @@
       "id": 1355,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-10",
@@ -519,9 +621,12 @@
       "id": 1356,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-11",
@@ -533,9 +638,12 @@
       "id": 1357,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-12",
@@ -547,9 +655,12 @@
       "id": 1358,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-13",
@@ -561,9 +672,12 @@
       "id": 1359,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-14",
@@ -575,9 +689,12 @@
       "id": 1360,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-15",
@@ -589,9 +706,12 @@
       "id": 1361,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-16",
@@ -603,9 +723,12 @@
       "id": 1362,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-17",
@@ -617,9 +740,12 @@
       "id": 1363,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-18",
@@ -631,9 +757,12 @@
       "id": 1364,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-19",
@@ -645,9 +774,12 @@
       "id": 1365,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "car-make-20",
@@ -659,9 +791,12 @@
       "id": 1366,
       "vertical_id": "automotive",
       "vertical_slug": "automotive",
-      "site_url": "https://car-make-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

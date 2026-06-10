@@ -19,9 +19,12 @@
       "id": 50,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-cellar.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-cellar",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "champagne-sparkling",
@@ -34,9 +37,12 @@
       "id": 51,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://champagne-sparkling.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/champagne-sparkling",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bordeaux-wines",
@@ -49,9 +55,12 @@
       "id": 52,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://bordeaux-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/bordeaux-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "burgundy-wines",
@@ -64,9 +73,12 @@
       "id": 53,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://burgundy-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/burgundy-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "napa-valley",
@@ -79,9 +91,12 @@
       "id": 54,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://napa-valley.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/napa-valley",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sonoma-wines",
@@ -94,9 +109,12 @@
       "id": 55,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://sonoma-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/sonoma-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "italian-wines",
@@ -109,9 +127,12 @@
       "id": 56,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://italian-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/italian-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spanish-wines",
@@ -124,9 +145,12 @@
       "id": 57,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://spanish-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/spanish-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "portugal-wines",
@@ -139,9 +163,12 @@
       "id": 58,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://portugal-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/portugal-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dessert-wines",
@@ -154,9 +181,12 @@
       "id": 59,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://dessert-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/dessert-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "natural-wines",
@@ -169,9 +199,12 @@
       "id": 60,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://natural-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/natural-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-beer",
@@ -184,9 +217,12 @@
       "id": 61,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://craft-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/craft-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ipa-specialist",
@@ -199,9 +235,12 @@
       "id": 62,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://ipa-specialist.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/ipa-specialist",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stout-porter",
@@ -214,9 +253,12 @@
       "id": 63,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://stout-porter.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/stout-porter",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "belgian-beer",
@@ -229,9 +271,12 @@
       "id": 64,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://belgian-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/belgian-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "german-beer",
@@ -244,9 +289,12 @@
       "id": 65,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://german-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/german-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sour-beer",
@@ -259,9 +307,12 @@
       "id": 66,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://sour-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/sour-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "homebrew-master",
@@ -274,9 +325,12 @@
       "id": 67,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://homebrew-master.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/homebrew-master",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "brewery-tours",
@@ -289,9 +343,12 @@
       "id": 68,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://brewery-tours.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/brewery-tours",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-food-pairing",
@@ -304,9 +361,12 @@
       "id": 69,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-food-pairing.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-food-pairing",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rhone-wines",
@@ -319,9 +379,12 @@
       "id": 70,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://rhone-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/rhone-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chianti-tuscany",
@@ -334,9 +397,12 @@
       "id": 71,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://chianti-tuscany.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/chianti-tuscany",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rioja-wines",
@@ -349,9 +415,12 @@
       "id": 72,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://rioja-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/rioja-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "new-zealand-wines",
@@ -364,9 +433,12 @@
       "id": 73,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://new-zealand-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/new-zealand-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "australian-wines",
@@ -379,9 +451,12 @@
       "id": 74,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://australian-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/australian-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "south-african-wines",
@@ -394,9 +469,12 @@
       "id": 75,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://south-african-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/south-african-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "argentina-malbec",
@@ -409,9 +487,12 @@
       "id": 76,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://argentina-malbec.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/argentina-malbec",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chilean-wines",
@@ -424,9 +505,12 @@
       "id": 77,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://chilean-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/chilean-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "greek-wines",
@@ -439,9 +523,12 @@
       "id": 78,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://greek-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/greek-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "georgian-wines",
@@ -454,9 +541,12 @@
       "id": 79,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://georgian-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/georgian-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "orange-wines",
@@ -469,9 +559,12 @@
       "id": 80,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://orange-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/orange-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rose-wines",
@@ -484,9 +577,12 @@
       "id": 81,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://rose-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/rose-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-tasting",
@@ -499,9 +595,12 @@
       "id": 82,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-tasting.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-tasting",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sommelier-prep",
@@ -514,9 +613,12 @@
       "id": 83,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://sommelier-prep.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/sommelier-prep",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-invest",
@@ -529,9 +631,12 @@
       "id": 84,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-invest.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-invest",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-auctions",
@@ -544,9 +649,12 @@
       "id": 85,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-auctions.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-auctions",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rare-bottles-wine",
@@ -559,9 +667,12 @@
       "id": 86,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://rare-bottles-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/rare-bottles-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-clubs",
@@ -574,9 +685,12 @@
       "id": 87,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-clubs.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-clubs",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "social-wine",
@@ -589,9 +703,12 @@
       "id": 88,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://social-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/social-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cider-guide",
@@ -604,9 +721,12 @@
       "id": 89,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://cider-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/cider-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mead-guide",
@@ -619,9 +739,12 @@
       "id": 90,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://mead-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/mead-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hard-seltzer",
@@ -634,9 +757,12 @@
       "id": 91,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://hard-seltzer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/hard-seltzer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kombucha-brew",
@@ -649,9 +775,12 @@
       "id": 92,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://kombucha-brew.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/kombucha-brew",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "barrel-beer",
@@ -664,9 +793,12 @@
       "id": 93,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://barrel-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/barrel-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lager-pilsner",
@@ -679,9 +811,12 @@
       "id": 94,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://lager-pilsner.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/lager-pilsner",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wheat-beer",
@@ -694,9 +829,12 @@
       "id": 95,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wheat-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wheat-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pale-ale-guide",
@@ -709,9 +847,12 @@
       "id": 96,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://pale-ale-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/pale-ale-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-festivals",
@@ -724,9 +865,12 @@
       "id": 97,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-festivals.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-festivals",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-ingredients",
@@ -739,9 +883,12 @@
       "id": 98,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-ingredients.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-ingredients",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nano-brewery",
@@ -754,9 +901,12 @@
       "id": 99,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://nano-brewery.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/nano-brewery",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-regions-map",
@@ -769,9 +919,12 @@
       "id": 100,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-regions-map.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-regions-map",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-and-cheese",
@@ -784,9 +937,12 @@
       "id": 101,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-and-cheese.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-and-cheese",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-chocolate",
@@ -799,9 +955,12 @@
       "id": 102,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-chocolate.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-chocolate",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-cellar-mgmt",
@@ -814,9 +973,12 @@
       "id": 103,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-cellar-mgmt.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-cellar-mgmt",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-cellaring",
@@ -829,9 +991,12 @@
       "id": 104,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-cellaring.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-cellaring",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "non-alc-beer",
@@ -844,9 +1009,12 @@
       "id": 105,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://non-alc-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/non-alc-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-label-art",
@@ -859,9 +1027,12 @@
       "id": 106,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-label-art.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-label-art",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vineyard-investing",
@@ -874,9 +1045,12 @@
       "id": 107,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://vineyard-investing.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/vineyard-investing",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "harvest-season",
@@ -889,9 +1063,12 @@
       "id": 108,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://harvest-season.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/harvest-season",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-history",
@@ -904,9 +1081,12 @@
       "id": 109,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-history.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-history",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-history",
@@ -919,9 +1099,12 @@
       "id": 110,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-history.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-history",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "provence-travel",
@@ -934,9 +1117,12 @@
       "id": 111,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://provence-travel.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/provence-travel",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mediterranean-food",
@@ -949,9 +1135,12 @@
       "id": 112,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://mediterranean-food.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/mediterranean-food",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "apple-orchards",
@@ -964,9 +1153,12 @@
       "id": 113,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://apple-orchards.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/apple-orchards",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-ai-sommelier",
@@ -979,9 +1171,12 @@
       "id": 114,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-ai-sommelier.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-ai-sommelier",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-ai-pairing",
@@ -994,9 +1189,12 @@
       "id": 115,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-ai-pairing.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-ai-pairing",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "growler-trails",
@@ -1009,9 +1207,12 @@
       "id": 116,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://growler-trails.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/growler-trails",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-collector-clubs",
@@ -1024,9 +1225,12 @@
       "id": 117,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-collector-clubs.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-collector-clubs",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-rating-network",
@@ -1039,9 +1243,12 @@
       "id": 118,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-rating-network.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-rating-network",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-rating-network",
@@ -1054,9 +1261,12 @@
       "id": 119,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-rating-network.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-rating-network",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mixed-drinks-wine",
@@ -1069,9 +1279,12 @@
       "id": 120,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://mixed-drinks-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/mixed-drinks-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sangria-guide",
@@ -1084,9 +1297,12 @@
       "id": 121,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://sangria-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/sangria-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mulled-wine",
@@ -1099,9 +1315,12 @@
       "id": 122,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://mulled-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/mulled-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sake-wine-bridge",
@@ -1114,9 +1333,12 @@
       "id": 123,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://sake-wine-bridge.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/sake-wine-bridge",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-breweries",
@@ -1129,9 +1351,12 @@
       "id": 124,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://local-breweries.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/local-breweries",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-wineries",
@@ -1144,9 +1369,12 @@
       "id": 125,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://local-wineries.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/local-wineries",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-gift-guide",
@@ -1159,9 +1387,12 @@
       "id": 126,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-gift-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-gift-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-gift-guide",
@@ -1174,9 +1405,12 @@
       "id": 127,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-gift-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-gift-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-service-ritual",
@@ -1189,9 +1423,12 @@
       "id": 128,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-service-ritual.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-service-ritual",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-judging",
@@ -1204,9 +1441,12 @@
       "id": 129,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-judging.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-judging",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-competitions",
@@ -1219,9 +1459,12 @@
       "id": 130,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-competitions.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-competitions",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-awards-wine",
@@ -1234,9 +1477,12 @@
       "id": 131,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-awards-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-awards-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-maltsters",
@@ -1249,9 +1495,12 @@
       "id": 132,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://craft-maltsters.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/craft-maltsters",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wild-fermentation-beer",
@@ -1264,9 +1513,12 @@
       "id": 133,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wild-fermentation-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wild-fermentation-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "session-beers",
@@ -1279,9 +1531,12 @@
       "id": 134,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://session-beers.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/session-beers",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "imperial-stouts",
@@ -1294,9 +1549,12 @@
       "id": 135,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://imperial-stouts.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/imperial-stouts",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "barleywine-guide",
@@ -1309,9 +1567,12 @@
       "id": 136,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://barleywine-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/barleywine-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "farmhouse-ales",
@@ -1324,9 +1585,12 @@
       "id": 137,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://farmhouse-ales.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/farmhouse-ales",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "english-bitter",
@@ -1339,9 +1603,12 @@
       "id": 138,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://english-bitter.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/english-bitter",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "scottish-ales",
@@ -1354,9 +1621,12 @@
       "id": 139,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://scottish-ales.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/scottish-ales",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "irish-stout",
@@ -1369,9 +1639,12 @@
       "id": 140,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://irish-stout.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/irish-stout",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "czech-pilsner",
@@ -1384,9 +1657,12 @@
       "id": 141,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://czech-pilsner.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/czech-pilsner",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trappist-beer",
@@ -1399,9 +1675,12 @@
       "id": 142,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://trappist-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/trappist-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "monastery-spirits",
@@ -1414,9 +1693,12 @@
       "id": 143,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://monastery-spirits.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/monastery-spirits",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-franchise",
@@ -1429,9 +1711,12 @@
       "id": 144,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-franchise.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-franchise",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-collaborations",
@@ -1444,9 +1729,12 @@
       "id": 145,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-collaborations.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-collaborations",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-vintage-charts",
@@ -1459,9 +1747,12 @@
       "id": 146,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-vintage-charts.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-vintage-charts",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-release-calendar",
@@ -1474,9 +1765,12 @@
       "id": 147,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-release-calendar.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-release-calendar",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "terroir-encyclopedia",
@@ -1489,9 +1783,12 @@
       "id": 148,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://terroir-encyclopedia.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/terroir-encyclopedia",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "glassware-guide",
@@ -1504,9 +1801,12 @@
       "id": 149,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://glassware-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/glassware-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "decanter-guide",
@@ -1519,9 +1819,12 @@
       "id": 150,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://decanter-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/decanter-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cork-cage-craft",
@@ -1534,9 +1837,12 @@
       "id": 151,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://cork-cage-craft.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/cork-cage-craft",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-coaster-collect",
@@ -1549,9 +1855,12 @@
       "id": 152,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-coaster-collect.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-coaster-collect",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-cork-collect",
@@ -1564,9 +1873,12 @@
       "id": 153,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-cork-collect.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-cork-collect",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-winemaking",
@@ -1579,9 +1891,12 @@
       "id": 154,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://home-winemaking.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/home-winemaking",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-allergies",
@@ -1594,9 +1909,12 @@
       "id": 155,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-allergies.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-allergies",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gluten-free-beer",
@@ -1609,9 +1927,12 @@
       "id": 156,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://gluten-free-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/gluten-free-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kosher-wine",
@@ -1624,9 +1945,12 @@
       "id": 157,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://kosher-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/kosher-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "organic-wine",
@@ -1639,9 +1963,12 @@
       "id": 158,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://organic-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/organic-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-nat-wine",
@@ -1654,9 +1981,12 @@
       "id": 159,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://pet-nat-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/pet-nat-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "crémant-wines",
@@ -1669,9 +1999,12 @@
       "id": 160,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://crémant-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/crémant-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "english-sparkling",
@@ -1684,9 +2017,12 @@
       "id": 161,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://english-sparkling.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/english-sparkling",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "prosecco-guide",
@@ -1699,9 +2035,12 @@
       "id": 162,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://prosecco-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/prosecco-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cava-wines",
@@ -1714,9 +2053,12 @@
       "id": 163,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://cava-wines.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/cava-wines",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lambrusco-guide",
@@ -1729,9 +2071,12 @@
       "id": 164,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://lambrusco-guide.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/lambrusco-guide",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-and-spirits-bridge",
@@ -1744,9 +2089,12 @@
       "id": 165,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-and-spirits-bridge.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-and-spirits-bridge",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-and-spirits-bridge",
@@ -1759,9 +2107,12 @@
       "id": 166,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-and-spirits-bridge.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-and-spirits-bridge",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "taplist-design",
@@ -1774,9 +2125,12 @@
       "id": 167,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://taplist-design.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/taplist-design",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bar-management",
@@ -1789,9 +2143,12 @@
       "id": 168,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://bar-management.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/bar-management",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-list-curation",
@@ -1804,9 +2161,12 @@
       "id": 169,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-list-curation.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-list-curation",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-menu-curation",
@@ -1819,9 +2179,12 @@
       "id": 170,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-menu-curation.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-menu-curation",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hospitality-beverage",
@@ -1834,9 +2197,12 @@
       "id": 171,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://hospitality-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/hospitality-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-cost-control",
@@ -1849,9 +2215,12 @@
       "id": 172,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-cost-control.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-cost-control",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "staff-training-bev",
@@ -1864,9 +2233,12 @@
       "id": 173,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://staff-training-bev.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/staff-training-bev",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "consumer-beverage-ed",
@@ -1879,9 +2251,12 @@
       "id": 174,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://consumer-beverage-ed.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/consumer-beverage-ed",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-tourism",
@@ -1894,9 +2269,12 @@
       "id": 175,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-tourism.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-tourism",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "global-cocktail-wine",
@@ -1909,9 +2287,12 @@
       "id": 176,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://global-cocktail-wine.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/global-cocktail-wine",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-milestones",
@@ -1924,9 +2305,12 @@
       "id": 177,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-milestones.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-milestones",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-milestones",
@@ -1939,9 +2323,12 @@
       "id": 178,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-milestones.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-milestones",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "anniversary-pairing",
@@ -1954,9 +2341,12 @@
       "id": 179,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://anniversary-pairing.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/anniversary-pairing",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "corporate-wine-events",
@@ -1969,9 +2359,12 @@
       "id": 180,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://corporate-wine-events.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/corporate-wine-events",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-club-organizer",
@@ -1984,9 +2377,12 @@
       "id": 181,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-club-organizer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-club-organizer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beer-collector-clubs",
@@ -1999,9 +2395,12 @@
       "id": 182,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beer-collector-clubs.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beer-collector-clubs",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "expert-beverage-badges",
@@ -2014,9 +2413,12 @@
       "id": 183,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://expert-beverage-badges.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/expert-beverage-badges",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cross-beverage-pairing",
@@ -2029,9 +2431,12 @@
       "id": 184,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://cross-beverage-pairing.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/cross-beverage-pairing",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "seasonal-beverage",
@@ -2044,9 +2449,12 @@
       "id": 185,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://seasonal-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/seasonal-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "summer-wine-beer",
@@ -2059,9 +2467,12 @@
       "id": 186,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://summer-wine-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/summer-wine-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "winter-wine-beer",
@@ -2074,9 +2485,12 @@
       "id": 187,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://winter-wine-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/winter-wine-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spring-beverage",
@@ -2089,9 +2503,12 @@
       "id": 188,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://spring-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/spring-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fall-beverage",
@@ -2104,9 +2521,12 @@
       "id": 189,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://fall-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/fall-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pumpkin-beer",
@@ -2119,9 +2539,12 @@
       "id": 190,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://pumpkin-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/pumpkin-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holiday-beer",
@@ -2134,9 +2557,12 @@
       "id": 191,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://holiday-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/holiday-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-photography",
@@ -2149,9 +2575,12 @@
       "id": 192,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-photography.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-photography",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-influencer",
@@ -2164,9 +2593,12 @@
       "id": 193,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-influencer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-influencer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-newsletter",
@@ -2179,9 +2611,12 @@
       "id": 194,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-newsletter.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-newsletter",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-subscription-box",
@@ -2194,9 +2629,12 @@
       "id": 195,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-subscription-box.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-subscription-box",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-loyalty",
@@ -2209,9 +2647,12 @@
       "id": 196,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-loyalty.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-loyalty",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "qr-menu-beverage",
@@ -2224,9 +2665,12 @@
       "id": 197,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://qr-menu-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/qr-menu-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "inventory-beverage",
@@ -2239,9 +2683,12 @@
       "id": 198,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://inventory-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/inventory-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pos-beverage",
@@ -2254,9 +2701,12 @@
       "id": 199,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://pos-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/pos-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "distributor-beverage",
@@ -2269,9 +2719,12 @@
       "id": 200,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://distributor-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/distributor-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "regulatory-beverage",
@@ -2284,9 +2737,12 @@
       "id": 201,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://regulatory-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/regulatory-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "shipping-beverage",
@@ -2299,9 +2755,12 @@
       "id": 202,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://shipping-beverage.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/shipping-beverage",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "drizly-alternatives",
@@ -2314,9 +2773,12 @@
       "id": 203,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://drizly-alternatives.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/drizly-alternatives",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-sustainability",
@@ -2329,9 +2791,12 @@
       "id": 204,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-sustainability.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-sustainability",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "water-source-beer",
@@ -2344,9 +2809,12 @@
       "id": 205,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://water-source-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/water-source-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "yeast-lab-beer",
@@ -2359,9 +2827,12 @@
       "id": 206,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://yeast-lab-beer.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/yeast-lab-beer",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-lab-analysis",
@@ -2374,9 +2845,12 @@
       "id": 207,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://wine-lab-analysis.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/wine-lab-analysis",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "blind-tasting-club",
@@ -2389,9 +2863,12 @@
       "id": 208,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://blind-tasting-club.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/blind-tasting-club",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-expert-network",
@@ -2404,9 +2881,12 @@
       "id": 209,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-expert-network.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-expert-network",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-tier3-social",
@@ -2419,9 +2899,12 @@
       "id": 210,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-tier3-social.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-tier3-social",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "unified-tasting-journal",
@@ -2434,9 +2917,12 @@
       "id": 211,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://unified-tasting-journal.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/unified-tasting-journal",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beverage-cross-app-hub",
@@ -2449,9 +2935,12 @@
       "id": 212,
       "vertical_id": "wine-beer",
       "vertical_slug": "wine-beer",
-      "site_url": "https://beverage-cross-app-hub.foundryos.app",
+      "vertical_domain": "wine.foundryos.com",
+      "topic_url": "https://wine.foundryos.com/beverage-cross-app-hub",
+      "site_url": "https://wine.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

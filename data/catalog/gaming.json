@@ -19,9 +19,12 @@
       "id": 1582,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://board-games.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-collectibles",
@@ -34,9 +37,12 @@
       "id": 1583,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-collectibles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "poker-strategy",
@@ -49,9 +55,12 @@
       "id": 1584,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://poker-strategy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chess-mastery",
@@ -64,9 +73,12 @@
       "id": 1585,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://chess-mastery.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "strategy-games",
@@ -79,9 +91,12 @@
       "id": 1586,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://strategy-games.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-rpg",
@@ -94,9 +109,12 @@
       "id": 1587,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-rpg.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pc-gaming",
@@ -109,9 +127,12 @@
       "id": 1588,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://pc-gaming.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "console-gaming",
@@ -124,9 +145,12 @@
       "id": 1589,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://console-gaming.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mobile-gaming",
@@ -139,9 +163,12 @@
       "id": 1590,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://mobile-gaming.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vr-gaming",
@@ -154,9 +181,12 @@
       "id": 1591,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://vr-gaming.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "esports-teams",
@@ -169,9 +199,12 @@
       "id": 1592,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://esports-teams.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-development",
@@ -184,9 +217,12 @@
       "id": 1593,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-development.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indie-games",
@@ -199,9 +235,12 @@
       "id": 1594,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://indie-games.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "retro-games",
@@ -214,9 +253,12 @@
       "id": 1595,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://retro-games.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "speedrunning",
@@ -229,9 +271,12 @@
       "id": 1596,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://speedrunning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-walkthroughs",
@@ -244,9 +289,12 @@
       "id": 1597,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-walkthroughs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-modding",
@@ -259,9 +307,12 @@
       "id": 1598,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-modding.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tabletop-rpg",
@@ -274,9 +325,12 @@
       "id": 1599,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://tabletop-rpg.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dnd-guide",
@@ -289,9 +343,12 @@
       "id": 1600,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://dnd-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "warhammer-tabletop",
@@ -304,9 +361,12 @@
       "id": 1601,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://warhammer-tabletop.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "miniatures-painting",
@@ -319,9 +379,12 @@
       "id": 1602,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://miniatures-painting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-setup",
@@ -334,9 +397,12 @@
       "id": 1603,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-setup.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-chairs",
@@ -349,9 +415,12 @@
       "id": 1604,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-chairs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-headsets",
@@ -364,9 +433,12 @@
       "id": 1605,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-headsets.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-reviews-network",
@@ -379,9 +451,12 @@
       "id": 1606,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-reviews-network.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-clubs",
@@ -394,9 +469,12 @@
       "id": 1607,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://gaming-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-01",
@@ -408,9 +486,12 @@
       "id": 1608,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-02",
@@ -422,9 +503,12 @@
       "id": 1609,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-03",
@@ -436,9 +520,12 @@
       "id": 1610,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-04",
@@ -450,9 +537,12 @@
       "id": 1611,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-05",
@@ -464,9 +554,12 @@
       "id": 1612,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-06",
@@ -478,9 +571,12 @@
       "id": 1613,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-07",
@@ -492,9 +588,12 @@
       "id": 1614,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-08",
@@ -506,9 +605,12 @@
       "id": 1615,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-09",
@@ -520,9 +622,12 @@
       "id": 1616,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-10",
@@ -534,9 +639,12 @@
       "id": 1617,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-11",
@@ -548,9 +656,12 @@
       "id": 1618,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-12",
@@ -562,9 +673,12 @@
       "id": 1619,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-13",
@@ -576,9 +690,12 @@
       "id": 1620,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-14",
@@ -590,9 +707,12 @@
       "id": 1621,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-15",
@@ -604,9 +724,12 @@
       "id": 1622,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-16",
@@ -618,9 +741,12 @@
       "id": 1623,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-17",
@@ -632,9 +758,12 @@
       "id": 1624,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-18",
@@ -646,9 +775,12 @@
       "id": 1625,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-19",
@@ -660,9 +792,12 @@
       "id": 1626,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-franchise-20",
@@ -674,9 +809,12 @@
       "id": 1627,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-franchise-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-01",
@@ -688,9 +826,12 @@
       "id": 1628,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-02",
@@ -702,9 +843,12 @@
       "id": 1629,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-03",
@@ -716,9 +860,12 @@
       "id": 1630,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-04",
@@ -730,9 +877,12 @@
       "id": 1631,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-05",
@@ -744,9 +894,12 @@
       "id": 1632,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-06",
@@ -758,9 +911,12 @@
       "id": 1633,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-07",
@@ -772,9 +928,12 @@
       "id": 1634,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-08",
@@ -786,9 +945,12 @@
       "id": 1635,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-09",
@@ -800,9 +962,12 @@
       "id": 1636,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-10",
@@ -814,9 +979,12 @@
       "id": 1637,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-11",
@@ -828,9 +996,12 @@
       "id": 1638,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-12",
@@ -842,9 +1013,12 @@
       "id": 1639,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-13",
@@ -856,9 +1030,12 @@
       "id": 1640,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-14",
@@ -870,9 +1047,12 @@
       "id": 1641,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-genre-15",
@@ -884,9 +1064,12 @@
       "id": 1642,
       "vertical_id": "gaming",
       "vertical_slug": "gaming",
-      "site_url": "https://game-genre-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

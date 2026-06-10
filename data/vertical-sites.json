@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "description": "Public vertical domains — topics live as paths beneath these sites",
+  "sites": [
+    {
+      "domain": "foundryos.com",
+      "slug": "platform",
+      "display_name": "FoundryOS Mission Control",
+      "type": "headquarters",
+      "vertical_id": null
+    },
+    {
+      "domain": "bourbon.foundryos.com",
+      "slug": "bourbon",
+      "display_name": "Bourbon",
+      "type": "vertical",
+      "vertical_id": "spirits-beverages",
+      "flagship_topic": "bourbon-connoisseur",
+      "status": "planned",
+      "launch_pass": "PASS-009"
+    },
+    {
+      "domain": "books.foundryos.com",
+      "slug": "books",
+      "display_name": "Books & Literature",
+      "type": "vertical",
+      "vertical_id": "books-literature",
+      "example_topics": ["fantasy", "science-fiction", "mystery", "authors", "book-clubs"],
+      "status": "planned",
+      "launch_pass": "PASS-010"
+    },
+    {
+      "domain": "movies.foundryos.com",
+      "slug": "movies",
+      "display_name": "Film & Cinema",
+      "type": "vertical",
+      "vertical_id": "film-cinema",
+      "status": "planned"
+    },
+    {
+      "domain": "music.foundryos.com",
+      "slug": "music",
+      "display_name": "Music & Audio",
+      "type": "vertical",
+      "vertical_id": "music-audio",
+      "status": "planned"
+    },
+    {
+      "domain": "bbq.foundryos.com",
+      "slug": "bbq",
+      "display_name": "BBQ & Smokehouse",
+      "type": "vertical",
+      "vertical_id": "food-culinary",
+      "flagship_topic": "bbq-smokehouse",
+      "status": "planned"
+    },
+    {
+      "domain": "collegebaseball.foundryos.com",
+      "slug": "collegebaseball",
+      "display_name": "College Baseball",
+      "type": "vertical",
+      "vertical_id": "sports",
+      "flagship_topic": "college-baseball",
+      "status": "planned"
+    },
+    {
+      "domain": "wine.foundryos.com",
+      "slug": "wine",
+      "display_name": "Wine & Cellar",
+      "type": "vertical",
+      "vertical_id": "wine-beer",
+      "flagship_topic": "wine-cellar",
+      "status": "planned"
+    },
+    {
+      "domain": "food.foundryos.com",
+      "slug": "food",
+      "display_name": "Food & Culinary",
+      "type": "vertical",
+      "vertical_id": "food-culinary",
+      "status": "planned"
+    },
+    {
+      "domain": "tv.foundryos.com",
+      "slug": "tv",
+      "display_name": "TV & Streaming",
+      "type": "vertical",
+      "vertical_id": "tv-streaming",
+      "status": "planned"
+    }
+  ]
+}

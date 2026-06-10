@@ -19,9 +19,12 @@
       "id": 415,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-baseball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-baseball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-football",
@@ -34,9 +37,12 @@
       "id": 416,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-football.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-football",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-basketball",
@@ -49,9 +55,12 @@
       "id": 417,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-basketball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-basketball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mlb-collection",
@@ -64,9 +73,12 @@
       "id": 418,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://mlb-collection.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/mlb-collection",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nfl-fantasy",
@@ -79,9 +91,12 @@
       "id": 419,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nfl-fantasy.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nfl-fantasy",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nba-collection",
@@ -94,9 +109,12 @@
       "id": 420,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nba-collection.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nba-collection",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nhl-hockey",
@@ -109,9 +127,12 @@
       "id": 421,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nhl-hockey.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nhl-hockey",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "golf-masters",
@@ -124,9 +145,12 @@
       "id": 422,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://golf-masters.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/golf-masters",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tennis-grand-slam",
@@ -139,9 +163,12 @@
       "id": 423,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://tennis-grand-slam.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/tennis-grand-slam",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soccer-world",
@@ -154,9 +181,12 @@
       "id": 424,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://soccer-world.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/soccer-world",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "formula-one",
@@ -169,9 +199,12 @@
       "id": 425,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://formula-one.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/formula-one",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nascar-racing",
@@ -184,9 +217,12 @@
       "id": 426,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nascar-racing.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nascar-racing",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ufc-mma",
@@ -199,9 +235,12 @@
       "id": 427,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://ufc-mma.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/ufc-mma",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "boxing-legends",
@@ -214,9 +253,12 @@
       "id": 428,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://boxing-legends.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/boxing-legends",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "olympics-sports",
@@ -229,9 +271,12 @@
       "id": 429,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://olympics-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/olympics-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "marathon-running",
@@ -244,9 +289,12 @@
       "id": 430,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://marathon-running.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/marathon-running",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cycling-tours",
@@ -259,9 +307,12 @@
       "id": 431,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://cycling-tours.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/cycling-tours",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "triathlon-guide",
@@ -274,9 +325,12 @@
       "id": 432,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://triathlon-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/triathlon-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pickleball-guide",
@@ -289,9 +343,12 @@
       "id": 433,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://pickleball-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/pickleball-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "surfing-guide",
@@ -304,9 +361,12 @@
       "id": 434,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://surfing-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/surfing-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "skiing-snowboard",
@@ -319,9 +379,12 @@
       "id": 435,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://skiing-snowboard.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/skiing-snowboard",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fishing-angler",
@@ -334,9 +397,12 @@
       "id": 436,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fishing-angler.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fishing-angler",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-cards",
@@ -349,9 +415,12 @@
       "id": 437,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-cards.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-cards",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-betting",
@@ -364,9 +433,12 @@
       "id": 438,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-betting.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-betting",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "youth-sports",
@@ -379,9 +451,12 @@
       "id": 439,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://youth-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/youth-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-softball",
@@ -394,9 +469,12 @@
       "id": 440,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-softball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-softball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-volleyball",
@@ -409,9 +487,12 @@
       "id": 441,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-volleyball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-volleyball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-soccer",
@@ -424,9 +505,12 @@
       "id": 442,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-soccer.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-soccer",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-lacrosse",
@@ -439,9 +523,12 @@
       "id": 443,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-lacrosse.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-lacrosse",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-hockey",
@@ -454,9 +541,12 @@
       "id": 444,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-hockey.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-hockey",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-wrestling",
@@ -469,9 +559,12 @@
       "id": 445,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-wrestling.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-wrestling",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "minor-league-baseball",
@@ -484,9 +577,12 @@
       "id": 446,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://minor-league-baseball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/minor-league-baseball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "womens-sports",
@@ -499,9 +595,12 @@
       "id": 447,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://womens-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/womens-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wnba-guide",
@@ -514,9 +613,12 @@
       "id": 448,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://wnba-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/wnba-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nwsl-soccer",
@@ -529,9 +631,12 @@
       "id": 449,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nwsl-soccer.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nwsl-soccer",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "premier-league",
@@ -544,9 +649,12 @@
       "id": 450,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://premier-league.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/premier-league",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fantasy-soccer",
@@ -559,9 +667,12 @@
       "id": 451,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fantasy-soccer.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fantasy-soccer",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fantasy-baseball",
@@ -574,9 +685,12 @@
       "id": 452,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fantasy-baseball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fantasy-baseball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fantasy-basketball",
@@ -589,9 +703,12 @@
       "id": 453,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fantasy-basketball.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fantasy-basketball",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fantasy-hockey",
@@ -604,9 +721,12 @@
       "id": 454,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fantasy-hockey.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fantasy-hockey",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cricket-guide",
@@ -619,9 +739,12 @@
       "id": 455,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://cricket-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/cricket-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rugby-guide",
@@ -634,9 +757,12 @@
       "id": 456,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://rugby-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/rugby-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lacrosse-pro",
@@ -649,9 +775,12 @@
       "id": 457,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://lacrosse-pro.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/lacrosse-pro",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "volleyball-beach",
@@ -664,9 +793,12 @@
       "id": 458,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://volleyball-beach.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/volleyball-beach",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "swimming-competitive",
@@ -679,9 +811,12 @@
       "id": 459,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://swimming-competitive.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/swimming-competitive",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "track-field",
@@ -694,9 +829,12 @@
       "id": 460,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://track-field.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/track-field",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gymnastics-guide",
@@ -709,9 +847,12 @@
       "id": 461,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://gymnastics-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/gymnastics-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "figure-skating",
@@ -724,9 +865,12 @@
       "id": 462,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://figure-skating.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/figure-skating",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bobsled-luge",
@@ -739,9 +883,12 @@
       "id": 463,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://bobsled-luge.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/bobsled-luge",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "esports-guide",
@@ -754,9 +901,12 @@
       "id": 464,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://esports-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/esports-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rodeo-guide",
@@ -769,9 +919,12 @@
       "id": 465,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://rodeo-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/rodeo-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "horse-racing",
@@ -784,9 +937,12 @@
       "id": 466,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://horse-racing.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/horse-racing",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "equestrian-sports",
@@ -799,9 +955,12 @@
       "id": 467,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://equestrian-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/equestrian-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "auto-racing-sports",
@@ -814,9 +973,12 @@
       "id": 468,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://auto-racing-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/auto-racing-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-media",
@@ -829,9 +991,12 @@
       "id": 469,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-media.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-media",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-podcasts",
@@ -844,9 +1009,12 @@
       "id": 470,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-podcasts.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-podcasts",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-documentary",
@@ -859,9 +1027,12 @@
       "id": 471,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-documentary.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-documentary",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-nutrition",
@@ -874,9 +1045,12 @@
       "id": 472,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-nutrition.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-nutrition",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-psychology",
@@ -889,9 +1063,12 @@
       "id": 473,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-psychology.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-psychology",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coaching-youth",
@@ -904,9 +1081,12 @@
       "id": 474,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://coaching-youth.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/coaching-youth",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "referee-officiating",
@@ -919,9 +1099,12 @@
       "id": 475,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://referee-officiating.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/referee-officiating",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stadium-guide",
@@ -934,9 +1117,12 @@
       "id": 476,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://stadium-guide.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/stadium-guide",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tailgate-culture",
@@ -949,9 +1135,12 @@
       "id": 477,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://tailgate-culture.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/tailgate-culture",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-travel",
@@ -964,9 +1153,12 @@
       "id": 478,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-travel.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-travel",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spring-training",
@@ -979,9 +1171,12 @@
       "id": 479,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://spring-training.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/spring-training",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "march-madness",
@@ -994,9 +1189,12 @@
       "id": 480,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://march-madness.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/march-madness",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-world-series",
@@ -1009,9 +1207,12 @@
       "id": 481,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-world-series.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-world-series",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bowl-season",
@@ -1024,9 +1225,12 @@
       "id": 482,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://bowl-season.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/bowl-season",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "draft-tracker",
@@ -1039,9 +1243,12 @@
       "id": 483,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://draft-tracker.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/draft-tracker",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hall-of-fame-sports",
@@ -1054,9 +1261,12 @@
       "id": 484,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://hall-of-fame-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/hall-of-fame-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-collector-clubs",
@@ -1069,9 +1279,12 @@
       "id": 485,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-collector-clubs.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-collector-clubs",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-expert-network",
@@ -1084,9 +1297,12 @@
       "id": 486,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-expert-network.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-expert-network",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-sports-scene",
@@ -1099,9 +1315,12 @@
       "id": 487,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://local-sports-scene.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/local-sports-scene",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "high-school-sports",
@@ -1114,9 +1333,12 @@
       "id": 488,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://high-school-sports.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/high-school-sports",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rec-league",
@@ -1129,9 +1351,12 @@
       "id": 489,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://rec-league.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/rec-league",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-equipment",
@@ -1144,9 +1369,12 @@
       "id": 490,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-equipment.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-equipment",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "running-shoes",
@@ -1159,9 +1387,12 @@
       "id": 491,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://running-shoes.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/running-shoes",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "golf-equipment",
@@ -1174,9 +1405,12 @@
       "id": 492,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://golf-equipment.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/golf-equipment",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tennis-equipment",
@@ -1189,9 +1423,12 @@
       "id": 493,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://tennis-equipment.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/tennis-equipment",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "baseball-gear",
@@ -1204,9 +1441,12 @@
       "id": 494,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://baseball-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/baseball-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "football-gear",
@@ -1219,9 +1459,12 @@
       "id": 495,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://football-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/football-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "basketball-gear",
@@ -1234,9 +1477,12 @@
       "id": 496,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://basketball-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/basketball-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hockey-gear",
@@ -1249,9 +1495,12 @@
       "id": 497,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://hockey-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/hockey-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ski-equipment",
@@ -1264,9 +1513,12 @@
       "id": 498,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://ski-equipment.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/ski-equipment",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "surf-equipment",
@@ -1279,9 +1531,12 @@
       "id": 499,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://surf-equipment.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/surf-equipment",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fishing-gear",
@@ -1294,9 +1549,12 @@
       "id": 500,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://fishing-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/fishing-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cycling-gear",
@@ -1309,9 +1567,12 @@
       "id": 501,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://cycling-gear.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/cycling-gear",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "climbing-gear-sport",
@@ -1324,9 +1585,12 @@
       "id": 502,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://climbing-gear-sport.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/climbing-gear-sport",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-injury",
@@ -1339,9 +1603,12 @@
       "id": 503,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-injury.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-injury",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-recovery",
@@ -1354,9 +1621,12 @@
       "id": 504,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-recovery.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-recovery",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-wearables",
@@ -1369,9 +1639,12 @@
       "id": 505,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-wearables.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-wearables",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-stats-mlb",
@@ -1384,9 +1657,12 @@
       "id": 506,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-stats-mlb.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-stats-mlb",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-stats-nfl",
@@ -1399,9 +1675,12 @@
       "id": 507,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-stats-nfl.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-stats-nfl",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-stats-nba",
@@ -1414,9 +1693,12 @@
       "id": 508,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-stats-nba.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-stats-nba",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-history",
@@ -1429,9 +1711,12 @@
       "id": 509,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-history.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-history",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-biographies",
@@ -1444,9 +1729,12 @@
       "id": 510,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-biographies.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-biographies",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-movies-hub",
@@ -1459,9 +1747,12 @@
       "id": 511,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-movies-hub.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-movies-hub",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-fashion",
@@ -1474,9 +1765,12 @@
       "id": 512,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-fashion.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-fashion",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jersey-collecting",
@@ -1489,9 +1783,12 @@
       "id": 513,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://jersey-collecting.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/jersey-collecting",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-tickets",
@@ -1504,9 +1801,12 @@
       "id": 514,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-tickets.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-tickets",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-betting-legal",
@@ -1519,9 +1819,12 @@
       "id": 515,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-betting-legal.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-betting-legal",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "parlay-strategy",
@@ -1534,9 +1837,12 @@
       "id": 516,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://parlay-strategy.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/parlay-strategy",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-arbitrage",
@@ -1549,9 +1855,12 @@
       "id": 517,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-arbitrage.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-arbitrage",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-recruiting",
@@ -1564,9 +1873,12 @@
       "id": 518,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://college-recruiting.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/college-recruiting",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nil-college",
@@ -1579,9 +1891,12 @@
       "id": 519,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://nil-college.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/nil-college",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-venues-arch",
@@ -1594,9 +1909,12 @@
       "id": 520,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-venues-arch.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-venues-arch",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-memorabilia-auth",
@@ -1609,9 +1927,12 @@
       "id": 521,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-memorabilia-auth.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-memorabilia-auth",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-day-rituals",
@@ -1624,9 +1945,12 @@
       "id": 522,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://game-day-rituals.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/game-day-rituals",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-superstitions",
@@ -1639,9 +1963,12 @@
       "id": 523,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-superstitions.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-superstitions",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-trivia",
@@ -1654,9 +1981,12 @@
       "id": 524,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-trivia.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-trivia",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-quotes",
@@ -1669,9 +1999,12 @@
       "id": 525,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-quotes.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-quotes",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-social-clubs",
@@ -1684,9 +2017,12 @@
       "id": 526,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-social-clubs.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-social-clubs",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cross-sport-fantasy",
@@ -1699,9 +2035,12 @@
       "id": 527,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://cross-sport-fantasy.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/cross-sport-fantasy",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-ai-picks",
@@ -1714,9 +2053,12 @@
       "id": 528,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-ai-picks.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-ai-picks",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-tier3-network",
@@ -1729,9 +2071,12 @@
       "id": 529,
       "vertical_id": "sports",
       "vertical_slug": "sports",
-      "site_url": "https://sports-tier3-network.foundryos.app",
+      "vertical_domain": "collegebaseball.foundryos.com",
+      "topic_url": "https://collegebaseball.foundryos.com/sports-tier3-network",
+      "site_url": "https://collegebaseball.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

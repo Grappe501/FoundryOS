@@ -19,9 +19,12 @@
       "id": 1699,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://painting-fine-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "watercolor-art",
@@ -34,9 +37,12 @@
       "id": 1700,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://watercolor-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "oil-painting",
@@ -49,9 +55,12 @@
       "id": 1701,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://oil-painting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "acrylic-painting",
@@ -64,9 +73,12 @@
       "id": 1702,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://acrylic-painting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "drawing-sketching",
@@ -79,9 +91,12 @@
       "id": 1703,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://drawing-sketching.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sculpture-art",
@@ -94,9 +109,12 @@
       "id": 1704,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://sculpture-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pottery-wheel",
@@ -109,9 +127,12 @@
       "id": 1705,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://pottery-wheel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "knitting-crochet",
@@ -124,9 +145,12 @@
       "id": 1706,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://knitting-crochet.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sewing-quilting",
@@ -139,9 +163,12 @@
       "id": 1707,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://sewing-quilting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "embroidery-craft",
@@ -154,9 +181,12 @@
       "id": 1708,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://embroidery-craft.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jewelry-making",
@@ -169,9 +199,12 @@
       "id": 1709,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://jewelry-making.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "leather-craft",
@@ -184,9 +217,12 @@
       "id": 1710,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://leather-craft.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "candle-making",
@@ -199,9 +235,12 @@
       "id": 1711,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://candle-making.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soap-making",
@@ -214,9 +253,12 @@
       "id": 1712,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://soap-making.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "paper-crafts",
@@ -229,9 +271,12 @@
       "id": 1713,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://paper-crafts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "glass-blowing",
@@ -244,9 +289,12 @@
       "id": 1714,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://glass-blowing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mosaic-art",
@@ -259,9 +307,12 @@
       "id": 1715,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://mosaic-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "street-art",
@@ -274,9 +325,12 @@
       "id": 1716,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://street-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "urban-explore",
@@ -289,9 +343,12 @@
       "id": 1717,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://urban-explore.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "art-supplies",
@@ -304,9 +361,12 @@
       "id": 1718,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://art-supplies.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "art-classes",
@@ -319,9 +379,12 @@
       "id": 1719,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://art-classes.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "art-clubs",
@@ -334,9 +397,12 @@
       "id": 1720,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://art-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-01",
@@ -348,9 +414,12 @@
       "id": 1721,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-02",
@@ -362,9 +431,12 @@
       "id": 1722,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-03",
@@ -376,9 +448,12 @@
       "id": 1723,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-04",
@@ -390,9 +465,12 @@
       "id": 1724,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-05",
@@ -404,9 +482,12 @@
       "id": 1725,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-06",
@@ -418,9 +499,12 @@
       "id": 1726,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-07",
@@ -432,9 +516,12 @@
       "id": 1727,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-08",
@@ -446,9 +533,12 @@
       "id": 1728,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-09",
@@ -460,9 +550,12 @@
       "id": 1729,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-10",
@@ -474,9 +567,12 @@
       "id": 1730,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-11",
@@ -488,9 +584,12 @@
       "id": 1731,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-12",
@@ -502,9 +601,12 @@
       "id": 1732,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-13",
@@ -516,9 +618,12 @@
       "id": 1733,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-14",
@@ -530,9 +635,12 @@
       "id": 1734,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-technique-15",
@@ -544,9 +652,12 @@
       "id": 1735,
       "vertical_id": "arts-crafts",
       "vertical_slug": "arts-crafts",
-      "site_url": "https://craft-technique-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

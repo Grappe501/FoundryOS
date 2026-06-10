@@ -10,6 +10,10 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const OUT = path.join(ROOT, 'data', 'catalog');
+const verticalSites = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/vertical-sites.json'), 'utf-8'));
+const domainByVertical = new Map(
+  verticalSites.sites.filter((s) => s.vertical_id).map((s) => [s.vertical_id, s.domain])
+);
 
 function app(slug, displayName, crossRefs = [], priority = 'P3') {
   return { slug, displayName, crossRefs, priority };
@@ -96,15 +100,21 @@ function build() {
   const allApps = [];
 
   for (const vertical of allVerticals) {
-    const apps = vertical.apps.map((a, i) => ({
-      ...a,
-      id: ++globalIndex,
-      vertical_id: vertical.id,
-      vertical_slug: vertical.slug,
-      site_url: `https://${a.slug}.foundryos.app`,
-      admin_managed: true,
-      standalone: true,
-    }));
+    const apps = vertical.apps.map((a, i) => {
+      const verticalDomain = domainByVertical.get(vertical.id);
+      return {
+        ...a,
+        id: ++globalIndex,
+        vertical_id: vertical.id,
+        vertical_slug: vertical.slug,
+        vertical_domain: verticalDomain ?? null,
+        topic_url: verticalDomain ? `https://${verticalDomain}/${a.slug}` : null,
+        site_url: verticalDomain ? `https://${verticalDomain}` : null,
+        admin_managed: true,
+        is_topic: true,
+        is_standalone_site: false,
+      };
+    });
 
     const verticalMeta = {
       id: vertical.id,

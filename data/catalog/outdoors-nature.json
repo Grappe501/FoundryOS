@@ -19,9 +19,12 @@
       "id": 1099,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-adventures.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hiking-trails",
@@ -34,9 +37,12 @@
       "id": 1100,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://hiking-trails.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "camping-guide",
@@ -49,9 +55,12 @@
       "id": 1101,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://camping-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "national-parks",
@@ -64,9 +73,12 @@
       "id": 1102,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://national-parks.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wildlife-watching",
@@ -79,9 +91,12 @@
       "id": 1103,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://wildlife-watching.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bird-watching",
@@ -94,9 +109,12 @@
       "id": 1104,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://bird-watching.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fishing-fly",
@@ -109,9 +127,12 @@
       "id": 1105,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://fishing-fly.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kayaking-paddle",
@@ -124,9 +145,12 @@
       "id": 1106,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://kayaking-paddle.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rock-climbing",
@@ -139,9 +163,12 @@
       "id": 1107,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://rock-climbing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mountain-climbing",
@@ -154,9 +181,12 @@
       "id": 1108,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://mountain-climbing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "outdoor-gear",
@@ -169,9 +199,12 @@
       "id": 1109,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-gear.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stargazing-astro",
@@ -184,9 +217,12 @@
       "id": 1110,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://stargazing-astro.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gardening-native",
@@ -199,9 +235,12 @@
       "id": 1111,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://gardening-native.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "foraging-wild",
@@ -214,9 +253,12 @@
       "id": 1112,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://foraging-wild.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beekeeping-guide",
@@ -229,9 +271,12 @@
       "id": 1113,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://beekeeping-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "landscape-photo",
@@ -244,9 +289,12 @@
       "id": 1114,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://landscape-photo.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "scuba-diving",
@@ -259,9 +307,12 @@
       "id": 1115,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://scuba-diving.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sailing-yacht",
@@ -274,9 +325,12 @@
       "id": 1116,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://sailing-yacht.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hunting-guide",
@@ -289,9 +343,12 @@
       "id": 1117,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://hunting-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rv-road-trips",
@@ -304,9 +361,12 @@
       "id": 1118,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://rv-road-trips.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "backpacking-ul",
@@ -319,9 +379,12 @@
       "id": 1119,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://backpacking-ul.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "winter-camping",
@@ -334,9 +397,12 @@
       "id": 1120,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://winter-camping.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "desert-exploring",
@@ -349,9 +415,12 @@
       "id": 1121,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://desert-exploring.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cave-exploring",
@@ -364,9 +433,12 @@
       "id": 1122,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://cave-exploring.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "canoeing-rivers",
@@ -379,9 +451,12 @@
       "id": 1123,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://canoeing-rivers.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-running",
@@ -394,9 +469,12 @@
       "id": 1124,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-running.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "orienteering",
@@ -409,9 +487,12 @@
       "id": 1125,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://orienteering.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "survival-skills",
@@ -424,9 +505,12 @@
       "id": 1126,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://survival-skills.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bushcraft",
@@ -439,9 +523,12 @@
       "id": 1127,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://bushcraft.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nature-journaling",
@@ -454,9 +541,12 @@
       "id": 1128,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://nature-journaling.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "conservation-volunteer",
@@ -469,9 +559,12 @@
       "id": 1129,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://conservation-volunteer.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "eco-tourism",
@@ -484,9 +577,12 @@
       "id": 1130,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://eco-tourism.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "aurora-hunting",
@@ -499,9 +595,12 @@
       "id": 1131,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://aurora-hunting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "volcano-tours",
@@ -514,9 +613,12 @@
       "id": 1132,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://volcano-tours.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "glacier-tours",
@@ -529,9 +631,12 @@
       "id": 1133,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://glacier-tours.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rainforest-guide",
@@ -544,9 +649,12 @@
       "id": 1134,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://rainforest-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "safari-planner",
@@ -559,9 +667,12 @@
       "id": 1135,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://safari-planner.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "whale-watching",
@@ -574,9 +685,12 @@
       "id": 1136,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://whale-watching.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "butterfly-garden",
@@ -589,9 +703,12 @@
       "id": 1137,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://butterfly-garden.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mushroom-foraging",
@@ -604,9 +721,12 @@
       "id": 1138,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://mushroom-foraging.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "outdoor-cooking",
@@ -619,9 +739,12 @@
       "id": 1139,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-cooking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "campfire-cooking",
@@ -634,9 +757,12 @@
       "id": 1140,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://campfire-cooking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "outdoor-first-aid",
@@ -649,9 +775,12 @@
       "id": 1141,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-first-aid.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gear-repair-outdoor",
@@ -664,9 +793,12 @@
       "id": 1142,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://gear-repair-outdoor.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "leave-no-trace",
@@ -679,9 +811,12 @@
       "id": 1143,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://leave-no-trace.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "outdoor-clubs",
@@ -694,9 +829,12 @@
       "id": 1144,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "outdoor-expert-network",
@@ -709,9 +847,12 @@
       "id": 1145,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://outdoor-expert-network.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-01",
@@ -723,9 +864,12 @@
       "id": 1146,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-02",
@@ -737,9 +881,12 @@
       "id": 1147,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-03",
@@ -751,9 +898,12 @@
       "id": 1148,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-04",
@@ -765,9 +915,12 @@
       "id": 1149,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-05",
@@ -779,9 +932,12 @@
       "id": 1150,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-06",
@@ -793,9 +949,12 @@
       "id": 1151,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-07",
@@ -807,9 +966,12 @@
       "id": 1152,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-08",
@@ -821,9 +983,12 @@
       "id": 1153,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-09",
@@ -835,9 +1000,12 @@
       "id": 1154,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-10",
@@ -849,9 +1017,12 @@
       "id": 1155,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-11",
@@ -863,9 +1034,12 @@
       "id": 1156,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-12",
@@ -877,9 +1051,12 @@
       "id": 1157,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-13",
@@ -891,9 +1068,12 @@
       "id": 1158,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-14",
@@ -905,9 +1085,12 @@
       "id": 1159,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-15",
@@ -919,9 +1102,12 @@
       "id": 1160,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-16",
@@ -933,9 +1119,12 @@
       "id": 1161,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-17",
@@ -947,9 +1136,12 @@
       "id": 1162,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-18",
@@ -961,9 +1153,12 @@
       "id": 1163,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-19",
@@ -975,9 +1170,12 @@
       "id": 1164,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "state-park-20",
@@ -989,9 +1187,12 @@
       "id": 1165,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://state-park-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-01",
@@ -1003,9 +1204,12 @@
       "id": 1166,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-02",
@@ -1017,9 +1221,12 @@
       "id": 1167,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-03",
@@ -1031,9 +1238,12 @@
       "id": 1168,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-04",
@@ -1045,9 +1255,12 @@
       "id": 1169,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-05",
@@ -1059,9 +1272,12 @@
       "id": 1170,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-06",
@@ -1073,9 +1289,12 @@
       "id": 1171,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-07",
@@ -1087,9 +1306,12 @@
       "id": 1172,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-08",
@@ -1101,9 +1323,12 @@
       "id": 1173,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-09",
@@ -1115,9 +1340,12 @@
       "id": 1174,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-10",
@@ -1129,9 +1357,12 @@
       "id": 1175,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-11",
@@ -1143,9 +1374,12 @@
       "id": 1176,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-12",
@@ -1157,9 +1391,12 @@
       "id": 1177,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-13",
@@ -1171,9 +1408,12 @@
       "id": 1178,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-14",
@@ -1185,9 +1425,12 @@
       "id": 1179,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trail-system-15",
@@ -1199,9 +1442,12 @@
       "id": 1180,
       "vertical_id": "outdoors-nature",
       "vertical_slug": "outdoors-nature",
-      "site_url": "https://trail-system-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -19,9 +19,12 @@
       "id": 530,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-vintage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coin-collection",
@@ -34,9 +37,12 @@
       "id": 531,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://coin-collection.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stamp-collecting",
@@ -49,9 +55,12 @@
       "id": 532,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://stamp-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "comic-books",
@@ -64,9 +73,12 @@
       "id": 533,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://comic-books.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trading-cards",
@@ -79,9 +91,12 @@
       "id": 534,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://trading-cards.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "action-figures",
@@ -94,9 +109,12 @@
       "id": 535,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://action-figures.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-toys",
@@ -109,9 +127,12 @@
       "id": 536,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-toys.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "antique-furniture",
@@ -124,9 +145,12 @@
       "id": 537,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://antique-furniture.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "watch-collection",
@@ -139,9 +163,12 @@
       "id": 538,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://watch-collection.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jewelry-gems",
@@ -154,9 +181,12 @@
       "id": 539,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://jewelry-gems.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "art-auctions",
@@ -169,9 +199,12 @@
       "id": 540,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://art-auctions.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photography-art",
@@ -184,9 +217,12 @@
       "id": 541,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://photography-art.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fountain-pens",
@@ -199,9 +235,12 @@
       "id": 542,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://fountain-pens.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sneakers-collect",
@@ -214,9 +253,12 @@
       "id": 543,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://sneakers-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "militaria-history",
@@ -229,9 +271,12 @@
       "id": 544,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://militaria-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-collecting",
@@ -244,9 +289,12 @@
       "id": 545,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://book-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "movie-memorabilia",
@@ -259,9 +307,12 @@
       "id": 546,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://movie-memorabilia.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "autograph-collection",
@@ -274,9 +325,12 @@
       "id": 547,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://autograph-collection.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "model-trains",
@@ -289,9 +343,12 @@
       "id": 548,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://model-trains.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pottery-ceramics",
@@ -304,9 +361,12 @@
       "id": 549,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://pottery-ceramics.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-camera-collect",
@@ -319,9 +379,12 @@
       "id": 550,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-camera-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vinyl-toys",
@@ -334,9 +397,12 @@
       "id": 551,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vinyl-toys.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lego-collecting",
@@ -349,9 +415,12 @@
       "id": 552,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://lego-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "diecast-models",
@@ -364,9 +433,12 @@
       "id": 553,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://diecast-models.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "antique-glass",
@@ -379,9 +451,12 @@
       "id": 554,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://antique-glass.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-clothing-collect",
@@ -394,9 +469,12 @@
       "id": 555,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-clothing-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "memorabilia-auth",
@@ -409,9 +487,12 @@
       "id": 556,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://memorabilia-auth.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "auction-house-guide",
@@ -424,9 +505,12 @@
       "id": 557,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://auction-house-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "estate-sales",
@@ -439,9 +523,12 @@
       "id": 558,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://estate-sales.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "flea-market",
@@ -454,9 +541,12 @@
       "id": 559,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://flea-market.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pawn-value-guide",
@@ -469,9 +559,12 @@
       "id": 560,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://pawn-value-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collectibles-insurance",
@@ -484,9 +577,12 @@
       "id": 561,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-insurance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collectibles-appraisal",
@@ -499,9 +595,12 @@
       "id": 562,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-appraisal.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collector-clubs-hub",
@@ -514,9 +613,12 @@
       "id": 563,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collector-clubs-hub.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collectibles-invest",
@@ -529,9 +631,12 @@
       "id": 564,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-invest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nft-collectibles",
@@ -544,9 +649,12 @@
       "id": 565,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://nft-collectibles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trading-pin-collect",
@@ -559,9 +667,12 @@
       "id": 566,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://trading-pin-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "disney-collectibles",
@@ -574,9 +685,12 @@
       "id": 567,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://disney-collectibles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pop-culture-memorabilia",
@@ -589,9 +703,12 @@
       "id": 568,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://pop-culture-memorabilia.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "convention-collectibles",
@@ -604,9 +721,12 @@
       "id": 569,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://convention-collectibles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "graded-cards",
@@ -619,9 +739,12 @@
       "id": 570,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://graded-cards.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tcg-pokemon",
@@ -634,9 +757,12 @@
       "id": 571,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://tcg-pokemon.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tcg-magic",
@@ -649,9 +775,12 @@
       "id": 572,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://tcg-magic.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tcg-yugioh",
@@ -664,9 +793,12 @@
       "id": 573,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://tcg-yugioh.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "retro-gaming-collect",
@@ -679,9 +811,12 @@
       "id": 574,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://retro-gaming-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "arcade-cabinets",
@@ -694,9 +829,12 @@
       "id": 575,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://arcade-cabinets.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pinball-machines",
@@ -709,9 +847,12 @@
       "id": 576,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://pinball-machines.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-radio",
@@ -724,9 +865,12 @@
       "id": 577,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-radio.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "antique-tools",
@@ -739,9 +883,12 @@
       "id": 578,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://antique-tools.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "military-medals",
@@ -754,9 +901,12 @@
       "id": 579,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://military-medals.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-advertising",
@@ -769,9 +919,12 @@
       "id": 580,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-advertising.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "matchbook-collecting",
@@ -784,9 +937,12 @@
       "id": 581,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://matchbook-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "postcard-collecting",
@@ -799,9 +955,12 @@
       "id": 582,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://postcard-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-postcards",
@@ -814,9 +973,12 @@
       "id": 583,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://travel-postcards.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "map-collecting",
@@ -829,9 +991,12 @@
       "id": 584,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://map-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "globe-collecting",
@@ -844,9 +1009,12 @@
       "id": 585,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://globe-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "taxidermy-collect",
@@ -859,9 +1027,12 @@
       "id": 586,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://taxidermy-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "shell-collecting",
@@ -874,9 +1045,12 @@
       "id": 587,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://shell-collecting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mineral-gems-collect",
@@ -889,9 +1063,12 @@
       "id": 588,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://mineral-gems-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vintage-tech-collect",
@@ -904,9 +1081,12 @@
       "id": 589,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://vintage-tech-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "typewriter-collect",
@@ -919,9 +1099,12 @@
       "id": 590,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://typewriter-collect.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sewing-vintage",
@@ -934,9 +1117,12 @@
       "id": 591,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://sewing-vintage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collectibles-restoration",
@@ -949,9 +1135,12 @@
       "id": 592,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-restoration.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "provenance-tracking",
@@ -964,9 +1153,12 @@
       "id": 593,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://provenance-tracking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collector-insurance-claims",
@@ -979,9 +1171,12 @@
       "id": 594,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collector-insurance-claims.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collectibles-photography",
@@ -994,9 +1189,12 @@
       "id": 595,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collectibles-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ebay-selling",
@@ -1009,9 +1207,12 @@
       "id": 596,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://ebay-selling.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "heritage-auctions",
@@ -1024,9 +1225,12 @@
       "id": 597,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://heritage-auctions.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sothebys-tracker",
@@ -1039,9 +1243,12 @@
       "id": 598,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://sothebys-tracker.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-antique-dealers",
@@ -1054,9 +1261,12 @@
       "id": 599,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://local-antique-dealers.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "collector-expert-badges",
@@ -1069,9 +1279,12 @@
       "id": 600,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://collector-expert-badges.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cross-collect-hub",
@@ -1085,9 +1298,12 @@
       "id": 601,
       "vertical_id": "collectibles",
       "vertical_slug": "collectibles",
-      "site_url": "https://cross-collect-hub.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -12,8 +12,11 @@
 | **Total Apps** | 1,961 |
 | **Verticals** | 26 |
 | **Mega Verticals** | Books, Music, Film, TV |
-| **Standalone Sites** | One per app (`{slug}.foundryos.app`) |
-| **Admin** | `admin.foundryos.app` manages all |
+| **Public Sites** | Vertical domains (`books.foundryos.com`) — topics are paths |
+| **Admin** | `admin.foundryos.com` manages all |
+| **Mission Control** | `foundryos.com` — living HQ, not a brochure |
+
+> **Course correction (PASS-001):** 1,961 topics ≠ 1,961 websites. See [COURSE_CORRECTION.md](./COURSE_CORRECTION.md)
 
 ---
 

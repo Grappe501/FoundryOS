@@ -19,9 +19,12 @@
       "id": 728,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://vinyl-records.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/vinyl-records",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jazz-masters",
@@ -34,9 +37,12 @@
       "id": 729,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://jazz-masters.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/jazz-masters",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "blues-authority",
@@ -49,9 +55,12 @@
       "id": 730,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://blues-authority.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/blues-authority",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rock-legends",
@@ -64,9 +73,12 @@
       "id": 731,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://rock-legends.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/rock-legends",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "classical-music",
@@ -79,9 +91,12 @@
       "id": 732,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://classical-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/classical-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hip-hop-culture",
@@ -94,9 +109,12 @@
       "id": 733,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://hip-hop-culture.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/hip-hop-culture",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-music",
@@ -109,9 +127,12 @@
       "id": 734,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://country-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/country-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bluegrass-tradition",
@@ -124,9 +145,12 @@
       "id": 735,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://bluegrass-tradition.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/bluegrass-tradition",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "electronic-music",
@@ -139,9 +163,12 @@
       "id": 736,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://electronic-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/electronic-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-production",
@@ -154,9 +181,12 @@
       "id": 737,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-production.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-production",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "guitar-mastery",
@@ -169,9 +199,12 @@
       "id": 738,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://guitar-mastery.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/guitar-mastery",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "piano-repertoire",
@@ -184,9 +217,12 @@
       "id": 739,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://piano-repertoire.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/piano-repertoire",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "drum-percussion",
@@ -199,9 +235,12 @@
       "id": 740,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://drum-percussion.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/drum-percussion",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "concert-guide",
@@ -214,9 +253,12 @@
       "id": 741,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://concert-guide.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/concert-guide",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-festivals",
@@ -229,9 +271,12 @@
       "id": 742,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-festivals.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-festivals",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "opera-collection",
@@ -244,9 +289,12 @@
       "id": 743,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://opera-collection.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/opera-collection",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "folk-americana",
@@ -259,9 +307,12 @@
       "id": 744,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://folk-americana.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/folk-americana",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "world-music",
@@ -274,9 +325,12 @@
       "id": 745,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://world-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/world-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "audio-equipment",
@@ -289,9 +343,12 @@
       "id": 746,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://audio-equipment.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/audio-equipment",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "podcast-creator",
@@ -304,9 +361,12 @@
       "id": 747,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://podcast-creator.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/podcast-creator",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "r-and-b-soul",
@@ -319,9 +379,12 @@
       "id": 748,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://r-and-b-soul.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/r-and-b-soul",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "funk-music",
@@ -334,9 +397,12 @@
       "id": 749,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://funk-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/funk-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "reggae-music",
@@ -349,9 +415,12 @@
       "id": 750,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://reggae-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/reggae-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "latin-music",
@@ -364,9 +433,12 @@
       "id": 751,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://latin-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/latin-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "salsa-music",
@@ -379,9 +451,12 @@
       "id": 752,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://salsa-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/salsa-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "afrobeat-music",
@@ -394,9 +469,12 @@
       "id": 753,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://afrobeat-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/afrobeat-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kpop-music",
@@ -409,9 +487,12 @@
       "id": 754,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://kpop-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/kpop-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jpop-music",
@@ -424,9 +505,12 @@
       "id": 755,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://jpop-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/jpop-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bollywood-music",
@@ -439,9 +523,12 @@
       "id": 756,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://bollywood-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/bollywood-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "celtic-music",
@@ -454,9 +541,12 @@
       "id": 757,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://celtic-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/celtic-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "metal-music",
@@ -469,9 +559,12 @@
       "id": 758,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://metal-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/metal-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "punk-music",
@@ -484,9 +577,12 @@
       "id": 759,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://punk-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/punk-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indie-music",
@@ -499,9 +595,12 @@
       "id": 760,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://indie-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/indie-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "grunge-music",
@@ -514,9 +613,12 @@
       "id": 761,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://grunge-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/grunge-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "prog-rock",
@@ -529,9 +631,12 @@
       "id": 762,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://prog-rock.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/prog-rock",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "psychedelic-music",
@@ -544,9 +649,12 @@
       "id": 763,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://psychedelic-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/psychedelic-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "synthwave-music",
@@ -559,9 +667,12 @@
       "id": 764,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://synthwave-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/synthwave-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ambient-music",
@@ -574,9 +685,12 @@
       "id": 765,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://ambient-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/ambient-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "techno-music",
@@ -589,9 +703,12 @@
       "id": 766,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://techno-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/techno-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "house-music",
@@ -604,9 +721,12 @@
       "id": 767,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://house-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/house-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dance-music",
@@ -619,9 +739,12 @@
       "id": 768,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://dance-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/dance-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trance-music",
@@ -634,9 +757,12 @@
       "id": 769,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://trance-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/trance-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dubstep-music",
@@ -649,9 +775,12 @@
       "id": 770,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://dubstep-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/dubstep-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lofi-music",
@@ -664,9 +793,12 @@
       "id": 771,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://lofi-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/lofi-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soundtrack-music",
@@ -679,9 +811,12 @@
       "id": 772,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://soundtrack-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/soundtrack-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "film-scores",
@@ -694,9 +829,12 @@
       "id": 773,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://film-scores.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/film-scores",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gaming-soundtracks",
@@ -709,9 +847,12 @@
       "id": 774,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://gaming-soundtracks.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/gaming-soundtracks",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bass-guitar",
@@ -724,9 +865,12 @@
       "id": 775,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://bass-guitar.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/bass-guitar",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "violin-strings",
@@ -739,9 +883,12 @@
       "id": 776,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://violin-strings.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/violin-strings",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "saxophone-jazz",
@@ -754,9 +901,12 @@
       "id": 777,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://saxophone-jazz.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/saxophone-jazz",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "trumpet-brass",
@@ -769,9 +919,12 @@
       "id": 778,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://trumpet-brass.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/trumpet-brass",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vocals-singing",
@@ -784,9 +937,12 @@
       "id": 779,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://vocals-singing.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/vocals-singing",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "songwriting",
@@ -799,9 +955,12 @@
       "id": 780,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://songwriting.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/songwriting",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-theory",
@@ -814,9 +973,12 @@
       "id": 781,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-theory.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-theory",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ear-training",
@@ -829,9 +991,12 @@
       "id": 782,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://ear-training.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/ear-training",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-notation",
@@ -844,9 +1009,12 @@
       "id": 783,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-notation.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-notation",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "orchestration",
@@ -859,9 +1027,12 @@
       "id": 784,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://orchestration.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/orchestration",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "recording-studio",
@@ -874,9 +1045,12 @@
       "id": 785,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://recording-studio.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/recording-studio",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mixing-mastering",
@@ -889,9 +1063,12 @@
       "id": 786,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://mixing-mastering.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/mixing-mastering",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "live-sound",
@@ -904,9 +1081,12 @@
       "id": 787,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://live-sound.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/live-sound",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dj-culture",
@@ -919,9 +1099,12 @@
       "id": 788,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://dj-culture.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/dj-culture",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "turntablism",
@@ -934,9 +1117,12 @@
       "id": 789,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://turntablism.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/turntablism",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-1980s",
@@ -949,9 +1135,12 @@
       "id": 790,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-1980s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-1980s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-1990s",
@@ -964,9 +1153,12 @@
       "id": 791,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-1990s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-1990s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-2000s",
@@ -979,9 +1171,12 @@
       "id": 792,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-2000s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-2000s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-2010s",
@@ -994,9 +1189,12 @@
       "id": 793,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-2010s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-2010s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-2020s",
@@ -1009,9 +1207,12 @@
       "id": 794,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-2020s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-2020s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-1960s",
@@ -1024,9 +1225,12 @@
       "id": 795,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-1960s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-1960s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-1970s",
@@ -1039,9 +1243,12 @@
       "id": 796,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-1970s.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-1970s",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "disco-music",
@@ -1054,9 +1261,12 @@
       "id": 797,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://disco-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/disco-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "motown-music",
@@ -1069,9 +1279,12 @@
       "id": 798,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://motown-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/motown-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "british-invasion",
@@ -1084,9 +1297,12 @@
       "id": 799,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://british-invasion.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/british-invasion",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "american-primitives",
@@ -1099,9 +1315,12 @@
       "id": 800,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://american-primitives.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/american-primitives",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "delta-blues",
@@ -1114,9 +1333,12 @@
       "id": 801,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://delta-blues.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/delta-blues",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chicago-blues",
@@ -1129,9 +1351,12 @@
       "id": 802,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://chicago-blues.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/chicago-blues",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bebop-jazz",
@@ -1144,9 +1369,12 @@
       "id": 803,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://bebop-jazz.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/bebop-jazz",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cool-jazz",
@@ -1159,9 +1387,12 @@
       "id": 804,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://cool-jazz.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/cool-jazz",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "free-jazz",
@@ -1174,9 +1405,12 @@
       "id": 805,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://free-jazz.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/free-jazz",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "baroque-music",
@@ -1189,9 +1423,12 @@
       "id": 806,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://baroque-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/baroque-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "romantic-music",
@@ -1204,9 +1441,12 @@
       "id": 807,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://romantic-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/romantic-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "modern-classical",
@@ -1219,9 +1459,12 @@
       "id": 808,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://modern-classical.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/modern-classical",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "choral-music",
@@ -1234,9 +1477,12 @@
       "id": 809,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://choral-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/choral-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chamber-music",
@@ -1249,9 +1495,12 @@
       "id": 810,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://chamber-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/chamber-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "symphony-orchestra",
@@ -1264,9 +1513,12 @@
       "id": 811,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://symphony-orchestra.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/symphony-orchestra",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-box-sets",
@@ -1279,9 +1531,12 @@
       "id": 812,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-box-sets.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-box-sets",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rare-records",
@@ -1294,9 +1549,12 @@
       "id": 813,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://rare-records.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/rare-records",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cassette-tapes",
@@ -1309,9 +1567,12 @@
       "id": 814,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://cassette-tapes.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/cassette-tapes",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cd-collection",
@@ -1324,9 +1585,12 @@
       "id": 815,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://cd-collection.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/cd-collection",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-music",
@@ -1339,9 +1603,12 @@
       "id": 816,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://streaming-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/streaming-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "playlist-curation",
@@ -1354,9 +1621,12 @@
       "id": 817,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://playlist-curation.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/playlist-curation",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-awards",
@@ -1369,9 +1639,12 @@
       "id": 818,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-awards.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-awards",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "grammy-guide",
@@ -1384,9 +1657,12 @@
       "id": 819,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://grammy-guide.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/grammy-guide",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-biographies",
@@ -1399,9 +1675,12 @@
       "id": 820,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-biographies.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-biographies",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "band-tributes",
@@ -1414,9 +1693,12 @@
       "id": 821,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://band-tributes.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/band-tributes",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "open-mic",
@@ -1429,9 +1711,12 @@
       "id": 822,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://open-mic.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/open-mic",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-venues",
@@ -1444,9 +1729,12 @@
       "id": 823,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-venues.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-venues",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "record-stores",
@@ -1459,9 +1747,12 @@
       "id": 824,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://record-stores.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/record-stores",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-gear-reviews",
@@ -1474,9 +1765,12 @@
       "id": 825,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-gear-reviews.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-gear-reviews",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pedalboards",
@@ -1489,9 +1783,12 @@
       "id": 826,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://pedalboards.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/pedalboards",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "synthesizers",
@@ -1504,9 +1801,12 @@
       "id": 827,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://synthesizers.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/synthesizers",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "drum-machines",
@@ -1519,9 +1819,12 @@
       "id": 828,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://drum-machines.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/drum-machines",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sample-libraries",
@@ -1534,9 +1837,12 @@
       "id": 829,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://sample-libraries.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/sample-libraries",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-licensing",
@@ -1549,9 +1855,12 @@
       "id": 830,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-licensing.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-licensing",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-business",
@@ -1564,9 +1873,12 @@
       "id": 831,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-business.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-business",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-education",
@@ -1579,9 +1891,12 @@
       "id": 832,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-education.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-education",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-therapy",
@@ -1594,9 +1909,12 @@
       "id": 833,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-therapy.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-therapy",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "children-music",
@@ -1609,9 +1927,12 @@
       "id": 834,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://children-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/children-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "lullabies-music",
@@ -1624,9 +1945,12 @@
       "id": 835,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://lullabies-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/lullabies-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "worship-music",
@@ -1639,9 +1963,12 @@
       "id": 836,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://worship-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/worship-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gospel-music",
@@ -1654,9 +1981,12 @@
       "id": 837,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://gospel-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/gospel-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "marching-bands",
@@ -1669,9 +1999,12 @@
       "id": 838,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://marching-bands.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/marching-bands",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mariachi-music",
@@ -1684,9 +2017,12 @@
       "id": 839,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://mariachi-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/mariachi-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "flamenco-music",
@@ -1699,9 +2035,12 @@
       "id": 840,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://flamenco-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/flamenco-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fado-music",
@@ -1714,9 +2053,12 @@
       "id": 841,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://fado-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/fado-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "klezmer-music",
@@ -1729,9 +2071,12 @@
       "id": 842,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://klezmer-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/klezmer-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "polka-music",
@@ -1744,9 +2089,12 @@
       "id": 843,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://polka-music.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/polka-music",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-museums",
@@ -1759,9 +2107,12 @@
       "id": 844,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-museums.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-museums",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-documentaries",
@@ -1774,9 +2125,12 @@
       "id": 845,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-documentaries.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-documentaries",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-podcasts",
@@ -1789,9 +2143,12 @@
       "id": 846,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-podcasts.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-podcasts",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-collector-clubs",
@@ -1804,9 +2161,12 @@
       "id": 847,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-collector-clubs.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-collector-clubs",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "album-reviews-network",
@@ -1819,9 +2179,12 @@
       "id": 848,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://album-reviews-network.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/album-reviews-network",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "concert-photography",
@@ -1834,9 +2197,12 @@
       "id": 849,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://concert-photography.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/concert-photography",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-memorabilia",
@@ -1849,9 +2215,12 @@
       "id": 850,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-memorabilia.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-memorabilia",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "setlist-archive",
@@ -1864,9 +2233,12 @@
       "id": 851,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://setlist-archive.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/setlist-archive",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-trivia",
@@ -1879,9 +2251,12 @@
       "id": 852,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-trivia.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-trivia",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "karaoke-guide",
@@ -1894,9 +2269,12 @@
       "id": 853,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://karaoke-guide.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/karaoke-guide",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "a-cappella",
@@ -1909,9 +2287,12 @@
       "id": 854,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://a-cappella.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/a-cappella",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "beatboxing",
@@ -1924,9 +2305,12 @@
       "id": 855,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://beatboxing.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/beatboxing",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-ai-tools",
@@ -1939,9 +2323,12 @@
       "id": 856,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-ai-tools.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-ai-tools",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spatial-audio",
@@ -1954,9 +2341,12 @@
       "id": 857,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://spatial-audio.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/spatial-audio",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hi-res-audio",
@@ -1969,9 +2359,12 @@
       "id": 858,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://hi-res-audio.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/hi-res-audio",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-for-cooking",
@@ -1984,9 +2377,12 @@
       "id": 859,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-for-cooking.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-for-cooking",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-for-workout",
@@ -1999,9 +2395,12 @@
       "id": 860,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-for-workout.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-for-workout",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-for-focus",
@@ -2014,9 +2413,12 @@
       "id": 861,
       "vertical_id": "music-audio",
       "vertical_slug": "music-audio",
-      "site_url": "https://music-for-focus.foundryos.app",
+      "vertical_domain": "music.foundryos.com",
+      "topic_url": "https://music.foundryos.com/music-for-focus",
+      "site_url": "https://music.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

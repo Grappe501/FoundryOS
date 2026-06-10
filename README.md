@@ -1,8 +1,8 @@
 # FoundryOS
 
-**AI Operating System for 1,000 Specialty Apps**
+**AI Operating System — Vertical Domains + Thousands of Topics**
 
-> One platform. One database. Swap the topic. AI builds the rest.
+> One platform. Vertical domains (books.foundryos.com). Topics as pages. SEO + Knowledge Graph built in.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Grappe501%2FFoundryOS-blue)](https://github.com/Grappe501/FoundryOS)
 

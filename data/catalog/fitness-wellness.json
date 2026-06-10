@@ -19,9 +19,12 @@
       "id": 1181,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://fitness-training.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fitness-nutrition",
@@ -34,9 +37,12 @@
       "id": 1182,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://fitness-nutrition.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "yoga-practice",
@@ -49,9 +55,12 @@
       "id": 1183,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://yoga-practice.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "meditation-mindful",
@@ -64,9 +73,12 @@
       "id": 1184,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://meditation-mindful.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wellness-recovery",
@@ -79,9 +91,12 @@
       "id": 1185,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://wellness-recovery.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "weightlifting",
@@ -94,9 +109,12 @@
       "id": 1186,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://weightlifting.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "crossfit-training",
@@ -109,9 +127,12 @@
       "id": 1187,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://crossfit-training.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "martial-arts",
@@ -124,9 +145,12 @@
       "id": 1188,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://martial-arts.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "swimming-diving",
@@ -139,9 +163,12 @@
       "id": 1189,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://swimming-diving.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pilates-core",
@@ -154,9 +181,12 @@
       "id": 1190,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://pilates-core.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-physio",
@@ -169,9 +199,12 @@
       "id": 1191,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://sports-physio.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sleep-optimization",
@@ -184,9 +217,12 @@
       "id": 1192,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://sleep-optimization.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "biohacking",
@@ -199,9 +235,12 @@
       "id": 1193,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://biohacking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sauna-cold",
@@ -214,9 +253,12 @@
       "id": 1194,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://sauna-cold.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "supplements-guide",
@@ -229,9 +271,12 @@
       "id": 1195,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://supplements-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "calisthenics",
@@ -244,9 +289,12 @@
       "id": 1196,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://calisthenics.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hiit-training",
@@ -259,9 +307,12 @@
       "id": 1197,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://hiit-training.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stretching-mobility",
@@ -274,9 +325,12 @@
       "id": 1198,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://stretching-mobility.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "breathwork",
@@ -289,9 +343,12 @@
       "id": 1199,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://breathwork.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mental-health-wellness",
@@ -304,9 +361,12 @@
       "id": 1200,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://mental-health-wellness.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "therapy-resources",
@@ -319,9 +379,12 @@
       "id": 1201,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://therapy-resources.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holistic-health",
@@ -334,9 +397,12 @@
       "id": 1202,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://holistic-health.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holistic-medicine",
@@ -349,9 +415,12 @@
       "id": 1203,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://holistic-medicine.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ayurveda-wellness",
@@ -364,9 +433,12 @@
       "id": 1204,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://ayurveda-wellness.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "acupuncture-guide",
@@ -379,9 +451,12 @@
       "id": 1205,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://acupuncture-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chiropractic-guide",
@@ -394,9 +469,12 @@
       "id": 1206,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://chiropractic-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "massage-therapy",
@@ -409,9 +487,12 @@
       "id": 1207,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://massage-therapy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spa-wellness",
@@ -424,9 +505,12 @@
       "id": 1208,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://spa-wellness.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "detox-programs",
@@ -439,9 +523,12 @@
       "id": 1209,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://detox-programs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fasting-guide",
@@ -454,9 +541,12 @@
       "id": 1210,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://fasting-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "macro-tracking",
@@ -469,9 +559,12 @@
       "id": 1211,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://macro-tracking.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "body-composition",
@@ -484,9 +577,12 @@
       "id": 1212,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://body-composition.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-gym-setup",
@@ -499,9 +595,12 @@
       "id": 1213,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://home-gym-setup.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gym-equipment",
@@ -514,9 +613,12 @@
       "id": 1214,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://gym-equipment.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "personal-trainer",
@@ -529,9 +631,12 @@
       "id": 1215,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://personal-trainer.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fitness-challenges",
@@ -544,9 +649,12 @@
       "id": 1216,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://fitness-challenges.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fitness-social-clubs",
@@ -559,9 +667,12 @@
       "id": 1217,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://fitness-social-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wellness-tier3-network",
@@ -574,9 +685,12 @@
       "id": 1218,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://wellness-tier3-network.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-01",
@@ -588,9 +702,12 @@
       "id": 1219,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-02",
@@ -602,9 +719,12 @@
       "id": 1220,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-03",
@@ -616,9 +736,12 @@
       "id": 1221,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-04",
@@ -630,9 +753,12 @@
       "id": 1222,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-05",
@@ -644,9 +770,12 @@
       "id": 1223,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-06",
@@ -658,9 +787,12 @@
       "id": 1224,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-07",
@@ -672,9 +804,12 @@
       "id": 1225,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-08",
@@ -686,9 +821,12 @@
       "id": 1226,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-09",
@@ -700,9 +838,12 @@
       "id": 1227,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-10",
@@ -714,9 +855,12 @@
       "id": 1228,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-11",
@@ -728,9 +872,12 @@
       "id": 1229,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "workout-program-12",
@@ -742,9 +889,12 @@
       "id": 1230,
       "vertical_id": "fitness-wellness",
       "vertical_slug": "fitness-wellness",
-      "site_url": "https://workout-program-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

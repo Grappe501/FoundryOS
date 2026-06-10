@@ -19,9 +19,12 @@
       "id": 1643,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-dogs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-cats",
@@ -34,9 +37,12 @@
       "id": 1644,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-cats.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-birds",
@@ -49,9 +55,12 @@
       "id": 1645,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-birds.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-fish",
@@ -64,9 +73,12 @@
       "id": 1646,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-fish.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-reptiles",
@@ -79,9 +91,12 @@
       "id": 1647,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-reptiles.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-small-mammals",
@@ -94,9 +109,12 @@
       "id": 1648,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-small-mammals.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "horse-care",
@@ -109,9 +127,12 @@
       "id": 1649,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://horse-care.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-training",
@@ -124,9 +145,12 @@
       "id": 1650,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-training.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-nutrition",
@@ -139,9 +163,12 @@
       "id": 1651,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-nutrition.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-grooming",
@@ -154,9 +181,12 @@
       "id": 1652,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-grooming.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-health",
@@ -169,9 +199,12 @@
       "id": 1653,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-health.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "veterinary-resources",
@@ -184,9 +217,12 @@
       "id": 1654,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://veterinary-resources.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-adoption",
@@ -199,9 +235,12 @@
       "id": 1655,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-adoption.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-insurance",
@@ -214,9 +253,12 @@
       "id": 1656,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-insurance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-parks",
@@ -229,9 +271,12 @@
       "id": 1657,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-parks.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-travel",
@@ -244,9 +289,12 @@
       "id": 1658,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-photography",
@@ -259,9 +307,12 @@
       "id": 1659,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-photography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-memorial",
@@ -274,9 +325,12 @@
       "id": 1660,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-memorial.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wildlife-rescue",
@@ -289,9 +343,12 @@
       "id": 1661,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://wildlife-rescue.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "animal-behavior",
@@ -304,9 +361,12 @@
       "id": 1662,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://animal-behavior.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pet-clubs",
@@ -319,9 +379,12 @@
       "id": 1663,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://pet-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-01",
@@ -333,9 +396,12 @@
       "id": 1664,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-02",
@@ -347,9 +413,12 @@
       "id": 1665,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-03",
@@ -361,9 +430,12 @@
       "id": 1666,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-04",
@@ -375,9 +447,12 @@
       "id": 1667,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-05",
@@ -389,9 +464,12 @@
       "id": 1668,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-06",
@@ -403,9 +481,12 @@
       "id": 1669,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-07",
@@ -417,9 +498,12 @@
       "id": 1670,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-08",
@@ -431,9 +515,12 @@
       "id": 1671,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-09",
@@ -445,9 +532,12 @@
       "id": 1672,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-10",
@@ -459,9 +549,12 @@
       "id": 1673,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-11",
@@ -473,9 +566,12 @@
       "id": 1674,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-12",
@@ -487,9 +583,12 @@
       "id": 1675,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-13",
@@ -501,9 +600,12 @@
       "id": 1676,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-14",
@@ -515,9 +617,12 @@
       "id": 1677,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-15",
@@ -529,9 +634,12 @@
       "id": 1678,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-16",
@@ -543,9 +651,12 @@
       "id": 1679,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-17",
@@ -557,9 +668,12 @@
       "id": 1680,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-18",
@@ -571,9 +685,12 @@
       "id": 1681,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-19",
@@ -585,9 +702,12 @@
       "id": 1682,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dog-breed-20",
@@ -599,9 +719,12 @@
       "id": 1683,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://dog-breed-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-01",
@@ -613,9 +736,12 @@
       "id": 1684,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-02",
@@ -627,9 +753,12 @@
       "id": 1685,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-03",
@@ -641,9 +770,12 @@
       "id": 1686,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-04",
@@ -655,9 +787,12 @@
       "id": 1687,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-05",
@@ -669,9 +804,12 @@
       "id": 1688,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-06",
@@ -683,9 +821,12 @@
       "id": 1689,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-07",
@@ -697,9 +838,12 @@
       "id": 1690,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-08",
@@ -711,9 +855,12 @@
       "id": 1691,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-09",
@@ -725,9 +872,12 @@
       "id": 1692,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-10",
@@ -739,9 +889,12 @@
       "id": 1693,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-11",
@@ -753,9 +906,12 @@
       "id": 1694,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-12",
@@ -767,9 +923,12 @@
       "id": 1695,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-13",
@@ -781,9 +940,12 @@
       "id": 1696,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-14",
@@ -795,9 +957,12 @@
       "id": 1697,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cat-breed-15",
@@ -809,9 +974,12 @@
       "id": 1698,
       "vertical_id": "pets-animals",
       "vertical_slug": "pets-animals",
-      "site_url": "https://cat-breed-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

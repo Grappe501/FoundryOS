@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/topic-registry",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Topic registry engine — 1,961 topics mapped to vertical domains",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

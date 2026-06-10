@@ -19,9 +19,12 @@
       "id": 1780,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://genealogy-family.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mythology-folklore",
@@ -34,9 +37,12 @@
       "id": 1781,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://mythology-folklore.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "ancient-history",
@@ -49,9 +55,12 @@
       "id": 1782,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://ancient-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "medieval-history",
@@ -64,9 +73,12 @@
       "id": 1783,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://medieval-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "renaissance-history",
@@ -79,9 +91,12 @@
       "id": 1784,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://renaissance-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "art-history",
@@ -94,9 +109,12 @@
       "id": 1785,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://art-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "military-history",
@@ -109,9 +127,12 @@
       "id": 1786,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://military-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "american-history",
@@ -124,9 +145,12 @@
       "id": 1787,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://american-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "european-history",
@@ -139,9 +163,12 @@
       "id": 1788,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://european-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "asian-history",
@@ -154,9 +181,12 @@
       "id": 1789,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://asian-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "african-history",
@@ -169,9 +199,12 @@
       "id": 1790,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://african-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "latin-history",
@@ -184,9 +217,12 @@
       "id": 1791,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://latin-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "indigenous-history",
@@ -199,9 +235,12 @@
       "id": 1792,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://indigenous-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "oral-history",
@@ -214,9 +253,12 @@
       "id": 1793,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://oral-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "museum-guide",
@@ -229,9 +271,12 @@
       "id": 1794,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://museum-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-heritage",
@@ -244,9 +289,12 @@
       "id": 1795,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-heritage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "unesco-sites",
@@ -259,9 +307,12 @@
       "id": 1796,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://unesco-sites.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "archaeology-guide",
@@ -274,9 +325,12 @@
       "id": 1797,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://archaeology-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "anthropology-culture",
@@ -289,9 +343,12 @@
       "id": 1798,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://anthropology-culture.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "folklore-festivals",
@@ -304,9 +361,12 @@
       "id": 1799,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://folklore-festivals.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "history-clubs",
@@ -319,9 +379,12 @@
       "id": 1800,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://history-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-01",
@@ -333,9 +396,12 @@
       "id": 1801,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-02",
@@ -347,9 +413,12 @@
       "id": 1802,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-03",
@@ -361,9 +430,12 @@
       "id": 1803,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-04",
@@ -375,9 +447,12 @@
       "id": 1804,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-05",
@@ -389,9 +464,12 @@
       "id": 1805,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-06",
@@ -403,9 +481,12 @@
       "id": 1806,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-07",
@@ -417,9 +498,12 @@
       "id": 1807,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-08",
@@ -431,9 +515,12 @@
       "id": 1808,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-09",
@@ -445,9 +532,12 @@
       "id": 1809,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-10",
@@ -459,9 +549,12 @@
       "id": 1810,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-11",
@@ -473,9 +566,12 @@
       "id": 1811,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-12",
@@ -487,9 +583,12 @@
       "id": 1812,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-13",
@@ -501,9 +600,12 @@
       "id": 1813,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-14",
@@ -515,9 +617,12 @@
       "id": 1814,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-era-15",
@@ -529,9 +634,12 @@
       "id": 1815,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://historical-era-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-01",
@@ -543,9 +651,12 @@
       "id": 1816,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-02",
@@ -557,9 +668,12 @@
       "id": 1817,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-03",
@@ -571,9 +685,12 @@
       "id": 1818,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-04",
@@ -585,9 +702,12 @@
       "id": 1819,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-05",
@@ -599,9 +719,12 @@
       "id": 1820,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-06",
@@ -613,9 +736,12 @@
       "id": 1821,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-07",
@@ -627,9 +753,12 @@
       "id": 1822,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-08",
@@ -641,9 +770,12 @@
       "id": 1823,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-09",
@@ -655,9 +787,12 @@
       "id": 1824,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-10",
@@ -669,9 +804,12 @@
       "id": 1825,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-11",
@@ -683,9 +821,12 @@
       "id": 1826,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cultural-tradition-12",
@@ -697,9 +838,12 @@
       "id": 1827,
       "vertical_id": "history-culture",
       "vertical_slug": "history-culture",
-      "site_url": "https://cultural-tradition-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -19,9 +19,12 @@
       "id": 978,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-streaming-hub.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-streaming-hub",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-drama",
@@ -34,9 +37,12 @@
       "id": 979,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-drama.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-drama",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-comedy",
@@ -49,9 +55,12 @@
       "id": 980,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-comedy.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-comedy",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-documentary",
@@ -64,9 +73,12 @@
       "id": 981,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-documentary.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-documentary",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-reality",
@@ -79,9 +91,12 @@
       "id": 982,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-reality.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-reality",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-competition",
@@ -94,9 +109,12 @@
       "id": 983,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-competition.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-competition",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-crime",
@@ -109,9 +127,12 @@
       "id": 984,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-crime.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-crime",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-scifi",
@@ -124,9 +145,12 @@
       "id": 985,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-scifi.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-scifi",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-fantasy",
@@ -139,9 +163,12 @@
       "id": 986,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-fantasy.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-fantasy",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-horror",
@@ -154,9 +181,12 @@
       "id": 987,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-horror.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-horror",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-animation",
@@ -169,9 +199,12 @@
       "id": 988,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-animation.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-animation",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-anime-series",
@@ -184,9 +217,12 @@
       "id": 989,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-anime-series.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-anime-series",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-british",
@@ -199,9 +235,12 @@
       "id": 990,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-british.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-british",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-korean-drama",
@@ -214,9 +253,12 @@
       "id": 991,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-korean-drama.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-korean-drama",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-limited-series",
@@ -229,9 +271,12 @@
       "id": 992,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-limited-series.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-limited-series",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "book-to-tv",
@@ -244,9 +289,12 @@
       "id": 993,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://book-to-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/book-to-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-sitcoms",
@@ -259,9 +307,12 @@
       "id": 994,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-sitcoms.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-sitcoms",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-late-night",
@@ -274,9 +325,12 @@
       "id": 995,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-late-night.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-late-night",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-talk-shows",
@@ -289,9 +343,12 @@
       "id": 996,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-talk-shows.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-talk-shows",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-news-analysis",
@@ -304,9 +361,12 @@
       "id": 997,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-news-analysis.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-news-analysis",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-sports-broadcast",
@@ -319,9 +379,12 @@
       "id": 998,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-sports-broadcast.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-sports-broadcast",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-netflix",
@@ -334,9 +397,12 @@
       "id": 999,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-netflix.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-netflix",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-hbo",
@@ -349,9 +415,12 @@
       "id": 1000,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-hbo.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-hbo",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-disney",
@@ -364,9 +433,12 @@
       "id": 1001,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-disney.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-disney",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-apple",
@@ -379,9 +451,12 @@
       "id": 1002,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-apple.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-apple",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-amazon",
@@ -394,9 +469,12 @@
       "id": 1003,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-amazon.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-amazon",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-hulu",
@@ -409,9 +487,12 @@
       "id": 1004,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-hulu.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-hulu",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-peacock",
@@ -424,9 +505,12 @@
       "id": 1005,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-peacock.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-peacock",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-paramount",
@@ -439,9 +523,12 @@
       "id": 1006,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-paramount.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-paramount",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cord-cutting",
@@ -454,9 +541,12 @@
       "id": 1007,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://cord-cutting.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/cord-cutting",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-binge-guide",
@@ -469,9 +559,12 @@
       "id": 1008,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-binge-guide.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-binge-guide",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-rewatch-clubs",
@@ -484,9 +577,12 @@
       "id": 1009,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-rewatch-clubs.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-rewatch-clubs",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-episode-tracker",
@@ -499,9 +595,12 @@
       "id": 1010,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-episode-tracker.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-episode-tracker",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-awards-emmys",
@@ -514,9 +613,12 @@
       "id": 1011,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-awards-emmys.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-awards-emmys",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-pilot-season",
@@ -529,9 +631,12 @@
       "id": 1012,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-pilot-season.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-pilot-season",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-showrunners",
@@ -544,9 +649,12 @@
       "id": 1013,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-showrunners.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-showrunners",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-writing-rooms",
@@ -559,9 +667,12 @@
       "id": 1014,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-writing-rooms.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-writing-rooms",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "true-crime-tv",
@@ -574,9 +685,12 @@
       "id": 1015,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://true-crime-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/true-crime-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cooking-tv",
@@ -589,9 +703,12 @@
       "id": 1016,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://cooking-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/cooking-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-tv",
@@ -604,9 +721,12 @@
       "id": 1017,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://travel-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/travel-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "nature-tv",
@@ -619,9 +739,12 @@
       "id": 1018,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://nature-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/nature-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-renovation-tv",
@@ -634,9 +757,12 @@
       "id": 1019,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://home-renovation-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/home-renovation-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fashion-tv",
@@ -649,9 +775,12 @@
       "id": 1020,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://fashion-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/fashion-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "music-tv",
@@ -664,9 +793,12 @@
       "id": 1021,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://music-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/music-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "game-show-tv",
@@ -679,9 +811,12 @@
       "id": 1022,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://game-show-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/game-show-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soap-operas",
@@ -694,9 +829,12 @@
       "id": 1023,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://soap-operas.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/soap-operas",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "telenovelas",
@@ -709,9 +847,12 @@
       "id": 1024,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://telenovelas.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/telenovelas",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-podcasts",
@@ -724,9 +865,12 @@
       "id": 1025,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-podcasts.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-podcasts",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-club-organizer",
@@ -739,9 +883,12 @@
       "id": 1026,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-club-organizer.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-club-organizer",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "kids-tv",
@@ -754,9 +901,12 @@
       "id": 1027,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://kids-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/kids-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "retro-tv",
@@ -769,9 +919,12 @@
       "id": 1028,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://retro-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/retro-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-theme-songs",
@@ -784,9 +937,12 @@
       "id": 1029,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-theme-songs.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-theme-songs",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-locations-tours",
@@ -799,9 +955,12 @@
       "id": 1030,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-locations-tours.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-locations-tours",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-deals",
@@ -814,9 +973,12 @@
       "id": 1031,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-deals.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-deals",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "international-streaming",
@@ -829,9 +991,12 @@
       "id": 1032,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://international-streaming.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/international-streaming",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-foreign",
@@ -844,9 +1009,12 @@
       "id": 1033,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-foreign.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-foreign",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-miniseries",
@@ -859,9 +1027,12 @@
       "id": 1034,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-miniseries.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-miniseries",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-anthology",
@@ -874,9 +1045,12 @@
       "id": 1035,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-anthology.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-anthology",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-universe-mcu",
@@ -889,9 +1063,12 @@
       "id": 1036,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-universe-mcu.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-universe-mcu",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-star-trek",
@@ -904,9 +1081,12 @@
       "id": 1037,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-star-trek.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-star-trek",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-star-wars",
@@ -919,9 +1099,12 @@
       "id": 1038,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-star-wars.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-star-wars",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-collector-clubs",
@@ -934,9 +1117,12 @@
       "id": 1039,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-collector-clubs.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-collector-clubs",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-quotes-memes",
@@ -949,9 +1135,12 @@
       "id": 1040,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-quotes-memes.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-quotes-memes",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "saturday-night-tv",
@@ -964,9 +1153,12 @@
       "id": 1041,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://saturday-night-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/saturday-night-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holiday-tv",
@@ -979,9 +1171,12 @@
       "id": 1042,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://holiday-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/holiday-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sports-streaming",
@@ -994,9 +1189,12 @@
       "id": 1043,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://sports-streaming.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/sports-streaming",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "live-tv-events",
@@ -1009,9 +1207,12 @@
       "id": 1044,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://live-tv-events.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/live-tv-events",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-ai-recommendations",
@@ -1024,9 +1225,12 @@
       "id": 1045,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-ai-recommendations.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-ai-recommendations",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-parental-guide",
@@ -1039,9 +1243,12 @@
       "id": 1046,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-parental-guide.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-parental-guide",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-accessibility",
@@ -1054,9 +1261,12 @@
       "id": 1047,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-accessibility.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-accessibility",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-subtitle-culture",
@@ -1069,9 +1279,12 @@
       "id": 1048,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-subtitle-culture.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-subtitle-culture",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-production-bts",
@@ -1084,9 +1297,12 @@
       "id": 1049,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-production-bts.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-production-bts",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "unscripted-tv",
@@ -1099,9 +1315,12 @@
       "id": 1050,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://unscripted-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/unscripted-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dating-tv",
@@ -1114,9 +1333,12 @@
       "id": 1051,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://dating-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/dating-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "survival-tv",
@@ -1129,9 +1351,12 @@
       "id": 1052,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://survival-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/survival-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "paranormal-tv",
@@ -1144,9 +1369,12 @@
       "id": 1053,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://paranormal-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/paranormal-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "medical-tv",
@@ -1159,9 +1387,12 @@
       "id": 1054,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://medical-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/medical-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "legal-tv",
@@ -1174,9 +1405,12 @@
       "id": 1055,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://legal-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/legal-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "political-tv",
@@ -1189,9 +1423,12 @@
       "id": 1056,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://political-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/political-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "period-tv",
@@ -1204,9 +1441,12 @@
       "id": 1057,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://period-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/period-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "western-tv",
@@ -1219,9 +1459,12 @@
       "id": 1058,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://western-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/western-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mystery-tv",
@@ -1234,9 +1477,12 @@
       "id": 1059,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://mystery-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/mystery-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "supernatural-tv",
@@ -1249,9 +1495,12 @@
       "id": 1060,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://supernatural-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/supernatural-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-spinoffs",
@@ -1264,9 +1513,12 @@
       "id": 1061,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-spinoffs.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-spinoffs",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cancelled-tv",
@@ -1279,9 +1531,12 @@
       "id": 1062,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://cancelled-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/cancelled-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-reboots",
@@ -1294,9 +1549,12 @@
       "id": 1063,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-reboots.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-reboots",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "short-form-tv",
@@ -1309,9 +1567,12 @@
       "id": 1064,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://short-form-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/short-form-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "youtube-series",
@@ -1324,9 +1585,12 @@
       "id": 1065,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://youtube-series.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/youtube-series",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-watch-parties",
@@ -1339,9 +1603,12 @@
       "id": 1066,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-watch-parties.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-watch-parties",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-gift-guide",
@@ -1354,9 +1621,12 @@
       "id": 1067,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-gift-guide.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-gift-guide",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-ratings-tracker",
@@ -1369,9 +1639,12 @@
       "id": 1068,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-ratings-tracker.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-ratings-tracker",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-season-premieres",
@@ -1384,9 +1657,12 @@
       "id": 1069,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-season-premieres.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-season-premieres",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-finale-guide",
@@ -1399,9 +1675,12 @@
       "id": 1070,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-finale-guide.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-finale-guide",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-soundtrack-playlists",
@@ -1414,9 +1693,12 @@
       "id": 1071,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-soundtrack-playlists.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-soundtrack-playlists",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "reality-tv-strategy",
@@ -1429,9 +1711,12 @@
       "id": 1072,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://reality-tv-strategy.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/reality-tv-strategy",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-investing",
@@ -1444,9 +1729,12 @@
       "id": 1073,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-investing.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-investing",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-tech",
@@ -1459,9 +1747,12 @@
       "id": 1074,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-tech.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-tech",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-collectibles",
@@ -1474,9 +1765,12 @@
       "id": 1075,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-collectibles.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-collectibles",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-script-library",
@@ -1489,9 +1783,12 @@
       "id": 1076,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-script-library.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-script-library",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "daytime-tv",
@@ -1504,9 +1801,12 @@
       "id": 1077,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://daytime-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/daytime-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "public-tv",
@@ -1519,9 +1819,12 @@
       "id": 1078,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://public-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/public-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "local-tv",
@@ -1534,9 +1837,12 @@
       "id": 1079,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://local-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/local-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-archive",
@@ -1549,9 +1855,12 @@
       "id": 1080,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-archive.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-archive",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "global-streaming-originals",
@@ -1564,9 +1873,12 @@
       "id": 1081,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://global-streaming-originals.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/global-streaming-originals",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-crossover-events",
@@ -1579,9 +1891,12 @@
       "id": 1082,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-crossover-events.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-crossover-events",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "binge-calculator",
@@ -1594,9 +1909,12 @@
       "id": 1083,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://binge-calculator.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/binge-calculator",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-meal-pairing",
@@ -1609,9 +1927,12 @@
       "id": 1084,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-meal-pairing.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-meal-pairing",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "comfort-tv",
@@ -1624,9 +1945,12 @@
       "id": 1085,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://comfort-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/comfort-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "prestige-tv",
@@ -1639,9 +1963,12 @@
       "id": 1086,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://prestige-tv.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/prestige-tv",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-critic-network",
@@ -1654,9 +1981,12 @@
       "id": 1087,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-critic-network.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-critic-network",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "streaming-bundle-guide",
@@ -1669,9 +1999,12 @@
       "id": 1088,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://streaming-bundle-guide.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/streaming-bundle-guide",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-ai-recaps",
@@ -1684,9 +2017,12 @@
       "id": 1089,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-ai-recaps.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-ai-recaps",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-franchise-timeline",
@@ -1699,9 +2035,12 @@
       "id": 1090,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-franchise-timeline.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-franchise-timeline",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-live-sports",
@@ -1714,9 +2053,12 @@
       "id": 1091,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-live-sports.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-live-sports",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-genre-matrix",
@@ -1729,9 +2071,12 @@
       "id": 1092,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-genre-matrix.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-genre-matrix",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-for-couples",
@@ -1744,9 +2089,12 @@
       "id": 1093,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-for-couples.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-for-couples",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-romance",
@@ -1759,9 +2107,12 @@
       "id": 1094,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-romance.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-romance",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-workplace",
@@ -1774,9 +2125,12 @@
       "id": 1095,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-workplace.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-workplace",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-friend-groups",
@@ -1789,9 +2143,12 @@
       "id": 1096,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-friend-groups.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-friend-groups",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-expert-badges",
@@ -1804,9 +2161,12 @@
       "id": 1097,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-expert-badges.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-expert-badges",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tv-tier-clubs",
@@ -1819,9 +2179,12 @@
       "id": 1098,
       "vertical_id": "tv-streaming",
       "vertical_slug": "tv-streaming",
-      "site_url": "https://tv-tier-clubs.foundryos.app",
+      "vertical_domain": "tv.foundryos.com",
+      "topic_url": "https://tv.foundryos.com/tv-tier-clubs",
+      "site_url": "https://tv.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

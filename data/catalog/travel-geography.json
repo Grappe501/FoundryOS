@@ -19,9 +19,12 @@
       "id": 1231,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://world-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "coastal-travel",
@@ -34,9 +37,12 @@
       "id": 1232,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://coastal-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mountain-travel",
@@ -49,9 +55,12 @@
       "id": 1233,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://mountain-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-guides",
@@ -64,9 +73,12 @@
       "id": 1234,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-guides.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-country-tours",
@@ -79,9 +91,12 @@
       "id": 1235,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://wine-country-tours.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "whiskey-trail-tours",
@@ -94,9 +109,12 @@
       "id": 1236,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://whiskey-trail-tours.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "european-travel",
@@ -109,9 +127,12 @@
       "id": 1237,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://european-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "asian-travel",
@@ -124,9 +145,12 @@
       "id": 1238,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://asian-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "latin-america-travel",
@@ -139,9 +163,12 @@
       "id": 1239,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://latin-america-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "african-safari",
@@ -154,9 +181,12 @@
       "id": 1240,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://african-safari.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "island-escapes",
@@ -169,9 +199,12 @@
       "id": 1241,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://island-escapes.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "road-trip-america",
@@ -184,9 +217,12 @@
       "id": 1242,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://road-trip-america.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "train-travel",
@@ -199,9 +235,12 @@
       "id": 1243,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://train-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cruise-guide",
@@ -214,9 +253,12 @@
       "id": 1244,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://cruise-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "adventure-travel",
@@ -229,9 +271,12 @@
       "id": 1245,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://adventure-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "budget-travel",
@@ -244,9 +289,12 @@
       "id": 1246,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://budget-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "luxury-travel",
@@ -259,9 +307,12 @@
       "id": 1247,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://luxury-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "historical-sites",
@@ -274,9 +325,12 @@
       "id": 1248,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://historical-sites.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "photography-travel",
@@ -289,9 +343,12 @@
       "id": 1249,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://photography-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "digital-nomad",
@@ -304,9 +361,12 @@
       "id": 1250,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://digital-nomad.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "passport-visa",
@@ -319,9 +379,12 @@
       "id": 1251,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://passport-visa.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-points",
@@ -334,9 +397,12 @@
       "id": 1252,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-points.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "airline-reviews",
@@ -349,9 +415,12 @@
       "id": 1253,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://airline-reviews.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hotel-reviews",
@@ -364,9 +433,12 @@
       "id": 1254,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://hotel-reviews.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "airbnb-guide",
@@ -379,9 +451,12 @@
       "id": 1255,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://airbnb-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "solo-travel",
@@ -394,9 +469,12 @@
       "id": 1256,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://solo-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "family-travel",
@@ -409,9 +487,12 @@
       "id": 1257,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://family-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "theme-park-travel",
@@ -424,9 +505,12 @@
       "id": 1258,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://theme-park-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "honeymoon-travel",
@@ -439,9 +523,12 @@
       "id": 1259,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://honeymoon-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "weekend-getaways",
@@ -454,9 +541,12 @@
       "id": 1260,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://weekend-getaways.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "national-park-travel",
@@ -469,9 +559,12 @@
       "id": 1261,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://national-park-travel.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-safety",
@@ -484,9 +577,12 @@
       "id": 1262,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-safety.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-insurance",
@@ -499,9 +595,12 @@
       "id": 1263,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-insurance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-packing",
@@ -514,9 +613,12 @@
       "id": 1264,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-packing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-journal",
@@ -529,9 +631,12 @@
       "id": 1265,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-journal.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "travel-clubs",
@@ -544,9 +649,12 @@
       "id": 1266,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://travel-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-01",
@@ -558,9 +666,12 @@
       "id": 1267,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-02",
@@ -572,9 +683,12 @@
       "id": 1268,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-03",
@@ -586,9 +700,12 @@
       "id": 1269,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-04",
@@ -600,9 +717,12 @@
       "id": 1270,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-05",
@@ -614,9 +734,12 @@
       "id": 1271,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-06",
@@ -628,9 +751,12 @@
       "id": 1272,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-07",
@@ -642,9 +768,12 @@
       "id": 1273,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-08",
@@ -656,9 +785,12 @@
       "id": 1274,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-09",
@@ -670,9 +802,12 @@
       "id": 1275,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-10",
@@ -684,9 +819,12 @@
       "id": 1276,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-11",
@@ -698,9 +836,12 @@
       "id": 1277,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-12",
@@ -712,9 +853,12 @@
       "id": 1278,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-13",
@@ -726,9 +870,12 @@
       "id": 1279,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-14",
@@ -740,9 +887,12 @@
       "id": 1280,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-15",
@@ -754,9 +904,12 @@
       "id": 1281,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-16",
@@ -768,9 +921,12 @@
       "id": 1282,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-17",
@@ -782,9 +938,12 @@
       "id": 1283,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-18",
@@ -796,9 +955,12 @@
       "id": 1284,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-19",
@@ -810,9 +972,12 @@
       "id": 1285,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-20",
@@ -824,9 +989,12 @@
       "id": 1286,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-21",
@@ -838,9 +1006,12 @@
       "id": 1287,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-21.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-22",
@@ -852,9 +1023,12 @@
       "id": 1288,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-22.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-23",
@@ -866,9 +1040,12 @@
       "id": 1289,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-23.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-24",
@@ -880,9 +1057,12 @@
       "id": 1290,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-24.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-25",
@@ -894,9 +1074,12 @@
       "id": 1291,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-25.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-26",
@@ -908,9 +1091,12 @@
       "id": 1292,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-26.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-27",
@@ -922,9 +1108,12 @@
       "id": 1293,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-27.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-28",
@@ -936,9 +1125,12 @@
       "id": 1294,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-28.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-29",
@@ -950,9 +1142,12 @@
       "id": 1295,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-29.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "country-guide-30",
@@ -964,9 +1159,12 @@
       "id": 1296,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://country-guide-30.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-01",
@@ -978,9 +1176,12 @@
       "id": 1297,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-02",
@@ -992,9 +1193,12 @@
       "id": 1298,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-03",
@@ -1006,9 +1210,12 @@
       "id": 1299,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-04",
@@ -1020,9 +1227,12 @@
       "id": 1300,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-05",
@@ -1034,9 +1244,12 @@
       "id": 1301,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-06",
@@ -1048,9 +1261,12 @@
       "id": 1302,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-07",
@@ -1062,9 +1278,12 @@
       "id": 1303,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-08",
@@ -1076,9 +1295,12 @@
       "id": 1304,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-09",
@@ -1090,9 +1312,12 @@
       "id": 1305,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-10",
@@ -1104,9 +1329,12 @@
       "id": 1306,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-11",
@@ -1118,9 +1346,12 @@
       "id": 1307,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-12",
@@ -1132,9 +1363,12 @@
       "id": 1308,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-13",
@@ -1146,9 +1380,12 @@
       "id": 1309,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-14",
@@ -1160,9 +1397,12 @@
       "id": 1310,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-15",
@@ -1174,9 +1414,12 @@
       "id": 1311,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-16",
@@ -1188,9 +1431,12 @@
       "id": 1312,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-16.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-17",
@@ -1202,9 +1448,12 @@
       "id": 1313,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-17.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-18",
@@ -1216,9 +1465,12 @@
       "id": 1314,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-18.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-19",
@@ -1230,9 +1482,12 @@
       "id": 1315,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-19.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-20",
@@ -1244,9 +1499,12 @@
       "id": 1316,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-20.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-21",
@@ -1258,9 +1516,12 @@
       "id": 1317,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-21.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-22",
@@ -1272,9 +1533,12 @@
       "id": 1318,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-22.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-23",
@@ -1286,9 +1550,12 @@
       "id": 1319,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-23.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-24",
@@ -1300,9 +1567,12 @@
       "id": 1320,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-24.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "city-spotlight-25",
@@ -1314,9 +1584,12 @@
       "id": 1321,
       "vertical_id": "travel-geography",
       "vertical_slug": "travel-geography",
-      "site_url": "https://city-spotlight-25.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

@@ -19,9 +19,12 @@
       "id": 1421,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://personal-finance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "stock-portfolio",
@@ -34,9 +37,12 @@
       "id": 1422,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://stock-portfolio.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "crypto-guide",
@@ -49,9 +55,12 @@
       "id": 1423,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://crypto-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "real-estate-invest",
@@ -64,9 +73,12 @@
       "id": 1424,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://real-estate-invest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "wine-invest",
@@ -79,9 +91,12 @@
       "id": 1425,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://wine-invest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "whiskey-invest",
@@ -94,9 +109,12 @@
       "id": 1426,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://whiskey-invest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-learning",
@@ -109,9 +127,12 @@
       "id": 1427,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-learning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "history-scholar",
@@ -124,9 +145,12 @@
       "id": 1428,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://history-scholar.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-explorer",
@@ -139,9 +163,12 @@
       "id": 1429,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://science-explorer.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "philosophy-think",
@@ -154,9 +181,12 @@
       "id": 1430,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://philosophy-think.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "writing-craft",
@@ -169,9 +199,12 @@
       "id": 1431,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://writing-craft.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "retirement-planning",
@@ -184,9 +217,12 @@
       "id": 1432,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://retirement-planning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tax-planning",
@@ -199,9 +235,12 @@
       "id": 1433,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://tax-planning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "estate-planning",
@@ -214,9 +253,12 @@
       "id": 1434,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://estate-planning.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-savings",
@@ -229,9 +271,12 @@
       "id": 1435,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://college-savings.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "budgeting-apps",
@@ -244,9 +289,12 @@
       "id": 1436,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://budgeting-apps.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "debt-payoff",
@@ -259,9 +307,12 @@
       "id": 1437,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://debt-payoff.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "credit-score",
@@ -274,9 +325,12 @@
       "id": 1438,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://credit-score.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "side-hustle",
@@ -289,9 +343,12 @@
       "id": 1439,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://side-hustle.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "freelance-finance",
@@ -304,9 +361,12 @@
       "id": 1440,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://freelance-finance.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "options-trading",
@@ -319,9 +379,12 @@
       "id": 1441,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://options-trading.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "dividend-investing",
@@ -334,9 +397,12 @@
       "id": 1442,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://dividend-investing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "etf-investing",
@@ -349,9 +415,12 @@
       "id": 1443,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://etf-investing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bond-investing",
@@ -364,9 +433,12 @@
       "id": 1444,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://bond-investing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "commodities-invest",
@@ -379,9 +451,12 @@
       "id": 1445,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://commodities-invest.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "angel-investing",
@@ -394,9 +469,12 @@
       "id": 1446,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://angel-investing.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "venture-capital",
@@ -409,9 +487,12 @@
       "id": 1447,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://venture-capital.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "financial-literacy",
@@ -424,9 +505,12 @@
       "id": 1448,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://financial-literacy.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "economics-explained",
@@ -439,9 +523,12 @@
       "id": 1449,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://economics-explained.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mba-prep",
@@ -454,9 +541,12 @@
       "id": 1450,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://mba-prep.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "online-courses",
@@ -469,9 +559,12 @@
       "id": 1451,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://online-courses.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "certification-prep",
@@ -484,9 +577,12 @@
       "id": 1452,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://certification-prep.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "study-skills",
@@ -499,9 +595,12 @@
       "id": 1453,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://study-skills.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "homeschool-guide",
@@ -514,9 +613,12 @@
       "id": 1454,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://homeschool-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "college-admissions",
@@ -529,9 +631,12 @@
       "id": 1455,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://college-admissions.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "scholarship-finder",
@@ -544,9 +649,12 @@
       "id": 1456,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://scholarship-finder.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "student-loans",
@@ -559,9 +667,12 @@
       "id": 1457,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://student-loans.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "teaching-resources",
@@ -574,9 +685,12 @@
       "id": 1458,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://teaching-resources.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "education-clubs",
@@ -589,9 +703,12 @@
       "id": 1459,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://education-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-01",
@@ -603,9 +720,12 @@
       "id": 1460,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-02",
@@ -617,9 +737,12 @@
       "id": 1461,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-03",
@@ -631,9 +754,12 @@
       "id": 1462,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-04",
@@ -645,9 +771,12 @@
       "id": 1463,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-05",
@@ -659,9 +788,12 @@
       "id": 1464,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-06",
@@ -673,9 +805,12 @@
       "id": 1465,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-07",
@@ -687,9 +822,12 @@
       "id": 1466,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-08",
@@ -701,9 +839,12 @@
       "id": 1467,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-09",
@@ -715,9 +856,12 @@
       "id": 1468,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-10",
@@ -729,9 +873,12 @@
       "id": 1469,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-11",
@@ -743,9 +890,12 @@
       "id": 1470,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-12",
@@ -757,9 +907,12 @@
       "id": 1471,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-13",
@@ -771,9 +924,12 @@
       "id": 1472,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-14",
@@ -785,9 +941,12 @@
       "id": 1473,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "language-course-15",
@@ -799,9 +958,12 @@
       "id": 1474,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://language-course-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-01",
@@ -813,9 +975,12 @@
       "id": 1475,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-02",
@@ -827,9 +992,12 @@
       "id": 1476,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-03",
@@ -841,9 +1009,12 @@
       "id": 1477,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-04",
@@ -855,9 +1026,12 @@
       "id": 1478,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-05",
@@ -869,9 +1043,12 @@
       "id": 1479,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-06",
@@ -883,9 +1060,12 @@
       "id": 1480,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-07",
@@ -897,9 +1077,12 @@
       "id": 1481,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-08",
@@ -911,9 +1094,12 @@
       "id": 1482,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-09",
@@ -925,9 +1111,12 @@
       "id": 1483,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cert-exam-10",
@@ -939,9 +1128,12 @@
       "id": 1484,
       "vertical_id": "finance-education",
       "vertical_slug": "finance-education",
-      "site_url": "https://cert-exam-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

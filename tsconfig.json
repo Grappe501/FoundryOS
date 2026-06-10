@@ -16,7 +16,10 @@
     "paths": {
       "@foundry/core": ["./packages/core/src"],
       "@foundry/ui": ["./packages/ui/src"],
-      "@foundry/self-build": ["./packages/self-build/src"]
+      "@foundry/self-build": ["./packages/self-build/src"],
+      "@foundry/seo-engine": ["./packages/seo-engine/src"],
+      "@foundry/knowledge-graph": ["./packages/knowledge-graph/src"],
+      "@foundry/topic-registry": ["./packages/topic-registry/src"]
     }
   },
   "exclude": ["node_modules", ".cache", "dist"]

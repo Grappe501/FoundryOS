@@ -20,9 +20,12 @@
       "id": 1,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://bourbon-connoisseur.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/bourbon-connoisseur",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "scotch-whisky",
@@ -35,9 +38,12 @@
       "id": 2,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://scotch-whisky.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/scotch-whisky",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "irish-whiskey",
@@ -50,9 +56,12 @@
       "id": 3,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://irish-whiskey.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/irish-whiskey",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "japanese-whisky",
@@ -65,9 +74,12 @@
       "id": 4,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://japanese-whisky.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/japanese-whisky",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "canadian-whisky",
@@ -80,9 +92,12 @@
       "id": 5,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://canadian-whisky.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/canadian-whisky",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rye-whisky",
@@ -95,9 +110,12 @@
       "id": 6,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://rye-whisky.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/rye-whisky",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tennessee-whiskey",
@@ -110,9 +128,12 @@
       "id": 7,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://tennessee-whiskey.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/tennessee-whiskey",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-spirits",
@@ -125,9 +146,12 @@
       "id": 8,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://craft-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/craft-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "gin-collection",
@@ -140,9 +164,12 @@
       "id": 9,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://gin-collection.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/gin-collection",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vodka-specialist",
@@ -155,9 +182,12 @@
       "id": 10,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://vodka-specialist.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/vodka-specialist",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "rum-explorer",
@@ -170,9 +200,12 @@
       "id": 11,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://rum-explorer.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/rum-explorer",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tequila-agave",
@@ -185,9 +218,12 @@
       "id": 12,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://tequila-agave.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/tequila-agave",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mezcal-master",
@@ -200,9 +236,12 @@
       "id": 13,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://mezcal-master.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/mezcal-master",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cognac-brandy",
@@ -215,9 +254,12 @@
       "id": 14,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://cognac-brandy.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/cognac-brandy",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "liqueurs-cordials",
@@ -230,9 +272,12 @@
       "id": 15,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://liqueurs-cordials.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/liqueurs-cordials",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "craft-cocktails",
@@ -245,9 +290,12 @@
       "id": 16,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://craft-cocktails.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/craft-cocktails",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tiki-cocktails",
@@ -260,9 +308,12 @@
       "id": 17,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://tiki-cocktails.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/tiki-cocktails",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "whiskey-blends",
@@ -275,9 +326,12 @@
       "id": 18,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://whiskey-blends.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/whiskey-blends",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "single-malt",
@@ -290,9 +344,12 @@
       "id": 19,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://single-malt.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/single-malt",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cask-strength",
@@ -305,9 +362,12 @@
       "id": 20,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://cask-strength.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/cask-strength",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "allocated-bottles",
@@ -320,9 +380,12 @@
       "id": 21,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://allocated-bottles.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/allocated-bottles",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "distillery-tours",
@@ -335,9 +398,12 @@
       "id": 22,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://distillery-tours.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/distillery-tours",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "home-bar",
@@ -350,9 +416,12 @@
       "id": 23,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://home-bar.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/home-bar",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tasting-notes",
@@ -365,9 +434,12 @@
       "id": 24,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://tasting-notes.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/tasting-notes",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-food-pairing",
@@ -380,9 +452,12 @@
       "id": 25,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://spirits-food-pairing.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/spirits-food-pairing",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "amaro-bitters",
@@ -395,9 +470,12 @@
       "id": 26,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://amaro-bitters.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/amaro-bitters",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "absinthe-spirits",
@@ -410,9 +488,12 @@
       "id": 27,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://absinthe-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/absinthe-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "aquavit-spirits",
@@ -425,9 +506,12 @@
       "id": 28,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://aquavit-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/aquavit-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "grappa-brandy",
@@ -440,9 +524,12 @@
       "id": 29,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://grappa-brandy.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/grappa-brandy",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "pisco-spirits",
@@ -455,9 +542,12 @@
       "id": 30,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://pisco-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/pisco-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "baijiu-spirits",
@@ -470,9 +560,12 @@
       "id": 31,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://baijiu-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/baijiu-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "soju-shochu",
@@ -485,9 +578,12 @@
       "id": 32,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://soju-shochu.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/soju-shochu",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sake-mastery",
@@ -500,9 +596,12 @@
       "id": 33,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://sake-mastery.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/sake-mastery",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "vermouth-guide",
@@ -515,9 +614,12 @@
       "id": 34,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://vermouth-guide.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/vermouth-guide",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "barrel-aging",
@@ -530,9 +632,12 @@
       "id": 35,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://barrel-aging.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/barrel-aging",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "moonshine-heritage",
@@ -545,9 +650,12 @@
       "id": 36,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://moonshine-heritage.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/moonshine-heritage",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-auctions",
@@ -560,9 +668,12 @@
       "id": 37,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://spirits-auctions.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/spirits-auctions",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cocktail-history",
@@ -575,9 +686,12 @@
       "id": 38,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://cocktail-history.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/cocktail-history",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "bartender-cert",
@@ -590,9 +704,12 @@
       "id": 39,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://bartender-cert.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/bartender-cert",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-regions",
@@ -605,9 +722,12 @@
       "id": 40,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://spirits-regions.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/spirits-regions",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "flavor-wheel-spirits",
@@ -620,9 +740,12 @@
       "id": 41,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://flavor-wheel-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/flavor-wheel-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "holiday-cocktails",
@@ -635,9 +758,12 @@
       "id": 42,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://holiday-cocktails.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/holiday-cocktails",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "zero-proof-spirits",
@@ -650,9 +776,12 @@
       "id": 43,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://zero-proof-spirits.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/zero-proof-spirits",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-gifts",
@@ -665,9 +794,12 @@
       "id": 44,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://spirits-gifts.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/spirits-gifts",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "master-distillers",
@@ -680,9 +812,12 @@
       "id": 45,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://master-distillers.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/master-distillers",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mash-bill-encyclopedia",
@@ -695,9 +830,12 @@
       "id": 46,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://mash-bill-encyclopedia.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/mash-bill-encyclopedia",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "cask-finish-guide",
@@ -710,9 +848,12 @@
       "id": 47,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://cask-finish-guide.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/cask-finish-guide",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "spirits-science",
@@ -725,9 +866,12 @@
       "id": 48,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://spirits-science.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/spirits-science",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "world-whisky-atlas",
@@ -741,9 +885,12 @@
       "id": 49,
       "vertical_id": "spirits-beverages",
       "vertical_slug": "spirits-beverages",
-      "site_url": "https://world-whisky-atlas.foundryos.app",
+      "vertical_domain": "bourbon.foundryos.com",
+      "topic_url": "https://bourbon.foundryos.com/world-whisky-atlas",
+      "site_url": "https://bourbon.foundryos.com",
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

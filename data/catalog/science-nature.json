@@ -19,9 +19,12 @@
       "id": 1828,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://astronomy-pro.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "physics-explained",
@@ -34,9 +37,12 @@
       "id": 1829,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://physics-explained.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "chemistry-lab",
@@ -49,9 +55,12 @@
       "id": 1830,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://chemistry-lab.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "biology-nature",
@@ -64,9 +73,12 @@
       "id": 1831,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://biology-nature.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "geology-rocks",
@@ -79,9 +91,12 @@
       "id": 1832,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://geology-rocks.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "meteorology-weather",
@@ -94,9 +109,12 @@
       "id": 1833,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://meteorology-weather.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "oceanography",
@@ -109,9 +127,12 @@
       "id": 1834,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://oceanography.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "climate-science",
@@ -124,9 +145,12 @@
       "id": 1835,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://climate-science.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "space-exploration",
@@ -139,9 +163,12 @@
       "id": 1836,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://space-exploration.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "robotics-science",
@@ -154,9 +181,12 @@
       "id": 1837,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://robotics-science.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "genetics-science",
@@ -169,9 +199,12 @@
       "id": 1838,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://genetics-science.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "neuroscience-lite",
@@ -184,9 +217,12 @@
       "id": 1839,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://neuroscience-lite.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "math-beauty",
@@ -199,9 +235,12 @@
       "id": 1840,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://math-beauty.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "citizen-science",
@@ -214,9 +253,12 @@
       "id": 1841,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://citizen-science.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-museums",
@@ -229,9 +271,12 @@
       "id": 1842,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-museums.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-clubs",
@@ -244,9 +289,12 @@
       "id": 1843,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-01",
@@ -258,9 +306,12 @@
       "id": 1844,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-02",
@@ -272,9 +323,12 @@
       "id": 1845,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-03",
@@ -286,9 +340,12 @@
       "id": 1846,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-04",
@@ -300,9 +357,12 @@
       "id": 1847,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-05",
@@ -314,9 +374,12 @@
       "id": 1848,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-06",
@@ -328,9 +391,12 @@
       "id": 1849,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-07",
@@ -342,9 +408,12 @@
       "id": 1850,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-08",
@@ -356,9 +425,12 @@
       "id": 1851,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-09",
@@ -370,9 +442,12 @@
       "id": 1852,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-10",
@@ -384,9 +459,12 @@
       "id": 1853,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-11",
@@ -398,9 +476,12 @@
       "id": 1854,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-12",
@@ -412,9 +493,12 @@
       "id": 1855,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-13",
@@ -426,9 +510,12 @@
       "id": 1856,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-14",
@@ -440,9 +527,12 @@
       "id": 1857,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "science-topic-15",
@@ -454,9 +544,12 @@
       "id": 1858,
       "vertical_id": "science-nature",
       "vertical_slug": "science-nature",
-      "site_url": "https://science-topic-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

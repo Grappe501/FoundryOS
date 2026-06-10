@@ -19,9 +19,12 @@
       "id": 1537,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://streetwear-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fashion-vintage",
@@ -34,9 +37,12 @@
       "id": 1538,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://fashion-vintage.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "mens-style",
@@ -49,9 +55,12 @@
       "id": 1539,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://mens-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "womens-style",
@@ -64,9 +73,12 @@
       "id": 1540,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://womens-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "luxury-fashion",
@@ -79,9 +91,12 @@
       "id": 1541,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://luxury-fashion.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sustainable-fashion",
@@ -94,9 +109,12 @@
       "id": 1542,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://sustainable-fashion.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "denim-guide",
@@ -109,9 +127,12 @@
       "id": 1543,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://denim-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "sneaker-style",
@@ -124,9 +145,12 @@
       "id": 1544,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://sneaker-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "watch-style",
@@ -139,9 +163,12 @@
       "id": 1545,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://watch-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fragrance-guide",
@@ -154,9 +181,12 @@
       "id": 1546,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://fragrance-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "skincare-style",
@@ -169,9 +199,12 @@
       "id": 1547,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://skincare-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "hair-style",
@@ -184,9 +217,12 @@
       "id": 1548,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://hair-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "makeup-artistry",
@@ -199,9 +235,12 @@
       "id": 1549,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://makeup-artistry.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fashion-week",
@@ -214,9 +253,12 @@
       "id": 1550,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://fashion-week.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "runway-archive",
@@ -229,9 +271,12 @@
       "id": 1551,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://runway-archive.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "capsule-wardrobe",
@@ -244,9 +289,12 @@
       "id": 1552,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://capsule-wardrobe.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "tailoring-guide",
@@ -259,9 +307,12 @@
       "id": 1553,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://tailoring-guide.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fashion-history",
@@ -274,9 +325,12 @@
       "id": 1554,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://fashion-history.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "jewelry-style",
@@ -289,9 +343,12 @@
       "id": 1555,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://jewelry-style.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "fashion-clubs",
@@ -304,9 +361,12 @@
       "id": 1556,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://fashion-clubs.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-01",
@@ -318,9 +378,12 @@
       "id": 1557,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-02",
@@ -332,9 +395,12 @@
       "id": 1558,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-03",
@@ -346,9 +412,12 @@
       "id": 1559,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-04",
@@ -360,9 +429,12 @@
       "id": 1560,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-05",
@@ -374,9 +446,12 @@
       "id": 1561,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-06",
@@ -388,9 +463,12 @@
       "id": 1562,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-07",
@@ -402,9 +480,12 @@
       "id": 1563,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-08",
@@ -416,9 +497,12 @@
       "id": 1564,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-09",
@@ -430,9 +514,12 @@
       "id": 1565,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-10",
@@ -444,9 +531,12 @@
       "id": 1566,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-11",
@@ -458,9 +548,12 @@
       "id": 1567,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-11.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-12",
@@ -472,9 +565,12 @@
       "id": 1568,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-12.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-13",
@@ -486,9 +582,12 @@
       "id": 1569,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-13.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-14",
@@ -500,9 +599,12 @@
       "id": 1570,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-14.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "designer-house-15",
@@ -514,9 +616,12 @@
       "id": 1571,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://designer-house-15.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-01",
@@ -528,9 +633,12 @@
       "id": 1572,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-01.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-02",
@@ -542,9 +650,12 @@
       "id": 1573,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-02.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-03",
@@ -556,9 +667,12 @@
       "id": 1574,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-03.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-04",
@@ -570,9 +684,12 @@
       "id": 1575,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-04.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-05",
@@ -584,9 +701,12 @@
       "id": 1576,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-05.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-06",
@@ -598,9 +718,12 @@
       "id": 1577,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-06.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-07",
@@ -612,9 +735,12 @@
       "id": 1578,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-07.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-08",
@@ -626,9 +752,12 @@
       "id": 1579,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-08.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-09",
@@ -640,9 +769,12 @@
       "id": 1580,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-09.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     },
     {
       "slug": "style-era-10",
@@ -654,9 +786,12 @@
       "id": 1581,
       "vertical_id": "fashion-style",
       "vertical_slug": "fashion-style",
-      "site_url": "https://style-era-10.foundryos.app",
+      "vertical_domain": null,
+      "topic_url": null,
+      "site_url": null,
       "admin_managed": true,
-      "standalone": true
+      "is_topic": true,
+      "is_standalone_site": false
     }
   ]
 }

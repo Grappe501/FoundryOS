@@ -1,0 +1,35 @@
+---
+description: FoundryOS data model — Verticals and Topics, NOT per-topic apps/sites
+alwaysApply: true
+---
+
+# Verticals + Topics (Not Apps)
+
+## Model
+
+```txt
+Verticals  → public domain (books.foundryos.com)
+Topics     → pages beneath vertical (1,961 registry entries)
+```
+
+**Never** create `{topic}.foundryos.com` subdomains.
+
+## Public Sites
+
+- `foundryos.com` — Mission Control (living HQ)
+- `books.foundryos.com/fantasy` — topic page
+- `bourbon.foundryos.com` — vertical home
+
+## Required Packages
+
+- `@foundry/seo-engine` — structured data, programmatic SEO
+- `@foundry/knowledge-graph` — entities, relationships, internal links
+- `@foundry/topic-registry` — 1,961 topic registry
+
+## Before Building Niche UI
+
+Ensure SEO engine, knowledge graph, topic registry, and pass tracking are in place.
+
+## Pass Updates
+
+Every pass updates: `docs/BUILD_LOG.md`, `docs/ROADMAP.md`, `docs/METRICS.md`, `apps/platform` build journal.
