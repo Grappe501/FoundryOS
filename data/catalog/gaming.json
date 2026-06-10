@@ -1,0 +1,892 @@
+{
+  "vertical": {
+    "id": "gaming",
+    "slug": "gaming",
+    "name": "Gaming",
+    "icon": "🎮",
+    "app_count": 61,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "board-games",
+      "displayName": "Board Game Collection",
+      "crossRefs": [
+        "vintage-toys",
+        "gaming-collectibles"
+      ],
+      "priority": "P3",
+      "id": 1582,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://board-games.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-collectibles",
+      "displayName": "Gaming Collectibles",
+      "crossRefs": [
+        "board-games",
+        "retro-computing"
+      ],
+      "priority": "P3",
+      "id": 1583,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "poker-strategy",
+      "displayName": "Poker Strategy Guide",
+      "crossRefs": [
+        "sports-betting",
+        "chess-mastery"
+      ],
+      "priority": "P3",
+      "id": 1584,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://poker-strategy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chess-mastery",
+      "displayName": "Chess Mastery",
+      "crossRefs": [
+        "poker-strategy",
+        "strategy-games"
+      ],
+      "priority": "P3",
+      "id": 1585,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://chess-mastery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "strategy-games",
+      "displayName": "Strategy Games Guide",
+      "crossRefs": [
+        "chess-mastery",
+        "board-games"
+      ],
+      "priority": "P3",
+      "id": 1586,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://strategy-games.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-rpg",
+      "displayName": "RPG Gaming Authority",
+      "crossRefs": [
+        "board-games",
+        "interactive-fiction"
+      ],
+      "priority": "P3",
+      "id": 1587,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-rpg.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pc-gaming",
+      "displayName": "PC Gaming Guide",
+      "crossRefs": [
+        "pc-building",
+        "gaming-collectibles"
+      ],
+      "priority": "P3",
+      "id": 1588,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://pc-gaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "console-gaming",
+      "displayName": "Console Gaming Guide",
+      "crossRefs": [
+        "gaming-collectibles",
+        "retro-gaming-collect"
+      ],
+      "priority": "P3",
+      "id": 1589,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://console-gaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mobile-gaming",
+      "displayName": "Mobile Gaming Guide",
+      "crossRefs": [
+        "console-gaming",
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1590,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://mobile-gaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vr-gaming",
+      "displayName": "VR Gaming Guide",
+      "crossRefs": [
+        "pc-gaming",
+        "vr-gaming"
+      ],
+      "priority": "P3",
+      "id": 1591,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://vr-gaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "esports-teams",
+      "displayName": "Esports Teams Tracker",
+      "crossRefs": [
+        "esports-guide",
+        "gaming-collectibles"
+      ],
+      "priority": "P3",
+      "id": 1592,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://esports-teams.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-development",
+      "displayName": "Game Development",
+      "crossRefs": [
+        "coding-projects",
+        "game-development"
+      ],
+      "priority": "P3",
+      "id": 1593,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-development.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indie-games",
+      "displayName": "Indie Games Discovery",
+      "crossRefs": [
+        "game-development",
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1594,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://indie-games.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "retro-games",
+      "displayName": "Retro Games Guide",
+      "crossRefs": [
+        "retro-gaming-collect",
+        "console-gaming"
+      ],
+      "priority": "P3",
+      "id": 1595,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://retro-games.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "speedrunning",
+      "displayName": "Speedrunning Community",
+      "crossRefs": [
+        "retro-games",
+        "esports-guide"
+      ],
+      "priority": "P3",
+      "id": 1596,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://speedrunning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-walkthroughs",
+      "displayName": "Game Walkthroughs",
+      "crossRefs": [
+        "pc-gaming",
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1597,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-walkthroughs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-modding",
+      "displayName": "Game Modding",
+      "crossRefs": [
+        "pc-gaming",
+        "coding-projects"
+      ],
+      "priority": "P3",
+      "id": 1598,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-modding.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tabletop-rpg",
+      "displayName": "Tabletop RPG",
+      "crossRefs": [
+        "gaming-rpg",
+        "board-games"
+      ],
+      "priority": "P3",
+      "id": 1599,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://tabletop-rpg.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dnd-guide",
+      "displayName": "D&D Master Guide",
+      "crossRefs": [
+        "tabletop-rpg",
+        "fiction-fantasy"
+      ],
+      "priority": "P3",
+      "id": 1600,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://dnd-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "warhammer-tabletop",
+      "displayName": "Warhammer Tabletop",
+      "crossRefs": [
+        "tabletop-rpg",
+        "miniatures-painting"
+      ],
+      "priority": "P3",
+      "id": 1601,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://warhammer-tabletop.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "miniatures-painting",
+      "displayName": "Miniatures Painting",
+      "crossRefs": [
+        "warhammer-tabletop",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1602,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://miniatures-painting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-setup",
+      "displayName": "Gaming Setup Guide",
+      "crossRefs": [
+        "pc-gaming",
+        "streaming-setup"
+      ],
+      "priority": "P3",
+      "id": 1603,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-setup.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-chairs",
+      "displayName": "Gaming Chairs & Desks",
+      "crossRefs": [
+        "gaming-setup",
+        "home-gym-setup"
+      ],
+      "priority": "P3",
+      "id": 1604,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-chairs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-headsets",
+      "displayName": "Gaming Headsets",
+      "crossRefs": [
+        "gaming-setup",
+        "audio-equipment"
+      ],
+      "priority": "P3",
+      "id": 1605,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-headsets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-reviews-network",
+      "displayName": "Game Reviews Network",
+      "crossRefs": [
+        "indie-games",
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1606,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-reviews-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-clubs",
+      "displayName": "Gaming Clubs",
+      "crossRefs": [
+        "board-games",
+        "tabletop-rpg"
+      ],
+      "priority": "P2",
+      "id": 1607,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://gaming-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-01",
+      "displayName": "Game Franchise Guide 1",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1608,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-02",
+      "displayName": "Game Franchise Guide 2",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1609,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-03",
+      "displayName": "Game Franchise Guide 3",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1610,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-04",
+      "displayName": "Game Franchise Guide 4",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1611,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-05",
+      "displayName": "Game Franchise Guide 5",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1612,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-06",
+      "displayName": "Game Franchise Guide 6",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1613,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-07",
+      "displayName": "Game Franchise Guide 7",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1614,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-08",
+      "displayName": "Game Franchise Guide 8",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1615,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-09",
+      "displayName": "Game Franchise Guide 9",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1616,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-10",
+      "displayName": "Game Franchise Guide 10",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1617,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-11",
+      "displayName": "Game Franchise Guide 11",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1618,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-12",
+      "displayName": "Game Franchise Guide 12",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1619,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-13",
+      "displayName": "Game Franchise Guide 13",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1620,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-14",
+      "displayName": "Game Franchise Guide 14",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1621,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-15",
+      "displayName": "Game Franchise Guide 15",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1622,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-16",
+      "displayName": "Game Franchise Guide 16",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1623,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-17",
+      "displayName": "Game Franchise Guide 17",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1624,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-18",
+      "displayName": "Game Franchise Guide 18",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1625,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-19",
+      "displayName": "Game Franchise Guide 19",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1626,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-franchise-20",
+      "displayName": "Game Franchise Guide 20",
+      "crossRefs": [
+        "pc-gaming"
+      ],
+      "priority": "P3",
+      "id": 1627,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-franchise-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-01",
+      "displayName": "Game Genre Guide 1",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1628,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-02",
+      "displayName": "Game Genre Guide 2",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1629,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-03",
+      "displayName": "Game Genre Guide 3",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1630,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-04",
+      "displayName": "Game Genre Guide 4",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1631,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-05",
+      "displayName": "Game Genre Guide 5",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1632,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-06",
+      "displayName": "Game Genre Guide 6",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1633,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-07",
+      "displayName": "Game Genre Guide 7",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1634,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-08",
+      "displayName": "Game Genre Guide 8",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1635,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-09",
+      "displayName": "Game Genre Guide 9",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1636,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-10",
+      "displayName": "Game Genre Guide 10",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1637,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-11",
+      "displayName": "Game Genre Guide 11",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1638,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-12",
+      "displayName": "Game Genre Guide 12",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1639,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-13",
+      "displayName": "Game Genre Guide 13",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1640,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-14",
+      "displayName": "Game Genre Guide 14",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1641,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-genre-15",
+      "displayName": "Game Genre Guide 15",
+      "crossRefs": [
+        "indie-games"
+      ],
+      "priority": "P3",
+      "id": 1642,
+      "vertical_id": "gaming",
+      "vertical_slug": "gaming",
+      "site_url": "https://game-genre-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

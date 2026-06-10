@@ -1,0 +1,667 @@
+{
+  "vertical": {
+    "id": "automotive",
+    "slug": "automotive",
+    "name": "Automotive",
+    "icon": "🚗",
+    "app_count": 45,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "classic-cars",
+      "displayName": "Classic Car Collection",
+      "crossRefs": [
+        "muscle-cars",
+        "auto-auctions"
+      ],
+      "priority": "P3",
+      "id": 1322,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://classic-cars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "muscle-cars",
+      "displayName": "Muscle Car Authority",
+      "crossRefs": [
+        "classic-cars",
+        "auto-auctions"
+      ],
+      "priority": "P3",
+      "id": 1323,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://muscle-cars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "exotic-supercars",
+      "displayName": "Exotic & Supercar Guide",
+      "crossRefs": [
+        "classic-cars",
+        "formula-one"
+      ],
+      "priority": "P3",
+      "id": 1324,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://exotic-supercars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "motorcycle-guide",
+      "displayName": "Motorcycle Guide",
+      "crossRefs": [
+        "classic-cars",
+        "road-trip-america"
+      ],
+      "priority": "P3",
+      "id": 1325,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://motorcycle-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "offroad-4x4",
+      "displayName": "Off-Road & 4x4 Guide",
+      "crossRefs": [
+        "outdoor-adventures",
+        "rv-road-trips"
+      ],
+      "priority": "P3",
+      "id": 1326,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://offroad-4x4.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "electric-vehicles",
+      "displayName": "Electric Vehicle Guide",
+      "crossRefs": [
+        "auto-tech",
+        "exotic-supercars"
+      ],
+      "priority": "P3",
+      "id": 1327,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://electric-vehicles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "auto-restoration",
+      "displayName": "Auto Restoration Guide",
+      "crossRefs": [
+        "classic-cars",
+        "muscle-cars"
+      ],
+      "priority": "P3",
+      "id": 1328,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://auto-restoration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "auto-auctions",
+      "displayName": "Auto Auctions & Values",
+      "crossRefs": [
+        "classic-cars",
+        "exotic-supercars"
+      ],
+      "priority": "P3",
+      "id": 1329,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://auto-auctions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nascar-collectibles",
+      "displayName": "NASCAR Collectibles",
+      "crossRefs": [
+        "nascar-racing",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 1330,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://nascar-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "formula-one-fan",
+      "displayName": "Formula One Fan Guide",
+      "crossRefs": [
+        "formula-one",
+        "exotic-supercars"
+      ],
+      "priority": "P3",
+      "id": 1331,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://formula-one-fan.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "truck-custom",
+      "displayName": "Truck & Custom Build",
+      "crossRefs": [
+        "offroad-4x4",
+        "auto-restoration"
+      ],
+      "priority": "P3",
+      "id": 1332,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://truck-custom.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "karting-racing",
+      "displayName": "Karting & Racing",
+      "crossRefs": [
+        "formula-one-fan",
+        "nascar-collectibles"
+      ],
+      "priority": "P3",
+      "id": 1333,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://karting-racing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "auto-tech",
+      "displayName": "Automotive Tech Guide",
+      "crossRefs": [
+        "electric-vehicles",
+        "auto-restoration"
+      ],
+      "priority": "P3",
+      "id": 1334,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://auto-tech.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-detailing",
+      "displayName": "Car Detailing Master",
+      "crossRefs": [
+        "auto-restoration",
+        "exotic-supercars"
+      ],
+      "priority": "P3",
+      "id": 1335,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-detailing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "road-trip-cars",
+      "displayName": "Road Trip Vehicle Guide",
+      "crossRefs": [
+        "rv-road-trips",
+        "road-trip-america"
+      ],
+      "priority": "P3",
+      "id": 1336,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://road-trip-cars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-motorcycles",
+      "displayName": "Vintage Motorcycles",
+      "crossRefs": [
+        "motorcycle-guide",
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1337,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://vintage-motorcycles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-audio",
+      "displayName": "Car Audio Systems",
+      "crossRefs": [
+        "audio-equipment",
+        "auto-tech"
+      ],
+      "priority": "P3",
+      "id": 1338,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-audio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tires-wheels",
+      "displayName": "Tires & Wheels Guide",
+      "crossRefs": [
+        "offroad-4x4",
+        "auto-tech"
+      ],
+      "priority": "P3",
+      "id": 1339,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://tires-wheels.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oem-parts",
+      "displayName": "OEM Parts Guide",
+      "crossRefs": [
+        "auto-restoration",
+        "truck-custom"
+      ],
+      "priority": "P3",
+      "id": 1340,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://oem-parts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "aftermarket-parts",
+      "displayName": "Aftermarket Parts",
+      "crossRefs": [
+        "truck-custom",
+        "oem-parts"
+      ],
+      "priority": "P3",
+      "id": 1341,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://aftermarket-parts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-insurance",
+      "displayName": "Auto Insurance Guide",
+      "crossRefs": [
+        "personal-finance",
+        "electric-vehicles"
+      ],
+      "priority": "P3",
+      "id": 1342,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-insurance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lease-vs-buy",
+      "displayName": "Lease vs Buy Auto",
+      "crossRefs": [
+        "car-insurance",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1343,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://lease-vs-buy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-review-youtube",
+      "displayName": "Car Review Culture",
+      "crossRefs": [
+        "auto-tech",
+        "electric-vehicles"
+      ],
+      "priority": "P3",
+      "id": 1344,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-review-youtube.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "autocross-track",
+      "displayName": "Autocross & Track Days",
+      "crossRefs": [
+        "karting-racing",
+        "exotic-supercars"
+      ],
+      "priority": "P3",
+      "id": 1345,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://autocross-track.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-clubs-auto",
+      "displayName": "Automotive Clubs",
+      "crossRefs": [
+        "classic-cars",
+        "motorcycle-guide"
+      ],
+      "priority": "P2",
+      "id": 1346,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-clubs-auto.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-01",
+      "displayName": "Automaker Guide 1",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1347,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-02",
+      "displayName": "Automaker Guide 2",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1348,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-03",
+      "displayName": "Automaker Guide 3",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1349,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-04",
+      "displayName": "Automaker Guide 4",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1350,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-05",
+      "displayName": "Automaker Guide 5",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1351,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-06",
+      "displayName": "Automaker Guide 6",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1352,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-07",
+      "displayName": "Automaker Guide 7",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1353,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-08",
+      "displayName": "Automaker Guide 8",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1354,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-09",
+      "displayName": "Automaker Guide 9",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1355,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-10",
+      "displayName": "Automaker Guide 10",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1356,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-11",
+      "displayName": "Automaker Guide 11",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1357,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-12",
+      "displayName": "Automaker Guide 12",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1358,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-13",
+      "displayName": "Automaker Guide 13",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1359,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-14",
+      "displayName": "Automaker Guide 14",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1360,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-15",
+      "displayName": "Automaker Guide 15",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1361,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-16",
+      "displayName": "Automaker Guide 16",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1362,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-17",
+      "displayName": "Automaker Guide 17",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1363,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-18",
+      "displayName": "Automaker Guide 18",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1364,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-19",
+      "displayName": "Automaker Guide 19",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1365,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "car-make-20",
+      "displayName": "Automaker Guide 20",
+      "crossRefs": [
+        "classic-cars"
+      ],
+      "priority": "P3",
+      "id": 1366,
+      "vertical_id": "automotive",
+      "vertical_slug": "automotive",
+      "site_url": "https://car-make-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

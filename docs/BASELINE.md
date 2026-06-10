@@ -10,7 +10,7 @@
 
 FoundryOS is an **AI operating system** designed to:
 
-1. Host **1,000 specialty apps** on a single unified platform
+1. Host **1,961+ specialty apps** on a single unified platform (scaling beyond 1,000)
 2. **Build itself** — a self-replicating AI module that generates new apps from templates
 3. Reach **1 million users** before end of 2026
 4. Position for **angel investment** at scale (millions to billions valuation)
@@ -100,7 +100,9 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | Document | Purpose |
 |----------|---------|
 | [MASTER_BUILD_PLAN.md](./MASTER_BUILD_PLAN.md) | How we build 1000 apps |
-| [APP_CATALOG_250.md](./APP_CATALOG_250.md) | First 250 app targets |
+| [APP_CATALOG_250.md](./APP_CATALOG_250.md) | Original 250 app targets (Phase 1 subset) |
+| [APP_CATALOG_FULL.md](./APP_CATALOG_FULL.md) | Full 1,961 app catalog |
+| [ADMIN_ARCHITECTURE.md](./ADMIN_ARCHITECTURE.md) | Central admin + standalone sites |
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture |
 | [PROTOCOLS.md](./PROTOCOLS.md) | Git, branches, naming, env |
 | [ROLES.md](./ROLES.md) | Team workflow |
@@ -113,3 +115,4 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | Pass | Date | Author | Summary |
 |------|------|--------|---------|
 | 0 | 2026-06-10 | Burt | Foundation: docs, rules, folder structure, H: drive, git init |
+| 1 | 2026-06-10 | Burt | 1,961-app catalog, mega verticals (books/music/film/tv), admin + site-engine architecture |

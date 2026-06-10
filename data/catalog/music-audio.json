@@ -1,0 +1,2022 @@
+{
+  "vertical": {
+    "id": "music-audio",
+    "slug": "music-audio",
+    "name": "Music & Audio",
+    "icon": "🎵",
+    "app_count": 134,
+    "is_mega_vertical": true
+  },
+  "apps": [
+    {
+      "slug": "vinyl-records",
+      "displayName": "Vinyl Record Collection",
+      "crossRefs": [
+        "music-production",
+        "concert-guide"
+      ],
+      "priority": "P1",
+      "id": 728,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://vinyl-records.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jazz-masters",
+      "displayName": "Jazz Masters Guide",
+      "crossRefs": [
+        "vinyl-records",
+        "blues-authority"
+      ],
+      "priority": "P2",
+      "id": 729,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://jazz-masters.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "blues-authority",
+      "displayName": "Blues Authority",
+      "crossRefs": [
+        "jazz-masters",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 730,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://blues-authority.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rock-legends",
+      "displayName": "Rock Legends Collection",
+      "crossRefs": [
+        "blues-authority",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 731,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://rock-legends.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "classical-music",
+      "displayName": "Classical Music Guide",
+      "crossRefs": [
+        "jazz-masters",
+        "opera-collection"
+      ],
+      "priority": "P2",
+      "id": 732,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://classical-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hip-hop-culture",
+      "displayName": "Hip-Hop Culture Guide",
+      "crossRefs": [
+        "music-production",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 733,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://hip-hop-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-music",
+      "displayName": "Country Music Guide",
+      "crossRefs": [
+        "bluegrass-tradition",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 734,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://country-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bluegrass-tradition",
+      "displayName": "Bluegrass Tradition",
+      "crossRefs": [
+        "country-music",
+        "folk-americana"
+      ],
+      "priority": "P3",
+      "id": 735,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://bluegrass-tradition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "electronic-music",
+      "displayName": "Electronic Music Guide",
+      "crossRefs": [
+        "music-production",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 736,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://electronic-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-production",
+      "displayName": "Music Production Studio",
+      "crossRefs": [
+        "electronic-music",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 737,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-production.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "guitar-mastery",
+      "displayName": "Guitar Mastery",
+      "crossRefs": [
+        "music-production",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 738,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://guitar-mastery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "piano-repertoire",
+      "displayName": "Piano Repertoire",
+      "crossRefs": [
+        "classical-music",
+        "music-production"
+      ],
+      "priority": "P3",
+      "id": 739,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://piano-repertoire.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drum-percussion",
+      "displayName": "Drum & Percussion",
+      "crossRefs": [
+        "music-production",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 740,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://drum-percussion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "concert-guide",
+      "displayName": "Concert & Live Music Guide",
+      "crossRefs": [
+        "vinyl-records",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 741,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://concert-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-festivals",
+      "displayName": "Music Festival Guide",
+      "crossRefs": [
+        "concert-guide",
+        "electronic-music"
+      ],
+      "priority": "P3",
+      "id": 742,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-festivals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "opera-collection",
+      "displayName": "Opera Collection",
+      "crossRefs": [
+        "classical-music",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 743,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://opera-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "folk-americana",
+      "displayName": "Folk & Americana",
+      "crossRefs": [
+        "bluegrass-tradition",
+        "country-music"
+      ],
+      "priority": "P3",
+      "id": 744,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://folk-americana.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "world-music",
+      "displayName": "World Music Explorer",
+      "crossRefs": [
+        "jazz-masters",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 745,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://world-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "audio-equipment",
+      "displayName": "Audio Equipment Guide",
+      "crossRefs": [
+        "vinyl-records",
+        "music-production"
+      ],
+      "priority": "P3",
+      "id": 746,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://audio-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "podcast-creator",
+      "displayName": "Podcast Creator Studio",
+      "crossRefs": [
+        "music-production",
+        "audio-equipment"
+      ],
+      "priority": "P3",
+      "id": 747,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://podcast-creator.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "r-and-b-soul",
+      "displayName": "R&B & Soul Authority",
+      "crossRefs": [
+        "hip-hop-culture",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 748,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://r-and-b-soul.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "funk-music",
+      "displayName": "Funk Music Guide",
+      "crossRefs": [
+        "r-and-b-soul",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 749,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://funk-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "reggae-music",
+      "displayName": "Reggae & Dub Guide",
+      "crossRefs": [
+        "world-music",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 750,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://reggae-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "latin-music",
+      "displayName": "Latin Music Authority",
+      "crossRefs": [
+        "world-music",
+        "salsa-music"
+      ],
+      "priority": "P3",
+      "id": 751,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://latin-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "salsa-music",
+      "displayName": "Salsa & Tropical",
+      "crossRefs": [
+        "latin-music",
+        "dance-music"
+      ],
+      "priority": "P3",
+      "id": 752,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://salsa-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "afrobeat-music",
+      "displayName": "Afrobeat & African Pop",
+      "crossRefs": [
+        "world-music",
+        "funk-music"
+      ],
+      "priority": "P3",
+      "id": 753,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://afrobeat-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kpop-music",
+      "displayName": "K-Pop Collection",
+      "crossRefs": [
+        "world-music",
+        "dance-music"
+      ],
+      "priority": "P3",
+      "id": 754,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://kpop-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jpop-music",
+      "displayName": "J-Pop & City Pop",
+      "crossRefs": [
+        "world-music",
+        "kpop-music"
+      ],
+      "priority": "P3",
+      "id": 755,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://jpop-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bollywood-music",
+      "displayName": "Bollywood & Indian Film Music",
+      "crossRefs": [
+        "world-music",
+        "indian-cinema"
+      ],
+      "priority": "P3",
+      "id": 756,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://bollywood-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "celtic-music",
+      "displayName": "Celtic & Irish Music",
+      "crossRefs": [
+        "folk-americana",
+        "world-music"
+      ],
+      "priority": "P3",
+      "id": 757,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://celtic-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "metal-music",
+      "displayName": "Heavy Metal Authority",
+      "crossRefs": [
+        "rock-legends",
+        "punk-music"
+      ],
+      "priority": "P3",
+      "id": 758,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://metal-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "punk-music",
+      "displayName": "Punk & Hardcore",
+      "crossRefs": [
+        "rock-legends",
+        "metal-music"
+      ],
+      "priority": "P3",
+      "id": 759,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://punk-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indie-music",
+      "displayName": "Indie & Alternative",
+      "crossRefs": [
+        "rock-legends",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 760,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://indie-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "grunge-music",
+      "displayName": "Grunge & 90s Rock",
+      "crossRefs": [
+        "indie-music",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 761,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://grunge-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "prog-rock",
+      "displayName": "Progressive Rock",
+      "crossRefs": [
+        "rock-legends",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 762,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://prog-rock.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "psychedelic-music",
+      "displayName": "Psychedelic Music",
+      "crossRefs": [
+        "rock-legends",
+        "prog-rock"
+      ],
+      "priority": "P3",
+      "id": 763,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://psychedelic-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "synthwave-music",
+      "displayName": "Synthwave & Retrowave",
+      "crossRefs": [
+        "electronic-music",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 764,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://synthwave-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ambient-music",
+      "displayName": "Ambient & Drone",
+      "crossRefs": [
+        "electronic-music",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 765,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://ambient-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "techno-music",
+      "displayName": "Techno Authority",
+      "crossRefs": [
+        "electronic-music",
+        "dance-music"
+      ],
+      "priority": "P3",
+      "id": 766,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://techno-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "house-music",
+      "displayName": "House Music Guide",
+      "crossRefs": [
+        "electronic-music",
+        "dance-music"
+      ],
+      "priority": "P3",
+      "id": 767,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://house-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dance-music",
+      "displayName": "Dance & Club Music",
+      "crossRefs": [
+        "electronic-music",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 768,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://dance-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trance-music",
+      "displayName": "Trance & EDM",
+      "crossRefs": [
+        "electronic-music",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 769,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://trance-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dubstep-music",
+      "displayName": "Dubstep & Bass",
+      "crossRefs": [
+        "electronic-music",
+        "drum-percussion"
+      ],
+      "priority": "P3",
+      "id": 770,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://dubstep-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lofi-music",
+      "displayName": "Lo-Fi & Chillhop",
+      "crossRefs": [
+        "electronic-music",
+        "ambient-music"
+      ],
+      "priority": "P3",
+      "id": 771,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://lofi-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soundtrack-music",
+      "displayName": "Film & Game Soundtracks",
+      "crossRefs": [
+        "film-scores",
+        "gaming-soundtracks"
+      ],
+      "priority": "P3",
+      "id": 772,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://soundtrack-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-scores",
+      "displayName": "Film Score Authority",
+      "crossRefs": [
+        "soundtrack-music",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 773,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://film-scores.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gaming-soundtracks",
+      "displayName": "Gaming Soundtracks",
+      "crossRefs": [
+        "soundtrack-music",
+        "gaming-collectibles"
+      ],
+      "priority": "P3",
+      "id": 774,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://gaming-soundtracks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bass-guitar",
+      "displayName": "Bass Guitar Mastery",
+      "crossRefs": [
+        "guitar-mastery",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 775,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://bass-guitar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "violin-strings",
+      "displayName": "Violin & Strings",
+      "crossRefs": [
+        "classical-music",
+        "celtic-music"
+      ],
+      "priority": "P3",
+      "id": 776,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://violin-strings.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "saxophone-jazz",
+      "displayName": "Saxophone & Jazz Horns",
+      "crossRefs": [
+        "jazz-masters",
+        "blues-authority"
+      ],
+      "priority": "P3",
+      "id": 777,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://saxophone-jazz.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trumpet-brass",
+      "displayName": "Trumpet & Brass",
+      "crossRefs": [
+        "jazz-masters",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 778,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://trumpet-brass.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vocals-singing",
+      "displayName": "Vocals & Singing",
+      "crossRefs": [
+        "opera-collection",
+        "music-production"
+      ],
+      "priority": "P3",
+      "id": 779,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://vocals-singing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "songwriting",
+      "displayName": "Songwriting Craft",
+      "crossRefs": [
+        "music-production",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 780,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://songwriting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-theory",
+      "displayName": "Music Theory Authority",
+      "crossRefs": [
+        "classical-music",
+        "piano-repertoire"
+      ],
+      "priority": "P3",
+      "id": 781,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-theory.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ear-training",
+      "displayName": "Ear Training & Aural Skills",
+      "crossRefs": [
+        "music-theory",
+        "vocals-singing"
+      ],
+      "priority": "P3",
+      "id": 782,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://ear-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-notation",
+      "displayName": "Music Notation & Composition",
+      "crossRefs": [
+        "music-theory",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 783,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-notation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "orchestration",
+      "displayName": "Orchestration & Arrangement",
+      "crossRefs": [
+        "classical-music",
+        "film-scores"
+      ],
+      "priority": "P3",
+      "id": 784,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://orchestration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "recording-studio",
+      "displayName": "Recording Studio Guide",
+      "crossRefs": [
+        "music-production",
+        "audio-equipment"
+      ],
+      "priority": "P3",
+      "id": 785,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://recording-studio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mixing-mastering",
+      "displayName": "Mixing & Mastering",
+      "crossRefs": [
+        "recording-studio",
+        "music-production"
+      ],
+      "priority": "P3",
+      "id": 786,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://mixing-mastering.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "live-sound",
+      "displayName": "Live Sound Engineering",
+      "crossRefs": [
+        "concert-guide",
+        "recording-studio"
+      ],
+      "priority": "P3",
+      "id": 787,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://live-sound.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dj-culture",
+      "displayName": "DJ Culture & Mixing",
+      "crossRefs": [
+        "dance-music",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 788,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://dj-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "turntablism",
+      "displayName": "Turntablism & Scratch",
+      "crossRefs": [
+        "dj-culture",
+        "hip-hop-culture"
+      ],
+      "priority": "P3",
+      "id": 789,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://turntablism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-1980s",
+      "displayName": "1980s Music Decade",
+      "crossRefs": [
+        "vinyl-records",
+        "synthwave-music"
+      ],
+      "priority": "P3",
+      "id": 790,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-1980s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-1990s",
+      "displayName": "1990s Music Decade",
+      "crossRefs": [
+        "grunge-music",
+        "hip-hop-culture"
+      ],
+      "priority": "P3",
+      "id": 791,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-1990s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-2000s",
+      "displayName": "2000s Music Decade",
+      "crossRefs": [
+        "indie-music",
+        "kpop-music"
+      ],
+      "priority": "P3",
+      "id": 792,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-2000s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-2010s",
+      "displayName": "2010s Music Decade",
+      "crossRefs": [
+        "streaming-music",
+        "indie-music"
+      ],
+      "priority": "P3",
+      "id": 793,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-2010s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-2020s",
+      "displayName": "2020s Music Decade",
+      "crossRefs": [
+        "streaming-music",
+        "lofi-music"
+      ],
+      "priority": "P3",
+      "id": 794,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-2020s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-1960s",
+      "displayName": "1960s Music Revolution",
+      "crossRefs": [
+        "rock-legends",
+        "psychedelic-music"
+      ],
+      "priority": "P3",
+      "id": 795,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-1960s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-1970s",
+      "displayName": "1970s Music Golden Era",
+      "crossRefs": [
+        "rock-legends",
+        "disco-music"
+      ],
+      "priority": "P3",
+      "id": 796,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-1970s.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "disco-music",
+      "displayName": "Disco & Funk Era",
+      "crossRefs": [
+        "funk-music",
+        "dance-music"
+      ],
+      "priority": "P3",
+      "id": 797,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://disco-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "motown-music",
+      "displayName": "Motown & Soul Classics",
+      "crossRefs": [
+        "r-and-b-soul",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 798,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://motown-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "british-invasion",
+      "displayName": "British Invasion Rock",
+      "crossRefs": [
+        "rock-legends",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 799,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://british-invasion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "american-primitives",
+      "displayName": "American Primitive Guitar",
+      "crossRefs": [
+        "folk-americana",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 800,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://american-primitives.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "delta-blues",
+      "displayName": "Delta Blues Heritage",
+      "crossRefs": [
+        "blues-authority",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 801,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://delta-blues.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chicago-blues",
+      "displayName": "Chicago Blues",
+      "crossRefs": [
+        "blues-authority",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 802,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://chicago-blues.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bebop-jazz",
+      "displayName": "Bebop & Hard Bop",
+      "crossRefs": [
+        "jazz-masters",
+        "saxophone-jazz"
+      ],
+      "priority": "P3",
+      "id": 803,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://bebop-jazz.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cool-jazz",
+      "displayName": "Cool Jazz & West Coast",
+      "crossRefs": [
+        "jazz-masters",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 804,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://cool-jazz.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "free-jazz",
+      "displayName": "Free Jazz & Avant-Garde",
+      "crossRefs": [
+        "jazz-masters",
+        "ambient-music"
+      ],
+      "priority": "P3",
+      "id": 805,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://free-jazz.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "baroque-music",
+      "displayName": "Baroque Music",
+      "crossRefs": [
+        "classical-music",
+        "opera-collection"
+      ],
+      "priority": "P3",
+      "id": 806,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://baroque-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "romantic-music",
+      "displayName": "Romantic Era Music",
+      "crossRefs": [
+        "classical-music",
+        "piano-repertoire"
+      ],
+      "priority": "P3",
+      "id": 807,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://romantic-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "modern-classical",
+      "displayName": "Modern Classical",
+      "crossRefs": [
+        "classical-music",
+        "ambient-music"
+      ],
+      "priority": "P3",
+      "id": 808,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://modern-classical.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "choral-music",
+      "displayName": "Choral & Sacred Music",
+      "crossRefs": [
+        "classical-music",
+        "opera-collection"
+      ],
+      "priority": "P3",
+      "id": 809,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://choral-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chamber-music",
+      "displayName": "Chamber Music",
+      "crossRefs": [
+        "classical-music",
+        "violin-strings"
+      ],
+      "priority": "P3",
+      "id": 810,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://chamber-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "symphony-orchestra",
+      "displayName": "Symphony & Orchestra",
+      "crossRefs": [
+        "classical-music",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 811,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://symphony-orchestra.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-box-sets",
+      "displayName": "Box Sets & Deluxe Editions",
+      "crossRefs": [
+        "vinyl-records",
+        "rare-records"
+      ],
+      "priority": "P3",
+      "id": 812,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-box-sets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rare-records",
+      "displayName": "Rare & Collectible Records",
+      "crossRefs": [
+        "vinyl-records",
+        "music-box-sets"
+      ],
+      "priority": "P3",
+      "id": 813,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://rare-records.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cassette-tapes",
+      "displayName": "Cassette Tape Culture",
+      "crossRefs": [
+        "vinyl-records",
+        "indie-music"
+      ],
+      "priority": "P3",
+      "id": 814,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://cassette-tapes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cd-collection",
+      "displayName": "CD Collection Guide",
+      "crossRefs": [
+        "vinyl-records",
+        "music-box-sets"
+      ],
+      "priority": "P3",
+      "id": 815,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://cd-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-music",
+      "displayName": "Streaming Platform Guide",
+      "crossRefs": [
+        "playlist-curation",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 816,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://streaming-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "playlist-curation",
+      "displayName": "Playlist Curation Art",
+      "crossRefs": [
+        "streaming-music",
+        "dj-culture"
+      ],
+      "priority": "P3",
+      "id": 817,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://playlist-curation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-awards",
+      "displayName": "Music Awards Tracker",
+      "crossRefs": [
+        "grammy-guide",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 818,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-awards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "grammy-guide",
+      "displayName": "Grammy Awards Authority",
+      "crossRefs": [
+        "music-awards",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 819,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://grammy-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-biographies",
+      "displayName": "Musician Biographies",
+      "crossRefs": [
+        "rock-legends",
+        "nonfiction-music"
+      ],
+      "priority": "P3",
+      "id": 820,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-biographies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "band-tributes",
+      "displayName": "Tribute Bands & Covers",
+      "crossRefs": [
+        "concert-guide",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 821,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://band-tributes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "open-mic",
+      "displayName": "Open Mic & Local Scene",
+      "crossRefs": [
+        "concert-guide",
+        "songwriting"
+      ],
+      "priority": "P3",
+      "id": 822,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://open-mic.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-venues",
+      "displayName": "Legendary Music Venues",
+      "crossRefs": [
+        "concert-guide",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 823,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-venues.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "record-stores",
+      "displayName": "Record Store Guide",
+      "crossRefs": [
+        "vinyl-records",
+        "rare-records"
+      ],
+      "priority": "P3",
+      "id": 824,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://record-stores.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-gear-reviews",
+      "displayName": "Music Gear Reviews",
+      "crossRefs": [
+        "audio-equipment",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 825,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-gear-reviews.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pedalboards",
+      "displayName": "Pedalboards & Effects",
+      "crossRefs": [
+        "guitar-mastery",
+        "music-gear-reviews"
+      ],
+      "priority": "P3",
+      "id": 826,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://pedalboards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "synthesizers",
+      "displayName": "Synthesizer Collection",
+      "crossRefs": [
+        "electronic-music",
+        "synthwave-music"
+      ],
+      "priority": "P3",
+      "id": 827,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://synthesizers.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drum-machines",
+      "displayName": "Drum Machines & Sequencers",
+      "crossRefs": [
+        "electronic-music",
+        "music-production"
+      ],
+      "priority": "P3",
+      "id": 828,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://drum-machines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sample-libraries",
+      "displayName": "Sample Libraries & Sound Design",
+      "crossRefs": [
+        "music-production",
+        "electronic-music"
+      ],
+      "priority": "P3",
+      "id": 829,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://sample-libraries.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-licensing",
+      "displayName": "Music Licensing & Sync",
+      "crossRefs": [
+        "music-production",
+        "film-scores"
+      ],
+      "priority": "P3",
+      "id": 830,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-licensing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-business",
+      "displayName": "Music Business Guide",
+      "crossRefs": [
+        "music-licensing",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 831,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-business.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-education",
+      "displayName": "Music Education & Lessons",
+      "crossRefs": [
+        "music-theory",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 832,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-education.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-therapy",
+      "displayName": "Music Therapy & Wellness",
+      "crossRefs": [
+        "meditation-mindful",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 833,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-therapy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "children-music",
+      "displayName": "Children's Music",
+      "crossRefs": [
+        "music-education",
+        "folk-americana"
+      ],
+      "priority": "P3",
+      "id": 834,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://children-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lullabies-music",
+      "displayName": "Lullabies & Sleep Music",
+      "crossRefs": [
+        "children-music",
+        "ambient-music"
+      ],
+      "priority": "P3",
+      "id": 835,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://lullabies-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "worship-music",
+      "displayName": "Worship & Gospel Music",
+      "crossRefs": [
+        "choral-music",
+        "r-and-b-soul"
+      ],
+      "priority": "P3",
+      "id": 836,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://worship-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gospel-music",
+      "displayName": "Gospel & Spirituals",
+      "crossRefs": [
+        "worship-music",
+        "blues-authority"
+      ],
+      "priority": "P3",
+      "id": 837,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://gospel-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "marching-bands",
+      "displayName": "Marching Bands & Drum Corps",
+      "crossRefs": [
+        "drum-percussion",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 838,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://marching-bands.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mariachi-music",
+      "displayName": "Mariachi & Regional Mexican",
+      "crossRefs": [
+        "latin-music",
+        "world-music"
+      ],
+      "priority": "P3",
+      "id": 839,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://mariachi-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "flamenco-music",
+      "displayName": "Flamenco Authority",
+      "crossRefs": [
+        "latin-music",
+        "guitar-mastery"
+      ],
+      "priority": "P3",
+      "id": 840,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://flamenco-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fado-music",
+      "displayName": "Fado & Portuguese Song",
+      "crossRefs": [
+        "portugal-wines",
+        "world-music"
+      ],
+      "priority": "P3",
+      "id": 841,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://fado-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "klezmer-music",
+      "displayName": "Klezmer & Jewish Music",
+      "crossRefs": [
+        "world-music",
+        "folk-americana"
+      ],
+      "priority": "P3",
+      "id": 842,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://klezmer-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "polka-music",
+      "displayName": "Polka & Accordion",
+      "crossRefs": [
+        "folk-americana",
+        "world-music"
+      ],
+      "priority": "P3",
+      "id": 843,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://polka-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-museums",
+      "displayName": "Music Museums & Halls of Fame",
+      "crossRefs": [
+        "music-venues",
+        "music-biographies"
+      ],
+      "priority": "P3",
+      "id": 844,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-museums.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-documentaries",
+      "displayName": "Music Documentaries",
+      "crossRefs": [
+        "music-biographies",
+        "film-documentary"
+      ],
+      "priority": "P3",
+      "id": 845,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-documentaries.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-podcasts",
+      "displayName": "Music Podcast Guide",
+      "crossRefs": [
+        "podcast-creator",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 846,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-podcasts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-collector-clubs",
+      "displayName": "Music Collector Clubs",
+      "crossRefs": [
+        "vinyl-records",
+        "rare-records"
+      ],
+      "priority": "P2",
+      "id": 847,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "album-reviews-network",
+      "displayName": "Album Reviews Network",
+      "crossRefs": [
+        "vinyl-records",
+        "music-collector-clubs"
+      ],
+      "priority": "P3",
+      "id": 848,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://album-reviews-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "concert-photography",
+      "displayName": "Concert Photography",
+      "crossRefs": [
+        "concert-guide",
+        "photography-concert"
+      ],
+      "priority": "P3",
+      "id": 849,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://concert-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-memorabilia",
+      "displayName": "Music Memorabilia",
+      "crossRefs": [
+        "vinyl-records",
+        "autograph-collection"
+      ],
+      "priority": "P3",
+      "id": 850,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-memorabilia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "setlist-archive",
+      "displayName": "Setlist Archive",
+      "crossRefs": [
+        "concert-guide",
+        "rock-legends"
+      ],
+      "priority": "P3",
+      "id": 851,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://setlist-archive.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-trivia",
+      "displayName": "Music Trivia & Quizzes",
+      "crossRefs": [
+        "rock-legends",
+        "music-awards"
+      ],
+      "priority": "P3",
+      "id": 852,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-trivia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "karaoke-guide",
+      "displayName": "Karaoke Guide",
+      "crossRefs": [
+        "vocals-singing",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 853,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://karaoke-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "a-cappella",
+      "displayName": "A Cappella & Vocal Groups",
+      "crossRefs": [
+        "vocals-singing",
+        "choral-music"
+      ],
+      "priority": "P3",
+      "id": 854,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://a-cappella.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beatboxing",
+      "displayName": "Beatboxing & Vocal Percussion",
+      "crossRefs": [
+        "hip-hop-culture",
+        "a-cappella"
+      ],
+      "priority": "P3",
+      "id": 855,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://beatboxing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-ai-tools",
+      "displayName": "AI Music Tools",
+      "crossRefs": [
+        "music-production",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 856,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-ai-tools.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spatial-audio",
+      "displayName": "Spatial & Immersive Audio",
+      "crossRefs": [
+        "audio-equipment",
+        "streaming-music"
+      ],
+      "priority": "P3",
+      "id": 857,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://spatial-audio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hi-res-audio",
+      "displayName": "Hi-Res Audio Guide",
+      "crossRefs": [
+        "audio-equipment",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 858,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://hi-res-audio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-for-cooking",
+      "displayName": "Music for Cooking",
+      "crossRefs": [
+        "meals-pairing",
+        "playlist-curation"
+      ],
+      "priority": "P3",
+      "id": 859,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-for-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-for-workout",
+      "displayName": "Workout Music Playlists",
+      "crossRefs": [
+        "fitness-training",
+        "playlist-curation"
+      ],
+      "priority": "P3",
+      "id": 860,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-for-workout.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-for-focus",
+      "displayName": "Focus & Study Music",
+      "crossRefs": [
+        "lofi-music",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 861,
+      "vertical_id": "music-audio",
+      "vertical_slug": "music-audio",
+      "site_url": "https://music-for-focus.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

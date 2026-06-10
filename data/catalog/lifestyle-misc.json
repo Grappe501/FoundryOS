@@ -1,0 +1,795 @@
+{
+  "vertical": {
+    "id": "lifestyle-misc",
+    "slug": "lifestyle-misc",
+    "name": "Lifestyle & Community",
+    "icon": "✦",
+    "app_count": 54,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "cigar-aficionado",
+      "displayName": "Cigar Aficionado",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "spirits-food-pairing"
+      ],
+      "priority": "P3",
+      "id": 1908,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://cigar-aficionado.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pipe-tobacco",
+      "displayName": "Pipe Tobacco Guide",
+      "crossRefs": [
+        "cigar-aficionado",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 1909,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://pipe-tobacco.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wedding-planner",
+      "displayName": "Wedding Planner Elite",
+      "crossRefs": [
+        "wine-cellar",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 1910,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://wedding-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gift-curator",
+      "displayName": "Gift Curator",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "chocolate-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 1911,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://gift-curator.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-experts",
+      "displayName": "Local Experts Network",
+      "crossRefs": [
+        "restaurant-guide",
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1912,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://local-experts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "event-planner",
+      "displayName": "Event Planner Pro",
+      "crossRefs": [
+        "wedding-planner",
+        "corporate-catering"
+      ],
+      "priority": "P3",
+      "id": 1913,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://event-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "party-planning",
+      "displayName": "Party Planning Guide",
+      "crossRefs": [
+        "event-planner",
+        "craft-cocktails"
+      ],
+      "priority": "P3",
+      "id": 1914,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://party-planning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "etiquette-modern",
+      "displayName": "Modern Etiquette",
+      "crossRefs": [
+        "luxury-travel",
+        "wedding-planner"
+      ],
+      "priority": "P3",
+      "id": 1915,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://etiquette-modern.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "conversation-skills",
+      "displayName": "Conversation Skills",
+      "crossRefs": [
+        "networking-pro",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1916,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://conversation-skills.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "friendship-social",
+      "displayName": "Friendship & Social Life",
+      "crossRefs": [
+        "conversation-skills",
+        "book-clubs"
+      ],
+      "priority": "P3",
+      "id": 1917,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://friendship-social.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dating-guide",
+      "displayName": "Dating Guide Modern",
+      "crossRefs": [
+        "friendship-social",
+        "mens-style"
+      ],
+      "priority": "P3",
+      "id": 1918,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://dating-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "marriage-resources",
+      "displayName": "Marriage Resources",
+      "crossRefs": [
+        "dating-guide",
+        "wedding-planner"
+      ],
+      "priority": "P3",
+      "id": 1919,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://marriage-resources.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "senior-living",
+      "displayName": "Senior Living Guide",
+      "crossRefs": [
+        "senior-nutrition",
+        "retirement-planning"
+      ],
+      "priority": "P3",
+      "id": 1920,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://senior-living.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "disability-resources",
+      "displayName": "Disability Resources",
+      "crossRefs": [
+        "accessibility-universal",
+        "health-medical-hub"
+      ],
+      "priority": "P3",
+      "id": 1921,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://disability-resources.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "accessibility-universal",
+      "displayName": "Universal Accessibility",
+      "crossRefs": [
+        "disability-resources",
+        "tv-accessibility"
+      ],
+      "priority": "P3",
+      "id": 1922,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://accessibility-universal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "volunteer-local",
+      "displayName": "Local Volunteering",
+      "crossRefs": [
+        "conservation-volunteer",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1923,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://volunteer-local.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-building",
+      "displayName": "Community Building",
+      "crossRefs": [
+        "volunteer-local",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1924,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-building.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "neighborhood-guide",
+      "displayName": "Neighborhood Guide",
+      "crossRefs": [
+        "local-experts",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 1925,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://neighborhood-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "seasonal-living",
+      "displayName": "Seasonal Living Guide",
+      "crossRefs": [
+        "seasonal-beverage",
+        "seasonal-ingredients"
+      ],
+      "priority": "P3",
+      "id": 1926,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://seasonal-living.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-milestones",
+      "displayName": "Life Milestones Planner",
+      "crossRefs": [
+        "wedding-planner",
+        "retirement-planning"
+      ],
+      "priority": "P3",
+      "id": 1927,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-milestones.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "legacy-planning",
+      "displayName": "Legacy Planning",
+      "crossRefs": [
+        "genealogy-family",
+        "estate-planning"
+      ],
+      "priority": "P3",
+      "id": 1928,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://legacy-planning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hobby-discovery",
+      "displayName": "Hobby Discovery Hub",
+      "crossRefs": [
+        "maker-crafts",
+        "book-clubs"
+      ],
+      "priority": "P3",
+      "id": 1929,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://hobby-discovery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lifestyle-clubs",
+      "displayName": "Lifestyle Community Clubs",
+      "crossRefs": [
+        "friendship-social",
+        "local-experts"
+      ],
+      "priority": "P2",
+      "id": 1930,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://lifestyle-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "expert-attribution-hub",
+      "displayName": "Expert Attribution Hub",
+      "crossRefs": [
+        "local-experts",
+        "tier3-expert-badges"
+      ],
+      "priority": "P3",
+      "id": 1931,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://expert-attribution-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tier3-expert-badges",
+      "displayName": "Tier 3 Expert Badges Global",
+      "crossRefs": [
+        "expert-attribution-hub",
+        "food-expert-badges"
+      ],
+      "priority": "P3",
+      "id": 1932,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://tier3-expert-badges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cross-app-social-hub",
+      "displayName": "Cross-App Social Hub",
+      "crossRefs": [
+        "tier3-expert-badges",
+        "cross-app-meals"
+      ],
+      "priority": "P3",
+      "id": 1933,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://cross-app-social-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "foundry-community",
+      "displayName": "FoundryOS Community Hub",
+      "crossRefs": [
+        "cross-app-social-hub",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1934,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://foundry-community.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-01",
+      "displayName": "Life Skill Guide 1",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1935,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-02",
+      "displayName": "Life Skill Guide 2",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1936,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-03",
+      "displayName": "Life Skill Guide 3",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1937,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-04",
+      "displayName": "Life Skill Guide 4",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1938,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-05",
+      "displayName": "Life Skill Guide 5",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1939,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-06",
+      "displayName": "Life Skill Guide 6",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1940,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-07",
+      "displayName": "Life Skill Guide 7",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1941,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-08",
+      "displayName": "Life Skill Guide 8",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1942,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-09",
+      "displayName": "Life Skill Guide 9",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1943,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-10",
+      "displayName": "Life Skill Guide 10",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1944,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-11",
+      "displayName": "Life Skill Guide 11",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1945,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-12",
+      "displayName": "Life Skill Guide 12",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1946,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-13",
+      "displayName": "Life Skill Guide 13",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1947,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-14",
+      "displayName": "Life Skill Guide 14",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1948,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "life-skill-15",
+      "displayName": "Life Skill Guide 15",
+      "crossRefs": [
+        "hobby-discovery"
+      ],
+      "priority": "P3",
+      "id": 1949,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://life-skill-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-01",
+      "displayName": "Community Niche 1",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1950,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-02",
+      "displayName": "Community Niche 2",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1951,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-03",
+      "displayName": "Community Niche 3",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1952,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-04",
+      "displayName": "Community Niche 4",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1953,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-05",
+      "displayName": "Community Niche 5",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1954,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-06",
+      "displayName": "Community Niche 6",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1955,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-07",
+      "displayName": "Community Niche 7",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1956,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-08",
+      "displayName": "Community Niche 8",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1957,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-09",
+      "displayName": "Community Niche 9",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1958,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-10",
+      "displayName": "Community Niche 10",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1959,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-11",
+      "displayName": "Community Niche 11",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1960,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-niche-12",
+      "displayName": "Community Niche 12",
+      "crossRefs": [
+        "community-building"
+      ],
+      "priority": "P3",
+      "id": 1961,
+      "vertical_id": "lifestyle-misc",
+      "vertical_slug": "lifestyle-misc",
+      "site_url": "https://community-niche-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

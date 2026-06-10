@@ -1,7 +1,15 @@
+# Default: platform marketing site
+# Admin: apps/admin | Site engine: apps/site-engine (wildcard *.foundryos.app)
 [build]
   base = "apps/platform"
   command = "npm run build"
   publish = "apps/platform/.next"
+
+[context.admin]
+  base = "apps/admin"
+
+[context.site-engine]
+  base = "apps/site-engine"
 
 [build.environment]
   NODE_VERSION = "20"

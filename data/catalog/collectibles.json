@@ -1,0 +1,1093 @@
+{
+  "vertical": {
+    "id": "collectibles",
+    "slug": "collectibles",
+    "name": "Collectibles & Antiques",
+    "icon": "💎",
+    "app_count": 72,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "collectibles-vintage",
+      "displayName": "Vintage Collectibles",
+      "crossRefs": [
+        "sports-cards",
+        "coin-collection"
+      ],
+      "priority": "P3",
+      "id": 530,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-vintage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coin-collection",
+      "displayName": "Coin Collection",
+      "crossRefs": [
+        "collectibles-vintage",
+        "stamp-collecting"
+      ],
+      "priority": "P3",
+      "id": 531,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://coin-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stamp-collecting",
+      "displayName": "Stamp Collecting",
+      "crossRefs": [
+        "coin-collection",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 532,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://stamp-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "comic-books",
+      "displayName": "Comic Book Authority",
+      "crossRefs": [
+        "trading-cards",
+        "action-figures"
+      ],
+      "priority": "P3",
+      "id": 533,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://comic-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trading-cards",
+      "displayName": "Trading Card Master",
+      "crossRefs": [
+        "sports-cards",
+        "comic-books"
+      ],
+      "priority": "P3",
+      "id": 534,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://trading-cards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "action-figures",
+      "displayName": "Action Figures Guide",
+      "crossRefs": [
+        "comic-books",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 535,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://action-figures.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-toys",
+      "displayName": "Vintage Toys Collection",
+      "crossRefs": [
+        "action-figures",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 536,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-toys.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "antique-furniture",
+      "displayName": "Antique Furniture Guide",
+      "crossRefs": [
+        "art-auctions",
+        "watch-collection"
+      ],
+      "priority": "P3",
+      "id": 537,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://antique-furniture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "watch-collection",
+      "displayName": "Watch Collection",
+      "crossRefs": [
+        "antique-furniture",
+        "jewelry-gems"
+      ],
+      "priority": "P3",
+      "id": 538,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://watch-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jewelry-gems",
+      "displayName": "Jewelry & Gemstones",
+      "crossRefs": [
+        "watch-collection",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 539,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://jewelry-gems.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "art-auctions",
+      "displayName": "Art Auctions & Galleries",
+      "crossRefs": [
+        "antique-furniture",
+        "photography-art"
+      ],
+      "priority": "P3",
+      "id": 540,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://art-auctions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photography-art",
+      "displayName": "Photography Art Guide",
+      "crossRefs": [
+        "art-auctions",
+        "vinyl-records"
+      ],
+      "priority": "P3",
+      "id": 541,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://photography-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fountain-pens",
+      "displayName": "Fountain Pen Collection",
+      "crossRefs": [
+        "watch-collection",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 542,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://fountain-pens.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sneakers-collect",
+      "displayName": "Sneaker Collection",
+      "crossRefs": [
+        "sports-cards",
+        "streetwear-style"
+      ],
+      "priority": "P3",
+      "id": 543,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://sneakers-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "militaria-history",
+      "displayName": "Militaria & History",
+      "crossRefs": [
+        "coin-collection",
+        "antique-furniture"
+      ],
+      "priority": "P3",
+      "id": 544,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://militaria-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-collecting",
+      "displayName": "Rare Book Collecting",
+      "crossRefs": [
+        "rare-books",
+        "comic-books"
+      ],
+      "priority": "P3",
+      "id": 545,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://book-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-memorabilia",
+      "displayName": "Movie Memorabilia",
+      "crossRefs": [
+        "comic-books",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 546,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://movie-memorabilia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "autograph-collection",
+      "displayName": "Autograph Collection",
+      "crossRefs": [
+        "sports-cards",
+        "movie-memorabilia"
+      ],
+      "priority": "P3",
+      "id": 547,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://autograph-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "model-trains",
+      "displayName": "Model Trains & Miniatures",
+      "crossRefs": [
+        "vintage-toys",
+        "antique-furniture"
+      ],
+      "priority": "P3",
+      "id": 548,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://model-trains.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pottery-ceramics",
+      "displayName": "Pottery & Ceramics",
+      "crossRefs": [
+        "antique-furniture",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 549,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://pottery-ceramics.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-camera-collect",
+      "displayName": "Vintage Camera Collecting",
+      "crossRefs": [
+        "photography-gear",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 550,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-camera-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vinyl-toys",
+      "displayName": "Designer Vinyl Toys",
+      "crossRefs": [
+        "vintage-toys",
+        "sneakers-collect"
+      ],
+      "priority": "P3",
+      "id": 551,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vinyl-toys.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lego-collecting",
+      "displayName": "LEGO Collecting",
+      "crossRefs": [
+        "vintage-toys",
+        "model-trains"
+      ],
+      "priority": "P3",
+      "id": 552,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://lego-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "diecast-models",
+      "displayName": "Diecast Model Cars",
+      "crossRefs": [
+        "classic-cars",
+        "model-trains"
+      ],
+      "priority": "P3",
+      "id": 553,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://diecast-models.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "antique-glass",
+      "displayName": "Antique Glass & Crystal",
+      "crossRefs": [
+        "antique-furniture",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 554,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://antique-glass.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-clothing-collect",
+      "displayName": "Vintage Clothing Collecting",
+      "crossRefs": [
+        "fashion-vintage",
+        "sneakers-collect"
+      ],
+      "priority": "P3",
+      "id": 555,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-clothing-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "memorabilia-auth",
+      "displayName": "Memorabilia Authentication Pro",
+      "crossRefs": [
+        "autograph-collection",
+        "sports-memorabilia-auth"
+      ],
+      "priority": "P3",
+      "id": 556,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://memorabilia-auth.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "auction-house-guide",
+      "displayName": "Auction House Guide",
+      "crossRefs": [
+        "art-auctions",
+        "wine-auctions"
+      ],
+      "priority": "P3",
+      "id": 557,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://auction-house-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "estate-sales",
+      "displayName": "Estate Sales Finder",
+      "crossRefs": [
+        "antique-furniture",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 558,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://estate-sales.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "flea-market",
+      "displayName": "Flea Market Guide",
+      "crossRefs": [
+        "estate-sales",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 559,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://flea-market.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pawn-value-guide",
+      "displayName": "Pawn & Resale Values",
+      "crossRefs": [
+        "collectibles-vintage",
+        "coin-collection"
+      ],
+      "priority": "P3",
+      "id": 560,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://pawn-value-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collectibles-insurance",
+      "displayName": "Collectibles Insurance",
+      "crossRefs": [
+        "watch-collection",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 561,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-insurance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collectibles-appraisal",
+      "displayName": "Collectibles Appraisal",
+      "crossRefs": [
+        "auction-house-guide",
+        "collectibles-insurance"
+      ],
+      "priority": "P3",
+      "id": 562,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-appraisal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collector-clubs-hub",
+      "displayName": "Collector Clubs Hub",
+      "crossRefs": [
+        "sports-collector-clubs",
+        "wine-collector-clubs"
+      ],
+      "priority": "P2",
+      "id": 563,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collector-clubs-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collectibles-invest",
+      "displayName": "Collectibles Investing",
+      "crossRefs": [
+        "wine-invest",
+        "whiskey-invest"
+      ],
+      "priority": "P3",
+      "id": 564,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nft-collectibles",
+      "displayName": "Digital Collectibles",
+      "crossRefs": [
+        "crypto-guide",
+        "trading-cards"
+      ],
+      "priority": "P3",
+      "id": 565,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://nft-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trading-pin-collect",
+      "displayName": "Trading Pin Collecting",
+      "crossRefs": [
+        "disney-collectibles",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 566,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://trading-pin-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "disney-collectibles",
+      "displayName": "Disney Collectibles",
+      "crossRefs": [
+        "vintage-toys",
+        "movie-memorabilia"
+      ],
+      "priority": "P3",
+      "id": 567,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://disney-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pop-culture-memorabilia",
+      "displayName": "Pop Culture Memorabilia",
+      "crossRefs": [
+        "movie-memorabilia",
+        "comic-books"
+      ],
+      "priority": "P3",
+      "id": 568,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://pop-culture-memorabilia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "convention-collectibles",
+      "displayName": "Convention Collectibles",
+      "crossRefs": [
+        "comic-books",
+        "pop-culture-memorabilia"
+      ],
+      "priority": "P3",
+      "id": 569,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://convention-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "graded-cards",
+      "displayName": "Graded Cards Authority",
+      "crossRefs": [
+        "trading-cards",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 570,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://graded-cards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tcg-pokemon",
+      "displayName": "Pokemon TCG",
+      "crossRefs": [
+        "trading-cards",
+        "gaming-collectibles"
+      ],
+      "priority": "P3",
+      "id": 571,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://tcg-pokemon.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tcg-magic",
+      "displayName": "Magic The Gathering",
+      "crossRefs": [
+        "trading-cards",
+        "board-games"
+      ],
+      "priority": "P3",
+      "id": 572,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://tcg-magic.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tcg-yugioh",
+      "displayName": "Yu-Gi-Oh Collecting",
+      "crossRefs": [
+        "trading-cards",
+        "tcg-pokemon"
+      ],
+      "priority": "P3",
+      "id": 573,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://tcg-yugioh.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "retro-gaming-collect",
+      "displayName": "Retro Gaming Collecting",
+      "crossRefs": [
+        "gaming-collectibles",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 574,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://retro-gaming-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "arcade-cabinets",
+      "displayName": "Arcade Cabinet Collecting",
+      "crossRefs": [
+        "retro-gaming-collect",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 575,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://arcade-cabinets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pinball-machines",
+      "displayName": "Pinball Machine Collecting",
+      "crossRefs": [
+        "arcade-cabinets",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 576,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://pinball-machines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-radio",
+      "displayName": "Vintage Radio Collecting",
+      "crossRefs": [
+        "audio-equipment",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 577,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-radio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "antique-tools",
+      "displayName": "Antique Tools Collecting",
+      "crossRefs": [
+        "woodworking-shop",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 578,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://antique-tools.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "military-medals",
+      "displayName": "Military Medals & Orders",
+      "crossRefs": [
+        "militaria-history",
+        "coin-collection"
+      ],
+      "priority": "P3",
+      "id": 579,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://military-medals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-advertising",
+      "displayName": "Vintage Advertising",
+      "crossRefs": [
+        "collectibles-vintage",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 580,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-advertising.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "matchbook-collecting",
+      "displayName": "Matchbook Collecting",
+      "crossRefs": [
+        "vintage-advertising",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 581,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://matchbook-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "postcard-collecting",
+      "displayName": "Postcard Collecting",
+      "crossRefs": [
+        "stamp-collecting",
+        "travel-postcards"
+      ],
+      "priority": "P3",
+      "id": 582,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://postcard-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-postcards",
+      "displayName": "Travel Postcard Archive",
+      "crossRefs": [
+        "postcard-collecting",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 583,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://travel-postcards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "map-collecting",
+      "displayName": "Antique Map Collecting",
+      "crossRefs": [
+        "travel-postcards",
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 584,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://map-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "globe-collecting",
+      "displayName": "Globe Collecting",
+      "crossRefs": [
+        "map-collecting",
+        "antique-furniture"
+      ],
+      "priority": "P3",
+      "id": 585,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://globe-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "taxidermy-collect",
+      "displayName": "Taxidermy & Natural History",
+      "crossRefs": [
+        "wildlife-watching",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 586,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://taxidermy-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "shell-collecting",
+      "displayName": "Shell & Fossil Collecting",
+      "crossRefs": [
+        "scuba-diving",
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 587,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://shell-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mineral-gems-collect",
+      "displayName": "Mineral & Gem Collecting",
+      "crossRefs": [
+        "jewelry-gems",
+        "shell-collecting"
+      ],
+      "priority": "P3",
+      "id": 588,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://mineral-gems-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vintage-tech-collect",
+      "displayName": "Vintage Tech Collecting",
+      "crossRefs": [
+        "retro-computing",
+        "audio-equipment"
+      ],
+      "priority": "P3",
+      "id": 589,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://vintage-tech-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "typewriter-collect",
+      "displayName": "Typewriter Collecting",
+      "crossRefs": [
+        "fountain-pens",
+        "vintage-tech-collect"
+      ],
+      "priority": "P3",
+      "id": 590,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://typewriter-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sewing-vintage",
+      "displayName": "Vintage Sewing Machines",
+      "crossRefs": [
+        "fashion-vintage",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 591,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://sewing-vintage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collectibles-restoration",
+      "displayName": "Collectibles Restoration",
+      "crossRefs": [
+        "antique-furniture",
+        "watch-collection"
+      ],
+      "priority": "P3",
+      "id": 592,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-restoration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "provenance-tracking",
+      "displayName": "Provenance Tracking",
+      "crossRefs": [
+        "collectibles-appraisal",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 593,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://provenance-tracking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collector-insurance-claims",
+      "displayName": "Insurance Claims for Collectibles",
+      "crossRefs": [
+        "collectibles-insurance",
+        "provenance-tracking"
+      ],
+      "priority": "P3",
+      "id": 594,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collector-insurance-claims.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collectibles-photography",
+      "displayName": "Collectibles Photography",
+      "crossRefs": [
+        "photography-gear",
+        "ebay-selling"
+      ],
+      "priority": "P3",
+      "id": 595,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collectibles-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ebay-selling",
+      "displayName": "eBay Selling for Collectors",
+      "crossRefs": [
+        "pawn-value-guide",
+        "collectibles-photography"
+      ],
+      "priority": "P3",
+      "id": 596,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://ebay-selling.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "heritage-auctions",
+      "displayName": "Heritage Auctions Tracker",
+      "crossRefs": [
+        "auction-house-guide",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 597,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://heritage-auctions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sothebys-tracker",
+      "displayName": "Sotheby's & Christie's Tracker",
+      "crossRefs": [
+        "art-auctions",
+        "heritage-auctions"
+      ],
+      "priority": "P3",
+      "id": 598,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://sothebys-tracker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-antique-dealers",
+      "displayName": "Local Antique Dealers",
+      "crossRefs": [
+        "estate-sales",
+        "flea-market"
+      ],
+      "priority": "P3",
+      "id": 599,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://local-antique-dealers.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "collector-expert-badges",
+      "displayName": "Collector Expert Badges",
+      "crossRefs": [
+        "collector-clubs-hub",
+        "provenance-tracking"
+      ],
+      "priority": "P3",
+      "id": 600,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://collector-expert-badges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cross-collect-hub",
+      "displayName": "Cross-Collection Hub",
+      "crossRefs": [
+        "book-collecting",
+        "vinyl-records",
+        "movie-memorabilia"
+      ],
+      "priority": "P3",
+      "id": 601,
+      "vertical_id": "collectibles",
+      "vertical_slug": "collectibles",
+      "site_url": "https://cross-collect-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

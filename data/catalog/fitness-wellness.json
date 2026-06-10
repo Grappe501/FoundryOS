@@ -1,0 +1,750 @@
+{
+  "vertical": {
+    "id": "fitness-wellness",
+    "slug": "fitness-wellness",
+    "name": "Fitness & Wellness",
+    "icon": "💪",
+    "app_count": 50,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "fitness-training",
+      "displayName": "Fitness Training Guide",
+      "crossRefs": [
+        "fitness-nutrition",
+        "marathon-running"
+      ],
+      "priority": "P3",
+      "id": 1181,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://fitness-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fitness-nutrition",
+      "displayName": "Fitness Nutrition",
+      "crossRefs": [
+        "fitness-training",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 1182,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://fitness-nutrition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "yoga-practice",
+      "displayName": "Yoga Practice Guide",
+      "crossRefs": [
+        "meditation-mindful",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1183,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://yoga-practice.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "meditation-mindful",
+      "displayName": "Meditation & Mindfulness",
+      "crossRefs": [
+        "yoga-practice",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1184,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://meditation-mindful.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wellness-recovery",
+      "displayName": "Wellness & Recovery",
+      "crossRefs": [
+        "fitness-training",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1185,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://wellness-recovery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "weightlifting",
+      "displayName": "Weightlifting Guide",
+      "crossRefs": [
+        "fitness-training",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 1186,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://weightlifting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "crossfit-training",
+      "displayName": "CrossFit Training",
+      "crossRefs": [
+        "weightlifting",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 1187,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://crossfit-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "martial-arts",
+      "displayName": "Martial Arts Guide",
+      "crossRefs": [
+        "ufc-mma",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1188,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://martial-arts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "swimming-diving",
+      "displayName": "Swimming & Diving",
+      "crossRefs": [
+        "triathlon-guide",
+        "scuba-diving"
+      ],
+      "priority": "P3",
+      "id": 1189,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://swimming-diving.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pilates-core",
+      "displayName": "Pilates & Core Training",
+      "crossRefs": [
+        "yoga-practice",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1190,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://pilates-core.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-physio",
+      "displayName": "Sports Physio & Injury",
+      "crossRefs": [
+        "fitness-training",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1191,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://sports-physio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sleep-optimization",
+      "displayName": "Sleep Optimization",
+      "crossRefs": [
+        "wellness-recovery",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1192,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://sleep-optimization.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "biohacking",
+      "displayName": "Biohacking Guide",
+      "crossRefs": [
+        "fitness-nutrition",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1193,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://biohacking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sauna-cold",
+      "displayName": "Sauna & Cold Plunge",
+      "crossRefs": [
+        "wellness-recovery",
+        "biohacking"
+      ],
+      "priority": "P3",
+      "id": 1194,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://sauna-cold.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "supplements-guide",
+      "displayName": "Supplements Guide",
+      "crossRefs": [
+        "fitness-nutrition",
+        "biohacking"
+      ],
+      "priority": "P3",
+      "id": 1195,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://supplements-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "calisthenics",
+      "displayName": "Calisthenics Training",
+      "crossRefs": [
+        "fitness-training",
+        "crossfit-training"
+      ],
+      "priority": "P3",
+      "id": 1196,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://calisthenics.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hiit-training",
+      "displayName": "HIIT Training",
+      "crossRefs": [
+        "fitness-training",
+        "crossfit-training"
+      ],
+      "priority": "P3",
+      "id": 1197,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://hiit-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stretching-mobility",
+      "displayName": "Stretching & Mobility",
+      "crossRefs": [
+        "yoga-practice",
+        "sports-physio"
+      ],
+      "priority": "P3",
+      "id": 1198,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://stretching-mobility.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "breathwork",
+      "displayName": "Breathwork Practice",
+      "crossRefs": [
+        "meditation-mindful",
+        "biohacking"
+      ],
+      "priority": "P3",
+      "id": 1199,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://breathwork.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mental-health-wellness",
+      "displayName": "Mental Health Wellness",
+      "crossRefs": [
+        "meditation-mindful",
+        "therapy-resources"
+      ],
+      "priority": "P3",
+      "id": 1200,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://mental-health-wellness.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "therapy-resources",
+      "displayName": "Therapy & Counseling Resources",
+      "crossRefs": [
+        "mental-health-wellness",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1201,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://therapy-resources.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holistic-health",
+      "displayName": "Holistic Health Guide",
+      "crossRefs": [
+        "wellness-recovery",
+        "holistic-medicine"
+      ],
+      "priority": "P3",
+      "id": 1202,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://holistic-health.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holistic-medicine",
+      "displayName": "Holistic Medicine",
+      "crossRefs": [
+        "holistic-health",
+        "supplements-guide"
+      ],
+      "priority": "P3",
+      "id": 1203,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://holistic-medicine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ayurveda-wellness",
+      "displayName": "Ayurveda Wellness",
+      "crossRefs": [
+        "holistic-health",
+        "yoga-practice"
+      ],
+      "priority": "P3",
+      "id": 1204,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://ayurveda-wellness.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "acupuncture-guide",
+      "displayName": "Acupuncture Guide",
+      "crossRefs": [
+        "holistic-medicine",
+        "sports-physio"
+      ],
+      "priority": "P3",
+      "id": 1205,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://acupuncture-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chiropractic-guide",
+      "displayName": "Chiropractic Guide",
+      "crossRefs": [
+        "sports-physio",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1206,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://chiropractic-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "massage-therapy",
+      "displayName": "Massage Therapy Guide",
+      "crossRefs": [
+        "wellness-recovery",
+        "sports-recovery"
+      ],
+      "priority": "P3",
+      "id": 1207,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://massage-therapy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spa-wellness",
+      "displayName": "Spa & Wellness Retreats",
+      "crossRefs": [
+        "sauna-cold",
+        "luxury-travel"
+      ],
+      "priority": "P3",
+      "id": 1208,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://spa-wellness.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "detox-programs",
+      "displayName": "Detox Programs",
+      "crossRefs": [
+        "biohacking",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 1209,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://detox-programs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fasting-guide",
+      "displayName": "Intermittent Fasting",
+      "crossRefs": [
+        "biohacking",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 1210,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://fasting-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "macro-tracking",
+      "displayName": "Macro Tracking",
+      "crossRefs": [
+        "fitness-nutrition",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 1211,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://macro-tracking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "body-composition",
+      "displayName": "Body Composition Tracking",
+      "crossRefs": [
+        "macro-tracking",
+        "weightlifting"
+      ],
+      "priority": "P3",
+      "id": 1212,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://body-composition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-gym-setup",
+      "displayName": "Home Gym Setup",
+      "crossRefs": [
+        "fitness-training",
+        "weightlifting"
+      ],
+      "priority": "P3",
+      "id": 1213,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://home-gym-setup.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gym-equipment",
+      "displayName": "Gym Equipment Reviews",
+      "crossRefs": [
+        "home-gym-setup",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1214,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://gym-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "personal-trainer",
+      "displayName": "Personal Trainer Finder",
+      "crossRefs": [
+        "fitness-training",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1215,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://personal-trainer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fitness-challenges",
+      "displayName": "Fitness Challenges",
+      "crossRefs": [
+        "fitness-training",
+        "fitness-social-clubs"
+      ],
+      "priority": "P3",
+      "id": 1216,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://fitness-challenges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fitness-social-clubs",
+      "displayName": "Fitness Social Clubs",
+      "crossRefs": [
+        "fitness-challenges",
+        "wellness-recovery"
+      ],
+      "priority": "P2",
+      "id": 1217,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://fitness-social-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wellness-tier3-network",
+      "displayName": "Wellness Expert Network",
+      "crossRefs": [
+        "fitness-social-clubs",
+        "yoga-practice"
+      ],
+      "priority": "P3",
+      "id": 1218,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://wellness-tier3-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-01",
+      "displayName": "Workout Program 1",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1219,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-02",
+      "displayName": "Workout Program 2",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1220,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-03",
+      "displayName": "Workout Program 3",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1221,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-04",
+      "displayName": "Workout Program 4",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1222,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-05",
+      "displayName": "Workout Program 5",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1223,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-06",
+      "displayName": "Workout Program 6",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1224,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-07",
+      "displayName": "Workout Program 7",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1225,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-08",
+      "displayName": "Workout Program 8",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1226,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-09",
+      "displayName": "Workout Program 9",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1227,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-10",
+      "displayName": "Workout Program 10",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1228,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-11",
+      "displayName": "Workout Program 11",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1229,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "workout-program-12",
+      "displayName": "Workout Program 12",
+      "crossRefs": [
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 1230,
+      "vertical_id": "fitness-wellness",
+      "vertical_slug": "fitness-wellness",
+      "site_url": "https://workout-program-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

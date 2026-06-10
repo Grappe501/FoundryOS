@@ -1,0 +1,1737 @@
+{
+  "vertical": {
+    "id": "sports",
+    "slug": "sports",
+    "name": "Sports",
+    "icon": "⚾",
+    "app_count": 115,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "college-baseball",
+      "displayName": "College Baseball Authority",
+      "crossRefs": [
+        "college-football",
+        "mlb-collection"
+      ],
+      "priority": "P2",
+      "id": 415,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-baseball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-football",
+      "displayName": "College Football Guide",
+      "crossRefs": [
+        "college-baseball",
+        "nfl-fantasy"
+      ],
+      "priority": "P2",
+      "id": 416,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-football.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-basketball",
+      "displayName": "College Basketball Guide",
+      "crossRefs": [
+        "college-football",
+        "nba-collection"
+      ],
+      "priority": "P2",
+      "id": 417,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-basketball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mlb-collection",
+      "displayName": "MLB Collection",
+      "crossRefs": [
+        "college-baseball",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 418,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://mlb-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nfl-fantasy",
+      "displayName": "NFL & Fantasy Football",
+      "crossRefs": [
+        "college-football",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 419,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nfl-fantasy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nba-collection",
+      "displayName": "NBA Collection",
+      "crossRefs": [
+        "college-basketball",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 420,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nba-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nhl-hockey",
+      "displayName": "NHL Hockey Guide",
+      "crossRefs": [
+        "sports-cards",
+        "golf-masters"
+      ],
+      "priority": "P3",
+      "id": 421,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nhl-hockey.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "golf-masters",
+      "displayName": "Golf — Majors & Courses",
+      "crossRefs": [
+        "nhl-hockey",
+        "tennis-grand-slam"
+      ],
+      "priority": "P3",
+      "id": 422,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://golf-masters.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tennis-grand-slam",
+      "displayName": "Tennis Grand Slam",
+      "crossRefs": [
+        "golf-masters",
+        "pickleball-guide"
+      ],
+      "priority": "P3",
+      "id": 423,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://tennis-grand-slam.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soccer-world",
+      "displayName": "Soccer World Guide",
+      "crossRefs": [
+        "sports-betting",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 424,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://soccer-world.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "formula-one",
+      "displayName": "Formula One Authority",
+      "crossRefs": [
+        "nascar-racing",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 425,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://formula-one.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nascar-racing",
+      "displayName": "NASCAR Racing Guide",
+      "crossRefs": [
+        "formula-one",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 426,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nascar-racing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ufc-mma",
+      "displayName": "UFC & MMA Guide",
+      "crossRefs": [
+        "boxing-legends",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 427,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://ufc-mma.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "boxing-legends",
+      "displayName": "Boxing Legends",
+      "crossRefs": [
+        "ufc-mma",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 428,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://boxing-legends.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "olympics-sports",
+      "displayName": "Olympics Authority",
+      "crossRefs": [
+        "tennis-grand-slam",
+        "swimming-diving"
+      ],
+      "priority": "P3",
+      "id": 429,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://olympics-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "marathon-running",
+      "displayName": "Marathon & Running",
+      "crossRefs": [
+        "fitness-training",
+        "cycling-tours"
+      ],
+      "priority": "P3",
+      "id": 430,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://marathon-running.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cycling-tours",
+      "displayName": "Cycling Tours & Races",
+      "crossRefs": [
+        "marathon-running",
+        "triathlon-guide"
+      ],
+      "priority": "P3",
+      "id": 431,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://cycling-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "triathlon-guide",
+      "displayName": "Triathlon Guide",
+      "crossRefs": [
+        "marathon-running",
+        "cycling-tours"
+      ],
+      "priority": "P3",
+      "id": 432,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://triathlon-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pickleball-guide",
+      "displayName": "Pickleball Authority",
+      "crossRefs": [
+        "tennis-grand-slam",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 433,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://pickleball-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "surfing-guide",
+      "displayName": "Surfing Guide",
+      "crossRefs": [
+        "outdoor-adventures",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 434,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://surfing-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "skiing-snowboard",
+      "displayName": "Skiing & Snowboard",
+      "crossRefs": [
+        "outdoor-adventures",
+        "mountain-climbing"
+      ],
+      "priority": "P3",
+      "id": 435,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://skiing-snowboard.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fishing-angler",
+      "displayName": "Fishing & Angling",
+      "crossRefs": [
+        "outdoor-adventures",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 436,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fishing-angler.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-cards",
+      "displayName": "Sports Cards & Memorabilia",
+      "crossRefs": [
+        "mlb-collection",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 437,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-cards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-betting",
+      "displayName": "Sports Analytics Guide",
+      "crossRefs": [
+        "nfl-fantasy",
+        "soccer-world"
+      ],
+      "priority": "P3",
+      "id": 438,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-betting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "youth-sports",
+      "displayName": "Youth Sports Planner",
+      "crossRefs": [
+        "college-baseball",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 439,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://youth-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-softball",
+      "displayName": "College Softball Guide",
+      "crossRefs": [
+        "college-baseball",
+        "youth-sports"
+      ],
+      "priority": "P3",
+      "id": 440,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-softball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-volleyball",
+      "displayName": "College Volleyball Guide",
+      "crossRefs": [
+        "college-basketball",
+        "youth-sports"
+      ],
+      "priority": "P3",
+      "id": 441,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-volleyball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-soccer",
+      "displayName": "College Soccer Guide",
+      "crossRefs": [
+        "soccer-world",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 442,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-soccer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-lacrosse",
+      "displayName": "College Lacrosse Guide",
+      "crossRefs": [
+        "college-football",
+        "youth-sports"
+      ],
+      "priority": "P3",
+      "id": 443,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-lacrosse.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-hockey",
+      "displayName": "College Hockey Guide",
+      "crossRefs": [
+        "nhl-hockey",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 444,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-hockey.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-wrestling",
+      "displayName": "College Wrestling Guide",
+      "crossRefs": [
+        "ufc-mma",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 445,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-wrestling.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "minor-league-baseball",
+      "displayName": "Minor League Baseball",
+      "crossRefs": [
+        "mlb-collection",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 446,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://minor-league-baseball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "womens-sports",
+      "displayName": "Women's Sports Authority",
+      "crossRefs": [
+        "olympics-sports",
+        "tennis-grand-slam"
+      ],
+      "priority": "P3",
+      "id": 447,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://womens-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wnba-guide",
+      "displayName": "WNBA Guide",
+      "crossRefs": [
+        "nba-collection",
+        "womens-sports"
+      ],
+      "priority": "P3",
+      "id": 448,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://wnba-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nwsl-soccer",
+      "displayName": "NWSL Soccer Guide",
+      "crossRefs": [
+        "soccer-world",
+        "womens-sports"
+      ],
+      "priority": "P3",
+      "id": 449,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nwsl-soccer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "premier-league",
+      "displayName": "Premier League Guide",
+      "crossRefs": [
+        "soccer-world",
+        "fantasy-soccer"
+      ],
+      "priority": "P3",
+      "id": 450,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://premier-league.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fantasy-soccer",
+      "displayName": "Fantasy Soccer",
+      "crossRefs": [
+        "premier-league",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 451,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fantasy-soccer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fantasy-baseball",
+      "displayName": "Fantasy Baseball",
+      "crossRefs": [
+        "mlb-collection",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 452,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fantasy-baseball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fantasy-basketball",
+      "displayName": "Fantasy Basketball",
+      "crossRefs": [
+        "nba-collection",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 453,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fantasy-basketball.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fantasy-hockey",
+      "displayName": "Fantasy Hockey",
+      "crossRefs": [
+        "nhl-hockey",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 454,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fantasy-hockey.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cricket-guide",
+      "displayName": "Cricket Authority",
+      "crossRefs": [
+        "soccer-world",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 455,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://cricket-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rugby-guide",
+      "displayName": "Rugby Guide",
+      "crossRefs": [
+        "soccer-world",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 456,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://rugby-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lacrosse-pro",
+      "displayName": "Professional Lacrosse",
+      "crossRefs": [
+        "college-lacrosse",
+        "youth-sports"
+      ],
+      "priority": "P3",
+      "id": 457,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://lacrosse-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "volleyball-beach",
+      "displayName": "Beach Volleyball",
+      "crossRefs": [
+        "college-volleyball",
+        "surfing-guide"
+      ],
+      "priority": "P3",
+      "id": 458,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://volleyball-beach.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "swimming-competitive",
+      "displayName": "Competitive Swimming",
+      "crossRefs": [
+        "swimming-diving",
+        "olympics-sports"
+      ],
+      "priority": "P3",
+      "id": 459,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://swimming-competitive.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "track-field",
+      "displayName": "Track & Field Guide",
+      "crossRefs": [
+        "marathon-running",
+        "olympics-sports"
+      ],
+      "priority": "P3",
+      "id": 460,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://track-field.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gymnastics-guide",
+      "displayName": "Gymnastics Guide",
+      "crossRefs": [
+        "olympics-sports",
+        "youth-sports"
+      ],
+      "priority": "P3",
+      "id": 461,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://gymnastics-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "figure-skating",
+      "displayName": "Figure Skating Guide",
+      "crossRefs": [
+        "olympics-sports",
+        "nhl-hockey"
+      ],
+      "priority": "P3",
+      "id": 462,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://figure-skating.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bobsled-luge",
+      "displayName": "Bobsled & Luge",
+      "crossRefs": [
+        "olympics-sports",
+        "skiing-snowboard"
+      ],
+      "priority": "P3",
+      "id": 463,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://bobsled-luge.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "esports-guide",
+      "displayName": "Esports Authority",
+      "crossRefs": [
+        "gaming-collectibles",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 464,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://esports-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rodeo-guide",
+      "displayName": "Rodeo & Western Sports",
+      "crossRefs": [
+        "college-football",
+        "western-films"
+      ],
+      "priority": "P3",
+      "id": 465,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://rodeo-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "horse-racing",
+      "displayName": "Horse Racing Guide",
+      "crossRefs": [
+        "sports-betting",
+        "equestrian-sports"
+      ],
+      "priority": "P3",
+      "id": 466,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://horse-racing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "equestrian-sports",
+      "displayName": "Equestrian Sports",
+      "crossRefs": [
+        "horse-racing",
+        "olympics-sports"
+      ],
+      "priority": "P3",
+      "id": 467,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://equestrian-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "auto-racing-sports",
+      "displayName": "Auto Racing Sports Hub",
+      "crossRefs": [
+        "formula-one",
+        "nascar-racing"
+      ],
+      "priority": "P3",
+      "id": 468,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://auto-racing-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-media",
+      "displayName": "Sports Media & Broadcasting",
+      "crossRefs": [
+        "tv-sports-broadcast",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 469,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-media.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-podcasts",
+      "displayName": "Sports Podcast Guide",
+      "crossRefs": [
+        "sports-media",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 470,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-podcasts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-documentary",
+      "displayName": "Sports Documentary Films",
+      "crossRefs": [
+        "film-documentary",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 471,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-documentary.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-nutrition",
+      "displayName": "Sports Nutrition",
+      "crossRefs": [
+        "fitness-nutrition",
+        "supplements-guide"
+      ],
+      "priority": "P3",
+      "id": 472,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-nutrition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-psychology",
+      "displayName": "Sports Psychology",
+      "crossRefs": [
+        "sports-physio",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 473,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-psychology.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coaching-youth",
+      "displayName": "Youth Coaching Guide",
+      "crossRefs": [
+        "youth-sports",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 474,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://coaching-youth.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "referee-officiating",
+      "displayName": "Referee & Officiating",
+      "crossRefs": [
+        "youth-sports",
+        "coaching-youth"
+      ],
+      "priority": "P3",
+      "id": 475,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://referee-officiating.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stadium-guide",
+      "displayName": "Stadium Guide Elite",
+      "crossRefs": [
+        "stadium-food",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 476,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://stadium-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tailgate-culture",
+      "displayName": "Tailgate Culture",
+      "crossRefs": [
+        "tailgate-food",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 477,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://tailgate-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-travel",
+      "displayName": "Sports Travel Planner",
+      "crossRefs": [
+        "stadium-guide",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 478,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spring-training",
+      "displayName": "Spring Training Guide",
+      "crossRefs": [
+        "mlb-collection",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 479,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://spring-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "march-madness",
+      "displayName": "March Madness Guide",
+      "crossRefs": [
+        "college-basketball",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 480,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://march-madness.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-world-series",
+      "displayName": "College World Series",
+      "crossRefs": [
+        "college-baseball",
+        "spring-training"
+      ],
+      "priority": "P3",
+      "id": 481,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-world-series.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bowl-season",
+      "displayName": "Bowl Season Guide",
+      "crossRefs": [
+        "college-football",
+        "tailgate-culture"
+      ],
+      "priority": "P3",
+      "id": 482,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://bowl-season.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "draft-tracker",
+      "displayName": "Sports Draft Tracker",
+      "crossRefs": [
+        "nfl-fantasy",
+        "nba-collection"
+      ],
+      "priority": "P3",
+      "id": 483,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://draft-tracker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hall-of-fame-sports",
+      "displayName": "Hall of Fame Tracker",
+      "crossRefs": [
+        "sports-cards",
+        "sports-documentary"
+      ],
+      "priority": "P3",
+      "id": 484,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://hall-of-fame-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-collector-clubs",
+      "displayName": "Sports Collector Clubs",
+      "crossRefs": [
+        "sports-cards",
+        "autograph-collection"
+      ],
+      "priority": "P2",
+      "id": 485,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-expert-network",
+      "displayName": "Sports Expert Network",
+      "crossRefs": [
+        "sports-collector-clubs",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 486,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-expert-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-sports-scene",
+      "displayName": "Local Sports Scene",
+      "crossRefs": [
+        "youth-sports",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 487,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://local-sports-scene.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "high-school-sports",
+      "displayName": "High School Sports",
+      "crossRefs": [
+        "youth-sports",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 488,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://high-school-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rec-league",
+      "displayName": "Rec League Organizer",
+      "crossRefs": [
+        "youth-sports",
+        "pickleball-guide"
+      ],
+      "priority": "P3",
+      "id": 489,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://rec-league.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-equipment",
+      "displayName": "Sports Equipment Reviews",
+      "crossRefs": [
+        "fitness-training",
+        "outdoor-gear"
+      ],
+      "priority": "P3",
+      "id": 490,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "running-shoes",
+      "displayName": "Running Shoe Guide",
+      "crossRefs": [
+        "marathon-running",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 491,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://running-shoes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "golf-equipment",
+      "displayName": "Golf Equipment Guide",
+      "crossRefs": [
+        "golf-masters",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 492,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://golf-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tennis-equipment",
+      "displayName": "Tennis Equipment Guide",
+      "crossRefs": [
+        "tennis-grand-slam",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 493,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://tennis-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "baseball-gear",
+      "displayName": "Baseball Gear Guide",
+      "crossRefs": [
+        "mlb-collection",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 494,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://baseball-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "football-gear",
+      "displayName": "Football Gear Guide",
+      "crossRefs": [
+        "nfl-fantasy",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 495,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://football-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "basketball-gear",
+      "displayName": "Basketball Gear Guide",
+      "crossRefs": [
+        "nba-collection",
+        "college-basketball"
+      ],
+      "priority": "P3",
+      "id": 496,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://basketball-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hockey-gear",
+      "displayName": "Hockey Gear Guide",
+      "crossRefs": [
+        "nhl-hockey",
+        "college-hockey"
+      ],
+      "priority": "P3",
+      "id": 497,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://hockey-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ski-equipment",
+      "displayName": "Ski Equipment Guide",
+      "crossRefs": [
+        "skiing-snowboard",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 498,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://ski-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "surf-equipment",
+      "displayName": "Surf Equipment Guide",
+      "crossRefs": [
+        "surfing-guide",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 499,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://surf-equipment.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fishing-gear",
+      "displayName": "Fishing Gear Guide",
+      "crossRefs": [
+        "fishing-angler",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 500,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://fishing-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cycling-gear",
+      "displayName": "Cycling Gear Guide",
+      "crossRefs": [
+        "cycling-tours",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 501,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://cycling-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "climbing-gear-sport",
+      "displayName": "Climbing Gear Sports",
+      "crossRefs": [
+        "rock-climbing",
+        "sports-equipment"
+      ],
+      "priority": "P3",
+      "id": 502,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://climbing-gear-sport.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-injury",
+      "displayName": "Sports Injury Guide",
+      "crossRefs": [
+        "sports-physio",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 503,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-injury.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-recovery",
+      "displayName": "Sports Recovery Tech",
+      "crossRefs": [
+        "wellness-recovery",
+        "sports-injury"
+      ],
+      "priority": "P3",
+      "id": 504,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-recovery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-wearables",
+      "displayName": "Sports Wearables",
+      "crossRefs": [
+        "sports-recovery",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 505,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-wearables.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-stats-mlb",
+      "displayName": "MLB Stats Deep Dive",
+      "crossRefs": [
+        "mlb-collection",
+        "fantasy-baseball"
+      ],
+      "priority": "P3",
+      "id": 506,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-stats-mlb.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-stats-nfl",
+      "displayName": "NFL Stats Deep Dive",
+      "crossRefs": [
+        "nfl-fantasy",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 507,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-stats-nfl.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-stats-nba",
+      "displayName": "NBA Stats Deep Dive",
+      "crossRefs": [
+        "nba-collection",
+        "fantasy-basketball"
+      ],
+      "priority": "P3",
+      "id": 508,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-stats-nba.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-history",
+      "displayName": "Sports History Archive",
+      "crossRefs": [
+        "hall-of-fame-sports",
+        "sports-documentary"
+      ],
+      "priority": "P3",
+      "id": 509,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-biographies",
+      "displayName": "Sports Biography Books",
+      "crossRefs": [
+        "nonfiction-sports",
+        "sports-history"
+      ],
+      "priority": "P3",
+      "id": 510,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-biographies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-movies-hub",
+      "displayName": "Sports Movies Hub",
+      "crossRefs": [
+        "sports-films",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 511,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-movies-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-fashion",
+      "displayName": "Sports Fashion & Jerseys",
+      "crossRefs": [
+        "sneakers-collect",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 512,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-fashion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jersey-collecting",
+      "displayName": "Jersey Collecting",
+      "crossRefs": [
+        "sports-fashion",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 513,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://jersey-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-tickets",
+      "displayName": "Sports Tickets Guide",
+      "crossRefs": [
+        "stadium-guide",
+        "sports-travel"
+      ],
+      "priority": "P3",
+      "id": 514,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-tickets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-betting-legal",
+      "displayName": "Legal Sports Betting",
+      "crossRefs": [
+        "sports-betting",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 515,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-betting-legal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "parlay-strategy",
+      "displayName": "Parlay Strategy Guide",
+      "crossRefs": [
+        "sports-betting",
+        "poker-strategy"
+      ],
+      "priority": "P3",
+      "id": 516,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://parlay-strategy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-arbitrage",
+      "displayName": "Sports Analytics Pro",
+      "crossRefs": [
+        "sports-betting-legal",
+        "sports-stats-nfl"
+      ],
+      "priority": "P3",
+      "id": 517,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-arbitrage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-recruiting",
+      "displayName": "College Recruiting Tracker",
+      "crossRefs": [
+        "high-school-sports",
+        "college-football"
+      ],
+      "priority": "P3",
+      "id": 518,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://college-recruiting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nil-college",
+      "displayName": "NIL & College Athletes",
+      "crossRefs": [
+        "college-football",
+        "college-basketball"
+      ],
+      "priority": "P3",
+      "id": 519,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://nil-college.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-venues-arch",
+      "displayName": "Sports Venue Architecture",
+      "crossRefs": [
+        "stadium-guide",
+        "architecture-design"
+      ],
+      "priority": "P3",
+      "id": 520,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-venues-arch.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-memorabilia-auth",
+      "displayName": "Memorabilia Authentication",
+      "crossRefs": [
+        "sports-cards",
+        "autograph-collection"
+      ],
+      "priority": "P3",
+      "id": 521,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-memorabilia-auth.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-day-rituals",
+      "displayName": "Game Day Rituals",
+      "crossRefs": [
+        "tailgate-culture",
+        "stadium-guide"
+      ],
+      "priority": "P3",
+      "id": 522,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://game-day-rituals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-superstitions",
+      "displayName": "Sports Superstitions",
+      "crossRefs": [
+        "game-day-rituals",
+        "sports-trivia"
+      ],
+      "priority": "P3",
+      "id": 523,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-superstitions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-trivia",
+      "displayName": "Sports Trivia Authority",
+      "crossRefs": [
+        "sports-history",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 524,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-trivia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-quotes",
+      "displayName": "Sports Quotes Archive",
+      "crossRefs": [
+        "sports-biographies",
+        "sports-trivia"
+      ],
+      "priority": "P3",
+      "id": 525,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-quotes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-social-clubs",
+      "displayName": "Sports Fan Clubs",
+      "crossRefs": [
+        "sports-collector-clubs",
+        "sports-expert-network"
+      ],
+      "priority": "P2",
+      "id": 526,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-social-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cross-sport-fantasy",
+      "displayName": "Cross-Sport Fantasy Hub",
+      "crossRefs": [
+        "fantasy-baseball",
+        "fantasy-football"
+      ],
+      "priority": "P3",
+      "id": 527,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://cross-sport-fantasy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-ai-picks",
+      "displayName": "AI Sports Picks",
+      "crossRefs": [
+        "sports-betting",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 528,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-ai-picks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-tier3-network",
+      "displayName": "Tier 3 Sports Networks",
+      "crossRefs": [
+        "sports-social-clubs",
+        "sports-expert-network"
+      ],
+      "priority": "P3",
+      "id": 529,
+      "vertical_id": "sports",
+      "vertical_slug": "sports",
+      "site_url": "https://sports-tier3-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

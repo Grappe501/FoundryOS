@@ -1,0 +1,947 @@
+{
+  "vertical": {
+    "id": "finance-education",
+    "slug": "finance-education",
+    "name": "Finance & Education",
+    "icon": "📈",
+    "app_count": 64,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "personal-finance",
+      "displayName": "Personal Finance Guide",
+      "crossRefs": [
+        "real-estate-invest",
+        "stock-portfolio"
+      ],
+      "priority": "P3",
+      "id": 1421,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://personal-finance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stock-portfolio",
+      "displayName": "Stock Portfolio Tracker",
+      "crossRefs": [
+        "personal-finance",
+        "crypto-guide"
+      ],
+      "priority": "P3",
+      "id": 1422,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://stock-portfolio.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "crypto-guide",
+      "displayName": "Cryptocurrency Guide",
+      "crossRefs": [
+        "stock-portfolio",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1423,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://crypto-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "real-estate-invest",
+      "displayName": "Real Estate Investing",
+      "crossRefs": [
+        "personal-finance",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1424,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://real-estate-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-invest",
+      "displayName": "Wine Investment Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1425,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://wine-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "whiskey-invest",
+      "displayName": "Whiskey Investment Guide",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "wine-invest"
+      ],
+      "priority": "P3",
+      "id": 1426,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://whiskey-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-learning",
+      "displayName": "Language Learning",
+      "crossRefs": [
+        "world-travel",
+        "digital-nomad"
+      ],
+      "priority": "P3",
+      "id": 1427,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-learning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "history-scholar",
+      "displayName": "History Scholar",
+      "crossRefs": [
+        "militaria-history",
+        "historical-sites"
+      ],
+      "priority": "P3",
+      "id": 1428,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://history-scholar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-explorer",
+      "displayName": "Science Explorer",
+      "crossRefs": [
+        "stargazing-astro",
+        "biohacking"
+      ],
+      "priority": "P3",
+      "id": 1429,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://science-explorer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "philosophy-think",
+      "displayName": "Philosophy & Thinking",
+      "crossRefs": [
+        "history-scholar",
+        "book-collecting"
+      ],
+      "priority": "P3",
+      "id": 1430,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://philosophy-think.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "writing-craft",
+      "displayName": "Writing Craft Studio",
+      "crossRefs": [
+        "book-collecting",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 1431,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://writing-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "retirement-planning",
+      "displayName": "Retirement Planning",
+      "crossRefs": [
+        "personal-finance",
+        "stock-portfolio"
+      ],
+      "priority": "P3",
+      "id": 1432,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://retirement-planning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tax-planning",
+      "displayName": "Tax Planning Guide",
+      "crossRefs": [
+        "personal-finance",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1433,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://tax-planning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "estate-planning",
+      "displayName": "Estate Planning",
+      "crossRefs": [
+        "retirement-planning",
+        "genealogy-family"
+      ],
+      "priority": "P3",
+      "id": 1434,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://estate-planning.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-savings",
+      "displayName": "College Savings Plans",
+      "crossRefs": [
+        "parenting-family",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1435,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://college-savings.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "budgeting-apps",
+      "displayName": "Budgeting Systems",
+      "crossRefs": [
+        "personal-finance",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 1436,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://budgeting-apps.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "debt-payoff",
+      "displayName": "Debt Payoff Strategies",
+      "crossRefs": [
+        "budgeting-apps",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1437,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://debt-payoff.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "credit-score",
+      "displayName": "Credit Score Guide",
+      "crossRefs": [
+        "debt-payoff",
+        "car-insurance"
+      ],
+      "priority": "P3",
+      "id": 1438,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://credit-score.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "side-hustle",
+      "displayName": "Side Hustle Guide",
+      "crossRefs": [
+        "personal-finance",
+        "food-startup"
+      ],
+      "priority": "P3",
+      "id": 1439,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://side-hustle.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "freelance-finance",
+      "displayName": "Freelance Finance",
+      "crossRefs": [
+        "side-hustle",
+        "digital-nomad"
+      ],
+      "priority": "P3",
+      "id": 1440,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://freelance-finance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "options-trading",
+      "displayName": "Options Trading",
+      "crossRefs": [
+        "stock-portfolio",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 1441,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://options-trading.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dividend-investing",
+      "displayName": "Dividend Investing",
+      "crossRefs": [
+        "stock-portfolio",
+        "retirement-planning"
+      ],
+      "priority": "P3",
+      "id": 1442,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://dividend-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "etf-investing",
+      "displayName": "ETF Investing",
+      "crossRefs": [
+        "dividend-investing",
+        "stock-portfolio"
+      ],
+      "priority": "P3",
+      "id": 1443,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://etf-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bond-investing",
+      "displayName": "Bond Investing",
+      "crossRefs": [
+        "etf-investing",
+        "retirement-planning"
+      ],
+      "priority": "P3",
+      "id": 1444,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://bond-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "commodities-invest",
+      "displayName": "Commodities Investing",
+      "crossRefs": [
+        "stock-portfolio",
+        "crypto-guide"
+      ],
+      "priority": "P3",
+      "id": 1445,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://commodities-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "angel-investing",
+      "displayName": "Angel Investing Guide",
+      "crossRefs": [
+        "tech-startups",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1446,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://angel-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "venture-capital",
+      "displayName": "Venture Capital Intro",
+      "crossRefs": [
+        "angel-investing",
+        "tech-startups"
+      ],
+      "priority": "P3",
+      "id": 1447,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://venture-capital.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "financial-literacy",
+      "displayName": "Financial Literacy",
+      "crossRefs": [
+        "personal-finance",
+        "college-food"
+      ],
+      "priority": "P3",
+      "id": 1448,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://financial-literacy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "economics-explained",
+      "displayName": "Economics Explained",
+      "crossRefs": [
+        "financial-literacy",
+        "nonfiction-business"
+      ],
+      "priority": "P3",
+      "id": 1449,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://economics-explained.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mba-prep",
+      "displayName": "MBA Prep Guide",
+      "crossRefs": [
+        "nonfiction-business",
+        "economics-explained"
+      ],
+      "priority": "P3",
+      "id": 1450,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://mba-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "online-courses",
+      "displayName": "Online Courses Hub",
+      "crossRefs": [
+        "language-learning",
+        "coding-projects"
+      ],
+      "priority": "P3",
+      "id": 1451,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://online-courses.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "certification-prep",
+      "displayName": "Certification Prep Hub",
+      "crossRefs": [
+        "online-courses",
+        "sommelier-prep"
+      ],
+      "priority": "P3",
+      "id": 1452,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://certification-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "study-skills",
+      "displayName": "Study Skills & Learning",
+      "crossRefs": [
+        "online-courses",
+        "speed-reading"
+      ],
+      "priority": "P3",
+      "id": 1453,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://study-skills.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "homeschool-guide",
+      "displayName": "Homeschool Guide",
+      "crossRefs": [
+        "parenting-family",
+        "study-skills"
+      ],
+      "priority": "P3",
+      "id": 1454,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://homeschool-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-admissions",
+      "displayName": "College Admissions",
+      "crossRefs": [
+        "homeschool-guide",
+        "college-savings"
+      ],
+      "priority": "P3",
+      "id": 1455,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://college-admissions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "scholarship-finder",
+      "displayName": "Scholarship Finder",
+      "crossRefs": [
+        "college-admissions",
+        "college-savings"
+      ],
+      "priority": "P3",
+      "id": 1456,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://scholarship-finder.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "student-loans",
+      "displayName": "Student Loan Guide",
+      "crossRefs": [
+        "college-admissions",
+        "debt-payoff"
+      ],
+      "priority": "P3",
+      "id": 1457,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://student-loans.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "teaching-resources",
+      "displayName": "Teaching Resources",
+      "crossRefs": [
+        "homeschool-guide",
+        "study-skills"
+      ],
+      "priority": "P3",
+      "id": 1458,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://teaching-resources.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "education-clubs",
+      "displayName": "Learning Clubs",
+      "crossRefs": [
+        "language-learning",
+        "book-clubs"
+      ],
+      "priority": "P2",
+      "id": 1459,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://education-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-01",
+      "displayName": "Language Specialty 1",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1460,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-02",
+      "displayName": "Language Specialty 2",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1461,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-03",
+      "displayName": "Language Specialty 3",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1462,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-04",
+      "displayName": "Language Specialty 4",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1463,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-05",
+      "displayName": "Language Specialty 5",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1464,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-06",
+      "displayName": "Language Specialty 6",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1465,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-07",
+      "displayName": "Language Specialty 7",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1466,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-08",
+      "displayName": "Language Specialty 8",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1467,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-09",
+      "displayName": "Language Specialty 9",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1468,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-10",
+      "displayName": "Language Specialty 10",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1469,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-11",
+      "displayName": "Language Specialty 11",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1470,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-12",
+      "displayName": "Language Specialty 12",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1471,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-13",
+      "displayName": "Language Specialty 13",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1472,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-14",
+      "displayName": "Language Specialty 14",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1473,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "language-course-15",
+      "displayName": "Language Specialty 15",
+      "crossRefs": [
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1474,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://language-course-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-01",
+      "displayName": "Certification Exam Prep 1",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1475,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-02",
+      "displayName": "Certification Exam Prep 2",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1476,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-03",
+      "displayName": "Certification Exam Prep 3",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1477,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-04",
+      "displayName": "Certification Exam Prep 4",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1478,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-05",
+      "displayName": "Certification Exam Prep 5",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1479,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-06",
+      "displayName": "Certification Exam Prep 6",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1480,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-07",
+      "displayName": "Certification Exam Prep 7",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1481,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-08",
+      "displayName": "Certification Exam Prep 8",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1482,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-09",
+      "displayName": "Certification Exam Prep 9",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1483,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cert-exam-10",
+      "displayName": "Certification Exam Prep 10",
+      "crossRefs": [
+        "certification-prep"
+      ],
+      "priority": "P3",
+      "id": 1484,
+      "vertical_id": "finance-education",
+      "vertical_slug": "finance-education",
+      "site_url": "https://cert-exam-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

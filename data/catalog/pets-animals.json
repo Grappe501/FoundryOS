@@ -1,0 +1,817 @@
+{
+  "vertical": {
+    "id": "pets-animals",
+    "slug": "pets-animals",
+    "name": "Pets & Animals",
+    "icon": "🐾",
+    "app_count": 56,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "pet-dogs",
+      "displayName": "Dog Breed & Care Guide",
+      "crossRefs": [
+        "pet-cats",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1643,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-dogs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-cats",
+      "displayName": "Cat Breed & Care Guide",
+      "crossRefs": [
+        "pet-dogs",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1644,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-cats.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-birds",
+      "displayName": "Pet Birds Guide",
+      "crossRefs": [
+        "bird-watching",
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1645,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-birds.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-fish",
+      "displayName": "Aquarium & Fish Guide",
+      "crossRefs": [
+        "pet-dogs",
+        "scuba-diving"
+      ],
+      "priority": "P3",
+      "id": 1646,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-fish.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-reptiles",
+      "displayName": "Reptile Care Guide",
+      "crossRefs": [
+        "pet-fish",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1647,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-reptiles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-small-mammals",
+      "displayName": "Small Mammal Pets",
+      "crossRefs": [
+        "pet-dogs",
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1648,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-small-mammals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "horse-care",
+      "displayName": "Horse Care Guide",
+      "crossRefs": [
+        "equestrian-sports",
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1649,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://horse-care.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-training",
+      "displayName": "Pet Training Authority",
+      "crossRefs": [
+        "pet-dogs",
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1650,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-training.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-nutrition",
+      "displayName": "Pet Nutrition Guide",
+      "crossRefs": [
+        "pet-training",
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1651,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-nutrition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-grooming",
+      "displayName": "Pet Grooming Guide",
+      "crossRefs": [
+        "pet-nutrition",
+        "skincare-style"
+      ],
+      "priority": "P3",
+      "id": 1652,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-grooming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-health",
+      "displayName": "Pet Health Guide",
+      "crossRefs": [
+        "pet-nutrition",
+        "veterinary-resources"
+      ],
+      "priority": "P3",
+      "id": 1653,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-health.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "veterinary-resources",
+      "displayName": "Veterinary Resources",
+      "crossRefs": [
+        "pet-health",
+        "pet-nutrition"
+      ],
+      "priority": "P3",
+      "id": 1654,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://veterinary-resources.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-adoption",
+      "displayName": "Pet Adoption Guide",
+      "crossRefs": [
+        "pet-dogs",
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1655,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-adoption.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-insurance",
+      "displayName": "Pet Insurance Guide",
+      "crossRefs": [
+        "pet-health",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1656,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-insurance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-parks",
+      "displayName": "Dog Park Finder",
+      "crossRefs": [
+        "pet-dogs",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1657,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-parks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-travel",
+      "displayName": "Pet Travel Guide",
+      "crossRefs": [
+        "pet-dogs",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1658,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-photography",
+      "displayName": "Pet Photography",
+      "crossRefs": [
+        "pet-dogs",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1659,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-memorial",
+      "displayName": "Pet Memorial & Legacy",
+      "crossRefs": [
+        "pet-dogs",
+        "genealogy-family"
+      ],
+      "priority": "P3",
+      "id": 1660,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-memorial.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wildlife-rescue",
+      "displayName": "Wildlife Rescue",
+      "crossRefs": [
+        "wildlife-watching",
+        "conservation-volunteer"
+      ],
+      "priority": "P3",
+      "id": 1661,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://wildlife-rescue.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "animal-behavior",
+      "displayName": "Animal Behavior Science",
+      "crossRefs": [
+        "pet-training",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1662,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://animal-behavior.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-clubs",
+      "displayName": "Pet Owner Clubs",
+      "crossRefs": [
+        "pet-dogs",
+        "dog-parks"
+      ],
+      "priority": "P2",
+      "id": 1663,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://pet-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-01",
+      "displayName": "Dog Breed Specialty 1",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1664,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-02",
+      "displayName": "Dog Breed Specialty 2",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1665,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-03",
+      "displayName": "Dog Breed Specialty 3",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1666,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-04",
+      "displayName": "Dog Breed Specialty 4",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1667,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-05",
+      "displayName": "Dog Breed Specialty 5",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1668,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-06",
+      "displayName": "Dog Breed Specialty 6",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1669,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-07",
+      "displayName": "Dog Breed Specialty 7",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1670,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-08",
+      "displayName": "Dog Breed Specialty 8",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1671,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-09",
+      "displayName": "Dog Breed Specialty 9",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1672,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-10",
+      "displayName": "Dog Breed Specialty 10",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1673,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-11",
+      "displayName": "Dog Breed Specialty 11",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1674,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-12",
+      "displayName": "Dog Breed Specialty 12",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1675,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-13",
+      "displayName": "Dog Breed Specialty 13",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1676,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-14",
+      "displayName": "Dog Breed Specialty 14",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1677,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-15",
+      "displayName": "Dog Breed Specialty 15",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1678,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-16",
+      "displayName": "Dog Breed Specialty 16",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1679,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-17",
+      "displayName": "Dog Breed Specialty 17",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1680,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-18",
+      "displayName": "Dog Breed Specialty 18",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1681,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-19",
+      "displayName": "Dog Breed Specialty 19",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1682,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dog-breed-20",
+      "displayName": "Dog Breed Specialty 20",
+      "crossRefs": [
+        "pet-dogs"
+      ],
+      "priority": "P3",
+      "id": 1683,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://dog-breed-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-01",
+      "displayName": "Cat Breed Specialty 1",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1684,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-02",
+      "displayName": "Cat Breed Specialty 2",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1685,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-03",
+      "displayName": "Cat Breed Specialty 3",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1686,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-04",
+      "displayName": "Cat Breed Specialty 4",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1687,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-05",
+      "displayName": "Cat Breed Specialty 5",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1688,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-06",
+      "displayName": "Cat Breed Specialty 6",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1689,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-07",
+      "displayName": "Cat Breed Specialty 7",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1690,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-08",
+      "displayName": "Cat Breed Specialty 8",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1691,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-09",
+      "displayName": "Cat Breed Specialty 9",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1692,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-10",
+      "displayName": "Cat Breed Specialty 10",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1693,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-11",
+      "displayName": "Cat Breed Specialty 11",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1694,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-12",
+      "displayName": "Cat Breed Specialty 12",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1695,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-13",
+      "displayName": "Cat Breed Specialty 13",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1696,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-14",
+      "displayName": "Cat Breed Specialty 14",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1697,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cat-breed-15",
+      "displayName": "Cat Breed Specialty 15",
+      "crossRefs": [
+        "pet-cats"
+      ],
+      "priority": "P3",
+      "id": 1698,
+      "vertical_id": "pets-animals",
+      "vertical_slug": "pets-animals",
+      "site_url": "https://cat-breed-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

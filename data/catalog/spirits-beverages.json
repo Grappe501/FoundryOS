@@ -1,0 +1,749 @@
+{
+  "vertical": {
+    "id": "spirits-beverages",
+    "slug": "spirits-beverages",
+    "name": "Spirits & Beverages",
+    "icon": "🥃",
+    "app_count": 49,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "bourbon-connoisseur",
+      "displayName": "Bourbon Connoisseur",
+      "crossRefs": [
+        "wine-cellar",
+        "craft-beer",
+        "meals-pairing"
+      ],
+      "priority": "P0",
+      "id": 1,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://bourbon-connoisseur.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "scotch-whisky",
+      "displayName": "Scotch Whisky Authority",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "irish-whiskey"
+      ],
+      "priority": "P1",
+      "id": 2,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://scotch-whisky.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "irish-whiskey",
+      "displayName": "Irish Whiskey Guide",
+      "crossRefs": [
+        "scotch-whisky",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P1",
+      "id": 3,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://irish-whiskey.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "japanese-whisky",
+      "displayName": "Japanese Whisky Collection",
+      "crossRefs": [
+        "scotch-whisky",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P1",
+      "id": 4,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://japanese-whisky.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "canadian-whisky",
+      "displayName": "Canadian Whisky Explorer",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "scotch-whisky"
+      ],
+      "priority": "P1",
+      "id": 5,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://canadian-whisky.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rye-whisky",
+      "displayName": "Rye Whisky Specialist",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "canadian-whisky"
+      ],
+      "priority": "P1",
+      "id": 6,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://rye-whisky.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tennessee-whiskey",
+      "displayName": "Tennessee Whiskey Trail",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "rye-whisky"
+      ],
+      "priority": "P1",
+      "id": 7,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://tennessee-whiskey.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-spirits",
+      "displayName": "Craft Distillery Guide",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "gin-collection"
+      ],
+      "priority": "P1",
+      "id": 8,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://craft-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gin-collection",
+      "displayName": "Gin Connoisseur",
+      "crossRefs": [
+        "craft-spirits",
+        "vodka-specialist"
+      ],
+      "priority": "P3",
+      "id": 9,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://gin-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vodka-specialist",
+      "displayName": "Vodka Authority",
+      "crossRefs": [
+        "gin-collection",
+        "craft-spirits"
+      ],
+      "priority": "P3",
+      "id": 10,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://vodka-specialist.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rum-explorer",
+      "displayName": "Rum Explorer",
+      "crossRefs": [
+        "tequila-agave",
+        "tiki-cocktails"
+      ],
+      "priority": "P3",
+      "id": 11,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://rum-explorer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tequila-agave",
+      "displayName": "Tequila & Agave Spirits",
+      "crossRefs": [
+        "mezcal-master",
+        "rum-explorer"
+      ],
+      "priority": "P3",
+      "id": 12,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://tequila-agave.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mezcal-master",
+      "displayName": "Mezcal Master",
+      "crossRefs": [
+        "tequila-agave",
+        "rum-explorer"
+      ],
+      "priority": "P3",
+      "id": 13,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://mezcal-master.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cognac-brandy",
+      "displayName": "Cognac & Brandy Cellar",
+      "crossRefs": [
+        "wine-cellar",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 14,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://cognac-brandy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "liqueurs-cordials",
+      "displayName": "Liqueurs & Cordials",
+      "crossRefs": [
+        "craft-cocktails",
+        "dessert-wines"
+      ],
+      "priority": "P3",
+      "id": 15,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://liqueurs-cordials.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-cocktails",
+      "displayName": "Craft Cocktail Creator",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "gin-collection"
+      ],
+      "priority": "P3",
+      "id": 16,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://craft-cocktails.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tiki-cocktails",
+      "displayName": "Tiki Cocktail Culture",
+      "crossRefs": [
+        "rum-explorer",
+        "craft-cocktails"
+      ],
+      "priority": "P3",
+      "id": 17,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://tiki-cocktails.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "whiskey-blends",
+      "displayName": "Blended Whisky Guide",
+      "crossRefs": [
+        "scotch-whisky",
+        "canadian-whisky"
+      ],
+      "priority": "P3",
+      "id": 18,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://whiskey-blends.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "single-malt",
+      "displayName": "Single Malt Authority",
+      "crossRefs": [
+        "scotch-whisky",
+        "japanese-whisky"
+      ],
+      "priority": "P3",
+      "id": 19,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://single-malt.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cask-strength",
+      "displayName": "Cask Strength Collectors",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "single-malt"
+      ],
+      "priority": "P3",
+      "id": 20,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://cask-strength.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "allocated-bottles",
+      "displayName": "Allocated & Rare Bottles",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "cask-strength"
+      ],
+      "priority": "P3",
+      "id": 21,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://allocated-bottles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "distillery-tours",
+      "displayName": "Distillery Tour Planner",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "craft-spirits"
+      ],
+      "priority": "P3",
+      "id": 22,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://distillery-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-bar",
+      "displayName": "Home Bar Builder",
+      "crossRefs": [
+        "craft-cocktails",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 23,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://home-bar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tasting-notes",
+      "displayName": "Universal Tasting Journal",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 24,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://tasting-notes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-food-pairing",
+      "displayName": "Spirits & Food Pairing",
+      "crossRefs": [
+        "meals-pairing",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 25,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://spirits-food-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "amaro-bitters",
+      "displayName": "Amaro & Bitters Guide",
+      "crossRefs": [
+        "craft-cocktails",
+        "liqueurs-cordials"
+      ],
+      "priority": "P3",
+      "id": 26,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://amaro-bitters.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "absinthe-spirits",
+      "displayName": "Absinthe & Anise Spirits",
+      "crossRefs": [
+        "craft-cocktails",
+        "gin-collection"
+      ],
+      "priority": "P3",
+      "id": 27,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://absinthe-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "aquavit-spirits",
+      "displayName": "Aquavit & Nordic Spirits",
+      "crossRefs": [
+        "vodka-specialist",
+        "scotch-whisky"
+      ],
+      "priority": "P3",
+      "id": 28,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://aquavit-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "grappa-brandy",
+      "displayName": "Grappa & Eau-de-Vie",
+      "crossRefs": [
+        "cognac-brandy",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 29,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://grappa-brandy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pisco-spirits",
+      "displayName": "Pisco Authority",
+      "crossRefs": [
+        "tequila-agave",
+        "rum-explorer"
+      ],
+      "priority": "P3",
+      "id": 30,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://pisco-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "baijiu-spirits",
+      "displayName": "Baijiu Explorer",
+      "crossRefs": [
+        "japanese-whisky",
+        "asian-spirits"
+      ],
+      "priority": "P3",
+      "id": 31,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://baijiu-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soju-shochu",
+      "displayName": "Soju & Shochu Guide",
+      "crossRefs": [
+        "sushi-sake",
+        "japanese-whisky"
+      ],
+      "priority": "P3",
+      "id": 32,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://soju-shochu.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sake-mastery",
+      "displayName": "Sake Mastery",
+      "crossRefs": [
+        "sushi-sake",
+        "japanese-whisky"
+      ],
+      "priority": "P3",
+      "id": 33,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://sake-mastery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vermouth-guide",
+      "displayName": "Vermouth Authority",
+      "crossRefs": [
+        "craft-cocktails",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 34,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://vermouth-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "barrel-aging",
+      "displayName": "Barrel Aging at Home",
+      "crossRefs": [
+        "home-bar",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 35,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://barrel-aging.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "moonshine-heritage",
+      "displayName": "Moonshine Heritage",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "tennessee-whiskey"
+      ],
+      "priority": "P3",
+      "id": 36,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://moonshine-heritage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-auctions",
+      "displayName": "Spirits Auction Tracker",
+      "crossRefs": [
+        "allocated-bottles",
+        "whiskey-invest"
+      ],
+      "priority": "P3",
+      "id": 37,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://spirits-auctions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cocktail-history",
+      "displayName": "Cocktail History Archive",
+      "crossRefs": [
+        "craft-cocktails",
+        "tiki-cocktails"
+      ],
+      "priority": "P3",
+      "id": 38,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://cocktail-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bartender-cert",
+      "displayName": "Bartender Certification Prep",
+      "crossRefs": [
+        "craft-cocktails",
+        "home-bar"
+      ],
+      "priority": "P3",
+      "id": 39,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://bartender-cert.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-regions",
+      "displayName": "Global Spirits Regions",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "scotch-whisky"
+      ],
+      "priority": "P3",
+      "id": 40,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://spirits-regions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "flavor-wheel-spirits",
+      "displayName": "Spirits Flavor Wheel",
+      "crossRefs": [
+        "tasting-notes",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 41,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://flavor-wheel-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holiday-cocktails",
+      "displayName": "Holiday Cocktail Guide",
+      "crossRefs": [
+        "craft-cocktails",
+        "champagne-sparkling"
+      ],
+      "priority": "P3",
+      "id": 42,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://holiday-cocktails.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "zero-proof-spirits",
+      "displayName": "Zero-Proof Spirits",
+      "crossRefs": [
+        "craft-cocktails",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 43,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://zero-proof-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-gifts",
+      "displayName": "Spirits Gift Curator",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "gift-curator"
+      ],
+      "priority": "P3",
+      "id": 44,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://spirits-gifts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "master-distillers",
+      "displayName": "Master Distillers Hall",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "craft-spirits"
+      ],
+      "priority": "P3",
+      "id": 45,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://master-distillers.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mash-bill-encyclopedia",
+      "displayName": "Mash Bill Encyclopedia",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "rye-whisky"
+      ],
+      "priority": "P3",
+      "id": 46,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://mash-bill-encyclopedia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cask-finish-guide",
+      "displayName": "Cask Finish Guide",
+      "crossRefs": [
+        "single-malt",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 47,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://cask-finish-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-science",
+      "displayName": "Spirits Science Lab",
+      "crossRefs": [
+        "mash-bill-encyclopedia",
+        "barrel-aging"
+      ],
+      "priority": "P3",
+      "id": 48,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://spirits-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "world-whisky-atlas",
+      "displayName": "World Whisky Atlas",
+      "crossRefs": [
+        "scotch-whisky",
+        "japanese-whisky",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 49,
+      "vertical_id": "spirits-beverages",
+      "vertical_slug": "spirits-beverages",
+      "site_url": "https://world-whisky-atlas.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

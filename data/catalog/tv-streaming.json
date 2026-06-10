@@ -1,0 +1,1827 @@
+{
+  "vertical": {
+    "id": "tv-streaming",
+    "slug": "tv-streaming",
+    "name": "TV & Streaming",
+    "icon": "📺",
+    "app_count": 121,
+    "is_mega_vertical": true
+  },
+  "apps": [
+    {
+      "slug": "tv-streaming-hub",
+      "displayName": "TV & Streaming Hub",
+      "crossRefs": [
+        "streaming-films",
+        "tv-drama"
+      ],
+      "priority": "P2",
+      "id": 978,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-streaming-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-drama",
+      "displayName": "TV Drama Authority",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-drama"
+      ],
+      "priority": "P3",
+      "id": 979,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-drama.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-comedy",
+      "displayName": "TV Comedy Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "comedy-film"
+      ],
+      "priority": "P3",
+      "id": 980,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-comedy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-documentary",
+      "displayName": "TV Documentary Series",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-documentary"
+      ],
+      "priority": "P3",
+      "id": 981,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-documentary.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-reality",
+      "displayName": "Reality TV Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "tv-competition"
+      ],
+      "priority": "P3",
+      "id": 982,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-reality.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-competition",
+      "displayName": "Competition TV Shows",
+      "crossRefs": [
+        "tv-reality",
+        "sports-betting"
+      ],
+      "priority": "P3",
+      "id": 983,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-competition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-crime",
+      "displayName": "Crime & Procedural TV",
+      "crossRefs": [
+        "tv-drama",
+        "fiction-crime"
+      ],
+      "priority": "P3",
+      "id": 984,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-crime.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-scifi",
+      "displayName": "Sci-Fi TV Series",
+      "crossRefs": [
+        "tv-drama",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 985,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-scifi.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-fantasy",
+      "displayName": "Fantasy TV Series",
+      "crossRefs": [
+        "tv-scifi",
+        "fiction-fantasy"
+      ],
+      "priority": "P3",
+      "id": 986,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-fantasy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-horror",
+      "displayName": "Horror TV Series",
+      "crossRefs": [
+        "tv-drama",
+        "film-horror"
+      ],
+      "priority": "P3",
+      "id": 987,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-horror.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-animation",
+      "displayName": "Animated TV Series",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-animation"
+      ],
+      "priority": "P3",
+      "id": 988,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-animation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-anime-series",
+      "displayName": "Anime TV Series",
+      "crossRefs": [
+        "tv-animation",
+        "film-anime"
+      ],
+      "priority": "P3",
+      "id": 989,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-anime-series.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-british",
+      "displayName": "British TV Classics",
+      "crossRefs": [
+        "tv-drama",
+        "british-cinema"
+      ],
+      "priority": "P3",
+      "id": 990,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-british.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-korean-drama",
+      "displayName": "K-Drama Collection",
+      "crossRefs": [
+        "tv-drama",
+        "korean-cinema"
+      ],
+      "priority": "P3",
+      "id": 991,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-korean-drama.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-limited-series",
+      "displayName": "Limited Series Guide",
+      "crossRefs": [
+        "tv-drama",
+        "book-to-tv"
+      ],
+      "priority": "P3",
+      "id": 992,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-limited-series.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-to-tv",
+      "displayName": "Book to TV Adaptations",
+      "crossRefs": [
+        "book-to-film-hub",
+        "tv-limited-series"
+      ],
+      "priority": "P3",
+      "id": 993,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://book-to-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-sitcoms",
+      "displayName": "Sitcom Classics",
+      "crossRefs": [
+        "tv-comedy",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 994,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-sitcoms.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-late-night",
+      "displayName": "Late Night TV Guide",
+      "crossRefs": [
+        "tv-comedy",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 995,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-late-night.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-talk-shows",
+      "displayName": "Talk Shows Authority",
+      "crossRefs": [
+        "tv-late-night",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 996,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-talk-shows.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-news-analysis",
+      "displayName": "TV News & Analysis",
+      "crossRefs": [
+        "tv-documentary",
+        "nonfiction-politics"
+      ],
+      "priority": "P3",
+      "id": 997,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-news-analysis.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-sports-broadcast",
+      "displayName": "Sports Broadcasting",
+      "crossRefs": [
+        "college-baseball",
+        "nfl-fantasy"
+      ],
+      "priority": "P3",
+      "id": 998,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-sports-broadcast.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-netflix",
+      "displayName": "Netflix Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "movie-watchlist"
+      ],
+      "priority": "P3",
+      "id": 999,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-netflix.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-hbo",
+      "displayName": "HBO & Max Guide",
+      "crossRefs": [
+        "tv-drama",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1000,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-hbo.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-disney",
+      "displayName": "Disney+ Guide",
+      "crossRefs": [
+        "family-films",
+        "tv-animation"
+      ],
+      "priority": "P3",
+      "id": 1001,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-disney.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-apple",
+      "displayName": "Apple TV+ Guide",
+      "crossRefs": [
+        "tv-limited-series",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1002,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-apple.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-amazon",
+      "displayName": "Prime Video Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "streaming-films"
+      ],
+      "priority": "P3",
+      "id": 1003,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-amazon.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-hulu",
+      "displayName": "Hulu Guide",
+      "crossRefs": [
+        "tv-sitcoms",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1004,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-hulu.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-peacock",
+      "displayName": "Peacock Guide",
+      "crossRefs": [
+        "tv-comedy",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1005,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-peacock.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-paramount",
+      "displayName": "Paramount+ Guide",
+      "crossRefs": [
+        "franchise-films",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1006,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-paramount.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cord-cutting",
+      "displayName": "Cord Cutting Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "smart-home"
+      ],
+      "priority": "P3",
+      "id": 1007,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://cord-cutting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-binge-guide",
+      "displayName": "Binge Watch Planner",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "movie-watchlist"
+      ],
+      "priority": "P3",
+      "id": 1008,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-binge-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-rewatch-clubs",
+      "displayName": "Rewatch Clubs",
+      "crossRefs": [
+        "tv-binge-guide",
+        "tv-drama"
+      ],
+      "priority": "P2",
+      "id": 1009,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-rewatch-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-episode-tracker",
+      "displayName": "Episode Tracker",
+      "crossRefs": [
+        "tv-binge-guide",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1010,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-episode-tracker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-awards-emmys",
+      "displayName": "Emmy Awards Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-awards"
+      ],
+      "priority": "P3",
+      "id": 1011,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-awards-emmys.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-pilot-season",
+      "displayName": "Pilot Season Tracker",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-screenwriting"
+      ],
+      "priority": "P3",
+      "id": 1012,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-pilot-season.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-showrunners",
+      "displayName": "Showrunner Authority",
+      "crossRefs": [
+        "tv-drama",
+        "film-screenwriting"
+      ],
+      "priority": "P3",
+      "id": 1013,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-showrunners.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-writing-rooms",
+      "displayName": "TV Writing Rooms",
+      "crossRefs": [
+        "tv-showrunners",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 1014,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-writing-rooms.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "true-crime-tv",
+      "displayName": "True Crime TV",
+      "crossRefs": [
+        "tv-documentary",
+        "nonfiction-true-crime"
+      ],
+      "priority": "P3",
+      "id": 1015,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://true-crime-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cooking-tv",
+      "displayName": "Cooking TV Shows",
+      "crossRefs": [
+        "tv-reality",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 1016,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://cooking-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-tv",
+      "displayName": "Travel TV Shows",
+      "crossRefs": [
+        "tv-documentary",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1017,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://travel-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nature-tv",
+      "displayName": "Nature & Wildlife TV",
+      "crossRefs": [
+        "tv-documentary",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1018,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://nature-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-renovation-tv",
+      "displayName": "Home Renovation TV",
+      "crossRefs": [
+        "tv-reality",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1019,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://home-renovation-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fashion-tv",
+      "displayName": "Fashion TV Shows",
+      "crossRefs": [
+        "tv-reality",
+        "streetwear-style"
+      ],
+      "priority": "P3",
+      "id": 1020,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://fashion-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "music-tv",
+      "displayName": "Music TV & Concerts",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 1021,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://music-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "game-show-tv",
+      "displayName": "Game Show Authority",
+      "crossRefs": [
+        "tv-competition",
+        "board-games"
+      ],
+      "priority": "P3",
+      "id": 1022,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://game-show-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soap-operas",
+      "displayName": "Soap Opera Guide",
+      "crossRefs": [
+        "tv-drama",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1023,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://soap-operas.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "telenovelas",
+      "displayName": "Telenovela Collection",
+      "crossRefs": [
+        "tv-drama",
+        "latin-cinema"
+      ],
+      "priority": "P3",
+      "id": 1024,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://telenovelas.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-podcasts",
+      "displayName": "TV & Recap Podcasts",
+      "crossRefs": [
+        "tv-binge-guide",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 1025,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-podcasts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-club-organizer",
+      "displayName": "TV Club Organizer",
+      "crossRefs": [
+        "tv-rewatch-clubs",
+        "tv-drama"
+      ],
+      "priority": "P3",
+      "id": 1026,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-club-organizer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kids-tv",
+      "displayName": "Kids TV Guide",
+      "crossRefs": [
+        "tv-animation",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 1027,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://kids-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "retro-tv",
+      "displayName": "Retro TV Classics",
+      "crossRefs": [
+        "tv-sitcoms",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 1028,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://retro-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-theme-songs",
+      "displayName": "TV Theme Songs",
+      "crossRefs": [
+        "music-tv",
+        "soundtrack-music"
+      ],
+      "priority": "P3",
+      "id": 1029,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-theme-songs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-locations-tours",
+      "displayName": "TV Location Tours",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-locations"
+      ],
+      "priority": "P3",
+      "id": 1030,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-locations-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-deals",
+      "displayName": "Streaming Deals Tracker",
+      "crossRefs": [
+        "cord-cutting",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1031,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-deals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "international-streaming",
+      "displayName": "International Streaming",
+      "crossRefs": [
+        "tv-foreign",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1032,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://international-streaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-foreign",
+      "displayName": "Foreign TV Series",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-foreign"
+      ],
+      "priority": "P3",
+      "id": 1033,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-foreign.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-miniseries",
+      "displayName": "Miniseries Collection",
+      "crossRefs": [
+        "tv-limited-series",
+        "tv-drama"
+      ],
+      "priority": "P3",
+      "id": 1034,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-miniseries.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-anthology",
+      "displayName": "Anthology Series Guide",
+      "crossRefs": [
+        "tv-limited-series",
+        "film-noir-neo"
+      ],
+      "priority": "P3",
+      "id": 1035,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-anthology.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-universe-mcu",
+      "displayName": "MCU TV Series",
+      "crossRefs": [
+        "marvel-cinema",
+        "tv-scifi"
+      ],
+      "priority": "P3",
+      "id": 1036,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-universe-mcu.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-star-trek",
+      "displayName": "Star Trek TV Universe",
+      "crossRefs": [
+        "star-trek-cinema",
+        "tv-scifi"
+      ],
+      "priority": "P3",
+      "id": 1037,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-star-trek.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-star-wars",
+      "displayName": "Star Wars TV Universe",
+      "crossRefs": [
+        "star-wars-cinema",
+        "tv-scifi"
+      ],
+      "priority": "P3",
+      "id": 1038,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-star-wars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-collector-clubs",
+      "displayName": "TV Fan Clubs",
+      "crossRefs": [
+        "tv-club-organizer",
+        "tv-rewatch-clubs"
+      ],
+      "priority": "P3",
+      "id": 1039,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-quotes-memes",
+      "displayName": "TV Quotes & Culture",
+      "crossRefs": [
+        "tv-sitcoms",
+        "movie-quotes"
+      ],
+      "priority": "P3",
+      "id": 1040,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-quotes-memes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "saturday-night-tv",
+      "displayName": "Saturday Night TV Guide",
+      "crossRefs": [
+        "tv-late-night",
+        "tv-sitcoms"
+      ],
+      "priority": "P3",
+      "id": 1041,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://saturday-night-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holiday-tv",
+      "displayName": "Holiday TV Specials",
+      "crossRefs": [
+        "family-films",
+        "tv-sitcoms"
+      ],
+      "priority": "P3",
+      "id": 1042,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://holiday-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-streaming",
+      "displayName": "Sports Streaming Guide",
+      "crossRefs": [
+        "tv-sports-broadcast",
+        "cord-cutting"
+      ],
+      "priority": "P3",
+      "id": 1043,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://sports-streaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "live-tv-events",
+      "displayName": "Live TV Events",
+      "crossRefs": [
+        "tv-sports-broadcast",
+        "concert-guide"
+      ],
+      "priority": "P3",
+      "id": 1044,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://live-tv-events.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-ai-recommendations",
+      "displayName": "AI TV Recommendations",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1045,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-ai-recommendations.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-parental-guide",
+      "displayName": "Parental TV Guide",
+      "crossRefs": [
+        "kids-tv",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1046,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-parental-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-accessibility",
+      "displayName": "Accessible TV Guide",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "tv-parental-guide"
+      ],
+      "priority": "P3",
+      "id": 1047,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-accessibility.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-subtitle-culture",
+      "displayName": "Subtitles & Global TV",
+      "crossRefs": [
+        "tv-foreign",
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 1048,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-subtitle-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-production-bts",
+      "displayName": "TV Production Behind Scenes",
+      "crossRefs": [
+        "tv-showrunners",
+        "film-techniques"
+      ],
+      "priority": "P3",
+      "id": 1049,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-production-bts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "unscripted-tv",
+      "displayName": "Unscripted TV Hub",
+      "crossRefs": [
+        "tv-reality",
+        "tv-competition"
+      ],
+      "priority": "P3",
+      "id": 1050,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://unscripted-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dating-tv",
+      "displayName": "Dating Show Guide",
+      "crossRefs": [
+        "tv-reality",
+        "tv-competition"
+      ],
+      "priority": "P3",
+      "id": 1051,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://dating-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "survival-tv",
+      "displayName": "Survival TV Shows",
+      "crossRefs": [
+        "tv-reality",
+        "outdoor-adventures"
+      ],
+      "priority": "P3",
+      "id": 1052,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://survival-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "paranormal-tv",
+      "displayName": "Paranormal TV",
+      "crossRefs": [
+        "tv-horror",
+        "true-crime-tv"
+      ],
+      "priority": "P3",
+      "id": 1053,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://paranormal-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "medical-tv",
+      "displayName": "Medical Drama TV",
+      "crossRefs": [
+        "tv-drama",
+        "health-medical-hub"
+      ],
+      "priority": "P3",
+      "id": 1054,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://medical-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "legal-tv",
+      "displayName": "Legal Drama TV",
+      "crossRefs": [
+        "tv-drama",
+        "legal-professional"
+      ],
+      "priority": "P3",
+      "id": 1055,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://legal-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "political-tv",
+      "displayName": "Political TV & Satire",
+      "crossRefs": [
+        "tv-comedy",
+        "nonfiction-politics"
+      ],
+      "priority": "P3",
+      "id": 1056,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://political-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "period-tv",
+      "displayName": "Period Drama TV",
+      "crossRefs": [
+        "tv-drama",
+        "fiction-historical"
+      ],
+      "priority": "P3",
+      "id": 1057,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://period-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "western-tv",
+      "displayName": "Western TV Series",
+      "crossRefs": [
+        "western-films",
+        "tv-drama"
+      ],
+      "priority": "P3",
+      "id": 1058,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://western-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mystery-tv",
+      "displayName": "Mystery TV Series",
+      "crossRefs": [
+        "tv-crime",
+        "fiction-mystery"
+      ],
+      "priority": "P3",
+      "id": 1059,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://mystery-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "supernatural-tv",
+      "displayName": "Supernatural TV",
+      "crossRefs": [
+        "tv-fantasy",
+        "tv-horror"
+      ],
+      "priority": "P3",
+      "id": 1060,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://supernatural-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-spinoffs",
+      "displayName": "TV Spinoffs Tracker",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 1061,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-spinoffs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cancelled-tv",
+      "displayName": "Cancelled TV Archive",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "tv-pilot-season"
+      ],
+      "priority": "P3",
+      "id": 1062,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://cancelled-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-reboots",
+      "displayName": "TV Reboots & Revivals",
+      "crossRefs": [
+        "retro-tv",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1063,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-reboots.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "short-form-tv",
+      "displayName": "Short Form & Web Series",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "short-films"
+      ],
+      "priority": "P3",
+      "id": 1064,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://short-form-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "youtube-series",
+      "displayName": "YouTube Series Guide",
+      "crossRefs": [
+        "short-form-tv",
+        "streaming-setup"
+      ],
+      "priority": "P3",
+      "id": 1065,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://youtube-series.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-watch-parties",
+      "displayName": "Watch Party Organizer",
+      "crossRefs": [
+        "tv-rewatch-clubs",
+        "tv-binge-guide"
+      ],
+      "priority": "P3",
+      "id": 1066,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-watch-parties.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-gift-guide",
+      "displayName": "TV Fan Gift Guide",
+      "crossRefs": [
+        "gift-curator",
+        "tv-collector-clubs"
+      ],
+      "priority": "P3",
+      "id": 1067,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-gift-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-ratings-tracker",
+      "displayName": "TV Ratings Tracker",
+      "crossRefs": [
+        "tv-awards-emmys",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1068,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-ratings-tracker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-season-premieres",
+      "displayName": "Season Premiere Calendar",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "tv-binge-guide"
+      ],
+      "priority": "P3",
+      "id": 1069,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-season-premieres.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-finale-guide",
+      "displayName": "Series Finale Guide",
+      "crossRefs": [
+        "tv-drama",
+        "tv-binge-guide"
+      ],
+      "priority": "P3",
+      "id": 1070,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-finale-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-soundtrack-playlists",
+      "displayName": "TV Soundtrack Playlists",
+      "crossRefs": [
+        "soundtrack-music",
+        "tv-binge-guide"
+      ],
+      "priority": "P3",
+      "id": 1071,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-soundtrack-playlists.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "reality-tv-strategy",
+      "displayName": "Reality TV Strategy",
+      "crossRefs": [
+        "tv-competition",
+        "tv-reality"
+      ],
+      "priority": "P3",
+      "id": 1072,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://reality-tv-strategy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-investing",
+      "displayName": "TV Production Investing",
+      "crossRefs": [
+        "tv-production-bts",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1073,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-tech",
+      "displayName": "Streaming Tech Setup",
+      "crossRefs": [
+        "streaming-setup",
+        "cord-cutting"
+      ],
+      "priority": "P3",
+      "id": 1074,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-tech.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-collectibles",
+      "displayName": "TV Collectibles & Merch",
+      "crossRefs": [
+        "movie-memorabilia",
+        "tv-collector-clubs"
+      ],
+      "priority": "P3",
+      "id": 1075,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-collectibles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-script-library",
+      "displayName": "TV Script Library",
+      "crossRefs": [
+        "tv-writing-rooms",
+        "film-screenwriting"
+      ],
+      "priority": "P3",
+      "id": 1076,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-script-library.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "daytime-tv",
+      "displayName": "Daytime TV Guide",
+      "crossRefs": [
+        "soap-operas",
+        "tv-talk-shows"
+      ],
+      "priority": "P3",
+      "id": 1077,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://daytime-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "public-tv",
+      "displayName": "Public Television Guide",
+      "crossRefs": [
+        "tv-documentary",
+        "nature-tv"
+      ],
+      "priority": "P3",
+      "id": 1078,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://public-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-tv",
+      "displayName": "Local TV & News",
+      "crossRefs": [
+        "tv-news-analysis",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1079,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://local-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-archive",
+      "displayName": "TV Archive & History",
+      "crossRefs": [
+        "retro-tv",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 1080,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-archive.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "global-streaming-originals",
+      "displayName": "Global Streaming Originals",
+      "crossRefs": [
+        "international-streaming",
+        "tv-foreign"
+      ],
+      "priority": "P3",
+      "id": 1081,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://global-streaming-originals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-crossover-events",
+      "displayName": "TV Crossover Events",
+      "crossRefs": [
+        "franchise-films",
+        "tv-universe-mcu"
+      ],
+      "priority": "P3",
+      "id": 1082,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-crossover-events.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "binge-calculator",
+      "displayName": "Binge Time Calculator",
+      "crossRefs": [
+        "tv-binge-guide",
+        "tv-episode-tracker"
+      ],
+      "priority": "P3",
+      "id": 1083,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://binge-calculator.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-meal-pairing",
+      "displayName": "TV & Takeout Pairing",
+      "crossRefs": [
+        "tv-binge-guide",
+        "food-trucks"
+      ],
+      "priority": "P3",
+      "id": 1084,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-meal-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "comfort-tv",
+      "displayName": "Comfort TV Guide",
+      "crossRefs": [
+        "tv-sitcoms",
+        "tv-comedy"
+      ],
+      "priority": "P3",
+      "id": 1085,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://comfort-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "prestige-tv",
+      "displayName": "Prestige TV Canon",
+      "crossRefs": [
+        "tv-drama",
+        "tv-limited-series"
+      ],
+      "priority": "P3",
+      "id": 1086,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://prestige-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-critic-network",
+      "displayName": "TV Critic Network",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "film-reviews-network"
+      ],
+      "priority": "P3",
+      "id": 1087,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-critic-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-bundle-guide",
+      "displayName": "Streaming Bundle Optimizer",
+      "crossRefs": [
+        "streaming-deals",
+        "cord-cutting"
+      ],
+      "priority": "P3",
+      "id": 1088,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://streaming-bundle-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-ai-recaps",
+      "displayName": "AI Episode Recaps",
+      "crossRefs": [
+        "tv-ai-recommendations",
+        "tv-binge-guide"
+      ],
+      "priority": "P3",
+      "id": 1089,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-ai-recaps.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-franchise-timeline",
+      "displayName": "Franchise Timeline Viewer",
+      "crossRefs": [
+        "franchise-films",
+        "tv-spinoffs"
+      ],
+      "priority": "P3",
+      "id": 1090,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-franchise-timeline.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-live-sports",
+      "displayName": "Live Sports TV Schedule",
+      "crossRefs": [
+        "sports-streaming",
+        "college-baseball"
+      ],
+      "priority": "P3",
+      "id": 1091,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-live-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-genre-matrix",
+      "displayName": "TV Genre Explorer",
+      "crossRefs": [
+        "tv-streaming-hub",
+        "tv-drama"
+      ],
+      "priority": "P3",
+      "id": 1092,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-genre-matrix.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-for-couples",
+      "displayName": "Couples TV Picks",
+      "crossRefs": [
+        "date-night-films",
+        "tv-romance"
+      ],
+      "priority": "P3",
+      "id": 1093,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-for-couples.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-romance",
+      "displayName": "Romance TV Series",
+      "crossRefs": [
+        "tv-drama",
+        "fiction-romance"
+      ],
+      "priority": "P3",
+      "id": 1094,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-romance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-workplace",
+      "displayName": "Workplace Comedy TV",
+      "crossRefs": [
+        "tv-sitcoms",
+        "tv-comedy"
+      ],
+      "priority": "P3",
+      "id": 1095,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-workplace.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-friend-groups",
+      "displayName": "Friend Group TV Picks",
+      "crossRefs": [
+        "tv-watch-parties",
+        "comfort-tv"
+      ],
+      "priority": "P3",
+      "id": 1096,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-friend-groups.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-expert-badges",
+      "displayName": "TV Expert Badges",
+      "crossRefs": [
+        "tv-collector-clubs",
+        "tv-critic-network"
+      ],
+      "priority": "P3",
+      "id": 1097,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-expert-badges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tv-tier-clubs",
+      "displayName": "Tier 3 TV Fan Clubs",
+      "crossRefs": [
+        "tv-club-organizer",
+        "tv-expert-badges"
+      ],
+      "priority": "P3",
+      "id": 1098,
+      "vertical_id": "tv-streaming",
+      "vertical_slug": "tv-streaming",
+      "site_url": "https://tv-tier-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

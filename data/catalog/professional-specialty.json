@@ -1,0 +1,652 @@
+{
+  "vertical": {
+    "id": "professional-specialty",
+    "slug": "professional-specialty",
+    "name": "Professional & Specialty",
+    "icon": "💼",
+    "app_count": 44,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "legal-professional",
+      "displayName": "Legal Professional Guide",
+      "crossRefs": [
+        "courtroom-films",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1736,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://legal-professional.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "medical-professional",
+      "displayName": "Medical Professional Hub",
+      "crossRefs": [
+        "health-medical-hub",
+        "nonfiction-science"
+      ],
+      "priority": "P3",
+      "id": 1737,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://medical-professional.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "health-medical-hub",
+      "displayName": "Health & Medical Hub",
+      "crossRefs": [
+        "wellness-recovery",
+        "medical-professional"
+      ],
+      "priority": "P3",
+      "id": 1738,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://health-medical-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "engineering-pro",
+      "displayName": "Engineering Professional",
+      "crossRefs": [
+        "science-explorer",
+        "architecture-design"
+      ],
+      "priority": "P3",
+      "id": 1739,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://engineering-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "architecture-design",
+      "displayName": "Architecture & Design Pro",
+      "crossRefs": [
+        "interior-design",
+        "engineering-pro"
+      ],
+      "priority": "P3",
+      "id": 1740,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://architecture-design.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "accounting-pro",
+      "displayName": "Accounting Professional",
+      "crossRefs": [
+        "tax-planning",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1741,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://accounting-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "marketing-pro",
+      "displayName": "Marketing Professional",
+      "crossRefs": [
+        "food-influencer",
+        "tech-startups"
+      ],
+      "priority": "P3",
+      "id": 1742,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://marketing-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sales-pro",
+      "displayName": "Sales Professional Guide",
+      "crossRefs": [
+        "marketing-pro",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1743,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://sales-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hr-professional",
+      "displayName": "HR Professional Guide",
+      "crossRefs": [
+        "sales-pro",
+        "online-courses"
+      ],
+      "priority": "P3",
+      "id": 1744,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://hr-professional.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "project-management",
+      "displayName": "Project Management Pro",
+      "crossRefs": [
+        "hr-professional",
+        "tech-startups"
+      ],
+      "priority": "P3",
+      "id": 1745,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://project-management.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "consulting-career",
+      "displayName": "Consulting Career Guide",
+      "crossRefs": [
+        "mba-prep",
+        "project-management"
+      ],
+      "priority": "P3",
+      "id": 1746,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://consulting-career.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "freelance-career",
+      "displayName": "Freelance Career Hub",
+      "crossRefs": [
+        "freelance-finance",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 1747,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://freelance-career.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "remote-work",
+      "displayName": "Remote Work Guide",
+      "crossRefs": [
+        "digital-nomad",
+        "freelance-career"
+      ],
+      "priority": "P3",
+      "id": 1748,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://remote-work.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "resume-career",
+      "displayName": "Resume & Career Guide",
+      "crossRefs": [
+        "consulting-career",
+        "college-admissions"
+      ],
+      "priority": "P3",
+      "id": 1749,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://resume-career.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "interview-prep",
+      "displayName": "Interview Prep Pro",
+      "crossRefs": [
+        "resume-career",
+        "mba-prep"
+      ],
+      "priority": "P3",
+      "id": 1750,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://interview-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "networking-pro",
+      "displayName": "Professional Networking",
+      "crossRefs": [
+        "interview-prep",
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1751,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://networking-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "public-speaking",
+      "displayName": "Public Speaking Pro",
+      "crossRefs": [
+        "podcast-creator",
+        "networking-pro"
+      ],
+      "priority": "P3",
+      "id": 1752,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://public-speaking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "negotiation-skills",
+      "displayName": "Negotiation Skills",
+      "crossRefs": [
+        "sales-pro",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 1753,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://negotiation-skills.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "leadership-development",
+      "displayName": "Leadership Development",
+      "crossRefs": [
+        "negotiation-skills",
+        "mba-prep"
+      ],
+      "priority": "P3",
+      "id": 1754,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://leadership-development.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "entrepreneurship",
+      "displayName": "Entrepreneurship Guide",
+      "crossRefs": [
+        "tech-startups",
+        "side-hustle"
+      ],
+      "priority": "P3",
+      "id": 1755,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://entrepreneurship.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "small-business",
+      "displayName": "Small Business Guide",
+      "crossRefs": [
+        "entrepreneurship",
+        "food-startup"
+      ],
+      "priority": "P3",
+      "id": 1756,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://small-business.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "franchise-business",
+      "displayName": "Franchise Business Guide",
+      "crossRefs": [
+        "small-business",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1757,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://franchise-business.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonprofit-leadership",
+      "displayName": "Nonprofit Leadership",
+      "crossRefs": [
+        "leadership-development",
+        "conservation-volunteer"
+      ],
+      "priority": "P3",
+      "id": 1758,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://nonprofit-leadership.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pro-clubs",
+      "displayName": "Professional Clubs",
+      "crossRefs": [
+        "networking-pro",
+        "leadership-development"
+      ],
+      "priority": "P2",
+      "id": 1759,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://pro-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-01",
+      "displayName": "Industry Career Guide 1",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1760,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-02",
+      "displayName": "Industry Career Guide 2",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1761,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-03",
+      "displayName": "Industry Career Guide 3",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1762,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-04",
+      "displayName": "Industry Career Guide 4",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1763,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-05",
+      "displayName": "Industry Career Guide 5",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1764,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-06",
+      "displayName": "Industry Career Guide 6",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1765,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-07",
+      "displayName": "Industry Career Guide 7",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1766,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-08",
+      "displayName": "Industry Career Guide 8",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1767,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-09",
+      "displayName": "Industry Career Guide 9",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1768,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-10",
+      "displayName": "Industry Career Guide 10",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1769,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-11",
+      "displayName": "Industry Career Guide 11",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1770,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-12",
+      "displayName": "Industry Career Guide 12",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1771,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-13",
+      "displayName": "Industry Career Guide 13",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1772,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-14",
+      "displayName": "Industry Career Guide 14",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1773,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-15",
+      "displayName": "Industry Career Guide 15",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1774,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-16",
+      "displayName": "Industry Career Guide 16",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1775,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-17",
+      "displayName": "Industry Career Guide 17",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1776,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-18",
+      "displayName": "Industry Career Guide 18",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1777,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-19",
+      "displayName": "Industry Career Guide 19",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1778,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "industry-vertical-20",
+      "displayName": "Industry Career Guide 20",
+      "crossRefs": [
+        "consulting-career"
+      ],
+      "priority": "P3",
+      "id": 1779,
+      "vertical_id": "professional-specialty",
+      "vertical_slug": "professional-specialty",
+      "site_url": "https://industry-vertical-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

@@ -1,0 +1,1207 @@
+{
+  "vertical": {
+    "id": "outdoors-nature",
+    "slug": "outdoors-nature",
+    "name": "Outdoors & Nature",
+    "icon": "🏕️",
+    "app_count": 82,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "outdoor-adventures",
+      "displayName": "Outdoor Adventures",
+      "crossRefs": [
+        "hiking-trails",
+        "camping-guide"
+      ],
+      "priority": "P3",
+      "id": 1099,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-adventures.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hiking-trails",
+      "displayName": "Hiking Trails Guide",
+      "crossRefs": [
+        "outdoor-adventures",
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1100,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://hiking-trails.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "camping-guide",
+      "displayName": "Camping Guide",
+      "crossRefs": [
+        "hiking-trails",
+        "outdoor-gear"
+      ],
+      "priority": "P3",
+      "id": 1101,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://camping-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "national-parks",
+      "displayName": "National Parks Explorer",
+      "crossRefs": [
+        "hiking-trails",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1102,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://national-parks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wildlife-watching",
+      "displayName": "Wildlife Watching",
+      "crossRefs": [
+        "national-parks",
+        "bird-watching"
+      ],
+      "priority": "P3",
+      "id": 1103,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://wildlife-watching.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bird-watching",
+      "displayName": "Bird Watching Guide",
+      "crossRefs": [
+        "wildlife-watching",
+        "photography-nature"
+      ],
+      "priority": "P3",
+      "id": 1104,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://bird-watching.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fishing-fly",
+      "displayName": "Fly Fishing Guide",
+      "crossRefs": [
+        "fishing-angler",
+        "outdoor-adventures"
+      ],
+      "priority": "P3",
+      "id": 1105,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://fishing-fly.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kayaking-paddle",
+      "displayName": "Kayaking & Paddle Sports",
+      "crossRefs": [
+        "outdoor-adventures",
+        "fishing-fly"
+      ],
+      "priority": "P3",
+      "id": 1106,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://kayaking-paddle.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rock-climbing",
+      "displayName": "Rock Climbing Guide",
+      "crossRefs": [
+        "mountain-climbing",
+        "outdoor-gear"
+      ],
+      "priority": "P3",
+      "id": 1107,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://rock-climbing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mountain-climbing",
+      "displayName": "Mountain Climbing",
+      "crossRefs": [
+        "rock-climbing",
+        "skiing-snowboard"
+      ],
+      "priority": "P3",
+      "id": 1108,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://mountain-climbing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "outdoor-gear",
+      "displayName": "Outdoor Gear Authority",
+      "crossRefs": [
+        "camping-guide",
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1109,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stargazing-astro",
+      "displayName": "Stargazing & Astronomy",
+      "crossRefs": [
+        "photography-nature",
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1110,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://stargazing-astro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gardening-native",
+      "displayName": "Native Plant Gardening",
+      "crossRefs": [
+        "bird-watching",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 1111,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://gardening-native.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "foraging-wild",
+      "displayName": "Foraging & Wild Foods",
+      "crossRefs": [
+        "farm-to-table",
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1112,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://foraging-wild.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beekeeping-guide",
+      "displayName": "Beekeeping Guide",
+      "crossRefs": [
+        "gardening-native",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 1113,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://beekeeping-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "landscape-photo",
+      "displayName": "Landscape Photography",
+      "crossRefs": [
+        "photography-nature",
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1114,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://landscape-photo.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "scuba-diving",
+      "displayName": "Scuba Diving Guide",
+      "crossRefs": [
+        "outdoor-adventures",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 1115,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://scuba-diving.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sailing-yacht",
+      "displayName": "Sailing & Yacht Guide",
+      "crossRefs": [
+        "scuba-diving",
+        "coastal-travel"
+      ],
+      "priority": "P3",
+      "id": 1116,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://sailing-yacht.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hunting-guide",
+      "displayName": "Hunting Guide",
+      "crossRefs": [
+        "outdoor-gear",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1117,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://hunting-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rv-road-trips",
+      "displayName": "RV & Road Trip Planner",
+      "crossRefs": [
+        "national-parks",
+        "camping-guide"
+      ],
+      "priority": "P3",
+      "id": 1118,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://rv-road-trips.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "backpacking-ul",
+      "displayName": "Ultralight Backpacking",
+      "crossRefs": [
+        "hiking-trails",
+        "camping-guide"
+      ],
+      "priority": "P3",
+      "id": 1119,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://backpacking-ul.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "winter-camping",
+      "displayName": "Winter Camping Guide",
+      "crossRefs": [
+        "camping-guide",
+        "skiing-snowboard"
+      ],
+      "priority": "P3",
+      "id": 1120,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://winter-camping.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "desert-exploring",
+      "displayName": "Desert Exploring",
+      "crossRefs": [
+        "hiking-trails",
+        "photography-nature"
+      ],
+      "priority": "P3",
+      "id": 1121,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://desert-exploring.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cave-exploring",
+      "displayName": "Cave & Spelunking",
+      "crossRefs": [
+        "rock-climbing",
+        "outdoor-adventures"
+      ],
+      "priority": "P3",
+      "id": 1122,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://cave-exploring.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "canoeing-rivers",
+      "displayName": "Canoeing & River Trips",
+      "crossRefs": [
+        "kayaking-paddle",
+        "fishing-fly"
+      ],
+      "priority": "P3",
+      "id": 1123,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://canoeing-rivers.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-running",
+      "displayName": "Trail Running",
+      "crossRefs": [
+        "hiking-trails",
+        "marathon-running"
+      ],
+      "priority": "P3",
+      "id": 1124,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-running.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "orienteering",
+      "displayName": "Orienteering & Navigation",
+      "crossRefs": [
+        "hiking-trails",
+        "outdoor-gear"
+      ],
+      "priority": "P3",
+      "id": 1125,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://orienteering.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "survival-skills",
+      "displayName": "Wilderness Survival",
+      "crossRefs": [
+        "camping-guide",
+        "foraging-wild"
+      ],
+      "priority": "P3",
+      "id": 1126,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://survival-skills.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bushcraft",
+      "displayName": "Bushcraft Skills",
+      "crossRefs": [
+        "survival-skills",
+        "foraging-wild"
+      ],
+      "priority": "P3",
+      "id": 1127,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://bushcraft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nature-journaling",
+      "displayName": "Nature Journaling",
+      "crossRefs": [
+        "bird-watching",
+        "landscape-photo"
+      ],
+      "priority": "P3",
+      "id": 1128,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://nature-journaling.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "conservation-volunteer",
+      "displayName": "Conservation Volunteering",
+      "crossRefs": [
+        "national-parks",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1129,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://conservation-volunteer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "eco-tourism",
+      "displayName": "Eco Tourism Guide",
+      "crossRefs": [
+        "conservation-volunteer",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1130,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://eco-tourism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "aurora-hunting",
+      "displayName": "Aurora Hunting",
+      "crossRefs": [
+        "stargazing-astro",
+        "winter-camping"
+      ],
+      "priority": "P3",
+      "id": 1131,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://aurora-hunting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "volcano-tours",
+      "displayName": "Volcano Tours",
+      "crossRefs": [
+        "outdoor-adventures",
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1132,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://volcano-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "glacier-tours",
+      "displayName": "Glacier Tours",
+      "crossRefs": [
+        "mountain-climbing",
+        "winter-camping"
+      ],
+      "priority": "P3",
+      "id": 1133,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://glacier-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rainforest-guide",
+      "displayName": "Rainforest Guide",
+      "crossRefs": [
+        "wildlife-watching",
+        "eco-tourism"
+      ],
+      "priority": "P3",
+      "id": 1134,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://rainforest-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "safari-planner",
+      "displayName": "Safari Planner",
+      "crossRefs": [
+        "african-safari",
+        "wildlife-watching"
+      ],
+      "priority": "P3",
+      "id": 1135,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://safari-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "whale-watching",
+      "displayName": "Whale Watching",
+      "crossRefs": [
+        "wildlife-watching",
+        "coastal-travel"
+      ],
+      "priority": "P3",
+      "id": 1136,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://whale-watching.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "butterfly-garden",
+      "displayName": "Butterfly Gardening",
+      "crossRefs": [
+        "gardening-native",
+        "bird-watching"
+      ],
+      "priority": "P3",
+      "id": 1137,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://butterfly-garden.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mushroom-foraging",
+      "displayName": "Mushroom Foraging",
+      "crossRefs": [
+        "foraging-wild",
+        "mushroom-foraging-food"
+      ],
+      "priority": "P3",
+      "id": 1138,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://mushroom-foraging.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "outdoor-cooking",
+      "displayName": "Outdoor Cooking",
+      "crossRefs": [
+        "camping-cooking",
+        "campfire-cooking"
+      ],
+      "priority": "P3",
+      "id": 1139,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "campfire-cooking",
+      "displayName": "Campfire Cooking",
+      "crossRefs": [
+        "outdoor-cooking",
+        "bbq-smokehouse"
+      ],
+      "priority": "P3",
+      "id": 1140,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://campfire-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "outdoor-first-aid",
+      "displayName": "Outdoor First Aid",
+      "crossRefs": [
+        "survival-skills",
+        "sports-injury"
+      ],
+      "priority": "P3",
+      "id": 1141,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-first-aid.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gear-repair-outdoor",
+      "displayName": "Outdoor Gear Repair",
+      "crossRefs": [
+        "outdoor-gear",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1142,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://gear-repair-outdoor.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "leave-no-trace",
+      "displayName": "Leave No Trace Ethics",
+      "crossRefs": [
+        "conservation-volunteer",
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1143,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://leave-no-trace.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "outdoor-clubs",
+      "displayName": "Outdoor Adventure Clubs",
+      "crossRefs": [
+        "outdoor-adventures",
+        "hiking-trails"
+      ],
+      "priority": "P2",
+      "id": 1144,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "outdoor-expert-network",
+      "displayName": "Outdoor Expert Network",
+      "crossRefs": [
+        "outdoor-clubs",
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1145,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://outdoor-expert-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-01",
+      "displayName": "State Park Guide 1",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1146,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-02",
+      "displayName": "State Park Guide 2",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1147,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-03",
+      "displayName": "State Park Guide 3",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1148,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-04",
+      "displayName": "State Park Guide 4",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1149,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-05",
+      "displayName": "State Park Guide 5",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1150,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-06",
+      "displayName": "State Park Guide 6",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1151,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-07",
+      "displayName": "State Park Guide 7",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1152,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-08",
+      "displayName": "State Park Guide 8",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1153,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-09",
+      "displayName": "State Park Guide 9",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1154,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-10",
+      "displayName": "State Park Guide 10",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1155,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-11",
+      "displayName": "State Park Guide 11",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1156,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-12",
+      "displayName": "State Park Guide 12",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1157,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-13",
+      "displayName": "State Park Guide 13",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1158,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-14",
+      "displayName": "State Park Guide 14",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1159,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-15",
+      "displayName": "State Park Guide 15",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1160,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-16",
+      "displayName": "State Park Guide 16",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1161,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-17",
+      "displayName": "State Park Guide 17",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1162,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-18",
+      "displayName": "State Park Guide 18",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1163,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-19",
+      "displayName": "State Park Guide 19",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1164,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "state-park-20",
+      "displayName": "State Park Guide 20",
+      "crossRefs": [
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1165,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://state-park-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-01",
+      "displayName": "Trail System 1",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1166,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-02",
+      "displayName": "Trail System 2",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1167,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-03",
+      "displayName": "Trail System 3",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1168,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-04",
+      "displayName": "Trail System 4",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1169,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-05",
+      "displayName": "Trail System 5",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1170,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-06",
+      "displayName": "Trail System 6",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1171,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-07",
+      "displayName": "Trail System 7",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1172,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-08",
+      "displayName": "Trail System 8",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1173,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-09",
+      "displayName": "Trail System 9",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1174,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-10",
+      "displayName": "Trail System 10",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1175,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-11",
+      "displayName": "Trail System 11",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1176,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-12",
+      "displayName": "Trail System 12",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1177,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-13",
+      "displayName": "Trail System 13",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1178,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-14",
+      "displayName": "Trail System 14",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1179,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trail-system-15",
+      "displayName": "Trail System 15",
+      "crossRefs": [
+        "hiking-trails"
+      ],
+      "priority": "P3",
+      "id": 1180,
+      "vertical_id": "outdoors-nature",
+      "vertical_slug": "outdoors-nature",
+      "site_url": "https://trail-system-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

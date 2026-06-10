@@ -1,0 +1,3042 @@
+{
+  "vertical": {
+    "id": "food-culinary",
+    "slug": "food-culinary",
+    "name": "Food & Culinary",
+    "icon": "🍽️",
+    "app_count": 202,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "meals-pairing",
+      "displayName": "Meals & Pairing Master",
+      "crossRefs": [
+        "wine-cellar",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P1",
+      "id": 213,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://meals-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "steakhouse-guide",
+      "displayName": "Steakhouse Authority",
+      "crossRefs": [
+        "meals-pairing",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 214,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://steakhouse-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bbq-smokehouse",
+      "displayName": "BBQ & Smokehouse Guide",
+      "crossRefs": [
+        "steakhouse-guide",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 215,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://bbq-smokehouse.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "seafood-guide",
+      "displayName": "Seafood Connoisseur",
+      "crossRefs": [
+        "meals-pairing",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 216,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://seafood-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pasta-italian",
+      "displayName": "Italian Pasta & Cuisine",
+      "crossRefs": [
+        "meals-pairing",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 217,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pasta-italian.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sushi-sake",
+      "displayName": "Sushi & Sake Guide",
+      "crossRefs": [
+        "seafood-guide",
+        "japanese-whisky"
+      ],
+      "priority": "P3",
+      "id": 218,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sushi-sake.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "french-cuisine",
+      "displayName": "French Culinary Authority",
+      "crossRefs": [
+        "meals-pairing",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 219,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://french-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mexican-cuisine",
+      "displayName": "Mexican Culinary Guide",
+      "crossRefs": [
+        "tequila-agave",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 220,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://mexican-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "thai-cuisine",
+      "displayName": "Thai Food Explorer",
+      "crossRefs": [
+        "meals-pairing",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 221,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://thai-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indian-cuisine",
+      "displayName": "Indian Spice & Cuisine",
+      "crossRefs": [
+        "meals-pairing",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 222,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://indian-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "southern-cuisine",
+      "displayName": "Southern Cooking Heritage",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 223,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://southern-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "farm-to-table",
+      "displayName": "Farm to Table Guide",
+      "crossRefs": [
+        "natural-wines",
+        "artisan-cheese"
+      ],
+      "priority": "P3",
+      "id": 224,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://farm-to-table.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "artisan-cheese",
+      "displayName": "Artisan Cheese Collection",
+      "crossRefs": [
+        "wine-cellar",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 225,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://artisan-cheese.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chocolate-connoisseur",
+      "displayName": "Chocolate Connoisseur",
+      "crossRefs": [
+        "dessert-wines",
+        "artisan-cheese"
+      ],
+      "priority": "P3",
+      "id": 226,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://chocolate-connoisseur.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coffee-specialist",
+      "displayName": "Coffee Specialist",
+      "crossRefs": [
+        "chocolate-connoisseur",
+        "tea-collection"
+      ],
+      "priority": "P3",
+      "id": 227,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://coffee-specialist.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tea-collection",
+      "displayName": "Tea Collection Master",
+      "crossRefs": [
+        "coffee-specialist",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 228,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://tea-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hot-sauce",
+      "displayName": "Hot Sauce Authority",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "mexican-cuisine"
+      ],
+      "priority": "P3",
+      "id": 229,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://hot-sauce.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spice-rack",
+      "displayName": "Spice Rack Explorer",
+      "crossRefs": [
+        "indian-cuisine",
+        "thai-cuisine"
+      ],
+      "priority": "P3",
+      "id": 230,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://spice-rack.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "baking-pastry",
+      "displayName": "Baking & Pastry Guide",
+      "crossRefs": [
+        "chocolate-connoisseur",
+        "dessert-wines"
+      ],
+      "priority": "P3",
+      "id": 231,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://baking-pastry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "charcuterie",
+      "displayName": "Charcuterie & Curing",
+      "crossRefs": [
+        "artisan-cheese",
+        "steakhouse-guide"
+      ],
+      "priority": "P3",
+      "id": 232,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://charcuterie.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vegetarian-plant",
+      "displayName": "Plant-Based Culinary",
+      "crossRefs": [
+        "farm-to-table",
+        "spice-rack"
+      ],
+      "priority": "P3",
+      "id": 233,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://vegetarian-plant.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "meal-prep",
+      "displayName": "Meal Prep Planner",
+      "crossRefs": [
+        "meals-pairing",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 234,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://meal-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "restaurant-guide",
+      "displayName": "Restaurant Guide Elite",
+      "crossRefs": [
+        "meals-pairing",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 235,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://restaurant-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-trucks",
+      "displayName": "Food Truck Tracker",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 236,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-trucks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "culinary-travel",
+      "displayName": "Culinary Travel Guide",
+      "crossRefs": [
+        "restaurant-guide",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 237,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://culinary-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "asian-spices",
+      "displayName": "Asian Spice Authority",
+      "crossRefs": [
+        "thai-cuisine",
+        "indian-cuisine"
+      ],
+      "priority": "P3",
+      "id": 238,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://asian-spices.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mediterranean-cuisine",
+      "displayName": "Mediterranean Cuisine",
+      "crossRefs": [
+        "italian-wines",
+        "greek-wines"
+      ],
+      "priority": "P3",
+      "id": 239,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://mediterranean-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "korean-cuisine",
+      "displayName": "Korean Culinary Guide",
+      "crossRefs": [
+        "sushi-sake",
+        "korean-cinema"
+      ],
+      "priority": "P3",
+      "id": 240,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://korean-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chinese-cuisine",
+      "displayName": "Chinese Regional Cuisine",
+      "crossRefs": [
+        "asian-spices",
+        "tea-collection"
+      ],
+      "priority": "P3",
+      "id": 241,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://chinese-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vietnamese-cuisine",
+      "displayName": "Vietnamese Cuisine",
+      "crossRefs": [
+        "thai-cuisine",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 242,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://vietnamese-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "greek-cuisine",
+      "displayName": "Greek Culinary Guide",
+      "crossRefs": [
+        "mediterranean-cuisine",
+        "greek-wines"
+      ],
+      "priority": "P3",
+      "id": 243,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://greek-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spanish-tapas",
+      "displayName": "Spanish Tapas Guide",
+      "crossRefs": [
+        "spanish-wines",
+        "mediterranean-cuisine"
+      ],
+      "priority": "P3",
+      "id": 244,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://spanish-tapas.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "portuguese-cuisine",
+      "displayName": "Portuguese Cuisine",
+      "crossRefs": [
+        "portugal-wines",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 245,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://portuguese-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "moroccan-cuisine",
+      "displayName": "Moroccan Cuisine",
+      "crossRefs": [
+        "spice-rack",
+        "mediterranean-cuisine"
+      ],
+      "priority": "P3",
+      "id": 246,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://moroccan-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ethiopian-cuisine",
+      "displayName": "Ethiopian Cuisine",
+      "crossRefs": [
+        "spice-rack",
+        "african-cinema"
+      ],
+      "priority": "P3",
+      "id": 247,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ethiopian-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "peruvian-cuisine",
+      "displayName": "Peruvian Cuisine",
+      "crossRefs": [
+        "latin-america-travel",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 248,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://peruvian-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "brazilian-cuisine",
+      "displayName": "Brazilian Cuisine",
+      "crossRefs": [
+        "latin-america-travel",
+        "craft-cocktails"
+      ],
+      "priority": "P3",
+      "id": 249,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://brazilian-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cajun-creole",
+      "displayName": "Cajun & Creole Cuisine",
+      "crossRefs": [
+        "southern-cuisine",
+        "hot-sauce"
+      ],
+      "priority": "P3",
+      "id": 250,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://cajun-creole.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "new-england-seafood",
+      "displayName": "New England Seafood",
+      "crossRefs": [
+        "seafood-guide",
+        "coastal-travel"
+      ],
+      "priority": "P3",
+      "id": 251,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://new-england-seafood.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pacific-northwest-food",
+      "displayName": "Pacific Northwest Food",
+      "crossRefs": [
+        "seafood-guide",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 252,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pacific-northwest-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tex-mex-cuisine",
+      "displayName": "Tex-Mex Authority",
+      "crossRefs": [
+        "mexican-cuisine",
+        "bbq-smokehouse"
+      ],
+      "priority": "P3",
+      "id": 253,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://tex-mex-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "california-cuisine",
+      "displayName": "California Cuisine",
+      "crossRefs": [
+        "farm-to-table",
+        "napa-valley"
+      ],
+      "priority": "P3",
+      "id": 254,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://california-cuisine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nyc-dining",
+      "displayName": "NYC Dining Guide",
+      "crossRefs": [
+        "restaurant-guide",
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 255,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://nyc-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chicago-dining",
+      "displayName": "Chicago Dining Guide",
+      "crossRefs": [
+        "restaurant-guide",
+        "deep-dish-pizza"
+      ],
+      "priority": "P3",
+      "id": 256,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://chicago-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "deep-dish-pizza",
+      "displayName": "Deep Dish & Pizza Guide",
+      "crossRefs": [
+        "pasta-italian",
+        "food-trucks"
+      ],
+      "priority": "P3",
+      "id": 257,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://deep-dish-pizza.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "neapolitan-pizza",
+      "displayName": "Neapolitan Pizza Authority",
+      "crossRefs": [
+        "pasta-italian",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 258,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://neapolitan-pizza.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "burger-authority",
+      "displayName": "Burger Authority",
+      "crossRefs": [
+        "steakhouse-guide",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 259,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://burger-authority.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sandwich-craft",
+      "displayName": "Sandwich Craft Guide",
+      "crossRefs": [
+        "charcuterie",
+        "burger-authority"
+      ],
+      "priority": "P3",
+      "id": 260,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sandwich-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "breakfast-brunch",
+      "displayName": "Breakfast & Brunch Guide",
+      "crossRefs": [
+        "coffee-specialist",
+        "baking-pastry"
+      ],
+      "priority": "P3",
+      "id": 261,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://breakfast-brunch.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dessert-pastry",
+      "displayName": "Dessert & Pastry Elite",
+      "crossRefs": [
+        "baking-pastry",
+        "chocolate-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 262,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://dessert-pastry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ice-cream-guide",
+      "displayName": "Artisan Ice Cream",
+      "crossRefs": [
+        "dessert-pastry",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 263,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ice-cream-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gelato-guide",
+      "displayName": "Gelato Authority",
+      "crossRefs": [
+        "dessert-pastry",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 264,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://gelato-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "donut-guide",
+      "displayName": "Donut & Pastry Shops",
+      "crossRefs": [
+        "breakfast-brunch",
+        "coffee-specialist"
+      ],
+      "priority": "P3",
+      "id": 265,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://donut-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bread-baking",
+      "displayName": "Bread Baking Master",
+      "crossRefs": [
+        "baking-pastry",
+        "sourdough-bread"
+      ],
+      "priority": "P3",
+      "id": 266,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://bread-baking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sourdough-bread",
+      "displayName": "Sourdough Bread Guide",
+      "crossRefs": [
+        "bread-baking",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 267,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sourdough-bread.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fermentation-food",
+      "displayName": "Fermentation & Pickling",
+      "crossRefs": [
+        "farm-to-table",
+        "kombucha-brew"
+      ],
+      "priority": "P3",
+      "id": 268,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://fermentation-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "canning-preserving",
+      "displayName": "Canning & Preserving",
+      "crossRefs": [
+        "farm-to-table",
+        "fermentation-food"
+      ],
+      "priority": "P3",
+      "id": 269,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://canning-preserving.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "molecular-gastronomy",
+      "displayName": "Molecular Gastronomy",
+      "crossRefs": [
+        "french-cuisine",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 270,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://molecular-gastronomy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "knife-skills",
+      "displayName": "Knife Skills & Butchery",
+      "crossRefs": [
+        "steakhouse-guide",
+        "charcuterie"
+      ],
+      "priority": "P3",
+      "id": 271,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://knife-skills.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cast-iron-cooking",
+      "displayName": "Cast Iron Cooking",
+      "crossRefs": [
+        "southern-cuisine",
+        "bbq-smokehouse"
+      ],
+      "priority": "P3",
+      "id": 272,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://cast-iron-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wok-cooking",
+      "displayName": "Wok & Stir Fry Mastery",
+      "crossRefs": [
+        "chinese-cuisine",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 273,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://wok-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "grill-mastery",
+      "displayName": "Grill & Smoke Mastery",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "steakhouse-guide"
+      ],
+      "priority": "P3",
+      "id": 274,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://grill-mastery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sous-vide-cooking",
+      "displayName": "Sous Vide Cooking",
+      "crossRefs": [
+        "steakhouse-guide",
+        "molecular-gastronomy"
+      ],
+      "priority": "P3",
+      "id": 275,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sous-vide-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "instant-pot",
+      "displayName": "Pressure Cooker Guide",
+      "crossRefs": [
+        "meal-prep",
+        "southern-cuisine"
+      ],
+      "priority": "P3",
+      "id": 276,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://instant-pot.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "air-fryer",
+      "displayName": "Air Fryer Recipes",
+      "crossRefs": [
+        "meal-prep",
+        "burger-authority"
+      ],
+      "priority": "P3",
+      "id": 277,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://air-fryer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "slow-cooker",
+      "displayName": "Slow Cooker Comfort",
+      "crossRefs": [
+        "southern-cuisine",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 278,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://slow-cooker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "one-pot-meals",
+      "displayName": "One Pot Meals",
+      "crossRefs": [
+        "meal-prep",
+        "slow-cooker"
+      ],
+      "priority": "P3",
+      "id": 279,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://one-pot-meals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sheet-pan-meals",
+      "displayName": "Sheet Pan Dinners",
+      "crossRefs": [
+        "meal-prep",
+        "one-pot-meals"
+      ],
+      "priority": "P3",
+      "id": 280,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sheet-pan-meals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "salad-craft",
+      "displayName": "Salad Craft Guide",
+      "crossRefs": [
+        "vegetarian-plant",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 281,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://salad-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soup-stew",
+      "displayName": "Soup & Stew Authority",
+      "crossRefs": [
+        "southern-cuisine",
+        "french-cuisine"
+      ],
+      "priority": "P3",
+      "id": 282,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://soup-stew.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ramen-guide",
+      "displayName": "Ramen Authority",
+      "crossRefs": [
+        "japanese-cinema",
+        "sushi-sake"
+      ],
+      "priority": "P3",
+      "id": 283,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ramen-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pho-guide",
+      "displayName": "Pho & Noodle Soup",
+      "crossRefs": [
+        "vietnamese-cuisine",
+        "ramen-guide"
+      ],
+      "priority": "P3",
+      "id": 284,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pho-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dumpling-guide",
+      "displayName": "Dumpling Authority",
+      "crossRefs": [
+        "chinese-cuisine",
+        "korean-cuisine"
+      ],
+      "priority": "P3",
+      "id": 285,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://dumpling-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "taco-authority",
+      "displayName": "Taco Authority",
+      "crossRefs": [
+        "mexican-cuisine",
+        "tex-mex-cuisine"
+      ],
+      "priority": "P3",
+      "id": 286,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://taco-authority.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "burrito-guide",
+      "displayName": "Burrito & Bowl Guide",
+      "crossRefs": [
+        "mexican-cuisine",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 287,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://burrito-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-allergies",
+      "displayName": "Food Allergy Guide",
+      "crossRefs": [
+        "meal-prep",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 288,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-allergies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gluten-free-cooking",
+      "displayName": "Gluten-Free Cooking",
+      "crossRefs": [
+        "food-allergies",
+        "baking-pastry"
+      ],
+      "priority": "P3",
+      "id": 289,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://gluten-free-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "keto-cooking",
+      "displayName": "Keto Culinary Guide",
+      "crossRefs": [
+        "fitness-nutrition",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 290,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://keto-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "paleo-cooking",
+      "displayName": "Paleo Cooking Guide",
+      "crossRefs": [
+        "keto-cooking",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 291,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://paleo-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "diabetic-cooking",
+      "displayName": "Diabetic-Friendly Cooking",
+      "crossRefs": [
+        "fitness-nutrition",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 292,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://diabetic-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kids-cooking",
+      "displayName": "Kids Cooking Guide",
+      "crossRefs": [
+        "children-books",
+        "baking-pastry"
+      ],
+      "priority": "P3",
+      "id": 293,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://kids-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "couples-cooking",
+      "displayName": "Couples Cooking Night",
+      "crossRefs": [
+        "date-night-films",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 294,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://couples-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dinner-party",
+      "displayName": "Dinner Party Planner",
+      "crossRefs": [
+        "meals-pairing",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 295,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://dinner-party.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holiday-feasts",
+      "displayName": "Holiday Feast Planner",
+      "crossRefs": [
+        "southern-cuisine",
+        "wine-milestones"
+      ],
+      "priority": "P3",
+      "id": 296,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://holiday-feasts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "picnic-guide",
+      "displayName": "Picnic & Outdoor Dining",
+      "crossRefs": [
+        "farm-to-table",
+        "outdoor-adventures"
+      ],
+      "priority": "P3",
+      "id": 297,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://picnic-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "camping-cooking",
+      "displayName": "Camping Cookout Guide",
+      "crossRefs": [
+        "camping-guide",
+        "bbq-smokehouse"
+      ],
+      "priority": "P3",
+      "id": 298,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://camping-cooking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tailgate-food",
+      "displayName": "Tailgate Food Guide",
+      "crossRefs": [
+        "college-football",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 299,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://tailgate-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stadium-food",
+      "displayName": "Stadium Food Guide",
+      "crossRefs": [
+        "college-baseball",
+        "burger-authority"
+      ],
+      "priority": "P3",
+      "id": 300,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://stadium-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "airline-food",
+      "displayName": "Airline & Travel Food",
+      "crossRefs": [
+        "world-travel",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 301,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://airline-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hotel-dining",
+      "displayName": "Hotel Dining Guide",
+      "crossRefs": [
+        "luxury-travel",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 302,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://hotel-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "michelin-guide",
+      "displayName": "Michelin Star Tracker",
+      "crossRefs": [
+        "restaurant-guide",
+        "culinary-travel"
+      ],
+      "priority": "P2",
+      "id": 303,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://michelin-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "james-beard",
+      "displayName": "James Beard Awards",
+      "crossRefs": [
+        "michelin-guide",
+        "chef-profiles"
+      ],
+      "priority": "P3",
+      "id": 304,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://james-beard.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chef-profiles",
+      "displayName": "Chef Profiles Authority",
+      "crossRefs": [
+        "restaurant-guide",
+        "culinary-travel"
+      ],
+      "priority": "P3",
+      "id": 305,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://chef-profiles.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-network-culture",
+      "displayName": "Food Media Culture",
+      "crossRefs": [
+        "chef-profiles",
+        "cooking-tv"
+      ],
+      "priority": "P3",
+      "id": 306,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-network-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-photography",
+      "displayName": "Food Photography",
+      "crossRefs": [
+        "food-influencer",
+        "instagram-food"
+      ],
+      "priority": "P3",
+      "id": 307,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-influencer",
+      "displayName": "Food Creator Hub",
+      "crossRefs": [
+        "food-photography",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 308,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-influencer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "instagram-food",
+      "displayName": "Instagram Food Trends",
+      "crossRefs": [
+        "food-influencer",
+        "food-trucks"
+      ],
+      "priority": "P3",
+      "id": 309,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://instagram-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "recipe-box",
+      "displayName": "Personal Recipe Box",
+      "crossRefs": [
+        "meal-prep",
+        "cookbook-collection"
+      ],
+      "priority": "P2",
+      "id": 310,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://recipe-box.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "family-recipes",
+      "displayName": "Family Recipe Archive",
+      "crossRefs": [
+        "recipe-box",
+        "genealogy-family"
+      ],
+      "priority": "P3",
+      "id": 311,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://family-recipes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-history",
+      "displayName": "Food History Archive",
+      "crossRefs": [
+        "culinary-travel",
+        "nonfiction-food"
+      ],
+      "priority": "P3",
+      "id": 312,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-science",
+      "displayName": "Food Science Lab",
+      "crossRefs": [
+        "molecular-gastronomy",
+        "fermentation-food"
+      ],
+      "priority": "P3",
+      "id": 313,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "umami-guide",
+      "displayName": "Umami & Flavor Science",
+      "crossRefs": [
+        "food-science",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 314,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://umami-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "menu-engineering",
+      "displayName": "Menu Engineering",
+      "crossRefs": [
+        "restaurant-guide",
+        "hospitality-beverage"
+      ],
+      "priority": "P3",
+      "id": 315,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://menu-engineering.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-costing",
+      "displayName": "Food Costing & Margin",
+      "crossRefs": [
+        "menu-engineering",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 316,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-costing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "catering-guide",
+      "displayName": "Catering Business Guide",
+      "crossRefs": [
+        "dinner-party",
+        "wedding-planner"
+      ],
+      "priority": "P3",
+      "id": 317,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://catering-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-startup",
+      "displayName": "Food Startup Guide",
+      "crossRefs": [
+        "food-trucks",
+        "food-startup"
+      ],
+      "priority": "P3",
+      "id": 318,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-startup.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ghost-kitchen",
+      "displayName": "Ghost Kitchen Guide",
+      "crossRefs": [
+        "food-delivery",
+        "food-startup"
+      ],
+      "priority": "P3",
+      "id": 319,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ghost-kitchen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-delivery",
+      "displayName": "Food Delivery Platforms",
+      "crossRefs": [
+        "restaurant-guide",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 320,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-delivery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "meal-kit",
+      "displayName": "Meal Kit Comparison",
+      "crossRefs": [
+        "meal-prep",
+        "food-delivery"
+      ],
+      "priority": "P3",
+      "id": 321,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://meal-kit.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "grocery-optimizer",
+      "displayName": "Grocery Shopping Optimizer",
+      "crossRefs": [
+        "meal-prep",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 322,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://grocery-optimizer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "farmers-market",
+      "displayName": "Farmers Market Guide",
+      "crossRefs": [
+        "farm-to-table",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 323,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://farmers-market.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "csa-guide",
+      "displayName": "CSA & Farm Share Guide",
+      "crossRefs": [
+        "farmers-market",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 324,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://csa-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "urban-garden-food",
+      "displayName": "Urban Garden to Table",
+      "crossRefs": [
+        "gardening-native",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 325,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://urban-garden-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mushroom-foraging-food",
+      "displayName": "Mushroom Foraging Kitchen",
+      "crossRefs": [
+        "foraging-wild",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 326,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://mushroom-foraging-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "truffle-guide",
+      "displayName": "Truffle & Luxury Ingredients",
+      "crossRefs": [
+        "french-cuisine",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 327,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://truffle-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "caviar-guide",
+      "displayName": "Caviar & Luxury Seafood",
+      "crossRefs": [
+        "seafood-guide",
+        "luxury-travel"
+      ],
+      "priority": "P3",
+      "id": 328,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://caviar-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lobster-guide",
+      "displayName": "Lobster & Shellfish",
+      "crossRefs": [
+        "new-england-seafood",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 329,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://lobster-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oyster-guide",
+      "displayName": "Oyster Authority",
+      "crossRefs": [
+        "seafood-guide",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 330,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://oyster-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sushi-grade",
+      "displayName": "Sushi Grade & Fish",
+      "crossRefs": [
+        "sushi-sake",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 331,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sushi-grade.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wagyu-beef",
+      "displayName": "Wagyu & Premium Beef",
+      "crossRefs": [
+        "steakhouse-guide",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 332,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://wagyu-beef.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lamb-game",
+      "displayName": "Lamb & Game Meats",
+      "crossRefs": [
+        "steakhouse-guide",
+        "hunting-guide"
+      ],
+      "priority": "P3",
+      "id": 333,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://lamb-game.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "plant-meat-alt",
+      "displayName": "Plant Meat Alternatives",
+      "crossRefs": [
+        "vegetarian-plant",
+        "food-science"
+      ],
+      "priority": "P3",
+      "id": 334,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://plant-meat-alt.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dairy-craft",
+      "displayName": "Artisan Dairy Guide",
+      "crossRefs": [
+        "artisan-cheese",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 335,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://dairy-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "olive-oil",
+      "displayName": "Olive Oil Authority",
+      "crossRefs": [
+        "mediterranean-cuisine",
+        "spanish-tapas"
+      ],
+      "priority": "P3",
+      "id": 336,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://olive-oil.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vinegar-pantry",
+      "displayName": "Vinegar & Pantry Acids",
+      "crossRefs": [
+        "fermentation-food",
+        "french-cuisine"
+      ],
+      "priority": "P3",
+      "id": 337,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://vinegar-pantry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "salt-pepper",
+      "displayName": "Salt & Pepper Authority",
+      "crossRefs": [
+        "spice-rack",
+        "steakhouse-guide"
+      ],
+      "priority": "P3",
+      "id": 338,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://salt-pepper.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "honey-pantry",
+      "displayName": "Honey & Pantry Sweet",
+      "crossRefs": [
+        "beekeeping-guide",
+        "baking-pastry"
+      ],
+      "priority": "P3",
+      "id": 339,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://honey-pantry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pantry-essentials",
+      "displayName": "Pantry Essentials Hub",
+      "crossRefs": [
+        "grocery-optimizer",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 340,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pantry-essentials.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spice-blends",
+      "displayName": "Spice Blend Recipes",
+      "crossRefs": [
+        "spice-rack",
+        "indian-cuisine"
+      ],
+      "priority": "P3",
+      "id": 341,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://spice-blends.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rub-marinade",
+      "displayName": "Rubs & Marinades",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "grill-mastery"
+      ],
+      "priority": "P3",
+      "id": 342,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://rub-marinade.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sauce-mastery",
+      "displayName": "Sauce Mastery",
+      "crossRefs": [
+        "french-cuisine",
+        "steakhouse-guide"
+      ],
+      "priority": "P3",
+      "id": 343,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://sauce-mastery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stock-broth",
+      "displayName": "Stock & Broth Craft",
+      "crossRefs": [
+        "soup-stew",
+        "french-cuisine"
+      ],
+      "priority": "P3",
+      "id": 344,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://stock-broth.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-waste",
+      "displayName": "Food Waste Reduction",
+      "crossRefs": [
+        "farm-to-table",
+        "food-sustainability"
+      ],
+      "priority": "P3",
+      "id": 345,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-waste.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-sustainability",
+      "displayName": "Sustainable Food Guide",
+      "crossRefs": [
+        "farm-to-table",
+        "vegetarian-plant"
+      ],
+      "priority": "P3",
+      "id": 346,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-sustainability.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "zero-waste-kitchen",
+      "displayName": "Zero Waste Kitchen",
+      "crossRefs": [
+        "food-waste",
+        "fermentation-food"
+      ],
+      "priority": "P3",
+      "id": 347,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://zero-waste-kitchen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "compost-kitchen",
+      "displayName": "Kitchen Compost Guide",
+      "crossRefs": [
+        "zero-waste-kitchen",
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 348,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://compost-kitchen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-safety",
+      "displayName": "Food Safety & HACCP",
+      "crossRefs": [
+        "food-startup",
+        "catering-guide"
+      ],
+      "priority": "P3",
+      "id": 349,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-safety.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "servsafe-prep",
+      "displayName": "ServSafe Certification Prep",
+      "crossRefs": [
+        "food-safety",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 350,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://servsafe-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "culinary-school",
+      "displayName": "Culinary School Guide",
+      "crossRefs": [
+        "chef-profiles",
+        "knife-skills"
+      ],
+      "priority": "P3",
+      "id": 351,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://culinary-school.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-competitions",
+      "displayName": "Food Competition Tracker",
+      "crossRefs": [
+        "james-beard",
+        "bbq-smokehouse"
+      ],
+      "priority": "P3",
+      "id": 352,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-competitions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bbq-competition",
+      "displayName": "BBQ Competition Circuit",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "food-competitions"
+      ],
+      "priority": "P3",
+      "id": 353,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://bbq-competition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chili-cookoff",
+      "displayName": "Chili Cookoff Guide",
+      "crossRefs": [
+        "bbq-smokehouse",
+        "hot-sauce"
+      ],
+      "priority": "P3",
+      "id": 354,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://chili-cookoff.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pie-baking-contest",
+      "displayName": "Pie & Baking Contests",
+      "crossRefs": [
+        "baking-pastry",
+        "food-competitions"
+      ],
+      "priority": "P3",
+      "id": 355,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pie-baking-contest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-clubs",
+      "displayName": "Food Club Organizer",
+      "crossRefs": [
+        "recipe-box",
+        "restaurant-guide"
+      ],
+      "priority": "P2",
+      "id": 356,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-social-network",
+      "displayName": "Food Social Network",
+      "crossRefs": [
+        "food-clubs",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 357,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-social-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-expert-badges",
+      "displayName": "Food Expert Badges",
+      "crossRefs": [
+        "food-social-network",
+        "michelin-guide"
+      ],
+      "priority": "P3",
+      "id": 358,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-expert-badges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ai-meal-planner",
+      "displayName": "AI Meal Planner",
+      "crossRefs": [
+        "meal-prep",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 359,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ai-meal-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ai-recipe-gen",
+      "displayName": "AI Recipe Generator",
+      "crossRefs": [
+        "recipe-box",
+        "ai-meal-planner"
+      ],
+      "priority": "P3",
+      "id": 360,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ai-recipe-gen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ai-pairing-meals",
+      "displayName": "AI Meal Pairing",
+      "crossRefs": [
+        "meals-pairing",
+        "wine-ai-sommelier"
+      ],
+      "priority": "P3",
+      "id": 361,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ai-pairing-meals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cross-app-meals",
+      "displayName": "Cross-App Meal Hub",
+      "crossRefs": [
+        "ai-pairing-meals",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 362,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://cross-app-meals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-gift-curator",
+      "displayName": "Food Gift Curator",
+      "crossRefs": [
+        "gift-curator",
+        "artisan-cheese"
+      ],
+      "priority": "P3",
+      "id": 363,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-gift-curator.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "corporate-catering",
+      "displayName": "Corporate Catering",
+      "crossRefs": [
+        "catering-guide",
+        "dinner-party"
+      ],
+      "priority": "P3",
+      "id": 364,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://corporate-catering.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wedding-menu",
+      "displayName": "Wedding Menu Planner",
+      "crossRefs": [
+        "wedding-planner",
+        "wine-list-curation"
+      ],
+      "priority": "P3",
+      "id": 365,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://wedding-menu.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "brunch-clubs",
+      "displayName": "Brunch Club Organizer",
+      "crossRefs": [
+        "breakfast-brunch",
+        "food-clubs"
+      ],
+      "priority": "P3",
+      "id": 366,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://brunch-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "supper-clubs",
+      "displayName": "Supper Club Guide",
+      "crossRefs": [
+        "dinner-party",
+        "food-clubs"
+      ],
+      "priority": "P3",
+      "id": 367,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://supper-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pop-up-dining",
+      "displayName": "Pop-Up Dining Tracker",
+      "crossRefs": [
+        "food-trucks",
+        "chef-profiles"
+      ],
+      "priority": "P3",
+      "id": 368,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://pop-up-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "supper-experiences",
+      "displayName": "Chef Table Experiences",
+      "crossRefs": [
+        "pop-up-dining",
+        "luxury-travel"
+      ],
+      "priority": "P3",
+      "id": 369,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://supper-experiences.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-tours",
+      "displayName": "Food Tour Planner",
+      "crossRefs": [
+        "culinary-travel",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 370,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "street-food-world",
+      "displayName": "World Street Food",
+      "crossRefs": [
+        "food-trucks",
+        "culinary-travel"
+      ],
+      "priority": "P3",
+      "id": 371,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://street-food-world.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "night-market",
+      "displayName": "Night Market Guide",
+      "crossRefs": [
+        "street-food-world",
+        "asian-spices"
+      ],
+      "priority": "P3",
+      "id": 372,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://night-market.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-map-local",
+      "displayName": "Local Food Map",
+      "crossRefs": [
+        "restaurant-guide",
+        "farmers-market"
+      ],
+      "priority": "P3",
+      "id": 373,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-map-local.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "seasonal-ingredients",
+      "displayName": "Seasonal Ingredients",
+      "crossRefs": [
+        "farm-to-table",
+        "farmers-market"
+      ],
+      "priority": "P3",
+      "id": 374,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://seasonal-ingredients.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spring-produce",
+      "displayName": "Spring Produce Guide",
+      "crossRefs": [
+        "seasonal-ingredients",
+        "salad-craft"
+      ],
+      "priority": "P3",
+      "id": 375,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://spring-produce.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "summer-produce",
+      "displayName": "Summer Produce Guide",
+      "crossRefs": [
+        "seasonal-ingredients",
+        "grill-mastery"
+      ],
+      "priority": "P3",
+      "id": 376,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://summer-produce.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fall-produce",
+      "displayName": "Fall Produce Guide",
+      "crossRefs": [
+        "seasonal-ingredients",
+        "soup-stew"
+      ],
+      "priority": "P3",
+      "id": 377,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://fall-produce.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "winter-comfort-food",
+      "displayName": "Winter Comfort Food",
+      "crossRefs": [
+        "soup-stew",
+        "slow-cooker"
+      ],
+      "priority": "P3",
+      "id": 378,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://winter-comfort-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "global-pantry",
+      "displayName": "Global Pantry Explorer",
+      "crossRefs": [
+        "pantry-essentials",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 379,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://global-pantry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-subscription",
+      "displayName": "Food Subscription Boxes",
+      "crossRefs": [
+        "meal-kit",
+        "artisan-cheese"
+      ],
+      "priority": "P3",
+      "id": 380,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-subscription.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "snack-authority",
+      "displayName": "Snack Authority",
+      "crossRefs": [
+        "grocery-optimizer",
+        "chocolate-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 381,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://snack-authority.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "energy-bars",
+      "displayName": "Energy Bar & Snack DIY",
+      "crossRefs": [
+        "fitness-nutrition",
+        "snack-authority"
+      ],
+      "priority": "P3",
+      "id": 382,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://energy-bars.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "smoothie-juice",
+      "displayName": "Smoothie & Juice Bar",
+      "crossRefs": [
+        "fitness-nutrition",
+        "breakfast-brunch"
+      ],
+      "priority": "P3",
+      "id": 383,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://smoothie-juice.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cocktail-food-bridge",
+      "displayName": "Cocktail Food Bridge",
+      "crossRefs": [
+        "craft-cocktails",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 384,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://cocktail-food-bridge.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-dinner-planner",
+      "displayName": "Wine Dinner Planner",
+      "crossRefs": [
+        "dinner-party",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 385,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://wine-dinner-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-dinner-planner",
+      "displayName": "Beer Dinner Planner",
+      "crossRefs": [
+        "dinner-party",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 386,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://beer-dinner-planner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spirits-dinner",
+      "displayName": "Spirits Dinner Planner",
+      "crossRefs": [
+        "dinner-party",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 387,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://spirits-dinner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-mood-pairing",
+      "displayName": "Mood-Based Food Guide",
+      "crossRefs": [
+        "comfort-tv",
+        "ai-meal-planner"
+      ],
+      "priority": "P3",
+      "id": 388,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-mood-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-and-film-night",
+      "displayName": "Food & Film Night",
+      "crossRefs": [
+        "film-pairing-dining",
+        "date-night-films"
+      ],
+      "priority": "P3",
+      "id": 389,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-and-film-night.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-and-music-night",
+      "displayName": "Food & Music Night",
+      "crossRefs": [
+        "music-for-cooking",
+        "dinner-party"
+      ],
+      "priority": "P3",
+      "id": 390,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-and-music-night.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-and-books-night",
+      "displayName": "Food & Books Night",
+      "crossRefs": [
+        "book-clubs",
+        "dinner-party"
+      ],
+      "priority": "P3",
+      "id": 391,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-and-books-night.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-food-calendar",
+      "displayName": "Cultural Food Calendar",
+      "crossRefs": [
+        "food-history",
+        "holiday-feasts"
+      ],
+      "priority": "P3",
+      "id": 392,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://cultural-food-calendar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lunar-new-year-food",
+      "displayName": "Lunar New Year Food",
+      "crossRefs": [
+        "chinese-cuisine",
+        "cultural-food-calendar"
+      ],
+      "priority": "P3",
+      "id": 393,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://lunar-new-year-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "thanksgiving-feast",
+      "displayName": "Thanksgiving Feast Guide",
+      "crossRefs": [
+        "holiday-feasts",
+        "southern-cuisine"
+      ],
+      "priority": "P3",
+      "id": 394,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://thanksgiving-feast.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "christmas-feast",
+      "displayName": "Christmas Feast Guide",
+      "crossRefs": [
+        "holiday-feasts",
+        "baking-pastry"
+      ],
+      "priority": "P3",
+      "id": 395,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://christmas-feast.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "passover-food",
+      "displayName": "Passover Food Guide",
+      "crossRefs": [
+        "nonfiction-religion",
+        "holiday-feasts"
+      ],
+      "priority": "P3",
+      "id": 396,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://passover-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ramadan-food",
+      "displayName": "Ramadan & Iftar Guide",
+      "crossRefs": [
+        "middle-eastern-lit",
+        "holiday-feasts"
+      ],
+      "priority": "P3",
+      "id": 397,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://ramadan-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "diwali-sweets",
+      "displayName": "Diwali Sweets Guide",
+      "crossRefs": [
+        "indian-cuisine",
+        "dessert-pastry"
+      ],
+      "priority": "P3",
+      "id": 398,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://diwali-sweets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-memory-journal",
+      "displayName": "Food Memory Journal",
+      "crossRefs": [
+        "family-recipes",
+        "recipe-box"
+      ],
+      "priority": "P3",
+      "id": 399,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-memory-journal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "restaurant-reservations",
+      "displayName": "Reservation Concierge",
+      "crossRefs": [
+        "restaurant-guide",
+        "michelin-guide"
+      ],
+      "priority": "P3",
+      "id": 400,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://restaurant-reservations.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-critic-notes",
+      "displayName": "Food Critic Notes",
+      "crossRefs": [
+        "michelin-guide",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 401,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-critic-notes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hidden-gems-dining",
+      "displayName": "Hidden Gem Restaurants",
+      "crossRefs": [
+        "restaurant-guide",
+        "food-map-local"
+      ],
+      "priority": "P3",
+      "id": 402,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://hidden-gems-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "late-night-eats",
+      "displayName": "Late Night Eats Guide",
+      "crossRefs": [
+        "food-trucks",
+        "nyc-dining"
+      ],
+      "priority": "P3",
+      "id": 403,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://late-night-eats.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "airport-food-guide",
+      "displayName": "Airport Food Guide",
+      "crossRefs": [
+        "airline-food",
+        "travel-food"
+      ],
+      "priority": "P3",
+      "id": 404,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://airport-food-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-food",
+      "displayName": "Travel Food Survival",
+      "crossRefs": [
+        "world-travel",
+        "street-food-world"
+      ],
+      "priority": "P3",
+      "id": 405,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://travel-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rv-kitchen",
+      "displayName": "RV Kitchen Guide",
+      "crossRefs": [
+        "rv-road-trips",
+        "camping-cooking"
+      ],
+      "priority": "P3",
+      "id": 406,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://rv-kitchen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "boat-galley",
+      "displayName": "Boat Galley Cooking",
+      "crossRefs": [
+        "sailing-yacht",
+        "seafood-guide"
+      ],
+      "priority": "P3",
+      "id": 407,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://boat-galley.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "food-packing",
+      "displayName": "Meal Packing & Transport",
+      "crossRefs": [
+        "picnic-guide",
+        "tailgate-food"
+      ],
+      "priority": "P3",
+      "id": 408,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://food-packing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lunchbox-guide",
+      "displayName": "Lunchbox & Work Meals",
+      "crossRefs": [
+        "meal-prep",
+        "sandwich-craft"
+      ],
+      "priority": "P3",
+      "id": 409,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://lunchbox-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "office-pantry",
+      "displayName": "Office Pantry Setup",
+      "crossRefs": [
+        "lunchbox-guide",
+        "snack-authority"
+      ],
+      "priority": "P3",
+      "id": 410,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://office-pantry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "college-food",
+      "displayName": "College Student Food",
+      "crossRefs": [
+        "budget-travel",
+        "meal-prep"
+      ],
+      "priority": "P3",
+      "id": 411,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://college-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "senior-nutrition",
+      "displayName": "Senior Nutrition Cooking",
+      "crossRefs": [
+        "diabetic-cooking",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 412,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://senior-nutrition.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "baby-food",
+      "displayName": "Baby & Toddler Food",
+      "crossRefs": [
+        "parenting-meals",
+        "kids-cooking"
+      ],
+      "priority": "P3",
+      "id": 413,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://baby-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "parenting-meals",
+      "displayName": "Family Meal Planning",
+      "crossRefs": [
+        "meal-prep",
+        "kids-cooking"
+      ],
+      "priority": "P3",
+      "id": 414,
+      "vertical_id": "food-culinary",
+      "vertical_slug": "food-culinary",
+      "site_url": "https://parenting-meals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "vertical": {
+    "id": "science-nature",
+    "slug": "science-nature",
+    "name": "Science & Nature",
+    "icon": "🔬",
+    "app_count": 31,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "astronomy-pro",
+      "displayName": "Astronomy Pro",
+      "crossRefs": [
+        "stargazing-astro",
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1828,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://astronomy-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "physics-explained",
+      "displayName": "Physics Explained",
+      "crossRefs": [
+        "science-explorer",
+        "astronomy-pro"
+      ],
+      "priority": "P3",
+      "id": 1829,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://physics-explained.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chemistry-lab",
+      "displayName": "Chemistry Lab Guide",
+      "crossRefs": [
+        "science-explorer",
+        "food-science"
+      ],
+      "priority": "P3",
+      "id": 1830,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://chemistry-lab.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "biology-nature",
+      "displayName": "Biology & Nature Science",
+      "crossRefs": [
+        "wildlife-watching",
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1831,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://biology-nature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "geology-rocks",
+      "displayName": "Geology & Rocks",
+      "crossRefs": [
+        "shell-collecting",
+        "volcano-tours"
+      ],
+      "priority": "P3",
+      "id": 1832,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://geology-rocks.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "meteorology-weather",
+      "displayName": "Meteorology & Weather",
+      "crossRefs": [
+        "outdoor-adventures",
+        "geology-rocks"
+      ],
+      "priority": "P3",
+      "id": 1833,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://meteorology-weather.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oceanography",
+      "displayName": "Oceanography Guide",
+      "crossRefs": [
+        "scuba-diving",
+        "whale-watching"
+      ],
+      "priority": "P3",
+      "id": 1834,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://oceanography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "climate-science",
+      "displayName": "Climate Science",
+      "crossRefs": [
+        "conservation-volunteer",
+        "meteorology-weather"
+      ],
+      "priority": "P3",
+      "id": 1835,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://climate-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "space-exploration",
+      "displayName": "Space Exploration",
+      "crossRefs": [
+        "astronomy-pro",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 1836,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://space-exploration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "robotics-science",
+      "displayName": "Robotics Science",
+      "crossRefs": [
+        "robotics-hobby",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1837,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://robotics-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "genetics-science",
+      "displayName": "Genetics Science",
+      "crossRefs": [
+        "biology-nature",
+        "biohacking"
+      ],
+      "priority": "P3",
+      "id": 1838,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://genetics-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "neuroscience-lite",
+      "displayName": "Neuroscience Guide",
+      "crossRefs": [
+        "biohacking",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1839,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://neuroscience-lite.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "math-beauty",
+      "displayName": "Mathematics Beauty",
+      "crossRefs": [
+        "science-explorer",
+        "chess-mastery"
+      ],
+      "priority": "P3",
+      "id": 1840,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://math-beauty.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "citizen-science",
+      "displayName": "Citizen Science Projects",
+      "crossRefs": [
+        "bird-watching",
+        "climate-science"
+      ],
+      "priority": "P3",
+      "id": 1841,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://citizen-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-museums",
+      "displayName": "Science Museums Guide",
+      "crossRefs": [
+        "museum-guide",
+        "space-exploration"
+      ],
+      "priority": "P3",
+      "id": 1842,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-museums.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-clubs",
+      "displayName": "Science Enthusiast Clubs",
+      "crossRefs": [
+        "citizen-science",
+        "astronomy-pro"
+      ],
+      "priority": "P2",
+      "id": 1843,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-01",
+      "displayName": "Science Topic Deep Dive 1",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1844,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-02",
+      "displayName": "Science Topic Deep Dive 2",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1845,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-03",
+      "displayName": "Science Topic Deep Dive 3",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1846,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-04",
+      "displayName": "Science Topic Deep Dive 4",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1847,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-05",
+      "displayName": "Science Topic Deep Dive 5",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1848,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-06",
+      "displayName": "Science Topic Deep Dive 6",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1849,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-07",
+      "displayName": "Science Topic Deep Dive 7",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1850,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-08",
+      "displayName": "Science Topic Deep Dive 8",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1851,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-09",
+      "displayName": "Science Topic Deep Dive 9",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1852,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-10",
+      "displayName": "Science Topic Deep Dive 10",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1853,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-11",
+      "displayName": "Science Topic Deep Dive 11",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1854,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-12",
+      "displayName": "Science Topic Deep Dive 12",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1855,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-13",
+      "displayName": "Science Topic Deep Dive 13",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1856,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-14",
+      "displayName": "Science Topic Deep Dive 14",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1857,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "science-topic-15",
+      "displayName": "Science Topic Deep Dive 15",
+      "crossRefs": [
+        "science-explorer"
+      ],
+      "priority": "P3",
+      "id": 1858,
+      "vertical_id": "science-nature",
+      "vertical_slug": "science-nature",
+      "site_url": "https://science-topic-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

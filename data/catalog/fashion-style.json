@@ -1,0 +1,662 @@
+{
+  "vertical": {
+    "id": "fashion-style",
+    "slug": "fashion-style",
+    "name": "Fashion & Style",
+    "icon": "👗",
+    "app_count": 45,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "streetwear-style",
+      "displayName": "Streetwear & Style",
+      "crossRefs": [
+        "sneakers-collect",
+        "fashion-vintage"
+      ],
+      "priority": "P3",
+      "id": 1537,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://streetwear-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fashion-vintage",
+      "displayName": "Vintage Fashion Guide",
+      "crossRefs": [
+        "streetwear-style",
+        "antique-furniture"
+      ],
+      "priority": "P3",
+      "id": 1538,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://fashion-vintage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mens-style",
+      "displayName": "Men's Style Authority",
+      "crossRefs": [
+        "streetwear-style",
+        "watch-collection"
+      ],
+      "priority": "P3",
+      "id": 1539,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://mens-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "womens-style",
+      "displayName": "Women's Style Authority",
+      "crossRefs": [
+        "fashion-vintage",
+        "jewelry-gems"
+      ],
+      "priority": "P3",
+      "id": 1540,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://womens-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "luxury-fashion",
+      "displayName": "Luxury Fashion Houses",
+      "crossRefs": [
+        "womens-style",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 1541,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://luxury-fashion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sustainable-fashion",
+      "displayName": "Sustainable Fashion",
+      "crossRefs": [
+        "fashion-vintage",
+        "minimalism-lifestyle"
+      ],
+      "priority": "P3",
+      "id": 1542,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://sustainable-fashion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "denim-guide",
+      "displayName": "Denim Authority",
+      "crossRefs": [
+        "streetwear-style",
+        "mens-style"
+      ],
+      "priority": "P3",
+      "id": 1543,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://denim-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sneaker-style",
+      "displayName": "Sneaker Style Guide",
+      "crossRefs": [
+        "sneakers-collect",
+        "streetwear-style"
+      ],
+      "priority": "P3",
+      "id": 1544,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://sneaker-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "watch-style",
+      "displayName": "Watch Style & Pairing",
+      "crossRefs": [
+        "watch-collection",
+        "mens-style"
+      ],
+      "priority": "P3",
+      "id": 1545,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://watch-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fragrance-guide",
+      "displayName": "Fragrance Authority",
+      "crossRefs": [
+        "luxury-fashion",
+        "mens-style"
+      ],
+      "priority": "P3",
+      "id": 1546,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://fragrance-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "skincare-style",
+      "displayName": "Skincare & Grooming",
+      "crossRefs": [
+        "fragrance-guide",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1547,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://skincare-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hair-style",
+      "displayName": "Hair Style Guide",
+      "crossRefs": [
+        "skincare-style",
+        "womens-style"
+      ],
+      "priority": "P3",
+      "id": 1548,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://hair-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "makeup-artistry",
+      "displayName": "Makeup Artistry",
+      "crossRefs": [
+        "hair-style",
+        "womens-style"
+      ],
+      "priority": "P3",
+      "id": 1549,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://makeup-artistry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fashion-week",
+      "displayName": "Fashion Week Tracker",
+      "crossRefs": [
+        "luxury-fashion",
+        "streetwear-style"
+      ],
+      "priority": "P3",
+      "id": 1550,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://fashion-week.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "runway-archive",
+      "displayName": "Runway Archive",
+      "crossRefs": [
+        "fashion-week",
+        "photography-art"
+      ],
+      "priority": "P3",
+      "id": 1551,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://runway-archive.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "capsule-wardrobe",
+      "displayName": "Capsule Wardrobe",
+      "crossRefs": [
+        "minimalism-lifestyle",
+        "mens-style"
+      ],
+      "priority": "P3",
+      "id": 1552,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://capsule-wardrobe.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tailoring-guide",
+      "displayName": "Tailoring Guide",
+      "crossRefs": [
+        "mens-style",
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1553,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://tailoring-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fashion-history",
+      "displayName": "Fashion History",
+      "crossRefs": [
+        "fashion-vintage",
+        "runway-archive"
+      ],
+      "priority": "P3",
+      "id": 1554,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://fashion-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jewelry-style",
+      "displayName": "Jewelry Style Guide",
+      "crossRefs": [
+        "jewelry-gems",
+        "womens-style"
+      ],
+      "priority": "P3",
+      "id": 1555,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://jewelry-style.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fashion-clubs",
+      "displayName": "Fashion Clubs",
+      "crossRefs": [
+        "streetwear-style",
+        "runway-archive"
+      ],
+      "priority": "P2",
+      "id": 1556,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://fashion-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-01",
+      "displayName": "Designer House Guide 1",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1557,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-02",
+      "displayName": "Designer House Guide 2",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1558,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-03",
+      "displayName": "Designer House Guide 3",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1559,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-04",
+      "displayName": "Designer House Guide 4",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1560,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-05",
+      "displayName": "Designer House Guide 5",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1561,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-06",
+      "displayName": "Designer House Guide 6",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1562,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-07",
+      "displayName": "Designer House Guide 7",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1563,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-08",
+      "displayName": "Designer House Guide 8",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1564,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-09",
+      "displayName": "Designer House Guide 9",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1565,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-10",
+      "displayName": "Designer House Guide 10",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1566,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-11",
+      "displayName": "Designer House Guide 11",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1567,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-12",
+      "displayName": "Designer House Guide 12",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1568,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-13",
+      "displayName": "Designer House Guide 13",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1569,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-14",
+      "displayName": "Designer House Guide 14",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1570,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "designer-house-15",
+      "displayName": "Designer House Guide 15",
+      "crossRefs": [
+        "luxury-fashion"
+      ],
+      "priority": "P3",
+      "id": 1571,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://designer-house-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-01",
+      "displayName": "Style Era Guide 1",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1572,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-02",
+      "displayName": "Style Era Guide 2",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1573,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-03",
+      "displayName": "Style Era Guide 3",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1574,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-04",
+      "displayName": "Style Era Guide 4",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1575,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-05",
+      "displayName": "Style Era Guide 5",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1576,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-06",
+      "displayName": "Style Era Guide 6",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1577,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-07",
+      "displayName": "Style Era Guide 7",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1578,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-08",
+      "displayName": "Style Era Guide 8",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1579,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-09",
+      "displayName": "Style Era Guide 9",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1580,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "style-era-10",
+      "displayName": "Style Era Guide 10",
+      "crossRefs": [
+        "fashion-history"
+      ],
+      "priority": "P3",
+      "id": 1581,
+      "vertical_id": "fashion-style",
+      "vertical_slug": "fashion-style",
+      "site_url": "https://style-era-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

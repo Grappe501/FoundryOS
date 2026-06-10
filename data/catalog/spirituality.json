@@ -1,0 +1,332 @@
+{
+  "vertical": {
+    "id": "spirituality",
+    "slug": "spirituality",
+    "name": "Spirituality & Mind",
+    "icon": "🕯️",
+    "app_count": 22,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "astrology-guide",
+      "displayName": "Astrology Guide",
+      "crossRefs": [
+        "stargazing-astro",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1886,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://astrology-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tarot-guide",
+      "displayName": "Tarot Guide",
+      "crossRefs": [
+        "astrology-guide",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1887,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://tarot-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mindfulness-retreats",
+      "displayName": "Mindfulness Retreats",
+      "crossRefs": [
+        "meditation-mindful",
+        "spa-wellness"
+      ],
+      "priority": "P3",
+      "id": 1888,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://mindfulness-retreats.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "yoga-philosophy",
+      "displayName": "Yoga Philosophy",
+      "crossRefs": [
+        "yoga-practice",
+        "philosophy-think"
+      ],
+      "priority": "P3",
+      "id": 1889,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://yoga-philosophy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "buddhism-study",
+      "displayName": "Buddhism Study",
+      "crossRefs": [
+        "meditation-mindful",
+        "yoga-philosophy"
+      ],
+      "priority": "P3",
+      "id": 1890,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://buddhism-study.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "christian-study",
+      "displayName": "Christian Study Guide",
+      "crossRefs": [
+        "nonfiction-religion",
+        "worship-music"
+      ],
+      "priority": "P3",
+      "id": 1891,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://christian-study.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jewish-study",
+      "displayName": "Jewish Study Guide",
+      "crossRefs": [
+        "nonfiction-religion",
+        "klezmer-music"
+      ],
+      "priority": "P3",
+      "id": 1892,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://jewish-study.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "islamic-study",
+      "displayName": "Islamic Study Guide",
+      "crossRefs": [
+        "nonfiction-religion",
+        "ramadan-food"
+      ],
+      "priority": "P3",
+      "id": 1893,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://islamic-study.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hindu-study",
+      "displayName": "Hindu Study Guide",
+      "crossRefs": [
+        "ayurveda-wellness",
+        "indian-literature"
+      ],
+      "priority": "P3",
+      "id": 1894,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://hindu-study.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "interfaith-dialogue",
+      "displayName": "Interfaith Dialogue",
+      "crossRefs": [
+        "christian-study",
+        "buddhism-study"
+      ],
+      "priority": "P3",
+      "id": 1895,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://interfaith-dialogue.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "prayer-practice",
+      "displayName": "Prayer Practice Guide",
+      "crossRefs": [
+        "worship-music",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1896,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://prayer-practice.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-clubs",
+      "displayName": "Spiritual Community Clubs",
+      "crossRefs": [
+        "mindfulness-retreats",
+        "book-clubs"
+      ],
+      "priority": "P2",
+      "id": 1897,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-01",
+      "displayName": "Spiritual Tradition 1",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1898,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-02",
+      "displayName": "Spiritual Tradition 2",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1899,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-03",
+      "displayName": "Spiritual Tradition 3",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1900,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-04",
+      "displayName": "Spiritual Tradition 4",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1901,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-05",
+      "displayName": "Spiritual Tradition 5",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1902,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-06",
+      "displayName": "Spiritual Tradition 6",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1903,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-07",
+      "displayName": "Spiritual Tradition 7",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1904,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-08",
+      "displayName": "Spiritual Tradition 8",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1905,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-09",
+      "displayName": "Spiritual Tradition 9",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1906,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spiritual-tradition-10",
+      "displayName": "Spiritual Tradition 10",
+      "crossRefs": [
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 1907,
+      "vertical_id": "spirituality",
+      "vertical_slug": "spirituality",
+      "site_url": "https://spiritual-tradition-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

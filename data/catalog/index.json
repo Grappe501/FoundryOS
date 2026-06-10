@@ -1,0 +1,222 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-10T19:48:11.184Z",
+  "total_apps": 1961,
+  "total_verticals": 26,
+  "verticals": [
+    {
+      "id": "spirits-beverages",
+      "slug": "spirits-beverages",
+      "name": "Spirits & Beverages",
+      "icon": "🥃",
+      "app_count": 49,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "wine-beer",
+      "slug": "wine-beer",
+      "name": "Wine & Beer",
+      "icon": "🍷",
+      "app_count": 163,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "food-culinary",
+      "slug": "food-culinary",
+      "name": "Food & Culinary",
+      "icon": "🍽️",
+      "app_count": 202,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "sports",
+      "slug": "sports",
+      "name": "Sports",
+      "icon": "⚾",
+      "app_count": 115,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "collectibles",
+      "slug": "collectibles",
+      "name": "Collectibles & Antiques",
+      "icon": "💎",
+      "app_count": 72,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "books-literature",
+      "slug": "books-literature",
+      "name": "Books & Literature",
+      "icon": "📚",
+      "app_count": 126,
+      "is_mega_vertical": true
+    },
+    {
+      "id": "music-audio",
+      "slug": "music-audio",
+      "name": "Music & Audio",
+      "icon": "🎵",
+      "app_count": 134,
+      "is_mega_vertical": true
+    },
+    {
+      "id": "film-cinema",
+      "slug": "film-cinema",
+      "name": "Film & Cinema",
+      "icon": "🎬",
+      "app_count": 116,
+      "is_mega_vertical": true
+    },
+    {
+      "id": "tv-streaming",
+      "slug": "tv-streaming",
+      "name": "TV & Streaming",
+      "icon": "📺",
+      "app_count": 121,
+      "is_mega_vertical": true
+    },
+    {
+      "id": "outdoors-nature",
+      "slug": "outdoors-nature",
+      "name": "Outdoors & Nature",
+      "icon": "🏕️",
+      "app_count": 82,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "fitness-wellness",
+      "slug": "fitness-wellness",
+      "name": "Fitness & Wellness",
+      "icon": "💪",
+      "app_count": 50,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "travel-geography",
+      "slug": "travel-geography",
+      "name": "Travel & Geography",
+      "icon": "✈️",
+      "app_count": 91,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "automotive",
+      "slug": "automotive",
+      "name": "Automotive",
+      "icon": "🚗",
+      "app_count": 45,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "technology",
+      "slug": "technology",
+      "name": "Technology & Gadgets",
+      "icon": "💻",
+      "app_count": 54,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "finance-education",
+      "slug": "finance-education",
+      "name": "Finance & Education",
+      "icon": "📈",
+      "app_count": 64,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "home-garden",
+      "slug": "home-garden",
+      "name": "Home & Garden",
+      "icon": "🏡",
+      "app_count": 52,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "fashion-style",
+      "slug": "fashion-style",
+      "name": "Fashion & Style",
+      "icon": "👗",
+      "app_count": 45,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "gaming",
+      "slug": "gaming",
+      "name": "Gaming",
+      "icon": "🎮",
+      "app_count": 61,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "pets-animals",
+      "slug": "pets-animals",
+      "name": "Pets & Animals",
+      "icon": "🐾",
+      "app_count": 56,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "arts-crafts",
+      "slug": "arts-crafts",
+      "name": "Arts & Crafts",
+      "icon": "🎨",
+      "app_count": 37,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "professional-specialty",
+      "slug": "professional-specialty",
+      "name": "Professional & Specialty",
+      "icon": "💼",
+      "app_count": 44,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "history-culture",
+      "slug": "history-culture",
+      "name": "History & Culture",
+      "icon": "🏛️",
+      "app_count": 48,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "science-nature",
+      "slug": "science-nature",
+      "name": "Science & Nature",
+      "icon": "🔬",
+      "app_count": 31,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "photography-media",
+      "slug": "photography-media",
+      "name": "Photography & Media",
+      "icon": "📷",
+      "app_count": 27,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "spirituality",
+      "slug": "spirituality",
+      "name": "Spirituality & Mind",
+      "icon": "🕯️",
+      "app_count": 22,
+      "is_mega_vertical": false
+    },
+    {
+      "id": "lifestyle-misc",
+      "slug": "lifestyle-misc",
+      "name": "Lifestyle & Community",
+      "icon": "✦",
+      "app_count": 54,
+      "is_mega_vertical": false
+    }
+  ],
+  "mega_verticals": [
+    "books-literature",
+    "music-audio",
+    "film-cinema",
+    "tv-streaming"
+  ]
+}

@@ -1,0 +1,770 @@
+{
+  "vertical": {
+    "id": "home-garden",
+    "slug": "home-garden",
+    "name": "Home & Garden",
+    "icon": "🏡",
+    "app_count": 52,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "home-improvement",
+      "displayName": "Home Improvement Guide",
+      "crossRefs": [
+        "smart-home",
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1485,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://home-improvement.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "interior-design",
+      "displayName": "Interior Design Guide",
+      "crossRefs": [
+        "antique-furniture",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1486,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://interior-design.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gardening-native",
+      "displayName": "Native Plant Gardening",
+      "crossRefs": [
+        "bird-watching",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 1487,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://gardening-native.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "landscaping-pro",
+      "displayName": "Landscaping Pro",
+      "crossRefs": [
+        "gardening-native",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1488,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://landscaping-pro.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lawn-care",
+      "displayName": "Lawn Care Guide",
+      "crossRefs": [
+        "landscaping-pro",
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1489,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://lawn-care.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vegetable-garden",
+      "displayName": "Vegetable Garden Guide",
+      "crossRefs": [
+        "farm-to-table",
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1490,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://vegetable-garden.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "flower-garden",
+      "displayName": "Flower Garden Guide",
+      "crossRefs": [
+        "butterfly-garden",
+        "landscaping-pro"
+      ],
+      "priority": "P3",
+      "id": 1491,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://flower-garden.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indoor-plants",
+      "displayName": "Indoor Plants Guide",
+      "crossRefs": [
+        "interior-design",
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1492,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://indoor-plants.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bonsai-guide",
+      "displayName": "Bonsai Guide",
+      "crossRefs": [
+        "indoor-plants",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 1493,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://bonsai-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "composting-home",
+      "displayName": "Home Composting",
+      "crossRefs": [
+        "vegetable-garden",
+        "zero-waste-kitchen"
+      ],
+      "priority": "P3",
+      "id": 1494,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://composting-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "irrigation-systems",
+      "displayName": "Irrigation Systems",
+      "crossRefs": [
+        "lawn-care",
+        "vegetable-garden"
+      ],
+      "priority": "P3",
+      "id": 1495,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://irrigation-systems.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pool-spa-home",
+      "displayName": "Pool & Spa Home",
+      "crossRefs": [
+        "home-improvement",
+        "wellness-recovery"
+      ],
+      "priority": "P3",
+      "id": 1496,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://pool-spa-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kitchen-remodel",
+      "displayName": "Kitchen Remodel Guide",
+      "crossRefs": [
+        "home-improvement",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 1497,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://kitchen-remodel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bathroom-remodel",
+      "displayName": "Bathroom Remodel",
+      "crossRefs": [
+        "home-improvement",
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1498,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://bathroom-remodel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "flooring-guide",
+      "displayName": "Flooring Guide",
+      "crossRefs": [
+        "home-improvement",
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1499,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://flooring-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "painting-home",
+      "displayName": "Home Painting Guide",
+      "crossRefs": [
+        "home-improvement",
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1500,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://painting-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "electrical-diy",
+      "displayName": "Electrical DIY",
+      "crossRefs": [
+        "home-improvement",
+        "smart-home"
+      ],
+      "priority": "P3",
+      "id": 1501,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://electrical-diy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "plumbing-diy",
+      "displayName": "Plumbing DIY",
+      "crossRefs": [
+        "home-improvement",
+        "bathroom-remodel"
+      ],
+      "priority": "P3",
+      "id": 1502,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://plumbing-diy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hvac-home",
+      "displayName": "HVAC Home Guide",
+      "crossRefs": [
+        "home-improvement",
+        "smart-home"
+      ],
+      "priority": "P3",
+      "id": 1503,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://hvac-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "solar-home",
+      "displayName": "Home Solar Guide",
+      "crossRefs": [
+        "hvac-home",
+        "electric-vehicles"
+      ],
+      "priority": "P3",
+      "id": 1504,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://solar-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-security",
+      "displayName": "Home Security Systems",
+      "crossRefs": [
+        "smart-home",
+        "cybersecurity"
+      ],
+      "priority": "P3",
+      "id": 1505,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://home-security.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pest-control-home",
+      "displayName": "Home Pest Control",
+      "crossRefs": [
+        "gardening-native",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1506,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://pest-control-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "organization-home",
+      "displayName": "Home Organization",
+      "crossRefs": [
+        "interior-design",
+        "minimalism-lifestyle"
+      ],
+      "priority": "P3",
+      "id": 1507,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://organization-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "minimalism-lifestyle",
+      "displayName": "Minimalism Lifestyle",
+      "crossRefs": [
+        "organization-home",
+        "zero-waste-kitchen"
+      ],
+      "priority": "P3",
+      "id": 1508,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://minimalism-lifestyle.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tiny-home",
+      "displayName": "Tiny Home Guide",
+      "crossRefs": [
+        "minimalism-lifestyle",
+        "rv-road-trips"
+      ],
+      "priority": "P3",
+      "id": 1509,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://tiny-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-value",
+      "displayName": "Home Value & Appraisal",
+      "crossRefs": [
+        "real-estate-invest",
+        "home-improvement"
+      ],
+      "priority": "P3",
+      "id": 1510,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://home-value.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "smart-lighting",
+      "displayName": "Smart Lighting",
+      "crossRefs": [
+        "smart-home",
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1511,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://smart-lighting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-automation",
+      "displayName": "Home Automation Pro",
+      "crossRefs": [
+        "smart-home",
+        "home-automation"
+      ],
+      "priority": "P3",
+      "id": 1512,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://home-automation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garage-workshop",
+      "displayName": "Garage Workshop Setup",
+      "crossRefs": [
+        "woodworking-shop",
+        "auto-restoration"
+      ],
+      "priority": "P3",
+      "id": 1513,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garage-workshop.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-clubs",
+      "displayName": "Home & Garden Clubs",
+      "crossRefs": [
+        "vegetable-garden",
+        "interior-design"
+      ],
+      "priority": "P2",
+      "id": 1514,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://home-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-01",
+      "displayName": "Room Design Guide 1",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1515,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-02",
+      "displayName": "Room Design Guide 2",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1516,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-03",
+      "displayName": "Room Design Guide 3",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1517,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-04",
+      "displayName": "Room Design Guide 4",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1518,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-05",
+      "displayName": "Room Design Guide 5",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1519,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-06",
+      "displayName": "Room Design Guide 6",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1520,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-07",
+      "displayName": "Room Design Guide 7",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1521,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-08",
+      "displayName": "Room Design Guide 8",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1522,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-09",
+      "displayName": "Room Design Guide 9",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1523,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-10",
+      "displayName": "Room Design Guide 10",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1524,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-11",
+      "displayName": "Room Design Guide 11",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1525,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "room-design-12",
+      "displayName": "Room Design Guide 12",
+      "crossRefs": [
+        "interior-design"
+      ],
+      "priority": "P3",
+      "id": 1526,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://room-design-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-01",
+      "displayName": "Garden Style 1",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1527,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-02",
+      "displayName": "Garden Style 2",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1528,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-03",
+      "displayName": "Garden Style 3",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1529,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-04",
+      "displayName": "Garden Style 4",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1530,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-05",
+      "displayName": "Garden Style 5",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1531,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-06",
+      "displayName": "Garden Style 6",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1532,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-07",
+      "displayName": "Garden Style 7",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1533,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-08",
+      "displayName": "Garden Style 8",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1534,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-09",
+      "displayName": "Garden Style 9",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1535,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "garden-style-10",
+      "displayName": "Garden Style 10",
+      "crossRefs": [
+        "gardening-native"
+      ],
+      "priority": "P3",
+      "id": 1536,
+      "vertical_id": "home-garden",
+      "vertical_slug": "home-garden",
+      "site_url": "https://garden-style-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

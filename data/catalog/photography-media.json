@@ -1,0 +1,405 @@
+{
+  "vertical": {
+    "id": "photography-media",
+    "slug": "photography-media",
+    "name": "Photography & Media",
+    "icon": "📷",
+    "app_count": 27,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "photography-concert",
+      "displayName": "Concert Photography",
+      "crossRefs": [
+        "concert-photography",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1859,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photography-concert.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "portrait-photography",
+      "displayName": "Portrait Photography",
+      "crossRefs": [
+        "photography-gear",
+        "fashion-week"
+      ],
+      "priority": "P3",
+      "id": 1860,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://portrait-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wedding-photography",
+      "displayName": "Wedding Photography",
+      "crossRefs": [
+        "wedding-planner",
+        "portrait-photography"
+      ],
+      "priority": "P3",
+      "id": 1861,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://wedding-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "street-photography",
+      "displayName": "Street Photography",
+      "crossRefs": [
+        "urban-explore",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1862,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://street-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wildlife-photography",
+      "displayName": "Wildlife Photography",
+      "crossRefs": [
+        "wildlife-watching",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1863,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://wildlife-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "macro-photography",
+      "displayName": "Macro Photography",
+      "crossRefs": [
+        "wildlife-photography",
+        "indoor-plants"
+      ],
+      "priority": "P3",
+      "id": 1864,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://macro-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "astrophotography",
+      "displayName": "Astrophotography",
+      "crossRefs": [
+        "stargazing-astro",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1865,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://astrophotography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-photography",
+      "displayName": "Film Photography",
+      "crossRefs": [
+        "photography-gear",
+        "vintage-camera-collect"
+      ],
+      "priority": "P3",
+      "id": 1866,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://film-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-editing",
+      "displayName": "Photo Editing Mastery",
+      "crossRefs": [
+        "photography-gear",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1867,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-editing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lightroom-workflow",
+      "displayName": "Lightroom Workflow",
+      "crossRefs": [
+        "photo-editing",
+        "photography-travel"
+      ],
+      "priority": "P3",
+      "id": 1868,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://lightroom-workflow.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "video-production",
+      "displayName": "Video Production",
+      "crossRefs": [
+        "streaming-setup",
+        "film-techniques"
+      ],
+      "priority": "P3",
+      "id": 1869,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://video-production.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "youtube-creator",
+      "displayName": "YouTube Creator Guide",
+      "crossRefs": [
+        "video-production",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 1870,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://youtube-creator.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "content-creator-hub",
+      "displayName": "Content Creator Hub",
+      "crossRefs": [
+        "youtube-creator",
+        "food-influencer"
+      ],
+      "priority": "P3",
+      "id": 1871,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://content-creator-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "influencer-business",
+      "displayName": "Influencer Business",
+      "crossRefs": [
+        "content-creator-hub",
+        "marketing-pro"
+      ],
+      "priority": "P3",
+      "id": 1872,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://influencer-business.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "media-clubs",
+      "displayName": "Photography Clubs",
+      "crossRefs": [
+        "portrait-photography",
+        "street-photography"
+      ],
+      "priority": "P2",
+      "id": 1873,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://media-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-01",
+      "displayName": "Photography Genre 1",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1874,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-02",
+      "displayName": "Photography Genre 2",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1875,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-03",
+      "displayName": "Photography Genre 3",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1876,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-04",
+      "displayName": "Photography Genre 4",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1877,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-05",
+      "displayName": "Photography Genre 5",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1878,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-06",
+      "displayName": "Photography Genre 6",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1879,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-07",
+      "displayName": "Photography Genre 7",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1880,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-08",
+      "displayName": "Photography Genre 8",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1881,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-09",
+      "displayName": "Photography Genre 9",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1882,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-10",
+      "displayName": "Photography Genre 10",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1883,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-11",
+      "displayName": "Photography Genre 11",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1884,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photo-genre-12",
+      "displayName": "Photography Genre 12",
+      "crossRefs": [
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1885,
+      "vertical_id": "photography-media",
+      "vertical_slug": "photography-media",
+      "site_url": "https://photo-genre-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

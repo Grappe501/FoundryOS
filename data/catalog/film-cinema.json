@@ -1,0 +1,1752 @@
+{
+  "vertical": {
+    "id": "film-cinema",
+    "slug": "film-cinema",
+    "name": "Film & Cinema",
+    "icon": "🎬",
+    "app_count": 116,
+    "is_mega_vertical": true
+  },
+  "apps": [
+    {
+      "slug": "film-cinema",
+      "displayName": "Film & Cinema Guide",
+      "crossRefs": [
+        "movie-memorabilia",
+        "director-auteurs"
+      ],
+      "priority": "P1",
+      "id": 862,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-auteurs",
+      "displayName": "Director Auteurs",
+      "crossRefs": [
+        "film-cinema",
+        "film-criterion"
+      ],
+      "priority": "P2",
+      "id": 863,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-auteurs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-criterion",
+      "displayName": "Criterion Collection",
+      "crossRefs": [
+        "director-auteurs",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 864,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-criterion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-noir",
+      "displayName": "Film Noir Authority",
+      "crossRefs": [
+        "fiction-crime",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 865,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-noir.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "classic-cinema",
+      "displayName": "Classic Cinema Golden Age",
+      "crossRefs": [
+        "film-noir",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 866,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://classic-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-scifi",
+      "displayName": "Science Fiction Cinema",
+      "crossRefs": [
+        "fiction-scifi",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 867,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-scifi.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-horror",
+      "displayName": "Horror Cinema Authority",
+      "crossRefs": [
+        "fiction-horror",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 868,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-horror.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-comedy",
+      "displayName": "Comedy Cinema Guide",
+      "crossRefs": [
+        "film-cinema",
+        "comedy-film"
+      ],
+      "priority": "P3",
+      "id": 869,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-comedy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "comedy-film",
+      "displayName": "Comedy Film Classics",
+      "crossRefs": [
+        "film-comedy",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 870,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://comedy-film.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-drama",
+      "displayName": "Drama Cinema Authority",
+      "crossRefs": [
+        "film-cinema",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 871,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-drama.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-action",
+      "displayName": "Action Cinema Guide",
+      "crossRefs": [
+        "film-cinema",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 872,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-action.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-thriller",
+      "displayName": "Thriller Cinema",
+      "crossRefs": [
+        "film-noir",
+        "fiction-mystery"
+      ],
+      "priority": "P3",
+      "id": 873,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-thriller.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-romance",
+      "displayName": "Romance Cinema",
+      "crossRefs": [
+        "film-drama",
+        "fiction-romance"
+      ],
+      "priority": "P3",
+      "id": 874,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-romance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-documentary",
+      "displayName": "Documentary Cinema",
+      "crossRefs": [
+        "film-cinema",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 875,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-documentary.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-animation",
+      "displayName": "Animation Cinema",
+      "crossRefs": [
+        "film-cinema",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 876,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-animation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-anime",
+      "displayName": "Anime Cinema Guide",
+      "crossRefs": [
+        "film-animation",
+        "manga-collection"
+      ],
+      "priority": "P3",
+      "id": 877,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-anime.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-indie",
+      "displayName": "Independent Cinema",
+      "crossRefs": [
+        "film-cinema",
+        "film-festivals"
+      ],
+      "priority": "P3",
+      "id": 878,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-indie.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-festivals",
+      "displayName": "Film Festival Guide",
+      "crossRefs": [
+        "film-indie",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 879,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-festivals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-foreign",
+      "displayName": "Foreign Language Cinema",
+      "crossRefs": [
+        "film-cinema",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 880,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-foreign.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "french-cinema",
+      "displayName": "French Cinema Authority",
+      "crossRefs": [
+        "film-foreign",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 881,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://french-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "italian-cinema",
+      "displayName": "Italian Cinema Guide",
+      "crossRefs": [
+        "film-foreign",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 882,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://italian-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "japanese-cinema",
+      "displayName": "Japanese Cinema",
+      "crossRefs": [
+        "film-foreign",
+        "film-anime"
+      ],
+      "priority": "P3",
+      "id": 883,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://japanese-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "korean-cinema",
+      "displayName": "Korean Cinema Authority",
+      "crossRefs": [
+        "film-foreign",
+        "kpop-music"
+      ],
+      "priority": "P3",
+      "id": 884,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://korean-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indian-cinema",
+      "displayName": "Indian Cinema & Bollywood",
+      "crossRefs": [
+        "film-foreign",
+        "bollywood-music"
+      ],
+      "priority": "P3",
+      "id": 885,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://indian-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "british-cinema",
+      "displayName": "British Cinema Guide",
+      "crossRefs": [
+        "film-foreign",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 886,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://british-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "german-cinema",
+      "displayName": "German Cinema",
+      "crossRefs": [
+        "film-foreign",
+        "film-noir"
+      ],
+      "priority": "P3",
+      "id": 887,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://german-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "latin-cinema",
+      "displayName": "Latin American Cinema",
+      "crossRefs": [
+        "film-foreign",
+        "latin-music"
+      ],
+      "priority": "P3",
+      "id": 888,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://latin-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "african-cinema",
+      "displayName": "African Cinema",
+      "crossRefs": [
+        "film-foreign",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 889,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://african-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nordic-cinema",
+      "displayName": "Nordic Cinema",
+      "crossRefs": [
+        "film-foreign",
+        "film-noir"
+      ],
+      "priority": "P3",
+      "id": 890,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://nordic-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hong-kong-cinema",
+      "displayName": "Hong Kong Cinema",
+      "crossRefs": [
+        "film-action",
+        "film-foreign"
+      ],
+      "priority": "P3",
+      "id": 891,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://hong-kong-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "silent-film",
+      "displayName": "Silent Film Era",
+      "crossRefs": [
+        "classic-cinema",
+        "film-history"
+      ],
+      "priority": "P3",
+      "id": 892,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://silent-film.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-history",
+      "displayName": "Film History Archive",
+      "crossRefs": [
+        "classic-cinema",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 893,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "western-films",
+      "displayName": "Western Films Guide",
+      "crossRefs": [
+        "fiction-western",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 894,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://western-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "war-films",
+      "displayName": "War Films Authority",
+      "crossRefs": [
+        "fiction-war",
+        "film-drama"
+      ],
+      "priority": "P3",
+      "id": 895,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://war-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "musical-films",
+      "displayName": "Movie Musicals",
+      "crossRefs": [
+        "film-cinema",
+        "classical-music"
+      ],
+      "priority": "P3",
+      "id": 896,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://musical-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-noir-neo",
+      "displayName": "Neo-Noir Cinema",
+      "crossRefs": [
+        "film-noir",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 897,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-noir-neo.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "superhero-films",
+      "displayName": "Superhero Cinema",
+      "crossRefs": [
+        "film-action",
+        "comic-books"
+      ],
+      "priority": "P3",
+      "id": 898,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://superhero-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "franchise-films",
+      "displayName": "Film Franchises Hub",
+      "crossRefs": [
+        "superhero-films",
+        "film-action"
+      ],
+      "priority": "P3",
+      "id": 899,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://franchise-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "marvel-cinema",
+      "displayName": "Marvel Cinematic Universe",
+      "crossRefs": [
+        "superhero-films",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 900,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://marvel-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dc-cinema",
+      "displayName": "DC Films Universe",
+      "crossRefs": [
+        "superhero-films",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 901,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://dc-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "star-wars-cinema",
+      "displayName": "Star Wars Universe",
+      "crossRefs": [
+        "film-scifi",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 902,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://star-wars-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "star-trek-cinema",
+      "displayName": "Star Trek Universe",
+      "crossRefs": [
+        "film-scifi",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 903,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://star-trek-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "james-bond-cinema",
+      "displayName": "James Bond Collection",
+      "crossRefs": [
+        "film-action",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 904,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://james-bond-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "horror-franchises",
+      "displayName": "Horror Franchise Guide",
+      "crossRefs": [
+        "film-horror",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 905,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://horror-franchises.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "slasher-films",
+      "displayName": "Slasher Films",
+      "crossRefs": [
+        "film-horror",
+        "horror-franchises"
+      ],
+      "priority": "P3",
+      "id": 906,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://slasher-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "psychological-horror",
+      "displayName": "Psychological Horror",
+      "crossRefs": [
+        "film-horror",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 907,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://psychological-horror.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "creature-features",
+      "displayName": "Creature Features",
+      "crossRefs": [
+        "film-horror",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 908,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://creature-features.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cult-films",
+      "displayName": "Cult Films Authority",
+      "crossRefs": [
+        "film-indie",
+        "midnight-movies"
+      ],
+      "priority": "P3",
+      "id": 909,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://cult-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "midnight-movies",
+      "displayName": "Midnight Movies",
+      "crossRefs": [
+        "cult-films",
+        "film-horror"
+      ],
+      "priority": "P3",
+      "id": 910,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://midnight-movies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "b-movies",
+      "displayName": "B-Movies & Exploitation",
+      "crossRefs": [
+        "cult-films",
+        "film-history"
+      ],
+      "priority": "P3",
+      "id": 911,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://b-movies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-techniques",
+      "displayName": "Cinematography & Techniques",
+      "crossRefs": [
+        "director-auteurs",
+        "film-history"
+      ],
+      "priority": "P3",
+      "id": 912,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-techniques.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-editing",
+      "displayName": "Film Editing Mastery",
+      "crossRefs": [
+        "film-techniques",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 913,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-editing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-screenwriting",
+      "displayName": "Screenwriting Authority",
+      "crossRefs": [
+        "writing-craft",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 914,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-screenwriting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-acting",
+      "displayName": "Acting & Performance",
+      "crossRefs": [
+        "film-drama",
+        "theater-stage"
+      ],
+      "priority": "P3",
+      "id": 915,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-acting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-costume",
+      "displayName": "Costume & Production Design",
+      "crossRefs": [
+        "film-cinema",
+        "fashion-vintage"
+      ],
+      "priority": "P3",
+      "id": 916,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-costume.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-vfx",
+      "displayName": "Visual Effects Cinema",
+      "crossRefs": [
+        "film-scifi",
+        "film-action"
+      ],
+      "priority": "P3",
+      "id": 917,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-vfx.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-sound-design",
+      "displayName": "Film Sound Design",
+      "crossRefs": [
+        "film-scores",
+        "film-techniques"
+      ],
+      "priority": "P3",
+      "id": 918,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-sound-design.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "imax-cinema",
+      "displayName": "IMAX & Large Format",
+      "crossRefs": [
+        "film-cinema",
+        "film-techniques"
+      ],
+      "priority": "P3",
+      "id": 919,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://imax-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drive-in-cinema",
+      "displayName": "Drive-In Theater Guide",
+      "crossRefs": [
+        "classic-cinema",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 920,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://drive-in-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "arthouse-cinema",
+      "displayName": "Arthouse Theater Guide",
+      "crossRefs": [
+        "film-indie",
+        "film-criterion"
+      ],
+      "priority": "P3",
+      "id": 921,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://arthouse-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-memorabilia",
+      "displayName": "Movie Memorabilia",
+      "crossRefs": [
+        "film-cinema",
+        "autograph-collection"
+      ],
+      "priority": "P3",
+      "id": 922,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://movie-memorabilia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-posters",
+      "displayName": "Movie Poster Collecting",
+      "crossRefs": [
+        "movie-memorabilia",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 923,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://movie-posters.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-awards",
+      "displayName": "Film Awards Tracker",
+      "crossRefs": [
+        "oscars-guide",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 924,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-awards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oscars-guide",
+      "displayName": "Academy Awards Authority",
+      "crossRefs": [
+        "film-awards",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 925,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://oscars-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cannes-films",
+      "displayName": "Cannes Film Festival",
+      "crossRefs": [
+        "film-festivals",
+        "film-foreign"
+      ],
+      "priority": "P3",
+      "id": 926,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://cannes-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sundance-films",
+      "displayName": "Sundance Film Festival",
+      "crossRefs": [
+        "film-festivals",
+        "film-indie"
+      ],
+      "priority": "P3",
+      "id": 927,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://sundance-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "venice-films",
+      "displayName": "Venice Film Festival",
+      "crossRefs": [
+        "film-festivals",
+        "film-foreign"
+      ],
+      "priority": "P3",
+      "id": 928,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://venice-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-reviews-network",
+      "displayName": "Film Reviews Network",
+      "crossRefs": [
+        "film-cinema",
+        "film-awards"
+      ],
+      "priority": "P3",
+      "id": 929,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-reviews-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-watchlist",
+      "displayName": "Movie Watchlist Tracker",
+      "crossRefs": [
+        "film-reviews-network",
+        "streaming-films"
+      ],
+      "priority": "P3",
+      "id": 930,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://movie-watchlist.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-films",
+      "displayName": "Streaming Film Guide",
+      "crossRefs": [
+        "movie-watchlist",
+        "tv-streaming-hub"
+      ],
+      "priority": "P3",
+      "id": 931,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://streaming-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-4k-uhd",
+      "displayName": "4K UHD Film Collection",
+      "crossRefs": [
+        "film-criterion",
+        "home-theater"
+      ],
+      "priority": "P3",
+      "id": 932,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-4k-uhd.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-bluray",
+      "displayName": "Blu-ray Collecting",
+      "crossRefs": [
+        "film-4k-uhd",
+        "film-criterion"
+      ],
+      "priority": "P3",
+      "id": 933,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-bluray.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-restoration",
+      "displayName": "Film Restoration & Archives",
+      "crossRefs": [
+        "classic-cinema",
+        "film-history"
+      ],
+      "priority": "P3",
+      "id": 934,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-restoration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-theory",
+      "displayName": "Film Theory & Criticism",
+      "crossRefs": [
+        "film-history",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 935,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-theory.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-movements",
+      "displayName": "Film Movements Guide",
+      "crossRefs": [
+        "film-history",
+        "french-cinema"
+      ],
+      "priority": "P3",
+      "id": 936,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-movements.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "new-wave-cinema",
+      "displayName": "French New Wave",
+      "crossRefs": [
+        "french-cinema",
+        "film-movements"
+      ],
+      "priority": "P3",
+      "id": 937,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://new-wave-cinema.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "german-expressionism",
+      "displayName": "German Expressionism",
+      "crossRefs": [
+        "german-cinema",
+        "film-horror"
+      ],
+      "priority": "P3",
+      "id": 938,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://german-expressionism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "italian-neorealism",
+      "displayName": "Italian Neorealism",
+      "crossRefs": [
+        "italian-cinema",
+        "film-movements"
+      ],
+      "priority": "P3",
+      "id": 939,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://italian-neorealism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mumblecore-films",
+      "displayName": "Mumblecore & Microbudget",
+      "crossRefs": [
+        "film-indie",
+        "film-festivals"
+      ],
+      "priority": "P3",
+      "id": 940,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://mumblecore-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "short-films",
+      "displayName": "Short Film Collection",
+      "crossRefs": [
+        "film-festivals",
+        "film-indie"
+      ],
+      "priority": "P3",
+      "id": 941,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://short-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "student-films",
+      "displayName": "Student & Emerging Filmmakers",
+      "crossRefs": [
+        "film-festivals",
+        "short-films"
+      ],
+      "priority": "P3",
+      "id": 942,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://student-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-clubs",
+      "displayName": "Film Club Organizer",
+      "crossRefs": [
+        "film-reviews-network",
+        "arthouse-cinema"
+      ],
+      "priority": "P2",
+      "id": 943,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-trivia",
+      "displayName": "Movie Trivia Authority",
+      "crossRefs": [
+        "film-cinema",
+        "franchise-films"
+      ],
+      "priority": "P3",
+      "id": 944,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://movie-trivia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-locations",
+      "displayName": "Film Location Tours",
+      "crossRefs": [
+        "film-cinema",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 945,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-locations.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-to-film-hub",
+      "displayName": "Book to Film Hub",
+      "crossRefs": [
+        "book-to-film",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 946,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://book-to-film-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-pairing-dining",
+      "displayName": "Dinner & Movie Pairing",
+      "crossRefs": [
+        "meals-pairing",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 947,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-pairing-dining.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "date-night-films",
+      "displayName": "Date Night Film Guide",
+      "crossRefs": [
+        "film-romance",
+        "film-pairing-dining"
+      ],
+      "priority": "P3",
+      "id": 948,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://date-night-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "family-films",
+      "displayName": "Family Film Night",
+      "crossRefs": [
+        "film-animation",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 949,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://family-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-noir-streaming",
+      "displayName": "Noir Streaming Picks",
+      "crossRefs": [
+        "film-noir",
+        "streaming-films"
+      ],
+      "priority": "P3",
+      "id": 950,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-noir-streaming.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-spielberg",
+      "displayName": "Spielberg Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-action"
+      ],
+      "priority": "P3",
+      "id": 951,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-spielberg.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-kubrick",
+      "displayName": "Kubrick Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 952,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-kubrick.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-hitchcock",
+      "displayName": "Hitchcock Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 953,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-hitchcock.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-tarantino",
+      "displayName": "Tarantino Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-action"
+      ],
+      "priority": "P3",
+      "id": 954,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-tarantino.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-nolan",
+      "displayName": "Nolan Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 955,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-nolan.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-scorsese",
+      "displayName": "Scorsese Filmography",
+      "crossRefs": [
+        "director-auteurs",
+        "film-drama"
+      ],
+      "priority": "P3",
+      "id": 956,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-scorsese.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-miyazaki",
+      "displayName": "Miyazaki & Ghibli Films",
+      "crossRefs": [
+        "film-animation",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 957,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-miyazaki.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-anderson",
+      "displayName": "Wes Anderson Films",
+      "crossRefs": [
+        "director-auteurs",
+        "film-comedy"
+      ],
+      "priority": "P3",
+      "id": 958,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-anderson.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "director-lynch",
+      "displayName": "David Lynch Films",
+      "crossRefs": [
+        "director-auteurs",
+        "psychological-horror"
+      ],
+      "priority": "P3",
+      "id": 959,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://director-lynch.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-ai-analysis",
+      "displayName": "AI Film Analysis",
+      "crossRefs": [
+        "film-cinema",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 960,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-ai-analysis.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-podcasts",
+      "displayName": "Film Podcast Guide",
+      "crossRefs": [
+        "film-reviews-network",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 961,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-podcasts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cinema-architecture",
+      "displayName": "Cinema Architecture",
+      "crossRefs": [
+        "arthouse-cinema",
+        "architecture-design"
+      ],
+      "priority": "P3",
+      "id": 962,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://cinema-architecture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-preservation",
+      "displayName": "Film Preservation Society",
+      "crossRefs": [
+        "film-restoration",
+        "classic-cinema"
+      ],
+      "priority": "P3",
+      "id": 963,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-preservation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "movie-quotes",
+      "displayName": "Iconic Movie Quotes",
+      "crossRefs": [
+        "film-cinema",
+        "film-trivia"
+      ],
+      "priority": "P3",
+      "id": 964,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://movie-quotes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-stunts",
+      "displayName": "Stunt & Action Cinema",
+      "crossRefs": [
+        "film-action",
+        "film-techniques"
+      ],
+      "priority": "P3",
+      "id": 965,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-stunts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "martial-arts-films",
+      "displayName": "Martial Arts Cinema",
+      "crossRefs": [
+        "film-action",
+        "hong-kong-cinema"
+      ],
+      "priority": "P3",
+      "id": 966,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://martial-arts-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spy-films",
+      "displayName": "Spy & Espionage Films",
+      "crossRefs": [
+        "james-bond-cinema",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 967,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://spy-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "heist-films",
+      "displayName": "Heist Films Authority",
+      "crossRefs": [
+        "film-thriller",
+        "film-action"
+      ],
+      "priority": "P3",
+      "id": 968,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://heist-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "road-trip-films",
+      "displayName": "Road Trip Cinema",
+      "crossRefs": [
+        "film-drama",
+        "road-trip-america"
+      ],
+      "priority": "P3",
+      "id": 969,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://road-trip-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coming-of-age-films",
+      "displayName": "Coming of Age Films",
+      "crossRefs": [
+        "film-drama",
+        "fiction-ya"
+      ],
+      "priority": "P3",
+      "id": 970,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://coming-of-age-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sports-films",
+      "displayName": "Sports Films Guide",
+      "crossRefs": [
+        "college-baseball",
+        "film-drama"
+      ],
+      "priority": "P3",
+      "id": 971,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://sports-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "courtroom-films",
+      "displayName": "Courtroom Drama Films",
+      "crossRefs": [
+        "film-drama",
+        "legal-professional"
+      ],
+      "priority": "P3",
+      "id": 972,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://courtroom-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "prison-films",
+      "displayName": "Prison Films Guide",
+      "crossRefs": [
+        "film-drama",
+        "film-thriller"
+      ],
+      "priority": "P3",
+      "id": 973,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://prison-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "zombie-films",
+      "displayName": "Zombie Cinema",
+      "crossRefs": [
+        "film-horror",
+        "horror-franchises"
+      ],
+      "priority": "P3",
+      "id": 974,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://zombie-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vampire-films",
+      "displayName": "Vampire Cinema",
+      "crossRefs": [
+        "film-horror",
+        "fiction-gothic"
+      ],
+      "priority": "P3",
+      "id": 975,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://vampire-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kaiju-films",
+      "displayName": "Kaiju & Monster Films",
+      "crossRefs": [
+        "creature-features",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 976,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://kaiju-films.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "film-collector-clubs",
+      "displayName": "Film Collector Clubs",
+      "crossRefs": [
+        "film-clubs",
+        "film-bluray"
+      ],
+      "priority": "P2",
+      "id": 977,
+      "vertical_id": "film-cinema",
+      "vertical_slug": "film-cinema",
+      "site_url": "https://film-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

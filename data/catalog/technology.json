@@ -1,0 +1,802 @@
+{
+  "vertical": {
+    "id": "technology",
+    "slug": "technology",
+    "name": "Technology & Gadgets",
+    "icon": "💻",
+    "app_count": 54,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "tech-gadgets",
+      "displayName": "Tech Gadgets Authority",
+      "crossRefs": [
+        "smart-home",
+        "audio-equipment"
+      ],
+      "priority": "P3",
+      "id": 1367,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://tech-gadgets.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "smart-home",
+      "displayName": "Smart Home Guide",
+      "crossRefs": [
+        "tech-gadgets",
+        "home-theater"
+      ],
+      "priority": "P3",
+      "id": 1368,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://smart-home.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-theater",
+      "displayName": "Home Theater Setup",
+      "crossRefs": [
+        "audio-equipment",
+        "smart-home"
+      ],
+      "priority": "P3",
+      "id": 1369,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://home-theater.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photography-gear",
+      "displayName": "Photography Gear Guide",
+      "crossRefs": [
+        "landscape-photo",
+        "photography-art"
+      ],
+      "priority": "P3",
+      "id": 1370,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://photography-gear.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drone-piloting",
+      "displayName": "Drone Piloting Guide",
+      "crossRefs": [
+        "photography-gear",
+        "landscape-photo"
+      ],
+      "priority": "P3",
+      "id": 1371,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://drone-piloting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pc-building",
+      "displayName": "PC Building Guide",
+      "crossRefs": [
+        "gaming-collectibles",
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1372,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://pc-building.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mechanical-keyboards",
+      "displayName": "Mechanical Keyboards",
+      "crossRefs": [
+        "pc-building",
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1373,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://mechanical-keyboards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "3d-printing",
+      "displayName": "3D Printing Workshop",
+      "crossRefs": [
+        "maker-crafts",
+        "pc-building"
+      ],
+      "priority": "P3",
+      "id": 1374,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://3d-printing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "maker-crafts",
+      "displayName": "Maker & DIY Crafts",
+      "crossRefs": [
+        "3d-printing",
+        "woodworking-shop"
+      ],
+      "priority": "P3",
+      "id": 1375,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://maker-crafts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "woodworking-shop",
+      "displayName": "Woodworking Shop",
+      "crossRefs": [
+        "maker-crafts",
+        "antique-furniture"
+      ],
+      "priority": "P3",
+      "id": 1376,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://woodworking-shop.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coding-projects",
+      "displayName": "Coding Projects Lab",
+      "crossRefs": [
+        "pc-building",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1377,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://coding-projects.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ai-tools-guide",
+      "displayName": "AI Tools Guide",
+      "crossRefs": [
+        "coding-projects",
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1378,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://ai-tools-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cybersecurity",
+      "displayName": "Cybersecurity Guide",
+      "crossRefs": [
+        "coding-projects",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1379,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://cybersecurity.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "retro-computing",
+      "displayName": "Retro Computing",
+      "crossRefs": [
+        "pc-building",
+        "vintage-toys"
+      ],
+      "priority": "P3",
+      "id": 1380,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://retro-computing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "streaming-setup",
+      "displayName": "Streaming Setup Guide",
+      "crossRefs": [
+        "home-theater",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 1381,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://streaming-setup.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "smartphone-guide",
+      "displayName": "Smartphone Authority",
+      "crossRefs": [
+        "tech-gadgets",
+        "photography-gear"
+      ],
+      "priority": "P3",
+      "id": 1382,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://smartphone-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tablet-guide",
+      "displayName": "Tablet & iPad Guide",
+      "crossRefs": [
+        "smartphone-guide",
+        "digital-books"
+      ],
+      "priority": "P3",
+      "id": 1383,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://tablet-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wearable-tech",
+      "displayName": "Wearable Tech Guide",
+      "crossRefs": [
+        "sports-wearables",
+        "smartphone-guide"
+      ],
+      "priority": "P3",
+      "id": 1384,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://wearable-tech.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cloud-storage",
+      "displayName": "Cloud Storage Guide",
+      "crossRefs": [
+        "coding-projects",
+        "digital-nomad"
+      ],
+      "priority": "P3",
+      "id": 1385,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://cloud-storage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vpn-privacy",
+      "displayName": "VPN & Privacy Tools",
+      "crossRefs": [
+        "cybersecurity",
+        "cloud-storage"
+      ],
+      "priority": "P3",
+      "id": 1386,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://vpn-privacy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-networking",
+      "displayName": "Home Networking",
+      "crossRefs": [
+        "smart-home",
+        "vpn-privacy"
+      ],
+      "priority": "P3",
+      "id": 1387,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://home-networking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nas-storage",
+      "displayName": "NAS & Home Server",
+      "crossRefs": [
+        "home-networking",
+        "cloud-storage"
+      ],
+      "priority": "P3",
+      "id": 1388,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://nas-storage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "raspberry-pi",
+      "displayName": "Raspberry Pi Projects",
+      "crossRefs": [
+        "maker-crafts",
+        "home-networking"
+      ],
+      "priority": "P3",
+      "id": 1389,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://raspberry-pi.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "arduino-projects",
+      "displayName": "Arduino Projects",
+      "crossRefs": [
+        "maker-crafts",
+        "raspberry-pi"
+      ],
+      "priority": "P3",
+      "id": 1390,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://arduino-projects.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "robotics-hobby",
+      "displayName": "Robotics Hobby",
+      "crossRefs": [
+        "arduino-projects",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1391,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://robotics-hobby.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tech-startups",
+      "displayName": "Tech Startup Guide",
+      "crossRefs": [
+        "nonfiction-business",
+        "coding-projects"
+      ],
+      "priority": "P3",
+      "id": 1392,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://tech-startups.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "saas-reviews",
+      "displayName": "SaaS Reviews",
+      "crossRefs": [
+        "tech-startups",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1393,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://saas-reviews.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "productivity-apps",
+      "displayName": "Productivity Apps",
+      "crossRefs": [
+        "saas-reviews",
+        "digital-nomad"
+      ],
+      "priority": "P3",
+      "id": 1394,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://productivity-apps.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "note-taking-apps",
+      "displayName": "Note Taking Systems",
+      "crossRefs": [
+        "productivity-apps",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 1395,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://note-taking-apps.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tech-news-digest",
+      "displayName": "Tech News Digest",
+      "crossRefs": [
+        "tech-gadgets",
+        "ai-tools-guide"
+      ],
+      "priority": "P3",
+      "id": 1396,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://tech-news-digest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "open-source",
+      "displayName": "Open Source Projects",
+      "crossRefs": [
+        "coding-projects",
+        "tech-startups"
+      ],
+      "priority": "P3",
+      "id": 1397,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://open-source.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "linux-guide",
+      "displayName": "Linux Guide",
+      "crossRefs": [
+        "open-source",
+        "retro-computing"
+      ],
+      "priority": "P3",
+      "id": 1398,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://linux-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "devops-guide",
+      "displayName": "DevOps Guide",
+      "crossRefs": [
+        "coding-projects",
+        "cloud-storage"
+      ],
+      "priority": "P3",
+      "id": 1399,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://devops-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "tech-clubs",
+      "displayName": "Tech Enthusiast Clubs",
+      "crossRefs": [
+        "coding-projects",
+        "maker-crafts"
+      ],
+      "priority": "P2",
+      "id": 1400,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://tech-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-01",
+      "displayName": "Gadget Category 1",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1401,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-02",
+      "displayName": "Gadget Category 2",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1402,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-03",
+      "displayName": "Gadget Category 3",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1403,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-04",
+      "displayName": "Gadget Category 4",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1404,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-05",
+      "displayName": "Gadget Category 5",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1405,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-06",
+      "displayName": "Gadget Category 6",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1406,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-07",
+      "displayName": "Gadget Category 7",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1407,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-08",
+      "displayName": "Gadget Category 8",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1408,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-09",
+      "displayName": "Gadget Category 9",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1409,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-10",
+      "displayName": "Gadget Category 10",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1410,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-11",
+      "displayName": "Gadget Category 11",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1411,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-12",
+      "displayName": "Gadget Category 12",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1412,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-13",
+      "displayName": "Gadget Category 13",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1413,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-14",
+      "displayName": "Gadget Category 14",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1414,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-15",
+      "displayName": "Gadget Category 15",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1415,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-16",
+      "displayName": "Gadget Category 16",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1416,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-17",
+      "displayName": "Gadget Category 17",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1417,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-18",
+      "displayName": "Gadget Category 18",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1418,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-19",
+      "displayName": "Gadget Category 19",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1419,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gadget-category-20",
+      "displayName": "Gadget Category 20",
+      "crossRefs": [
+        "tech-gadgets"
+      ],
+      "priority": "P3",
+      "id": 1420,
+      "vertical_id": "technology",
+      "vertical_slug": "technology",
+      "site_url": "https://gadget-category-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

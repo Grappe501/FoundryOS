@@ -1,0 +1,552 @@
+{
+  "vertical": {
+    "id": "arts-crafts",
+    "slug": "arts-crafts",
+    "name": "Arts & Crafts",
+    "icon": "🎨",
+    "app_count": 37,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "painting-fine-art",
+      "displayName": "Fine Art Painting",
+      "crossRefs": [
+        "art-auctions",
+        "photography-art"
+      ],
+      "priority": "P3",
+      "id": 1699,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://painting-fine-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "watercolor-art",
+      "displayName": "Watercolor Art",
+      "crossRefs": [
+        "painting-fine-art",
+        "nature-journaling"
+      ],
+      "priority": "P3",
+      "id": 1700,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://watercolor-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oil-painting",
+      "displayName": "Oil Painting Guide",
+      "crossRefs": [
+        "painting-fine-art",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 1701,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://oil-painting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "acrylic-painting",
+      "displayName": "Acrylic Painting",
+      "crossRefs": [
+        "oil-painting",
+        "painting-fine-art"
+      ],
+      "priority": "P3",
+      "id": 1702,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://acrylic-painting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drawing-sketching",
+      "displayName": "Drawing & Sketching",
+      "crossRefs": [
+        "painting-fine-art",
+        "book-illustration"
+      ],
+      "priority": "P3",
+      "id": 1703,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://drawing-sketching.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sculpture-art",
+      "displayName": "Sculpture Art",
+      "crossRefs": [
+        "pottery-ceramics",
+        "painting-fine-art"
+      ],
+      "priority": "P3",
+      "id": 1704,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://sculpture-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pottery-wheel",
+      "displayName": "Pottery Wheel Craft",
+      "crossRefs": [
+        "pottery-ceramics",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1705,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://pottery-wheel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "knitting-crochet",
+      "displayName": "Knitting & Crochet",
+      "crossRefs": [
+        "maker-crafts",
+        "fashion-vintage"
+      ],
+      "priority": "P3",
+      "id": 1706,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://knitting-crochet.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sewing-quilting",
+      "displayName": "Sewing & Quilting",
+      "crossRefs": [
+        "knitting-crochet",
+        "fashion-vintage"
+      ],
+      "priority": "P3",
+      "id": 1707,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://sewing-quilting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "embroidery-craft",
+      "displayName": "Embroidery Craft",
+      "crossRefs": [
+        "sewing-quilting",
+        "fashion-vintage"
+      ],
+      "priority": "P3",
+      "id": 1708,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://embroidery-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "jewelry-making",
+      "displayName": "Jewelry Making",
+      "crossRefs": [
+        "jewelry-gems",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1709,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://jewelry-making.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "leather-craft",
+      "displayName": "Leather Craft",
+      "crossRefs": [
+        "watch-collection",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1710,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://leather-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "candle-making",
+      "displayName": "Candle Making",
+      "crossRefs": [
+        "maker-crafts",
+        "fragrance-guide"
+      ],
+      "priority": "P3",
+      "id": 1711,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://candle-making.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "soap-making",
+      "displayName": "Soap Making Craft",
+      "crossRefs": [
+        "candle-making",
+        "skincare-style"
+      ],
+      "priority": "P3",
+      "id": 1712,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://soap-making.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "paper-crafts",
+      "displayName": "Paper Crafts & Origami",
+      "crossRefs": [
+        "maker-crafts",
+        "book-illustration"
+      ],
+      "priority": "P3",
+      "id": 1713,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://paper-crafts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "glass-blowing",
+      "displayName": "Glass Blowing Art",
+      "crossRefs": [
+        "antique-glass",
+        "sculpture-art"
+      ],
+      "priority": "P3",
+      "id": 1714,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://glass-blowing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mosaic-art",
+      "displayName": "Mosaic Art",
+      "crossRefs": [
+        "sculpture-art",
+        "pottery-ceramics"
+      ],
+      "priority": "P3",
+      "id": 1715,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://mosaic-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "street-art",
+      "displayName": "Street Art & Murals",
+      "crossRefs": [
+        "photography-art",
+        "urban-explore"
+      ],
+      "priority": "P3",
+      "id": 1716,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://street-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "urban-explore",
+      "displayName": "Urban Exploration Art",
+      "crossRefs": [
+        "street-art",
+        "photography-travel"
+      ],
+      "priority": "P3",
+      "id": 1717,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://urban-explore.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "art-supplies",
+      "displayName": "Art Supplies Guide",
+      "crossRefs": [
+        "painting-fine-art",
+        "drawing-sketching"
+      ],
+      "priority": "P3",
+      "id": 1718,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://art-supplies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "art-classes",
+      "displayName": "Art Classes Finder",
+      "crossRefs": [
+        "art-supplies",
+        "local-experts"
+      ],
+      "priority": "P3",
+      "id": 1719,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://art-classes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "art-clubs",
+      "displayName": "Art Creator Clubs",
+      "crossRefs": [
+        "painting-fine-art",
+        "art-classes"
+      ],
+      "priority": "P2",
+      "id": 1720,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://art-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-01",
+      "displayName": "Craft Technique 1",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1721,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-02",
+      "displayName": "Craft Technique 2",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1722,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-03",
+      "displayName": "Craft Technique 3",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1723,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-04",
+      "displayName": "Craft Technique 4",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1724,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-05",
+      "displayName": "Craft Technique 5",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1725,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-06",
+      "displayName": "Craft Technique 6",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1726,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-07",
+      "displayName": "Craft Technique 7",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1727,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-08",
+      "displayName": "Craft Technique 8",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1728,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-09",
+      "displayName": "Craft Technique 9",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1729,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-10",
+      "displayName": "Craft Technique 10",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1730,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-11",
+      "displayName": "Craft Technique 11",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1731,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-12",
+      "displayName": "Craft Technique 12",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1732,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-13",
+      "displayName": "Craft Technique 13",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1733,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-14",
+      "displayName": "Craft Technique 14",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1734,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-technique-15",
+      "displayName": "Craft Technique 15",
+      "crossRefs": [
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 1735,
+      "vertical_id": "arts-crafts",
+      "vertical_slug": "arts-crafts",
+      "site_url": "https://craft-technique-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

@@ -1,0 +1,1322 @@
+{
+  "vertical": {
+    "id": "travel-geography",
+    "slug": "travel-geography",
+    "name": "Travel & Geography",
+    "icon": "✈️",
+    "app_count": 91,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "world-travel",
+      "displayName": "World Travel Guide",
+      "crossRefs": [
+        "culinary-travel",
+        "coastal-travel"
+      ],
+      "priority": "P3",
+      "id": 1231,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://world-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coastal-travel",
+      "displayName": "Coastal Travel Guide",
+      "crossRefs": [
+        "sailing-yacht",
+        "scuba-diving"
+      ],
+      "priority": "P3",
+      "id": 1232,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://coastal-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mountain-travel",
+      "displayName": "Mountain Travel Guide",
+      "crossRefs": [
+        "mountain-climbing",
+        "skiing-snowboard"
+      ],
+      "priority": "P3",
+      "id": 1233,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://mountain-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-guides",
+      "displayName": "City Guides Elite",
+      "crossRefs": [
+        "restaurant-guide",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1234,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-guides.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-country-tours",
+      "displayName": "Wine Country Tours",
+      "crossRefs": [
+        "wine-cellar",
+        "napa-valley"
+      ],
+      "priority": "P3",
+      "id": 1235,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://wine-country-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "whiskey-trail-tours",
+      "displayName": "Whiskey Trail Tours",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "distillery-tours"
+      ],
+      "priority": "P3",
+      "id": 1236,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://whiskey-trail-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "european-travel",
+      "displayName": "European Travel Guide",
+      "crossRefs": [
+        "city-guides",
+        "wine-country-tours"
+      ],
+      "priority": "P3",
+      "id": 1237,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://european-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "asian-travel",
+      "displayName": "Asian Travel Explorer",
+      "crossRefs": [
+        "sushi-sake",
+        "thai-cuisine"
+      ],
+      "priority": "P3",
+      "id": 1238,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://asian-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "latin-america-travel",
+      "displayName": "Latin America Travel",
+      "crossRefs": [
+        "tequila-agave",
+        "mexican-cuisine"
+      ],
+      "priority": "P3",
+      "id": 1239,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://latin-america-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "african-safari",
+      "displayName": "African Safari Guide",
+      "crossRefs": [
+        "wildlife-watching",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1240,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://african-safari.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "island-escapes",
+      "displayName": "Island Escapes",
+      "crossRefs": [
+        "coastal-travel",
+        "scuba-diving"
+      ],
+      "priority": "P3",
+      "id": 1241,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://island-escapes.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "road-trip-america",
+      "displayName": "Road Trip America",
+      "crossRefs": [
+        "rv-road-trips",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 1242,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://road-trip-america.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "train-travel",
+      "displayName": "Luxury Train Travel",
+      "crossRefs": [
+        "european-travel",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1243,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://train-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cruise-guide",
+      "displayName": "Cruise Guide",
+      "crossRefs": [
+        "island-escapes",
+        "coastal-travel"
+      ],
+      "priority": "P3",
+      "id": 1244,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://cruise-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "adventure-travel",
+      "displayName": "Adventure Travel Guide",
+      "crossRefs": [
+        "outdoor-adventures",
+        "mountain-travel"
+      ],
+      "priority": "P3",
+      "id": 1245,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://adventure-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "budget-travel",
+      "displayName": "Budget Travel Hacker",
+      "crossRefs": [
+        "world-travel",
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1246,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://budget-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "luxury-travel",
+      "displayName": "Luxury Travel Concierge",
+      "crossRefs": [
+        "world-travel",
+        "wine-country-tours"
+      ],
+      "priority": "P3",
+      "id": 1247,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://luxury-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-sites",
+      "displayName": "Historical Sites Guide",
+      "crossRefs": [
+        "militaria-history",
+        "european-travel"
+      ],
+      "priority": "P3",
+      "id": 1248,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://historical-sites.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "photography-travel",
+      "displayName": "Travel Photography",
+      "crossRefs": [
+        "landscape-photo",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1249,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://photography-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "digital-nomad",
+      "displayName": "Digital Nomad Guide",
+      "crossRefs": [
+        "city-guides",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1250,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://digital-nomad.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "passport-visa",
+      "displayName": "Passport & Visa Guide",
+      "crossRefs": [
+        "world-travel",
+        "budget-travel"
+      ],
+      "priority": "P3",
+      "id": 1251,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://passport-visa.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-points",
+      "displayName": "Travel Points & Miles",
+      "crossRefs": [
+        "budget-travel",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1252,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-points.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "airline-reviews",
+      "displayName": "Airline Reviews",
+      "crossRefs": [
+        "passport-visa",
+        "travel-points"
+      ],
+      "priority": "P3",
+      "id": 1253,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://airline-reviews.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hotel-reviews",
+      "displayName": "Hotel Reviews Elite",
+      "crossRefs": [
+        "luxury-travel",
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1254,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://hotel-reviews.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "airbnb-guide",
+      "displayName": "Vacation Rental Guide",
+      "crossRefs": [
+        "budget-travel",
+        "digital-nomad"
+      ],
+      "priority": "P3",
+      "id": 1255,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://airbnb-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "solo-travel",
+      "displayName": "Solo Travel Guide",
+      "crossRefs": [
+        "world-travel",
+        "budget-travel"
+      ],
+      "priority": "P3",
+      "id": 1256,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://solo-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "family-travel",
+      "displayName": "Family Travel Planner",
+      "crossRefs": [
+        "theme-park-travel",
+        "kids-tv"
+      ],
+      "priority": "P3",
+      "id": 1257,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://family-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "theme-park-travel",
+      "displayName": "Theme Park Travel",
+      "crossRefs": [
+        "family-travel",
+        "disney-collectibles"
+      ],
+      "priority": "P3",
+      "id": 1258,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://theme-park-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "honeymoon-travel",
+      "displayName": "Honeymoon Planner",
+      "crossRefs": [
+        "luxury-travel",
+        "wedding-planner"
+      ],
+      "priority": "P3",
+      "id": 1259,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://honeymoon-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "weekend-getaways",
+      "displayName": "Weekend Getaway Guide",
+      "crossRefs": [
+        "city-guides",
+        "road-trip-america"
+      ],
+      "priority": "P3",
+      "id": 1260,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://weekend-getaways.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "national-park-travel",
+      "displayName": "National Park Travel",
+      "crossRefs": [
+        "national-parks",
+        "rv-road-trips"
+      ],
+      "priority": "P3",
+      "id": 1261,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://national-park-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-safety",
+      "displayName": "Travel Safety Guide",
+      "crossRefs": [
+        "solo-travel",
+        "passport-visa"
+      ],
+      "priority": "P3",
+      "id": 1262,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-safety.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-insurance",
+      "displayName": "Travel Insurance Guide",
+      "crossRefs": [
+        "travel-safety",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 1263,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-insurance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-packing",
+      "displayName": "Travel Packing Lists",
+      "crossRefs": [
+        "world-travel",
+        "outdoor-gear"
+      ],
+      "priority": "P3",
+      "id": 1264,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-packing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-journal",
+      "displayName": "Travel Journal",
+      "crossRefs": [
+        "photography-travel",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1265,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-journal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "travel-clubs",
+      "displayName": "Travel Club Organizer",
+      "crossRefs": [
+        "travel-journal",
+        "world-travel"
+      ],
+      "priority": "P2",
+      "id": 1266,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://travel-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-01",
+      "displayName": "Country Travel Guide 1",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1267,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-02",
+      "displayName": "Country Travel Guide 2",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1268,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-03",
+      "displayName": "Country Travel Guide 3",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1269,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-04",
+      "displayName": "Country Travel Guide 4",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1270,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-05",
+      "displayName": "Country Travel Guide 5",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1271,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-06",
+      "displayName": "Country Travel Guide 6",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1272,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-07",
+      "displayName": "Country Travel Guide 7",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1273,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-08",
+      "displayName": "Country Travel Guide 8",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1274,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-09",
+      "displayName": "Country Travel Guide 9",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1275,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-10",
+      "displayName": "Country Travel Guide 10",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1276,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-11",
+      "displayName": "Country Travel Guide 11",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1277,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-12",
+      "displayName": "Country Travel Guide 12",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1278,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-13",
+      "displayName": "Country Travel Guide 13",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1279,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-14",
+      "displayName": "Country Travel Guide 14",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1280,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-15",
+      "displayName": "Country Travel Guide 15",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1281,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-16",
+      "displayName": "Country Travel Guide 16",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1282,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-17",
+      "displayName": "Country Travel Guide 17",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1283,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-18",
+      "displayName": "Country Travel Guide 18",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1284,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-19",
+      "displayName": "Country Travel Guide 19",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1285,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-20",
+      "displayName": "Country Travel Guide 20",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1286,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-21",
+      "displayName": "Country Travel Guide 21",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1287,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-21.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-22",
+      "displayName": "Country Travel Guide 22",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1288,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-22.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-23",
+      "displayName": "Country Travel Guide 23",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1289,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-23.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-24",
+      "displayName": "Country Travel Guide 24",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1290,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-24.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-25",
+      "displayName": "Country Travel Guide 25",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1291,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-25.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-26",
+      "displayName": "Country Travel Guide 26",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1292,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-26.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-27",
+      "displayName": "Country Travel Guide 27",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1293,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-27.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-28",
+      "displayName": "Country Travel Guide 28",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1294,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-28.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-29",
+      "displayName": "Country Travel Guide 29",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1295,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-29.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "country-guide-30",
+      "displayName": "Country Travel Guide 30",
+      "crossRefs": [
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1296,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://country-guide-30.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-01",
+      "displayName": "City Spotlight 1",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1297,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-02",
+      "displayName": "City Spotlight 2",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1298,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-03",
+      "displayName": "City Spotlight 3",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1299,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-04",
+      "displayName": "City Spotlight 4",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1300,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-05",
+      "displayName": "City Spotlight 5",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1301,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-06",
+      "displayName": "City Spotlight 6",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1302,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-07",
+      "displayName": "City Spotlight 7",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1303,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-08",
+      "displayName": "City Spotlight 8",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1304,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-09",
+      "displayName": "City Spotlight 9",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1305,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-10",
+      "displayName": "City Spotlight 10",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1306,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-11",
+      "displayName": "City Spotlight 11",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1307,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-12",
+      "displayName": "City Spotlight 12",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1308,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-13",
+      "displayName": "City Spotlight 13",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1309,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-14",
+      "displayName": "City Spotlight 14",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1310,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-15",
+      "displayName": "City Spotlight 15",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1311,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-16",
+      "displayName": "City Spotlight 16",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1312,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-16.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-17",
+      "displayName": "City Spotlight 17",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1313,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-17.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-18",
+      "displayName": "City Spotlight 18",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1314,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-18.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-19",
+      "displayName": "City Spotlight 19",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1315,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-19.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-20",
+      "displayName": "City Spotlight 20",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1316,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-20.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-21",
+      "displayName": "City Spotlight 21",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1317,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-21.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-22",
+      "displayName": "City Spotlight 22",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1318,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-22.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-23",
+      "displayName": "City Spotlight 23",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1319,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-23.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-24",
+      "displayName": "City Spotlight 24",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1320,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-24.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "city-spotlight-25",
+      "displayName": "City Spotlight 25",
+      "crossRefs": [
+        "city-guides"
+      ],
+      "priority": "P3",
+      "id": 1321,
+      "vertical_id": "travel-geography",
+      "vertical_slug": "travel-geography",
+      "site_url": "https://city-spotlight-25.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@foundry/admin",
+  "version": "0.0.1",
+  "private": true,
+  "description": "FoundryOS Central Admin — manages all 1961+ standalone app sites",
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start --port 3001",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/core": "*",
+    "@foundry/ui": "*",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}

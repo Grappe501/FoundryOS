@@ -5,18 +5,20 @@
 ## High-Level Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                        NETLIFY EDGE                         │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐     │
-│  │ Bourbon │  │ Scotch  │  │  Wine   │  │  ...×997│     │
-│  │   App   │  │   App   │  │   App   │  │   Apps  │     │
-│  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘     │
-│       └────────────┴────────────┴────────────┘             │
-│                         │                                   │
-│              ┌──────────▼──────────┐                       │
-│              │   @foundry/core     │                       │
-│              │   Platform Kernel   │                       │
-│              └──────────┬──────────┘                       │
+┌──────────────────────────────────────────────────────────────────┐
+│                    admin.foundryos.app                           │
+│                    CENTRAL ADMIN (all 1,961 apps)                │
+└────────────────────────────┬─────────────────────────────────────┘
+                             │ provisions & manages
+┌────────────────────────────▼─────────────────────────────────────┐
+│                     NETLIFY EDGE / WILDCARD                      │
+│  bourbon.foundryos.app  fiction-fantasy...  jazz-masters...      │
+│  (standalone sites via apps/site-engine — hostname routing)      │
+│                             │                                    │
+│              ┌──────────────▼──────────────┐                     │
+│              │   @foundry/core             │                     │
+│              │   Platform Kernel + Sites   │                     │
+│              └──────────────┬──────────────┘                     │
 │                         │                                   │
 │       ┌─────────────────┼─────────────────┐                │
 │       ▼                 ▼                 ▼                │
@@ -45,8 +47,10 @@
 ```
 H:\FoundryOS\
 ├── apps/                          # Deployable applications
-│   ├── platform/                  # Main platform shell (routes all apps)
-│   └── bourbon-connoisseur/       # First specialty app
+│   ├── admin/                     # Central admin dashboard
+│   ├── site-engine/               # Standalone sites (hostname → category)
+│   └── platform/                  # Marketing hub + app directory
+├── data/catalog/                  # 1,961 app registry (JSON)
 ├── packages/
 │   ├── core/                      # @foundry/core — platform kernel
 │   ├── ui/                        # @foundry/ui — design system
@@ -190,9 +194,12 @@ GitHub Push → Netlify Build → Edge Deploy
 | Environment | Branch | URL |
 |-------------|--------|-----|
 | Production | `main` | `foundryos.app` |
+| Admin | `main` | `admin.foundryos.app` |
+| Standalone App | `main` | `{slug}.foundryos.app` |
 | Staging | `develop` | `staging.foundryos.app` |
 | Preview | PR branches | `{pr}.foundryos.app` |
-| App | `app/{slug}` | `{slug}.foundryos.app` |
+
+See [ADMIN_ARCHITECTURE.md](./ADMIN_ARCHITECTURE.md) for full multi-site design.
 
 ---
 

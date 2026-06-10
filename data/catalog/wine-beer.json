@@ -1,0 +1,2457 @@
+{
+  "vertical": {
+    "id": "wine-beer",
+    "slug": "wine-beer",
+    "name": "Wine & Beer",
+    "icon": "🍷",
+    "app_count": 163,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "wine-cellar",
+      "displayName": "Wine Cellar Master",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "meals-pairing"
+      ],
+      "priority": "P1",
+      "id": 50,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-cellar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "champagne-sparkling",
+      "displayName": "Champagne & Sparkling",
+      "crossRefs": [
+        "wine-cellar",
+        "dessert-wines"
+      ],
+      "priority": "P3",
+      "id": 51,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://champagne-sparkling.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bordeaux-wines",
+      "displayName": "Bordeaux Wine Authority",
+      "crossRefs": [
+        "wine-cellar",
+        "burgundy-wines"
+      ],
+      "priority": "P3",
+      "id": 52,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://bordeaux-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "burgundy-wines",
+      "displayName": "Burgundy Wine Guide",
+      "crossRefs": [
+        "bordeaux-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 53,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://burgundy-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "napa-valley",
+      "displayName": "Napa Valley Wines",
+      "crossRefs": [
+        "wine-cellar",
+        "sonoma-wines"
+      ],
+      "priority": "P3",
+      "id": 54,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://napa-valley.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sonoma-wines",
+      "displayName": "Sonoma Wine Country",
+      "crossRefs": [
+        "napa-valley",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 55,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://sonoma-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "italian-wines",
+      "displayName": "Italian Wine Collection",
+      "crossRefs": [
+        "wine-cellar",
+        "bordeaux-wines"
+      ],
+      "priority": "P3",
+      "id": 56,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://italian-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spanish-wines",
+      "displayName": "Spanish Wine Explorer",
+      "crossRefs": [
+        "wine-cellar",
+        "portugal-wines"
+      ],
+      "priority": "P3",
+      "id": 57,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://spanish-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "portugal-wines",
+      "displayName": "Portuguese Wine Guide",
+      "crossRefs": [
+        "spanish-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 58,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://portugal-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "dessert-wines",
+      "displayName": "Dessert & Fortified Wines",
+      "crossRefs": [
+        "wine-cellar",
+        "champagne-sparkling"
+      ],
+      "priority": "P3",
+      "id": 59,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://dessert-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "natural-wines",
+      "displayName": "Natural & Biodynamic Wines",
+      "crossRefs": [
+        "wine-cellar",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 60,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://natural-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-beer",
+      "displayName": "Craft Beer Authority",
+      "crossRefs": [
+        "bourbon-connoisseur",
+        "homebrew-master"
+      ],
+      "priority": "P1",
+      "id": 61,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://craft-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ipa-specialist",
+      "displayName": "IPA Specialist",
+      "crossRefs": [
+        "craft-beer",
+        "homebrew-master"
+      ],
+      "priority": "P3",
+      "id": 62,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://ipa-specialist.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "stout-porter",
+      "displayName": "Stout & Porter Guide",
+      "crossRefs": [
+        "craft-beer",
+        "ipa-specialist"
+      ],
+      "priority": "P3",
+      "id": 63,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://stout-porter.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "belgian-beer",
+      "displayName": "Belgian Beer Collection",
+      "crossRefs": [
+        "craft-beer",
+        "german-beer"
+      ],
+      "priority": "P3",
+      "id": 64,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://belgian-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "german-beer",
+      "displayName": "German Beer Tradition",
+      "crossRefs": [
+        "belgian-beer",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 65,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://german-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sour-beer",
+      "displayName": "Sour & Wild Beer",
+      "crossRefs": [
+        "craft-beer",
+        "belgian-beer"
+      ],
+      "priority": "P3",
+      "id": 66,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://sour-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "homebrew-master",
+      "displayName": "Homebrew Master",
+      "crossRefs": [
+        "craft-beer",
+        "ipa-specialist"
+      ],
+      "priority": "P3",
+      "id": 67,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://homebrew-master.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "brewery-tours",
+      "displayName": "Brewery Tour Guide",
+      "crossRefs": [
+        "craft-beer",
+        "distillery-tours"
+      ],
+      "priority": "P3",
+      "id": 68,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://brewery-tours.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-food-pairing",
+      "displayName": "Beer & Food Pairing",
+      "crossRefs": [
+        "craft-beer",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 69,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-food-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rhone-wines",
+      "displayName": "Rhone Valley Wines",
+      "crossRefs": [
+        "burgundy-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 70,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://rhone-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chianti-tuscany",
+      "displayName": "Chianti & Tuscany Wines",
+      "crossRefs": [
+        "italian-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 71,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://chianti-tuscany.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rioja-wines",
+      "displayName": "Rioja Wine Guide",
+      "crossRefs": [
+        "spanish-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 72,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://rioja-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "new-zealand-wines",
+      "displayName": "New Zealand Wines",
+      "crossRefs": [
+        "wine-cellar",
+        "natural-wines"
+      ],
+      "priority": "P3",
+      "id": 73,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://new-zealand-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "australian-wines",
+      "displayName": "Australian Wine Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "new-zealand-wines"
+      ],
+      "priority": "P3",
+      "id": 74,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://australian-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "south-african-wines",
+      "displayName": "South African Wines",
+      "crossRefs": [
+        "wine-cellar",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 75,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://south-african-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "argentina-malbec",
+      "displayName": "Argentina Malbec",
+      "crossRefs": [
+        "wine-cellar",
+        "latin-america-travel"
+      ],
+      "priority": "P3",
+      "id": 76,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://argentina-malbec.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "chilean-wines",
+      "displayName": "Chilean Wine Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "argentina-malbec"
+      ],
+      "priority": "P3",
+      "id": 77,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://chilean-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "greek-wines",
+      "displayName": "Greek Wine Explorer",
+      "crossRefs": [
+        "wine-cellar",
+        "mediterranean-food"
+      ],
+      "priority": "P3",
+      "id": 78,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://greek-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "georgian-wines",
+      "displayName": "Georgian Wine Tradition",
+      "crossRefs": [
+        "wine-cellar",
+        "natural-wines"
+      ],
+      "priority": "P3",
+      "id": 79,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://georgian-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "orange-wines",
+      "displayName": "Orange & Skin-Contact Wines",
+      "crossRefs": [
+        "natural-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 80,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://orange-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rose-wines",
+      "displayName": "Rosé Wine Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "provence-travel"
+      ],
+      "priority": "P3",
+      "id": 81,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://rose-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-tasting",
+      "displayName": "Wine Tasting Masterclass",
+      "crossRefs": [
+        "wine-cellar",
+        "tasting-notes"
+      ],
+      "priority": "P3",
+      "id": 82,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-tasting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sommelier-prep",
+      "displayName": "Sommelier Certification Prep",
+      "crossRefs": [
+        "wine-cellar",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 83,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://sommelier-prep.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-invest",
+      "displayName": "Wine Investment Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 84,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-invest.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-auctions",
+      "displayName": "Wine Auction Tracker",
+      "crossRefs": [
+        "wine-invest",
+        "rare-bottles-wine"
+      ],
+      "priority": "P3",
+      "id": 85,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-auctions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rare-bottles-wine",
+      "displayName": "Rare & Vintage Bottles",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-auctions"
+      ],
+      "priority": "P3",
+      "id": 86,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://rare-bottles-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-clubs",
+      "displayName": "Wine Club Organizer",
+      "crossRefs": [
+        "wine-cellar",
+        "social-wine"
+      ],
+      "priority": "P2",
+      "id": 87,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "social-wine",
+      "displayName": "Wine Social Network",
+      "crossRefs": [
+        "wine-clubs",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 88,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://social-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cider-guide",
+      "displayName": "Craft Cider Guide",
+      "crossRefs": [
+        "craft-beer",
+        "apple-orchards"
+      ],
+      "priority": "P3",
+      "id": 89,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://cider-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mead-guide",
+      "displayName": "Mead & Honey Wine",
+      "crossRefs": [
+        "craft-beer",
+        "beekeeping-guide"
+      ],
+      "priority": "P3",
+      "id": 90,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://mead-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hard-seltzer",
+      "displayName": "Hard Seltzer & RTD",
+      "crossRefs": [
+        "craft-beer",
+        "zero-proof-spirits"
+      ],
+      "priority": "P3",
+      "id": 91,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://hard-seltzer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kombucha-brew",
+      "displayName": "Kombucha Brewing",
+      "crossRefs": [
+        "wellness-recovery",
+        "homebrew-master"
+      ],
+      "priority": "P3",
+      "id": 92,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://kombucha-brew.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "barrel-beer",
+      "displayName": "Barrel-Aged Beer",
+      "crossRefs": [
+        "craft-beer",
+        "sour-beer"
+      ],
+      "priority": "P3",
+      "id": 93,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://barrel-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lager-pilsner",
+      "displayName": "Lager & Pilsner Guide",
+      "crossRefs": [
+        "german-beer",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 94,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://lager-pilsner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wheat-beer",
+      "displayName": "Wheat & Hefeweizen",
+      "crossRefs": [
+        "german-beer",
+        "belgian-beer"
+      ],
+      "priority": "P3",
+      "id": 95,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wheat-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pale-ale-guide",
+      "displayName": "Pale Ale Authority",
+      "crossRefs": [
+        "craft-beer",
+        "ipa-specialist"
+      ],
+      "priority": "P3",
+      "id": 96,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://pale-ale-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-festivals",
+      "displayName": "Beer Festival Guide",
+      "crossRefs": [
+        "brewery-tours",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 97,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-festivals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-ingredients",
+      "displayName": "Hops & Malt Encyclopedia",
+      "crossRefs": [
+        "homebrew-master",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 98,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-ingredients.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nano-brewery",
+      "displayName": "Nano Brewery Startup",
+      "crossRefs": [
+        "homebrew-master",
+        "craft-spirits"
+      ],
+      "priority": "P3",
+      "id": 99,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://nano-brewery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-regions-map",
+      "displayName": "Global Wine Regions Map",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-country-tours"
+      ],
+      "priority": "P3",
+      "id": 100,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-regions-map.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-and-cheese",
+      "displayName": "Wine & Cheese Pairing",
+      "crossRefs": [
+        "artisan-cheese",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 101,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-and-cheese.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-chocolate",
+      "displayName": "Wine & Chocolate Pairing",
+      "crossRefs": [
+        "chocolate-connoisseur",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 102,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-chocolate.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-cellar-mgmt",
+      "displayName": "Cellar Management Pro",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-invest"
+      ],
+      "priority": "P3",
+      "id": 103,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-cellar-mgmt.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-cellaring",
+      "displayName": "Beer Cellaring Guide",
+      "crossRefs": [
+        "craft-beer",
+        "barrel-beer"
+      ],
+      "priority": "P3",
+      "id": 104,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-cellaring.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "non-alc-beer",
+      "displayName": "Non-Alcoholic Beer",
+      "crossRefs": [
+        "craft-beer",
+        "zero-proof-spirits"
+      ],
+      "priority": "P3",
+      "id": 105,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://non-alc-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-label-art",
+      "displayName": "Wine Label Art",
+      "crossRefs": [
+        "wine-cellar",
+        "art-auctions"
+      ],
+      "priority": "P3",
+      "id": 106,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-label-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "vineyard-investing",
+      "displayName": "Vineyard Investing",
+      "crossRefs": [
+        "wine-invest",
+        "real-estate-invest"
+      ],
+      "priority": "P3",
+      "id": 107,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://vineyard-investing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "harvest-season",
+      "displayName": "Harvest Season Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 108,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://harvest-season.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-history",
+      "displayName": "Wine History Archive",
+      "crossRefs": [
+        "wine-cellar",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 109,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-history",
+      "displayName": "Beer History Archive",
+      "crossRefs": [
+        "craft-beer",
+        "german-beer"
+      ],
+      "priority": "P3",
+      "id": 110,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "provence-travel",
+      "displayName": "Provence Wine Travel",
+      "crossRefs": [
+        "rose-wines",
+        "french-cuisine"
+      ],
+      "priority": "P3",
+      "id": 111,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://provence-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mediterranean-food",
+      "displayName": "Mediterranean Cuisine Wines",
+      "crossRefs": [
+        "italian-wines",
+        "greek-wines"
+      ],
+      "priority": "P3",
+      "id": 112,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://mediterranean-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "apple-orchards",
+      "displayName": "Apple Orchard & Cider Tours",
+      "crossRefs": [
+        "cider-guide",
+        "farm-to-table"
+      ],
+      "priority": "P3",
+      "id": 113,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://apple-orchards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-ai-sommelier",
+      "displayName": "AI Sommelier",
+      "crossRefs": [
+        "wine-cellar",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 114,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-ai-sommelier.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-ai-pairing",
+      "displayName": "AI Beer Pairing",
+      "crossRefs": [
+        "craft-beer",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 115,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-ai-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "growler-trails",
+      "displayName": "Growler & Taproom Trails",
+      "crossRefs": [
+        "craft-beer",
+        "brewery-tours"
+      ],
+      "priority": "P3",
+      "id": 116,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://growler-trails.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-collector-clubs",
+      "displayName": "Wine Collector Clubs",
+      "crossRefs": [
+        "wine-clubs",
+        "rare-bottles-wine"
+      ],
+      "priority": "P2",
+      "id": 117,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-rating-network",
+      "displayName": "Beer Rating Network",
+      "crossRefs": [
+        "craft-beer",
+        "beer-festivals"
+      ],
+      "priority": "P3",
+      "id": 118,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-rating-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-rating-network",
+      "displayName": "Wine Rating Network",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-collector-clubs"
+      ],
+      "priority": "P3",
+      "id": 119,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-rating-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mixed-drinks-wine",
+      "displayName": "Wine Cocktails & Spritz",
+      "crossRefs": [
+        "wine-cellar",
+        "craft-cocktails"
+      ],
+      "priority": "P3",
+      "id": 120,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://mixed-drinks-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sangria-guide",
+      "displayName": "Sangria & Wine Punch",
+      "crossRefs": [
+        "spanish-wines",
+        "mixed-drinks-wine"
+      ],
+      "priority": "P3",
+      "id": 121,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://sangria-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mulled-wine",
+      "displayName": "Mulled Wine & Winter Drinks",
+      "crossRefs": [
+        "dessert-wines",
+        "holiday-cocktails"
+      ],
+      "priority": "P3",
+      "id": 122,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://mulled-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sake-wine-bridge",
+      "displayName": "Sake & Wine Bridge",
+      "crossRefs": [
+        "sake-mastery",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 123,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://sake-wine-bridge.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-breweries",
+      "displayName": "Local Brewery Finder",
+      "crossRefs": [
+        "craft-beer",
+        "growler-trails"
+      ],
+      "priority": "P3",
+      "id": 124,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://local-breweries.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "local-wineries",
+      "displayName": "Local Winery Finder",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-country-tours"
+      ],
+      "priority": "P3",
+      "id": 125,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://local-wineries.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-gift-guide",
+      "displayName": "Wine Gift Curator",
+      "crossRefs": [
+        "gift-curator",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 126,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-gift-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-gift-guide",
+      "displayName": "Craft Beer Gift Curator",
+      "crossRefs": [
+        "gift-curator",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 127,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-gift-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-service-ritual",
+      "displayName": "Wine Service & Ritual",
+      "crossRefs": [
+        "sommelier-prep",
+        "wine-tasting"
+      ],
+      "priority": "P3",
+      "id": 128,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-service-ritual.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-judging",
+      "displayName": "Beer Judging & BJCP",
+      "crossRefs": [
+        "homebrew-master",
+        "beer-festivals"
+      ],
+      "priority": "P3",
+      "id": 129,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-judging.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-competitions",
+      "displayName": "Wine Competition Tracker",
+      "crossRefs": [
+        "wine-awards-wine",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 130,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-competitions.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-awards-wine",
+      "displayName": "Wine Awards Authority",
+      "crossRefs": [
+        "wine-competitions",
+        "wine-rating-network"
+      ],
+      "priority": "P3",
+      "id": 131,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-awards-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "craft-maltsters",
+      "displayName": "Craft Maltsters Guide",
+      "crossRefs": [
+        "beer-ingredients",
+        "homebrew-master"
+      ],
+      "priority": "P3",
+      "id": 132,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://craft-maltsters.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wild-fermentation-beer",
+      "displayName": "Wild Fermentation Beer",
+      "crossRefs": [
+        "sour-beer",
+        "natural-wines"
+      ],
+      "priority": "P3",
+      "id": 133,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wild-fermentation-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "session-beers",
+      "displayName": "Session & Low-ABV Beer",
+      "crossRefs": [
+        "craft-beer",
+        "non-alc-beer"
+      ],
+      "priority": "P3",
+      "id": 134,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://session-beers.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "imperial-stouts",
+      "displayName": "Imperial Stout Collectors",
+      "crossRefs": [
+        "stout-porter",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 135,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://imperial-stouts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "barleywine-guide",
+      "displayName": "Barleywine & Strong Ale",
+      "crossRefs": [
+        "imperial-stouts",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 136,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://barleywine-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "farmhouse-ales",
+      "displayName": "Farmhouse & Saison",
+      "crossRefs": [
+        "belgian-beer",
+        "sour-beer"
+      ],
+      "priority": "P3",
+      "id": 137,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://farmhouse-ales.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "english-bitter",
+      "displayName": "English Bitter & Mild",
+      "crossRefs": [
+        "craft-beer",
+        "british-invasion"
+      ],
+      "priority": "P3",
+      "id": 138,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://english-bitter.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "scottish-ales",
+      "displayName": "Scottish Ale Guide",
+      "crossRefs": [
+        "scotch-whisky",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 139,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://scottish-ales.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "irish-stout",
+      "displayName": "Irish Stout Tradition",
+      "crossRefs": [
+        "stout-porter",
+        "irish-whiskey"
+      ],
+      "priority": "P3",
+      "id": 140,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://irish-stout.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "czech-pilsner",
+      "displayName": "Czech Pilsner Heritage",
+      "crossRefs": [
+        "lager-pilsner",
+        "german-beer"
+      ],
+      "priority": "P3",
+      "id": 141,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://czech-pilsner.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "trappist-beer",
+      "displayName": "Trappist Beer Authority",
+      "crossRefs": [
+        "belgian-beer",
+        "monastery-spirits"
+      ],
+      "priority": "P3",
+      "id": 142,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://trappist-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "monastery-spirits",
+      "displayName": "Monastery Spirits & Beer",
+      "crossRefs": [
+        "trappist-beer",
+        "liqueurs-cordials"
+      ],
+      "priority": "P3",
+      "id": 143,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://monastery-spirits.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-franchise",
+      "displayName": "Wine Franchise Brands",
+      "crossRefs": [
+        "wine-cellar",
+        "napa-valley"
+      ],
+      "priority": "P3",
+      "id": 144,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-franchise.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-collaborations",
+      "displayName": "Brewery Collaborations",
+      "crossRefs": [
+        "craft-beer",
+        "beer-festivals"
+      ],
+      "priority": "P3",
+      "id": 145,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-collaborations.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-vintage-charts",
+      "displayName": "Vintage Charts Authority",
+      "crossRefs": [
+        "wine-cellar",
+        "wine-invest"
+      ],
+      "priority": "P3",
+      "id": 146,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-vintage-charts.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-release-calendar",
+      "displayName": "Beer Release Calendar",
+      "crossRefs": [
+        "craft-beer",
+        "allocated-bottles"
+      ],
+      "priority": "P3",
+      "id": 147,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-release-calendar.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "terroir-encyclopedia",
+      "displayName": "Terroir Encyclopedia",
+      "crossRefs": [
+        "wine-regions-map",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 148,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://terroir-encyclopedia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "glassware-guide",
+      "displayName": "Glassware & Serveware",
+      "crossRefs": [
+        "wine-cellar",
+        "home-bar"
+      ],
+      "priority": "P3",
+      "id": 149,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://glassware-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "decanter-guide",
+      "displayName": "Decanter & Aeration",
+      "crossRefs": [
+        "wine-cellar",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 150,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://decanter-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cork-cage-craft",
+      "displayName": "Cork & Cage Crafts",
+      "crossRefs": [
+        "wine-cellar",
+        "maker-crafts"
+      ],
+      "priority": "P3",
+      "id": 151,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://cork-cage-craft.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-coaster-collect",
+      "displayName": "Beer Coaster Collecting",
+      "crossRefs": [
+        "craft-beer",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 152,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-coaster-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-cork-collect",
+      "displayName": "Wine Cork Collecting",
+      "crossRefs": [
+        "wine-cellar",
+        "collectibles-vintage"
+      ],
+      "priority": "P3",
+      "id": 153,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-cork-collect.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "home-winemaking",
+      "displayName": "Home Winemaking",
+      "crossRefs": [
+        "wine-cellar",
+        "homebrew-master"
+      ],
+      "priority": "P3",
+      "id": 154,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://home-winemaking.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-allergies",
+      "displayName": "Wine & Diet Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "fitness-nutrition"
+      ],
+      "priority": "P3",
+      "id": 155,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-allergies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "gluten-free-beer",
+      "displayName": "Gluten-Free Beer",
+      "crossRefs": [
+        "craft-beer",
+        "non-alc-beer"
+      ],
+      "priority": "P3",
+      "id": 156,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://gluten-free-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "kosher-wine",
+      "displayName": "Kosher Wine Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "nonfiction-religion"
+      ],
+      "priority": "P3",
+      "id": 157,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://kosher-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "organic-wine",
+      "displayName": "Organic Wine Certification",
+      "crossRefs": [
+        "natural-wines",
+        "wine-cellar"
+      ],
+      "priority": "P3",
+      "id": 158,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://organic-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pet-nat-wine",
+      "displayName": "Pét-Nat & Natural Bubbles",
+      "crossRefs": [
+        "natural-wines",
+        "champagne-sparkling"
+      ],
+      "priority": "P3",
+      "id": 159,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://pet-nat-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "crémant-wines",
+      "displayName": "Crémant & Regional Bubbles",
+      "crossRefs": [
+        "champagne-sparkling",
+        "burgundy-wines"
+      ],
+      "priority": "P3",
+      "id": 160,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://crémant-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "english-sparkling",
+      "displayName": "English Sparkling Wine",
+      "crossRefs": [
+        "champagne-sparkling",
+        "british-cinema"
+      ],
+      "priority": "P3",
+      "id": 161,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://english-sparkling.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "prosecco-guide",
+      "displayName": "Prosecco Authority",
+      "crossRefs": [
+        "champagne-sparkling",
+        "italian-wines"
+      ],
+      "priority": "P3",
+      "id": 162,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://prosecco-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cava-wines",
+      "displayName": "Cava & Spanish Bubbles",
+      "crossRefs": [
+        "spanish-wines",
+        "champagne-sparkling"
+      ],
+      "priority": "P3",
+      "id": 163,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://cava-wines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lambrusco-guide",
+      "displayName": "Lambrusco & Frizzante",
+      "crossRefs": [
+        "italian-wines",
+        "prosecco-guide"
+      ],
+      "priority": "P3",
+      "id": 164,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://lambrusco-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-and-spirits-bridge",
+      "displayName": "Wine & Spirits Bridge",
+      "crossRefs": [
+        "wine-cellar",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 165,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-and-spirits-bridge.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-and-spirits-bridge",
+      "displayName": "Beer & Spirits Bridge",
+      "crossRefs": [
+        "craft-beer",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P3",
+      "id": 166,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-and-spirits-bridge.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "taplist-design",
+      "displayName": "Taplist Design & Management",
+      "crossRefs": [
+        "local-breweries",
+        "bar-management"
+      ],
+      "priority": "P3",
+      "id": 167,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://taplist-design.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "bar-management",
+      "displayName": "Bar Management Pro",
+      "crossRefs": [
+        "home-bar",
+        "bartender-cert"
+      ],
+      "priority": "P3",
+      "id": 168,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://bar-management.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-list-curation",
+      "displayName": "Wine List Curation",
+      "crossRefs": [
+        "restaurant-guide",
+        "sommelier-prep"
+      ],
+      "priority": "P3",
+      "id": 169,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-list-curation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-menu-curation",
+      "displayName": "Beer Menu Curation",
+      "crossRefs": [
+        "restaurant-guide",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 170,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-menu-curation.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "hospitality-beverage",
+      "displayName": "Hospitality Beverage Ops",
+      "crossRefs": [
+        "bar-management",
+        "wine-list-curation"
+      ],
+      "priority": "P3",
+      "id": 171,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://hospitality-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-cost-control",
+      "displayName": "Beverage Cost Control",
+      "crossRefs": [
+        "hospitality-beverage",
+        "personal-finance"
+      ],
+      "priority": "P3",
+      "id": 172,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-cost-control.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "staff-training-bev",
+      "displayName": "Beverage Staff Training",
+      "crossRefs": [
+        "sommelier-prep",
+        "bartender-cert"
+      ],
+      "priority": "P3",
+      "id": 173,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://staff-training-bev.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "consumer-beverage-ed",
+      "displayName": "Consumer Beverage Education",
+      "crossRefs": [
+        "wine-tasting",
+        "beer-judging"
+      ],
+      "priority": "P3",
+      "id": 174,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://consumer-beverage-ed.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-tourism",
+      "displayName": "Beverage Tourism Planner",
+      "crossRefs": [
+        "wine-country-tours",
+        "whiskey-trail-tours"
+      ],
+      "priority": "P3",
+      "id": 175,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-tourism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "global-cocktail-wine",
+      "displayName": "Global Wine Cocktail Culture",
+      "crossRefs": [
+        "mixed-drinks-wine",
+        "craft-cocktails"
+      ],
+      "priority": "P3",
+      "id": 176,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://global-cocktail-wine.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-milestones",
+      "displayName": "Beer Milestone Celebrations",
+      "crossRefs": [
+        "craft-beer",
+        "beer-festivals"
+      ],
+      "priority": "P3",
+      "id": 177,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-milestones.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-milestones",
+      "displayName": "Wine Milestone Celebrations",
+      "crossRefs": [
+        "wine-cellar",
+        "champagne-sparkling"
+      ],
+      "priority": "P3",
+      "id": 178,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-milestones.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "anniversary-pairing",
+      "displayName": "Anniversary Pairing Guide",
+      "crossRefs": [
+        "wine-milestones",
+        "date-night-films"
+      ],
+      "priority": "P3",
+      "id": 179,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://anniversary-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "corporate-wine-events",
+      "displayName": "Corporate Wine Events",
+      "crossRefs": [
+        "wine-clubs",
+        "hospitality-beverage"
+      ],
+      "priority": "P3",
+      "id": 180,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://corporate-wine-events.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-club-organizer",
+      "displayName": "Beer Club Organizer",
+      "crossRefs": [
+        "craft-beer",
+        "beer-collector-clubs"
+      ],
+      "priority": "P2",
+      "id": 181,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-club-organizer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beer-collector-clubs",
+      "displayName": "Beer Collector Clubs",
+      "crossRefs": [
+        "beer-club-organizer",
+        "beer-rating-network"
+      ],
+      "priority": "P3",
+      "id": 182,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beer-collector-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "expert-beverage-badges",
+      "displayName": "Expert Beverage Badges",
+      "crossRefs": [
+        "wine-collector-clubs",
+        "beer-collector-clubs"
+      ],
+      "priority": "P3",
+      "id": 183,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://expert-beverage-badges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cross-beverage-pairing",
+      "displayName": "Cross-Beverage Pairing AI",
+      "crossRefs": [
+        "wine-ai-sommelier",
+        "beer-ai-pairing"
+      ],
+      "priority": "P3",
+      "id": 184,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://cross-beverage-pairing.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "seasonal-beverage",
+      "displayName": "Seasonal Beverage Guide",
+      "crossRefs": [
+        "wine-cellar",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 185,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://seasonal-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "summer-wine-beer",
+      "displayName": "Summer Drinks Guide",
+      "crossRefs": [
+        "rose-wines",
+        "session-beers"
+      ],
+      "priority": "P3",
+      "id": 186,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://summer-wine-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "winter-wine-beer",
+      "displayName": "Winter Drinks Guide",
+      "crossRefs": [
+        "mulled-wine",
+        "imperial-stouts"
+      ],
+      "priority": "P3",
+      "id": 187,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://winter-wine-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "spring-beverage",
+      "displayName": "Spring Release Guide",
+      "crossRefs": [
+        "beer-release-calendar",
+        "wine-vintage-charts"
+      ],
+      "priority": "P3",
+      "id": 188,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://spring-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fall-beverage",
+      "displayName": "Fall Harvest Beverage",
+      "crossRefs": [
+        "harvest-season",
+        "pumpkin-beer"
+      ],
+      "priority": "P3",
+      "id": 189,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://fall-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pumpkin-beer",
+      "displayName": "Pumpkin & Seasonal Beer",
+      "crossRefs": [
+        "craft-beer",
+        "fall-beverage"
+      ],
+      "priority": "P3",
+      "id": 190,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://pumpkin-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "holiday-beer",
+      "displayName": "Holiday Beer Guide",
+      "crossRefs": [
+        "craft-beer",
+        "winter-wine-beer"
+      ],
+      "priority": "P3",
+      "id": 191,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://holiday-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-photography",
+      "displayName": "Beverage Photography",
+      "crossRefs": [
+        "wine-cellar",
+        "craft-beer"
+      ],
+      "priority": "P3",
+      "id": 192,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-photography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-influencer",
+      "displayName": "Beverage Creator Hub",
+      "crossRefs": [
+        "beverage-photography",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 193,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-influencer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-newsletter",
+      "displayName": "Beverage Newsletter Builder",
+      "crossRefs": [
+        "beverage-influencer",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 194,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-newsletter.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-subscription-box",
+      "displayName": "Subscription Box Curator",
+      "crossRefs": [
+        "wine-gift-guide",
+        "beer-gift-guide"
+      ],
+      "priority": "P3",
+      "id": 195,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-subscription-box.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-loyalty",
+      "displayName": "Beverage Loyalty Programs",
+      "crossRefs": [
+        "local-breweries",
+        "local-wineries"
+      ],
+      "priority": "P3",
+      "id": 196,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-loyalty.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "qr-menu-beverage",
+      "displayName": "QR Beverage Menus",
+      "crossRefs": [
+        "taplist-design",
+        "restaurant-guide"
+      ],
+      "priority": "P3",
+      "id": 197,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://qr-menu-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "inventory-beverage",
+      "displayName": "Beverage Inventory Tracker",
+      "crossRefs": [
+        "wine-cellar-mgmt",
+        "beer-cellaring"
+      ],
+      "priority": "P3",
+      "id": 198,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://inventory-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pos-beverage",
+      "displayName": "Beverage POS Integration",
+      "crossRefs": [
+        "hospitality-beverage",
+        "inventory-beverage"
+      ],
+      "priority": "P3",
+      "id": 199,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://pos-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "distributor-beverage",
+      "displayName": "Beverage Distributor Guide",
+      "crossRefs": [
+        "hospitality-beverage",
+        "nano-brewery"
+      ],
+      "priority": "P3",
+      "id": 200,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://distributor-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "regulatory-beverage",
+      "displayName": "Beverage Regulations Guide",
+      "crossRefs": [
+        "homebrew-master",
+        "home-winemaking"
+      ],
+      "priority": "P3",
+      "id": 201,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://regulatory-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "shipping-beverage",
+      "displayName": "Beverage Shipping Laws",
+      "crossRefs": [
+        "regulatory-beverage",
+        "wine-invest"
+      ],
+      "priority": "P3",
+      "id": 202,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://shipping-beverage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "drizly-alternatives",
+      "displayName": "Beverage Delivery Guide",
+      "crossRefs": [
+        "local-breweries",
+        "local-wineries"
+      ],
+      "priority": "P3",
+      "id": 203,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://drizly-alternatives.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-sustainability",
+      "displayName": "Sustainable Beverage",
+      "crossRefs": [
+        "organic-wine",
+        "craft-spirits"
+      ],
+      "priority": "P3",
+      "id": 204,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-sustainability.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "water-source-beer",
+      "displayName": "Brewing Water Chemistry",
+      "crossRefs": [
+        "beer-ingredients",
+        "homebrew-master"
+      ],
+      "priority": "P3",
+      "id": 205,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://water-source-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "yeast-lab-beer",
+      "displayName": "Yeast Lab & Cultures",
+      "crossRefs": [
+        "homebrew-master",
+        "wild-fermentation-beer"
+      ],
+      "priority": "P3",
+      "id": 206,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://yeast-lab-beer.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "wine-lab-analysis",
+      "displayName": "Wine Lab Analysis",
+      "crossRefs": [
+        "home-winemaking",
+        "wine-vintage-charts"
+      ],
+      "priority": "P3",
+      "id": 207,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://wine-lab-analysis.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "blind-tasting-club",
+      "displayName": "Blind Tasting Clubs",
+      "crossRefs": [
+        "wine-tasting",
+        "bourbon-connoisseur"
+      ],
+      "priority": "P2",
+      "id": 208,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://blind-tasting-club.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-expert-network",
+      "displayName": "Beverage Expert Network",
+      "crossRefs": [
+        "expert-beverage-badges",
+        "blind-tasting-club"
+      ],
+      "priority": "P3",
+      "id": 209,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-expert-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-tier3-social",
+      "displayName": "Beverage Social Clubs",
+      "crossRefs": [
+        "wine-clubs",
+        "beer-club-organizer"
+      ],
+      "priority": "P3",
+      "id": 210,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-tier3-social.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "unified-tasting-journal",
+      "displayName": "Unified Tasting Journal",
+      "crossRefs": [
+        "tasting-notes",
+        "reading-journal"
+      ],
+      "priority": "P3",
+      "id": 211,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://unified-tasting-journal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "beverage-cross-app-hub",
+      "displayName": "Beverage Cross-App Hub",
+      "crossRefs": [
+        "cross-beverage-pairing",
+        "meals-pairing"
+      ],
+      "priority": "P3",
+      "id": 212,
+      "vertical_id": "wine-beer",
+      "vertical_slug": "wine-beer",
+      "site_url": "https://beverage-cross-app-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

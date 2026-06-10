@@ -1,0 +1,705 @@
+{
+  "vertical": {
+    "id": "history-culture",
+    "slug": "history-culture",
+    "name": "History & Culture",
+    "icon": "🏛️",
+    "app_count": 48,
+    "is_mega_vertical": false
+  },
+  "apps": [
+    {
+      "slug": "genealogy-family",
+      "displayName": "Genealogy & Family Tree",
+      "crossRefs": [
+        "history-scholar",
+        "militaria-history"
+      ],
+      "priority": "P3",
+      "id": 1780,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://genealogy-family.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mythology-folklore",
+      "displayName": "Mythology & Folklore Hub",
+      "crossRefs": [
+        "fiction-fantasy",
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1781,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://mythology-folklore.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "ancient-history",
+      "displayName": "Ancient History",
+      "crossRefs": [
+        "history-scholar",
+        "historical-sites"
+      ],
+      "priority": "P3",
+      "id": 1782,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://ancient-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "medieval-history",
+      "displayName": "Medieval History",
+      "crossRefs": [
+        "ancient-history",
+        "militaria-history"
+      ],
+      "priority": "P3",
+      "id": 1783,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://medieval-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "renaissance-history",
+      "displayName": "Renaissance History",
+      "crossRefs": [
+        "medieval-history",
+        "art-history"
+      ],
+      "priority": "P3",
+      "id": 1784,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://renaissance-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "art-history",
+      "displayName": "Art History Authority",
+      "crossRefs": [
+        "art-auctions",
+        "renaissance-history"
+      ],
+      "priority": "P3",
+      "id": 1785,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://art-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "military-history",
+      "displayName": "Military History",
+      "crossRefs": [
+        "militaria-history",
+        "war-films"
+      ],
+      "priority": "P3",
+      "id": 1786,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://military-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "american-history",
+      "displayName": "American History",
+      "crossRefs": [
+        "history-scholar",
+        "road-trip-america"
+      ],
+      "priority": "P3",
+      "id": 1787,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://american-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "european-history",
+      "displayName": "European History",
+      "crossRefs": [
+        "european-travel",
+        "medieval-history"
+      ],
+      "priority": "P3",
+      "id": 1788,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://european-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "asian-history",
+      "displayName": "Asian History",
+      "crossRefs": [
+        "asian-travel",
+        "world-literature"
+      ],
+      "priority": "P3",
+      "id": 1789,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://asian-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "african-history",
+      "displayName": "African History",
+      "crossRefs": [
+        "african-cinema",
+        "african-literature"
+      ],
+      "priority": "P3",
+      "id": 1790,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://african-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "latin-history",
+      "displayName": "Latin American History",
+      "crossRefs": [
+        "latin-america-travel",
+        "latin-cinema"
+      ],
+      "priority": "P3",
+      "id": 1791,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://latin-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indigenous-history",
+      "displayName": "Indigenous History",
+      "crossRefs": [
+        "indigenous-literature",
+        "national-parks"
+      ],
+      "priority": "P3",
+      "id": 1792,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://indigenous-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "oral-history",
+      "displayName": "Oral History Projects",
+      "crossRefs": [
+        "genealogy-family",
+        "storytelling-oral"
+      ],
+      "priority": "P3",
+      "id": 1793,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://oral-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "museum-guide",
+      "displayName": "Museum Guide Elite",
+      "crossRefs": [
+        "art-history",
+        "historical-sites"
+      ],
+      "priority": "P3",
+      "id": 1794,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://museum-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-heritage",
+      "displayName": "Cultural Heritage Sites",
+      "crossRefs": [
+        "museum-guide",
+        "unesco-sites"
+      ],
+      "priority": "P3",
+      "id": 1795,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-heritage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "unesco-sites",
+      "displayName": "UNESCO World Heritage",
+      "crossRefs": [
+        "cultural-heritage",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 1796,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://unesco-sites.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "archaeology-guide",
+      "displayName": "Archaeology Guide",
+      "crossRefs": [
+        "ancient-history",
+        "museum-guide"
+      ],
+      "priority": "P3",
+      "id": 1797,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://archaeology-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "anthropology-culture",
+      "displayName": "Anthropology & Culture",
+      "crossRefs": [
+        "archaeology-guide",
+        "world-music"
+      ],
+      "priority": "P3",
+      "id": 1798,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://anthropology-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "folklore-festivals",
+      "displayName": "Folklore Festivals",
+      "crossRefs": [
+        "mythology-folklore",
+        "music-festivals"
+      ],
+      "priority": "P3",
+      "id": 1799,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://folklore-festivals.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "history-clubs",
+      "displayName": "History Enthusiast Clubs",
+      "crossRefs": [
+        "history-scholar",
+        "museum-guide"
+      ],
+      "priority": "P2",
+      "id": 1800,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://history-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-01",
+      "displayName": "Historical Era Deep Dive 1",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1801,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-02",
+      "displayName": "Historical Era Deep Dive 2",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1802,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-03",
+      "displayName": "Historical Era Deep Dive 3",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1803,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-04",
+      "displayName": "Historical Era Deep Dive 4",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1804,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-05",
+      "displayName": "Historical Era Deep Dive 5",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1805,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-06",
+      "displayName": "Historical Era Deep Dive 6",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1806,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-07",
+      "displayName": "Historical Era Deep Dive 7",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1807,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-08",
+      "displayName": "Historical Era Deep Dive 8",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1808,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-09",
+      "displayName": "Historical Era Deep Dive 9",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1809,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-10",
+      "displayName": "Historical Era Deep Dive 10",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1810,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-11",
+      "displayName": "Historical Era Deep Dive 11",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1811,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-12",
+      "displayName": "Historical Era Deep Dive 12",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1812,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-13",
+      "displayName": "Historical Era Deep Dive 13",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1813,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-13.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-14",
+      "displayName": "Historical Era Deep Dive 14",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1814,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-14.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "historical-era-15",
+      "displayName": "Historical Era Deep Dive 15",
+      "crossRefs": [
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 1815,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://historical-era-15.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-01",
+      "displayName": "Cultural Tradition 1",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1816,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-01.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-02",
+      "displayName": "Cultural Tradition 2",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1817,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-02.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-03",
+      "displayName": "Cultural Tradition 3",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1818,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-03.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-04",
+      "displayName": "Cultural Tradition 4",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1819,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-04.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-05",
+      "displayName": "Cultural Tradition 5",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1820,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-05.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-06",
+      "displayName": "Cultural Tradition 6",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1821,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-06.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-07",
+      "displayName": "Cultural Tradition 7",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1822,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-07.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-08",
+      "displayName": "Cultural Tradition 8",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1823,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-08.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-09",
+      "displayName": "Cultural Tradition 9",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1824,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-09.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-10",
+      "displayName": "Cultural Tradition 10",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1825,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-10.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-11",
+      "displayName": "Cultural Tradition 11",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1826,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-11.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cultural-tradition-12",
+      "displayName": "Cultural Tradition 12",
+      "crossRefs": [
+        "cultural-heritage"
+      ],
+      "priority": "P3",
+      "id": 1827,
+      "vertical_id": "history-culture",
+      "vertical_slug": "history-culture",
+      "site_url": "https://cultural-tradition-12.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}

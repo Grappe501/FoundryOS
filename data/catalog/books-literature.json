@@ -1,0 +1,1902 @@
+{
+  "vertical": {
+    "id": "books-literature",
+    "slug": "books-literature",
+    "name": "Books & Literature",
+    "icon": "📚",
+    "app_count": 126,
+    "is_mega_vertical": true
+  },
+  "apps": [
+    {
+      "slug": "fiction-fantasy",
+      "displayName": "Fantasy Fiction Authority",
+      "crossRefs": [
+        "fiction-scifi",
+        "graphic-novels"
+      ],
+      "priority": "P1",
+      "id": 602,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-fantasy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-scifi",
+      "displayName": "Science Fiction Authority",
+      "crossRefs": [
+        "fiction-fantasy",
+        "film-scifi"
+      ],
+      "priority": "P3",
+      "id": 603,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-scifi.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-mystery",
+      "displayName": "Mystery & Thriller Fiction",
+      "crossRefs": [
+        "fiction-crime",
+        "film-noir"
+      ],
+      "priority": "P3",
+      "id": 604,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-mystery.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-romance",
+      "displayName": "Romance Fiction Guide",
+      "crossRefs": [
+        "fiction-literary",
+        "book-clubs"
+      ],
+      "priority": "P3",
+      "id": 605,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-romance.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-horror",
+      "displayName": "Horror Fiction Authority",
+      "crossRefs": [
+        "fiction-gothic",
+        "film-horror"
+      ],
+      "priority": "P3",
+      "id": 606,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-horror.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-literary",
+      "displayName": "Literary Fiction Guide",
+      "crossRefs": [
+        "fiction-romance",
+        "author-studies"
+      ],
+      "priority": "P3",
+      "id": 607,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-literary.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-historical",
+      "displayName": "Historical Fiction Guide",
+      "crossRefs": [
+        "history-scholar",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 608,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-historical.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-crime",
+      "displayName": "Crime Fiction Authority",
+      "crossRefs": [
+        "fiction-mystery",
+        "film-noir"
+      ],
+      "priority": "P3",
+      "id": 609,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-crime.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-western",
+      "displayName": "Western Fiction Guide",
+      "crossRefs": [
+        "fiction-historical",
+        "country-music"
+      ],
+      "priority": "P3",
+      "id": 610,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-western.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-war",
+      "displayName": "War Fiction Archive",
+      "crossRefs": [
+        "militaria-history",
+        "fiction-historical"
+      ],
+      "priority": "P3",
+      "id": 611,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-war.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-gothic",
+      "displayName": "Gothic Fiction Guide",
+      "crossRefs": [
+        "fiction-horror",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 612,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-gothic.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-dystopian",
+      "displayName": "Dystopian Fiction Guide",
+      "crossRefs": [
+        "fiction-scifi",
+        "philosophy-think"
+      ],
+      "priority": "P3",
+      "id": 613,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-dystopian.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-satire",
+      "displayName": "Satire & Humor Fiction",
+      "crossRefs": [
+        "fiction-literary",
+        "comedy-film"
+      ],
+      "priority": "P3",
+      "id": 614,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-satire.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-magical-realism",
+      "displayName": "Magical Realism Guide",
+      "crossRefs": [
+        "fiction-literary",
+        "fiction-fantasy"
+      ],
+      "priority": "P3",
+      "id": 615,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-magical-realism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-short-stories",
+      "displayName": "Short Story Collections",
+      "crossRefs": [
+        "fiction-literary",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 616,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-short-stories.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-ya",
+      "displayName": "Young Adult Fiction",
+      "crossRefs": [
+        "fiction-fantasy",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 617,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-ya.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-children",
+      "displayName": "Children's Literature",
+      "crossRefs": [
+        "fiction-ya",
+        "children-books"
+      ],
+      "priority": "P3",
+      "id": 618,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-children.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-graphic-novels",
+      "displayName": "Graphic Novels Authority",
+      "crossRefs": [
+        "comic-books",
+        "fiction-fantasy"
+      ],
+      "priority": "P3",
+      "id": 619,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-graphic-novels.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-manga",
+      "displayName": "Manga Collection",
+      "crossRefs": [
+        "fiction-graphic-novels",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 620,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-manga.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-urban-fantasy",
+      "displayName": "Urban Fantasy Guide",
+      "crossRefs": [
+        "fiction-fantasy",
+        "fiction-horror"
+      ],
+      "priority": "P3",
+      "id": 621,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-urban-fantasy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-history",
+      "displayName": "History Nonfiction",
+      "crossRefs": [
+        "history-scholar",
+        "fiction-historical"
+      ],
+      "priority": "P2",
+      "id": 622,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-history.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-science",
+      "displayName": "Science Nonfiction",
+      "crossRefs": [
+        "science-explorer",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 623,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-science.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-biography",
+      "displayName": "Biography & Memoir",
+      "crossRefs": [
+        "author-studies",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 624,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-biography.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-business",
+      "displayName": "Business Books Authority",
+      "crossRefs": [
+        "personal-finance",
+        "nonfiction-biography"
+      ],
+      "priority": "P3",
+      "id": 625,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-business.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-psychology",
+      "displayName": "Psychology Nonfiction",
+      "crossRefs": [
+        "philosophy-think",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 626,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-psychology.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-true-crime",
+      "displayName": "True Crime Books",
+      "crossRefs": [
+        "fiction-crime",
+        "nonfiction-biography"
+      ],
+      "priority": "P3",
+      "id": 627,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-true-crime.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-travel",
+      "displayName": "Travel Writing & Guides",
+      "crossRefs": [
+        "world-travel",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 628,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-food",
+      "displayName": "Food Writing & Cookbooks",
+      "crossRefs": [
+        "meals-pairing",
+        "cookbook-collection"
+      ],
+      "priority": "P3",
+      "id": 629,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-food.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-nature",
+      "displayName": "Nature Writing",
+      "crossRefs": [
+        "wildlife-watching",
+        "nonfiction-science"
+      ],
+      "priority": "P3",
+      "id": 630,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-nature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-politics",
+      "displayName": "Political Nonfiction",
+      "crossRefs": [
+        "nonfiction-history",
+        "philosophy-think"
+      ],
+      "priority": "P3",
+      "id": 631,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-politics.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-self-help",
+      "displayName": "Self-Help & Personal Growth",
+      "crossRefs": [
+        "meditation-mindful",
+        "fitness-training"
+      ],
+      "priority": "P3",
+      "id": 632,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-self-help.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-technology",
+      "displayName": "Technology Nonfiction",
+      "crossRefs": [
+        "ai-tools-guide",
+        "nonfiction-science"
+      ],
+      "priority": "P3",
+      "id": 633,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-technology.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-art",
+      "displayName": "Art & Design Books",
+      "crossRefs": [
+        "art-auctions",
+        "photography-art"
+      ],
+      "priority": "P3",
+      "id": 634,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-art.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-religion",
+      "displayName": "Religious & Spiritual Texts",
+      "crossRefs": [
+        "philosophy-think",
+        "meditation-mindful"
+      ],
+      "priority": "P3",
+      "id": 635,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-religion.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-sports",
+      "displayName": "Sports Books & Bios",
+      "crossRefs": [
+        "college-baseball",
+        "sports-cards"
+      ],
+      "priority": "P3",
+      "id": 636,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-sports.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-music",
+      "displayName": "Music Books & Bios",
+      "crossRefs": [
+        "vinyl-records",
+        "jazz-masters"
+      ],
+      "priority": "P3",
+      "id": 637,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-music.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-film",
+      "displayName": "Film Books & Theory",
+      "crossRefs": [
+        "film-cinema",
+        "director-auteurs"
+      ],
+      "priority": "P3",
+      "id": 638,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-film.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-philosophy",
+      "displayName": "Philosophy Books",
+      "crossRefs": [
+        "philosophy-think",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 639,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-philosophy.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-poetry",
+      "displayName": "Poetry Collections",
+      "crossRefs": [
+        "classic-literature",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 640,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-poetry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nonfiction-essays",
+      "displayName": "Essay Collections",
+      "crossRefs": [
+        "fiction-literary",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 641,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nonfiction-essays.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-shakespeare",
+      "displayName": "Shakespeare Studies",
+      "crossRefs": [
+        "classic-literature",
+        "theater-stage"
+      ],
+      "priority": "P3",
+      "id": 642,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-shakespeare.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-hemingway",
+      "displayName": "Hemingway Authority",
+      "crossRefs": [
+        "fiction-literary",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 643,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-hemingway.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-tolkien",
+      "displayName": "Tolkien & Middle-earth",
+      "crossRefs": [
+        "fiction-fantasy",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 644,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-tolkien.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-stephen-king",
+      "displayName": "Stephen King Universe",
+      "crossRefs": [
+        "fiction-horror",
+        "fiction-mystery"
+      ],
+      "priority": "P3",
+      "id": 645,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-stephen-king.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-agatha-christie",
+      "displayName": "Agatha Christie Mysteries",
+      "crossRefs": [
+        "fiction-mystery",
+        "fiction-crime"
+      ],
+      "priority": "P3",
+      "id": 646,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-agatha-christie.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-jane-austen",
+      "displayName": "Jane Austen Collection",
+      "crossRefs": [
+        "fiction-romance",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 647,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-jane-austen.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-dickens",
+      "displayName": "Dickens & Victorian Lit",
+      "crossRefs": [
+        "classic-literature",
+        "fiction-historical"
+      ],
+      "priority": "P3",
+      "id": 648,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-dickens.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-murakami",
+      "displayName": "Murakami Collection",
+      "crossRefs": [
+        "fiction-magical-realism",
+        "japanese-cinema"
+      ],
+      "priority": "P3",
+      "id": 649,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-murakami.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-grisham",
+      "displayName": "Legal Thriller Authority",
+      "crossRefs": [
+        "fiction-crime",
+        "fiction-mystery"
+      ],
+      "priority": "P3",
+      "id": 650,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-grisham.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-atwood",
+      "displayName": "Margaret Atwood Studies",
+      "crossRefs": [
+        "fiction-dystopian",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 651,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-atwood.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-morrison",
+      "displayName": "Toni Morrison Studies",
+      "crossRefs": [
+        "fiction-literary",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 652,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-morrison.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-orwell",
+      "displayName": "Orwell & Political Fiction",
+      "crossRefs": [
+        "fiction-dystopian",
+        "nonfiction-politics"
+      ],
+      "priority": "P3",
+      "id": 653,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-orwell.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-borges",
+      "displayName": "Borges & Magical Prose",
+      "crossRefs": [
+        "fiction-magical-realism",
+        "fiction-short-stories"
+      ],
+      "priority": "P3",
+      "id": 654,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-borges.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-poe",
+      "displayName": "Edgar Allan Poe Archive",
+      "crossRefs": [
+        "fiction-gothic",
+        "fiction-horror"
+      ],
+      "priority": "P3",
+      "id": 655,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-poe.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-doyle",
+      "displayName": "Sherlock Holmes Authority",
+      "crossRefs": [
+        "fiction-mystery",
+        "fiction-crime"
+      ],
+      "priority": "P3",
+      "id": 656,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-doyle.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "classic-literature",
+      "displayName": "Classic Literature Canon",
+      "crossRefs": [
+        "author-shakespeare",
+        "fiction-literary"
+      ],
+      "priority": "P2",
+      "id": 657,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://classic-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "rare-books",
+      "displayName": "Rare & First Edition Books",
+      "crossRefs": [
+        "book-collecting",
+        "antique-furniture"
+      ],
+      "priority": "P2",
+      "id": 658,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://rare-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "signed-books",
+      "displayName": "Signed & Limited Editions",
+      "crossRefs": [
+        "rare-books",
+        "autograph-collection"
+      ],
+      "priority": "P3",
+      "id": 659,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://signed-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "audiobook-guide",
+      "displayName": "Audiobook Collection",
+      "crossRefs": [
+        "fiction-literary",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 660,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://audiobook-guide.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-clubs",
+      "displayName": "Book Club Organizer",
+      "crossRefs": [
+        "fiction-literary",
+        "book-reviews-network"
+      ],
+      "priority": "P2",
+      "id": 661,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-clubs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-reviews-network",
+      "displayName": "Book Reviews Network",
+      "crossRefs": [
+        "book-clubs",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 662,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-reviews-network.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "reading-journal",
+      "displayName": "Reading Journal & Tracker",
+      "crossRefs": [
+        "book-clubs",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 663,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://reading-journal.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "library-builder",
+      "displayName": "Personal Library Builder",
+      "crossRefs": [
+        "rare-books",
+        "reading-journal"
+      ],
+      "priority": "P3",
+      "id": 664,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://library-builder.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-awards",
+      "displayName": "Book Awards Tracker",
+      "crossRefs": [
+        "fiction-literary",
+        "book-reviews-network"
+      ],
+      "priority": "P3",
+      "id": 665,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-awards.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "pulitzer-books",
+      "displayName": "Pulitzer Prize Books",
+      "crossRefs": [
+        "book-awards",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 666,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://pulitzer-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "booker-prize",
+      "displayName": "Booker Prize Collection",
+      "crossRefs": [
+        "book-awards",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 667,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://booker-prize.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "nobel-literature",
+      "displayName": "Nobel Literature Laureates",
+      "crossRefs": [
+        "book-awards",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 668,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://nobel-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "independent-press",
+      "displayName": "Independent Press Guide",
+      "crossRefs": [
+        "fiction-literary",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 669,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://independent-press.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "literary-magazines",
+      "displayName": "Literary Magazines Guide",
+      "crossRefs": [
+        "fiction-short-stories",
+        "writing-craft"
+      ],
+      "priority": "P3",
+      "id": 670,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://literary-magazines.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-fairs",
+      "displayName": "Book Fairs & Festivals",
+      "crossRefs": [
+        "rare-books",
+        "author-studies"
+      ],
+      "priority": "P3",
+      "id": 671,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-fairs.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "children-books",
+      "displayName": "Children's Books Authority",
+      "crossRefs": [
+        "fiction-children",
+        "fiction-ya"
+      ],
+      "priority": "P3",
+      "id": 672,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://children-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "middle-grade-books",
+      "displayName": "Middle Grade Fiction",
+      "crossRefs": [
+        "children-books",
+        "fiction-ya"
+      ],
+      "priority": "P3",
+      "id": 673,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://middle-grade-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "cookbook-collection",
+      "displayName": "Cookbook Collection",
+      "crossRefs": [
+        "meals-pairing",
+        "nonfiction-food"
+      ],
+      "priority": "P3",
+      "id": 674,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://cookbook-collection.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "coffee-table-books",
+      "displayName": "Coffee Table Books",
+      "crossRefs": [
+        "photography-art",
+        "nonfiction-art"
+      ],
+      "priority": "P3",
+      "id": 675,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://coffee-table-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "reference-encyclopedia",
+      "displayName": "Reference & Encyclopedia",
+      "crossRefs": [
+        "nonfiction-science",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 676,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://reference-encyclopedia.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "textbooks-academic",
+      "displayName": "Academic Textbooks",
+      "crossRefs": [
+        "science-explorer",
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 677,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://textbooks-academic.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "writing-craft-books",
+      "displayName": "Writing Craft & Technique",
+      "crossRefs": [
+        "writing-craft",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 678,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://writing-craft-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "publishing-industry",
+      "displayName": "Publishing Industry Guide",
+      "crossRefs": [
+        "writing-craft-books",
+        "independent-press"
+      ],
+      "priority": "P3",
+      "id": 679,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://publishing-industry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-illustration",
+      "displayName": "Book Illustration Art",
+      "crossRefs": [
+        "fiction-children",
+        "nonfiction-art"
+      ],
+      "priority": "P3",
+      "id": 680,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-illustration.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "calligraphy-lettering",
+      "displayName": "Calligraphy & Lettering",
+      "crossRefs": [
+        "fountain-pens",
+        "book-illustration"
+      ],
+      "priority": "P3",
+      "id": 681,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://calligraphy-lettering.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "antiquarian-books",
+      "displayName": "Antiquarian Books",
+      "crossRefs": [
+        "rare-books",
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 682,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://antiquarian-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "manuscripts-archive",
+      "displayName": "Manuscripts & Archives",
+      "crossRefs": [
+        "antiquarian-books",
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 683,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://manuscripts-archive.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "world-literature",
+      "displayName": "World Literature Guide",
+      "crossRefs": [
+        "classic-literature",
+        "world-travel"
+      ],
+      "priority": "P3",
+      "id": 684,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://world-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "african-literature",
+      "displayName": "African Literature",
+      "crossRefs": [
+        "world-literature",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 685,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://african-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "latin-american-lit",
+      "displayName": "Latin American Literature",
+      "crossRefs": [
+        "world-literature",
+        "author-borges"
+      ],
+      "priority": "P3",
+      "id": 686,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://latin-american-lit.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "asian-literature",
+      "displayName": "Asian Literature Guide",
+      "crossRefs": [
+        "world-literature",
+        "author-murakami"
+      ],
+      "priority": "P3",
+      "id": 687,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://asian-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "russian-literature",
+      "displayName": "Russian Literature",
+      "crossRefs": [
+        "world-literature",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 688,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://russian-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "french-literature",
+      "displayName": "French Literature",
+      "crossRefs": [
+        "world-literature",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 689,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://french-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "german-literature",
+      "displayName": "German Literature",
+      "crossRefs": [
+        "world-literature",
+        "classic-literature"
+      ],
+      "priority": "P3",
+      "id": 690,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://german-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indian-literature",
+      "displayName": "Indian Literature",
+      "crossRefs": [
+        "world-literature",
+        "asian-literature"
+      ],
+      "priority": "P3",
+      "id": 691,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://indian-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "middle-eastern-lit",
+      "displayName": "Middle Eastern Literature",
+      "crossRefs": [
+        "world-literature",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 692,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://middle-eastern-lit.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "indigenous-literature",
+      "displayName": "Indigenous Literature",
+      "crossRefs": [
+        "world-literature",
+        "nonfiction-history"
+      ],
+      "priority": "P3",
+      "id": 693,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://indigenous-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "lgbtq-literature",
+      "displayName": "LGBTQ+ Literature",
+      "crossRefs": [
+        "fiction-literary",
+        "world-literature"
+      ],
+      "priority": "P3",
+      "id": 694,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://lgbtq-literature.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "speculative-fiction",
+      "displayName": "Speculative Fiction Hub",
+      "crossRefs": [
+        "fiction-scifi",
+        "fiction-fantasy"
+      ],
+      "priority": "P3",
+      "id": 695,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://speculative-fiction.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-to-film",
+      "displayName": "Book to Film Adaptations",
+      "crossRefs": [
+        "fiction-literary",
+        "film-cinema"
+      ],
+      "priority": "P3",
+      "id": 696,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-to-film.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-to-tv",
+      "displayName": "Book to TV Adaptations",
+      "crossRefs": [
+        "fiction-literary",
+        "tv-drama"
+      ],
+      "priority": "P3",
+      "id": 697,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-to-tv.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "literary-prizes-hub",
+      "displayName": "Global Literary Prizes",
+      "crossRefs": [
+        "book-awards",
+        "world-literature"
+      ],
+      "priority": "P3",
+      "id": 698,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://literary-prizes-hub.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "speed-reading",
+      "displayName": "Speed Reading & Retention",
+      "crossRefs": [
+        "reading-journal",
+        "language-learning"
+      ],
+      "priority": "P3",
+      "id": 699,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://speed-reading.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-binding",
+      "displayName": "Book Binding & Repair",
+      "crossRefs": [
+        "rare-books",
+        "antiquarian-books"
+      ],
+      "priority": "P3",
+      "id": 700,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-binding.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "typography-books",
+      "displayName": "Typography & Book Design",
+      "crossRefs": [
+        "publishing-industry",
+        "calligraphy-lettering"
+      ],
+      "priority": "P3",
+      "id": 701,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://typography-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "zines-indie",
+      "displayName": "Zines & Indie Publishing",
+      "crossRefs": [
+        "independent-press",
+        "literary-magazines"
+      ],
+      "priority": "P3",
+      "id": 702,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://zines-indie.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "storytelling-oral",
+      "displayName": "Oral Storytelling Tradition",
+      "crossRefs": [
+        "fiction-short-stories",
+        "folk-americana"
+      ],
+      "priority": "P3",
+      "id": 703,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://storytelling-oral.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "mythology-folklore",
+      "displayName": "Mythology & Folklore",
+      "crossRefs": [
+        "fiction-fantasy",
+        "history-scholar"
+      ],
+      "priority": "P3",
+      "id": 704,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://mythology-folklore.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fairy-tales",
+      "displayName": "Fairy Tales & Fables",
+      "crossRefs": [
+        "children-books",
+        "mythology-folklore"
+      ],
+      "priority": "P3",
+      "id": 705,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fairy-tales.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "detective-fiction",
+      "displayName": "Detective Fiction Masters",
+      "crossRefs": [
+        "fiction-mystery",
+        "author-doyle"
+      ],
+      "priority": "P3",
+      "id": 706,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://detective-fiction.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "espionage-fiction",
+      "displayName": "Espionage Fiction",
+      "crossRefs": [
+        "fiction-thriller",
+        "fiction-crime"
+      ],
+      "priority": "P3",
+      "id": 707,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://espionage-fiction.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "fiction-thriller",
+      "displayName": "Thriller Fiction Authority",
+      "crossRefs": [
+        "fiction-mystery",
+        "espionage-fiction"
+      ],
+      "priority": "P3",
+      "id": 708,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://fiction-thriller.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-collecting",
+      "displayName": "Book Collecting Guide",
+      "crossRefs": [
+        "rare-books",
+        "library-builder"
+      ],
+      "priority": "P3",
+      "id": 709,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-collecting.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "author-studies",
+      "displayName": "Author Studies Hub",
+      "crossRefs": [
+        "classic-literature",
+        "nonfiction-biography"
+      ],
+      "priority": "P3",
+      "id": 710,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://author-studies.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "literary-criticism",
+      "displayName": "Literary Criticism",
+      "crossRefs": [
+        "classic-literature",
+        "philosophy-think"
+      ],
+      "priority": "P3",
+      "id": 711,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://literary-criticism.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "booktok-culture",
+      "displayName": "BookTok & Reading Culture",
+      "crossRefs": [
+        "book-reviews-network",
+        "fiction-romance"
+      ],
+      "priority": "P3",
+      "id": 712,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://booktok-culture.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "little-free-library",
+      "displayName": "Little Free Library Network",
+      "crossRefs": [
+        "book-clubs",
+        "community-reading"
+      ],
+      "priority": "P3",
+      "id": 713,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://little-free-library.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "community-reading",
+      "displayName": "Community Reading Programs",
+      "crossRefs": [
+        "book-clubs",
+        "little-free-library"
+      ],
+      "priority": "P3",
+      "id": 714,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://community-reading.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "blind-date-books",
+      "displayName": "Blind Date with a Book",
+      "crossRefs": [
+        "book-clubs",
+        "fiction-literary"
+      ],
+      "priority": "P3",
+      "id": 715,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://blind-date-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "serial-fiction",
+      "displayName": "Serialized Fiction & Episodes",
+      "crossRefs": [
+        "fiction-short-stories",
+        "podcast-creator"
+      ],
+      "priority": "P3",
+      "id": 716,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://serial-fiction.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "interactive-fiction",
+      "displayName": "Interactive Fiction",
+      "crossRefs": [
+        "fiction-fantasy",
+        "gaming-rpg"
+      ],
+      "priority": "P3",
+      "id": 717,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://interactive-fiction.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-quotations",
+      "displayName": "Quotations & Passages",
+      "crossRefs": [
+        "classic-literature",
+        "reading-journal"
+      ],
+      "priority": "P3",
+      "id": 718,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-quotations.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "literary-travel",
+      "displayName": "Literary Travel Destinations",
+      "crossRefs": [
+        "nonfiction-travel",
+        "author-studies"
+      ],
+      "priority": "P3",
+      "id": 719,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://literary-travel.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "shakespeare-stage",
+      "displayName": "Shakespeare on Stage",
+      "crossRefs": [
+        "author-shakespeare",
+        "theater-stage"
+      ],
+      "priority": "P3",
+      "id": 720,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://shakespeare-stage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "theater-stage",
+      "displayName": "Theater & Stage Plays",
+      "crossRefs": [
+        "author-shakespeare",
+        "opera-collection"
+      ],
+      "priority": "P3",
+      "id": 721,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://theater-stage.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "poetry-slams",
+      "displayName": "Poetry Slams & Spoken Word",
+      "crossRefs": [
+        "nonfiction-poetry",
+        "hip-hop-culture"
+      ],
+      "priority": "P3",
+      "id": 722,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://poetry-slams.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "haiku-poetry",
+      "displayName": "Haiku & Eastern Poetry",
+      "crossRefs": [
+        "nonfiction-poetry",
+        "asian-literature"
+      ],
+      "priority": "P3",
+      "id": 723,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://haiku-poetry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "sonnets-poetry",
+      "displayName": "Sonnets & Formal Poetry",
+      "crossRefs": [
+        "nonfiction-poetry",
+        "author-shakespeare"
+      ],
+      "priority": "P3",
+      "id": 724,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://sonnets-poetry.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "book-deals-tracker",
+      "displayName": "Book Deals & New Releases",
+      "crossRefs": [
+        "book-awards",
+        "publishing-industry"
+      ],
+      "priority": "P3",
+      "id": 725,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://book-deals-tracker.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "used-bookstores",
+      "displayName": "Used Bookstore Guide",
+      "crossRefs": [
+        "rare-books",
+        "book-collecting"
+      ],
+      "priority": "P3",
+      "id": 726,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://used-bookstores.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    },
+    {
+      "slug": "digital-books",
+      "displayName": "Digital & E-Book Guide",
+      "crossRefs": [
+        "audiobook-guide",
+        "library-builder"
+      ],
+      "priority": "P3",
+      "id": 727,
+      "vertical_id": "books-literature",
+      "vertical_slug": "books-literature",
+      "site_url": "https://digital-books.foundryos.app",
+      "admin_managed": true,
+      "standalone": true
+    }
+  ]
+}
