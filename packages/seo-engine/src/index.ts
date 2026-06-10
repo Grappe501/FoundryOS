@@ -3,3 +3,4 @@ export { generateStructuredData } from './structured-data';
 export { programmaticPaths, generateProgrammaticPaths } from './programmatic';
 export { buildCanonicalUrl, buildTopicUrl } from './urls';
 export { injectInternalLinks } from './internal-links';
+export { generateEntitySEOPaths, generateTopicSEOPaths } from './entity-paths';

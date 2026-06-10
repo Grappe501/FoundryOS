@@ -102,7 +102,13 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | [MASTER_BUILD_PLAN.md](./MASTER_BUILD_PLAN.md) | How we build 1000 apps |
 | [APP_CATALOG_250.md](./APP_CATALOG_250.md) | Original 250 app targets (Phase 1 subset) |
 | [APP_CATALOG_FULL.md](./APP_CATALOG_FULL.md) | Full 1,961 app catalog |
-| [ADMIN_ARCHITECTURE.md](./ADMIN_ARCHITECTURE.md) | Central admin + standalone sites |
+| [ADMIN_ARCHITECTURE.md](./ADMIN_ARCHITECTURE.md) | Central admin + vertical domains |
+| [ENTITY_MODEL.md](./ENTITY_MODEL.md) | Universal entity system |
+| [COLLECTION_SYSTEM.md](./COLLECTION_SYSTEM.md) | User → Collection → Entities |
+| [REPUTATION_SYSTEM.md](./REPUTATION_SYSTEM.md) | Authority and trust scores |
+| [BUILD_LOG.md](./BUILD_LOG.md) | Public pass journal |
+| [ROADMAP.md](./ROADMAP.md) | Milestones and pass map |
+| [METRICS.md](./METRICS.md) | Platform metrics |
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | System architecture |
 | [PROTOCOLS.md](./PROTOCOLS.md) | Git, branches, naming, env |
 | [ROLES.md](./ROLES.md) | Team workflow |
@@ -116,3 +122,4 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 |------|------|--------|---------|
 | 0 | 2026-06-10 | Burt | Foundation: docs, rules, folder structure, H: drive, git init |
 | 1 | 2026-06-10 | Burt | 1,961-topic registry, course correction: vertical domains, SEO/KG engines, mission control |
+| 2 | 2026-06-10 | Burt | Core data architecture: universal entities, content engine, collections, reputation |

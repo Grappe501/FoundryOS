@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "0.1.0-course-correction",
-    "current_pass": "PASS-001",
-    "next_pass": "PASS-002"
+    "version": "0.2.0-core-data-architecture",
+    "current_pass": "PASS-002",
+    "next_pass": "PASS-003"
   },
   "scripts": {
     "setup": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-h-drive.ps1",

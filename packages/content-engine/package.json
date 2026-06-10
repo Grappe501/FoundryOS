@@ -1,15 +1,15 @@
 {
-  "name": "@foundry/seo-engine",
+  "name": "@foundry/content-engine",
   "version": "0.0.1",
   "private": true,
-  "description": "SEO engine — structured data, programmatic pages, internal linking",
+  "description": "Universal content engine — CMS + SEO factory for topics and entities",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@foundry/content-engine": "*"
+    "@foundry/seo-engine": "*"
   },
   "devDependencies": {
     "typescript": "^5.7.0"

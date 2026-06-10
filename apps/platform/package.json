@@ -15,6 +15,7 @@
     "@foundry/ui": "*",
     "@foundry/seo-engine": "*",
     "@foundry/topic-registry": "*",
+    "@foundry/content-engine": "*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

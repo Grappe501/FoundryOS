@@ -16,11 +16,19 @@ export default function ArchitecturePage() {
 └── AI Experts
 
 Packages:
+├── @foundry/content-engine   ← CMS + SEO factory
 ├── @foundry/seo-engine
 ├── @foundry/knowledge-graph
 ├── @foundry/topic-registry
 ├── @foundry/self-build
 └── @foundry/core
+
+Data Model (PASS-002):
+├── entity_types / entities / entity_attributes
+├── entity_relationships (Knowledge Graph)
+├── collections → collection_items → entities
+├── reviews / rankings
+└── user_reputation / badges / expertise / contributions
 
 Apps:
 ├── platform         → foundryos.com (Mission Control)

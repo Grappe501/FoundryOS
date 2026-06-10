@@ -4,14 +4,16 @@ import { getMissionControlStats, PASSES } from '../lib/mission-control';
 const statLabels: Record<string, string> = {
   topics_in_registry: 'Topics Cataloged',
   verticals: 'Verticals',
-  vertical_domains_planned: 'Vertical Domains Planned',
+  entity_types_defined: 'Entity Types',
+  content_types_defined: 'Content Types',
+  estimated_seo_pages: 'Est. SEO Pages',
+  vertical_domains_planned: 'Vertical Domains',
   verticals_live: 'Verticals Live',
   topics_published: 'Topics Published',
+  entities_published: 'Entities Published',
   collections_created: 'Collections Created',
   reviews_written: 'Reviews Written',
   users_registered: 'Users Registered',
-  clubs_active: 'Clubs Active',
-  ai_experts_deployed: 'AI Experts Deployed',
 };
 
 export default function MissionControlHome() {

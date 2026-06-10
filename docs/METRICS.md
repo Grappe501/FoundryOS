@@ -1,44 +1,46 @@
 # FoundryOS — Platform Metrics
 
-> Updated every pass. Live on foundryos.com mission control.
+> Updated PASS-002
 
 ---
 
 ## Registry
 
-| Metric | Value | Updated |
-|--------|-------|---------|
-| Topics in registry | 1,961 | PASS-001 |
-| Verticals | 26 | PASS-001 |
-| Mega verticals | 4 (Books, Music, Film, TV) | PASS-001 |
-| Public vertical domains planned | 8 | PASS-001 |
-| Topics published | 0 | — |
-| Topics pending | 1,961 | PASS-001 |
+| Metric | Value |
+|--------|-------|
+| Topics in registry | 1,961 |
+| Verticals | 26 |
+| Entity types defined | 9 |
+| Content types defined | 11 |
+| Estimated SEO pages (topics only) | ~21,571 |
 
 ---
 
-## Platform
+## Architecture (PASS-002)
 
-| Metric | Value | Updated |
-|--------|-------|---------|
-| Verticals live | 0 | — |
-| Topics cataloged (DB) | 0 | — |
-| Collections created | 0 | — |
-| Reviews written | 0 | — |
-| Users registered | 0 | — |
-| Clubs active | 0 | — |
-| AI experts deployed | 0 | — |
+| System | Status |
+|--------|--------|
+| Topic Registry | ✅ Built |
+| Content Engine | ✅ Built |
+| SEO Engine | ✅ Built (+ Phase 2 entity paths) |
+| Universal Entities | ✅ Schema ready |
+| Collections | ✅ Schema ready |
+| Reputation | ✅ Schema ready |
+| Supabase live | ⏳ PASS-003 |
 
 ---
 
-## SEO (when live)
+## Platform (live counts — all zero until launch)
 
 | Metric | Value |
 |--------|-------|
-| Indexed pages | 0 |
-| Generated programmatic pages | 0 |
-| Internal links (KG) | 0 |
-| Sitemaps | 0 |
+| Verticals live | 0 |
+| Topics published | 0 |
+| Entities published | 0 |
+| Collections created | 0 |
+| Reviews written | 0 |
+| Users registered | 0 |
+| Experts with trust score | 0 |
 
 ---
 
@@ -46,16 +48,7 @@
 
 | Metric | Value |
 |--------|-------|
-| Passes completed | 2 (PASS-000, PASS-001) |
-| Current version | `0.1.0-course-correction` |
-| Launch readiness | 15% |
-| Open risks | 2 |
-
----
-
-## Revenue (projected)
-
-| Scenario | ARR |
-|----------|-----|
-| Conservative (PASS-001 model) | ~$45M at scale |
-| Per vertical domain | Shared infra, marginal cost → 0 |
+| Passes completed | 3 (PASS-000 through PASS-002) |
+| Current version | `0.2.0-core-data-architecture` |
+| Launch readiness | 28% |
+| Next pass | PASS-003 Supabase Live + Auth |

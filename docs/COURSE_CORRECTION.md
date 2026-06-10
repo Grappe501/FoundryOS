@@ -59,8 +59,11 @@ author-shakespeare.foundryos.com ❌ operational chaos
 | 1 | SEO Engine | `packages/seo-engine` |
 | 2 | Knowledge Graph Engine | `packages/knowledge-graph` |
 | 3 | Topic Registry Engine | `packages/topic-registry` |
-| 4 | Mission Control Website | `apps/platform` (foundryos.com) |
-| 5 | Pass Tracking System | `docs/BUILD_LOG.md` + public `/passes` |
+| 4 | **Content Engine** | `packages/content-engine` (PASS-002) |
+| 5 | Mission Control Website | `apps/platform` (foundryos.com) |
+| 6 | Pass Tracking System | `docs/BUILD_LOG.md` + public `/passes` |
+| 7 | **Universal Entities** | `entities` + `entity_types` (PASS-002) |
+| 8 | **Collections + Reputation** | Schema before launch (PASS-002) |
 
 ---
 

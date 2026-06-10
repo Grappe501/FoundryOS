@@ -1,0 +1,40 @@
+---
+description: PASS-002 Core Data Architecture — universal entities, collections, reputation
+alwaysApply: true
+---
+
+# Core Data Architecture
+
+## Never Create Niche Tables
+
+No `bourbons`, `movies`, `albums`, `books`, `teams` tables.
+
+Use: `entity_types`, `entities`, `entity_attributes`, `entity_relationships`
+
+## Collections Are Crown Jewel
+
+```txt
+User → Collection → Entities
+```
+
+## Reputation Before Launch
+
+Tables exist now: `user_reputation`, `user_badges`, `user_expertise`, `user_contributions`
+
+Authority, not gamification.
+
+## Content Engine
+
+`@foundry/content-engine` generates 11 content types per topic/entity automatically.
+
+## Packages
+
+- `@foundry/content-engine` — CMS + SEO factory
+- `@foundry/seo-engine` — structured data + entity paths
+- `@foundry/knowledge-graph` — aligns with entity_relationships
+
+## Docs
+
+- docs/ENTITY_MODEL.md
+- docs/COLLECTION_SYSTEM.md
+- docs/REPUTATION_SYSTEM.md
