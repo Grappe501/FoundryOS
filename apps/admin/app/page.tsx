@@ -12,7 +12,9 @@ const NEW_MODULES = [
   { name: 'Content Engine', desc: '11 content types, CMS + SEO factory', highlight: true },
   { name: 'Knowledge Graph', desc: 'Universal entities, relationships', highlight: true },
   { name: 'SEO', desc: 'Indexed, generated, entity paths', highlight: true },
+  { name: 'Ownership Graph', desc: 'user_entity_relationships', highlight: true },
   { name: 'Collections', desc: 'User → Collection → Entities', highlight: true },
+  { name: 'Entity Metrics', desc: 'Leaderboards, engagement counts', highlight: true },
   { name: 'Reputation', desc: 'Trust, expertise, badges', highlight: true },
   { name: 'AI Brain', desc: 'Personas, prompts, usage, cost', highlight: true },
   { name: 'Self-Build', desc: 'Topics ready, published, pending', highlight: true },
@@ -41,7 +43,7 @@ export default function AdminHomePage() {
         ))}
       </div>
 
-      <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 32 }}>PASS-002 · docs/ENTITY_MODEL.md · docs/COLLECTION_SYSTEM.md</p>
+      <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 32 }}>PASS-003 · docs/OWNERSHIP_GRAPH.md · docs/SEO_PUBLISH_POLICY.md</p>
     </main>
   );
 }

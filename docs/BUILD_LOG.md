@@ -1,109 +1,69 @@
 # FoundryOS — Build Log
 
-> Public build journal. Every pass updates this file + `/passes` on foundryos.com.
-
 ---
 
 ## Current State
 
 | Field | Value |
 |-------|-------|
-| **Current Version** | `0.2.0-core-data-architecture` |
-| **Current Focus** | Core data architecture complete — Supabase live next |
-| **Last Pass** | PASS-002 |
-| **Next Pass** | PASS-003 — Supabase Live + Auth |
-| **Launch Readiness** | 28% |
+| **Version** | `0.3.0-identity-ownership` |
+| **Last Pass** | PASS-003 |
+| **Next Pass** | PASS-004 — Supabase Live |
+| **Launch Readiness** | 38% |
+| **Focus** | Ownership graph complete — wire Supabase next |
 
 ### Open Risks
 
-| Risk | Severity | Mitigation |
-|------|----------|------------|
-| Per-topic site model | ✅ Resolved | Vertical domains + topic paths |
-| Niche database tables | ✅ Resolved | Universal entity system |
-| SEO not first-class | ✅ Resolved | SEO + content engines |
-| Reputation afterthought | ✅ Resolved | Tables designed PASS-002 |
-| Supabase not provisioned | Open | PASS-003 |
-| Netlify domains not wired | Open | PASS-004 |
+| Risk | Mitigation |
+|------|------------|
+| Bulk thin SEO pages | Publish gate: score >= 70 |
+| No user identity | ✅ Ownership graph PASS-003 |
+| Supabase not live | PASS-004 (Steve provisions) |
 
 ---
 
-## Pass History
-
-### PASS-000 — Foundation
+## PASS-003 — Identity & Ownership Layer ✅
 
 | Field | Value |
 |-------|-------|
 | **Date** | 2026-06-10 |
-| **Commit** | `98f0330` |
-
-H: drive, docs, monorepo, cursor rules, initial schema, self-build skeleton.
-
----
-
-### PASS-001 — Registry Expansion + Course Correction
-
-| Field | Value |
-|-------|-------|
-| **Date** | 2026-06-10 |
-| **Commit** | `49dc99a` |
-
-1,961 topics, vertical domains, SEO/KG/topic-registry, mission control, admin dashboards.
-
----
-
-### PASS-002 — Core Data Architecture ✅
-
-| Field | Value |
-|-------|-------|
-| **Date** | 2026-06-10 |
-| **Author** | Burt |
 
 **Delivered:**
 
-**Packages:**
-- `packages/content-engine` — 11 universal content types (CMS + SEO factory)
-- SEO Phase 2 — entity programmatic paths in `@foundry/seo-engine`
-- `@foundry/core` entity types
+- `user_entity_relationships` — owns, favorites, reviewed, ranked, wants, watched, read, listened, visited, experienced
+- `entity_metrics` — denormalized leaderboard data
+- `packages/ownership-graph` — `buildUserIdentitySnapshot()`
+- Content sources reserved: generated, community, editorial, verified
+- SEO publish policy: `content_score >= 70` to go live
+- `docs/OWNERSHIP_GRAPH.md`, `docs/SEO_PUBLISH_POLICY.md`
+- Mission Control platform asset metrics
 
-**Database** (`20260610300000_core_data_architecture.sql`):
-- `entity_types`, `entities`, `entity_attributes`, `entity_relationships`
-- `content_types`, `content_pages`
-- `collections`, `collection_items`
-- `reviews`, `rankings`
-- `user_reputation`, `user_badges`, `user_expertise`, `user_contributions`
+**Success criteria (schema ready):**
 
-**Documentation:**
-- `docs/ENTITY_MODEL.md`
-- `docs/COLLECTION_SYSTEM.md`
-- `docs/REPUTATION_SYSTEM.md`
-
-**Design decisions:**
-- NO niche tables (bourbons, movies, albums, books, teams)
-- Collections = crown jewel (User → Collection → Entities)
-- Reputation = authority before launch
-- ~21,571 SEO pages estimable from topics alone (1,961 × 11)
+- Who is Steve? → profiles
+- What does Steve own? → `owns`
+- What does Steve love? → `favorites`
+- What has Steve reviewed? → `reviewed`
+- Collections built? → `collections`
+- Expertise earned? → `user_expertise`
 
 ---
 
-### PASS-003 — Supabase Live + Auth (Planned)
+## Prior Passes
 
-- Steve provisions Supabase project + `.env.local`
-- Run all migrations
-- Verify RLS policies
-- Storage buckets for entity images
+- **PASS-000** Foundation
+- **PASS-001** Registry + Course Correction
+- **PASS-002** Core Data Architecture
 
 ---
 
-### PASS-004 — Hostname Resolution (Planned)
+## Planned
 
-### PASS-005 — SEO + Content Factory Live (Planned)
-
-### PASS-006 — Knowledge Graph Live (Planned)
-
-### PASS-007 — Collections Live (Planned)
-
-### PASS-008 — Reputation Live (Planned)
-
-### PASS-009 — Bourbon Launch (Planned)
-
-### PASS-010 — Books Launch (Planned)
+- **PASS-004** Supabase Live (migrations, auth, storage, RLS)
+- **PASS-005** Hostname Resolution
+- **PASS-006** SEO Factory (qualified publish only)
+- **PASS-007** Knowledge Graph Live
+- **PASS-008** Collections + Ownership Live
+- **PASS-009** Reputation Live
+- **PASS-010** Bourbon Launch
+- **PASS-011** Books Launch

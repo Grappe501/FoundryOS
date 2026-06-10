@@ -106,6 +106,8 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | [ENTITY_MODEL.md](./ENTITY_MODEL.md) | Universal entity system |
 | [COLLECTION_SYSTEM.md](./COLLECTION_SYSTEM.md) | User → Collection → Entities |
 | [REPUTATION_SYSTEM.md](./REPUTATION_SYSTEM.md) | Authority and trust scores |
+| [OWNERSHIP_GRAPH.md](./OWNERSHIP_GRAPH.md) | User → entity relationships |
+| [SEO_PUBLISH_POLICY.md](./SEO_PUBLISH_POLICY.md) | No thin content bulk publish |
 | [BUILD_LOG.md](./BUILD_LOG.md) | Public pass journal |
 | [ROADMAP.md](./ROADMAP.md) | Milestones and pass map |
 | [METRICS.md](./METRICS.md) | Platform metrics |
@@ -123,3 +125,4 @@ Same platform code. Swap `category_slug: bourbon-connoisseur`.
 | 0 | 2026-06-10 | Burt | Foundation: docs, rules, folder structure, H: drive, git init |
 | 1 | 2026-06-10 | Burt | 1,961-topic registry, course correction: vertical domains, SEO/KG engines, mission control |
 | 2 | 2026-06-10 | Burt | Core data architecture: universal entities, content engine, collections, reputation |
+| 3 | 2026-06-10 | Burt | Identity & ownership layer: user_entity_relationships, entity_metrics, SEO publish gate |

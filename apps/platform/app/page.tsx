@@ -1,23 +1,20 @@
 import Link from 'next/link';
-import { getMissionControlStats, PASSES } from '../lib/mission-control';
+import { getMissionControlStats, getPlatformAssetStory, PASSES } from '../lib/mission-control';
 
 const statLabels: Record<string, string> = {
-  topics_in_registry: 'Topics Cataloged',
-  verticals: 'Verticals',
-  entity_types_defined: 'Entity Types',
-  content_types_defined: 'Content Types',
-  estimated_seo_pages: 'Est. SEO Pages',
-  vertical_domains_planned: 'Vertical Domains',
-  verticals_live: 'Verticals Live',
-  topics_published: 'Topics Published',
-  entities_published: 'Entities Published',
-  collections_created: 'Collections Created',
-  reviews_written: 'Reviews Written',
-  users_registered: 'Users Registered',
+  topics_in_registry: 'Topics',
+  total_entities: 'Entities',
+  total_relationships: 'Relationships',
+  total_collections: 'Collections',
+  total_user_entity_relationships: 'Ownership Links',
+  users_registered: 'Users',
+  reviews_written: 'Reviews',
+  estimated_seo_pages_published: 'SEO Pages Live',
 };
 
 export default function MissionControlHome() {
   const stats = getMissionControlStats();
+  const assets = getPlatformAssetStory();
   const liveStats = Object.entries(statLabels).map(([key, label]) => ({
     label,
     value: stats[key as keyof typeof stats] as number,
@@ -36,6 +33,22 @@ export default function MissionControlHome() {
       </header>
 
       <section style={{ padding: '2rem', maxWidth: 1100, margin: '0 auto' }}>
+        <div
+          style={{
+            marginBottom: 24,
+            padding: 16,
+            background: '#0F0F12',
+            border: '1px solid #2A2520',
+            borderRadius: 8,
+            fontSize: 14,
+            color: '#8A8A8E',
+          }}
+        >
+          <span style={{ color: '#C8A96E' }}>Platform Assets</span>
+          {' — '}
+          Topics: {assets.topics} · Entities: {assets.entities} · Relationships: {assets.relationships} · Collections: {assets.collections}
+        </div>
+
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12 }}>
           {liveStats.map((s) => (
             <div key={s.label} style={{ padding: '1rem', background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>

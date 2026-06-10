@@ -1,0 +1,14 @@
+{
+  "name": "@foundry/ownership-graph",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Ownership Graph — user_entity_relationships powering platform identity",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

@@ -31,6 +31,9 @@ export function generateContentPages(ctx: ContentGenerationContext): ContentPage
       path,
       title,
       status: 'draft' as const,
+      content_source: 'generated' as const,
+      content_score: 0,
+      minimum_publish_score: 70,
     };
   });
 }

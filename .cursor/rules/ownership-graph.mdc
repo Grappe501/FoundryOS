@@ -1,0 +1,27 @@
+---
+description: Ownership Graph — user_entity_relationships is the heart of Foundry
+alwaysApply: true
+---
+
+# Ownership Graph
+
+Single table: `user_entity_relationships`
+
+Types: owns, favorites, reviewed, ranked, wants, watched, read, listened, visited, experienced
+
+Powers: My Shelf, Favorites, Rankings, Watchlist — no separate systems.
+
+## SEO Publish Gate
+
+Do NOT bulk-publish 21k pages. Factory builds draft pages only.
+
+Publish when: `content_score >= minimum_publish_score` (default 70)
+
+## Content Sources (reserved)
+
+generated | community | editorial | verified
+
+## Docs
+
+docs/OWNERSHIP_GRAPH.md
+docs/SEO_PUBLISH_POLICY.md

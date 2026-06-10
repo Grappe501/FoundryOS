@@ -13,6 +13,9 @@ export type ContentTypeSlug =
 
 export type ContentTarget = 'topic' | 'entity';
 
+/** Reserved PASS-003 — every content type supports multiple sources */
+export type ContentSource = 'generated' | 'community' | 'editorial' | 'verified';
+
 export interface ContentType {
   slug: ContentTypeSlug;
   display_name: string;
@@ -31,6 +34,9 @@ export interface ContentPageSpec {
   path: string;
   title: string;
   status: 'draft' | 'published';
+  content_source?: ContentSource;
+  content_score?: number;
+  minimum_publish_score?: number;
 }
 
 export interface ContentGenerationContext {

@@ -9,8 +9,9 @@
 ```
 PASS-000 ████████████ Foundation
 PASS-001 ████████████ Registry + Course Correction
-PASS-002 ████████████ Core Data Architecture      ← WE ARE HERE
-PASS-003 ░░░░░░░░░░░░ Supabase Live + Auth
+PASS-002 ████████████ Core Data Architecture
+PASS-003 ████████████ Identity & Ownership        ← WE ARE HERE
+PASS-004 ░░░░░░░░░░░░ Supabase Live
 PASS-004 ░░░░░░░░░░░░ Hostname Resolution
 PASS-005 ░░░░░░░░░░░░ SEO + Content Factory Live
 PASS-006 ░░░░░░░░░░░░ Knowledge Graph Live
