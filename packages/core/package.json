@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "FoundryOS platform kernel — shared engine for all apps",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "foundryos",
+  "version": "0.0.1",
+  "private": true,
+  "description": "FoundryOS — AI Operating System for 1000 Specialty Apps",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "setup": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-h-drive.ps1",
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "generate:app": "node packages/self-build/cli/generate.js",
+    "db:migrate": "supabase db push",
+    "db:reset": "supabase db reset"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "npm@10.9.0"
+}

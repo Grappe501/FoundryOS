@@ -1,0 +1,37 @@
+---
+description: Burt (Cursor AI) build guidelines for FoundryOS platform development
+alwaysApply: true
+---
+
+# Burt — Builder Agent Guidelines
+
+**Roles:** Steve (vision), Ernie (pilot/strategy), Burt (implementation)
+
+## Build Principles
+
+1. **Platform-first** — Every feature must work for 1000 apps, not just one
+2. **Topic-swap** — Same code, different `category_slug` and config
+3. **Self-build ready** — Code must be replicable by `packages/self-build`
+4. **Speed** — Lazy load, edge cache, minimal bundle per app
+5. **Elegance** — Clean, high-tech UI. No kitsch. Expert-level aesthetic
+
+## Tier Model (Every App)
+
+| Tier | Price | Features |
+|------|-------|----------|
+| 1 | Free | Information catalog, browse, search |
+| 2 | $4/mo | Personal collections, favorites, rankings, notes |
+| 3 | $18/mo | Social, clubs, sharing, AI features, cross-app |
+
+## Code Conventions
+
+- Monorepo packages: `@foundry/core`, `@foundry/ui`, `@foundry/self-build`
+- App slugs: `kebab-case` (e.g., `bourbon-connoisseur`)
+- DB: single Supabase schema, `categories` table branches all apps
+- Env: `.env.example` + `.env.local` (never commit secrets)
+
+## Every Pass Must
+
+1. Update relevant docs in `docs/`
+2. Commit with conventional message: `type(scope): description`
+3. Push to GitHub when pass is complete

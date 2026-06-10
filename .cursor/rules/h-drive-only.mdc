@@ -1,0 +1,30 @@
+---
+description: HARD CONSTRAINT — All files, temp, cache, and node modules MUST live on H: drive only
+alwaysApply: true
+---
+
+# H: Drive Only — Non-Negotiable
+
+**NOTHING is written to C: drive. Everything goes to H: drive.**
+
+## Enforced Paths
+
+| Resource | Path |
+|----------|------|
+| Project root | `H:\FoundryOS` |
+| Node modules | `H:\FoundryOS\node_modules` |
+| npm cache | `H:\FoundryOS\.cache\npm` |
+| Temp files | `H:\FoundryOS\.cache\temp` |
+| Build output | `H:\FoundryOS\.cache\build` |
+| Supabase local | `H:\FoundryOS\.cache\supabase` |
+
+## Before Any Install or Build
+
+1. Verify `H:\FoundryOS` is the working directory
+2. Confirm `.npmrc` sets cache to `H:\FoundryOS\.cache\npm`
+3. Set `TMP` and `TEMP` to `H:\FoundryOS\.cache\temp`
+4. Never use `C:\Users\...\AppData` for project artifacts
+
+## Violation Response
+
+If a command attempts to write to C:, **stop immediately**, redirect to H:, and document the fix in `docs/PROTOCOLS.md`.

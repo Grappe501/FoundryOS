@@ -1,0 +1,25 @@
+[build]
+  base = "apps/platform"
+  command = "npm run build"
+  publish = "apps/platform/.next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NPM_CONFIG_CACHE = "H:/FoundryOS/.cache/npm"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[context.production]
+  environment = { NODE_ENV = "production" }
+
+[context.deploy-preview]
+  environment = { NODE_ENV = "staging" }
+
+[context.branch-deploy]
+  environment = { NODE_ENV = "staging" }
+
+# Edge functions for speed-critical Tier 1 catalog pages
+[[edge_functions]]
+  path = "/api/catalog/*"
+  function = "catalog-edge"

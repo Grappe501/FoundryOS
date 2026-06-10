@@ -1,0 +1,19 @@
+{
+  "name": "@foundry/self-build",
+  "version": "0.0.1",
+  "private": true,
+  "description": "AI self-build module — generates new FoundryOS apps from templates",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "generate": "node cli/generate.js"
+  },
+  "dependencies": {
+    "@foundry/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

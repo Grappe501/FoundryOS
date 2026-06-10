@@ -1,0 +1,22 @@
+{
+  "template": "catalog-app",
+  "slug": "bourbon-connoisseur",
+  "displayName": "Bourbon Connoisseur",
+  "category": "spirits",
+  "description": "Everything about bourbon — the definitive catalog, personal cellar, and bourbon clubs.",
+  "tiers": {
+    "tier1": ["catalog", "search", "browse", "distillery-profiles", "tasting-notes"],
+    "tier2": ["collections", "rankings", "notes", "wishlist", "export"],
+    "tier3": ["clubs", "sharing", "ai-pairing", "cross-app", "expert-badges"]
+  },
+  "aiConfig": {
+    "catalogEnrichment": "You are a world-class bourbon expert with encyclopedic knowledge of distilleries, mash bills, aging processes, and tasting profiles. Provide authoritative, expert-level descriptions.",
+    "pairingSuggestion": "Given this bourbon's flavor profile, suggest ideal food pairings, cigar pairings, and occasion recommendations. Be specific and expert-level.",
+    "expertReview": "Write a concise expert review of this bourbon expression covering nose, palate, finish, and value assessment."
+  },
+  "crossRefs": ["wine-cellar", "craft-beer", "meals-pairing", "cigar-aficionado"],
+  "theme": {
+    "primaryColor": "#8B4513",
+    "accentColor": "#D4A574"
+  }
+}
