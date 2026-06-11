@@ -1,0 +1,50 @@
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+
+const CONSUMER_PREFIXES = [
+  '/future-proof',
+  '/explore',
+  '/ai-builder',
+  '/financial-independence',
+  '/public-speaking',
+  '/trinity',
+  '/parents',
+  '/my-journey',
+  '/api',
+];
+
+function isConsumerPath(pathname: string): boolean {
+  if (pathname === '/') return true;
+  return CONSUMER_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+}
+
+function isStaticAsset(pathname: string): boolean {
+  return pathname.startsWith('/_next') || /\.[a-z0-9]+$/i.test(pathname);
+}
+
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  if (isStaticAsset(pathname)) {
+    return NextResponse.next();
+  }
+
+  if (pathname.startsWith('/operator')) {
+    if (pathname === '/operator' || pathname === '/operator/') {
+      return NextResponse.next();
+    }
+    const inner = pathname.slice('/operator'.length) || '/';
+    return NextResponse.rewrite(new URL(inner, request.url));
+  }
+
+  if (isConsumerPath(pathname)) {
+    return NextResponse.next();
+  }
+
+  const operatorUrl = new URL(`/operator${pathname}`, request.url);
+  return NextResponse.redirect(operatorUrl);
+}
+
+export const config = {
+  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+};

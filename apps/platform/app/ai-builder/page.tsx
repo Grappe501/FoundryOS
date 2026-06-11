@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { ChoosePathLink } from '../../components/ChoosePathLink';
+import { NextRecommendedWorld } from '../../components/trinity/NextRecommendedWorld';
+import { TrinityJourneyProgress } from '../../components/trinity/TrinityJourneyProgress';
 import {
   AI_BUILDER_ACADEMY_LEVELS,
   AI_BUILDER_CAREERS,
@@ -149,6 +151,9 @@ export default function AiBuilderWorldPage() {
           All career connections →
         </Link>
       </section>
+
+      <TrinityJourneyProgress compact />
+      <NextRecommendedWorld currentSlug="ai-builder" />
 
       <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/future-proof" style={{ color: '#6B6B70' }}>Future-Proof Assessment</Link>

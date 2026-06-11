@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { NextRecommendedWorld } from '../../components/trinity/NextRecommendedWorld';
+import { TrinityJourneyProgress } from '../../components/trinity/TrinityJourneyProgress';
 import { PS_COMMUNITY, PS_CORE_PROMISE, PS_LOOP, PS_MISSIONS } from '../../lib/public-speaking-world';
 
 export const metadata = {
@@ -55,6 +57,9 @@ export default function PsWorldPage() {
           </p>
         ))}
       </section>
+
+      <TrinityJourneyProgress compact />
+      <NextRecommendedWorld currentSlug="public-speaking" />
 
       <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/future-proof" style={{ color: '#6B6B70' }}>Future-Proof Assessment</Link>

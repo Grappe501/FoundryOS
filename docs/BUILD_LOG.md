@@ -7,13 +7,10 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-016C ✅ |
-| **Last Pass** | PASS-016D ✅ |
-| **Last Pass** | PASS-018 ✅ |
-| **Next Pass** | PASS-019 — Public Speaking World (Trinity complete) |
-| **Mode** | **Private build** — vertical depth until 3–5 verticals consumer-ready |
-| **Focus** | Future-Proof Trinity worlds live — PASS-019 closes Communicate Value |
-| **Live proof** | [/future-proof](/future-proof) · [/ai-builder](/ai-builder) · [/financial-independence](/financial-independence) · [/public-speaking](/public-speaking) |
+| **Last Pass** | PASS-021 ✅ |
+| **Next Pass** | PASS-020 Civic Engagement |
+| **Focus** | Passion Trinity foundation laid · factory audit baseline · PASS-024 is scale multiplier |
+| **Live proof** | [/](/) · [/trinity](/trinity) · [/my-journey](/my-journey) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -43,6 +40,32 @@
 **Model:** Mission → Build → Show → Reflect → Improve → Mentor
 
 **Close gate:** Student completes Mission 1 · Parent one-sentence value · Portfolio artifact · Tomorrow hook
+
+---
+
+---
+
+## PASS-021 — Consumer Experience Polish ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| Consumer home | `/` |
+| Operator gate | `/operator/*` middleware |
+| Trinity hub | `/trinity` |
+| Student dashboard | `/my-journey` |
+| Parent page | `/parents` |
+
+---
+
+## PASS-023 Foundation — Passion Trinity (registry)
+
+| Domain | Frame | Registry |
+|--------|-------|----------|
+| Bourbon | Appreciate Craft | `bourbon-world.ts` |
+| BBQ | Create Experiences | `bbq-world.ts` |
+| Poker | Strategic Thinking | `poker-world.ts` |
+
+Factory: `npm run build:world -- <slug>` · `npm run audit:worlds`
 
 ---
 

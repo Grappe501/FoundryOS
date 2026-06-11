@@ -205,6 +205,20 @@ export const PASSES: PassEntry[] = [
     date: '2026-06-11',
     summary: 'Communicate Value — completes Future-Proof Trinity. 5 missions, My Speaking Portfolio, parent one-liner. Close gate met.',
   },
+  {
+    code: 'PASS-021',
+    title: 'Consumer Experience Polish',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary: 'Consumer home, /trinity, /parents, /my-journey, operator middleware, unified nav, cross-world journey.',
+  },
+  {
+    code: 'PASS-020A',
+    title: 'Domain Factory Audit',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary: 'world-factory package, npm run audit:worlds + build:world stub. Baseline ~40% automation.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -330,10 +344,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-019',
+    last_pass: 'PASS-021',
     next_pass: 'PASS-020',
     current_focus:
-      'Future-Proof Trinity complete: AI Builder + FI + Public Speaking worlds live. Next: Civic Engagement (PASS-020) or consumer polish (PASS-021).',
+      'PASS-020 Civic Engagement next. Passion Trinity foundation laid (Bourbon/BBQ/Poker registries). PASS-024 factory automation is the scale multiplier.',
     open_risks: [
       'Risk: parent says "not enough here yet" — depth checklist per vertical',
       'Jan 2027 target: 5 exceptional domains, not 20 shallow',

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { NextRecommendedWorld } from '../../components/trinity/NextRecommendedWorld';
+import { TrinityJourneyProgress } from '../../components/trinity/TrinityJourneyProgress';
 import {
   FI_ACADEMY_LEVELS,
   FI_CAREERS,
@@ -64,6 +66,9 @@ export default function FiWorldPage() {
           <p key={f.title} style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}><strong style={{ color: '#E8E8EC', fontWeight: 400 }}>{f.title}</strong> — {f.description}</p>
         ))}
       </section>
+
+      <TrinityJourneyProgress compact />
+      <NextRecommendedWorld currentSlug="financial-independence" />
 
       <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/future-proof" style={{ color: '#6B6B70' }}>Future-Proof Assessment</Link>

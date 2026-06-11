@@ -6,7 +6,6 @@ import {
   CUSTOMER_SEGMENTS,
   FUTURE_PROOF_HEADLINE,
   FUTURE_PROOF_SUBHEAD,
-  FUTURE_PROOF_TRAFFIC_INTENTS,
   TRINITY_PATHS,
   scoreFutureProofAssessment,
   type AssessmentAnswers,
@@ -207,9 +206,6 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
           {FUTURE_PROOF_HEADLINE}
         </h1>
         <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>{FUTURE_PROOF_SUBHEAD}</p>
-        <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 16 }}>
-          People search: {FUTURE_PROOF_TRAFFIC_INTENTS.join(' · ')}
-        </p>
       </section>
 
       <section style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>

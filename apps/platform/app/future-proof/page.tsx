@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { ConsumerNav } from '../../components/ConsumerNav';
 import { FutureProofAssessment } from '../../components/FutureProofAssessment';
+import { TrinityHub } from '../../components/trinity/TrinityHub';
 import { ValidationPageTracker } from '../../components/ValidationPageTracker';
-import { TRINITY_PATHS } from '../../lib/future-proof-assessment';
 
 export const metadata = {
   title: 'Become Future-Proof | Foundry',
@@ -16,12 +16,7 @@ export default async function FutureProofPage({
   searchParams: Promise<{ path?: string; choose?: string }>;
 }) {
   const params = await searchParams;
-  const deferred = params?.path;
   const choosePath = params?.choose;
-  const deferredMeta =
-    deferred && deferred in TRINITY_PATHS
-      ? TRINITY_PATHS[deferred as keyof typeof TRINITY_PATHS]
-      : null;
 
   return (
     <main
@@ -36,20 +31,13 @@ export default async function FutureProofPage({
     >
       <ValidationPageTracker page="/future-proof" />
       <ConsumerNav />
-      {deferredMeta && deferred !== 'ai-builder' && (
-        <section style={{ marginTop: 16, padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
-          <p style={{ color: '#C8A96E', fontSize: 14, margin: 0 }}>
-            {deferredMeta.label} — opening soon
-          </p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
-            Join the interest list or{' '}
-            <Link href="/ai-builder" style={{ color: '#6B9B6B' }}>
-              start with AI Builder now →
-            </Link>
-          </p>
-        </section>
-      )}
       <FutureProofAssessment choosePath={choosePath} />
+      <section style={{ marginTop: 32 }}>
+        <TrinityHub compact />
+        <Link href="/trinity" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 14, textDecoration: 'none' }}>
+          Learn about the Trinity →
+        </Link>
+      </section>
     </main>
   );
 }
