@@ -1,158 +1,150 @@
-# PASS-017 — AI Builder Experience Pass
+# PASS-017 — AI Builder World (Experience Pass)
 
-> **Status:** NEXT · First **consumer value** pass · Private build mode · No stranger beta
+> **Status:** IN PROGRESS · First **consumer value** pass · Build a **world**, not a course
+
+---
+
+## Core Insight
+
+Most education products:
+
+```txt
+Lesson → Quiz → Lesson → Quiz
+```
+
+Foundry's advantage:
+
+```txt
+Mission → Build → Show → Reflect → Improve → Mentor
+```
+
+**Not a course. A world.**
 
 ---
 
 ## Pass Gate
 
-> Can a student spend hours inside AI Builder — and can a parent immediately understand why it matters, what their child will learn, what projects they'll build, and what success looks like — without Steve explaining it?
+| Audience | They should think |
+|----------|-------------------|
+| 14-year-old | *I can actually build something.* |
+| Parent | *This is teaching real future-proof skills.* |
+| Neither | *This is another online course.* |
 
-**Not:** AI Builder infrastructure. **Yes:** AI Builder **experience**.
+### Exit criteria (official close gate)
 
-The failure mode we're avoiding:
+| Check | Criterion |
+|-------|-----------|
+| **Student** | Can start and complete Mission 1 |
+| **Parent** | Can explain in one sentence what value their child receives |
+| **Portfolio** | Contains a completed mission artifact |
+| **Return hook** | Student knows exactly what to do tomorrow |
 
-```txt
-"Interesting idea... but there's not enough here yet."
-```
+Also: student can spend 60 minutes inside and ship a real project — not "academy exists."
 
-The success signal:
-
-```txt
-"Wow. My kid could spend six months in this."
-```
-
----
-
-## Future-Proof Connection
-
-Every page must answer:
-
-```txt
-How does this help me become future-proof?
-```
-
-AI Builder = **Create value** (Trinity leg 1). Financial Independence follows immediately (PASS-018) — **Keep value**.
+If PASS-017 accomplishes that, Foundry stops looking like a platform prototype and starts looking like a product.
 
 ---
 
-## Consumer Surfaces
+## Deliverables
 
-| Route | Role |
-|-------|------|
-| `/ai-builder` | Primary depth experience |
-| `/future-proof` | Assessment routes here when "create value" wins |
-| `/explore` | Catalog entry |
-| `/verticals/ai-builder` | Internal proof only — hidden from consumers |
+### 1. AI Builder Academy — 7 levels, unlock projects
+
+| Level | Title |
+|-------|-------|
+| 1 | AI Explorer |
+| 2 | AI User |
+| 3 | AI Creator |
+| 4 | AI Builder |
+| 5 | AI Architect |
+| 6 | AI Entrepreneur |
+| 7 | AI Mentor |
+
+### 2. AI Builder Missions (not courses)
+
+| # | Mission |
+|---|---------|
+| 1 | Build an AI Homework Assistant |
+| 2 | Build a Research Agent |
+| 3 | Build a Business Assistant |
+| 4 | Build a Website with AI |
+| 5 | Build a Personal AI Team |
+
+Each mission produces evidence.
+
+### 3. AI Builder Portfolio — `My AI Portfolio`
+
+Projects built · Evidence earned · Reflections written · Skills demonstrated → employable proof.
+
+### 4. AI Builder Playground
+
+Prompt Lab · Automation Lab · Agent Lab · Workflow Lab · Business Lab
+
+### 5. Parent View — `/ai-builder/parents`
+
+Why AI matters · Jobs being created · Skills employers want · What child is building · How progress is measured
+
+### 6. Career Connections — `/ai-builder/careers`
+
+Every major page answers: *What careers use this?*
+
+### 7. Future-Proof Connection
+
+Every page answers: *How does this help me become future-proof?*
 
 ---
 
-## Depth Checklist (PASS-017 Close Gate)
+## Consumer Routes
 
-### Beginner Academy
+| Route | Purpose |
+|-------|---------|
+| `/ai-builder` | World hub |
+| `/ai-builder/missions` | Mission list |
+| `/ai-builder/missions/[slug]` | Mission runner (6-step loop) |
+| `/ai-builder/academy` | 7 levels |
+| `/ai-builder/playground` | 5 labs |
+| `/ai-builder/portfolio` | My AI Portfolio |
+| `/ai-builder/parents` | Parent view |
+| `/ai-builder/glossary` | Terms |
+| `/ai-builder/careers` | Career connections |
+| `/verticals/ai-builder` | Internal proof only |
 
-- [ ] What is AI?
-- [ ] How AI actually works
-- [ ] Prompting
-- [ ] Models
-- [ ] Agents
-- [ ] Automation
-- [ ] Building things
+---
 
-### Glossary
+## Implementation
 
-- [ ] LLM
-- [ ] Prompt
-- [ ] Token
-- [ ] Context Window
-- [ ] RAG
-- [ ] Agent
-- [ ] API
-- [ ] Workflow
-- [ ] Automation
-- [ ] Embedding
-- [ ] Fine Tuning
-
-### First Five Projects
-
-- [ ] Personal AI Assistant
-- [ ] Homework Helper
-- [ ] Research Agent
-- [ ] Business Assistant
-- [ ] Website Builder
-
-Each project: clear outcome, evidence hook, next best action.
-
-### Portfolio (Collection)
-
-- [ ] My AI Projects
-- [ ] My Automations
-- [ ] My Experiments
-- [ ] My Wins
-
-### Mastery Path
-
-- [ ] Explorer
-- [ ] Practitioner
-- [ ] Builder
-- [ ] Architect
-- [ ] Mentor
-
-### Community
-
-- [ ] AI Builders Circle
-- [ ] Project Showcases
-- [ ] Weekly Challenges
-- [ ] Peer Reviews
-
-### Experience Layers (All Verticals)
-
-- [ ] Public landing — consumer hero, no PASS / OPERATIONAL / HPI below fold
-- [ ] Evidence model — what counts as proof
-- [ ] Next best action — single CTA after every section
-- [ ] Internal proof dashboard — operator routes only
+| Asset | Location |
+|-------|----------|
+| World registry | `apps/platform/lib/ai-builder-world.ts` |
+| Mission runner | `apps/platform/components/ai-builder/MissionRunner.tsx` |
+| Portfolio | `apps/platform/components/ai-builder/PortfolioView.tsx` |
+| Sub-nav | `apps/platform/components/ai-builder/AiBuilderSubNav.tsx` |
 
 ---
 
 ## Anti-Patterns
 
-- Do NOT run 10-stranger beta during this pass
-- Do NOT show PASS-017 / OPERATIONAL / HPI on `/ai-builder`
-- Do NOT start Financial Independence until AI Builder experience clears gate
-- Do NOT bulk-generate encyclopedia pages — depth on one vertical
-- Do NOT ship infrastructure without hours-of-engagement content
-
----
-
-## Exit Criteria
-
-- [ ] Student can spend hours inside AI Builder (academy + projects + glossary)
-- [ ] Parent understands: why it matters · what child learns · projects · success — no walkthrough
-- [ ] All checklist items above present on consumer surfaces
-- [ ] Assessment from `/future-proof` lands on coherent AI Builder next step
-- [ ] Every section answers "How does this help me become future-proof?"
-- [ ] Internal proof dashboard still works for operators
+- Do NOT structure as lesson → quiz
+- Do NOT show PASS / OPERATIONAL / HPI on consumer routes
+- Do NOT run public stranger beta during this pass
+- Do NOT start Financial Independence until 60-min + project gate clears
 
 ---
 
 ## What Follows
 
-**PASS-018 — Financial Independence** immediately after. Trinity reinforcement:
-
 ```txt
-AI Builder              = Create value
-Financial Independence  = Keep value
-Public Speaking         = Communicate value  (PASS-019)
+PASS-018  Financial Independence  = Keep value   (pairs with Create value)
+PASS-019  Public Speaking           = Communicate value
 ```
 
-Trinity beats Bourbon / BBQ / Poker as first beta wedge — those remain valuable later.
+Trinity: **Create · Keep · Communicate** — compelling for students, parents, career changers.
 
 ---
 
 ## Architecture Impact (report at pass close)
 
 ```txt
-Reusable System Added:
-Benefits:
-Affected Launches:
+Reusable System Added: AI Builder World pattern (missions + portfolio + playground)
+Benefits: Template for PASS-018–020 vertical worlds
+Affected Launches: Future-Proof Trinity beta wedge
 ```

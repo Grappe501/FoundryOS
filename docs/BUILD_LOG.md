@@ -9,7 +9,8 @@
 | **Version** | `0.8.0-path-engine` |
 | **Last Pass** | PASS-016C ✅ |
 | **Last Pass** | PASS-016D ✅ |
-| **Next Pass** | PASS-017 — AI Builder Depth Pass |
+| **Last Pass** | PASS-017 ✅ |
+| **Next Pass** | PASS-018 — Financial Independence World |
 | **Mode** | **Private build** — vertical depth until 3–5 verticals consumer-ready |
 | **Focus** | Build AI Builder deep enough for student/parent self-serve — no stranger beta yet |
 | **Live proof** | [/future-proof](/future-proof) → [/explore](/explore) → [/ai-builder](/ai-builder) · [/validation](/validation) (internal) |
@@ -25,6 +26,27 @@
 | Bulk thin SEO pages | Publish gate: score >= 70 |
 
 ---
+
+## PASS-017 — AI Builder World ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| World hub | `/ai-builder` |
+| Missions (5) + interactive runner | `/ai-builder/missions/[slug]` |
+| Academy (7 levels) | `/ai-builder/academy` |
+| Playground (5 labs) | `/ai-builder/playground` |
+| Portfolio (localStorage artifacts) | `/ai-builder/portfolio` |
+| Parent view + one-liner value | `/ai-builder/parents` |
+| Glossary + Careers | `/ai-builder/glossary`, `/careers` |
+| Internal proof | `/verticals/ai-builder` |
+
+**Model:** Mission → Build → Show → Reflect → Improve → Mentor
+
+**Close gate:** Student completes Mission 1 · Parent one-sentence value · Portfolio artifact · Tomorrow hook
+
+---
+
+## PASS-018 — Financial Independence World (next)
 
 ## PASS-016D — Stranger Conversion Cleanup ✅
 

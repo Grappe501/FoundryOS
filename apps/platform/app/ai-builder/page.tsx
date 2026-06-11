@@ -1,211 +1,162 @@
 import Link from 'next/link';
-import {
-  AI_BUILDER_ACTION_SLUG,
-  AI_BUILDER_ASSET_SLUG,
-  AI_BUILDER_COMMUNITY_SLUG,
-  PASS_016_NOT_DELIVERABLE,
-} from '@foundry/domain-blueprint';
-import { loadPass016Verification } from '../../lib/ai-builder-verification';
-import { ValidationPageTracker } from '../../components/ValidationPageTracker';
-import { AiBuilderProjectStart } from '../../components/AiBuilderProjectStart';
-import { ConsumerNav } from '../../components/ConsumerNav';
 import { ChoosePathLink } from '../../components/ChoosePathLink';
-
-export const dynamic = 'force-dynamic';
+import {
+  AI_BUILDER_ACADEMY_LEVELS,
+  AI_BUILDER_CAREERS,
+  AI_BUILDER_COMMUNITY,
+  AI_BUILDER_LOOP,
+  AI_BUILDER_MISSIONS,
+  AI_BUILDER_PLAYGROUND_LABS,
+} from '../../lib/ai-builder-world';
 
 export const metadata = {
-  title: 'Become an AI Builder | Foundry',
+  title: 'AI Builder World | Foundry',
   description:
-    'Use AI to solve real problems. Ship projects, earn evidence, join AI Builders Circle — the Create Value path inside Become Future-Proof.',
+    'Not a course — a world. Missions, projects, portfolio, playground. Build real things with AI and become future-proof.',
 };
 
-export default async function AiBuilderPage() {
-  const verification = await loadPass016Verification();
-  const {
-    blueprint,
-    loop,
-    identity,
-    checklist,
-    complete,
-    narrative,
-    tomorrowHook,
-    firstProject,
-    passGate,
-    principle,
-    title,
-    db,
-  } = verification;
-
+export default function AiBuilderWorldPage() {
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
-        padding: '2rem',
-        maxWidth: 900,
-        margin: '0 auto',
-      }}
-    >
-      <ValidationPageTracker page="/ai-builder" />
-      <ConsumerNav />
-
-      {/* Stranger entry — not internal proof UI first */}
-      <section style={{ marginTop: 16, padding: 28, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
+    <>
+      <section style={{ marginTop: 16, padding: 32, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
         <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
-          Create value · Life Leverage Domain
+          Create value · Future-Proof Trinity
         </p>
-        <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 12 }}>{blueprint.outcome.display_name}</h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.7 }}>{blueprint.care_reason}</p>
-        <p style={{ color: '#6B9B6B', fontSize: 14, marginTop: 20, lineHeight: 1.6 }}>
-          <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Your first project: </strong>
-          {firstProject.display_name}
+        <h1 style={{ fontWeight: 300, fontSize: '2.5rem', marginTop: 12, lineHeight: 1.2 }}>AI Builder World</h1>
+        <p style={{ color: '#8A8A8E', fontSize: 16, marginTop: 16, lineHeight: 1.7, maxWidth: 640 }}>
+          Not lessons and quizzes. <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Missions, builds, and proof.</strong>{' '}
+          You can actually build something here.
         </p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, fontStyle: 'italic' }}>
-          Pick one real problem in your life — scheduling, research, writing, planning — and use AI to solve it this week.
+        <p style={{ color: '#6B9B6B', fontSize: 14, marginTop: 16, lineHeight: 1.6 }}>
+          How does this help you become future-proof? AI is reshaping every career — builders who ship projects compound
+          faster than people who watch tutorials.
         </p>
-        <p style={{ color: '#6B9B6B', fontSize: 13, marginTop: 16 }}>{tomorrowHook}</p>
-        <div style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
-          <AiBuilderProjectStart projectName={firstProject.display_name} />
-          <ChoosePathLink />
+        <div style={{ marginTop: 28, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <Link
-            href="/explore"
+            href="/ai-builder/missions/homework-assistant"
             style={{
-              padding: '12px 20px',
-              border: '1px solid #1A1A1E',
+              padding: '14px 24px',
+              background: '#2A4A2A',
               borderRadius: 6,
+              color: '#E8E8EC',
               fontSize: 14,
-              color: '#8A8A8E',
               textDecoration: 'none',
             }}
           >
-            Explore all paths
+            Start Mission 1 →
           </Link>
+          <ChoosePathLink />
+          <Link href="/ai-builder/parents" style={{ padding: '14px 24px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+            For Parents
+          </Link>
+        </div>
+      </section>
+
+      <section style={{ marginTop: 32, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>How Foundry works (not a course)</h2>
+        <div style={{ marginTop: 20, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          {AI_BUILDER_LOOP.map((item, i) => (
+            <div key={item.step} style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              {i > 0 && <span style={{ color: '#4A4A4E' }}>→</span>}
+              <div style={{ padding: '10px 14px', background: '#0F0F12', borderRadius: 6, border: '1px solid #1A1A1E' }}>
+                <p style={{ color: '#E8E8EC', fontSize: 13, margin: 0 }}>{item.step}</p>
+                <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 4 }}>{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
+          <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Missions</h2>
+          <Link href="/ai-builder/missions" style={{ color: '#6B6B70', fontSize: 12, textDecoration: 'none' }}>
+            All missions →
+          </Link>
+        </div>
+        <div style={{ marginTop: 16 }}>
+          {AI_BUILDER_MISSIONS.slice(0, 3).map((m) => (
+            <Link
+              key={m.slug}
+              href={`/ai-builder/missions/${m.slug}`}
+              style={{
+                display: 'block',
+                padding: '16px 0',
+                borderBottom: '1px solid #1A1A1E',
+                textDecoration: 'none',
+                color: 'inherit',
+              }}
+            >
+              <span style={{ color: '#6B9B6B', fontSize: 12 }}>Mission {m.number}</span>
+              <p style={{ color: '#E8E8EC', fontSize: 15, margin: '4px 0 0' }}>{m.title}</p>
+              <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{m.timeEstimate}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Mastery path</h2>
-        <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 4, fontSize: 14 }}>
-          {blueprint.mastery_levels.map((level, i) => (
-            <span key={level.slug} style={{ color: i === 0 ? '#6B9B6B' : '#8A8A8E' }}>
-              {i > 0 && <span style={{ color: '#4A4A4E', margin: '0 8px' }}>→</span>}
-              {level.display_name}
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Academy — 7 levels, each unlocks projects</h2>
+        <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          {AI_BUILDER_ACADEMY_LEVELS.map((level) => (
+            <span key={level.slug} style={{ fontSize: 12, color: '#8A8A8E', padding: '6px 10px', background: '#0F0F12', borderRadius: 4 }}>
+              L{level.level} {level.title}
             </span>
           ))}
         </div>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: '24px 0 0' }}>Projects (evidence-backed)</h2>
-        <div style={{ marginTop: 12 }}>
-          {blueprint.projects.map((p, i) => (
-            <div key={p.slug} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 14 }}>
-              <span style={{ color: i === 0 ? '#6B9B6B' : '#E8E8EC' }}>{p.display_name}</span>
-              <span style={{ color: '#4A4A4E', marginLeft: 10, fontSize: 12 }}>Evidence: Project completed</span>
+        <Link href="/ai-builder/academy" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 13 }}>
+          Explore academy →
+        </Link>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Playground — learn by experimenting</h2>
+        <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 10 }}>
+          {AI_BUILDER_PLAYGROUND_LABS.map((lab) => (
+            <div key={lab.slug} style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+              <p style={{ color: '#E8E8EC', fontSize: 13, margin: 0 }}>{lab.title}</p>
+              <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 6 }}>{lab.unlockLevel}+</p>
             </div>
           ))}
         </div>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 16 }}>
-          Collection: {blueprint.collection.display_name} · Community: {blueprint.community.display_name}
-        </p>
+        <Link href="/ai-builder/playground" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 13 }}>
+          Enter playground →
+        </Link>
       </section>
 
-      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Who this is for</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
-          Students, parents, young professionals, and career changers — anyone who needs to create value in an AI world,
-          not consume another tutorial.
-        </p>
-      </section>
-
-      {/* Operational proof — PASS-016 verification */}
-      <section style={{ marginTop: 32, padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-        <p style={{ color: '#4A4A4E', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
-          {title}
-        </p>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{passGate}</p>
-        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 4 }}>{principle}</p>
-
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: '20px 0 0' }}>HPI Verification</h2>
-        <div style={{ marginTop: 12 }}>
-          {checklist.map((step) => (
-            <div
-              key={step.key}
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                padding: '8px 0',
-                borderBottom: '1px solid #1A1A1E',
-                fontSize: 13,
-              }}
-            >
-              <span>{step.label}</span>
-              <span style={{ color: step.complete ? '#6B9B6B' : '#8B4545' }}>{step.complete ? '✓' : '—'}</span>
+      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>{AI_BUILDER_COMMUNITY.name}</h2>
+        <div style={{ marginTop: 16, display: 'grid', gap: 12 }}>
+          {AI_BUILDER_COMMUNITY.features.map((f) => (
+            <div key={f.title}>
+              <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{f.title}</p>
+              <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{f.description}</p>
             </div>
           ))}
         </div>
-        <p
-          style={{
-            textAlign: 'center',
-            color: complete ? '#6B9B6B' : '#C8A96E',
-            fontSize: 18,
-            fontWeight: 300,
-            marginTop: 20,
-          }}
-        >
-          {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
-        </p>
-        <p style={{ color: '#4A4A4E', fontSize: 11, textAlign: 'center' }}>
-          Database: {db.persisted ? 'persisted ✓' : `in-memory${db.error ? ` (${db.error})` : ''}`}
-        </p>
       </section>
 
-      {loop && (
-        <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Demo transformation loop</h2>
-          <div style={{ marginTop: 12, fontSize: 13, lineHeight: 1.9, color: '#8A8A8E' }}>
-            <div>Project: <span style={{ color: '#E8E8EC' }}>{loop.project_display_name}</span></div>
-            <div>Evidence: <span style={{ color: '#6B9B6B' }}>Project completed</span></div>
-            <div>Next: <span style={{ color: '#E8E8EC' }}>{loop.next_action}</span></div>
-          </div>
-        </section>
-      )}
-
-      <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Success test</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, fontStyle: 'italic' }}>&ldquo;{narrative.start}&rdquo;</p>
-        <p style={{ color: '#E8E8EC', fontSize: 13, marginTop: 12 }}>{narrative.end}</p>
+      <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>What careers use this?</h2>
+        <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+          {AI_BUILDER_CAREERS.slice(0, 6).map((c) => (
+            <span key={c.title} style={{ fontSize: 12, color: '#8A8A8E', padding: '6px 10px', border: '1px solid #1A1A1E', borderRadius: 4 }}>
+              {c.title}
+            </span>
+          ))}
+        </div>
+        <Link href="/ai-builder/careers" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 13 }}>
+          All career connections →
+        </Link>
       </section>
 
-      {identity?.identity_titles && identity.identity_titles.length > 0 && (
-        <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Cross-domain identity</h2>
-          <div style={{ marginTop: 12, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-            {identity.identity_titles.map((t) => (
-              <span key={t} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 13 }}>
-                {t}
-              </span>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <p>
-          Vertical:{' '}
-          <Link href="/verticals/ai-builder" style={{ color: '#6B6B70' }}>
-            /verticals/ai-builder
-          </Link>
-          {' · '}
-          <Link href="/bourbon" style={{ color: '#6B6B70' }}>
-            Bourbon proof
-          </Link>
-        </p>
-        <p style={{ marginTop: 8 }}>
-          Not: {PASS_016_NOT_DELIVERABLE.join(' · ')}
-        </p>
-        <p style={{ marginTop: 8 }}>
-          {AI_BUILDER_ACTION_SLUG} · {AI_BUILDER_ASSET_SLUG} · {AI_BUILDER_COMMUNITY_SLUG}
-        </p>
-      </section>
-    </main>
+      <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
+        <Link href="/future-proof" style={{ color: '#6B6B70' }}>Future-Proof Assessment</Link>
+        {' · '}
+        <Link href="/ai-builder/portfolio" style={{ color: '#6B6B70' }}>My AI Portfolio</Link>
+        {' · '}
+        <Link href="/explore" style={{ color: '#6B6B70' }}>Explore paths</Link>
+      </p>
+    </>
   );
 }

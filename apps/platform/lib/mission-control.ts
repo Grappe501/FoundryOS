@@ -185,11 +185,18 @@ export const PASSES: PassEntry[] = [
   },
   {
     code: 'PASS-017',
-    title: 'AI Builder Experience Pass',
-    status: 'planned' as const,
+    title: 'AI Builder World',
+    status: 'completed' as const,
     date: '2026-06-11',
     summary:
-      'First consumer value pass — student spends hours; parent gets it without explanation. Academy, projects, glossary, portfolio, mastery, community.',
+      'World not course — missions, academy, playground, portfolio, parent view. Mission 1 walkthrough + tomorrow hook.',
+  },
+  {
+    code: 'PASS-018',
+    title: 'Financial Independence World',
+    status: 'in_progress' as const,
+    date: '2026-06-11',
+    summary: 'Keep Value — mirror AI Builder world. Budget, save, invest missions + parent view.',
   },
 ];
 
@@ -316,10 +323,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-016D',
-    next_pass: 'PASS-017',
+    last_pass: 'PASS-017',
+    next_pass: 'PASS-018',
     current_focus:
-      'Private build — vertical depth. PASS-017: AI Builder experience (not infrastructure). Jan 2027: 5 exceptional domains. Trinity wedge.',
+      'PASS-018 Financial Independence World — Keep Value. Mirror AI Builder: academy, missions, portfolio, parents.',
     open_risks: [
       'Risk: parent says "not enough here yet" — depth checklist per vertical',
       'Jan 2027 target: 5 exceptional domains, not 20 shallow',
