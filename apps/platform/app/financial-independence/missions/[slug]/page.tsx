@@ -23,7 +23,7 @@ export default async function FiMissionPage({ params }: Props) {
       <section style={{ marginTop: 20, padding: 16, background: '#1A160F', borderRadius: 8, border: '1px solid #4A4020' }}>
         <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}><strong style={{ fontWeight: 400 }}>Future-proof: </strong>{mission.futureProof}</p>
       </section>
-      <WorldMissionRunner mission={mission} portfolioKey={FI_PORTFOLIO_KEY} basePath="/financial-independence" pathSlug="financial-independence" />
+      <WorldMissionRunner mission={mission} portfolioKey={FI_PORTFOLIO_KEY} basePath="/financial-independence" pathSlug="financial-independence" portfolioLabel="My Wealth Portfolio" />
     </section>
   );
 }

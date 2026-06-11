@@ -19,7 +19,7 @@ import { trackPathClicked, trackValidationEvent } from '../lib/validation-tracke
 const PATH_HREFS: Record<string, string> = {
   'ai-builder': '/ai-builder',
   'financial-independence': '/financial-independence',
-  'public-speaking': '/future-proof?path=public-speaking',
+  'public-speaking': '/public-speaking',
 };
 
 function LevelPicker({

@@ -44,7 +44,7 @@ export const FI_MISSIONS: WorldMission[] = [
         checklist: ['List all income sources', 'Track every expense category', 'Assign a savings amount — even $5 counts'],
       },
       { phase: 'Show', title: 'Save your budget', body: 'Screenshot or export your budget. This goes in My Wealth Portfolio.' },
-      { phase: 'Reflect', title: 'Biggest surprise?', body: 'Where did you spend more than expected? What one category would you change next month?' },
+      { phase: 'Reflect', title: 'Biggest surprise?', body: 'Write 2–3 sentences in the reflection box below: Where did you spend more than expected? What one category would you change next month? This becomes your portfolio artifact.' },
       { phase: 'Improve', title: 'Cut one thing', body: 'Find one subscription or habit to reduce. Update the budget.' },
       { phase: 'Mentor', title: 'Show a parent', body: 'Walk a parent through your budget. Ask what they wish they knew at your age.' },
     ],
@@ -122,7 +122,7 @@ export const FI_MISSIONS: WorldMission[] = [
     timeEstimate: '2–3 hours',
     requiredLevel: 'Wealth Strategist (Level 6)',
     futureProof: 'AI Builder creates value. Financial Independence keeps it. Together: future-proof.',
-    tomorrowHook: 'Tomorrow: explore Public Speaking — learn to communicate the value you create and keep.',
+    tomorrowHook: 'Tomorrow: start Public Speaking World — deliver your first 3-minute talk at /public-speaking.',
     steps: [
       { phase: 'Mission', title: 'Audit your system', body: 'Gather: budget (M1), savings plan (M2), stock analysis (M3), investment plan (M4). What is missing?' },
       { phase: 'Build', title: 'Write your strategy', body: 'One page: monthly money flow, savings rate %, investment approach, one income growth action, review cadence (monthly).' },

@@ -1,55 +1,33 @@
-# PASS-018 — Financial Independence World
+# PASS-018 — Financial Independence World ✅
 
-> **Status:** IN PROGRESS · Keep Value · Mirror AI Builder world pattern
+> **Status:** CLOSED · Keep Value · Trinity leg 2
+
+---
+
+## Close Gate
+
+| Check | Criterion |
+|-------|-----------|
+| **Student** | Can start and complete Mission 1 (First Budget) |
+| **Parent** | One-sentence value on `/financial-independence/parents` |
+| **Portfolio** | Artifact saved to My Wealth Portfolio |
+| **Tomorrow hook** | Clear on mission complete → Mission 2 |
+| **Routes live** | All `/financial-independence/*` routes |
+
+---
+
+## Routes
+
+`/financial-independence` · `/academy` · `/missions` · `/missions/first-budget` · `/playground` · `/portfolio` · `/parents` · `/careers`
+
+Registry: `apps/platform/lib/financial-independence-world.ts`
 
 ---
 
 ## Trinity
 
 ```txt
-AI Builder              = Create Value   (PASS-017 ✅)
-Financial Independence  = Keep Value     (PASS-018)
-Public Speaking         = Communicate Value (PASS-019)
+AI Builder ✅ Create Value
+Financial Independence ✅ Keep Value
+Public Speaking → PASS-019 Communicate Value
 ```
-
----
-
-## Pass Gate
-
-Same as PASS-017:
-
-| Check | Criterion |
-|-------|-----------|
-| Student | Start and complete Mission 1 (First Budget) |
-| Parent | One-sentence value explanation |
-| Portfolio | Completed mission artifact |
-| Return hook | Tomorrow action clear |
-
----
-
-## Missions
-
-1. Build Your First Budget
-2. Save Your First $1,000
-3. Analyze a Stock
-4. Build an Investment Plan
-5. Build a Personal Wealth Strategy
-
----
-
-## Routes
-
-| Route | Purpose |
-|-------|---------|
-| `/financial-independence` | World hub |
-| `/financial-independence/missions/[slug]` | Mission runner |
-| `/financial-independence/academy` | 7 levels |
-| `/financial-independence/playground` | 5 labs |
-| `/financial-independence/portfolio` | My Wealth Portfolio |
-| `/financial-independence/parents` | Parent view |
-| `/financial-independence/glossary` | Terms |
-| `/financial-independence/careers` | Career connections |
-
-Registry: `apps/platform/lib/financial-independence-world.ts`
-
-Shared mission runner: `apps/platform/components/world/WorldMissionRunner.tsx`

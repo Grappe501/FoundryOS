@@ -1,5 +1,7 @@
 import { FiPortfolioView } from '../../../components/fi-world/FiPortfolioView';
 
+export const metadata = { title: 'My Wealth Portfolio | Financial Independence World' };
+
 export default function FiPortfolioPage() {
   return (
     <section style={{ marginTop: 16 }}>

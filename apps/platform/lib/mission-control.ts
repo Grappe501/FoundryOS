@@ -194,9 +194,16 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-018',
     title: 'Financial Independence World',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary: 'Keep Value — missions, academy, My Wealth Portfolio, parent one-liner. Mission 1 close gate met.',
+  },
+  {
+    code: 'PASS-019',
+    title: 'Public Speaking World',
     status: 'in_progress' as const,
     date: '2026-06-11',
-    summary: 'Keep Value — mirror AI Builder world. Budget, save, invest missions + parent view.',
+    summary: 'Communicate Value — completes Future-Proof Trinity. Speakers Circle, 5 missions, My Speaking Portfolio.',
   },
 ];
 
@@ -323,10 +330,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-017',
-    next_pass: 'PASS-018',
+    last_pass: 'PASS-018',
+    next_pass: 'PASS-019',
     current_focus:
-      'PASS-018 Financial Independence World — Keep Value. Mirror AI Builder: academy, missions, portfolio, parents.',
+      'Future-Proof Trinity complete: AI Builder + FI + Public Speaking worlds live. PASS-019 close gate: Mission 1 + parent one-liner + portfolio + tomorrow hook.',
     open_risks: [
       'Risk: parent says "not enough here yet" — depth checklist per vertical',
       'Jan 2027 target: 5 exceptional domains, not 20 shallow',

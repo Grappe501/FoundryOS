@@ -52,11 +52,13 @@ export function WorldMissionRunner({
   portfolioKey,
   basePath,
   pathSlug,
+  portfolioLabel = 'your portfolio',
 }: {
   mission: WorldMission;
   portfolioKey: string;
   basePath: string;
   pathSlug: string;
+  portfolioLabel?: string;
 }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [reflection, setReflection] = useState('');
@@ -111,8 +113,13 @@ export function WorldMissionRunner({
         </p>
         <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 12, color: '#E8E8EC' }}>{mission.title}</h2>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
-          Saved to your portfolio.
+          Your reflection is saved to <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>{portfolioLabel}</strong>.
         </p>
+        {reflection && (
+          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 12, fontStyle: 'italic', lineHeight: 1.6 }}>
+            &ldquo;{reflection}&rdquo;
+          </p>
+        )}
         <div style={{ marginTop: 24, padding: 16, background: '#0F0F12', borderRadius: 6, border: '1px solid #2A4A2A' }}>
           <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}>
             <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Tomorrow: </strong>
@@ -147,6 +154,9 @@ export function WorldMissionRunner({
         <p style={{ color: '#6B9B6B', fontSize: 13, marginTop: 16 }}>
           <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>What you will submit: </strong>
           {mission.evidence}
+        </p>
+        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>
+          Six steps: Mission → Build → Show → Reflect → Improve → Mentor. Click Accept, then follow each step.
         </p>
         <button type="button" onClick={startMission} style={{ marginTop: 24, padding: '14px 24px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 14, cursor: 'pointer' }}>
           Accept Mission →

@@ -9,11 +9,11 @@
 | **Version** | `0.8.0-path-engine` |
 | **Last Pass** | PASS-016C ✅ |
 | **Last Pass** | PASS-016D ✅ |
-| **Last Pass** | PASS-017 ✅ |
-| **Next Pass** | PASS-018 — Financial Independence World |
+| **Last Pass** | PASS-018 ✅ |
+| **Next Pass** | PASS-019 — Public Speaking World (Trinity complete) |
 | **Mode** | **Private build** — vertical depth until 3–5 verticals consumer-ready |
-| **Focus** | Build AI Builder deep enough for student/parent self-serve — no stranger beta yet |
-| **Live proof** | [/future-proof](/future-proof) → [/explore](/explore) → [/ai-builder](/ai-builder) · [/validation](/validation) (internal) |
+| **Focus** | Future-Proof Trinity worlds live — PASS-019 closes Communicate Value |
+| **Live proof** | [/future-proof](/future-proof) · [/ai-builder](/ai-builder) · [/financial-independence](/financial-independence) · [/public-speaking](/public-speaking) |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -46,7 +46,30 @@
 
 ---
 
-## PASS-018 — Financial Independence World (next)
+## PASS-019 — Public Speaking World (in progress)
+
+| Deliverable | Route |
+|-------------|-------|
+| World hub | `/public-speaking` |
+| 5 missions | `/public-speaking/missions/[slug]` |
+| My Speaking Portfolio | `/public-speaking/portfolio` |
+| Parent one-liner | `/public-speaking/parents` |
+
+**Completes Trinity:** Create · Keep · Communicate
+
+---
+
+## PASS-018 — Financial Independence World ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| World hub | `/financial-independence` |
+| Mission 1 | `/financial-independence/missions/first-budget` |
+| My Wealth Portfolio | `/financial-independence/portfolio` |
+
+**Close gate met:** Mission 1 · Parent one-liner · Portfolio · Tomorrow hook · Routes live
+
+---
 
 ## PASS-016D — Stranger Conversion Cleanup ✅
 

@@ -27,7 +27,6 @@ export function MissionRunner({ mission }: { mission: AiBuilderMission }) {
       mission={mission}
       portfolioKey={PORTFOLIO_KEY}
       basePath="/ai-builder"
-      pathSlug="ai-builder"
-    />
+      portfolioLabel="My AI Portfolio"
   );
 }
