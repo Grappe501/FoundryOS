@@ -26,7 +26,11 @@ export type TrackValidationPayload = {
     | 'return_this_week'
     | 'portfolio_created'
     | 'community_joined'
-    | 'paid_conversion';
+    | 'paid_conversion'
+    | 'challenge_submitted'
+    | 'showcase_posted'
+    | 'peer_feedback_given'
+    | 'community_feed_viewed';
   landing_page?: string;
   source?: string;
   path_slug?: string;

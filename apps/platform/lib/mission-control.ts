@@ -261,6 +261,12 @@ export const PASSES: PassEntry[] = [
     status: 'completed' as const,
     summary: '/operator/analytics funnel, world + mission effectiveness, velocity, success indicators, /operator/feedback.',
   },
+  {
+    code: 'PASS-028',
+    title: 'Community Activation',
+    status: 'completed' as const,
+    summary: '/community/[world] feed, weekly challenges, showcase, mentor recognition — 7 living communities.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;

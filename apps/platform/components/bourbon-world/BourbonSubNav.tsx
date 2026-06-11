@@ -13,7 +13,7 @@ const LINKS = [
   { href: '/bourbon/glossary', label: 'Glossary' },
   { href: '/bourbon/learn', label: 'Guides' },
   { href: '/bourbon/careers', label: 'Careers' },
-  { href: '/bourbon/community', label: 'Community' },
+  { href: '/community/bourbon', label: 'Community' },
 ] as const;
 
 export function BourbonSubNav() {

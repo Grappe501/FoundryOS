@@ -83,6 +83,22 @@ export {
   type TesterFeedbackRow,
 } from './tester-feedback';
 export {
+  ensureWorldCommunity,
+  joinWorldCommunity,
+  getCommunityMember,
+  listCommunityMembers,
+  listCommunityPosts,
+  submitCommunityPost,
+  submitPeerFeedback,
+  getCommunityActivationStats,
+  getCommunityActivationMetrics,
+  getWeekKey,
+  type CommunityPostRow,
+  type CommunityMemberRow,
+  type CommunityActivationStats,
+  type CommunityActivationMetrics,
+} from './community-activation';
+export {
   upsertMissionCompletion,
   getMissionCompletionsForUser,
   getMissionCompletionStats,

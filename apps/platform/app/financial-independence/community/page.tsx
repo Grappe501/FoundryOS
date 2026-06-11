@@ -1,7 +1,5 @@
-import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
-import { WorldCommunityDepth } from '../../../components/world-depth/WorldCommunityDepth';
+import { redirect } from 'next/navigation';
 
-export default function CommunityPage() {
-  const bundle = getWorldDepthOrThrow('financial-independence');
-  return <WorldCommunityDepth bundle={bundle} />;
+export default function CommunityRedirect() {
+  redirect('/community/financial-independence');
 }

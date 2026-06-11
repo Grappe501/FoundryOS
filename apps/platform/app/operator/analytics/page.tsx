@@ -40,12 +40,35 @@ export default async function OperatorAnalyticsPage() {
               <Stat label="Return this week" value={analytics.funnel.return_this_week} />
               <Stat label="Portfolio created" value={analytics.funnel.portfolio_created} />
               <Stat label="Community joined" value={analytics.funnel.community_joined} />
+              <Stat label="Challenge submitted" value={analytics.funnel.challenge_submitted} />
+              <Stat label="Showcase posted" value={analytics.funnel.showcase_posted} />
+              <Stat label="Peer feedback" value={analytics.funnel.peer_feedback_given} />
               <Stat label="Paid conversion" value={analytics.funnel.paid_conversion} />
             </div>
             <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 10 }}>
               {analytics.event_count.toLocaleString()} events · {analytics.mission_sync_count} synced completions · {analytics.beta_active} active testers
             </p>
           </section>
+
+          {analytics.community_activation && (
+            <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #2A4A2A' }}>
+              <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Community activation — PASS-028</h2>
+              <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 10 }}>
+                <Stat label="Challenge participation" value={analytics.community_activation.challenge_participation} />
+                <Stat label="Posts this week" value={analytics.community_activation.community_posts} />
+                <Stat label="Mentor activity (3+ helps)" value={analytics.community_activation.mentor_activity} />
+                <Stat label="Peer feedback" value={analytics.community_activation.peer_feedback} />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                {Object.entries(analytics.community_activation.by_world).map(([slug, s]) => (
+                  <div key={slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 12 }}>
+                    <Link href={`/community/${slug}`} style={{ color: '#E8E8EC' }}>{slug}</Link>
+                    <span style={{ color: '#8A8A8E' }}>{s.member_count} members · {s.challenge_submissions} challenges · {s.showcase_posts} showcases</span>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
             <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: 0 }}>Transformation velocity (avg hours)</h2>

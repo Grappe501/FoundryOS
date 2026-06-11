@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-027 ✅ |
-| **Next Pass** | PASS-028 Community Activation |
-| **Focus** | Learning from testers — transformation analytics, feedback loop |
+| **Last Pass** | PASS-028 ✅ |
+| **Next Pass** | PASS-029 Payment + Subscription |
+| **Focus** | Living communities — belonging before billing, no tester invites yet |
 | **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -123,6 +123,20 @@ Migration: `20260627000000_pass026_tester_operations.sql`
 | Tester feedback review | `/operator/feedback` |
 
 Migration: `20260628000000_pass027_transformation_analytics.sql`
+
+---
+
+## PASS-028 — Community Activation ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| Community feed | `/community/[world]` |
+| Weekly challenge | Submit + this-week list |
+| Showcase + peer feedback | Feed + APIs |
+| Mentor recognition | Helped 3 · 10 · 50 |
+| Community analytics | `/operator/analytics` |
+
+Migration: `20260629000000_pass028_community_activation.sql`
 
 ---
 

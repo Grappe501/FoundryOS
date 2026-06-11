@@ -13,7 +13,7 @@ const LINKS = [
   { href: '/civic-engagement/glossary', label: 'Glossary' },
   { href: '/civic-engagement/learn', label: 'Guides' },
   { href: '/civic-engagement/careers', label: 'Careers' },
-  { href: '/civic-engagement/community', label: 'Community' },
+  { href: '/community/civic-engagement', label: 'Community' },
 ] as const;
 
 export function CivicEngagementSubNav() {

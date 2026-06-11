@@ -1,6 +1,7 @@
 import { createServiceClient } from './client';
 import { isSupabaseConfigured } from './env';
 import type { ValidationEventRow } from './validation-events';
+import { getCommunityActivationMetrics, type CommunityActivationMetrics } from './community-activation';
 
 export type TransformationFunnel = {
   assessment_started: number;
@@ -12,6 +13,9 @@ export type TransformationFunnel = {
   portfolio_created: number;
   community_joined: number;
   paid_conversion: number;
+  challenge_submitted: number;
+  showcase_posted: number;
+  peer_feedback_given: number;
 };
 
 export type WorldAnalytics = {
@@ -70,6 +74,7 @@ export type TransformationAnalyticsSnapshot = {
   velocity: TransformationVelocity;
   success_indicators: SuccessIndicator[];
   domain_readiness: DomainReadinessScore[];
+  community_activation: CommunityActivationMetrics | null;
   event_count: number;
   mission_sync_count: number;
   beta_active: number;
@@ -164,6 +169,9 @@ function buildFunnel(rows: ValidationEventRow[]): TransformationFunnel {
     portfolio_created: rows.filter((e) => e.event_type === 'portfolio_created').length,
     community_joined: rows.filter((e) => e.event_type === 'community_joined').length,
     paid_conversion: rows.filter((e) => e.event_type === 'paid_conversion' || e.event_type === 'paid').length,
+    challenge_submitted: rows.filter((e) => e.event_type === 'challenge_submitted').length,
+    showcase_posted: rows.filter((e) => e.event_type === 'showcase_posted').length,
+    peer_feedback_given: rows.filter((e) => e.event_type === 'peer_feedback_given').length,
   };
 }
 
@@ -471,6 +479,7 @@ export async function getTransformationAnalyticsSnapshot(
   const rows = events as ValidationEventRow[];
   const worlds = buildWorldAnalytics(rows);
   const funnel = buildFunnel(rows);
+  const community_activation = await getCommunityActivationMetrics();
 
   return {
     funnel,
@@ -479,6 +488,7 @@ export async function getTransformationAnalyticsSnapshot(
     velocity: buildVelocity(rows, waitlist ?? [], completions ?? []),
     success_indicators: buildSuccessIndicators(rows),
     domain_readiness: buildDomainReadiness(worlds, depthScores),
+    community_activation,
     event_count: rows.length,
     mission_sync_count: completions?.length ?? 0,
     beta_active: betaActive ?? 0,

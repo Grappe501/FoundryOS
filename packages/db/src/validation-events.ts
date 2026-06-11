@@ -26,7 +26,11 @@ export type ValidationEventType =
   | 'return_this_week'
   | 'portfolio_created'
   | 'community_joined'
-  | 'paid_conversion';
+  | 'paid_conversion'
+  | 'challenge_submitted'
+  | 'showcase_posted'
+  | 'peer_feedback_given'
+  | 'community_feed_viewed';
 
 export type ValidationCategory = 'acquisition' | 'activation' | 'retention' | 'conversion';
 
@@ -107,6 +111,10 @@ const EVENT_CATEGORY: Record<ValidationEventType, ValidationCategory> = {
   portfolio_created: 'activation',
   community_joined: 'retention',
   paid_conversion: 'conversion',
+  challenge_submitted: 'activation',
+  showcase_posted: 'activation',
+  peer_feedback_given: 'retention',
+  community_feed_viewed: 'acquisition',
 };
 
 export function categoryForEvent(type: ValidationEventType): ValidationCategory {

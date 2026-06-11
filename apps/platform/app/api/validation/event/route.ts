@@ -29,6 +29,10 @@ const ALLOWED: ValidationEventType[] = [
   'portfolio_created',
   'community_joined',
   'paid_conversion',
+  'challenge_submitted',
+  'showcase_posted',
+  'peer_feedback_given',
+  'community_feed_viewed',
 ];
 
 export async function POST(request: Request) {

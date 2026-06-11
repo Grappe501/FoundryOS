@@ -13,7 +13,7 @@ const LINKS = [
   { href: '/bbq/glossary', label: 'Glossary' },
   { href: '/bbq/learn', label: 'Guides' },
   { href: '/bbq/careers', label: 'Careers' },
-  { href: '/bbq/community', label: 'Community' },
+  { href: '/community/bbq', label: 'Community' },
 ] as const;
 
 export function BbqSubNav() {

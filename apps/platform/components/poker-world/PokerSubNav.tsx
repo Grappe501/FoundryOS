@@ -13,7 +13,7 @@ const LINKS = [
   { href: '/poker/glossary', label: 'Glossary' },
   { href: '/poker/learn', label: 'Guides' },
   { href: '/poker/careers', label: 'Careers' },
-  { href: '/poker/community', label: 'Community' },
+  { href: '/community/poker', label: 'Community' },
 ] as const;
 
 export function PokerSubNav() {

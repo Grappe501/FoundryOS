@@ -37,6 +37,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname.startsWith('/community/')) {
+    return NextResponse.next();
+  }
+
   if (pathname.startsWith('/operator')) {
     if (
       pathname === '/operator' ||

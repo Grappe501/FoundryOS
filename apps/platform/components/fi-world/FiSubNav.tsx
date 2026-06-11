@@ -12,7 +12,7 @@ const LINKS = [
   { href: '/financial-independence/parents', label: 'For Parents' },
   { href: '/financial-independence/glossary', label: 'Glossary' },
   { href: '/financial-independence/learn', label: 'Guides' },
-  { href: '/financial-independence/community', label: 'Community' },
+  { href: '/community/financial-independence', label: 'Community' },
   { href: '/financial-independence/careers', label: 'Careers' },
 ] as const;
 
