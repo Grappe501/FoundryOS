@@ -97,9 +97,10 @@ export const PASSES = [
   {
     code: 'PASS-011',
     title: 'Evidence Engine',
-    status: 'in_progress' as const,
+    status: 'completed' as const,
+    date: '2026-06-11',
     summary:
-      'Identity requires evidence. Tiers, submissions linked to loops, /evidence verification. No Collections or Clubs yet.',
+      'Evidence submissions linked to loops. /evidence OPERATIONAL — Verified tier, persisted, loop linked.',
   },
   {
     code: 'PASS-012',
@@ -184,10 +185,10 @@ export async function getMissionControlStats() {
     evidence_trust_weight_avg: evidenceKpis.evidence_trust_weight_avg,
     identity_evidence_strength: evidenceKpis.identity_evidence_strength,
     launch_readiness_pct: live ? 68 : 52,
-    last_pass: 'PASS-010',
-    next_pass: 'PASS-011',
+    last_pass: 'PASS-011',
+    next_pass: 'PASS-012',
     current_focus:
-      'PASS-011 Evidence Engine — /evidence verification. Action → evidence → identity + next-step guidance.',
+      'PASS-011 CLOSED — Evidence Engine live at /evidence. PASS-012 Collections + Clubs when greenlit.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',

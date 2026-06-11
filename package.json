@@ -10,7 +10,7 @@
   "foundry": {
     "version": "0.8.0-path-engine",
     "current_pass": "PASS-011",
-    "next_pass": "PASS-011",
+    "next_pass": "PASS-012",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {

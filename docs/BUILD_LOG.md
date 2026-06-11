@@ -7,10 +7,10 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-010 ✅ |
-| **Next Pass** | PASS-011 — Evidence Engine |
-| **Launch Readiness** | 68% |
-| **Focus** | PASS-011: `/evidence` verification — Demo User speech evidence at Verified tier, linked to loop |
+| **Last Pass** | PASS-011 ✅ |
+| **Next Pass** | PASS-012 — Collections + Clubs |
+| **Launch Readiness** | 72% |
+| **Focus** | PASS-011 CLOSED — `/evidence` live at foundry-os.netlify.app. Identity requires evidence. |
 | **PASS-011** | `@foundry/evidence-engine` · `evidence_submissions` · `/evidence` |
 
 ### Open Risks
