@@ -217,7 +217,37 @@ export const PASSES: PassEntry[] = [
     title: 'Domain Factory Audit',
     status: 'completed' as const,
     date: '2026-06-11',
-    summary: 'world-factory package, npm run audit:worlds + build:world stub. Baseline ~40% automation.',
+    summary: 'world-factory package, audit:worlds + build:world stub. Baseline 43% automation.',
+  },
+  {
+    code: 'PASS-020',
+    title: 'Civic Engagement World',
+    status: 'planned' as const,
+    summary: 'Future-Proof Academy leg 4 — Improve Your Community. Last hand-guided Life Leverage world.',
+  },
+  {
+    code: 'PASS-024',
+    title: 'Factory Automation',
+    status: 'planned' as const,
+    summary: 'npm run build:world — 80%+ automation, <1h launch cost. BEFORE hand-built passion consumer worlds.',
+  },
+  {
+    code: 'PASS-023',
+    title: 'Bourbon Consumer World',
+    status: 'planned' as const,
+    summary: 'Passion Trinity #1 via factory — My Bourbon Journey consumer routes.',
+  },
+  {
+    code: 'PASS-025',
+    title: 'BBQ Consumer World',
+    status: 'planned' as const,
+    summary: 'Passion Trinity #2 — mostly generated via factory.',
+  },
+  {
+    code: 'PASS-026',
+    title: 'Poker Consumer World',
+    status: 'planned' as const,
+    summary: 'Passion Trinity #3 — heavily generated via factory.',
   },
 ];
 
@@ -347,13 +377,13 @@ export async function getMissionControlStats() {
     last_pass: 'PASS-021',
     next_pass: 'PASS-020',
     current_focus:
-      'PASS-020 Civic Engagement next. Passion Trinity foundation laid (Bourbon/BBQ/Poker registries). PASS-024 factory automation is the scale multiplier.',
+      'PASS-020 Civic Engagement → PASS-024 Factory Automation (80%+ obsessions) → PASS-023/025/026 passion worlds via factory. Future-Proof Academy = parent subscription wedge.',
     open_risks: [
-      'Risk: parent says "not enough here yet" — depth checklist per vertical',
-      'Jan 2027 target: 5 exceptional domains, not 20 shallow',
-      'Hide PASS / OPERATIONAL / HPI from public pages (PASS-021)',
-      'Trinity beta wedge beats Bourbon/BBQ/Poker for first beta',
-      'Private beta gate: 3 consumer-ready verticals + auth + email + pricing',
+      'Strategic bottleneck: launch cost & factory automation (43% → 80%+)',
+      'Do not hand-build passion worlds before PASS-024',
+      'Do not chase World Cup — no Soccer world yet',
+      'Jan 2027: 5 exceptional domains + factory for 100 — not 20 shallow',
+      'Private beta gate: Future-Proof Academy + auth + email + pricing (PASS-022)',
     ],
   };
 }

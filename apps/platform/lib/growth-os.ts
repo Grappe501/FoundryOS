@@ -1,6 +1,6 @@
 /** PASS-015 — Customer Acquisition Infrastructure + Growth Factory */
 
-import { ACTIVE_DOMAINS_JAN_2027_TARGET } from './growth-factory';
+import { getLaunchCostSnapshot } from './domain-launch-cost';
 import { countExploreCatalogPaths } from './explore-catalog';
 
 export const GROWTH_NORTH_STAR = 'Monthly Active Transformations';
@@ -60,18 +60,20 @@ export type GrowthTarget = {
 };
 
 export const JANUARY_2027_TARGETS: GrowthTarget[] = [
-  { label: 'Active Domains', target: String(ACTIVE_DOMAINS_JAN_2027_TARGET), deadline: 'Jan 2027' },
+  { label: 'Exceptional Domains', target: '5', deadline: 'Jan 2027' },
+  { label: 'Factory capacity', target: '100+ domains launchable', deadline: 'Jan 2027' },
+  { label: 'Cost to launch (factory)', target: '< 1 hour', deadline: 'Post PASS-024' },
   { label: 'Registered users', target: '25,000', deadline: 'Jan 2027' },
   { label: 'Paid users', target: '2,500', deadline: 'Jan 2027' },
   { label: 'MRR', target: '$10,000–25,000', deadline: 'Jan 2027' },
-  { label: 'Indexed pages', target: '250,000', deadline: 'Jan 2027' },
+  { label: 'Factory automation', target: '80%+', deadline: 'PASS-024' },
 ];
 
 export const REVENUE_MILESTONES = [
   { period: 'Sep 2026', paid_users: 10, mrr: '$40', note: '1 active domain · 100 users · validation' },
   { period: 'Oct 2026', paid_users: 50, mrr: '$200', note: '3 active domains · 500 users' },
   { period: 'Nov 2026', paid_users: 200, mrr: '$800', note: '5 active domains · 2,000 users' },
-  { period: 'Jan 2027', paid_users: 2500, mrr: '$10k–25k', note: '20 active domains · 25k users · Future-Proof funnel live' },
+  { period: 'Jan 2027', paid_users: 2500, mrr: '$10k–25k', note: '5 exceptional domains + factory for 100 · Future-Proof Academy funnel' },
   { period: 'End 2027', paid_users: 50000, mrr: '$250k–500k', note: 'If factory works' },
 ];
 
@@ -107,6 +109,27 @@ export function getGrowthKpiSnapshot(live?: Partial<GrowthKpiSnapshot>): GrowthK
     public_catalog_paths: live?.public_catalog_paths ?? countExploreCatalogPaths(),
   };
 }
+
+export type LaunchCostKpiSnapshot = {
+  avg_hours_completed: number | null;
+  factory_target_hours: number;
+  next_domain_target_hours: number;
+  avg_automation_pct: number;
+  factory_automation_target_pct: number;
+};
+
+export function getLaunchCostKpiSnapshot(): LaunchCostKpiSnapshot {
+  const s = getLaunchCostSnapshot();
+  return {
+    avg_hours_completed: s.avg_hours_completed,
+    factory_target_hours: s.factory_target_hours,
+    next_domain_target_hours: s.next_domain_target_hours,
+    avg_automation_pct: s.avg_automation_pct,
+    factory_automation_target_pct: s.factory_automation_target_pct,
+  };
+}
+
+export { getLaunchCostSnapshot, DOMAIN_LAUNCH_COST_REGISTRY } from './domain-launch-cost';
 
 export const GROWTH_STAT_LABELS: Record<keyof GrowthKpiSnapshot, string> = {
   visitors: 'Visitors',

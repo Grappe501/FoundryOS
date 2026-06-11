@@ -4,6 +4,8 @@ import {
   FIRST_TEN_DOMAINS,
   GROWTH_NORTH_STAR,
   getGrowthKpiSnapshot,
+  getLaunchCostKpiSnapshot,
+  getLaunchCostSnapshot,
   GROWTH_STAT_LABELS,
   JANUARY_2027_TARGETS,
   PRODUCTION_LAUNCH,
@@ -15,7 +17,6 @@ import { countExploreCatalogPaths } from '../../lib/explore-catalog';
 import { listTrafficOpportunities } from '../../lib/opportunity-registry';
 import {
   ACTIVE_DOMAIN_CRITERIA,
-  ACTIVE_DOMAINS_JAN_2027_TARGET,
   GROWTH_FACTORY_FUNNEL,
 } from '../../lib/growth-factory';
 
@@ -38,6 +39,8 @@ export default async function GrowthOsPage() {
     domains_built: domainsBuilt,
     domain_activation_rate: activeDomains / domainsBuilt,
   });
+  const launchCost = getLaunchCostKpiSnapshot();
+  const launchCostDetail = getLaunchCostSnapshot();
 
   const stats = Object.entries(GROWTH_STAT_LABELS).map(([key, label]) => ({
     key: key as keyof GrowthKpiSnapshot,
@@ -78,14 +81,57 @@ export default async function GrowthOsPage() {
         Production launch: {PRODUCTION_LAUNCH} · Business north star: {GROWTH_NORTH_STAR}
       </p>
       <p style={{ color: '#6B9B6B', fontSize: 12, marginTop: 8 }}>
-        Life Leverage first: AI Builder · Financial Independence · Public Speaking · Civic Engagement
+        Future-Proof Academy: AI Builder · Financial Independence · Public Speaking · Civic Engagement
       </p>
       <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>
         Growth Factory: {GROWTH_FACTORY_FUNNEL.join(' → ')}
       </p>
 
+      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cost To Launch A Domain — primary operational KPI</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Investors care about launch cost more than current domain count. Target: factory launches in &lt; 1 hour (PASS-024).
+        </p>
+        <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12 }}>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{launchCost.avg_hours_completed ?? '—'}h</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg completed (hand-built)</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{launchCost.next_domain_target_hours}h</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Next domain target</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>&lt; {launchCost.factory_target_hours}h</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Factory target</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: launchCost.avg_automation_pct >= 80 ? '#6B9B6B' : '#C8A96E' }}>
+              {launchCost.avg_automation_pct}%
+            </div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Automation (target {launchCost.factory_automation_target_pct}%+)</div>
+          </div>
+        </div>
+        <div style={{ marginTop: 20 }}>
+          {launchCostDetail.entries.map((e) => (
+            <div key={e.slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+              <span style={{ color: '#E8E8EC' }}>{e.displayName}</span>
+              <span style={{ color: '#8A8A8E' }}>
+                {e.hoursActual != null ? `${e.hoursActual}h actual` : e.hoursTarget != null ? `${e.hoursTarget}h target` : '—'}
+                {' · '}{e.automationPct}% auto
+                {e.consumerLive ? ' · live' : ''}
+              </span>
+            </div>
+          ))}
+        </div>
+        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
+          Curve: #1 hand built → #2 mostly generated → #3 heavily generated → #10 almost entirely generated ·{' '}
+          <code style={{ color: '#6B6B70' }}>npm run audit:worlds</code>
+        </p>
+      </section>
+
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Active Domains — Jan 2027 target: {ACTIVE_DOMAINS_JAN_2027_TARGET}</h2>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Exceptional Domains — Jan 2027 target: 5 + factory for 100</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Active ≠ built. Full HPI stack operational: {ACTIVE_DOMAIN_CRITERIA.join(' · ')}
         </p>

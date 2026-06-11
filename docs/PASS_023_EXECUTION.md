@@ -37,7 +37,9 @@ Each registry includes: 7 academy levels · 5 missions · portfolio key · commu
 /bourbon/*  /bbq/*  /poker/*
 ```
 
-Blocked on: PASS-024 factory OR hand-scaffold using Life Leverage template
+Blocked on: **PASS-024 factory** — do not hand-build consumer routes before automation pass.
+
+**Sequence:** PASS-020 → PASS-024 → PASS-023 Bourbon consumer world
 
 ---
 

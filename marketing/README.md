@@ -8,28 +8,18 @@ Foundry is the engine underneath.
 
 ## Folder Map
 
+See **`marketing/CHANNELS.md`** for full channel index.
+
 | Folder | Purpose |
 |--------|---------|
-| `vision/` | Long-term narrative, January 2027 launch thesis |
-| `positioning/` | Domain-level positioning — not platform positioning |
-| `seo/` | SEO strategy, page templates, index targets |
-| `content-engine/` | Programmatic content types per domain |
-| `social/` | Cross-channel social strategy |
-| `youtube/` | Long-form identity content |
-| `tiktok/` | Short-form discovery |
-| `reddit/` | Community-native acquisition |
-| `communities/` | Domain communities as growth channels |
-| `partnerships/` | Distilleries, leagues, clubs, orgs |
-| `affiliates/` | Affiliate program design |
-| `referrals/` | Referral loops |
-| `influencers/` | Creator partnerships |
+| `vision/` | Future-Proof Academy · Passion Trinity thesis |
+| `parents/` | Parent subscription acquisition |
+| `homeschool/` · `teachers/` | Alternative education |
+| `civic/` | Civic Engagement |
+| `bourbon/` · `bbq/` · `poker/` | Passion Trinity domains |
+| `seo/` · `youtube/` · `tiktok/` · `reddit/` · `facebook/` | Acquisition channels |
+| `templates/` | Domain acquisition map (Top 100 SEO, etc.) |
 | `launches/` | Domain launch playbooks |
-| `email/` | Lifecycle email |
-| `analytics/` | Acquisition analytics |
-| `growth-model/` | CAC, LTV, funnel math |
-| `forecasts/` | Revenue and user forecasts |
-| `experiments/` | Growth experiment log |
-| `dashboards/` | Growth OS dashboard specs |
-| `opportunities/` | PASS-015A Traffic Opportunity Registry — events → permanent domains |
+| `forecasts/` | Revenue · launch cost · automation KPIs |
 
 See `docs/GROWTH_OS.md`, `docs/JANUARY_2027_TARGETS.md`, `docs/PASS_015A_EXECUTION.md`.
