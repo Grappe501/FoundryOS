@@ -1,0 +1,42 @@
+---
+description: PASS-014 execution — Bourbon proves the stack, not a content site
+alwaysApply: false
+---
+
+# PASS-014 Execution Mode
+
+PASS-013 is closed. PASS-014 is greenlit.
+
+## Pass Gate
+
+> Does Bourbon prove the Human Potential Infrastructure stack works in a real-world domain?
+
+## NOT This Pass
+
+Do not build bourbon articles, encyclopedia pages, or review catalog as the deliverable.
+
+## IS This Pass
+
+Demo User becomes **Bourbon Enthusiast** using the same loop:
+
+```txt
+Outcome → Path → Project → Action → Evidence → Reflection → Insight → Next Action
+→ Collection (My Bourbon Shelf) → Community (CAB Society) → Reputation → Mastery
+```
+
+## Verification
+
+- `/verticals/bourbon` — vertical transformation context
+- `/bourbon` — full stack proof dashboard, OPERATIONAL + persisted ✓
+
+## Path Tiers
+
+Curious Beginner → Enthusiast → Collector → Historian → Steward → Master
+
+## Do Not
+
+- Regress to content-first bourbon site
+- Bypass evidence for mastery or reputation
+- Break the chain: Evidence → Reputation → Mastery → Identity → Community
+
+See `docs/PASS_014_EXECUTION.md`

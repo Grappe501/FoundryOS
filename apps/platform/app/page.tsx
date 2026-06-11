@@ -44,6 +44,8 @@ const northStarLabels: Record<string, string> = {
   mastery_assignments_total: 'Mastery Assignments',
   community_recognitions_total: 'Community Recognitions',
   identity_mastery_strength: 'Identity Mastery Strength',
+  domain_blueprints_active: 'Domain Blueprints Active',
+  domain_proofs_complete: 'Domain Proofs Complete',
   projects_completed: 'Projects Completed',
   path_completion_rate: 'Path Completion Rate',
   active_paths: 'Active Paths',
@@ -54,6 +56,20 @@ const northStarLabels: Record<string, string> = {
   club_hosts: 'Club Hosts',
 };
 
+const growthStatLabels: Record<string, string> = {
+  visitors: 'Visitors',
+  registered_users_growth: 'Registered Users',
+  active_users: 'Active Users',
+  paid_users: 'Paid Users',
+  mrr_usd: 'MRR',
+  cac_usd: 'CAC',
+  referral_rate: 'Referral Rate',
+  seo_traffic: 'SEO Traffic',
+  domains_live: 'Domains Live',
+  monthly_active_transformations: 'Monthly Active Transformations',
+  indexed_pages: 'Indexed Pages',
+};
+
 export default async function MissionControlHome() {
   const [stats, dbStatus] = await Promise.all([getMissionControlStats(), getDatabaseStatus()]);
   const assets = getPlatformAssetStory(stats);
@@ -61,6 +77,16 @@ export default async function MissionControlHome() {
     label,
     value: stats[key as keyof typeof stats] as number,
   }));
+  const growthStats = Object.entries(growthStatLabels).map(([key, label]) => {
+    const raw = stats[key as keyof typeof stats] as number;
+    const value =
+      key === 'mrr_usd' || key === 'cac_usd'
+        ? `$${raw.toLocaleString()}`
+        : key === 'referral_rate'
+          ? `${Math.round(raw * 100)}%`
+          : raw.toLocaleString();
+    return { label, value };
+  });
   const northStarStats = Object.entries(northStarLabels).map(([key, label]) => {
     const raw = stats[key as keyof typeof stats] as number;
     const value =
@@ -142,8 +168,24 @@ export default async function MissionControlHome() {
           ))}
         </div>
 
+        <p style={{ fontSize: 11, color: '#6B6B70', marginTop: 32, marginBottom: 8, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+          Growth OS — Customer Acquisition
+        </p>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12, marginBottom: 8 }}>
+          {growthStats.map((s) => (
+            <div key={s.label} style={{ padding: '1rem', background: '#0F0F12', border: '1px solid #3A2A20', borderRadius: 8 }}>
+              <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{s.value}</div>
+              <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{s.label}</div>
+            </div>
+          ))}
+        </div>
+        <p style={{ fontSize: 11, color: '#4A4A4E', marginBottom: 24 }}>
+          Business north star: Monthly Active Transformations · Launch: January 2027 ·{' '}
+          <Link href="/growth" style={{ color: '#6B6B70' }}>Growth OS →</Link>
+        </p>
+
         <p style={{ fontSize: 11, color: '#6B6B70', marginBottom: 12, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-          North Star — {PRIMARY_DASHBOARD_QUESTION}
+          Transformation Metrics — {PRIMARY_DASHBOARD_QUESTION}
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12 }}>
           {northStarStats.map((s) => (
@@ -189,6 +231,9 @@ export default async function MissionControlHome() {
           <Link href="/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
           <Link href="/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
           <Link href="/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
+          <Link href="/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
+          <Link href="/growth" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>
+          <Link href="/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>
 

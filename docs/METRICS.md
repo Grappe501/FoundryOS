@@ -1,6 +1,69 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-012 close
+> Updated PASS-014 close — Growth OS greenlit
+
+---
+
+## Business North Star (PASS-015+)
+
+**Monthly Active Transformations** — users, engagement, retention, growth, revenue in one metric.
+
+Product north star unchanged: **Transformations in Progress**.
+
+---
+
+## Growth OS KPIs
+
+| Metric | Source |
+|--------|--------|
+| Visitors | Analytics (PASS-015) |
+| Registered / Active / Paid Users | Auth + billing |
+| MRR | Stripe / billing |
+| CAC | growth-model/ |
+| Referral Rate | referrals/ |
+| SEO Traffic | analytics/ |
+| Domains Live | `domain_transformation_loops` |
+| Indexed Pages | SEO factory |
+| Monthly Active Transformations | transformation graph + auth |
+
+Live: `/growth`
+
+---
+
+## PASS-014 KPIs (Domain Proof)
+
+| Metric | Source |
+|--------|--------|
+| Domain Blueprints Active | `domain_blueprints` (status = active) |
+| Domain Proofs Complete | `domain_transformation_loops` (loop_complete = true) |
+| Cross-Domain Identity | `identity_domain_snapshots` |
+
+Live: `/bourbon` · `/verticals/bourbon`
+
+---
+
+## Human Potential Infrastructure Core ✅
+
+```txt
+PASS-010 Transformation Loop
+PASS-011 Evidence Engine
+PASS-012 Collections + Communities
+PASS-013 Reputation + Mastery
+```
+
+Chain: Evidence → Reputation → Mastery → Identity → Community
+
+---
+
+## PASS-013 Live KPIs
+
+| Metric | Source |
+|--------|--------|
+| Reputation Records | `reputation_records` |
+| Mastery Assignments | `mastery_assignments` |
+| Community Recognitions | `mastery_assignments.community_recognition_updated` |
+
+Live: `/reputation` · `/mastery`
 
 ---
 
@@ -78,12 +141,11 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 13 (PASS-000–012) |
+| Passes complete | 14 (PASS-000–013) |
 | Version | `0.8.0-path-engine` |
-| Launch readiness | 76% |
-| Collection Engine | ✅ PASS-012 — Personal Knowledge Assets |
-| Community OS persistence | ✅ PASS-012 — `/community` proof |
-| Next pass | PASS-013 — Reputation + Mastery (earned trust chain) |
+| Launch readiness | 84% |
+| Reputation + Mastery Engine | ✅ PASS-013 — `/reputation` + `/mastery` |
+| Next pass | PASS-014 — Bourbon proves stack (not content site) |
 
 ---
 

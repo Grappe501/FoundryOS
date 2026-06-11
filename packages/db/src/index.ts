@@ -47,3 +47,9 @@ export {
   getMasteryKpiCounts,
   type MasteryAssignmentRow,
 } from './mastery-assignments';
+export {
+  ensureDomainBlueprintSeeded,
+  ensureBourbonDomainProof,
+  getDomainProofKpiCounts,
+  getDomainBlueprintFromDb,
+} from './domain-proof';

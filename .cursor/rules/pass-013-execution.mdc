@@ -5,30 +5,11 @@ alwaysApply: false
 
 # PASS-013 Execution Mode
 
-PASS-012 is closed. PASS-013 is greenlit when Steve/Ernie assign execution.
-
-## Core Rules
-
-```txt
-Reputation is earned trust.
-Mastery is demonstrated capability.
-```
-
-## Chain (locked)
-
-```txt
-Evidence → Reputation → Mastery → Identity → Community
-```
-
-Do not build points, streaks, or engagement badges.
-
-## Pass Gate
-
-> Does trust and mastery reflect demonstrated capability backed by evidence?
+PASS-013 is closed. PASS-014 is greenlit — Bourbon proves the stack, not a content site.
 
 ## Do Not
 
-- Start PASS-014 Bourbon UI before PASS-013 proof is live
+- Start PASS-014 with bourbon articles/encyclopedia/reviews
 - Break the evidence → reputation → mastery chain
 
-See `docs/PASS_013_EXECUTION.md`, `docs/REPUTATION_SYSTEM.md`
+See `docs/PASS_013_EXECUTION.md`, `docs/PASS_014_EXECUTION.md`

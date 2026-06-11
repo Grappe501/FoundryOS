@@ -73,8 +73,14 @@ Identity: Public Speaker Path Progress Increased
 
 ## Out of Scope
 
-- Bourbon vertical UI (PASS-014)
+- Bourbon vertical UI (PASS-014 — transformation proof only, not content site)
 - Bulk reputation without evidence linkage
+
+---
+
+## Status: CLOSED ✅
+
+Live: [foundry-os.netlify.app/reputation](https://foundry-os.netlify.app/reputation) · [foundry-os.netlify.app/mastery](https://foundry-os.netlify.app/mastery)
 
 ---
 

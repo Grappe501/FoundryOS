@@ -11,8 +11,10 @@ export function calculateReputationFromEvidence(
   let reputation_title = 'Contributor';
   if (domain === 'public-speaking' && evidence.action_slug === 'deliver-first-speech' && verified) {
     reputation_title = 'Trusted Speaker Candidate';
+  } else if (domain === 'bourbon' && evidence.action_slug === 'compare-four-bourbons-blind-tasting' && verified) {
+    reputation_title = 'Trusted Bourbon Enthusiast Candidate';
   } else if (domain === 'bourbon' && verified) {
-    reputation_title = 'Trusted Reviewer';
+    reputation_title = 'Trusted Bourbon Enthusiast Candidate';
   } else if (domain === 'ai-building' && verified) {
     reputation_title = 'Trusted Builder';
   } else if (verified) {

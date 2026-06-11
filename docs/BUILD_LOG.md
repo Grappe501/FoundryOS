@@ -7,10 +7,12 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-012 ✅ |
-| **Current Pass** | PASS-013 — Reputation + Mastery (in progress) |
-| **Next Pass** | PASS-014 — Bourbon Vertical Launch |
-| **Focus** | `/reputation` + `/mastery` — Evidence → Reputation → Mastery → Identity → Community |
+| **Last Pass** | PASS-014 ✅ |
+| **Next Pass** | PASS-015 — Growth OS (greenlit) |
+| **Focus** | Parallel lanes: Platform (Domain Factory) + Growth (Customer Acquisition) |
+| **HPI Core** | PASS-010–014 complete — Domain Proof operational |
+| **Live proof** | [/bourbon](https://foundry-os.netlify.app/bourbon) · [/verticals/bourbon](https://foundry-os.netlify.app/verticals/bourbon) |
+| **Growth OS** | [/growth](https://foundry-os.netlify.app/growth) · Launch target: January 2027 |
 
 ### Open Risks
 
@@ -190,6 +192,71 @@ OpenAI generates. Supabase owns. Generated ≠ Published.
 - What has Steve reviewed? → `reviewed`
 - Collections built? → `collections`
 - Expertise earned? → `user_expertise`
+
+---
+
+---
+
+## PASS-013 — Reputation + Mastery ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-11 |
+| **Commit** | `adb1f51` |
+| **Core rules** | Reputation is earned trust · Mastery is demonstrated capability |
+| **Packages** | `@foundry/reputation-engine`, `@foundry/mastery-engine` |
+| **Migration** | `20260623000000_reputation_mastery_pass013.sql` |
+| **Live proof** | `/reputation` OPERATIONAL · `/mastery` OPERATIONAL · persisted ✓ |
+
+### Chain verified (production)
+
+```txt
+Evidence → Reputation → Mastery → Identity → Community
+```
+
+Demo User: **Trusted Speaker Candidate** · **Road to Confident Speaker — Milestone 1 Complete** · Speaker Circle recognition.
+
+### Milestone
+
+**First point where Human Potential Infrastructure exists** — not just vision.
+
+---
+
+## PASS-014 — Domain Proof ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-11 |
+| **Deliverable** | Domain Blueprint — bourbon first instance, not special case |
+| **Packages** | `@foundry/domain-blueprint`, `@foundry/db` → `ensureBourbonDomainProof()` |
+| **Migration** | `20260624000000_domain_proof_pass014.sql` |
+| **Live proof** | `/bourbon` OPERATIONAL · `/verticals/bourbon` · persisted ✓ |
+
+### Architecture Impact
+
+- **Reusable System:** Domain Blueprint layer — manufacture domains from template
+- **Benefits:** Bourbon proves HPI; Poker, BBQ, Physics reuse same blueprint
+- **Next:** Domain Factory (Platform lane) + Growth OS (Growth lane) in parallel
+
+See `docs/PASS_014_EXECUTION.md`.
+
+---
+
+## PASS-015 — Growth OS (greenlit)
+
+**Pass gate:** Customer Acquisition Infrastructure — traffic, users, revenue, retention.
+
+**Parallel lanes:** Platform (Domain Factory #2–#25) + Growth (marketing/, SEO factory, dashboards).
+
+**Business north star:** Monthly Active Transformations.
+
+See `docs/PASS_015_EXECUTION.md`, `docs/GROWTH_OS.md`, `docs/JANUARY_2027_TARGETS.md`.
+
+---
+
+## PASS-014 — Domain Proof (archive note)
+
+**Was in progress — now closed.** See section above.
 
 ---
 

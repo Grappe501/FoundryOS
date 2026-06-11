@@ -1,8 +1,8 @@
 # FoundryOS — Roadmap
 
-> Updated PASS-012 close. Mirrored on foundryos.com/investors
+> Updated PASS-014 close — Growth OS greenlit. Parallel Platform + Growth lanes.
 
-**Build gate:** Architecture compliance — not human permission. See `docs/ARCHITECTURE_COMPLIANCE.md`
+**Production launch:** January 2027 · See `docs/JANUARY_2027_TARGETS.md`
 
 ---
 
@@ -22,8 +22,9 @@ PASS-009 ████████████ Transformation System Factory ✅
 PASS-010 ████████████ Transformation Graph Engine ✅
 PASS-011 ████████████ Evidence Engine ✅
 PASS-012 ████████████ Collections + Communities ✅
-PASS-013 ░░░░░░░░░░░░ Reputation + Mastery ← IN PROGRESS
-PASS-014 ░░░░░░░░░░░░ Bourbon Vertical Launch
+PASS-013 ████████████ Reputation + Mastery ✅
+PASS-014 ████████████ Domain Proof ✅
+PASS-015 ░░░░░░░░░░░░ Growth OS ← NEXT (parallel: Domain Factory)
 ```
 
 > `@foundry/project-engine` is architecturally complete — projects are nodes in the transformation graph.

@@ -31,6 +31,11 @@ export default function VerticalsPage() {
             {'launch_pass' in v && v.launch_pass && (
               <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 4 }}>Launch: {v.launch_pass}</p>
             )}
+            {v.slug === 'bourbon' && (
+              <Link href="/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 12, marginTop: 8, display: 'inline-block' }}>
+                Transformation context →
+              </Link>
+            )}
           </div>
         ))}
       </div>

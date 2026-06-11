@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@foundry/collection-engine": "*",
+    "@foundry/domain-blueprint": "*",
     "@foundry/community-engine": "*",
     "@foundry/evidence-engine": "*",
     "@foundry/mastery-engine": "*",

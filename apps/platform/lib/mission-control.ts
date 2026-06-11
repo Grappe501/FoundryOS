@@ -1,12 +1,14 @@
 import catalogIndex from '../../../data/catalog/index.json';
 import verticalSites from '../../../data/vertical-sites.json';
 import { estimatePageCount } from '@foundry/content-engine';
-import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, getReputationKpiCounts, getMasteryKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, getReputationKpiCounts, getMasteryKpiCounts, getDomainProofKpiCounts, isSupabaseConfigured } from '@foundry/db';
 import { getEvidenceKpiSnapshot } from '@foundry/evidence-engine';
 import { getCollectionKpiSnapshot } from '@foundry/collection-engine';
 import { getCommunityKpiSnapshot } from '@foundry/community-engine';
 import { getReputationKpiSnapshot } from '@foundry/reputation-engine';
 import { getMasteryKpiSnapshot } from '@foundry/mastery-engine';
+import { getDomainProofKpiSnapshot } from '@foundry/domain-blueprint';
+import { getGrowthKpiSnapshot } from './growth-os';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -128,15 +130,25 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-013',
     title: 'Reputation + Mastery Live',
-    status: 'in_progress' as const,
+    status: 'completed' as const,
+    date: '2026-06-11',
     summary:
-      'Earned trust + demonstrated capability from evidence. Proof: /reputation + /mastery — not points or gamification.',
+      '/reputation + /mastery OPERATIONAL. Chain live: Evidence → Reputation → Mastery → Identity → Community. Human Potential Infrastructure core complete.',
   },
   {
     code: 'PASS-014',
-    title: 'Bourbon Vertical Launch',
+    title: 'Domain Proof',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary:
+      'Reusable Domain Blueprint — bourbon first instance. /bourbon + /verticals/bourbon OPERATIONAL. HPI stack proven in real domain.',
+  },
+  {
+    code: 'PASS-015',
+    title: 'Growth OS',
     status: 'planned' as const,
-    summary: 'bourbon.foundryos.com — first proof, not the product.',
+    summary:
+      'Customer Acquisition Infrastructure — marketing/, Growth OS dashboard, SEO factory, launch tracker. Parallel to Domain Factory.',
   },
 ];
 
@@ -150,6 +162,7 @@ export async function getMissionControlStats() {
   const communityLive = isSupabaseConfigured() ? await getCommunityKpiCounts() : null;
   const reputationLive = isSupabaseConfigured() ? await getReputationKpiCounts() : null;
   const masteryLive = isSupabaseConfigured() ? await getMasteryKpiCounts() : null;
+  const domainProofLive = isSupabaseConfigured() ? await getDomainProofKpiCounts() : null;
   const northStar = getNorthStarMetrics();
   const transformationAnalytics = getTransformationAnalytics();
   const loopKpis = getLoopKpiSnapshot(
@@ -162,6 +175,10 @@ export async function getMissionControlStats() {
   const communityKpis = getCommunityKpiSnapshot(communityLive ?? undefined);
   const reputationKpis = getReputationKpiSnapshot(reputationLive ?? undefined);
   const masteryKpis = getMasteryKpiSnapshot(masteryLive ?? undefined);
+  const domainProofKpis = getDomainProofKpiSnapshot(domainProofLive ?? undefined);
+  const growthKpis = getGrowthKpiSnapshot({
+    domains_live: Math.max(domainProofKpis.domain_proofs_complete, 1),
+  });
 
   return {
     version: PLATFORM_VERSION,
@@ -222,18 +239,32 @@ export async function getMissionControlStats() {
     mastery_assignments_total: masteryKpis.mastery_assignments_total,
     community_recognitions_total: masteryKpis.community_recognitions_total,
     identity_mastery_strength: masteryKpis.identity_mastery_strength,
-    launch_readiness_pct: live ? 80 : 52,
-    last_pass: 'PASS-012',
-    next_pass: 'PASS-013',
+    domain_blueprints_active: domainProofKpis.domain_blueprints_active,
+    domain_proofs_complete: domainProofKpis.domain_proofs_complete,
+    // Growth OS — Customer Acquisition Infrastructure (PASS-015)
+    visitors: growthKpis.visitors,
+    registered_users_growth: growthKpis.registered_users,
+    active_users: growthKpis.active_users,
+    paid_users: growthKpis.paid_users,
+    mrr_usd: growthKpis.mrr_usd,
+    cac_usd: growthKpis.cac_usd,
+    referral_rate: growthKpis.referral_rate,
+    seo_traffic: growthKpis.seo_traffic,
+    domains_live: growthKpis.domains_live,
+    monthly_active_transformations: growthKpis.monthly_active_transformations,
+    indexed_pages: growthKpis.indexed_pages,
+    launch_readiness_pct: live ? 90 : 52,
+    last_pass: 'PASS-014',
+    next_pass: 'PASS-015',
     current_focus:
-      'PASS-013 IN PROGRESS: /reputation + /mastery — Evidence → Reputation → Mastery → Identity → Community. Earned trust, not gamification.',
+      'PASS-014 CLOSED — Domain Proof operational. PASS-015 GREENLIT: Growth OS + Domain Factory in parallel lanes. Bottleneck = distribution.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',
-      'Weight toward Transformation Impact — not Content Consumption',
-      'No Bourbon UI until PASS-014',
-      'North star: transformations in progress — not users, pages, or entities',
-      'PASS-013: Reputation is earned trust — not points or badges for engagement',
+      'Bottleneck shifted: distribution, not architecture',
+      'Do NOT market Foundry first — market domains (Bourbon, BBQ, Poker)',
+      'January 2027: 25 domains, 100k users, 5k paid, $20–50k MRR',
+      'Parallel lanes: Platform (Domain Factory) + Growth (Customer Acquisition)',
     ],
   };
 }
