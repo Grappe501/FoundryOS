@@ -244,6 +244,12 @@ export const PASSES: PassEntry[] = [
     summary: '7 worlds deepened — 35 lessons, 50 glossary terms, guides, portfolio, parent, community per world.',
   },
   {
+    code: 'PASS-022',
+    title: 'Private Beta Readiness',
+    status: 'completed' as const,
+    summary: 'Auth, /beta waitlist, /pricing, mission sync to Supabase, /operator/beta dashboard.',
+  },
+  {
     code: 'PASS-026',
     title: 'Poker Consumer World',
     status: 'completed' as const,
@@ -375,14 +381,13 @@ export async function getMissionControlStats() {
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
     last_pass: 'PASS-021',
-    next_pass: 'PASS-022',
+    next_pass: 'PASS-020',
     current_focus:
-      'PASS-022 Private Beta Readiness — auth, email, pricing. Factory live: add blueprint + npm run build:world for domain #8+.',
+      'Handpicked private beta — invite testers from waitlist. Factory + depth + auth ready.',
     open_risks: [
-      'Passion worlds need content depth polish (structure is factory-complete)',
-      'Private beta gate: Future-Proof Academy + auth + email + pricing (PASS-022)',
-      'Do not chase World Cup — no Soccer world yet',
-      'Jan 2027: 5 exceptional domains + factory for 100 — not 20 shallow',
+      'Enable email confirmation in Supabase for production auth',
+      'Stripe billing when ready to charge Build/Mastery tiers',
+      'Invite-only beta — no public launch yet',
     ],
   };
 }

@@ -16,6 +16,11 @@ const ALLOWED: ValidationEventType[] = [
   'account_created',
   'trial_started',
   'paid',
+  'beta_joined',
+  'pricing_viewed',
+  'pricing_clicked',
+  'sign_in_started',
+  'sign_up_started',
 ];
 
 export async function POST(request: Request) {

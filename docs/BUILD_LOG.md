@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-025 ✅ |
-| **Next Pass** | PASS-022 Private Beta Readiness |
-| **Focus** | Seven worlds consumer-deep · 245 academy lessons · 350 glossary terms |
+| **Last Pass** | PASS-022 ✅ |
+| **Next Pass** | Private beta invites |
+| **Focus** | Handpicked testers — auth, waitlist, pricing, progress sync live |
 | **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -80,7 +80,18 @@ Factory: `npm run build:world -- <slug>` · `npm run audit:worlds`
 | Per-world output | ~100 files: routes, components, marketing, explore registry |
 | Growth KPI | `/growth` — cost to launch, factory automation %, domains generated |
 
-Pass gate: **PASSED** — worlds generated from blueprint, not hand-built routes.
+---
+
+## PASS-022 — Private Beta Readiness ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| Beta waitlist | `/beta` |
+| Sign in / create account | `/sign-in`, `/create-account` |
+| Account + synced progress | `/account` |
+| Pricing | `/pricing` |
+| Mission sync API | `/api/progress/mission` |
+| Operator beta dashboard | `/operator/beta` |
 
 ---
 

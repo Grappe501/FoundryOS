@@ -52,17 +52,21 @@ export default function MyJourneyPage() {
           </div>
         </section>
 
-        <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8, border: '1px dashed #2A2A2E' }}>
-          <p style={{ color: '#6B6B70', fontSize: 13, margin: 0, lineHeight: 1.6 }}>
-            Coming soon: sign in to sync your journey across devices, share progress with parents, and unlock community features.
+        <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #2A4A2A' }}>
+          <p style={{ color: '#8A8A8E', fontSize: 14, margin: 0, lineHeight: 1.6 }}>
+            <Link href="/create-account" style={{ color: '#6B9B6B' }}>Create an account</Link>
+            {' '}to sync missions and portfolios across devices. Private beta — invite-only for now.
           </p>
         </section>
 
         <div style={{ marginTop: 28, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-          <Link href="/trinity" style={{ color: '#6B9B6B', fontSize: 14, textDecoration: 'none' }}>
+          <Link href="/account" style={{ padding: '12px 20px', background: '#2A4A2A', borderRadius: 6, color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
+            My account →
+          </Link>
+          <Link href="/trinity" style={{ color: '#6B9B6B', fontSize: 14, textDecoration: 'none', padding: '12px 0' }}>
             Explore the Trinity →
           </Link>
-          <Link href="/future-proof" style={{ color: '#6B6B70', fontSize: 14, textDecoration: 'none' }}>
+          <Link href="/future-proof" style={{ color: '#6B6B70', fontSize: 14, textDecoration: 'none', padding: '12px 0' }}>
             Retake assessment
           </Link>
         </div>

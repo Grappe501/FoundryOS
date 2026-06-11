@@ -13,7 +13,12 @@ export type TrackValidationPayload = {
     | 'interest_submitted'
     | 'account_created'
     | 'trial_started'
-    | 'paid';
+    | 'paid'
+    | 'beta_joined'
+    | 'pricing_viewed'
+    | 'pricing_clicked'
+    | 'sign_in_started'
+    | 'sign_up_started';
   landing_page?: string;
   source?: string;
   path_slug?: string;

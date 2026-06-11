@@ -35,7 +35,8 @@ PASS-021 ████████████ Consumer Experience Polish ✅
 PASS-023 ████████████ Bourbon Consumer World (factory) ✅
 PASS-024 ████████████ Factory Automation ✅ ← multiplier live
 PASS-025 ████████████ World Depth Expansion ✅
-PASS-022 ░░░░░░░░░░░░ Private Beta Readiness ← NEXT
+PASS-022 ████████████ Private Beta Readiness ✅
+Private beta invites ← NEXT (handpicked testers)
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.

@@ -1,0 +1,25 @@
+import Link from 'next/link';
+import { ConsumerNav } from '../../components/ConsumerNav';
+import { AuthForm } from '../../components/auth/AuthForm';
+
+export const metadata = { title: 'Create Account | Foundry' };
+
+export default function CreateAccountPage() {
+  return (
+    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 480, margin: '0 auto' }}>
+      <ConsumerNav />
+      <section style={{ marginTop: 24 }}>
+        <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>Create account</h1>
+        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12 }}>
+          Private beta — create an account to save missions, portfolios, and assessment results.
+        </p>
+        <div style={{ marginTop: 28, padding: 28, background: '#111114', borderRadius: 8 }}>
+          <AuthForm mode="create-account" />
+        </div>
+        <p style={{ marginTop: 20, fontSize: 13, color: '#6B6B70' }}>
+          Already have an account? <Link href="/sign-in" style={{ color: '#6B9B6B' }}>Sign in</Link>
+        </p>
+      </section>
+    </main>
+  );
+}

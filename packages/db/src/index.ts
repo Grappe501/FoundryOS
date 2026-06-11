@@ -54,6 +54,13 @@ export {
   getDomainBlueprintFromDb,
 } from './domain-proof';
 export { ensureAiBuilderDomainProof } from './ai-builder-domain-proof';
+export { insertBetaWaitlist, getBetaWaitlistStats, type BetaSegment, type BetaWaitlistEntry } from './beta-waitlist';
+export {
+  upsertMissionCompletion,
+  getMissionCompletionsForUser,
+  getMissionCompletionStats,
+  type MissionCompletionRow,
+} from './mission-progress';
 export { insertValidationEvent, categoryForEvent, getValidationDashboardMetrics } from './validation-events';
 export type {
   ValidationEventType,

@@ -97,6 +97,17 @@ export function WorldMissionRunner({
     entries.push(entry);
     saveWorldPortfolio(portfolioKey, entries);
     setDone(true);
+    void fetch('/api/progress/mission', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        world_slug: pathSlug,
+        mission_slug: mission.slug,
+        mission_title: mission.title,
+        portfolio_key: portfolioKey,
+        reflection: entry.reflection,
+      }),
+    }).catch(() => undefined);
     void trackValidationEvent({
       event_type: 'assessment_completed',
       landing_page: `${basePath}/missions/${mission.slug}`,

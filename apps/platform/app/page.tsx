@@ -46,10 +46,10 @@ export default function ConsumerHomePage() {
               textDecoration: 'none',
             }}
           >
-            Take the assessment →
+            Start assessment →
           </Link>
           <Link
-            href="/ai-builder/missions/homework-assistant"
+            href="/explore"
             style={{
               padding: '14px 24px',
               border: '1px solid #1A1A1E',
@@ -59,10 +59,23 @@ export default function ConsumerHomePage() {
               textDecoration: 'none',
             }}
           >
-            Start Mission 1 →
+            Explore worlds
           </Link>
-          <Link href="/parents" style={{ padding: '14px 24px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
-            For Parents
+          <Link
+            href="/beta"
+            style={{
+              padding: '14px 24px',
+              border: '1px solid #2A4A2A',
+              borderRadius: 6,
+              color: '#6B9B6B',
+              fontSize: 14,
+              textDecoration: 'none',
+            }}
+          >
+            Join beta
+          </Link>
+          <Link href="/pricing" style={{ padding: '14px 24px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+            Pricing
           </Link>
         </div>
       </section>

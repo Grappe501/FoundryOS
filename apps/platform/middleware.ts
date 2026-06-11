@@ -11,6 +11,12 @@ const CONSUMER_PREFIXES = [
   '/trinity',
   '/parents',
   '/my-journey',
+  '/sign-in',
+  '/create-account',
+  '/account',
+  '/beta',
+  '/pricing',
+  '/auth',
   '/api',
   ...FACTORY_CONSUMER_ROUTES,
 ];
@@ -32,7 +38,7 @@ export function middleware(request: NextRequest) {
   }
 
   if (pathname.startsWith('/operator')) {
-    if (pathname === '/operator' || pathname === '/operator/') {
+    if (pathname === '/operator' || pathname === '/operator/' || pathname.startsWith('/operator/beta')) {
       return NextResponse.next();
     }
     const inner = pathname.slice('/operator'.length) || '/';
