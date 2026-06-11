@@ -179,7 +179,7 @@ export const EXPLORE_PATHS: ExplorePath[] = [
     launch_rank: 3,
     section_id: 'finance-wealth',
     categories: ['all', 'life_leverage', 'student_pathways', 'finance', 'careers'],
-    live_href: null,
+    live_href: '/financial-independence',
     planned_projects: [
       'Build first budget',
       'Save first $1,000',

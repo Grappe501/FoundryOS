@@ -18,7 +18,7 @@ import { trackPathClicked, trackValidationEvent } from '../lib/validation-tracke
 
 const PATH_HREFS: Record<string, string> = {
   'ai-builder': '/ai-builder',
-  'financial-independence': '/future-proof?path=financial-independence',
+  'financial-independence': '/financial-independence',
   'public-speaking': '/future-proof?path=public-speaking',
 };
 
