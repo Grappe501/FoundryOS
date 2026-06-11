@@ -1,4 +1,5 @@
 import type { DomainBlueprint } from './types';
+import { AI_BUILDER_DOMAIN_BLUEPRINT } from './ai-builder-blueprint';
 
 export const PASS_014_TITLE = 'PASS-014 Domain Proof';
 export const PASS_014_PASS_GATE =
@@ -61,6 +62,7 @@ export const BOURBON_DOMAIN_BLUEPRINT: DomainBlueprint = {
 
 const BLUEPRINT_REGISTRY: Record<string, DomainBlueprint> = {
   [BOURBON_DOMAIN_BLUEPRINT.slug]: BOURBON_DOMAIN_BLUEPRINT,
+  [AI_BUILDER_DOMAIN_BLUEPRINT.slug]: AI_BUILDER_DOMAIN_BLUEPRINT,
 };
 
 export function getDomainBlueprint(domainSlug: string): DomainBlueprint | null {

@@ -78,19 +78,24 @@ export function getOpportunitiesForDomain(domainSlug: string): ScoredOpportunity
   return listTrafficOpportunities().filter((o) => o.permanent_domain_slug === domainSlug);
 }
 
-/** January 2027 — 10 Active Domains target */
+/** January 2027 — 20 Active Domains target (double launch velocity) */
 export const JANUARY_2027_LAUNCH_SEQUENCE = [
-  { rank: 1, slug: 'bourbon', name: 'Bourbon', rationale: 'PASS-014 — Active Domain #1' },
-  { rank: 2, slug: 'ai-builder', name: 'AI Builder', rationale: 'AI Boom acquisition · highest portfolio score' },
-  { rank: 3, slug: 'public-speaking', name: 'Public Speaking', rationale: 'Evergreen · PASS-010 loop operational' },
+  { rank: 1, slug: 'bourbon', name: 'Bourbon', rationale: 'PASS-014 — Active Domain #1 · proof complete' },
+  { rank: 2, slug: 'ai-builder', name: 'AI Builder', rationale: 'PASS-016 · Life Leverage · parents + students + professionals' },
   {
-    rank: 4,
+    rank: 3,
+    slug: 'financial-independence',
+    name: 'Financial Independence',
+    rationale: 'PASS-017 · parents pay · schools need · lifetime value',
+  },
+  { rank: 4, slug: 'public-speaking', name: 'Public Speaking', rationale: 'PASS-018 · career + civic multiplier' },
+  {
+    rank: 5,
     slug: 'civic-engagement',
     name: 'Civic Engagement',
-    rationale: 'Midterms → Civic Engagement · projects + communities + recurring traffic',
+    rationale: 'PASS-019 · Midterms → Civic Engagement · projects + communities',
   },
-  { rank: 5, slug: 'master-gardener', name: 'Gardening', rationale: 'Gardening Season → Master Gardener' },
-  { rank: 6, slug: 'bbq', name: 'BBQ', rationale: 'BBQ Season · strong identity' },
+  { rank: 6, slug: 'master-gardener', name: 'Gardening', rationale: 'Gardening Season → Master Gardener' },
   { rank: 7, slug: 'poker', name: 'Poker', rationale: 'Strong identity domain' },
   { rank: 8, slug: 'soccer', name: 'Soccer', rationale: 'World Cup 2026 → Soccer' },
   { rank: 9, slug: 'books', name: 'Books', rationale: 'Collection + community' },

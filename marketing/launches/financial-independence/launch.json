@@ -1,0 +1,42 @@
+{
+  "slug": "financial-independence",
+  "display_name": "Financial Independence",
+  "launched_at": "2026-06-11T04:19:14.973Z",
+  "status": "scaffolded",
+  "assets": {
+    "platform": [
+      "Domain Blueprint",
+      "Transformation Paths",
+      "Projects",
+      "Collections",
+      "Communities",
+      "Roles",
+      "Mastery Ladder"
+    ],
+    "seo": [
+      "What Is Financial Independence?",
+      "Beginner Guide to Money",
+      "Road to Financial Independence",
+      "How to Build Your First Budget",
+      "How to Buy Your First Stock",
+      "Common Money Mistakes"
+    ],
+    "marketing": [
+      "Launch Brief",
+      "Launch Checklist",
+      "30 Day Content Calendar",
+      "Email Sequence",
+      "Social Calendar",
+      "SEO Cluster Map"
+    ],
+    "growth": [
+      "Target User",
+      "Traffic Sources",
+      "Opportunity Score",
+      "Monetization Plan",
+      "KPIs"
+    ]
+  },
+  "blueprint_path": "packages\\domain-blueprint\\src\\financial-independence-blueprint.ts",
+  "marketing_path": "marketing\\launches\\financial-independence"
+}

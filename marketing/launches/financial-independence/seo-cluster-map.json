@@ -1,0 +1,46 @@
+{
+  "domain": "financial-independence",
+  "vertical": "finance",
+  "page_types": [
+    "What Is",
+    "Beginner Guide",
+    "Road to Expert",
+    "Projects",
+    "Common Mistakes",
+    "Best Resources"
+  ],
+  "pages": [
+    {
+      "slug": "what-is-financial-independence",
+      "title": "What Is Financial Independence?",
+      "intent": "definition"
+    },
+    {
+      "slug": "beginner-guide-money",
+      "title": "Beginner Guide to Money",
+      "intent": "beginner"
+    },
+    {
+      "slug": "road-to-financial-independence",
+      "title": "Road to Financial Independence",
+      "intent": "path"
+    },
+    {
+      "slug": "how-to-budget",
+      "title": "How to Build Your First Budget",
+      "intent": "projects"
+    },
+    {
+      "slug": "first-stock",
+      "title": "How to Buy Your First Stock",
+      "intent": "projects"
+    },
+    {
+      "slug": "common-money-mistakes",
+      "title": "Common Money Mistakes",
+      "intent": "mistakes"
+    }
+  ],
+  "cluster_formula": "25 domains × 500 entities × 20 pages = 250k indexed pages",
+  "publish_gate": "content_score >= 70"
+}

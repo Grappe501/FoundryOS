@@ -67,7 +67,7 @@ export const DOMAIN_LAUNCH_VELOCITY_TARGET_MATURE_DAYS = 3;
 
 export const VALIDATION_MILESTONES = [
   { date: '2026-09-01', active_domains: 1, users: 100, paid: 10, note: 'First validation' },
-  { date: '2026-10-01', active_domains: 3, users: 500, paid: 50, note: 'Factory proof' },
-  { date: '2026-11-01', active_domains: 5, users: 2000, paid: 200, note: 'Scale signal' },
-  { date: '2027-01-01', active_domains: 10, users: 10000, paid: 1000, mrr: '$4,000', note: 'Production validation' },
+  { date: '2026-10-01', active_domains: 3, users: 500, paid: 50, note: 'Factory proof · life leverage begins' },
+  { date: '2026-11-01', active_domains: 8, users: 2000, paid: 200, note: 'Launch velocity scaling' },
+  { date: '2027-01-01', active_domains: 20, users: 10000, paid: 1000, mrr: '$4,000', note: '20 active domains · velocity target' },
 ] as const;

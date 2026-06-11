@@ -1,0 +1,30 @@
+{
+  "domain": "financial-independence",
+  "target_user": "Student, parent, or young adult who wants financial freedom — not stock tips",
+  "traffic_sources": [
+    "SEO",
+    "Schools",
+    "Parents",
+    "YouTube",
+    "Reddit personal finance"
+  ],
+  "opportunity_score": 68,
+  "monetization": {
+    "tier_2": {
+      "price": "$4/mo",
+      "hook": "My Wealth Builder — budgets, goals, investment notes, evidence of progress"
+    },
+    "tier_3": {
+      "price": "$18/mo",
+      "hook": "Wealth Builders Circle — accountability, mentors, family financial literacy"
+    }
+  },
+  "kpis": [
+    "registered_users",
+    "parent_signups",
+    "projects_completed",
+    "evidence_submitted",
+    "paid_conversions"
+  ],
+  "pass_gate": "Users · Revenue · Retention — not another system"
+}

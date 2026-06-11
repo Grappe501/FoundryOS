@@ -28,6 +28,28 @@ export {
 } from './bourbon-blueprint';
 
 export {
+  PASS_016_TITLE,
+  PASS_016_PASS_GATE,
+  PASS_016_PRINCIPLE,
+  PASS_016_NOT_DELIVERABLE,
+  AI_BUILDER_DOMAIN_SLUG,
+  AI_BUILDER_ACTION_SLUG,
+  AI_BUILDER_ASSET_SLUG,
+  AI_BUILDER_COMMUNITY_SLUG,
+  AI_BUILDER_DOMAIN_BLUEPRINT,
+  AI_BUILDER_FIRST_PROJECT,
+  AI_BUILDER_SUCCESS_NARRATIVE,
+  AI_BUILDER_TOMORROW_HOOK,
+} from './ai-builder-blueprint';
+
+export {
+  buildAiBuilderLoopRecord,
+  buildDomainProofChecklistFromState,
+  isDomainProofOperational,
+  type DomainProofState,
+} from './ai-builder-verification';
+
+export {
   buildBourbonLoopRecord,
   buildDomainProofChecklist,
   isDomainProofComplete,

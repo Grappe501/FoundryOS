@@ -24,8 +24,12 @@ PASS-011 ████████████ Evidence Engine ✅
 PASS-012 ████████████ Collections + Communities ✅
 PASS-013 ████████████ Reputation + Mastery ✅
 PASS-014 ████████████ Domain Proof ✅
-PASS-015 ░░░░░░░░░░░░ Growth OS ← NEXT (parallel: Domain Factory)
+PASS-015 ░░░░░░░░░░░░ Growth OS ✅
+PASS-016 ░░░░░░░░░░░░ AI Builder Active Domain ← NEXT
 ```
+
+> Life Leverage shift: Financial Independence #3 · 20 active domains by Jan 2027 · Foundry Student channel.
+> See `docs/LIFE_LEVERAGE_DOMAINS.md`, `docs/PASS_016_019_SEQUENCE.md`.
 
 > `@foundry/project-engine` is architecturally complete — projects are nodes in the transformation graph.
 

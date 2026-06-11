@@ -76,6 +76,9 @@ export default async function GrowthOsPage() {
       <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
         Production launch: {PRODUCTION_LAUNCH} · Business north star: {GROWTH_NORTH_STAR}
       </p>
+      <p style={{ color: '#6B9B6B', fontSize: 12, marginTop: 8 }}>
+        Life Leverage first: AI Builder · Financial Independence · Public Speaking · Civic Engagement
+      </p>
       <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>
         Growth Factory: {GROWTH_FACTORY_FUNNEL.join(' → ')}
       </p>

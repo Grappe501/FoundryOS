@@ -15,7 +15,9 @@ export {
   VALIDATION_MILESTONES,
 } from './types';
 
-export { AI_BUILDER_LAUNCH, getLaunchDefinition, listLaunchDefinitions } from './definitions/ai-builder';
+export { AI_BUILDER_LAUNCH } from './definitions/ai-builder';
+export { FINANCIAL_INDEPENDENCE_LAUNCH, FINANCE_KNOWLEDGE_SUBDOMAINS } from './definitions/financial-independence';
+export { getLaunchDefinition, listLaunchDefinitions } from './definitions/index';
 
 export {
   manufactureLaunch,

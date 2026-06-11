@@ -37,7 +37,40 @@
       "search_intent": ["how to build with AI", "AI side project", "become AI developer"],
       "transformation_paths": ["Road to AI Builder", "Road to Prompt Engineer", "Road to AI Product Owner"],
       "status": "planned",
-      "note": "Highest composite score — evergreen, not event-bound"
+      "note": "Life Leverage Domain — highest composite score · evergreen · PASS-016"
+    },
+    {
+      "slug": "financial-independence",
+      "display_name": "Financial Independence",
+      "type": "evergreen",
+      "event_window": "Ongoing — parents pay · schools need · students need for decades",
+      "permanent_domain_slug": "financial-independence",
+      "permanent_domain_name": "Financial Independence",
+      "launch_rank": 3,
+      "scores": { "traffic": 10, "identity": 9, "monetization": 10 },
+      "portfolio_scores": {
+        "traffic": 10,
+        "identity": 9,
+        "community": 8,
+        "project_potential": 10,
+        "collection_potential": 9,
+        "retention": 10,
+        "monetization": 10
+      },
+      "search_intent": [
+        "how to become financially independent",
+        "financial literacy for teens",
+        "how to budget",
+        "how to buy first stock",
+        "personal finance for students"
+      ],
+      "transformation_paths": [
+        "Road to Financial Independence",
+        "Road to Wealth Builder",
+        "Road to Business & Money"
+      ],
+      "status": "planned",
+      "note": "Life Leverage Domain. NOT Stocks app or Accounting course. Foundry Student channel. PASS-017."
     },
     {
       "slug": "civic-engagement-evergreen",
@@ -46,7 +79,7 @@
       "event_window": "Ongoing — recurring election cycles every year",
       "permanent_domain_slug": "civic-engagement",
       "permanent_domain_name": "Civic Engagement",
-      "launch_rank": 4,
+      "launch_rank": 5,
       "scores": { "traffic": 8, "identity": 9, "monetization": 8 },
       "portfolio_scores": {
         "traffic": 8,
@@ -111,7 +144,7 @@
       "event_window": "Mar–May peak (Spring planting)",
       "permanent_domain_slug": "master-gardener",
       "permanent_domain_name": "Master Gardener",
-      "launch_rank": 5,
+      "launch_rank": 6,
       "scores": { "traffic": 8, "identity": 8, "monetization": 8 },
       "search_intent": ["when to plant tomatoes", "beginner garden", "raised bed plans"],
       "transformation_paths": ["Road to Master Gardener", "Road to Urban Farmer"],
@@ -138,7 +171,7 @@
       "event_window": "May–Aug (Summer grilling)",
       "permanent_domain_slug": "bbq",
       "permanent_domain_name": "BBQ",
-      "launch_rank": 6,
+      "launch_rank": null,
       "scores": { "traffic": 7, "identity": 9, "monetization": 8 },
       "search_intent": ["smoke brisket", "BBQ rub recipe", "pitmaster tips"],
       "transformation_paths": ["Road to Pitmaster", "Road to Competition Cook"],
@@ -151,7 +184,7 @@
       "event_window": "Ongoing — massive evergreen demand",
       "permanent_domain_slug": "public-speaking",
       "permanent_domain_name": "Public Speaking",
-      "launch_rank": 3,
+      "launch_rank": 4,
       "scores": { "traffic": 8, "identity": 9, "monetization": 8 },
       "search_intent": ["how to overcome fear of public speaking", "toastmasters alternative"],
       "transformation_paths": ["Road to Confident Speaker"],

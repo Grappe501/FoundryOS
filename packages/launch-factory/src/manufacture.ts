@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import type { LaunchDefinition, LaunchManifest, LaunchRegistryEntry } from './types';
-import { getLaunchDefinition } from './definitions/ai-builder';
+import { getLaunchDefinition } from './definitions/index';
 
 const SEO_PAGE_TYPES = [
   'What Is',

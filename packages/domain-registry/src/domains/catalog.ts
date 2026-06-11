@@ -5,9 +5,13 @@ import { CAMPAIGN_MANAGEMENT_DOMAIN } from './campaign-management';
 import { MASTER_GARDENER_DOMAIN } from './master-gardener';
 import { MAGIC_DOMAIN } from './magic';
 import { BOURBON_DOMAIN } from './bourbon';
+import { FINANCIAL_INDEPENDENCE_DOMAIN } from './financial-independence';
+import { AI_BUILDER_DOMAIN } from './ai-builder';
 
 /** Exemplar identity domains — self-assembly templates */
 export const IDENTITY_DOMAIN_CATALOG: IdentityDomain[] = [
+  FINANCIAL_INDEPENDENCE_DOMAIN,
+  AI_BUILDER_DOMAIN,
   BOURBON_DOMAIN,
   POKER_DOMAIN,
   PUBLIC_SPEAKING_DOMAIN,

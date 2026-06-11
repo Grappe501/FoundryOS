@@ -9,10 +9,10 @@ export const PRODUCTION_LAUNCH = 'January 2027';
 export const FIRST_TEN_DOMAINS = [
   'bourbon',
   'ai-builder',
+  'financial-independence',
   'public-speaking',
   'civic-engagement',
   'master-gardener',
-  'bbq',
   'poker',
   'soccer',
   'books',
@@ -59,9 +59,9 @@ export type GrowthTarget = {
 
 export const JANUARY_2027_TARGETS: GrowthTarget[] = [
   { label: 'Active Domains', target: String(ACTIVE_DOMAINS_JAN_2027_TARGET), deadline: 'Jan 2027' },
-  { label: 'Registered users', target: '100,000', deadline: 'Jan 2027' },
-  { label: 'Paid users', target: '5,000', deadline: 'Jan 2027' },
-  { label: 'MRR', target: '$20,000–50,000', deadline: 'Jan 2027' },
+  { label: 'Registered users', target: '25,000', deadline: 'Jan 2027' },
+  { label: 'Paid users', target: '2,500', deadline: 'Jan 2027' },
+  { label: 'MRR', target: '$10,000–25,000', deadline: 'Jan 2027' },
   { label: 'Indexed pages', target: '250,000', deadline: 'Jan 2027' },
 ];
 
@@ -69,7 +69,7 @@ export const REVENUE_MILESTONES = [
   { period: 'Sep 2026', paid_users: 10, mrr: '$40', note: '1 active domain · 100 users · validation' },
   { period: 'Oct 2026', paid_users: 50, mrr: '$200', note: '3 active domains · 500 users' },
   { period: 'Nov 2026', paid_users: 200, mrr: '$800', note: '5 active domains · 2,000 users' },
-  { period: 'Jan 2027', paid_users: 1000, mrr: '$4,000', note: '10 active domains · 10,000 users · factory scales' },
+  { period: 'Jan 2027', paid_users: 2500, mrr: '$10k–25k', note: '20 active domains · 25k users · Future-Proof funnel live' },
   { period: 'End 2027', paid_users: 50000, mrr: '$250k–500k', note: 'If factory works' },
 ];
 

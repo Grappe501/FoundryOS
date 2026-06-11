@@ -2,7 +2,7 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { manufactureLaunch } from '../src/manufacture';
-import { getLaunchDefinition, listLaunchDefinitions } from '../src/definitions/ai-builder';
+import { getLaunchDefinition, listLaunchDefinitions } from '../src/definitions/index';
 import { PASS_015B_COMMAND } from '../src/types';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

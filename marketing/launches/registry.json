@@ -19,6 +19,16 @@
       "days_blueprint_to_launch": null,
       "days_launch_to_active": null,
       "status": "scaffolded"
+    },
+    {
+      "slug": "financial-independence",
+      "display_name": "Financial Independence",
+      "blueprint_started_at": "2026-06-11T04:19:14.982Z",
+      "launched_at": "2026-06-11T04:19:14.973Z",
+      "active_at": null,
+      "days_blueprint_to_launch": null,
+      "days_launch_to_active": null,
+      "status": "scaffolded"
     }
   ],
   "bourbon_proof_started_at": "2026-06-11"

@@ -2,6 +2,7 @@
  * Registry expansion — lifelong identity domains, not apps.
  */
 export type IdentityDomainCategory =
+  | 'life_leverage'
   | 'academic'
   | 'skills'
   | 'hobbies'
@@ -14,9 +15,20 @@ export type IdentityDomainCategoryDef = {
   display_name: string;
   description: string;
   examples: string[];
+  tier?: 'primary' | 'standard';
 };
 
 export const IDENTITY_DOMAIN_CATEGORIES: IdentityDomainCategoryDef[] = [
+  {
+    slug: 'life_leverage',
+    display_name: 'Life Leverage Domains',
+    description: 'Domains that dramatically change life outcomes — parents pay, schools recommend, students spend years inside',
+    tier: 'primary',
+    examples: [
+      'Financial Independence', 'AI Builder', 'Public Speaking', 'Civic Engagement',
+      'Entrepreneurship', 'Leadership',
+    ],
+  },
   {
     slug: 'academic',
     display_name: 'Academic Domains',

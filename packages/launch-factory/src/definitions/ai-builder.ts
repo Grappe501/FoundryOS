@@ -1,6 +1,6 @@
 import type { LaunchDefinition } from '../types';
 
-/** Domain #2 candidate — highest opportunity score (64) */
+/** Life Leverage Domain #1 — Create Value path in Foundry Trinity */
 export const AI_BUILDER_LAUNCH: LaunchDefinition = {
   slug: 'ai-builder',
   display_name: 'AI Builder',
@@ -11,29 +11,28 @@ export const AI_BUILDER_LAUNCH: LaunchDefinition = {
     display_name: 'AI Builder',
     vertical_slug: 'ai-builder',
     care_reason:
-      'AI is reshaping every career. Builders who ship projects compound faster than those who only consume tutorials.',
+      'AI is reshaping every career. Parents, students, and professionals need to create value — not just consume tutorials.',
     outcome: {
       slug: 'become-ai-builder',
       display_name: 'Become an AI Builder',
     },
     mastery_levels: [
-      { slug: 'curious-beginner', display_name: 'Curious Beginner', order: 1 },
-      { slug: 'prompt-engineer', display_name: 'Prompt Engineer', order: 2 },
-      { slug: 'workflow-builder', display_name: 'Workflow Builder', order: 3 },
-      { slug: 'product-builder', display_name: 'Product Builder', order: 4 },
-      { slug: 'ai-architect', display_name: 'AI Architect', order: 5 },
-      { slug: 'ai-mentor', display_name: 'AI Mentor', order: 6 },
+      { slug: 'ai-explorer', display_name: 'AI Explorer', order: 1 },
+      { slug: 'ai-practitioner', display_name: 'AI Practitioner', order: 2 },
+      { slug: 'ai-builder', display_name: 'AI Builder', order: 3 },
+      { slug: 'ai-architect', display_name: 'AI Architect', order: 4 },
+      { slug: 'ai-mentor', display_name: 'AI Mentor', order: 5 },
     ],
     paths: [
-      { slug: 'road-to-ai-builder', display_name: 'Road to AI Builder', tier: 'prompt-engineer' },
-      { slug: 'road-to-ai-product-owner', display_name: 'Road to AI Product Owner', tier: 'product-builder' },
+      { slug: 'road-to-ai-builder', display_name: 'Road to AI Builder', tier: 'ai-builder' },
+      { slug: 'road-to-ai-architect', display_name: 'Road to AI Architect', tier: 'ai-architect' },
     ],
     projects: [
-      { slug: 'ship-first-ai-project', display_name: 'Ship First AI Project' },
-      { slug: 'build-personal-ai-workflow', display_name: 'Build Personal AI Workflow' },
-      { slug: 'automate-repetitive-task', display_name: 'Automate a Repetitive Task' },
-      { slug: 'launch-ai-side-project', display_name: 'Launch AI Side Project' },
-      { slug: 'teach-someone-ai-basics', display_name: 'Teach Someone AI Basics' },
+      { slug: 'use-ai-to-solve-problem', display_name: 'Use AI to Solve a Problem' },
+      { slug: 'build-first-automation', display_name: 'Build First Automation' },
+      { slug: 'build-first-website', display_name: 'Build First Website' },
+      { slug: 'build-first-assistant', display_name: 'Build First Assistant' },
+      { slug: 'build-first-business-workflow', display_name: 'Build First Business Workflow' },
     ],
     collection: {
       slug: 'my-ai-toolkit',
@@ -45,40 +44,28 @@ export const AI_BUILDER_LAUNCH: LaunchDefinition = {
       display_name: 'AI Builders Circle',
       community_type: 'circle',
     },
-    roles: ['Builder', 'Prompt Engineer', 'Product Owner', 'Mentor'],
+    roles: ['Explorer', 'Practitioner', 'Builder', 'Architect', 'Mentor'],
   },
   seo_pages: [
+    { slug: 'how-to-learn-ai', title: 'How Do I Learn AI?', intent: 'traffic' },
     { slug: 'what-is-ai-builder', title: 'What Is an AI Builder?', intent: 'definition' },
     { slug: 'beginner-guide', title: 'Beginner Guide to Building with AI', intent: 'beginner' },
     { slug: 'road-to-expert', title: 'Road to AI Builder', intent: 'path' },
     { slug: 'projects', title: 'AI Builder Projects', intent: 'projects' },
     { slug: 'common-mistakes', title: 'Common AI Builder Mistakes', intent: 'mistakes' },
-    { slug: 'best-resources', title: 'Best AI Builder Resources', intent: 'resources' },
   ],
   growth: {
-    target_user: 'Professional who wants to ship with AI — not just chat',
-    traffic_sources: ['SEO', 'YouTube', 'Twitter/X', 'Reddit r/LocalLLaMA', 'Referrals'],
+    target_user: 'Parents, students, young professionals, career changers — market Future-Proof, not AI Builder alone',
+    traffic_sources: ['SEO: How do I learn AI?', 'Future-Proof Assessment', 'YouTube', 'Schools', 'Parents'],
     opportunity_score: 64,
-    tier_2_hook: 'My AI Toolkit — save workflows, prompts, and project notes',
-    tier_3_hook: 'AI Builders Circle — share projects, get feedback, find collaborators',
-    kpis: ['registered_users', 'projects_started', 'evidence_submitted', 'paid_conversions'],
+    tier_2_hook: 'My AI Toolkit — projects, workflows, evidence of what you built',
+    tier_3_hook: 'AI Builders Circle — ship together, get feedback, find collaborators',
+    kpis: ['assessment_completions', 'registered_users', 'projects_completed', 'evidence_submitted', 'paid_conversions'],
   },
   first_project_action: {
-    slug: 'ship-first-ai-project',
-    text: 'Ship a working AI project and document what you built',
-    evidence_title: 'First AI project shipped',
+    slug: 'use-ai-to-solve-problem',
+    text: 'Use AI to solve a real problem and document what you built',
+    evidence_title: 'Project completed',
   },
-  notes: 'Ideal early adopter domain — pays, creates, shares, refers.',
+  notes: 'PASS-016 — First Life Leverage Domain. Market Become Future-Proof; AI Builder is Create Value path.',
 };
-
-const LAUNCH_DEFINITIONS: Record<string, LaunchDefinition> = {
-  [AI_BUILDER_LAUNCH.slug]: AI_BUILDER_LAUNCH,
-};
-
-export function getLaunchDefinition(slug: string): LaunchDefinition | null {
-  return LAUNCH_DEFINITIONS[slug] ?? null;
-}
-
-export function listLaunchDefinitions(): LaunchDefinition[] {
-  return Object.values(LAUNCH_DEFINITIONS);
-}

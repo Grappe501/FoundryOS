@@ -1,7 +1,7 @@
 import catalogIndex from '../../../data/catalog/index.json';
 import verticalSites from '../../../data/vertical-sites.json';
 import { estimatePageCount } from '@foundry/content-engine';
-import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, getReputationKpiCounts, getMasteryKpiCounts, getDomainProofKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, getReputationKpiCounts, getMasteryKpiCounts, getDomainProofKpiCounts, ensureBourbonDomainProof, ensureAiBuilderDomainProof, isSupabaseConfigured } from '@foundry/db';
 import { getEvidenceKpiSnapshot } from '@foundry/evidence-engine';
 import { getCollectionKpiSnapshot } from '@foundry/collection-engine';
 import { getCommunityKpiSnapshot } from '@foundry/community-engine';
@@ -147,10 +147,26 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-015B',
     title: 'Launch Factory',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary:
+      'npm run launch:domain — one command scaffolds platform + SEO + marketing + growth assets. AI Builder scaffolded.',
+  },
+  {
+    code: 'PASS-016',
+    title: 'AI Builder Active Domain',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary:
+      'First Life Leverage Domain. /future-proof assessment + /ai-builder stranger entry. Foundry Trinity locked.',
+  },
+  {
+    code: 'PASS-016A',
+    title: 'Market Validation',
     status: 'in_progress' as const,
     date: '2026-06-11',
     summary:
-      'npm run launch:domain — one command scaffolds platform + SEO + marketing + growth assets. Pass gate: users, revenue, retention.',
+      '/validation dashboard — 10 strangers goal. Exit: stranger starts transformation and returns. No PASS-017 until validated.',
   },
 ];
 
@@ -164,7 +180,11 @@ export async function getMissionControlStats() {
   const communityLive = isSupabaseConfigured() ? await getCommunityKpiCounts() : null;
   const reputationLive = isSupabaseConfigured() ? await getReputationKpiCounts() : null;
   const masteryLive = isSupabaseConfigured() ? await getMasteryKpiCounts() : null;
-  const domainProofLive = isSupabaseConfigured() ? await getDomainProofKpiCounts() : null;
+  const domainProofLive = isSupabaseConfigured()
+    ? await Promise.all([ensureBourbonDomainProof(), ensureAiBuilderDomainProof(), getDomainProofKpiCounts()]).then(
+        ([, , counts]) => counts
+      )
+    : null;
   const northStar = getNorthStarMetrics();
   const transformationAnalytics = getTransformationAnalytics();
   const loopKpis = getLoopKpiSnapshot(
@@ -178,7 +198,7 @@ export async function getMissionControlStats() {
   const reputationKpis = getReputationKpiSnapshot(reputationLive ?? undefined);
   const masteryKpis = getMasteryKpiSnapshot(masteryLive ?? undefined);
   const domainProofKpis = getDomainProofKpiSnapshot(domainProofLive ?? undefined);
-  const activeDomains = domainProofKpis.domain_proofs_complete || 1;
+  const activeDomains = Math.max(domainProofKpis.domain_proofs_complete, 1);
   const domainsBuilt = Math.max(domainProofKpis.domain_blueprints_active, activeDomains, 1);
   const launchVelocity = getLaunchVelocitySnapshot();
   const growthKpis = getGrowthKpiSnapshot({
@@ -271,16 +291,16 @@ export async function getMissionControlStats() {
     domain_launch_velocity_target: growthKpis.domain_launch_velocity_target,
     indexed_pages: growthKpis.indexed_pages,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-015A',
-    next_pass: 'PASS-015B',
+    last_pass: 'PASS-016',
+    next_pass: 'PASS-016A',
     current_focus:
-      'PASS-015B Launch Factory — npm run launch:domain. Next milestone: second Active Domain with real users (AI Builder #2). Pass gate: users, revenue, retention.',
+      'Market validation — put 10 strangers through /future-proof. Study /validation. Do NOT start PASS-017 until a stranger returns.',
     open_risks: [
-      'Biggest risk: strangers do not care — not whether Foundry works',
-      'Do NOT let PASS-016 become another architecture pass',
-      'Launch velocity target: 1 domain every 7 days by Q4',
-      '10 Active Domains > 100 half-built domains',
-      'Validation: Sep 100 users · Jan 10k users · $4k MRR',
+      'Risk shifted: building things nobody uses — not architecture failure',
+      'PASS-016 exit: ≥1 stranger starts transformation AND returns',
+      'Primary marketing asset: Future-Proof Assessment — not AI Builder alone',
+      '10 strangers > 10 more domains',
+      'Student pilot: observe what middle/high schoolers choose to become',
     ],
   };
 }

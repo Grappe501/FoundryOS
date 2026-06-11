@@ -47,7 +47,15 @@ export const ACTIVE_DOMAIN_CRITERIA = [
   'Mastery',
 ] as const;
 
-export const ACTIVE_DOMAINS_JAN_2027_TARGET = 10;
+export const ACTIVE_DOMAINS_JAN_2027_TARGET = 20;
+
+/** Life Leverage Domains — tier above hobbies/identity categories */
+export const LIFE_LEVERAGE_DOMAIN_SLUGS = [
+  'financial-independence',
+  'ai-builder',
+  'public-speaking',
+  'civic-engagement',
+] as const;
 
 /** Map legacy 3-score to 7-score when portfolio_scores absent */
 export function normalizePortfolioScores(

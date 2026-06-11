@@ -53,3 +53,12 @@ export {
   getDomainProofKpiCounts,
   getDomainBlueprintFromDb,
 } from './domain-proof';
+export { ensureAiBuilderDomainProof } from './ai-builder-domain-proof';
+export { insertValidationEvent, categoryForEvent, getValidationDashboardMetrics } from './validation-events';
+export type {
+  ValidationEventType,
+  ValidationCategory,
+  ValidationEventInput,
+  ValidationEventRow,
+  ValidationDashboardMetrics,
+} from './validation-events';

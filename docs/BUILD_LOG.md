@@ -7,20 +7,59 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-014 ✅ |
-| **Next Pass** | PASS-015 — Growth OS (greenlit) |
-| **Focus** | Parallel lanes: Platform (Domain Factory) + Growth (Customer Acquisition) |
-| **HPI Core** | PASS-010–014 complete — Domain Proof operational |
-| **Live proof** | [/bourbon](https://foundry-os.netlify.app/bourbon) · [/verticals/bourbon](https://foundry-os.netlify.app/verticals/bourbon) |
-| **Growth OS** | [/growth](https://foundry-os.netlify.app/growth) · Launch target: January 2027 |
+| **Last Pass** | PASS-016 ✅ |
+| **Next Pass** | PASS-016A — Market Validation (10 strangers) |
+| **Focus** | Learn what strangers do — not build PASS-017 yet |
+| **Live proof** | [/future-proof](/future-proof) · [/validation](/validation) · [/ai-builder](/ai-builder) |
+| **Pass gate** | ≥1 stranger starts transformation AND returns |
 
 ### Open Risks
 
 | Risk | Mitigation |
 |------|------------|
+| PASS-016 becomes architecture pass | Pass gate = first stranger, not another checklist |
+| Market domain not outcome | Market **Become Future-Proof**; AI Builder is a path |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
-| No user identity | ✅ Ownership graph PASS-003 |
-| Supabase not live | Steve: `.env.local` + `npm run db:migrate` |
+
+---
+
+## PASS-016A — Market Validation (in progress)
+
+| Deliverable | Status |
+|-------------|--------|
+| Validation dashboard | `/validation` |
+| Event API | `POST /api/validation/event` |
+| Funnel tracking | future-proof + ai-builder wired |
+| Stranger goal | 10 before PASS-017 |
+| Student pilot | Manual — observe choice behavior |
+
+**Exit:** At least one stranger starts a transformation and returns.
+
+---
+
+## PASS-016 — AI Builder Active Domain ✅
+
+| Deliverable | Status |
+|-------------|--------|
+| Future-Proof landing + Starter Assessment | `/future-proof` |
+| AI Builder stranger entry + HPI proof | `/ai-builder` |
+| Foundry Trinity docs | `docs/FOUNDRY_TRINITY.md` |
+| Life Leverage blueprint + orchestrator | `ensureAiBuilderDomainProof()` |
+| Jan 2027 targets revised | 25k users · 2.5k paid · $10k–25k MRR |
+
+**Pass gate:** Can a stranger discover, start a transformation, and return tomorrow?
+
+---
+
+| Change | Detail |
+|--------|--------|
+| New tier | **Life Leverage Domains** above Hobbies/Skills/Communities |
+| Launch reorder | Financial Independence → #3 (after Bourbon, AI Builder) |
+| Velocity target | **20 Active Domains** by Jan 2027 (double launch velocity) |
+| Foundry Student | Grades 6–12 channel for life leverage outcomes |
+| Pass sequence | PASS-016 AI Builder · PASS-017 Finance · PASS-018 Speaking · PASS-019 Civic |
+
+Docs: `docs/LIFE_LEVERAGE_DOMAINS.md` · `docs/FOUNDRY_FINANCE.md` · `docs/FOUNDRY_STUDENT.md`
 
 ---
 

@@ -4,12 +4,24 @@
 
 ---
 
+## Tier Model
+
+```txt
+Life Leverage Domains  → dramatically change life outcomes
+Identity Domains       → lifelong pursuits by category
+```
+
+See `docs/LIFE_LEVERAGE_DOMAINS.md` for the launch-priority tier.
+
+---
+
 ## Registry Categories
 
 | Category | Examples |
 |----------|----------|
+| **Life Leverage** | Financial Independence, AI Builder, Public Speaking, Civic Engagement |
 | **Academic** | Mathematics, Physics, Chemistry, Computer Science, History |
-| **Skills** | Public Speaking, Negotiation, Leadership, Teaching |
+| **Skills** | Negotiation, Leadership, Teaching |
 | **Hobbies** | Poker, Magic, Chess, Gardening, Photography |
 | **Careers** | Campaign Management, PM, Engineering, Marketing |
 | **Lifestyles** | Homesteading, Travel, Fitness, Parenting |
