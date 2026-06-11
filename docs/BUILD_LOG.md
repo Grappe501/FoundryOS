@@ -242,15 +242,17 @@ See `docs/PASS_014_EXECUTION.md`.
 
 ---
 
-## PASS-015 — Growth OS (greenlit)
+## PASS-015A — CLOSED (in commit)
 
-**Pass gate:** Customer Acquisition Infrastructure — traffic, users, revenue, retention.
+Traffic Opportunity Registry + Growth Factory funnel + Active Domains metric.
 
-**Parallel lanes:** Platform (Domain Factory #2–#25) + Growth (marketing/, SEO factory, dashboards).
+---
 
-**Business north star:** Monthly Active Transformations.
+## PASS-015 — Growth OS (in progress)
 
-See `docs/PASS_015_EXECUTION.md`, `docs/GROWTH_OS.md`, `docs/JANUARY_2027_TARGETS.md`.
+**Parallel lanes:** Platform (Domain Factory) + Growth (Opportunity Engine)
+
+See `docs/PASS_015A_EXECUTION.md`, `docs/GROWTH_OS.md`.
 
 ---
 

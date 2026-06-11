@@ -105,7 +105,26 @@ marketing/
 
 **Growth OS** section tracks: Visitors · Registered Users · Active Users · Paid Users · MRR · CAC · Referral Rate · SEO Traffic · Domain Launches · Monthly Active Transformations
 
-Live dashboard: `/growth`
+Live dashboard: `/growth` · `/growth/opportunities`
+
+---
+
+## Traffic Opportunity Registry (PASS-015A)
+
+Temporary traffic waves feed **permanent transformation domains**.
+
+```txt
+marketing/opportunities/
+├── registry.json          ← scored portfolio
+├── world-cup-2026/        ← Soccer domain, not World Cup app
+├── super-bowl-2027/
+├── march-madness/
+└── ...
+```
+
+**World Cup pattern:** Build Soccer. Use World Cup 2026 as acquisition. Score: 22/30.
+
+See `docs/PASS_015A_EXECUTION.md`.
 
 ---
 

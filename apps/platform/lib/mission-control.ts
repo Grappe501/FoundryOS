@@ -146,9 +146,10 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-015',
     title: 'Growth OS',
-    status: 'planned' as const,
+    status: 'in_progress' as const,
+    date: '2026-06-11',
     summary:
-      'Customer Acquisition Infrastructure — marketing/, Growth OS dashboard, SEO factory, launch tracker. Parallel to Domain Factory.',
+      'Growth Factory + Opportunity Engine. PASS-015A: Traffic Opportunity Registry, Active Domains metric, 7-dimension portfolio scoring.',
   },
 ];
 
@@ -176,8 +177,14 @@ export async function getMissionControlStats() {
   const reputationKpis = getReputationKpiSnapshot(reputationLive ?? undefined);
   const masteryKpis = getMasteryKpiSnapshot(masteryLive ?? undefined);
   const domainProofKpis = getDomainProofKpiSnapshot(domainProofLive ?? undefined);
+  const activeDomains = domainProofKpis.domain_proofs_complete || 1;
+  const domainsBuilt = Math.max(domainProofKpis.domain_blueprints_active, activeDomains, 1);
   const growthKpis = getGrowthKpiSnapshot({
-    domains_live: Math.max(domainProofKpis.domain_proofs_complete, 1),
+    active_domains: activeDomains,
+    domains_built: domainsBuilt,
+    domain_activation_rate: activeDomains / domainsBuilt,
+    monthly_active_communities: communityKpis.communities_active,
+    monthly_active_knowledge_assets: collectionKpis.knowledge_assets_total,
   });
 
   return {
@@ -250,21 +257,25 @@ export async function getMissionControlStats() {
     cac_usd: growthKpis.cac_usd,
     referral_rate: growthKpis.referral_rate,
     seo_traffic: growthKpis.seo_traffic,
-    domains_live: growthKpis.domains_live,
+    domains_built: growthKpis.domains_built,
+    active_domains: growthKpis.active_domains,
+    domain_activation_rate: growthKpis.domain_activation_rate,
     monthly_active_transformations: growthKpis.monthly_active_transformations,
+    monthly_active_communities: growthKpis.monthly_active_communities,
+    monthly_active_knowledge_assets: growthKpis.monthly_active_knowledge_assets,
     indexed_pages: growthKpis.indexed_pages,
-    launch_readiness_pct: live ? 90 : 52,
+    launch_readiness_pct: live ? 92 : 52,
     last_pass: 'PASS-014',
-    next_pass: 'PASS-015',
+    next_pass: 'PASS-015A',
     current_focus:
-      'PASS-014 CLOSED — Domain Proof operational. PASS-015 GREENLIT: Growth OS + Domain Factory in parallel lanes. Bottleneck = distribution.',
+      'PASS-015A — Growth Factory: Traffic Event → Permanent Domain → Transformation → Retention → Revenue. Parallel: Domain Factory + Opportunity Engine.',
     open_risks: [
-      'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
-      'Moat = Transformation Intelligence — not AI, content, or courses',
-      'Bottleneck shifted: distribution, not architecture',
-      'Do NOT market Foundry first — market domains (Bourbon, BBQ, Poker)',
-      'January 2027: 25 domains, 100k users, 5k paid, $20–50k MRR',
-      'Parallel lanes: Platform (Domain Factory) + Growth (Customer Acquisition)',
+      'Biggest risk: launch + acquire fast enough before Jan 2027 — not architecture',
+      'Growth Factory needs same attention as Platform Factory',
+      '10 Active Domains > 100 half-built domains',
+      'Do NOT market Foundry first — market domains',
+      'Do NOT build event apps (election news, World Cup scores)',
+      'January 2027: 10 active domains, 100k users, 5k paid, $20–50k MRR',
     ],
   };
 }

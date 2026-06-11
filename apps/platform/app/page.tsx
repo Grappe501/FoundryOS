@@ -57,16 +57,17 @@ const northStarLabels: Record<string, string> = {
 };
 
 const growthStatLabels: Record<string, string> = {
+  active_domains: 'Active Domains',
+  domains_built: 'Domains Built',
+  domain_activation_rate: 'Domain Activation Rate',
+  monthly_active_transformations: 'Monthly Active Transformations',
+  monthly_active_communities: 'Monthly Active Communities',
+  monthly_active_knowledge_assets: 'Monthly Active Knowledge Assets',
   visitors: 'Visitors',
   registered_users_growth: 'Registered Users',
-  active_users: 'Active Users',
   paid_users: 'Paid Users',
   mrr_usd: 'MRR',
-  cac_usd: 'CAC',
-  referral_rate: 'Referral Rate',
   seo_traffic: 'SEO Traffic',
-  domains_live: 'Domains Live',
-  monthly_active_transformations: 'Monthly Active Transformations',
   indexed_pages: 'Indexed Pages',
 };
 
@@ -82,7 +83,7 @@ export default async function MissionControlHome() {
     const value =
       key === 'mrr_usd' || key === 'cac_usd'
         ? `$${raw.toLocaleString()}`
-        : key === 'referral_rate'
+        : key === 'referral_rate' || key === 'domain_activation_rate'
           ? `${Math.round(raw * 100)}%`
           : raw.toLocaleString();
     return { label, value };
@@ -233,6 +234,7 @@ export default async function MissionControlHome() {
           <Link href="/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
           <Link href="/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
           <Link href="/growth" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>
+          <Link href="/growth/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Traffic Opportunities →</Link>
           <Link href="/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>

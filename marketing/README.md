@@ -30,5 +30,6 @@ Foundry is the engine underneath.
 | `forecasts/` | Revenue and user forecasts |
 | `experiments/` | Growth experiment log |
 | `dashboards/` | Growth OS dashboard specs |
+| `opportunities/` | PASS-015A Traffic Opportunity Registry — events → permanent domains |
 
-See `docs/GROWTH_OS.md` and `docs/JANUARY_2027_TARGETS.md`.
+See `docs/GROWTH_OS.md`, `docs/JANUARY_2027_TARGETS.md`, `docs/PASS_015A_EXECUTION.md`.

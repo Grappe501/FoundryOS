@@ -1,0 +1,280 @@
+{
+  "version": "1.1.0",
+  "principle": "Traffic event feeds permanent transformation domain — not a disposable app",
+  "anti_patterns": [
+    "Election News",
+    "Candidate Ratings",
+    "Political Commentary",
+    "Polling Predictions",
+    "World Cup scores app",
+    "Prediction / news / commentary sites"
+  ],
+  "anti_pattern_rationale": "Maintenance-heavy, controversial, or traffic that disappears — wrong lane for a one-person company",
+  "scoring": {
+    "traffic": { "min": 1, "max": 10, "label": "Search volume / event spike" },
+    "identity": { "min": 1, "max": 10, "label": "Self-identification strength" },
+    "monetization": { "min": 1, "max": 10, "label": "Tier 2/3 conversion potential" }
+  },
+  "opportunities": [
+    {
+      "slug": "ai-builder",
+      "display_name": "AI Builder",
+      "type": "evergreen",
+      "event_window": "Ongoing — traffic exploding",
+      "permanent_domain_slug": "ai-builder",
+      "permanent_domain_name": "AI Builder",
+      "launch_rank": 2,
+      "scores": { "traffic": 9, "identity": 10, "monetization": 10 },
+      "portfolio_scores": {
+        "traffic": 9,
+        "identity": 10,
+        "community": 8,
+        "project_potential": 10,
+        "collection_potential": 8,
+        "retention": 9,
+        "monetization": 10
+      },
+      "search_intent": ["how to build with AI", "AI side project", "become AI developer"],
+      "transformation_paths": ["Road to AI Builder", "Road to Prompt Engineer", "Road to AI Product Owner"],
+      "status": "planned",
+      "note": "Highest composite score — evergreen, not event-bound"
+    },
+    {
+      "slug": "civic-engagement-evergreen",
+      "display_name": "Civic Engagement",
+      "type": "evergreen",
+      "event_window": "Ongoing — recurring election cycles every year",
+      "permanent_domain_slug": "civic-engagement",
+      "permanent_domain_name": "Civic Engagement",
+      "launch_rank": 4,
+      "scores": { "traffic": 8, "identity": 9, "monetization": 8 },
+      "portfolio_scores": {
+        "traffic": 8,
+        "identity": 9,
+        "community": 9,
+        "project_potential": 9,
+        "collection_potential": 7,
+        "retention": 9,
+        "monetization": 8
+      },
+      "search_intent": [
+        "where do I vote",
+        "what's on my ballot",
+        "who is running for",
+        "what does this office do",
+        "how do I register to vote"
+      ],
+      "transformation_paths": [
+        "Road to Informed Voter",
+        "Road to Community Advocate",
+        "Road to Poll Worker",
+        "Road to Local Leader",
+        "Road to Campaign Volunteer",
+        "Road to Civic Organizer"
+      ],
+      "status": "planned",
+      "note": "NOT Politics or election news. Outcome: Become an Informed Citizen. Fits HPI stack perfectly."
+    },
+    {
+      "slug": "midterm-elections-2026",
+      "display_name": "Midterm Elections 2026",
+      "type": "traffic_event",
+      "event_window": "Election Season 2026 (primary through Nov general)",
+      "permanent_domain_slug": "civic-engagement",
+      "permanent_domain_name": "Civic Engagement",
+      "launch_rank": null,
+      "scores": { "traffic": 9, "identity": 8, "monetization": 7 },
+      "search_intent": [
+        "where do I vote",
+        "what's on my ballot",
+        "who is running",
+        "what district am I in",
+        "polling hours",
+        "how do I register",
+        "find polling place"
+      ],
+      "transformation_paths": [
+        "Road to Informed Voter",
+        "Road to Community Advocate",
+        "Road to Poll Worker",
+        "Road to Local Leader",
+        "Road to Campaign Volunteer",
+        "Road to Civic Organizer"
+      ],
+      "status": "tracking",
+      "note": "Midterms → Civic Engagement. Same pattern as World Cup → Soccer. NOT election news or polling predictions."
+    },
+    {
+      "slug": "gardening-season",
+      "display_name": "Gardening Season",
+      "type": "seasonal",
+      "event_window": "Mar–May peak (Spring planting)",
+      "permanent_domain_slug": "master-gardener",
+      "permanent_domain_name": "Master Gardener",
+      "launch_rank": 5,
+      "scores": { "traffic": 8, "identity": 8, "monetization": 8 },
+      "search_intent": ["when to plant tomatoes", "beginner garden", "raised bed plans"],
+      "transformation_paths": ["Road to Master Gardener", "Road to Urban Farmer"],
+      "status": "planned"
+    },
+    {
+      "slug": "bourbon-heritage-month",
+      "display_name": "Bourbon Heritage Month",
+      "type": "seasonal",
+      "event_window": "September annually",
+      "permanent_domain_slug": "bourbon",
+      "permanent_domain_name": "Bourbon",
+      "launch_rank": 1,
+      "scores": { "traffic": 5, "identity": 10, "monetization": 9 },
+      "search_intent": ["bourbon for beginners", "best bourbon", "bourbon tasting"],
+      "transformation_paths": ["Road to Bourbon Enthusiast"],
+      "status": "active",
+      "note": "PASS-014 proof complete — first domain live"
+    },
+    {
+      "slug": "bbq-season",
+      "display_name": "BBQ Season",
+      "type": "seasonal",
+      "event_window": "May–Aug (Summer grilling)",
+      "permanent_domain_slug": "bbq",
+      "permanent_domain_name": "BBQ",
+      "launch_rank": 6,
+      "scores": { "traffic": 7, "identity": 9, "monetization": 8 },
+      "search_intent": ["smoke brisket", "BBQ rub recipe", "pitmaster tips"],
+      "transformation_paths": ["Road to Pitmaster", "Road to Competition Cook"],
+      "status": "planned"
+    },
+    {
+      "slug": "public-speaking-evergreen",
+      "display_name": "Public Speaking",
+      "type": "evergreen",
+      "event_window": "Ongoing — massive evergreen demand",
+      "permanent_domain_slug": "public-speaking",
+      "permanent_domain_name": "Public Speaking",
+      "launch_rank": 3,
+      "scores": { "traffic": 8, "identity": 9, "monetization": 8 },
+      "search_intent": ["how to overcome fear of public speaking", "toastmasters alternative"],
+      "transformation_paths": ["Road to Confident Speaker"],
+      "status": "active",
+      "note": "PASS-010 demo loop operational"
+    },
+    {
+      "slug": "poker-evergreen",
+      "display_name": "Poker",
+      "type": "evergreen",
+      "event_window": "Ongoing — WSOP spikes in summer",
+      "permanent_domain_slug": "poker",
+      "permanent_domain_name": "Poker",
+      "launch_rank": 7,
+      "scores": { "traffic": 7, "identity": 10, "monetization": 7 },
+      "search_intent": ["learn poker", "poker strategy", "home game rules"],
+      "transformation_paths": ["Road to Home Game Host", "Road to Tournament Player"],
+      "status": "planned"
+    },
+    {
+      "slug": "world-cup-2026",
+      "display_name": "World Cup 2026",
+      "type": "traffic_event",
+      "event_window": "Jun–Jul 2026 (USA/Mexico/Canada)",
+      "permanent_domain_slug": "soccer",
+      "permanent_domain_name": "Soccer",
+      "launch_rank": 8,
+      "scores": { "traffic": 10, "identity": 7, "monetization": 5 },
+      "search_intent": [
+        "World Cup schedule",
+        "World Cup groups",
+        "World Cup predictions",
+        "best players",
+        "USA roster",
+        "Argentina roster"
+      ],
+      "transformation_paths": [
+        "Road to Soccer Fan",
+        "Road to Youth Coach",
+        "Road to Referee",
+        "Road to Soccer Analyst",
+        "Road to Fantasy Soccer Expert"
+      ],
+      "status": "tracking",
+      "note": "Build Soccer domain. World Cup is acquisition event — not the product."
+    },
+    {
+      "slug": "books-evergreen",
+      "display_name": "Books",
+      "type": "evergreen",
+      "event_window": "Ongoing",
+      "permanent_domain_slug": "books",
+      "permanent_domain_name": "Books",
+      "launch_rank": 9,
+      "scores": { "traffic": 7, "identity": 8, "monetization": 7 },
+      "search_intent": ["book club ideas", "what should I read", "build home library"],
+      "transformation_paths": ["Road to Literary Enthusiast", "Road to Book Club Host"],
+      "status": "planned"
+    },
+    {
+      "slug": "movies-evergreen",
+      "display_name": "Movies",
+      "type": "evergreen",
+      "event_window": "Ongoing",
+      "permanent_domain_slug": "movies",
+      "permanent_domain_name": "Movies",
+      "launch_rank": 10,
+      "scores": { "traffic": 7, "identity": 7, "monetization": 6 },
+      "search_intent": ["best movies to watch", "film critic path", "movie collection"],
+      "transformation_paths": ["Road to Film Enthusiast", "Road to Film Critic"],
+      "status": "planned"
+    },
+    {
+      "slug": "super-bowl-2027",
+      "display_name": "Super Bowl LXI",
+      "type": "traffic_event",
+      "event_window": "Feb 2027",
+      "permanent_domain_slug": "football",
+      "permanent_domain_name": "Football (American)",
+      "launch_rank": null,
+      "scores": { "traffic": 9, "identity": 8, "monetization": 6 },
+      "search_intent": ["Super Bowl predictions", "best Super Bowl ads", "fantasy football"],
+      "transformation_paths": ["Road to Fantasy Football Expert", "Road to Football Analyst"],
+      "status": "tracking"
+    },
+    {
+      "slug": "march-madness",
+      "display_name": "March Madness",
+      "type": "traffic_event",
+      "event_window": "Mar–Apr annually",
+      "permanent_domain_slug": "college-basketball",
+      "permanent_domain_name": "College Basketball",
+      "launch_rank": null,
+      "scores": { "traffic": 9, "identity": 7, "monetization": 5 },
+      "search_intent": ["bracket predictions", "upset picks", "college basketball rankings"],
+      "transformation_paths": ["Road to Bracket Expert", "Road to College Hoops Fan"],
+      "status": "tracking"
+    },
+    {
+      "slug": "masters-golf",
+      "display_name": "The Masters",
+      "type": "traffic_event",
+      "event_window": "Apr annually",
+      "permanent_domain_slug": "golf",
+      "permanent_domain_name": "Golf",
+      "launch_rank": null,
+      "scores": { "traffic": 7, "identity": 8, "monetization": 7 },
+      "search_intent": ["Masters leaderboard", "Masters tickets", "golf swing tips"],
+      "transformation_paths": ["Road to Golfer", "Road to Course Steward"],
+      "status": "tracking"
+    },
+    {
+      "slug": "kentucky-derby",
+      "display_name": "Kentucky Derby",
+      "type": "traffic_event",
+      "event_window": "First Saturday in May",
+      "permanent_domain_slug": "horse-racing",
+      "permanent_domain_name": "Horse Racing",
+      "launch_rank": null,
+      "scores": { "traffic": 6, "identity": 6, "monetization": 5 },
+      "search_intent": ["Derby horses", "Derby outfits", "how to bet Derby"],
+      "transformation_paths": ["Road to Racing Enthusiast"],
+      "status": "tracking"
+    }
+  ]
+}

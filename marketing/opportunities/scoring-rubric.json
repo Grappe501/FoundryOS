@@ -1,0 +1,33 @@
+{
+  "version": "1.0.0",
+  "growth_factory_funnel": [
+    "Traffic Event",
+    "Permanent Domain",
+    "Transformation System",
+    "Retention",
+    "Revenue"
+  ],
+  "dimensions": {
+    "traffic": { "max": 10, "question": "How many people search?" },
+    "identity": { "max": 10, "question": "Do people identify with it?" },
+    "community": { "max": 10, "question": "Do people gather around it?" },
+    "project_potential": { "max": 10, "question": "Can users do things?" },
+    "collection_potential": { "max": 10, "question": "Can users build assets?" },
+    "retention": { "max": 10, "question": "Will they return?" },
+    "monetization": { "max": 10, "question": "Will they pay?" }
+  },
+  "max_score": 70,
+  "active_domain_definition": {
+    "label": "Active Domain",
+    "criteria": [
+      "Transformation Loop operational",
+      "Evidence submissions working",
+      "Collections (Personal Knowledge Assets)",
+      "Communities functioning",
+      "Reputation derived from evidence",
+      "Mastery assigned from evidence"
+    ],
+    "january_2027_target": 10,
+    "note": "10 Active Domains > 100 half-built domains"
+  }
+}

@@ -47,15 +47,15 @@ The factory does the work. Publish gate: score >= 70.
 ## First 10 Domains (Launch Order)
 
 1. Bourbon ✅ (PASS-014 proof)
-2. BBQ
-3. Poker
-4. Public Speaking
-5. AI Builder
-6. Master Gardener
-7. Books
-8. Movies
-9. College Baseball
-10. Campaign Management
+2. AI Builder
+3. Public Speaking
+4. **Civic Engagement** (Midterm Elections 2026 acquisition — NOT politics news)
+5. Master Gardener (Gardening)
+6. BBQ
+7. Poker
+8. Soccer (World Cup 2026 launch event)
+9. Books
+10. Movies
 
 ---
 

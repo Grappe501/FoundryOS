@@ -28,6 +28,7 @@ Customer Acquisition Infrastructure
 
 - `marketing/` folder structure populated
 - Growth OS dashboard (`/growth`) with live KPI wiring
+- **PASS-015A:** Traffic Opportunity Registry (`/growth/opportunities`)
 - SEO factory — page types from domain blueprint
 - Launch tracker (domains 1–25)
 - MRR tracker + revenue milestones

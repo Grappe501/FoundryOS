@@ -11,19 +11,30 @@ import {
   SEO_PAGE_TYPES,
   type GrowthKpiSnapshot,
 } from '../../lib/growth-os';
+import { listTrafficOpportunities } from '../../lib/opportunity-registry';
+import {
+  ACTIVE_DOMAIN_CRITERIA,
+  ACTIVE_DOMAINS_JAN_2027_TARGET,
+  GROWTH_FACTORY_FUNNEL,
+} from '../../lib/growth-factory';
 
 export const dynamic = 'force-dynamic';
 
 function formatGrowthValue(key: keyof GrowthKpiSnapshot, value: number): string {
   if (key === 'mrr_usd' || key === 'cac_usd') return `$${value.toLocaleString()}`;
-  if (key === 'referral_rate') return `${Math.round(value * 100)}%`;
+  if (key === 'referral_rate' || key === 'domain_activation_rate') return `${Math.round(value * 100)}%`;
   return value.toLocaleString();
 }
 
 export default async function GrowthOsPage() {
   const domainProof = isSupabaseConfigured() ? await getDomainProofKpiCounts() : null;
+  const topOpportunities = listTrafficOpportunities().slice(0, 5);
+  const activeDomains = Math.max(domainProof?.domain_proofs_complete ?? 0, 1);
+  const domainsBuilt = Math.max(domainProof?.domain_blueprints_active ?? 0, activeDomains, 1);
   const growth = getGrowthKpiSnapshot({
-    domains_live: Math.max(domainProof?.domain_proofs_complete ?? 0, 1),
+    active_domains: activeDomains,
+    domains_built: domainsBuilt,
+    domain_activation_rate: activeDomains / domainsBuilt,
   });
 
   const stats = Object.entries(GROWTH_STAT_LABELS).map(([key, label]) => ({
@@ -64,6 +75,19 @@ export default async function GrowthOsPage() {
       <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
         Production launch: {PRODUCTION_LAUNCH} · Business north star: {GROWTH_NORTH_STAR}
       </p>
+      <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>
+        Growth Factory: {GROWTH_FACTORY_FUNNEL.join(' → ')}
+      </p>
+
+      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Active Domains — Jan 2027 target: {ACTIVE_DOMAINS_JAN_2027_TARGET}</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Active ≠ built. Full HPI stack operational: {ACTIVE_DOMAIN_CRITERIA.join(' · ')}
+        </p>
+        <p style={{ color: '#E8E8EC', fontSize: 22, fontWeight: 300, marginTop: 12 }}>
+          {growth.active_domains} active · {growth.domains_built} built · {Math.round(growth.domain_activation_rate * 100)}% activation
+        </p>
+      </section>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Growth Metrics</h2>
@@ -139,6 +163,35 @@ export default async function GrowthOsPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Traffic Opportunities (PASS-015A)</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Events feed permanent domains — not disposable apps. World Cup → Soccer, not World Cup App.
+        </p>
+        <div style={{ marginTop: 16 }}>
+          {topOpportunities.map((o) => (
+            <div
+              key={o.slug}
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                padding: '10px 0',
+                borderBottom: '1px solid #1A1A1E',
+                fontSize: 13,
+              }}
+            >
+              <span style={{ color: '#E8E8EC' }}>
+                {o.display_name} → {o.permanent_domain_name}
+              </span>
+              <span style={{ color: '#C8A96E' }}>{o.total_score}</span>
+            </div>
+          ))}
+        </div>
+        <Link href="/growth/opportunities" style={{ color: '#C8A96E', fontSize: 13, marginTop: 16, display: 'inline-block' }}>
+          Full scorecard →
+        </Link>
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>

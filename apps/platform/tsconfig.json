@@ -16,6 +16,7 @@
     "**/*.ts",
     "**/*.tsx",
     "../../data/**/*.json",
+    "../../marketing/opportunities/registry.json",
     ".next/types/**/*.ts"
   ]
 }
