@@ -20,7 +20,8 @@ import {
 
 export const dynamic = 'force-dynamic';
 
-function formatGrowthValue(key: keyof GrowthKpiSnapshot, value: number): string {
+function formatGrowthValue(key: keyof GrowthKpiSnapshot, value: number | null): string {
+  if (value == null) return '—';
   if (key === 'mrr_usd' || key === 'cac_usd') return `$${value.toLocaleString()}`;
   if (key === 'referral_rate' || key === 'domain_activation_rate') return `${Math.round(value * 100)}%`;
   return value.toLocaleString();
@@ -191,6 +192,9 @@ export default async function GrowthOsPage() {
         </div>
         <Link href="/growth/opportunities" style={{ color: '#C8A96E', fontSize: 13, marginTop: 16, display: 'inline-block' }}>
           Full scorecard →
+        </Link>
+        <Link href="/growth/launch" style={{ color: '#C8A96E', fontSize: 13, marginTop: 16, marginLeft: 16, display: 'inline-block' }}>
+          Launch Factory →
         </Link>
       </section>
 

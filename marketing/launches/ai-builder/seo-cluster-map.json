@@ -1,0 +1,46 @@
+{
+  "domain": "ai-builder",
+  "vertical": "ai-builder",
+  "page_types": [
+    "What Is",
+    "Beginner Guide",
+    "Road to Expert",
+    "Projects",
+    "Common Mistakes",
+    "Best Resources"
+  ],
+  "pages": [
+    {
+      "slug": "what-is-ai-builder",
+      "title": "What Is an AI Builder?",
+      "intent": "definition"
+    },
+    {
+      "slug": "beginner-guide",
+      "title": "Beginner Guide to Building with AI",
+      "intent": "beginner"
+    },
+    {
+      "slug": "road-to-expert",
+      "title": "Road to AI Builder",
+      "intent": "path"
+    },
+    {
+      "slug": "projects",
+      "title": "AI Builder Projects",
+      "intent": "projects"
+    },
+    {
+      "slug": "common-mistakes",
+      "title": "Common AI Builder Mistakes",
+      "intent": "mistakes"
+    },
+    {
+      "slug": "best-resources",
+      "title": "Best AI Builder Resources",
+      "intent": "resources"
+    }
+  ],
+  "cluster_formula": "25 domains × 500 entities × 20 pages = 250k indexed pages",
+  "publish_gate": "content_score >= 70"
+}

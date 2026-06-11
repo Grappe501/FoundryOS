@@ -1,0 +1,25 @@
+{
+  "launches": [
+    {
+      "slug": "bourbon",
+      "display_name": "Bourbon",
+      "blueprint_started_at": "2026-06-11",
+      "launched_at": "2026-06-11",
+      "active_at": "2026-06-11",
+      "days_blueprint_to_launch": 0,
+      "days_launch_to_active": 0,
+      "status": "active"
+    },
+    {
+      "slug": "ai-builder",
+      "display_name": "AI Builder",
+      "blueprint_started_at": "2026-06-11T04:12:08.190Z",
+      "launched_at": "2026-06-11T04:12:08.183Z",
+      "active_at": null,
+      "days_blueprint_to_launch": null,
+      "days_launch_to_active": null,
+      "status": "scaffolded"
+    }
+  ],
+  "bourbon_proof_started_at": "2026-06-11"
+}

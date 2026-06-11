@@ -1,0 +1,13 @@
+{
+  "name": "@foundry/launch-factory",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-015B Launch Factory — one command launches a domain",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {
+    "@foundry/domain-blueprint": "*"
+  },
+  "devDependencies": { "typescript": "^5.7.0" }
+}

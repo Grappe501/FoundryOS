@@ -9,7 +9,7 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-015",
+    "current_pass": "PASS-015B",
     "next_pass": "PASS-016",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
@@ -23,6 +23,7 @@
     "sandbox": "node scripts/sandbox-netlify.js",
     "build:platform": "npm run build -w @foundry/platform",
     "build:topic": "node scripts/build-topic.js",
+    "launch:domain": "node scripts/launch-domain.js",
     "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
     "predev": "npm run setup && npm run enforce",
     "prebuild": "npm run setup && npm run enforce",

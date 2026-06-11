@@ -1,0 +1,42 @@
+{
+  "slug": "ai-builder",
+  "display_name": "AI Builder",
+  "launched_at": "2026-06-11T04:12:08.183Z",
+  "status": "scaffolded",
+  "assets": {
+    "platform": [
+      "Domain Blueprint",
+      "Transformation Paths",
+      "Projects",
+      "Collections",
+      "Communities",
+      "Roles",
+      "Mastery Ladder"
+    ],
+    "seo": [
+      "What Is an AI Builder?",
+      "Beginner Guide to Building with AI",
+      "Road to AI Builder",
+      "AI Builder Projects",
+      "Common AI Builder Mistakes",
+      "Best AI Builder Resources"
+    ],
+    "marketing": [
+      "Launch Brief",
+      "Launch Checklist",
+      "30 Day Content Calendar",
+      "Email Sequence",
+      "Social Calendar",
+      "SEO Cluster Map"
+    ],
+    "growth": [
+      "Target User",
+      "Traffic Sources",
+      "Opportunity Score",
+      "Monetization Plan",
+      "KPIs"
+    ]
+  },
+  "blueprint_path": "packages\\domain-blueprint\\src\\ai-builder-blueprint.ts",
+  "marketing_path": "marketing\\launches\\ai-builder"
+}

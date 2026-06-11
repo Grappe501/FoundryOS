@@ -9,6 +9,7 @@ import { getReputationKpiSnapshot } from '@foundry/reputation-engine';
 import { getMasteryKpiSnapshot } from '@foundry/mastery-engine';
 import { getDomainProofKpiSnapshot } from '@foundry/domain-blueprint';
 import { getGrowthKpiSnapshot } from './growth-os';
+import { getLaunchVelocitySnapshot } from './launch-factory-loader';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -144,12 +145,12 @@ export const PASSES: PassEntry[] = [
       'Reusable Domain Blueprint — bourbon first instance. /bourbon + /verticals/bourbon OPERATIONAL. HPI stack proven in real domain.',
   },
   {
-    code: 'PASS-015',
-    title: 'Growth OS',
+    code: 'PASS-015B',
+    title: 'Launch Factory',
     status: 'in_progress' as const,
     date: '2026-06-11',
     summary:
-      'Growth Factory + Opportunity Engine. PASS-015A: Traffic Opportunity Registry, Active Domains metric, 7-dimension portfolio scoring.',
+      'npm run launch:domain — one command scaffolds platform + SEO + marketing + growth assets. Pass gate: users, revenue, retention.',
   },
 ];
 
@@ -179,12 +180,15 @@ export async function getMissionControlStats() {
   const domainProofKpis = getDomainProofKpiSnapshot(domainProofLive ?? undefined);
   const activeDomains = domainProofKpis.domain_proofs_complete || 1;
   const domainsBuilt = Math.max(domainProofKpis.domain_blueprints_active, activeDomains, 1);
+  const launchVelocity = getLaunchVelocitySnapshot();
   const growthKpis = getGrowthKpiSnapshot({
     active_domains: activeDomains,
     domains_built: domainsBuilt,
     domain_activation_rate: activeDomains / domainsBuilt,
     monthly_active_communities: communityKpis.communities_active,
     monthly_active_knowledge_assets: collectionKpis.knowledge_assets_total,
+    domain_launch_velocity_days: launchVelocity.avg_days_blueprint_to_active,
+    domain_launch_velocity_target: launchVelocity.target_q4_days,
   });
 
   return {
@@ -263,19 +267,20 @@ export async function getMissionControlStats() {
     monthly_active_transformations: growthKpis.monthly_active_transformations,
     monthly_active_communities: growthKpis.monthly_active_communities,
     monthly_active_knowledge_assets: growthKpis.monthly_active_knowledge_assets,
+    domain_launch_velocity_days: growthKpis.domain_launch_velocity_days,
+    domain_launch_velocity_target: growthKpis.domain_launch_velocity_target,
     indexed_pages: growthKpis.indexed_pages,
-    launch_readiness_pct: live ? 92 : 52,
-    last_pass: 'PASS-014',
-    next_pass: 'PASS-015A',
+    launch_readiness_pct: live ? 94 : 52,
+    last_pass: 'PASS-015A',
+    next_pass: 'PASS-015B',
     current_focus:
-      'PASS-015A — Growth Factory: Traffic Event → Permanent Domain → Transformation → Retention → Revenue. Parallel: Domain Factory + Opportunity Engine.',
+      'PASS-015B Launch Factory — npm run launch:domain. Next milestone: second Active Domain with real users (AI Builder #2). Pass gate: users, revenue, retention.',
     open_risks: [
-      'Biggest risk: launch + acquire fast enough before Jan 2027 — not architecture',
-      'Growth Factory needs same attention as Platform Factory',
+      'Biggest risk: strangers do not care — not whether Foundry works',
+      'Do NOT let PASS-016 become another architecture pass',
+      'Launch velocity target: 1 domain every 7 days by Q4',
       '10 Active Domains > 100 half-built domains',
-      'Do NOT market Foundry first — market domains',
-      'Do NOT build event apps (election news, World Cup scores)',
-      'January 2027: 10 active domains, 100k users, 5k paid, $20–50k MRR',
+      'Validation: Sep 100 users · Jan 10k users · $4k MRR',
     ],
   };
 }

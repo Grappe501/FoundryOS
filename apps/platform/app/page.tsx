@@ -235,6 +235,7 @@ export default async function MissionControlHome() {
           <Link href="/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
           <Link href="/growth" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>
           <Link href="/growth/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Traffic Opportunities →</Link>
+          <Link href="/growth/launch" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Launch Factory (PASS-015B) →</Link>
           <Link href="/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>

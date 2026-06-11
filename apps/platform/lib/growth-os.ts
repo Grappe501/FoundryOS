@@ -47,6 +47,8 @@ export type GrowthKpiSnapshot = {
   monthly_active_communities: number;
   monthly_active_knowledge_assets: number;
   indexed_pages: number;
+  domain_launch_velocity_days: number | null;
+  domain_launch_velocity_target: number;
 };
 
 export type GrowthTarget = {
@@ -64,9 +66,10 @@ export const JANUARY_2027_TARGETS: GrowthTarget[] = [
 ];
 
 export const REVENUE_MILESTONES = [
-  { period: 'Q3 2026', paid_users: 100, mrr: '$500', note: 'Proof of monetization' },
-  { period: 'Q4 2026', paid_users: 1000, mrr: '$5,000–10,000', note: 'Scale signal' },
-  { period: 'Jan 2027', paid_users: 5000, mrr: '$20,000–50,000', note: 'Production launch' },
+  { period: 'Sep 2026', paid_users: 10, mrr: '$40', note: '1 active domain · 100 users · validation' },
+  { period: 'Oct 2026', paid_users: 50, mrr: '$200', note: '3 active domains · 500 users' },
+  { period: 'Nov 2026', paid_users: 200, mrr: '$800', note: '5 active domains · 2,000 users' },
+  { period: 'Jan 2027', paid_users: 1000, mrr: '$4,000', note: '10 active domains · 10,000 users · factory scales' },
   { period: 'End 2027', paid_users: 50000, mrr: '$250k–500k', note: 'If factory works' },
 ];
 
@@ -97,6 +100,8 @@ export function getGrowthKpiSnapshot(live?: Partial<GrowthKpiSnapshot>): GrowthK
     monthly_active_communities: live?.monthly_active_communities ?? 0,
     monthly_active_knowledge_assets: live?.monthly_active_knowledge_assets ?? 0,
     indexed_pages: live?.indexed_pages ?? 0,
+    domain_launch_velocity_days: live?.domain_launch_velocity_days ?? null,
+    domain_launch_velocity_target: live?.domain_launch_velocity_target ?? 7,
   };
 }
 
@@ -116,4 +121,6 @@ export const GROWTH_STAT_LABELS: Record<keyof GrowthKpiSnapshot, string> = {
   monthly_active_communities: 'Monthly Active Communities',
   monthly_active_knowledge_assets: 'Monthly Active Knowledge Assets',
   indexed_pages: 'Indexed Pages',
+  domain_launch_velocity_days: 'Domain Launch Velocity (days)',
+  domain_launch_velocity_target: 'Launch Velocity Target (Q4)',
 };

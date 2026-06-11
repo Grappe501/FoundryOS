@@ -1,0 +1,29 @@
+{
+  "domain": "ai-builder",
+  "target_user": "Professional who wants to ship with AI — not just chat",
+  "traffic_sources": [
+    "SEO",
+    "YouTube",
+    "Twitter/X",
+    "Reddit r/LocalLLaMA",
+    "Referrals"
+  ],
+  "opportunity_score": 64,
+  "monetization": {
+    "tier_2": {
+      "price": "$4/mo",
+      "hook": "My AI Toolkit — save workflows, prompts, and project notes"
+    },
+    "tier_3": {
+      "price": "$18/mo",
+      "hook": "AI Builders Circle — share projects, get feedback, find collaborators"
+    }
+  },
+  "kpis": [
+    "registered_users",
+    "projects_started",
+    "evidence_submitted",
+    "paid_conversions"
+  ],
+  "pass_gate": "Users · Revenue · Retention — not another system"
+}
