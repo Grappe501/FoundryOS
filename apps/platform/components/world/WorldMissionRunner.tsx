@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { trackValidationEvent } from '../../lib/validation-tracker';
 
@@ -64,6 +64,7 @@ export function WorldMissionRunner({
   const [reflection, setReflection] = useState('');
   const [done, setDone] = useState(false);
   const [started, setStarted] = useState(false);
+  const startedAtRef = useRef<string | null>(null);
 
   useEffect(() => {
     const existing = getWorldPortfolio(portfolioKey).find((e) => e.missionSlug === mission.slug);
@@ -73,20 +74,44 @@ export function WorldMissionRunner({
     }
   }, [mission.slug, portfolioKey]);
 
+  useEffect(() => {
+    if (!started || done) return;
+    const step = mission.steps[stepIndex];
+    if (!step) return;
+    void trackValidationEvent({
+      event_type: 'mission_step_viewed',
+      landing_page: `${basePath}/missions/${mission.slug}`,
+      path_slug: pathSlug,
+      metadata: {
+        mission: mission.slug,
+        title: mission.title,
+        step_index: stepIndex,
+        step_phase: step.phase,
+      },
+    });
+  }, [started, done, stepIndex, mission, basePath, pathSlug]);
+
   const step = mission.steps[stepIndex];
   const isLast = stepIndex === mission.steps.length - 1;
 
   function startMission() {
     setStarted(true);
+    startedAtRef.current = new Date().toISOString();
     void trackValidationEvent({
-      event_type: 'project_started',
+      event_type: 'mission_started',
       landing_page: basePath,
       path_slug: pathSlug,
-      metadata: { mission: mission.slug, title: mission.title },
+      metadata: { mission: mission.slug, title: mission.title, started_at: startedAtRef.current },
     });
   }
 
   function completeMission() {
+    const completedAt = new Date().toISOString();
+    const startedAt = startedAtRef.current ?? completedAt;
+    const durationMinutes = Math.max(
+      1,
+      Math.round((new Date(completedAt).getTime() - new Date(startedAt).getTime()) / 60000),
+    );
     const entry: PortfolioEntry = {
       missionSlug: mission.slug,
       missionTitle: mission.title,
@@ -109,10 +134,21 @@ export function WorldMissionRunner({
       }),
     }).catch(() => undefined);
     void trackValidationEvent({
-      event_type: 'assessment_completed',
+      event_type: 'mission_completed',
       landing_page: `${basePath}/missions/${mission.slug}`,
       path_slug: pathSlug,
-      metadata: { mission: mission.slug, completed: true },
+      metadata: {
+        mission: mission.slug,
+        mission_title: mission.title,
+        completed: true,
+        duration_minutes: durationMinutes,
+      },
+    });
+    void trackValidationEvent({
+      event_type: 'portfolio_created',
+      landing_page: `${basePath}/portfolio`,
+      path_slug: pathSlug,
+      metadata: { mission: mission.slug, mission_title: mission.title },
     });
   }
 

@@ -27,6 +27,8 @@ export default function BetaPage() {
         {' · '}
         <Link href="/beta/welcome" style={{ color: '#6B9B6B' }}>Welcome guide</Link>
         {' · '}
+        <Link href="/beta/feedback" style={{ color: '#6B9B6B' }}>Send feedback</Link>
+        {' · '}
         <Link href="/pricing" style={{ color: '#6B6B70' }}>View pricing</Link>
       </p>
     </main>

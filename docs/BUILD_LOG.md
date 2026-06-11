@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-026 ✅ |
-| **Next Pass** | First 25 tester outreach |
-| **Focus** | Controlled tester program — invite ops, welcome flow, cohort tracking |
+| **Last Pass** | PASS-027 ✅ |
+| **Next Pass** | PASS-028 Community Activation |
+| **Focus** | Learning from testers — transformation analytics, feedback loop |
 | **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -107,6 +107,22 @@ Factory: `npm run build:world -- <slug>` · `npm run audit:worlds`
 | First-25 cohort plan | 5× student, parent, adult learner, educator, hobbyist |
 
 Migration: `20260627000000_pass026_tester_operations.sql`
+
+---
+
+## PASS-027 — Transformation Analytics & Learning Engine ✅
+
+| Deliverable | Route |
+|-------------|-------|
+| Transformation funnel | `/operator/analytics` |
+| World + mission analytics | Operator dashboard |
+| Transformation velocity | Operator dashboard |
+| Success indicators | Operator dashboard |
+| Domain readiness score | `/growth` |
+| Tester feedback submit | `/beta/feedback` |
+| Tester feedback review | `/operator/feedback` |
+
+Migration: `20260628000000_pass027_transformation_analytics.sql`
 
 ---
 

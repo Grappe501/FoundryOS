@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getDomainProofKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getDomainProofKpiCounts, getTransformationAnalyticsSnapshot, isSupabaseConfigured } from '@foundry/db';
 import {
   FIRST_TEN_DOMAINS,
   GROWTH_NORTH_STAR,
@@ -9,6 +9,7 @@ import {
   getWorldDepthKpiSnapshot,
   getWorldDepthSnapshot,
   GROWTH_STAT_LABELS,
+  DOMAIN_READINESS_LABELS,
   JANUARY_2027_TARGETS,
   PRODUCTION_LAUNCH,
   REVENUE_MILESTONES,
@@ -33,6 +34,11 @@ function formatGrowthValue(key: keyof GrowthKpiSnapshot, value: number | null): 
 
 export default async function GrowthOsPage() {
   const domainProof = isSupabaseConfigured() ? await getDomainProofKpiCounts() : null;
+  const worldDepthDetail = getWorldDepthSnapshot();
+  const depthScores = Object.fromEntries(worldDepthDetail.rows.map((r) => [r.slug, r.depthScore]));
+  const transformationAnalytics = isSupabaseConfigured()
+    ? await getTransformationAnalyticsSnapshot(depthScores)
+    : null;
   const topOpportunities = listTrafficOpportunities().slice(0, 5);
   const activeDomains = Math.max(domainProof?.domain_proofs_complete ?? 0, 1);
   const domainsBuilt = Math.max(domainProof?.domain_blueprints_active ?? 0, activeDomains, 1);
@@ -44,7 +50,6 @@ export default async function GrowthOsPage() {
   const launchCost = getLaunchCostKpiSnapshot();
   const launchCostDetail = getLaunchCostSnapshot();
   const worldDepth = getWorldDepthKpiSnapshot();
-  const worldDepthDetail = getWorldDepthSnapshot();
 
   const stats = Object.entries(GROWTH_STAT_LABELS).map(([key, label]) => ({
     key: key as keyof GrowthKpiSnapshot,
@@ -178,6 +183,32 @@ export default async function GrowthOsPage() {
         <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
           <code style={{ color: '#6B6B70' }}>npm run audit:depth</code>
         </p>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A4A', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Domain Readiness Score — PASS-027</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Depth · Engagement · Retention · Conversion → Readiness. More valuable than raw lesson counts.
+        </p>
+        <Link href="/operator/analytics" style={{ color: '#6B9BC9', fontSize: 12 }}>Full analytics →</Link>
+        <div style={{ marginTop: 16 }}>
+          {(transformationAnalytics?.domain_readiness ?? worldDepthDetail.rows.map((r) => ({
+            slug: r.slug,
+            label: r.displayName,
+            depth: r.depthScore,
+            engagement: 0,
+            retention: 0,
+            conversion: 0,
+            readiness: Math.round(r.depthScore * 0.3),
+          }))).map((d) => (
+            <div key={d.slug} style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 12 }}>
+              <span style={{ color: '#E8E8EC', minWidth: 140 }}>{d.label}</span>
+              <span style={{ color: '#8A8A8E' }}>
+                {DOMAIN_READINESS_LABELS.depth} {d.depth}% · {DOMAIN_READINESS_LABELS.engagement} {d.engagement}% · {DOMAIN_READINESS_LABELS.retention} {d.retention}% · {DOMAIN_READINESS_LABELS.conversion} {d.conversion}% · <strong style={{ color: '#6B9B6B', fontWeight: 400 }}>{DOMAIN_READINESS_LABELS.readiness} {d.readiness}%</strong>
+              </span>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>

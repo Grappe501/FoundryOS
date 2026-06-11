@@ -255,6 +255,12 @@ export const PASSES: PassEntry[] = [
     status: 'completed' as const,
     summary: '/operator/invites, /beta/welcome, first-25 cohort plan, invite/joined/active tracking.',
   },
+  {
+    code: 'PASS-027',
+    title: 'Transformation Analytics & Learning Engine',
+    status: 'completed' as const,
+    summary: '/operator/analytics funnel, world + mission effectiveness, velocity, success indicators, /operator/feedback.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;

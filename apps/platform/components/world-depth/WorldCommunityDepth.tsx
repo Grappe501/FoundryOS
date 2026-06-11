@@ -1,4 +1,5 @@
 import type { WorldDepthBundle } from '../../lib/world-depth/types';
+import { CommunityJoinTracker } from '../analytics/CommunityJoinTracker';
 
 type Props = {
   bundle: WorldDepthBundle;
@@ -8,6 +9,7 @@ export function WorldCommunityDepth({ bundle }: Props) {
   const c = bundle.community;
   return (
     <section style={{ marginTop: 16 }}>
+      <CommunityJoinTracker worldSlug={bundle.slug} />
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>{c.name}</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
         A community built around shared mastery — not passive scrolling.

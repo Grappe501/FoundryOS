@@ -18,7 +18,15 @@ export type TrackValidationPayload = {
     | 'pricing_viewed'
     | 'pricing_clicked'
     | 'sign_in_started'
-    | 'sign_up_started';
+    | 'sign_up_started'
+    | 'mission_started'
+    | 'mission_completed'
+    | 'mission_step_viewed'
+    | 'return_tomorrow'
+    | 'return_this_week'
+    | 'portfolio_created'
+    | 'community_joined'
+    | 'paid_conversion';
   landing_page?: string;
   source?: string;
   path_slug?: string;
@@ -26,6 +34,27 @@ export type TrackValidationPayload = {
 };
 
 const VISITOR_KEY = 'foundry-visitor-id';
+const LAST_VISIT_KEY = 'foundry-last-visit';
+
+function checkReturnVisit(): void {
+  if (typeof window === 'undefined') return;
+  try {
+    const last = localStorage.getItem(LAST_VISIT_KEY);
+    const now = Date.now();
+    if (last) {
+      const diffDays = (now - Number(last)) / (1000 * 60 * 60 * 24);
+      if (diffDays >= 1 && diffDays <= 2) {
+        void trackValidationEvent({ event_type: 'return_tomorrow' });
+      }
+      if (diffDays >= 1 && diffDays <= 7) {
+        void trackValidationEvent({ event_type: 'return_this_week' });
+      }
+    }
+    localStorage.setItem(LAST_VISIT_KEY, String(now));
+  } catch {
+    /* ignore */
+  }
+}
 
 export function getVisitorId(): string {
   if (typeof window === 'undefined') return 'server';
@@ -73,6 +102,7 @@ export async function trackValidationEvent(payload: TrackValidationPayload): Pro
 }
 
 export function trackPageLanding(page: string): void {
+  checkReturnVisit();
   void trackValidationEvent({
     event_type: 'visitor_landed',
     landing_page: page,

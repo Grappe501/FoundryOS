@@ -158,6 +158,38 @@ export function getWorldDepthKpiSnapshot(): WorldDepthKpiSnapshot {
   };
 }
 
+export type DomainReadinessRow = {
+  slug: string;
+  label: string;
+  depth: number;
+  engagement: number;
+  retention: number;
+  conversion: number;
+  readiness: number;
+};
+
+/** PASS-027 — Domain readiness score (Depth + Engagement + Retention + Conversion) */
+export function getDomainReadinessPlaceholder(): DomainReadinessRow[] {
+  const depth = getWorldDepthSnapshot();
+  return depth.rows.map((r) => ({
+    slug: r.slug,
+    label: r.displayName,
+    depth: r.depthScore,
+    engagement: 0,
+    retention: 0,
+    conversion: 0,
+    readiness: Math.round(r.depthScore * 0.3),
+  }));
+}
+
+export const DOMAIN_READINESS_LABELS = {
+  depth: 'Depth',
+  engagement: 'Engagement',
+  retention: 'Retention',
+  conversion: 'Conversion',
+  readiness: 'Readiness',
+} as const;
+
 export const GROWTH_STAT_LABELS: Record<keyof GrowthKpiSnapshot, string> = {
   visitors: 'Visitors',
   registered_users: 'Registered Users',

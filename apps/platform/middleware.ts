@@ -42,7 +42,9 @@ export function middleware(request: NextRequest) {
       pathname === '/operator' ||
       pathname === '/operator/' ||
       pathname.startsWith('/operator/beta') ||
-      pathname.startsWith('/operator/invites')
+      pathname.startsWith('/operator/invites') ||
+      pathname.startsWith('/operator/analytics') ||
+      pathname.startsWith('/operator/feedback')
     ) {
       return NextResponse.next();
     }

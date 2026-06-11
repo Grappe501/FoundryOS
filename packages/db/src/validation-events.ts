@@ -18,7 +18,15 @@ export type ValidationEventType =
   | 'pricing_viewed'
   | 'pricing_clicked'
   | 'sign_in_started'
-  | 'sign_up_started';
+  | 'sign_up_started'
+  | 'mission_started'
+  | 'mission_completed'
+  | 'mission_step_viewed'
+  | 'return_tomorrow'
+  | 'return_this_week'
+  | 'portfolio_created'
+  | 'community_joined'
+  | 'paid_conversion';
 
 export type ValidationCategory = 'acquisition' | 'activation' | 'retention' | 'conversion';
 
@@ -91,6 +99,14 @@ const EVENT_CATEGORY: Record<ValidationEventType, ValidationCategory> = {
   pricing_clicked: 'conversion',
   sign_in_started: 'activation',
   sign_up_started: 'conversion',
+  mission_started: 'activation',
+  mission_completed: 'activation',
+  mission_step_viewed: 'activation',
+  return_tomorrow: 'retention',
+  return_this_week: 'retention',
+  portfolio_created: 'activation',
+  community_joined: 'retention',
+  paid_conversion: 'conversion',
 };
 
 export function categoryForEvent(type: ValidationEventType): ValidationCategory {
