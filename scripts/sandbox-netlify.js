@@ -39,6 +39,9 @@ step('netlify.toml valid', () => {
   if (!toml.includes('build:platform')) {
     throw new Error('netlify.toml must use npm run build:platform from repo root');
   }
+  if (!toml.includes('--include=dev')) {
+    throw new Error('netlify.toml must use npm ci --include=dev (TypeScript/next.config.ts)');
+  }
   const edgeMatch = toml.match(/\[\[edge_functions\]\]/);
   if (edgeMatch) {
     throw new Error('Remove edge_functions from netlify.toml until functions exist');

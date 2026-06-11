@@ -1,7 +1,7 @@
 # FoundryOS — Mission Control (foundryos.com)
 # Monorepo: install from root, build platform workspace
 [build]
-  command = "npm ci && npm run build:platform"
+  command = "npm ci --include=dev && npm run build:platform"
   publish = "apps/platform/.next"
 
 [build.environment]
