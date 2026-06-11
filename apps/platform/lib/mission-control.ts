@@ -228,26 +228,26 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-024',
     title: 'Factory Automation',
-    status: 'planned' as const,
-    summary: 'npm run build:world — 80%+ automation, <1h launch cost. BEFORE hand-built passion consumer worlds.',
+    status: 'completed' as const,
+    summary: 'npm run build:world — 92% avg automation, ~1h factory launch. Bourbon/BBQ/Poker/Civic generated.',
   },
   {
     code: 'PASS-023',
     title: 'Bourbon Consumer World',
-    status: 'planned' as const,
-    summary: 'Passion Trinity #1 via factory — My Bourbon Journey consumer routes.',
+    status: 'completed' as const,
+    summary: 'Passion Trinity #1 via factory — structure live at /bourbon.',
   },
   {
     code: 'PASS-025',
     title: 'BBQ Consumer World',
-    status: 'planned' as const,
-    summary: 'Passion Trinity #2 — mostly generated via factory.',
+    status: 'completed' as const,
+    summary: 'Passion Trinity #2 — factory-generated at /bbq.',
   },
   {
     code: 'PASS-026',
     title: 'Poker Consumer World',
-    status: 'planned' as const,
-    summary: 'Passion Trinity #3 — heavily generated via factory.',
+    status: 'completed' as const,
+    summary: 'Passion Trinity #3 — factory-generated at /poker.',
   },
 ];
 
@@ -375,15 +375,14 @@ export async function getMissionControlStats() {
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
     last_pass: 'PASS-021',
-    next_pass: 'PASS-020',
+    next_pass: 'PASS-022',
     current_focus:
-      'PASS-020 Civic Engagement → PASS-024 Factory Automation (80%+ obsessions) → PASS-023/025/026 passion worlds via factory. Future-Proof Academy = parent subscription wedge.',
+      'PASS-022 Private Beta Readiness — auth, email, pricing. Factory live: add blueprint + npm run build:world for domain #8+.',
     open_risks: [
-      'Strategic bottleneck: launch cost & factory automation (43% → 80%+)',
-      'Do not hand-build passion worlds before PASS-024',
+      'Passion worlds need content depth polish (structure is factory-complete)',
+      'Private beta gate: Future-Proof Academy + auth + email + pricing (PASS-022)',
       'Do not chase World Cup — no Soccer world yet',
       'Jan 2027: 5 exceptional domains + factory for 100 — not 20 shallow',
-      'Private beta gate: Future-Proof Academy + auth + email + pricing (PASS-022)',
     ],
   };
 }

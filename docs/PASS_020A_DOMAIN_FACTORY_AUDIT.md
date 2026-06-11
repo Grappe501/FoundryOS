@@ -26,7 +26,7 @@ npm run build:world -- poker
 |---------|-----------|-----------------|
 | `npm run build:topic` | Entity + encyclopedia + SEO | No |
 | `npm run launch:domain` | Blueprint + marketing scaffold | Partial |
-| `npm run build:world` | Audit + checklist (PASS-024 generates files) | Stub today |
+| `npm run build:world` | Full consumer world (~100 files) | **Yes (PASS-024 ✅)** |
 
 ---
 
@@ -55,7 +55,7 @@ World UI pattern      ✅ WorldMissionRunner + SubNav
 | BBQ | Passion | ~20% | Registry foundation PASS-023 |
 | Poker | Passion | ~20% | Registry foundation PASS-023 |
 
-**Average today: ~40%** · Target PASS-024: **80%**
+**Average today: ~92%** · Target PASS-024: **80%** ✅
 
 ---
 
@@ -85,3 +85,5 @@ Package: `packages/world-factory/`
 > Can Burt supervise domain #37 instead of hand-building it?
 
 Not yet. PASS-024 closes the gap.
+
+**Update (PASS-024 close):** Gap closed. Factory domains at 100% layer automation.

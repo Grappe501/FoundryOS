@@ -7,10 +7,10 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-021 ✅ |
-| **Next Pass** | PASS-020 Civic Engagement |
-| **Focus** | Passion Trinity foundation laid · factory audit baseline · PASS-024 is scale multiplier |
-| **Live proof** | [/](/) · [/trinity](/trinity) · [/my-journey](/my-journey) · Life Leverage worlds |
+| **Last Pass** | PASS-024 ✅ |
+| **Next Pass** | PASS-022 Private Beta Readiness |
+| **Focus** | World factory live — new domains = blueprint + one command |
+| **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -66,6 +66,21 @@
 | Poker | Strategic Thinking | `poker-world.ts` |
 
 Factory: `npm run build:world -- <slug>` · `npm run audit:worlds`
+
+---
+
+## PASS-024 — Factory Automation ✅
+
+| Deliverable | Detail |
+|-------------|--------|
+| Command | `npm run build:world -- <domain>` |
+| Audit | `npm run audit:worlds` — **92% avg automation** |
+| Package | `packages/world-factory/` |
+| Generated worlds | bourbon, bbq, poker, civic-engagement |
+| Per-world output | ~100 files: routes, components, marketing, explore registry |
+| Growth KPI | `/growth` — cost to launch, factory automation %, domains generated |
+
+Pass gate: **PASSED** — worlds generated from blueprint, not hand-built routes.
 
 ---
 

@@ -1,5 +1,7 @@
 /** PASS-016C — Public Explore Catalog (consumer-facing path directory) */
 
+import { FACTORY_EXPLORE_PATHS } from './generated/world-factory-explore';
+
 export type ExploreStatus = 'live' | 'in_build' | 'validating' | 'planned' | 'paused';
 
 export type ExploreTier =
@@ -137,7 +139,9 @@ export const EXPLORE_SECTIONS: ExploreSection[] = [
   },
 ];
 
-export const EXPLORE_PATHS: ExplorePath[] = [
+const FACTORY_SLUGS = new Set(FACTORY_EXPLORE_PATHS.map((p) => p.slug));
+
+const STATIC_EXPLORE_PATHS: ExplorePath[] = [
   {
     slug: 'future-proof',
     name: 'Become Future-Proof',
@@ -378,6 +382,11 @@ export const EXPLORE_PATHS: ExplorePath[] = [
     planned_projects: ['First program', 'Data structures project', 'Open source contribution'],
     become: 'A programmer who builds real systems — not just completes assignments.',
   },
+];
+
+export const EXPLORE_PATHS: ExplorePath[] = [
+  ...STATIC_EXPLORE_PATHS.filter((p) => !FACTORY_SLUGS.has(p.slug)),
+  ...FACTORY_EXPLORE_PATHS,
 ];
 
 export function getExplorePath(slug: string): ExplorePath | undefined {

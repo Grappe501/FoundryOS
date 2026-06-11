@@ -145,3 +145,4 @@ export const POKER_COMMUNITY = {
 export function getPokerMission(slug: string) {
   return POKER_MISSIONS.find((m) => m.slug === slug);
 }
+export const POKER_CORE_PROMISE = 'Build strategic thinking, bankroll discipline, and confidence at the table.';

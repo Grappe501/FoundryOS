@@ -1,43 +1,51 @@
 #!/usr/bin/env npx tsx
-import { auditWorld, BUILD_WORLD_TARGET_OUTPUT, getWorldBlueprint } from '../src/index.js';
+import { auditWorldFs } from '../src/audit-fs.js';
+import { generateWorld, loadManifest } from '../src/generate-world.js';
+import { getFullBlueprint } from '../src/blueprints/index.js';
 
 const slug = process.argv[2];
 
 if (!slug || slug === '--help') {
   console.log('Usage: npm run build:world -- <slug>');
   console.log('Example: npm run build:world -- poker');
-  console.log('\nPASS-024 will generate files. Today: audit + scaffold checklist.\n');
-  console.log('Target output per world:');
-  BUILD_WORLD_TARGET_OUTPUT.forEach((item) => console.log(`  · ${item}`));
+  console.log('\nGenerates consumer world routes, components, marketing pack, and registry.\n');
   process.exit(slug ? 0 : 1);
 }
 
-const blueprint = getWorldBlueprint(slug);
+const blueprint = getFullBlueprint(slug);
 if (!blueprint) {
   console.error(`Unknown world slug: ${slug}`);
   process.exit(1);
 }
 
-const audit = auditWorld(slug)!;
+const result = generateWorld(slug);
+const audit = auditWorldFs(slug)!;
+const manifest = loadManifest();
 
-console.log(`\nFoundry World Factory — ${blueprint.displayName} (${blueprint.trinity})`);
+console.log(`\nFoundry World Factory — ${blueprint.displayName} (${blueprint.kind})`);
 console.log(`Frame: ${blueprint.frame}`);
-console.log(`Automation: ${audit.automationPct}% (target 80% at PASS-024)\n`);
+console.log(`Automation: ${audit.automationPct}% (target 80%)\n`);
 
-console.log('Layer status:');
+console.log(`Files written: ${result.filesWritten.length}`);
+result.filesWritten.forEach((f) => console.log(`  + ${f}`));
+if (result.filesSkipped.length) {
+  console.log(`\nUnchanged: ${result.filesSkipped.length}`);
+}
+
+if (result.worldLibCreated) console.log('\n✓ Created world lib (missions stub)');
+if (result.corePromiseAppended) console.log('✓ Appended CORE_PROMISE to world lib');
+
+console.log('\nLayer status:');
 for (const [layer, status] of Object.entries(audit.layers)) {
   console.log(`  ${status.padEnd(14)} ${layer}`);
 }
 
-if (audit.blockers.length) {
-  console.log('\nBlockers:');
-  audit.blockers.forEach((b) => console.log(`  ⚠ ${b}`));
+if (audit.missing.length) {
+  console.log('\nMissing:');
+  audit.missing.forEach((m) => console.log(`  ⚠ ${m}`));
 }
 
-console.log('\n--- PASS-024 generation checklist ---');
-BUILD_WORLD_TARGET_OUTPUT.forEach((item) => console.log(`  [ ] ${item}`));
-
-console.log(`\nRegistry: apps/platform/lib/${slug}-world.ts (passion) or existing consumer world`);
-console.log('Next: PASS-024 Factory Automation Pass implements file generation.\n');
+console.log(`\nManifest domains: ${manifest.domains.join(', ')}`);
+console.log(`Next: verify sandbox · explore /${slug}\n`);
 
 process.exit(audit.automationPct >= 80 ? 0 : 2);

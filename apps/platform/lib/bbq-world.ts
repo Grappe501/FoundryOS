@@ -145,3 +145,4 @@ export const BBQ_COMMUNITY = {
 export function getBbqMission(slug: string) {
   return BBQ_MISSIONS.find((m) => m.slug === slug);
 }
+export const BBQ_CORE_PROMISE = 'Create experiences around the pit — patience, hosting, and craft that feeds a crowd.';

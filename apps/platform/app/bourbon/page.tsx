@@ -1,236 +1,76 @@
 import Link from 'next/link';
-import {
-  BOURBON_ACTION_SLUG,
-  BOURBON_ASSET_SLUG,
-  BOURBON_COMMUNITY_SLUG,
-  PASS_014_NOT_DELIVERABLE,
-  PASS_014_TITLE,
-} from '@foundry/domain-blueprint';
-import { loadPass014Verification } from '../../lib/bourbon-verification';
+import { BOURBON_COMMUNITY, BOURBON_CORE_PROMISE, BOURBON_LOOP, BOURBON_MISSIONS } from '../../lib/bourbon-world';
 
-export const dynamic = 'force-dynamic';
+export const metadata = {
+  title: 'Bourbon World | Foundry',
+  description: BOURBON_CORE_PROMISE,
+};
 
-export default async function BourbonDomainProofPage() {
-  const verification = await loadPass014Verification();
-  const { blueprint, loop, identity, checklist, complete, narrative, passGate, principle, db } =
-    verification;
-
+export default function BourbonWorldPage() {
   return (
-    <main
-      style={{
-        minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
-        padding: '2rem',
-        maxWidth: 900,
-        margin: '0 auto',
-      }}
-    >
-      <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>
-        ← Mission Control
-      </Link>
-      <p
-        style={{
-          color: '#8B4545',
-          fontSize: 11,
-          letterSpacing: '0.15em',
-          textTransform: 'uppercase',
-          marginTop: 16,
-        }}
-      >
-        {PASS_014_TITLE} · first domain instance
-      </p>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Domain Proof — Bourbon</h1>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>{passGate}</p>
-      <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 8 }}>{principle}</p>
-      <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>
-        Not deliverable: {PASS_014_NOT_DELIVERABLE.join(' · ')}
-      </p>
+    <section style={{ marginTop: 16 }}>
+      <section style={{ padding: 32, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
+        <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+          Appreciate Craft · Passion Trinity
+        </p>
+        <h1 style={{ fontWeight: 300, fontSize: '2.5rem', marginTop: 12 }}>Bourbon World</h1>
+        <p style={{ color: '#8A8A8E', fontSize: 16, marginTop: 16, lineHeight: 1.7, maxWidth: 640 }}>{BOURBON_CORE_PROMISE}</p>
+        <p style={{ color: '#C8A96E', fontSize: 14, marginTop: 16 }}>Outcome: Become a Bourbon Steward</p>
+        <div style={{ marginTop: 28, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          <Link href="/bourbon/missions/first-tasting" style={{ padding: '14px 24px', background: '#4A4020', borderRadius: 6, color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
+            Start Mission 1 →
+          </Link>
+          <Link href="/bourbon/parents" style={{ padding: '14px 24px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+            For Parents
+          </Link>
+          <Link href="/bourbon/community" style={{ padding: '14px 24px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+            Bourbon Circle
+          </Link>
+        </div>
+      </section>
 
-      <section
-        style={{
-          marginTop: 28,
-          padding: 24,
-          background: '#0F0F12',
-          border: `1px solid ${complete ? '#2A4A2A' : '#2A2520'}`,
-          borderRadius: 8,
-        }}
-      >
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Verification Checklist</h2>
-        <div style={{ marginTop: 16 }}>
-          {checklist.map((step) => (
-            <div
-              key={step.key}
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                padding: '10px 0',
-                borderBottom: '1px solid #1A1A1E',
-                fontSize: 14,
-              }}
-            >
-              <span style={{ color: '#E8E8EC' }}>{step.label}</span>
-              <span style={{ color: step.complete ? '#6B9B6B' : '#8B4545' }}>
-                {step.complete ? '✓' : '—'}
-              </span>
-            </div>
+      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>How Foundry works</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          {BOURBON_LOOP.map((item, i) => (
+            <span key={item.step}>{i > 0 ? ' → ' : ''}{item.step}</span>
           ))}
-        </div>
-        <div style={{ marginTop: 24, textAlign: 'center' }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Domain Proof</p>
-          <p
-            style={{
-              color: complete ? '#6B9B6B' : '#C8A96E',
-              fontSize: 20,
-              fontWeight: 300,
-              marginTop: 8,
-              letterSpacing: '0.1em',
-            }}
-          >
-            {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
+        </p>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Missions</h2>
+        {BOURBON_MISSIONS.map((m) => (
+          <Link key={m.slug} href={`/bourbon/missions/${m.slug}`} style={{ display: 'block', padding: '14px 0', borderBottom: '1px solid #1A1A1E', textDecoration: 'none', color: '#E8E8EC', fontSize: 14 }}>
+            Mission {m.number}: {m.title}
+          </Link>
+        ))}
+      </section>
+
+      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>{BOURBON_COMMUNITY.name}</h2>
+        {BOURBON_COMMUNITY.features.map((f) => (
+          <p key={f.title} style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+            <strong style={{ color: '#E8E8EC', fontWeight: 400 }}>{f.title}</strong> — {f.description}
           </p>
-        </div>
-        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 16, textAlign: 'center' }}>
-          Database: {db.persisted ? 'persisted ✓' : `in-memory only${db.error ? ` (${db.error})` : ''}`}
-        </p>
+        ))}
       </section>
 
-      <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Domain Blueprint</h2>
-        <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 12 }}>{blueprint.display_name}</p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{blueprint.care_reason}</p>
-        <div style={{ marginTop: 16, fontSize: 13, lineHeight: 1.8, color: '#8A8A8E' }}>
-          <div>
-            Outcome: <span style={{ color: '#E8E8EC' }}>{blueprint.outcome.display_name}</span>
-          </div>
-          <div>
-            Path tiers:{' '}
-            {blueprint.mastery_levels.map((l) => l.display_name).join(' → ')}
-          </div>
-        </div>
+      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #4A4020' }}>
+        <p style={{ color: '#6B6B70', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>Next recommended world</p>
+        <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 12 }}>
+          Continue the Passion Trinity with the next world — start Mission 1 when you are ready.
+        </p>
+        <Link href="/bbq/missions" style={{ display: 'inline-block', marginTop: 16, padding: '12px 20px', background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 6, color: '#C8A96E', fontSize: 14, textDecoration: 'none' }}>
+          Explore next world →
+        </Link>
       </section>
 
-      {loop && (
-        <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Demo User Transformation Loop</h2>
-          <div style={{ marginTop: 16, fontSize: 13, lineHeight: 1.9, color: '#8A8A8E' }}>
-            <div>
-              Goal: <span style={{ color: '#E8E8EC' }}>{loop.goal}</span>
-            </div>
-            <div>
-              Path: <span style={{ color: '#E8E8EC' }}>{loop.path_display_name}</span>
-            </div>
-            <div>
-              Project: <span style={{ color: '#E8E8EC' }}>{loop.project_display_name}</span>
-            </div>
-            <div>
-              Action: <span style={{ color: '#E8E8EC' }}>{loop.action_text}</span>
-            </div>
-            <div>
-              Evidence: <span style={{ color: '#6B9B6B' }}>Blind tasting completed</span>
-            </div>
-            <div>
-              Insight: <span style={{ color: '#E8E8EC' }}>{loop.insight}</span>
-            </div>
-            <div>
-              Next: <span style={{ color: '#C8A96E' }}>{loop.next_action}</span>
-            </div>
-          </div>
-        </section>
-      )}
-
-      <section
-        style={{
-          marginTop: 24,
-          padding: 20,
-          background: '#111114',
-          borderRadius: 8,
-          border: '1px solid #2A2520',
-        }}
-      >
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cross-Domain Identity</h2>
-        {identity?.identity_titles && identity.identity_titles.length > 0 ? (
-          <>
-            <div style={{ marginTop: 16, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-              {identity.identity_titles.map((title) => (
-                <span
-                  key={title}
-                  style={{
-                    padding: '8px 14px',
-                    background: '#0F0F12',
-                    border: '1px solid #2A2520',
-                    borderRadius: 6,
-                    fontSize: 14,
-                    color: '#E8E8EC',
-                  }}
-                >
-                  {title}
-                </span>
-              ))}
-            </div>
-            {identity.cross_domain_summary && (
-              <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 16, lineHeight: 1.6 }}>
-                {identity.cross_domain_summary}
-              </p>
-            )}
-          </>
-        ) : (
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 12 }}>Identity snapshot pending persistence.</p>
-        )}
-      </section>
-
-      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Success Test</h2>
-        <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 12, textTransform: 'uppercase' }}>
-          Start
-        </p>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 6, fontStyle: 'italic' }}>
-          &ldquo;{narrative.start}&rdquo;
-        </p>
-        <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 16, textTransform: 'uppercase' }}>
-          End
-        </p>
-        <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 6 }}>{narrative.end}</p>
-      </section>
-
-      <section style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <p>
-          Vertical context:{' '}
-          <Link href="/verticals/bourbon" style={{ color: '#6B6B70' }}>
-            /verticals/bourbon
-          </Link>
-        </p>
-        <p style={{ marginTop: 8 }}>
-          Action: {BOURBON_ACTION_SLUG} · Collection: {BOURBON_ASSET_SLUG} · Community:{' '}
-          {BOURBON_COMMUNITY_SLUG}
-        </p>
-        <p style={{ marginTop: 8 }}>
-          HPI chain:{' '}
-          <Link href="/loop" style={{ color: '#6B6B70' }}>
-            /loop
-          </Link>
-          {' · '}
-          <Link href="/evidence" style={{ color: '#6B6B70' }}>
-            /evidence
-          </Link>
-          {' · '}
-          <Link href="/collections" style={{ color: '#6B6B70' }}>
-            /collections
-          </Link>
-          {' · '}
-          <Link href="/community" style={{ color: '#6B6B70' }}>
-            /community
-          </Link>
-          {' · '}
-          <Link href="/reputation" style={{ color: '#6B6B70' }}>
-            /reputation
-          </Link>
-          {' · '}
-          <Link href="/mastery" style={{ color: '#6B6B70' }}>
-            /mastery
-          </Link>
-        </p>
-      </section>
-    </main>
+      <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
+        <Link href="/explore/bourbon" style={{ color: '#6B6B70' }}>Explore path</Link>
+        {' · '}
+        <Link href="/verticals/bourbon" style={{ color: '#6B6B70' }}>Operator proof</Link>
+      </p>
+    </section>
   );
 }

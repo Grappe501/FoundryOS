@@ -98,8 +98,16 @@ export default async function GrowthOsPage() {
             <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg completed (hand-built)</div>
           </div>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
-            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{launchCost.next_domain_target_hours}h</div>
-            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Next domain target</div>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{launchCost.avg_factory_hours ?? '—'}h</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg factory launch</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{launchCost.domains_generated}</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Domains generated</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{launchCost.domains_activated}</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Domains activated</div>
           </div>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
             <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>&lt; {launchCost.factory_target_hours}h</div>

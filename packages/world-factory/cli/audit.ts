@@ -17,6 +17,6 @@ for (const r of results) {
 console.log('\nExisting factory commands:');
 console.log('  npm run build:topic   — entity + encyclopedia (not full world)');
 console.log('  npm run launch:domain — marketing + blueprint scaffold');
-console.log('  npm run build:world   — PASS-024: full consumer world (stub today)\n');
+console.log('  npm run build:world   — PASS-024: full consumer world (~100 files per domain)\n');
 
 process.exit(avg >= 80 ? 0 : 2);

@@ -112,20 +112,26 @@ export function getGrowthKpiSnapshot(live?: Partial<GrowthKpiSnapshot>): GrowthK
 
 export type LaunchCostKpiSnapshot = {
   avg_hours_completed: number | null;
+  avg_factory_hours: number | null;
   factory_target_hours: number;
   next_domain_target_hours: number;
   avg_automation_pct: number;
   factory_automation_target_pct: number;
+  domains_generated: number;
+  domains_activated: number;
 };
 
 export function getLaunchCostKpiSnapshot(): LaunchCostKpiSnapshot {
   const s = getLaunchCostSnapshot();
   return {
     avg_hours_completed: s.avg_hours_completed,
+    avg_factory_hours: s.avg_factory_hours,
     factory_target_hours: s.factory_target_hours,
     next_domain_target_hours: s.next_domain_target_hours,
     avg_automation_pct: s.avg_automation_pct,
     factory_automation_target_pct: s.factory_automation_target_pct,
+    domains_generated: s.domains_generated,
+    domains_activated: s.domains_activated,
   };
 }
 

@@ -1,4 +1,17 @@
-/** @foundry/world-factory — one-command world generation (PASS-024 target) */
+/** @foundry/world-factory — one-command world generation (PASS-024) */
+
+export {
+  generateWorld,
+  loadManifest,
+  regenerateFactoryRegistry,
+  saveManifestSlugs,
+  type GenerateWorldResult,
+} from './generate-world.js';
+export { auditAllWorldsFs, auditWorldFs, type WorldFsAudit } from './audit-fs.js';
+export { getFullBlueprint, listFullBlueprints } from './blueprints/index.js';
+export type { FullWorldBlueprint, WorldFactoryManifest } from './types.js';
+
+import { auditWorldFs } from './audit-fs.js';
 
 export type WorldLayer =
   | 'world_hub'
@@ -156,28 +169,46 @@ export type WorldAuditResult = {
   nextCommand: string;
 };
 
-/** PASS-020A — honest automation audit (manual until PASS-024) */
+/** PASS-024 — filesystem audit when full blueprint exists; legacy heuristic otherwise */
 export function auditWorld(slug: string): WorldAuditResult | null {
   const blueprint = getWorldBlueprint(slug);
   if (!blueprint) return null;
 
-  const liveConsumer = ['ai-builder', 'financial-independence', 'public-speaking'].includes(slug);
-  const registryOnly = ['bourbon', 'bbq', 'poker', 'civic-engagement'].includes(slug);
+  const fsAudit = auditWorldFs(slug);
+  if (fsAudit) {
+    const blockers: string[] = [];
+    if (fsAudit.automationPct < 80) {
+      blockers.push(`Automation at ${fsAudit.automationPct}% — run npm run build:world -- ${slug}`);
+    }
+    if (fsAudit.missing.length) {
+      blockers.push(`${fsAudit.missing.length} files missing — re-run build:world`);
+    }
+    return {
+      slug,
+      displayName: blueprint.displayName,
+      trinity: blueprint.trinity,
+      automationPct: fsAudit.automationPct,
+      layers: fsAudit.layers,
+      blockers,
+      nextCommand: `npm run build:world -- ${slug}`,
+    };
+  }
 
+  const liveConsumer = ['ai-builder', 'financial-independence', 'public-speaking'].includes(slug);
   const layers: Record<WorldLayer, LayerStatus> = {
-    world_hub: liveConsumer ? 'done' : registryOnly ? 'registry_only' : 'missing',
-    academy: liveConsumer ? 'done' : registryOnly ? 'registry_only' : 'missing',
-    missions: liveConsumer ? 'done' : registryOnly ? 'registry_only' : 'missing',
-    portfolio: liveConsumer ? 'done' : registryOnly ? 'registry_only' : 'missing',
-    parents: liveConsumer ? 'done' : registryOnly ? 'missing' : 'missing',
-    careers: liveConsumer ? 'done' : registryOnly ? 'missing' : 'missing',
-    glossary: liveConsumer ? 'done' : registryOnly ? 'missing' : 'missing',
-    community: liveConsumer ? 'partial' : registryOnly ? 'registry_only' : 'missing',
-    playground: liveConsumer ? 'done' : registryOnly ? 'missing' : 'missing',
-    operator_proof: slug === 'bourbon' ? 'partial' : liveConsumer ? 'partial' : 'missing',
+    world_hub: liveConsumer ? 'done' : 'missing',
+    academy: liveConsumer ? 'done' : 'missing',
+    missions: liveConsumer ? 'done' : 'missing',
+    portfolio: liveConsumer ? 'done' : 'missing',
+    parents: liveConsumer ? 'done' : 'missing',
+    careers: liveConsumer ? 'done' : 'missing',
+    glossary: liveConsumer ? 'done' : 'missing',
+    community: liveConsumer ? 'partial' : 'missing',
+    playground: liveConsumer ? 'done' : 'missing',
+    operator_proof: liveConsumer ? 'partial' : 'missing',
     marketing_launch: ['ai-builder', 'financial-independence'].includes(slug) ? 'partial' : 'missing',
-    seo_assets: slug === 'bourbon' ? 'partial' : 'missing',
-    explore_registration: liveConsumer ? 'done' : registryOnly ? 'registry_only' : 'missing',
+    seo_assets: 'missing',
+    explore_registration: liveConsumer ? 'done' : 'missing',
   };
 
   const scores = { done: 1, partial: 0.6, registry_only: 0.25, missing: 0 };
@@ -185,24 +216,13 @@ export function auditWorld(slug: string): WorldAuditResult | null {
     (Object.values(layers).reduce((sum, s) => sum + scores[s], 0) / WORLD_LAYERS.length) * 100,
   );
 
-  const blockers: string[] = [];
-  if (!liveConsumer && registryOnly) {
-    blockers.push('Consumer routes not scaffolded — run npm run build:world when PASS-024 lands');
-  }
-  if (layers.marketing_launch !== 'done') {
-    blockers.push('Marketing launch pack incomplete');
-  }
-  if (automationPct < 80) {
-    blockers.push(`Automation at ${automationPct}% — target 80% via build:world (PASS-024)`);
-  }
-
   return {
     slug,
     displayName: blueprint.displayName,
     trinity: blueprint.trinity,
     automationPct,
     layers,
-    blockers,
+    blockers: [`Run npm run build:world -- ${slug}`],
     nextCommand: `npm run build:world -- ${slug}`,
   };
 }
@@ -221,8 +241,8 @@ export const BUILD_WORLD_TARGET_OUTPUT = [
   'Glossary',
   'Community shell',
   'Playground labs stub',
-  'Operator proof page under /operator/verticals/{slug}',
-  'marketing/launches/{slug}/ pack',
+  'Operator proof page under /verticals/{slug}',
+  'marketing/domains/{slug}/ pack',
   'SEO cluster map stub',
   'Explore catalog registration',
 ] as const;

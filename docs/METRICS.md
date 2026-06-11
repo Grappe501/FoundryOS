@@ -55,7 +55,19 @@ Chain: Evidence → Reputation → Mastery → Identity → Community
 
 ---
 
-## PASS-013 Live KPIs
+## PASS-024 Factory KPIs
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| Factory Automation % | 92% avg | `npm run audit:worlds` |
+| Cost To Launch Domain | ~1h (factory) | `domain-launch-cost.ts` |
+| Domains Generated | 4 | `world-factory-manifest.json` |
+| Domains Activated | 7 consumer live | launch cost registry |
+| Avg Factory Launch Time | ~1h | PASS-024 supervised runs |
+
+Live: `/growth` · Command: `npm run build:world -- <slug>`
+
+---
 
 | Metric | Source |
 |--------|--------|

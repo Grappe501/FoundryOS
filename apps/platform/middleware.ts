@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { FACTORY_CONSUMER_ROUTES } from './lib/generated/world-factory-routes';
 
 const CONSUMER_PREFIXES = [
   '/future-proof',
@@ -11,6 +12,7 @@ const CONSUMER_PREFIXES = [
   '/parents',
   '/my-journey',
   '/api',
+  ...FACTORY_CONSUMER_ROUTES,
 ];
 
 function isConsumerPath(pathname: string): boolean {

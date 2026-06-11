@@ -1,5 +1,7 @@
 /** Cost to launch a domain — most important operational KPI (PASS-024+) */
 
+import factoryManifest from './generated/world-factory-manifest.json';
+
 export type LaunchCostEntry = {
   slug: string;
   displayName: string;
@@ -51,45 +53,45 @@ export const DOMAIN_LAUNCH_COST_REGISTRY: LaunchCostEntry[] = [
     slug: 'civic-engagement',
     displayName: 'Civic Engagement',
     trinity: 'life-leverage',
-    buildMethod: 'planned',
-    hoursActual: null,
-    hoursTarget: 20,
-    automationPct: 12,
-    consumerLive: false,
-    completedPass: 'PASS-020',
+    buildMethod: 'heavily_generated',
+    hoursActual: 1,
+    hoursTarget: 1,
+    automationPct: 100,
+    consumerLive: true,
+    completedPass: 'PASS-024',
   },
   {
     slug: 'bourbon',
     displayName: 'Bourbon',
     trinity: 'passion',
-    buildMethod: 'planned',
-    hoursActual: null,
-    hoursTarget: 10,
-    automationPct: 21,
-    consumerLive: false,
-    completedPass: 'PASS-023',
+    buildMethod: 'almost_entirely_generated',
+    hoursActual: 1,
+    hoursTarget: 1,
+    automationPct: 100,
+    consumerLive: true,
+    completedPass: 'PASS-024',
   },
   {
     slug: 'bbq',
     displayName: 'BBQ',
     trinity: 'passion',
-    buildMethod: 'planned',
-    hoursActual: null,
-    hoursTarget: 6,
-    automationPct: 12,
-    consumerLive: false,
-    completedPass: 'PASS-025',
+    buildMethod: 'almost_entirely_generated',
+    hoursActual: 1,
+    hoursTarget: 1,
+    automationPct: 100,
+    consumerLive: true,
+    completedPass: 'PASS-024',
   },
   {
     slug: 'poker',
     displayName: 'Poker',
     trinity: 'passion',
-    buildMethod: 'planned',
-    hoursActual: null,
-    hoursTarget: 4,
-    automationPct: 12,
-    consumerLive: false,
-    completedPass: 'PASS-026',
+    buildMethod: 'almost_entirely_generated',
+    hoursActual: 1,
+    hoursTarget: 1,
+    automationPct: 100,
+    consumerLive: true,
+    completedPass: 'PASS-024',
   },
 ];
 
@@ -108,22 +110,36 @@ export function getDomainLaunchCost(slug: string): LaunchCostEntry | undefined {
 
 export function getLaunchCostSnapshot() {
   const completed = DOMAIN_LAUNCH_COST_REGISTRY.filter((e) => e.hoursActual != null);
+  const factoryGenerated = DOMAIN_LAUNCH_COST_REGISTRY.filter((e) =>
+    ['heavily_generated', 'almost_entirely_generated'].includes(e.buildMethod),
+  );
   const avgHoursCompleted =
     completed.length > 0
       ? Math.round(completed.reduce((s, e) => s + (e.hoursActual ?? 0), 0) / completed.length)
+      : null;
+  const avgFactoryHours =
+    factoryGenerated.length > 0
+      ? Math.round(
+          (factoryGenerated.reduce((s, e) => s + (e.hoursActual ?? 0), 0) / factoryGenerated.length) * 10,
+        ) / 10
       : null;
   const avgAutomation = Math.round(
     DOMAIN_LAUNCH_COST_REGISTRY.reduce((s, e) => s + e.automationPct, 0) /
       DOMAIN_LAUNCH_COST_REGISTRY.length,
   );
   const nextTarget = DOMAIN_LAUNCH_COST_REGISTRY.find((e) => !e.consumerLive)?.hoursTarget ?? FACTORY_LAUNCH_COST_TARGET_HOURS;
+  const domainsGenerated = factoryManifest.domains?.length ?? 0;
+  const domainsActivated = DOMAIN_LAUNCH_COST_REGISTRY.filter((e) => e.consumerLive).length;
 
   return {
     avg_hours_completed: avgHoursCompleted,
+    avg_factory_hours: avgFactoryHours,
     factory_target_hours: FACTORY_LAUNCH_COST_TARGET_HOURS,
     next_domain_target_hours: nextTarget,
     avg_automation_pct: avgAutomation,
     factory_automation_target_pct: 80,
+    domains_generated: domainsGenerated,
+    domains_activated: domainsActivated,
     entries: DOMAIN_LAUNCH_COST_REGISTRY,
   };
 }

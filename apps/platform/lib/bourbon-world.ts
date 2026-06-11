@@ -145,3 +145,4 @@ export const BOURBON_COMMUNITY = {
 export function getBourbonMission(slug: string) {
   return BOURBON_MISSIONS.find((m) => m.slug === slug);
 }
+export const BOURBON_CORE_PROMISE = 'Learn to appreciate craft, host tastings, and build a bourbon journey that lasts decades.';
