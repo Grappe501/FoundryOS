@@ -29,5 +29,5 @@ Registry: `apps/platform/lib/financial-independence-world.ts`
 ```txt
 AI Builder ✅ Create Value
 Financial Independence ✅ Keep Value
-Public Speaking → PASS-019 Communicate Value
+Public Speaking ✅ Communicate Value
 ```

@@ -46,14 +46,16 @@
 
 ---
 
-## PASS-019 — Public Speaking World (in progress)
+## PASS-019 — Public Speaking World ✅
 
 | Deliverable | Route |
 |-------------|-------|
 | World hub | `/public-speaking` |
-| 5 missions | `/public-speaking/missions/[slug]` |
+| Mission 1 | `/public-speaking/missions/first-talk` |
 | My Speaking Portfolio | `/public-speaking/portfolio` |
 | Parent one-liner | `/public-speaking/parents` |
+
+**Close gate met:** Mission 1 · Parent one-liner · Portfolio · Tomorrow hook · Routes live
 
 **Completes Trinity:** Create · Keep · Communicate
 
