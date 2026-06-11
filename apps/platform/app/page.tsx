@@ -30,7 +30,12 @@ const northStarLabels: Record<string, string> = {
   evidence_verified_count: 'Verified Evidence',
   evidence_trust_weight_avg: 'Avg Trust Weight',
   identity_evidence_strength: 'Identity Evidence Strength',
-  mentorship_connections: 'Mentorship Connections',
+  knowledge_assets_total: 'Knowledge Assets',
+  knowledge_assets_with_evidence: 'Assets with Evidence',
+  identity_collections_strength: 'Collection Identity Strength',
+  communities_active: 'Active Communities',
+  community_members_total: 'Community Members',
+  community_evidence_shares: 'Evidence Shared in Community',
   projects_completed: 'Projects Completed',
   path_completion_rate: 'Path Completion Rate',
   active_paths: 'Active Paths',
@@ -53,7 +58,7 @@ export default async function MissionControlHome() {
     const value =
       key === 'path_completion_rate' || key === 'transformation_loop_completion_rate'
         ? `${Math.round(raw * 100)}%`
-        : key === 'evidence_trust_weight_avg' || key === 'identity_evidence_strength'
+        : key === 'evidence_trust_weight_avg' || key === 'identity_evidence_strength' || key === 'identity_collections_strength'
           ? `${Math.round(raw)}%`
           : raw.toLocaleString();
     return { label, value };
@@ -164,7 +169,6 @@ export default async function MissionControlHome() {
           <Link href="/paths" style={{ color: '#C8A96E', fontSize: 14 }}>Road to Expert →</Link>
           <Link href="/identity" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry Identity →</Link>
           <Link href="/projects" style={{ color: '#C8A96E', fontSize: 14 }}>Project Engine →</Link>
-          <Link href="/community" style={{ color: '#C8A96E', fontSize: 14 }}>Community OS →</Link>
           <Link href="/legacy" style={{ color: '#C8A96E', fontSize: 14 }}>Legacy Engine →</Link>
           <Link href="/domains" style={{ color: '#C8A96E', fontSize: 14 }}>Identity Domains →</Link>
           <Link href="/university" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry University →</Link>
@@ -173,6 +177,8 @@ export default async function MissionControlHome() {
           <Link href="/transformation" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Factory →</Link>
           <Link href="/loop" style={{ color: '#C8A96E', fontSize: 14 }}>Prove the Loop (PASS-010) →</Link>
           <Link href="/evidence" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
+          <Link href="/collections" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Collections (PASS-012) →</Link>
+          <Link href="/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>
 

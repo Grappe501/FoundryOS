@@ -101,7 +101,7 @@ export default async function EvidenceProofPage() {
           {' · '}
           Action slug: {DEMO_ACTION_SLUG}
         </p>
-        <p style={{ marginTop: 8 }}>No Collections · No Clubs · No Bourbon — evidence first.</p>
+        <p style={{ marginTop: 8 }}>PASS-012: Collections + Communities — see <Link href="/collections" style={{ color: '#6B6B70' }}>/collections</Link> and <Link href="/community" style={{ color: '#6B6B70' }}>/community</Link>.</p>
       </section>
     </main>
   );

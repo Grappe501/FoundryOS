@@ -8,10 +8,10 @@
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
 | **Last Pass** | PASS-011 ✅ |
-| **Next Pass** | PASS-012 — Collections + Clubs |
-| **Launch Readiness** | 72% |
-| **Focus** | PASS-011 CLOSED — `/evidence` live at foundry-os.netlify.app. Identity requires evidence. |
-| **PASS-011** | `@foundry/evidence-engine` · `evidence_submissions` · `/evidence` |
+| **Current Pass** | PASS-012 — Collections + Communities (in progress) |
+| **Next Pass** | PASS-013 — Reputation + Mastery |
+| **Focus** | `/collections` + `/community` proof dashboards. Core rule: *Transformation accelerates in community.* |
+| **PASS-012** | `@foundry/collection-engine` · `@foundry/community-engine` · PASS-012 migration |
 
 ### Open Risks
 
@@ -207,6 +207,16 @@ OpenAI generates. Supabase owns. Generated ≠ Published.
 - **PASS-009** Transformation System Factory *(in progress, approved)*
 - **PASS-010** Transformation Graph Engine — query, weighting, analytics, velocity, next-action gate
 - **PASS-011** Evidence Engine — identity requires evidence, evidence tiers
-- **PASS-012** Collections + Clubs Live
+## PASS-012 — Collections + Communities (greenlit)
+
+**Core rule:** Transformation accelerates in community.
+
+**Collections:** Personal Knowledge Assets — not favorites, bookmarks, or lists.
+
+**Communities:** Permanent architecture (clubs are one type). Examples: Central Arkansas Bourbon Society, Speaker Circle, Foundry AI Lab.
+
+**Proof:** `/collections` + `/community` verification dashboards.
+
+See `docs/PASS_012_EXECUTION.md`.
 - **PASS-013** Reputation + Mastery Live
 - **PASS-014** Bourbon Vertical Launch (proof)

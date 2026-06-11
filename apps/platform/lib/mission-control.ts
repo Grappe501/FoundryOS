@@ -1,8 +1,10 @@
 import catalogIndex from '../../../data/catalog/index.json';
 import verticalSites from '../../../data/vertical-sites.json';
 import { estimatePageCount } from '@foundry/content-engine';
-import { getLivePlatformCounts, getEvidenceKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, isSupabaseConfigured } from '@foundry/db';
 import { getEvidenceKpiSnapshot } from '@foundry/evidence-engine';
+import { getCollectionKpiSnapshot } from '@foundry/collection-engine';
+import { getCommunityKpiSnapshot } from '@foundry/community-engine';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -82,9 +84,10 @@ export const PASSES = [
   {
     code: 'PASS-009',
     title: 'Transformation System Factory',
-    status: 'in_progress' as const,
+    status: 'completed' as const,
+    date: '2026-06-10',
     summary:
-      'Manufacture transformation ecosystems — not entities alone. DNA blueprints + templates. Hierarchy: Life Journey → Legacy. North star: transformations in progress.',
+      'Manufacture transformation ecosystems — DNA blueprints + templates. Hierarchy: Life Journey → Legacy.',
   },
   {
     code: 'PASS-010',
@@ -104,9 +107,10 @@ export const PASSES = [
   },
   {
     code: 'PASS-012',
-    title: 'Collections + Clubs Live',
-    status: 'planned' as const,
-    summary: 'Ownership graph + friend group shared mastery.',
+    title: 'Collections + Communities',
+    status: 'in_progress' as const,
+    summary:
+      'Personal Knowledge Assets (not lists) + Community OS. Core rule: transformation accelerates in community. Proof: /collections + /community.',
   },
   {
     code: 'PASS-013',
@@ -128,6 +132,8 @@ const ESTIMATED_PAGES = estimatePageCount(TOPIC_COUNT, 0);
 export async function getMissionControlStats() {
   const live = isSupabaseConfigured() ? await getLivePlatformCounts() : null;
   const evidenceLive = isSupabaseConfigured() ? await getEvidenceKpiCounts() : null;
+  const collectionLive = isSupabaseConfigured() ? await getCollectionKpiCounts() : null;
+  const communityLive = isSupabaseConfigured() ? await getCommunityKpiCounts() : null;
   const northStar = getNorthStarMetrics();
   const transformationAnalytics = getTransformationAnalytics();
   const loopKpis = getLoopKpiSnapshot(
@@ -136,6 +142,8 @@ export async function getMissionControlStats() {
       : undefined
   );
   const evidenceKpis = getEvidenceKpiSnapshot(evidenceLive ?? undefined);
+  const collectionKpis = getCollectionKpiSnapshot(collectionLive ?? undefined);
+  const communityKpis = getCommunityKpiSnapshot(communityLive ?? undefined);
 
   return {
     version: PLATFORM_VERSION,
@@ -184,18 +192,24 @@ export async function getMissionControlStats() {
     evidence_verified_count: evidenceKpis.evidence_verified_count,
     evidence_trust_weight_avg: evidenceKpis.evidence_trust_weight_avg,
     identity_evidence_strength: evidenceKpis.identity_evidence_strength,
-    launch_readiness_pct: live ? 68 : 52,
+    knowledge_assets_total: collectionKpis.knowledge_assets_total,
+    knowledge_assets_with_evidence: collectionKpis.knowledge_assets_with_evidence,
+    identity_collections_strength: collectionKpis.identity_collections_strength,
+    communities_active: communityKpis.communities_active,
+    community_members_total: communityKpis.community_members_total,
+    community_evidence_shares: communityKpis.community_evidence_shares,
+    launch_readiness_pct: live ? 72 : 52,
     last_pass: 'PASS-011',
     next_pass: 'PASS-012',
     current_focus:
-      'PASS-011 CLOSED — Evidence Engine live at /evidence. PASS-012 Collections + Clubs when greenlit.',
+      'PASS-012 IN PROGRESS: /collections + /community proof — Personal Knowledge Assets + Communities. Transformation accelerates in community.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',
       'Weight toward Transformation Impact — not Content Consumption',
       'No Bourbon UI until PASS-014',
       'North star: transformations in progress — not users, pages, or entities',
-      'PASS-011 Evidence before badge/collection features',
+      'PASS-012: Personal Knowledge Assets + Communities — not dumb lists',
     ],
   };
 }

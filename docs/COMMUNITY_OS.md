@@ -27,4 +27,10 @@ Not a club feature. A **full operating system** for real-world communities.
 
 ## PASS-012
 
-Collections + Clubs Live — Community OS goes live with shared mastery.
+**Collections + Communities** — not Clubs alone. Community OS goes live with shared mastery.
+
+**Core rule:** Transformation accelerates in community.
+
+**Proof dashboards:** `/community` — Community Created · Member Joined · Project Assigned · Evidence Shared.
+
+See `docs/PASS_012_EXECUTION.md`.

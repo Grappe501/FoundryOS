@@ -33,7 +33,7 @@ Identity · Progress · Belonging · Mastery · Recognition · Application
 - Paths assemble: Academy + Knowledge + Collections + Reviews + Community + Projects
 - No Bourbon UI until PASS-014
 - Projects are nodes in the Transformation Graph (PASS-009+)
-- Clubs = Shared Mastery (PASS-012)
+- Communities = Shared Mastery (PASS-012) — clubs are one community type
 - Not gamified — visible expertise and progress %
 
 See `docs/EXPERT_DEVELOPMENT.md`, `docs/PATH_ENGINE.md`

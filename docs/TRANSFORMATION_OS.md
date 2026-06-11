@@ -79,7 +79,7 @@ Maps to: legacy engine, journey events, mentorship outcomes.
 | PASS-009 | Transformation System Factory |
 | PASS-010 | Transformation Graph Engine |
 | PASS-011 | Evidence Engine |
-| PASS-012 | Collections + Clubs |
+| PASS-012 | Collections + Communities |
 | PASS-013 | Reputation + Mastery |
 | PASS-014 | Bourbon Vertical Launch |
 

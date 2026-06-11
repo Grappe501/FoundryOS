@@ -19,3 +19,17 @@ export {
   getEvidenceKpiCounts,
   type EvidenceSubmissionRow,
 } from './evidence-submissions';
+export {
+  getKnowledgeAssetBySlug,
+  upsertKnowledgeAssetWithItem,
+  ensureDemoKnowledgeAsset,
+  getCollectionKpiCounts,
+  type KnowledgeAssetRow,
+  type KnowledgeAssetItemRow,
+} from './knowledge-assets';
+export {
+  getCommunityBySlug,
+  ensureDemoCommunity,
+  getCommunityKpiCounts,
+  type CommunityInstanceRow,
+} from './community-instances';

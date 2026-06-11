@@ -1,0 +1,52 @@
+---
+description: PASS-012 execution — Collections + Communities (not Clubs)
+alwaysApply: false
+---
+
+# PASS-012 Execution Mode
+
+PASS-011 is closed. PASS-012 is greenlit.
+
+## Core Rule
+
+```txt
+Transformation accelerates in community.
+```
+
+## Rename (locked)
+
+Not **Collections + Clubs**. Use:
+
+```txt
+Collections + Communities
+```
+
+Clubs are one community type — not the architecture.
+
+## Collections
+
+Not favorites, bookmarks, or lists.
+
+Build **Personal Knowledge Assets** — part of identity:
+
+- My Bourbon Collection (rankings, reviews, notes, evidence, progress)
+- My Speech Library
+- My Garden Journal
+- My Project Portfolio
+
+## Verification Dashboards
+
+- `/collections` — Collection Created · Entity Added · Evidence Linked · Identity Updated
+- `/community` — Community Created · Member Joined · Project Assigned · Evidence Shared
+
+## Pass Gate
+
+> Can a user say: what I'm becoming, what I've done, what I've collected, who I'm growing with?
+
+## Do Not
+
+- Build Bourbon UI (PASS-014)
+- Build dumb list UIs
+- Start PASS-013 reputation before PASS-012 proof is live
+
+See `docs/PASS_012_EXECUTION.md`, `docs/COLLECTION_SYSTEM.md`, `docs/COMMUNITY_OS.md`

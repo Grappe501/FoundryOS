@@ -1,6 +1,6 @@
 # Evidence Engine — PASS-011
 
-The biggest missing registry before Collections + Clubs.
+The biggest missing registry before Collections + Communities.
 
 ## Principle
 

@@ -15,7 +15,7 @@ Transformation Graph Engine     ← PASS-010
      ↓
 Evidence Engine                 ← PASS-011
      ↓
-Collections + Clubs             ← PASS-012
+Collections + Communities       ← PASS-012
      ↓
 Reputation + Mastery            ← PASS-013
      ↓

@@ -9,6 +9,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@foundry/collection-engine": "*",
+    "@foundry/community-engine": "*",
     "@foundry/evidence-engine": "*",
     "@supabase/supabase-js": "^2.49.0"
   },

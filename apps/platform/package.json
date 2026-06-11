@@ -30,6 +30,7 @@
     "@foundry/outcome-engine": "*",
     "@foundry/transformation-graph-engine": "*",
     "@foundry/evidence-engine": "*",
+    "@foundry/collection-engine": "*",
     "@foundry/reflection-engine": "*",
     "@foundry/transformation-loop": "*",
     "next": "^15.1.0",

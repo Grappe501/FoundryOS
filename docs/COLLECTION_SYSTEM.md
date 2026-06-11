@@ -1,6 +1,26 @@
 # FoundryOS — Collection System
 
-> The crown jewel. Designed PASS-002 before launch.
+> Personal Knowledge Assets — part of identity. Not favorites, bookmarks, or dumb lists.
+
+---
+
+## PASS-012 Core Rule (context)
+
+```txt
+Transformation accelerates in community.
+```
+
+Collections compound identity alongside evidence (PASS-011) and the transformation loop (PASS-010).
+
+---
+
+## Mental Model
+
+| Don't build | Build |
+|-------------|-------|
+| Favorites, bookmarks, lists | **Personal Knowledge Assets** |
+| "12 bourbons saved" | **My Bourbon Collection** — rankings, reviews, notes, evidence, progress |
+| Saved items | My Speech Library · My Garden Journal · My Project Portfolio |
 
 ---
 
@@ -108,3 +128,16 @@ Bourbon Curator · Central Arkansas
 Collections: 12 | Reviews: 184 | Rankings: 22
 Community Trust Score: 94
 ```
+
+---
+
+## PASS-012 Verification (`/collections`)
+
+```txt
+Collection Created        ✓
+Entity Added              ✓
+Evidence Linked           ✓
+Identity Updated          ✓
+```
+
+See `docs/PASS_012_EXECUTION.md`.
