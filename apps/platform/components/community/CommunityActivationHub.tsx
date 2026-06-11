@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { getMentorTier, getWeekKey, type CommunityWorldConfig } from '../../lib/community-worlds';
 import { getVisitorId, trackValidationEvent } from '../../lib/validation-tracker';
 import type { CommunityMemberRow, CommunityPostRow } from '@foundry/db';
+import type { SeedMentor } from '../../lib/community-seed/types';
+
+type WeeklyChallengeView = { theme: string; prompt: string; week_key?: string };
 
 type Props = {
   config: CommunityWorldConfig;
@@ -18,7 +21,11 @@ type Props = {
     posts_this_week: number;
     challenge_submissions: number;
     showcase_posts: number;
+    discussion_posts?: number;
   };
+  mentorProfile?: SeedMentor;
+  weeklyChallenge: WeeklyChallengeView;
+  weeklyChallenges?: WeeklyChallengeView[];
 };
 
 export function CommunityActivationHub({
@@ -29,11 +36,14 @@ export function CommunityActivationHub({
   userLabel,
   userSlug,
   stats,
+  mentorProfile,
+  weeklyChallenge,
+  weeklyChallenges = [],
 }: Props) {
   const [posts, setPosts] = useState(initialPosts);
-  const [members, setMembers] = useState(initialMembers);
+  const [members] = useState(initialMembers);
   const [isMember, setIsMember] = useState(initialMember);
-  const [tab, setTab] = useState<'feed' | 'challenge' | 'showcase'>('feed');
+  const [tab, setTab] = useState<'feed' | 'discussions' | 'challenge' | 'showcase'>('feed');
   const [body, setBody] = useState('');
   const [title, setTitle] = useState('');
   const [feedbackComment, setFeedbackComment] = useState<Record<string, string>>({});
@@ -44,6 +54,7 @@ export function CommunityActivationHub({
   const effectiveSlug = userSlug || getVisitorId();
   const challengePosts = posts.filter((p) => p.post_type === 'challenge' && p.week_key === weekKey);
   const showcasePosts = posts.filter((p) => p.post_type === 'showcase');
+  const discussionPosts = posts.filter((p) => p.post_type === 'discussion');
   const myChallengeDone = challengePosts.some((p) => p.user_slug === effectiveSlug);
 
   async function handleJoin() {
@@ -64,8 +75,9 @@ export function CommunityActivationHub({
     void trackValidationEvent({ event_type: 'community_joined', path_slug: config.slug, landing_page: `/community/${config.slug}` });
   }
 
-  async function handleSubmit(postType: 'challenge' | 'showcase') {
+  async function handleSubmit(postType: 'challenge' | 'showcase' | 'discussion') {
     if (!body.trim()) return;
+    if (postType === 'discussion' && !title.trim()) return;
     setBusy(true);
     setError(null);
     const res = await fetch('/api/community/submit', {
@@ -90,7 +102,7 @@ export function CommunityActivationHub({
     setBody('');
     setTitle('');
     void trackValidationEvent({
-      event_type: postType === 'challenge' ? 'challenge_submitted' : 'showcase_posted',
+      event_type: postType === 'challenge' ? 'challenge_submitted' : postType === 'showcase' ? 'showcase_posted' : 'discussion_posted',
       path_slug: config.slug,
       landing_page: `/community/${config.slug}`,
     });
@@ -114,6 +126,11 @@ export function CommunityActivationHub({
   }
 
   const accent = '#6B9B6B';
+  const sortedMembers = [...members].sort((a, b) => {
+    if (a.role === 'mentor') return -1;
+    if (b.role === 'mentor') return 1;
+    return (b.help_count ?? 0) - (a.help_count ?? 0);
+  });
 
   return (
     <div>
@@ -121,19 +138,29 @@ export function CommunityActivationHub({
         <p style={{ color: accent, fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>Living community</p>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>{config.name}</h1>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
-          Belong here. Weekly challenges · showcases · peer feedback · {config.mentorTitle} recognition.
+          Belong here. Discussions · weekly challenges · showcases · {config.mentorTitle} recognition.
         </p>
         <div style={{ marginTop: 16, display: 'flex', gap: 12, flexWrap: 'wrap', fontSize: 12, color: '#6B6B70' }}>
           <span>{stats.member_count} members</span>
+          <span>{stats.discussion_posts ?? discussionPosts.length} discussions</span>
           <span>{stats.posts_this_week} posts this week</span>
           <span>{stats.challenge_submissions} challenges</span>
           <span>{stats.showcase_posts} showcases</span>
         </div>
       </header>
 
+      {mentorProfile && (
+        <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #1A2A1A' }}>
+          <p style={{ color: accent, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>{config.mentorTitle}</p>
+          <h2 style={{ color: '#E8E8EC', fontSize: 18, fontWeight: 400, margin: '8px 0 0' }}>{mentorProfile.display_name}</h2>
+          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{mentorProfile.bio}</p>
+          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>{mentorProfile.recognition} · {mentorProfile.help_count} helps</p>
+        </section>
+      )}
+
       {!isMember ? (
         <section style={{ marginTop: 24, padding: 24, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-          <p style={{ color: '#E8E8EC', margin: 0 }}>Join {config.name} to participate in challenges and showcase your work.</p>
+          <p style={{ color: '#E8E8EC', margin: 0 }}>Join {config.name} to participate in discussions, challenges, and showcases.</p>
           <button type="button" onClick={handleJoin} disabled={busy} style={{ marginTop: 16, padding: '12px 24px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer' }}>
             {busy ? 'Joining…' : 'Join community →'}
           </button>
@@ -146,7 +173,7 @@ export function CommunityActivationHub({
       )}
 
       <div style={{ marginTop: 24, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-        {(['feed', 'challenge', 'showcase'] as const).map((t) => (
+        {(['feed', 'discussions', 'challenge', 'showcase'] as const).map((t) => (
           <button
             key={t}
             type="button"
@@ -161,15 +188,36 @@ export function CommunityActivationHub({
               cursor: 'pointer',
             }}
           >
-            {t === 'feed' ? 'Feed' : t === 'challenge' ? 'Weekly challenge' : 'Showcase'}
+            {t === 'feed' ? 'Feed' : t === 'discussions' ? 'Discussions' : t === 'challenge' ? 'Weekly challenge' : 'Showcase'}
           </button>
         ))}
       </div>
 
+      {tab === 'discussions' && (
+        <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
+          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Community discussions</h2>
+          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Starter conversations — add your voice.</p>
+          {isMember && (
+            <>
+              <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Discussion topic" style={{ ...fieldStyle, marginTop: 16 }} />
+              <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={4} placeholder="Start a discussion…" style={fieldStyle} />
+              <button type="button" disabled={busy || !body.trim() || !title.trim()} onClick={() => handleSubmit('discussion')} style={{ ...btnStyle, marginTop: 12 }}>
+                Post discussion
+              </button>
+            </>
+          )}
+          <div style={{ marginTop: 20 }}>
+            {discussionPosts.map((p) => (
+              <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
+            ))}
+          </div>
+        </section>
+      )}
+
       {tab === 'challenge' && (
         <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>This week: {config.weeklyChallengeTheme}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{config.weeklyChallengePrompt}</p>
+          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>This week: {weeklyChallenge.theme}</h2>
+          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{weeklyChallenge.prompt}</p>
           {myChallengeDone ? (
             <p style={{ color: accent, fontSize: 13, marginTop: 16 }}>You submitted this week&apos;s challenge. Come back next week.</p>
           ) : isMember ? (
@@ -188,6 +236,18 @@ export function CommunityActivationHub({
               <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
             ))}
           </div>
+          {weeklyChallenges.length > 1 && (
+            <div style={{ marginTop: 28 }}>
+              <h3 style={{ fontSize: 12, color: '#6B6B70', margin: 0 }}>12-week challenge archive</h3>
+              {weeklyChallenges.map((w) => (
+                <div key={w.week_key ?? w.theme} style={{ marginTop: 12, padding: 12, background: '#0F0F12', borderRadius: 6 }}>
+                  <p style={{ margin: 0, fontSize: 11, color: '#6B6B70' }}>{w.week_key ?? 'Week'}</p>
+                  <p style={{ margin: '4px 0 0', color: '#C8A96E', fontSize: 13 }}>{w.theme}</p>
+                  <p style={{ margin: '6px 0 0', color: '#8A8A8E', fontSize: 13, lineHeight: 1.5 }}>{w.prompt}</p>
+                </div>
+              ))}
+            </div>
+          )}
         </section>
       )}
 
@@ -208,31 +268,29 @@ export function CommunityActivationHub({
             {showcasePosts.map((p) => (
               <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
             ))}
-            {showcasePosts.length === 0 && <p style={{ color: '#6B6B70', fontSize: 13 }}>No showcases yet — be the first.</p>}
           </div>
         </section>
       )}
 
       {tab === 'feed' && (
         <section style={{ marginTop: 20 }}>
-          {posts.length === 0 ? (
-            <p style={{ color: '#6B6B70', fontSize: 14 }}>The feed is quiet. Join and post the first challenge or showcase.</p>
-          ) : (
-            posts.map((p) => (
-              <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
-            ))
-          )}
+          {posts.map((p) => (
+            <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
+          ))}
         </section>
       )}
 
       <section style={{ marginTop: 32, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Members & {config.mentorTitle} recognition</h2>
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Not badges — recognition for helping others.</p>
-        {members.map((m) => {
+        {sortedMembers.map((m) => {
           const tier = getMentorTier(m.help_count ?? 0);
           return (
-            <div key={m.id} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13, display: 'flex', justifyContent: 'space-between' }}>
-              <span style={{ color: '#E8E8EC' }}>{m.display_name ?? m.user_slug}</span>
+            <div key={m.id} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13, display: 'flex', justifyContent: 'space-between', gap: 12 }}>
+              <span style={{ color: '#E8E8EC' }}>
+                {m.display_name ?? m.user_slug}
+                {m.role === 'mentor' && <span style={{ color: accent, marginLeft: 8, fontSize: 11 }}>mentor</span>}
+              </span>
               <span style={{ color: m.help_count >= 3 ? accent : '#6B6B70' }}>{tier.label}</span>
             </div>
           );
@@ -269,6 +327,7 @@ function PostCard({
   userSlug: string;
   busy: boolean;
 }) {
+  const showFeedback = post.post_type === 'showcase' || post.post_type === 'challenge';
   return (
     <article style={{ marginTop: 16, padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
       <p style={{ margin: 0, fontSize: 11, color: '#6B6B70' }}>
@@ -279,7 +338,7 @@ function PostCard({
       {(post.feedback_count ?? 0) > 0 && (
         <p style={{ color: accentMuted, fontSize: 12, marginTop: 8 }}>{post.feedback_count} feedback</p>
       )}
-      {isMember && post.user_slug !== userSlug && (
+      {showFeedback && isMember && post.user_slug !== userSlug && (
         <div style={{ marginTop: 12 }}>
           <input
             value={feedbackComment[post.id] ?? ''}

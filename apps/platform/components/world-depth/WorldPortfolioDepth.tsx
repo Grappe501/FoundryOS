@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getWorldPortfolio, type PortfolioEntry } from '../world/WorldMissionRunner';
+import { UpgradeMoment } from '../billing/UpgradeMoment';
+import { ValueProgress } from '../billing/ValueProgress';
+import { getUpgradeMoment } from '../../lib/upgrade-moments';
 import type { WorldDepthBundle } from '../../lib/world-depth/types';
 
 type Props = {
@@ -30,6 +33,7 @@ export function WorldPortfolioDepth({
 
   const completed = entries.length;
   const nextMission = completed < missionCount;
+  const portfolioUpgrade = completed >= 1 ? getUpgradeMoment(bundle.slug, 'portfolio_entry') : undefined;
 
   return (
     <div>
@@ -37,22 +41,11 @@ export function WorldPortfolioDepth({
         {bundle.portfolioLabel} — completed missions, evidence, reflections, and your next recommended action.
       </p>
 
-      <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 12 }}>
-        <div style={{ padding: 16, background: '#111114', borderRadius: 8, border: `1px solid ${bundle.accentColor}44` }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Missions completed</p>
-          <p style={{ color: bundle.accentColor, fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
-            {completed}/{missionCount}
-          </p>
-        </div>
-        <div style={{ padding: 16, background: '#111114', borderRadius: 8 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Evidence submitted</p>
-          <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>{entries.length}</p>
-        </div>
-        <div style={{ padding: 16, background: '#111114', borderRadius: 8 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Reflections written</p>
-          <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>{entries.filter((e) => e.reflection).length}</p>
-        </div>
-      </div>
+      <ValueProgress
+        worldSlug={bundle.slug}
+        missionsCompleted={completed}
+        portfolioItems={entries.length}
+      />
 
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         {sections.map((section) => (
@@ -82,6 +75,17 @@ export function WorldPortfolioDepth({
           ))
         )}
       </section>
+
+      {portfolioUpgrade && (
+        <UpgradeMoment
+          tier={portfolioUpgrade.tier}
+          headline={portfolioUpgrade.headline}
+          body={portfolioUpgrade.body}
+          premiumNext={portfolioUpgrade.premiumNext}
+          worldSlug={bundle.slug}
+          context="portfolio_entry"
+        />
+      )}
 
       {nextMission && (
         <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: `1px solid ${bundle.accentColor}33` }}>

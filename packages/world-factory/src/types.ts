@@ -37,6 +37,8 @@ export type FullWorldBlueprint = {
   nextWorldSlug?: string;
 };
 
+export type LayerStatus = 'done' | 'partial' | 'registry_only' | 'missing';
+
 export type WorldLayer =
   | 'world_hub'
   | 'academy'

@@ -1,0 +1,17 @@
+{
+  "domain": "poker",
+  "display_name": "Poker",
+  "cluster_size": 1,
+  "pages": [
+    {
+      "slug": "what-is",
+      "title": "What Is Poker Strategy?",
+      "intent": "definition",
+      "priority": 1,
+      "status": "draft"
+    }
+  ],
+  "publish_gate": {
+    "min_content_score": 70
+  }
+}

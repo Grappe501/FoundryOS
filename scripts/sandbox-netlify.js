@@ -55,8 +55,8 @@ step('platform next.config', () => {
   }
 });
 
-step('npm run typecheck', () => {
-  run('npm run typecheck');
+step('npm run typecheck -w @foundry/platform', () => {
+  run('npm run typecheck -w @foundry/platform');
 });
 
 step('npm run build:platform (Netlify build)', () => {

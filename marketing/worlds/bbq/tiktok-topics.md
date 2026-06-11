@@ -1,0 +1,52 @@
+# BBQ — Top 50 TikTok Ideas
+
+- POV: you just finished "First Pork Butt" — here's what changed
+- POV: you just finished "First Brisket" — here's what changed
+- Become a Pitmaster in 60 seconds
+- Parent tip: N/A — adult hobby vertical…
+- Before/after portfolio artifact
+- "What I wish I knew" — BBQ
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 13: BBQ transformation clip
+- Hook 14: BBQ transformation clip
+- Hook 15: BBQ transformation clip
+- Hook 16: BBQ transformation clip
+- Hook 17: BBQ transformation clip
+- Hook 18: BBQ transformation clip
+- Hook 19: BBQ transformation clip
+- Hook 20: BBQ transformation clip
+- Hook 21: BBQ transformation clip
+- Hook 22: BBQ transformation clip
+- Hook 23: BBQ transformation clip
+- Hook 24: BBQ transformation clip
+- Hook 25: BBQ transformation clip
+- Hook 26: BBQ transformation clip
+- Hook 27: BBQ transformation clip
+- Hook 28: BBQ transformation clip
+- Hook 29: BBQ transformation clip
+- Hook 30: BBQ transformation clip
+- Hook 31: BBQ transformation clip
+- Hook 32: BBQ transformation clip
+- Hook 33: BBQ transformation clip
+- Hook 34: BBQ transformation clip
+- Hook 35: BBQ transformation clip
+- Hook 36: BBQ transformation clip
+- Hook 37: BBQ transformation clip
+- Hook 38: BBQ transformation clip
+- Hook 39: BBQ transformation clip
+- Hook 40: BBQ transformation clip
+- Hook 41: BBQ transformation clip
+- Hook 42: BBQ transformation clip
+- Hook 43: BBQ transformation clip
+- Hook 44: BBQ transformation clip
+- Hook 45: BBQ transformation clip
+- Hook 46: BBQ transformation clip
+- Hook 47: BBQ transformation clip
+- Hook 48: BBQ transformation clip
+- Hook 49: BBQ transformation clip
+- Hook 50: BBQ transformation clip

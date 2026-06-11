@@ -6,9 +6,9 @@ export const BOURBON_LOOP = [
   { step: 'Mission', description: 'Pick a tasting, shelf, or experience worth pursuing' },
   { step: 'Build', description: 'Prepare, compare, or document your bourbon journey' },
   { step: 'Show', description: 'Share notes, photos, or your shelf with someone' },
-  { step: 'Reflect', description: 'Write what you tasted, smelled, and learned' },
-  { step: 'Improve', description: 'Refine your palate or collection strategy' },
-  { step: 'Mentor', description: 'Guide a friend through their first proper tasting' },
+  { step: 'Debrief', description: 'Write what you tasted, smelled, and learned' },
+  { step: 'Refine', description: 'Refine your palate or collection strategy' },
+  { step: 'Teach', description: 'Guide a friend through their first proper tasting' },
 ] as const;
 
 export const BOURBON_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const BOURBON_ACADEMY_LEVELS = [
   { slug: 'steward', level: 7, title: 'Bourbon Steward', tagline: 'Teach others and lead the Bourbon Circle', unlocks: ['Bourbon Circle mentorship'] },
 ];
 
-export const BOURBON_MISSIONS: WorldMission[] = [
+const BOURBON_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'first-tasting',
     number: 1,
@@ -39,9 +39,9 @@ export const BOURBON_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick your three', body: 'Choose three different bourbons — different proof, brand, or price point. Write why you picked each.' },
       { phase: 'Build', title: 'Set up the tasting', body: 'Pour ½ oz each. Smell, taste, add a drop of water, taste again. Note: nose, palate, finish.' },
       { phase: 'Show', title: 'Host someone', body: 'Walk one person through the same three pours — or record a 2-minute voice memo of your notes.' },
-      { phase: 'Reflect', title: 'What surprised you?', body: 'Which pour won? What flavor word was new to you?' },
-      { phase: 'Improve', title: 'One upgrade', body: 'Pick one bottle you would replace and why.' },
-      { phase: 'Mentor', title: 'Teach one technique', body: 'Show someone how to nose a glass without burning their nostrils.' },
+      { phase: 'Debrief', title: 'What surprised you?', body: 'Which pour won? What flavor word was new to you?' },
+      { phase: 'Refine', title: 'One upgrade', body: 'Pick one bottle you would replace and why.' },
+      { phase: 'Teach', title: 'Teach one technique', body: 'Show someone how to nose a glass without burning their nostrils.' },
     ],
   },
   {
@@ -60,9 +60,9 @@ export const BOURBON_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Choose your theme', body: 'Daily drinkers · Kentucky vs elsewhere · high rye vs wheated · under $40 gems.' },
       { phase: 'Build', title: 'Curate the shelf', body: 'Arrange bottles with labels visible. Write a one-sentence theme on an index card.' },
       { phase: 'Show', title: 'Photograph and share', body: 'Take a shelf photo. Share with one friend who appreciates bourbon or wants to learn.' },
-      { phase: 'Reflect', title: 'What is missing?', body: 'What gap would your next bottle fill?' },
-      { phase: 'Improve', title: 'Swap one bottle', body: 'If you could only keep 5, which would go?' },
-      { phase: 'Mentor', title: 'Recommend a starter bottle', body: 'Help a beginner pick their first bottle under $35 with one sentence of why.' },
+      { phase: 'Debrief', title: 'What is missing?', body: 'What gap would your next bottle fill?' },
+      { phase: 'Refine', title: 'Swap one bottle', body: 'If you could only keep 5, which would go?' },
+      { phase: 'Teach', title: 'Recommend a starter bottle', body: 'Help a beginner pick their first bottle under $35 with one sentence of why.' },
     ],
   },
   {
@@ -81,9 +81,9 @@ export const BOURBON_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick a variable', body: 'Hold one thing constant: same distillery different ages, same mash bill different proofs, etc.' },
       { phase: 'Build', title: 'Fill the grid', body: 'Nose · Palate · Finish · Sweet/Spicy · Overall score 1–10 for each.' },
       { phase: 'Show', title: 'Declare a winner', body: 'Rank all five. Defend #1 in three sentences.' },
-      { phase: 'Reflect', title: 'Palate lesson', body: 'What did comparing teach you that single tastings did not?' },
-      { phase: 'Improve', title: 'Retry the loser', body: 'Re-taste your lowest-ranked pour — did your opinion change?' },
-      { phase: 'Mentor', title: 'Explain one difference', body: 'Teach someone the difference between wheated and high-rye in plain language.' },
+      { phase: 'Debrief', title: 'Palate lesson', body: 'What did comparing teach you that single tastings did not?' },
+      { phase: 'Refine', title: 'Retry the loser', body: 'Re-taste your lowest-ranked pour — did your opinion change?' },
+      { phase: 'Teach', title: 'Explain one difference', body: 'Teach someone the difference between wheated and high-rye in plain language.' },
     ],
   },
   {
@@ -102,9 +102,9 @@ export const BOURBON_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Bag the bottles', body: 'Cover labels. Number pours. Prepare reveal sheet.' },
       { phase: 'Build', title: 'Run the night', body: 'Same pour size, water available, score cards anonymous.' },
       { phase: 'Show', title: 'Reveal and discuss', body: 'Uncover labels. Compare guesses to reality.' },
-      { phase: 'Reflect', title: 'Biggest surprise', body: 'Which expensive bottle lost? Which budget bottle won?' },
-      { phase: 'Improve', title: 'One protocol fix', body: 'What would you do differently next blind night?' },
-      { phase: 'Mentor', title: 'Coach a first-timer', body: 'Help someone describe a flavor without saying "smooth."' },
+      { phase: 'Debrief', title: 'Biggest surprise', body: 'Which expensive bottle lost? Which budget bottle won?' },
+      { phase: 'Refine', title: 'One protocol fix', body: 'What would you do differently next blind night?' },
+      { phase: 'Teach', title: 'Coach a first-timer', body: 'Help someone describe a flavor without saying "smooth."' },
     ],
   },
   {
@@ -122,12 +122,16 @@ export const BOURBON_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick your visit', body: 'Local distillery tour, Kentucky trip, or official virtual tour with note-taking.' },
       { phase: 'Build', title: 'Learn the process', body: 'Track: grain · cook · ferment · distill · barrel · age · proof · bottle.' },
       { phase: 'Show', title: 'Share one insight', body: 'Tell someone one thing about production they did not know.' },
-      { phase: 'Reflect', title: 'Tasting connection', body: 'How does knowing the process change your next pour?' },
-      { phase: 'Improve', title: 'Plan bottle purchase', body: 'If the gift shop has exclusives, decide intentionally — not impulse.' },
-      { phase: 'Mentor', title: 'Bring someone next time', body: 'Invite a friend on your next visit or share your virtual tour notes.' },
+      { phase: 'Debrief', title: 'Tasting connection', body: 'How does knowing the process change your next pour?' },
+      { phase: 'Refine', title: 'Plan bottle purchase', body: 'If the gift shop has exclusives, decide intentionally — not impulse.' },
+      { phase: 'Teach', title: 'Bring someone next time', body: 'Invite a friend on your next visit or share your virtual tour notes.' },
     ],
   },
 ];
+
+import { expandBourbonMissions } from './immersion/worlds/bourbon';
+
+export const BOURBON_MISSIONS = expandBourbonMissions(BOURBON_FOUNDATION_MISSIONS);
 
 export const BOURBON_PORTFOLIO_KEY = 'foundry-bourbon-portfolio';
 export const BOURBON_PORTFOLIO_LABEL = 'My Bourbon Journey';

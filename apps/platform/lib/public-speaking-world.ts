@@ -6,9 +6,9 @@ export const PS_LOOP = [
   { step: 'Mission', description: 'Pick a talk, story, or moment that matters' },
   { step: 'Build', description: 'Write, outline, and rehearse your message' },
   { step: 'Show', description: 'Deliver — live or recorded' },
-  { step: 'Reflect', description: 'Review what worked and what felt hard' },
-  { step: 'Improve', description: 'Revise based on feedback or playback' },
-  { step: 'Mentor', description: 'Coach someone else or share what you learned' },
+  { step: 'Debrief', description: 'Review what worked and what felt hard' },
+  { step: 'Refine', description: 'Revise based on feedback or playback' },
+  { step: 'Teach', description: 'Coach someone else or share what you learned' },
 ] as const;
 
 export const PS_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const PS_ACADEMY_LEVELS = [
   { slug: 'mentor', level: 7, title: 'Mentor Speaker', tagline: 'Develop other speakers in the circle', unlocks: ['Speakers Circle mentorship'] },
 ];
 
-export const PS_MISSIONS: WorldMission[] = [
+const PS_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'first-talk',
     number: 1,
@@ -44,9 +44,9 @@ export const PS_MISSIONS: WorldMission[] = [
         checklist: ['Write your one-sentence goal', 'Outline hook + 2 points + close', 'Practice out loud twice'],
       },
       { phase: 'Show', title: 'Deliver the talk', body: 'Give the talk to one person OR record on your phone. Start a timer. Stop at 3 minutes.' },
-      { phase: 'Reflect', title: 'How did it feel?', body: 'Write in the box below: What went well? Where did you rush or freeze? Would you do it again?' },
-      { phase: 'Improve', title: 'One fix', body: 'Re-deliver just the opening 30 seconds — make it stronger.' },
-      { phase: 'Mentor', title: 'Ask for one tip', body: 'Ask your listener: "What is one thing I should improve?" Write it down.' },
+      { phase: 'Debrief', title: 'How did it feel?', body: 'Write in the box below: What went well? Where did you rush or freeze? Would you do it again?' },
+      { phase: 'Refine', title: 'One fix', body: 'Re-deliver just the opening 30 seconds — make it stronger.' },
+      { phase: 'Teach', title: 'Ask for one tip', body: 'Ask your listener: "What is one thing I should improve?" Write it down.' },
     ],
   },
   {
@@ -66,9 +66,9 @@ export const PS_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Set up the recording', body: 'Prop phone at eye level. Light on your face. Record a 2–3 minute talk — same topic or new.' },
       { phase: 'Build', title: 'Record without stopping', body: 'One take is enough. Do not delete it. You are building the habit of finishing.' },
       { phase: 'Show', title: 'Watch it back', body: 'Watch once with sound. Note: filler words ("um"), pace, eye contact with camera, energy.' },
-      { phase: 'Reflect', title: 'Three improvements', body: 'Write exactly three things to fix next time. Be specific — not "be better" but "pause after the hook."' },
-      { phase: 'Improve', title: 'Re-record 60 seconds', body: 'Record only the improved opening minute.' },
-      { phase: 'Mentor', title: 'Share one lesson', body: 'Tell someone one thing you noticed about yourself on camera.' },
+      { phase: 'Debrief', title: 'Three improvements', body: 'Write exactly three things to fix next time. Be specific — not "be better" but "pause after the hook."' },
+      { phase: 'Refine', title: 'Re-record 60 seconds', body: 'Record only the improved opening minute.' },
+      { phase: 'Teach', title: 'Share one lesson', body: 'Tell someone one thing you noticed about yourself on camera.' },
     ],
   },
   {
@@ -87,9 +87,9 @@ export const PS_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Choose your story', body: 'Personal moment: failure, win, lesson, or change. Real beats impressive.' },
       { phase: 'Build', title: 'Structure it', body: 'Setup (where were you?) · Tension (what went wrong or what was at stake?) · Turn (what changed?) · Lesson (what do you know now?).' },
       { phase: 'Show', title: 'Tell it', body: 'Deliver to one person or record. Focus on emotion and pacing — not memorizing every word.' },
-      { phase: 'Reflect', title: 'Did they lean in?', body: 'What moment got a reaction? Where did you lose them?' },
-      { phase: 'Improve', title: 'Sharpen the lesson', body: 'Rewrite your final sentence — one clear takeaway the listener remembers tomorrow.' },
-      { phase: 'Mentor', title: 'Help someone find their story', body: 'Ask a friend: "What is a moment that changed how you think?" Help them outline it.' },
+      { phase: 'Debrief', title: 'Did they lean in?', body: 'What moment got a reaction? Where did you lose them?' },
+      { phase: 'Refine', title: 'Sharpen the lesson', body: 'Rewrite your final sentence — one clear takeaway the listener remembers tomorrow.' },
+      { phase: 'Teach', title: 'Help someone find their story', body: 'Ask a friend: "What is a moment that changed how you think?" Help them outline it.' },
     ],
   },
   {
@@ -108,9 +108,9 @@ export const PS_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick the topic', body: 'School project, club, family dinner, or online chat. Topic must allow different opinions.' },
       { phase: 'Build', title: 'Plan 3 questions', body: 'Opening question (easy) · Deeper question (why) · Closing question (what next). Write them down.' },
       { phase: 'Show', title: 'Facilitate', body: 'Lead 20 minutes. Your job: ask questions, summarize, invite quiet voices — talk less than 30% of the time.' },
-      { phase: 'Reflect', title: 'Who spoke most?', body: 'Did everyone get space? What would you do differently?' },
-      { phase: 'Improve', title: 'One facilitation fix', body: 'Write one phrase you will use next time to invite a quiet person in.' },
-      { phase: 'Mentor', title: 'Debrief with the group', body: 'Ask: "What made this discussion useful?" Write the answer.' },
+      { phase: 'Debrief', title: 'Who spoke most?', body: 'Did everyone get space? What would you do differently?' },
+      { phase: 'Refine', title: 'One facilitation fix', body: 'Write one phrase you will use next time to invite a quiet person in.' },
+      { phase: 'Teach', title: 'Debrief with the group', body: 'Ask: "What made this discussion useful?" Write the answer.' },
     ],
   },
   {
@@ -128,12 +128,17 @@ export const PS_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Choose your ask', body: 'What should the audience DO or BELIEVE after 5 minutes? One clear call to action.' },
       { phase: 'Build', title: 'Build the case', body: 'Problem · Why it matters to them · Your solution · Evidence · Call to action. Outline on one page or 5 slides max.' },
       { phase: 'Show', title: 'Present', body: 'Deliver to 2+ people or record. End with the ask — explicitly.' },
-      { phase: 'Reflect', title: 'Trinity check', body: 'How does speaking connect to what you build (AI) and what you keep (money)? Write 3 sentences.' },
-      { phase: 'Improve', title: 'Strengthen the ask', body: 'Rewrite your final 30 seconds — clearer, bolder, specific.' },
-      { phase: 'Mentor', title: 'Speakers Circle', body: 'Share one slide or outline with a peer. Give them one piece of feedback; receive one back.' },
+      { phase: 'Debrief', title: 'Trinity check', body: 'How does speaking connect to what you build (AI) and what you keep (money)? Write 3 sentences.' },
+      { phase: 'Refine', title: 'Strengthen the ask', body: 'Rewrite your final 30 seconds — clearer, bolder, specific.' },
+      { phase: 'Teach', title: 'Speakers Circle', body: 'Share one slide or outline with a peer. Give them one piece of feedback; receive one back.' },
     ],
   },
 ];
+
+import { expandPsMissions, PS_TRACKS } from './immersion/worlds/public-speaking';
+
+export { PS_TRACKS };
+export const PS_MISSIONS = expandPsMissions(PS_FOUNDATION_MISSIONS);
 
 export const PS_PLAYGROUND_LABS = [
   { slug: 'voice-lab', title: 'Voice Lab', description: 'Practice pace, volume, and pauses — read a paragraph at 3 speeds.', unlockLevel: 'Confident Speaker' },

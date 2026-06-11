@@ -8,7 +8,7 @@ export type CommunityPostRow = {
   user_id: string | null;
   user_slug: string;
   author_label: string | null;
-  post_type: 'challenge' | 'showcase' | 'reflection';
+  post_type: 'challenge' | 'showcase' | 'reflection' | 'discussion';
   title: string | null;
   body: string;
   week_key: string;
@@ -33,6 +33,7 @@ export type CommunityActivationStats = {
   posts_this_week: number;
   challenge_submissions: number;
   showcase_posts: number;
+  discussion_posts: number;
   peer_feedback_count: number;
   mentor_count: number;
 };
@@ -207,7 +208,7 @@ export async function submitCommunityPost(input: {
   user_slug: string;
   user_id?: string;
   author_label?: string;
-  post_type: 'challenge' | 'showcase' | 'reflection';
+  post_type: 'challenge' | 'showcase' | 'reflection' | 'discussion';
   title?: string;
   body: string;
   week_key?: string;
@@ -284,11 +285,11 @@ export async function submitPeerFeedback(input: {
 
 export async function getCommunityActivationStats(world_slug: string): Promise<CommunityActivationStats> {
   if (!isSupabaseConfigured()) {
-    return { member_count: 0, posts_this_week: 0, challenge_submissions: 0, showcase_posts: 0, peer_feedback_count: 0, mentor_count: 0 };
+    return { member_count: 0, posts_this_week: 0, challenge_submissions: 0, showcase_posts: 0, discussion_posts: 0, peer_feedback_count: 0, mentor_count: 0 };
   }
   const client = createServiceClient();
   if (!client) {
-    return { member_count: 0, posts_this_week: 0, challenge_submissions: 0, showcase_posts: 0, peer_feedback_count: 0, mentor_count: 0 };
+    return { member_count: 0, posts_this_week: 0, challenge_submissions: 0, showcase_posts: 0, discussion_posts: 0, peer_feedback_count: 0, mentor_count: 0 };
   }
 
   const week = getWeekKey();
@@ -312,6 +313,12 @@ export async function getCommunityActivationStats(world_slug: string): Promise<C
     .select('*', { count: 'exact', head: true })
     .eq('world_slug', world_slug)
     .eq('post_type', 'showcase');
+
+  const { count: discussions } = await client
+    .from('community_posts')
+    .select('*', { count: 'exact', head: true })
+    .eq('world_slug', world_slug)
+    .eq('post_type', 'discussion');
 
   let peerFeedback = 0;
   const { data: worldPosts } = await client.from('community_posts').select('id').eq('world_slug', world_slug);
@@ -341,6 +348,7 @@ export async function getCommunityActivationStats(world_slug: string): Promise<C
     posts_this_week: postsWeek ?? 0,
     challenge_submissions: challenges ?? 0,
     showcase_posts: showcases ?? 0,
+    discussion_posts: discussions ?? 0,
     peer_feedback_count: peerFeedback,
     mentor_count: mentorCount,
   };

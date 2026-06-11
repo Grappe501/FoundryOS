@@ -1,0 +1,20 @@
+{
+  "slug": "bourbon",
+  "display_name": "Bourbon",
+  "priority_tier": "retention",
+  "target_audiences": [
+    "hobbyists",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Local events",
+    "Affiliates"
+  ],
+  "tier_hooks": {
+    "build": "Tasting portfolio",
+    "mastery": "Bourbon Society"
+  },
+  "primary_cta": "/bourbon",
+  "effort_allocation_pct": 5
+}

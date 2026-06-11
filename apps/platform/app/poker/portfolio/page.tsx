@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { POKER_PORTFOLIO_SECTIONS } from '../../../lib/poker-world-meta';
+import { getMissionCount } from '../../../lib/immersion/registry';
 
 export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('poker');
@@ -11,7 +12,7 @@ export default function PortfolioPage() {
         bundle={bundle}
         basePath="/poker"
         portfolioKey="foundry-poker-portfolio"
-        missionCount={5}
+        missionCount={getMissionCount('poker')}
         firstMissionSlug="track-bankroll"
         sections={POKER_PORTFOLIO_SECTIONS}
       />

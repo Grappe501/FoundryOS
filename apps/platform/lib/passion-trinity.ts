@@ -1,5 +1,7 @@
 /** Passion Trinity — Identity Domains (PASS-023 foundation) */
 
+import { getMissionCount } from './immersion/registry';
+
 export type PassionWorldSlug = 'bourbon' | 'bbq' | 'poker' | 'cigars';
 
 export type PassionWorldStatus = 'foundation' | 'in_build' | 'live';
@@ -33,7 +35,7 @@ export const PASSION_WORLDS: PassionWorld[] = [
     portfolioLabel: 'My Bourbon Journey',
     portfolioKey: 'foundry-bourbon-portfolio',
     communityName: 'Bourbon Circle',
-    missionCount: 5,
+    missionCount: getMissionCount('bourbon'),
     status: 'foundation',
     nextWorld: 'bbq',
   },
@@ -47,7 +49,7 @@ export const PASSION_WORLDS: PassionWorld[] = [
     portfolioLabel: 'My BBQ Journal',
     portfolioKey: 'foundry-bbq-portfolio',
     communityName: 'Pitmasters Circle',
-    missionCount: 5,
+    missionCount: getMissionCount('bbq'),
     status: 'foundation',
     nextWorld: 'poker',
   },
@@ -61,7 +63,7 @@ export const PASSION_WORLDS: PassionWorld[] = [
     portfolioLabel: 'My Poker Journey',
     portfolioKey: 'foundry-poker-portfolio',
     communityName: 'Poker Study Circle',
-    missionCount: 5,
+    missionCount: getMissionCount('poker'),
     status: 'foundation',
     nextWorld: 'bourbon',
   },

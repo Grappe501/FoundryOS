@@ -48,7 +48,9 @@ export function middleware(request: NextRequest) {
       pathname.startsWith('/operator/beta') ||
       pathname.startsWith('/operator/invites') ||
       pathname.startsWith('/operator/analytics') ||
-      pathname.startsWith('/operator/feedback')
+      pathname.startsWith('/operator/feedback') ||
+      pathname.startsWith('/operator/revenue') ||
+      pathname.startsWith('/operator/business')
     ) {
       return NextResponse.next();
     }

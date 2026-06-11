@@ -147,11 +147,25 @@ foreach ($p in $cacheTargets) {
     }
 }
 
-# ─── 5. Clear temp foundry/turbo/next artifacts on C: ─────
-Write-Host "[4/5] Clearing temp artifacts on C:..." -ForegroundColor Yellow
+# ─── 5. Clear Cursor agent-tools logs on C: (mirror not needed — debug only) ─
+Write-Host "[4/6] Clearing Cursor agent-tools logs on C:..." -ForegroundColor Yellow
+$agentTools = Join-Path $cursorProject "agent-tools"
+if (Test-Path $agentTools) {
+    Get-ChildItem $agentTools -File -ErrorAction SilentlyContinue | ForEach-Object {
+        $mb = Get-DirSizeMb $_.FullName
+        if (Send-ToRecycleBin -Path $_.FullName) {
+            $recycled++
+            $freedMb += $mb
+            Write-Host "  Recycled agent log: $($_.Name) ($mb MB)" -ForegroundColor DarkYellow
+        }
+    }
+}
+
+# ─── 6. Clear temp foundry/turbo/next artifacts on C: ─────
+Write-Host "[5/6] Clearing temp artifacts on C:..." -ForegroundColor Yellow
 $tempDir = "$UserHome\AppData\Local\Temp"
 if (Test-Path $tempDir) {
-    $patterns = @("foundry*", "turbo-*", "next-*", "sandbox-*", "ps-script-*", "tsx-*", "node-*")
+    $patterns = @("foundry*", "turbo-*", "next-*", "sandbox-*", "ps-script-*", "ps-state-out-*", "tsx-*", "node-*")
     foreach ($pat in $patterns) {
         Get-ChildItem $tempDir -Filter $pat -ErrorAction SilentlyContinue | ForEach-Object {
             $mb = Get-DirSizeMb $_.FullName
@@ -178,8 +192,8 @@ if (Test-Path $transcripts) {
         }
 }
 
-# ─── 6. Scan for any other FoundryOS-named paths on C: ────
-Write-Host "[5/5] Scanning C: for remaining FoundryOS artifacts..." -ForegroundColor Yellow
+# ─── 7. Scan for any other FoundryOS-named paths on C: ────
+Write-Host "[6/6] Scanning C: for remaining FoundryOS artifacts..." -ForegroundColor Yellow
 $scanRoots = @(
     "$UserHome",
     "$UserHome\AppData\Local",

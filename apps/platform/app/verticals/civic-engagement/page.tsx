@@ -13,7 +13,7 @@ export default function CivicEngagementVerticalPage() {
         civic-engagement.foundryos.com · PASS-024 factory proof
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Civic Engagement</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Improve Your Community · Become an Informed Citizen</p>
+      <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Serve Your Community · Become an Informed Citizen</p>
       <p style={{ color: '#6B9B6B', fontSize: 12, marginTop: 8 }}>
         Consumer world:{' '}
         <Link href="/civic-engagement" style={{ color: '#6B9B6B' }}>/civic-engagement</Link>
@@ -31,7 +31,7 @@ export default function CivicEngagementVerticalPage() {
 
       <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
         <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, textTransform: 'uppercase' }}>Core promise</p>
-        <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>Improve your community through research, participation, and leadership that lasts.</p>
+        <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>Serve your community through research, participation, and leadership that lasts.</p>
       </section>
     </main>
   );

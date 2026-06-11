@@ -6,9 +6,9 @@ export const CIVIC_ENGAGEMENT_LOOP = [
   { step: 'Mission', description: 'Pick a civic action worth pursuing' },
   { step: 'Build', description: 'Research, prepare, or organize your participation' },
   { step: 'Show', description: 'Attend, volunteer, or lead — document what happened' },
-  { step: 'Reflect', description: 'Write what you learned about your community' },
-  { step: 'Improve', description: 'Plan the next civic step with more impact' },
-  { step: 'Mentor', description: 'Invite someone to participate with you' },
+  { step: 'Debrief', description: 'What changed in the room? What would you do differently?' },
+  { step: 'Refine', description: 'Fix one process or plan the next civic step' },
+  { step: 'Teach', description: 'Invite someone to participate with you' },
 ] as const;
 
 export const CIVIC_ENGAGEMENT_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const CIVIC_ENGAGEMENT_ACADEMY_LEVELS = [
   { slug: 'community-steward', level: 7, title: 'Community Steward', tagline: 'Sustain local impact across seasons and elections', unlocks: ['Civic Circle leadership'] },
 ];
 
-export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
+const CIVIC_ENGAGEMENT_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'research-ballot',
     number: 1,
@@ -48,9 +48,9 @@ export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
         checklist: ['List every race and measure', 'Note candidate positions in your own words', 'Identify one source you trust and one you question'],
       },
       { phase: 'Show', title: 'Complete your ballot sheet', body: 'Fill in your research doc with a summary and your lean (support / oppose / undecided) for each item. This goes in My Civic Portfolio.' },
-      { phase: 'Reflect', title: 'What surprised you?', body: 'Write 2–3 sentences: Which race or measure was harder to understand than you expected? What information was missing? What would you tell a friend who says "I never know who to vote for"?' },
-      { phase: 'Improve', title: 'Share one finding', body: 'Tell one person one non-obvious thing you learned from your research — a local race, a ballot measure, or a candidate position they might not know.' },
-      { phase: 'Mentor', title: 'Walk someone through it', body: 'Help a parent, sibling, or friend open their sample ballot. Show them how you researched one item. Invite them to do Mission 1 with you before the next election.' },
+      { phase: 'Debrief', title: 'What surprised you?', body: 'Write 2–3 sentences: Which race or measure was harder to understand than you expected? What information was missing? What would you tell a friend who says "I never know who to vote for"?' },
+      { phase: 'Refine', title: 'Share one finding', body: 'Tell one person one non-obvious thing you learned from your research — a local race, a ballot measure, or a candidate position they might not know.' },
+      { phase: 'Teach', title: 'Walk someone through it', body: 'Help a parent, sibling, or friend open their sample ballot. Show them how you researched one item. Invite them to do Mission 1 with you before the next election.' },
     ],
   },
   {
@@ -79,9 +79,9 @@ export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
         checklist: ['Confirm date, time, and location (or login link)', 'Skim the agenda', 'Write three observation questions'],
       },
       { phase: 'Show', title: 'Attend and take notes', body: 'Stay for at least 30 minutes. Note: meeting type, main agenda items, one decision or debate, one thing that confused you. Screenshot the agenda or take a photo of the room if in person.' },
-      { phase: 'Reflect', title: 'What did you learn about your community?', body: 'Write in the reflection box: What issue got the most attention? Did the process feel fair? What would you want changed about how the meeting ran?' },
-      { phase: 'Improve', title: 'Find the next meeting', body: 'Bookmark the calendar page. Identify one upcoming agenda item you want to follow — a budget vote, zoning change, or school policy.' },
-      { phase: 'Mentor', title: 'Invite someone next time', body: 'Tell a friend or family member one thing that happened at the meeting. Ask if they want to attend the next one with you.' },
+      { phase: 'Debrief', title: 'What did you learn about your community?', body: 'Write in the reflection box: What issue got the most attention? Did the process feel fair? What would you want changed about how the meeting ran?' },
+      { phase: 'Refine', title: 'Find the next meeting', body: 'Bookmark the calendar page. Identify one upcoming agenda item you want to follow — a budget vote, zoning change, or school policy.' },
+      { phase: 'Teach', title: 'Invite someone next time', body: 'Tell a friend or family member one thing that happened at the meeting. Ask if they want to attend the next one with you.' },
     ],
   },
   {
@@ -106,9 +106,9 @@ export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
         checklist: ['Sign up for a specific date', 'Confirm what to bring', 'Tell a parent or adult where you will be'],
       },
       { phase: 'Show', title: 'Complete the shift', body: 'Show up on time. Do the work. Before you leave, ask a staff member: "What is the biggest need right now?" Write down their answer.' },
-      { phase: 'Reflect', title: 'Would you go back?', body: 'Write: What was harder than expected? What felt meaningful? Did you meet anyone who inspired you? Rate 1–10 how likely you are to volunteer again — and why.' },
-      { phase: 'Improve', title: 'Schedule a second shift', body: 'Book one more date in the next month — or identify a different role (desk, outreach, events) if the first task was not a fit.' },
-      { phase: 'Mentor', title: 'Bring someone with you', body: 'Invite a friend to your next shift — or tell a sibling how to sign up for the same organization.' },
+      { phase: 'Debrief', title: 'Would you go back?', body: 'Write: What was harder than expected? What felt meaningful? Did you meet anyone who inspired you? Rate 1–10 how likely you are to volunteer again — and why.' },
+      { phase: 'Refine', title: 'Schedule a second shift', body: 'Book one more date in the next month — or identify a different role (desk, outreach, events) if the first task was not a fit.' },
+      { phase: 'Teach', title: 'Bring someone with you', body: 'Invite a friend to your next shift — or tell a sibling how to sign up for the same organization.' },
     ],
   },
   {
@@ -137,9 +137,9 @@ export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
         checklist: ['Write project goal in one sentence', 'Set date and location', 'Invite at least 2 helpers', 'List supplies needed'],
       },
       { phase: 'Show', title: 'Execute the project', body: 'Run the project. Take a photo or write a 3-sentence summary of results: what you did, how many people helped, what changed. Add to My Civic Portfolio.' },
-      { phase: 'Reflect', title: 'What was the hardest part?', body: 'Organizing is different from volunteering. Write: What almost did not happen? What would you do differently next time? What skill did you practice — planning, recruiting, communicating?' },
-      { phase: 'Improve', title: 'Thank your helpers', body: 'Send a short message to everyone who helped. Ask one person: "What would make the next project better?"' },
-      { phase: 'Mentor', title: 'Document the playbook', body: 'Write 5 bullet points another student could follow to run the same type of project. Share with Civic Circle or a friend.' },
+      { phase: 'Debrief', title: 'What was the hardest part?', body: 'Organizing is different from volunteering. Write: What almost did not happen? What would you do differently next time? What skill did you practice — planning, recruiting, communicating?' },
+      { phase: 'Refine', title: 'Thank your helpers', body: 'Send a short message to everyone who helped. Ask one person: "What would make the next project better?"' },
+      { phase: 'Teach', title: 'Document the playbook', body: 'Write 5 bullet points another student could follow to run the same type of project. Share with Civic Circle or a friend.' },
     ],
   },
   {
@@ -167,12 +167,17 @@ export const CIVIC_ENGAGEMENT_MISSIONS: WorldMission[] = [
         checklist: ['Write 3 discussion prompts', 'Set ground rules (listen, no personal attacks, everyone speaks)', 'Invite at least 3 participants', 'Schedule date and send the question in advance'],
       },
       { phase: 'Show', title: 'Facilitate the session', body: 'Lead the conversation. Stay neutral. Make sure quieter voices get time. Take brief notes on themes — not names. Thank everyone at the end.' },
-      { phase: 'Reflect', title: 'What shifted?', body: 'Write: Did anyone change their mind or see something new? What moment felt tense? What facilitation move worked — pausing, paraphrasing, redirecting?' },
-      { phase: 'Improve', title: 'One follow-up action', body: 'Identify one concrete next step the group could take: attend a meeting, volunteer, research a ballot item, or run a mini-project. Write it down even if no one commits yet.' },
-      { phase: 'Mentor', title: 'Coach a future facilitator', body: 'Share your discussion guide with someone who wants to lead. Offer to co-facilitate their first session — or debrief with them after they try.' },
+      { phase: 'Debrief', title: 'What shifted?', body: 'Write: Did anyone change their mind or see something new? What moment felt tense? What facilitation move worked — pausing, paraphrasing, redirecting?' },
+      { phase: 'Refine', title: 'One follow-up action', body: 'Identify one concrete next step the group could take: attend a meeting, volunteer, research a ballot item, or run a mini-project. Write it down even if no one commits yet.' },
+      { phase: 'Teach', title: 'Coach a future facilitator', body: 'Share your discussion guide with someone who wants to lead. Offer to co-facilitate their first session — or debrief with them after they try.' },
     ],
   },
 ];
+
+import { expandCivicMissions, CIVIC_TRACKS } from './immersion/worlds/civic-engagement';
+
+export { CIVIC_TRACKS };
+export const CIVIC_ENGAGEMENT_MISSIONS = expandCivicMissions(CIVIC_ENGAGEMENT_FOUNDATION_MISSIONS);
 
 export const CIVIC_ENGAGEMENT_PORTFOLIO_KEY = 'foundry-civic-portfolio';
 export const CIVIC_ENGAGEMENT_PORTFOLIO_LABEL = 'My Civic Portfolio';
@@ -187,7 +192,7 @@ export const CIVIC_ENGAGEMENT_COMMUNITY = {
   ],
 };
 
-export const CIVIC_ENGAGEMENT_CORE_PROMISE = 'Improve your community through research, participation, and leadership that lasts.';
+export const CIVIC_ENGAGEMENT_CORE_PROMISE = 'Serve your community through research, participation, and leadership that lasts.';
 
 export function getCivicEngagementMission(slug: string): WorldMission | undefined {
   return CIVIC_ENGAGEMENT_MISSIONS.find((m) => m.slug === slug);

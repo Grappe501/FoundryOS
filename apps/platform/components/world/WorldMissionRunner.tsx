@@ -3,9 +3,17 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { trackValidationEvent } from '../../lib/validation-tracker';
+import { UpgradeMoment } from '../billing/UpgradeMoment';
+import { getUpgradeMoment } from '../../lib/upgrade-moments';
+import {
+  FOUNDRY_DEBRIEF_PLACEHOLDER,
+  FOUNDRY_MISSION_LOOP_TEXT,
+  normalizeMissionPhase,
+  type MissionLoopPhase,
+} from '../../lib/voice-loop';
 
 export type WorldMissionStep = {
-  phase: 'Mission' | 'Build' | 'Show' | 'Reflect' | 'Improve' | 'Mentor';
+  phase: MissionLoopPhase;
   title: string;
   body: string;
   checklist?: string[];
@@ -47,18 +55,24 @@ function saveWorldPortfolio(key: string, entries: PortfolioEntry[]) {
   localStorage.setItem(key, JSON.stringify(entries));
 }
 
+const DEFAULT_LOOP = FOUNDRY_MISSION_LOOP_TEXT;
+
 export function WorldMissionRunner({
   mission,
   portfolioKey,
   basePath,
   pathSlug,
   portfolioLabel = 'your portfolio',
+  loopDescription = DEFAULT_LOOP,
+  reflectionPlaceholder = FOUNDRY_DEBRIEF_PLACEHOLDER,
 }: {
   mission: WorldMission;
   portfolioKey: string;
   basePath: string;
   pathSlug: string;
   portfolioLabel?: string;
+  loopDescription?: string;
+  reflectionPlaceholder?: string;
 }) {
   const [stepIndex, setStepIndex] = useState(0);
   const [reflection, setReflection] = useState('');
@@ -86,7 +100,7 @@ export function WorldMissionRunner({
         mission: mission.slug,
         title: mission.title,
         step_index: stepIndex,
-        step_phase: step.phase,
+        step_phase: normalizeMissionPhase(step.phase),
       },
     });
   }, [started, done, stepIndex, mission, basePath, pathSlug]);
@@ -153,6 +167,7 @@ export function WorldMissionRunner({
   }
 
   if (done) {
+    const upgrade = getUpgradeMoment(pathSlug, 'mission_complete', mission.slug);
     return (
       <section style={{ marginTop: 24, padding: 28, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
         <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
@@ -173,6 +188,17 @@ export function WorldMissionRunner({
             {mission.tomorrowHook.replace(/^Tomorrow:\s*/i, '')}
           </p>
         </div>
+        {upgrade && (
+          <UpgradeMoment
+            tier={upgrade.tier}
+            headline={upgrade.headline}
+            body={upgrade.body}
+            premiumNext={upgrade.premiumNext}
+            worldSlug={pathSlug}
+            missionSlug={mission.slug}
+            context={`mission_complete:${mission.slug}`}
+          />
+        )}
         <div style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <Link href={`${basePath}/portfolio`} style={{ padding: '12px 20px', background: '#2A4A2A', borderRadius: 6, color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
             View portfolio →
@@ -203,7 +229,7 @@ export function WorldMissionRunner({
           {mission.evidence}
         </p>
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>
-          Six steps: Mission → Build → Show → Reflect → Improve → Mentor. Click Accept, then follow each step.
+          Six steps: {loopDescription}. Click Accept, then follow each step.
         </p>
         <button type="button" onClick={startMission} style={{ marginTop: 24, padding: '14px 24px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 14, cursor: 'pointer' }}>
           Accept Mission →
@@ -215,7 +241,7 @@ export function WorldMissionRunner({
   return (
     <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A4A2A' }}>
       <p style={{ color: '#6B6B70', fontSize: 11, margin: '0 0 12px' }}>Step {stepIndex + 1} of {mission.steps.length}</p>
-      <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: '16px 0 0' }}>{step?.phase}</p>
+      <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: '16px 0 0' }}>{step ? normalizeMissionPhase(step.phase) : ''}</p>
       <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 8, color: '#E8E8EC' }}>{step?.title}</h2>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{step?.body}</p>
       {step?.checklist && (
@@ -229,7 +255,7 @@ export function WorldMissionRunner({
         <textarea
           value={reflection}
           onChange={(e) => setReflection(e.target.value)}
-          placeholder="What did you learn? What would you do differently?"
+          placeholder={reflectionPlaceholder}
           rows={4}
           style={{ width: '100%', marginTop: 20, padding: 12, background: '#111114', border: '1px solid #2A2A2E', borderRadius: 6, color: '#E8E8EC', fontSize: 14, boxSizing: 'border-box', fontFamily: 'inherit' }}
         />
@@ -242,7 +268,7 @@ export function WorldMissionRunner({
         )}
         {!isLast ? (
           <button type="button" onClick={() => setStepIndex((i) => i + 1)} style={{ padding: '10px 18px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 13, cursor: 'pointer' }}>
-            Next: {mission.steps[stepIndex + 1]?.phase} →
+            Next: {mission.steps[stepIndex + 1] ? normalizeMissionPhase(mission.steps[stepIndex + 1]!.phase) : ''} →
           </button>
         ) : (
           <button type="button" onClick={completeMission} style={{ padding: '10px 18px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 13, cursor: 'pointer' }}>

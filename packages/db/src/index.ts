@@ -99,11 +99,73 @@ export {
   type CommunityActivationMetrics,
 } from './community-activation';
 export {
+  seedCommunityWorld,
+  seedAllCommunities,
+  ensureCommunitySeeded,
+  isCommunitySeeded,
+  listWeeklyChallenges,
+  getCurrentWeeklyChallenge,
+  type SeedWorldBundle,
+  type SeedDiscussion,
+  type SeedShowcase,
+  type SeedWeeklyChallenge,
+  type SeedMentor,
+  type SeedMember,
+  type WeeklyChallengeRow,
+} from './community-seed';
+export {
+  getUserTierLevel,
+  getSubscriptionStats,
+  upsertSubscriptionFromCheckout,
+  tierLevelForName,
+  tierNameForLevel,
+  type FoundryTier,
+  type SubscriptionStats,
+} from './subscriptions';
+export {
+  getRevenueValidationSnapshot,
+  getBusinessDashboardSnapshot,
+  type RevenueValidationSnapshot,
+  type BusinessDashboardSnapshot,
+  type RevenueFunnel,
+  type WorldRevenueMetrics,
+  type MissionRevenueMetrics,
+  type CommunityUpgradeCorrelation,
+  type PersonaPaymentRecord,
+  type DashboardConsistencyCheck,
+  getDashboardConsistencyCheck,
+  fetchRevenueEvents,
+  buildRevenueSnapshotFromEvents,
+  normalizeTier,
+  resolveWorldSlug,
+} from './revenue-analytics';
+export {
+  REVENUE_TEST_PERSONAS,
+  seedRevenueVerificationPersonas,
+  runRevenueVerificationChecks,
+  runFullRevenueVerification,
+  type RevenuePersona,
+  type VerificationCheck,
+  type RevenueVerificationResult,
+} from './revenue-verification';
+export {
   upsertMissionCompletion,
   getMissionCompletionsForUser,
   getMissionCompletionStats,
   type MissionCompletionRow,
 } from './mission-progress';
+export {
+  getGrowthFlywheelSnapshot,
+  buildGrowthFlywheelFromEvents,
+  FLYWHEEL_LOOP,
+  type GrowthFlywheelSnapshot,
+  type ConversionInsight,
+  type MarketingAssetRecommendation,
+  type SourceOutcomeAttribution,
+  type RevenueEarner,
+  type ProductBuildSignal,
+  type DomainExpansionScore,
+} from './growth-flywheel';
 export { insertValidationEvent, categoryForEvent, getValidationDashboardMetrics } from './validation-events';
 export type {
   ValidationEventType,

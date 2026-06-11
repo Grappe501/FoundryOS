@@ -1,0 +1,56 @@
+{
+  "pass": "PASS-031",
+  "updated_at": "2026-06-11T14:38:06.296Z",
+  "note": "Track MRR not vanity users. Blended ARPU ~$4 Build / $18 Mastery.",
+  "milestones": [
+    {
+      "period": "2026-07",
+      "mrr_target_usd": 100,
+      "mrr_range": "$0 → $100",
+      "paid_users_target": 25,
+      "focus": "First 25 learning lane — prove conversion"
+    },
+    {
+      "period": "2026-08",
+      "mrr_target_usd": 500,
+      "mrr_range": "$100 → $500",
+      "paid_users_target": 125,
+      "focus": "SEO + lead magnets for AI Builder + FI"
+    },
+    {
+      "period": "2026-09",
+      "mrr_target_usd": 1500,
+      "mrr_range": "$500 → $1,500",
+      "paid_users_target": 375,
+      "focus": "Public Speaking launch + parent/educator channels"
+    },
+    {
+      "period": "2026-10",
+      "mrr_target_usd": 5000,
+      "mrr_range": "$1,500 → $5,000",
+      "paid_users_target": 1250,
+      "focus": "Email nurture + partnerships"
+    },
+    {
+      "period": "2026-11",
+      "mrr_target_usd": 7500,
+      "mrr_range": "$5,000 → $7,500",
+      "paid_users_target": 1875,
+      "focus": "Affiliate + influencer pilots"
+    },
+    {
+      "period": "2026-12",
+      "mrr_target_usd": 9000,
+      "mrr_range": "$7,500 → $9,000",
+      "paid_users_target": 2250,
+      "focus": "Holiday parent campaigns"
+    },
+    {
+      "period": "2027-01",
+      "mrr_target_usd": 10000,
+      "mrr_range": "$10,000+",
+      "paid_users_target": 2500,
+      "focus": "Production readiness — January 2027"
+    }
+  ]
+}

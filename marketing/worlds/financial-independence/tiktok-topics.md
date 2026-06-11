@@ -1,0 +1,52 @@
+# Financial Independence — Top 50 TikTok Ideas
+
+- POV: you just finished "First Budget" — here's what changed
+- POV: you just finished "Save $1,000" — here's what changed
+- POV: you just finished "Analyze a Stock" — here's what changed
+- POV: you just finished "Emergency Fund" — here's what changed
+- POV: you just finished "Retirement Projection" — here's what changed
+- Achieve Financial Independence in 60 seconds
+- Parent tip: Give your teen real money skills — not just allowa…
+- Before/after portfolio artifact
+- "What I wish I knew" — Financial Independence
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 16: Financial Independence transformation clip
+- Hook 17: Financial Independence transformation clip
+- Hook 18: Financial Independence transformation clip
+- Hook 19: Financial Independence transformation clip
+- Hook 20: Financial Independence transformation clip
+- Hook 21: Financial Independence transformation clip
+- Hook 22: Financial Independence transformation clip
+- Hook 23: Financial Independence transformation clip
+- Hook 24: Financial Independence transformation clip
+- Hook 25: Financial Independence transformation clip
+- Hook 26: Financial Independence transformation clip
+- Hook 27: Financial Independence transformation clip
+- Hook 28: Financial Independence transformation clip
+- Hook 29: Financial Independence transformation clip
+- Hook 30: Financial Independence transformation clip
+- Hook 31: Financial Independence transformation clip
+- Hook 32: Financial Independence transformation clip
+- Hook 33: Financial Independence transformation clip
+- Hook 34: Financial Independence transformation clip
+- Hook 35: Financial Independence transformation clip
+- Hook 36: Financial Independence transformation clip
+- Hook 37: Financial Independence transformation clip
+- Hook 38: Financial Independence transformation clip
+- Hook 39: Financial Independence transformation clip
+- Hook 40: Financial Independence transformation clip
+- Hook 41: Financial Independence transformation clip
+- Hook 42: Financial Independence transformation clip
+- Hook 43: Financial Independence transformation clip
+- Hook 44: Financial Independence transformation clip
+- Hook 45: Financial Independence transformation clip
+- Hook 46: Financial Independence transformation clip
+- Hook 47: Financial Independence transformation clip
+- Hook 48: Financial Independence transformation clip
+- Hook 49: Financial Independence transformation clip
+- Hook 50: Financial Independence transformation clip

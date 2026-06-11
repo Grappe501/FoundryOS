@@ -87,7 +87,7 @@ export const PS_DEPTH: WorldDepthBundle = {
     ['Triad', 'Rule of three — three points, examples, or beats — memorable rhythm', 'Classic rhetorical pattern', 'Three reasons, three stories, three actions — clean and sticky', ['Rhetoric', 'Signpost']],
     ['Metaphor', 'Figure of speech comparing ideas — clarifies complex topics', 'One strong metaphor beats ten definitions', 'Budget is a map — not the territory, but you get lost without it', ['Storytelling', 'Rhetoric']],
     ['Discussion', 'Two-way exchange — Mission 4 focus', 'Speaking includes listening and drawing others out', 'What did I miss? — invite the quietest person first', ['Facilitation', 'Q&A']],
-    ['Improvement', 'Deliberate revision after feedback — Improve phase every mission', 'One specific fix beats vague try harder', 'Re-record only the opening with pauses after the hook', ['Feedback', 'Rehearsal']],
+    ['Improvement', 'Deliberate revision after feedback — Refine phase every mission', 'One specific fix beats vague try harder', 'Re-record only the opening with pauses after the hook', ['Feedback', 'Rehearsal']],
   ]),
 
   community: {
@@ -135,7 +135,7 @@ export const PS_DEPTH: WorldDepthBundle = {
       summary: 'Mission-based communication training — talks, stories, facilitation, and persuasion with evidence in My Speaking Portfolio.',
       sections: [
         { heading: 'Communicate value', body: 'Public Speaking is the third leg of Future-Proof: create value (AI Builder), keep value (FI), communicate value (here). Ideas only matter if you can explain them.' },
-        { heading: 'Loop', body: 'Mission → Build → Show → Reflect → Improve → Mentor. Every mission ends with delivery and reflection — not reading about rhetoric.' },
+        { heading: 'Loop', body: 'Mission → Build → Show → Debrief → Refine → Teach. Every mission ends with delivery and debrief — not reading about rhetoric.' },
         { heading: 'Who it is for', body: 'Students who freeze in class, future leaders, entrepreneurs who need to pitch, and anyone completing the Trinity.' },
       ],
     },

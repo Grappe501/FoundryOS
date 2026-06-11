@@ -6,9 +6,9 @@ export const POKER_LOOP = [
   { step: 'Mission', description: 'Pick a skill, session, or concept to master' },
   { step: 'Build', description: 'Study, track, or play with intention' },
   { step: 'Show', description: 'Log results, share hands, or teach a concept' },
-  { step: 'Reflect', description: 'Review decisions — not just outcomes' },
-  { step: 'Improve', description: 'Adjust strategy based on evidence' },
-  { step: 'Mentor', description: 'Coach a new player on fundamentals' },
+  { step: 'Debrief', description: 'Review decisions — not just outcomes' },
+  { step: 'Refine', description: 'Adjust strategy based on evidence' },
+  { step: 'Teach', description: 'Coach a new player on fundamentals' },
 ] as const;
 
 export const POKER_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const POKER_ACADEMY_LEVELS = [
   { slug: 'mentor', level: 7, title: 'Poker Mentor', tagline: 'Lead the Poker Study Circle', unlocks: ['Circle mentorship'] },
 ];
 
-export const POKER_MISSIONS: WorldMission[] = [
+const POKER_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'track-bankroll',
     number: 1,
@@ -39,9 +39,9 @@ export const POKER_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Set your bankroll', body: 'Define money you can lose without stress. Separate from rent, savings, and investing.' },
       { phase: 'Build', title: 'Log sessions', body: 'Date · stakes · buy-in · cash-out · duration · one note on biggest mistake.' },
       { phase: 'Show', title: 'Share rules with a friend', body: 'Tell someone your stop-loss — accountability matters.' },
-      { phase: 'Reflect', title: 'Emotional check', body: 'Did you chase losses? Play too long? Write honestly.' },
-      { phase: 'Improve', title: 'One rule upgrade', body: 'Add a time limit, win cap, or mandatory break rule.' },
-      { phase: 'Mentor', title: 'Warn a beginner', body: 'Explain why bankroll management matters before stakes go up.' },
+      { phase: 'Debrief', title: 'Emotional check', body: 'Did you chase losses? Play too long? Write honestly.' },
+      { phase: 'Refine', title: 'One rule upgrade', body: 'Add a time limit, win cap, or mandatory break rule.' },
+      { phase: 'Teach', title: 'Warn a beginner', body: 'Explain why bankroll management matters before stakes go up.' },
     ],
   },
   {
@@ -60,9 +60,9 @@ export const POKER_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick your event', body: 'Home tourney, local card room, or online MTT — know structure and blind levels.' },
       { phase: 'Build', title: 'Play with a plan', body: 'Tight early · steal blinds in middle · survive bubble with math not hope.' },
       { phase: 'Show', title: 'Log key moments', body: 'Bubble spot · biggest pot · elimination hand (or win!).' },
-      { phase: 'Reflect', title: 'Decision quality', body: 'Ignore outcome — were your decisions +EV with info you had?' },
-      { phase: 'Improve', title: 'One leak to fix', body: 'Over-folding? Over-bluffing? Write the leak.' },
-      { phase: 'Mentor', title: 'Explain blinds to a newbie', body: 'Teach how blinds force action.' },
+      { phase: 'Debrief', title: 'Decision quality', body: 'Ignore outcome — were your decisions +EV with info you had?' },
+      { phase: 'Refine', title: 'One leak to fix', body: 'Over-folding? Over-bluffing? Write the leak.' },
+      { phase: 'Teach', title: 'Explain blinds to a newbie', body: 'Teach how blinds force action.' },
     ],
   },
   {
@@ -81,9 +81,9 @@ export const POKER_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Collect hands', body: 'Winners, losers, and weird spots — not just bad beats.' },
       { phase: 'Build', title: 'Review each street', body: 'Preflop · flop · turn · river — what did you know? What should you do differently?' },
       { phase: 'Show', title: 'Share one hand', body: 'Post or discuss one hand with a study partner.' },
-      { phase: 'Reflect', title: 'Pattern hunt', body: 'What mistake repeats across multiple hands?' },
-      { phase: 'Improve', title: 'One drill', body: 'Pick one spot type to study (3-bet pots, river bluffs, etc.).' },
-      { phase: 'Mentor', title: 'Review a beginner hand', body: 'Walk someone through one hand without jargon overload.' },
+      { phase: 'Debrief', title: 'Pattern hunt', body: 'What mistake repeats across multiple hands?' },
+      { phase: 'Refine', title: 'One drill', body: 'Pick one spot type to study (3-bet pots, river bluffs, etc.).' },
+      { phase: 'Teach', title: 'Review a beginner hand', body: 'Walk someone through one hand without jargon overload.' },
     ],
   },
   {
@@ -102,9 +102,9 @@ export const POKER_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Know the pay ladder', body: 'Write pay jumps before you sit. Know when survival beats accumulation.' },
       { phase: 'Build', title: 'Play ICM-aware', body: 'Short stacks push · big stacks apply pressure · medium stacks pick spots.' },
       { phase: 'Show', title: 'Log the table', body: 'Stack sizes · aggression levels · who is tilting.' },
-      { phase: 'Reflect', title: 'Best and worst decision', body: 'Ignore finish if needed — judge decisions.' },
-      { phase: 'Improve', title: 'Study one FT spot', body: 'Find a similar final table hand online and compare lines.' },
-      { phase: 'Mentor', title: 'Explain pay jumps', body: 'Teach someone why chip EV differs from money EV.' },
+      { phase: 'Debrief', title: 'Best and worst decision', body: 'Ignore finish if needed — judge decisions.' },
+      { phase: 'Refine', title: 'Study one FT spot', body: 'Find a similar final table hand online and compare lines.' },
+      { phase: 'Teach', title: 'Explain pay jumps', body: 'Teach someone why chip EV differs from money EV.' },
     ],
   },
   {
@@ -122,12 +122,16 @@ export const POKER_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Design lesson 1', body: 'Hand ranks · blinds · position · one starting hand chart — nothing more.' },
       { phase: 'Build', title: 'Run a home lesson', body: 'Play low-stakes or chips-only. Stop when they are overwhelmed.' },
       { phase: 'Show', title: 'Debrief together', body: 'Ask what confused them. Fix one misconception.' },
-      { phase: 'Reflect', title: 'Teaching log', body: 'What explanation landed? What did you rush?' },
-      { phase: 'Improve', title: 'Lesson 2 outline', body: 'Plan pot odds or continuation bets for next session.' },
-      { phase: 'Mentor', title: 'Invite to study circle', body: 'Connect them to the Poker Study Circle when ready.' },
+      { phase: 'Debrief', title: 'Teaching log', body: 'What explanation landed? What did you rush?' },
+      { phase: 'Refine', title: 'Lesson 2 outline', body: 'Plan pot odds or continuation bets for next session.' },
+      { phase: 'Teach', title: 'Invite to study circle', body: 'Connect them to the Poker Study Circle when ready.' },
     ],
   },
 ];
+
+import { expandPokerMissions } from './immersion/worlds/poker';
+
+export const POKER_MISSIONS = expandPokerMissions(POKER_FOUNDATION_MISSIONS);
 
 export const POKER_PORTFOLIO_KEY = 'foundry-poker-portfolio';
 export const POKER_PORTFOLIO_LABEL = 'My Poker Journey';

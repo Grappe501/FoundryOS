@@ -1,0 +1,20 @@
+{
+  "slug": "poker",
+  "display_name": "Poker",
+  "priority_tier": "retention",
+  "target_audiences": [
+    "hobbyists",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Reddit",
+    "YouTube"
+  ],
+  "tier_hooks": {
+    "build": "Poker journal sync",
+    "mastery": "Strategic Thinking Society"
+  },
+  "primary_cta": "/poker",
+  "effort_allocation_pct": 5
+}

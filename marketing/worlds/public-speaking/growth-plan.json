@@ -1,0 +1,24 @@
+{
+  "slug": "public-speaking",
+  "display_name": "Public Speaking",
+  "priority_tier": "primary",
+  "target_audiences": [
+    "students",
+    "parents",
+    "educators",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Parents",
+    "Educators",
+    "Career changers",
+    "Civic leaders"
+  ],
+  "tier_hooks": {
+    "build": "My Speaking Portfolio — talks, reflections, progress",
+    "mastery": "Speaker Circle — peer feedback and mentor pathways"
+  },
+  "primary_cta": "/public-speaking",
+  "effort_allocation_pct": 27
+}

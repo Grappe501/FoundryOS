@@ -75,6 +75,12 @@ if (process.env.TEMP && !path.resolve(process.env.TEMP).toUpperCase().startsWith
 if (process.env.npm_config_cache && !path.resolve(process.env.npm_config_cache).toUpperCase().startsWith('H:\\')) {
   badEnv.push(`npm_config_cache=${process.env.npm_config_cache}`);
 }
+if (process.env.TURBO_CACHE_DIR && !path.resolve(process.env.TURBO_CACHE_DIR).toUpperCase().startsWith('H:\\')) {
+  badEnv.push(`TURBO_CACHE_DIR=${process.env.TURBO_CACHE_DIR}`);
+}
+if (process.env.NEXT_CACHE_DIR && !path.resolve(process.env.NEXT_CACHE_DIR).toUpperCase().startsWith('H:\\')) {
+  badEnv.push(`NEXT_CACHE_DIR=${process.env.NEXT_CACHE_DIR}`);
+}
 
 if (badEnv.length > 0) {
   console.error('');

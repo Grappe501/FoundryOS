@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { BBQ_PORTFOLIO_SECTIONS } from '../../../lib/bbq-world-meta';
+import { getMissionCount } from '../../../lib/immersion/registry';
 
 export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('bbq');
@@ -11,7 +12,7 @@ export default function PortfolioPage() {
         bundle={bundle}
         basePath="/bbq"
         portfolioKey="foundry-bbq-portfolio"
-        missionCount={5}
+        missionCount={getMissionCount('bbq')}
         firstMissionSlug="first-pork-butt"
         sections={BBQ_PORTFOLIO_SECTIONS}
       />

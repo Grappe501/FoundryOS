@@ -1,0 +1,20 @@
+{
+  "slug": "bbq",
+  "display_name": "BBQ",
+  "priority_tier": "retention",
+  "target_audiences": [
+    "hobbyists",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "YouTube",
+    "Seasonal (summer)"
+  ],
+  "tier_hooks": {
+    "build": "Cook log portfolio",
+    "mastery": "Pitmaster Collective"
+  },
+  "primary_cta": "/bbq",
+  "effort_allocation_pct": 5
+}

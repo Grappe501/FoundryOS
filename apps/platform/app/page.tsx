@@ -4,9 +4,9 @@ import { TrinityHub } from '../components/trinity/TrinityHub';
 import { TrinityJourneyProgress } from '../components/trinity/TrinityJourneyProgress';
 
 export const metadata = {
-  title: 'Foundry — Become Future-Proof',
+  title: 'Foundry — Paths to Mastery',
   description:
-    'Create value · Keep value · Communicate value. Real missions, real portfolios — not courses.',
+    'Missions, builds, and portfolios — not courses. Build future-proof skills across every world.',
 };
 
 export default function ConsumerHomePage() {
@@ -28,11 +28,14 @@ export default function ConsumerHomePage() {
           Foundry
         </p>
         <h1 style={{ fontWeight: 300, fontSize: '2.75rem', marginTop: 12, lineHeight: 1.15 }}>
-          Help me become the person I want to be.
+          Master a craft. Log the evidence. Teach what you know.
         </h1>
         <p style={{ color: '#8A8A8E', fontSize: 17, marginTop: 16, lineHeight: 1.7, maxWidth: 560 }}>
           Not courses. Not worksheets. <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Missions, builds, and portfolios</strong>{' '}
-          across three worlds that make you future-proof.
+          across worlds that build future-proof skill.
+        </p>
+        <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 14, fontStyle: 'italic', maxWidth: 480 }}>
+          Help me become the person I want to be — that is the private intent behind every path.
         </p>
         <div style={{ marginTop: 28, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <Link
@@ -87,10 +90,10 @@ export default function ConsumerHomePage() {
       <section style={{ marginTop: 32, padding: 24, background: '#111114', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#6B6B70', margin: 0 }}>How it works</h2>
         <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.7 }}>
-          Mission → Build → Show → Reflect → Improve → Mentor. Every world follows the same loop. Your progress travels with you.
+          Mission → Build → Show → Debrief → Refine → Teach. Every world follows the same loop. Your evidence travels with you.
         </p>
         <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 14, textDecoration: 'none' }}>
-          View my journey →
+          Log your first evidence →
         </Link>
       </section>
 

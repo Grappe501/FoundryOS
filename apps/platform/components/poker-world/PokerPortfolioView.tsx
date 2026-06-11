@@ -15,7 +15,7 @@ export function PokerPortfolioView() {
   return (
     <div>
       <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7 }}>
-        Mission evidence and reflections — proof of your poker journey.
+        Mission evidence and debrief notes — hand histories and session logs from missions.
       </p>
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         {POKER_PORTFOLIO_SECTIONS.map((section) => (

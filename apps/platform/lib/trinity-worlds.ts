@@ -1,5 +1,7 @@
 /** Future-Proof Trinity — shared consumer config (PASS-021) */
 
+import { getMissionCount } from './immersion/registry';
+
 export type TrinityWorldSlug = 'ai-builder' | 'financial-independence' | 'public-speaking';
 
 export type TrinityWorld = {
@@ -25,7 +27,7 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     mission1Href: '/ai-builder/missions/homework-assistant',
     portfolioKey: 'foundry-ai-portfolio',
     portfolioLabel: 'My AI Portfolio',
-    missionCount: 5,
+    missionCount: getMissionCount('ai-builder'),
     accent: '#6B9B6B',
     border: '#2A4A2A',
     nextWorld: 'financial-independence',
@@ -38,7 +40,7 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     mission1Href: '/financial-independence/missions/first-budget',
     portfolioKey: 'foundry-fi-portfolio',
     portfolioLabel: 'My Wealth Portfolio',
-    missionCount: 5,
+    missionCount: getMissionCount('financial-independence'),
     accent: '#C8A96E',
     border: '#4A4020',
     nextWorld: 'public-speaking',
@@ -51,7 +53,7 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     mission1Href: '/public-speaking/missions/first-talk',
     portfolioKey: 'foundry-ps-portfolio',
     portfolioLabel: 'My Speaking Portfolio',
-    missionCount: 5,
+    missionCount: getMissionCount('public-speaking'),
     accent: '#6B8BB8',
     border: '#3A4A6A',
     nextWorld: 'ai-builder',

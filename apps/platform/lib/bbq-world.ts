@@ -6,9 +6,9 @@ export const BBQ_LOOP = [
   { step: 'Mission', description: 'Pick a cook, event, or skill worth mastering' },
   { step: 'Build', description: 'Prep, fire, smoke, and manage the cook' },
   { step: 'Show', description: 'Serve, share, or document the result' },
-  { step: 'Reflect', description: 'Write what worked, what failed, and why' },
-  { step: 'Improve', description: 'Adjust temps, timing, or technique next time' },
-  { step: 'Mentor', description: 'Teach someone their first fire or prep step' },
+  { step: 'Debrief', description: 'Write what worked, what failed, and why' },
+  { step: 'Refine', description: 'Adjust temps, timing, or technique next time' },
+  { step: 'Teach', description: 'Teach someone their first fire or prep step' },
 ] as const;
 
 export const BBQ_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const BBQ_ACADEMY_LEVELS = [
   { slug: 'mentor', level: 7, title: 'Pitmaster Mentor', tagline: 'Lead the Pitmasters Circle', unlocks: ['Circle mentorship'] },
 ];
 
-export const BBQ_MISSIONS: WorldMission[] = [
+const BBQ_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'first-pork-butt',
     number: 1,
@@ -39,9 +39,9 @@ export const BBQ_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Plan the cook', body: 'Pick a Saturday. Target 195–203°F internal. Write your timeline backward from serve time.' },
       { phase: 'Build', title: 'Run the smoke', body: 'Trim lightly, apply rub, maintain steady temp. Log temps every hour.' },
       { phase: 'Show', title: 'Pull and serve', body: 'Rest 30+ min. Pull. Feed at least two people.' },
-      { phase: 'Reflect', title: 'Cook log review', body: 'When did the stall hit? What would you change?' },
-      { phase: 'Improve', title: 'One variable', body: 'Next cook change ONE thing: wood, rub, wrap time, or temp target.' },
-      { phase: 'Mentor', title: 'Explain the stall', body: 'Tell someone why BBQ takes longer than they think.' },
+      { phase: 'Debrief', title: 'Cook log review', body: 'When did the stall hit? What would you change?' },
+      { phase: 'Refine', title: 'One variable', body: 'Next cook change ONE thing: wood, rub, wrap time, or temp target.' },
+      { phase: 'Teach', title: 'Explain the stall', body: 'Tell someone why BBQ takes longer than they think.' },
     ],
   },
   {
@@ -60,9 +60,9 @@ export const BBQ_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Select your cut', body: 'Start with a flat if nervous, packer if bold. Note weight.' },
       { phase: 'Build', title: 'Smoke to probe tender', body: 'Track bark development. Wrap when color looks right.' },
       { phase: 'Show', title: 'Slice and present', body: 'Slice against the grain. Note flat vs point differences.' },
-      { phase: 'Reflect', title: 'Honest score', body: 'Dry? Tough? Perfect? Write why.' },
-      { phase: 'Improve', title: 'Retry one half', body: 'If you have leftovers, plan what variable changes on brisket #2.' },
-      { phase: 'Mentor', title: 'Share a slice lesson', body: 'Show someone how grain direction affects bite.' },
+      { phase: 'Debrief', title: 'Honest score', body: 'Dry? Tough? Perfect? Write why.' },
+      { phase: 'Refine', title: 'Retry one half', body: 'If you have leftovers, plan what variable changes on brisket #2.' },
+      { phase: 'Teach', title: 'Share a slice lesson', body: 'Show someone how grain direction affects bite.' },
     ],
   },
   {
@@ -81,9 +81,9 @@ export const BBQ_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Design the menu', body: 'Protein + 2 sides + drink. Write who brings what.' },
       { phase: 'Build', title: 'Execute timeline', body: 'Work backward from guests arriving. Prep day-before checklist.' },
       { phase: 'Show', title: 'Host the table', body: 'Welcome, serve, tell one story about the cook.' },
-      { phase: 'Reflect', title: 'Host debrief', body: 'What ran late? What would guests remember?' },
-      { phase: 'Improve', title: 'One hosting upgrade', body: 'Better signage, playlist, or prep station next time.' },
-      { phase: 'Mentor', title: 'Invite a learner', body: 'Have someone shadow your fire setup.' },
+      { phase: 'Debrief', title: 'Host debrief', body: 'What ran late? What would guests remember?' },
+      { phase: 'Refine', title: 'One hosting upgrade', body: 'Better signage, playlist, or prep station next time.' },
+      { phase: 'Teach', title: 'Invite a learner', body: 'Have someone shadow your fire setup.' },
     ],
   },
   {
@@ -102,9 +102,9 @@ export const BBQ_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick your comp', body: 'Local KCBS, church cookoff, or formal backyard comp with rubric.' },
       { phase: 'Build', title: 'Practice turn-in', body: 'Build boxes at home — appearance, tenderness, taste.' },
       { phase: 'Show', title: 'Compete', body: 'Submit on time. Stay calm. Log results.' },
-      { phase: 'Reflect', title: 'Score analysis', body: 'Which category scored lowest? Why?' },
-      { phase: 'Improve', title: 'One category focus', body: 'Pick appearance, taste, or tenderness for next comp prep.' },
-      { phase: 'Mentor', title: 'Debrief with a rookie', body: 'Share one thing you wish you knew before your first turn-in.' },
+      { phase: 'Debrief', title: 'Score analysis', body: 'Which category scored lowest? Why?' },
+      { phase: 'Refine', title: 'One category focus', body: 'Pick appearance, taste, or tenderness for next comp prep.' },
+      { phase: 'Teach', title: 'Debrief with a rookie', body: 'Share one thing you wish you knew before your first turn-in.' },
     ],
   },
   {
@@ -122,12 +122,16 @@ export const BBQ_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Get certified or invited', body: 'KCBS judging class, local comp volunteer, or structured peer judging.' },
       { phase: 'Build', title: 'Score systematically', body: 'Appearance → tenderness → taste. No comparing entries to each other out loud.' },
       { phase: 'Show', title: 'Submit honest scores', body: 'Write constructive notes — what would make this box win?' },
-      { phase: 'Reflect', title: 'Palate calibration', body: 'What surprised you about what scored well?' },
-      { phase: 'Improve', title: 'Apply to your cook', body: 'Change one thing in your next backyard cook based on judging insight.' },
-      { phase: 'Mentor', title: 'Explain judging criteria', body: 'Teach a cook what judges actually look for.' },
+      { phase: 'Debrief', title: 'Palate calibration', body: 'What surprised you about what scored well?' },
+      { phase: 'Refine', title: 'Apply to your cook', body: 'Change one thing in your next backyard cook based on judging insight.' },
+      { phase: 'Teach', title: 'Explain judging criteria', body: 'Teach a cook what judges actually look for.' },
     ],
   },
 ];
+
+import { expandBbqMissions } from './immersion/worlds/bbq';
+
+export const BBQ_MISSIONS = expandBbqMissions(BBQ_FOUNDATION_MISSIONS);
 
 export const BBQ_PORTFOLIO_KEY = 'foundry-bbq-portfolio';
 export const BBQ_PORTFOLIO_LABEL = 'My BBQ Journal';

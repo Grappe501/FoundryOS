@@ -1,0 +1,24 @@
+{
+  "slug": "financial-independence",
+  "display_name": "Financial Independence",
+  "priority_tier": "primary",
+  "target_audiences": [
+    "students",
+    "parents",
+    "educators",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Parents",
+    "Homeschool",
+    "Adult learners",
+    "Educators"
+  ],
+  "tier_hooks": {
+    "build": "My Wealth Builder — budgets, reflections, progress synced",
+    "mastery": "Wealth Builders Circle — accountability and peer learning"
+  },
+  "primary_cta": "/financial-independence",
+  "effort_allocation_pct": 27
+}

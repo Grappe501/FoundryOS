@@ -237,7 +237,7 @@ export default async function MissionControlHome() {
           <Link href="/operator/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
           <Link href="/operator/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
           <Link href="/explore" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Explore Paths →</Link>
-          <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Become Future-Proof →</Link>
+          <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Build Future-Proof Skills →</Link>
           <Link href="/operator/validation" style={{ color: '#8B4545', fontSize: 14, fontWeight: 600 }}>Internal Funnel Dashboard →</Link>
           <Link href="/ai-builder" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>AI Builder →</Link>
           <Link href="/operator/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
@@ -246,6 +246,12 @@ export default async function MissionControlHome() {
           <Link href="/operator/growth/launch" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Launch Factory (PASS-015B) →</Link>
           <Link href="/operator/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
           <Link href="/operator/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
+          <Link href="/operator/revenue" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Revenue Validation (PASS-029) →</Link>
+          <Link href="/operator/business" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Founder Dashboard →</Link>
+          <Link href="/operator/learning" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Learning Lane (PASS-030) →</Link>
+          <Link href="/operator/marketing" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Marketing Factory (PASS-031) →</Link>
+          <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 14, fontWeight: 700 }}>Growth Flywheel (PASS-033) →</Link>
+          <Link href="/operator/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Domain Expansion Scoring →</Link>
         </nav>
 
         <div style={{ marginTop: 40 }}>

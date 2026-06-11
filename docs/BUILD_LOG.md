@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-028 ✅ |
-| **Next Pass** | PASS-029 Payment + Subscription |
-| **Focus** | Living communities — belonging before billing, no tester invites yet |
+| **Last Pass** | PASS-032 World Immersion 🔄 |
+| **Next Pass** | PASS-034 First 25 Testers (after immersion gate) |
+| **Focus** | Depth before testers — 25 AI Builder missions · experiences · 30+ day engagement |
 | **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -137,6 +137,108 @@ Migration: `20260628000000_pass027_transformation_analytics.sql`
 | Community analytics | `/operator/analytics` |
 
 Migration: `20260629000000_pass028_community_activation.sql`
+
+---
+
+## PASS-028A — Community Seeding ✅
+
+| Deliverable | Detail |
+|-------------|--------|
+| Seeded discussions | 25 per world (7 worlds) |
+| Seeded showcases | 10 per world — real project examples |
+| Weekly challenges | 12 weeks preloaded per world |
+| Mentor profiles | AI Guide, Financial Coach, Speaking Coach, Bourbon Steward, Pitmaster Mentor, Poker Mentor, Civic Mentor |
+| Seed runner | `npm run seed:community` · auto-seed on `/community/[world]` if empty |
+| UI | Discussions tab · mentor card · 12-week challenge archive |
+
+Migration: `20260629100000_pass028a_community_seeding.sql`
+
+See `docs/PASS_028A_EXECUTION.md`.
+
+---
+
+## PASS-029 — Revenue Validation Infrastructure ✅
+
+| Layer | Deliverable |
+|-------|-------------|
+| Pricing experiment | `pricing_viewed`, `pricing_clicked`, `upgrade_initiated`, `upgrade_completed` events |
+| Upgrade moments | After Mission 1 / portfolio entry — contextual CTAs per world |
+| Value visibility | `ValueProgress` + What comes next (premium steps visible) |
+| Founder dashboard | `/operator/business` — waitlist, funnel, MRR, MAT |
+| Revenue dashboard | `/operator/revenue` — world + mission conversion |
+| Stripe | `POST /api/billing/checkout` · webhook · Build $4 / Mastery $18 |
+
+Migration: `20260701000000_pass029_revenue_validation.sql`
+
+See `docs/PASS_029_EXECUTION.md`.
+
+---
+
+## PASS-029A — Revenue & Analytics Verification ✅
+
+| Deliverable | Detail |
+|-------------|--------|
+| Test personas | Sam, Paula, Alex, Emma, Hank (5 segments) |
+| Verification | `npm run verify:revenue` · `/operator/revenue/verify` |
+| Attribution fixes | World, mission, community, persona metadata |
+| Dashboard consistency | Single funnel source across revenue/business/analytics |
+| Stripe paths | checkout_cancelled, checkout_blocked_signin, subscription_cancelled |
+
+Migration: `20260701100000_pass029a_revenue_verification.sql`
+
+See `docs/PASS_029A_EXECUTION.md`.
+
+---
+
+## PASS-030 + PASS-031 — Parallel Lanes 🔄
+
+### PASS-030 — Learning Lane
+
+| Deliverable | Route / command |
+|-------------|-----------------|
+| Learning lane dashboard | `/operator/learning` |
+| Cohort tracker (5×5) | `/operator/business` |
+| Invite ops | `/operator/invites` |
+| Gate | PASS-029A verified before first invite |
+
+See `docs/PASS_030_EXECUTION.md`.
+
+### PASS-031 — Marketing Factory
+
+| Deliverable | Detail |
+|-------------|--------|
+| Package | `@foundry/marketing-factory` |
+| CLI | `npm run build:marketing -- ai-builder` · `--primary` · `--all` |
+| Audit | `npm run audit:marketing` |
+| Output | `marketing/worlds/{slug}/` — 16 artifacts per world |
+| Operator | `/operator/marketing` |
+| MRR ladder | Jul 2026 $100 → Jan 2027 $10k+ |
+
+7 worlds generated · 80% effort on ai-builder, financial-independence, public-speaking.
+
+See `docs/PASS_031_EXECUTION.md`.
+
+---
+
+## PASS-032 — World Immersion Expansion 🔄
+
+| World | Missions | Tracks |
+|-------|----------|--------|
+| AI Builder | 25 | 5 Life Leverage tracks |
+| Financial Independence | 15 | Money · Banking · Investing · Business · Retirement |
+| Public Speaking | 15 | Conversation · Storytelling · Presentations · Leadership · Performance |
+| Civic Engagement | 15 | Voting · Local Gov · Advocacy · Organizing · Leadership |
+| Bourbon / BBQ / Poker | 10 each | Experience-focused |
+
+Package: `apps/platform/lib/immersion/` · `WorldMissionTracks` · `WorldExperiencesHub`
+
+See `docs/PASS_032_EXECUTION.md`.
+
+---
+
+## PASS-033 — Growth Flywheel Engine ✅
+
+See `docs/PASS_033_EXECUTION.md` — `/operator/flywheel`, `/operator/opportunities`
 
 ---
 

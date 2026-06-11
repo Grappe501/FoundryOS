@@ -61,21 +61,24 @@ export type GrowthTarget = {
 };
 
 export const JANUARY_2027_TARGETS: GrowthTarget[] = [
-  { label: 'Exceptional Domains', target: '5', deadline: 'Jan 2027' },
+  { label: 'Active testers', target: '100', deadline: 'Jan 2027' },
+  { label: 'Paying users', target: '25', deadline: 'Jan 2027' },
+  { label: 'MRR', target: '$250', deadline: 'Jan 2027' },
+  { label: 'Domains with proven retention', target: '3', deadline: 'Jan 2027' },
+  { label: 'Domain with proven conversion', target: '1', deadline: 'Jan 2027' },
   { label: 'Factory capacity', target: '100+ domains launchable', deadline: 'Jan 2027' },
-  { label: 'Cost to launch (factory)', target: '< 1 hour', deadline: 'Post PASS-024' },
-  { label: 'Registered users', target: '25,000', deadline: 'Jan 2027' },
-  { label: 'Paid users', target: '2,500', deadline: 'Jan 2027' },
-  { label: 'MRR', target: '$10,000–25,000', deadline: 'Jan 2027' },
-  { label: 'Factory automation', target: '80%+', deadline: 'PASS-024' },
+  { label: 'Flywheel connected', target: '4 factories compounding', deadline: 'PASS-032' },
 ];
 
 export const REVENUE_MILESTONES = [
-  { period: 'Sep 2026', paid_users: 10, mrr: '$40', note: '1 active domain · 100 users · validation' },
-  { period: 'Oct 2026', paid_users: 50, mrr: '$200', note: '3 active domains · 500 users' },
-  { period: 'Nov 2026', paid_users: 200, mrr: '$800', note: '5 active domains · 2,000 users' },
-  { period: 'Jan 2027', paid_users: 2500, mrr: '$10k–25k', note: '5 exceptional domains + factory for 100 · Future-Proof Academy funnel' },
-  { period: 'End 2027', paid_users: 50000, mrr: '$250k–500k', note: 'If factory works' },
+  { period: 'Jul 2026', paid_users: 25, mrr: '$0→$100', note: 'First 25 learning lane — prove conversion' },
+  { period: 'Aug 2026', paid_users: 125, mrr: '$100→$500', note: 'SEO + lead magnets — AI Builder + FI' },
+  { period: 'Sep 2026', paid_users: 375, mrr: '$500→$1,500', note: 'Public Speaking launch + parent/educator channels' },
+  { period: 'Oct 2026', paid_users: 1250, mrr: '$1,500→$5,000', note: 'Email nurture + partnerships' },
+  { period: 'Nov 2026', paid_users: 1875, mrr: '$5,000→$7,500', note: 'Affiliate + influencer pilots' },
+  { period: 'Dec 2026', paid_users: 2250, mrr: '$7,500→$9,000', note: 'Holiday parent campaigns' },
+  { period: 'Jan 2027', paid_users: 2500, mrr: '$10,000+', note: 'Production readiness — January 2027 target' },
+  { period: 'End 2027', paid_users: 50000, mrr: '$250k–500k', note: 'If factory + marketing factory work' },
 ];
 
 /**
@@ -138,6 +141,7 @@ export function getLaunchCostKpiSnapshot(): LaunchCostKpiSnapshot {
 
 export { getLaunchCostSnapshot, DOMAIN_LAUNCH_COST_REGISTRY } from './domain-launch-cost';
 export { getWorldDepthSnapshot, auditAllWorldDepth } from './world-depth/audit';
+export { getWorldExperienceKpiSnapshot, getWorldExperienceSnapshot } from './world-experience/audit';
 
 export type WorldDepthKpiSnapshot = {
   avg_depth_score: number;

@@ -1,0 +1,52 @@
+# Bourbon — Top 50 YouTube Topics
+
+- Mission First Tasting: full walkthrough
+- Mission First Shelf: full walkthrough
+- Build: Blind Tasting (screen + voiceover)
+- Build: Bourbon Shelf (screen + voiceover)
+- Build: Distillery Visit (screen + voiceover)
+- Become a Bourbon Steward — 12-week journey overview
+- Parent guide: N/A — adult hobby vertical
+- Why Passion Trinity matters in 2026
+- Central Arkansas Bourbon Society tour
+- Portfolio review: what good looks like
+- Day in the life of a Bourbon learner
+- Common mistakes (and how Foundry fixes them)
+- Free vs Build vs Mastery — honest comparison
+- Educator classroom setup for Bourbon
+- Student showcase reaction
+- FAQ: Bourbon question 16
+- FAQ: Bourbon question 17
+- FAQ: Bourbon question 18
+- FAQ: Bourbon question 19
+- FAQ: Bourbon question 20
+- FAQ: Bourbon question 21
+- FAQ: Bourbon question 22
+- FAQ: Bourbon question 23
+- FAQ: Bourbon question 24
+- FAQ: Bourbon question 25
+- FAQ: Bourbon question 26
+- FAQ: Bourbon question 27
+- FAQ: Bourbon question 28
+- FAQ: Bourbon question 29
+- FAQ: Bourbon question 30
+- FAQ: Bourbon question 31
+- FAQ: Bourbon question 32
+- FAQ: Bourbon question 33
+- FAQ: Bourbon question 34
+- FAQ: Bourbon question 35
+- FAQ: Bourbon question 36
+- FAQ: Bourbon question 37
+- FAQ: Bourbon question 38
+- FAQ: Bourbon question 39
+- FAQ: Bourbon question 40
+- FAQ: Bourbon question 41
+- FAQ: Bourbon question 42
+- FAQ: Bourbon question 43
+- FAQ: Bourbon question 44
+- FAQ: Bourbon question 45
+- FAQ: Bourbon question 46
+- FAQ: Bourbon question 47
+- FAQ: Bourbon question 48
+- FAQ: Bourbon question 49
+- FAQ: Bourbon question 50

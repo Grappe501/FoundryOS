@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getDomainProofKpiCounts, getTransformationAnalyticsSnapshot, isSupabaseConfigured } from '@foundry/db';
+import { getDomainProofKpiCounts, getTransformationAnalyticsSnapshot, getBusinessDashboardSnapshot, isSupabaseConfigured } from '@foundry/db';
 import {
   FIRST_TEN_DOMAINS,
   GROWTH_NORTH_STAR,
@@ -8,6 +8,8 @@ import {
   getLaunchCostSnapshot,
   getWorldDepthKpiSnapshot,
   getWorldDepthSnapshot,
+  getWorldExperienceKpiSnapshot,
+  getWorldExperienceSnapshot,
   GROWTH_STAT_LABELS,
   DOMAIN_READINESS_LABELS,
   JANUARY_2027_TARGETS,
@@ -39,6 +41,7 @@ export default async function GrowthOsPage() {
   const transformationAnalytics = isSupabaseConfigured()
     ? await getTransformationAnalyticsSnapshot(depthScores)
     : null;
+  const business = isSupabaseConfigured() ? await getBusinessDashboardSnapshot() : null;
   const topOpportunities = listTrafficOpportunities().slice(0, 5);
   const activeDomains = Math.max(domainProof?.domain_proofs_complete ?? 0, 1);
   const domainsBuilt = Math.max(domainProof?.domain_blueprints_active ?? 0, activeDomains, 1);
@@ -46,10 +49,16 @@ export default async function GrowthOsPage() {
     active_domains: activeDomains,
     domains_built: domainsBuilt,
     domain_activation_rate: activeDomains / domainsBuilt,
+    paid_users: business?.paid_users,
+    mrr_usd: business?.mrr_usd,
+    monthly_active_transformations: business?.monthly_active_transformations,
+    active_users: business?.transformations_in_progress,
   });
   const launchCost = getLaunchCostKpiSnapshot();
   const launchCostDetail = getLaunchCostSnapshot();
   const worldDepth = getWorldDepthKpiSnapshot();
+  const worldExperience = getWorldExperienceKpiSnapshot();
+  const worldExperienceDetail = getWorldExperienceSnapshot();
 
   const stats = Object.entries(GROWTH_STAT_LABELS).map(([key, label]) => ({
     key: key as keyof GrowthKpiSnapshot,
@@ -95,6 +104,25 @@ export default async function GrowthOsPage() {
       <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>
         Growth Factory: {GROWTH_FACTORY_FUNNEL.join(' → ')}
       </p>
+
+      {business && (
+        <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
+          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Business metrics — PASS-029</h2>
+          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Build metrics below · business metrics first.</p>
+          <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 12 }}>
+            <BusinessStat label="Transformations in progress" value={business.transformations_in_progress} />
+            <BusinessStat label="Monthly active transformations" value={business.monthly_active_transformations} />
+            <BusinessStat label="Upgrade intent" value={business.upgrade_intent} />
+            <BusinessStat label="Paid users" value={business.paid_users} />
+            <BusinessStat label="MRR" value={`$${business.mrr_usd}`} />
+          </div>
+          <p style={{ marginTop: 16, fontSize: 12 }}>
+            <Link href="/operator/business" style={{ color: '#6B9B6B' }}>Founder dashboard →</Link>
+            {' · '}
+            <Link href="/operator/revenue" style={{ color: '#6B6B6B' }}>Revenue funnel →</Link>
+          </p>
+        </section>
+      )}
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cost To Launch A Domain — primary operational KPI</h2>
@@ -182,6 +210,36 @@ export default async function GrowthOsPage() {
         </div>
         <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
           <code style={{ color: '#6B6B70' }}>npm run audit:depth</code>
+        </p>
+      </section>
+
+      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A3A', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>World Experience Score — PASS-032B</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Hero · Mission 1 · tools · visual · community · copy · return hook. Target ≥ {worldExperience.target_score}% before beta.
+        </p>
+        <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12 }}>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{worldExperience.avg_experience_score}%</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg experience score</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#E8E8EC' }}>{worldExperience.worlds_ready}/{worldExperience.worlds}</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Worlds beta-ready</div>
+          </div>
+        </div>
+        <div style={{ marginTop: 20 }}>
+          {worldExperienceDetail.rows.map((r) => (
+            <div key={r.slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+              <span style={{ color: '#E8E8EC' }}>{r.displayName}</span>
+              <span style={{ color: r.status === 'READY' ? '#6B9B6B' : '#C8A96E' }}>
+                {r.totalScore}% · {r.status}
+              </span>
+            </div>
+          ))}
+        </div>
+        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
+          <code style={{ color: '#6B6B70' }}>npm run audit:experience</code> · see docs/WORLD_UX_EMOTIONAL_AUDIT.md
         </p>
       </section>
 
@@ -372,5 +430,14 @@ export default async function GrowthOsPage() {
         </p>
       </section>
     </main>
+  );
+}
+
+function BusinessStat({ label, value }: { label: string; value: string | number }) {
+  return (
+    <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+      <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
+    </div>
   );
 }

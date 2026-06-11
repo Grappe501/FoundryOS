@@ -1,0 +1,52 @@
+# BBQ — Top 50 YouTube Topics
+
+- Mission First Pork Butt: full walkthrough
+- Mission First Brisket: full walkthrough
+- Build: Brisket Cook Log (screen + voiceover)
+- Build: Backyard BBQ (screen + voiceover)
+- Build: Competition Timeline (screen + voiceover)
+- Become a Pitmaster — 12-week journey overview
+- Parent guide: N/A — adult hobby vertical
+- Why Passion Trinity matters in 2026
+- Pitmaster Collective tour
+- Portfolio review: what good looks like
+- Day in the life of a BBQ learner
+- Common mistakes (and how Foundry fixes them)
+- Free vs Build vs Mastery — honest comparison
+- Educator classroom setup for BBQ
+- Student showcase reaction
+- FAQ: BBQ question 16
+- FAQ: BBQ question 17
+- FAQ: BBQ question 18
+- FAQ: BBQ question 19
+- FAQ: BBQ question 20
+- FAQ: BBQ question 21
+- FAQ: BBQ question 22
+- FAQ: BBQ question 23
+- FAQ: BBQ question 24
+- FAQ: BBQ question 25
+- FAQ: BBQ question 26
+- FAQ: BBQ question 27
+- FAQ: BBQ question 28
+- FAQ: BBQ question 29
+- FAQ: BBQ question 30
+- FAQ: BBQ question 31
+- FAQ: BBQ question 32
+- FAQ: BBQ question 33
+- FAQ: BBQ question 34
+- FAQ: BBQ question 35
+- FAQ: BBQ question 36
+- FAQ: BBQ question 37
+- FAQ: BBQ question 38
+- FAQ: BBQ question 39
+- FAQ: BBQ question 40
+- FAQ: BBQ question 41
+- FAQ: BBQ question 42
+- FAQ: BBQ question 43
+- FAQ: BBQ question 44
+- FAQ: BBQ question 45
+- FAQ: BBQ question 46
+- FAQ: BBQ question 47
+- FAQ: BBQ question 48
+- FAQ: BBQ question 49
+- FAQ: BBQ question 50

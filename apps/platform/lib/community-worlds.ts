@@ -1,6 +1,7 @@
 /** PASS-028 — Living community config per world */
 
 import { getWorldDepth } from './world-depth/registry';
+import { getWorldExperienceConfig } from './world-experience/registry';
 
 export type CommunityWorldConfig = {
   slug: string;
@@ -90,9 +91,11 @@ export function getCommunityWorldConfig(slug: string): CommunityWorldConfig | un
   const base = COMMUNITY_WORLDS.find((w) => w.slug === slug);
   if (!base) return undefined;
   const bundle = getWorldDepth(slug);
+  const exp = getWorldExperienceConfig(slug);
   return {
     ...base,
-    weeklyChallengePrompt: bundle?.community.weeklyChallenge ?? base.weeklyChallengePrompt,
+    weeklyChallengeTheme: exp?.community.weeklyChallenge ?? base.weeklyChallengeTheme,
+    weeklyChallengePrompt: exp?.community.weeklyChallenge ?? bundle?.community.weeklyChallenge ?? base.weeklyChallengePrompt,
   };
 }
 

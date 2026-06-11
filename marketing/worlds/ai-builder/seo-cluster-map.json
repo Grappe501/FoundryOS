@@ -1,0 +1,45 @@
+{
+  "domain": "ai-builder",
+  "display_name": "AI Builder",
+  "cluster_size": 5,
+  "pages": [
+    {
+      "slug": "how-to-learn-ai",
+      "title": "How Do I Learn AI?",
+      "intent": "traffic",
+      "priority": 1,
+      "status": "draft"
+    },
+    {
+      "slug": "what-is-ai-builder",
+      "title": "What Is an AI Builder?",
+      "intent": "definition",
+      "priority": 2,
+      "status": "draft"
+    },
+    {
+      "slug": "beginner-guide",
+      "title": "Beginner Guide to Building with AI",
+      "intent": "beginner",
+      "priority": 3,
+      "status": "draft"
+    },
+    {
+      "slug": "road-to-expert",
+      "title": "Road to AI Builder",
+      "intent": "path",
+      "priority": 4,
+      "status": "draft"
+    },
+    {
+      "slug": "projects",
+      "title": "AI Builder Projects",
+      "intent": "projects",
+      "priority": 5,
+      "status": "draft"
+    }
+  ],
+  "publish_gate": {
+    "min_content_score": 70
+  }
+}

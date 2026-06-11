@@ -18,7 +18,7 @@ export function NextRecommendedWorld({ currentSlug }: { currentSlug: TrinityWorl
         Next recommended world
       </p>
       <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 12 }}>
-        Continue your Future-Proof journey with{' '}
+        Continue with{' '}
         <strong style={{ fontWeight: 400, color: next.accent }}>{next.name}</strong> — {next.frame.toLowerCase()}.
       </p>
       <Link

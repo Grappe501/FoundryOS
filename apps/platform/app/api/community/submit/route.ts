@@ -14,11 +14,18 @@ export async function POST(request: Request) {
   }
 
   const world_slug = typeof body.world_slug === 'string' ? body.world_slug : '';
-  const post_type = body.post_type as 'challenge' | 'showcase' | 'reflection';
+  const post_type = body.post_type as 'challenge' | 'showcase' | 'reflection' | 'discussion';
   const text = typeof body.body === 'string' ? body.body.trim() : '';
 
-  if (!world_slug || !['challenge', 'showcase', 'reflection'].includes(post_type) || !text) {
+  if (!world_slug || !['challenge', 'showcase', 'reflection', 'discussion'].includes(post_type) || !text) {
     return NextResponse.json({ ok: false, error: 'world_slug, post_type, and body required' }, { status: 400 });
+  }
+
+  if (post_type === 'discussion') {
+    const discussionTitle = typeof body.title === 'string' ? body.title.trim() : '';
+    if (!discussionTitle) {
+      return NextResponse.json({ ok: false, error: 'title required for discussions' }, { status: 400 });
+    }
   }
 
   if (!getCommunityWorldConfig(world_slug)) {

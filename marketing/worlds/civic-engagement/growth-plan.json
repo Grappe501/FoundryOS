@@ -1,0 +1,21 @@
+{
+  "slug": "civic-engagement",
+  "display_name": "Civic Engagement",
+  "priority_tier": "expansion",
+  "target_audiences": [
+    "students",
+    "educators",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Educators",
+    "Election cycles"
+  ],
+  "tier_hooks": {
+    "build": "Civic portfolio sync",
+    "mastery": "Civic Action Circle"
+  },
+  "primary_cta": "/civic-engagement",
+  "effort_allocation_pct": 10
+}

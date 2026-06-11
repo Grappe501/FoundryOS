@@ -1,0 +1,52 @@
+# Bourbon — Top 50 TikTok Ideas
+
+- POV: you just finished "First Tasting" — here's what changed
+- POV: you just finished "First Shelf" — here's what changed
+- Become a Bourbon Steward in 60 seconds
+- Parent tip: N/A — adult hobby vertical…
+- Before/after portfolio artifact
+- "What I wish I knew" — Bourbon
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 13: Bourbon transformation clip
+- Hook 14: Bourbon transformation clip
+- Hook 15: Bourbon transformation clip
+- Hook 16: Bourbon transformation clip
+- Hook 17: Bourbon transformation clip
+- Hook 18: Bourbon transformation clip
+- Hook 19: Bourbon transformation clip
+- Hook 20: Bourbon transformation clip
+- Hook 21: Bourbon transformation clip
+- Hook 22: Bourbon transformation clip
+- Hook 23: Bourbon transformation clip
+- Hook 24: Bourbon transformation clip
+- Hook 25: Bourbon transformation clip
+- Hook 26: Bourbon transformation clip
+- Hook 27: Bourbon transformation clip
+- Hook 28: Bourbon transformation clip
+- Hook 29: Bourbon transformation clip
+- Hook 30: Bourbon transformation clip
+- Hook 31: Bourbon transformation clip
+- Hook 32: Bourbon transformation clip
+- Hook 33: Bourbon transformation clip
+- Hook 34: Bourbon transformation clip
+- Hook 35: Bourbon transformation clip
+- Hook 36: Bourbon transformation clip
+- Hook 37: Bourbon transformation clip
+- Hook 38: Bourbon transformation clip
+- Hook 39: Bourbon transformation clip
+- Hook 40: Bourbon transformation clip
+- Hook 41: Bourbon transformation clip
+- Hook 42: Bourbon transformation clip
+- Hook 43: Bourbon transformation clip
+- Hook 44: Bourbon transformation clip
+- Hook 45: Bourbon transformation clip
+- Hook 46: Bourbon transformation clip
+- Hook 47: Bourbon transformation clip
+- Hook 48: Bourbon transformation clip
+- Hook 49: Bourbon transformation clip
+- Hook 50: Bourbon transformation clip

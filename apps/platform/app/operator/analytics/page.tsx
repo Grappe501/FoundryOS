@@ -19,6 +19,7 @@ export default async function OperatorAnalyticsPage() {
       <Link href="/operator" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
       <Link href="/operator/beta" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Beta dashboard</Link>
       <Link href="/operator/feedback" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Feedback</Link>
+      <Link href="/operator/revenue" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Revenue</Link>
 
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Transformation Analytics</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
@@ -48,6 +49,17 @@ export default async function OperatorAnalyticsPage() {
             <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 10 }}>
               {analytics.event_count.toLocaleString()} events · {analytics.mission_sync_count} synced completions · {analytics.beta_active} active testers
             </p>
+          </section>
+
+          <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
+            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Revenue funnel — PASS-029 (same counts as /operator/revenue)</h2>
+            <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
+              <Stat label="Pricing viewed" value={analytics.funnel.pricing_viewed} />
+              <Stat label="Pricing clicked" value={analytics.funnel.pricing_clicked} />
+              <Stat label="Upgrade initiated" value={analytics.funnel.upgrade_initiated} />
+              <Stat label="Upgrade completed" value={analytics.funnel.upgrade_completed} />
+              <Stat label="Checkout cancelled" value={analytics.funnel.checkout_cancelled} />
+            </div>
           </section>
 
           {analytics.community_activation && (

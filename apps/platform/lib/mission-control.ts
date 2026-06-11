@@ -267,6 +267,54 @@ export const PASSES: PassEntry[] = [
     status: 'completed' as const,
     summary: '/community/[world] feed, weekly challenges, showcase, mentor recognition — 7 living communities.',
   },
+  {
+    code: 'PASS-028A',
+    title: 'Community Seeding',
+    status: 'completed' as const,
+    summary: '25 discussions + 10 showcases + 12-week challenges + mentor profiles per world — atmosphere before billing.',
+  },
+  {
+    code: 'PASS-029',
+    title: 'Revenue Validation Infrastructure',
+    status: 'completed' as const,
+    summary: 'Pricing funnel instrumentation, upgrade moments, /operator/revenue + /operator/business, Stripe checkout Build $4 / Mastery $18.',
+  },
+  {
+    code: 'PASS-029A',
+    title: 'Revenue & Analytics Verification',
+    status: 'completed' as const,
+    summary: '5 test personas, attribution fixes, dashboard consistency, /operator/revenue/verify, npm run verify:revenue.',
+  },
+  {
+    code: 'PASS-030',
+    title: 'Learning Lane — First 25 Testers',
+    status: 'planned' as const,
+    summary: 'Deferred to PASS-034 — invite after World Immersion proves 30+ day depth.',
+  },
+  {
+    code: 'PASS-031',
+    title: 'Marketing Factory',
+    status: 'completed' as const,
+    summary: 'npm run build:marketing — SEO, YouTube, TikTok, lead magnets, email, social calendar per world — /operator/marketing.',
+  },
+  {
+    code: 'PASS-032',
+    title: 'World Immersion Expansion',
+    status: 'in_progress' as const,
+    summary: '25 AI Builder missions · 15 FI/PS/Civic · 10 Passion · tracks + experiences — 30+ days engagement before testers.',
+  },
+  {
+    code: 'PASS-033',
+    title: 'Growth Flywheel Engine',
+    status: 'completed' as const,
+    summary: 'Connect 4 factories — insight→marketing, marketing→world, revenue→product — /operator/flywheel.',
+  },
+  {
+    code: 'PASS-034',
+    title: 'First 25 Testers',
+    status: 'planned' as const,
+    summary: 'After immersion — 5×5 segments, no ads. Goal: "Wow, there is way more here than I expected."',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;

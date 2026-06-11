@@ -16,6 +16,11 @@ export type TransformationFunnel = {
   challenge_submitted: number;
   showcase_posted: number;
   peer_feedback_given: number;
+  pricing_viewed: number;
+  pricing_clicked: number;
+  upgrade_initiated: number;
+  upgrade_completed: number;
+  checkout_cancelled: number;
 };
 
 export type WorldAnalytics = {
@@ -172,6 +177,11 @@ function buildFunnel(rows: ValidationEventRow[]): TransformationFunnel {
     challenge_submitted: rows.filter((e) => e.event_type === 'challenge_submitted').length,
     showcase_posted: rows.filter((e) => e.event_type === 'showcase_posted').length,
     peer_feedback_given: rows.filter((e) => e.event_type === 'peer_feedback_given').length,
+    pricing_viewed: rows.filter((e) => e.event_type === 'pricing_viewed').length,
+    pricing_clicked: rows.filter((e) => e.event_type === 'pricing_clicked').length,
+    upgrade_initiated: rows.filter((e) => e.event_type === 'upgrade_initiated').length,
+    upgrade_completed: rows.filter((e) => e.event_type === 'upgrade_completed').length,
+    checkout_cancelled: rows.filter((e) => e.event_type === 'checkout_cancelled').length,
   };
 }
 

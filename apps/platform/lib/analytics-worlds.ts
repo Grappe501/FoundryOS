@@ -1,5 +1,7 @@
 /** PASS-027 — Analytics world registry */
 
+import { IMMERSION_MISSION_COUNTS } from './immersion/registry';
+
 export const ANALYTICS_WORLDS = [
   { slug: 'ai-builder', label: 'AI Builder' },
   { slug: 'financial-independence', label: 'Financial Independence' },
@@ -12,12 +14,4 @@ export const ANALYTICS_WORLDS = [
 
 export type AnalyticsWorldSlug = (typeof ANALYTICS_WORLDS)[number]['slug'];
 
-export const WORLD_MISSION_COUNTS: Record<string, number> = {
-  'ai-builder': 5,
-  'financial-independence': 5,
-  'public-speaking': 5,
-  bourbon: 5,
-  bbq: 5,
-  poker: 5,
-  'civic-engagement': 5,
-};
+export const WORLD_MISSION_COUNTS: Record<string, number> = IMMERSION_MISSION_COUNTS;

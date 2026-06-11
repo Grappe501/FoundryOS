@@ -134,7 +134,7 @@ export const AI_BUILDER_DEPTH: WorldDepthBundle = {
       title: 'What Is AI Builder?',
       summary: 'AI Builder is a mission-based world where students ship real projects with AI — homework assistants, research agents, automations, websites, and agent teams — not passive courses.',
       sections: [
-        { heading: 'Not a course — a build loop', body: 'Every mission follows Mission → Build → Show → Reflect → Improve → Mentor. Students produce evidence: screenshots, links, briefs, and reflections stored in My AI Projects.' },
+        { heading: 'Not a course — a build loop', body: 'Every mission follows Mission → Build → Show → Debrief → Refine → Teach. Students produce evidence: screenshots, links, briefs, and debrief notes stored in My AI Projects.' },
         { heading: 'Who it is for', body: 'Teens, young adults, and career changers who want employable AI skills through doing. Parents see progress through artifacts, not grades.' },
         { heading: 'How it fits Future-Proof', body: 'AI Builder is the create-value leg of the Trinity: build skills that earn and automate work, paired with Financial Independence (keep value) and Public Speaking (communicate value).' },
       ],
@@ -170,7 +170,7 @@ export const AI_BUILDER_DEPTH: WorldDepthBundle = {
         { heading: 'Vague prompts', body: 'One-line prompts produce one-line garbage. Add role, task, format, and constraints. Iterate and save winners.' },
         { heading: 'Trusting facts blindly', body: 'Hallucinations happen. Research missions require source lists and manual verification of key claims.' },
         { heading: 'No portfolio habit', body: 'If it is not in My AI Projects with a screenshot or link, it did not happen for your mastery record.' },
-        { heading: 'Building alone forever', body: 'Improve and Mentor phases exist for a reason — feedback from AI Builders Circle accelerates growth.' },
+        { heading: 'Building alone forever', body: 'Refine and Teach phases exist for a reason — feedback from AI Builders Circle accelerates growth.' },
       ],
     },
     {

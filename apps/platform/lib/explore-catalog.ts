@@ -144,7 +144,7 @@ const FACTORY_SLUGS = new Set(FACTORY_EXPLORE_PATHS.map((p) => p.slug));
 const STATIC_EXPLORE_PATHS: ExplorePath[] = [
   {
     slug: 'future-proof',
-    name: 'Become Future-Proof',
+    name: 'Build Future-Proof Skills',
     outcome: 'Create, communicate, and keep value in an uncertain world',
     status: 'live',
     tier: 'Life Leverage',
@@ -316,6 +316,19 @@ const STATIC_EXPLORE_PATHS: ExplorePath[] = [
     live_href: null,
     planned_projects: ['Learn home game rules', 'Host first game', 'Study bankroll basics', 'Run a tournament'],
     become: 'A host who creates memorable nights and understands the game deeply.',
+  },
+  {
+    slug: 'chess',
+    name: 'Chess',
+    outcome: 'Beginner → Master',
+    status: 'in_build',
+    tier: 'Hobby',
+    launch_rank: 7,
+    section_id: 'sports-games',
+    categories: ['all', 'hobbies', 'sports'],
+    live_href: '/chess',
+    planned_projects: ['First complete game', '50 tactics puzzles', 'Mini repertoire', 'First rated game', 'Lead study session'],
+    become: 'A club player who studies seriously — post-mortems, rating, and the master track.',
   },
   {
     slug: 'soccer',

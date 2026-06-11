@@ -1,0 +1,45 @@
+{
+  "domain": "public-speaking",
+  "display_name": "Public Speaking",
+  "cluster_size": 5,
+  "pages": [
+    {
+      "slug": "what-is-public-speaking",
+      "title": "What Is Public Speaking Mastery?",
+      "intent": "definition",
+      "priority": 1,
+      "status": "draft"
+    },
+    {
+      "slug": "beginner-guide",
+      "title": "Beginner Guide to Public Speaking",
+      "intent": "beginner",
+      "priority": 2,
+      "status": "draft"
+    },
+    {
+      "slug": "first-speech",
+      "title": "How to Give Your First Speech",
+      "intent": "projects",
+      "priority": 3,
+      "status": "draft"
+    },
+    {
+      "slug": "overcome-fear",
+      "title": "Overcome Speaking Fear",
+      "intent": "traffic",
+      "priority": 4,
+      "status": "draft"
+    },
+    {
+      "slug": "common-mistakes",
+      "title": "Common Speaking Mistakes",
+      "intent": "mistakes",
+      "priority": 5,
+      "status": "draft"
+    }
+  ],
+  "publish_gate": {
+    "min_content_score": 70
+  }
+}

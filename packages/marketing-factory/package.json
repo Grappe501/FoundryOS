@@ -1,0 +1,14 @@
+{
+  "name": "@foundry/marketing-factory",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "audit": "tsx cli/audit.ts",
+    "build-marketing": "tsx cli/build-marketing.ts"
+  }
+}

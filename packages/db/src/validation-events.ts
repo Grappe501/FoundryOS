@@ -30,7 +30,13 @@ export type ValidationEventType =
   | 'challenge_submitted'
   | 'showcase_posted'
   | 'peer_feedback_given'
-  | 'community_feed_viewed';
+  | 'community_feed_viewed'
+  | 'upgrade_initiated'
+  | 'upgrade_completed'
+  | 'checkout_cancelled'
+  | 'checkout_blocked_signin'
+  | 'subscription_cancelled'
+  | 'discussion_posted';
 
 export type ValidationCategory = 'acquisition' | 'activation' | 'retention' | 'conversion';
 
@@ -115,6 +121,12 @@ const EVENT_CATEGORY: Record<ValidationEventType, ValidationCategory> = {
   showcase_posted: 'activation',
   peer_feedback_given: 'retention',
   community_feed_viewed: 'acquisition',
+  upgrade_initiated: 'conversion',
+  upgrade_completed: 'conversion',
+  checkout_cancelled: 'conversion',
+  checkout_blocked_signin: 'conversion',
+  subscription_cancelled: 'conversion',
+  discussion_posted: 'retention',
 };
 
 export function categoryForEvent(type: ValidationEventType): ValidationCategory {

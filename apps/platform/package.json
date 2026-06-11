@@ -24,6 +24,7 @@
     "@foundry/launch-factory": "*",
     "@foundry/learning-pyramid": "*",
     "@foundry/mastery-engine": "*",
+    "@foundry/marketing-factory": "*",
     "@foundry/mentor-engine": "*",
     "@foundry/outcome-engine": "*",
     "@foundry/ownership-graph": "*",
@@ -42,7 +43,8 @@
     "foundryos": "file:../..",
     "next": "^15.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "stripe": "^17.7.0"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",

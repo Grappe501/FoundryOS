@@ -15,7 +15,7 @@ export function BbqPortfolioView() {
   return (
     <div>
       <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7 }}>
-        Mission evidence and reflections — proof of your bbq journey.
+        Mission evidence and debrief notes — proof logged from missions, not a consumption diary.
       </p>
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         {BBQ_PORTFOLIO_SECTIONS.map((section) => (

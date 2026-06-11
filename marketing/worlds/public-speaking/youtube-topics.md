@@ -1,0 +1,52 @@
+# Public Speaking — Top 50 YouTube Topics
+
+- Mission First Talk: full walkthrough
+- Mission Record & Review: full walkthrough
+- Mission Story That Lands: full walkthrough
+- Mission Impromptu Speech: full walkthrough
+- Mission Teach Back: full walkthrough
+- Build: 3-Minute Speech (screen + voiceover)
+- Build: Story Structure (screen + voiceover)
+- Build: Record & Review (screen + voiceover)
+- Build: Impromptu Practice (screen + voiceover)
+- Build: Teach Back (screen + voiceover)
+- Become a Confident Speaker — 12-week journey overview
+- Parent guide: Help your child find their voice — one talk at a time.
+- Why Communicate Value matters in 2026
+- Speaker Circle tour
+- Portfolio review: what good looks like
+- Day in the life of a Public Speaking learner
+- Common mistakes (and how Foundry fixes them)
+- Free vs Build vs Mastery — honest comparison
+- Educator classroom setup for Public Speaking
+- Student showcase reaction
+- FAQ: Public Speaking question 21
+- FAQ: Public Speaking question 22
+- FAQ: Public Speaking question 23
+- FAQ: Public Speaking question 24
+- FAQ: Public Speaking question 25
+- FAQ: Public Speaking question 26
+- FAQ: Public Speaking question 27
+- FAQ: Public Speaking question 28
+- FAQ: Public Speaking question 29
+- FAQ: Public Speaking question 30
+- FAQ: Public Speaking question 31
+- FAQ: Public Speaking question 32
+- FAQ: Public Speaking question 33
+- FAQ: Public Speaking question 34
+- FAQ: Public Speaking question 35
+- FAQ: Public Speaking question 36
+- FAQ: Public Speaking question 37
+- FAQ: Public Speaking question 38
+- FAQ: Public Speaking question 39
+- FAQ: Public Speaking question 40
+- FAQ: Public Speaking question 41
+- FAQ: Public Speaking question 42
+- FAQ: Public Speaking question 43
+- FAQ: Public Speaking question 44
+- FAQ: Public Speaking question 45
+- FAQ: Public Speaking question 46
+- FAQ: Public Speaking question 47
+- FAQ: Public Speaking question 48
+- FAQ: Public Speaking question 49
+- FAQ: Public Speaking question 50

@@ -3,13 +3,17 @@ import { ConsumerNav } from '../../../components/ConsumerNav';
 import { CommunityActivationHub } from '../../../components/community/CommunityActivationHub';
 import { CommunityFeedTracker } from '../../../components/community/CommunityFeedTracker';
 import { getCommunityWorldConfig } from '../../../lib/community-worlds';
+import { getSeedBundleForWorld, ALL_COMMUNITY_SEEDS } from '../../../lib/community-seed';
 import { getSessionUser } from '../../../lib/supabase/server';
 import {
   ensureWorldCommunity,
+  ensureCommunitySeeded,
   getCommunityActivationStats,
   getCommunityMember,
+  getCurrentWeeklyChallenge,
   listCommunityMembers,
   listCommunityPosts,
+  listWeeklyChallenges,
 } from '@foundry/db';
 
 export const dynamic = 'force-dynamic';
@@ -30,16 +34,23 @@ export default async function CommunityWorldPage({ params }: Props) {
     community_type: config.communityType,
   });
 
-  const user = await getSessionUser();
-  const userSlug = user?.id ?? 'anonymous';
-  const userLabel = user?.email?.split('@')[0] ?? 'Guest';
+  await ensureCommunitySeeded(ALL_COMMUNITY_SEEDS);
 
-  const [posts, members, member, stats] = await Promise.all([
-    listCommunityPosts(config.slug),
-    listCommunityMembers(config.slug),
+  const user = await getSessionUser();
+  const userLabel = user?.email?.split('@')[0] ?? 'Guest';
+  const seedBundle = getSeedBundleForWorld(config.slug);
+
+  const [posts, members, member, stats, currentChallenge, weeklyChallenges] = await Promise.all([
+    listCommunityPosts(config.slug, 50),
+    listCommunityMembers(config.slug, 30),
     user ? getCommunityMember(config.slug, user.id) : getCommunityMember(config.slug, 'anonymous'),
     getCommunityActivationStats(config.slug),
+    getCurrentWeeklyChallenge(config.slug),
+    listWeeklyChallenges(config.slug, 12),
   ]);
+
+  const challengeTheme = currentChallenge?.theme ?? config.weeklyChallengeTheme;
+  const challengePrompt = currentChallenge?.prompt ?? config.weeklyChallengePrompt;
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
@@ -53,6 +64,13 @@ export default async function CommunityWorldPage({ params }: Props) {
         userLabel={userLabel}
         userSlug={user?.id ?? ''}
         stats={stats}
+        mentorProfile={seedBundle?.mentor}
+        weeklyChallenge={{ theme: challengeTheme, prompt: challengePrompt, week_key: currentChallenge?.week_key }}
+        weeklyChallenges={weeklyChallenges.map((w) => ({
+          theme: w.theme,
+          prompt: w.prompt,
+          week_key: w.week_key,
+        }))}
       />
     </main>
   );

@@ -1,12 +1,14 @@
-/** PASS-017 — AI Builder World (not a course). Mission → Build → Show → Reflect → Improve → Mentor */
+/** PASS-017 — AI Builder World (not a course). Mission → Build → Show → Debrief → Refine → Teach */
+
+import type { MissionLoopPhase } from './voice-loop';
 
 export const AI_BUILDER_LOOP = [
   { step: 'Mission', description: 'Pick a real problem worth solving' },
   { step: 'Build', description: 'Use AI to create something that works' },
   { step: 'Show', description: 'Share what you built — screenshot, demo, or link' },
-  { step: 'Reflect', description: 'Write what you learned and what surprised you' },
-  { step: 'Improve', description: 'Iterate — make it better based on feedback' },
-  { step: 'Mentor', description: 'Teach someone else or help a peer' },
+  { step: 'Debrief', description: 'Write what you learned and what surprised you' },
+  { step: 'Refine', description: 'Iterate — make it better based on feedback' },
+  { step: 'Teach', description: 'Teach someone else or help a peer' },
 ] as const;
 
 export type AcademyLevel = {
@@ -28,7 +30,7 @@ export const AI_BUILDER_ACADEMY_LEVELS: AcademyLevel[] = [
 ];
 
 export type MissionStep = {
-  phase: 'Mission' | 'Build' | 'Show' | 'Reflect' | 'Improve' | 'Mentor';
+  phase: MissionLoopPhase;
   title: string;
   body: string;
   checklist?: string[];
@@ -47,10 +49,12 @@ export type AiBuilderMission = {
   toolsNeeded?: string;
   tomorrowHook: string;
   nextMissionSlug?: string;
+  track?: string;
+  trackLabel?: string;
   steps: MissionStep[];
 };
 
-export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
+const AI_BUILDER_FOUNDATION_MISSIONS: AiBuilderMission[] = [
   {
     slug: 'homework-assistant',
     number: 1,
@@ -86,17 +90,17 @@ export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
         body: 'Screenshot your assistant in action. Save the prompt. If you built a simple workflow (Notion + AI, Google Doc + AI), link it.',
       },
       {
-        phase: 'Reflect',
+        phase: 'Debrief',
         title: 'What did you learn?',
         body: 'Write 3 sentences: What worked? What was harder than expected? Would you use this again before a test?',
       },
       {
-        phase: 'Improve',
+        phase: 'Refine',
         title: 'Make it better',
         body: 'Ask a friend or parent to try your assistant. Fix one thing based on their feedback.',
       },
       {
-        phase: 'Mentor',
+        phase: 'Teach',
         title: 'Teach someone',
         body: 'Show a classmate or sibling how you built it. Help them create their own version for a different subject.',
       },
@@ -123,9 +127,9 @@ export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
         checklist: ['Define 3 sub-questions', 'Run the agent on 5+ sources', 'Produce a 1-page brief'],
       },
       { phase: 'Show', title: 'Publish your brief', body: 'Save your research brief to your portfolio. Include source list with one sentence on why each source is credible.' },
-      { phase: 'Reflect', title: 'What surprised you?', body: 'Did the agent miss anything important? What would you verify manually next time?' },
-      { phase: 'Improve', title: 'Fact-check one claim', body: 'Pick the most important claim in your brief. Verify it without AI. Update the brief.' },
-      { phase: 'Mentor', title: 'Present findings', body: 'Explain your topic to someone in 2 minutes. Use your brief, not the AI output.' },
+      { phase: 'Debrief', title: 'What surprised you?', body: 'Did the agent miss anything important? What would you verify manually next time?' },
+      { phase: 'Refine', title: 'Fact-check one claim', body: 'Pick the most important claim in your brief. Verify it without AI. Update the brief.' },
+      { phase: 'Teach', title: 'Present findings', body: 'Explain your topic to someone in 2 minutes. Use your brief, not the AI output.' },
     ],
   },
   {
@@ -149,9 +153,9 @@ export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
         checklist: ['Document the old process', 'Build the automation', 'Run it on 3 real cases'],
       },
       { phase: 'Show', title: 'Show time saved', body: 'Record before/after. Screenshot the workflow. Add to My Automations in your portfolio.' },
-      { phase: 'Reflect', title: 'Would a business pay for this?', body: 'Write who would pay, how much time it saves per week, and what could break.' },
-      { phase: 'Improve', title: 'Handle an edge case', body: 'Find one situation your assistant fails. Fix it or document when to escalate to a human.' },
-      { phase: 'Mentor', title: 'Offer it to someone', body: 'Help a parent, club leader, or friend set up a similar assistant for their task.' },
+      { phase: 'Debrief', title: 'Would a business pay for this?', body: 'Write who would pay, how much time it saves per week, and what could break.' },
+      { phase: 'Refine', title: 'Handle an edge case', body: 'Find one situation your assistant fails. Fix it or document when to escalate to a human.' },
+      { phase: 'Teach', title: 'Offer it to someone', body: 'Help a parent, club leader, or friend set up a similar assistant for their task.' },
     ],
   },
   {
@@ -175,9 +179,9 @@ export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
         checklist: ['Draft structure with AI', 'Build or generate pages', 'Deploy to a live URL'],
       },
       { phase: 'Show', title: 'Share the link', body: 'Add to My AI Projects. Post the URL somewhere real — bio, club chat, family group.' },
-      { phase: 'Reflect', title: 'What was yours vs AI\'s?', body: 'List decisions only you could make: tone, structure, what to cut, what to emphasize.' },
-      { phase: 'Improve', title: 'Get feedback', body: 'Ask 2 people to visit on mobile. Fix the worst issue they find.' },
-      { phase: 'Mentor', title: 'Help someone else ship', body: 'Walk a peer through deploying their first page.' },
+      { phase: 'Debrief', title: 'What was yours vs AI\'s?', body: 'List decisions only you could make: tone, structure, what to cut, what to emphasize.' },
+      { phase: 'Refine', title: 'Get feedback', body: 'Ask 2 people to visit on mobile. Fix the worst issue they find.' },
+      { phase: 'Teach', title: 'Help someone else ship', body: 'Walk a peer through deploying their first page.' },
     ],
   },
   {
@@ -200,12 +204,17 @@ export const AI_BUILDER_MISSIONS: AiBuilderMission[] = [
         checklist: ['Define 3+ agent roles with prompts', 'Run one full pipeline', 'Produce final deliverable'],
       },
       { phase: 'Show', title: 'Show the team at work', body: 'Diagram your agent team. Save the deliverable and one example of agent-to-agent handoff.' },
-      { phase: 'Reflect', title: 'Where did coordination break?', body: 'Which handoff failed? What would a human still need to do?' },
-      { phase: 'Improve', title: 'Add a quality gate', body: 'Insert a review step before final output. Re-run once.' },
-      { phase: 'Mentor', title: 'Demo the team', body: 'Show someone how multi-agent workflows beat single prompts for complex work.' },
+      { phase: 'Debrief', title: 'Where did coordination break?', body: 'Which handoff failed? What would a human still need to do?' },
+      { phase: 'Refine', title: 'Add a quality gate', body: 'Insert a review step before final output. Re-run once.' },
+      { phase: 'Teach', title: 'Demo the team', body: 'Show someone how multi-agent workflows beat single prompts for complex work.' },
     ],
   },
 ];
+
+import { expandAiBuilderMissions, AI_BUILDER_TRACKS } from './immersion/worlds/ai-builder';
+
+export { AI_BUILDER_TRACKS };
+export const AI_BUILDER_MISSIONS: AiBuilderMission[] = expandAiBuilderMissions(AI_BUILDER_FOUNDATION_MISSIONS);
 
 export const AI_BUILDER_PLAYGROUND_LABS = [
   { slug: 'prompt-lab', title: 'Prompt Lab', description: 'Experiment with prompts. Compare outputs. Save winners to your toolkit.', unlockLevel: 'AI User' },

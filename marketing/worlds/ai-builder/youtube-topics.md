@@ -1,0 +1,52 @@
+# AI Builder — Top 50 YouTube Topics
+
+- Mission Homework Assistant: full walkthrough
+- Mission Research Agent: full walkthrough
+- Mission Business Assistant: full walkthrough
+- Mission Website Landing Page: full walkthrough
+- Mission Personal AI Team: full walkthrough
+- Build: Homework Assistant (screen + voiceover)
+- Build: Research Agent (screen + voiceover)
+- Build: Business Workflow (screen + voiceover)
+- Build: First Website (screen + voiceover)
+- Build: Personal AI Team (screen + voiceover)
+- Become an AI Builder — 12-week journey overview
+- Parent guide: Help your child become future-proof with AI — not just use ChatGPT.
+- Why Create Value matters in 2026
+- Foundry AI Lab tour
+- Portfolio review: what good looks like
+- Day in the life of a AI Builder learner
+- Common mistakes (and how Foundry fixes them)
+- Free vs Build vs Mastery — honest comparison
+- Educator classroom setup for AI Builder
+- Student showcase reaction
+- FAQ: AI Builder question 21
+- FAQ: AI Builder question 22
+- FAQ: AI Builder question 23
+- FAQ: AI Builder question 24
+- FAQ: AI Builder question 25
+- FAQ: AI Builder question 26
+- FAQ: AI Builder question 27
+- FAQ: AI Builder question 28
+- FAQ: AI Builder question 29
+- FAQ: AI Builder question 30
+- FAQ: AI Builder question 31
+- FAQ: AI Builder question 32
+- FAQ: AI Builder question 33
+- FAQ: AI Builder question 34
+- FAQ: AI Builder question 35
+- FAQ: AI Builder question 36
+- FAQ: AI Builder question 37
+- FAQ: AI Builder question 38
+- FAQ: AI Builder question 39
+- FAQ: AI Builder question 40
+- FAQ: AI Builder question 41
+- FAQ: AI Builder question 42
+- FAQ: AI Builder question 43
+- FAQ: AI Builder question 44
+- FAQ: AI Builder question 45
+- FAQ: AI Builder question 46
+- FAQ: AI Builder question 47
+- FAQ: AI Builder question 48
+- FAQ: AI Builder question 49
+- FAQ: AI Builder question 50

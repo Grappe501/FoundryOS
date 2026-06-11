@@ -1,0 +1,52 @@
+# Public Speaking — Top 50 TikTok Ideas
+
+- POV: you just finished "First Talk" — here's what changed
+- POV: you just finished "Record & Review" — here's what changed
+- POV: you just finished "Story That Lands" — here's what changed
+- POV: you just finished "Impromptu Speech" — here's what changed
+- POV: you just finished "Teach Back" — here's what changed
+- Become a Confident Speaker in 60 seconds
+- Parent tip: Help your child find their voice — one talk at a t…
+- Before/after portfolio artifact
+- "What I wish I knew" — Public Speaking
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 16: Public Speaking transformation clip
+- Hook 17: Public Speaking transformation clip
+- Hook 18: Public Speaking transformation clip
+- Hook 19: Public Speaking transformation clip
+- Hook 20: Public Speaking transformation clip
+- Hook 21: Public Speaking transformation clip
+- Hook 22: Public Speaking transformation clip
+- Hook 23: Public Speaking transformation clip
+- Hook 24: Public Speaking transformation clip
+- Hook 25: Public Speaking transformation clip
+- Hook 26: Public Speaking transformation clip
+- Hook 27: Public Speaking transformation clip
+- Hook 28: Public Speaking transformation clip
+- Hook 29: Public Speaking transformation clip
+- Hook 30: Public Speaking transformation clip
+- Hook 31: Public Speaking transformation clip
+- Hook 32: Public Speaking transformation clip
+- Hook 33: Public Speaking transformation clip
+- Hook 34: Public Speaking transformation clip
+- Hook 35: Public Speaking transformation clip
+- Hook 36: Public Speaking transformation clip
+- Hook 37: Public Speaking transformation clip
+- Hook 38: Public Speaking transformation clip
+- Hook 39: Public Speaking transformation clip
+- Hook 40: Public Speaking transformation clip
+- Hook 41: Public Speaking transformation clip
+- Hook 42: Public Speaking transformation clip
+- Hook 43: Public Speaking transformation clip
+- Hook 44: Public Speaking transformation clip
+- Hook 45: Public Speaking transformation clip
+- Hook 46: Public Speaking transformation clip
+- Hook 47: Public Speaking transformation clip
+- Hook 48: Public Speaking transformation clip
+- Hook 49: Public Speaking transformation clip
+- Hook 50: Public Speaking transformation clip

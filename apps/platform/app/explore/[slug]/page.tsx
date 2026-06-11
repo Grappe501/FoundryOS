@@ -21,6 +21,7 @@ export async function generateStaticParams() {
     { slug: 'bbq' },
     { slug: 'master-gardener' },
     { slug: 'poker' },
+    { slug: 'chess' },
     { slug: 'soccer' },
     { slug: 'books' },
     { slug: 'movies' },

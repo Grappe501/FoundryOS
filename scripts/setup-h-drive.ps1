@@ -54,6 +54,13 @@ $env:XDG_CACHE_HOME = "$Root\.cache"
 # ─── Supabase CLI ──────────────────────────────────────────
 $env:SUPABASE_INTERNAL_STORAGE = "$Root\.cache\supabase"
 
+# ─── Block npm/tsc from using C: temp ─────────────────────
+$env:npm_config_tmp = "$Root\.cache\temp"
+$env:UV_CACHE_DIR = "$Root\.cache\uv"
+$env:PIP_CACHE_DIR = "$Root\.cache\pip"
+$env:PLAYWRIGHT_BROWSERS_PATH = "$Root\.cache\playwright"
+$env:COREPACK_HOME = "$Root\.cache\corepack"
+
 # ─── Git (keep pack files in repo on H:) ───────────────────
 $env:GIT_CONFIG_GLOBAL = "$Root\.cache\gitconfig"
 if (-not (Test-Path $env:GIT_CONFIG_GLOBAL)) {

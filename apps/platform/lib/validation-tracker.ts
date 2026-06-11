@@ -30,7 +30,12 @@ export type TrackValidationPayload = {
     | 'challenge_submitted'
     | 'showcase_posted'
     | 'peer_feedback_given'
-    | 'community_feed_viewed';
+    | 'community_feed_viewed'
+    | 'upgrade_initiated'
+    | 'upgrade_completed'
+    | 'checkout_cancelled'
+    | 'checkout_blocked_signin'
+    | 'discussion_posted';
   landing_page?: string;
   source?: string;
   path_slug?: string;

@@ -1,0 +1,52 @@
+# Civic Engagement — Top 50 YouTube Topics
+
+- Mission Research Your Ballot: full walkthrough
+- Mission Attend a Local Meeting: full walkthrough
+- Mission Volunteer for a Cause: full walkthrough
+- Build: Ballot Research (screen + voiceover)
+- Build: Town Hall Notes (screen + voiceover)
+- Build: Volunteer Log (screen + voiceover)
+- Become a Civic Leader — 12-week journey overview
+- Parent guide: Raise a citizen who participates — not just watches.
+- Why Lead Value matters in 2026
+- Civic Action Circle tour
+- Portfolio review: what good looks like
+- Day in the life of a Civic Engagement learner
+- Common mistakes (and how Foundry fixes them)
+- Free vs Build vs Mastery — honest comparison
+- Educator classroom setup for Civic Engagement
+- Student showcase reaction
+- FAQ: Civic Engagement question 17
+- FAQ: Civic Engagement question 18
+- FAQ: Civic Engagement question 19
+- FAQ: Civic Engagement question 20
+- FAQ: Civic Engagement question 21
+- FAQ: Civic Engagement question 22
+- FAQ: Civic Engagement question 23
+- FAQ: Civic Engagement question 24
+- FAQ: Civic Engagement question 25
+- FAQ: Civic Engagement question 26
+- FAQ: Civic Engagement question 27
+- FAQ: Civic Engagement question 28
+- FAQ: Civic Engagement question 29
+- FAQ: Civic Engagement question 30
+- FAQ: Civic Engagement question 31
+- FAQ: Civic Engagement question 32
+- FAQ: Civic Engagement question 33
+- FAQ: Civic Engagement question 34
+- FAQ: Civic Engagement question 35
+- FAQ: Civic Engagement question 36
+- FAQ: Civic Engagement question 37
+- FAQ: Civic Engagement question 38
+- FAQ: Civic Engagement question 39
+- FAQ: Civic Engagement question 40
+- FAQ: Civic Engagement question 41
+- FAQ: Civic Engagement question 42
+- FAQ: Civic Engagement question 43
+- FAQ: Civic Engagement question 44
+- FAQ: Civic Engagement question 45
+- FAQ: Civic Engagement question 46
+- FAQ: Civic Engagement question 47
+- FAQ: Civic Engagement question 48
+- FAQ: Civic Engagement question 49
+- FAQ: Civic Engagement question 50

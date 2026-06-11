@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { FI_PORTFOLIO_SECTIONS } from '../../../lib/financial-independence-world';
+import { getMissionCount } from '../../../lib/immersion/registry';
 
 export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('financial-independence');
@@ -11,7 +12,7 @@ export default function PortfolioPage() {
         bundle={bundle}
         basePath="/financial-independence"
         portfolioKey="foundry-fi-portfolio"
-        missionCount={5}
+        missionCount={getMissionCount('financial-independence')}
         firstMissionSlug="first-budget"
         sections={FI_PORTFOLIO_SECTIONS}
       />

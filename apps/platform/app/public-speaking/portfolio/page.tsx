@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { PS_PORTFOLIO_SECTIONS } from '../../../lib/public-speaking-world';
+import { getMissionCount } from '../../../lib/immersion/registry';
 
 export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('public-speaking');
@@ -11,7 +12,7 @@ export default function PortfolioPage() {
         bundle={bundle}
         basePath="/public-speaking"
         portfolioKey="foundry-ps-portfolio"
-        missionCount={5}
+        missionCount={getMissionCount('public-speaking')}
         firstMissionSlug="first-talk"
         sections={PS_PORTFOLIO_SECTIONS}
       />

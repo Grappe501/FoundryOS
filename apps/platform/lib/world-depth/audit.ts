@@ -1,16 +1,9 @@
 /** PASS-025 — World depth audit */
 
 import { getWorldDepth, WORLD_DEPTH_BUNDLES } from './registry';
+import { IMMERSION_MISSION_COUNTS } from '../immersion/registry';
 
-const MISSION_COUNTS: Record<string, number> = {
-  'ai-builder': 5,
-  'financial-independence': 5,
-  'public-speaking': 5,
-  bourbon: 5,
-  bbq: 5,
-  poker: 5,
-  'civic-engagement': 5,
-};
+const MISSION_COUNTS: Record<string, number> = IMMERSION_MISSION_COUNTS;
 
 export type WorldDepthAuditRow = {
   slug: string;

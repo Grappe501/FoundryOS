@@ -3,6 +3,7 @@ import {
   getBetaWaitlistStats,
   getMissionCompletionStats,
   getValidationDashboardMetrics,
+  getRevenueValidationSnapshot,
   isSupabaseConfigured,
 } from '@foundry/db';
 
@@ -12,9 +13,10 @@ export default async function OperatorBetaDashboardPage() {
   const waitlist = isSupabaseConfigured() ? await getBetaWaitlistStats() : null;
   const missions = isSupabaseConfigured() ? await getMissionCompletionStats() : null;
   const funnel = isSupabaseConfigured() ? await getValidationDashboardMetrics() : null;
+  const revenue = isSupabaseConfigured() ? await getRevenueValidationSnapshot() : null;
 
-  const pricingViews = funnel?.recent_events.filter((e) => e.event_type === 'pricing_viewed').length ?? 0;
-  const pricingClicks = funnel?.recent_events.filter((e) => e.event_type === 'pricing_clicked').length ?? 0;
+  const pricingViews = revenue?.funnel.pricing_viewed ?? 0;
+  const pricingClicks = revenue?.funnel.pricing_clicked ?? 0;
   const betaJoins = funnel?.recent_events.filter((e) => e.event_type === 'beta_joined').length ?? 0;
 
   return (

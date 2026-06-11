@@ -1,0 +1,52 @@
+# Civic Engagement — Top 50 TikTok Ideas
+
+- POV: you just finished "Research Your Ballot" — here's what changed
+- POV: you just finished "Attend a Local Meeting" — here's what changed
+- POV: you just finished "Volunteer for a Cause" — here's what changed
+- Become a Civic Leader in 60 seconds
+- Parent tip: Raise a citizen who participates — not just watche…
+- Before/after portfolio artifact
+- "What I wish I knew" — Civic Engagement
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 14: Civic Engagement transformation clip
+- Hook 15: Civic Engagement transformation clip
+- Hook 16: Civic Engagement transformation clip
+- Hook 17: Civic Engagement transformation clip
+- Hook 18: Civic Engagement transformation clip
+- Hook 19: Civic Engagement transformation clip
+- Hook 20: Civic Engagement transformation clip
+- Hook 21: Civic Engagement transformation clip
+- Hook 22: Civic Engagement transformation clip
+- Hook 23: Civic Engagement transformation clip
+- Hook 24: Civic Engagement transformation clip
+- Hook 25: Civic Engagement transformation clip
+- Hook 26: Civic Engagement transformation clip
+- Hook 27: Civic Engagement transformation clip
+- Hook 28: Civic Engagement transformation clip
+- Hook 29: Civic Engagement transformation clip
+- Hook 30: Civic Engagement transformation clip
+- Hook 31: Civic Engagement transformation clip
+- Hook 32: Civic Engagement transformation clip
+- Hook 33: Civic Engagement transformation clip
+- Hook 34: Civic Engagement transformation clip
+- Hook 35: Civic Engagement transformation clip
+- Hook 36: Civic Engagement transformation clip
+- Hook 37: Civic Engagement transformation clip
+- Hook 38: Civic Engagement transformation clip
+- Hook 39: Civic Engagement transformation clip
+- Hook 40: Civic Engagement transformation clip
+- Hook 41: Civic Engagement transformation clip
+- Hook 42: Civic Engagement transformation clip
+- Hook 43: Civic Engagement transformation clip
+- Hook 44: Civic Engagement transformation clip
+- Hook 45: Civic Engagement transformation clip
+- Hook 46: Civic Engagement transformation clip
+- Hook 47: Civic Engagement transformation clip
+- Hook 48: Civic Engagement transformation clip
+- Hook 49: Civic Engagement transformation clip
+- Hook 50: Civic Engagement transformation clip

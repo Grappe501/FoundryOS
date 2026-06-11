@@ -1,0 +1,52 @@
+# AI Builder — Top 50 TikTok Ideas
+
+- POV: you just finished "Homework Assistant" — here's what changed
+- POV: you just finished "Research Agent" — here's what changed
+- POV: you just finished "Business Assistant" — here's what changed
+- POV: you just finished "Website Landing Page" — here's what changed
+- POV: you just finished "Personal AI Team" — here's what changed
+- Become an AI Builder in 60 seconds
+- Parent tip: Help your child become future-proof with AI — not …
+- Before/after portfolio artifact
+- "What I wish I knew" — AI Builder
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 16: AI Builder transformation clip
+- Hook 17: AI Builder transformation clip
+- Hook 18: AI Builder transformation clip
+- Hook 19: AI Builder transformation clip
+- Hook 20: AI Builder transformation clip
+- Hook 21: AI Builder transformation clip
+- Hook 22: AI Builder transformation clip
+- Hook 23: AI Builder transformation clip
+- Hook 24: AI Builder transformation clip
+- Hook 25: AI Builder transformation clip
+- Hook 26: AI Builder transformation clip
+- Hook 27: AI Builder transformation clip
+- Hook 28: AI Builder transformation clip
+- Hook 29: AI Builder transformation clip
+- Hook 30: AI Builder transformation clip
+- Hook 31: AI Builder transformation clip
+- Hook 32: AI Builder transformation clip
+- Hook 33: AI Builder transformation clip
+- Hook 34: AI Builder transformation clip
+- Hook 35: AI Builder transformation clip
+- Hook 36: AI Builder transformation clip
+- Hook 37: AI Builder transformation clip
+- Hook 38: AI Builder transformation clip
+- Hook 39: AI Builder transformation clip
+- Hook 40: AI Builder transformation clip
+- Hook 41: AI Builder transformation clip
+- Hook 42: AI Builder transformation clip
+- Hook 43: AI Builder transformation clip
+- Hook 44: AI Builder transformation clip
+- Hook 45: AI Builder transformation clip
+- Hook 46: AI Builder transformation clip
+- Hook 47: AI Builder transformation clip
+- Hook 48: AI Builder transformation clip
+- Hook 49: AI Builder transformation clip
+- Hook 50: AI Builder transformation clip

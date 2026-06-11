@@ -1,0 +1,24 @@
+{
+  "slug": "ai-builder",
+  "display_name": "AI Builder",
+  "priority_tier": "primary",
+  "target_audiences": [
+    "students",
+    "parents",
+    "educators",
+    "adult_learners"
+  ],
+  "traffic_sources": [
+    "SEO",
+    "Future-Proof Assessment",
+    "YouTube",
+    "Homeschool",
+    "Parents"
+  ],
+  "tier_hooks": {
+    "build": "My AI Portfolio — projects, workflows, evidence of what you built",
+    "mastery": "Foundry AI Lab — ship together, get feedback, find collaborators"
+  },
+  "primary_cta": "/ai-builder",
+  "effort_allocation_pct": 27
+}

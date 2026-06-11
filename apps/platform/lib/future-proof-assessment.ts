@@ -188,7 +188,7 @@ export function scoreFutureProofAssessment(answers: AssessmentAnswers): Assessme
   };
 }
 
-export const FUTURE_PROOF_HEADLINE = 'Become Future-Proof';
+export const FUTURE_PROOF_HEADLINE = 'Build Future-Proof Skills';
 export const FUTURE_PROOF_SUBHEAD =
   'Create value · Communicate value · Keep value — three paths. One transformation platform.';
 export const FUTURE_PROOF_TRAFFIC_INTENTS = [

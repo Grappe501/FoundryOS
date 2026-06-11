@@ -33,6 +33,12 @@ const ALLOWED: ValidationEventType[] = [
   'showcase_posted',
   'peer_feedback_given',
   'community_feed_viewed',
+  'upgrade_initiated',
+  'upgrade_completed',
+  'checkout_cancelled',
+  'checkout_blocked_signin',
+  'subscription_cancelled',
+  'discussion_posted',
 ];
 
 export async function POST(request: Request) {

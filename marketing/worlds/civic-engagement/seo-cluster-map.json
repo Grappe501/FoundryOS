@@ -1,0 +1,24 @@
+{
+  "domain": "civic-engagement",
+  "display_name": "Civic Engagement",
+  "cluster_size": 2,
+  "pages": [
+    {
+      "slug": "how-to-research-your-ballot",
+      "title": "How to Research Your Ballot",
+      "intent": "traffic",
+      "priority": 1,
+      "status": "draft"
+    },
+    {
+      "slug": "attending-your-first-town-hall",
+      "title": "Attending Your First Town Hall",
+      "intent": "beginner",
+      "priority": 2,
+      "status": "draft"
+    }
+  ],
+  "publish_gate": {
+    "min_content_score": 70
+  }
+}

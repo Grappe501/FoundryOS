@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { ConsumerNav } from '../../components/ConsumerNav';
 import { PricingTiers } from '../../components/pricing/PricingTiers';
 
@@ -17,7 +18,9 @@ export default function PricingPage() {
           Start free. Upgrade when you want to save progress across devices, build portfolios, and join communities.
         </p>
       </section>
-      <PricingTiers />
+      <Suspense fallback={<p style={{ color: '#6B6B70', marginTop: 32 }}>Loading pricing…</p>}>
+        <PricingTiers />
+      </Suspense>
       <section style={{ marginTop: 32, padding: 24, background: '#111114', borderRadius: 8 }}>
         <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7, margin: 0 }}>
           Foundry is in <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>private beta</strong>. Billing is not live yet — explore everything and join the waitlist for early access pricing.

@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { AI_BUILDER_PORTFOLIO_SECTIONS } from '../../../lib/ai-builder-world';
+import { getMissionCount } from '../../../lib/immersion/registry';
 
 export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('ai-builder');
@@ -11,7 +12,7 @@ export default function PortfolioPage() {
         bundle={bundle}
         basePath="/ai-builder"
         portfolioKey="foundry-ai-portfolio"
-        missionCount={5}
+        missionCount={getMissionCount('ai-builder')}
         firstMissionSlug="homework-assistant"
         sections={AI_BUILDER_PORTFOLIO_SECTIONS}
       />

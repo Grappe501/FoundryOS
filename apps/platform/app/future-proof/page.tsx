@@ -5,7 +5,7 @@ import { TrinityHub } from '../../components/trinity/TrinityHub';
 import { ValidationPageTracker } from '../../components/ValidationPageTracker';
 
 export const metadata = {
-  title: 'Become Future-Proof | Foundry',
+  title: 'Build Future-Proof Skills | Foundry',
   description:
     'Create value · Communicate value · Keep value. AI Builder, Financial Independence, and Public Speaking — one transformation platform.',
 };

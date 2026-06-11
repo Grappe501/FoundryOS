@@ -6,9 +6,9 @@ export const FI_LOOP = [
   { step: 'Mission', description: 'Pick a real money goal worth pursuing' },
   { step: 'Build', description: 'Create a budget, plan, or analysis that works' },
   { step: 'Show', description: 'Document numbers — spreadsheet, screenshot, or summary' },
-  { step: 'Reflect', description: 'Write what changed in how you think about money' },
-  { step: 'Improve', description: 'Adjust based on what you learned' },
-  { step: 'Mentor', description: 'Teach a family member or peer one money habit' },
+  { step: 'Debrief', description: 'Write what changed in how you think about money' },
+  { step: 'Refine', description: 'Adjust based on what you learned' },
+  { step: 'Teach', description: 'Teach a family member or peer one money habit' },
 ] as const;
 
 export const FI_ACADEMY_LEVELS = [
@@ -21,7 +21,7 @@ export const FI_ACADEMY_LEVELS = [
   { slug: 'mentor', level: 7, title: 'Financial Mentor', tagline: 'Teach others — family, peers, community', unlocks: ['Wealth Builders Circle'] },
 ];
 
-export const FI_MISSIONS: WorldMission[] = [
+const FI_FOUNDATION_MISSIONS: WorldMission[] = [
   {
     slug: 'first-budget',
     number: 1,
@@ -44,9 +44,9 @@ export const FI_MISSIONS: WorldMission[] = [
         checklist: ['List all income sources', 'Track every expense category', 'Assign a savings amount — even $5 counts'],
       },
       { phase: 'Show', title: 'Save your budget', body: 'Screenshot or export your budget. This goes in My Wealth Portfolio.' },
-      { phase: 'Reflect', title: 'Biggest surprise?', body: 'Write 2–3 sentences in the reflection box below: Where did you spend more than expected? What one category would you change next month? This becomes your portfolio artifact.' },
-      { phase: 'Improve', title: 'Cut one thing', body: 'Find one subscription or habit to reduce. Update the budget.' },
-      { phase: 'Mentor', title: 'Show a parent', body: 'Walk a parent through your budget. Ask what they wish they knew at your age.' },
+      { phase: 'Debrief', title: 'Biggest surprise?', body: 'Write 2–3 sentences in the reflection box below: Where did you spend more than expected? What one category would you change next month? This becomes your portfolio artifact.' },
+      { phase: 'Refine', title: 'Cut one thing', body: 'Find one subscription or habit to reduce. Update the budget.' },
+      { phase: 'Teach', title: 'Show a parent', body: 'Walk a parent through your budget. Ask what they wish they knew at your age.' },
     ],
   },
   {
@@ -65,9 +65,9 @@ export const FI_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Name your why', body: 'Write why $1,000 matters: emergency fund, first car, college buffer, independence from asking parents.' },
       { phase: 'Build', title: 'Automate savings', body: 'Open or use a savings account. Set automatic weekly transfer — even $10/week. Create a tracker: starting balance, target, date.' },
       { phase: 'Show', title: 'Document the plan', body: 'Screenshot your automation + tracker. Add to portfolio.' },
-      { phase: 'Reflect', title: 'What got easier?', body: 'Did automating remove decision fatigue? What would make you quit — and how do you prevent that?' },
-      { phase: 'Improve', title: 'Find $20 more', body: 'One side task, sold item, or cut to accelerate the goal by one week.' },
-      { phase: 'Mentor', title: 'Challenge a friend', body: 'Invite someone to a savings challenge — compare progress monthly.' },
+      { phase: 'Debrief', title: 'What got easier?', body: 'Did automating remove decision fatigue? What would make you quit — and how do you prevent that?' },
+      { phase: 'Refine', title: 'Find $20 more', body: 'One side task, sold item, or cut to accelerate the goal by one week.' },
+      { phase: 'Teach', title: 'Challenge a friend', body: 'Invite someone to a savings challenge — compare progress monthly.' },
     ],
   },
   {
@@ -86,9 +86,9 @@ export const FI_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Pick one company', body: 'Choose a company you know: Apple, Nike, Disney, or a local brand. Not crypto — one public company.' },
       { phase: 'Build', title: 'Research and analyze', body: 'Answer: What do they sell? How do they make money? What could go wrong? Use free sources: company investor page, Yahoo Finance, annual report summary.' },
       { phase: 'Show', title: 'Write your verdict', body: 'One page: summary, bull case, bear case, your recommendation (learn now / watch / not yet).' },
-      { phase: 'Reflect', title: 'What was hard to find?', body: 'What information was confusing? What would you check before investing real money?' },
-      { phase: 'Improve', title: 'Compare to an index fund', body: 'Add one paragraph: why might an index fund be simpler for beginners?' },
-      { phase: 'Mentor', title: 'Explain to someone', body: 'Teach a parent or sibling how you analyzed the company in 3 minutes.' },
+      { phase: 'Debrief', title: 'What was hard to find?', body: 'What information was confusing? What would you check before investing real money?' },
+      { phase: 'Refine', title: 'Compare to an index fund', body: 'Add one paragraph: why might an index fund be simpler for beginners?' },
+      { phase: 'Teach', title: 'Explain to someone', body: 'Teach a parent or sibling how you analyzed the company in 3 minutes.' },
     ],
   },
   {
@@ -107,9 +107,9 @@ export const FI_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Define 3 goals', body: 'Short (1 yr), medium (5 yr), long (20+ yr). Examples: laptop, college, financial independence.' },
       { phase: 'Build', title: 'Write the plan', body: 'For each goal: amount needed, timeline, risk you can accept, account type (savings, brokerage, retirement when older), suggested approach (index funds, bonds mix).' },
       { phase: 'Show', title: 'Save the plan', body: 'Add to My Wealth Portfolio. Share with a parent if under 18.' },
-      { phase: 'Reflect', title: 'What surprised you?', body: 'How much do you need to invest monthly to hit a long-term goal?' },
-      { phase: 'Improve', title: 'Stress test', body: 'What happens if markets drop 30%? Write how you would respond without panic selling.' },
-      { phase: 'Mentor', title: 'Review with an adult', body: 'Ask a parent or trusted adult to critique your plan — one improvement.' },
+      { phase: 'Debrief', title: 'What surprised you?', body: 'How much do you need to invest monthly to hit a long-term goal?' },
+      { phase: 'Refine', title: 'Stress test', body: 'What happens if markets drop 30%? Write how you would respond without panic selling.' },
+      { phase: 'Teach', title: 'Review with an adult', body: 'Ask a parent or trusted adult to critique your plan — one improvement.' },
     ],
   },
   {
@@ -127,12 +127,17 @@ export const FI_MISSIONS: WorldMission[] = [
       { phase: 'Mission', title: 'Audit your system', body: 'Gather: budget (M1), savings plan (M2), stock analysis (M3), investment plan (M4). What is missing?' },
       { phase: 'Build', title: 'Write your strategy', body: 'One page: monthly money flow, savings rate %, investment approach, one income growth action, review cadence (monthly).' },
       { phase: 'Show', title: 'Publish to portfolio', body: 'This is your capstone artifact — the proof you understand money.' },
-      { phase: 'Reflect', title: 'Create + Keep', body: 'How does earning more (AI Builder) matter without keeping it (FI)? Write 3 sentences.' },
-      { phase: 'Improve', title: 'Set calendar review', body: 'Schedule first monthly money review — 30 minutes, same day each month.' },
-      { phase: 'Mentor', title: 'Wealth Builders Circle', body: 'Share one lesson from your strategy with a peer or family member.' },
+      { phase: 'Debrief', title: 'Create + Keep', body: 'How does earning more (AI Builder) matter without keeping it (FI)? Write 3 sentences.' },
+      { phase: 'Refine', title: 'Set calendar review', body: 'Schedule first monthly money review — 30 minutes, same day each month.' },
+      { phase: 'Teach', title: 'Wealth Builders Circle', body: 'Share one lesson from your strategy with a peer or family member.' },
     ],
   },
 ];
+
+import { expandFiMissions, FI_TRACKS } from './immersion/worlds/financial-independence';
+
+export { FI_TRACKS };
+export const FI_MISSIONS = expandFiMissions(FI_FOUNDATION_MISSIONS);
 
 export const FI_PLAYGROUND_LABS = [
   { slug: 'savings-lab', title: 'Savings Lab', description: 'Experiment with compound interest calculators and savings rates.', unlockLevel: 'Budget Builder' },

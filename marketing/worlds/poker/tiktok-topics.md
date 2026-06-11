@@ -1,0 +1,52 @@
+# Poker — Top 50 TikTok Ideas
+
+- POV: you just finished "Track Bankroll" — here's what changed
+- POV: you just finished "Review Ten Hands" — here's what changed
+- Become a Strategic Thinker in 60 seconds
+- Parent tip: N/A — adult hobby vertical…
+- Before/after portfolio artifact
+- "What I wish I knew" — Poker
+- Mission 1 in one minute
+- Free tier vs Build — what's actually included
+- Community challenge teaser
+- Student reaction to first win
+- Educator: assign this instead of a worksheet
+- Career changer pivot story template
+- Hook 13: Poker transformation clip
+- Hook 14: Poker transformation clip
+- Hook 15: Poker transformation clip
+- Hook 16: Poker transformation clip
+- Hook 17: Poker transformation clip
+- Hook 18: Poker transformation clip
+- Hook 19: Poker transformation clip
+- Hook 20: Poker transformation clip
+- Hook 21: Poker transformation clip
+- Hook 22: Poker transformation clip
+- Hook 23: Poker transformation clip
+- Hook 24: Poker transformation clip
+- Hook 25: Poker transformation clip
+- Hook 26: Poker transformation clip
+- Hook 27: Poker transformation clip
+- Hook 28: Poker transformation clip
+- Hook 29: Poker transformation clip
+- Hook 30: Poker transformation clip
+- Hook 31: Poker transformation clip
+- Hook 32: Poker transformation clip
+- Hook 33: Poker transformation clip
+- Hook 34: Poker transformation clip
+- Hook 35: Poker transformation clip
+- Hook 36: Poker transformation clip
+- Hook 37: Poker transformation clip
+- Hook 38: Poker transformation clip
+- Hook 39: Poker transformation clip
+- Hook 40: Poker transformation clip
+- Hook 41: Poker transformation clip
+- Hook 42: Poker transformation clip
+- Hook 43: Poker transformation clip
+- Hook 44: Poker transformation clip
+- Hook 45: Poker transformation clip
+- Hook 46: Poker transformation clip
+- Hook 47: Poker transformation clip
+- Hook 48: Poker transformation clip
+- Hook 49: Poker transformation clip
+- Hook 50: Poker transformation clip

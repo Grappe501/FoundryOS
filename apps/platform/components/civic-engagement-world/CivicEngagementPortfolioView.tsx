@@ -15,7 +15,7 @@ export function CivicEngagementPortfolioView() {
   return (
     <div>
       <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7 }}>
-        Mission evidence and reflections — proof of your civic engagement journey.
+        Mission evidence and debrief notes — civic actions logged with proof.
       </p>
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         {CIVIC_ENGAGEMENT_PORTFOLIO_SECTIONS.map((section) => (

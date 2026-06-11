@@ -1,13 +1,20 @@
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ConsumerNav } from '../../components/ConsumerNav';
+import { UpgradeMoment } from '../../components/billing/UpgradeMoment';
 import { createClient } from '../../lib/supabase/server';
-import { getMissionCompletionsForUser } from '@foundry/db';
+import { getMissionCompletionsForUser, getUserTierLevel, tierNameForLevel } from '@foundry/db';
+import { TIER_PRICING } from '../../lib/billing';
 
 export const metadata = { title: 'My Account | Foundry' };
 export const dynamic = 'force-dynamic';
 
-export default async function AccountPage() {
+type Props = {
+  searchParams: Promise<{ upgraded?: string }>;
+};
+
+export default async function AccountPage({ searchParams }: Props) {
+  const { upgraded } = await searchParams;
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -15,7 +22,11 @@ export default async function AccountPage() {
     redirect('/sign-in');
   }
 
-  const completions = await getMissionCompletionsForUser(user.id);
+  const [completions, tierLevel] = await Promise.all([
+    getMissionCompletionsForUser(user.id),
+    getUserTierLevel(user.id),
+  ]);
+  const tierName = tierNameForLevel(tierLevel);
   const displayName = user.user_metadata?.display_name ?? user.email?.split('@')[0] ?? 'Member';
 
   async function signOut() {
@@ -28,12 +39,36 @@ export default async function AccountPage() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
+      {upgraded && (upgraded === 'build' || upgraded === 'mastery') && (
+        <section style={{ marginTop: 16, padding: 16, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
+          <p style={{ color: '#6B9B6B', margin: 0, fontSize: 14 }}>
+            Welcome to {TIER_PRICING[upgraded].label}! Your subscription is being confirmed.
+          </p>
+        </section>
+      )}
       <section style={{ marginTop: 24, padding: 32, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A4A2A' }}>
         <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>Your account</p>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>{displayName}</h1>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>{user.email}</p>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>Tier: Explore (free) — upgrade when billing opens in beta.</p>
+        <p style={{ color: tierLevel > 1 ? '#C8A96E' : '#6B6B70', fontSize: 13, marginTop: 16 }}>
+          Tier: {tierName.charAt(0).toUpperCase() + tierName.slice(1)}
+          {tierLevel === 1 && ' (free)'}
+          {tierLevel === 2 && ' — $4/mo'}
+          {tierLevel === 3 && ' — $18/mo'}
+        </p>
       </section>
+
+      {tierLevel === 1 && (
+        <section style={{ marginTop: 24 }}>
+          <UpgradeMoment
+            tier="build"
+            headline="Sync progress across devices"
+            body="Upgrade to Build for full academy access, portfolio sync, and community participation."
+            context="account_page"
+            compact
+          />
+        </section>
+      )}
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Mission progress synced</h2>

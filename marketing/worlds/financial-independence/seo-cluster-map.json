@@ -1,0 +1,45 @@
+{
+  "domain": "financial-independence",
+  "display_name": "Financial Independence",
+  "cluster_size": 5,
+  "pages": [
+    {
+      "slug": "what-is-financial-independence",
+      "title": "What Is Financial Independence?",
+      "intent": "definition",
+      "priority": 1,
+      "status": "draft"
+    },
+    {
+      "slug": "beginner-guide-money",
+      "title": "Beginner Guide to Money",
+      "intent": "beginner",
+      "priority": 2,
+      "status": "draft"
+    },
+    {
+      "slug": "how-to-budget",
+      "title": "How to Build Your First Budget",
+      "intent": "projects",
+      "priority": 3,
+      "status": "draft"
+    },
+    {
+      "slug": "first-stock",
+      "title": "How to Buy Your First Stock",
+      "intent": "projects",
+      "priority": 4,
+      "status": "draft"
+    },
+    {
+      "slug": "common-money-mistakes",
+      "title": "Common Money Mistakes",
+      "intent": "mistakes",
+      "priority": 5,
+      "status": "draft"
+    }
+  ],
+  "publish_gate": {
+    "min_content_score": 70
+  }
+}
