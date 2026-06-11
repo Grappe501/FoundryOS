@@ -1,9 +1,23 @@
 #!/usr/bin/env node
 /**
  * HARD GATE — FoundryOS refuses to run from C: or any path outside H:\FoundryOS
+ * Skipped in CI (Netlify, GitHub Actions) — H: enforcement is local Windows only.
  */
 const path = require('path');
 const fs = require('fs');
+
+function isCiBuild() {
+  return Boolean(
+    process.env.CI ||
+    process.env.NETLIFY ||
+    process.env.NETLIFY_DEV ||
+    process.env.GITHUB_ACTIONS
+  );
+}
+
+if (isCiBuild()) {
+  process.exit(0);
+}
 
 const REQUIRED_ROOT = 'H:\\FoundryOS';
 const cwd = process.cwd();
