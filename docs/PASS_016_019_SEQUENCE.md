@@ -1,6 +1,7 @@
 # PASS-016 → PASS-019 — Life Leverage Launch Sequence
 
-> After PASS-015B Launch Factory. Pass gate: **users, revenue, retention** — not another system.
+> **Superseded for pass numbering** by `docs/PASS_017_022_SEQUENCE.md` (vertical depth mode, 2026-06-11).
+> Historical reference for Life Leverage domain order.
 
 ---
 

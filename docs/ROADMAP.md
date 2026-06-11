@@ -1,6 +1,6 @@
 # FoundryOS — Roadmap
 
-> Updated PASS-014 close — Growth OS greenlit. Parallel Platform + Growth lanes.
+> Updated PASS-016D close — **Vertical Depth Mode**. Private build until beta-ready.
 
 **Production launch:** January 2027 · See `docs/JANUARY_2027_TARGETS.md`
 
@@ -24,12 +24,21 @@ PASS-011 ████████████ Evidence Engine ✅
 PASS-012 ████████████ Collections + Communities ✅
 PASS-013 ████████████ Reputation + Mastery ✅
 PASS-014 ████████████ Domain Proof ✅
-PASS-015 ░░░░░░░░░░░░ Growth OS ✅
-PASS-016 ░░░░░░░░░░░░ AI Builder Active Domain ← NEXT
+PASS-015 ████████████ Growth OS ✅
+PASS-016 ████████████ Future-Proof Funnel + AI Builder shell ✅
+PASS-016C/D ██████████ Explore catalog + consumer journey ✅
+PASS-017 ░░░░░░░░░░░░ AI Builder Depth Pass ← NEXT
+PASS-018 ░░░░░░░░░░░░ Financial Independence Depth
+PASS-019 ░░░░░░░░░░░░ Public Speaking Depth
+PASS-020 ░░░░░░░░░░░░ Civic Engagement Depth
+PASS-021 ░░░░░░░░░░░░ Consumer Experience Polish
+PASS-022 ░░░░░░░░░░░░ Private Beta Readiness
 ```
 
-> Life Leverage shift: Financial Independence #3 · 20 active domains by Jan 2027 · Foundry Student channel.
-> See `docs/LIFE_LEVERAGE_DOMAINS.md`, `docs/PASS_016_019_SEQUENCE.md`.
+> **Mode:** Private build — no public beta until 3 verticals consumer-ready.
+> See `docs/VERTICAL_DEPTH_MODE.md`, `docs/PASS_017_022_SEQUENCE.md`.
+
+> Beta wedge: **Future-Proof Trinity** — AI Builder · Financial Independence · Public Speaking.
 
 > `@foundry/project-engine` is architecturally complete — projects are nodes in the transformation graph.
 
@@ -85,11 +94,11 @@ Reputation (trust, expertise, badges)
 | Milestone | Target | Status |
 |-----------|--------|--------|
 | Core data architecture | Jun 2026 | ✅ PASS-002 |
-| Supabase live | Jun 2026 | PASS-004 (Steve provisions keys) |
-| Transformation System Factory | Jun 2026 | PASS-009 (in progress) |
-| Transformation Graph Engine | Jul 2026 | PASS-010 |
-| Evidence Engine | Jul 2026 | PASS-011 |
-| Bourbon vertical (proof) | Jul 2026 | PASS-014 |
+| Supabase live | Jun 2026 | ✅ PASS-004 |
+| Domain proof pattern | Jun 2026 | ✅ PASS-014 |
+| Future-Proof funnel | Jun 2026 | ✅ PASS-016 |
+| Vertical depth (Trinity) | Q3 2026 | PASS-017–019 |
+| Private beta | Q3–Q4 2026 | PASS-022 |
 | 1M users | Dec 2026 | Target |
 
 > Pass sequence source of truth: this file + Mission Control (`apps/platform/lib/mission-control.ts`)

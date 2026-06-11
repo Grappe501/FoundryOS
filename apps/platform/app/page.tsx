@@ -235,7 +235,7 @@ export default async function MissionControlHome() {
           <Link href="/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
         <Link href="/explore" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Explore Paths (PASS-016C) →</Link>
           <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Become Future-Proof →</Link>
-          <Link href="/validation" style={{ color: '#8B4545', fontSize: 14, fontWeight: 600 }}>Validation Dashboard (PASS-016A) →</Link>
+          <Link href="/validation" style={{ color: '#8B4545', fontSize: 14, fontWeight: 600 }}>Internal Funnel Dashboard →</Link>
           <Link href="/ai-builder" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>AI Builder Life Leverage Domain →</Link>
           <Link href="/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
           <Link href="/growth" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>

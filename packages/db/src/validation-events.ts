@@ -194,7 +194,7 @@ export async function getValidationDashboardMetrics(): Promise<ValidationDashboa
   const criteriaMet = strangersReturned >= 1 && strangersWithFunnel >= 1;
 
   return {
-    stranger_goal: 10,
+    stranger_goal: 0,
     acquisition: {
       visitors: visitors.size,
       by_landing_page: byLanding,
@@ -225,7 +225,7 @@ export async function getValidationDashboardMetrics(): Promise<ValidationDashboa
       strangers_with_full_funnel: strangersWithFunnel,
       strangers_returned: strangersReturned,
       criteria_met: criteriaMet,
-      note: 'PASS-016 closes when ≥1 stranger starts a transformation AND returns without explanation.',
+      note: 'Private build mode — funnel metrics for internal observation. Public beta gate at PASS-022.',
     },
     recent_events: rows.slice(0, 25),
   };

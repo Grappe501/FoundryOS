@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Validation Dashboard | Foundry',
-  description: 'PASS-016A — Market validation. Learn from 10 strangers before building more domains.',
+  description: 'Internal funnel dashboard — private build mode. Stranger beta paused until PASS-022.',
 };
 
 function MetricRow({ label, value }: { label: string; value: string | number }) {
@@ -70,12 +70,12 @@ export default async function ValidationPage() {
           marginTop: 16,
         }}
       >
-        PASS-016A · Market Validation
+        Private Build · Internal Dashboard
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Validation Dashboard</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
-        Risk shifted: architecture → <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>building things nobody uses</strong>.
-        Goal: learn from {metrics?.stranger_goal ?? 10} strangers before PASS-017.
+        <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Private build mode</strong> — vertical depth before
+        public beta. Funnel metrics for internal observation. Stranger recruitment paused until PASS-022.
       </p>
 
       <section
@@ -84,35 +84,30 @@ export default async function ValidationPage() {
           padding: 24,
           background: '#111114',
           borderRadius: 8,
-          border: `1px solid ${metrics?.pass_016_exit.criteria_met ? '#2A4A2A' : '#2A2520'}`,
+          border: '1px solid #2A2520',
         }}
       >
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>PASS-016 Exit Criteria (revised)</h2>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Private Beta Gate (PASS-022)</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
-          At least one complete stranger starts a transformation and returns — without explanation.
+          No public beta until 3 verticals are consumer-ready, assessment routes cleanly, auth + email capture exist,
+          and pricing page is live. Next: PASS-017 AI Builder depth.
         </p>
         <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 6 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Started transformation</p>
+            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Funnel starts (path/project)</p>
             <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
               {metrics?.pass_016_exit.strangers_with_full_funnel ?? 0}
             </p>
           </div>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 6 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Returned</p>
+            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Returned visitors</p>
             <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
               {metrics?.pass_016_exit.strangers_returned ?? 0}
             </p>
           </div>
         </div>
-        <p
-          style={{
-            marginTop: 16,
-            color: metrics?.pass_016_exit.criteria_met ? '#6B9B6B' : '#C8A96E',
-            fontSize: 14,
-          }}
-        >
-          {metrics?.pass_016_exit.criteria_met ? 'EXIT CRITERIA MET' : 'NOT YET — put strangers through /future-proof'}
+        <p style={{ marginTop: 16, color: '#6B6B70', fontSize: 13 }}>
+          Observed during private build — not a launch gate.
         </p>
         {!configured && (
           <p style={{ color: '#8B4545', fontSize: 12, marginTop: 12 }}>
@@ -158,7 +153,7 @@ export default async function ValidationPage() {
 
           <Section title="Recent events" color="#1A1A1E">
             {metrics.recent_events.length === 0 ? (
-              <p style={{ color: '#6B6B70', fontSize: 13 }}>No events yet. Share /future-proof with strangers.</p>
+              <p style={{ color: '#6B6B70', fontSize: 13 }}>No events yet. Funnel tracks internal visits during private build.</p>
             ) : (
               metrics.recent_events.map((e) => (
                 <div
@@ -190,13 +185,10 @@ export default async function ValidationPage() {
       )}
 
       <section style={{ marginTop: 32, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Student pilot (manual)</h2>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Vertical depth mode</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
-          Group A: Middle School (6–8) · Group B: High School (9–12). Ask: &ldquo;What do you want to become?&rdquo;
-          Observe whether they choose AI Builder, Financial Independence, Public Speaking — or something else.
-        </p>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>
-          Primary marketing asset: Future-Proof Assessment — not AI Builder alone.
+          Build order: AI Builder → Financial Independence → Public Speaking → Civic Engagement → Bourbon polish.
+          Beta wedge: Future-Proof Trinity. See <code style={{ color: '#E8E8EC' }}>docs/VERTICAL_DEPTH_MODE.md</code>.
         </p>
       </section>
 

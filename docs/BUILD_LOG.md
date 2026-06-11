@@ -9,17 +9,19 @@
 | **Version** | `0.8.0-path-engine` |
 | **Last Pass** | PASS-016C ✅ |
 | **Last Pass** | PASS-016D ✅ |
-| **Next Pass** | PASS-016A — Market Validation (10 strangers) |
-| **Focus** | Learn what strangers do — not build PASS-017 yet |
-| **Live proof** | [/future-proof](/future-proof) → [/explore](/explore) → [/ai-builder](/ai-builder) · [/validation](/validation) |
-| **Pass gate** | ≥1 stranger starts transformation AND returns |
+| **Next Pass** | PASS-017 — AI Builder Depth Pass |
+| **Mode** | **Private build** — vertical depth until 3–5 verticals consumer-ready |
+| **Focus** | Build AI Builder deep enough for student/parent self-serve — no stranger beta yet |
+| **Live proof** | [/future-proof](/future-proof) → [/explore](/explore) → [/ai-builder](/ai-builder) · [/validation](/validation) (internal) |
+| **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
 
 | Risk | Mitigation |
 |------|------------|
-| PASS-016 becomes architecture pass | Pass gate = first stranger, not another checklist |
-| Market domain not outcome | Market **Become Future-Proof**; AI Builder is a path |
+| Shallow verticals at beta | Depth checklist per vertical — see `docs/VERTICAL_DEPTH_MODE.md` |
+| Proof UI on public pages | PASS-021 consumer polish; hide HPI/PASS now where possible |
+| Market domain not outcome | Market **Become Future-Proof**; Trinity is the wedge |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
 
 ---
@@ -35,11 +37,33 @@
 | Validation events | `explore_viewed`, `path_clicked`, `interest_submitted` |
 | Migration | `20260625100000_validation_pass016d_events.sql` |
 
-**Gate unchanged:** 10 strangers through `/future-proof` before PASS-017.
+**Gate (revised):** Private build until 3–5 verticals complete. See `docs/VERTICAL_DEPTH_MODE.md`.
 
 ---
 
-## PASS-016C — Public Explore Catalog ✅
+## Strategy Pivot — Vertical Depth Mode (2026-06-11) · Major Milestone
+
+| Change | Detail |
+|--------|--------|
+| Paused | 10-stranger public beta (PASS-016A infrastructure kept) |
+| New gate | Private build until Trinity + 2 more verticals feel complete |
+| Risk shift | Not architecture — **"not enough here yet"** on consumer pages |
+| Jan 2027 | **5 exceptional domains** (not 20 active) |
+| Next passes | PASS-017 AI Builder **experience** → 018 FI → 019 Speaking → 020 Civic → 021 polish → 022 beta |
+| Beta wedge | AI Builder + Financial Independence + Public Speaking |
+
+---
+
+## PASS-016A — Market Validation (paused)
+
+| Deliverable | Status |
+|-------------|--------|
+| Validation dashboard | `/validation` — internal operator use |
+| Event API | `POST /api/validation/event` |
+| Funnel tracking | Wired — observe during private build |
+| Stranger beta | **Paused** — do not recruit strangers yet |
+
+**Was:** 10 strangers before PASS-017. **Now:** depth first, beta at PASS-022.
 
 | Deliverable | URL |
 |-------------|-----|
@@ -51,21 +75,7 @@
 
 ---
 
-## PASS-016A — Market Validation (in progress)
-
-| Deliverable | Status |
-|-------------|--------|
-| Validation dashboard | `/validation` |
-| Event API | `POST /api/validation/event` |
-| Funnel tracking | future-proof + ai-builder wired |
-| Stranger goal | 10 before PASS-017 |
-| Student pilot | Manual — observe choice behavior |
-
-**Exit:** At least one stranger starts a transformation and returns.
-
----
-
-## PASS-016 — AI Builder Active Domain ✅
+## PASS-016C — Public Explore Catalog ✅
 
 | Deliverable | Status |
 |-------------|--------|

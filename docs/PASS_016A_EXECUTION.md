@@ -1,125 +1,48 @@
 # PASS-016A — Market Validation
 
-> Not architecture. Not code velocity. **Validation.**
+> **Status: PAUSED (2026-06-11)** — Infrastructure kept; stranger beta deferred.
+> **New gate:** `docs/VERTICAL_DEPTH_MODE.md` — private build until 3–5 verticals complete.
 
 ---
 
-## Risk Shift
+## What Remains Live
 
-| Before PASS-015 | After PASS-016 |
-|-----------------|----------------|
-| Risk = Architecture Failure | Risk = Building Things Nobody Uses |
+| Asset | Purpose |
+|-------|---------|
+| `/validation` | Internal operator dashboard — funnel observation during private build |
+| `POST /api/validation/event` | Event capture for future invite-only beta |
+| Funnel wiring | `/future-proof` → `/explore` → `/ai-builder` |
 
 ---
 
-## Rule
+## What Is Paused
 
-**Do not start PASS-017** until PASS-016A answers:
+- Recruiting 10 strangers through `/future-proof`
+- Using stranger count as gate before PASS-017
+- Student pilot as launch blocker (manual observation OK, not gate)
+
+---
+
+## Original Intent (Historical)
+
+**Do not start depth passes on shallow verticals** — validated by building depth first instead of early traffic.
+
+Original question:
 
 ```txt
 Can a stranger arrive, understand, start, and return — without explanation?
 ```
 
-If not, PASS-017/018/019 multiply the problem.
+Still relevant at **PASS-022 Private Beta Readiness**, not now.
 
 ---
 
-## Validation Dashboard
+## Next Steps
 
-**URL:** `/validation`
+1. ✅ PASS-016D consumer journey wired
+2. ~~Put 10 strangers through `/future-proof`~~ **Paused**
+3. **PASS-017** — AI Builder Depth Pass
+4. PASS-018–020 — Trinity + Civic depth
+5. PASS-022 — Private beta when gate clears
 
-### Acquisition
-
-- Visitors
-- Source
-- Landing Page
-
-### Activation
-
-- Assessment Started
-- Assessment Completed
-- Path Started
-- Project Started
-
-### Retention
-
-- Returned Tomorrow
-- Returned This Week
-
-### Conversion (wired, awaiting product)
-
-- Created Account
-- Started Trial
-- Paid
-
----
-
-## First Real User Goal
-
-Not 100 users.
-
-```txt
-10 strangers
-```
-
-Learn from 10 strangers before building 10 more domains.
-
----
-
-## Student Pilot (Manual)
-
-| Group | Grades |
-|-------|--------|
-| A | Middle School 6–8 |
-| B | High School 9–12 |
-
-Ask: *"What do you want to become?"*
-
-Observe natural choices vs. assumed Trinity paths.
-
----
-
-## Marketing Asset
-
-Primary entry point: **Future-Proof Assessment** (`/future-proof`)
-
-Not AI Builder alone. People search:
-
-```txt
-How do I stay relevant?
-How do I get ahead?
-How do I prepare my kids?
-```
-
----
-
-## PASS-016 Exit Criteria (Revised)
-
-~~AI Builder Active Domain~~
-
-**New close:**
-
-```txt
-At least one complete stranger starts a transformation and returns.
-```
-
-Proves: Discovery · Activation · Retention
-
----
-
-## Sequence
-
-1. ✅ Commit + deploy PASS-016
-2. ✅ Build PASS-016A validation layer
-3. Put 10 strangers through `/future-proof`
-4. Study `/validation` behavior
-5. **Then** start PASS-017
-
----
-
-## Technical
-
-- Table: `validation_events`
-- API: `POST /api/validation/event`
-- Migration: `20260625000000_validation_pass016a.sql`
-- Anonymous `visitor_id` in localStorage
+See `docs/PASS_017_022_SEQUENCE.md`.

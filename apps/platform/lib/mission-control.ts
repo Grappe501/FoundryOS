@@ -17,7 +17,7 @@ import { getNorthStarMetrics } from '@foundry/path-engine';
 
 export const PLATFORM_VERSION = '0.8.0-path-engine';
 
-export type PassStatus = 'completed' | 'in_progress' | 'planned';
+export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
 export type PassEntry = {
   code: string;
@@ -164,9 +164,9 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-016A',
     title: 'Market Validation',
-    status: 'in_progress' as const,
+    status: 'paused' as const,
     date: '2026-06-11',
-    summary: '/validation — 10 strangers through /future-proof before PASS-017.',
+    summary: '/validation infrastructure live — stranger beta paused. Private build mode.',
   },
   {
     code: 'PASS-016C',
@@ -182,6 +182,14 @@ export const PASSES: PassEntry[] = [
     date: '2026-06-11',
     summary:
       'Consumer journey nav · Start here CTA · Choose this path · interest capture · explore_viewed / path_clicked / interest_submitted events.',
+  },
+  {
+    code: 'PASS-017',
+    title: 'AI Builder Experience Pass',
+    status: 'planned' as const,
+    date: '2026-06-11',
+    summary:
+      'First consumer value pass — student spends hours; parent gets it without explanation. Academy, projects, glossary, portfolio, mastery, community.',
   },
 ];
 
@@ -309,15 +317,15 @@ export async function getMissionControlStats() {
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
     last_pass: 'PASS-016D',
-    next_pass: 'PASS-016A',
+    next_pass: 'PASS-017',
     current_focus:
-      'Consumer journey wired: /future-proof → /explore → /ai-builder. Put 10 strangers through /future-proof — watch /validation. No PASS-017 until validated.',
+      'Private build — vertical depth. PASS-017: AI Builder experience (not infrastructure). Jan 2027: 5 exceptional domains. Trinity wedge.',
     open_risks: [
-      'Risk shifted: building things nobody uses — not architecture failure',
-      'PASS-016 exit: ≥1 stranger starts transformation AND returns',
-      'Primary marketing asset: Future-Proof Assessment — not AI Builder alone',
-      '10 strangers > 10 more domains',
-      'Student pilot: observe what middle/high schoolers choose to become',
+      'Risk: parent says "not enough here yet" — depth checklist per vertical',
+      'Jan 2027 target: 5 exceptional domains, not 20 shallow',
+      'Hide PASS / OPERATIONAL / HPI from public pages (PASS-021)',
+      'Trinity beta wedge beats Bourbon/BBQ/Poker for first beta',
+      'Private beta gate: 3 consumer-ready verticals + auth + email + pricing',
     ],
   };
 }
