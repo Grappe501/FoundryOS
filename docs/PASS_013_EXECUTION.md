@@ -52,6 +52,25 @@ Evidence Engine  →  Reputation  →  Mastery  →  Identity  →  Community
 
 ---
 
+## Proof Dashboards
+
+### `/reputation`
+
+Evidence Evaluated ✓ · Trust Weight Applied ✓ · Reputation Updated ✓ · Identity Updated ✓ · persisted ✓
+
+### `/mastery`
+
+Evidence Linked ✓ · Reputation Calculated ✓ · Mastery Assigned ✓ · Identity Updated ✓ · Community Recognition Updated ✓ · persisted ✓
+
+## Demo User Success Test
+
+```txt
+Delivered first speech → Evidence verified
+Reputation: Trusted Speaker Candidate
+Mastery: Road to Confident Speaker — Milestone 1 Complete
+Identity: Public Speaker Path Progress Increased
+```
+
 ## Out of Scope
 
 - Bourbon vertical UI (PASS-014)

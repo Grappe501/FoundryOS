@@ -33,3 +33,17 @@ export {
   getCommunityKpiCounts,
   type CommunityInstanceRow,
 } from './community-instances';
+export {
+  getReputationByUserAndEvidence,
+  upsertReputationRecord,
+  ensureDemoReputationRecord,
+  getReputationKpiCounts,
+  type ReputationRecordRow,
+} from './reputation-records';
+export {
+  getMasteryByUserAndMilestone,
+  upsertMasteryAssignment,
+  ensureDemoMasteryAssignment,
+  getMasteryKpiCounts,
+  type MasteryAssignmentRow,
+} from './mastery-assignments';

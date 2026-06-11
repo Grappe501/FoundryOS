@@ -8,9 +8,9 @@
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
 | **Last Pass** | PASS-012 ✅ |
-| **Next Pass** | PASS-013 — Reputation + Mastery (greenlit, not started) |
-| **Focus** | PASS-013: Earned trust chain — Evidence → Reputation → Mastery → Identity → Community |
-| **Live proof** | [foundry-os.netlify.app/collections](https://foundry-os.netlify.app/collections) · [foundry-os.netlify.app/community](https://foundry-os.netlify.app/community) |
+| **Current Pass** | PASS-013 — Reputation + Mastery (in progress) |
+| **Next Pass** | PASS-014 — Bourbon Vertical Launch |
+| **Focus** | `/reputation` + `/mastery` — Evidence → Reputation → Mastery → Identity → Community |
 
 ### Open Risks
 

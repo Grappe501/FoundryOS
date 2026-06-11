@@ -1,10 +1,12 @@
 import catalogIndex from '../../../data/catalog/index.json';
 import verticalSites from '../../../data/vertical-sites.json';
 import { estimatePageCount } from '@foundry/content-engine';
-import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getLivePlatformCounts, getEvidenceKpiCounts, getCollectionKpiCounts, getCommunityKpiCounts, getReputationKpiCounts, getMasteryKpiCounts, isSupabaseConfigured } from '@foundry/db';
 import { getEvidenceKpiSnapshot } from '@foundry/evidence-engine';
 import { getCollectionKpiSnapshot } from '@foundry/collection-engine';
 import { getCommunityKpiSnapshot } from '@foundry/community-engine';
+import { getReputationKpiSnapshot } from '@foundry/reputation-engine';
+import { getMasteryKpiSnapshot } from '@foundry/mastery-engine';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -126,9 +128,9 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-013',
     title: 'Reputation + Mastery Live',
-    status: 'planned' as const,
+    status: 'in_progress' as const,
     summary:
-      'Earned trust + demonstrated capability — not points. Chain: Evidence → Reputation → Mastery → Identity → Community.',
+      'Earned trust + demonstrated capability from evidence. Proof: /reputation + /mastery — not points or gamification.',
   },
   {
     code: 'PASS-014',
@@ -146,6 +148,8 @@ export async function getMissionControlStats() {
   const evidenceLive = isSupabaseConfigured() ? await getEvidenceKpiCounts() : null;
   const collectionLive = isSupabaseConfigured() ? await getCollectionKpiCounts() : null;
   const communityLive = isSupabaseConfigured() ? await getCommunityKpiCounts() : null;
+  const reputationLive = isSupabaseConfigured() ? await getReputationKpiCounts() : null;
+  const masteryLive = isSupabaseConfigured() ? await getMasteryKpiCounts() : null;
   const northStar = getNorthStarMetrics();
   const transformationAnalytics = getTransformationAnalytics();
   const loopKpis = getLoopKpiSnapshot(
@@ -156,6 +160,8 @@ export async function getMissionControlStats() {
   const evidenceKpis = getEvidenceKpiSnapshot(evidenceLive ?? undefined);
   const collectionKpis = getCollectionKpiSnapshot(collectionLive ?? undefined);
   const communityKpis = getCommunityKpiSnapshot(communityLive ?? undefined);
+  const reputationKpis = getReputationKpiSnapshot(reputationLive ?? undefined);
+  const masteryKpis = getMasteryKpiSnapshot(masteryLive ?? undefined);
 
   return {
     version: PLATFORM_VERSION,
@@ -210,11 +216,17 @@ export async function getMissionControlStats() {
     communities_active: communityKpis.communities_active,
     community_members_total: communityKpis.community_members_total,
     community_evidence_shares: communityKpis.community_evidence_shares,
-    launch_readiness_pct: live ? 76 : 52,
+    reputation_records_total: reputationKpis.reputation_records_total,
+    avg_reputation_trust_weight: reputationKpis.avg_trust_weight,
+    identity_reputation_strength: reputationKpis.identity_reputation_strength,
+    mastery_assignments_total: masteryKpis.mastery_assignments_total,
+    community_recognitions_total: masteryKpis.community_recognitions_total,
+    identity_mastery_strength: masteryKpis.identity_mastery_strength,
+    launch_readiness_pct: live ? 80 : 52,
     last_pass: 'PASS-012',
     next_pass: 'PASS-013',
     current_focus:
-      'PASS-012 CLOSED — /collections + /community OPERATIONAL on Netlify. PASS-013 Reputation + Mastery greenlit when ready — earned trust, not gamification.',
+      'PASS-013 IN PROGRESS: /reputation + /mastery — Evidence → Reputation → Mastery → Identity → Community. Earned trust, not gamification.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',

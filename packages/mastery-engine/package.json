@@ -1,0 +1,13 @@
+{
+  "name": "@foundry/mastery-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Demonstrated capability from evidence — domain-specific mastery",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {
+    "@foundry/reputation-engine": "*"
+  },
+  "devDependencies": { "typescript": "^5.7.0" }
+}

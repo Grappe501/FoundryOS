@@ -22,7 +22,7 @@ PASS-009 ████████████ Transformation System Factory ✅
 PASS-010 ████████████ Transformation Graph Engine ✅
 PASS-011 ████████████ Evidence Engine ✅
 PASS-012 ████████████ Collections + Communities ✅
-PASS-013 ░░░░░░░░░░░░ Reputation + Mastery ← NEXT (greenlit)
+PASS-013 ░░░░░░░░░░░░ Reputation + Mastery ← IN PROGRESS
 PASS-014 ░░░░░░░░░░░░ Bourbon Vertical Launch
 ```
 

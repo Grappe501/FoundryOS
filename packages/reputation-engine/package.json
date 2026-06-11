@@ -1,0 +1,11 @@
+{
+  "name": "@foundry/reputation-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Earned trust from evidence — not points or gamification",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "dependencies": {},
+  "devDependencies": { "typescript": "^5.7.0" }
+}

@@ -38,6 +38,12 @@ const northStarLabels: Record<string, string> = {
   communities_active: 'Active Communities',
   community_members_total: 'Community Members',
   community_evidence_shares: 'Evidence Shared in Community',
+  reputation_records_total: 'Reputation Records',
+  avg_reputation_trust_weight: 'Avg Reputation Trust',
+  identity_reputation_strength: 'Identity Reputation Strength',
+  mastery_assignments_total: 'Mastery Assignments',
+  community_recognitions_total: 'Community Recognitions',
+  identity_mastery_strength: 'Identity Mastery Strength',
   projects_completed: 'Projects Completed',
   path_completion_rate: 'Path Completion Rate',
   active_paths: 'Active Paths',
@@ -60,7 +66,7 @@ export default async function MissionControlHome() {
     const value =
       key === 'path_completion_rate' || key === 'transformation_loop_completion_rate'
         ? `${Math.round(raw * 100)}%`
-        : key === 'evidence_trust_weight_avg' || key === 'identity_evidence_strength' || key === 'identity_collections_strength'
+        : key === 'evidence_trust_weight_avg' || key === 'identity_evidence_strength' || key === 'identity_collections_strength' || key === 'identity_reputation_strength' || key === 'avg_reputation_trust_weight' || key === 'identity_mastery_strength'
           ? `${Math.round(raw)}%`
           : raw.toLocaleString();
     return { label, value };
@@ -181,6 +187,8 @@ export default async function MissionControlHome() {
           <Link href="/evidence" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
           <Link href="/collections" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Collections (PASS-012) →</Link>
           <Link href="/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
+          <Link href="/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
+          <Link href="/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>
 

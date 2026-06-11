@@ -12,6 +12,8 @@
     "@foundry/collection-engine": "*",
     "@foundry/community-engine": "*",
     "@foundry/evidence-engine": "*",
+    "@foundry/mastery-engine": "*",
+    "@foundry/reputation-engine": "*",
     "@supabase/supabase-js": "^2.49.0"
   },
   "devDependencies": {
