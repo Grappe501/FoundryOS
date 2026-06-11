@@ -1,85 +1,51 @@
-# PASS-017 → PASS-022 — Vertical Depth + Private Beta
+# PASS Sequence — Revised (Post Trinity)
 
-> Supersedes stranger-first gate in `docs/PASS_016A_EXECUTION.md`. Source of truth for pass order after PASS-016D.
-
----
-
-## Strategic Lock
-
-- **Mode:** Private build until 3–5 verticals feel complete
-- **Beta wedge:** Future-Proof Trinity (AI Builder · Financial Independence · Public Speaking)
-- **Proof vertical:** Bourbon (engineering complete; consumer polish in PASS-021)
-- **No public beta** until `docs/VERTICAL_DEPTH_MODE.md` gate clears
+> Updated 2026-06-11 per Ernie strategy lock.
 
 ---
 
-## Pass Map
+## Locked Order
 
-| Pass | Vertical / Theme | Milestone |
-|------|------------------|-----------|
-| **PASS-017** | AI Builder | **Experience pass** — first consumer value; student spends hours; parent gets it |
-| **PASS-018** | Financial Independence | Full Life Leverage depth |
-| **PASS-019** | Public Speaking | Full Life Leverage depth |
-| **PASS-020** | Civic Engagement | Fifth vertical depth |
-| **PASS-021** | Consumer Experience | Hide all proof UI from public pages |
-| **PASS-022** | Private Beta Readiness | Auth, email, pricing, 3 consumer-ready verticals |
+| Pass | Theme | Milestone |
+|------|-------|-----------|
+| **PASS-021** | Consumer Experience Polish | Unified Trinity product · operator gate |
+| **PASS-020** | Civic Engagement | Life Leverage leg 4 · Improve Your Community |
+| **PASS-020A** | Domain Factory Audit | Honest automation % · `npm run audit:worlds` |
+| **PASS-023** | Passion Trinity Foundation | Bourbon · BBQ · Poker registries + consumer worlds |
+| **PASS-024** | Factory Automation | `npm run build:world -- <slug>` → 80% of world |
+| **PASS-022** | Private Beta Readiness | Auth · email · pricing · 3+ consumer-ready verticals |
 
----
-
-## Vertical Completeness (Every Depth Pass)
-
-Each PASS-017 through PASS-020 must deliver:
-
-| Layer | Deliverable |
-|-------|-------------|
-| Landing | Public consumer page |
-| Mastery | Road to … path with milestones |
-| Projects | First 5 projects with evidence hooks |
-| Evidence | Domain evidence model wired |
-| Collection | Portfolio / My … asset |
-| Community | Circle / club concept |
-| Action | Clear next best action |
-| Academy | Beginner academy (Learning Pyramid L1–L3) |
-| Glossary | Terms / definitions |
-| Proof | Internal dashboard only (`/verticals/{slug}` or operator routes) |
+**Deferred:** PASS-020 before PASS-021 was reversed — polish first.
 
 ---
 
-## PASS-017 — AI Builder Depth Pass (NEXT)
+## Multiplier Priority
 
-**Goal:** A student or parent arrives at `/ai-builder` and understands what to do next — no Steve required.
+```txt
+Cost to launch a domain:
+  Today:     several passes (hand-built)
+  PASS-024:  one command (supervised factory)
+```
 
-**Consumer surfaces:** `/ai-builder`, assessment routing from `/future-proof`
-
-**Hidden from consumers:** HPI verification, OPERATIONAL badges, pass codes, slug debug
-
-**Entry command pattern:** extend `ensureAiBuilderDomainProof()` + consumer page assembly
-
----
-
-## PASS-021 — Consumer Experience Polish
-
-- Strip PASS / OPERATIONAL / HPI from all public routes
-- `/bourbon` → operator-only or `/verticals/bourbon`
-- Unified consumer chrome across Trinity + explore
+That is how 5 exceptional domains becomes 50 without employees.
 
 ---
 
-## PASS-022 — Private Beta Readiness
+## Every Pass Must Answer
 
-Gate checklist from `docs/VERTICAL_DEPTH_MODE.md`:
+```txt
+How does this create users?
+How does this create retention?
+How does this create revenue?
+```
 
-- 3 consumer-ready verticals
-- Assessment routing clean
-- Auth + email capture
-- Pricing page (payments optional)
-- `/validation` operational for invite-only cohort
+Update: `marketing/` · `docs/JANUARY_2027_TARGETS.md` · Growth OS · launch velocity
 
 ---
 
 ## References
 
-- `docs/VERTICAL_DEPTH_MODE.md`
-- `docs/FOUNDRY_TRINITY.md`
-- `docs/LIFE_LEVERAGE_DOMAINS.md`
-- `docs/PASS_016_019_SEQUENCE.md` (historical — pre depth-mode pivot)
+- `docs/PASSION_TRINITY.md`
+- `docs/PASS_020A_DOMAIN_FACTORY_AUDIT.md`
+- `docs/PASS_024_EXECUTION.md`
+- `packages/world-factory/`

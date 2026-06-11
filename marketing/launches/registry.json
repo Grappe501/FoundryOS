@@ -8,28 +8,67 @@
       "active_at": "2026-06-11",
       "days_blueprint_to_launch": 0,
       "days_launch_to_active": 0,
-      "status": "active"
+      "status": "active",
+      "trinity": "passion",
+      "automation_pct": 25,
+      "consumer_live": false
     },
     {
       "slug": "ai-builder",
       "display_name": "AI Builder",
       "blueprint_started_at": "2026-06-11T04:12:08.190Z",
       "launched_at": "2026-06-11T04:12:08.183Z",
-      "active_at": null,
-      "days_blueprint_to_launch": null,
+      "active_at": "2026-06-11",
+      "days_blueprint_to_launch": 0,
       "days_launch_to_active": null,
-      "status": "scaffolded"
+      "status": "active",
+      "trinity": "life-leverage",
+      "automation_pct": 85,
+      "consumer_live": true
     },
     {
       "slug": "financial-independence",
       "display_name": "Financial Independence",
       "blueprint_started_at": "2026-06-11T04:19:14.982Z",
       "launched_at": "2026-06-11T04:19:14.973Z",
-      "active_at": null,
-      "days_blueprint_to_launch": null,
+      "active_at": "2026-06-11",
+      "days_blueprint_to_launch": 0,
       "days_launch_to_active": null,
-      "status": "scaffolded"
+      "status": "active",
+      "trinity": "life-leverage",
+      "automation_pct": 85,
+      "consumer_live": true
+    },
+    {
+      "slug": "public-speaking",
+      "display_name": "Public Speaking",
+      "blueprint_started_at": "2026-06-11",
+      "launched_at": "2026-06-11",
+      "active_at": "2026-06-11",
+      "status": "active",
+      "trinity": "life-leverage",
+      "automation_pct": 85,
+      "consumer_live": true
+    },
+    {
+      "slug": "bbq",
+      "display_name": "BBQ",
+      "blueprint_started_at": "2026-06-11",
+      "status": "foundation",
+      "trinity": "passion",
+      "automation_pct": 20,
+      "consumer_live": false
+    },
+    {
+      "slug": "poker",
+      "display_name": "Poker",
+      "blueprint_started_at": "2026-06-11",
+      "status": "foundation",
+      "trinity": "passion",
+      "automation_pct": 20,
+      "consumer_live": false
     }
   ],
-  "bourbon_proof_started_at": "2026-06-11"
+  "bourbon_proof_started_at": "2026-06-11",
+  "last_updated_pass": "PASS-021"
 }
