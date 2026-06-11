@@ -23,6 +23,18 @@
 
 ---
 
+## PASS-016C — Public Explore Catalog ✅
+
+| Deliverable | URL |
+|-------------|-----|
+| Consumer catalog | `/explore` |
+| Operator alias | `/course-catalog` |
+| Planned path template | `/explore/[slug]` |
+| Registry | `apps/platform/lib/explore-catalog.ts` |
+| Growth metric | `public_catalog_paths` |
+
+---
+
 ## PASS-016A — Market Validation (in progress)
 
 | Deliverable | Status |

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { FutureProofAssessment } from '../../components/FutureProofAssessment';
 import { ValidationPageTracker } from '../../components/ValidationPageTracker';
-import { PASS_016_PASS_GATE } from '@foundry/domain-blueprint';
 import { TRINITY_PATHS } from '../../lib/future-proof-assessment';
 
 export const metadata = {
@@ -37,17 +36,6 @@ export default async function FutureProofPage({
         foundryos.com
       </Link>
       <ValidationPageTracker page="/future-proof" />
-      <p
-        style={{
-          color: '#6B9B6B',
-          fontSize: 11,
-          letterSpacing: '0.15em',
-          textTransform: 'uppercase',
-          marginTop: 16,
-        }}
-      >
-        PASS-016 · Foundry Trinity
-      </p>
       {deferredMeta && deferred !== 'ai-builder' && (
         <section style={{ marginTop: 16, padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
           <p style={{ color: '#C8A96E', fontSize: 14, margin: 0 }}>
@@ -62,8 +50,10 @@ export default async function FutureProofPage({
         </section>
       )}
       <FutureProofAssessment />
-      <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 32, lineHeight: 1.6 }}>
-        Pass gate: {PASS_016_PASS_GATE}
+      <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 32 }}>
+        <Link href="/explore" style={{ color: '#6B9B6B' }}>
+          Explore all paths Foundry is building →
+        </Link>
       </p>
     </main>
   );

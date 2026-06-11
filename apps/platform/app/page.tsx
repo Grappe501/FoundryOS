@@ -69,6 +69,7 @@ const growthStatLabels: Record<string, string> = {
   mrr_usd: 'MRR',
   seo_traffic: 'SEO Traffic',
   indexed_pages: 'Indexed Pages',
+  public_catalog_paths: 'Public Catalog Paths',
 };
 
 export default async function MissionControlHome() {
@@ -232,7 +233,8 @@ export default async function MissionControlHome() {
           <Link href="/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
           <Link href="/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
           <Link href="/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
-          <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Become Future-Proof (PASS-016) →</Link>
+        <Link href="/explore" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Explore Paths (PASS-016C) →</Link>
+          <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Become Future-Proof →</Link>
           <Link href="/validation" style={{ color: '#8B4545', fontSize: 14, fontWeight: 600 }}>Validation Dashboard (PASS-016A) →</Link>
           <Link href="/ai-builder" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>AI Builder Life Leverage Domain →</Link>
           <Link href="/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>

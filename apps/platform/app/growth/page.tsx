@@ -11,6 +11,7 @@ import {
   SEO_PAGE_TYPES,
   type GrowthKpiSnapshot,
 } from '../../lib/growth-os';
+import { countExploreCatalogPaths } from '../../lib/explore-catalog';
 import { listTrafficOpportunities } from '../../lib/opportunity-registry';
 import {
   ACTIVE_DOMAIN_CRITERIA,
@@ -90,6 +91,16 @@ export default async function GrowthOsPage() {
         </p>
         <p style={{ color: '#E8E8EC', fontSize: 22, fontWeight: 300, marginTop: 12 }}>
           {growth.active_domains} active · {growth.domains_built} built · {Math.round(growth.domain_activation_rate * 100)}% activation
+        </p>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Public catalog:{' '}
+          <Link href="/explore" style={{ color: '#6B9B6B' }}>
+            {growth.public_catalog_paths || countExploreCatalogPaths()} paths listed
+          </Link>
+          {' · '}
+          <Link href="/course-catalog" style={{ color: '#6B6B70', fontSize: 12 }}>
+            operator view
+          </Link>
         </p>
       </section>
 

@@ -10,6 +10,7 @@ import { getMasteryKpiSnapshot } from '@foundry/mastery-engine';
 import { getDomainProofKpiSnapshot } from '@foundry/domain-blueprint';
 import { getGrowthKpiSnapshot } from './growth-os';
 import { getLaunchVelocitySnapshot } from './launch-factory-loader';
+import { countExploreCatalogPaths } from './explore-catalog';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -165,8 +166,14 @@ export const PASSES: PassEntry[] = [
     title: 'Market Validation',
     status: 'in_progress' as const,
     date: '2026-06-11',
-    summary:
-      '/validation dashboard — 10 strangers goal. Exit: stranger starts transformation and returns. No PASS-017 until validated.',
+    summary: '/validation — 10 strangers through /future-proof before PASS-017.',
+  },
+  {
+    code: 'PASS-016C',
+    title: 'Public Explore Catalog',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary: '/explore consumer path directory · /course-catalog operator alias · status colors · planned detail pages.',
   },
 ];
 
@@ -209,6 +216,7 @@ export async function getMissionControlStats() {
     monthly_active_knowledge_assets: collectionKpis.knowledge_assets_total,
     domain_launch_velocity_days: launchVelocity.avg_days_blueprint_to_active,
     domain_launch_velocity_target: launchVelocity.target_q4_days,
+    public_catalog_paths: countExploreCatalogPaths(),
   });
 
   return {
@@ -290,11 +298,12 @@ export async function getMissionControlStats() {
     domain_launch_velocity_days: growthKpis.domain_launch_velocity_days,
     domain_launch_velocity_target: growthKpis.domain_launch_velocity_target,
     indexed_pages: growthKpis.indexed_pages,
+    public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-016',
+    last_pass: 'PASS-016C',
     next_pass: 'PASS-016A',
     current_focus:
-      'Market validation — put 10 strangers through /future-proof. Study /validation. Do NOT start PASS-017 until a stranger returns.',
+      'Public catalog live at /explore. Put 10 strangers through /future-proof — watch /validation. No PASS-017 until validated.',
     open_risks: [
       'Risk shifted: building things nobody uses — not architecture failure',
       'PASS-016 exit: ≥1 stranger starts transformation AND returns',

@@ -1,6 +1,7 @@
 /** PASS-015 — Customer Acquisition Infrastructure + Growth Factory */
 
 import { ACTIVE_DOMAINS_JAN_2027_TARGET } from './growth-factory';
+import { countExploreCatalogPaths } from './explore-catalog';
 
 export const GROWTH_NORTH_STAR = 'Monthly Active Transformations';
 
@@ -49,6 +50,7 @@ export type GrowthKpiSnapshot = {
   indexed_pages: number;
   domain_launch_velocity_days: number | null;
   domain_launch_velocity_target: number;
+  public_catalog_paths: number;
 };
 
 export type GrowthTarget = {
@@ -102,6 +104,7 @@ export function getGrowthKpiSnapshot(live?: Partial<GrowthKpiSnapshot>): GrowthK
     indexed_pages: live?.indexed_pages ?? 0,
     domain_launch_velocity_days: live?.domain_launch_velocity_days ?? null,
     domain_launch_velocity_target: live?.domain_launch_velocity_target ?? 7,
+    public_catalog_paths: live?.public_catalog_paths ?? countExploreCatalogPaths(),
   };
 }
 
@@ -123,4 +126,5 @@ export const GROWTH_STAT_LABELS: Record<keyof GrowthKpiSnapshot, string> = {
   indexed_pages: 'Indexed Pages',
   domain_launch_velocity_days: 'Domain Launch Velocity (days)',
   domain_launch_velocity_target: 'Launch Velocity Target (Q4)',
+  public_catalog_paths: 'Public Catalog Paths',
 };
