@@ -26,7 +26,11 @@ Set in Netlify → Site settings → Environment variables:
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | All | Public — RLS protects data |
 | `SUPABASE_SERVICE_ROLE_KEY` | Build + Functions only | **Never** expose to client |
 | `NEXT_PUBLIC_PLATFORM_NAME` | All | `FoundryOS` |
-| `NEXT_PUBLIC_APP_URL` | Production | `https://foundryos.com` |
+| `NEXT_PUBLIC_APP_URL` | Production | `https://foundryos.com` or `https://foundry-os.netlify.app` |
+
+**Do not add to Netlify:** `SUPABASE_DB_PASSWORD`, `OPENAI_API_KEY` (local/CLI only unless a pass requires server-side OpenAI).
+
+Secrets scanning: public `NEXT_PUBLIC_*` values appear in repo docs by design. `netlify.toml` sets `SECRETS_SCAN_OMIT_KEYS` for platform name, app URL, and Supabase URL.
 
 ---
 
