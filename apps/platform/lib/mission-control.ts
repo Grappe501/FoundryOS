@@ -11,7 +11,17 @@ import { getNorthStarMetrics } from '@foundry/path-engine';
 
 export const PLATFORM_VERSION = '0.8.0-path-engine';
 
-export const PASSES = [
+export type PassStatus = 'completed' | 'in_progress' | 'planned';
+
+export type PassEntry = {
+  code: string;
+  title: string;
+  status: PassStatus;
+  date?: string;
+  summary: string;
+};
+
+export const PASSES: PassEntry[] = [
   {
     code: 'PASS-000',
     title: 'Foundation',
