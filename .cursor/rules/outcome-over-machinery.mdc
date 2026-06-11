@@ -1,0 +1,36 @@
+---
+description: Users buy outcomes — Help me become the person I want to be
+alwaysApply: true
+---
+
+# Outcome Over Machinery
+
+The product:
+
+```txt
+Help me become the person I want to be.
+```
+
+NOT: Learn bourbon, read articles, build collections (those are means).
+
+## PASS-009: Transformation System Factory
+
+Not Entity Factory. Every domain gets a DNA blueprint. Every entity package must answer:
+
+```txt
+Why should someone care?
+```
+
+Not just: What is it?
+
+Required outputs: care_reason, beginner_journey, expert_journey, community_use_cases
+
+## Layers
+
+Roles · Legacy · Community OS (not club feature)
+
+## Moat
+
+People spend years becoming something. Most platforms forget. **Foundry remembers.**
+
+See `docs/HUMAN_OPERATING_SYSTEM.md`, `docs/LEGACY_ENGINE.md`, `docs/ROLES.md`

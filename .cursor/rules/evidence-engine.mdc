@@ -1,0 +1,23 @@
+---
+description: Evidence Registry — identity requires evidence (PASS-011)
+alwaysApply: false
+---
+
+# Evidence Engine — PASS-011
+
+Before Collections + Clubs.
+
+```txt
+Identity → requires → Evidence
+```
+
+Without evidence: self-declared expertise.
+With evidence: earned expertise.
+
+Do not build badge systems without evidence profiles.
+
+**Evidence Tiers:** Claimed → Verified → Community Confirmed → Demonstrated → Mentored. Not for policing — for strengthening trust.
+
+`EVIDENCE_REGISTRY` in `@foundry/evidence-engine`
+
+See `docs/EVIDENCE_ENGINE.md`

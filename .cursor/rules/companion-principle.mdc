@@ -1,0 +1,39 @@
+---
+description: Companion Principle — Foundry is not a destination, it's a companion
+alwaysApply: true
+---
+
+# Companion Principle
+
+Foundry is **not a destination**. It is a **companion**.
+
+```txt
+Wikipedia → look something up
+MasterClass → learn something
+Foundry → become something
+```
+
+## Doctrine
+
+Every major system answers:
+
+> How does this help the user **today**?
+
+Not: How does this improve the platform?
+
+## Home Screen
+
+Not software. A companion:
+
+- Here's where you are
+- Here's what's working
+- Here's what's next
+- Here's why it matters
+
+## PASS-010 Focus
+
+**EXECUTION MODE.** Prove one loop at `/loop`. No new vision layers.
+
+Package: `@foundry/transformation-loop`
+
+See `docs/PASS_010_EXECUTION.md`

@@ -13,6 +13,7 @@
     "@foundry/core": "*",
     "@foundry/ui": "*",
     "@foundry/seo-engine": "*",
+    "@foundry/vertical-resolver": "*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

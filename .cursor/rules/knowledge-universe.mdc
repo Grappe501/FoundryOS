@@ -1,0 +1,35 @@
+---
+description: Foundry Knowledge Universe — encyclopedia before entity factory UI
+alwaysApply: true
+---
+
+# Knowledge Universe Discipline
+
+## The Moat (PASS-009+)
+
+**Transformation Graph** — not knowledge graph, not social graph.
+
+Registry + Encyclopedia + Ownership support the graph. Content is a byproduct.
+
+## Build Order
+
+1. Encyclopedia Engine (PASS-007) ✅
+2. Path Engine (PASS-008) ✅
+3. Transformation System Factory (PASS-009) ← current
+4. Transformation Graph Engine (PASS-010)
+5. Evidence Engine (PASS-011)
+6. Collections + Clubs (PASS-012)
+7. Bourbon Launch (PASS-014) — proof only
+
+## Every Entity Gets
+
+Definition, history, culture, geography, trivia, related concepts, misconceptions, beginner + expert explanations, sources.
+
+## Rules
+
+- OpenAI generates → Supabase owns
+- Generated ≠ Published
+- No Bourbon UI until PASS-014
+- `generateEncyclopedia()` wired into `@foundry/factory`
+
+See `docs/KNOWLEDGE_UNIVERSE.md`

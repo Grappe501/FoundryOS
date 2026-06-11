@@ -1,0 +1,34 @@
+---
+description: PASS-010 execution mode — vision locked, prove the loop, no expansion
+alwaysApply: true
+---
+
+# PASS-010 Execution Mode
+
+**Status: EXECUTION.** Stop expanding vision. Prove the loop.
+
+## Locked (do not re-litigate)
+
+Mission · Category · Product · Core question · Success story — see `docs/PASS_010_EXECUTION.md`
+
+## Proof
+
+One user · One domain (Public Speaker) · One complete loop.
+
+Package: `@foundry/transformation-loop`
+
+## Avoid During PASS-010
+
+No new major engines · registries · categories · verticals · monetization · social mechanics.
+
+## KPIs
+
+Transformation Loop Completion Rate · Meaningful Progress Events
+
+Not users, pages, or entities.
+
+## Question
+
+> Can the system guide a human through meaningful progress?
+
+Build `/loop`. Run the proof. Scale later.

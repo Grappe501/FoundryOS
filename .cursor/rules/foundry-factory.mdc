@@ -1,0 +1,35 @@
+---
+description: Build the machine — not Bourbon. OpenAI generates, Supabase owns.
+alwaysApply: true
+---
+
+# Foundry Factory Discipline
+
+## The Question
+
+Not: *How do I build Bourbon?*
+
+Yes: *How do I build a machine that builds Bourbon?*
+
+## Hard Rules
+
+- **No Bourbon UI** until PASS-014
+- **PASS-009 Transformation System Factory**: manufacture ecosystems from DNA blueprints + templates — not entities alone. `manufactureTransformationSystem()`, `validateTransformationEcosystem()`
+- **Transformation principle**: organizing transformation, not information
+- **Encyclopedia first** — `@foundry/encyclopedia-engine` before entity scale UI
+- **No Books UI** until after Bourbon proof
+- **No OpenAI as database** — always: Generate → Validate → Score → Store → Publish
+- **Generated ≠ Published** — factory_queue + publish gate
+- **Entities > Topics** — 100k entities is the strategic prize; topics are SEO entry points
+
+## Moat (in order)
+
+Registry → Knowledge Graph → Ownership Graph → Collections → Reputation → Community
+
+AI accelerates. Supabase owns.
+
+## PASS-006+
+
+Use `@foundry/factory` — `assembleEntity()`, `npm run build:topic`
+
+See `docs/FOUNDRY_FACTORY.md`

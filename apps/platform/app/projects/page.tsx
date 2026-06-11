@@ -1,0 +1,91 @@
+import Link from 'next/link';
+import {
+  buildJourneyStory,
+  EXAMPLE_STEVE_JOURNEY,
+  EXAMPLE_STEVE_JOURNEY_TIMELINE,
+  getActiveProjects,
+  getProjectsForVertical,
+  HUMAN_OS_PRODUCT,
+  LIFE_GRAPHS,
+  MOBILE_HOME_QUESTION,
+  PASS_GATE_QUESTION,
+} from '@foundry/project-engine';
+
+export default function ProjectsPage() {
+  const bourbonProjects = getProjectsForVertical('bourbon');
+  const activeProjects = getActiveProjects();
+  const journeyStory = buildJourneyStory(EXAMPLE_STEVE_JOURNEY);
+
+  return (
+    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 1000, margin: '0 auto' }}>
+      <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
+      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Project Engine</h1>
+      <p style={{ color: '#8A8A8E', marginTop: 8, fontSize: 14 }}>
+        Experts don&apos;t just learn. Experts build things. Projects transform knowledge into action.
+      </p>
+
+      <section style={{ marginTop: 28, padding: 20, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
+        <div style={{ color: '#C8A96E', fontSize: 13 }}>The Actual Product</div>
+        <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 8, fontWeight: 300 }}>{HUMAN_OS_PRODUCT}</p>
+        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>
+          Mobile home: {MOBILE_HOME_QUESTION}
+        </p>
+      </section>
+
+      <section style={{ marginTop: 32 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Foundry Life Graph</h2>
+        {LIFE_GRAPHS.map((g) => (
+          <div key={g.key} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+            <span style={{ color: '#E8E8EC' }}>{g.label}</span>
+            <span style={{ color: '#6B6B70', marginLeft: 8 }}>— {g.description}</span>
+          </div>
+        ))}
+      </section>
+
+      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Steve&apos;s Journey</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>{journeyStory}</p>
+        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
+          This story is more valuable than any AI-generated article.
+        </p>
+      </section>
+
+      <section style={{ marginTop: 32 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Journey Memory</h2>
+        {EXAMPLE_STEVE_JOURNEY_TIMELINE.map((e) => (
+          <div key={e.year} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+            <span style={{ color: '#C8A96E' }}>{e.year}</span>
+            <span style={{ color: '#E8E8EC', marginLeft: 12 }}>{e.title}</span>
+            <div style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{e.description}</div>
+          </div>
+        ))}
+      </section>
+
+      <section style={{ marginTop: 32 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Bourbon Projects ({bourbonProjects.length})</h2>
+        {bourbonProjects.map((p) => (
+          <div key={p.slug} style={{ padding: '14px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+            <div style={{ color: '#E8E8EC' }}>{p.display_name}</div>
+            <div style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{p.tagline}</div>
+            <div style={{ color: '#4A4A4E', fontSize: 11, marginTop: 4 }}>
+              {p.steps.length} steps · {p.category}
+              {p.path_slug && ` · advances ${p.path_slug}`}
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <section style={{ marginTop: 32 }}>
+        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Catalog ({activeProjects.length} active)</h2>
+        <p style={{ fontSize: 12, color: '#4A4A4E', marginTop: 8 }}>
+          Bourbon, BBQ, Books, Genealogy, Politics — projects are nodes in the Transformation Graph. No Bourbon UI until PASS-014.
+        </p>
+      </section>
+
+      <section style={{ marginTop: 32, padding: 16, background: '#0F0F12', borderRadius: 8 }}>
+        <div style={{ color: '#C8A96E', fontSize: 13 }}>Pass Gate Question</div>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{PASS_GATE_QUESTION}</p>
+      </section>
+    </main>
+  );
+}

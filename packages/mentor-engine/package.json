@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/mentor-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Mentor Engine — every expert path reaches Mentor, not Complete Course",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/learning-pyramid": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

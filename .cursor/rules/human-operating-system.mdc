@@ -1,0 +1,58 @@
+---
+description: Foundry Human OS — transformation over consumption
+alwaysApply: true
+---
+
+# Human Operating System
+
+The actual product (outcome users buy):
+
+```txt
+Help me become the person I want to be.
+```
+
+Not encyclopedia, academy, social network, or AI tool — those are components.
+
+## Pass Gate (Every Pass)
+
+> Does this help someone become an expert, or does it merely help them consume information?
+
+Expert creation > information consumption.
+
+## Layers
+
+Roles · Legacy · Community OS (not club feature)
+
+## Life Graph
+
+knowledge_graph · ownership_graph · identity_graph · project_graph · community_graph
+
+## Mobile Home
+
+App: **Foundry** — a companion, not a destination.
+
+First screen (eventually):
+
+```txt
+Here's where you are · what's working · what's next · why it matters
+```
+
+Today: **What are you becoming?**
+
+NOT: Search, Browse Topics, Discover Content
+
+## Companion Principle
+
+Every system answers: **How does this help the user today?**
+
+Not: How does this improve the platform?
+
+## Scale Vision
+
+1 platform · 10,000 expertise domains · millions of entities · millions of journeys
+
+## Bourbon UI
+
+No Bourbon UI until **PASS-014**
+
+See `docs/HUMAN_OPERATING_SYSTEM.md`, `docs/PROJECT_ENGINE.md`, `docs/LIFE_GRAPH.md`

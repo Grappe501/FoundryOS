@@ -1,0 +1,39 @@
+---
+description: North star — Expert Development, not encyclopedia pages
+alwaysApply: true
+---
+
+# Expert Development — The Real Product
+
+## Shift
+
+```txt
+NOT: Bourbon Encyclopedia
+YES: Road to Bourbon Mastery
+```
+
+Wikipedia gives information. Foundry creates experts.
+
+## North Star Question
+
+**How many experts did we help create?**
+
+Not: how much content exists.
+
+## Pillars
+
+Identity · Progress · Belonging · Mastery · Recognition · Application
+
+## Package
+
+`@foundry/path-engine` — Road to... paths, milestones, progress
+
+## Rules
+
+- Paths assemble: Academy + Knowledge + Collections + Reviews + Community + Projects
+- No Bourbon UI until PASS-014
+- Projects are nodes in the Transformation Graph (PASS-009+)
+- Clubs = Shared Mastery (PASS-012)
+- Not gamified — visible expertise and progress %
+
+See `docs/EXPERT_DEVELOPMENT.md`, `docs/PATH_ENGINE.md`

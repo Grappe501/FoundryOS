@@ -17,7 +17,7 @@
       "vertical_id": "spirits-beverages",
       "flagship_topic": "bourbon-connoisseur",
       "status": "planned",
-      "launch_pass": "PASS-009"
+      "launch_pass": "PASS-014"
     },
     {
       "domain": "books.foundryos.com",
@@ -27,7 +27,7 @@
       "vertical_id": "books-literature",
       "example_topics": ["fantasy", "science-fiction", "mystery", "authors", "book-clubs"],
       "status": "planned",
-      "launch_pass": "PASS-010"
+      "launch_pass": null
     },
     {
       "domain": "movies.foundryos.com",

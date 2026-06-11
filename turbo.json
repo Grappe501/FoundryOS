@@ -1,6 +1,13 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": [".env.local"],
+  "globalEnv": [
+    "TURBO_CACHE_DIR",
+    "TMP",
+    "TEMP",
+    "npm_config_cache"
+  ],
+  "daemon": false,
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

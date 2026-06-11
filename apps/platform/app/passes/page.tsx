@@ -19,6 +19,7 @@ export default function PassesPage() {
               border: '1px solid #1E1E22',
               borderRadius: 8,
               opacity: p.status === 'planned' ? 0.6 : 1,
+              borderColor: p.status === 'in_progress' ? '#2A2520' : '#1E1E22',
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>

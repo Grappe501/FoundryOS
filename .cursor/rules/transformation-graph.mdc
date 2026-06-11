@@ -1,0 +1,56 @@
+---
+description: Transformation Graph — Foundry's defensible moat. PASS-010.
+alwaysApply: true
+---
+
+# Transformation Graph
+
+Not knowledge graph. Not social graph.
+
+```txt
+Goals → Outcomes → Domains → Paths → Projects → Communities → Mentors → Results
+```
+
+## Moat
+
+Not AI · not content · not courses · not communities alone.
+
+## Pass Gate (PASS-009)
+
+> Can Foundry observe, support, measure, and remember the transformation?
+
+## PASS-010 Pass Gate
+
+> Can the system identify the next highest-value action for a person trying to become something?
+
+Content is a **byproduct** of the graph — not the center.
+
+## PASS-010 Deliverables
+
+Graph Query Engine · Relationship Weighting (Transformation Impact) · Transformation Analytics · Transformation Velocity · **Transformation Momentum Engine** · **Reflection Engine** · **Next Highest-Value Action Engine**
+
+## Agency Principle
+
+Foundry optimizes for **agency** — not knowledge, mastery, or completion.
+
+> Can this person take meaningful action?
+
+Knowledge ≠ Transformation. Weight toward **Transformation Impact**, not content consumption.
+
+## PASS-010 Pass Gate
+
+> Can the system identify the next highest-value action for a person trying to become something?
+
+Then: **What did you learn?** · **Why is that the next best step?** · **Did it help?**
+
+## PASS-010 Demonstration Goal
+
+> Can we guide one person through one complete transformation cycle?
+
+Not: Can we query the graph?
+
+## Design Principles (reserved)
+
+Transformation Stories · Transformation Patterns — see dedicated docs
+
+See `docs/TRANSFORMATION_GRAPH.md`, `docs/AGENCY_PRINCIPLE.md`, `docs/PASS_010_SUCCESS_TEST.md`, `docs/TRANSFORMATION_OS.md`, `docs/DEFENSIBILITY.md`

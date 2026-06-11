@@ -44,6 +44,13 @@ npm run dev
 
 **NOTHING writes to C: drive.** All files, caches, temp, and node_modules live on `H:\FoundryOS`.
 
+```powershell
+cd H:\FoundryOS
+.\scripts\setup-h-drive.ps1
+.\scripts\cleanup-c-drive-foundry.ps1   # removes C: leaks
+.\scripts\run-on-h.ps1 npm run build    # all commands via H:
+```
+
 ## Documentation
 
 | Doc | Description |

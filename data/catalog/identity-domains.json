@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "principle": "Lifelong identity domains — not apps",
+  "categories": ["academic", "skills", "hobbies", "careers", "lifestyles", "communities"],
+  "four_engines": [
+    { "key": "knowledge", "question": "What is it?" },
+    { "key": "mastery", "question": "How do I become good at it?" },
+    { "key": "project", "question": "What do I actually do?" },
+    { "key": "community", "question": "Who do I do it with?" }
+  ],
+  "self_assembly_stack": ["Knowledge", "Learning Pyramid", "Mastery", "Projects", "Community", "Mentor", "Identity", "Legacy"],
+  "factory_ecosystem": ["Entity Factory", "Expert Factory", "Academy Factory", "Project Factory", "Mentor Factory"],
+  "exemplar_domains": [
+    "bourbon",
+    "poker",
+    "public-speaking",
+    "campaign-management",
+    "master-gardener",
+    "magic-the-gathering"
+  ],
+  "scale_target": {
+    "platform": 1,
+    "expertise_domains": 10000,
+    "note": "1,961 topics are entry points — identity domains are lifelong"
+  }
+}

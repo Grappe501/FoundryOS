@@ -5,6 +5,7 @@ node_modules/
 
 # Cache (on H: drive, still gitignored)
 .cache/
+.cursor/cursor-mirror/
 
 # Environment
 .env

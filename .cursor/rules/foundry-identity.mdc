@@ -1,0 +1,31 @@
+---
+description: Foundry Identity — portable expertise, not merely an account
+alwaysApply: true
+---
+
+# Foundry Identity
+
+MasterClass teaches ("Watch this."). Foundry transforms ("Become this.").
+
+## Every User Has
+
+- Mastery titles (Bourbon Steward, Pitmaster, etc.)
+- Active paths with progress %
+- Collections, reviews, paths completed, communities led
+- One identity across web verticals + single Foundry mobile app
+
+## Package
+
+`@foundry/ownership-graph` — `buildFoundryIdentity()`, `EXAMPLE_STEVE_IDENTITY`
+
+## Viral Loop
+
+Share **what I'm becoming** — not what I consumed.
+
+## Device Strategy
+
+- Web: vertical domains (bourbon.foundryos.com)
+- Mobile: **one Foundry app** — NOT per-vertical apps
+- Auth: Google, Apple, Email, Magic Link (Supabase)
+
+See `docs/FOUNDRY_IDENTITY.md`, `docs/DEVICE_STRATEGY.md`

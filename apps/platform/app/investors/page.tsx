@@ -1,11 +1,27 @@
 import Link from 'next/link';
 
+const VISION = `Human Potential Infrastructure.
+
+Lifelong Expert Development is what we do. Human Potential Infrastructure is what we become.
+
+Help me become the person I want to be. Foundry starts with goals, not subjects.
+
+Every subject has a path.
+Every path has a community.
+Every community creates knowledge.
+Every contribution helps someone else master the craft.
+
+MasterClass teaches — "Watch this."
+Foundry transforms — "Become this."
+
+The 1,961 niche apps are the delivery mechanism. The real product is expertise, identity, collections, and communities.`;
+
 const SECTIONS = [
-  { title: 'Vision', body: 'AI operating system hosting thousands of topics across vertical domains — with SEO, knowledge graph, and self-build built in.' },
-  { title: 'Roadmap', body: 'PASS-000 through PASS-010 mapped. Bourbon and Books vertical launches at PASS-009/010.' },
-  { title: 'Milestones', body: '1,961 topics registered. Foundation systems complete. Supabase wiring next.' },
+  { title: 'Vision', body: VISION },
+  { title: 'Roadmap', body: 'Transformation Operating System. Agency over consumption. PASS-010 Transformation Intelligence: momentum + next best step. Bourbon PASS-014.' },
+  { title: 'Milestones', body: '1,961 topics registered. Ownership graph live in schema. Supabase deployment readiness complete — awaiting production keys.' },
   { title: 'Architecture', body: 'Vertical domains (books.foundryos.com) not 1,961 sites. Knowledge graph drives internal linking. SEO engine generates programmatic pages.' },
-  { title: 'Growth Model', body: '$4 Tier 2 / $18 Tier 3 per vertical. Shared infra. ~$45M ARR conservative at scale.' },
+  { title: 'Growth Model', body: 'Lifelong Expert Development — category nobody owns. 1 platform, 10k domains: Academic, Skills, Hobbies, Careers, Lifestyles, Communities. Foundry University: Road to Mastery, not courses.' },
   { title: 'Transparency', body: 'Public build journal. Every pass visible. Execution velocity as moat.' },
 ];
 

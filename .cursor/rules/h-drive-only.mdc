@@ -1,30 +1,72 @@
 ---
-description: HARD CONSTRAINT — All files, temp, cache, and node modules MUST live on H: drive only
+description: HARD CONSTRAINT — ZERO writes to C: drive. All project files, caches, builds, git, deploy on H: only.
 alwaysApply: true
 ---
 
-# H: Drive Only — Non-Negotiable
+# H: Drive Only — ABSOLUTE RULE
 
-**NOTHING is written to C: drive. Everything goes to H: drive.**
+```txt
+Project Storage ≠ Cursor Internal Storage
+```
 
-## Enforced Paths
+**Goal: Zero project assets on C:.** (Not zero bytes on C: — Cursor keeps IDE metadata there.)
+
+**All project work on H:.** No exceptions.
+
+## Before EVERY Command
+
+Burt MUST run first:
+
+```powershell
+cd H:\FoundryOS
+.\scripts\setup-h-drive.ps1
+node scripts/enforce-h-drive.js
+```
+
+Or use the wrapper:
+
+```powershell
+.\scripts\run-on-h.ps1 npm run build
+```
+
+## Enforced Paths (H: ONLY)
 
 | Resource | Path |
 |----------|------|
 | Project root | `H:\FoundryOS` |
-| Node modules | `H:\FoundryOS\node_modules` |
+| node_modules | `H:\FoundryOS\node_modules` |
 | npm cache | `H:\FoundryOS\.cache\npm` |
-| Temp files | `H:\FoundryOS\.cache\temp` |
-| Build output | `H:\FoundryOS\.cache\build` |
-| Supabase local | `H:\FoundryOS\.cache\supabase` |
+| turbo cache | `H:\FoundryOS\.cache\turbo` |
+| temp | `H:\FoundryOS\.cache\temp` |
+| build/next | `H:\FoundryOS\.cache\build` |
+| netlify | `H:\FoundryOS\.cache\netlify` |
+| supabase local | `H:\FoundryOS\.cache\supabase` |
+| git repo | `H:\FoundryOS\.git` |
 
-## Before Any Install or Build
+## Forbidden
 
-1. Verify `H:\FoundryOS` is the working directory
-2. Confirm `.npmrc` sets cache to `H:\FoundryOS\.cache\npm`
-3. Set `TMP` and `TEMP` to `H:\FoundryOS\.cache\temp`
-4. Never use `C:\Users\...\AppData` for project artifacts
+- `C:\Users\...\AppData\Local\npm-cache` for this project
+- `C:\Users\...\AppData\Local\Temp` for builds
+- `C:\FoundryOS` or any C: clone
+- Running npm/git/build from any directory other than `H:\FoundryOS`
+
+## If C: Gets Polluted
+
+```powershell
+.\scripts\full-c-drive-migration.ps1
+# or: npm run migrate:c-to-h
+npm run verify:c-clean
+```
+
+Mirrors Cursor metadata to `H:\FoundryOS\.cursor\cursor-mirror\`, sends redundant C: copies to Recycle Bin.
 
 ## Violation Response
 
-If a command attempts to write to C:, **stop immediately**, redirect to H:, and document the fix in `docs/PROTOCOLS.md`.
+1. **STOP** the command
+2. Run `cleanup-c-drive-foundry.ps1`
+3. Re-run from `H:\FoundryOS` with `setup-h-drive.ps1`
+4. Never apologize and continue on C: — fix it first
+
+## Note on Cursor IDE
+
+Cursor keeps a small IDE shell at `C:\Users\User\.cursor\projects\h-FoundryOS\` (MCP descriptors, terminals). That is NOT the project. The project lives at `H:\FoundryOS`. Burt never puts code, node_modules, builds, or caches on C:.

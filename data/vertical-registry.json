@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "description": "Vertical registry — hostname resolution, themes, launch status",
+  "verticals": [
+    {
+      "id": "spirits-beverages",
+      "slug": "spirits-beverages",
+      "name": "Spirits",
+      "theme": "Bourbon",
+      "launch_status": "active_build",
+      "launch_pass": "PASS-014"
+    },
+    {
+      "id": "books-literature",
+      "slug": "books-literature",
+      "name": "Books",
+      "theme": "Literature",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "film-cinema",
+      "slug": "film-cinema",
+      "name": "Movies",
+      "theme": "Cinema",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "music-audio",
+      "slug": "music-audio",
+      "name": "Music",
+      "theme": "Audio",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "food-culinary",
+      "slug": "food-culinary",
+      "name": "Food",
+      "theme": "Culinary",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "sports",
+      "slug": "sports",
+      "name": "Sports",
+      "theme": "Athletics",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "wine-beer",
+      "slug": "wine-beer",
+      "name": "Wine",
+      "theme": "Cellar",
+      "launch_status": "planned",
+      "launch_pass": null
+    },
+    {
+      "id": "tv-streaming",
+      "slug": "tv-streaming",
+      "name": "TV",
+      "theme": "Streaming",
+      "launch_status": "planned",
+      "launch_pass": null
+    }
+  ],
+  "vertical_domains": [
+    {
+      "domain": "bourbon.foundryos.com",
+      "local_domain": "bourbon.localhost",
+      "vertical_id": "spirits-beverages",
+      "site_slug": "bourbon",
+      "site_display_name": "Bourbon"
+    },
+    {
+      "domain": "books.foundryos.com",
+      "local_domain": "books.localhost",
+      "vertical_id": "books-literature",
+      "site_slug": "books",
+      "site_display_name": "Books & Literature"
+    },
+    {
+      "domain": "movies.foundryos.com",
+      "local_domain": "movies.localhost",
+      "vertical_id": "film-cinema",
+      "site_slug": "movies",
+      "site_display_name": "Film & Cinema"
+    },
+    {
+      "domain": "music.foundryos.com",
+      "local_domain": "music.localhost",
+      "vertical_id": "music-audio",
+      "site_slug": "music",
+      "site_display_name": "Music & Audio"
+    },
+    {
+      "domain": "bbq.foundryos.com",
+      "local_domain": "bbq.localhost",
+      "vertical_id": "food-culinary",
+      "site_slug": "bbq",
+      "site_display_name": "BBQ & Smokehouse"
+    },
+    {
+      "domain": "collegebaseball.foundryos.com",
+      "local_domain": "collegebaseball.localhost",
+      "vertical_id": "sports",
+      "site_slug": "collegebaseball",
+      "site_display_name": "College Baseball"
+    }
+  ]
+}

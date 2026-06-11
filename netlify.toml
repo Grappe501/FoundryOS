@@ -1,19 +1,13 @@
-# Default: platform marketing site
-# Admin: apps/admin | Site engine: apps/site-engine (wildcard *.foundryos.app)
+# FoundryOS — Mission Control (foundryos.com)
+# Monorepo: install from root, build platform workspace
 [build]
-  base = "apps/platform"
-  command = "npm run build"
+  command = "npm ci && npm run build:platform"
   publish = "apps/platform/.next"
-
-[context.admin]
-  base = "apps/admin"
-
-[context.site-engine]
-  base = "apps/site-engine"
 
 [build.environment]
   NODE_VERSION = "20"
   NPM_CONFIG_CACHE = "H:/FoundryOS/.cache/npm"
+  NEXT_TELEMETRY_DISABLED = "1"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
@@ -27,7 +21,8 @@
 [context.branch-deploy]
   environment = { NODE_ENV = "staging" }
 
-# Edge functions for speed-critical Tier 1 catalog pages
-[[edge_functions]]
-  path = "/api/catalog/*"
-  function = "catalog-edge"
+# Admin + site-engine: separate Netlify sites (future)
+# [context.admin]
+#   base = "apps/admin"
+# [context.site-engine]
+#   base = "apps/site-engine"

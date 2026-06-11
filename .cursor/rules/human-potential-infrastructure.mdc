@@ -1,0 +1,37 @@
+---
+description: Human Potential Infrastructure — goals not subjects, Outcome Engine
+alwaysApply: true
+---
+
+# Human Potential Infrastructure
+
+**Does:** Lifelong Expert Development
+**Becomes:** Human Potential Infrastructure
+
+## Start With Goal
+
+Education starts with Subject. Foundry starts with **Goal**.
+
+## Core Engines
+
+Purpose · Knowledge · Mastery · Project · Community · Mentor
+
+Purpose question: **Why does this matter to me?**
+
+## Human Outcomes Registry
+
+Most important registry — not domains, not entities.
+
+Examples: Better Leader, Financially Independent, Master Gardener, AI Builder, Doctor
+
+## Ultimate Factories
+
+Entity · Knowledge · Academy · Project · Community · Mentor · **Outcome**
+
+## Principle
+
+Humans pursue outcomes. Domains are paths traveled to reach them.
+
+Package: `@foundry/outcome-engine`
+
+See `docs/HUMAN_POTENTIAL_INFRASTRUCTURE.md`, `docs/OUTCOME_ENGINE.md`

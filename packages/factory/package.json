@@ -1,0 +1,25 @@
+{
+  "name": "@foundry/factory",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Foundry Factory — Self-Assembly Engine (generate → validate → score → store → publish)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/content-engine": "*",
+    "@foundry/seo-engine": "*",
+    "@foundry/knowledge-graph": "*",
+    "@foundry/encyclopedia-engine": "*",
+    "@foundry/path-engine": "*",
+    "@foundry/domain-registry": "*",
+    "@foundry/learning-pyramid": "*",
+    "@foundry/mentor-engine": "*",
+    "@foundry/outcome-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

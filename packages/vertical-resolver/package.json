@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/vertical-resolver",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Hostname → vertical → path resolution engine",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/content-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

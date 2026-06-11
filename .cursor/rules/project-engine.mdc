@@ -1,0 +1,28 @@
+---
+description: Project Engine — experts build things, knowledge becomes action
+alwaysApply: true
+---
+
+# Project Engine (architecturally complete — graph node)
+
+Experts don't just learn. They **build things**.
+
+## Package
+
+`@foundry/project-engine`
+
+## Examples
+
+- Blind tasting night, bourbon shelf, distillery visits, bourbon club
+- Smoke first brisket, competition timeline, cookoff, judge
+- Family tree, document grandparents, ancestral sites
+- Great Books, home library, book club
+- Town hall, register voters, precinct team
+
+## Rules
+
+- Projects advance paths and identity
+- Journey events remember transformations over years
+- Projects are visible progress — not gamification
+
+See `docs/PROJECT_ENGINE.md`

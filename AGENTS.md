@@ -4,7 +4,7 @@ This file provides context for AI agents (Burt/Cursor) working on FoundryOS.
 
 ## Hard Constraints
 
-1. **H: drive only** — Nothing writes to C: drive. See `.cursor/rules/h-drive-only.mdc`
+1. **H: drive only** — ZERO writes to C: drive. Run `setup-h-drive.ps1` + `enforce-h-drive.js` before every command. See `.cursor/rules/h-drive-only.mdc`
 2. **Platform-first** — Build for 1000 apps, not one app
 3. **Self-build ready** — Every pattern must be replicable by `packages/self-build`
 4. **Document every pass** — Update `docs/BASELINE.md` pass log
@@ -29,14 +29,20 @@ This file provides context for AI agents (Burt/Cursor) working on FoundryOS.
 - `docs/PROTOCOLS.md` — Git, naming, env conventions
 - `docs/ARCHITECTURE.md` — System design
 
-## Before Coding
+## Before EVERY Command
 
 ```powershell
+cd H:\FoundryOS
 .\scripts\setup-h-drive.ps1
+node scripts/enforce-h-drive.js
 ```
 
-## After Every Pass
+## After Every Pass (automatic — no Steve approval)
 
-1. Update `docs/BASELINE.md` pass log
-2. Conventional commit: `type(scope): description`
-3. Push to GitHub
+```powershell
+.\scripts\end-of-pass.ps1 -PassCode "PASS-XXX" -PassTitle "title"
+```
+
+Or: `npm run preflight` → `npm run sandbox` → commit → push → Netlify
+
+See `.cursor/rules/end-of-pass-deploy.mdc` and `docs/NETLIFY_DEPLOY.md`

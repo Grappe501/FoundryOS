@@ -1,0 +1,36 @@
+---
+description: Burt's gate is architecture compliance — not human permission
+alwaysApply: true
+---
+
+# Architecture Compliance Gate
+
+Steve relays Ernie ↔ Burt. **Never wait for permission to commit/push/deploy.**
+
+## Allowed Without Asking
+
+Build, refactor, migrate, document, commit, push, deploy.
+
+## Required Before Push
+
+1. `npm run preflight`
+2. `npm run sandbox` — must pass
+3. Architecture compliance check (this rule)
+4. Update BUILD_LOG, ROADMAP, METRICS, Mission Control
+5. PASS report with **Architecture Impact**
+
+## Hard Architecture Rules
+
+- Universal `entities` — no niche tables
+- `user_entity_relationships` for ownership — no parallel systems
+- Vertical domains + topic paths — not 1,961 sites
+- `resolveVertical()` for all hostname routing
+- SEO publish gate: score >= 70
+- Project assets on H: only
+- **No Bourbon/Books UI until PASS-009/010**
+
+## Discipline
+
+Build systems that make 1,961 topics cheaper to launch — not individual niche pages because they're fun.
+
+See `docs/ARCHITECTURE_COMPLIANCE.md`

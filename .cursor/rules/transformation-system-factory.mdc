@@ -1,0 +1,54 @@
+---
+description: PASS-009 — Transformation System Factory manufactures ecosystems, not entities
+alwaysApply: true
+---
+
+# PASS-009: Transformation System Factory
+
+**Not Entity Factory.** An entity is just a node.
+
+## Manufacture
+
+```txt
+Transformation Systems
+```
+
+Full ecosystems from DNA blueprints + templates.
+
+## Object Hierarchy (locked)
+
+```txt
+Life Journey → Outcome → Domain → Role → Path → Project → Entity → Knowledge → Community → Mentorship → Legacy
+```
+
+## Templates
+
+Hobby · Academic · Career · Leadership — assemble domains from templates.
+
+## DNA Record
+
+Every domain gets `domain_dna_records` blueprint before factory runs.
+
+## Factory Entry Points
+
+- `manufactureTransformationSystem(domainSlug)`
+- `validateTransformationEcosystem(output)`
+- `assembleTransformationEcosystem(dna)`
+
+## North Star
+
+**How many transformations are in progress?**
+
+Not users. Not pages. Not entities.
+
+## Defensibility (PASS-009+)
+
+Moat = **Transformation Graph** — not AI, content, courses, or communities alone.
+
+## Pass Gate
+
+> Can Foundry observe, support, measure, and remember the transformation?
+
+If no — likely just content. Content is a byproduct of the graph.
+
+See `docs/TRANSFORMATION_SYSTEM_FACTORY.md`, `docs/FOUNDRY_OBJECT_HIERARCHY.md`

@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/path-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Foundry Path System — Road to Expert development",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/encyclopedia-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

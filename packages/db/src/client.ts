@@ -1,0 +1,18 @@
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
+import { getSupabaseEnv } from './env';
+
+export function createAnonClient(): SupabaseClient | null {
+  const env = getSupabaseEnv();
+  if (!env) return null;
+  return createClient(env.url, env.anonKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}
+
+export function createServiceClient(): SupabaseClient | null {
+  const env = getSupabaseEnv();
+  if (!env?.serviceRoleKey) return null;
+  return createClient(env.url, env.serviceRoleKey, {
+    auth: { persistSession: false, autoRefreshToken: false },
+  });
+}

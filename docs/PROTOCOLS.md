@@ -2,18 +2,27 @@
 
 ## H: Drive Enforcement
 
-**Rule:** Zero writes to C: drive.
+**Rule:** ZERO writes to C: drive. Non-negotiable.
 
 ```powershell
-# Run before every session
-.\scripts\setup-h-drive.ps1
+cd H:\FoundryOS
+.\scripts\setup-h-drive.ps1          # lock env to H:
+node scripts/enforce-h-drive.js      # abort if not on H:\FoundryOS
+.\scripts\cleanup-c-drive-foundry.ps1  # remove C: leaks, mirror to H:
 ```
 
 | Variable | Value |
 |----------|-------|
 | `TMP` / `TEMP` | `H:\FoundryOS\.cache\temp` |
 | `npm_config_cache` | `H:\FoundryOS\.cache\npm` |
+| `TURBO_CACHE_DIR` | `H:\FoundryOS\.cache\turbo` |
+| `NETLIFY_CACHE_DIR` | `H:\FoundryOS\.cache\netlify` |
+| `SUPABASE_INTERNAL_STORAGE` | `H:\FoundryOS\.cache\supabase` |
 | Project root | `H:\FoundryOS` |
+
+`npm run build` and `npm run dev` auto-run enforcement via `prebuild`/`predev` hooks.
+
+If C: gets polluted: `npm run cleanup:c`
 
 ---
 
@@ -145,9 +154,36 @@ NEXT_PUBLIC_PLATFORM_NAME=FoundryOS
 
 ---
 
+## PASS Precheck
+
+Run before every pass:
+
+```powershell
+npm run preflight
+```
+
+Verifies: H:\\FoundryOS location, H: disk space, `.env.local`, git state, Supabase connectivity, Netlify env vars.
+
+---
+
+## End-of-Pass Protocol (Burt)
+
+Steve relays between Ernie and Burt. **Burt does not ask Steve for commit/push/deploy permission.**
+
+At the end of every completed pass:
+
+1. **Verify** — `npm run typecheck`, `npm run build`, pass-specific checks (`db:diagnose` when Supabase configured)
+2. **Commit + push** — `git add -A`, conventional commit, `git push origin main`
+3. **Deploy** — `npx netlify deploy --build --prod` (or GitHub auto-deploy via `netlify.toml`)
+4. **Report** — commit hash, deploy URL, DB status, next pass
+
+See `.cursor/rules/end-of-pass-deploy.mdc`
+
+---
+
 ## Netlify Deployment
 
-- **Production:** `main` branch → `foundryos.app`
+- **Production:** `main` branch → `foundryos.com` (Mission Control)
 - **Preview:** All PRs get preview deploys
 - **Env:** Managed in Netlify dashboard, mirrored in `.env.example`
 - **Edge:** Priority for Tier 1 catalog pages (speed)

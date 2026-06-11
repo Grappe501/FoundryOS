@@ -1,0 +1,43 @@
+---
+description: End-of-pass — 12 steps, architecture compliance gate, no human approval
+alwaysApply: true
+---
+
+# End-of-Pass Protocol — EVERY PASS
+
+**Gate: Architecture Compliance** — not Steve's permission.
+
+```powershell
+.\scripts\end-of-pass.ps1 -PassCode "PASS-XXX" -PassTitle "title"
+```
+
+## 12 Steps
+
+1. `npm run preflight` — H:, disk, env, git, DB, Netlify
+2. `npm run sandbox` — Netlify build simulation
+3. **Fix failures** — do not push until sandbox passes
+4. Update `docs/BUILD_LOG.md` + PASS report (Architecture Impact)
+5. Update `docs/ROADMAP.md`
+6. Update `docs/METRICS.md`
+7. Update Mission Control pass list / stats
+8. **Commit** — conventional message
+9. **Push** — `origin main`
+10. **Netlify deploy** — auto or `npx netlify deploy --build --prod`
+11. **Deployment verification** — site loads, `/api/health/db`, `/routing`
+12. **PASS report** to Ernie via Steve
+
+## PASS Report Must Include
+
+```txt
+Architecture Impact
+  Reusable System Added:
+  Benefits:
+  Affected Launches:
+```
+
+## Rules
+
+- Happens every pass — not optional
+- Never push with failing sandbox
+- Never commit `.env.local`
+- See `docs/NETLIFY_DEPLOY.md`, `docs/ARCHITECTURE_COMPLIANCE.md`

@@ -1,0 +1,20 @@
+{
+  "name": "@foundry/transformation-loop",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-010 proof — one user, one domain, one complete transformation loop",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/evidence-engine": "*",
+    "@foundry/outcome-engine": "*",
+    "@foundry/reflection-engine": "*",
+    "@foundry/transformation-graph-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,26 @@
+---
+description: One Foundry app, vertical web domains, offline-ready architecture
+alwaysApply: true
+---
+
+# Device Strategy
+
+## Web
+
+Vertical domains: `bourbon.foundryos.com`, `books.foundryos.com`, etc.
+
+## Mobile
+
+**Build Foundry app only.** Worlds inside: Bourbon, Movies, Books, BBQ, Genealogy.
+
+Do NOT build Bourbon App, Movie App, Book App.
+
+## One Graph
+
+One install · one account · one notification system · one social/reputation/collection graph
+
+## Offline (Future)
+
+Download: collections, academy, encyclopedia, notes — `offline_sync_manifests` table ready.
+
+See `docs/DEVICE_STRATEGY.md`, `docs/OFFLINE_SYNC.md`

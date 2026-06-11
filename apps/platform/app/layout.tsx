@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'FoundryOS',
-  description: 'AI Operating System for 1,000 Specialty Apps',
+  description: 'Foundry helps people become experts. Every subject has a path. Every path has a community.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

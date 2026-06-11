@@ -1,0 +1,32 @@
+# PASS-004: Supabase Live & Deployment Readiness
+
+## Scope (narrow — no product features)
+
+- Env wiring via `.env.local` (never commit)
+- Migrations + RLS verification
+- Platform seed (verticals, topics, bourbon sample entities)
+- DB diagnostics (`npm run db:diagnose`)
+- Netlify env checklist (`docs/NETLIFY_ENV_CHECKLIST.md`)
+- Mission Control live DB status panel
+
+## Hard rules
+
+- **No Bourbon UI**
+- **No Books UI**
+- **No content generation**
+- **No bulk SEO publish**
+
+PASS-004 proves the database breathes safely in production conditions.
+
+## Steve actions
+
+1. Provision Supabase project
+2. Copy keys to `.env.local`
+3. `npm run db:migrate`
+4. `npm run db:seed`
+5. `npm run db:diagnose`
+
+## Packages
+
+- `@foundry/db` — client, health, live metrics
+- Scripts: `scripts/db-diagnostics.js`, `scripts/seed-platform.js`

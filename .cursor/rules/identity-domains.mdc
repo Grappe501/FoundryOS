@@ -1,0 +1,31 @@
+---
+description: Lifelong identity domains — four engines, self-assembly for any subject
+alwaysApply: true
+---
+
+# Identity Domains
+
+Not 1,961 apps. **Lifelong identity domains.**
+
+Categories: Skills · Hobbies · Careers · Lifestyles · Communities
+
+## Four Engines (Every Vertical)
+
+| Engine | Question |
+|--------|----------|
+| Knowledge | What is it? |
+| Mastery | How do I become good at it? |
+| Project | What do I actually do? |
+| Community | Who do I do it with? |
+
+Plus Identity + Legacy.
+
+## Self-Assembly
+
+One machine creates Knowledge + Mastery + Projects + Community + Identity + Legacy for **any subject humans care about.**
+
+Exemplars: Poker, Bourbon, Public Speaking, Campaign Management, Master Gardener, Magic
+
+Package: `@foundry/domain-registry`
+
+See `docs/IDENTITY_DOMAINS.md`, `docs/FOUR_ENGINES.md`

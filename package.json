@@ -8,12 +8,27 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "0.3.0-identity-ownership",
-    "current_pass": "PASS-003",
-    "next_pass": "PASS-004"
+    "version": "0.8.0-path-engine",
+    "current_pass": "PASS-009",
+    "next_pass": "PASS-009",
+    "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
     "setup": "powershell -ExecutionPolicy Bypass -File ./scripts/setup-h-drive.ps1",
+    "enforce": "node scripts/enforce-h-drive.js",
+    "cleanup:c": "powershell -ExecutionPolicy Bypass -File ./scripts/cleanup-c-drive-foundry.ps1",
+    "migrate:c-to-h": "powershell -ExecutionPolicy Bypass -File ./scripts/full-c-drive-migration.ps1",
+    "verify:c-clean": "powershell -ExecutionPolicy Bypass -File ./scripts/verify-c-drive-clean.ps1",
+    "preflight": "node scripts/enforce-h-drive.js && node scripts/preflight.js",
+    "sandbox": "node scripts/sandbox-netlify.js",
+    "build:platform": "turbo build --filter=@foundry/platform",
+    "build:topic": "node scripts/build-topic.js",
+    "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
+    "predev": "npm run setup && npm run enforce",
+    "prebuild": "npm run setup && npm run enforce",
+    "prelint": "npm run enforce",
+    "pretypecheck": "npm run enforce",
+    "preinstall": "node scripts/enforce-h-drive.js",
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
@@ -21,14 +36,21 @@
     "generate:app": "node packages/self-build/cli/generate.js",
     "build:catalog": "node scripts/build-catalog.js",
     "db:migrate": "supabase db push",
-    "db:reset": "supabase db reset"
+    "db:reset": "supabase db reset",
+    "db:diagnose": "node scripts/db-diagnostics.js",
+    "db:seed": "node scripts/seed-platform.js"
   },
   "devDependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "tsx": "^4.19.0",
     "turbo": "^2.3.0",
     "typescript": "^5.7.0"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "npm@10.9.0"
+  "packageManager": "npm@10.9.0",
+  "dependencies": {
+    "foundryos": "file:"
+  }
 }

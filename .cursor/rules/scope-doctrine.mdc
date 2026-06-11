@@ -1,0 +1,56 @@
+---
+description: Protect core vision — infrastructure for transformation, not everything to everyone
+alwaysApply: true
+---
+
+# Scope Doctrine
+
+## Equation
+
+```txt
+Potential → Capability → Agency → Contribution → Legacy
+```
+
+Agency is the bridge between knowing and doing.
+
+Mission: **Foundry helps people become who they are capable of becoming.**
+
+## Agency Principle
+
+Foundry optimizes for **agency** — not knowledge, mastery, or completion.
+
+> Can this person take meaningful action?
+
+## Risk
+
+Building Knowledge, Mastery, Projects, Community, Identity, Legacy, Mentorship, Purpose, and Outcomes **forever** as separate products → everything to everyone.
+
+## Opportunity
+
+Infrastructure that **powers** transformation across education, career, hobby, community, and life markets.
+
+## PASS-009: Transformation System Factory
+
+**Not Entity Factory.** Manufacture full ecosystems from DNA + templates.
+
+Hierarchy: Life Journey → Outcome → Domain → Role → Path → Project → Entity → Knowledge → Community → Mentorship → Legacy
+
+Every entity connects to: outcomes · paths · projects · communities · mentors · roles · legacy
+
+`validateTransformationSystem()` in `@foundry/factory`
+
+## Moat
+
+**Transformation Intelligence** — we know what actions help people grow.
+
+Transformation Graph + weighted edges + evidence-backed identity + momentum signals.
+
+## Pass Gate (expanded)
+
+> Can Foundry observe, support, measure, and remember the transformation?
+
+## Defensibility Arc
+
+PASS-010 Transformation Graph Engine · PASS-011 Evidence Engine (before Collections)
+
+See `docs/SCOPE_DOCTRINE.md`, `docs/DEFENSIBILITY.md`, `docs/TRANSFORMATION_GRAPH.md`, `docs/EVIDENCE_ENGINE.md`

@@ -1,23 +1,28 @@
 # FoundryOS — H: Drive Environment Setup
-# Run this before any npm/node/build operations
+# MUST run before any npm/node/build/git operations
 # Usage: .\scripts\setup-h-drive.ps1
 
 $ErrorActionPreference = "Stop"
 $Root = "H:\FoundryOS"
 
-# Verify H: drive project root exists
 if (-not (Test-Path $Root)) {
-    Write-Error "FoundryOS root not found at $Root"
+    Write-Error "FoundryOS root not found at $Root. Nothing runs on C:."
     exit 1
 }
 
-# Create cache directories on H: only
+Set-Location $Root
+
+# All cache directories on H: ONLY
 $dirs = @(
     "$Root\.cache\npm",
     "$Root\.cache\npm-store",
     "$Root\.cache\temp",
     "$Root\.cache\build",
-    "$Root\.cache\supabase"
+    "$Root\.cache\turbo",
+    "$Root\.cache\supabase",
+    "$Root\.cache\netlify",
+    "$Root\.cache\cursor-mirror",
+    "$Root\.cursor\cursor-mirror"
 )
 
 foreach ($dir in $dirs) {
@@ -27,20 +32,43 @@ foreach ($dir in $dirs) {
     }
 }
 
-# Redirect ALL temp to H:
+# ─── Redirect ALL temp to H: ───────────────────────────────
 $env:TMP = "$Root\.cache\temp"
 $env:TEMP = "$Root\.cache\temp"
 $env:TMPDIR = "$Root\.cache\temp"
 
-# npm cache on H:
+# ─── npm / node ────────────────────────────────────────────
 $env:npm_config_cache = "$Root\.cache\npm"
-
-# Node options for project-local storage
+$env:npm_config_prefix = "$Root"
 $env:NODE_PATH = "$Root\node_modules"
 
+# ─── Turbo ─────────────────────────────────────────────────
+$env:TURBO_CACHE_DIR = "$Root\.cache\turbo"
+$env:TURBO_TELEMETRY_DISABLED = "1"
+
+# ─── Next.js / build tools ─────────────────────────────────
+$env:NEXT_CACHE_DIR = "$Root\.cache\build\next"
+$env:NETLIFY_CACHE_DIR = "$Root\.cache\netlify"
+$env:XDG_CACHE_HOME = "$Root\.cache"
+
+# ─── Supabase CLI ──────────────────────────────────────────
+$env:SUPABASE_INTERNAL_STORAGE = "$Root\.cache\supabase"
+
+# ─── Git (keep pack files in repo on H:) ───────────────────
+$env:GIT_CONFIG_GLOBAL = "$Root\.cache\gitconfig"
+if (-not (Test-Path $env:GIT_CONFIG_GLOBAL)) {
+    git config --global core.longpaths true 2>$null
+}
+
 Write-Host ""
-Write-Host "FoundryOS H: Drive environment configured." -ForegroundColor Green
-Write-Host "  TMP/TEMP: $env:TMP"
+Write-Host "FoundryOS H: Drive environment LOCKED." -ForegroundColor Green
+Write-Host "  CWD:       $(Get-Location)"
+Write-Host "  TMP/TEMP:  $env:TMP"
 Write-Host "  npm cache: $env:npm_config_cache"
-Write-Host "  Project:   $Root"
+Write-Host "  turbo:     $env:TURBO_CACHE_DIR"
+Write-Host "  netlify:   $env:NETLIFY_CACHE_DIR"
+Write-Host ""
+Write-Host "C: drive is OFF LIMITS for this project." -ForegroundColor Yellow
+Write-Host ""
+Write-Host "If C: was polluted, run: .\scripts\full-c-drive-migration.ps1" -ForegroundColor DarkGray
 Write-Host ""

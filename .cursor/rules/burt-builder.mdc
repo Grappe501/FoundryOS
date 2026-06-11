@@ -30,8 +30,14 @@ alwaysApply: true
 - DB: single Supabase schema, `categories` table branches all apps
 - Env: `.env.example` + `.env.local` (never commit secrets)
 
-## Every Pass Must
+## Every Pass Must (HARD RULE)
 
-1. Update relevant docs in `docs/`
-2. Commit with conventional message: `type(scope): description`
-3. Push to GitHub when pass is complete
+1. Update `docs/BUILD_LOG.md`
+2. **`npm run sandbox`** — Netlify build simulation; fix all blockers
+3. **`.\scripts\end-of-pass.ps1`** — commit + push without asking Steve
+4. Netlify deploy (auto via GitHub push or CLI)
+5. Report: commit hash, sandbox pass/fail, deploy URL, next pass
+
+See `.cursor/rules/end-of-pass-deploy.mdc` and `docs/NETLIFY_DEPLOY.md`
+
+Steve is the relay between Ernie and Burt — not the approval gate for git or deploy.

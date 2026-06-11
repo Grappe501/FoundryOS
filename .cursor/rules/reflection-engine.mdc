@@ -1,0 +1,26 @@
+---
+description: Reflection Engine — lessons learned become transformation data (PASS-010)
+alwaysApply: false
+---
+
+# Reflection Engine — PASS-010
+
+Every project completion ends with structured reflection.
+
+```txt
+What happened? · What did you learn? · What should happen next?
+```
+
+## Loop
+
+```txt
+Goal → Path → Project → Action → Evidence → Reflection → Insight → Next Best Action
+```
+
+Without reflection, Foundry knows what people did — not what they learned.
+
+Do not build project completion without reflection hooks.
+
+`REFLECTION_TEMPLATES` in `@foundry/reflection-engine`
+
+See `docs/REFLECTION_ENGINE.md`

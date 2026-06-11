@@ -11,6 +11,12 @@ Types: owns, favorites, reviewed, ranked, wants, watched, read, listened, visite
 
 Powers: My Shelf, Favorites, Rankings, Watchlist — no separate systems.
 
+## Foundry Identity
+
+Portable identity: mastery titles, path progress, communities led. Follows user across all verticals and the single Foundry mobile app.
+
+`buildFoundryIdentity()` in `@foundry/ownership-graph`
+
 ## SEO Publish Gate
 
 Do NOT bulk-publish 21k pages. Factory builds draft pages only.
