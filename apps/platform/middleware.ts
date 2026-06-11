@@ -38,7 +38,12 @@ export function middleware(request: NextRequest) {
   }
 
   if (pathname.startsWith('/operator')) {
-    if (pathname === '/operator' || pathname === '/operator/' || pathname.startsWith('/operator/beta')) {
+    if (
+      pathname === '/operator' ||
+      pathname === '/operator/' ||
+      pathname.startsWith('/operator/beta') ||
+      pathname.startsWith('/operator/invites')
+    ) {
       return NextResponse.next();
     }
     const inner = pathname.slice('/operator'.length) || '/';

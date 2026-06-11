@@ -56,6 +56,17 @@ export {
 export { ensureAiBuilderDomainProof } from './ai-builder-domain-proof';
 export { insertBetaWaitlist, getBetaWaitlistStats, type BetaSegment, type BetaWaitlistEntry } from './beta-waitlist';
 export {
+  listBetaWaitlist,
+  getBetaInviteByCode,
+  approveBetaTester,
+  declineBetaTester,
+  markBetaTesterActive,
+  getInviteOpsStats,
+  type BetaInviteEntry,
+  type BetaWaitlistStatus,
+  type InviteOpsStats,
+} from './beta-invites';
+export {
   upsertMissionCompletion,
   getMissionCompletionsForUser,
   getMissionCompletionStats,

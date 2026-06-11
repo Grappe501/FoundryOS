@@ -1,6 +1,6 @@
 import { createServiceClient } from './client';
 
-export type BetaSegment = 'student' | 'parent' | 'adult_learner' | 'educator';
+export type BetaSegment = 'student' | 'parent' | 'adult_learner' | 'educator' | 'hobbyist';
 
 export type BetaWaitlistEntry = {
   id: string;

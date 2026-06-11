@@ -19,6 +19,7 @@ const SEGMENTS = [
   { value: 'parent', label: 'Parent' },
   { value: 'adult_learner', label: 'Adult learner' },
   { value: 'educator', label: 'Educator' },
+  { value: 'hobbyist', label: 'Hobbyist' },
 ] as const;
 
 export function BetaJoinForm() {

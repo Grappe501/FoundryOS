@@ -55,6 +55,7 @@ export async function POST(request: Request) {
     mission_title,
     portfolio_key,
     reflection,
+    user_email: user.email ?? undefined,
   });
 
   if (!result.ok) {

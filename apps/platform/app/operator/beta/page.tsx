@@ -70,6 +70,8 @@ export default async function OperatorBetaDashboardPage() {
       )}
 
       <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
+        <Link href="/operator/invites" style={{ color: '#C8A96E' }}>Invite operations →</Link>
+        {' · '}
         Consumer routes: <Link href="/beta" style={{ color: '#6B6B70' }}>/beta</Link>
         {' · '}
         <Link href="/pricing" style={{ color: '#6B6B70' }}>/pricing</Link>

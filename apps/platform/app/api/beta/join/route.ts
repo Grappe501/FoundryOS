@@ -3,7 +3,7 @@ import { insertBetaWaitlist, type BetaSegment } from '@foundry/db';
 
 export const dynamic = 'force-dynamic';
 
-const SEGMENTS: BetaSegment[] = ['student', 'parent', 'adult_learner', 'educator'];
+const SEGMENTS: BetaSegment[] = ['student', 'parent', 'adult_learner', 'educator', 'hobbyist'];
 
 export async function POST(request: Request) {
   let body: Record<string, unknown>;

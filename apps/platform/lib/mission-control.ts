@@ -251,9 +251,9 @@ export const PASSES: PassEntry[] = [
   },
   {
     code: 'PASS-026',
-    title: 'Poker Consumer World',
+    title: 'Invite + Tester Operations',
     status: 'completed' as const,
-    summary: 'Passion Trinity #3 — factory-generated at /poker.',
+    summary: '/operator/invites, /beta/welcome, first-25 cohort plan, invite/joined/active tracking.',
   },
 ];
 

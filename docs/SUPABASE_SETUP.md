@@ -109,6 +109,21 @@ Content pages publish only when `content_score >= minimum_publish_score`.
 
 ---
 
+## 8. Auth URLs (before private beta invites)
+
+Dashboard → **Authentication** → **URL Configuration**
+
+| Setting | Production value |
+|---------|------------------|
+| Site URL | `https://foundry-os.netlify.app` |
+| Redirect URLs | `https://foundry-os.netlify.app/auth/callback` |
+
+Keep `http://localhost:3000` and `http://localhost:3000/auth/callback` for local dev.
+
+Without these, magic links and OAuth redirects fail on Netlify.
+
+---
+
 ## Troubleshooting
 
 | Issue | Fix |

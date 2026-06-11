@@ -25,6 +25,8 @@ export default function BetaPage() {
         Already invited?{' '}
         <Link href="/sign-in" style={{ color: '#6B9B6B' }}>Sign in</Link>
         {' · '}
+        <Link href="/beta/welcome" style={{ color: '#6B9B6B' }}>Welcome guide</Link>
+        {' · '}
         <Link href="/pricing" style={{ color: '#6B6B70' }}>View pricing</Link>
       </p>
     </main>

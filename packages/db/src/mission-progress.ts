@@ -20,6 +20,7 @@ export async function upsertMissionCompletion(input: {
   portfolio_key: string;
   reflection?: string;
   evidence_note?: string;
+  user_email?: string;
 }): Promise<{ ok: boolean; error?: string }> {
   const db = createServiceClient();
   if (!db) return { ok: false, error: 'Database not configured' };
@@ -40,6 +41,12 @@ export async function upsertMissionCompletion(input: {
   );
 
   if (error) return { ok: false, error: error.message };
+
+  if (input.user_email) {
+    const { markBetaTesterActive } = await import('./beta-invites');
+    await markBetaTesterActive(input.user_email);
+  }
+
   return { ok: true };
 }
 
