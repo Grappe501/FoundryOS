@@ -108,15 +108,17 @@ export const PASSES = [
   {
     code: 'PASS-012',
     title: 'Collections + Communities',
-    status: 'in_progress' as const,
+    status: 'completed' as const,
+    date: '2026-06-11',
     summary:
-      'Personal Knowledge Assets (not lists) + Community OS. Core rule: transformation accelerates in community. Proof: /collections + /community.',
+      'Personal Knowledge Assets + Community OS live at /collections and /community — OPERATIONAL, persisted, linked to evidence.',
   },
   {
     code: 'PASS-013',
     title: 'Reputation + Mastery Live',
     status: 'planned' as const,
-    summary: 'Trust, expertise, community leaders, expert contributors.',
+    summary:
+      'Earned trust + demonstrated capability — not points. Chain: Evidence → Reputation → Mastery → Identity → Community.',
   },
   {
     code: 'PASS-014',
@@ -198,18 +200,18 @@ export async function getMissionControlStats() {
     communities_active: communityKpis.communities_active,
     community_members_total: communityKpis.community_members_total,
     community_evidence_shares: communityKpis.community_evidence_shares,
-    launch_readiness_pct: live ? 72 : 52,
-    last_pass: 'PASS-011',
-    next_pass: 'PASS-012',
+    launch_readiness_pct: live ? 76 : 52,
+    last_pass: 'PASS-012',
+    next_pass: 'PASS-013',
     current_focus:
-      'PASS-012 IN PROGRESS: /collections + /community proof — Personal Knowledge Assets + Communities. Transformation accelerates in community.',
+      'PASS-012 CLOSED — /collections + /community OPERATIONAL on Netlify. PASS-013 Reputation + Mastery greenlit when ready — earned trust, not gamification.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',
       'Weight toward Transformation Impact — not Content Consumption',
       'No Bourbon UI until PASS-014',
       'North star: transformations in progress — not users, pages, or entities',
-      'PASS-012: Personal Knowledge Assets + Communities — not dumb lists',
+      'PASS-013: Reputation is earned trust — not points or badges for engagement',
     ],
   };
 }

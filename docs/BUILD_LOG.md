@@ -7,11 +7,10 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-011 ✅ |
-| **Current Pass** | PASS-012 — Collections + Communities (in progress) |
-| **Next Pass** | PASS-013 — Reputation + Mastery |
-| **Focus** | `/collections` + `/community` proof dashboards. Core rule: *Transformation accelerates in community.* |
-| **PASS-012** | `@foundry/collection-engine` · `@foundry/community-engine` · PASS-012 migration |
+| **Last Pass** | PASS-012 ✅ |
+| **Next Pass** | PASS-013 — Reputation + Mastery (greenlit, not started) |
+| **Focus** | PASS-013: Earned trust chain — Evidence → Reputation → Mastery → Identity → Community |
+| **Live proof** | [foundry-os.netlify.app/collections](https://foundry-os.netlify.app/collections) · [foundry-os.netlify.app/community](https://foundry-os.netlify.app/community) |
 
 ### Open Risks
 
@@ -194,6 +193,31 @@ OpenAI generates. Supabase owns. Generated ≠ Published.
 
 ---
 
+## PASS-012 — Collections + Communities ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-11 |
+| **Commit** | `3b531a5` |
+| **Core rule** | Transformation accelerates in community |
+| **Packages** | `@foundry/collection-engine`, `@foundry/community-engine` (extended) |
+| **Migration** | `20260622000000_collections_communities_pass012.sql` |
+| **Live proof** | `/collections` OPERATIONAL · `/community` OPERATIONAL · Database persisted ✓ |
+
+### Exit criteria (verified on Netlify)
+
+**Collections:** Collection Created ✓ · Entity Added ✓ · Evidence Linked ✓ · Identity Updated ✓
+
+**Community:** Community Created ✓ · Member Joined ✓ · Project Assigned ✓ · Evidence Shared ✓
+
+### Architecture Impact
+
+- **Reusable System:** Personal Knowledge Assets + Community OS persistence layer
+- **Benefits:** Identity compounding — what I collect + who I grow with
+- **Moat layer:** Ownership graph + shared mastery + evidence in community context
+
+---
+
 ## Prior Passes
 
 - **PASS-000** Foundation
@@ -204,19 +228,5 @@ OpenAI generates. Supabase owns. Generated ≠ Published.
 
 ## Planned
 
-- **PASS-009** Transformation System Factory *(in progress, approved)*
-- **PASS-010** Transformation Graph Engine — query, weighting, analytics, velocity, next-action gate
-- **PASS-011** Evidence Engine — identity requires evidence, evidence tiers
-## PASS-012 — Collections + Communities (greenlit)
-
-**Core rule:** Transformation accelerates in community.
-
-**Collections:** Personal Knowledge Assets — not favorites, bookmarks, or lists.
-
-**Communities:** Permanent architecture (clubs are one type). Examples: Central Arkansas Bourbon Society, Speaker Circle, Foundry AI Lab.
-
-**Proof:** `/collections` + `/community` verification dashboards.
-
-See `docs/PASS_012_EXECUTION.md`.
-- **PASS-013** Reputation + Mastery Live
+- **PASS-013** Reputation + Mastery — earned trust, not gamification (see `docs/PASS_013_EXECUTION.md`)
 - **PASS-014** Bourbon Vertical Launch (proof)

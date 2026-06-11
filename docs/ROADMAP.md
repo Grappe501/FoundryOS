@@ -1,6 +1,6 @@
 # FoundryOS — Roadmap
 
-> Updated PASS-009. Mirrored on foundryos.com/investors
+> Updated PASS-012 close. Mirrored on foundryos.com/investors
 
 **Build gate:** Architecture compliance — not human permission. See `docs/ARCHITECTURE_COMPLIANCE.md`
 
@@ -18,11 +18,11 @@ PASS-005 ████████████ Vertical Resolution Engine
 PASS-006 ████████████ Self-Assembly Engine v1
 PASS-007 ████████████ Encyclopedia Engine
 PASS-008 ████████████ Path Engine — Road to Expert
-PASS-009 ▓▓▓▓░░░░░░░░ Transformation System Factory
+PASS-009 ████████████ Transformation System Factory ✅
 PASS-010 ████████████ Transformation Graph Engine ✅
 PASS-011 ████████████ Evidence Engine ✅
-PASS-012 ░░░░░░░░░░░░ Collections + Communities ← NEXT (greenlit)
-PASS-013 ░░░░░░░░░░░░ Reputation + Mastery
+PASS-012 ████████████ Collections + Communities ✅
+PASS-013 ░░░░░░░░░░░░ Reputation + Mastery ← NEXT (greenlit)
 PASS-014 ░░░░░░░░░░░░ Bourbon Vertical Launch
 ```
 

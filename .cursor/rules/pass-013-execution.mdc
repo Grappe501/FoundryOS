@@ -1,0 +1,34 @@
+---
+description: PASS-013 execution — Reputation + Mastery (earned trust, not gamification)
+alwaysApply: false
+---
+
+# PASS-013 Execution Mode
+
+PASS-012 is closed. PASS-013 is greenlit when Steve/Ernie assign execution.
+
+## Core Rules
+
+```txt
+Reputation is earned trust.
+Mastery is demonstrated capability.
+```
+
+## Chain (locked)
+
+```txt
+Evidence → Reputation → Mastery → Identity → Community
+```
+
+Do not build points, streaks, or engagement badges.
+
+## Pass Gate
+
+> Does trust and mastery reflect demonstrated capability backed by evidence?
+
+## Do Not
+
+- Start PASS-014 Bourbon UI before PASS-013 proof is live
+- Break the evidence → reputation → mastery chain
+
+See `docs/PASS_013_EXECUTION.md`, `docs/REPUTATION_SYSTEM.md`

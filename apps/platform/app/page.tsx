@@ -12,6 +12,8 @@ import { TRANSFORMATION_PASS_GATE } from '@foundry/transformation-graph-engine';
 import { DbStatusPanel } from '../components/DbStatusPanel';
 import { getMissionControlStats, getPlatformAssetStory, PASSES } from '../lib/mission-control';
 
+export const dynamic = 'force-dynamic';
+
 const platformStatLabels: Record<string, string> = {
   topics_in_registry: 'Topics',
   total_entities: 'Entities',

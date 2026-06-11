@@ -1,8 +1,20 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-009
+> Updated PASS-012 close
 
 ---
+
+## PASS-012 Live KPIs (Mission Control)
+
+| Metric | Source |
+|--------|--------|
+| Knowledge Assets | `personal_knowledge_assets` |
+| Assets with Evidence | `evidence_linked = true` |
+| Active Communities | `community_instances` (active) |
+| Community Members | `community_members` |
+| Evidence Shared in Community | `community_evidence_shares` |
+
+Live: [foundry-os.netlify.app](https://foundry-os.netlify.app) · Proof: `/collections` · `/community`
 
 ## Platform Assets (The Real Story)
 
@@ -66,13 +78,12 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 9 (000–008) |
+| Passes complete | 13 (PASS-000–012) |
 | Version | `0.8.0-path-engine` |
-| Launch readiness | 62% |
-| Strategic target | Transformation Intelligence — we know what actions help people grow |
-| Agency principle | Optimize for meaningful action — not consumption |
-| Momentum engine | PASS-010 — momentum, stagnation, acceleration |
-| Reflection engine | PASS-010 — lessons learned become transformation data |
+| Launch readiness | 76% |
+| Collection Engine | ✅ PASS-012 — Personal Knowledge Assets |
+| Community OS persistence | ✅ PASS-012 — `/community` proof |
+| Next pass | PASS-013 — Reputation + Mastery (earned trust chain) |
 
 ---
 

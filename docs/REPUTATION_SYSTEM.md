@@ -4,6 +4,18 @@
 
 ---
 
+## PASS-013 Chain (locked)
+
+```txt
+Evidence Engine  →  Reputation  →  Mastery  →  Identity  →  Community
+```
+
+- **Reputation is earned trust** — not points
+- **Mastery is demonstrated capability** — not activity badges
+- Evidence (PASS-011) feeds Reputation; Reputation feeds Mastery; Mastery feeds Identity; Identity feeds Community (PASS-012)
+
+---
+
 ## Philosophy
 
 Reputation builds **local and network experts**. Tier 3 attribution flows to Tier 1. Users trust curated voices, not anonymous ratings.
