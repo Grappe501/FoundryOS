@@ -6,6 +6,8 @@ import {
   getGrowthKpiSnapshot,
   getLaunchCostKpiSnapshot,
   getLaunchCostSnapshot,
+  getWorldDepthKpiSnapshot,
+  getWorldDepthSnapshot,
   GROWTH_STAT_LABELS,
   JANUARY_2027_TARGETS,
   PRODUCTION_LAUNCH,
@@ -41,6 +43,8 @@ export default async function GrowthOsPage() {
   });
   const launchCost = getLaunchCostKpiSnapshot();
   const launchCostDetail = getLaunchCostSnapshot();
+  const worldDepth = getWorldDepthKpiSnapshot();
+  const worldDepthDetail = getWorldDepthSnapshot();
 
   const stats = Object.entries(GROWTH_STAT_LABELS).map(([key, label]) => ({
     key: key as keyof GrowthKpiSnapshot,
@@ -71,7 +75,7 @@ export default async function GrowthOsPage() {
           marginTop: 16,
         }}
       >
-        PASS-015 · Growth Lane
+        Growth OS
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Growth OS</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>
@@ -90,7 +94,7 @@ export default async function GrowthOsPage() {
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cost To Launch A Domain — primary operational KPI</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
-          Investors care about launch cost more than current domain count. Target: factory launches in &lt; 1 hour (PASS-024).
+          Investors care about launch cost more than current domain count. Target: factory launches in under 1 hour.
         </p>
         <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12 }}>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
@@ -138,10 +142,48 @@ export default async function GrowthOsPage() {
         </p>
       </section>
 
+      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #3A4A6A', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#6B8BB8', margin: 0 }}>World Depth — consumer readiness</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+          Seven active worlds · target depth ≥ 85% · 35 academy lessons · 50 glossary terms each.
+        </p>
+        <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12 }}>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B8BB8' }}>{worldDepth.avg_depth_score}%</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg depth score</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#6B9B6B' }}>{worldDepth.avg_consumer_readiness_pct}%</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Consumer readiness</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#E8E8EC' }}>{worldDepth.total_academy_lessons}</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Academy lessons</div>
+          </div>
+          <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: '#E8E8EC' }}>{worldDepth.total_glossary_terms}</div>
+            <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Glossary terms</div>
+          </div>
+        </div>
+        <div style={{ marginTop: 20 }}>
+          {worldDepthDetail.rows.map((r) => (
+            <div key={r.slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
+              <span style={{ color: '#E8E8EC' }}>{r.displayName}</span>
+              <span style={{ color: '#8A8A8E' }}>
+                {r.depthScore}% depth · {r.academyLessons} lessons · {r.glossaryTerms} terms · {r.consumerReadinessPct}% ready
+              </span>
+            </div>
+          ))}
+        </div>
+        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 12 }}>
+          <code style={{ color: '#6B6B70' }}>npm run audit:depth</code>
+        </p>
+      </section>
+
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Exceptional Domains — Jan 2027 target: 5 + factory for 100</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
-          Active ≠ built. Full HPI stack operational: {ACTIVE_DOMAIN_CRITERIA.join(' · ')}
+          Active ≠ built. Full transformation stack operational: {ACTIVE_DOMAIN_CRITERIA.join(' · ')}
         </p>
         <p style={{ color: '#E8E8EC', fontSize: 22, fontWeight: 300, marginTop: 12 }}>
           {growth.active_domains} active · {growth.domains_built} built · {Math.round(growth.domain_activation_rate * 100)}% activation
@@ -184,7 +226,7 @@ export default async function GrowthOsPage() {
           ))}
         </div>
         <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 16 }}>
-          Analytics wiring in PASS-015. Domain count reflects domain proofs complete.
+          Analytics wiring in progress. Domain count reflects live consumer worlds.
         </p>
       </section>
 

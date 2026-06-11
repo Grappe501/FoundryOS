@@ -1,12 +1,20 @@
-import { PortfolioView } from '../../../components/ai-builder/PortfolioView';
-
-export const metadata = { title: 'My AI Portfolio | AI Builder World' };
+import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
+import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
+import { AI_BUILDER_PORTFOLIO_SECTIONS } from '../../../lib/ai-builder-world';
 
 export default function PortfolioPage() {
+  const bundle = getWorldDepthOrThrow('ai-builder');
   return (
     <section style={{ marginTop: 16 }}>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>My AI Portfolio</h1>
-      <PortfolioView />
+      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>{bundle.portfolioLabel}</h1>
+      <WorldPortfolioDepth
+        bundle={bundle}
+        basePath="/ai-builder"
+        portfolioKey="foundry-ai-portfolio"
+        missionCount={5}
+        firstMissionSlug="homework-assistant"
+        sections={AI_BUILDER_PORTFOLIO_SECTIONS}
+      />
     </section>
   );
 }

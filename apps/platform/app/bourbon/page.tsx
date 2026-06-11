@@ -69,7 +69,7 @@ export default function BourbonWorldPage() {
       <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/explore/bourbon" style={{ color: '#6B6B70' }}>Explore path</Link>
         {' · '}
-        <Link href="/verticals/bourbon" style={{ color: '#6B6B70' }}>Operator proof</Link>
+        <Link href="/bourbon/learn" style={{ color: '#6B6B70' }}>Guides</Link>
       </p>
     </section>
   );

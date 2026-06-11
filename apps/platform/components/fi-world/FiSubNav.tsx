@@ -11,6 +11,8 @@ const LINKS = [
   { href: '/financial-independence/portfolio', label: 'Portfolio' },
   { href: '/financial-independence/parents', label: 'For Parents' },
   { href: '/financial-independence/glossary', label: 'Glossary' },
+  { href: '/financial-independence/learn', label: 'Guides' },
+  { href: '/financial-independence/community', label: 'Community' },
   { href: '/financial-independence/careers', label: 'Careers' },
 ] as const;
 

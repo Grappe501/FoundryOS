@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/bourbon/portfolio', label: 'Portfolio' },
   { href: '/bourbon/parents', label: 'For Parents' },
   { href: '/bourbon/glossary', label: 'Glossary' },
+  { href: '/bourbon/learn', label: 'Guides' },
   { href: '/bourbon/careers', label: 'Careers' },
   { href: '/bourbon/community', label: 'Community' },
 ] as const;

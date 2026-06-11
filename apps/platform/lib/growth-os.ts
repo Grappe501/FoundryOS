@@ -1,6 +1,7 @@
 /** PASS-015 — Customer Acquisition Infrastructure + Growth Factory */
 
 import { getLaunchCostSnapshot } from './domain-launch-cost';
+import { getWorldDepthSnapshot } from './world-depth/audit';
 import { countExploreCatalogPaths } from './explore-catalog';
 
 export const GROWTH_NORTH_STAR = 'Monthly Active Transformations';
@@ -136,6 +137,26 @@ export function getLaunchCostKpiSnapshot(): LaunchCostKpiSnapshot {
 }
 
 export { getLaunchCostSnapshot, DOMAIN_LAUNCH_COST_REGISTRY } from './domain-launch-cost';
+export { getWorldDepthSnapshot, auditAllWorldDepth } from './world-depth/audit';
+
+export type WorldDepthKpiSnapshot = {
+  avg_depth_score: number;
+  avg_consumer_readiness_pct: number;
+  total_academy_lessons: number;
+  total_glossary_terms: number;
+  worlds: number;
+};
+
+export function getWorldDepthKpiSnapshot(): WorldDepthKpiSnapshot {
+  const s = getWorldDepthSnapshot();
+  return {
+    avg_depth_score: s.avg_depth_score,
+    avg_consumer_readiness_pct: s.avg_consumer_readiness_pct,
+    total_academy_lessons: s.total_academy_lessons,
+    total_glossary_terms: s.total_glossary_terms,
+    worlds: s.worlds,
+  };
+}
 
 export const GROWTH_STAT_LABELS: Record<keyof GrowthKpiSnapshot, string> = {
   visitors: 'Visitors',

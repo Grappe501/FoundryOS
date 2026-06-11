@@ -11,6 +11,8 @@ const LINKS = [
   { href: '/public-speaking/portfolio', label: 'Portfolio' },
   { href: '/public-speaking/parents', label: 'For Parents' },
   { href: '/public-speaking/glossary', label: 'Glossary' },
+  { href: '/public-speaking/learn', label: 'Guides' },
+  { href: '/public-speaking/community', label: 'Community' },
   { href: '/public-speaking/careers', label: 'Careers' },
 ] as const;
 

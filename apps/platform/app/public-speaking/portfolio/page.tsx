@@ -1,12 +1,20 @@
-import { PsPortfolioView } from '../../../components/ps-world/PsPortfolioView';
+import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
+import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
+import { PS_PORTFOLIO_SECTIONS } from '../../../lib/public-speaking-world';
 
-export const metadata = { title: 'My Speaking Portfolio | Public Speaking World' };
-
-export default function PsPortfolioPage() {
+export default function PortfolioPage() {
+  const bundle = getWorldDepthOrThrow('public-speaking');
   return (
     <section style={{ marginTop: 16 }}>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>My Speaking Portfolio</h1>
-      <PsPortfolioView />
+      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>{bundle.portfolioLabel}</h1>
+      <WorldPortfolioDepth
+        bundle={bundle}
+        basePath="/public-speaking"
+        portfolioKey="foundry-ps-portfolio"
+        missionCount={5}
+        firstMissionSlug="first-talk"
+        sections={PS_PORTFOLIO_SECTIONS}
+      />
     </section>
   );
 }

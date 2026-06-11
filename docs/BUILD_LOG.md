@@ -7,9 +7,9 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-024 ✅ |
+| **Last Pass** | PASS-025 ✅ |
 | **Next Pass** | PASS-022 Private Beta Readiness |
-| **Focus** | World factory live — new domains = blueprint + one command |
+| **Focus** | Seven worlds consumer-deep · 245 academy lessons · 350 glossary terms |
 | **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -81,6 +81,20 @@ Factory: `npm run build:world -- <slug>` · `npm run audit:worlds`
 | Growth KPI | `/growth` — cost to launch, factory automation %, domains generated |
 
 Pass gate: **PASSED** — worlds generated from blueprint, not hand-built routes.
+
+---
+
+## PASS-025 — World Depth Expansion ✅
+
+| Deliverable | Detail |
+|-------------|--------|
+| Worlds deepened | 7 (AI Builder, FI, PS, Bourbon, BBQ, Poker, Civic) |
+| Academy | 35 lessons per world (245 total) |
+| Glossary | 50 terms per world (350 total) |
+| Guides | 7 SEO starters per world at `/{slug}/learn` |
+| Portfolio | Enhanced with missions, reflections, next action |
+| Audit | `npm run audit:depth` — 100% avg depth score |
+| Growth OS | World depth KPIs on `/growth` |
 
 ---
 

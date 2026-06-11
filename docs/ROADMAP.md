@@ -34,8 +34,7 @@ PASS-020 ████████████ Civic Engagement (factory-generate
 PASS-021 ████████████ Consumer Experience Polish ✅
 PASS-023 ████████████ Bourbon Consumer World (factory) ✅
 PASS-024 ████████████ Factory Automation ✅ ← multiplier live
-PASS-025 ████████████ BBQ Consumer World (factory) ✅
-PASS-026 ████████████ Poker Consumer World (factory) ✅
+PASS-025 ████████████ World Depth Expansion ✅
 PASS-022 ░░░░░░░░░░░░ Private Beta Readiness ← NEXT
 ```
 

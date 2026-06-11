@@ -60,7 +60,7 @@ export default function CivicEngagementWorldPage() {
       <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/explore/civic-engagement" style={{ color: '#6B6B70' }}>Explore path</Link>
         {' · '}
-        <Link href="/verticals/civic-engagement" style={{ color: '#6B6B70' }}>Operator proof</Link>
+        <Link href="/civic-engagement/learn" style={{ color: '#6B6B70' }}>Guides</Link>
       </p>
     </section>
   );

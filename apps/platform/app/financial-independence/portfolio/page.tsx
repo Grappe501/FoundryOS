@@ -1,12 +1,20 @@
-import { FiPortfolioView } from '../../../components/fi-world/FiPortfolioView';
+import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
+import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
+import { FI_PORTFOLIO_SECTIONS } from '../../../lib/financial-independence-world';
 
-export const metadata = { title: 'My Wealth Portfolio | Financial Independence World' };
-
-export default function FiPortfolioPage() {
+export default function PortfolioPage() {
+  const bundle = getWorldDepthOrThrow('financial-independence');
   return (
     <section style={{ marginTop: 16 }}>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>My Wealth Portfolio</h1>
-      <FiPortfolioView />
+      <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>{bundle.portfolioLabel}</h1>
+      <WorldPortfolioDepth
+        bundle={bundle}
+        basePath="/financial-independence"
+        portfolioKey="foundry-fi-portfolio"
+        missionCount={5}
+        firstMissionSlug="first-budget"
+        sections={FI_PORTFOLIO_SECTIONS}
+      />
     </section>
   );
 }

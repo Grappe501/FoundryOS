@@ -11,6 +11,8 @@ const LINKS = [
   { href: '/ai-builder/portfolio', label: 'Portfolio' },
   { href: '/ai-builder/parents', label: 'For Parents' },
   { href: '/ai-builder/glossary', label: 'Glossary' },
+  { href: '/ai-builder/learn', label: 'Guides' },
+  { href: '/ai-builder/community', label: 'Community' },
 ] as const;
 
 export function AiBuilderSubNav() {

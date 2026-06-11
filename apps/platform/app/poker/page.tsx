@@ -69,7 +69,7 @@ export default function PokerWorldPage() {
       <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
         <Link href="/explore/poker" style={{ color: '#6B6B70' }}>Explore path</Link>
         {' · '}
-        <Link href="/verticals/poker" style={{ color: '#6B6B70' }}>Operator proof</Link>
+        <Link href="/poker/learn" style={{ color: '#6B6B70' }}>Guides</Link>
       </p>
     </section>
   );

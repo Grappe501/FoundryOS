@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/poker/portfolio', label: 'Portfolio' },
   { href: '/poker/parents', label: 'For Parents' },
   { href: '/poker/glossary', label: 'Glossary' },
+  { href: '/poker/learn', label: 'Guides' },
   { href: '/poker/careers', label: 'Careers' },
   { href: '/poker/community', label: 'Community' },
 ] as const;

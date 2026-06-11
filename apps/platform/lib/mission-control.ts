@@ -239,9 +239,9 @@ export const PASSES: PassEntry[] = [
   },
   {
     code: 'PASS-025',
-    title: 'BBQ Consumer World',
+    title: 'World Depth Expansion',
     status: 'completed' as const,
-    summary: 'Passion Trinity #2 — factory-generated at /bbq.',
+    summary: '7 worlds deepened — 35 lessons, 50 glossary terms, guides, portfolio, parent, community per world.',
   },
   {
     code: 'PASS-026',

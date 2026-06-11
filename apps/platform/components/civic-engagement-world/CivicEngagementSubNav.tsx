@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/civic-engagement/portfolio', label: 'Portfolio' },
   { href: '/civic-engagement/parents', label: 'For Parents' },
   { href: '/civic-engagement/glossary', label: 'Glossary' },
+  { href: '/civic-engagement/learn', label: 'Guides' },
   { href: '/civic-engagement/careers', label: 'Careers' },
   { href: '/civic-engagement/community', label: 'Community' },
 ] as const;

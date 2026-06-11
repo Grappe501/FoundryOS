@@ -11,6 +11,7 @@ const LINKS = [
   { href: '/bbq/portfolio', label: 'Portfolio' },
   { href: '/bbq/parents', label: 'For Parents' },
   { href: '/bbq/glossary', label: 'Glossary' },
+  { href: '/bbq/learn', label: 'Guides' },
   { href: '/bbq/careers', label: 'Careers' },
   { href: '/bbq/community', label: 'Community' },
 ] as const;
