@@ -8,6 +8,9 @@ export type TrackValidationPayload = {
     | 'path_started'
     | 'project_started'
     | 'session_visit'
+    | 'explore_viewed'
+    | 'path_clicked'
+    | 'interest_submitted'
     | 'account_created'
     | 'trial_started'
     | 'paid';
@@ -72,5 +75,14 @@ export function trackPageLanding(page: string): void {
   void trackValidationEvent({
     event_type: 'session_visit',
     landing_page: page,
+  });
+}
+
+export function trackPathClicked(pathSlug: string, landingPage: string, href: string): void {
+  void trackValidationEvent({
+    event_type: 'path_clicked',
+    landing_page: landingPage,
+    path_slug: pathSlug,
+    metadata: { href },
   });
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import {
   CUSTOMER_SEGMENTS,
@@ -12,8 +12,9 @@ import {
   type AssessmentAnswers,
   type AssessmentResult,
   type CustomerSegment,
+  type TrinityPath,
 } from '../lib/future-proof-assessment';
-import { trackValidationEvent } from '../lib/validation-tracker';
+import { trackPathClicked, trackValidationEvent } from '../lib/validation-tracker';
 
 const PATH_HREFS: Record<string, string> = {
   'ai-builder': '/ai-builder',
@@ -98,6 +99,9 @@ function ResultPanel({ result }: { result: AssessmentResult }) {
       </div>
       <Link
         href={href}
+        onClick={() =>
+          trackPathClicked(result.recommendedPath, '/future-proof', href)
+        }
         style={{
           display: 'inline-block',
           marginTop: 24,
@@ -115,7 +119,7 @@ function ResultPanel({ result }: { result: AssessmentResult }) {
   );
 }
 
-export function FutureProofAssessment() {
+export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<AssessmentAnswers>({
     segment: 'young-professional',
@@ -125,6 +129,23 @@ export function FutureProofAssessment() {
     primaryWorry: 'job-security',
   });
   const [result, setResult] = useState<AssessmentResult | null>(null);
+
+  const chooseMeta = choosePath && choosePath in TRINITY_PATHS ? TRINITY_PATHS[choosePath as TrinityPath] : null;
+
+  useEffect(() => {
+    if (!choosePath) return;
+    try {
+      const saved = localStorage.getItem('foundry-future-proof-result');
+      if (saved) {
+        const parsed = JSON.parse(saved) as AssessmentResult;
+        if (parsed.recommendedPath === choosePath) {
+          setResult(parsed);
+        }
+      }
+    } catch {
+      /* ignore */
+    }
+  }, [choosePath]);
 
   const trinityCards = useMemo(
     () =>
@@ -159,6 +180,28 @@ export function FutureProofAssessment() {
 
   return (
     <div>
+      {chooseMeta && !result && (
+        <section
+          style={{
+            marginTop: 24,
+            padding: 20,
+            background: '#1A160F',
+            border: '1px solid #4A4020',
+            borderRadius: 8,
+          }}
+        >
+          <p style={{ color: '#C8A96E', fontSize: 14, margin: 0 }}>
+            Confirm {chooseMeta.label} is your path — take the 2-minute assessment below.
+          </p>
+          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
+            Or{' '}
+            <Link href={`/explore/${choosePath}`} style={{ color: '#6B9B6B' }}>
+              learn more about {chooseMeta.label}
+            </Link>
+          </p>
+        </section>
+      )}
+
       <section style={{ marginTop: 32, padding: 28, background: '#0F0F12', borderRadius: 8 }}>
         <h1 style={{ fontWeight: 300, fontSize: '2.25rem', margin: 0, color: '#E8E8EC' }}>
           {FUTURE_PROOF_HEADLINE}
@@ -293,7 +336,29 @@ export function FutureProofAssessment() {
           )}
         </section>
       ) : (
-        <ResultPanel result={result} />
+        <>
+          <ResultPanel result={result} />
+          <p style={{ marginTop: 16, fontSize: 13 }}>
+            <button
+              type="button"
+              onClick={() => {
+                setResult(null);
+                setStep(0);
+              }}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: '#6B6B70',
+                cursor: 'pointer',
+                fontSize: 13,
+                padding: 0,
+                textDecoration: 'underline',
+              }}
+            >
+              Retake assessment
+            </button>
+          </p>
+        </>
       )}
     </div>
   );

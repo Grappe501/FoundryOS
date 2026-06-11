@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
+import { ConsumerNav } from '../../../components/ConsumerNav';
 import { InterestListJoin } from '../../../components/InterestListJoin';
 import { ValidationPageTracker } from '../../../components/ValidationPageTracker';
 import {
@@ -42,7 +43,6 @@ export default async function ExplorePathPage({ params }: Props) {
   if (!path) notFound();
 
   if (path.live_href && (path.status === 'live' || path.status === 'validating' || path.status === 'in_build')) {
-    const { redirect } = await import('next/navigation');
     redirect(path.live_href);
   }
 
@@ -68,11 +68,8 @@ export default async function ExplorePathPage({ params }: Props) {
       }}
     >
       <ValidationPageTracker page={`/explore/${slug}`} />
-      <Link href="/explore" style={{ color: '#6B6B70', fontSize: 13 }}>
-        ← Explore all paths
-      </Link>
-
-      <section style={{ marginTop: 28, padding: 28, background: '#0F0F12', borderRadius: 8, border: `1px solid ${colors.border}` }}>
+      <ConsumerNav />
+      <section style={{ marginTop: 16, padding: 28, background: '#0F0F12', borderRadius: 8, border: `1px solid ${colors.border}` }}>
         <span
           style={{
             display: 'inline-flex',

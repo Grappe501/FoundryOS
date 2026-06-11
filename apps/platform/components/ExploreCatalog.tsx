@@ -11,6 +11,7 @@ import {
   type ExploreCategoryFilter,
   type ExplorePath,
 } from '../lib/explore-catalog';
+import { trackPathClicked } from '../lib/validation-tracker';
 
 function StatusBadge({ status }: { status: ExplorePath['status'] }) {
   const c = EXPLORE_STATUS_COLORS[status];
@@ -36,11 +37,11 @@ function StatusBadge({ status }: { status: ExplorePath['status'] }) {
 
 function PathRow({ path }: { path: ExplorePath }) {
   const href = getExplorePathHref(path);
-  const isExternalLive = path.live_href && path.status !== 'planned' && path.status !== 'paused';
 
   return (
     <Link
       href={href}
+      onClick={() => trackPathClicked(path.slug, '/explore', href)}
       style={{
         display: 'block',
         padding: '16px 18px',
@@ -65,7 +66,7 @@ function PathRow({ path }: { path: ExplorePath }) {
         </div>
       </div>
       <p style={{ color: '#6B9B6B', fontSize: 12, marginTop: 12 }}>
-        {isExternalLive || path.status === 'live' || path.status === 'validating' || path.status === 'in_build'
+        {path.status === 'live' || path.status === 'validating' || path.status === 'in_build'
           ? 'View path →'
           : 'Learn more →'}
       </p>

@@ -138,6 +138,8 @@ export default async function ValidationPage() {
             <MetricRow label="Assessment completed" value={metrics.activation.assessment_completed} />
             <MetricRow label="Path started" value={metrics.activation.path_started} />
             <MetricRow label="Project started" value={metrics.activation.project_started} />
+            <MetricRow label="Explore viewed" value={metrics.activation.explore_viewed} />
+            <MetricRow label="Path clicked" value={metrics.activation.path_clicked} />
             <MetricRow label="Assessment completion rate" value={`${metrics.activation.completion_rate}%`} />
           </Section>
 
@@ -149,6 +151,7 @@ export default async function ValidationPage() {
 
           <Section title="Conversion" color="#4A2A4A">
             <MetricRow label="Created account" value={metrics.conversion.account_created} />
+            <MetricRow label="Interest submitted" value={metrics.conversion.interest_submitted} />
             <MetricRow label="Started trial" value={metrics.conversion.trial_started} />
             <MetricRow label="Paid" value={metrics.conversion.paid} />
           </Section>

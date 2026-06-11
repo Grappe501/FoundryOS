@@ -8,6 +8,9 @@ export type ValidationEventType =
   | 'path_started'
   | 'project_started'
   | 'session_visit'
+  | 'explore_viewed'
+  | 'path_clicked'
+  | 'interest_submitted'
   | 'account_created'
   | 'trial_started'
   | 'paid';
@@ -41,6 +44,8 @@ export type ValidationDashboardMetrics = {
     assessment_completed: number;
     path_started: number;
     project_started: number;
+    explore_viewed: number;
+    path_clicked: number;
     completion_rate: number;
   };
   retention: {
@@ -49,6 +54,7 @@ export type ValidationDashboardMetrics = {
     unique_visitors: number;
   };
   conversion: {
+    interest_submitted: number;
     account_created: number;
     trial_started: number;
     paid: number;
@@ -65,10 +71,13 @@ export type ValidationDashboardMetrics = {
 const EVENT_CATEGORY: Record<ValidationEventType, ValidationCategory> = {
   visitor_landed: 'acquisition',
   session_visit: 'acquisition',
+  explore_viewed: 'acquisition',
   assessment_started: 'activation',
   assessment_completed: 'activation',
   path_started: 'activation',
   project_started: 'activation',
+  path_clicked: 'activation',
+  interest_submitted: 'conversion',
   account_created: 'conversion',
   trial_started: 'conversion',
   paid: 'conversion',
@@ -162,6 +171,9 @@ export async function getValidationDashboardMetrics(): Promise<ValidationDashboa
   const assessmentCompleted = rows.filter((e) => e.event_type === 'assessment_completed').length;
   const pathStarted = rows.filter((e) => e.event_type === 'path_started').length;
   const projectStarted = rows.filter((e) => e.event_type === 'project_started').length;
+  const exploreViewed = rows.filter((e) => e.event_type === 'explore_viewed').length;
+  const pathClicked = rows.filter((e) => e.event_type === 'path_clicked').length;
+  const interestSubmitted = rows.filter((e) => e.event_type === 'interest_submitted').length;
 
   const retention = computeRetention(
     visitRows.map((e) => ({ visitor_id: e.visitor_id, created_at: e.created_at }))
@@ -193,6 +205,8 @@ export async function getValidationDashboardMetrics(): Promise<ValidationDashboa
       assessment_completed: assessmentCompleted,
       path_started: pathStarted,
       project_started: projectStarted,
+      explore_viewed: exploreViewed,
+      path_clicked: pathClicked,
       completion_rate:
         assessmentStarted > 0 ? Math.round((assessmentCompleted / assessmentStarted) * 100) : 0,
     },
@@ -202,6 +216,7 @@ export async function getValidationDashboardMetrics(): Promise<ValidationDashboa
       unique_visitors: retention.uniqueVisitors,
     },
     conversion: {
+      interest_submitted: interestSubmitted,
       account_created: rows.filter((e) => e.event_type === 'account_created').length,
       trial_started: rows.filter((e) => e.event_type === 'trial_started').length,
       paid: rows.filter((e) => e.event_type === 'paid').length,

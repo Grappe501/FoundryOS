@@ -8,6 +8,8 @@ import {
 import { loadPass016Verification } from '../../lib/ai-builder-verification';
 import { ValidationPageTracker } from '../../components/ValidationPageTracker';
 import { AiBuilderProjectStart } from '../../components/AiBuilderProjectStart';
+import { ConsumerNav } from '../../components/ConsumerNav';
+import { ChoosePathLink } from '../../components/ChoosePathLink';
 
 export const dynamic = 'force-dynamic';
 
@@ -46,12 +48,10 @@ export default async function AiBuilderPage() {
       }}
     >
       <ValidationPageTracker page="/ai-builder" />
-      <Link href="/future-proof" style={{ color: '#6B6B70', fontSize: 13 }}>
-        ← Become Future-Proof
-      </Link>
+      <ConsumerNav />
 
       {/* Stranger entry — not internal proof UI first */}
-      <section style={{ marginTop: 24, padding: 28, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
+      <section style={{ marginTop: 16, padding: 28, background: '#0F0F12', border: '1px solid #2A4A2A', borderRadius: 8 }}>
         <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
           Create value · Life Leverage Domain
         </p>
@@ -67,18 +67,19 @@ export default async function AiBuilderPage() {
         <p style={{ color: '#6B9B6B', fontSize: 13, marginTop: 16 }}>{tomorrowHook}</p>
         <div style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'center' }}>
           <AiBuilderProjectStart projectName={firstProject.display_name} />
+          <ChoosePathLink />
           <Link
-            href="/future-proof"
+            href="/explore"
             style={{
               padding: '12px 20px',
-              border: '1px solid #2A4A2A',
+              border: '1px solid #1A1A1E',
               borderRadius: 6,
               fontSize: 14,
               color: '#8A8A8E',
               textDecoration: 'none',
             }}
           >
-            Take Future-Proof Assessment
+            Explore all paths
           </Link>
         </div>
       </section>

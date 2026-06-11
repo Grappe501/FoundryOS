@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import { ConsumerNav } from '../../components/ConsumerNav';
 import { ExploreCatalog } from '../../components/ExploreCatalog';
+import { ExploreViewTracker } from '../../components/ExploreViewTracker';
 import { ValidationPageTracker } from '../../components/ValidationPageTracker';
 import { EXPLORE_HERO, countExploreCatalogPaths, countExploreLivePaths } from '../../lib/explore-catalog';
 
@@ -24,9 +26,8 @@ export default function ExplorePage() {
       }}
     >
       <ValidationPageTracker page="/explore" />
-      <Link href="/future-proof" style={{ color: '#6B6B70', fontSize: 13 }}>
-        ← Become Future-Proof
-      </Link>
+      <ExploreViewTracker />
+      <ConsumerNav />
 
       <section style={{ marginTop: 24 }}>
         <p
@@ -47,15 +48,30 @@ export default function ExplorePage() {
         <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>
           {total} paths catalogued · {live} live now · more opening through 2027
         </p>
+        <Link
+          href="/future-proof"
+          style={{
+            display: 'inline-block',
+            marginTop: 20,
+            padding: '14px 24px',
+            background: '#2A4A2A',
+            borderRadius: 6,
+            color: '#E8E8EC',
+            fontSize: 14,
+            fontWeight: 400,
+            textDecoration: 'none',
+          }}
+        >
+          Start here — take the assessment →
+        </Link>
       </section>
 
       <ExploreCatalog />
 
       <section style={{ marginTop: 40, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Not sure where to start?</h2>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>New here?</h2>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.6 }}>
-          Take the Future-Proof Assessment — we&apos;ll show you where you are, what you&apos;re missing, and which path
-          to start first.
+          Don&apos;t pick a path blind. The Future-Proof Assessment shows where you are and what to start first.
         </p>
         <Link
           href="/future-proof"
@@ -70,7 +86,7 @@ export default function ExplorePage() {
             textDecoration: 'none',
           }}
         >
-          Take the assessment →
+          Start here →
         </Link>
       </section>
     </main>

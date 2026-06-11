@@ -7,10 +7,11 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-016 ✅ |
+| **Last Pass** | PASS-016C ✅ |
+| **Last Pass** | PASS-016D ✅ |
 | **Next Pass** | PASS-016A — Market Validation (10 strangers) |
 | **Focus** | Learn what strangers do — not build PASS-017 yet |
-| **Live proof** | [/future-proof](/future-proof) · [/validation](/validation) · [/ai-builder](/ai-builder) |
+| **Live proof** | [/future-proof](/future-proof) → [/explore](/explore) → [/ai-builder](/ai-builder) · [/validation](/validation) |
 | **Pass gate** | ≥1 stranger starts transformation AND returns |
 
 ### Open Risks
@@ -20,6 +21,21 @@
 | PASS-016 becomes architecture pass | Pass gate = first stranger, not another checklist |
 | Market domain not outcome | Market **Become Future-Proof**; AI Builder is a path |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
+
+---
+
+## PASS-016D — Stranger Conversion Cleanup ✅
+
+| Deliverable | Detail |
+|-------------|--------|
+| Consumer nav | `Future-Proof · Explore Paths · AI Builder` on `/future-proof`, `/explore`, `/ai-builder`, `/explore/[slug]` |
+| Start here CTA | Hero + footer on `/explore` → `/future-proof` |
+| Choose this path | `/ai-builder` → `/future-proof?choose=ai-builder` (restores saved result) |
+| Interest capture | Segment + optional email + desired path on planned pages |
+| Validation events | `explore_viewed`, `path_clicked`, `interest_submitted` |
+| Migration | `20260625100000_validation_pass016d_events.sql` |
+
+**Gate unchanged:** 10 strangers through `/future-proof` before PASS-017.
 
 ---
 

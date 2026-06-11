@@ -175,6 +175,14 @@ export const PASSES: PassEntry[] = [
     date: '2026-06-11',
     summary: '/explore consumer path directory · /course-catalog operator alias · status colors · planned detail pages.',
   },
+  {
+    code: 'PASS-016D',
+    title: 'Stranger Conversion Cleanup',
+    status: 'completed' as const,
+    date: '2026-06-11',
+    summary:
+      'Consumer journey nav · Start here CTA · Choose this path · interest capture · explore_viewed / path_clicked / interest_submitted events.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -300,10 +308,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-016C',
+    last_pass: 'PASS-016D',
     next_pass: 'PASS-016A',
     current_focus:
-      'Public catalog live at /explore. Put 10 strangers through /future-proof — watch /validation. No PASS-017 until validated.',
+      'Consumer journey wired: /future-proof → /explore → /ai-builder. Put 10 strangers through /future-proof — watch /validation. No PASS-017 until validated.',
     open_risks: [
       'Risk shifted: building things nobody uses — not architecture failure',
       'PASS-016 exit: ≥1 stranger starts transformation AND returns',
