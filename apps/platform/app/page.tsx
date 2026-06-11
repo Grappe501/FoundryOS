@@ -26,6 +26,10 @@ const northStarLabels: Record<string, string> = {
   transformation_insights_captured: 'Transformation Insights Captured',
   transformation_loop_completion_rate: 'Loop Completion Rate',
   meaningful_progress_events: 'Meaningful Progress Events',
+  evidence_submissions_total: 'Evidence Submissions',
+  evidence_verified_count: 'Verified Evidence',
+  evidence_trust_weight_avg: 'Avg Trust Weight',
+  identity_evidence_strength: 'Identity Evidence Strength',
   mentorship_connections: 'Mentorship Connections',
   projects_completed: 'Projects Completed',
   path_completion_rate: 'Path Completion Rate',
@@ -49,7 +53,9 @@ export default async function MissionControlHome() {
     const value =
       key === 'path_completion_rate' || key === 'transformation_loop_completion_rate'
         ? `${Math.round(raw * 100)}%`
-        : raw.toLocaleString();
+        : key === 'evidence_trust_weight_avg' || key === 'identity_evidence_strength'
+          ? `${Math.round(raw)}%`
+          : raw.toLocaleString();
     return { label, value };
   });
 
@@ -165,7 +171,8 @@ export default async function MissionControlHome() {
           <Link href="/outcomes" style={{ color: '#C8A96E', fontSize: 14 }}>Human Outcomes →</Link>
           <Link href="/equation" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry Equation →</Link>
           <Link href="/transformation" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Factory →</Link>
-          <Link href="/loop" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Prove the Loop (PASS-010) →</Link>
+          <Link href="/loop" style={{ color: '#C8A96E', fontSize: 14 }}>Prove the Loop (PASS-010) →</Link>
+          <Link href="/evidence" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
           <Link href="/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
         </nav>
 

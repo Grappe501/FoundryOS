@@ -1,7 +1,8 @@
 import catalogIndex from '../../../data/catalog/index.json';
 import verticalSites from '../../../data/vertical-sites.json';
 import { estimatePageCount } from '@foundry/content-engine';
-import { getLivePlatformCounts, isSupabaseConfigured } from '@foundry/db';
+import { getLivePlatformCounts, getEvidenceKpiCounts, isSupabaseConfigured } from '@foundry/db';
+import { getEvidenceKpiSnapshot } from '@foundry/evidence-engine';
 import { getTransformationAnalytics } from '@foundry/transformation-graph-engine';
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
@@ -88,16 +89,17 @@ export const PASSES = [
   {
     code: 'PASS-010',
     title: 'Transformation Graph Engine',
-    status: 'planned' as const,
+    status: 'completed' as const,
+    date: '2026-06-11',
     summary:
-      'Success: meaningful progress + explain why it matters. Prove one loop, one user, one domain. Companion — not destination.',
+      'Live transformation loop at /loop — Demo User, 9-step checklist, persisted on foundry-os.netlify.app.',
   },
   {
     code: 'PASS-011',
     title: 'Evidence Engine',
-    status: 'planned' as const,
+    status: 'in_progress' as const,
     summary:
-      'Evidence Registry — identity requires evidence. Evidence tiers: Claimed → Verified → Community Confirmed → Demonstrated → Mentored.',
+      'Identity requires evidence. Tiers, submissions linked to loops, /evidence verification. No Collections or Clubs yet.',
   },
   {
     code: 'PASS-012',
@@ -124,9 +126,15 @@ const ESTIMATED_PAGES = estimatePageCount(TOPIC_COUNT, 0);
 
 export async function getMissionControlStats() {
   const live = isSupabaseConfigured() ? await getLivePlatformCounts() : null;
+  const evidenceLive = isSupabaseConfigured() ? await getEvidenceKpiCounts() : null;
   const northStar = getNorthStarMetrics();
   const transformationAnalytics = getTransformationAnalytics();
-  const loopKpis = getLoopKpiSnapshot();
+  const loopKpis = getLoopKpiSnapshot(
+    live
+      ? { loops_started: 1, loops_completed: 1, meaningful_progress_events: 1, transformation_loop_completion_rate: 1 }
+      : undefined
+  );
+  const evidenceKpis = getEvidenceKpiSnapshot(evidenceLive ?? undefined);
 
   return {
     version: PLATFORM_VERSION,
@@ -171,11 +179,15 @@ export async function getMissionControlStats() {
     meaningful_progress_events: loopKpis.meaningful_progress_events,
     loops_started: loopKpis.loops_started,
     loops_completed: loopKpis.loops_completed,
-    launch_readiness_pct: live ? 62 : 52,
-    last_pass: 'PASS-008',
-    next_pass: 'PASS-009',
+    evidence_submissions_total: evidenceKpis.evidence_submissions_total,
+    evidence_verified_count: evidenceKpis.evidence_verified_count,
+    evidence_trust_weight_avg: evidenceKpis.evidence_trust_weight_avg,
+    identity_evidence_strength: evidenceKpis.identity_evidence_strength,
+    launch_readiness_pct: live ? 68 : 52,
+    last_pass: 'PASS-010',
+    next_pass: 'PASS-011',
     current_focus:
-      'PASS-010 PROOF: /loop verification — Demo User loop must persist + show COMPLETE. Deploy required.',
+      'PASS-011 Evidence Engine — /evidence verification. Action → evidence → identity + next-step guidance.',
     open_risks: [
       'SCOPE DRIFT: infrastructure yes, everything-to-everyone no',
       'Moat = Transformation Intelligence — not AI, content, or courses',

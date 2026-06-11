@@ -9,8 +9,8 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-009",
-    "next_pass": "PASS-009",
+    "current_pass": "PASS-011",
+    "next_pass": "PASS-011",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
@@ -38,7 +38,8 @@
     "db:migrate": "npx supabase db push",
     "db:reset": "supabase db reset",
     "db:diagnose": "node scripts/db-diagnostics.js",
-    "db:seed": "node scripts/seed-platform.js"
+    "db:seed": "node scripts/seed-platform.js",
+    "push:netlify-env": "powershell -ExecutionPolicy Bypass -File ./scripts/push-netlify-env.ps1 -TriggerDeploy"
   },
   "devDependencies": {
     "@supabase/supabase-js": "^2.49.0",

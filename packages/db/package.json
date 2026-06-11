@@ -9,6 +9,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@foundry/evidence-engine": "*",
     "@supabase/supabase-js": "^2.49.0"
   },
   "devDependencies": {

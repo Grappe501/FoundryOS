@@ -7,11 +7,11 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-008 |
-| **Next Pass** | PASS-009 — Transformation System Factory |
-| **Launch Readiness** | 62% |
-| **Focus** | PASS-010 PROOF: `/loop` verification + `transformation_loops` DB. Demo User 9-step loop. Deploy when sandbox clears. |
-| **PASS-010** | `@foundry/transformation-loop` · `/loop` |
+| **Last Pass** | PASS-010 ✅ |
+| **Next Pass** | PASS-011 — Evidence Engine |
+| **Launch Readiness** | 68% |
+| **Focus** | PASS-011: `/evidence` verification — Demo User speech evidence at Verified tier, linked to loop |
+| **PASS-011** | `@foundry/evidence-engine` · `evidence_submissions` · `/evidence` |
 
 ### Open Risks
 

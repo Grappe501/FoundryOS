@@ -9,7 +9,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@foundry/evidence-engine": "*",
     "@foundry/outcome-engine": "*",
     "@foundry/reflection-engine": "*",
     "@foundry/transformation-graph-engine": "*"

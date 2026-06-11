@@ -12,3 +12,10 @@ export {
   ensureDemoUserLoop,
   type TransformationLoopRow,
 } from './transformation-loop';
+export {
+  getEvidenceByActionSlug,
+  upsertEvidenceSubmission,
+  ensureDemoEvidenceSubmission,
+  getEvidenceKpiCounts,
+  type EvidenceSubmissionRow,
+} from './evidence-submissions';
