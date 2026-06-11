@@ -8,9 +8,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": {
-    "@foundry/seo-engine": "*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^5.7.0"
   }

@@ -21,7 +21,7 @@
     "verify:c-clean": "powershell -ExecutionPolicy Bypass -File ./scripts/verify-c-drive-clean.ps1",
     "preflight": "node scripts/enforce-h-drive.js && node scripts/preflight.js",
     "sandbox": "node scripts/sandbox-netlify.js",
-    "build:platform": "turbo build --filter=@foundry/platform",
+    "build:platform": "npm run build -w @foundry/platform",
     "build:topic": "node scripts/build-topic.js",
     "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
     "predev": "npm run setup && npm run enforce",
@@ -35,7 +35,7 @@
     "typecheck": "turbo typecheck",
     "generate:app": "node packages/self-build/cli/generate.js",
     "build:catalog": "node scripts/build-catalog.js",
-    "db:migrate": "supabase db push",
+    "db:migrate": "npx supabase db push",
     "db:reset": "supabase db reset",
     "db:diagnose": "node scripts/db-diagnostics.js",
     "db:seed": "node scripts/seed-platform.js"
