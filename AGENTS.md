@@ -39,10 +39,20 @@ node scripts/enforce-h-drive.js
 
 ## After Every Pass (automatic — no Steve approval)
 
-```powershell
-.\scripts\end-of-pass.ps1 -PassCode "PASS-XXX" -PassTitle "title"
+```txt
+Build → sandbox → fix → commit → push → Netlify deploy → verify → report
 ```
 
-Or: `npm run preflight` → `npm run sandbox` → commit → push → Netlify
+```powershell
+npm run preflight
+npm run db:migrate
+npm run build:platform
+git add -A && git commit && git push origin main
+# verify production routes — pass closes only when live
+```
+
+Or: `.\scripts\end-of-pass.ps1 -PassCode "PASS-XXX" -PassTitle "title"`
+
+**Never ask for commit/push/deploy permission at end of pass.**
 
 See `.cursor/rules/end-of-pass-deploy.mdc` and `docs/NETLIFY_DEPLOY.md`

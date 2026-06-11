@@ -32,11 +32,19 @@ alwaysApply: true
 
 ## Every Pass Must (HARD RULE)
 
-1. Update `docs/BUILD_LOG.md`
-2. **`npm run sandbox`** — Netlify build simulation; fix all blockers
-3. **`.\scripts\end-of-pass.ps1`** — commit + push without asking Steve
-4. Netlify deploy (auto via GitHub push or CLI)
-5. Report: commit hash, sandbox pass/fail, deploy URL, next pass
+**Standing loop — no permission loop:**
+
+```txt
+Build → sandbox → fix → commit → push → Netlify deploy → verify → report
+```
+
+1. Update `docs/BUILD_LOG.md`, `docs/ROADMAP.md`, `docs/METRICS.md`
+2. `npm run db:migrate` · `npm run audit:worlds` (when factory touched)
+3. **`npm run build:platform`** — must pass before push
+4. **Commit + push** — never ask Steve for permission
+5. Netlify deploy (auto via GitHub push)
+6. **Verify production routes** — pass closes only when live
+7. Report: commit hash, deploy URL, verification, next pass
 
 See `.cursor/rules/end-of-pass-deploy.mdc` and `docs/NETLIFY_DEPLOY.md`
 

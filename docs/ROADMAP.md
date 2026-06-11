@@ -27,12 +27,16 @@ PASS-014 ████████████ Domain Proof ✅
 PASS-015 ████████████ Growth OS ✅
 PASS-016 ████████████ Future-Proof Funnel + AI Builder shell ✅
 PASS-016C/D ██████████ Explore catalog + consumer journey ✅
-PASS-017 ░░░░░░░░░░░░ AI Builder Depth Pass ← NEXT
-PASS-018 ░░░░░░░░░░░░ Financial Independence Depth
-PASS-019 ░░░░░░░░░░░░ Public Speaking Depth
-PASS-020 ░░░░░░░░░░░░ Civic Engagement Depth
-PASS-021 ░░░░░░░░░░░░ Consumer Experience Polish
-PASS-022 ░░░░░░░░░░░░ Private Beta Readiness
+PASS-017 ████████████ AI Builder World ✅
+PASS-018 ████████████ Financial Independence World ✅
+PASS-019 ████████████ Public Speaking World ✅
+PASS-020 ████████████ Civic Engagement (factory-generated) ✅
+PASS-021 ████████████ Consumer Experience Polish ✅
+PASS-023 ████████████ Bourbon Consumer World (factory) ✅
+PASS-024 ████████████ Factory Automation ✅ ← multiplier live
+PASS-025 ████████████ BBQ Consumer World (factory) ✅
+PASS-026 ████████████ Poker Consumer World (factory) ✅
+PASS-022 ░░░░░░░░░░░░ Private Beta Readiness ← NEXT
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.

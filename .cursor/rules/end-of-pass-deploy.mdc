@@ -38,6 +38,8 @@ Architecture Impact
 ## Rules
 
 - Happens every pass — not optional
-- Never push with failing sandbox
+- **Never ask Steve for commit/push/deploy permission** — architecture compliance is the gate
+- **Standing loop:** Build → sandbox → fix → commit → push → Netlify deploy → verify → report
+- Never push with failing **platform build** (Netlify uses `build:platform`)
 - Never commit `.env.local`
 - See `docs/NETLIFY_DEPLOY.md`, `docs/ARCHITECTURE_COMPLIANCE.md`
