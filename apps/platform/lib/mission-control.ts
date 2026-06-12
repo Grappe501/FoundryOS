@@ -333,9 +333,9 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-040D',
     title: 'Personal Database Persistence',
-    status: 'planned' as const,
+    status: 'in_progress' as const,
     summary:
-      'Cross-device durability for artifacts, memory, collections, identity narrative. Foundation before Atlas-Aware AI (040C).',
+      'Portable Identity — user_artifacts, user_memories, user_graph_history. Hydrate + write-through on auth. npm run audit:persistence.',
   },
 ];
 
@@ -465,7 +465,7 @@ export async function getMissionControlStats() {
     last_pass: 'PASS-034P+',
     next_pass: 'PASS-040D',
     current_focus:
-      'Layer 1 stack complete (B1→B2→B3→Continuity). Next: Personal Database Persistence — real memory before Atlas-Aware AI.',
+      'PASS-040D Portable Identity — cloud persistence for artifacts, memory, collections, graph history. Website → Account.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

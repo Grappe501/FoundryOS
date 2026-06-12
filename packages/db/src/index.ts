@@ -155,6 +155,19 @@ export {
   type MissionCompletionRow,
 } from './mission-progress';
 export {
+  upsertUserArtifact,
+  upsertUserArtifactsBulk,
+  listUserArtifacts,
+  upsertPortableMemoryState,
+  upsertPortableCollectorState,
+  insertGraphTraversal,
+  listGraphHistory,
+  hydratePortableIdentity,
+  migrateLocalBundleToCloud,
+  getPortableIdentityStats,
+  type UserArtifactRow,
+} from './portable-identity';
+export {
   getGrowthFlywheelSnapshot,
   buildGrowthFlywheelFromEvents,
   FLYWHEEL_LOOP,

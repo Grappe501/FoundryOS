@@ -8,12 +8,38 @@
 |-------|-------|
 | **Version** | `0.9.7-world-memory` |
 | **Last Pass** | PASS-034P+ World Continuity Expansion ✅ |
-| **Next Pass** | PASS-040D Personal Database Persistence |
+| **Current Pass** | PASS-040D Personal Database Persistence |
+| **Next Pass** | PASS-040D.5 Memory + Graph Sync |
 | **Focus** | The world was waiting for you — welcome-back, not activity log |
 | **Live proof** | `/my-journey` · `/bourbon` welcome panel · `/passport/timeline` · `npm run audit:memory` |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
 ---
+
+---
+
+---
+
+## PASS-040D — Personal Database Persistence (in progress)
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Portable Identity — first durable identity across devices |
+| **Principle** | Persistence for everything · cloud source of truth when authed |
+| **Audit** | `npm run audit:persistence` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Supabase tables | `user_artifacts` · `user_memories` · `user_graph_history` |
+| `@foundry/personal-database` | mappers + validate |
+| `@foundry/db` portable-identity | hydrate + migrate |
+| API | `/api/identity/hydrate` · `/api/identity/migrate` |
+| Write-through | artifacts · memory · collector · graph traversal |
+| Hydrator | `PortableIdentityHydrator` in root layout |
+
+**040D Test:** sign in on device B → welcome-back reconstructs from cloud, not localStorage alone.
+
+Brief: `docs/PASS_040D_PERSONAL_DATABASE.md` · `docs/PORTABLE_IDENTITY.md`
 
 ---
 
@@ -32,7 +58,9 @@
 | Continuity panels | `/my-journey` · `/{world}` hub · `/passport/timeline` |
 | Recorders | BourbonGraphExplorer · CompareAnyTwoTool · save rabbit hole button |
 
-**Next:** 040D Personal Database Persistence · 040D.5 Memory + Graph Sync · 040C Atlas-Aware AI (after persistence)
+**Next:** 040D Personal Database Persistence (platform — Portable Identity) · 040D.5 · 040C after sync
+
+Brief: `docs/PASS_040D_PERSONAL_DATABASE.md` · `docs/PORTABLE_IDENTITY.md`
 
 ---
 

@@ -14,19 +14,26 @@ import {
   assembleMemorySignalsForWorld,
 } from '../../lib/world-continuity/assemble-signals';
 import { recordWorldVisit } from '../../lib/world-continuity/client-state';
+import { IDENTITY_HYDRATED_EVENT } from '../../lib/personal-database/sync-client';
 
 const ACCENT = '#6B9BC9';
 const PICK_UP_LABEL = 'Pick the thread back up';
 
 export function JourneyContinuityPanel() {
   const [mounted, setMounted] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+    const onHydrate = () => setRefreshKey((k) => k + 1);
+    window.addEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+    return () => window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+  }, []);
 
   const snapshot = useMemo(() => {
     if (!mounted) return null;
     return resolveJourneyWelcomeBack(assembleAllContinuityBundles(), assembleAllMemorySignals());
-  }, [mounted]);
+  }, [mounted, refreshKey]);
 
   if (!mounted || !snapshot) return null;
 
@@ -148,16 +155,20 @@ export function JourneyContinuityPanel() {
 
 export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { worldSlug: string; accent?: string }) {
   const [mounted, setMounted] = useState(false);
+  const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
     setMounted(true);
     recordWorldVisit(worldSlug);
+    const onHydrate = () => setRefreshKey((k) => k + 1);
+    window.addEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+    return () => window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
   }, [worldSlug]);
 
   const snapshot = useMemo(() => {
     if (!mounted) return null;
     return resolveWelcomeBack(assembleContinuityBundle(worldSlug), assembleMemorySignalsForWorld(worldSlug));
-  }, [mounted, worldSlug]);
+  }, [mounted, worldSlug, refreshKey]);
 
   if (!mounted || !snapshot) return null;
 

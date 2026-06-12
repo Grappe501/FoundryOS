@@ -22,6 +22,13 @@ function read(): CollectorStore {
 
 function write(store: CollectorStore) {
   localStorage.setItem(KEY, JSON.stringify(store));
+  void import('../personal-database/sync-client').then(({ scheduleCollectorStateSync }) =>
+    scheduleCollectorStateSync(store),
+  );
+}
+
+export function replaceCollectorStore(store: CollectorStore) {
+  localStorage.setItem(KEY, JSON.stringify(store));
 }
 
 export function getCollectorStore(): CollectorStore {

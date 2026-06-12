@@ -1,4 +1,4 @@
-# Current Build Status (PASS-040B3 deployed)
+# Current Build Status (PASS-034P+ deployed)
 
 **Date:** June 2026  
 **Live URL:** https://foundry-os.netlify.app/
@@ -6,45 +6,58 @@
 ## Experience lock
 
 ```txt
-NOT:  Read this bottle page.
-YES:  Enter this bottle and wander.
+NOT:  Recent activity. Resume where you left off (courseware).
+YES:  Last time you were here… The world was waiting for you.
 ```
 
-**040B3** saturates graph, bottle, and Atlas pages with inline entity links + four wander footer blocks on every graph route.
+**034P+** closes the on-device continuity loop. **040D** makes it real across devices.
+
+## Layer 1 stack (Bourbon proof — complete)
+
+```txt
+040B1  Inventory
+040B2  Hallways
+040B3  Link Saturation
+034P+  Continuity          ✅ deployed
+```
 
 ## Platform snapshot
 
 | Metric | Value |
 |--------|-------|
-| Last pass | **PASS-040B3** Graph Enrichment ✅ |
-| **Next pass** | **PASS-034P+** World Continuity Expansion |
-| Avg inline links / bottle narrative | ~5 |
-| BiB wander footer items | 10+ |
+| Last pass | **PASS-034P+** World Continuity Expansion ✅ |
+| **Next pass** | **PASS-040D** Personal Database Persistence (platform — not Bourbon) |
+| Real deliverable | **Portable Identity** — see `docs/PORTABLE_IDENTITY.md` |
+| Atlas-Aware AI | Blocked until **040D.5** |
 | Weekly push | Blocked until **040D** persistence |
 
 ## Verify routes
 
-| Route | 040B3 behavior |
+| Route | 034P+ behavior |
 |-------|----------------|
-| `/bourbon/graph/bottled-in-bond` | Inline links + 4 wander blocks |
-| `/bourbon/graph/wild-turkey-101` | Clickable narrative + compare footer |
-| `/bourbon/bottles/wild-turkey-101` | Linked intro + graph hallway |
-| `/bourbon/atlas/bottled-in-bond` | Linked paragraphs + graph hub + bottles |
+| `/my-journey` | JourneyContinuityPanel — welcome-back bullets |
+| `/bourbon` | WorldContinuityReturnPanel |
+| `/passport/timeline` | Extended memory timeline |
+| `/bourbon/graph/bottled-in-bond` | Graph view + save rabbit hole → memory |
 
 ## Audits
 
 ```powershell
+npm run audit:memory
+npm run audit:continuity
 npm run audit:graph-enrichment
-npm run audit:graph
-npm run audit:bourbon-intelligence
 ```
 
 ## Locked sequence
 
 ```txt
-034P+  World Continuity Expansion      ← NEXT
-040C   Atlas-Aware AI                   ← NOT until B3 density proven
-040D   Personal Database Persistence
+034P+  World Continuity Expansion      ✅
+040D   Personal Database Persistence   ← NEXT (platform pass)
+040D.5 Memory + Graph Sync
+040C   Atlas-Aware AI                  ← after 040D.5
 040E/F Review + Recommend
+040G   Passport
 041W   Weekly push                      ← after 040D
 ```
+
+**040D test:** cross-device welcome-back without localStorage. **Success:** can we rebuild a human?

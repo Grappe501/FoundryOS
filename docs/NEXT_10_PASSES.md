@@ -39,9 +39,31 @@ Graph exists. Memory exists. **Next: make both durable across devices.**
 
 ```txt
 Graph exists.     ✅
-Memory exists.    ✅ (localStorage v1)
-Artifacts persist? ❌ (device-only illusion)
+Memory exists.    ✅ (localStorage v1 — device illusion)
+Artifacts persist? ❌
 ```
+
+**040D is not a Bourbon pass.** It is the pass that determines whether Foundry becomes an interesting website or a **personal operating system**.
+
+Build **persistence for everything** — Bourbon is configuration.
+
+Mental model:
+
+```txt
+World → Artifact → Graph → Memory → Identity
+```
+
+Real deliverable: **Portable Identity** — not "save data."
+
+Success criterion:
+
+```txt
+Can we rebuild a human?
+```
+
+(3 days · 3 months · 3 years away — who were they becoming?)
+
+See `docs/PASS_040D_PERSONAL_DATABASE.md` · `docs/PORTABLE_IDENTITY.md`
 
 Atlas-Aware AI on localStorage alone is **clever session memory**, not intelligence.
 
@@ -52,6 +74,9 @@ After 040D + 040D.5, these become **durable across devices**:
 - Graph traversal history
 - Collections
 - Identity narrative
+- Unfinished threads
+
+Then 040C can reason like:
 - Unfinished threads
 
 Then 040C can reason like:
@@ -145,6 +170,9 @@ See `apps/platform/lib/incoming-worlds.ts`.
 
 ## Briefs
 
+- `docs/PORTABLE_IDENTITY.md` — canonical 040D architecture
+- `docs/PASS_040D_PERSONAL_DATABASE.md` — **next pass brief**
+- `docs/PASS_040D5_MEMORY_GRAPH_SYNC.md` — compound loop
 - `docs/PASS_034P_WORLD_MEMORY.md`
 - `docs/PASS_040B3_GRAPH_ENRICHMENT.md`
 - `docs/PASS_040B2_BOURBON_GRAPH_EXPANSION.md`

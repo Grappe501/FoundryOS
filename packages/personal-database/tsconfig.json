@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "rootDir": "src",
+    "target": "ES2017",
+    "downlevelIteration": true
+  },
+  "include": ["src/**/*"]
+}

@@ -33,6 +33,10 @@ function write(store: ArtifactStore): void {
   window.dispatchEvent(new Event(ARTIFACTS_CHANGED_EVENT));
 }
 
+export function replaceArtifactStore(artifacts: FoundryArtifact[]): void {
+  write({ artifacts });
+}
+
 export function getLocalUserId(): string {
   if (typeof window === 'undefined') return 'local-user';
   let id = localStorage.getItem(USER_KEY);
@@ -84,5 +88,10 @@ export function createClientArtifact(
   const store = read();
   store.artifacts.unshift(artifact);
   write(store);
+
+  void import('../personal-database/sync-client').then(({ persistArtifactToCloud }) =>
+    persistArtifactToCloud(artifact),
+  );
+
   return artifact;
 }

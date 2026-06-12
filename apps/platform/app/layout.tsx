@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { PortableIdentityHydrator } from '../components/identity/PortableIdentityHydrator';
 
 export const metadata: Metadata = {
   title: 'FoundryOS',
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           fontFamily: '"Inter", system-ui, sans-serif',
         }}
       >
+        <PortableIdentityHydrator />
         {children}
       </body>
     </html>

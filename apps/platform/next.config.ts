@@ -25,6 +25,7 @@ const nextConfig: NextConfig = {
     '@foundry/identity-narrative-engine',
     '@foundry/world-continuity-engine',
     '@foundry/world-memory-engine',
+    '@foundry/personal-database',
     '@foundry/atlas-graph-engine',
     '@foundry/artifact-engine',
     '@foundry/universe-registry',

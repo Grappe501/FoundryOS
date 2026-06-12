@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/personal-database",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-040D — Portable Identity: persist + hydrate across devices",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/artifact-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

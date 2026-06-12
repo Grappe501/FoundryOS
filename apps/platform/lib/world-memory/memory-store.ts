@@ -75,6 +75,13 @@ function read(): WorldMemoryV1 {
 
 function write(state: WorldMemoryV1) {
   localStorage.setItem(KEY, JSON.stringify(state));
+  void import('../personal-database/sync-client').then(({ scheduleMemoryStateSync }) =>
+    scheduleMemoryStateSync(state),
+  );
+}
+
+export function replaceMemoryState(state: WorldMemoryV1) {
+  localStorage.setItem(KEY, JSON.stringify(state));
 }
 
 export function getMemoryState(): WorldMemoryV1 {
@@ -131,6 +138,16 @@ export function recordGraphView(worldSlug: string, slug: string, title: string) 
   s.graph_views = [{ world_slug: worldSlug, slug, title, at }, ...s.graph_views.filter((g) => !(g.world_slug === worldSlug && g.slug === slug))].slice(0, 40);
   syncFirstUnlocks(worldSlug, s);
   write(s);
+  void import('../personal-database/sync-client').then(({ persistGraphTraversalToCloud }) =>
+    persistGraphTraversalToCloud({
+      world_slug: worldSlug,
+      node_slug: slug,
+      node_title: title,
+      node_type: 'graph',
+      source: 'graph',
+      entered_at: at,
+    }),
+  );
 }
 
 export function recordSavedRabbitHole(worldSlug: string, slug: string, title: string) {

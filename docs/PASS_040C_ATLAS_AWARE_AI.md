@@ -2,9 +2,11 @@
 
 > **Not generic AI. Foundry AI — reasoning over your universe, not the internet.**
 
-Depends on: **040B Atlas Graph Engine** (graph must exist before AI can traverse it)
+Depends on: **040B Atlas Graph Engine** + **040D Portable Identity** + **040D.5 compound sync**
 
-See `docs/KNOWLEDGE_GRAPH.md`
+**Blocked until 040D.5.** Atlas-Aware AI that only sees localStorage is dramatically weaker than AI that sees artifacts, collections, memory, graph traversal, unfinished threads, and identity narrative **across devices**.
+
+See `docs/KNOWLEDGE_GRAPH.md` · `docs/PORTABLE_IDENTITY.md`
 
 ---
 
@@ -38,9 +40,9 @@ Answer grounded in **Foundry universe** — citations link to graph nodes.
 |-------|--------|
 | Entity graph | `@foundry/atlas-graph-engine` |
 | Node content | Encyclopedia seeds, 034Q depth overlays |
-| User context | Collections, artifacts (040A), personal DB (040D) |
+| User context | **Portable Identity** — artifacts, collections, memory, graph history, curiosity profile (040D + 040D.5) |
 | Social proof | Reviews (040E), recommendations (040F) |
-| Continuity | World memory (034P) |
+| Continuity | World memory — cloud-hydrated after 040D.5 |
 
 ---
 
