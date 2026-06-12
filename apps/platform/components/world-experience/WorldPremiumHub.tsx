@@ -4,6 +4,8 @@ import { WorldMentorPanel } from '../living-worlds/LivingWorldPanels';
 import { WorldObsessionSection } from '../living-worlds/WorldObsessionSection';
 import { WorldLoreTeaser } from '../lore/WorldLoreTeaser';
 import { WorldLivingMedia } from '../lore/WorldLivingMedia';
+import { WorldEventsTeaser } from '../world-events/WorldEventsToday';
+import { WorldIdentityNarrativePanel } from '../identity-narrative/IdentityStoryPanel';
 import { getWorldAssets } from '../../lib/world-assets';
 
 export function WorldPremiumHub({ slug }: { slug: string }) {
@@ -11,6 +13,8 @@ export function WorldPremiumHub({ slug }: { slug: string }) {
   return (
     <>
       <WorldHeroExperience slug={slug} />
+      <WorldEventsTeaser worldSlug={slug} accent={assets.accent} />
+      <WorldIdentityNarrativePanel worldSlug={slug} accent={assets.accent} />
       <WorldLivingMedia worldSlug={slug} accent={assets.accent} />
       <WorldObsessionSection worldSlug={slug} accent={assets.accent} />
       <WorldLoreTeaser worldSlug={slug} accent={assets.accent} />

@@ -3,12 +3,14 @@ import { BOURBON_DETECTIVE_CHAINS } from './worlds/bourbon';
 import { AI_BUILDER_CHAINS } from './worlds/ai-builder';
 import { PUBLIC_SPEAKING_CHAINS } from './worlds/public-speaking';
 import { CIVIC_CHAINS } from './worlds/civic-engagement';
+import { WORLD_EVENT_CONSEQUENCE_CHAINS } from './worlds/world-events';
 
 export const ALL_CONSEQUENCE_CHAINS: ConsequenceChain[] = [
   ...BOURBON_DETECTIVE_CHAINS,
   ...AI_BUILDER_CHAINS,
   ...PUBLIC_SPEAKING_CHAINS,
   ...CIVIC_CHAINS,
+  ...WORLD_EVENT_CONSEQUENCE_CHAINS,
 ];
 
 export function getConsequenceChain(id: string): ConsequenceChain | undefined {

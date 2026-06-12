@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ConsumerNav } from '../components/ConsumerNav';
 import { DailyFoundryHook } from '../components/living-worlds/LivingWorldPanels';
+import { CrossWorldEventsPanel } from '../components/world-events/WorldEventsToday';
 import { TrinityHub } from '../components/trinity/TrinityHub';
 
 export const metadata = {
@@ -84,6 +85,8 @@ export default function ConsumerHomePage() {
       </section>
 
       <DailyFoundryHook />
+
+      <CrossWorldEventsPanel />
 
       <TrinityHub />
 

@@ -15,6 +15,8 @@ import {
   pickPrimaryMentorInsight,
 } from '@foundry/mentor-engine';
 import { CrossWorldCollectionsSummary } from '../../components/collector/WorldCollectionsPanel';
+import { CrossWorldEventsPanel } from '../../components/world-events/WorldEventsToday';
+import { IdentityStoryPanel } from '../../components/identity-narrative/IdentityStoryPanel';
 import {
   buildLivingJourneySnapshot,
   getStoredDisplayName,
@@ -230,6 +232,8 @@ export function LivingJourneyDashboard() {
         </Link>
       </section>
 
+      <IdentityStoryPanel />
+
       {secretPaths.length > 0 && (
         <section style={{ marginTop: 28 }}>
           <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>Hidden paths discovered</h2>
@@ -271,6 +275,8 @@ export function LivingJourneyDashboard() {
       )}
 
       <CrossWorldCollectionsSummary />
+
+      <CrossWorldEventsPanel />
 
       {challenges.length > 0 && (
         <section style={{ marginTop: 28 }}>
@@ -340,23 +346,18 @@ export function LivingJourneyDashboard() {
       )}
 
       <section style={{ marginTop: 28 }}>
-        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400 }}>Current missions & evidence</h2>
+        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400 }}>Evidence you&apos;ve left</h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
-          {snapshot.worlds.map((w) => (
+          {snapshot.worlds
+            .filter((w) => w.completed_missions.length > 0 || (w.journal_items ?? 0) > 0)
+            .map((w) => (
             <div key={w.world_slug} style={{ padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
-                <div>
-                  <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{w.identity_title}</p>
-                  <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 4 }}>{w.world_name}</p>
-                </div>
-                <p style={{ color: '#6B6B70', fontSize: 12 }}>
-                  {w.completed_missions.length}/{w.mission_count} missions
-                  {(w.journal_items ?? 0) > 0 && ` · ${w.journal_items} journal entries`}
-                </p>
+              <div>
+                <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{w.world_name}</p>
               </div>
-              {w.completed_missions.slice(0, 2).map((m) => (
+              {w.completed_missions.slice(0, 3).map((m) => (
                 <p key={m.missionSlug} style={{ color: '#8A8A8E', fontSize: 12, marginTop: 10, lineHeight: 1.5 }}>
-                  ✓ {m.missionTitle}
+                  {m.missionTitle}
                   {m.reflection && ` — "${m.reflection.slice(0, 80)}${m.reflection.length > 80 ? '…' : ''}"`}
                 </p>
               ))}

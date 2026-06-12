@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.0-living-worlds` |
-| **Last Pass** | PASS-034J Living Intelligence + Lore Engine ✅ |
-| **Next Pass** | PASS-034D Bourbon Depth Writing (in progress) + 034J Consequence Engine |
-| **Focus** | Reactive worlds — action → consequence → identity → return tomorrow |
-| **Live proof** | [/explore](/explore) · [/search](/search) · 7 active worlds · `/bourbon/today` · `/my-future` |
+| **Version** | `0.9.1-reactive-loop` |
+| **Last Pass** | PASS-034L World Events + PASS-034M Identity Narrative ✅ |
+| **Next Pass** | PASS-034P World Memory Engine |
+| **Focus** | Reactive loop — events as state, identity narrative, consequence/collector wiring |
+| **Live proof** | `/bourbon/today` · `/my-journey` · `/passport` · `/operator/events` · 7 world today pages |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks

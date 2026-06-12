@@ -5,6 +5,7 @@ export type ConsequenceActionType =
   | 'mission_completed'
   | 'collection_item_added'
   | 'event_voted'
+  | 'event_challenge_completed'
   | 'hunt_mission_completed'
   | 'portfolio_artifact_created';
 

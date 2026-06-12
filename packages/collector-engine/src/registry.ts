@@ -256,6 +256,14 @@ export const COLLECTION_EARN_RULES: CollectionEarnRule[] = [
   // Generic progress rules (next unowned item)
   { id: 'any-detective-bourbon', label: 'Close any bourbon detective case', world_slug: 'bourbon', action_type: 'detective_case_closed', collection_id: 'blind-tasting-detective' },
   { id: 'portfolio-artifact', label: 'Create portfolio artifact', world_slug: 'ai-builder', action_type: 'portfolio_artifact_created', collection_id: 'first-product-builder' },
+  // World Events (PASS-034L)
+  { id: 'event-bib-challenge', label: 'Complete BiB weekly challenge', world_slug: 'bourbon', action_type: 'event_challenge_completed', action_id: 'bourbon-challenge-bib', collection_id: 'bottled-in-bond-collection', item_id: 'bib-on-shelf' },
+  { id: 'event-ai-automate', label: 'Automate one boring task', world_slug: 'ai-builder', action_type: 'event_challenge_completed', action_id: 'ai-challenge-automate', collection_id: 'automation-builder', item_id: 'first-script' },
+  { id: 'event-fi-track', label: 'Track every dollar 7 days', world_slug: 'financial-independence', action_type: 'event_challenge_completed', action_id: 'fi-challenge-track-7', collection_id: 'budget-builder', item_id: 'first-budget' },
+  { id: 'event-ps-record', label: 'Record one short talk', world_slug: 'public-speaking', action_type: 'event_challenge_completed', action_id: 'ps-challenge-record', collection_id: 'confidence-builder', item_id: 'record-review' },
+  { id: 'event-civic-meeting', label: 'Watch one public meeting', world_slug: 'civic-engagement', action_type: 'event_challenge_completed', action_id: 'civic-challenge-meeting', collection_id: 'public-meeting-tracker', item_id: 'first-log' },
+  { id: 'event-bbq-log', label: 'Log one cook', world_slug: 'bbq', action_type: 'event_challenge_completed', action_id: 'bbq-challenge-log-cook', collection_id: 'pitmaster-journal', item_id: 'three-logs' },
+  { id: 'event-poker-hands', label: 'Review 10 hands', world_slug: 'poker', action_type: 'event_challenge_completed', action_id: 'poker-challenge-ten-hands', collection_id: 'hand-analyst', item_id: 'ten-hands' },
 ];
 
 export function earnRulesForCollection(collectionId: string): CollectionEarnRule[] {

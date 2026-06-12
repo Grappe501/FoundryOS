@@ -21,6 +21,8 @@ const nextConfig: NextConfig = {
     '@foundry/mentor-engine',
     '@foundry/consequence-engine',
     '@foundry/collector-engine',
+    '@foundry/world-events-engine',
+    '@foundry/identity-narrative-engine',
     '@foundry/outcome-engine',
   ],
 };

@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { ConsumerNav } from '../../../components/ConsumerNav';
 import { CommunityActivationHub } from '../../../components/community/CommunityActivationHub';
 import { CommunityFeedTracker } from '../../../components/community/CommunityFeedTracker';
+import { CommunityEventsStrip } from '../../../components/world-events/WorldEventsToday';
 import { getCommunityWorldConfig } from '../../../lib/community-worlds';
 import { getSeedBundleForWorld, ALL_COMMUNITY_SEEDS } from '../../../lib/community-seed';
 import { getSessionUser } from '../../../lib/supabase/server';
@@ -55,6 +56,7 @@ export default async function CommunityWorldPage({ params }: Props) {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
+      <CommunityEventsStrip worldSlug={config.slug} accent="#6B9B6B" />
       <CommunityFeedTracker worldSlug={config.slug} />
       <CommunityActivationHub
         config={config}
