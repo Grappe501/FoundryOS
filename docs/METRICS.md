@@ -153,14 +153,14 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 034P+ (Layer 1 stack: B1→B2→B3→Continuity) |
-| Version | `0.9.7-world-memory` |
-| Launch readiness | 88% |
-| Reputation + Mastery Engine | ✅ PASS-013 — `/reputation` + `/mastery` |
-| Living Worlds packages | `@foundry/mentor-engine`, `@foundry/lore-engine` |
+| Passes complete | 040D.5 (Portable Identity + compound sync loop) |
+| Version | `0.9.8-identity-sync` |
+| Launch readiness | 90% |
+| Personal database | ✅ PASS-040D — `@foundry/personal-database` · `npm run verify:040d` |
+| Identity sync engine | ✅ PASS-040D.5 — `@foundry/identity-sync-engine` · `npm run verify:040d5` |
 | World memory engine | ✅ PASS-034P+ — `@foundry/world-memory-engine` · `npm run audit:memory` |
 | Bourbon tool routes | 30+ Level 1 + intelligence surfaces + graph hallways |
-| Next pass | **PASS-040D** — Personal Database Persistence (040C blocked until 040D.5) |
+| Next pass | **PASS-040C** — Atlas-Aware AI (reads Portable Identity) |
 
 ---
 

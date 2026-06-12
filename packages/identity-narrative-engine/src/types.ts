@@ -18,6 +18,10 @@ export type IdentitySignalBundle = {
   events_saved: string[];
   debate_topics: string[];
   journal_entries: number;
+  /** PASS-040D.5 — artifact signals for narrative */
+  artifact_count: number;
+  recent_artifact_titles: string[];
+  recent_artifact_types: string[];
 };
 
 /** User-facing narrative — no tiers, no percentages */

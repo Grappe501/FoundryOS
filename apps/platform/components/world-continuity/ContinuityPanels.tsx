@@ -15,6 +15,7 @@ import {
 } from '../../lib/world-continuity/assemble-signals';
 import { recordWorldVisit } from '../../lib/world-continuity/client-state';
 import { IDENTITY_HYDRATED_EVENT } from '../../lib/personal-database/sync-client';
+import { IDENTITY_SYNC_EVENT } from '../../lib/identity-sync/apply';
 
 const ACCENT = '#6B9BC9';
 const PICK_UP_LABEL = 'Pick the thread back up';
@@ -27,7 +28,11 @@ export function JourneyContinuityPanel() {
     setMounted(true);
     const onHydrate = () => setRefreshKey((k) => k + 1);
     window.addEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
-    return () => window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+    window.addEventListener(IDENTITY_SYNC_EVENT, onHydrate);
+    return () => {
+      window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+      window.removeEventListener(IDENTITY_SYNC_EVENT, onHydrate);
+    };
   }, []);
 
   const snapshot = useMemo(() => {
@@ -162,7 +167,11 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
     recordWorldVisit(worldSlug);
     const onHydrate = () => setRefreshKey((k) => k + 1);
     window.addEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
-    return () => window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+    window.addEventListener(IDENTITY_SYNC_EVENT, onHydrate);
+    return () => {
+      window.removeEventListener(IDENTITY_HYDRATED_EVENT, onHydrate);
+      window.removeEventListener(IDENTITY_SYNC_EVENT, onHydrate);
+    };
   }, [worldSlug]);
 
   const snapshot = useMemo(() => {

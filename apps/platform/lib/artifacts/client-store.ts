@@ -93,5 +93,9 @@ export function createClientArtifact(
     persistArtifactToCloud(artifact),
   );
 
+  void import('../identity-sync/apply').then(({ propagateAndApplyIdentityEvent }) =>
+    propagateAndApplyIdentityEvent({ type: 'artifact_created', world_slug: artifact.metadata.world_slug, at: now, artifact }),
+  );
+
   return artifact;
 }

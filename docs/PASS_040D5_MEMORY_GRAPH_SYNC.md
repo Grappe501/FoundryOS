@@ -2,8 +2,8 @@
 
 > **040D stores everything. 040D.5 connects everything.**
 
-**Status:** Queued (after PASS-040D)  
-**Blocks:** PASS-040C (Atlas-Aware AI)
+**Status:** ✅ deployed (PASS-040D.5)  
+**Blocks:** ~~PASS-040C~~ — **040C unblocked**
 
 ---
 

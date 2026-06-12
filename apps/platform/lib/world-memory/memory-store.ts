@@ -26,6 +26,9 @@ export type WorldMemoryV1 = {
     at: string;
   }[];
   first_unlock_times: Record<string, string>;
+  /** PASS-040D.5 — compound loop threads for welcome-back */
+  sync_threads: { id: string; text: string; href?: string; at: string; world_slug: string }[];
+  curiosity_weights: Record<string, number>;
 };
 
 function empty(): WorldMemoryV1 {
@@ -40,6 +43,8 @@ function empty(): WorldMemoryV1 {
     saved_rabbit_holes: [],
     comparisons: [],
     first_unlock_times: {},
+    sync_threads: [],
+    curiosity_weights: {},
   };
 }
 
@@ -57,9 +62,14 @@ function migrateLegacy(raw: Record<string, unknown>): Partial<WorldMemoryV1> {
 function read(): WorldMemoryV1 {
   if (typeof window === 'undefined') return empty();
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = JSON.parse(localStorage.getItem(KEY) ?? 'null');
     if (raw) {
-      return { ...empty(), ...JSON.parse(raw) };
+      return {
+        ...empty(),
+        ...raw,
+        sync_threads: raw.sync_threads ?? [],
+        curiosity_weights: raw.curiosity_weights ?? {},
+      };
     }
     const legacy = localStorage.getItem(LEGACY_KEY);
     if (legacy) {
@@ -95,6 +105,8 @@ export function getMemorySignalsForWorld(worldSlug: string): WorldMemorySignals 
     saved_rabbit_holes: s.saved_rabbit_holes.filter((h) => h.world_slug === worldSlug),
     comparisons: s.comparisons.filter((c) => c.world_slug === worldSlug),
     first_unlock_times: s.first_unlock_times,
+    sync_threads: s.sync_threads.filter((t) => t.world_slug === worldSlug),
+    curiosity_weights: s.curiosity_weights,
   };
 }
 
@@ -105,6 +117,8 @@ export function getAllMemorySignals(): WorldMemorySignals {
     saved_rabbit_holes: s.saved_rabbit_holes,
     comparisons: s.comparisons,
     first_unlock_times: s.first_unlock_times,
+    sync_threads: s.sync_threads,
+    curiosity_weights: s.curiosity_weights,
   };
 }
 
@@ -148,6 +162,9 @@ export function recordGraphView(worldSlug: string, slug: string, title: string) 
       entered_at: at,
     }),
   );
+  void import('../identity-sync/apply').then(({ propagateAndApplyIdentityEvent }) =>
+    propagateAndApplyIdentityEvent({ type: 'graph_viewed', world_slug: worldSlug, at, slug, title }),
+  );
 }
 
 export function recordSavedRabbitHole(worldSlug: string, slug: string, title: string) {
@@ -156,6 +173,9 @@ export function recordSavedRabbitHole(worldSlug: string, slug: string, title: st
   s.saved_rabbit_holes = [{ world_slug: worldSlug, slug, title, at }, ...s.saved_rabbit_holes.filter((h) => !(h.world_slug === worldSlug && h.slug === slug))].slice(0, 20);
   syncFirstUnlocks(worldSlug, s);
   write(s);
+  void import('../identity-sync/apply').then(({ propagateAndApplyIdentityEvent }) =>
+    propagateAndApplyIdentityEvent({ type: 'rabbit_hole_saved', world_slug: worldSlug, at, slug, title }),
+  );
 }
 
 export function recordComparison(
@@ -171,6 +191,17 @@ export function recordComparison(
   s.comparisons = [{ world_slug: worldSlug, slug_a: slugA, slug_b: slugB, label_a: labelA, label_b: labelB, mode, at }, ...s.comparisons].slice(0, 30);
   syncFirstUnlocks(worldSlug, s);
   write(s);
+  void import('../identity-sync/apply').then(({ propagateAndApplyIdentityEvent }) =>
+    propagateAndApplyIdentityEvent({
+      type: 'comparison_saved',
+      world_slug: worldSlug,
+      at,
+      slug_a: slugA,
+      slug_b: slugB,
+      label_a: labelA,
+      label_b: labelB,
+    }),
+  );
 }
 
 function syncFirstUnlocks(worldSlug: string, s: WorldMemoryV1) {
@@ -233,6 +264,44 @@ export function getLatestContext(worldSlug: string) {
 
 export function getLatestIntent(worldSlug: string) {
   return read().intent_notes.find((n) => n.world_slug === worldSlug);
+}
+
+export function applySyncMemoryUpdates(
+  updates: { memory_key: string; text: string; href?: string; at: string; world_slug: string; category: string }[],
+  threads: { id: string; text: string; href?: string }[],
+) {
+  const s = read();
+  for (const t of threads) {
+    s.sync_threads = [
+      { id: t.id, text: t.text, href: t.href, at: new Date().toISOString(), world_slug: updates[0]?.world_slug ?? 'bourbon' },
+      ...s.sync_threads.filter((x) => x.id !== t.id),
+    ].slice(0, 20);
+  }
+  for (const u of updates) {
+    if (u.category === 'story') {
+      const storyId = `sync-story-${u.memory_key}`;
+      if (!s.first_unlock_times[storyId]) {
+        s.first_unlock_times[storyId] = u.at;
+      }
+    }
+  }
+  write(s);
+}
+
+export function bumpCuriosityWeights(
+  weights: { world_slug: string; topic_slug: string; delta: number }[],
+) {
+  const s = read();
+  for (const w of weights) {
+    const key = `${w.world_slug}:${w.topic_slug}`;
+    s.curiosity_weights[key] = (s.curiosity_weights[key] ?? 0) + w.delta;
+  }
+  write(s);
+}
+
+export function getSyncThreadsForWorld(worldSlug?: string) {
+  const s = read();
+  return worldSlug ? s.sync_threads.filter((t) => t.world_slug === worldSlug) : s.sync_threads;
 }
 
 /** @deprecated use getMemoryState */

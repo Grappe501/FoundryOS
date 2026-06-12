@@ -243,6 +243,14 @@ export const COLLECTION_EARN_RULES: CollectionEarnRule[] = [
   { id: 'weller-blind', label: 'Close Weller case → blind detective path', world_slug: 'bourbon', action_type: 'detective_case_closed', action_id: 'weller-ghost', collection_id: 'blind-tasting-detective', item_id: 'detective-case' },
   { id: 'bib-case', label: 'Close BiB guarantee case', world_slug: 'bourbon', action_type: 'detective_case_closed', action_id: 'bib-guarantee', collection_id: 'bottled-in-bond-collection', item_id: 'bib-case' },
   { id: 'bib-shelf', label: 'Log a BiB bottle on shelf', world_slug: 'bourbon', action_type: 'collection_item_added', action_id: 'bottled-in-bond', collection_id: 'bottled-in-bond-collection', item_id: 'bib-on-shelf' },
+  // PASS-040D.5 — artifact + graph compound loop
+  { id: 'bib-graph-view', label: 'Explore BiB graph hallway', world_slug: 'bourbon', action_type: 'graph_viewed', action_id: 'bottled-in-bond', collection_id: 'bottled-in-bond-collection', item_id: 'bib-label-read' },
+  { id: 'bib-compare-artifact', label: 'Comparison artifact — BiB', world_slug: 'bourbon', action_type: 'artifact_comparison', action_id: 'bottled-in-bond', collection_id: 'bottled-in-bond-collection', item_id: 'bib-compare' },
+  { id: 'wheated-compare-artifact', label: 'Comparison artifact — wheated', world_slug: 'bourbon', action_type: 'artifact_comparison', action_id: 'wheated', collection_id: 'wheated-explorer', item_id: 'wheated-compare' },
+  { id: 'wt101-tasting', label: 'WT101 tasting artifact', world_slug: 'bourbon', action_type: 'artifact_tasting', action_id: 'wild-turkey-101', collection_id: 'blind-tasting-detective', item_id: 'first-blind' },
+  { id: 'value-compare-artifact', label: 'Value pour comparison', world_slug: 'bourbon', action_type: 'artifact_comparison', action_id: 'value-pour', collection_id: 'blind-tasting-detective' },
+  { id: 'buffalo-graph', label: 'Explore Buffalo Trace graph', world_slug: 'bourbon', action_type: 'graph_viewed', action_id: 'buffalo-trace', collection_id: 'distillery-pilgrim', item_id: 'campus-buffalo' },
+  { id: 'bib-tasting-shelf', label: 'BiB tasting logged', world_slug: 'bourbon', action_type: 'artifact_tasting', action_id: 'bottled-in-bond', collection_id: 'bottled-in-bond-collection', item_id: 'bib-on-shelf' },
   // AI Builder
   { id: 'homework-workflow', label: 'Complete Homework Assistant', world_slug: 'ai-builder', action_type: 'mission_completed', action_id: 'homework-assistant', collection_id: 'ai-workflow-collector', item_id: 'homework-assistant' },
   { id: 'homework-automation', label: 'Homework Assistant → automation path', world_slug: 'ai-builder', action_type: 'mission_completed', action_id: 'homework-assistant', collection_id: 'automation-builder', item_id: 'first-script' },

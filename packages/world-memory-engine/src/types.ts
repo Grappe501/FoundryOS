@@ -37,6 +37,8 @@ export type WorldMemorySignals = {
   comparisons: ComparisonMemory[];
   /** first-event id → unlocked_at */
   first_unlock_times: Record<string, string>;
+  sync_threads?: { id: string; text: string; href?: string; at: string; world_slug: string }[];
+  curiosity_weights?: Record<string, number>;
 };
 
 export type MemoryEnrichedBundle = ContinuitySignalBundle & {

@@ -35,8 +35,20 @@ export function buildWelcomeBackLines(bundle: MemoryEnrichedBundle): WelcomeBack
   const lines: WelcomeBackLine[] = [];
   const { memory, world_slug } = bundle;
 
+  const syncFromMemory = (memory as { sync_threads?: { id: string; text: string; href?: string; world_slug: string }[] }).sync_threads;
+  if (syncFromMemory?.length) {
+    for (const t of syncFromMemory.filter((x) => x.world_slug === world_slug).slice(0, 4)) {
+      lines.push({
+        id: t.id,
+        text: t.text,
+        href: t.href,
+        kind: t.text.includes('rabbit hole') ? 'rabbit_hole' : t.text.includes('compared') ? 'comparison' : 'exploration',
+      });
+    }
+  }
+
   const lastGraph = memory.graph_views.find((g) => g.world_slug === world_slug);
-  if (lastGraph) {
+  if (lastGraph && !lines.some((l) => l.text.includes(lastGraph.title.replace(/\s+hallway$/i, '')))) {
     lines.push({
       id: `graph-${lastGraph.slug}`,
       text: `You were exploring ${formatGraphTitle(lastGraph.title)}.`,

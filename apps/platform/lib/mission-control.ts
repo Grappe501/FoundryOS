@@ -333,9 +333,18 @@ export const PASSES: PassEntry[] = [
   {
     code: 'PASS-040D',
     title: 'Personal Database Persistence',
-    status: 'in_progress' as const,
+    status: 'completed' as const,
+    date: '2026-06-10',
     summary:
-      'Portable Identity — user_artifacts, user_memories, user_graph_history. Hydrate + write-through on auth. npm run audit:persistence.',
+      'Portable Identity — user_artifacts, user_memories, user_graph_history. Hydrate + write-through on auth. npm run verify:040d.',
+  },
+  {
+    code: 'PASS-040D.5',
+    title: 'Identity Sync Compound Loop',
+    status: 'completed' as const,
+    date: '2026-06-10',
+    summary:
+      '@foundry/identity-sync-engine · propagateIdentityEvent · artifact→collection→narrative→memory→welcome-back→passport. npm run verify:040d5.',
   },
 ];
 
@@ -462,10 +471,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-034P+',
-    next_pass: 'PASS-040D',
+    last_pass: 'PASS-040D.5',
+    next_pass: 'PASS-040C',
     current_focus:
-      'PASS-040D Portable Identity — cloud persistence for artifacts, memory, collections, graph history. Website → Account.',
+      'PASS-040C Atlas-Aware AI — reads Portable Identity (artifacts, collections, memory, curiosity). Real memory before a brain.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

@@ -101,5 +101,12 @@ export function mergeMemoryIntoBundle(
 }
 
 export function emptyMemorySignals(): WorldMemorySignals {
-  return { graph_views: [], saved_rabbit_holes: [], comparisons: [], first_unlock_times: {} };
+  return {
+    graph_views: [],
+    saved_rabbit_holes: [],
+    comparisons: [],
+    first_unlock_times: {},
+    sync_threads: [],
+    curiosity_weights: {},
+  };
 }

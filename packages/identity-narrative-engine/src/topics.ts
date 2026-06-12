@@ -13,6 +13,8 @@ function haystack(signals: IdentitySignalBundle): string {
     ...signals.debate_topics,
     ...signals.active_collections.map((c) => c.title),
     ...signals.completed_collection_ids,
+    ...signals.recent_artifact_titles,
+    ...signals.recent_artifact_types,
   ]
     .join(' ')
     .toLowerCase();

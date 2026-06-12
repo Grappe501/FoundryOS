@@ -13,6 +13,7 @@ import {
   getLocalUserId,
   listClientArtifacts,
 } from '../../lib/artifacts/client-store';
+import { IDENTITY_SYNC_EVENT } from '../../lib/identity-sync/apply';
 import { ConsumerNav } from '../../components/ConsumerNav';
 
 const WORLD_LABELS: Record<string, string> = {
@@ -32,7 +33,11 @@ export default function PassportPage() {
     setMounted(true);
     const refresh = () => setArtifactTick((n) => n + 1);
     window.addEventListener(ARTIFACTS_CHANGED_EVENT, refresh);
-    return () => window.removeEventListener(ARTIFACTS_CHANGED_EVENT, refresh);
+    window.addEventListener(IDENTITY_SYNC_EVENT, refresh);
+    return () => {
+      window.removeEventListener(ARTIFACTS_CHANGED_EVENT, refresh);
+      window.removeEventListener(IDENTITY_SYNC_EVENT, refresh);
+    };
   }, []);
 
   const data = useMemo(() => {

@@ -14,6 +14,8 @@ export function emptyPortableMemoryState(): PortableMemoryState {
     saved_rabbit_holes: [],
     comparisons: [],
     first_unlock_times: {},
+    sync_threads: [],
+    curiosity_weights: {},
   };
 }
 

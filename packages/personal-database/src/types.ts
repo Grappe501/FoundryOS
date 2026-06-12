@@ -41,6 +41,8 @@ export type PortableMemoryState = {
     at: string;
   }[];
   first_unlock_times: Record<string, string>;
+  sync_threads: { id: string; text: string; href?: string; at: string; world_slug: string }[];
+  curiosity_weights: Record<string, number>;
 };
 
 export type PortableCollectorState = {

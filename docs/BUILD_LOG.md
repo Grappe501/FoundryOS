@@ -6,13 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.7-world-memory` |
-| **Last Pass** | PASS-034P+ World Continuity Expansion ✅ |
-| **Current Pass** | PASS-040D v1 deployed ✅ |
-| **Next Pass** | PASS-040D.5 Identity Sync Compound Loop |
-| **Live proof** | `npm run verify:040d` · `/api/identity/hydrate` (401 unsigned, 200 authed) |
-| **Focus** | The world was waiting for you — welcome-back, not activity log |
-| **Live proof** | `/my-journey` · `/bourbon` welcome panel · `/passport/timeline` · `npm run audit:memory` |
+| **Version** | `0.9.8-identity-sync` |
+| **Last Pass** | PASS-040D v1 Personal Database Persistence ✅ |
+| **Current Pass** | PASS-040D.5 Identity Sync Compound Loop ✅ |
+| **Next Pass** | PASS-040C Atlas-Aware AI |
+| **Live proof** | `npm run verify:040d5` · `npm run audit:identity-sync` · compound loop on artifact create |
+| **Focus** | Saving data is not enough — every saved action changes the user's world |
+| **040D proof** | `npm run verify:040d` · `/api/identity/hydrate` (401 unsigned, 200 authed) |
+| **Continuity proof** | `/my-journey` · `/bourbon` welcome panel · `/passport` · `npm run audit:memory` |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
 ---
@@ -21,7 +22,33 @@
 
 ---
 
-## PASS-040D — Personal Database Persistence (in progress)
+---
+
+## PASS-040D.5 — Identity Sync Compound Loop ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Every saved action must change the user's world |
+| **Principle** | Artifact → Collection → Identity Narrative → Memory → Welcome-back → Passport |
+| **Audit** | `npm run audit:identity-sync` · `npm run verify:040d5` |
+
+| Deliverable | Location |
+|-------------|----------|
+| `@foundry/identity-sync-engine` | `propagateIdentityEvent()` — 7 event types, 5 output channels |
+| Client apply loop | `apps/platform/lib/identity-sync/apply.ts` |
+| Collection earn rules | WT101 tasting · BiB · wheated · graph_viewed · comparisons |
+| Memory compound state | `sync_threads` + `curiosity_weights` in world memory v1 |
+| Narrative signals | artifact_count · recent_artifact_titles in identity-narrative-engine |
+| UI refresh | ContinuityPanels + passport listen `foundry-identity-sync` |
+| Hydrate path | sync_threads + curiosity persist via memory snapshot (040D write-through) |
+
+**040D.5 Test:** create WT101 tasting artifact → collection advances → narrative shifts → welcome-back references thread → passport shows evidence. Works after cloud hydrate.
+
+Brief: `docs/PASS_040D5_MEMORY_GRAPH_SYNC.md`
+
+---
+
+## PASS-040D — Personal Database Persistence ✅
 
 | Field | Value |
 |-------|-------|

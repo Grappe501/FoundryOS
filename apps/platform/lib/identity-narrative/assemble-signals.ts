@@ -6,6 +6,7 @@ import { ACTIVE_WORLDS } from '../living-worlds/active-worlds';
 import { buildLivingJourneySnapshot } from '../living-worlds/client-journey';
 import { getWorldCollections } from '../collector/client-state';
 import { getWorldEventsState } from '../world-events/client-state';
+import { getLocalUserId, listClientArtifacts } from '../artifacts/client-store';
 
 const CONSEQUENCE_KEY = 'foundry-consequence-state';
 
@@ -57,6 +58,7 @@ export function assembleSignalBundle(worldSlug: string): IdentitySignalBundle {
   const worldNodes = nodeIdsForWorld(allNodes, worldSlug);
   const collections = getWorldCollections(worldSlug);
   const events = getWorldEventsState();
+  const artifacts = listClientArtifacts({ user_id: getLocalUserId(), world_slug: worldSlug });
 
   const worldEventIds = (id: string) => id.startsWith(worldSlug) || id.includes(worldSlug.replace('-', ''));
 
@@ -87,6 +89,9 @@ export function assembleSignalBundle(worldSlug: string): IdentitySignalBundle {
           }
         })()
       : 0,
+    artifact_count: artifacts.length,
+    recent_artifact_titles: artifacts.slice(0, 5).map((a) => a.metadata.title),
+    recent_artifact_types: artifacts.slice(0, 5).map((a) => a.type),
   };
 }
 

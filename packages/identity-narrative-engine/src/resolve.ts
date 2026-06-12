@@ -13,7 +13,8 @@ function hasActivity(signals: IdentitySignalBundle): boolean {
     signals.missions_completed > 0 ||
     signals.consequence_node_ids.length > 0 ||
     signals.events_completed.length > 0 ||
-    signals.active_collections.some((c) => c.unlocked > 0)
+    signals.active_collections.some((c) => c.unlocked > 0) ||
+    (signals.artifact_count ?? 0) > 0
   );
 }
 
