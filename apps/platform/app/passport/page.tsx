@@ -108,7 +108,10 @@ export default function PassportPage() {
         </>
       )}
 
-      <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, color: '#6B9B6B', fontSize: 14 }}>
+      <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 28, color: '#C8A96E', fontSize: 14 }}>
+        Memory timeline →
+      </Link>
+      <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, marginLeft: 20, color: '#6B9B6B', fontSize: 14 }}>
         ← Full story on My Journey
       </Link>
     </main>

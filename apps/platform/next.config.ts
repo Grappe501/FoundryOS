@@ -23,6 +23,7 @@ const nextConfig: NextConfig = {
     '@foundry/collector-engine',
     '@foundry/world-events-engine',
     '@foundry/identity-narrative-engine',
+    '@foundry/world-continuity-engine',
     '@foundry/outcome-engine',
   ],
 };

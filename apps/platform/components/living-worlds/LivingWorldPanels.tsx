@@ -17,6 +17,7 @@ import {
 import { CrossWorldCollectionsSummary } from '../../components/collector/WorldCollectionsPanel';
 import { CrossWorldEventsPanel } from '../../components/world-events/WorldEventsToday';
 import { IdentityStoryPanel } from '../../components/identity-narrative/IdentityStoryPanel';
+import { JourneyContinuityPanel } from '../../components/world-continuity/ContinuityPanels';
 import {
   buildLivingJourneySnapshot,
   getStoredDisplayName,
@@ -231,6 +232,8 @@ export function LivingJourneyDashboard() {
           {ambitions.length > 0 ? 'Update ambitions →' : 'Map my future →'}
         </Link>
       </section>
+
+      <JourneyContinuityPanel />
 
       <IdentityStoryPanel />
 

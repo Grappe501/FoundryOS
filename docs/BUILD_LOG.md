@@ -6,10 +6,10 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.1-reactive-loop` |
-| **Last Pass** | PASS-034L World Events + PASS-034M Identity Narrative ✅ |
-| **Next Pass** | PASS-034P World Memory Engine |
-| **Focus** | Artifact model locked — Identity Systems not courses; 040H Artifact Engine on roadmap |
+| **Version** | `0.9.2-ecosystem-model` |
+| **Last Pass** | PASS-034P World Continuity Engine ✅ |
+| **Next Pass** | PASS-034U Universe Command Center → 040A Artifact Engine |
+| **Focus** | Continue depth + build systems that make depth personal (five layers, artifact-first 040) |
 | **Live proof** | `/bourbon/today` · `/my-journey` · `/passport` · `/operator/events` · 7 world today pages |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
@@ -21,6 +21,35 @@
 | Proof UI on public pages | PASS-021 consumer polish; hide HPI/PASS now where possible |
 | Market domain not outcome | Market **Become Future-Proof**; Trinity is the wedge |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
+
+---
+
+## PASS-034P — World Continuity Engine ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-10 |
+| **Package** | `@foundry/world-continuity-engine` |
+| **Principle** | Make the world feel continuous — not a resume of clicks |
+| **Memory tiers** | Active · Story · Anticipation |
+| **Live proof** | `/my-journey` · `/{world}` return panel · `/passport/timeline` |
+| **Audit** | `npm run audit:continuity` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Continuity engine | `packages/world-continuity-engine/` |
+| Client state + signals | `apps/platform/lib/world-continuity/` |
+| Journey + world panels | `ContinuityPanels.tsx` |
+| Atlas Phase 2 quiet start | `bourbon-atlas/graph.ts`, `relationship-seeds.ts` |
+| Ecosystem model docs | `docs/WORLD_ECOSYSTEM_MODEL.md` — five layers, artifact-first 040 |
+
+### Architecture Impact
+
+- **Reusable System:** World Continuity — context, intent, open threads, anticipation across all worlds
+- **Benefits:** Two users see two worlds; depth compounds into identity; reactive loop closed
+- **Affected Launches:** All 7 live worlds; Passport timeline preview; 040A Artifact Engine next
+
+See `docs/PASS_034P_WORLD_CONTINUITY.md`.
 
 ---
 

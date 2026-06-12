@@ -1,0 +1,14 @@
+{
+  "name": "@foundry/world-continuity-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-034P — World Continuity: context, intent, open threads (not page views)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

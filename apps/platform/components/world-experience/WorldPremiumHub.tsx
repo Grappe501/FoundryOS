@@ -6,6 +6,7 @@ import { WorldLoreTeaser } from '../lore/WorldLoreTeaser';
 import { WorldLivingMedia } from '../lore/WorldLivingMedia';
 import { WorldEventsTeaser } from '../world-events/WorldEventsToday';
 import { WorldIdentityNarrativePanel } from '../identity-narrative/IdentityStoryPanel';
+import { WorldContinuityReturnPanel } from '../world-continuity/ContinuityPanels';
 import { getWorldAssets } from '../../lib/world-assets';
 
 export function WorldPremiumHub({ slug }: { slug: string }) {
@@ -14,6 +15,7 @@ export function WorldPremiumHub({ slug }: { slug: string }) {
     <>
       <WorldHeroExperience slug={slug} />
       <WorldEventsTeaser worldSlug={slug} accent={assets.accent} />
+      <WorldContinuityReturnPanel worldSlug={slug} accent={assets.accent} />
       <WorldIdentityNarrativePanel worldSlug={slug} accent={assets.accent} />
       <WorldLivingMedia worldSlug={slug} accent={assets.accent} />
       <WorldObsessionSection worldSlug={slug} accent={assets.accent} />

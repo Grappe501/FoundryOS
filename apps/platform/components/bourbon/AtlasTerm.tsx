@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useId, useState } from 'react';
 import Link from 'next/link';
+import { recordAtlasView } from '../../lib/world-continuity/client-state';
 import { getAtlasEntry } from '../../lib/bourbon-atlas/registry';
 import { atlasTermHref } from '../../lib/bourbon-atlas/slug';
 
@@ -45,7 +46,10 @@ export function AtlasTerm({ term, children }: Props) {
         <button
           type="button"
           aria-describedby={showTooltip ? tooltipId : undefined}
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            recordAtlasView('bourbon', slug, entry.title);
+            setOpen(true);
+          }}
           style={{
             background: 'none',
             border: 'none',

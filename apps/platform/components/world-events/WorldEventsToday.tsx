@@ -18,6 +18,7 @@ import {
   recordEventComplete,
 } from '../../lib/world-events/client-state';
 import { getWorldCollections } from '../../lib/collector/client-state';
+import { recordIntentNote } from '../../lib/world-continuity/client-state';
 
 const TYPE_ACCENT: Record<string, string> = {
   daily_mystery: '#C8A96E',
@@ -165,6 +166,7 @@ function EventCard({
           type="button"
           onClick={() => {
             recordEventSave(event.event_id);
+            recordIntentNote(event.world_slug, `You bookmarked ${event.title} but have not finished it yet.`);
             onInteraction();
           }}
           style={{

@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-034J close — Living Worlds + Lore Engine live
+> Updated PASS-034P close — World Continuity + ecosystem model locked
 
 ---
 
@@ -153,7 +153,7 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 34 (PASS-000–034J) |
+| Passes complete | 34P (reactive loop closed; 034U + 040A next) |
 | Version | `0.9.0-living-worlds` |
 | Launch readiness | 88% |
 | Reputation + Mastery Engine | ✅ PASS-013 — `/reputation` + `/mastery` |

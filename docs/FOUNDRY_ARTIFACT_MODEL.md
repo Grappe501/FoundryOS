@@ -19,24 +19,31 @@ Level 2 fails when it becomes engagement bait. It wins when it becomes **evidenc
 
 ---
 
-## The Object Hierarchy (updated)
+## Energy Ratio (locked)
 
 ```txt
-World
-  └── Atlas Entry (knowledge graph node — not "encyclopedia")
-  └── Mission / Tool (on-ramp — not the product)
-  └── Event (world state)
-  └── Collection (curated storyline)
-  └── Artifact ← THE MISSING PRIMITIVE
-        └── Review
-        └── Recommendation
-        └── Journal / Tasting Note
-        └── Project
-        └── Visit
-        └── Photo
-        └── Checklist
-        └── Host Event Record
-        └── Recommendation
+NOT:  Stop adding content depth
+NOT:  More lessons · More academy depth · More course content ONLY
+
+YES:  Continue adding depth — worlds must reward lifelong obsession
+YES:  Build systems that make depth matter personally
+YES:  Reaction · Identity · Memory · Ownership · Artifacts · Legacy
+```
+
+The next leap is not *less content* — it is **depth that compounds into identity** so two different users see two different worlds.
+
+See `docs/WORLD_ECOSYSTEM_MODEL.md`.
+
+---
+
+## Five Layers
+
+```txt
+Explore    — Atlas, lore, tools, lessons (on-ramps)
+Practice   — Missions, investigations, challenges
+Identity   — Artifacts, Passport, collections, memory
+Influence  — Reviews, recommendations, hosting, groups
+Legacy     — Timeline, decade archive
 ```
 
 **Identity is built through artifacts. Not lessons.**
@@ -47,23 +54,41 @@ They say: *I've got 120 tasting notes, 40 bottles on my shelf, and I hosted thre
 
 ---
 
+## The Object Hierarchy
+
+```txt
+World
+  └── Atlas Entry (knowledge graph node)
+  └── Mission / Tool (Practice layer — on-ramp)
+  └── Event (world state)
+  └── Collection (curated storyline)
+  └── Artifact ← THE ATOM OF IDENTITY
+        └── Review · Recommendation · Journal · Visit
+        └── Project · Photo · Host Event Record · Tasting Note
+```
+
+---
+
 ## Artifact Definition
 
 An **artifact** is anything the user **creates, owns, discovers, collects, recommends, hosts, reviews, or contributes**.
 
 | World | Artifact examples |
 |-------|-------------------|
-| Bourbon | My Shelf · Tasting Notes · Distillery Visits · Blind Tasting Wins · Recommended Bottles |
-| BBQ | My Cooks · Recipes · Temperature Logs · Competition Entries · Equipment |
-| AI Builder | Automations · Prompts · Apps · Businesses · Workflows |
-| Civic | Forums Attended · Volunteer Hours · Projects · Research · Meetings |
-| Poker | Sessions · Hand Reviews · Bankroll Logs · Tournament Entries |
+| Bourbon | Tasting note · shelf entry · distillery visit · bottle review · blind result · hosted tasting |
+| BBQ | Cook log · recipe · temp log · competition entry · equipment |
+| AI Builder | Prompt · workflow · app · automation · project |
+| Public Speaking | Speech · presentation · recording · feedback session |
+| Civic | Meeting attended · forum hosted · petition · volunteer hours |
+| Poker | Session · hand review · bankroll log · tournament entry |
 
-Every Level 2 engine produces artifacts. Every world inherits **`My Artifacts`**.
+Every Influence engine produces artifacts. Every world inherits **`My Artifacts`**.
 
 ---
 
-## Package: `@foundry/artifact-engine` (PASS-040H)
+## Package: `@foundry/artifact-engine` (PASS-040A)
+
+**First in the ownership block** — build the atom before engines that produce atoms.
 
 Routes all user-created evidence through one primitive:
 
@@ -75,19 +100,15 @@ Project         → artifact
 Collection item → artifact
 Event hosted    → artifact
 Visit           → artifact
-Photo           → artifact
-Checklist       → artifact
 ```
 
 **Consumer surface:** `/{world}/artifacts` · aggregated in Passport.
 
 **Storage:** extends `user_entity_relationships` + typed artifact payload — no niche tables per world.
 
-Build **after** 040A–F (personal DB, review, recommend, group, host, reputation). Artifacts unify their outputs.
-
 ---
 
-## Passport Evolution (PASS-040G)
+## Passport Evolution (PASS-040F)
 
 Not percentages. Not XP. Not levels. **Only evidence.**
 
@@ -96,98 +117,35 @@ Steve Grappe
 
 Builder · Collector · Host
 
-Worlds
-  Bourbon Steward
-  Community Organizer
-  AI Builder
-
-Artifacts         417
-Collections        33
-Reviews            82
-Events Hosted      14
-People Helped     219
+Bourbon Artifacts         317
+AI Builder Artifacts      102
+Public Speaking Artifacts  44
+Collections                33
+Reviews                    82
+Events Hosted              14
 ```
 
 Passport = **unified life archive** across worlds.
 
-Preview live at `/passport` (034M). Full shell after 040A–H.
+Preview: `/passport` · `/passport/timeline` (034P). Full shell: **040F**.
 
 ---
 
-## Level Model (four layers)
-
-```txt
-Explore    — discover the world (Atlas, lore, tools, missions as on-ramps)
-Identity   — who am I here? (artifacts, Passport, collections)
-Influence  — who trusts my judgment? (recommendations, reputation, host)
-Legacy     — permanent record of who I became (10 years of evidence)
-```
-
-**Legacy** is the emotional moat almost nobody else is building.
-
-After a decade: 500 projects · 100 hosted events · 50 collections · thousands of artifacts.
-
-Passport becomes:
-
-> A history of who I became.
-
-See `docs/LEGACY_ENGINE.md` · `@foundry/ownership-graph` legacy profile (schema exists).
-
----
-
-## Atlas — Stronger Than Encyclopedia
-
-Stop calling it encyclopedia. **Atlas** suggests maps, connections, discovery, journeys — not definitions alone.
+## Atlas — Crown Jewel
 
 Every Atlas entry eventually includes:
 
 ```txt
-Definition
-Story
-History
-Geography
-Timeline
-Related People
-Related Places
-Related Objects
-Related Debates
-Related Events
-Related Collections
-Related Artifacts
-Related Worlds
+Definition · History · Geography
+People · Organizations · Debates · Mysteries
+Artifacts · Collections
+Related Lessons · Tools · Producer Pages · Reviews
+Related Rabbit Holes · Related Worlds
 ```
 
-That is a **knowledge graph** — connective tissue between worlds.
+One term → a weekend. **PASS-040B** (Atlas Phase 2 Graph Layer).
 
-### Atlas-Aware Everything
-
-Reading: *Wild Turkey 101 is one of the most respected value bourbons…*
-
-Hover **Wild Turkey 101** → Atlas card (never leave the page):
-
-```txt
-Definition · Why it matters · Distillery · Jimmy Russell
-Russell's Reserve · Rare Breed · Kentucky · Lawrenceburg
-Related debates · Related collections · People who own this · Suggested next bottle
-```
-
-Bourbon proof: `AtlasTerm` + 103 terms. Expand per world. See `docs/ATLAS_PHASE_2.md`.
-
----
-
-## Trusted OS vs Social Network
-
-| Social network | Foundry Identity System |
-|----------------|-------------------------|
-| Followers | People helped |
-| Likes | Helpful votes (earned) |
-| Feed noise | Artifact evidence |
-| Viral outrage | Trusted recommendations |
-| Profile flex | Passport archive |
-
-Groups are **identity tribes** (040D) — clubs, not forums.
-
-Reputation (040F): Helpful · Thoughtful · Knowledgeable · Welcoming · Trusted.
+See `docs/ATLAS_PHASE_2.md`.
 
 ---
 
@@ -196,42 +154,38 @@ Reputation (040F): Helpful · Thoughtful · Knowledgeable · Welcoming · Truste
 ### Reactive loop
 
 ```txt
-034M  Identity Narrative     ✅ shipped
-034P  World Memory           ← next
-034U  Universe Command Center
+034M  Identity Narrative     ✅
+034P  World Continuity       ✅
+034U  Universe Command Center ← NEXT
 034V  World Architect
 ```
 
-### Ownership + archive
+### Ownership + ecosystem (040 block)
 
 ```txt
-040A  Personal Database Engine
-040B  Review Engine
-040C  Recommendation Engine v2
-040D  Group Engine
-040E  Host Engine
-040F  Reputation Engine v2
-040G  Foundry Passport (full shell)
-040H  Artifact Engine        ← unifies all user evidence
-040I  Legacy Layer           ← permanent record, decade-scale
-040J  Mentor Marketplace     — later, paid access
+040A  Artifact Engine              ← build first
+040B  Atlas Phase 2 Graph Layer
+040C  Personal Database Engine
+040D  Review & Recommendation Engine
+040E  Group & Host Engine
+040F  Passport Shell
+040G  Reputation Engine v2
+040H  Legacy Layer
+040I  Mentor Marketplace           — later
 ```
 
-### Principle
+After 040A–F, the factory builds **living ecosystems** — not just worlds.
+
+### Pass code migration
+
+Earlier docs placed Artifact at 040H (unifier after other engines). **Reordered:** Artifact is 040A — the primitive everything else produces.
+
+---
+
+## Principle
 
 The real product is not education.
 
 It is helping people **build a richer life around the things they care about** — and **preserving the evidence that they did**.
 
----
-
-## Energy Allocation (hard rule)
-
-```txt
-STOP:  More lessons · More academy depth · More course content
-START: Reaction · Identity · Memory · Ownership · Artifacts · Legacy
-```
-
-Enough content exists to prove the concept. The next leap: **the world reacts differently to two different users.**
-
-That is when Foundry stops feeling like a website and starts feeling like a place.
+When Foundry stops feeling like a website and starts feeling like a place — **that** is the moat.
