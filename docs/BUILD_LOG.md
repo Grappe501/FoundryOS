@@ -9,7 +9,7 @@
 | **Version** | `0.9.1-reactive-loop` |
 | **Last Pass** | PASS-034L World Events + PASS-034M Identity Narrative ✅ |
 | **Next Pass** | PASS-034P World Memory Engine |
-| **Focus** | Reactive loop — events as state, identity narrative, consequence/collector wiring |
+| **Focus** | Artifact model locked — Identity Systems not courses; 040H Artifact Engine on roadmap |
 | **Live proof** | `/bourbon/today` · `/my-journey` · `/passport` · `/operator/events` · 7 world today pages |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 

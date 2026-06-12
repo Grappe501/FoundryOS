@@ -16,17 +16,35 @@ Level 3 = Lead
 
 ```txt
 Level 1 = Explore     — discover the world, become competent
-Level 2 = Identity    — own your place in the world
+Level 2 = Identity    — own your place through artifacts
 Level 3 = Influence   — others trust your taste, judgment, leadership
+Level 4 = Legacy      — permanent record of who you became
 ```
 
 Subtle on paper. Changes everything in product design.
 
 | Level | Question | Product shift |
 |-------|----------|---------------|
-| **Explore** | What is this world? Can I get started? | Atlas, lore, missions, tools — **not courses as center** |
-| **Identity** | Who am I here? What do I own? | Passport, shelf, reviews, collections, groups |
-| **Influence** | Who follows my recommendations? | Reputation, hosting, mentor marketplace |
+| **Explore** | What is this world? Can I get started? | Atlas, lore, missions, tools — **on-ramps, not the product** |
+| **Identity** | Who am I here? What do I own? | Artifacts, Passport, collections, personal DB |
+| **Influence** | Who trusts my judgment? | Recommendations, reputation, hosting |
+| **Legacy** | What did I build over years? | Decade-scale archive — reviews, events, projects, collections |
+
+## Trusted OS — Not Social Network
+
+Level 2 must not become:
+
+```txt
+Reviews · Ratings · Followers · Groups · Feed noise
+```
+
+Target:
+
+```txt
+A trusted operating system for a passion.
+```
+
+See `docs/FOUNDRY_ARTIFACT_MODEL.md`.
 
 ## Psychological Shift
 
@@ -85,25 +103,23 @@ Every world contributes stamps. Every action compounds.
 ```txt
 Steve Grappe
 
-Explorer · Collector · Host
+Builder · Collector · Host
 
 Worlds
   Bourbon Steward
-  BBQ Pitmaster
-  AI Builder
   Community Organizer
+  AI Builder
 
-Collections     37
-Reviews         184
-Recommendations 92
-Events Hosted   12
-Groups          4
-Helpful Votes   611
+Artifacts         417
+Collections        33
+Reviews            82
+Events Hosted      14
+People Helped     219
 ```
 
-Passport is the **consumer shell** for Level 2. Engines feed it; worlds inherit it.
+No percentages. No XP. No levels. **Only evidence.**
 
-Implementation: after 040A–F exist; preview stubs in 034M.
+Passport is the **unified life archive**. Preview at `/passport` (034M). Full shell: **040G**. Artifacts unify via **040H**.
 
 ---
 
@@ -197,7 +213,7 @@ System generates: agenda, prompts, materials, scoring sheets, follow-up, photos,
 034V  World Architect
 ```
 
-### Ownership infrastructure (post-loop, pre-beta expansion)
+### Ownership + archive (after 034U)
 
 ```txt
 040A  Personal Database Engine
@@ -206,11 +222,23 @@ System generates: agenda, prompts, materials, scoring sheets, follow-up, photos,
 040D  Group Engine
 040E  Host Engine
 040F  Reputation Engine v2
-040G  Foundry Passport (consumer shell — aggregates 040A–F)
-040H  Mentor Marketplace     — later
+040G  Foundry Passport (full evidence shell)
+040H  Artifact Engine — reviews, journals, hosts, visits → one primitive
+040I  Legacy Layer — decade-scale permanent record
+040J  Mentor Marketplace — later
 ```
 
-Once 040A–F exist, Bourbon · BBQ · Poker · AI Builder · Entrepreneur · Country Music · Government · Religion **all inherit the same living social identity infrastructure**.
+Once 040A–I exist, every world inherits the same **identity system infrastructure**.
+
+---
+
+## The Artifact Primitive
+
+Identity is built through **artifacts** — not lessons.
+
+Package: `@foundry/artifact-engine` (040H). Everything Level 2 produces routes through it.
+
+See `docs/FOUNDRY_ARTIFACT_MODEL.md`.
 
 ---
 
@@ -240,6 +268,6 @@ Very few systems make a user feel:
 
 > "This place remembers what I care about, understands where I'm going, and keeps showing me interesting things I didn't know I wanted."
 
-**Identity · Memory · Atlas** — hardest to copy.
+**Identity · Memory · Atlas · Artifacts · Legacy** — hardest to copy.
 
-Passport makes it visible.
+Passport + Artifact archive make it visible — and permanent.

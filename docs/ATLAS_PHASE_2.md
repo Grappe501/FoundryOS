@@ -14,9 +14,22 @@ Knowledge Graph
 + World Relationship Layer
 ```
 
-Long-term: **every word is Atlas-aware** — hover any term, get definition, why it matters, related terms, geography, history, rabbit holes.
+Long-term: **Atlas-aware everything** — hover any term, dive without leaving the page.
+
+Example: reading about Wild Turkey 101 → hover opens definition, distillery, Jimmy Russell, related bottles, debates, collections, **people who own this**, suggested next bottle.
 
 Bourbon proof today: 103 terms, `AtlasTerm` inline component, rabbit-hole graph.
+
+## Full Entry Schema (target)
+
+Every Atlas entry eventually includes:
+
+```txt
+Definition · Story · History · Geography · Timeline
+Related People · Related Places · Related Objects
+Related Debates · Related Events · Related Collections
+Related Artifacts · Related Worlds
+```
 
 ## Phase 2 Entity Types
 
