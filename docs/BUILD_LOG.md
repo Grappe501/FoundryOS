@@ -6,25 +6,38 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.4-artifact-engine` |
-| **Last Pass** | PASS-040A Artifact Engine (primitive) ✅ |
-| **Next Pass** | Wire tasting journal → createArtifact · 040B graph + artifacts |
-| **Focus** | Artifacts as substrate — evidence of participation, not lesson completion |
-| **Live proof** | `/operator/universe` (user artifacts KPI) · PWA install · `@foundry/artifact-engine` |
-| **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
-
-### Open Risks
-
-| Risk | Mitigation |
-|------|------------|
-| Shallow verticals at beta | Depth checklist per vertical — see `docs/VERTICAL_DEPTH_MODE.md` |
-| Proof UI on public pages | PASS-021 consumer polish; hide HPI/PASS now where possible |
-| Market domain not outcome | Market **Become Future-Proof**; Trinity is the wedge |
-| Bulk thin SEO pages | Publish gate: score >= 70 |
+| **Version** | `0.9.6-bourbon-graph` |
+| **Last Pass** | PASS-040B2 Bourbon Graph Expansion ✅ |
+| **Next Pass** | PASS-040C Atlas-Aware AI · 034P+ World Continuity |
+| **Focus** | Layer 1 = Explore — Atlas/Graph hallways, not academy volume |
+| **Live proof** | `/bourbon/graph/bottled-in-bond` · `/operator/atlas/graph` · `npm run audit:graph` |
+| **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
 ---
 
-## PASS-040A — Artifact Engine (primitive) ✅
+## PASS-040B2 — Bourbon Graph Expansion ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-10 |
+| **Mission** | Inventory gave us rooms — 040B2 builds the hallways |
+| **Principle** | Every edge carries confidence + source; unknown beats fake |
+| **Audit** | `npm run audit:graph` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Mechanical graph for all 20 inventory bottles | `apps/platform/lib/bourbon-graph/` |
+| Universal route `/bourbon/graph/[slug]` | bottles · producers · atlas · debates · people |
+| BiB weekend exemplar (15+ edges, mission) | `atlas-term-graph.ts` · `/bourbon/graph/bottled-in-bond` |
+| Bottle graph panel with paragraph depth | `BourbonGraphHallway` + `edge-copy.ts` |
+| Operator weak-node queue | `/operator/atlas/graph` |
+| Weekly push plan (not deployed) | `docs/WEEKLY_ENGAGEMENT_PUSH.md` · `@foundry/weekly-engagement-engine` |
+
+**Next:** 040C Atlas-Aware AI · 040D persistence · 041W weekly push delivery
+
+---
+
+## PASS-040B1 — Bourbon Intelligence Inventory ✅
 
 | Field | Value |
 |-------|-------|

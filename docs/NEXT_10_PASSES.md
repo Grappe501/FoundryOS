@@ -6,19 +6,21 @@ See `docs/KNOWLEDGE_GRAPH.md` · `docs/WORLD_ECOSYSTEM_MODEL.md` · `docs/FOUNDR
 
 Five layers: **Explore → Practice → Identity → Influence → Legacy**
 
+**Layer 1 = Explore** (Atlas, Lore, Missions, Tools, Experiences, Today, Investigations, Comparisons, Glossary, entity pages, Search, Rabbit holes). Academy is one feature.
+
 ## Immediate Sequence
 
 | Pass | Focus | Status |
 |------|-------|--------|
-| PASS-034J/N | Consequence Engine | ✅ |
-| PASS-034K | Collector Engine | ✅ |
-| PASS-034L | World Events Engine | ✅ |
-| PASS-034M | Identity Narrative Engine | ✅ |
-| PASS-034P | World Continuity Engine | ✅ deployed |
-| PASS-034P.5 | Atlas Phase 2 (quiet start) | ✅ in repo → rolls into 040B |
-| **PASS-034U** | **Universe Command Center** | **✅ built (local)** |
-| PASS-034Q | Level 1 depth (local) | **absorbed → 040B — do not deploy** |
-| PASS-034V | World Architect | Operator |
+| PASS-034U | Universe Command Center | ✅ deployed |
+| PASS-040A | Artifact Engine | ✅ deployed |
+| PASS-040A2 | Artifact flywheel | ✅ deployed |
+| PASS-040B1 | Bourbon Intelligence Inventory | ✅ deployed |
+| **PASS-040B2** | **Bourbon Graph Expansion (hallways)** | **✅ current / deploying** |
+| PASS-034P+ | World Continuity Expansion | next |
+| PASS-040C | Atlas-Aware AI | queued |
+| PASS-040D | Personal Database Persistence | queued |
+| PASS-041W | Weekly engagement push | planned — `docs/WEEKLY_ENGAGEMENT_PUSH.md` |
 
 ## What Foundry Is Validating
 
@@ -48,12 +50,13 @@ Launch-testers advice fit **Course Platform**. It does not fit **Knowledge Unive
 ## Reactive Loop Status
 
 ```txt
-Explore         ✅  Atlas · Lore · Lessons · Tools
-Practice        ✅  Missions · Detective · Challenges · Events
+Explore         ✅  Atlas · Lore · Graph hallways · Tools · Missions
+Practice        ✅  Detective · Challenges · Events
 Identity signals ✅  Collections · Consequence · Narrative · Continuity
-Identity infra   ❌  Artifacts · Personal DB · Passport shell (040A–D)
+Identity infra   🟡  Artifacts ✅ · Personal DB · Passport (040D–G)
 Influence        ❌  Review · Recommend (040E–F)
 Legacy           ❌  Full archive (040H)
+Engagement       📋  Weekly push (041W — schedule stub in repo)
 ```
 
 **034P closes the reactive loop.** **040A–F** closes the ecosystem factory.
@@ -72,15 +75,17 @@ Legacy           ❌  Full archive (040H)
 Platform primitives. Every world inherits. **Build these before broad tester cohorts.**
 
 ```txt
-034U  Universe Command Center     ✅ built (local)
-040A  Artifact Engine             ← NEXT
-040B  Atlas Graph Engine          ← 034Q + 034P.5 absorbed
-034P+ World Memory Expansion
+034U  Universe Command Center     ✅ deployed
+040A  Artifact Engine             ✅ deployed
+040B1 Bourbon Intelligence        ✅ deployed
+040B2 Bourbon Graph Hallways      ✅ current
+034P+ World Memory Expansion      ← next
 040C  Atlas-Aware AI Layer
 040D  Personal Database Engine
 040E  Review Engine
 040F  Recommendation Engine
 040G  Passport
+041W  Weekly Engagement Push      ← random day/time per week
 ```
 
 Then: Group · Host · Legacy · Reputation v2 · Mentor Marketplace
@@ -131,4 +136,6 @@ See `apps/platform/lib/incoming-worlds.ts`.
 - `docs/FOUNDRY_ARTIFACT_MODEL.md`
 - `docs/PASS_040A_ARTIFACT_ENGINE.md`
 - `docs/PASS_040B_ATLAS_GRAPH_ENGINE.md`
+- `docs/PASS_040B2_BOURBON_GRAPH_EXPANSION.md`
+- `docs/WEEKLY_ENGAGEMENT_PUSH.md`
 - `docs/PASS_034U_UNIVERSE_COMMAND_CENTER.md`

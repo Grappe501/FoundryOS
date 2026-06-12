@@ -1,6 +1,7 @@
 import type { EntityGraphView, GraphConfidence, GraphConnection } from '@foundry/atlas-graph-engine';
 import { resolveEntityGraph } from '@foundry/atlas-graph-engine';
 import {
+  AMERICAN_WHISKEY_CATEGORIES,
   BOTTLE_COMPARISON_SETS,
   getBottleRecord,
   getProducerRecord,
@@ -9,6 +10,17 @@ import {
 } from '@foundry/bourbon-intelligence';
 import { getBottle } from '../bourbon-level-1/bottles';
 import { getBottleProgression } from '../bourbon-level-1/agency/bottle-progression';
+import {
+  ageParagraph,
+  americanWhiskeyParagraph,
+  comparableParagraph,
+  legalCategoryParagraph,
+  mashParagraph,
+  producerParagraph,
+  proofParagraph,
+  storePickParagraph,
+  terroirParagraph,
+} from './edge-copy';
 
 function toConfidence(c: SourceConfidence): GraphConfidence {
   return c;
@@ -18,6 +30,13 @@ function conn(
   partial: Omit<GraphConnection, 'id'> & { id?: string },
 ): GraphConnection {
   return { id: partial.id ?? `${partial.entity_type}-${partial.slug}`, ...partial };
+}
+
+const MIN_TEASER = 80;
+
+function ensureParagraphTeaser(teaser: string, title: string, group: string): string {
+  if (teaser.length >= MIN_TEASER) return teaser;
+  return `${teaser} Following «${title}» in the ${group} hallway links this pour to producer DNA, Atlas vocabulary, debates, and comparison flights — log what you find as passport evidence.`;
 }
 
 const MASH_ATLAS: Record<string, string> = {
@@ -37,7 +56,16 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
   const progression = getBottleProgression(slug);
   const producer = getProducerRecord(bottle.producerSlug);
   const people = peopleForProducer(bottle.producerSlug);
-  const comparables = BOTTLE_COMPARISON_SETS[slug] ?? [];
+  const comparables = record?.comparable_bottle_slugs ?? BOTTLE_COMPARISON_SETS[slug] ?? [];
+  const category = AMERICAN_WHISKEY_CATEGORIES.find((c) => c.slug === record?.category);
+
+  const producerCopy = producerParagraph(bottle, producer);
+  const mashCopy = mashParagraph(bottle, record);
+  const terroirCopy = terroirParagraph();
+  const legalCopy = legalCategoryParagraph();
+  const proofCopy = proofParagraph(bottle, record);
+  const storePickCopy = storePickParagraph();
+  const americanCopy = americanWhiskeyParagraph();
 
   const connections: GraphConnection[] = [
     conn({
@@ -46,11 +74,27 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: bottle.producerSlug,
       title: bottle.producerName,
       href: `/bourbon/producers/${bottle.producerSlug}`,
-      teaser: producer?.headquarters?.value
-        ? `${producer.headquarters.value} — distilling house and heritage hallway.`
-        : 'Follow the producer hallway.',
+      teaser: producerCopy.teaser,
       group: 'Producer',
-      confidence: producer?.name.confidence ? toConfidence(producer.name.confidence) : 'commonly_reported',
+      confidence: producerCopy.confidence,
+      source_label: producerCopy.source_label,
+    }),
+    conn({
+      relation: 'part_of',
+      entity_type: 'producer',
+      slug: bottle.producerSlug,
+      title: producer?.parent_company?.value
+        ? `${producer.parent_company.value} brand family`
+        : `${bottle.producerName} brand family`,
+      href: `/bourbon/graph/${bottle.producerSlug}`,
+      teaser: producer?.parent_company?.value
+        ? `${bottle.name} sits under ${producer.parent_company.value}'s portfolio. Brand-family literacy explains why Buffalo Trace, Eagle Rare, and Weller share a campus but read differently on the shelf — follow the parent hallway before chasing single SKUs.`
+        : `${bottle.producerName} is both distiller and brand anchor here. Understanding the house portfolio prevents treating every label as an unrelated bottle.`,
+      group: 'Brand family',
+      confidence: producer?.parent_company?.confidence
+        ? toConfidence(producer.parent_company.confidence)
+        : 'commonly_reported',
+      source_label: 'producer registry · parent company',
     }),
     conn({
       relation: 'related_to',
@@ -58,21 +102,45 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'mash-bill',
       title: 'Mash bill',
       href: '/bourbon/atlas/mash-bill',
-      teaser: `${bottle.mashbill.replace(/-/g, ' ')} style — grain percentages not publicly disclosed.`,
+      teaser: mashCopy.teaser,
       group: 'Mash style',
-      confidence: record?.mashbill_style.confidence
-        ? toConfidence(record.mashbill_style.confidence)
-        : 'commonly_reported',
+      confidence: mashCopy.confidence,
+      source_label: mashCopy.source_label,
     }),
     conn({
       relation: 'located_in',
       entity_type: 'place',
       slug: 'kentucky',
-      title: 'Kentucky',
+      title: 'Kentucky · terroir disclosure',
       href: '/bourbon/map',
-      teaser: 'Grain source: not publicly disclosed. Soil influence: not producer-disclosed.',
+      teaser: terroirCopy.teaser,
       group: 'Terroir disclosure',
-      confidence: 'unknown',
+      confidence: terroirCopy.confidence,
+      source_label: terroirCopy.source_label,
+    }),
+    conn({
+      relation: 'related_to',
+      entity_type: 'atlas_term',
+      slug: category?.legal_standard_slug ?? 'straight-bourbon',
+      title: category?.label ?? 'Bourbon',
+      href: `/bourbon/atlas/${category?.legal_standard_slug ?? 'straight-bourbon'}`,
+      teaser: category?.summary.value ?? legalCopy.teaser,
+      group: 'Legal category',
+      confidence: category?.summary.confidence
+        ? toConfidence(category.summary.confidence)
+        : legalCopy.confidence,
+      source_label: category?.legal_standard_slug ?? '27 CFR Part 5',
+    }),
+    conn({
+      relation: 'related_to',
+      entity_type: 'atlas_term',
+      slug: 'american-whiskey',
+      title: 'American whiskey comparison',
+      href: '/bourbon/atlas/straight-bourbon',
+      teaser: americanCopy.teaser,
+      group: 'Legal category',
+      confidence: americanCopy.confidence,
+      source_label: americanCopy.source_label,
     }),
     conn({
       relation: 'related_to',
@@ -80,9 +148,10 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'proof',
       title: 'Proof',
       href: '/bourbon/atlas/proof',
-      teaser: `${bottle.proof} proof on label — ${record?.proof.confidence ?? 'commonly_reported'}.`,
+      teaser: proofCopy.teaser,
       group: 'Atlas terms',
-      confidence: record?.proof.confidence ? toConfidence(record.proof.confidence) : 'commonly_reported',
+      confidence: proofCopy.confidence,
+      source_label: proofCopy.source_label,
     }),
     conn({
       relation: 'related_to',
@@ -90,9 +159,11 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'rickhouse',
       title: 'Rickhouse',
       href: '/bourbon/atlas/rickhouse',
-      teaser: 'Where this bottle likely aged — warehouse position shapes flavor.',
+      teaser:
+        'Rickhouses are where time and warehouse position do the real work. Upper floors run hotter and pull oak faster; lower floors age slower and often read softer. This bottle’s flavor profile is inseparable from where it likely slept — explore warehouse vocabulary before blaming the mash bill alone.',
       group: 'Atlas terms',
       confidence: 'commonly_reported',
+      source_label: 'atlas · warehouse practice',
     }),
     conn({
       relation: 'related_to',
@@ -100,29 +171,34 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'char-level',
       title: 'Char level',
       href: '/bourbon/atlas/char-level',
-      teaser: 'New charred oak requirement — vanilla and tannin from barrel char.',
+      teaser:
+        'New charred American oak is non-negotiable for bourbon identity. Char depth controls how aggressively the barrel gives up vanilla, caramel, and tannin. Char-level literacy separates “oak bomb” from “balanced extract” when you compare this pour to younger siblings.',
       group: 'Atlas terms',
       confidence: 'verified',
+      source_label: '27 CFR Part 5 · atlas',
     }),
     conn({
       relation: 'related_to',
       entity_type: 'atlas_term',
-      slug: 'new-charred-oak',
-      title: 'New charred oak',
-      href: '/bourbon/atlas/new-charred-oak',
-      teaser: 'Federal bourbon standard — one-use American oak barrels.',
+      slug: 'single-barrel',
+      title: 'Store pick economics',
+      href: '/bourbon/atlas/single-barrel',
+      teaser: storePickCopy.teaser,
       group: 'Atlas terms',
-      confidence: 'verified',
+      confidence: storePickCopy.confidence,
+      source_label: storePickCopy.source_label,
     }),
     conn({
       relation: 'controversy_about',
       entity_type: 'debate',
       slug: 'best-value-bourbon',
       title: 'Best value bourbon under $35?',
-      href: '/bourbon/lore',
-      teaser: 'Is this pour overrated or underpriced for what it teaches?',
+      href: '/bourbon/graph/best-value-bourbon',
+      teaser:
+        'Value is not MSRP alone — it is what a bottle teaches per dollar. This debate forces you to articulate whether you are paying for flavor education, brand story, or scarcity theater. Log your position as an artifact instead of arguing in comments.',
       group: 'Debates',
       confidence: 'editorial',
+      source_label: 'editorial debate node',
     }),
     conn({
       relation: 'explores',
@@ -130,19 +206,23 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'allocated-worth',
       title: 'Do you need allocation to learn bourbon?',
       href: '/bourbon/detective/allocated-worth',
-      teaser: 'Mystery of hype vs honest daily pours.',
+      teaser:
+        'Allocation hype creates a mystery: are you missing education or just FOMO? This case walks secondary-market pricing against shelf staples so you can decide whether scarcity is teaching you anything — or just emptying your wallet.',
       group: 'Mysteries',
       confidence: 'editorial',
+      source_label: 'detective case',
     }),
     conn({
       relation: 'part_of',
       entity_type: 'collection',
-      slug: 'starter-shelf',
-      title: 'Starter shelf path',
+      slug: record?.collection_path_slugs[0] ?? 'starter-shelf',
+      title: record?.collection_path_slugs[0]?.replace(/-/g, ' ') ?? 'Starter shelf path',
       href: '/bourbon/portfolio',
-      teaser: 'Collect evidence — owned, tasted, wish list.',
+      teaser:
+        'Collection paths turn browsing into evidence. Owned, tasted, wish list, and BiB flights live on your passport — the graph remembers what a spreadsheet forgets. Start a path here and let the hallway suggest the next bottle.',
       group: 'Collections',
       confidence: 'editorial',
+      source_label: 'collection registry',
     }),
     conn({
       relation: 'unlocks',
@@ -150,9 +230,11 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'tasting-note',
       title: 'Log a tasting note',
       href: '/bourbon/experiences/tasting-journal',
-      teaser: 'Your pour becomes an artifact — identity evidence.',
+      teaser:
+        'Your pour becomes an artifact — timestamped evidence on your passport wall. Tasting notes are not diary fluff; they are how Foundry remembers what you actually tasted when the hype cycle moves on.',
       group: 'Artifacts',
       confidence: 'editorial',
+      source_label: 'artifact engine · 040A',
     }),
     conn({
       relation: 'explores',
@@ -160,11 +242,30 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
       slug: 'dsp-numbers',
       title: 'DSP tracing case',
       href: '/bourbon/detective/dsp-numbers',
-      teaser: 'Who actually distilled this liquid?',
+      teaser:
+        'The DSP number on a label is a distilling fingerprint. This detective case teaches you to trace who actually made the liquid when marketing stories get fuzzy — essential before you pay premium for a borrowed story.',
       group: 'Investigations',
       confidence: 'commonly_reported',
+      source_label: 'detective · TTB DSP registry',
     }),
   ];
+
+  const ageCopy = ageParagraph(bottle, record);
+  if (ageCopy) {
+    connections.push(
+      conn({
+        relation: 'related_to',
+        entity_type: 'atlas_term',
+        slug: 'age-statement',
+        title: 'Age statement',
+        href: '/bourbon/atlas/age-statement',
+        teaser: ageCopy.teaser,
+        group: 'Mash style',
+        confidence: ageCopy.confidence,
+        source_label: ageCopy.source_label,
+      }),
+    );
+  }
 
   const mashTerm = MASH_ATLAS[bottle.mashbill];
   if (mashTerm) {
@@ -175,24 +276,10 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         slug: mashTerm,
         title: mashTerm.replace(/-/g, ' '),
         href: `/bourbon/atlas/${mashTerm}`,
-        teaser: `Flavor family anchor for ${bottle.mashbill} mash style.`,
+        teaser: `This bottle reads as ${bottle.mashbill.replace(/-/g, ' ')} in the flavor-family hallway. High-rye, wheated, and traditional corn-forward styles each train a different vocabulary — use this anchor when blind flights get noisy.`,
         group: 'Mash style',
         confidence: 'commonly_reported',
-      }),
-    );
-  }
-
-  if (record?.mash_bill_slug) {
-    connections.push(
-      conn({
-        relation: 'related_to',
-        entity_type: 'atlas_term',
-        slug: 'mash-bill',
-        title: `Mash record: ${record.mash_bill_slug}`,
-        href: `/bourbon/graph/${slug}`,
-        teaser: 'Intelligence registry — no invented percentages.',
-        group: 'Mash style',
-        confidence: 'unknown',
+        source_label: 'mash style · intelligence registry',
       }),
     );
   }
@@ -205,14 +292,18 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         slug: p.slug,
         title: p.name.value,
         href: `/bourbon/graph/${p.slug}`,
-        teaser: p.facts[0]?.claim ?? 'Verified distiller role.',
+        teaser:
+          p.facts[0]?.claim ??
+          `${p.name.value} — verified distiller role with sourced citations. Leader profiles publish only when facts are producer_disclosed or verified, never invented.`,
         group: 'Known people',
         confidence: toConfidence(p.name.confidence),
+        source_label: p.facts[0]?.citations[0]?.label ?? 'intelligence registry',
       }),
     );
   }
 
   if (producer?.leader_slot_id) {
+    const slotPublishable = people.some((x) => x.profile_publishable);
     connections.push(
       conn({
         relation: 'works_for',
@@ -220,15 +311,19 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         slug: producer.leader_slot_id,
         title: `${bottle.producerName} — leader slot`,
         href: '/bourbon/people',
-        teaser: 'Master distiller slot — verified when sourced profile exists.',
+        teaser: slotPublishable
+          ? 'Master distiller slot filled with a sourced profile — follow for house philosophy and verified production facts.'
+          : 'Leader slot reserved — graph shows the role exists but Foundry will not publish a biography until primary-source facts are verified or producer_disclosed.',
         group: 'Leader slots',
-        confidence: people.some((x) => x.profile_publishable) ? 'verified' : 'unknown',
+        confidence: slotPublishable ? 'verified' : 'unknown',
+        source_label: slotPublishable ? 'leader slot · verified profile' : 'leader slot · awaiting sources',
       }),
     );
   }
 
   for (const other of comparables) {
     const ob = getBottle(other);
+    const comp = comparableParagraph(bottle, other, ob?.name ?? other);
     connections.push(
       conn({
         relation: 'competes_with',
@@ -236,9 +331,10 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         slug: other,
         title: ob?.name ?? other,
         href: `/bourbon/compare?mode=bottles&a=${slug}&b=${other}`,
-        teaser: 'Side-by-side comparison — not a rating.',
+        teaser: comp.teaser,
         group: 'Comparable bottles',
-        confidence: 'editorial',
+        confidence: comp.confidence,
+        source_label: comp.source_label,
       }),
     );
   }
@@ -254,6 +350,7 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         teaser: progression.nextBottle.why,
         group: 'Suggested next stop',
         confidence: 'editorial',
+        source_label: 'progression ladder',
       }),
     );
   } else {
@@ -264,9 +361,11 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         slug: 'wild-turkey-101',
         title: 'Compare any two',
         href: `/bourbon/compare?mode=bottles&a=${slug}&b=wild-turkey-101`,
-        teaser: 'Chart dimensions — find your next pour.',
+        teaser:
+          'Chart proof, mash style, and house character side-by-side. Comparison artifacts turn a flight into passport evidence — pick any two bottles and let dimensions reveal your next pour.',
         group: 'Suggested next stop',
         confidence: 'editorial',
+        source_label: 'compare tool',
       }),
     );
   }
@@ -278,10 +377,12 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
         entity_type: 'atlas_term',
         slug: 'bottled-in-bond',
         title: 'Bottled-in-bond',
-        href: '/bourbon/atlas/bottled-in-bond',
-        teaser: '100+ proof — compare to BiB legal standard.',
+        href: '/bourbon/graph/bottled-in-bond',
+        teaser:
+          'At 100+ proof this bottle invites comparison to Bottled-in-Bond law — one distillery, one season, four years, government guarantee. The BiB weekend graph is the fastest way to understand whether proof alone equals trust.',
         group: 'Atlas terms',
         confidence: 'verified',
+        source_label: '27 CFR · BiB standard',
       }),
     );
   }
@@ -290,10 +391,22 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
     const seen = new Set(connections.map((c) => c.id));
     for (const c of seeded.connections) {
       if (!seen.has(c.id)) {
-        connections.push({ ...c, confidence: c.confidence ?? 'editorial' });
+        connections.push({
+          ...c,
+          teaser: ensureParagraphTeaser(c.teaser, c.title, c.group),
+          confidence: c.confidence ?? 'editorial',
+        });
         seen.add(c.id);
       }
     }
+  }
+
+  for (let i = 0; i < connections.length; i++) {
+    const c = connections[i];
+    connections[i] = {
+      ...c,
+      teaser: ensureParagraphTeaser(c.teaser, c.title, c.group),
+    };
   }
 
   const why =

@@ -9,8 +9,8 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-033",
-    "next_pass": "PASS-034",
+    "current_pass": "PASS-040B2",
+    "next_pass": "PASS-040C",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
@@ -41,6 +41,8 @@
     "audit:artifacts": "npx tsx scripts/audit-artifacts.ts",
     "audit:bourbon-intelligence": "npx tsx scripts/audit-bourbon-intelligence.ts",
     "audit:bourbon-graph": "npx tsx scripts/audit-bourbon-graph.ts",
+    "audit:graph": "npx tsx scripts/audit-graph.ts",
+    "audit:weekly-engagement": "npx tsx scripts/audit-weekly-engagement.ts",
     "launch:domain": "node scripts/launch-domain.js",
     "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
     "predev": "npm run setup && npm run enforce",

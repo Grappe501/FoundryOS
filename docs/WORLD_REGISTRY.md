@@ -1,4 +1,6 @@
-# World Registry (PASS-033)
+# World Registry (PASS-040B2)
+
+Layer 1 depth for **bourbon** is graph-driven — see `/bourbon/graph/[slug]` and `/operator/atlas/graph`.
 
 Audience classifications from `apps/platform/lib/world-governance/world-audience.ts`.
 

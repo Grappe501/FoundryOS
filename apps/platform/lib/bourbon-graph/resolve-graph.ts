@@ -301,3 +301,9 @@ export { groupConnections };
 export function listAllBottleGraphs(): EntityGraphView[] {
   return BOURBON_BOTTLES.map((b) => buildBottleGraphFromInventory(b.slug)).filter(Boolean) as EntityGraphView[];
 }
+
+const PRIORITY_GRAPH_SLUGS = ['wild-turkey-101', 'buffalo-trace', 'makers-mark', 'bottled-in-bond'];
+
+export function priorityGraphSlugs(): string[] {
+  return PRIORITY_GRAPH_SLUGS;
+}

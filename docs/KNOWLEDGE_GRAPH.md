@@ -4,6 +4,8 @@
 
 Foundry is an **Operating System For Human Interests**. The Academy is one Explore feature — onboarding, not the product.
 
+**Layer 1 = Explore.** Atlas / Graph is the center of Layer 1 depth (PASS-040B2 current).
+
 Foundry is not validating topic demand. It is:
 
 ```txt

@@ -42,6 +42,8 @@ Delivery mechanism for worlds — not separate products.
 
 **One app: Foundry** (not per-vertical apps)
 
+Weekly draw-in push: once per week, **random day and time** per user — see `docs/WEEKLY_ENGAGEMENT_PUSH.md` (PASS-041W).
+
 Roadmap:
 1. **Now:** PWA install — home screen, offline-ready shell (see `docs/OFFLINE_SYNC.md`)
 2. **Later:** App Store + Google Play — same codebase, worlds inside

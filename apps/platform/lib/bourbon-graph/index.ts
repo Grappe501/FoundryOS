@@ -13,3 +13,5 @@ export {
   type WeakNodeRow,
   type WeakNodeIssue,
 } from './weak-queue';
+export { computeGraphHealthStats, collectAllGraphNodes, type GraphHealthStats } from './graph-stats';
+export { priorityGraphSlugs } from './resolve-graph';

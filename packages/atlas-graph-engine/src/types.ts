@@ -76,6 +76,8 @@ export type GraphConnection = {
   teaser: string;
   group: string;
   confidence?: GraphConfidence;
+  /** Citation or registry label — required when confidence is verified */
+  source_label?: string;
 };
 
 /** Behaviors one node supports — Read · Investigate · Compare · Explore · Collect · Influence */

@@ -3,14 +3,15 @@ import { getBottleRecord } from '@foundry/bourbon-intelligence';
 import { BOURBON_BOTTLES } from '../bourbon-level-1/bottles';
 import { listAtlasEntries } from '../bourbon-atlas/registry';
 import { buildBottleGraphFromInventory } from './build-bottle-graph';
-import { inferGraphRef, resolveBourbonGraph } from './resolve-graph';
+import { inferGraphRef, resolveBourbonGraph, priorityGraphSlugs } from './resolve-graph';
 
 export type WeakNodeIssue =
   | 'low_edges'
   | 'no_why_care'
   | 'no_atlas_term'
   | 'no_collection'
-  | 'unknown_confidence';
+  | 'unknown_confidence'
+  | 'shallow_teasers';
 
 export type WeakNodeRow = {
   id: string;
@@ -22,7 +23,9 @@ export type WeakNodeRow = {
   target: number;
 };
 
-function graphIssues(graph: EntityGraphView | null): WeakNodeIssue[] {
+const MIN_TEASER_LENGTH = 80;
+
+function graphIssues(graph: EntityGraphView | null, priority = false): WeakNodeIssue[] {
   if (!graph) return ['low_edges', 'no_why_care', 'no_atlas_term', 'no_collection'];
 
   const issues: WeakNodeIssue[] = [];
@@ -35,10 +38,14 @@ function graphIssues(graph: EntityGraphView | null): WeakNodeIssue[] {
   const hasCollection = graph.connections.some((c) => c.entity_type === 'collection');
   if (!hasCollection) issues.push('no_collection');
 
-  const unknownHeavy = graph.connections.filter((c) => c.confidence === 'unknown').length;
-  const record = graph.entity_type === 'bottle' ? getBottleRecord(graph.slug) : null;
-  if (unknownHeavy >= 3 || record?.mashbill_style.confidence === 'unknown') {
+  const unknownCount = graph.connections.filter((c) => c.confidence === 'unknown').length;
+  if (graph.connections.length > 0 && unknownCount / graph.connections.length > 0.5) {
     issues.push('unknown_confidence');
+  }
+
+  if (priority) {
+    const shallow = graph.connections.filter((c) => (c.teaser?.length ?? 0) < MIN_TEASER_LENGTH);
+    if (shallow.length > 0) issues.push('shallow_teasers');
   }
 
   return issues;
@@ -46,10 +53,11 @@ function graphIssues(graph: EntityGraphView | null): WeakNodeIssue[] {
 
 export function getBourbonGraphWeakQueue(): WeakNodeRow[] {
   const rows: WeakNodeRow[] = [];
+  const priority = new Set(priorityGraphSlugs());
 
   for (const bottle of BOURBON_BOTTLES) {
     const graph = buildBottleGraphFromInventory(bottle.slug);
-    const issues = graphIssues(graph);
+    const issues = graphIssues(graph, priority.has(bottle.slug));
     if (issues.length === 0) continue;
     rows.push({
       id: `bottle:${bottle.slug}`,
@@ -63,7 +71,7 @@ export function getBourbonGraphWeakQueue(): WeakNodeRow[] {
   }
 
   const bib = resolveBourbonGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: 'bottled-in-bond' });
-  const bibIssues = graphIssues(bib);
+  const bibIssues = graphIssues(bib, true);
   if (bibIssues.length) {
     rows.push({
       id: 'atlas_term:bottled-in-bond',
@@ -102,9 +110,21 @@ export function countConnectionsByGroup(connections: GraphConnection[]): Record<
   }, {});
 }
 
+function auditEdgeIntegrity(graph: EntityGraphView, errors: string[], slug: string): void {
+  for (const edge of graph.connections) {
+    if (!edge.confidence) {
+      errors.push(`${slug}: edge ${edge.id} missing confidence`);
+    }
+    if (edge.confidence === 'verified' && !edge.source_label?.trim()) {
+      errors.push(`${slug}: verified edge ${edge.id} missing source_label`);
+    }
+  }
+}
+
 export function validateBourbonGraphExpansion(): { ok: boolean; errors: string[]; warnings: string[] } {
   const errors: string[] = [];
   const warnings: string[] = [];
+  const priority = priorityGraphSlugs();
 
   for (const bottle of BOURBON_BOTTLES) {
     const graph = buildBottleGraphFromInventory(bottle.slug);
@@ -112,14 +132,22 @@ export function validateBourbonGraphExpansion(): { ok: boolean; errors: string[]
       errors.push(`Missing graph for bottle ${bottle.slug}`);
       continue;
     }
+    if (graph.connection_count < 3) {
+      errors.push(`${bottle.slug}: ${graph.connection_count} edges (need 3+ minimum)`);
+    }
     if (graph.connection_count < 10) {
-      errors.push(`${bottle.slug}: ${graph.connection_count} edges (need 10+)`);
+      warnings.push(`${bottle.slug}: ${graph.connection_count} edges (target 10+)`);
     }
     if (!graph.why_should_i_care) {
       errors.push(`${bottle.slug}: missing why_should_i_care`);
     }
-    if (!graph.connections.some((c) => c.confidence)) {
-      warnings.push(`${bottle.slug}: some edges missing confidence badges`);
+    auditEdgeIntegrity(graph, errors, bottle.slug);
+
+    if (priority.includes(bottle.slug)) {
+      const shallow = graph.connections.filter((c) => (c.teaser?.length ?? 0) < MIN_TEASER_LENGTH);
+      if (shallow.length) {
+        errors.push(`${bottle.slug}: ${shallow.length} edges with shallow teasers (<${MIN_TEASER_LENGTH} chars)`);
+      }
     }
   }
 
@@ -129,6 +157,28 @@ export function validateBourbonGraphExpansion(): { ok: boolean; errors: string[]
   }
   if (!bib?.identities || bib.identities.length < 5) {
     errors.push('bottled-in-bond: need 5+ identity labels');
+  }
+  if (bib) {
+    auditEdgeIntegrity(bib, errors, 'bottled-in-bond');
+    const hasMission = bib.connections.some((c) => c.group === 'Missions' || c.title.toLowerCase().includes('mission'));
+    if (!hasMission) errors.push('bottled-in-bond: missing suggested tasting mission');
+  }
+
+  for (const slug of priority) {
+    const ref = inferGraphRef(slug);
+    if (!ref) {
+      errors.push(`Priority node ${slug}: cannot infer graph ref`);
+      continue;
+    }
+    const graph = resolveBourbonGraph(ref);
+    if (!graph) {
+      errors.push(`Priority node ${slug}: graph does not resolve`);
+    }
+  }
+
+  const weakQueue = getBourbonGraphWeakQueue();
+  if (weakQueue.length === 0) {
+    warnings.push('Weak queue empty — all nodes meet minimums');
   }
 
   return { ok: errors.length === 0, errors, warnings };

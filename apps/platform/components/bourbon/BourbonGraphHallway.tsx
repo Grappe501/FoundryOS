@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { groupConnections, type EntityGraphView, type GraphConfidence } from '@foundry/atlas-graph-engine';
+import { SECTION_INTROS } from '../../lib/bourbon-graph/edge-copy';
 
 const ACCENT = '#C8A96E';
 
@@ -51,16 +52,21 @@ function EdgeLink({ c }: { c: EntityGraphView['connections'][0] }) {
         <ConfidenceBadge confidence={c.confidence} />
       </p>
       <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6, lineHeight: 1.55 }}>{c.teaser}</p>
+      {c.source_label && c.confidence === 'verified' && (
+        <p style={{ color: '#6B6B70', fontSize: 10, marginTop: 6, marginBottom: 0 }}>Source: {c.source_label}</p>
+      )}
     </Link>
   );
 }
 
 const SECTION_ORDER = [
   'Producer',
+  'Brand family',
   'Known people',
   'Leader slots',
   'Mash style',
   'Terroir disclosure',
+  'Legal category',
   'Comparable bottles',
   'Atlas terms',
   'Mysteries',
@@ -68,6 +74,7 @@ const SECTION_ORDER = [
   'Collections',
   'Artifacts',
   'Investigations',
+  'Missions',
   'Suggested next stop',
   'Rival bottles',
   'Places',
@@ -148,9 +155,12 @@ export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView
 
       {groups.map((group) => (
         <div key={group} style={{ marginTop: 24 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 10px' }}>
+          <p style={{ color: '#6B6B70', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 6px' }}>
             {group}
           </p>
+          {SECTION_INTROS[group] && (
+            <p style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.65, margin: '0 0 10px' }}>{SECTION_INTROS[group]}</p>
+          )}
           <div style={{ display: 'grid', gap: 8 }}>
             {grouped[group].map((c) => (
               <EdgeLink key={c.id} c={c} />

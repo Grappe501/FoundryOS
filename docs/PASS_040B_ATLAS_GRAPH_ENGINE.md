@@ -35,6 +35,21 @@ Build the graph before expanding catalog.
 
 ---
 
+## PASS-040B2 Status (current)
+
+| Deliverable | Status |
+|-------------|--------|
+| All inventory bottles → graph output | ✅ |
+| `/bourbon/graph/[slug]` universal route | ✅ |
+| BiB weekend exemplar | ✅ |
+| Bottle graph panels (paragraph depth) | ✅ |
+| Operator weak-node queue | ✅ |
+| `npm run audit:graph` | ✅ |
+
+See `docs/PASS_040B2_BOURBON_GRAPH_EXPANSION.md`.
+
+---
+
 ## Package
 
 `@foundry/atlas-graph-engine`
