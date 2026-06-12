@@ -44,8 +44,8 @@ export function validateGraphEngine(): { ok: boolean; errors: string[] } {
     errors.push('wild-turkey-101 must have why_should_i_care');
   }
   const bib = resolveEntityGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: 'bottled-in-bond' });
-  if (!bib || bib.connection_count < 10) {
-    errors.push('bottled-in-bond exemplar needs 10+ connections');
+  if (!bib || bib.connection_count < 15) {
+    errors.push('bottled-in-bond exemplar needs 15+ connections');
   }
   if (!bib?.identities || bib.identities.length < 5) {
     errors.push('bottled-in-bond must have 5+ multi-identity labels');

@@ -2,7 +2,8 @@
  * PASS-034U — Universe snapshot from live registries (read-only, no fiction)
  */
 
-import { resolveEntityGraph } from '@foundry/atlas-graph-engine';
+import { buildBottleGraphFromInventory } from '../bourbon-graph/build-bottle-graph';
+import { resolveBourbonGraph } from '../bourbon-graph';
 import { getArtifactEngineStats } from '@foundry/artifact-engine';
 import { COLLECTION_DEFINITIONS, collectionsForWorld } from '@foundry/collector-engine';
 import { LIVE_EVENT_WORLDS } from '@foundry/world-events-engine';
@@ -54,7 +55,7 @@ function getGraphCoverage(): GraphNodeCoverage[] {
   const nodes: GraphNodeCoverage[] = [];
 
   for (const bottle of BOURBON_BOTTLES) {
-    const graph = resolveEntityGraph({ world_slug: 'bourbon', entity_type: 'bottle', slug: bottle.slug });
+    const graph = buildBottleGraphFromInventory(bottle.slug);
     nodes.push({
       id: `bottle:${bottle.slug}`,
       label: bottle.name,
@@ -64,7 +65,7 @@ function getGraphCoverage(): GraphNodeCoverage[] {
     });
   }
 
-  const bib = resolveEntityGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: 'bottled-in-bond' });
+  const bib = resolveBourbonGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: 'bottled-in-bond' });
   nodes.push({
     id: 'atlas_term:bottled-in-bond',
     label: 'Bottled in Bond',

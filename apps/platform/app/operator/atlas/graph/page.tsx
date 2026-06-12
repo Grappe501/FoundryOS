@@ -1,56 +1,92 @@
 import Link from 'next/link';
-import { OperatorShell } from '../../../../components/operator/UniverseCommandCenter';
-import { getAllGraphNodes, getUniverseSnapshot } from '../../../../lib/universe-registry';
+import { OperatorShell, StatGrid } from '../../../../components/operator/UniverseCommandCenter';
+import { getUniverseSnapshot } from '../../../../lib/universe-registry';
+import { getBourbonGraphWeakQueue, listAllBottleGraphs } from '../../../../lib/bourbon-graph';
 
 export const dynamic = 'force-dynamic';
 
+const ISSUE_LABEL: Record<string, string> = {
+  low_edges: '<10 edges',
+  no_why_care: 'No why-care',
+  no_atlas_term: 'No atlas term',
+  no_collection: 'No collection path',
+  unknown_confidence: 'Unknown confidence fields',
+};
+
 export default function OperatorAtlasGraphPage() {
   const snap = getUniverseSnapshot();
-  const nodes = getAllGraphNodes().sort((a, b) => a.connections - b.connections);
+  const weakQueue = getBourbonGraphWeakQueue();
+  const bottleGraphs = listAllBottleGraphs();
+  const avg =
+    bottleGraphs.length > 0
+      ? Math.round(bottleGraphs.reduce((s, g) => s + g.connection_count, 0) / bottleGraphs.length)
+      : 0;
 
   return (
     <OperatorShell
-      pass="PASS-034U · Graph Command Center"
+      pass="PASS-040B2 · Graph Expansion"
       title="What is connected?"
-      subtitle="Graph density, weak nodes, and Burt's build queue. 040B will explode this view — 034U keeps you from going blind."
+      subtitle="Inventory edge → visible rabbit hole. Weak-node queue drives hallway seeding — not hand-written bottle pages."
     >
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12, marginTop: 24 }}>
-        <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-          <div style={{ fontSize: 22, color: '#C8A96E' }}>{snap.graph_density_avg}</div>
-          <div style={{ fontSize: 11, color: '#6B6B70' }}>Avg connections</div>
-        </div>
-        <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-          <div style={{ fontSize: 22, color: '#C96B6B' }}>{snap.graph_weak_nodes.length}</div>
-          <div style={{ fontSize: 11, color: '#6B6B70' }}>Weak nodes (&lt;10)</div>
-        </div>
-        <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-          <div style={{ fontSize: 22, color: '#6B9B6B' }}>{nodes.filter((n) => !n.weak).length}</div>
-          <div style={{ fontSize: 11, color: '#6B6B70' }}>Seeded nodes</div>
-        </div>
-      </div>
+      <StatGrid
+        items={[
+          { label: 'Bottle graphs', value: bottleGraphs.length },
+          { label: 'Avg bottle edges', value: avg },
+          { label: 'Weak queue', value: weakQueue.length },
+          { label: 'BiB edges', value: snap.graph_weak_nodes.find((n) => n.id.includes('bottled-in-bond'))?.connections ?? '20+' },
+          { label: 'Target per bottle', value: '10+' },
+          { label: 'BiB weekend target', value: '15+' },
+        ]}
+      />
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C96B6B' }}>Weak nodes — Burt queue</h2>
+        <h2 style={{ fontSize: 14, color: '#C96B6B' }}>Weak-node queue — Burt build order</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12, marginTop: 12 }}>
           <thead>
             <tr style={{ color: '#6B6B70', borderBottom: '1px solid #1A1A1E' }}>
               <th style={{ padding: 10, textAlign: 'left' }}>Node</th>
-              <th style={{ padding: 10 }}>Connections</th>
-              <th style={{ padding: 10 }}>Target</th>
+              <th style={{ padding: 10 }}>Type</th>
+              <th style={{ padding: 10 }}>Edges</th>
+              <th style={{ padding: 10, textAlign: 'left' }}>Issues</th>
+              <th style={{ padding: 10 }}>Graph</th>
             </tr>
           </thead>
           <tbody>
-            {nodes
-              .filter((n) => n.weak)
-              .map((n) => (
+            {weakQueue.length === 0 ? (
+              <tr>
+                <td colSpan={5} style={{ padding: 16, color: '#6B9B6B' }}>
+                  No weak nodes in queue — all inventory bottles meet hallway minimums.
+                </td>
+              </tr>
+            ) : (
+              weakQueue.map((n) => (
                 <tr key={n.id} style={{ borderBottom: '1px solid #1A1A1E' }}>
                   <td style={{ padding: 10, color: '#E8E8EC' }}>{n.label}</td>
+                  <td style={{ padding: 10, color: '#8A8A8E', textAlign: 'center' }}>{n.entity_type}</td>
                   <td style={{ padding: 10, color: '#C96B6B', textAlign: 'center' }}>{n.connections}</td>
-                  <td style={{ padding: 10, color: '#8A8A8E', textAlign: 'center' }}>50+</td>
+                  <td style={{ padding: 10, color: '#8A8A8E' }}>
+                    {n.issues.map((i) => ISSUE_LABEL[i] ?? i).join(' · ')}
+                  </td>
+                  <td style={{ padding: 10, textAlign: 'center' }}>
+                    <Link href={`/bourbon/graph/${n.slug}`} style={{ color: '#C8A96E', fontSize: 12 }}>
+                      view →
+                    </Link>
+                  </td>
                 </tr>
-              ))}
+              ))
+            )}
           </tbody>
         </table>
+      </section>
+
+      <section style={{ marginTop: 32, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3520' }}>
+        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>BiB weekend exemplar</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
+          <Link href="/bourbon/graph/bottled-in-bond" style={{ color: '#C8A96E' }}>
+            bottled-in-bond
+          </Link>{' '}
+          — one term → full weekend hallway (Act, Taylor, proof, age, warehouses, value path, detective, debate).
+        </p>
       </section>
 
       <section style={{ marginTop: 32 }}>
@@ -64,7 +100,10 @@ export default function OperatorAtlasGraphPage() {
         </ul>
       </section>
 
-      <Link href="/operator/atlas" style={{ color: '#C8A96E', fontSize: 13, marginTop: 24, display: 'inline-block' }}>
+      <Link href="/operator/bourbon/inventory" style={{ color: '#C8A96E', fontSize: 13, marginTop: 24, display: 'inline-block' }}>
+        Intelligence inventory →
+      </Link>
+      <Link href="/operator/atlas" style={{ color: '#6B6B70', fontSize: 13, marginTop: 24, marginLeft: 16, display: 'inline-block' }}>
         Atlas health gate →
       </Link>
     </OperatorShell>

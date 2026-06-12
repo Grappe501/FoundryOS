@@ -2,6 +2,7 @@ export type {
   GraphEntityType,
   GraphRelationType,
   GraphConnection,
+  GraphConfidence,
   EntityGraphView,
   GraphEntityRef,
   GraphNodeIdentity,

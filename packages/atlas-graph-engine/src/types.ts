@@ -59,6 +59,13 @@ export type GraphRelationType =
   | 'enabled_by'
   | 'answers';
 
+export type GraphConfidence =
+  | 'verified'
+  | 'producer_disclosed'
+  | 'commonly_reported'
+  | 'editorial'
+  | 'unknown';
+
 export type GraphConnection = {
   id: string;
   relation: GraphRelationType;
@@ -68,6 +75,7 @@ export type GraphConnection = {
   href: string;
   teaser: string;
   group: string;
+  confidence?: GraphConfidence;
 };
 
 /** Behaviors one node supports — Read · Investigate · Compare · Explore · Collect · Influence */
