@@ -21,8 +21,14 @@ CREATE TABLE IF NOT EXISTS community_weekly_challenges (
 CREATE INDEX IF NOT EXISTS idx_community_weekly_challenges_world ON community_weekly_challenges (world_slug, week_key DESC);
 
 ALTER TABLE community_weekly_challenges ENABLE ROW LEVEL SECURITY;
-CREATE POLICY "community_weekly_challenges_public_read" ON community_weekly_challenges FOR SELECT USING (true);
-CREATE POLICY "community_weekly_challenges_service" ON community_weekly_challenges FOR ALL USING (true) WITH CHECK (true);
+DO $$ BEGIN
+  CREATE POLICY "community_weekly_challenges_public_read" ON community_weekly_challenges FOR SELECT USING (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE POLICY "community_weekly_challenges_service" ON community_weekly_challenges FOR ALL USING (true) WITH CHECK (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
 
 INSERT INTO platform_metrics (metric_key, metric_value) VALUES
   ('pass028a_community_seeding', '{"status": "ready", "worlds": 7, "discussions_per_world": 25, "showcases_per_world": 10, "weeks": 12}')

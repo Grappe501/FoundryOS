@@ -1,6 +1,7 @@
 -- PASS-027: Transformation Analytics & Learning Engine
 
 -- Extend validation event types for transformation funnel
+-- Includes superset of types that may already exist on remote (orphan migrations / revenue seed)
 ALTER TABLE validation_events DROP CONSTRAINT IF EXISTS validation_events_event_type_check;
 ALTER TABLE validation_events ADD CONSTRAINT validation_events_event_type_check
   CHECK (event_type IN (
@@ -28,7 +29,17 @@ ALTER TABLE validation_events ADD CONSTRAINT validation_events_event_type_check
     'return_this_week',
     'portfolio_created',
     'community_joined',
-    'paid_conversion'
+    'paid_conversion',
+    'challenge_submitted',
+    'showcase_posted',
+    'peer_feedback_given',
+    'community_feed_viewed',
+    'discussion_posted',
+    'upgrade_initiated',
+    'upgrade_completed',
+    'checkout_cancelled',
+    'checkout_blocked_signin',
+    'subscription_cancelled'
   ));
 
 -- Tester feedback tied to world, mission, segment

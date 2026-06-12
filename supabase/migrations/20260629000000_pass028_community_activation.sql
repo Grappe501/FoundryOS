@@ -36,10 +36,22 @@ CREATE INDEX IF NOT EXISTS idx_community_feedback_post ON community_peer_feedbac
 ALTER TABLE community_posts ENABLE ROW LEVEL SECURITY;
 ALTER TABLE community_peer_feedback ENABLE ROW LEVEL SECURITY;
 
-CREATE POLICY "community_posts_public_read" ON community_posts FOR SELECT USING (true);
-CREATE POLICY "community_posts_service" ON community_posts FOR ALL USING (true) WITH CHECK (true);
-CREATE POLICY "community_feedback_public_read" ON community_peer_feedback FOR SELECT USING (true);
-CREATE POLICY "community_feedback_service" ON community_peer_feedback FOR ALL USING (true) WITH CHECK (true);
+DO $$ BEGIN
+  CREATE POLICY "community_posts_public_read" ON community_posts FOR SELECT USING (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE POLICY "community_posts_service" ON community_posts FOR ALL USING (true) WITH CHECK (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE POLICY "community_feedback_public_read" ON community_peer_feedback FOR SELECT USING (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE POLICY "community_feedback_service" ON community_peer_feedback FOR ALL USING (true) WITH CHECK (true);
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
 
 -- Extend validation events for community activation
 ALTER TABLE validation_events DROP CONSTRAINT IF EXISTS validation_events_event_type_check;
@@ -50,7 +62,9 @@ ALTER TABLE validation_events ADD CONSTRAINT validation_events_event_type_check
     'trial_started', 'paid', 'beta_joined', 'pricing_viewed', 'pricing_clicked', 'sign_in_started',
     'sign_up_started', 'mission_started', 'mission_completed', 'mission_step_viewed',
     'return_tomorrow', 'return_this_week', 'portfolio_created', 'community_joined', 'paid_conversion',
-    'challenge_submitted', 'showcase_posted', 'peer_feedback_given', 'community_feed_viewed'
+    'challenge_submitted', 'showcase_posted', 'peer_feedback_given', 'community_feed_viewed',
+    'discussion_posted', 'upgrade_initiated', 'upgrade_completed',
+    'checkout_cancelled', 'checkout_blocked_signin', 'subscription_cancelled'
   ));
 
 INSERT INTO platform_metrics (metric_key, metric_value) VALUES

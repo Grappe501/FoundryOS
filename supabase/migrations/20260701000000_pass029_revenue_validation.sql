@@ -9,7 +9,8 @@ ALTER TABLE validation_events ADD CONSTRAINT validation_events_event_type_check
     'sign_up_started', 'mission_started', 'mission_completed', 'mission_step_viewed',
     'return_tomorrow', 'return_this_week', 'portfolio_created', 'community_joined', 'paid_conversion',
     'challenge_submitted', 'showcase_posted', 'peer_feedback_given', 'community_feed_viewed',
-    'upgrade_initiated', 'upgrade_completed'
+    'discussion_posted', 'upgrade_initiated', 'upgrade_completed',
+    'checkout_cancelled', 'checkout_blocked_signin', 'subscription_cancelled'
   ));
 
 ALTER TABLE user_profiles ADD COLUMN IF NOT EXISTS stripe_customer_id TEXT;

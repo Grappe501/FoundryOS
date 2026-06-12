@@ -51,6 +51,7 @@
     "db:seed": "node scripts/seed-platform.js",
     "seed:community": "npx tsx scripts/seed-community.ts",
     "verify:revenue": "npx tsx scripts/verify-revenue.ts",
+    "audit:revenue": "npx tsx scripts/verify-revenue.ts",
     "push:netlify-env": "powershell -ExecutionPolicy Bypass -File ./scripts/push-netlify-env.ps1 -TriggerDeploy"
   },
   "devDependencies": {

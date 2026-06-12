@@ -1,14 +1,14 @@
 # Audience Language Audit (PASS-033)
 
-Generated: 2026-06-12T00:29:16.480Z
+Generated: 2026-06-12T02:08:42.117Z
 
 | Metric | Count |
 |--------|-------|
-| Files scanned | 680 |
-| Total findings | 1724 |
-| High severity | 950 |
+| Files scanned | 842 |
+| Total findings | 2686 |
+| High severity | 1894 |
 | Medium severity | 7 |
-| Low severity | 767 |
+| Low severity | 785 |
 | Student-safe context violations | 0 |
 
 ## Rules checked
@@ -20,61 +20,61 @@ Generated: 2026-06-12T00:29:16.480Z
 - Partisan persuasion
 - Internal build language (PASS codes, team names)
 
-## High severity (950)
+## High severity (1894)
 
-- `apps/platform/app/bourbon/academy/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/academy/page.tsx:6` **adult_substance_alcohol** — return <WorldAcademyDepth bundle={bundle} basePath="/bourbon" />;
+- `apps/platform/app/bourbon/academy/page.tsx:5` **adult_substance_alcohol** — redirect('/bourbon/level-1');
 - `apps/platform/app/bourbon/academy/[slug]/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
 - `apps/platform/app/bourbon/academy/[slug]/page.tsx:11` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
 - `apps/platform/app/bourbon/academy/[slug]/page.tsx:12` **adult_substance_alcohol** — return <WorldAcademyLesson bundle={bundle} basePath="/bourbon" lessonSlug={slug} />;
+- `apps/platform/app/bourbon/beyond-the-bottle/page.tsx:2` **adult_substance_alcohol** — import { BeyondTheBottleHub } from '../../../components/bourbon/level-1/BeyondTheBottleHub';
+- `apps/platform/app/bourbon/beyond-the-bottle/page.tsx:5` **adult_substance_alcohol** — title: 'Bourbon Beyond the Bottle | Foundry',
+- `apps/platform/app/bourbon/beyond-the-bottle/page.tsx:6` **adult_substance_alcohol** — description: 'Origins, pop culture, connections — bourbon in the wild.',
+- `apps/platform/app/bourbon/beyond-the-bottle/page.tsx:12` **adult_substance_alcohol** — <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
+- `apps/platform/app/bourbon/bottles/page.tsx:2` **adult_substance_alcohol** — import { BottleProgressionHub } from '../../../components/bourbon/level-1/BottleProgressionHub';
+- `apps/platform/app/bourbon/bottles/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Bottle Progression | Bourbon | Foundry', description: 'What each bottle teaches — who 
+- `apps/platform/app/bourbon/bottles/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
+- `apps/platform/app/bourbon/bottles/[slug]/page.tsx:1` **adult_substance_alcohol** — import { BottleProgressionView } from '../../../../components/bourbon/level-1/BottleProgressionHub';
+- `apps/platform/app/bourbon/bottles/[slug]/page.tsx:2` **adult_substance_alcohol** — import { BOURBON_BOTTLES } from '../../../../lib/bourbon-level-1/bottles';
+- `apps/platform/app/bourbon/campus/page.tsx:2` **adult_substance_alcohol** — import { DistilleryCampusMap } from '../../../components/bourbon/level-1/DistilleryCampusMap';
+- `apps/platform/app/bourbon/campus/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Distillery Campus Maps | Bourbon | Foundry' };
+- `apps/platform/app/bourbon/campus/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
 - `apps/platform/app/bourbon/careers/page.tsx:1` **adult_substance_alcohol** — import { BOURBON_CAREERS } from '../../../lib/bourbon-world-meta';
+- `apps/platform/app/bourbon/chains/page.tsx:2` **adult_substance_alcohol** — import { ProgressionChainsView } from '../../../components/bourbon/intelligence/ProgressionChainsView';
+- `apps/platform/app/bourbon/chains/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Bottle Progression Chains | Bourbon | Foundry' };
+- `apps/platform/app/bourbon/chains/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/bottles" style={{ color: '#6B6B70', fontSize: 13 }}>← Bottle progression</Link>
+- `apps/platform/app/bourbon/collector/page.tsx:2` **adult_substance_alcohol** — import { CollectorTrackPicker } from '../../../components/bourbon/level-1/CollectorTrackPicker';
+- `apps/platform/app/bourbon/collector/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Collector Track | Bourbon | Foundry' };
+- `apps/platform/app/bourbon/collector/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
 - `apps/platform/app/bourbon/community/page.tsx:4` **adult_substance_alcohol** — redirect('/community/bourbon');
-- `apps/platform/app/bourbon/experiences/page.tsx:4` **adult_substance_alcohol** — return <WorldExperiencesIndex slug="bourbon" />;
-- `apps/platform/app/bourbon/experiences/[module]/page.tsx:7` **adult_substance_alcohol** — return (getWorldExperienceConfig('bourbon')?.modules ?? []).map((m) => ({ module: m.slug }));
-- `apps/platform/app/bourbon/experiences/[module]/page.tsx:12` **adult_substance_alcohol** — return <WorldExperienceModulePage slug="bourbon" moduleSlug={module} />;
-- `apps/platform/app/bourbon/glossary/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/glossary/page.tsx:6` **adult_substance_alcohol** — return <WorldGlossaryDepth bundle={bundle} basePath="/bourbon" />;
-- `apps/platform/app/bourbon/layout.tsx:2` **adult_substance_alcohol** — import { BourbonSubNav } from '../../components/bourbon-world/BourbonSubNav';
-- `apps/platform/app/bourbon/layout.tsx:8` **adult_substance_alcohol** — <ValidationPageTracker page="/bourbon" />
-- `apps/platform/app/bourbon/learn/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/learn/page.tsx:6` **adult_substance_alcohol** — return <WorldLearnIndex bundle={bundle} basePath="/bourbon" />;
-- `apps/platform/app/bourbon/learn/[slug]/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/learn/[slug]/page.tsx:11` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/learn/[slug]/page.tsx:12` **adult_substance_alcohol** — return <WorldLearnGuide bundle={bundle} basePath="/bourbon" guideSlug={slug} />;
-- `apps/platform/app/bourbon/missions/page.tsx:1` **adult_substance_alcohol** — import { BOURBON_MISSIONS } from '../../../lib/bourbon-world';
-- `apps/platform/app/bourbon/missions/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Missions | Bourbon' };
-- `apps/platform/app/bourbon/missions/page.tsx:7` **adult_substance_alcohol** — return <WorldMissionTracks missions={BOURBON_MISSIONS} basePath="/bourbon" accent="#C8A96E" subtitle="10 steward experie
-- `apps/platform/app/bourbon/missions/[slug]/page.tsx:3` **adult_substance_alcohol** — import { BOURBON_MISSIONS, BOURBON_PORTFOLIO_KEY, BOURBON_PORTFOLIO_LABEL, getBourbonMission } from '../../../../lib/bou
-- `apps/platform/app/bourbon/missions/[slug]/page.tsx:18` **adult_substance_alcohol** — worldSlug="bourbon"
-- `apps/platform/app/bourbon/missions/[slug]/page.tsx:21` **adult_substance_alcohol** — basePath="/bourbon"
-- `apps/platform/app/bourbon/page.tsx:5` **adult_substance_alcohol** — const slug = 'bourbon' as const;
-- `apps/platform/app/bourbon/page.tsx:18` **adult_substance_alcohol** — <Link href="/explore/bourbon" style={{ color: '#6B6B70' }}>Explore path</Link>
-- `apps/platform/app/bourbon/parents/page.tsx:5` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/playground/page.tsx:1` **adult_substance_alcohol** — import { BOURBON_PLAYGROUND_LABS } from '../../../lib/bourbon-world-meta';
-- `apps/platform/app/bourbon/portfolio/page.tsx:3` **adult_substance_alcohol** — import { BOURBON_PORTFOLIO_SECTIONS } from '../../../lib/bourbon-world-meta';
-- `apps/platform/app/bourbon/portfolio/page.tsx:7` **adult_substance_alcohol** — const bundle = getWorldDepthOrThrow('bourbon');
-- `apps/platform/app/bourbon/portfolio/page.tsx:13` **adult_substance_alcohol** — basePath="/bourbon"
-- `apps/platform/app/bourbon/portfolio/page.tsx:14` **adult_substance_alcohol** — portfolioKey="foundry-bourbon-portfolio"
-- `apps/platform/app/bourbon/portfolio/page.tsx:15` **adult_substance_alcohol** — missionCount={getMissionCount('bourbon')}
-- `apps/platform/app/domains/page.tsx:17` **adult_substance_alcohol** — Not 1,961 apps. Lifelong identity domains — Poker, Bourbon, Public Speaking, Magic, and beyond.
-- `apps/platform/app/explore/page.tsx:10` **adult_substance_alcohol** — description: 'Explore what you can become. Every path Foundry is building — from Future-Proof to Bourbon to Financial In
-- `apps/platform/app/investors/page.tsx:21` **adult_substance_alcohol** — { title: 'Roadmap', body: 'Transformation Operating System. Agency over consumption. PASS-010 Transformation Intelligenc
-- `apps/platform/app/knowledge/page.tsx:35` **adult_substance_alcohol** — <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Bourbon Academy — {BOURBON_ACADEMY.levels.length} Levels</h2>
-- `apps/platform/app/knowledge/page.tsx:42` **adult_substance_alcohol** — Routed at bourbon.foundryos.com/academy — same engine, every vertical.
-- `apps/platform/app/loop/page.tsx:107` **adult_substance_alcohol** — <p style={{ marginTop: 8 }}>Do not start PASS-011 · Collections · Clubs · Bourbon until this loop is deployed and verifi
-- `apps/platform/app/operations/page.tsx:50` **adult_substance_alcohol** — Target: full cockpit before PASS-014 (Bourbon launch). Reviews, rankings, AI costs, and deploy tracking wire in progress
-- `apps/platform/app/operator/learning/page.tsx:95` **adult_substance_alcohol** — <WorldAssignmentGuard worldSlug="bourbon" targetSegment="student" />
-- `apps/platform/app/operator/learning/page.tsx:96` **adult_substance_cannabis** — <WorldAssignmentGuard worldSlug="medical-cannabis-literacy" targetSegment="teen" />
-- `apps/platform/app/operator/page.tsx:243` **adult_substance_alcohol** — <Link href="/operator/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Li
-- `apps/platform/app/operator/page.tsx:247` **adult_substance_alcohol** — <Link href="/operator/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
-- `apps/platform/app/paths/page.tsx:12` **adult_substance_alcohol** — const bourbonPaths = getPathsForVertical('bourbon');
-- `apps/platform/app/paths/page.tsx:46` **adult_substance_alcohol** — <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Bourbon Paths ({bourbonPaths.length})</h2>
-- `apps/platform/app/paths/page.tsx:61` **adult_substance_alcohol** — Movies, BBQ, Books paths reserved in catalog. No Bourbon UI until PASS-014.
-- `apps/platform/app/projects/page.tsx:15` **adult_substance_alcohol** — const bourbonProjects = getProjectsForVertical('bourbon');
-- `apps/platform/app/projects/page.tsx:65` **adult_substance_alcohol** — <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Bourbon Projects ({bourbonProjects.length})</h2>
+- `apps/platform/app/bourbon/compare/page.tsx:2` **adult_substance_alcohol** — import { CompareFiveTool } from '../../../components/bourbon/level-1/CompareFiveTool';
+- `apps/platform/app/bourbon/compare/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Compare 5 Bottles | Bourbon | Foundry' };
+- `apps/platform/app/bourbon/compare/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
+- `apps/platform/app/bourbon/connections/page.tsx:2` **adult_substance_alcohol** — import { BourbonConnectionsGraph } from '../../../components/bourbon/level-1/BourbonConnectionsGraph';
+- `apps/platform/app/bourbon/connections/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Bourbon Connections | Foundry' };
+- `apps/platform/app/bourbon/connections/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/beyond-the-bottle" style={{ color: '#6B6B70', fontSize: 13 }}>← Beyond the Bottle</Link>
+- `apps/platform/app/bourbon/connections/page.tsx:10` **adult_substance_alcohol** — <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Bourbon connections</h1>
+- `apps/platform/app/bourbon/daily/page.tsx:2` **adult_substance_alcohol** — import { getDailyBourbon } from '../../../lib/bourbon-level-1/daily-bourbon';
+- `apps/platform/app/bourbon/daily/page.tsx:3` **adult_substance_alcohol** — import { DailyBourbonCard } from '../../../components/bourbon/level-1/DailyBourbonCard';
+- `apps/platform/app/bourbon/daily/page.tsx:5` **adult_substance_alcohol** — export const metadata = { title: 'Daily Bourbon | Foundry' };
+- `apps/platform/app/bourbon/daily/page.tsx:12` **adult_substance_alcohol** — <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
+- `apps/platform/app/bourbon/daily/page.tsx:13` **adult_substance_alcohol** — <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Daily Bourbon</h1>
+- `apps/platform/app/bourbon/daily/page.tsx:18` **adult_substance_alcohol** — <DailyRow label="Bottle spotlight" value={`${daily.bottle.name} — ${daily.bottle.hook}`} href="/bourbon/what-should-i-bu
+- `apps/platform/app/bourbon/daily/page.tsx:19` **adult_substance_alcohol** — <DailyRow label="Compare" value={daily.comparison.question} href="/bourbon/wars" />
+- `apps/platform/app/bourbon/detective/page.tsx:2` **adult_substance_alcohol** — import { BourbonDetectiveHub } from '../../../components/bourbon/level-1/BourbonDetectiveHub';
+- `apps/platform/app/bourbon/detective/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Bourbon Detective | Foundry', description: 'Investigate pricing, allocation, DSP numbe
+- `apps/platform/app/bourbon/detective/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
+- `apps/platform/app/bourbon/detective/page.tsx:10` **adult_substance_alcohol** — <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Bourbon Detective</h1>
+- `apps/platform/app/bourbon/detective/[slug]/page.tsx:1` **adult_substance_alcohol** — import { DetectiveCaseView } from '../../../../components/bourbon/level-1/BourbonDetectiveHub';
+- `apps/platform/app/bourbon/detective/[slug]/page.tsx:2` **adult_substance_alcohol** — import { DETECTIVE_CASES } from '../../../../lib/bourbon-level-1/agency/detective-cases';
+- `apps/platform/app/bourbon/detective/[slug]/page.tsx:11` **adult_substance_alcohol** — return { title: c ? `${c.title} | Bourbon Detective` : 'Case | Bourbon Detective' };
+- `apps/platform/app/bourbon/dna/page.tsx:2` **adult_substance_alcohol** — import { BourbonDNAProfile } from '../../../components/bourbon/level-1/BourbonDNAProfile';
+- `apps/platform/app/bourbon/dna/page.tsx:4` **adult_substance_alcohol** — export const metadata = { title: 'Bourbon DNA | Foundry' };
+- `apps/platform/app/bourbon/dna/page.tsx:9` **adult_substance_alcohol** — <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
+- `apps/platform/app/bourbon/dna/page.tsx:10` **adult_substance_alcohol** — <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Your Bourbon DNA</h1>
+- `apps/platform/app/bourbon/economy/page.tsx:2` **adult_substance_alcohol** — import { BourbonEconomy } from '../../../components/bourbon/level-1/BourbonEconomy';
 
 
-_…and 900 more (see JSON)._
+_…and 1844 more (see JSON)._
 
 ## Student-safe worlds must be free of
 
