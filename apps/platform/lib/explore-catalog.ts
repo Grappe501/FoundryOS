@@ -1,6 +1,8 @@
 /** PASS-016C — Public Explore Catalog (consumer-facing path directory) */
 
 import { FACTORY_EXPLORE_PATHS } from './generated/world-factory-explore';
+import type { UserSegment } from './world-governance';
+import { getWorldAudience, segmentCanAccessWorld } from './world-governance';
 
 export type ExploreStatus = 'live' | 'in_build' | 'validating' | 'planned' | 'paused';
 
@@ -429,6 +431,34 @@ export function filterExplorePaths(category: ExploreCategoryFilter): ExplorePath
 
 export function getExploreSectionsWithPaths(category: ExploreCategoryFilter = 'all') {
   const paths = filterExplorePaths(category);
+  return EXPLORE_SECTIONS.map((section) => ({
+    section,
+    paths: paths.filter((p) => p.section_id === section.id),
+  })).filter((g) => g.paths.length > 0);
+}
+
+export function filterExplorePathsForAudience(
+  paths: ExplorePath[],
+  segment: UserSegment,
+  studentSafeOnly = false,
+): ExplorePath[] {
+  return paths.filter((p) => {
+    const access = segmentCanAccessWorld(segment, p.slug);
+    if (!access.allowed) return false;
+    if (studentSafeOnly) {
+      const record = getWorldAudience(p.slug);
+      if (record && record.audience_classification !== 'student_safe') return false;
+    }
+    return true;
+  });
+}
+
+export function getExploreSectionsWithPathsForAudience(
+  category: ExploreCategoryFilter = 'all',
+  segment: UserSegment = 'adult',
+  studentSafeOnly = false,
+) {
+  const paths = filterExplorePathsForAudience(filterExplorePaths(category), segment, studentSafeOnly);
   return EXPLORE_SECTIONS.map((section) => ({
     section,
     paths: paths.filter((p) => p.section_id === section.id),

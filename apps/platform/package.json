@@ -11,6 +11,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@foundry/ai-orchestration": "*",
+    "@foundry/recommendation-engine": "*",
+    "@foundry/search-engine": "*",
     "@foundry/collection-engine": "*",
     "@foundry/community-engine": "*",
     "@foundry/content-engine": "*",

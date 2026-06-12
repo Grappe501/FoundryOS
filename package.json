@@ -9,8 +9,8 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-015B",
-    "next_pass": "PASS-016",
+    "current_pass": "PASS-033",
+    "next_pass": "PASS-034",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
@@ -27,6 +27,7 @@
     "build:topic": "node scripts/build-topic.js",
     "build:world": "node scripts/build-world.js",
     "build:marketing": "node scripts/build-marketing.js",
+    "audit:audience": "npx tsx scripts/audit-audience-language.ts",
     "audit:worlds": "npx tsx packages/world-factory/cli/audit.ts",
     "audit:marketing": "npx tsx packages/marketing-factory/cli/audit.ts",
     "audit:depth": "npx tsx scripts/audit-world-depth.ts",

@@ -1,0 +1,16 @@
+{
+  "updated": "PASS-033",
+  "worlds": [
+    { "slug": "ai-builder", "status": "live", "audience": "student_safe", "marketing_folder": "marketing/worlds/ai-builder" },
+    { "slug": "financial-independence", "status": "live", "audience": "student_safe", "marketing_folder": "marketing/worlds/financial-independence" },
+    { "slug": "public-speaking", "status": "live", "audience": "student_safe", "marketing_folder": "marketing/worlds/public-speaking" },
+    { "slug": "civic-engagement", "status": "live", "audience": "student_safe", "marketing_folder": "marketing/worlds/civic-engagement" },
+    { "slug": "bourbon", "status": "live", "audience": "adult_21_plus", "marketing_folder": "marketing/worlds/bourbon" },
+    { "slug": "bbq", "status": "live", "audience": "teen_safe", "marketing_folder": "marketing/worlds/bbq" },
+    { "slug": "poker", "status": "live", "audience": "adult_18_plus", "marketing_folder": "marketing/worlds/poker" },
+    { "slug": "entrepreneur", "status": "incoming", "audience": "student_safe", "rank": 1 },
+    { "slug": "government-systems", "status": "incoming", "audience": "student_safe", "rank": 5 },
+    { "slug": "world-religion-history", "status": "incoming", "audience": "student_safe", "rank": 6 },
+    { "slug": "medical-cannabis-literacy", "status": "registry_only", "audience": "medical_only", "rank": 14 }
+  ]
+}

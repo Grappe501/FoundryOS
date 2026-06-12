@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { trackValidationEvent, getVisitorId } from '../../lib/validation-tracker';
-import { TIER_PRICING, type PaidTier } from '../../lib/billing';
+import { TIER_PRICING, HOUSEHOLD_PRICING, type PaidTier } from '../../lib/billing';
 
 const TIERS = [
   {
@@ -156,6 +156,31 @@ export function PricingTiers() {
           )}
         </article>
       ))}
+      <article
+        style={{
+          gridColumn: '1 / -1',
+          padding: 28,
+          background: '#0F0F12',
+          borderRadius: 8,
+          border: '1px solid #2A3A5A',
+        }}
+      >
+        <p style={{ color: '#6B9BD4', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+          {HOUSEHOLD_PRICING.label}
+        </p>
+        <p style={{ fontSize: 28, fontWeight: 300, margin: '12px 0 0', color: '#E8E8EC' }}>
+          ${HOUSEHOLD_PRICING.primary_monthly_usd}/mo + ${HOUSEHOLD_PRICING.additional_member_monthly_usd}/mo per member
+        </p>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{HOUSEHOLD_PRICING.description}</p>
+        <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 16, paddingLeft: 18, lineHeight: 1.8 }}>
+          {HOUSEHOLD_PRICING.rules.map((r) => (
+            <li key={r}>{r}</li>
+          ))}
+        </ul>
+        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 16 }}>
+          Household checkout coming soon — schema ready in Supabase.
+        </p>
+      </article>
     </div>
   );
 }

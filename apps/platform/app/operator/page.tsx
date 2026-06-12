@@ -250,7 +250,9 @@ export default async function MissionControlHome() {
           <Link href="/operator/business" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Founder Dashboard →</Link>
           <Link href="/operator/learning" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Learning Lane (PASS-030) →</Link>
           <Link href="/operator/marketing" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Marketing Factory (PASS-031) →</Link>
-          <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 14, fontWeight: 700 }}>Growth Flywheel (PASS-033) →</Link>
+          <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 14, fontWeight: 700 }}>Growth Flywheel →</Link>
+          <Link href="/operator/ai-brain" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 700 }}>AI Brain (PASS-033) →</Link>
+          <Link href="/search" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 600 }}>Global Search →</Link>
           <Link href="/operator/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Domain Expansion Scoring →</Link>
         </nav>
 

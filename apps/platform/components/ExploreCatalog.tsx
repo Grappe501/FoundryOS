@@ -7,7 +7,7 @@ import {
   EXPLORE_STATUS_COLORS,
   EXPLORE_STATUS_LABELS,
   getExplorePathHref,
-  getExploreSectionsWithPaths,
+  getExploreSectionsWithPathsForAudience,
   type ExploreCategoryFilter,
   type ExplorePath,
 } from '../lib/explore-catalog';
@@ -76,13 +76,17 @@ function PathRow({ path }: { path: ExplorePath }) {
 
 export function ExploreCatalog() {
   const [category, setCategory] = useState<ExploreCategoryFilter>('all');
+  const [studentSafeOnly, setStudentSafeOnly] = useState(false);
   const [openSections, setOpenSections] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(
       ['life-leverage', 'foundry-student', 'ai-technology', 'finance-wealth'].map((id) => [id, true])
     )
   );
 
-  const groups = useMemo(() => getExploreSectionsWithPaths(category), [category]);
+  const groups = useMemo(
+    () => getExploreSectionsWithPathsForAudience(category, studentSafeOnly ? 'student' : 'adult', studentSafeOnly),
+    [category, studentSafeOnly],
+  );
 
   function toggleSection(id: string) {
     setOpenSections((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -90,6 +94,14 @@ export function ExploreCatalog() {
 
   return (
     <div>
+      <label style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 20, color: '#8A8A8E', fontSize: 13 }}>
+        <input
+          type="checkbox"
+          checked={studentSafeOnly}
+          onChange={(e) => setStudentSafeOnly(e.target.checked)}
+        />
+        Student-safe paths only (hides alcohol, gambling, and adult-restricted worlds)
+      </label>
       <div
         style={{
           display: 'flex',

@@ -7,10 +7,10 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-032 World Immersion 🔄 |
-| **Next Pass** | PASS-034 First 25 Testers (after immersion gate) |
-| **Focus** | Depth before testers — 25 AI Builder missions · experiences · 30+ day engagement |
-| **Live proof** | [/bourbon](/bourbon) · [/bbq](/bbq) · [/poker](/poker) · [/civic-engagement](/civic-engagement) · Life Leverage worlds |
+| **Last Pass** | PASS-033 Age-Safe Governance ✅ |
+| **Next Pass** | PASS-034 Learning lane + live AI copilot |
+| **Focus** | Depth packs + student safety + global search/intelligence |
+| **Live proof** | [/explore](/explore) · [/search](/search) · 7 active worlds · governance registry |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -24,7 +24,22 @@
 
 ---
 
-## PASS-017 — AI Builder World ✅
+## PASS-033 — Age-Safe Governance + Global Intelligence ✅
+
+| Deliverable | Location |
+|-------------|----------|
+| World audience registry | `apps/platform/lib/world-governance/` |
+| Student-safe explore filter | `/explore` |
+| Audience audit | `npm run audit:audience` |
+| AI orchestration | `@foundry/ai-orchestration`, `/operator/ai-brain` |
+| Global search | `@foundry/search-engine`, `/search` |
+| Recommendation engine | `@foundry/recommendation-engine` |
+| Encyclopedia routes | `/[world]/encyclopedia` |
+| Household schema | `user_households` migration |
+| Steve docs | `START_HERE_FOR_STEVE.md`, `docs/CURRENT_BUILD_STATUS.md` |
+| Depth blueprints | `docs/world-depth/*.md` |
+
+---
 
 | Deliverable | Route |
 |-------------|-------|

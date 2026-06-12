@@ -7,6 +7,7 @@ import {
   LEARNING_LANE_WORLDS,
 } from '../../../lib/pass-030-learning';
 import { getMissionCount } from '../../../lib/immersion/registry';
+import { WorldAssignmentGuard } from '../../../components/world-governance/WorldAssignmentGuard';
 
 export const dynamic = 'force-dynamic';
 
@@ -83,6 +84,16 @@ export default async function OperatorLearningPage() {
               <span style={{ color: '#6B6B70' }}> — {w.priority}</span>
             </p>
           ))}
+        </div>
+      </section>
+
+      <section style={{ marginTop: 28, padding: 20, background: '#111114', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: '#B06B6B', margin: 0 }}>Age-safe assignment (PASS-033)</h2>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Operators must not assign adult worlds to student accounts.</p>
+        <div style={{ marginTop: 16, display: 'grid', gap: 12 }}>
+          <WorldAssignmentGuard worldSlug="ai-builder" targetSegment="student" />
+          <WorldAssignmentGuard worldSlug="bourbon" targetSegment="student" />
+          <WorldAssignmentGuard worldSlug="medical-cannabis-literacy" targetSegment="teen" />
         </div>
       </section>
 

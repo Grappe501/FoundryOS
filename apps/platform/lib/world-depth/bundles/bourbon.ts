@@ -2,6 +2,7 @@
 
 import { buildAcademyLessons } from '../build-academy';
 import { buildGlossary } from '../build-glossary';
+import { BOURBON_LEVEL_1_LESSONS } from '../bourbon-academy-level-1';
 import type { WorldDepthBundle } from '../types';
 import { BOURBON_ACADEMY_LEVELS } from '../../bourbon-world';
 
@@ -23,13 +24,22 @@ const academyLevels = BOURBON_ACADEMY_LEVELS.map((l) => ({
               : undefined,
 }));
 
+const levelsTwoThroughSeven = academyLevels.filter((l) => l.level > 1);
+const templatedUpperLessons = buildAcademyLessons(levelsTwoThroughSeven, 'Bourbon');
+
 export const BOURBON_DEPTH: WorldDepthBundle = {
   slug: 'bourbon',
   displayName: 'Bourbon World',
   accentColor: '#C8A96E',
   portfolioLabel: 'My Bourbon Journal',
 
-  academyLessons: buildAcademyLessons(academyLevels, 'Bourbon'),
+  academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...templatedUpperLessons],
+
+  academyLevelMeta: BOURBON_ACADEMY_LEVELS.map((l) => ({
+    level: l.level,
+    title: l.title,
+    tagline: l.tagline,
+  })),
 
   glossary: buildGlossary([
     ['Mash bill', 'The grain recipe used to make whiskey — corn must be at least 51% for bourbon.', 'Flavor profile starts here; high rye tastes spicier, wheated tastes softer.', 'Buffalo Trace uses a low-rye mash bill; Four Roses uses multiple recipes.', ['High-rye bourbon', 'Wheated bourbon']],

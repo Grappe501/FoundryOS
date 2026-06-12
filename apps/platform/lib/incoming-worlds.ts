@@ -33,10 +33,43 @@ export type IncomingWorld = {
   live_href?: string | null;
 };
 
+/** Medical cannabis — registry only (PASS-033). No consumer routes until governance review. */
+export const MEDICAL_CANNABIS_PATHS = [
+  'Medical Cannabis Basics',
+  'History and Legal Context',
+  'Cannabinoids and Terpenes',
+  'Delivery Methods',
+  'Safety and Responsible Use',
+  'Medical Research Literacy',
+  'Patient/Caregiver Navigation',
+  'Regulatory and Compliance Basics',
+  'Industry Careers',
+  'Policy and Public Health',
+] as const;
+
+export const MEDICAL_CANNABIS_DISCLAIMERS = [
+  'Educational only',
+  'Not medical advice',
+  'Follow local law',
+  'Consult qualified professionals',
+] as const;
+
 /** Single source of truth — sync explore catalog + flywheel candidates from here */
 export const INCOMING_WORLDS: IncomingWorld[] = [
   {
     rank: 1,
+    slug: 'entrepreneur',
+    name: 'Entrepreneur / Business Builder',
+    frame: 'Build and Run a Real Business',
+    tier: 'Life Leverage',
+    status: 'queued',
+    outcome: 'Launch and operate a real business',
+    score: 92,
+    acquisition_avenues: ['seo', 'parent', 'youtube', 'school', 'newsletter'],
+    note: 'Top-5 Life Leverage — student-safe business education: validation, pricing, ledgers, ops',
+  },
+  {
+    rank: 2,
     slug: 'career-change',
     name: 'Career Change',
     frame: 'Navigate Transitions',
@@ -48,7 +81,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Parents and adult learners buy outcomes — high conversion wedge',
   },
   {
-    rank: 2,
+    rank: 3,
     slug: 'master-gardener',
     name: 'Master Gardener',
     frame: 'Steward the Land',
@@ -60,7 +93,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Seasonal projects + local chapters — strong retention',
   },
   {
-    rank: 3,
+    rank: 4,
     slug: 'grassroots-nonprofit',
     name: 'Grassroots & Nonprofits',
     frame: 'Organize for Change',
@@ -73,7 +106,31 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
       '501(c)(3) vs 501(c)(4) vs fiscal sponsor education + grassroots campaign ops — pairs Civic Engagement; high community entry',
   },
   {
-    rank: 4,
+    rank: 5,
+    slug: 'government-systems',
+    name: 'Government Systems',
+    frame: 'Understand Power, Rules, and Public Decisions',
+    tier: 'Civic',
+    status: 'queued',
+    outcome: 'Navigate how government actually works',
+    score: 83,
+    acquisition_avenues: ['school', 'seo', 'educator', 'newsletter'],
+    note: 'Nonpartisan civic education — federalism, agencies, rulemaking, local government',
+  },
+  {
+    rank: 6,
+    slug: 'world-religion-history',
+    name: 'World Religion History',
+    frame: 'Study Beliefs, Texts, and Movements',
+    tier: 'Academic',
+    status: 'queued',
+    outcome: 'Understand world religions with neutral academic tone',
+    score: 82,
+    acquisition_avenues: ['school', 'seo', 'educator', 'parent'],
+    note: 'Comparative religion — no apologetics, no anti-religious framing; student-safe',
+  },
+  {
+    rank: 7,
     slug: 'homesteading',
     name: 'Homesteading',
     frame: 'Build Self-Reliance',
@@ -85,7 +142,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Project-heavy, community-native — retention champion',
   },
   {
-    rank: 5,
+    rank: 8,
     slug: 'campaign-management',
     name: 'Campaign Management',
     frame: 'Win Elections',
@@ -97,7 +154,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Election-cycle wedge — subset of Grassroots & Nonprofits path',
   },
   {
-    rank: 6,
+    rank: 9,
     slug: 'computer-science',
     name: 'Computer Science',
     frame: 'Build Systems',
@@ -109,7 +166,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Student pathway — pairs with AI Builder',
   },
   {
-    rank: 7,
+    rank: 10,
     slug: 'soccer',
     name: 'Soccer',
     frame: 'Read the Game',
@@ -121,7 +178,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Youth coaches + fantasy analysts — tournament and club entry',
   },
   {
-    rank: 8,
+    rank: 11,
     slug: 'books',
     name: 'Books',
     frame: 'Curate & Discuss',
@@ -133,7 +190,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Salon culture — book clubs as acquisition loop',
   },
   {
-    rank: 9,
+    rank: 12,
     slug: 'chess',
     name: 'Chess',
     frame: 'Think Deeply',
@@ -146,7 +203,31 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     live_href: '/chess',
   },
   {
-    rank: 10,
+    rank: 13,
+    slug: 'astrology',
+    name: 'Astrology',
+    frame: 'Understand Astrology as Symbol, Culture, and Practice',
+    tier: 'Passion',
+    status: 'idea',
+    outcome: 'Read charts as cultural symbol — not deterministic prediction',
+    score: 66,
+    acquisition_avenues: ['seo', 'tiktok', 'youtube', 'community'],
+    note: 'Teen/adult — cultural and historical tone; skepticism track included',
+  },
+  {
+    rank: 14,
+    slug: 'medical-cannabis-literacy',
+    name: 'Medical Cannabis Literacy',
+    frame: 'Understand Medical Cannabis',
+    tier: 'Academic',
+    status: 'queued',
+    outcome: 'Cannabis Steward / Medical Cannabis Specialist (internal title)',
+    score: 60,
+    acquisition_avenues: ['seo', 'newsletter'],
+    note: 'Registry only — medical_only, never minors. Steward title internal; public: Cannabis Literacy Path',
+  },
+  {
+    rank: 15,
     slug: 'movies',
     name: 'Movies',
     frame: 'Watch with Intention',
@@ -158,7 +239,7 @@ export const INCOMING_WORLDS: IncomingWorld[] = [
     note: 'Watch parties and director deep-dives — community-led',
   },
   {
-    rank: 11,
+    rank: 16,
     slug: 'physics',
     name: 'Physics',
     frame: 'Understand Reality',

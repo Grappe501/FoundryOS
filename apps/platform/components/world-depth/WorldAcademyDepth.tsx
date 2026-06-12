@@ -17,6 +17,8 @@ export function WorldAcademyDepth({ bundle, basePath }: Props) {
       </p>
       {levels.map((levelNum) => {
         const lessons = bundle.academyLessons.filter((l) => l.level === levelNum);
+        const levelMeta = bundle.academyLevelMeta?.find((l) => l.level === levelNum);
+        const isAuthoredLevel = lessons.some((l) => l.sections?.length);
         return (
           <article
             key={levelNum}
@@ -29,23 +31,56 @@ export function WorldAcademyDepth({ bundle, basePath }: Props) {
             }}
           >
             <p style={{ color: bundle.accentColor, fontSize: 11, margin: 0 }}>Level {levelNum}</p>
-            {lessons.map((lesson) => (
-              <div key={lesson.slug} style={{ marginTop: levelNum === 1 && lesson === lessons[0] ? 12 : 20 }}>
-                <h2 style={{ fontSize: 16, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>{lesson.title}</h2>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{lesson.description}</p>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
-                  <strong style={{ color: bundle.accentColor, fontWeight: 400 }}>You will:</strong> {lesson.outcome}
-                </p>
-                {lesson.recommendedMission && (
-                  <Link
-                    href={`${basePath}/missions/${lesson.recommendedMission}`}
-                    style={{ display: 'inline-block', marginTop: 12, color: bundle.accentColor, fontSize: 13 }}
-                  >
-                    Recommended mission →
-                  </Link>
-                )}
-              </div>
-            ))}
+            {levelMeta && (
+              <p style={{ color: '#E8E8EC', fontSize: 18, fontWeight: 300, margin: '8px 0 0' }}>{levelMeta.title}</p>
+            )}
+            {levelMeta && (
+              <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>{levelMeta.tagline}</p>
+            )}
+            {isAuthoredLevel && (
+              <p style={{ color: bundle.accentColor, fontSize: 12, marginTop: 12 }}>
+                Full curriculum available — start with Lesson 1
+              </p>
+            )}
+            {lessons.map((lesson) => {
+              const hasFullLesson = Boolean(lesson.sections?.length);
+              return (
+                <div key={lesson.slug} style={{ marginTop: 20 }}>
+                  <h2 style={{ fontSize: 16, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>
+                    {hasFullLesson ? (
+                      <Link href={`${basePath}/academy/${lesson.slug}`} style={{ color: '#E8E8EC', textDecoration: 'none' }}>
+                        {lesson.title}
+                      </Link>
+                    ) : (
+                      lesson.title
+                    )}
+                  </h2>
+                  <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{lesson.description}</p>
+                  <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+                    <strong style={{ color: bundle.accentColor, fontWeight: 400 }}>You will:</strong> {lesson.outcome}
+                  </p>
+                  {lesson.estimatedMinutes && (
+                    <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 6 }}>~{lesson.estimatedMinutes} min</p>
+                  )}
+                  {hasFullLesson && (
+                    <Link
+                      href={`${basePath}/academy/${lesson.slug}`}
+                      style={{ display: 'inline-block', marginTop: 10, color: bundle.accentColor, fontSize: 13 }}
+                    >
+                      Read lesson →
+                    </Link>
+                  )}
+                  {lesson.recommendedMission && (
+                    <Link
+                      href={`${basePath}/missions/${lesson.recommendedMission}`}
+                      style={{ display: 'inline-block', marginTop: 10, marginLeft: hasFullLesson ? 16 : 0, color: '#6B6B70', fontSize: 13 }}
+                    >
+                      Mission →
+                    </Link>
+                  )}
+                </div>
+              );
+            })}
           </article>
         );
       })}

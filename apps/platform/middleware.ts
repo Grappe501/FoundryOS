@@ -16,6 +16,7 @@ const CONSUMER_PREFIXES = [
   '/account',
   '/beta',
   '/pricing',
+  '/search',
   '/auth',
   '/api',
   ...FACTORY_CONSUMER_ROUTES,
@@ -50,7 +51,12 @@ export function middleware(request: NextRequest) {
       pathname.startsWith('/operator/analytics') ||
       pathname.startsWith('/operator/feedback') ||
       pathname.startsWith('/operator/revenue') ||
-      pathname.startsWith('/operator/business')
+      pathname.startsWith('/operator/business') ||
+      pathname.startsWith('/operator/ai-brain') ||
+      pathname.startsWith('/operator/marketing') ||
+      pathname.startsWith('/operator/flywheel') ||
+      pathname.startsWith('/operator/opportunities') ||
+      pathname.startsWith('/operator/learning')
     ) {
       return NextResponse.next();
     }

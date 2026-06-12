@@ -11,7 +11,7 @@
       "status": "active",
       "trinity": "passion",
       "automation_pct": 25,
-      "consumer_live": false
+      "consumer_live": true
     },
     {
       "slug": "ai-builder",
@@ -51,24 +51,49 @@
       "consumer_live": true
     },
     {
+      "slug": "civic-engagement",
+      "display_name": "Civic Engagement",
+      "blueprint_started_at": "2026-06-11",
+      "launched_at": "2026-06-11",
+      "active_at": "2026-06-11",
+      "status": "active",
+      "trinity": "life-leverage",
+      "automation_pct": 100,
+      "consumer_live": true
+    },
+    {
       "slug": "bbq",
       "display_name": "BBQ",
       "blueprint_started_at": "2026-06-11",
-      "status": "foundation",
+      "launched_at": "2026-06-11",
+      "active_at": "2026-06-11",
+      "status": "active",
       "trinity": "passion",
-      "automation_pct": 20,
-      "consumer_live": false
+      "automation_pct": 100,
+      "consumer_live": true
     },
     {
       "slug": "poker",
       "display_name": "Poker",
       "blueprint_started_at": "2026-06-11",
-      "status": "foundation",
+      "launched_at": "2026-06-11",
+      "active_at": "2026-06-11",
+      "status": "active",
       "trinity": "passion",
-      "automation_pct": 20,
-      "consumer_live": false
+      "automation_pct": 100,
+      "consumer_live": true
+    },
+    {
+      "slug": "entrepreneur",
+      "display_name": "Entrepreneur / Business Builder",
+      "blueprint_started_at": null,
+      "launched_at": null,
+      "active_at": null,
+      "days_blueprint_to_launch": null,
+      "days_launch_to_active": null,
+      "status": "planned"
     }
   ],
   "bourbon_proof_started_at": "2026-06-11",
-  "last_updated_pass": "PASS-021"
+  "last_updated_pass": "PASS-033"
 }

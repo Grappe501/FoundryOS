@@ -1,10 +1,13 @@
 # FoundryOS
 
-**AI Operating System — Vertical Domains + Thousands of Topics**
+**Human Potential Infrastructure — Vertical Worlds + Transformation Graph**
 
-> One platform. Vertical domains (books.foundryos.com). Topics as pages. SEO + Knowledge Graph built in.
+> Help people become who they are capable of becoming.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Grappe501%2FFoundryOS-blue)](https://github.com/Grappe501/FoundryOS)
+[![GitHub](https://img.shields.io/badge/GitHub-Grappe501%2FFoundryOS-blue)](https://github.com/Grappe501/FoundryOS)  
+**Live:** https://foundry-os.netlify.app/
+
+**Steve:** start with [START_HERE_FOR_STEVE.md](START_HERE_FOR_STEVE.md)
 
 ---
 
@@ -55,6 +58,9 @@ cd H:\FoundryOS
 
 | Doc | Description |
 |-----|-------------|
+| [START_HERE_FOR_STEVE.md](START_HERE_FOR_STEVE.md) | **Steve's entry point** |
+| [CURRENT_BUILD_STATUS.md](docs/CURRENT_BUILD_STATUS.md) | What exists now (PASS-033) |
+| [WORLD_REGISTRY.md](docs/WORLD_REGISTRY.md) | Worlds + audience classifications |
 | [BASELINE.md](docs/BASELINE.md) | Project baseline and pass log |
 | [MASTER_BUILD_PLAN.md](docs/MASTER_BUILD_PLAN.md) | How we build 1000 apps |
 | [APP_CATALOG_250.md](docs/APP_CATALOG_250.md) | First 250 app targets |

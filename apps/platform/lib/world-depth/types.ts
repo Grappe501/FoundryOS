@@ -1,5 +1,16 @@
 /** PASS-025 — World depth content types */
 
+export type AcademyLessonSection = {
+  heading: string;
+  body: string;
+};
+
+export type AcademyTryThis = {
+  title: string;
+  steps: string[];
+  whatToNotice: string;
+};
+
 export type AcademyLesson = {
   level: number;
   slug: string;
@@ -7,6 +18,15 @@ export type AcademyLesson = {
   description: string;
   outcome: string;
   recommendedMission?: string;
+  estimatedMinutes?: number;
+  /** Full lesson body — present on authored lessons (e.g. Bourbon Level 1) */
+  summary?: string;
+  sections?: AcademyLessonSection[];
+  tryThis?: AcademyTryThis;
+  historyNote?: AcademyLessonSection;
+  flavorWords?: string[];
+  glossaryTerms?: string[];
+  checkpoint?: boolean;
 };
 
 export type DeepGlossaryTerm = {
@@ -44,12 +64,19 @@ export type SeoGuide = {
   sections: { heading: string; body: string }[];
 };
 
+export type AcademyLevelMeta = {
+  level: number;
+  title: string;
+  tagline: string;
+};
+
 export type WorldDepthBundle = {
   slug: string;
   displayName: string;
   accentColor: string;
   portfolioLabel: string;
   academyLessons: AcademyLesson[];
+  academyLevelMeta?: AcademyLevelMeta[];
   glossary: DeepGlossaryTerm[];
   community: CommunityDepth;
   parent: ParentDepth;

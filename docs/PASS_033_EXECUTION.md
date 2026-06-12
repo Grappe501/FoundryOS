@@ -1,34 +1,58 @@
-# PASS-033 — Growth Flywheel Engine
+# PASS-033 — Age-Safe World Governance + Definitive Depth Systems
 
-> Connect four factories. Learn faster than competitors build. (Built before PASS-032 immersion priority shift.)
+## Objective
 
-## The four factories
+Production-serious age governance, global search, AI orchestration foundation, household pricing readiness, and Steve-facing build documentation.
 
-```txt
-World Factory · Marketing Factory · Learning Engine · Revenue Engine
-```
+## Delivered
 
-## Flywheel loop
+### Part 1 — World audience registry
+- `apps/platform/lib/world-governance/world-audience.ts`
+- `access.ts` — segment guards, assignment warnings
+- Explore catalog student-safe filter
+- `WorldAssignmentGuard` component
 
-```txt
-traffic → users → missions → community → revenue → insights → better marketing
-```
+### Part 2 — Audience audit
+- `npm run audit:audience`
+- `docs/AUDIENCE_LANGUAGE_AUDIT.md`
+- `data/audits/audience-language-audit.json`
 
-## Four connected systems
+### Parts 3–7 — Incoming worlds
+- Entrepreneur (#1 Life Leverage)
+- Government Systems, World Religion History, Astrology, Medical Cannabis (registry only)
 
-| System | Loop | Route |
-|--------|------|-------|
-| 1 | Insight → Marketing | `/operator/marketing` |
-| 2 | Marketing → World | `/operator/flywheel` |
-| 3 | Revenue → Product | `/operator/flywheel` |
-| 4 | Domain expansion scoring | `/operator/opportunities` |
+### Part 8 — AI orchestration
+- `@foundry/ai-orchestration`
+- `/operator/ai-brain`
+- `WorldCopilotPanel.tsx`
 
-## Package
+### Part 9 — Search + encyclopedia
+- `@foundry/search-engine`
+- `/search`
+- `/[world]/encyclopedia` + `/[world]/encyclopedia/[term]`
 
-`@foundry/db` — `getGrowthFlywheelSnapshot()`
+### Part 10 — Recommendations
+- `@foundry/recommendation-engine`
+- Wired in encyclopedia term pages + copilot
 
-## Pass sequence
+### Part 11 — Household pricing
+- `HOUSEHOLD_PRICING` in billing
+- Pricing page copy
+- `user_households` migration
 
-Runs after immersion data exists (PASS-034 testers feed the flywheel).
+### Parts 12–13 — Documentation
+- `START_HERE_FOR_STEVE.md`
+- `docs/CURRENT_BUILD_STATUS.md`, `WORLD_REGISTRY.md`, etc.
+- `docs/world-depth/*.md` (7 worlds)
 
-See also `docs/PASS_032_EXECUTION.md` (immersion before testers).
+## Architecture Impact
+
+**Reusable System Added:** World audience registry + search/recommendation/AI orchestration packages  
+**Benefits:** Every world inherits age-safe guards, unified discovery, cross-world progression  
+**Affected Launches:** All student pathways, adult passion worlds, incoming depth packs
+
+## Pass gate
+
+> Can Foundry observe, support, measure, and remember the transformation **safely** for each audience segment?
+
+Yes — governance registry is single source of truth for assignment, explore, search, and copilot.
