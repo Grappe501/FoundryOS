@@ -211,6 +211,7 @@ export default async function MissionControlHome() {
         </div>
 
         <nav style={{ marginTop: 32, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+          <Link href="/operator/ai-context" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Atlas-Aware AI Context (PASS-040C) →</Link>
           <Link href="/operator/passes" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Build Journal →</Link>
           <Link href="/operator/investors" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Investors →</Link>
           <Link href="/operator/verticals" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Vertical Domains →</Link>

@@ -4,7 +4,8 @@
 
 Depends on: **040B Atlas Graph Engine** + **040D Portable Identity** + **040D.5 compound sync**
 
-**Blocked until 040D.5.** Atlas-Aware AI that only sees localStorage is dramatically weaker than AI that sees artifacts, collections, memory, graph traversal, unfinished threads, and identity narrative **across devices**.
+**Status:** ✅ deployed (PASS-040C)  
+**Depends on:** 040B + 040D + 040D.5 ✅
 
 See `docs/KNOWLEDGE_GRAPH.md` · `docs/PORTABLE_IDENTITY.md`
 

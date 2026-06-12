@@ -14,6 +14,7 @@ import {
 } from '../../lib/bourbon-graph';
 import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
 import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
+import { AskTheAtlasPanel } from './AskTheAtlasPanel';
 import { recordGraphView, recordSavedRabbitHole } from '../../lib/world-memory/memory-store';
 
 const ACCENT = 'var(--foundry-primary)';
@@ -79,6 +80,8 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
         <Stat label="Collections" value={collections.length} />
         <Stat label="Mysteries" value={mysteries.length} />
       </div>
+
+      <AskTheAtlasPanel slug={slug} graphTitle={graph.title} />
 
       <section style={{ marginTop: 28, padding: 20, background: '#0F1018', borderRadius: 10, border: `1px solid ${ACCENT}33` }}>
         <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Why this matters · click to wander</p>

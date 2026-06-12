@@ -346,6 +346,14 @@ export const PASSES: PassEntry[] = [
     summary:
       '@foundry/identity-sync-engine · propagateIdentityEvent · artifact→collection→narrative→memory→welcome-back→passport. npm run verify:040d5.',
   },
+  {
+    code: 'PASS-040C',
+    title: 'Atlas-Aware AI',
+    status: 'completed' as const,
+    date: '2026-06-10',
+    summary:
+      '@foundry/atlas-aware-ai · buildAtlasContext · portable identity context · Ask the Atlas panel · /operator/ai-context debugger. npm run verify:040c.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -471,10 +479,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-040D.5',
-    next_pass: 'PASS-040C',
+    last_pass: 'PASS-040C',
+    next_pass: 'PASS-040E',
     current_focus:
-      'PASS-040C Atlas-Aware AI — reads Portable Identity (artifacts, collections, memory, curiosity). Real memory before a brain.',
+      'PASS-040E Review Engine — social proof on graph nodes. Atlas-Aware AI reads Portable Identity across devices.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

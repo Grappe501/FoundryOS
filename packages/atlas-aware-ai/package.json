@@ -1,0 +1,20 @@
+{
+  "name": "@foundry/atlas-aware-ai",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-040C — Atlas-Aware AI (Foundry universe first)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/atlas-graph-engine": "*",
+    "@foundry/artifact-engine": "*",
+    "@foundry/identity-narrative-engine": "*",
+    "@foundry/personal-database": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

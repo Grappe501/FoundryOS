@@ -28,8 +28,8 @@ Graph exists. Memory exists. **Next: make both durable across devices.**
 | PASS-040B3 | Graph Enrichment + Inline Atlas Links | ✅ deployed |
 | **PASS-034P+** | **World Continuity Expansion** | **✅ deployed** |
 | **PASS-040D** | **Personal Database Persistence** | **✅ v1 deployed** |
-| **PASS-040D.5** | **Identity Sync Compound Loop** | **✅ deployed** |
-| PASS-040C | Atlas-Aware AI | **← NEXT** |
+| **PASS-040C** | **Atlas-Aware AI** | **✅ deployed** |
+| PASS-040E | Review Engine | **← NEXT** |
 | PASS-040E | Review Engine | queued |
 | PASS-040F | Recommendation Engine | queued |
 | PASS-040G | Passport | queued |
