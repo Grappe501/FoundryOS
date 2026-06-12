@@ -16,11 +16,12 @@ Five layers: **Explore → Practice → Identity → Influence → Legacy**
 | PASS-040A | Artifact Engine | ✅ deployed |
 | PASS-040A2 | Artifact flywheel | ✅ deployed |
 | PASS-040B1 | Bourbon Intelligence Inventory | ✅ deployed |
-| **PASS-040B2** | **Bourbon Graph Expansion (hallways)** | **✅ current / deploying** |
-| PASS-034P+ | World Continuity Expansion | next |
-| PASS-040C | Atlas-Aware AI | queued |
+| **PASS-040B2** | **Bourbon Graph Expansion (hallways)** | **✅ deployed** |
+| **PASS-040B3** | **Graph Enrichment + Inline Atlas Links** | **✅ deployed** |
+| PASS-034P+ | World Continuity Expansion | **← NEXT** |
+| PASS-040C | Atlas-Aware AI | **blocked until 040B3** |
 | PASS-040D | Personal Database Persistence | queued |
-| PASS-041W | Weekly engagement push | planned — `docs/WEEKLY_ENGAGEMENT_PUSH.md` |
+| PASS-041W | Weekly engagement push | **after 040D only** |
 
 ## What Foundry Is Validating
 
@@ -56,7 +57,7 @@ Identity signals ✅  Collections · Consequence · Narrative · Continuity
 Identity infra   🟡  Artifacts ✅ · Personal DB · Passport (040D–G)
 Influence        ❌  Review · Recommend (040E–F)
 Legacy           ❌  Full archive (040H)
-Engagement       📋  Weekly push (041W — schedule stub in repo)
+Engagement       📋  Weekly push (041W — **after 040D persistence**)
 ```
 
 **034P closes the reactive loop.** **040A–F** closes the ecosystem factory.
@@ -78,14 +79,15 @@ Platform primitives. Every world inherits. **Build these before broad tester coh
 034U  Universe Command Center     ✅ deployed
 040A  Artifact Engine             ✅ deployed
 040B1 Bourbon Intelligence        ✅ deployed
-040B2 Bourbon Graph Hallways      ✅ current
-034P+ World Memory Expansion      ← next
-040C  Atlas-Aware AI Layer
+040B2 Bourbon Graph Hallways        ✅ deployed
+040B3 Graph Enrichment + Links     ← NEXT
+034P+ World Memory Expansion
+040C  Atlas-Aware AI Layer          ← after B3
 040D  Personal Database Engine
 040E  Review Engine
 040F  Recommendation Engine
 040G  Passport
-041W  Weekly Engagement Push      ← random day/time per week
+041W  Weekly Engagement Push        ← after 040D
 ```
 
 Then: Group · Host · Legacy · Reputation v2 · Mentor Marketplace
@@ -137,5 +139,6 @@ See `apps/platform/lib/incoming-worlds.ts`.
 - `docs/PASS_040A_ARTIFACT_ENGINE.md`
 - `docs/PASS_040B_ATLAS_GRAPH_ENGINE.md`
 - `docs/PASS_040B2_BOURBON_GRAPH_EXPANSION.md`
+- `docs/PASS_040B3_GRAPH_ENRICHMENT.md`
 - `docs/WEEKLY_ENGAGEMENT_PUSH.md`
 - `docs/PASS_034U_UNIVERSE_COMMAND_CENTER.md`

@@ -1,67 +1,50 @@
-# Current Build Status (PASS-040B2)
+# Current Build Status (PASS-040B3 deployed)
 
 **Date:** June 2026  
 **Live URL:** https://foundry-os.netlify.app/
 
-## Product lock
+## Experience lock
 
-Foundry is an **Operating System For Human Interests** — not a course platform.
+```txt
+NOT:  Read this bottle page.
+YES:  Enter this bottle and wander.
+```
 
-**Layer 1 = Explore:** Atlas · Lore · Missions · Tools · Experiences · Today · Investigations · Comparisons · Glossary · Entity pages · Search · Rabbit holes.
-
-Academy is **one feature** inside Explore, not the product center.
+**040B3** saturates graph, bottle, and Atlas pages with inline entity links + four wander footer blocks on every graph route.
 
 ## Platform snapshot
 
 | Metric | Value |
 |--------|-------|
-| Current pass | **PASS-040B2** Bourbon Graph Expansion |
-| Inventory bottles | 20 (all with graph output) |
-| BiB exemplar edges | 25+ |
-| Avg bottle graph edges | ~20 |
-| Weekly push engine | Planned — PASS-041W (`docs/WEEKLY_ENGAGEMENT_PUSH.md`) |
+| Last pass | **PASS-040B3** Graph Enrichment ✅ |
+| **Next pass** | **PASS-034P+** World Continuity Expansion |
+| Avg inline links / bottle narrative | ~5 |
+| BiB wander footer items | 10+ |
+| Weekly push | Blocked until **040D** persistence |
 
-## Layer 1 Bourbon proof routes
+## Verify routes
 
-| Route | Purpose |
-|-------|---------|
-| `/bourbon/bottles/wild-turkey-101` | Bottle page + graph hallway panel |
-| `/bourbon/graph/wild-turkey-101` | Universal graph explorer |
-| `/bourbon/graph/bottled-in-bond` | BiB weekend rabbit-hole hub |
-| `/operator/atlas/graph` | Graph health + weak-node queue |
-| `/operator/bourbon/inventory` | Intelligence inventory (040B1) |
-| `/operator/universe` | Universe command center (034U) |
+| Route | 040B3 behavior |
+|-------|----------------|
+| `/bourbon/graph/bottled-in-bond` | Inline links + 4 wander blocks |
+| `/bourbon/graph/wild-turkey-101` | Clickable narrative + compare footer |
+| `/bourbon/bottles/wild-turkey-101` | Linked intro + graph hallway |
+| `/bourbon/atlas/bottled-in-bond` | Linked paragraphs + graph hub + bottles |
 
 ## Audits
 
 ```powershell
-npm run audit:bourbon-intelligence
+npm run audit:graph-enrichment
 npm run audit:graph
-npm run audit:universe
-npm run audit:artifacts
-npm run audit:weekly-engagement
+npm run audit:bourbon-intelligence
 ```
 
-## Next passes (locked)
+## Locked sequence
 
 ```txt
-034P+  World Continuity Expansion
-040C   Atlas-Aware AI
+034P+  World Continuity Expansion      ← NEXT
+040C   Atlas-Aware AI                   ← NOT until B3 density proven
 040D   Personal Database Persistence
-040E   Review Engine
-040F   Recommendation Engine
-041W   Weekly engagement push (random day/time per week)
+040E/F Review + Recommend
+041W   Weekly push                      ← after 040D
 ```
-
-**Do not jump to broad beta** until graph + artifacts + identity infrastructure feel alive.
-
-## Engines & packages (040 stack)
-
-| Package | Purpose |
-|---------|---------|
-| `@foundry/bourbon-intelligence` | Source-attributed inventory (040B1) |
-| `@foundry/atlas-graph-engine` | Graph nodes + BiB exemplar (040B) |
-| `@foundry/artifact-engine` | User evidence atoms (040A) |
-| `@foundry/weekly-engagement-engine` | Weekly push schedule stub (041W plan) |
-
-See `docs/BUILD_LOG.md` for full pass history.

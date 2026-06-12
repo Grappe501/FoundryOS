@@ -7,11 +7,30 @@
 | Field | Value |
 |-------|-------|
 | **Version** | `0.9.6-bourbon-graph` |
-| **Last Pass** | PASS-040B2 Bourbon Graph Expansion ✅ |
-| **Next Pass** | PASS-040C Atlas-Aware AI · 034P+ World Continuity |
-| **Focus** | Layer 1 = Explore — Atlas/Graph hallways, not academy volume |
+| **Last Pass** | PASS-040B3 Graph Enrichment + Inline Atlas Links ✅ |
+| **Next Pass** | PASS-034P+ World Continuity Expansion |
+| **Focus** | Enter and wander — inline links inside every paragraph |
 | **Live proof** | `/bourbon/graph/bottled-in-bond` · `/operator/atlas/graph` · `npm run audit:graph` |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
+
+---
+
+## PASS-040B3 — Graph Enrichment + Inline Atlas Links ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | 040B2 built hallways — B3 opens doors inside paragraphs |
+| **Principle** | Saturated inline links · four wander footer blocks · graph-first hrefs |
+| **Audit** | `npm run audit:graph-enrichment` |
+
+| Deliverable | Location |
+|-------------|----------|
+| InlineAtlasLink + LinkedParagraph | `apps/platform/components/bourbon/` |
+| GraphWanderFooter (4 blocks) | Continue wandering · Related rabbit holes · People also compare · What this unlocks |
+| inline-links registry | `apps/platform/lib/bourbon-graph/inline-links.ts` |
+| Graph + bottle + atlas integration | BourbonGraphExplorer · BourbonGraphHallway · atlas `[term]` · bottle pages |
+
+**Next:** 034P+ World Continuity · 040C blocked until graph density proven on Bourbon
 
 ---
 
@@ -33,9 +52,17 @@
 | Operator weak-node queue | `/operator/atlas/graph` |
 | Weekly push plan (not deployed) | `docs/WEEKLY_ENGAGEMENT_PUSH.md` · `@foundry/weekly-engagement-engine` |
 
-**Next:** 040C Atlas-Aware AI · 040D persistence · 041W weekly push delivery
+**Next:** PASS-040B3 inline link saturation · then 034P+ · 040C blocked until B3 proves wander density
 
-### Visual pass marker (temporary)
+### Why 040B3 before 040C
+
+```txt
+040B2  Read this bottle page     → hallways exist
+040B3  Enter this bottle/wander  → doors inside paragraphs
+040C   AI reasons over graph     → only after graph is dense enough to reason about
+```
+
+---
 
 Primary brand color switched to **blue** (`#4A90D9` via `--foundry-primary` in `globals.css`) so deploys are obvious. Revert to bourbon gold `#C8A96E` next round.
 

@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import { groupConnections, type EntityGraphView, type GraphConfidence } from '@foundry/atlas-graph-engine';
 import { SECTION_INTROS } from '../../lib/bourbon-graph/edge-copy';
+import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
+import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
+import { LinkedParagraph } from './LinkedParagraph';
 
 const ACCENT = 'var(--foundry-primary)';
 
@@ -34,10 +37,14 @@ function ConfidenceBadge({ confidence }: { confidence?: GraphConfidence }) {
   );
 }
 
-function EdgeLink({ c }: { c: EntityGraphView['connections'][0] }) {
+function EdgeLink({ c, linkifyTeasers }: { c: EntityGraphView['connections'][0]; linkifyTeasers?: boolean }) {
   return (
     <Link
-      href={c.href}
+      href={
+        c.entity_type === 'bottle' && !c.href.includes('compare')
+          ? `/bourbon/graph/${c.slug}`
+          : c.href
+      }
       style={{
         display: 'block',
         padding: '12px 14px',
@@ -51,7 +58,13 @@ function EdgeLink({ c }: { c: EntityGraphView['connections'][0] }) {
         {c.title}
         <ConfidenceBadge confidence={c.confidence} />
       </p>
-      <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6, lineHeight: 1.55 }}>{c.teaser}</p>
+      <div style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6, lineHeight: 1.55 }}>
+        {linkifyTeasers ? (
+          <LinkedParagraph segments={linkifyParagraph(c.teaser, { preferGraph: true })} style={{ fontSize: 12, color: '#8A8A8E' }} />
+        ) : (
+          c.teaser
+        )}
+      </div>
       {c.source_label && c.confidence === 'verified' && (
         <p style={{ color: '#6B6B70', fontSize: 10, marginTop: 6, marginBottom: 0 }}>Source: {c.source_label}</p>
       )}
@@ -96,7 +109,7 @@ function orderedGroups(grouped: Record<string, EntityGraphView['connections']>) 
 }
 
 /** PASS-040B2 — Inventory edge → visible rabbit hole hallway */
-export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView; compact?: boolean }) {
+export function BourbonGraphHallway({ graph, compact, linkifyTeasers }: { graph: EntityGraphView; compact?: boolean; linkifyTeasers?: boolean }) {
   const grouped = groupConnections(graph.connections);
   const groups = orderedGroups(grouped);
 
@@ -118,9 +131,12 @@ export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView
           Open graph map →
         </Link>
       </div>
-      <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>
-        {graph.why_should_i_care ?? graph.why_it_matters}
-      </p>
+      <div style={{ marginTop: 10 }}>
+        <LinkedParagraph
+          segments={linkifyTeasers ? enrichGraphNarrative(graph) : [{ type: 'text', value: graph.why_should_i_care ?? graph.why_it_matters ?? '' }]}
+          style={{ color: '#E8E8EC', fontSize: 15 }}
+        />
+      </div>
 
       {graph.identities && graph.identities.length > 0 && (
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 14 }}>
@@ -149,7 +165,7 @@ export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView
       {graph.suggested_next && (
         <div style={{ marginTop: 18 }}>
           <p style={{ color: ACCENT, fontSize: 11, margin: '0 0 8px' }}>Suggested next stop</p>
-          <EdgeLink c={graph.suggested_next} />
+          <EdgeLink c={graph.suggested_next} linkifyTeasers={linkifyTeasers} />
         </div>
       )}
 
@@ -163,7 +179,7 @@ export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView
           )}
           <div style={{ display: 'grid', gap: 8 }}>
             {grouped[group].map((c) => (
-              <EdgeLink key={c.id} c={c} />
+          <EdgeLink key={c.id} c={c} linkifyTeasers={linkifyTeasers} />
             ))}
           </div>
         </div>
@@ -174,5 +190,5 @@ export function BourbonGraphHallway({ graph, compact }: { graph: EntityGraphView
 
 /** @deprecated use BourbonGraphHallway */
 export function GraphConnectionsPanel({ graph }: { graph: EntityGraphView }) {
-  return <BourbonGraphHallway graph={graph} />;
+  return <BourbonGraphHallway graph={graph} linkifyTeasers />;
 }

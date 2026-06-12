@@ -35,7 +35,7 @@ Build the graph before expanding catalog.
 
 ---
 
-## PASS-040B2 Status (current)
+## PASS-040B2 Status ✅ deployed
 
 | Deliverable | Status |
 |-------------|--------|
@@ -47,6 +47,14 @@ Build the graph before expanding catalog.
 | `npm run audit:graph` | ✅ |
 
 See `docs/PASS_040B2_BOURBON_GRAPH_EXPANSION.md`.
+
+## PASS-040B3 Status ← NEXT
+
+Inline Atlas word-linking · saturated cross-links · wander footer blocks on all graph routes.
+
+**Do not start 040C until 040B3 exit criteria pass.**
+
+See `docs/PASS_040B3_GRAPH_ENRICHMENT.md`.
 
 ---
 

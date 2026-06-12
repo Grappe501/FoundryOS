@@ -76,11 +76,16 @@ Supabase Edge Function cron: hourly sweep → users whose local window matches n
 ## Build order
 
 ```txt
-040B2  Graph hallways (message targets exist)
-040D   User persistence + timezone
-040E/F Review + recommend (richer message context)
-041W   Weekly engagement engine + push cron
+040B2  Graph hallways (message targets exist)           ✅ deployed
+040B3  Inline link saturation (wander inside prose)    ← NEXT
+034P+  World continuity
+040C   Atlas-Aware AI
+040D   User persistence + timezone                      ← REQUIRED before push
+040E/F Review + recommend
+041W   Weekly engagement engine + push cron             ← ONLY after 040D
 ```
+
+**Push is premature until the system remembers across devices.** Weekly draw-in needs persistence, not just a schedule stub.
 
 ---
 

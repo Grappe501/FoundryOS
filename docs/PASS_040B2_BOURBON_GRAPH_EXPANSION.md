@@ -14,7 +14,15 @@ Inventory edge → visible rabbit hole. No new bottle pages — deeper hallways 
 
 ## Audit
 
-`npm run audit:bourbon-graph`
+`npm run audit:graph`
+
+## Deploy
+
+`2a8cb1f` — graph hallways + temporary blue primary theme marker.
+
+## Next pass
+
+**PASS-040B3** — see `docs/PASS_040B3_GRAPH_ENRICHMENT.md`
 
 ## Exit criteria
 

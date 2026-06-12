@@ -2,6 +2,10 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAtlasEntry, getAtlasRabbitHole, listAtlasEntries } from '../../../../lib/bourbon-atlas/registry';
 import { atlasTermHref } from '../../../../lib/bourbon-atlas/slug';
+import { enrichAtlasParagraph } from '../../../../lib/bourbon-graph/enrich-narrative';
+import { bottlesForAtlasTerm } from '../../../../lib/bourbon-graph/inline-links';
+import { inferGraphRef } from '../../../../lib/bourbon-graph';
+import { LinkedParagraph } from '../../../../components/bourbon/LinkedParagraph';
 
 type Props = { params: Promise<{ term: string }> };
 
@@ -25,23 +29,30 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
   if (!entry) notFound();
 
   const rabbit = getAtlasRabbitHole(term);
+  const graphRef = inferGraphRef(term);
+  const bottleLinks = bottlesForAtlasTerm(term);
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <Link href="/bourbon/atlas" style={{ color: '#6B6B70', fontSize: 13 }}>← The Atlas</Link>
       <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Level 1 HQ</Link>
+      {graphRef && (
+        <Link href={`/bourbon/graph/${term}`} style={{ color: 'var(--foundry-primary)', fontSize: 13, marginLeft: 16 }}>
+          Graph hub →
+        </Link>
+      )}
 
       <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
         The Atlas
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 8 }}>{entry.title}</h1>
-      <p style={{ color: '#E8E8EC', fontSize: 17, marginTop: 16, lineHeight: 1.7, fontWeight: 400 }}>{entry.shortDefinition}</p>
+      <LinkedParagraph segments={enrichAtlasParagraph(entry.shortDefinition, term)} style={{ color: '#E8E8EC', fontSize: 17, marginTop: 16, fontWeight: 400 }} />
 
-      <AtlasSection title="Plain English" body={entry.plainEnglish} />
-      <AtlasSection title="Why it matters" body={entry.whyItMatters} accent />
-      <AtlasSection title="History" body={entry.history} />
-      <AtlasSection title="Taste, buying & collecting" body={entry.tasteBuyingCollecting} />
-      <AtlasSection title="What beginners get wrong" body={entry.beginnerMisunderstanding} />
+      <AtlasSection title="Plain English" body={entry.plainEnglish} term={term} />
+      <AtlasSection title="Why it matters" body={entry.whyItMatters} term={term} accent />
+      <AtlasSection title="History" body={entry.history} term={term} />
+      <AtlasSection title="Taste, buying & collecting" body={entry.tasteBuyingCollecting} term={term} />
+      <AtlasSection title="What beginners get wrong" body={entry.beginnerMisunderstanding} term={term} />
 
       {entry.examples.length > 0 && (
         <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
@@ -54,8 +65,25 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
         </section>
       )}
 
+      {bottleLinks.length > 0 && (
+        <section style={{ marginTop: 28 }}>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Bottles in this hallway</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
+            {bottleLinks.map((b) => (
+              <Link
+                key={b.slug}
+                href={b.href}
+                style={{ padding: '8px 14px', background: '#111114', borderRadius: 999, color: '#E8E8EC', fontSize: 13, textDecoration: 'none', border: '1px solid #2A2A2E' }}
+              >
+                {b.label} →
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       {entry.geography && (
-        <AtlasSection title="Geography & region" body={entry.geography} />
+        <AtlasSection title="Geography & region" body={entry.geography!} term={term} />
       )}
 
       {entry.relatedTerms.length > 0 && (
@@ -109,13 +137,13 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
   );
 }
 
-function AtlasSection({ title, body, accent }: { title: string; body: string; accent?: boolean }) {
+function AtlasSection({ title, body, accent, term }: { title: string; body: string; accent?: boolean; term: string }) {
   return (
     <section style={{ marginTop: 24, maxWidth: 720 }}>
       <h2 style={{ fontSize: 13, color: accent ? 'var(--foundry-primary)' : '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
         {title}
       </h2>
-      <p style={{ color: '#C4C4C8', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{body}</p>
+      <LinkedParagraph segments={enrichAtlasParagraph(body, term)} style={{ color: '#C4C4C8', fontSize: 15, marginTop: 12 }} />
     </section>
   );
 }

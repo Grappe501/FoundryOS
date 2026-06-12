@@ -3,7 +3,16 @@
 import Link from 'next/link';
 import type { GraphConnection } from '@foundry/atlas-graph-engine';
 import { BourbonGraphHallway } from './BourbonGraphHallway';
-import { inferGraphRef, resolveBourbonGraph, groupConnections } from '../../lib/bourbon-graph';
+import { GraphWanderFooter } from './GraphWanderFooter';
+import { LinkedParagraph } from './LinkedParagraph';
+import {
+  inferGraphRef,
+  resolveBourbonGraph,
+  groupConnections,
+  buildWanderFooter,
+} from '../../lib/bourbon-graph';
+import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
+import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
 
 const ACCENT = 'var(--foundry-primary)';
 
@@ -24,8 +33,10 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
   }
 
   const grouped = groupConnections(graph.connections);
+  const wander = buildWanderFooter(graph);
+  const narrative = enrichGraphNarrative(graph);
   const bottles = graph.connections.filter((c: GraphConnection) => c.entity_type === 'bottle');
-  const producers = graph.connections.filter((c: GraphConnection) => c.entity_type === 'producer');
+  const producers = graph.connections.filter((c: GraphConnection) => c.entity_type === 'producer' || c.entity_type === 'organization');
   const people = graph.connections.filter((c: GraphConnection) => c.entity_type === 'person');
   const terms = graph.connections.filter((c: GraphConnection) => c.entity_type === 'atlas_term');
   const collections = graph.connections.filter((c: GraphConnection) => c.entity_type === 'collection');
@@ -36,6 +47,16 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
       <Link href="/bourbon/bottles" style={{ color: '#6B6B70', fontSize: 13, textDecoration: 'none' }}>
         ← Bourbon
       </Link>
+      {graph.entity_type === 'bottle' && (
+        <Link href={`/bourbon/bottles/${slug}`} style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
+          Bottle page →
+        </Link>
+      )}
+      {graph.entity_type === 'atlas_term' && (
+        <Link href={`/bourbon/atlas/${slug}`} style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
+          Atlas entry →
+        </Link>
+      )}
       <p style={{ color: ACCENT, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 20 }}>
         Graph hallway · {graph.entity_type.replace(/_/g, ' ')}
       </p>
@@ -51,14 +72,13 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
       </div>
 
       <section style={{ marginTop: 28, padding: 20, background: '#0F1018', borderRadius: 10, border: `1px solid ${ACCENT}33` }}>
-        <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Center node</p>
-        <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 10, lineHeight: 1.75 }}>
-          {graph.why_should_i_care ?? graph.why_it_matters}
-        </p>
+        <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Why this matters · click to wander</p>
+        <div style={{ marginTop: 10 }}>
+          <LinkedParagraph segments={narrative} style={{ color: '#E8E8EC', fontSize: 15 }} />
+        </div>
       </section>
 
       {['Bottles', 'Producers', 'Known people', 'Atlas terms', 'Collections', 'Mysteries'].map((label) => {
-        const key = label.toLowerCase();
         const items =
           label === 'Bottles'
             ? bottles
@@ -77,11 +97,16 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
             <h2 style={{ fontSize: 14, color: '#6B9BC9', fontWeight: 400 }}>{label}</h2>
             <ul style={{ margin: '12px 0 0', padding: 0, listStyle: 'none' }}>
               {items.map((c: GraphConnection) => (
-                <li key={c.id} style={{ marginBottom: 8 }}>
-                  <Link href={c.href} style={{ color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
-                    {c.title}
+                <li key={c.id} style={{ marginBottom: 10 }}>
+                  <Link href={c.href.startsWith('/bourbon/graph') ? c.href : `/bourbon/graph/${c.slug}`} style={{ color: '#E8E8EC', fontSize: 14, textDecoration: 'none', fontWeight: 500 }}>
+                    {c.title} →
                   </Link>
-                  <span style={{ color: '#6B6B70', fontSize: 11, marginLeft: 8 }}>{c.confidence ?? 'editorial'}</span>
+                  <div style={{ marginTop: 4 }}>
+                    <LinkedParagraph
+                      segments={linkifyParagraph(c.teaser, { preferGraph: true })}
+                      style={{ color: '#8A8A8E', fontSize: 12 }}
+                    />
+                  </div>
                 </li>
               ))}
             </ul>
@@ -89,8 +114,10 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
         );
       })}
 
+      <GraphWanderFooter {...wander} />
+
       <div style={{ marginTop: 32 }}>
-        <BourbonGraphHallway graph={graph} compact />
+        <BourbonGraphHallway graph={graph} compact linkifyTeasers />
       </div>
 
       <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 24 }}>

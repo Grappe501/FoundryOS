@@ -8,6 +8,8 @@ import { resolveBourbonBottleGraph } from '../../../lib/bourbon-atlas/resolve-bo
 import { BourbonGraphHallway } from '../BourbonGraphHallway';
 import { ArtifactExperiencePanel } from '../../artifacts/ArtifactExperiencePanel';
 import { BourbonIntelligencePanel } from '../BourbonIntelligencePanel';
+import { enrichBottleIntro } from '../../../lib/bourbon-graph/enrich-narrative';
+import { LinkedParagraph } from '../LinkedParagraph';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
 const ACCENT = 'var(--foundry-primary)';
@@ -63,11 +65,14 @@ export function BottleProgressionView({ slug }: { slug: string }) {
       <Link href={`/bourbon/producers/${bottle.producerSlug}`} style={{ color: '#6B6B70', fontSize: 13, marginLeft: 12 }}>
         {bottle.producerName} →
       </Link>
+      <Link href={`/bourbon/graph/${slug}`} style={{ color: ACCENT, fontSize: 13, marginLeft: 12, textDecoration: 'none' }}>
+        Graph map →
+      </Link>
       <h2 style={{ fontWeight: 300, fontSize: '1.75rem', marginTop: 12 }}>{bottle.name}</h2>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>{bottle.oneLiner}</p>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>${bottle.priceUsd} · {bottle.proof} proof · {bottle.mashbill}</p>
+      <LinkedParagraph segments={enrichBottleIntro(slug)} style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10 }} />
+      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>${bottle.priceUsd} · {bottle.proof} proof · {bottle.mashbill}</p>
 
-      {graph && <BourbonGraphHallway graph={graph} />}
+      {graph && <BourbonGraphHallway graph={graph} linkifyTeasers />}
 
       <BourbonIntelligencePanel slug={slug} />
 
