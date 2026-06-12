@@ -9,11 +9,11 @@ import { WorldIdentityNarrativePanel } from '../identity-narrative/IdentityStory
 import { WorldContinuityReturnPanel } from '../world-continuity/ContinuityPanels';
 import { getWorldAssets } from '../../lib/world-assets';
 
-export function WorldPremiumHub({ slug }: { slug: string }) {
+export function WorldPremiumHub({ slug, skipHero }: { slug: string; skipHero?: boolean }) {
   const assets = getWorldAssets(slug);
   return (
     <>
-      <WorldHeroExperience slug={slug} />
+      {!skipHero && <WorldHeroExperience slug={slug} />}
       <WorldEventsTeaser worldSlug={slug} accent={assets.accent} />
       <WorldContinuityReturnPanel worldSlug={slug} accent={assets.accent} />
       <WorldIdentityNarrativePanel worldSlug={slug} accent={assets.accent} />

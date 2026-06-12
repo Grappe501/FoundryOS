@@ -1,5 +1,6 @@
 import { WorldPremiumHub } from '../../components/world-experience/WorldPremiumHub';
-import { BourbonWorldDepthIntro } from '../../components/bourbon/BourbonDeepPageShell';
+import { BourbonCinematicLanding } from '../../components/bourbon-world/BourbonCinematicLanding';
+import { BourbonLandingDoors } from '../../components/bourbon-world/BourbonLandingDoors';
 import { getBourbonPageDepth } from '../../lib/bourbon-level-1/deep-copy';
 import { getWorldExperienceConfig } from '../../lib/world-experience/registry';
 
@@ -13,10 +14,17 @@ export const metadata = {
 
 export default function BourbonWorldPage() {
   const depth = getBourbonPageDepth('bourbon')!;
+
   return (
     <>
-      <BourbonWorldDepthIntro content={depth} />
-      <WorldPremiumHub slug={slug} />
+      <BourbonCinematicLanding
+        title="Bourbon World"
+        tagline="A country inside a glass — enter on curiosity, not homework."
+        ctaHref={config.mission1Href}
+        ctaLabel={config.startHereCta}
+      />
+      <BourbonLandingDoors content={depth} />
+      <WorldPremiumHub slug={slug} skipHero />
     </>
   );
 }

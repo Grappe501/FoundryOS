@@ -419,3 +419,317 @@ a:hover {
 .foundry-link-success {
   color: var(--foundry-success);
 }
+
+/* ── Bourbon cinematic landing (PASS-040C UX) ─ */
+
+.bourbon-cinematic {
+  position: relative;
+  min-height: min(88vh, 720px);
+  margin: -0.5rem -0.5rem 0;
+  padding: clamp(2rem, 8vw, 4rem) clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: var(--foundry-radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(165deg, #0a0806 0%, #141008 35%, #0f0c08 100%);
+  border: 1px solid var(--foundry-primary-border-dim);
+  box-shadow: var(--foundry-shadow-md), inset 0 0 80px rgba(212, 168, 83, 0.06);
+}
+
+.bourbon-cinematic__aurora {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(ellipse 55% 45% at 50% 35%, rgba(212, 168, 83, 0.22), transparent 55%),
+    radial-gradient(ellipse 40% 30% at 20% 70%, rgba(232, 137, 91, 0.12), transparent 50%),
+    radial-gradient(ellipse 35% 25% at 85% 25%, rgba(212, 168, 83, 0.1), transparent 45%);
+  animation: bourbon-aurora 14s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.bourbon-cinematic__beam {
+  position: absolute;
+  width: 2px;
+  height: 120%;
+  top: -10%;
+  background: linear-gradient(180deg, transparent, rgba(232, 192, 120, 0.35), transparent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.bourbon-cinematic__beam--1 {
+  left: 28%;
+  animation: bourbon-beam 8s ease-in-out infinite;
+}
+
+.bourbon-cinematic__beam--2 {
+  right: 32%;
+  animation: bourbon-beam 11s ease-in-out infinite reverse;
+  animation-delay: -3s;
+}
+
+.bourbon-cinematic__grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.bourbon-cinematic__content {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+
+.bourbon-cinematic__arrival {
+  color: var(--foundry-primary);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.bourbon-cinematic__arrival--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bourbon-cinematic__title {
+  font-size: clamp(2.5rem, 7vw, 3.75rem);
+  margin-top: 20px;
+  color: var(--foundry-text);
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  transition: opacity 1s ease 0.1s, transform 1s ease 0.1s;
+}
+
+.bourbon-cinematic__title--visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.bourbon-cinematic__tagline {
+  color: var(--foundry-text-muted);
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.65;
+  margin: 18px auto 0;
+  max-width: 420px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.bourbon-cinematic__tagline--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bourbon-cinematic__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 32px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.bourbon-cinematic__actions--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bourbon-cinematic__scroll-hint {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 2;
+}
+
+.bourbon-cinematic__scroll-line {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--foundry-primary), transparent);
+  animation: bourbon-scroll-hint 2s ease-in-out infinite;
+}
+
+.bourbon-landing-doors {
+  margin-top: 36px;
+  padding-bottom: 8px;
+}
+
+.bourbon-landing-doors__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.bourbon-door {
+  position: relative;
+  padding: 20px;
+  background: var(--foundry-surface);
+  border: 1px solid var(--foundry-border-subtle);
+  border-radius: var(--foundry-radius-md);
+  transition: border-color 0.2s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.bourbon-door:hover,
+.bourbon-door:focus-within {
+  border-color: var(--foundry-primary-border-dim);
+  box-shadow: var(--foundry-shadow-glow);
+  transform: translateY(-2px);
+}
+
+.bourbon-door__label {
+  color: var(--foundry-primary);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bourbon-door__teaser {
+  color: var(--foundry-text);
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 10px 0 0;
+}
+
+.bourbon-door__hover-panel {
+  display: none;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--foundry-border-subtle);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bourbon-door:hover .bourbon-door__hover-panel,
+  .bourbon-door:focus-within .bourbon-door__hover-panel {
+    display: block;
+  }
+
+  .bourbon-door__details {
+    display: none;
+  }
+}
+
+.bourbon-door__details {
+  margin-top: 12px;
+}
+
+.bourbon-door__summary {
+  color: var(--foundry-text-faint);
+  font-size: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.bourbon-door__summary::-webkit-details-marker {
+  display: none;
+}
+
+.bourbon-door__depth {
+  color: var(--foundry-text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 10px 0 0;
+}
+
+.bourbon-door__link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--foundry-primary-bright);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.bourbon-landing-doors__quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.bourbon-landing-doors__chip {
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--foundry-text-muted);
+  background: var(--foundry-surface-raised);
+  border: 1px solid var(--foundry-border-subtle);
+  transition: all 0.15s ease;
+}
+
+.bourbon-landing-doors__chip:hover {
+  color: var(--foundry-primary-bright);
+  border-color: var(--foundry-primary-border-dim);
+  background: var(--foundry-primary-bg-subtle);
+}
+
+@keyframes bourbon-aurora {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1.08) translateY(-2%);
+    opacity: 1;
+  }
+}
+
+@keyframes bourbon-beam {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateX(0) rotate(2deg);
+  }
+  50% {
+    opacity: 0.55;
+    transform: translateX(8px) rotate(-1deg);
+  }
+}
+
+@keyframes bourbon-scroll-hint {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scaleY(0.7);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bourbon-cinematic__aurora,
+  .bourbon-cinematic__beam,
+  .bourbon-cinematic__scroll-line {
+    animation: none;
+  }
+
+  .bourbon-cinematic__arrival,
+  .bourbon-cinematic__title,
+  .bourbon-cinematic__tagline,
+  .bourbon-cinematic__actions {
+    opacity: 1;
+    transform: none;
+  }
+}
+
