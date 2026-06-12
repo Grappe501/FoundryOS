@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { buildShelf, type ShelfTier } from '../../../lib/bourbon-level-1/shelf-builder';
 import { saveShelfBuilt } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function ShelfBuilder() {
   const [budget, setBudget] = useState<100 | 200 | 300>(200);

@@ -35,7 +35,7 @@ export default function InvestorsPage() {
       <div style={{ marginTop: 32 }}>
         {SECTIONS.map((s) => (
           <section key={s.title} style={{ marginBottom: 28, paddingBottom: 28, borderBottom: '1px solid #1A1A1E' }}>
-            <h2 style={{ fontSize: 16, color: '#C8A96E', fontWeight: 500 }}>{s.title}</h2>
+            <h2 style={{ fontSize: 16, color: 'var(--foundry-primary)', fontWeight: 500 }}>{s.title}</h2>
             <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7, marginTop: 8 }}>{s.body}</p>
           </section>
         ))}

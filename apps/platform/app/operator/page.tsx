@@ -158,7 +158,7 @@ export default async function MissionControlHome() {
             color: '#8A8A8E',
           }}
         >
-          <span style={{ color: '#C8A96E' }}>Platform Assets</span>
+          <span style={{ color: 'var(--foundry-primary)' }}>Platform Assets</span>
           {' — '}
           Topics: {assets.topics} · Entities: {assets.entities} · Relationships: {assets.relationships} · Collections: {assets.collections}
         </div>
@@ -167,7 +167,7 @@ export default async function MissionControlHome() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12, marginBottom: 24 }}>
           {platformStats.map((s) => (
             <div key={s.label} style={{ padding: '1rem', background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
-              <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{s.value.toLocaleString()}</div>
+              <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{s.value.toLocaleString()}</div>
               <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
@@ -179,7 +179,7 @@ export default async function MissionControlHome() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12, marginBottom: 8 }}>
           {growthStats.map((s) => (
             <div key={s.label} style={{ padding: '1rem', background: '#0F0F12', border: '1px solid #3A2A20', borderRadius: 8 }}>
-              <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{s.value}</div>
+              <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{s.value}</div>
               <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
@@ -195,14 +195,14 @@ export default async function MissionControlHome() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 12 }}>
           {northStarStats.map((s) => (
             <div key={s.label} style={{ padding: '1rem', background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
-              <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{s.value}</div>
+              <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{s.value}</div>
               <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
         </div>
 
         <div style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 12 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 500, margin: 0 }}>Current State</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 500, margin: 0 }}>Current State</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16, marginTop: 16, fontSize: 13 }}>
             <div><span style={{ color: '#6B6B70' }}>Version</span><br />{stats.version}</div>
             <div><span style={{ color: '#6B6B70' }}>Last Pass</span><br />{stats.last_pass}</div>
@@ -213,58 +213,58 @@ export default async function MissionControlHome() {
         </div>
 
         <nav style={{ marginTop: 32, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-          <Link href="/operator/passes" style={{ color: '#C8A96E', fontSize: 14 }}>Build Journal →</Link>
-          <Link href="/operator/investors" style={{ color: '#C8A96E', fontSize: 14 }}>Investors →</Link>
-          <Link href="/operator/verticals" style={{ color: '#C8A96E', fontSize: 14 }}>Vertical Domains →</Link>
-          <Link href="/operator/architecture" style={{ color: '#C8A96E', fontSize: 14 }}>Architecture →</Link>
-          <Link href="/operator/operations" style={{ color: '#C8A96E', fontSize: 14 }}>Operations →</Link>
-          <Link href="/operator/routing" style={{ color: '#C8A96E', fontSize: 14 }}>Routing →</Link>
-          <Link href="/operator/factory" style={{ color: '#C8A96E', fontSize: 14 }}>Factory →</Link>
-          <Link href="/operator/knowledge" style={{ color: '#C8A96E', fontSize: 14 }}>Knowledge Universe →</Link>
-          <Link href="/operator/paths" style={{ color: '#C8A96E', fontSize: 14 }}>Road to Expert →</Link>
-          <Link href="/operator/identity" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry Identity →</Link>
-          <Link href="/operator/projects" style={{ color: '#C8A96E', fontSize: 14 }}>Project Engine →</Link>
-          <Link href="/operator/legacy" style={{ color: '#C8A96E', fontSize: 14 }}>Legacy Engine →</Link>
-          <Link href="/operator/domains" style={{ color: '#C8A96E', fontSize: 14 }}>Identity Domains →</Link>
-          <Link href="/operator/university" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry University →</Link>
-          <Link href="/operator/outcomes" style={{ color: '#C8A96E', fontSize: 14 }}>Human Outcomes →</Link>
-          <Link href="/operator/equation" style={{ color: '#C8A96E', fontSize: 14 }}>Foundry Equation →</Link>
-          <Link href="/operator/transformation" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Factory →</Link>
-          <Link href="/operator/loop" style={{ color: '#C8A96E', fontSize: 14 }}>Prove the Loop (PASS-010) →</Link>
-          <Link href="/operator/evidence" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
-          <Link href="/collections" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Knowledge Assets (PASS-012) →</Link>
+          <Link href="/operator/passes" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Build Journal →</Link>
+          <Link href="/operator/investors" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Investors →</Link>
+          <Link href="/operator/verticals" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Vertical Domains →</Link>
+          <Link href="/operator/architecture" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Architecture →</Link>
+          <Link href="/operator/operations" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Operations →</Link>
+          <Link href="/operator/routing" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Routing →</Link>
+          <Link href="/operator/factory" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Factory →</Link>
+          <Link href="/operator/knowledge" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Knowledge Universe →</Link>
+          <Link href="/operator/paths" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Road to Expert →</Link>
+          <Link href="/operator/identity" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Foundry Identity →</Link>
+          <Link href="/operator/projects" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Project Engine →</Link>
+          <Link href="/operator/legacy" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Legacy Engine →</Link>
+          <Link href="/operator/domains" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Identity Domains →</Link>
+          <Link href="/operator/university" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Foundry University →</Link>
+          <Link href="/operator/outcomes" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Human Outcomes →</Link>
+          <Link href="/operator/equation" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Foundry Equation →</Link>
+          <Link href="/operator/transformation" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Transformation Factory →</Link>
+          <Link href="/operator/loop" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Prove the Loop (PASS-010) →</Link>
+          <Link href="/operator/evidence" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
+          <Link href="/collections" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 500 }}>Knowledge Assets (PASS-012) →</Link>
           <Link href="/operator/collections" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 700 }}>Collector Engine (PASS-034K) →</Link>
-          <Link href="/operator/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
-          <Link href="/operator/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
-          <Link href="/operator/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
+          <Link href="/operator/community" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
+          <Link href="/operator/reputation" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
+          <Link href="/operator/mastery" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
           <Link href="/explore" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Explore Paths →</Link>
           <Link href="/future-proof" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Build Future-Proof Skills →</Link>
           <Link href="/operator/validation" style={{ color: '#8B4545', fontSize: 14, fontWeight: 600 }}>Internal Funnel Dashboard →</Link>
           <Link href="/ai-builder" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>AI Builder →</Link>
-          <Link href="/operator/bourbon" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
-          <Link href="/operator/growth" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>
-          <Link href="/operator/growth/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Traffic Opportunities →</Link>
-          <Link href="/operator/growth/launch" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Launch Factory (PASS-015B) →</Link>
-          <Link href="/operator/verticals/bourbon" style={{ color: '#C8A96E', fontSize: 14 }}>Bourbon Vertical →</Link>
-          <Link href="/operator/transformation-graph" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Graph →</Link>
-          <Link href="/operator/revenue" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Revenue Validation (PASS-029) →</Link>
-          <Link href="/operator/business" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Founder Dashboard →</Link>
+          <Link href="/operator/bourbon" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Domain Proof (PASS-014) →</Link>
+          <Link href="/operator/growth" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Growth OS (PASS-015) →</Link>
+          <Link href="/operator/growth/opportunities" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Traffic Opportunities →</Link>
+          <Link href="/operator/growth/launch" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Launch Factory (PASS-015B) →</Link>
+          <Link href="/operator/verticals/bourbon" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Bourbon Vertical →</Link>
+          <Link href="/operator/transformation-graph" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Transformation Graph →</Link>
+          <Link href="/operator/revenue" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Revenue Validation (PASS-029) →</Link>
+          <Link href="/operator/business" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Founder Dashboard →</Link>
           <Link href="/operator/learning" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 600 }}>Learning Lane (PASS-030) →</Link>
-          <Link href="/operator/marketing" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Marketing Factory (PASS-031) →</Link>
+          <Link href="/operator/marketing" style={{ color: 'var(--foundry-primary)', fontSize: 14, fontWeight: 600 }}>Marketing Factory (PASS-031) →</Link>
           <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 14, fontWeight: 700 }}>Growth Flywheel →</Link>
           <Link href="/operator/ai-brain" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 700 }}>AI Brain (PASS-033) →</Link>
           <Link href="/operator/discovery" style={{ color: '#8E6BBD', fontSize: 14, fontWeight: 700 }}>Discovery Graph (PASS-034J) →</Link>
           <Link href="/operator/events" style={{ color: '#D4847A', fontSize: 14, fontWeight: 700 }}>World Events (PASS-034L) →</Link>
           <Link href="/search" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 600 }}>Global Search →</Link>
           <Link href="/operator/universe" style={{ color: '#6B9BC9', fontSize: 14, fontWeight: 700 }}>Universe Command Center (034U) →</Link>
-          <Link href="/operator/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Domain Expansion Scoring →</Link>
+          <Link href="/operator/opportunities" style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Domain Expansion Scoring →</Link>
         </nav>
 
         <div style={{ marginTop: 40 }}>
           <h2 style={{ fontSize: 16, fontWeight: 400, marginBottom: 16 }}>Recent Passes</h2>
           {PASSES.filter((p) => p.status === 'completed').map((p) => (
             <div key={p.code} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
-              <span style={{ color: '#C8A96E' }}>{p.code}</span>
+              <span style={{ color: 'var(--foundry-primary)' }}>{p.code}</span>
               <span style={{ color: '#8A8A8E', margin: '0 8px' }}>—</span>
               <span>{p.title}</span>
             </div>

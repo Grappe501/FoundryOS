@@ -10,7 +10,7 @@ import {
 } from '../../../lib/bourbon-depth/compare-any';
 import { createComparisonArtifact } from '../../../lib/artifacts/create-from-action';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 type Mode = 'bottles' | 'producers';
 

@@ -23,7 +23,7 @@ export default function BourbonAtlasIndexPage() {
         <BourbonDeepPageShell content={depth} />
       ) : (
         <>
-          <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
             PASS-034E · The Atlas
           </p>
           <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 8 }}>The Atlas</h1>

@@ -5,5 +5,5 @@ import { WorldMissionTracks } from '../../../components/world/WorldMissionTracks
 export const metadata = { title: 'Missions | Financial Independence' };
 
 export default function MissionsPage() {
-  return <WorldMissionTracks missions={FI_MISSIONS} basePath="/financial-independence" accent="#C8A96E" />;
+  return <WorldMissionTracks missions={FI_MISSIONS} basePath="/financial-independence" accent="var(--foundry-primary)" />;
 }

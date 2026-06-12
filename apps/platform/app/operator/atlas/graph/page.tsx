@@ -79,7 +79,7 @@ export default function OperatorAtlasGraphPage() {
                     {n.issues.map((i) => ISSUE_LABEL[i] ?? i).join(' · ')}
                   </td>
                   <td style={{ padding: 10, textAlign: 'center' }}>
-                    <Link href={`/bourbon/graph/${n.slug}`} style={{ color: '#C8A96E', fontSize: 12 }}>
+                    <Link href={`/bourbon/graph/${n.slug}`} style={{ color: 'var(--foundry-primary)', fontSize: 12 }}>
                       view →
                     </Link>
                   </td>
@@ -93,7 +93,7 @@ export default function OperatorAtlasGraphPage() {
       <section style={{ marginTop: 32, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3520' }}>
         <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>BiB weekend exemplar</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
-          <Link href="/bourbon/graph/bottled-in-bond" style={{ color: '#C8A96E' }}>
+          <Link href="/bourbon/graph/bottled-in-bond" style={{ color: 'var(--foundry-primary)' }}>
             bottled-in-bond
           </Link>{' '}
           — one Atlas term → full weekend (Act, proof, age, warehouses, value bottles, detective, debate, tasting mission).
@@ -111,7 +111,7 @@ export default function OperatorAtlasGraphPage() {
         </ul>
       </section>
 
-      <Link href="/operator/bourbon/inventory" style={{ color: '#C8A96E', fontSize: 13, marginTop: 24, display: 'inline-block' }}>
+      <Link href="/operator/bourbon/inventory" style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 24, display: 'inline-block' }}>
         Intelligence inventory →
       </Link>
       <Link href="/operator/universe" style={{ color: '#6B6B70', fontSize: 13, marginTop: 24, marginLeft: 16, display: 'inline-block' }}>

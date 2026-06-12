@@ -11,7 +11,7 @@ export default function BourbonLorePage() {
   const content = getBourbonPageDepth('lore')!;
   return (
     <BourbonDeepPageShell content={content} backHref="/bourbon/level-1" backLabel="← Level 1 HQ">
-      <WorldLoreHub worldSlug="bourbon" accent="#C8A96E" hideHeader />
+      <WorldLoreHub worldSlug="bourbon" accent="var(--foundry-primary)" hideHeader />
     </BourbonDeepPageShell>
   );
 }

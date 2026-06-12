@@ -31,7 +31,7 @@ export default async function OperatorAnalyticsPage() {
       ) : (
         <>
           <section style={{ marginTop: 28 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: '0 0 12px' }}>Transformation funnel</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: '0 0 12px' }}>Transformation funnel</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
               <Stat label="Assessment started" value={analytics.funnel.assessment_started} />
               <Stat label="Assessment completed" value={analytics.funnel.assessment_completed} />
@@ -52,7 +52,7 @@ export default async function OperatorAnalyticsPage() {
           </section>
 
           <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Revenue funnel — PASS-029 (same counts as /operator/revenue)</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Revenue funnel — PASS-029 (same counts as /operator/revenue)</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
               <Stat label="Pricing viewed" value={analytics.funnel.pricing_viewed} />
               <Stat label="Pricing clicked" value={analytics.funnel.pricing_clicked} />
@@ -107,7 +107,7 @@ export default async function OperatorAnalyticsPage() {
           </section>
 
           <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>World-level analytics</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>World-level analytics</h2>
             <div style={{ marginTop: 12, overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
                 <thead>
@@ -156,7 +156,7 @@ export default async function OperatorAnalyticsPage() {
           </section>
 
           <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A2A2A' }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>PASS-027 exit criteria</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>PASS-027 exit criteria</h2>
             <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8, paddingLeft: 18 }}>
               <li>Which worlds work best? → World table above (mission + return rates)</li>
               <li>Which missions work best? → Mission effectiveness list</li>
@@ -174,7 +174,7 @@ export default async function OperatorAnalyticsPage() {
 function Stat({ label, value }: { label: string; value: number }) {
   return (
     <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
-      <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
       <div style={{ fontSize: 10, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );

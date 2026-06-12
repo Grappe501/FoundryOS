@@ -24,7 +24,7 @@ export default function OperatorWorldsPage() {
               <div key={w.slug} style={{ padding: 16, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                   <span style={{ color: '#E8E8EC' }}>{w.displayName}</span>
-                  <span style={{ color: '#C8A96E' }}>{w.overallScore}</span>
+                  <span style={{ color: 'var(--foundry-primary)' }}>{w.overallScore}</span>
                 </div>
                 {bundle?.displayName && (
                   <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>{w.slug}</p>
@@ -36,7 +36,7 @@ export default function OperatorWorldsPage() {
       </section>
 
       <section style={{ marginTop: 36 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Incoming ({INCOMING_WORLDS.length})</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Incoming ({INCOMING_WORLDS.length})</h2>
         <Link href="/operator/worlds/incoming" style={{ color: '#6B6B70', fontSize: 12 }}>Full ranked pipeline →</Link>
       </section>
     </OperatorShell>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getBottleXRay, listXRayBottles } from '../../../lib/bourbon-level-1/agency/bottle-xray';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BottleXRayTool({ initialSlug }: { initialSlug?: string }) {
   const bottles = listXRayBottles();

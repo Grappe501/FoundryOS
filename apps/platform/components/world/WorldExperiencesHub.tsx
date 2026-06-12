@@ -6,7 +6,7 @@ export function WorldExperiencesHub({
   basePath,
   experiences,
   estimatedHours,
-  accent = '#C8A96E',
+  accent = 'var(--foundry-primary)',
 }: {
   worldName: string;
   basePath: string;

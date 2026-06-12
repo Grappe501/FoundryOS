@@ -7,7 +7,7 @@ type BeforeInstallPromptEvent = Event & {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 };
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function FoundryAccessOptions({ compact }: { compact?: boolean }) {
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);

@@ -75,7 +75,7 @@ export default function PassportPage() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
         Foundry Passport · Preview
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 8 }}>
@@ -102,7 +102,7 @@ export default function PassportPage() {
               <>
                 {Object.entries(data.evidence.by_world).map(([slug, count]) => (
                   <p key={slug} style={{ color: '#8A8A8E', fontSize: 14, margin: '8px 0 0' }}>
-                    <span style={{ color: '#C8A96E' }}>{WORLD_LABELS[slug] ?? slug}</span>
+                    <span style={{ color: 'var(--foundry-primary)' }}>{WORLD_LABELS[slug] ?? slug}</span>
                     {' · '}
                     {count} artifact{count === 1 ? '' : 's'}
                   </p>
@@ -128,7 +128,7 @@ export default function PassportPage() {
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
               {['Explorer', 'Collector', data.stats.challenges > 0 ? 'Participant' : null].filter(Boolean).map((s) => (
-                <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: '#C8A96E' }}>
+                <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: 'var(--foundry-primary)' }}>
                   {s}
                 </span>
               ))}
@@ -172,7 +172,7 @@ export default function PassportPage() {
         </>
       )}
 
-      <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 28, color: '#C8A96E', fontSize: 14 }}>
+      <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 28, color: 'var(--foundry-primary)', fontSize: 14 }}>
         Memory timeline →
       </Link>
       <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, marginLeft: 20, color: '#6B9B6B', fontSize: 14 }}>

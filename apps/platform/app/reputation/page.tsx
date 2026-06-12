@@ -28,7 +28,7 @@ export default async function ReputationProofPage() {
       <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 6 }}>{chain}</p>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: `1px solid ${complete ? '#2A4A2A' : '#2A2520'}`, borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Verification Checklist</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Verification Checklist</h2>
         <div style={{ marginTop: 16 }}>
           {checklist.map((step) => (
             <div key={step.key} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 14 }}>
@@ -39,7 +39,7 @@ export default async function ReputationProofPage() {
         </div>
         <div style={{ marginTop: 24, textAlign: 'center' }}>
           <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Reputation Engine</p>
-          <p style={{ color: complete ? '#6B9B6B' : '#C8A96E', fontSize: 20, fontWeight: 300, marginTop: 8 }}>
+          <p style={{ color: complete ? '#6B9B6B' : 'var(--foundry-primary)', fontSize: 20, fontWeight: 300, marginTop: 8 }}>
             {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
           </p>
         </div>
@@ -50,7 +50,7 @@ export default async function ReputationProofPage() {
 
       {record && (
         <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Reputation Assigned</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Reputation Assigned</h2>
           <p style={{ color: '#E8E8EC', fontSize: 18, marginTop: 12 }}>{record.reputation_title}</p>
           <div style={{ marginTop: 12, fontSize: 13, lineHeight: 1.8, color: '#8A8A8E' }}>
             <div>Scope: {record.scope} · Trust weight: {record.trust_weight}%</div>
@@ -62,7 +62,7 @@ export default async function ReputationProofPage() {
 
       {evidence && (
         <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Source Evidence</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Source Evidence</h2>
           <p style={{ color: '#E8E8EC', marginTop: 12 }}>{evidence.title}</p>
           <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
             Tier: {evidence.tier} · Status: {evidence.verification_status}

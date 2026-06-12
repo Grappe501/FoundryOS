@@ -80,7 +80,7 @@ export function OperatorCollectionsViewer() {
 
               {open && (
                 <div style={{ marginTop: 16, borderTop: '1px solid #1A1A1E', paddingTop: 16 }}>
-                  <p style={{ color: '#C8A96E', fontSize: 11, margin: '0 0 10px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                  <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: '0 0 10px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                     Items
                   </p>
                   <ul style={{ margin: 0, paddingLeft: 18, color: '#8A8A8E', fontSize: 13, lineHeight: 1.8 }}>

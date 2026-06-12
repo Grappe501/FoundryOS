@@ -107,7 +107,7 @@ export default async function GrowthOsPage() {
 
       {business && (
         <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Business metrics — PASS-029</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Business metrics — PASS-029</h2>
           <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Build metrics below · business metrics first.</p>
           <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 12 }}>
             <BusinessStat label="Transformations in progress" value={business.transformations_in_progress} />
@@ -125,13 +125,13 @@ export default async function GrowthOsPage() {
       )}
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cost To Launch A Domain — primary operational KPI</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Cost To Launch A Domain — primary operational KPI</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Investors care about launch cost more than current domain count. Target: factory launches in under 1 hour.
         </p>
         <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12 }}>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
-            <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{launchCost.avg_hours_completed ?? '—'}h</div>
+            <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{launchCost.avg_hours_completed ?? '—'}h</div>
             <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Avg completed (hand-built)</div>
           </div>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
@@ -151,7 +151,7 @@ export default async function GrowthOsPage() {
             <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Factory target</div>
           </div>
           <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
-            <div style={{ fontSize: 22, fontWeight: 300, color: launchCost.avg_automation_pct >= 80 ? '#6B9B6B' : '#C8A96E' }}>
+            <div style={{ fontSize: 22, fontWeight: 300, color: launchCost.avg_automation_pct >= 80 ? '#6B9B6B' : 'var(--foundry-primary)' }}>
               {launchCost.avg_automation_pct}%
             </div>
             <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>Automation (target {launchCost.factory_automation_target_pct}%+)</div>
@@ -232,7 +232,7 @@ export default async function GrowthOsPage() {
           {worldExperienceDetail.rows.map((r) => (
             <div key={r.slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
               <span style={{ color: '#E8E8EC' }}>{r.displayName}</span>
-              <span style={{ color: r.status === 'READY' ? '#6B9B6B' : '#C8A96E' }}>
+              <span style={{ color: r.status === 'READY' ? '#6B9B6B' : 'var(--foundry-primary)' }}>
                 {r.totalScore}% · {r.status}
               </span>
             </div>
@@ -290,7 +290,7 @@ export default async function GrowthOsPage() {
       </section>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Growth Metrics</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Growth Metrics</h2>
         <div
           style={{
             marginTop: 16,
@@ -309,7 +309,7 @@ export default async function GrowthOsPage() {
                 borderRadius: 8,
               }}
             >
-              <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{s.value}</div>
+              <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{s.value}</div>
               <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
@@ -320,7 +320,7 @@ export default async function GrowthOsPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>January 2027 Targets</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>January 2027 Targets</h2>
         <div style={{ marginTop: 16 }}>
           {JANUARY_2027_TARGETS.map((t) => (
             <div
@@ -334,7 +334,7 @@ export default async function GrowthOsPage() {
               }}
             >
               <span>{t.label}</span>
-              <span style={{ color: '#C8A96E' }}>
+              <span style={{ color: 'var(--foundry-primary)' }}>
                 {t.target} · {t.deadline}
               </span>
             </div>
@@ -343,7 +343,7 @@ export default async function GrowthOsPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Revenue Milestones</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Revenue Milestones</h2>
         <div style={{ marginTop: 16 }}>
           {REVENUE_MILESTONES.map((m) => (
             <div
@@ -356,7 +356,7 @@ export default async function GrowthOsPage() {
             >
               <span style={{ color: '#E8E8EC' }}>{m.period}</span>
               <span style={{ color: '#6B6B70', margin: '0 8px' }}>—</span>
-              <span style={{ color: '#C8A96E' }}>
+              <span style={{ color: 'var(--foundry-primary)' }}>
                 {m.paid_users.toLocaleString()} paid · {m.mrr} MRR
               </span>
               <p style={{ color: '#4A4A4E', fontSize: 11, margin: '4px 0 0' }}>{m.note}</p>
@@ -366,7 +366,7 @@ export default async function GrowthOsPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Traffic Opportunities (PASS-015A)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Traffic Opportunities (PASS-015A)</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Events feed permanent domains — not disposable apps. World Cup → Soccer, not World Cup App.
         </p>
@@ -385,20 +385,20 @@ export default async function GrowthOsPage() {
               <span style={{ color: '#E8E8EC' }}>
                 {o.display_name} → {o.permanent_domain_name}
               </span>
-              <span style={{ color: '#C8A96E' }}>{o.total_score}</span>
+              <span style={{ color: 'var(--foundry-primary)' }}>{o.total_score}</span>
             </div>
           ))}
         </div>
-        <Link href="/growth/opportunities" style={{ color: '#C8A96E', fontSize: 13, marginTop: 16, display: 'inline-block' }}>
+        <Link href="/growth/opportunities" style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 16, display: 'inline-block' }}>
           Full scorecard →
         </Link>
-        <Link href="/growth/launch" style={{ color: '#C8A96E', fontSize: 13, marginTop: 16, marginLeft: 16, display: 'inline-block' }}>
+        <Link href="/growth/launch" style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 16, marginLeft: 16, display: 'inline-block' }}>
           Launch Factory →
         </Link>
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>First 10 Domains</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>First 10 Domains</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Identity-driven. People proudly self-identify. Market the domain — not Foundry.
         </p>
@@ -408,7 +408,7 @@ export default async function GrowthOsPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>SEO Factory — Page Types Per Domain</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>SEO Factory — Page Types Per Domain</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Generated from blueprint. Not manually. 25 domains × 500 entities × 20 pages/entity → 250k+
           indexed pages.
@@ -436,7 +436,7 @@ export default async function GrowthOsPage() {
 function BusinessStat({ label, value }: { label: string; value: string | number }) {
   return (
     <div style={{ padding: 14, background: '#111114', borderRadius: 6 }}>
-      <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
       <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );

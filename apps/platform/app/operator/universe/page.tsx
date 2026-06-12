@@ -22,7 +22,7 @@ export default function OperatorUniversePage() {
           borderRadius: 10,
         }}
       >
-        <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
           North star · 040A
         </p>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginTop: 12, flexWrap: 'wrap' }}>
@@ -79,7 +79,7 @@ export default function OperatorUniversePage() {
               <tr key={n.id} style={{ borderBottom: '1px solid #1A1A1E' }}>
                 <td style={{ padding: 10, color: '#E8E8EC' }}>{n.label}</td>
                 <td style={{ padding: 10, color: '#8A8A8E' }}>{n.entity_type}</td>
-                <td style={{ padding: 10, color: '#C8A96E' }}>{n.connections}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{n.connections}</td>
                 <td style={{ padding: 10, color: n.weak ? '#C96B6B' : '#6B9B6B' }}>{n.weak ? 'weak' : 'ok'}</td>
               </tr>
             ))}
@@ -94,7 +94,7 @@ export default function OperatorUniversePage() {
             <div key={w.slug} style={{ padding: 16, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                 <span style={{ color: '#E8E8EC', fontSize: 15 }}>{w.displayName}</span>
-                <span style={{ color: w.overallScore >= 85 ? '#6B9B6B' : w.overallScore >= 60 ? '#C8A96E' : '#C96B6B', fontSize: 18 }}>
+                <span style={{ color: w.overallScore >= 85 ? '#6B9B6B' : w.overallScore >= 60 ? 'var(--foundry-primary)' : '#C96B6B', fontSize: 18 }}>
                   {w.overallScore}
                 </span>
               </div>
@@ -113,7 +113,7 @@ export default function OperatorUniversePage() {
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Computed queue — not a manually maintained list</p>
         {snap.highest_roi_world && (
           <div style={{ marginTop: 16, padding: 20, background: '#1A1410', border: '1px solid #3A3020', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', fontSize: 11, margin: 0 }}>Highest ROI world</p>
+            <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: 0 }}>Highest ROI world</p>
             <p style={{ color: '#E8E8EC', fontSize: 18, marginTop: 8 }}>{snap.highest_roi_world.target}</p>
             <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
               {snap.highest_roi_world.reasons.map((r) => (
@@ -143,7 +143,7 @@ export default function OperatorUniversePage() {
                 <td style={{ padding: 10, color: '#6B6B70' }}>{item.rank}</td>
                 <td style={{ padding: 10, color: '#E8E8EC' }}>{item.target}</td>
                 <td style={{ padding: 10, color: '#8A8A8E' }}>{item.target_type}</td>
-                <td style={{ padding: 10, color: '#C8A96E' }}>{item.score}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{item.score}</td>
                 <td style={{ padding: 10, color: '#8A8A8E', fontSize: 11 }}>{item.reasons.join(' · ')}</td>
               </tr>
             ))}
@@ -159,7 +159,7 @@ export default function OperatorUniversePage() {
             <li key={n.slug}>
               <span style={{ color: '#6B6B70', marginRight: 8 }}>{i + 1}.</span>
               {n.title}
-              <span style={{ color: '#C8A96E', marginLeft: 8 }}>{n.connections} edges</span>
+              <span style={{ color: 'var(--foundry-primary)', marginLeft: 8 }}>{n.connections} edges</span>
             </li>
           ))}
         </ol>

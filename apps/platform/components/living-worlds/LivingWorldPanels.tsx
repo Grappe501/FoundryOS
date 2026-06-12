@@ -110,7 +110,7 @@ export function WorldMentorPanel({ worldSlug }: { worldSlug: string }) {
         {insight.mentor_name} · your mentor
       </p>
       {insight.becoming && (
-        <p style={{ color: '#C8A96E', fontSize: 13, marginTop: 10, fontStyle: 'italic' }}>Becoming: {insight.becoming}</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 10, fontStyle: 'italic' }}>Becoming: {insight.becoming}</p>
       )}
       <h2 style={{ fontSize: 17, fontWeight: 400, marginTop: 10, color: '#E8E8EC', lineHeight: 1.4 }}>{insight.headline}</h2>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{insight.body}</p>
@@ -239,12 +239,12 @@ export function LivingJourneyDashboard() {
 
       {secretPaths.length > 0 && (
         <section style={{ marginTop: 28 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>Hidden paths discovered</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Hidden paths discovered</h2>
           <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>You did not pick these — Foundry noticed who you are becoming.</p>
           <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
             {secretPaths.map((p) => (
-              <div key={p.id} id={`secret-${p.id}`} style={{ padding: 18, background: p.newly_discovered ? '#1A160F' : '#0F0F12', borderRadius: 8, border: `1px solid ${p.newly_discovered ? '#C8A96E44' : '#1A1A1E'}` }}>
-                {p.newly_discovered && <p style={{ color: '#C8A96E', fontSize: 11, margin: '0 0 8px' }}>✦ Newly discovered</p>}
+              <div key={p.id} id={`secret-${p.id}`} style={{ padding: 18, background: p.newly_discovered ? '#1A160F' : '#0F0F12', borderRadius: 8, border: `1px solid ${p.newly_discovered ? 'var(--foundry-primary)44' : '#1A1A1E'}` }}>
+                {p.newly_discovered && <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: '0 0 8px' }}>✦ Newly discovered</p>}
                 <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>{p.title}</p>
                 <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{p.tagline}</p>
                 <ul style={{ color: '#6B6B70', fontSize: 12, marginTop: 10, paddingLeft: 18 }}>
@@ -260,7 +260,7 @@ export function LivingJourneyDashboard() {
 
       {legendary.length > 0 && (
         <section style={{ marginTop: 28 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>Legendary objects</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Legendary objects</h2>
           <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             {legendary.slice(0, 8).map((u) => {
               const obj = getLegendaryObject(u.object_id);
@@ -326,7 +326,7 @@ export function LivingJourneyDashboard() {
 
       {cross.length > 0 && (
         <section style={{ marginTop: 28 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>Foundry expands you — next worlds</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Foundry expands you — next worlds</h2>
           <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>Cross-world discovery from your evidence, not ads.</p>
           <div style={{ marginTop: 16, display: 'grid', gap: 10 }}>
             {cross.map((c) => (

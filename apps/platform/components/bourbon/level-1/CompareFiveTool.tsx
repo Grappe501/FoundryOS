@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { compareBottles, COMPARE_PRESETS, allCompareSlugs } from '../../../lib/bourbon-level-1/agency/compare-five';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function CompareFiveTool() {
   const all = allCompareSlugs();

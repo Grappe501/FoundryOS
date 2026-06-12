@@ -6,7 +6,7 @@ import { BOURBON_PERSONALITIES, getPersonality, inferPersonality, bottlesForPers
 import { getCollection, getSavedPersonality, savePersonality } from '../../../lib/bourbon-level-1/storage';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonPersonalitiesTool() {
   const [activeId, setActiveId] = useState<string>('explorer');

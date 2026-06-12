@@ -8,7 +8,7 @@ type Props = {
   accent?: string;
 };
 
-export function RabbitHolePanel({ topicKey, term, producerSlug, accent = '#C8A96E' }: Props) {
+export function RabbitHolePanel({ topicKey, term, producerSlug, accent = 'var(--foundry-primary)' }: Props) {
   const holes = producerSlug
     ? rabbitHolesForProducer(producerSlug)
     : term

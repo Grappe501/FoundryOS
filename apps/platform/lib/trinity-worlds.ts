@@ -41,7 +41,7 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     portfolioKey: 'foundry-fi-portfolio',
     portfolioLabel: 'My Wealth Portfolio',
     missionCount: getMissionCount('financial-independence'),
-    accent: '#C8A96E',
+    accent: 'var(--foundry-primary)',
     border: '#4A4020',
     nextWorld: 'public-speaking',
   },

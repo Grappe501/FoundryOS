@@ -31,7 +31,7 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
       <Link href="/bourbon/atlas" style={{ color: '#6B6B70', fontSize: 13 }}>← The Atlas</Link>
       <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Level 1 HQ</Link>
 
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
         The Atlas
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 8 }}>{entry.title}</h1>
@@ -45,7 +45,7 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
 
       {entry.examples.length > 0 && (
         <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 13, color: '#C8A96E', margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Examples</h2>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase' }}>Examples</h2>
           <ul style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, paddingLeft: 18, lineHeight: 1.8 }}>
             {entry.examples.map((ex) => (
               <li key={ex}>{ex}</li>
@@ -95,7 +95,7 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
 
       {entry.forwardLinks.length > 0 && (
         <section style={{ marginTop: 28, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3A2A' }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Go next</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Go next</h2>
           <ul style={{ margin: '14px 0 0', paddingLeft: 18, color: '#8A8A8E', fontSize: 13, lineHeight: 1.9 }}>
             {entry.forwardLinks.map((l) => (
               <li key={l.href + l.label}>
@@ -112,7 +112,7 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
 function AtlasSection({ title, body, accent }: { title: string; body: string; accent?: boolean }) {
   return (
     <section style={{ marginTop: 24, maxWidth: 720 }}>
-      <h2 style={{ fontSize: 13, color: accent ? '#C8A96E' : '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
+      <h2 style={{ fontSize: 13, color: accent ? 'var(--foundry-primary)' : '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
         {title}
       </h2>
       <p style={{ color: '#C4C4C8', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{body}</p>

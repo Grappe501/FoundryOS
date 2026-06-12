@@ -12,7 +12,7 @@ type Props = {
   accent?: string;
 };
 
-export function LegendaryJournal({ worldSlug, accent = '#C8A96E' }: Props) {
+export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' }: Props) {
   const schema = getLegendaryCollection(worldSlug);
   const [section, setSection] = useState(schema?.sections[0]?.id ?? 'tastings');
   const [title, setTitle] = useState('');

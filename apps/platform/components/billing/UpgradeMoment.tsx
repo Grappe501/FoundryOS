@@ -73,7 +73,7 @@ export function UpgradeMoment({ tier, headline, body, worldSlug, missionSlug, co
 
   return (
     <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8, border: '1px solid #4A4020' }}>
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>What comes next</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>What comes next</p>
       <h3 style={{ color: '#E8E8EC', fontSize: 17, fontWeight: 400, margin: '10px 0 0' }}>{headline}</h3>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{body}</p>
       {premiumNext && (

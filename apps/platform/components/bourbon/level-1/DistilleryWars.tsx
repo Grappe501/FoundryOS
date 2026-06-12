@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { DISTILLERY_WARS, type DistilleryWar } from '../../../lib/bourbon-level-1/wars';
 import { getWarVotes, recordWarVote } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function DistilleryWarsList() {
   return (

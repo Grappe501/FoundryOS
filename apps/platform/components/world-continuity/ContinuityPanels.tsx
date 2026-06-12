@@ -71,7 +71,7 @@ export function JourneyContinuityPanel() {
 
       {snapshot.active_memory.length > 0 && (
         <div style={{ marginTop: 20 }}>
-          <p style={{ color: '#C8A96E', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
             Unfinished business
           </p>
           <ul style={{ margin: '10px 0 0', paddingLeft: 18 }}>
@@ -105,7 +105,7 @@ export function JourneyContinuityPanel() {
             <span
               key={m.id}
               title={m.story}
-              style={{ padding: '6px 12px', background: '#1A160F', borderRadius: 4, fontSize: 11, color: '#C8A96E' }}
+              style={{ padding: '6px 12px', background: '#1A160F', borderRadius: 4, fontSize: 11, color: 'var(--foundry-primary)' }}
             >
               {m.title}
             </span>
@@ -232,7 +232,7 @@ export function MemoryTimelinePanel() {
       ) : (
         Object.entries(byMonth).map(([month, items]) => (
           <div key={month} style={{ marginBottom: 28 }}>
-            <p style={{ color: '#C8A96E', fontSize: 13, letterSpacing: '0.06em', margin: '0 0 12px' }}>{month}</p>
+            <p style={{ color: 'var(--foundry-primary)', fontSize: 13, letterSpacing: '0.06em', margin: '0 0 12px' }}>{month}</p>
             {items.map((e) => (
               <div
                 key={e.id}

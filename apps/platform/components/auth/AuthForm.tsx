@@ -82,7 +82,7 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'create-account' }) {
         Password
         <input style={inputStyle} type="password" required minLength={8} value={password} onChange={(e) => setPassword(e.target.value)} placeholder="At least 8 characters" />
       </label>
-      {message && <p style={{ color: '#C8A96E', fontSize: 13, marginTop: 16 }}>{message}</p>}
+      {message && <p style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 16 }}>{message}</p>}
       <button
         type="submit"
         disabled={loading}

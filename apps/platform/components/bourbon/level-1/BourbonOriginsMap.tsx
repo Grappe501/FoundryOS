@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { HOUSE_OF_BOURBON_ROOT, ORIGIN_BRANCHES, ORIGIN_MYTH } from '../../../lib/bourbon-level-1/wild/origins';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonOriginsMap() {
   const [branch, setBranch] = useState<'whiskey' | 'street'>('whiskey');

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { BOURBON_PAIRINGS } from '../../../lib/bourbon-level-1/pairings';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function PairingEngine() {
   const [pick, setPick] = useState(BOURBON_PAIRINGS[0]);

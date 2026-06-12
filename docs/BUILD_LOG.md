@@ -35,6 +35,10 @@
 
 **Next:** 040C Atlas-Aware AI · 040D persistence · 041W weekly push delivery
 
+### Visual pass marker (temporary)
+
+Primary brand color switched to **blue** (`#4A90D9` via `--foundry-primary` in `globals.css`) so deploys are obvious. Revert to bourbon gold `#C8A96E` next round.
+
 ---
 
 ## PASS-040B1 — Bourbon Intelligence Inventory ✅

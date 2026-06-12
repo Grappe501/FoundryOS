@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { getRabbitHoleOfDay } from '../../../lib/bourbon-level-1/intelligence/rabbit-hole-day';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function RabbitHoleOfDay({ compact }: { compact?: boolean }) {
   const hole = getRabbitHoleOfDay();

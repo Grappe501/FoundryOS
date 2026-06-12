@@ -9,7 +9,7 @@ export default function BourbonVerticalPage() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 900, margin: '0 auto' }}>
       <Link href="/verticals" style={{ color: '#6B6B70', fontSize: 13 }}>← Vertical Domains</Link>
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 16 }}>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: 16 }}>
         bourbon.foundryos.com · PASS-024 factory proof
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Bourbon</h1>
@@ -20,7 +20,7 @@ export default function BourbonVerticalPage() {
       </p>
 
       <section style={{ marginTop: 32, padding: 24, background: '#0F0F12', borderRadius: 8, border: '1px solid #4A4020' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Factory layers</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Factory layers</h2>
         <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 16, lineHeight: 1.9 }}>
           <li>World hub + 5 missions</li>
           <li>Academy · Portfolio · Parents · Glossary · Careers · Playground · Community</li>

@@ -195,7 +195,7 @@ export function CommunityActivationHub({
 
       {tab === 'discussions' && (
         <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Community discussions</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Community discussions</h2>
           <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Starter conversations — add your voice.</p>
           {isMember && (
             <>
@@ -216,7 +216,7 @@ export function CommunityActivationHub({
 
       {tab === 'challenge' && (
         <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>This week: {weeklyChallenge.theme}</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>This week: {weeklyChallenge.theme}</h2>
           <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{weeklyChallenge.prompt}</p>
           {myChallengeDone ? (
             <p style={{ color: accent, fontSize: 13, marginTop: 16 }}>You submitted this week&apos;s challenge. Come back next week.</p>
@@ -242,7 +242,7 @@ export function CommunityActivationHub({
               {weeklyChallenges.map((w) => (
                 <div key={w.week_key ?? w.theme} style={{ marginTop: 12, padding: 12, background: '#0F0F12', borderRadius: 6 }}>
                   <p style={{ margin: 0, fontSize: 11, color: '#6B6B70' }}>{w.week_key ?? 'Week'}</p>
-                  <p style={{ margin: '4px 0 0', color: '#C8A96E', fontSize: 13 }}>{w.theme}</p>
+                  <p style={{ margin: '4px 0 0', color: 'var(--foundry-primary)', fontSize: 13 }}>{w.theme}</p>
                   <p style={{ margin: '6px 0 0', color: '#8A8A8E', fontSize: 13, lineHeight: 1.5 }}>{w.prompt}</p>
                 </div>
               ))}
@@ -253,7 +253,7 @@ export function CommunityActivationHub({
 
       {tab === 'showcase' && (
         <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>{config.showcaseLabel}</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>{config.showcaseLabel}</h2>
           <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{config.peerReviewLabel}</p>
           {isMember && (
             <>
@@ -281,7 +281,7 @@ export function CommunityActivationHub({
       )}
 
       <section style={{ marginTop: 32, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Members & {config.mentorTitle} recognition</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Members & {config.mentorTitle} recognition</h2>
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Not badges — recognition for helping others.</p>
         {sortedMembers.map((m) => {
           const tier = getMentorTier(m.help_count ?? 0);

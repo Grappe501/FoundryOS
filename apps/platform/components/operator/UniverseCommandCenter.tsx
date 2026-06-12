@@ -29,7 +29,7 @@ export function OperatorShell({
 
       <nav style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 20, paddingBottom: 16, borderBottom: '1px solid #1A1A1E' }}>
         {NAV.map((n) => (
-          <Link key={n.href} href={n.href} style={{ color: '#C8A96E', fontSize: 13, textDecoration: 'none' }}>
+          <Link key={n.href} href={n.href} style={{ color: 'var(--foundry-primary)', fontSize: 13, textDecoration: 'none' }}>
             {n.label}
           </Link>
         ))}
@@ -45,7 +45,7 @@ export function StatGrid({ items }: { items: { label: string; value: string | nu
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 12, marginTop: 24 }}>
       {items.map((s) => (
         <div key={s.label} style={{ padding: 16, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
-          <div style={{ fontSize: 24, fontWeight: 300, color: '#C8A96E' }}>{s.value}</div>
+          <div style={{ fontSize: 24, fontWeight: 300, color: 'var(--foundry-primary)' }}>{s.value}</div>
           <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 6 }}>{s.label}</div>
           {s.note && <div style={{ fontSize: 10, color: '#4A4A4E', marginTop: 4 }}>{s.note}</div>}
         </div>
@@ -55,7 +55,7 @@ export function StatGrid({ items }: { items: { label: string; value: string | nu
 }
 
 export function ScoreBar({ label, value }: { label: string; value: number }) {
-  const color = value >= 85 ? '#6B9B6B' : value >= 60 ? '#C8A96E' : '#C96B6B';
+  const color = value >= 85 ? '#6B9B6B' : value >= 60 ? 'var(--foundry-primary)' : '#C96B6B';
   return (
     <div style={{ marginBottom: 10 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 4 }}>

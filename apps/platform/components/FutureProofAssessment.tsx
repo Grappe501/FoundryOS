@@ -189,7 +189,7 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
             borderRadius: 8,
           }}
         >
-          <p style={{ color: '#C8A96E', fontSize: 14, margin: 0 }}>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 14, margin: 0 }}>
             Confirm {chooseMeta.label} is your path — take the 2-minute assessment below.
           </p>
           <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>

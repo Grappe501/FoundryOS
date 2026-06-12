@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { WHERE_TO_BUY } from '../../../lib/bourbon-level-1/wild/where-to-buy';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function WhereToBuyGuide() {
   const [regionId, setRegionId] = useState(WHERE_TO_BUY[0].id);

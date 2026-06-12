@@ -17,12 +17,12 @@ export default async function WildTopicPage({ params }: Props) {
     <section style={{ marginTop: 16 }}>
       <Link href="/bourbon/beyond-the-bottle" style={{ color: '#6B6B70', fontSize: 13 }}>← Beyond the Bottle</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12, lineHeight: 1.25 }}>{topic.title}</h1>
-      <p style={{ color: '#C8A96E', fontSize: 14, marginTop: 8 }}>{topic.hook}</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 8 }}>{topic.hook}</p>
 
       {topic.myth && (
         <div style={{ marginTop: 20, padding: 16, background: '#1A160F', borderRadius: 8 }}>
           <p style={{ color: '#B88', fontSize: 13, margin: 0 }}>Common myth: {topic.myth}</p>
-          <p style={{ color: '#C8A96E', fontSize: 14, marginTop: 8 }}>{topic.truth}</p>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 8 }}>{topic.truth}</p>
         </div>
       )}
 

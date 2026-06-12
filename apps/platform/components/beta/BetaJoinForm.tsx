@@ -128,7 +128,7 @@ export function BetaJoinForm() {
         </div>
       </fieldset>
 
-      {error && <p style={{ color: '#C8A96E', fontSize: 13, marginTop: 16 }}>{error}</p>}
+      {error && <p style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 16 }}>{error}</p>}
 
       <button
         type="submit"

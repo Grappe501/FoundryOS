@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getDailyBourbon } from '../../../lib/bourbon-level-1/daily-bourbon';
 import { getDailySeen, markDailySeen } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function DailyBourbonCard({ compact = false }: { compact?: boolean }) {
   const [mounted, setMounted] = useState(false);

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { computeBourbonDna } from '../../../lib/bourbon-level-1/dna-engine';
 import { getBlindScores, getBracketVotes } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonDNAProfile() {
   const [mounted, setMounted] = useState(false);

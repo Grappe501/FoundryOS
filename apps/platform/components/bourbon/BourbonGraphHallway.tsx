@@ -4,12 +4,12 @@ import Link from 'next/link';
 import { groupConnections, type EntityGraphView, type GraphConfidence } from '@foundry/atlas-graph-engine';
 import { SECTION_INTROS } from '../../lib/bourbon-graph/edge-copy';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const CONFIDENCE_COLOR: Record<GraphConfidence, string> = {
   verified: '#6B9B6B',
   producer_disclosed: '#6B9BC9',
-  commonly_reported: '#C8A96E',
+  commonly_reported: 'var(--foundry-primary)',
   editorial: '#8A8A8E',
   unknown: '#6B6B70',
 };

@@ -30,7 +30,7 @@ export default async function OperatorInvitesPage() {
       </p>
 
       <section style={{ marginTop: 20, padding: 16, background: '#1A1A14', borderRadius: 8, border: '1px solid #3A3A2A' }}>
-        <p style={{ color: '#C8A96E', fontSize: 12, margin: 0, fontWeight: 500 }}>Before first invite — confirm Supabase Auth</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 12, margin: 0, fontWeight: 500 }}>Before first invite — confirm Supabase Auth</p>
         <ul style={{ color: '#8A8A8E', fontSize: 12, margin: '8px 0 0', paddingLeft: 18, lineHeight: 1.7 }}>
           <li>Site URL: <code style={{ color: '#E8E8EC' }}>https://foundry-os.netlify.app</code></li>
           <li>Redirect URL: <code style={{ color: '#E8E8EC' }}>https://foundry-os.netlify.app/auth/callback</code></li>

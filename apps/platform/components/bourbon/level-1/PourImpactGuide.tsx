@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { BOTTLE_STYLES, SERVE_METHODS, getPourAdvice } from '../../../lib/bourbon-level-1/wild/pour-guide';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function PourImpactGuide() {
   const [styleId, setStyleId] = useState(BOTTLE_STYLES[0].id);

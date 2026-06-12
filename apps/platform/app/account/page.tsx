@@ -50,7 +50,7 @@ export default async function AccountPage({ searchParams }: Props) {
         <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>Your account</p>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>{displayName}</h1>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>{user.email}</p>
-        <p style={{ color: tierLevel > 1 ? '#C8A96E' : '#6B6B70', fontSize: 13, marginTop: 16 }}>
+        <p style={{ color: tierLevel > 1 ? 'var(--foundry-primary)' : '#6B6B70', fontSize: 13, marginTop: 16 }}>
           Tier: {tierName.charAt(0).toUpperCase() + tierName.slice(1)}
           {tierLevel === 1 && ' (free)'}
           {tierLevel === 2 && ' — $4/mo'}

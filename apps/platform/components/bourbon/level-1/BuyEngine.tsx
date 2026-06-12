@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { recommendBottles, type BuyQuizAnswers } from '../../../lib/bourbon-level-1/buy-engine';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BuyEngine() {
   const [answers, setAnswers] = useState<BuyQuizAnswers>({
@@ -99,7 +99,7 @@ function Chip({ active, onClick, children }: { active: boolean; onClick: () => v
       style={{
         padding: '8px 16px',
         borderRadius: 999,
-        border: `1px solid ${active ? '#C8A96E' : '#2A2A2E'}`,
+        border: `1px solid ${active ? 'var(--foundry-primary)' : '#2A2A2E'}`,
         background: active ? '#4A4020' : 'transparent',
         color: active ? '#E8E8EC' : '#8A8A8E',
         fontSize: 13,

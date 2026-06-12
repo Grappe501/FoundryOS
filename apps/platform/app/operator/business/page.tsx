@@ -21,7 +21,7 @@ export default async function OperatorBusinessPage() {
       <Link href="/operator/revenue" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Revenue funnel</Link>
       <Link href="/operator/invites" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Invites</Link>
 
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>Founder dashboard</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>Founder dashboard</p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Business</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>
         Business metrics — even when MRR is $0, measure now.
@@ -32,13 +32,13 @@ export default async function OperatorBusinessPage() {
       ) : (
         <>
           <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>North star KPIs</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>North star KPIs</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 12 }}>
               <Stat label="Transformations in progress" value={biz.transformations_in_progress} accent="#6B9B6B" />
               <Stat label="Monthly active transformations" value={biz.monthly_active_transformations} accent="#6B9B6B" />
-              <Stat label="Upgrade intent (unique)" value={biz.upgrade_intent} accent="#C8A96E" />
-              <Stat label="Paid users" value={biz.paid_users} accent="#C8A96E" />
-              <Stat label="MRR" value={`$${biz.mrr_usd}`} accent="#C8A96E" />
+              <Stat label="Upgrade intent (unique)" value={biz.upgrade_intent} accent="var(--foundry-primary)" />
+              <Stat label="Paid users" value={biz.paid_users} accent="var(--foundry-primary)" />
+              <Stat label="MRR" value={`$${biz.mrr_usd}`} accent="var(--foundry-primary)" />
             </div>
           </section>
 
@@ -66,7 +66,7 @@ export default async function OperatorBusinessPage() {
           </section>
 
           <section style={{ marginTop: 32, padding: 20, background: '#111114', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>PASS-030 cohort (5 each)</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>PASS-030 cohort (5 each)</h2>
             <div style={{ marginTop: 16 }}>
               {Object.entries(biz.by_cohort).map(([cohort, c]) => (
                 <div key={cohort} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>

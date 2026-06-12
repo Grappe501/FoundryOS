@@ -28,15 +28,15 @@ export default function LegacyPage() {
           <div>People Mentored: <span style={{ color: '#E8E8EC' }}>{legacy.people_mentored}</span></div>
           <div>Communities Built: <span style={{ color: '#E8E8EC' }}>{legacy.communities_built}</span></div>
           <div>Knowledge Contributions: <span style={{ color: '#E8E8EC' }}>{legacy.knowledge_contributions.toLocaleString()}</span></div>
-          <div>Legacy Impact: <span style={{ color: '#C8A96E' }}>{Math.round(legacy.legacy_impact_score).toLocaleString()}</span></div>
+          <div>Legacy Impact: <span style={{ color: 'var(--foundry-primary)' }}>{Math.round(legacy.legacy_impact_score).toLocaleString()}</span></div>
         </div>
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Year 1 → Year 20</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Year 1 → Year 20</h2>
         {EXAMPLE_STEVE_LEGACY_MILESTONES.map((m) => (
           <div key={m.year} style={{ padding: '14px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
-            <span style={{ color: '#C8A96E' }}>Year {m.year}</span>
+            <span style={{ color: 'var(--foundry-primary)' }}>Year {m.year}</span>
             <span style={{ color: '#E8E8EC', marginLeft: 12 }}>{m.title}</span>
           </div>
         ))}

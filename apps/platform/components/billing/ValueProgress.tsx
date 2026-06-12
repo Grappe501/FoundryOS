@@ -14,7 +14,7 @@ type Props = {
 const tierColor: Record<string, string> = {
   free: '#6B6B70',
   build: '#6B9B6B',
-  mastery: '#C8A96E',
+  mastery: 'var(--foundry-primary)',
 };
 
 export function ValueProgress({ worldSlug, missionsCompleted, portfolioItems, communityJoined, currentTier = 'explore' }: Props) {
@@ -32,7 +32,7 @@ export function ValueProgress({ worldSlug, missionsCompleted, portfolioItems, co
 
       {nextSteps && (
         <div style={{ marginTop: 28 }}>
-          <h3 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>What comes next?</h3>
+          <h3 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>What comes next?</h3>
           <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Some steps are premium — visible, not hidden.</p>
           {nextSteps.steps.map((step) => (
             <NextStepRow key={step.href} step={step} currentTier={currentTier} />

@@ -31,8 +31,8 @@ export function DbStatusPanel({ status }: Props) {
 
       {!status.configured && (
         <p style={{ color: '#8A8A8E', margin: '12px 0 0' }}>
-          Copy <code style={{ color: '#C8A96E' }}>.env.example</code> to{' '}
-          <code style={{ color: '#C8A96E' }}>.env.local</code> — see docs/SUPABASE_SETUP.md
+          Copy <code style={{ color: 'var(--foundry-primary)' }}>.env.example</code> to{' '}
+          <code style={{ color: 'var(--foundry-primary)' }}>.env.local</code> — see docs/SUPABASE_SETUP.md
         </p>
       )}
 

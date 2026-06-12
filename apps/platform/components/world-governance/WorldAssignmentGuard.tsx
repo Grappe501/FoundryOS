@@ -24,7 +24,7 @@ export function WorldAssignmentGuard({ worldSlug, targetSegment, onConfirm }: Pr
 
   return (
     <div style={{ padding: 16, background: '#1A160F', border: '1px solid #4A4020', borderRadius: 8 }}>
-      <p style={{ color: '#C8A96E', fontSize: 14, margin: 0 }}>Assignment blocked</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 14, margin: 0 }}>Assignment blocked</p>
       <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{warning}</p>
       {record?.disclaimer_text && (
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{record.disclaimer_text}</p>

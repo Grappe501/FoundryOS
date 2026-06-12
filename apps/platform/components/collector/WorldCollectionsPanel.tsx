@@ -134,7 +134,7 @@ function CollectionCard({
           style={{
             width: `${pct}%`,
             height: '100%',
-            background: completed ? '#C8A96E' : accent,
+            background: completed ? 'var(--foundry-primary)' : accent,
             borderRadius: 2,
             transition: 'width 0.3s ease',
           }}
@@ -151,7 +151,7 @@ function CollectionCard({
         </p>
       )}
       {completed && (
-        <p style={{ color: '#C8A96E', fontSize: 11, marginTop: 8, letterSpacing: '0.06em' }}>Complete</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 11, marginTop: 8, letterSpacing: '0.06em' }}>Complete</p>
       )}
     </>
   );

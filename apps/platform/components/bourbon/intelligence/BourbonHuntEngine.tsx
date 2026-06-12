@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { getMonthlyHunt } from '../../../lib/bourbon-level-1/intelligence/hunt-engine';
 import { getHuntProgress, toggleHuntMission } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonHuntEngine() {
   const hunt = getMonthlyHunt();

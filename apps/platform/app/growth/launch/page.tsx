@@ -39,7 +39,7 @@ export default function LaunchFactoryPage() {
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Launch Factory</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>{PASS_015B_PASS_GATE}</p>
-      <p style={{ color: '#C8A96E', fontSize: 13, marginTop: 12, fontFamily: 'monospace' }}>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 12, fontFamily: 'monospace' }}>
         {PASS_015B_COMMAND}
       </p>
 
@@ -64,7 +64,7 @@ export default function LaunchFactoryPage() {
           </div>
           <div>
             <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Avg days to active</p>
-            <p style={{ color: '#C8A96E', fontSize: 28, fontWeight: 300, margin: '4px 0 0' }}>
+            <p style={{ color: 'var(--foundry-primary)', fontSize: 28, fontWeight: 300, margin: '4px 0 0' }}>
               {velocity.avg_days_blueprint_to_active ?? '—'}
             </p>
           </div>
@@ -72,28 +72,28 @@ export default function LaunchFactoryPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>One Command Creates</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>One Command Creates</h2>
         <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 16, fontSize: 13 }}>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', margin: '0 0 8px' }}>Platform</p>
+            <p style={{ color: 'var(--foundry-primary)', margin: '0 0 8px' }}>Platform</p>
             <p style={{ color: '#8A8A8E', margin: 0, lineHeight: 1.7 }}>
               Blueprint · Paths · Projects · Collections · Communities · Roles · Mastery
             </p>
           </div>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', margin: '0 0 8px' }}>SEO</p>
+            <p style={{ color: 'var(--foundry-primary)', margin: '0 0 8px' }}>SEO</p>
             <p style={{ color: '#8A8A8E', margin: 0, lineHeight: 1.7 }}>
               What Is · Beginner Guide · Road to Expert · Projects · Mistakes · Resources
             </p>
           </div>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', margin: '0 0 8px' }}>Marketing</p>
+            <p style={{ color: 'var(--foundry-primary)', margin: '0 0 8px' }}>Marketing</p>
             <p style={{ color: '#8A8A8E', margin: 0, lineHeight: 1.7 }}>
               Brief · Checklist · 30-day calendar · Email · Social · SEO cluster
             </p>
           </div>
           <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', margin: '0 0 8px' }}>Growth</p>
+            <p style={{ color: 'var(--foundry-primary)', margin: '0 0 8px' }}>Growth</p>
             <p style={{ color: '#8A8A8E', margin: 0, lineHeight: 1.7 }}>
               Target user · Traffic sources · Opportunity score · Monetization · KPIs
             </p>
@@ -102,7 +102,7 @@ export default function LaunchFactoryPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Validation Milestones (Realistic)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Validation Milestones (Realistic)</h2>
         <div style={{ marginTop: 16 }}>
           {VALIDATION_MILESTONES.map((m) => (
             <div
@@ -115,7 +115,7 @@ export default function LaunchFactoryPage() {
             >
               <span style={{ color: '#E8E8EC' }}>{m.date}</span>
               <span style={{ color: '#6B6B70', margin: '0 8px' }}>—</span>
-              <span style={{ color: '#C8A96E' }}>
+              <span style={{ color: 'var(--foundry-primary)' }}>
                 {m.active_domains} active · {m.users.toLocaleString()} users · {m.paid} paid
                 {'mrr' in m && m.mrr ? ` · ${m.mrr} MRR` : ''}
               </span>
@@ -126,7 +126,7 @@ export default function LaunchFactoryPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Next: Domain #2 — AI Builder</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Next: Domain #2 — AI Builder</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
           Highest opportunity score (64). Ideal early adopter — pays, creates, shares, refers. PASS-016 is{' '}
           <strong style={{ color: '#E8E8EC', fontWeight: 500 }}>not</strong> another architecture pass. Milestone: second{' '}
@@ -138,7 +138,7 @@ export default function LaunchFactoryPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Launch Registry</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Launch Registry</h2>
         <div style={{ marginTop: 16 }}>
           {velocity.entries.map((e) => (
             <div
@@ -152,7 +152,7 @@ export default function LaunchFactoryPage() {
               }}
             >
               <span style={{ color: '#E8E8EC' }}>{e.display_name}</span>
-              <span style={{ color: e.status === 'active' ? '#6B9B6B' : '#C8A96E' }}>{e.status}</span>
+              <span style={{ color: e.status === 'active' ? '#6B9B6B' : 'var(--foundry-primary)' }}>{e.status}</span>
             </div>
           ))}
         </div>

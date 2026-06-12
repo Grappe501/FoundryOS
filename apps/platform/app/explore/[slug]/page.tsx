@@ -113,7 +113,7 @@ export default async function ExplorePathPage({ params }: Props) {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Join the interest list</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Join the interest list</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Be first to know when {path.name} opens. No spam — just a note when the path is live.
         </p>

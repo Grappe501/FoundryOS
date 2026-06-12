@@ -64,7 +64,7 @@ export default async function OperatorOpportunitiesPage() {
 
       <section style={{ marginTop: 20, padding: 16, background: '#1A1410', border: '1px solid #3A2020', borderRadius: 8 }}>
 
-        <p style={{ color: '#C8A96E', fontSize: 13, margin: 0, fontWeight: 500 }}>{FLYWHEEL_STRATEGIC_LOCK.focus}</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0, fontWeight: 500 }}>{FLYWHEEL_STRATEGIC_LOCK.focus}</p>
 
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
 
@@ -160,7 +160,7 @@ export default async function OperatorOpportunitiesPage() {
 
                               : w.status === 'queued'
 
-                                ? '#C8A96E'
+                                ? 'var(--foundry-primary)'
 
                                 : '#6B6B70',
 
@@ -174,7 +174,7 @@ export default async function OperatorOpportunitiesPage() {
 
                   </td>
 
-                  <td style={{ padding: 10, color: '#C8A96E' }}>{w.score}</td>
+                  <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{w.score}</td>
 
                   <td style={{ padding: 10, color: '#8A8A8E', maxWidth: 200 }}>{formatAvenues(w.acquisition_avenues)}</td>
 
@@ -202,7 +202,7 @@ export default async function OperatorOpportunitiesPage() {
 
         <section style={{ marginTop: 36 }}>
 
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Flywheel domain expansion scores</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Flywheel domain expansion scores</h2>
 
           <div style={{ overflowX: 'auto', marginTop: 16 }}>
 
@@ -226,7 +226,7 @@ export default async function OperatorOpportunitiesPage() {
 
                   <th style={{ padding: 10 }}>Community</th>
 
-                  <th style={{ padding: 10, color: '#C8A96E' }}>Score</th>
+                  <th style={{ padding: 10, color: 'var(--foundry-primary)' }}>Score</th>
 
                 </tr>
 
@@ -262,7 +262,7 @@ export default async function OperatorOpportunitiesPage() {
 
                     <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.community_potential}</td>
 
-                    <td style={{ padding: 10, color: '#C8A96E', fontWeight: 600, fontSize: 15 }}>{d.total_score}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-primary)', fontWeight: 600, fontSize: 15 }}>{d.total_score}</td>
 
                   </tr>
 

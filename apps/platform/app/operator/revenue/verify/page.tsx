@@ -17,7 +17,7 @@ export default async function RevenueVerifyPage() {
       <Link href="/operator/revenue" style={{ color: '#6B6B70', fontSize: 13 }}>← Revenue dashboard</Link>
       <Link href="/operator/business" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Business</Link>
 
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>PASS-029A</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>PASS-029A</p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Revenue & Analytics Verification</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
         Prove every business metric is accurate before PASS-030 invites. Seeds {REVENUE_TEST_PERSONAS.length} test personas and validates attribution.
@@ -37,7 +37,7 @@ export default async function RevenueVerifyPage() {
           </section>
 
           <section style={{ marginTop: 24 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Test personas</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Test personas</h2>
             <div style={{ marginTop: 12 }}>
               {REVENUE_TEST_PERSONAS.map((p) => (
                 <div key={p.id} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
@@ -78,7 +78,7 @@ export default async function RevenueVerifyPage() {
 
           {consistency && (
             <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-              <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Dashboard consistency</h2>
+              <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Dashboard consistency</h2>
               <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
                 pricing_viewed {consistency.pricing_viewed} · upgrade_initiated {consistency.upgrade_initiated} · paid_users (subscriptions) {consistency.paid_users_subscriptions}
               </p>
@@ -90,7 +90,7 @@ export default async function RevenueVerifyPage() {
 
           {result.snapshot?.persona_payments.length ? (
             <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-              <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Who paid and why</h2>
+              <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Who paid and why</h2>
               {result.snapshot.persona_payments.map((p) => (
                 <div key={p.persona} style={{ padding: '8px 0', fontSize: 13, borderBottom: '1px solid #1A1A1E' }}>
                   <span style={{ color: '#E8E8EC' }}>{p.persona}</span>

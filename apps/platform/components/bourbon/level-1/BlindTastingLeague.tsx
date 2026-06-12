@@ -5,7 +5,7 @@ import { getMonthlyChallenge } from '../../../lib/bourbon-level-1/agency/blind-l
 import { getLeagueScores, recordLeagueScore } from '../../../lib/bourbon-level-1/storage';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BlindTastingLeague() {
   const challenge = getMonthlyChallenge();

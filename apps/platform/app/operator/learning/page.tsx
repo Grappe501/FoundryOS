@@ -38,7 +38,7 @@ export default async function OperatorLearningPage() {
       </section>
 
       <section style={{ marginTop: 28 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>What we measure</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>What we measure</h2>
         <div style={{ marginTop: 16, display: 'grid', gap: 10 }}>
           {LEARNING_LANE_METRICS.map((m) => (
             <div key={m.key} style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
@@ -56,7 +56,7 @@ export default async function OperatorLearningPage() {
 
       {biz && (
         <section style={{ marginTop: 28, padding: 20, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Cohort progress (5 each)</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Cohort progress (5 each)</h2>
           <div style={{ marginTop: 16 }}>
             {Object.entries(biz.by_cohort).map(([cohort, c]) => (
               <div key={cohort} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
@@ -98,7 +98,7 @@ export default async function OperatorLearningPage() {
       </section>
 
       <section style={{ marginTop: 32, padding: 20, background: '#1A1410', border: '1px solid #3A3020', borderRadius: 8 }}>
-        <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0 }}>
           Ready after PASS-032: {getMissionCount('ai-builder')}+ missions per Life Leverage world. Use <Link href="/operator/invites" style={{ color: '#E8E8EC' }}>/operator/invites</Link> when immersion gate clears.
         </p>
       </section>

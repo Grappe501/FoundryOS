@@ -27,7 +27,7 @@ export default function DailyBourbonPage() {
 function DailyRow({ label, value, href }: { label: string; value: string; href?: string }) {
   return (
     <div style={{ padding: 18, background: '#111114', borderRadius: 8 }}>
-      <p style={{ color: '#C8A96E', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{label}</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{label}</p>
       <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 8, lineHeight: 1.5 }}>{value}</p>
       {href && (
         <Link href={href} style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, display: 'inline-block' }}>Go →</Link>

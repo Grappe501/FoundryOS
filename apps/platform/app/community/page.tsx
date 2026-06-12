@@ -26,7 +26,7 @@ export default async function CommunityProofPage() {
       <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 8 }}>{COMMUNITY_OS_TAGLINE}</p>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: `1px solid ${complete ? '#2A4A2A' : '#2A2520'}`, borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Verification Checklist</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Verification Checklist</h2>
         <div style={{ marginTop: 16 }}>
           {checklist.map((step) => (
             <div key={step.key} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 14 }}>
@@ -37,7 +37,7 @@ export default async function CommunityProofPage() {
         </div>
         <div style={{ marginTop: 24, textAlign: 'center' }}>
           <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Community OS</p>
-          <p style={{ color: complete ? '#6B9B6B' : '#C8A96E', fontSize: 20, fontWeight: 300, marginTop: 8, letterSpacing: '0.1em' }}>
+          <p style={{ color: complete ? '#6B9B6B' : 'var(--foundry-primary)', fontSize: 20, fontWeight: 300, marginTop: 8, letterSpacing: '0.1em' }}>
             {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
           </p>
         </div>
@@ -56,7 +56,7 @@ export default async function CommunityProofPage() {
           {community.capabilities.map((c) => {
             const label = COMMUNITY_OS_CAPABILITIES.find((x) => x.key === c)?.label ?? c;
             return (
-              <span key={c} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: '#C8A96E' }}>
+              <span key={c} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: 'var(--foundry-primary)' }}>
                 {label}
               </span>
             );
@@ -65,7 +65,7 @@ export default async function CommunityProofPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Demo Proof</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Demo Proof</h2>
         <div style={{ marginTop: 12, fontSize: 13, lineHeight: 1.8, color: '#8A8A8E' }}>
           <div>Member joined: {member.user_slug} ({member.role})</div>
           <div>Project assigned: {project.project_title}</div>
@@ -74,7 +74,7 @@ export default async function CommunityProofPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Same Architecture — Any Domain</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Same Architecture — Any Domain</h2>
         {COMMUNITY_EXAMPLES.slice(1).map((ex) => (
           <div key={ex.slug} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
             <span style={{ color: '#E8E8EC' }}>{ex.display_name}</span>

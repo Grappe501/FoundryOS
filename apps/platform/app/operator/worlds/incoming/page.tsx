@@ -22,7 +22,7 @@ export default function OperatorIncomingWorldsPage() {
     >
       {roi && (
         <div style={{ marginTop: 24, padding: 20, background: '#1A1410', border: '1px solid #3A3020', borderRadius: 8 }}>
-          <p style={{ color: '#C8A96E', fontSize: 11, margin: 0 }}>Highest ROI (computed)</p>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: 0 }}>Highest ROI (computed)</p>
           <p style={{ color: '#E8E8EC', fontSize: 17, marginTop: 8 }}>{roi.target}</p>
           <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{roi.reasons.join(' · ')}</p>
         </div>
@@ -46,7 +46,7 @@ export default function OperatorIncomingWorldsPage() {
                 <td style={{ padding: 10, color: '#6B6B70' }}>{w.rank}</td>
                 <td style={{ padding: 10, color: '#E8E8EC' }}>{w.name}</td>
                 <td style={{ padding: 10, color: '#8A8A8E' }}>{w.status}</td>
-                <td style={{ padding: 10, color: '#C8A96E' }}>{w.score}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{w.score}</td>
                 <td style={{ padding: 10, color: '#8A8A8E' }}>{formatAvenues(w.acquisition_avenues)}</td>
                 <td style={{ padding: 10, color: '#6B6B70', fontSize: 11 }}>{w.note}</td>
               </tr>

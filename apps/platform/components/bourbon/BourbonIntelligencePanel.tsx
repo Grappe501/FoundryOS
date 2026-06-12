@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { bottleChain, getBottleRecord, getProducerRecord, peopleForProducer } from '../../lib/bourbon-intelligence';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 function ConfidenceBadge({ label }: { label: string }) {
   return (

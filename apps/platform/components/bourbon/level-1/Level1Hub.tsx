@@ -30,16 +30,16 @@ export function Level1Hub({ toolsOnly = false }: { toolsOnly?: boolean }) {
         worldSlug="bourbon"
         title="Your Bourbon Collections"
         subtitle="Close cases, log bottles, visit houses — each item is part of who you are becoming."
-        accent="#C8A96E"
+        accent="var(--foundry-primary)"
         maxItems={6}
       />
 
       <section style={{ marginTop: 24, padding: 18, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>The Atlas</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>The Atlas</p>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
           Every industry word is a doorway — mash bill, rickhouse, proof, allocation, and 100+ more with hover definitions and deep rabbit holes.
         </p>
-        <Link href="/bourbon/atlas" style={{ display: 'inline-block', marginTop: 12, color: '#C8A96E', fontSize: 13 }}>
+        <Link href="/bourbon/atlas" style={{ display: 'inline-block', marginTop: 12, color: 'var(--foundry-primary)', fontSize: 13 }}>
           Open The Atlas →
         </Link>
       </section>
@@ -54,7 +54,7 @@ export function Level1Hub({ toolsOnly = false }: { toolsOnly?: boolean }) {
 
       <section style={{ marginTop: 40, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
         <p style={{ color: '#6B6B70', fontSize: 13, margin: 0 }}>{LEVEL_1_LESSON_LINK.label}</p>
-        <Link href={LEVEL_1_LESSON_LINK.href} style={{ color: '#C8A96E', fontSize: 14, marginTop: 8, display: 'inline-block' }}>
+        <Link href={LEVEL_1_LESSON_LINK.href} style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 8, display: 'inline-block' }}>
           {LEVEL_1_LESSON_LINK.sub} →
         </Link>
         <span style={{ color: '#4A4A4E', margin: '0 8px' }}>·</span>

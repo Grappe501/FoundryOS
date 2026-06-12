@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { getCollectorTrack, setCollectorTrack, type CollectorTrack } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const TRACKS: { id: CollectorTrack; title: string; desc: string; tools: { label: string; href: string }[] }[] = [
   {

@@ -33,7 +33,7 @@ const SECTION_ORDER: LoreSection[] = [
   'experience',
 ];
 
-export function WorldLoreHub({ worldSlug, accent = '#C8A96E', backHref, backLabel, hideHeader }: Props) {
+export function WorldLoreHub({ worldSlug, accent = 'var(--foundry-primary)', backHref, backLabel, hideHeader }: Props) {
   const lore = getWorldLore(worldSlug);
   if (!lore) {
     return (

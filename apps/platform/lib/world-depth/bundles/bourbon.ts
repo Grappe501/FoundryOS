@@ -30,7 +30,7 @@ const templatedUpperLessons = buildAcademyLessons(levelsTwoThroughSeven, 'Bourbo
 export const BOURBON_DEPTH: WorldDepthBundle = {
   slug: 'bourbon',
   displayName: 'Bourbon World',
-  accentColor: '#C8A96E',
+  accentColor: 'var(--foundry-primary)',
   portfolioLabel: 'My Bourbon Journal',
 
   academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...templatedUpperLessons],

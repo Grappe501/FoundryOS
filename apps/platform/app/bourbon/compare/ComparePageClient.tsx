@@ -20,7 +20,7 @@ export default function ComparePageClient() {
       </p>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 17, color: '#C8A96E', fontWeight: 400 }}>Compare any two</h2>
+        <h2 style={{ fontSize: 17, color: 'var(--foundry-primary)', fontWeight: 400 }}>Compare any two</h2>
         <div style={{ marginTop: 16 }}>
           <CompareAnyTwoTool initialMode={mode} initialA={a} initialB={b} />
         </div>

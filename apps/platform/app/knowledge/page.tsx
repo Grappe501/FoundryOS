@@ -16,14 +16,14 @@ export default function KnowledgeUniversePage() {
       </p>
 
       <section style={{ marginTop: 28, padding: 16, background: '#0F0F12', borderRadius: 8 }}>
-        <div style={{ color: '#C8A96E', fontSize: 13, marginBottom: 12 }}>Layers</div>
+        <div style={{ color: 'var(--foundry-primary)', fontSize: 13, marginBottom: 12 }}>Layers</div>
         {KNOWLEDGE_UNIVERSE_LAYERS.map((l) => (
           <div key={l} style={{ fontSize: 13, color: '#8A8A8E', padding: '3px 0' }}>{l}</div>
         ))}
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Encyclopedia — 10 Sections Per Entity</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Encyclopedia — 10 Sections Per Entity</h2>
         <div style={{ marginTop: 12, fontSize: 13, color: '#8A8A8E', lineHeight: 1.9 }}>
           {ENCYCLOPEDIA_SECTIONS.map((s) => (
             <div key={s.slug}>{s.display_name} — {s.description}</div>
@@ -32,7 +32,7 @@ export default function KnowledgeUniversePage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Bourbon Academy — {BOURBON_ACADEMY.levels.length} Levels</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Bourbon Academy — {BOURBON_ACADEMY.levels.length} Levels</h2>
         {BOURBON_ACADEMY.levels.map((l) => (
           <div key={l.level} style={{ fontSize: 13, color: '#8A8A8E', padding: '6px 0' }}>
             Level {l.level}: {l.title}
@@ -44,7 +44,7 @@ export default function KnowledgeUniversePage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Semantic Search (reserved)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Semantic Search (reserved)</h2>
         {SEMANTIC_SEARCH_EXAMPLES.map((q) => (
           <div key={q} style={{ fontSize: 12, color: '#6B6B70', padding: '4px 0' }}>&quot;{q}&quot;</div>
         ))}

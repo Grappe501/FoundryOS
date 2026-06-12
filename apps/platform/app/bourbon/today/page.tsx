@@ -11,7 +11,7 @@ export default function BourbonTodayPage() {
     <BourbonDeepPageShell content={content} backHref="/bourbon" backLabel="← Bourbon world">
       <RabbitHoleOfDay compact />
       <div style={{ marginTop: 28 }}>
-        <WorldEventsToday worldSlug="bourbon" accent="#C8A96E" />
+        <WorldEventsToday worldSlug="bourbon" accent="var(--foundry-primary)" />
       </div>
     </BourbonDeepPageShell>
   );

@@ -5,7 +5,7 @@ import type { BourbonPerson } from '../../lib/bourbon-depth/types';
 import { getBottle } from '../../lib/bourbon-level-1/bottles';
 import { listBourbonPeople } from '../../lib/bourbon-depth/people';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function PersonProfileView({ person }: { person: BourbonPerson }) {
   return (

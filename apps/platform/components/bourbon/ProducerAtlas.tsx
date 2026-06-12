@@ -8,7 +8,7 @@ import {
   type BourbonProducer,
 } from '../../lib/world-depth/bourbon-producers';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 const STORAGE_KEY = 'foundry-bourbon-producers-visited';
 
 function loadVisited(): string[] {

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { STORE_PICK_LESSONS, STORE_PICK_PROGRAMS } from '../../../lib/bourbon-level-1/agency/store-picks';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function StorePickAcademy() {
   return (

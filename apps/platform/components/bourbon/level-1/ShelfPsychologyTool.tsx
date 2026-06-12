@@ -6,7 +6,7 @@ import { analyzeShelf } from '../../../lib/bourbon-level-1/agency/shelf-psycholo
 import { getCollection } from '../../../lib/bourbon-level-1/storage';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function ShelfPsychologyTool() {
   const [selected, setSelected] = useState<string[]>([]);

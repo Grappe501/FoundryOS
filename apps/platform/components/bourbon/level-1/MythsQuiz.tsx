@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { BOURBON_MYTHS, type BourbonMyth } from '../../../lib/bourbon-level-1/myths';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function MythsQuiz() {
   const [idx, setIdx] = useState(0);

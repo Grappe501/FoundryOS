@@ -23,17 +23,17 @@ export default function OutcomesPage() {
       </p>
 
       <section style={{ marginTop: 28, padding: 20, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
-        <div style={{ color: '#C8A96E', fontSize: 13 }}>Foundry starts with</div>
+        <div style={{ color: 'var(--foundry-primary)', fontSize: 13 }}>Foundry starts with</div>
         <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 8 }}>
           Education: <span style={{ color: '#6B6B70' }}>{FOUNDRY_STARTS_WITH.education}</span>
           {' · '}
-          Foundry: <span style={{ color: '#C8A96E' }}>{FOUNDRY_STARTS_WITH.foundry}</span>
+          Foundry: <span style={{ color: 'var(--foundry-primary)' }}>{FOUNDRY_STARTS_WITH.foundry}</span>
         </p>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{OUTCOME_PRINCIPLE}</p>
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Human Development Layers</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Human Development Layers</h2>
         <p style={{ color: '#6B6B70', fontSize: 12, marginBottom: 12 }}>{NOT_EDUCATION_NOT_SOCIAL_NOT_AI}</p>
         {HUMAN_DEVELOPMENT_LAYERS.map((l) => (
           <div key={l.key} style={{ padding: '8px 0', fontSize: 13, color: '#8A8A8E' }}>
@@ -43,7 +43,7 @@ export default function OutcomesPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Core Engines</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Core Engines</h2>
         {CORE_ENGINES.map((e) => (
           <div key={e.key} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
             <span style={{ color: '#E8E8EC' }}>{e.name}</span>
@@ -53,18 +53,18 @@ export default function OutcomesPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Purpose Engine — {PURPOSE_QUESTION}</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Purpose Engine — {PURPOSE_QUESTION}</h2>
         {DOMAIN_PURPOSE_EXAMPLES.map((p) => (
           <div key={p.domain_slug} style={{ padding: '16px 0', borderBottom: '1px solid #1A1A1E' }}>
             <div style={{ color: '#E8E8EC' }}>{p.domain_display_name}</div>
             <div style={{ color: '#4A4A4E', fontSize: 12, marginTop: 6 }}>Wikipedia: {p.wikipedia_answer}</div>
-            <div style={{ color: '#C8A96E', fontSize: 12, marginTop: 6 }}>Foundry: {p.foundry_answer}</div>
+            <div style={{ color: 'var(--foundry-primary)', fontSize: 12, marginTop: 6 }}>Foundry: {p.foundry_answer}</div>
           </div>
         ))}
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Human Outcomes Registry ({HUMAN_OUTCOMES_REGISTRY.length})</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Human Outcomes Registry ({HUMAN_OUTCOMES_REGISTRY.length})</h2>
         <p style={{ color: '#6B6B70', fontSize: 12, marginBottom: 16 }}>The most important registry — goals, not subjects.</p>
         {HUMAN_OUTCOMES_REGISTRY.map((o) => (
           <div key={o.slug} style={{ padding: '16px 0', borderBottom: '1px solid #1A1A1E' }}>
@@ -78,7 +78,7 @@ export default function OutcomesPage() {
       </section>
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>20-Year Vision</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>20-Year Vision</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Join at {TWENTY_YEAR_VISION.join_at}. Tracks: {TWENTY_YEAR_VISION.tracks.join(', ')}.
         </p>
@@ -88,7 +88,7 @@ export default function OutcomesPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Ultimate Factory Ecosystem</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Ultimate Factory Ecosystem</h2>
         {ULTIMATE_FACTORY_ECOSYSTEM.map((f) => (
           <div key={f.key} style={{ padding: '6px 0', fontSize: 13, color: '#8A8A8E' }}>
             <span style={{ color: '#E8E8EC' }}>{f.name}</span> — {f.output}

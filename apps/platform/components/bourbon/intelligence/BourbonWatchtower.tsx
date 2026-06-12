@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { getWatchtowerWeek } from '../../../lib/bourbon-level-1/intelligence/watchtower';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const KIND_LABEL: Record<string, string> = {
   discussed: 'Most discussed',

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from 'react';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const CHAR_LEVELS = [
   { level: 1, label: 'Char #1', caramel: 20, vanilla: 15, smoke: 5, oak: 10, tannin: 5 },
@@ -65,7 +65,7 @@ export function BourbonLab() {
         <p style={{ color: ACCENT, fontSize: 14, marginTop: 8 }}>{charData.label} — most bourbon uses #3 or #4</p>
         <div style={{ marginTop: 16, height: 80, background: `linear-gradient(180deg, ${barrelColor} 0%, #3A2810 100%)`, borderRadius: 8, border: '2px solid #2A2010' }} aria-hidden />
         <div style={{ marginTop: 20 }}>
-          <Bar label="Caramel" value={charData.caramel} color="#C8A96E" />
+          <Bar label="Caramel" value={charData.caramel} color="var(--foundry-primary)" />
           <Bar label="Vanilla" value={charData.vanilla} color="#E8D4A0" />
           <Bar label="Smoke" value={charData.smoke} color="#6B6B70" />
           <Bar label="Oak" value={charData.oak} color="#8B6914" />
@@ -82,7 +82,7 @@ export function BourbonLab() {
           ))}
         </div>
         <div style={{ marginTop: 16 }}>
-          <Bar label="Sweetness" value={ageData.sweetness} color="#C8A96E" />
+          <Bar label="Sweetness" value={ageData.sweetness} color="var(--foundry-primary)" />
           <Bar label="Oak influence" value={ageData.oak} color="#8B6914" />
           <Bar label="Tannin / dry" value={ageData.tannin} color="#4A3020" />
         </div>

@@ -6,7 +6,7 @@ import { getDetectiveSolved } from '../../../lib/bourbon-level-1/storage';
 import { DetectiveMentorFollowUp } from '../intelligence/DetectiveMentorFollowUp';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonDetectiveHub() {
   const solved = typeof window !== 'undefined' ? getDetectiveSolved() : [];

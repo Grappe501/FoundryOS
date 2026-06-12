@@ -146,7 +146,7 @@ export function GlobalSearchPanel() {
 
       {response.learn_this_next.length > 0 && (
         <section style={{ marginTop: 32 }}>
-          <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>Learn this next</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Learn this next</h2>
           <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
             {response.learn_this_next.map((r) => (
               <ResultRow key={`next-${r.id}`} r={r} />

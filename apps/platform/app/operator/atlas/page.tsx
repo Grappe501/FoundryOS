@@ -28,7 +28,7 @@ export default function OperatorAtlasHealthPage() {
       />
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Six-question model (040B)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Six-question model (040B)</h2>
         <ol style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 2, marginTop: 12, paddingLeft: 20 }}>
           <li>Why should I care?</li>
           <li>What should I do next?</li>

@@ -21,7 +21,7 @@ import { getWorldCollections } from '../../lib/collector/client-state';
 import { recordIntentNote } from '../../lib/world-continuity/client-state';
 
 const TYPE_ACCENT: Record<string, string> = {
-  daily_mystery: '#C8A96E',
+  daily_mystery: 'var(--foundry-primary)',
   weekly_rivalry: '#D4847A',
   spotlight: '#6B9BC9',
   debate: '#9B8FD4',

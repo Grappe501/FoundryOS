@@ -34,7 +34,7 @@ export default function OperatorBourbonInventoryPage() {
       />
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Legal spine (27 CFR Part 5)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Legal spine (27 CFR Part 5)</h2>
         <ul style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.9, marginTop: 12, paddingLeft: 20 }}>
           {LEGAL_STANDARDS.map((s) => (
             <li key={s.slug}>

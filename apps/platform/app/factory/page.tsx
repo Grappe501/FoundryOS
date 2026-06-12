@@ -35,13 +35,13 @@ export default function FactoryPage() {
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 900, margin: '0 auto' }}>
       <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>{PASS_009_FACTORY_NAME}</h1>
-      <p style={{ color: '#C8A96E', marginTop: 8, fontSize: 14 }}>{PASS_009_FACTORY_MISSION}</p>
+      <p style={{ color: 'var(--foundry-primary)', marginTop: 8, fontSize: 14 }}>{PASS_009_FACTORY_MISSION}</p>
       <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
         Not {PASS_009_NOT}. North star: {PRIMARY_DASHBOARD_QUESTION}
       </p>
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
-        <div style={{ color: '#C8A96E', fontSize: 13, marginBottom: 12 }}>The Real Product</div>
+        <div style={{ color: 'var(--foundry-primary)', fontSize: 13, marginBottom: 12 }}>The Real Product</div>
         {FACTORY_PIPELINE.map((layer, i) => (
           <div key={layer} style={{ fontSize: 13, color: '#8A8A8E', padding: '4px 0' }}>
             {i > 0 && <span style={{ color: '#4A4A4E' }}>↓ </span>}
@@ -51,7 +51,7 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Pipeline Stages</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Pipeline Stages</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
           {PIPELINE_STAGES.map((s) => (
             <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: '#8A8A8E' }}>
@@ -65,10 +65,10 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Four AI Systems</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Four AI Systems</h2>
         {AI_SYSTEMS.map((ai) => (
           <div key={ai.id} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
-            <span style={{ color: '#C8A96E' }}>AI #{ai.id}</span>
+            <span style={{ color: 'var(--foundry-primary)' }}>AI #{ai.id}</span>
             <span style={{ color: '#E8E8EC', marginLeft: 8 }}>{ai.name}</span>
             <div style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{ai.output}</div>
           </div>
@@ -76,7 +76,7 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Core Engines</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Core Engines</h2>
         {CORE_ENGINES.map((e) => (
           <div key={e.key} style={{ fontSize: 13, color: '#8A8A8E', padding: '4px 0' }}>
             <span style={{ color: '#E8E8EC' }}>{e.name}</span> — {e.question}
@@ -87,7 +87,7 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Ultimate Factory (PASS-009+)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Ultimate Factory (PASS-009+)</h2>
         {ULTIMATE_FACTORY_ECOSYSTEM.map((f) => (
           <div key={f.key} style={{ fontSize: 13, color: '#8A8A8E', padding: '4px 0' }}>
             <span style={{ color: '#E8E8EC' }}>{f.name}</span> — {f.output}
@@ -96,12 +96,12 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Object Hierarchy</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Object Hierarchy</h2>
         <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 8 }}>{HIERARCHY_FLOW}</p>
         <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 12 }}>{PASS_009_GUIDANCE}</p>
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{ENTITY_WITHOUT_TRANSFORMATION}</p>
         <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 8 }}>{FOUNDRY_EQUATION_FLOW}</p>
-        <Link href="/transformation" style={{ color: '#C8A96E', fontSize: 12, display: 'block', marginTop: 12 }}>Full Transformation Factory →</Link>
+        <Link href="/transformation" style={{ color: 'var(--foundry-primary)', fontSize: 12, display: 'block', marginTop: 12 }}>Full Transformation Factory →</Link>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
           {TRANSFORMATION_SYSTEM_COMPONENTS.map((c) => (
             <span key={c} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: '#8A8A8E' }}>{c}</span>
@@ -110,9 +110,9 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Entity Outputs (within ecosystem)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Entity Outputs (within ecosystem)</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
-          Every entity must answer: <span style={{ color: '#C8A96E' }}>{ENTITY_CARE_QUESTION}</span>
+          Every entity must answer: <span style={{ color: 'var(--foundry-primary)' }}>{ENTITY_CARE_QUESTION}</span>
         </p>
         <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{TRANSFORMATION_PRINCIPLE}</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
@@ -125,7 +125,7 @@ export default function FactoryPage() {
       </section>
 
       <section style={{ marginTop: 32, padding: 16, background: '#0F0F12', borderRadius: 8, fontSize: 13 }}>
-        <div style={{ color: '#C8A96E', marginBottom: 8 }}>CLI</div>
+        <div style={{ color: 'var(--foundry-primary)', marginBottom: 8 }}>CLI</div>
         <code style={{ color: '#8A8A8E' }}>
           npm run build:topic -- --topic &quot;Buffalo Trace&quot; --slug buffalo-trace --type spirit
         </code>

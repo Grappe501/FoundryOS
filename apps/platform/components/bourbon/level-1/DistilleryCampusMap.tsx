@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { DISTILLERY_CAMPUSES, getCampus } from '../../../lib/bourbon-level-1/agency/campus-maps';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function DistilleryCampusMap() {
   const [slug, setSlug] = useState(DISTILLERY_CAMPUSES[0].producerSlug);

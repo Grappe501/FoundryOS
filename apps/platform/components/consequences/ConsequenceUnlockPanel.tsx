@@ -4,11 +4,11 @@ import Link from 'next/link';
 import type { ConsequenceBundle } from '@foundry/consequence-engine';
 import { effectKindLabel } from '@foundry/consequence-engine';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const KIND_COLORS: Record<string, string> = {
   unlock_debate: '#9B6B9B',
-  unlock_legendary_object: '#C8A96E',
+  unlock_legendary_object: 'var(--foundry-primary)',
   unlock_collector_progress: '#6B9B6B',
   unlock_rabbit_hole: '#6B8EBD',
   mentor_memory: '#BD8E6B',
@@ -54,7 +54,7 @@ export function ConsequenceUnlockPanel({ bundle }: { bundle: ConsequenceBundle }
         ))}
       </ul>
       {bundle.mentor_line && (
-        <blockquote style={{ marginTop: 20, padding: '14px 16px', background: '#1A1814', borderRadius: 8, borderLeft: `3px solid ${ACCENT}`, color: '#C8A96E', fontSize: 14, fontStyle: 'italic' }}>
+        <blockquote style={{ marginTop: 20, padding: '14px 16px', background: '#1A1814', borderRadius: 8, borderLeft: `3px solid ${ACCENT}`, color: 'var(--foundry-primary)', fontSize: 14, fontStyle: 'italic' }}>
           Mentor: &ldquo;{bundle.mentor_line}&rdquo;
         </blockquote>
       )}

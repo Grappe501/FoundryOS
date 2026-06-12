@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { aggregateEntityArtifacts } from '@foundry/artifact-engine';
 import { ARTIFACTS_CHANGED_EVENT, getLocalUserId, listClientArtifacts } from '../../lib/artifacts/client-store';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 function StatLine({ label, count }: { label: string; count: number }) {
   if (count === 0) return null;

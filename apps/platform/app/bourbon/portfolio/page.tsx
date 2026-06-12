@@ -19,7 +19,7 @@ export default function PortfolioPage() {
         worldSlug="bourbon"
         title="Your Bourbon Collections"
         subtitle="Themed shelves earned through investigation, pours, and pilgrimages — not stickers."
-        accent="#C8A96E"
+        accent="var(--foundry-primary)"
       />
       <ShelfIntelligencePanel />
       <WorldPortfolioDepth

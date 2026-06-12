@@ -55,7 +55,7 @@ export default function TrafficOpportunitiesPage() {
       </p>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Acquisition Portfolio Scorecard</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Acquisition Portfolio Scorecard</h2>
         <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 8 }}>
           7 dimensions (max 70) — portfolio decisions, not shiny objects
         </p>
@@ -70,7 +70,7 @@ export default function TrafficOpportunitiesPage() {
                     {PORTFOLIO_SCORE_LABELS[k].split(' ')[0]}
                   </th>
                 ))}
-                <th style={{ padding: '8px 4px', color: '#C8A96E' }}>/70</th>
+                <th style={{ padding: '8px 4px', color: 'var(--foundry-primary)' }}>/70</th>
               </tr>
             </thead>
             <tbody>
@@ -88,7 +88,7 @@ export default function TrafficOpportunitiesPage() {
                       {o.portfolio[k]}
                     </td>
                   ))}
-                  <td style={{ padding: '10px 4px', color: '#C8A96E', fontWeight: 500 }}>{o.total_score}</td>
+                  <td style={{ padding: '10px 4px', color: 'var(--foundry-primary)', fontWeight: 500 }}>{o.total_score}</td>
                 </tr>
               ))}
             </tbody>
@@ -97,7 +97,7 @@ export default function TrafficOpportunitiesPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>January 2027 Launch Sequence</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>January 2027 Launch Sequence</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
           Identity · Community · Projects · Collections — not traffic-chasing apps.
         </p>
@@ -113,7 +113,7 @@ export default function TrafficOpportunitiesPage() {
                 fontSize: 14,
               }}
             >
-              <span style={{ color: '#C8A96E', minWidth: 24 }}>{d.rank}.</span>
+              <span style={{ color: 'var(--foundry-primary)', minWidth: 24 }}>{d.rank}.</span>
               <span style={{ color: '#E8E8EC', minWidth: 160 }}>{d.name}</span>
               <span style={{ color: '#6B6B70', fontSize: 12 }}>{d.rationale}</span>
             </div>
@@ -130,7 +130,7 @@ export default function TrafficOpportunitiesPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Acquisition Patterns</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Acquisition Patterns</h2>
         <div style={{ marginTop: 16, fontSize: 13, lineHeight: 1.9 }}>
           <p style={{ color: '#8A8A8E' }}>
             <strong style={{ color: '#6B9B6B' }}>World Cup 2026 → Soccer</strong> — not World Cup app. Paths: Soccer Fan,
@@ -150,7 +150,7 @@ export default function TrafficOpportunitiesPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>All Opportunities</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>All Opportunities</h2>
         <div style={{ marginTop: 16 }}>
           {ranked.map((o) => (
             <div
@@ -162,7 +162,7 @@ export default function TrafficOpportunitiesPage() {
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
                 <span style={{ color: '#E8E8EC', fontSize: 15 }}>{o.display_name}</span>
-                <span style={{ color: '#C8A96E', fontSize: 13 }}>Score {o.total_score}</span>
+                <span style={{ color: 'var(--foundry-primary)', fontSize: 13 }}>Score {o.total_score}</span>
               </div>
               <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 6 }}>
                 {OPPORTUNITY_TYPE_LABELS[o.type]} · {o.event_window}

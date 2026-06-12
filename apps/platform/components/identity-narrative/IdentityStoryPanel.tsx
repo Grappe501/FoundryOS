@@ -28,7 +28,7 @@ function NarrativeBlock({ narrative, accent = ACCENT }: { narrative: IdentityNar
       </p>
       <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 14, lineHeight: 1.75 }}>{narrative.origin}</p>
       <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{narrative.recent_pattern}</p>
-      <p style={{ color: '#C8A96E', fontSize: 14, marginTop: 16, lineHeight: 1.7, fontStyle: 'italic' }}>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 16, lineHeight: 1.7, fontStyle: 'italic' }}>
         {narrative.mentor_notice}
       </p>
       {narrative.recognition && (

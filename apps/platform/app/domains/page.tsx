@@ -21,13 +21,13 @@ export default function DomainsPage() {
         <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0, lineHeight: 1.7 }}>{SELF_ASSEMBLY_PRINCIPLE}</p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 16 }}>
           {SELF_ASSEMBLY_STACK.map((s) => (
-            <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: '#C8A96E' }}>{s}</span>
+            <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: 'var(--foundry-primary)' }}>{s}</span>
           ))}
         </div>
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Four Engines (Every Vertical)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Four Engines (Every Vertical)</h2>
         {FOUR_ENGINES.map((e) => (
           <div key={e.key} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
             <span style={{ color: '#E8E8EC' }}>{e.name}</span>
@@ -37,14 +37,14 @@ export default function DomainsPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Registry Categories</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Registry Categories</h2>
         {IDENTITY_DOMAIN_CATEGORIES.map((cat) => (
           <div key={cat.slug} style={{ marginTop: 20 }}>
             <div style={{ color: '#E8E8EC', fontSize: 14 }}>{cat.display_name}</div>
             <div style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{cat.description}</div>
             <div style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6 }}>{cat.examples.join(' · ')}</div>
             {getDomainsByCategory(cat.slug).length > 0 && (
-              <div style={{ color: '#C8A96E', fontSize: 11, marginTop: 6 }}>
+              <div style={{ color: 'var(--foundry-primary)', fontSize: 11, marginTop: 6 }}>
                 Exemplars: {getDomainsByCategory(cat.slug).map((d) => d.display_name).join(', ')}
               </div>
             )}
@@ -53,7 +53,7 @@ export default function DomainsPage() {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Exemplar Domains ({IDENTITY_DOMAIN_CATALOG.length})</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Exemplar Domains ({IDENTITY_DOMAIN_CATALOG.length})</h2>
         {IDENTITY_DOMAIN_CATALOG.map((d) => (
           <div key={d.slug} style={{ padding: '16px 0', borderBottom: '1px solid #1A1A1E' }}>
             <div style={{ fontSize: 15, color: '#E8E8EC' }}>{d.display_name}</div>

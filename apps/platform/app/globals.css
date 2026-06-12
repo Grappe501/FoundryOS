@@ -1,0 +1,26 @@
+/**
+ * Foundry global theme — single switch for primary brand color.
+ * TEMP PASS-040B2: blue primary (revert to #C8A96E after this round).
+ */
+:root {
+  --foundry-primary: #4a90d9;
+  --foundry-accent: #7cb4f0;
+  --foundry-bg: #0a0a0b;
+  --foundry-surface: #141416;
+  --foundry-text: #f0f0f2;
+  --foundry-text-muted: #8a8a8e;
+}
+
+html,
+body {
+  background-color: var(--foundry-bg);
+  color: var(--foundry-text);
+}
+
+a {
+  color: var(--foundry-primary);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--foundry-primary) 35%, transparent);
+}

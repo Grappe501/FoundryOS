@@ -2,7 +2,7 @@
 
 import { POP_CULTURE_SECTIONS } from '../../../lib/bourbon-level-1/wild/pop-culture';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function PopCultureView() {
   return (

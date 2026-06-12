@@ -55,7 +55,7 @@ export function AtlasTerm({ term, children }: Props) {
             border: 'none',
             padding: 0,
             margin: 0,
-            color: '#C8A96E',
+            color: 'var(--foundry-primary)',
             textDecoration: 'underline',
             textDecorationStyle: 'dotted',
             textUnderlineOffset: 3,
@@ -93,7 +93,7 @@ export function AtlasTerm({ term, children }: Props) {
             </span>
             <Link
               href={atlasTermHref(entry.slug)}
-              style={{ display: 'inline-block', marginTop: 10, color: '#C8A96E', fontSize: 11, textDecoration: 'none' }}
+              style={{ display: 'inline-block', marginTop: 10, color: 'var(--foundry-primary)', fontSize: 11, textDecoration: 'none' }}
             >
               Go deeper →
             </Link>

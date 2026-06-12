@@ -6,7 +6,7 @@ import { FLAVOR_WHEEL_NOTES, flavorWheelSummary, type FlavorNote, type FlavorWhe
 import { getFlavorWheel, saveFlavorWheel } from '../../../lib/bourbon-level-1/storage';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function FlavorWheelBuilder() {
   const [profile, setProfile] = useState<FlavorWheelProfile>({ notes: {}, updatedAt: new Date().toISOString() });

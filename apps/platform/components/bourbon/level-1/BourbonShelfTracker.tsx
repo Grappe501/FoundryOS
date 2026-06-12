@@ -11,7 +11,7 @@ import {
 import { createShelfArtifact } from '../../../lib/artifacts/create-from-action';
 import { listBourbonProducers } from '../../../lib/world-depth/bourbon-producers';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 const STATUSES: CollectionItem['status'][] = ['owned', 'tasted', 'wishlist', 'gifted', 'traded', 'empty', 'favorite'];
 
 export function BourbonShelfTracker() {

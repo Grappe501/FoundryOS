@@ -23,7 +23,7 @@ export default function PassesPage() {
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-              <h2 style={{ fontSize: 18, fontWeight: 400, color: '#C8A96E', margin: 0 }}>{p.code}</h2>
+              <h2 style={{ fontSize: 18, fontWeight: 400, color: 'var(--foundry-primary)', margin: 0 }}>{p.code}</h2>
               <span style={{ fontSize: 11, color: '#6B6B70', textTransform: 'uppercase' }}>{p.status}</span>
             </div>
             <h3 style={{ fontSize: 15, margin: '8px 0', fontWeight: 400 }}>{p.title}</h3>

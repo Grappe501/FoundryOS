@@ -26,7 +26,7 @@ type Props = {
 const STATUS_COLOR: Record<string, string> = {
   pending: '#8A8A8E',
   approved: '#6B9B6B',
-  invited: '#C8A96E',
+  invited: 'var(--foundry-primary)',
   joined: '#6B9BC9',
   active: '#6BC96B',
   declined: '#C96B6B',
@@ -124,7 +124,7 @@ export function InviteOperationsPanel({ initialRows, stats }: Props) {
       </div>
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-        <h2 style={{ fontSize: 13, color: '#C8A96E', margin: '0 0 12px' }}>First 25 tester plan</h2>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: '0 0 12px' }}>First 25 tester plan</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
           {FIRST_25_TESTER_PLAN.map((plan) => {
             const cohort = stats.by_cohort[plan.cohort] ?? { invited: 0, joined: 0, active: 0, target: plan.count };
@@ -218,7 +218,7 @@ function WaitlistRow({
       </p>
 
       {row.invite_code && (
-        <p style={{ color: '#C8A96E', fontSize: 12, margin: '8px 0 0' }}>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 12, margin: '8px 0 0' }}>
           Code: {row.invite_code}
           {row.starting_world_slug && ` · World: ${row.starting_world_slug}`}
           {row.invited_at && ` · Invited ${new Date(row.invited_at).toLocaleDateString()}`}
@@ -315,7 +315,7 @@ const declineBtn: React.CSSProperties = {
 function Stat({ label, value }: { label: string; value: number }) {
   return (
     <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
-      <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
       <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );

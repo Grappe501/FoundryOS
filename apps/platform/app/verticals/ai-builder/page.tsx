@@ -52,7 +52,7 @@ export default async function AiBuilderVerticalPage() {
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>{bp.display_name}</h1>
       <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{PASS_016_PRINCIPLE}</p>
-      <p style={{ color: complete ? '#6B9B6B' : '#C8A96E', fontSize: 12, marginTop: 8 }}>
+      <p style={{ color: complete ? '#6B9B6B' : 'var(--foundry-primary)', fontSize: 12, marginTop: 8 }}>
         Domain proof: {complete ? 'OPERATIONAL' : 'IN PROGRESS'} — consumer world:{' '}
         <Link href="/ai-builder" style={{ color: '#6B9B6B' }}>
           /ai-builder
@@ -89,7 +89,7 @@ export default async function AiBuilderVerticalPage() {
             </div>
           ))}
         </div>
-        <p style={{ textAlign: 'center', color: complete ? '#6B9B6B' : '#C8A96E', fontSize: 18, fontWeight: 300, marginTop: 20 }}>
+        <p style={{ textAlign: 'center', color: complete ? '#6B9B6B' : 'var(--foundry-primary)', fontSize: 18, fontWeight: 300, marginTop: 20 }}>
           {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
         </p>
         <p style={{ color: '#4A4A4E', fontSize: 11, textAlign: 'center' }}>

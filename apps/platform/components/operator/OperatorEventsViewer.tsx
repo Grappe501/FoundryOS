@@ -46,7 +46,7 @@ export function OperatorEventsViewer() {
       </section>
 
       <section style={{ marginTop: 24 }}>
-        <p style={{ color: '#C8A96E', fontSize: 12, margin: '0 0 12px' }}>Active rotation today</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 12, margin: '0 0 12px' }}>Active rotation today</p>
         {activeByWorld.map(({ world: w, snapshot }) => (
           <div key={w} style={{ marginBottom: 16, padding: 14, background: '#0F0F12', borderRadius: 8 }}>
             <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{WORLD_LABELS[w] ?? w}</p>

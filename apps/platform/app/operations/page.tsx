@@ -37,7 +37,7 @@ export default async function OperationsPage() {
             }}
           >
             <div style={{ fontSize: 11, color: '#6B6B70', textTransform: 'uppercase' }}>{m.label}</div>
-            <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E', marginTop: 6 }}>{m.value}</div>
+            <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)', marginTop: 6 }}>{m.value}</div>
             <div style={{ fontSize: 10, color: m.status === 'live' ? '#6BC96B' : '#6B6B70', marginTop: 6 }}>
               {m.status}
             </div>

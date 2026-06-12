@@ -60,7 +60,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
 
         {entry.relatedTerms.length > 0 && (
           <section style={{ marginTop: 24 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E' }}>Related concepts</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)' }}>Related concepts</h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
               {entry.relatedTerms.map((rt) => (
                 <Link
@@ -90,7 +90,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
 
         {(authority.missions.length > 0 || authority.producers.length > 0) && (
           <section style={{ marginTop: 28, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3A2A' }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Authority layer — go deeper</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Authority layer — go deeper</h2>
             {authority.missions.length > 0 && (
               <>
                 <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Missions</p>
@@ -108,7 +108,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
                 <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Producer atlas</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {authority.producers.map((p) => (
-                    <Link key={p.href} href={p.href} style={{ padding: '6px 12px', background: '#111114', borderRadius: 999, color: '#C8A96E', fontSize: 12, textDecoration: 'none' }}>
+                    <Link key={p.href} href={p.href} style={{ padding: '6px 12px', background: '#111114', borderRadius: 999, color: 'var(--foundry-primary)', fontSize: 12, textDecoration: 'none' }}>
                       {p.title}
                     </Link>
                   ))}
@@ -147,7 +147,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
           </section>
         )}
 
-        <RabbitHolePanel term={entry.term} accent="#C8A96E" />
+        <RabbitHolePanel term={entry.term} accent="var(--foundry-primary)" />
       </section>
     </main>
   );

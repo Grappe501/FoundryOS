@@ -84,7 +84,7 @@ export function MyFutureDashboard() {
       </section>
 
       <section style={{ marginTop: 36 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 400 }}>What do you want?</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>What do you want?</h2>
         <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {DREAM_WANTS.map((d) => (
             <button
@@ -94,7 +94,7 @@ export function MyFutureDashboard() {
               style={{
                 padding: '8px 14px',
                 borderRadius: 999,
-                border: `1px solid ${dreams.includes(d.slug) ? '#C8A96E' : '#2A2A2E'}`,
+                border: `1px solid ${dreams.includes(d.slug) ? 'var(--foundry-primary)' : '#2A2A2E'}`,
                 background: dreams.includes(d.slug) ? '#2A2520' : 'transparent',
                 color: dreams.includes(d.slug) ? '#E8E8EC' : '#8A8A8E',
                 fontSize: 13,

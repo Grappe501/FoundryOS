@@ -16,7 +16,7 @@ function Stat({ label, value, sub }: { label: string; value: string | number; su
 function Rate({ label, value }: { label: string; value: number }) {
   return (
     <div style={{ padding: 12, background: '#0F0F12', borderRadius: 6 }}>
-      <div style={{ fontSize: 18, color: '#C8A96E' }}>{value}%</div>
+      <div style={{ fontSize: 18, color: 'var(--foundry-primary)' }}>{value}%</div>
       <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );
@@ -33,7 +33,7 @@ export default async function OperatorRevenuePage() {
       <Link href="/operator/analytics" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Analytics</Link>
       <Link href="/operator/revenue/verify" style={{ color: '#6B9B6B', fontSize: 13, marginLeft: 16 }}>PASS-029A verify →</Link>
 
-      <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>PASS-029</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>PASS-029</p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Revenue Validation</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
         Can Foundry reliably convert interest into money? Instrument every step from pricing view to paid.
@@ -44,7 +44,7 @@ export default async function OperatorRevenuePage() {
       ) : (
         <>
           <section style={{ marginTop: 28 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Pricing experiment funnel</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Pricing experiment funnel</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
               <Stat label="Pricing viewed" value={snapshot.funnel.pricing_viewed} sub={`${snapshot.funnel.unique_pricing_viewers} unique`} />
               <Stat label="Pricing clicked" value={snapshot.funnel.pricing_clicked} />
@@ -62,7 +62,7 @@ export default async function OperatorRevenuePage() {
 
           {consistency && (
             <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: `1px solid ${consistency.aligned ? '#2A4A2A' : '#4A4020'}` }}>
-              <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Dashboard consistency</h2>
+              <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Dashboard consistency</h2>
               <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
                 Matches /operator/business funnel · paid_users (subscriptions): {consistency.paid_users_subscriptions}
               </p>
@@ -106,7 +106,7 @@ export default async function OperatorRevenuePage() {
           </section>
 
           <section style={{ marginTop: 32 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Which world converts best?</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Which world converts best?</h2>
             <div style={{ marginTop: 12 }}>
               {snapshot.by_world.map((w) => (
                 <div key={w.world_slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
@@ -120,7 +120,7 @@ export default async function OperatorRevenuePage() {
           </section>
 
           <section style={{ marginTop: 32 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Which mission converts best?</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Which mission converts best?</h2>
             <div style={{ marginTop: 12 }}>
               {snapshot.by_mission.length === 0 ? (
                 <p style={{ color: '#6B6B70', fontSize: 13 }}>No mission conversion data yet.</p>
@@ -141,7 +141,7 @@ export default async function OperatorRevenuePage() {
               {snapshot.recent_upgrade_events.map((e) => (
                 <div key={e.id} style={{ fontSize: 12, padding: '6px 0', borderBottom: '1px solid #1A1A1E', color: '#8A8A8E' }}>
                   {e.event_type} · {e.path_slug ?? '—'} · {new Date(e.created_at).toLocaleString()}
-                  {e.metadata?.tier != null && <span style={{ color: '#C8A96E' }}> · {String(e.metadata.tier)}</span>}
+                  {e.metadata?.tier != null && <span style={{ color: 'var(--foundry-primary)' }}> · {String(e.metadata.tier)}</span>}
                 </div>
               ))}
             </div>

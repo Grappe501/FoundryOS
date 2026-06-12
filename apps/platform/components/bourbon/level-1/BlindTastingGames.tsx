@@ -6,7 +6,7 @@ import { DISTILLERY_MATCH, MYSTERY_CHALLENGES } from '../../../lib/bourbon-level
 import { bracketPairs } from '../../../lib/bourbon-level-1/shelf-builder';
 import { recordBlindScore, recordBracketVote } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BlindTastingGames() {
   return (
@@ -36,7 +36,7 @@ function MysteryGame() {
 
   return (
     <GameBlock title="Mystery Bottle Challenge" subtitle="Color, nose, finish — guess proof, mashbill, or age">
-      <p style={{ color: '#C8A96E', fontSize: 13 }}>Color: {c.color}</p>
+      <p style={{ color: 'var(--foundry-primary)', fontSize: 13 }}>Color: {c.color}</p>
       <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}><strong>Nose:</strong> {c.nose.join(' · ')}</p>
       <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}><strong>Palate:</strong> {c.palate.join(' · ')}</p>
       <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}><strong>Finish:</strong> {c.finish}</p>

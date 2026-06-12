@@ -23,7 +23,7 @@ function InsightCard({
     <div style={{ padding: 14, background: '#111114', borderRadius: 8, border: insight.multiplier >= 1.5 ? '1px solid #4A4020' : '1px solid #1A1A1E' }}>
       <div style={{ fontSize: 11, color: '#6B6B70' }}>{title}</div>
       <div style={{ fontSize: 15, color: '#E8E8EC', marginTop: 6 }}>{insight.label}</div>
-      <div style={{ fontSize: 13, color: '#C8A96E', marginTop: 6 }}>
+      <div style={{ fontSize: 13, color: 'var(--foundry-primary)', marginTop: 6 }}>
         {insight.multiplier}x vs average · n={insight.sample_size}
       </div>
       {insight.world_slug && (
@@ -75,10 +75,10 @@ export default async function OperatorFlywheelPage() {
               <InsightCard title="Best channel / lead magnet" insight={flywheel.insight_to_marketing.best_lead_magnet} />
             </div>
             <div style={{ marginTop: 20 }}>
-              <h3 style={{ fontSize: 13, color: '#C8A96E', margin: 0 }}>Recommended marketing assets</h3>
+              <h3 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: 0 }}>Recommended marketing assets</h3>
               {flywheel.insight_to_marketing.recommendations.map((r) => (
                 <div key={r.priority} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
-                  <span style={{ color: '#C8A96E' }}>#{r.priority}</span>
+                  <span style={{ color: 'var(--foundry-primary)' }}>#{r.priority}</span>
                   <span style={{ color: '#E8E8EC', marginLeft: 8 }}>{r.title}</span>
                   <span style={{ color: '#6B6B70', marginLeft: 8 }}>({r.asset_type})</span>
                   <p style={{ color: '#8A8A8E', fontSize: 12, margin: '4px 0 0' }}>{r.reason}</p>
@@ -112,7 +112,7 @@ export default async function OperatorFlywheelPage() {
                         <td style={{ padding: 8 }}>{s.visitors}</td>
                         <td style={{ padding: 8 }}>{s.mission_starts}</td>
                         <td style={{ padding: 8 }}>{s.community_joins}</td>
-                        <td style={{ padding: 8, color: '#C8A96E' }}>{s.upgrade_completed}</td>
+                        <td style={{ padding: 8, color: 'var(--foundry-primary)' }}>{s.upgrade_completed}</td>
                       </tr>
                     ))
                   )}
@@ -123,7 +123,7 @@ export default async function OperatorFlywheelPage() {
 
           {/* System 3 */}
           <section style={{ marginTop: 28, padding: 24, background: '#12100F', border: '1px solid #3A3020', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>System 3 — Revenue → Product</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>System 3 — Revenue → Product</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
               <div>
                 <h3 style={{ fontSize: 13, color: '#6B6B70', margin: 0 }}>What earns money</h3>
@@ -131,7 +131,7 @@ export default async function OperatorFlywheelPage() {
                   <div key={`${e.entity_type}-${e.slug}`} style={{ padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
                     <span style={{ color: '#8A8A8E', fontSize: 11 }}>{e.entity_type}</span>
                     <span style={{ color: '#E8E8EC', marginLeft: 8 }}>{e.label}</span>
-                    <span style={{ color: '#C8A96E', float: 'right' }}>{e.upgrade_completed} paid</span>
+                    <span style={{ color: 'var(--foundry-primary)', float: 'right' }}>{e.upgrade_completed} paid</span>
                   </div>
                 ))}
               </div>
@@ -153,7 +153,7 @@ export default async function OperatorFlywheelPage() {
           </section>
 
           <section style={{ marginTop: 24, padding: 16, background: '#1A1410', borderRadius: 8 }}>
-            <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}>
+            <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0 }}>
               System 4 — Domain expansion scoring → <Link href="/operator/opportunities" style={{ color: '#E8E8EC' }}>/operator/opportunities</Link>
             </p>
             <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>

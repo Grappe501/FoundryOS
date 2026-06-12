@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { Level1Tool } from '../../lib/bourbon-level-1/hub';
 import { getToolDepth } from '../../lib/bourbon-level-1/deep-copy';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonDeepToolCard({ tool }: { tool: Level1Tool }) {
   const depth = getToolDepth(tool.slug);

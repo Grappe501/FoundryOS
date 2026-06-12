@@ -3,7 +3,7 @@ import { getWorldLore, hasWorldLore } from '@foundry/lore-engine';
 
 type Props = { worldSlug: string; accent?: string };
 
-export function WorldLoreTeaser({ worldSlug, accent = '#C8A96E' }: Props) {
+export function WorldLoreTeaser({ worldSlug, accent = 'var(--foundry-primary)' }: Props) {
   if (!hasWorldLore(worldSlug)) return null;
   const lore = getWorldLore(worldSlug)!;
 

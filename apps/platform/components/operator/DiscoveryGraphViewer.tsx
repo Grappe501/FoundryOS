@@ -13,7 +13,7 @@ import {
 const KIND_COLORS: Record<string, string> = {
   action: '#E8E8EC',
   unlock_debate: '#9B6B9B',
-  unlock_legendary_object: '#C8A96E',
+  unlock_legendary_object: 'var(--foundry-primary)',
   unlock_collector_progress: '#6B9B6B',
   unlock_rabbit_hole: '#6B8EBD',
   mentor_memory: '#BD8E6B',

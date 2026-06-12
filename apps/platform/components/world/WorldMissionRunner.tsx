@@ -183,7 +183,7 @@ export function WorldMissionRunner({
           </p>
         )}
         <div style={{ marginTop: 24, padding: 16, background: '#0F0F12', borderRadius: 6, border: '1px solid #2A4A2A' }}>
-          <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}>
+          <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0 }}>
             <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Tomorrow: </strong>
             {mission.tomorrowHook.replace(/^Tomorrow:\s*/i, '')}
           </p>

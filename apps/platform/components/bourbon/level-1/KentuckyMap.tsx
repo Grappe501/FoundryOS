@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { BOURBON_TRAIL_PLANNER, KENTUCKY_REGIONS } from '../../../lib/bourbon-level-1/regions';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function KentuckyMap() {
   const [selected, setSelected] = useState(KENTUCKY_REGIONS[0]);

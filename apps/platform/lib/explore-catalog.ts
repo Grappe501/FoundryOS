@@ -68,7 +68,7 @@ export const EXPLORE_STATUS_COLORS: Record<
 > = {
   live: { dot: '#6B9B6B', border: '#2A4A2A', bg: '#0F1A0F', text: '#6B9B6B' },
   in_build: { dot: '#6B9BD4', border: '#2A3A5A', bg: '#0F121A', text: '#6B9BD4' },
-  validating: { dot: '#C8A96E', border: '#4A4020', bg: '#1A160F', text: '#C8A96E' },
+  validating: { dot: 'var(--foundry-primary)', border: '#4A4020', bg: '#1A160F', text: 'var(--foundry-primary)' },
   planned: { dot: '#8A8A8E', border: '#2A2A2E', bg: '#111114', text: '#8A8A8E' },
   paused: { dot: '#B06B6B', border: '#4A2A2A', bg: '#1A0F0F', text: '#B06B6B' },
 };

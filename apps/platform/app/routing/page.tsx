@@ -3,7 +3,7 @@ import { getRoutingHealthReport } from '../../lib/routing-health';
 
 const statusColor: Record<string, string> = {
   planned: '#6B6B70',
-  active_build: '#C8A96E',
+  active_build: 'var(--foundry-primary)',
   staging: '#6B9FD4',
   live: '#6BC96B',
   archived: '#4A4A4E',
@@ -22,11 +22,11 @@ export default function RoutingPage() {
 
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
         <div style={{ padding: 16, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
-          <div style={{ fontSize: 22, color: '#C8A96E' }}>{report.configured_verticals}</div>
+          <div style={{ fontSize: 22, color: 'var(--foundry-primary)' }}>{report.configured_verticals}</div>
           <div style={{ fontSize: 11, color: '#6B6B70' }}>Configured Verticals</div>
         </div>
         <div style={{ padding: 16, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
-          <div style={{ fontSize: 22, color: '#C8A96E' }}>{report.resolved_domains}/{report.configured_domains}</div>
+          <div style={{ fontSize: 22, color: 'var(--foundry-primary)' }}>{report.resolved_domains}/{report.configured_domains}</div>
           <div style={{ fontSize: 11, color: '#6B6B70' }}>Resolved Domains</div>
         </div>
         <div style={{ padding: 16, background: '#0F0F12', border: `1px solid ${report.routing_healthy ? '#2A3A2A' : '#3A2A2A'}`, borderRadius: 8 }}>
@@ -38,7 +38,7 @@ export default function RoutingPage() {
       </div>
 
       <section style={{ marginTop: 40 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 500 }}>Vertical Launch Status</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 500 }}>Vertical Launch Status</h2>
         <table style={{ width: '100%', marginTop: 16, fontSize: 13, borderCollapse: 'collapse' }}>
           <thead>
             <tr style={{ color: '#6B6B70', textAlign: 'left' }}>
@@ -64,14 +64,14 @@ export default function RoutingPage() {
       </section>
 
       <section style={{ marginTop: 40 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', fontWeight: 500 }}>Domain Resolution</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 500 }}>Domain Resolution</h2>
         {report.domains.map((d) => (
           <div key={d.domain} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
             <span style={{ color: d.resolves ? '#6BC96B' : '#C96B6B' }}>{d.resolves ? '✓' : '✗'}</span>
             {' '}
             <span style={{ color: '#E8E8EC' }}>{d.domain}</span>
             <span style={{ color: '#6B6B70' }}> → </span>
-            <span style={{ color: '#C8A96E' }}>{d.vertical_name}</span>
+            <span style={{ color: 'var(--foundry-primary)' }}>{d.vertical_name}</span>
             <span style={{ color: '#6B6B70' }}> / </span>
             <span style={{ color: '#8A8A8E' }}>{d.theme}</span>
             <span style={{ color: '#4A4A4E', marginLeft: 8 }}>({d.local_domain})</span>

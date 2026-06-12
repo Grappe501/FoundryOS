@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { getWorldLore } from '@foundry/lore-engine';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonUniverseMap() {
   const lore = getWorldLore('bourbon');

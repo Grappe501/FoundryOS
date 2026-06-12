@@ -6,7 +6,7 @@ import { PROGRESSION_CHAINS, chainProgress } from '../../../lib/bourbon-level-1/
 import { slugsFromCollection } from '../../../lib/bourbon-level-1/intelligence/shelf-intelligence';
 import { getCollection } from '../../../lib/bourbon-level-1/storage';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function ProgressionChainsView() {
   const [slugs, setSlugs] = useState<string[]>([]);

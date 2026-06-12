@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { leaderSlotsForWorld, type LeaderSlot } from '../../lib/entity-slots/leaders';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function LeaderSlotsIndex() {
   const slots = leaderSlotsForWorld('bourbon');
@@ -37,7 +37,7 @@ export function LeaderSlotsIndex() {
 
 function LeaderSlotCard({ slot }: { slot: LeaderSlot }) {
   const statusColor =
-    slot.status === 'verified' ? '#6B9B6B' : slot.status === 'editorial' ? '#6B9BC9' : slot.status === 'community' ? '#C8A96E' : '#6B6B70';
+    slot.status === 'verified' ? '#6B9B6B' : slot.status === 'editorial' ? '#6B9BC9' : slot.status === 'community' ? 'var(--foundry-primary)' : '#6B6B70';
 
   return (
     <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>

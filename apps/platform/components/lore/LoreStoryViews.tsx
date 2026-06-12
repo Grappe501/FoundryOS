@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { getWorldLore, type LoreLegend, type LoreLegendaryObject } from '@foundry/lore-engine';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function LoreLegendView({ worldSlug, legendId }: { worldSlug: string; legendId: string }) {
   const lore = getWorldLore(worldSlug);

@@ -5,7 +5,7 @@ import type { GraphConnection } from '@foundry/atlas-graph-engine';
 import { BourbonGraphHallway } from './BourbonGraphHallway';
 import { inferGraphRef, resolveBourbonGraph, groupConnections } from '../../lib/bourbon-graph';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonGraphExplorer({ slug }: { slug: string }) {
   const ref = inferGraphRef(slug);

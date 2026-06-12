@@ -21,14 +21,14 @@ export function FiPortfolioView() {
           <div key={section.slug} style={{ padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
             <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{section.title}</p>
             <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{section.description}</p>
-            <p style={{ color: '#C8A96E', fontSize: 20, fontWeight: 300, marginTop: 12 }}>{section.slug === 'budgets' ? entries.length : '—'}</p>
+            <p style={{ color: 'var(--foundry-primary)', fontSize: 20, fontWeight: 300, marginTop: 12 }}>{section.slug === 'budgets' ? entries.length : '—'}</p>
           </div>
         ))}
       </div>
       {entries.length === 0 ? (
         <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 24 }}>
           No missions yet.{' '}
-          <Link href="/financial-independence/missions/first-budget" style={{ color: '#C8A96E' }}>Start Mission 1 →</Link>
+          <Link href="/financial-independence/missions/first-budget" style={{ color: 'var(--foundry-primary)' }}>Start Mission 1 →</Link>
         </p>
       ) : (
         entries.map((e) => (

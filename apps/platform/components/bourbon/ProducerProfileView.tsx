@@ -7,7 +7,7 @@ import type { ProducerDepthOverlay } from '../../lib/bourbon-depth/types';
 import type { BourbonPerson } from '../../lib/bourbon-depth/types';
 import { RabbitHolePanel } from '../living-worlds/RabbitHolePanel';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 type Props = {
   producer: BourbonProducer;

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { buildTrailPlan, TRAVELER_OPTIONS, type TripProfile } from '../../../lib/bourbon-level-1/agency/trail-planner';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function TrailPlannerTool() {
   const [profile, setProfile] = useState<TripProfile>({

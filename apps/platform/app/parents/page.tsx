@@ -12,7 +12,7 @@ export default function ParentsPage() {
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
       <section style={{ marginTop: 16 }}>
-        <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
           For Parents
         </p>
         <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 12 }}>{FOUNDRY_PARENT_VIEW.headline}</h1>
@@ -20,7 +20,7 @@ export default function ParentsPage() {
 
         {FOUNDRY_PARENT_VIEW.sections.map((s) => (
           <article key={s.title} style={{ padding: 24, marginTop: 16, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-            <h2 style={{ fontSize: 15, color: '#C8A96E', margin: 0 }}>{s.title}</h2>
+            <h2 style={{ fontSize: 15, color: 'var(--foundry-primary)', margin: 0 }}>{s.title}</h2>
             <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{s.body}</p>
           </article>
         ))}

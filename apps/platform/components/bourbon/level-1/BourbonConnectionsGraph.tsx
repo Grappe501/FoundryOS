@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { CONNECTION_NODES, getConnectedNodes, getNode } from '../../../lib/bourbon-level-1/wild/connections';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonConnectionsGraph() {
   const [selected, setSelected] = useState('bourbon');

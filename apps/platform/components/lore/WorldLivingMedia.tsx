@@ -6,16 +6,16 @@ import { getLivingMediaFeed, LIVING_MEDIA_VOICE, hasLivingMedia } from '@foundry
 type Props = { worldSlug: string; accent?: string };
 
 const KIND_STYLE: Record<string, string> = {
-  mystery: '#C8A96E',
+  mystery: 'var(--foundry-primary)',
   debate: '#D4847A',
   story: '#9B8FD4',
   history: '#6B9B6B',
   'rabbit-hole': '#7BA3C9',
-  object: '#C8A96E',
+  object: 'var(--foundry-primary)',
   original: '#E8B86D',
 };
 
-export function WorldLivingMedia({ worldSlug, accent = '#C8A96E' }: Props) {
+export function WorldLivingMedia({ worldSlug, accent = 'var(--foundry-primary)' }: Props) {
   if (!hasLivingMedia(worldSlug)) return null;
   const feed = getLivingMediaFeed(worldSlug);
   if (!feed) return null;
@@ -79,7 +79,7 @@ export function WorldLivingMedia({ worldSlug, accent = '#C8A96E' }: Props) {
   );
 }
 
-export function WorldTodayFull({ worldSlug, accent = '#C8A96E' }: Props) {
+export function WorldTodayFull({ worldSlug, accent = 'var(--foundry-primary)' }: Props) {
   const feed = getLivingMediaFeed(worldSlug);
   if (!feed) {
     return <p style={{ color: '#8A8A8E' }}>Living media for this world is coming soon.</p>;

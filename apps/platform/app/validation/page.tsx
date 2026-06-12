@@ -87,7 +87,7 @@ export default async function ValidationPage() {
           border: '1px solid #2A2520',
         }}
       >
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Private Beta Gate (PASS-022)</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Private Beta Gate (PASS-022)</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
           No public beta until 3 verticals are consumer-ready, assessment routes cleanly, auth + email capture exist,
           and pricing page is live. Next: PASS-017 AI Builder depth.
@@ -185,7 +185,7 @@ export default async function ValidationPage() {
       )}
 
       <section style={{ marginTop: 32, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Vertical depth mode</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Vertical depth mode</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
           Build order: AI Builder → Financial Independence → Public Speaking → Civic Engagement → Bourbon polish.
           Beta wedge: Future-Proof Trinity. See <code style={{ color: '#E8E8EC' }}>docs/VERTICAL_DEPTH_MODE.md</code>.

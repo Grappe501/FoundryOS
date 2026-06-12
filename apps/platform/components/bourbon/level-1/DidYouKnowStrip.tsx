@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { getDidYouKnowForDate } from '../../../lib/bourbon-level-1/wild/did-you-know';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function DidYouKnowStrip({ compact = false }: { compact?: boolean }) {
   const card = getDidYouKnowForDate();
@@ -15,7 +15,7 @@ export function DidYouKnowStrip({ compact = false }: { compact?: boolean }) {
         padding: compact ? 16 : 20,
         background: '#1A160F',
         borderRadius: 10,
-        border: '1px dashed #C8A96E55',
+        border: '1px dashed var(--foundry-primary)55',
       }}
     >
       <p style={{ color: ACCENT, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>

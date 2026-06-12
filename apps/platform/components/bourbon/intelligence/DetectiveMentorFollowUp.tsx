@@ -9,7 +9,7 @@ import { getDetectiveSolved, markDetectiveSolved } from '../../../lib/bourbon-le
 import { closeDetectiveCase, wasTriggerApplied } from '../../../lib/consequences/client-state';
 import { ConsequenceUnlockPanel } from '../../consequences/ConsequenceUnlockPanel';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function DetectiveMentorFollowUp({ caseSlug }: { caseSlug: string }) {
   const followUp = getDetectiveMentorFollowUp(caseSlug);

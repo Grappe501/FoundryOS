@@ -35,7 +35,7 @@ export default async function MissionPage({ params }: Props) {
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>{mission.title}</h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12 }}>{mission.subtitle}</p>
       <section style={{ marginTop: 20, padding: 16, background: '#1A160F', borderRadius: 8, border: '1px solid #4A4020' }}>
-        <p style={{ color: '#C8A96E', fontSize: 13, margin: 0 }}>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0 }}>
           <strong style={{ fontWeight: 400 }}>Why this matters: </strong>
           {mission.futureProof}
         </p>

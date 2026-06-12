@@ -10,7 +10,7 @@ import { ArtifactExperiencePanel } from '../../artifacts/ArtifactExperiencePanel
 import { BourbonIntelligencePanel } from '../BourbonIntelligencePanel';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BottleProgressionHub() {
   const bottles = listBottleProgressions();

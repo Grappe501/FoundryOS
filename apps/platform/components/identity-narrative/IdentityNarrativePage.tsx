@@ -32,7 +32,7 @@ export function IdentityNarrativePage() {
         <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
           <div style={{ fontSize: 22, fontWeight: 300 }}>{name}</div>
           <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 16, lineHeight: 1.75 }}>{recognition}</p>
-          <Link href="/passport" style={{ display: 'inline-block', marginTop: 16, color: '#C8A96E', fontSize: 13 }}>
+          <Link href="/passport" style={{ display: 'inline-block', marginTop: 16, color: 'var(--foundry-primary)', fontSize: 13 }}>
             Foundry Passport →
           </Link>
         </section>
@@ -41,7 +41,7 @@ export function IdentityNarrativePage() {
       <IdentityStoryPanel />
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Share — {VIRAL_SHARE_HOOK}</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Share — {VIRAL_SHARE_HOOK}</h2>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>
           {name} is becoming someone worth following — not what they consumed, what they are mastering.
         </p>

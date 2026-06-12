@@ -28,7 +28,7 @@ export default async function OperatorFeedbackPage() {
           </div>
 
           <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 13, color: '#C8A96E', margin: 0 }}>By world</h2>
+            <h2 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: 0 }}>By world</h2>
             {Object.entries(stats.by_world).map(([world, count]) => (
               <div key={world} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
                 <span>{world}</span>
@@ -61,7 +61,7 @@ export default async function OperatorFeedbackPage() {
                     {' · '}
                     {new Date(row.created_at).toLocaleDateString()}
                   </p>
-                  {row.confused && <p style={{ color: '#C8A96E', marginTop: 8 }}><strong>Confused:</strong> {row.confused}</p>}
+                  {row.confused && <p style={{ color: 'var(--foundry-primary)', marginTop: 8 }}><strong>Confused:</strong> {row.confused}</p>}
                   {row.liked && <p style={{ color: '#6B9B6B', marginTop: 6 }}><strong>Liked:</strong> {row.liked}</p>}
                   {row.build_next && <p style={{ color: '#E8E8EC', marginTop: 6 }}><strong>Build next:</strong> {row.build_next}</p>}
                 </article>
@@ -77,7 +77,7 @@ export default async function OperatorFeedbackPage() {
 function Stat({ label, value }: { label: string; value: number }) {
   return (
     <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
-      <div style={{ fontSize: 22, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
       <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import type { BourbonPageDepth } from '../../lib/bourbon-level-1/deep-copy/types';
 import { BourbonAtlasParagraph } from './BourbonAtlasParagraph';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 type Props = {
   content: BourbonPageDepth;

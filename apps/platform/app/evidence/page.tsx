@@ -29,7 +29,7 @@ export default async function EvidenceProofPage() {
       </p>
 
       <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: `1px solid ${complete ? '#2A4A2A' : '#2A2520'}`, borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Verification Checklist</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Verification Checklist</h2>
         <div style={{ marginTop: 16 }}>
           {checklist.map((step) => (
             <div key={step.key} style={{ display: 'flex', justifyContent: 'space-between', padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 14 }}>
@@ -40,7 +40,7 @@ export default async function EvidenceProofPage() {
         </div>
         <div style={{ marginTop: 24, textAlign: 'center' }}>
           <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Evidence Engine</p>
-          <p style={{ color: complete ? '#6B9B6B' : '#C8A96E', fontSize: 20, fontWeight: 300, marginTop: 8, letterSpacing: '0.1em' }}>
+          <p style={{ color: complete ? '#6B9B6B' : 'var(--foundry-primary)', fontSize: 20, fontWeight: 300, marginTop: 8, letterSpacing: '0.1em' }}>
             {complete ? 'OPERATIONAL' : 'INCOMPLETE'}
           </p>
         </div>
@@ -51,11 +51,11 @@ export default async function EvidenceProofPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Evidence Tiers</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Evidence Tiers</h2>
         <div style={{ marginTop: 12 }}>
           {EVIDENCE_TIERS.map((t) => (
             <div key={t.tier} style={{ padding: '8px 0', fontSize: 13, borderBottom: '1px solid #1A1A1E' }}>
-              <span style={{ color: submission.tier === t.tier ? '#C8A96E' : '#6B6B70' }}>
+              <span style={{ color: submission.tier === t.tier ? 'var(--foundry-primary)' : '#6B6B70' }}>
                 {t.label}
               </span>
               <span style={{ color: '#4A4A4E' }}> — {t.example}</span>
@@ -68,7 +68,7 @@ export default async function EvidenceProofPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Submitted Evidence</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Submitted Evidence</h2>
         <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 12 }}>{submission.title}</p>
         <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{submission.description}</p>
         <div style={{ marginTop: 16, fontSize: 13, lineHeight: 1.8, color: '#8A8A8E' }}>
@@ -86,13 +86,13 @@ export default async function EvidenceProofPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
-        <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Identity &amp; Next Step</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Identity &amp; Next Step</h2>
         <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 12, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Identity strengthened</p>
         <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 6 }}>{guidance.identity_strength}</p>
         <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Progress signal</p>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 6 }}>{guidance.progress_signal}</p>
         <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.1em' }}>Next step informed</p>
-        <p style={{ color: '#C8A96E', fontSize: 14, marginTop: 6 }}>{guidance.next_step_influence}</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 6 }}>{guidance.next_step_influence}</p>
       </section>
 
       <section style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>

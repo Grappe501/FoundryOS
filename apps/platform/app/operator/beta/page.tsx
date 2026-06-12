@@ -37,7 +37,7 @@ export default async function OperatorBetaDashboardPage() {
       {waitlist && (
         <>
           <section style={{ marginTop: 32, padding: 24, background: '#111114', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Segments</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Segments</h2>
             {Object.entries(waitlist.by_segment).map(([seg, count]) => (
               <div key={seg} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
                 <span>{seg.replace('_', ' ')}</span>
@@ -72,7 +72,7 @@ export default async function OperatorBetaDashboardPage() {
       )}
 
       <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <Link href="/operator/invites" style={{ color: '#C8A96E' }}>Invite operations →</Link>
+        <Link href="/operator/invites" style={{ color: 'var(--foundry-primary)' }}>Invite operations →</Link>
         {' · '}
         <Link href="/operator/analytics" style={{ color: '#6B9BC9' }}>Analytics</Link>
         {' · '}
@@ -89,7 +89,7 @@ export default async function OperatorBetaDashboardPage() {
 function Stat({ label, value }: { label: string; value: string | number }) {
   return (
     <div style={{ padding: 16, background: '#111114', borderRadius: 8 }}>
-      <div style={{ fontSize: 24, fontWeight: 300, color: '#C8A96E' }}>{value}</div>
+      <div style={{ fontSize: 24, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
       <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
     </div>
   );

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { BOURBON_ECONOMY_TOPICS } from '../../../lib/bourbon-level-1/agency/economy';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonEconomy() {
   return (

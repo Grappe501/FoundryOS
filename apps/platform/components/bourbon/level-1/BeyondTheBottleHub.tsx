@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { WILD_TOPICS } from '../../../lib/bourbon-level-1/wild/wild-topics';
 import { DidYouKnowStrip } from './DidYouKnowStrip';
 
-const ACCENT = '#C8A96E';
+const ACCENT = 'var(--foundry-primary)';
 
 const BEYOND_LINKS = [
   { href: '/bourbon/lore', title: 'World Lore', hook: 'Pappy, rivalries, mysteries, timeline — mythology not curriculum' },

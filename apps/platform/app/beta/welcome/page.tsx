@@ -23,7 +23,7 @@ export default async function BetaWelcomePage({ searchParams }: Props) {
   if (!code) {
     return (
       <WelcomeShell>
-        <p style={{ color: '#C8A96E', fontSize: 14 }}>Missing invite code.</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Missing invite code.</p>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
           Use the link from your invite email, or{' '}
           <Link href="/beta" style={{ color: '#6B9B6B' }}>join the waitlist</Link>.
@@ -35,7 +35,7 @@ export default async function BetaWelcomePage({ searchParams }: Props) {
   if (!invite) {
     return (
       <WelcomeShell>
-        <p style={{ color: '#C8A96E', fontSize: 14 }}>Invite not found.</p>
+        <p style={{ color: 'var(--foundry-primary)', fontSize: 14 }}>Invite not found.</p>
         <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
           Double-check your invite link or contact the Foundry team.
         </p>
@@ -54,7 +54,7 @@ export default async function BetaWelcomePage({ searchParams }: Props) {
       </p>
 
       <section style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 13, color: '#C8A96E', margin: 0 }}>Your setup</h2>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: 0 }}>Your setup</h2>
         <dl style={{ margin: '16px 0 0', fontSize: 14, lineHeight: 1.8 }}>
           <dt style={{ color: '#6B6B70', display: 'inline' }}>Cohort: </dt>
           <dd style={{ color: '#E8E8EC', display: 'inline', margin: 0, textTransform: 'capitalize' }}>{segment}</dd>
