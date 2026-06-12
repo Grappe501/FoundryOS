@@ -25,22 +25,22 @@ function CompareBar({ label, leftScore, rightScore, leftLabel, rightLabel, insig
 }) {
   return (
     <div style={{ marginBottom: 20 }}>
-      <p style={{ color: '#6B6B70', fontSize: 11, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</p>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, alignItems: 'center' }}>
         <div>
-          <p style={{ color: '#E8E8EC', fontSize: 13, margin: '0 0 6px' }}>{leftLabel}</p>
-          <div style={{ height: 8, background: '#1A1A1E', borderRadius: 4, overflow: 'hidden' }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 13, margin: '0 0 6px' }}>{leftLabel}</p>
+          <div style={{ height: 8, background: 'var(--foundry-border-subtle)', borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ width: `${leftScore}%`, height: '100%', background: ACCENT, borderRadius: 4 }} />
           </div>
         </div>
         <div>
-          <p style={{ color: '#E8E8EC', fontSize: 13, margin: '0 0 6px', textAlign: 'right' }}>{rightLabel}</p>
-          <div style={{ height: 8, background: '#1A1A1E', borderRadius: 4, overflow: 'hidden' }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 13, margin: '0 0 6px', textAlign: 'right' }}>{rightLabel}</p>
+          <div style={{ height: 8, background: 'var(--foundry-border-subtle)', borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ width: `${rightScore}%`, height: '100%', background: '#6B9BC9', borderRadius: 4, marginLeft: 'auto' }} />
           </div>
         </div>
       </div>
-      {insight && <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 10, lineHeight: 1.6 }}>{insight}</p>}
+      {insight && <p style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 10, lineHeight: 1.6 }}>{insight}</p>}
     </div>
   );
 }
@@ -96,9 +96,9 @@ export function CompareAnyTwoTool({ initialMode = 'bottles', initialA, initialB 
             style={{
               padding: '8px 14px',
               borderRadius: 999,
-              border: `1px solid ${mode === m ? ACCENT : '#2A2A2E'}`,
-              background: mode === m ? '#2A2520' : 'transparent',
-              color: mode === m ? '#E8E8EC' : '#6B6B70',
+              border: `1px solid ${mode === m ? ACCENT : 'var(--foundry-border)'}`,
+              background: mode === m ? 'var(--foundry-border-warm)' : 'transparent',
+              color: mode === m ? 'var(--foundry-text)' : 'var(--foundry-text-faint)',
               fontSize: 12,
               cursor: 'pointer',
             }}
@@ -110,16 +110,16 @@ export function CompareAnyTwoTool({ initialMode = 'bottles', initialA, initialB 
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12, marginBottom: 24 }}>
         <label style={{ display: 'block' }}>
-          <span style={{ color: '#6B6B70', fontSize: 11 }}>Left</span>
-          <select value={a} onChange={(e) => setA(e.target.value)} style={{ width: '100%', marginTop: 6, padding: 10, background: '#111114', color: '#E8E8EC', border: '1px solid #2A2A2E', borderRadius: 6 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 11 }}>Left</span>
+          <select value={a} onChange={(e) => setA(e.target.value)} style={{ width: '100%', marginTop: 6, padding: 10, background: 'var(--foundry-surface-raised)', color: 'var(--foundry-text)', border: '1px solid var(--foundry-border)', borderRadius: 6 }}>
             {opts.map((o) => (
               <option key={o.slug} value={o.slug}>{o.name}</option>
             ))}
           </select>
         </label>
         <label style={{ display: 'block' }}>
-          <span style={{ color: '#6B6B70', fontSize: 11 }}>Right</span>
-          <select value={b} onChange={(e) => setB(e.target.value)} style={{ width: '100%', marginTop: 6, padding: 10, background: '#111114', color: '#E8E8EC', border: '1px solid #2A2A2E', borderRadius: 6 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 11 }}>Right</span>
+          <select value={b} onChange={(e) => setB(e.target.value)} style={{ width: '100%', marginTop: 6, padding: 10, background: 'var(--foundry-surface-raised)', color: 'var(--foundry-text)', border: '1px solid var(--foundry-border)', borderRadius: 6 }}>
             {opts.filter((o) => o.slug !== a).map((o) => (
               <option key={o.slug} value={o.slug}>{o.name}</option>
             ))}
@@ -127,10 +127,10 @@ export function CompareAnyTwoTool({ initialMode = 'bottles', initialA, initialB 
         </label>
       </div>
 
-      <div style={{ padding: 24, background: '#0F0F12', borderRadius: 10, border: '1px solid #1A1A1E' }}>
+      <div style={{ padding: 24, background: 'var(--foundry-surface)', borderRadius: 10, border: '1px solid var(--foundry-border-subtle)' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 20, flexWrap: 'wrap', gap: 8 }}>
           <Link href={mode === 'bottles' ? `/bourbon/bottles/${a}` : `/bourbon/producers/${a}`} style={{ color: ACCENT, fontSize: 14, textDecoration: 'none' }}>{aName} →</Link>
-          <span style={{ color: '#6B6B70', fontSize: 12 }}>vs</span>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>vs</span>
           <Link href={mode === 'bottles' ? `/bourbon/bottles/${b}` : `/bourbon/producers/${b}`} style={{ color: '#6B9BC9', fontSize: 14, textDecoration: 'none' }}>{bName} →</Link>
         </div>
 
@@ -153,10 +153,10 @@ export function CompareAnyTwoTool({ initialMode = 'bottles', initialA, initialB 
         style={{
           marginTop: 16,
           padding: '10px 18px',
-          background: saved ? '#2A3520' : '#4A4020',
+          background: saved ? '#2A3520' : 'var(--foundry-primary-border-dim)',
           border: `1px solid ${ACCENT}66`,
           borderRadius: 6,
-          color: '#E8E8EC',
+          color: 'var(--foundry-text)',
           fontSize: 13,
           cursor: 'pointer',
         }}

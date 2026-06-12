@@ -12,12 +12,12 @@ export function BourbonOriginsMap() {
 
   return (
     <div>
-      <article style={{ padding: 24, background: '#111114', borderRadius: 12, border: `1px solid ${ACCENT}44` }}>
-        <h2 style={{ fontSize: 20, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>{HOUSE_OF_BOURBON_ROOT.title}</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.7 }}>{HOUSE_OF_BOURBON_ROOT.body}</p>
+      <article style={{ padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12, border: `1px solid ${ACCENT}44` }}>
+        <h2 style={{ fontSize: 20, fontWeight: 400, margin: 0, color: 'var(--foundry-text)' }}>{HOUSE_OF_BOURBON_ROOT.title}</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.7 }}>{HOUSE_OF_BOURBON_ROOT.body}</p>
       </article>
 
-      <div style={{ marginTop: 20, padding: 16, background: '#1A160F', borderRadius: 8, border: '1px solid #402020' }}>
+      <div style={{ marginTop: 20, padding: 16, background: 'var(--foundry-primary-bg-subtle)', borderRadius: 8, border: '1px solid #402020' }}>
         <p style={{ color: '#B88', fontSize: 13, margin: 0 }}>Myth: {ORIGIN_MYTH.myth}</p>
         <p style={{ color: ACCENT, fontSize: 14, marginTop: 8 }}>Truth: {ORIGIN_MYTH.truth}</p>
       </div>
@@ -32,9 +32,9 @@ export function BourbonOriginsMap() {
               flex: 1,
               padding: 14,
               borderRadius: 8,
-              border: `1px solid ${branch === b.id ? ACCENT : '#2A2A2E'}`,
-              background: branch === b.id ? '#2A2520' : '#0F0F12',
-              color: branch === b.id ? '#E8E8EC' : '#8A8A8E',
+              border: `1px solid ${branch === b.id ? ACCENT : 'var(--foundry-border)'}`,
+              background: branch === b.id ? 'var(--foundry-border-warm)' : 'var(--foundry-surface)',
+              color: branch === b.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
               fontSize: 13,
             }}
@@ -44,7 +44,7 @@ export function BourbonOriginsMap() {
         ))}
       </div>
 
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>{active.subtitle}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>{active.subtitle}</p>
 
       <div style={{ marginTop: 16, position: 'relative', paddingLeft: 20, borderLeft: `2px solid ${ACCENT}` }}>
         {active.nodes.map((node, i) => (
@@ -60,8 +60,8 @@ export function BourbonOriginsMap() {
                 background: ACCENT,
               }}
             />
-            <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>{node.label}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6, lineHeight: 1.6 }}>{node.detail}</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 16, margin: 0 }}>{node.label}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6, lineHeight: 1.6 }}>{node.detail}</p>
           </div>
         ))}
       </div>

@@ -34,7 +34,7 @@ export function OperatorEventsViewer() {
   return (
     <div style={{ marginTop: 28 }}>
       <section style={{ padding: 16, background: validation.ok ? '#0F1210' : '#1A1010', borderRadius: 8, border: `1px solid ${validation.ok ? '#2A3A2A' : '#3A2A2A'}` }}>
-        <p style={{ color: validation.ok ? '#6B9B6B' : '#8B4545', fontSize: 13, margin: 0 }}>
+        <p style={{ color: validation.ok ? 'var(--foundry-success)' : '#8B4545', fontSize: 13, margin: 0 }}>
           Pool validation: {validation.ok ? 'All 7 worlds × 8 event types' : validation.errors.join('; ')}
         </p>
       </section>
@@ -48,12 +48,12 @@ export function OperatorEventsViewer() {
       <section style={{ marginTop: 24 }}>
         <p style={{ color: 'var(--foundry-primary)', fontSize: 12, margin: '0 0 12px' }}>Active rotation today</p>
         {activeByWorld.map(({ world: w, snapshot }) => (
-          <div key={w} style={{ marginBottom: 16, padding: 14, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{WORLD_LABELS[w] ?? w}</p>
+          <div key={w} style={{ marginBottom: 16, padding: 14, background: 'var(--foundry-surface)', borderRadius: 8 }}>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{WORLD_LABELS[w] ?? w}</p>
             {snapshot ? (
               <>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>{snapshot.hero_title}</p>
-                <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 4 }}>{snapshot.events.length} active events · {snapshot.date_key}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 6 }}>{snapshot.hero_title}</p>
+                <p style={{ color: 'var(--foundry-text-dim)', fontSize: 11, marginTop: 4 }}>{snapshot.events.length} active events · {snapshot.date_key}</p>
               </>
             ) : (
               <p style={{ color: '#8B4545', fontSize: 12, marginTop: 6 }}>No snapshot</p>
@@ -71,19 +71,19 @@ export function OperatorEventsViewer() {
 
       <div style={{ display: 'grid', gap: 10 }}>
         {filtered.map((d) => (
-          <article key={d.event_id} style={{ padding: 14, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-            <p style={{ color: '#6B6B70', fontSize: 10, margin: 0 }}>
+          <article key={d.event_id} style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0 }}>
               {WORLD_LABELS[d.world_slug]} · {EVENT_TYPE_LABELS[d.event_type]} · {d.event_id}
             </p>
-            <p style={{ color: '#E8E8EC', fontSize: 15, margin: '6px 0 0' }}>{d.title}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6 }}>{d.short_hook}</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: '6px 0 0' }}>{d.title}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 6 }}>{d.short_hook}</p>
             {d.collector_action && (
-              <p style={{ color: '#6B9B6B', fontSize: 11, marginTop: 8 }}>
+              <p style={{ color: 'var(--foundry-success)', fontSize: 11, marginTop: 8 }}>
                 Collector: {d.collector_action.action_type}:{d.collector_action.action_id}
               </p>
             )}
             {d.related_collections?.length ? (
-              <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 4 }}>Collections: {d.related_collections.join(', ')}</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 4 }}>Collections: {d.related_collections.join(', ')}</p>
             ) : null}
           </article>
         ))}
@@ -94,9 +94,9 @@ export function OperatorEventsViewer() {
 
 function Stat({ label, value }: { label: string; value: string | number }) {
   return (
-    <div style={{ padding: 14, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-      <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>{label}</p>
-      <p style={{ color: '#E8E8EC', fontSize: 22, marginTop: 6, fontWeight: 300 }}>{value}</p>
+    <div style={{ padding: 14, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 22, marginTop: 6, fontWeight: 300 }}>{value}</p>
     </div>
   );
 }
@@ -108,10 +108,10 @@ function FilterChip({ active, onClick, label }: { active: boolean; onClick: () =
       onClick={onClick}
       style={{
         padding: '8px 14px',
-        background: active ? '#2A4A2A' : '#111114',
-        border: `1px solid ${active ? '#3A5A3A' : '#1A1A1E'}`,
+        background: active ? 'var(--foundry-success-bg)' : 'var(--foundry-surface-raised)',
+        border: `1px solid ${active ? '#3A5A3A' : 'var(--foundry-border-subtle)'}`,
         borderRadius: 6,
-        color: active ? '#E8E8EC' : '#6B6B70',
+        color: active ? 'var(--foundry-text)' : 'var(--foundry-text-faint)',
         fontSize: 12,
         cursor: 'pointer',
       }}

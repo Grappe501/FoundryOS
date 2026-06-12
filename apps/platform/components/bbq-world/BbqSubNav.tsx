@@ -19,12 +19,12 @@ const LINKS = [
 export function BbqSubNav() {
   const pathname = usePathname() ?? '';
   return (
-    <nav style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12, paddingBottom: 12, borderBottom: '1px solid #1A1A1E' }} aria-label="BBQ world">
+    <nav style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12, paddingBottom: 12, borderBottom: '1px solid var(--foundry-border-subtle)' }} aria-label="BBQ world">
       {LINKS.map(({ href, label, ...rest }) => {
         const exact = 'exact' in rest && rest.exact;
         const active = exact ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
         return (
-          <Link key={href} href={href} style={{ padding: '6px 12px', fontSize: 12, borderRadius: 6, textDecoration: 'none', color: active ? '#E8E8EC' : '#6B6B70', background: active ? '#4A3020' : 'transparent', border: `1px solid ${active ? '#4A3020' : 'transparent'}` }}>
+          <Link key={href} href={href} style={{ padding: '6px 12px', fontSize: 12, borderRadius: 6, textDecoration: 'none', color: active ? 'var(--foundry-text)' : 'var(--foundry-text-faint)', background: active ? '#4A3020' : 'transparent', border: `1px solid ${active ? '#4A3020' : 'transparent'}` }}>
             {label}
           </Link>
         );

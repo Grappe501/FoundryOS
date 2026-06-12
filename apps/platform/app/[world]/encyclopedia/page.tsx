@@ -32,14 +32,14 @@ export default async function WorldEncyclopediaPage({ params }: Props) {
   const access = segmentCanAccessWorld(segment, world);
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 960, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 960, margin: '0 auto' }}>
       <ConsumerNav />
       <section style={{ marginTop: 24 }}>
         <p style={{ color: bundle.accentColor, fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
           Encyclopedia
         </p>
         <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 12 }}>{bundle.displayName}</h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12 }}>
           {bundle.glossary.length} terms · related concepts · where terms appear in missions
         </p>
         {!access.allowed && (
@@ -53,22 +53,22 @@ export default async function WorldEncyclopediaPage({ params }: Props) {
               style={{
                 display: 'block',
                 padding: '14px 16px',
-                background: '#111114',
-                border: '1px solid #1A1A1E',
+                background: 'var(--foundry-surface-raised)',
+                border: '1px solid var(--foundry-border-subtle)',
                 borderRadius: 8,
                 textDecoration: 'none',
                 color: 'inherit',
               }}
             >
-              <span style={{ color: '#E8E8EC', fontSize: 15 }}>{term.term}</span>
-              <p style={{ color: '#8A8A8E', fontSize: 13, margin: '6px 0 0' }}>{term.definition}</p>
+              <span style={{ color: 'var(--foundry-text)', fontSize: 15 }}>{term.term}</span>
+              <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '6px 0 0' }}>{term.definition}</p>
             </Link>
           ))}
         </div>
         <div style={{ marginTop: 24, display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-          <Link href={`/${world}/glossary`} style={{ color: '#6B6B70', fontSize: 13 }}>Glossary view →</Link>
-          <Link href={`/${world}/academy`} style={{ color: '#6B6B70', fontSize: 13 }}>Academy →</Link>
-          <Link href="/search" style={{ color: '#6B9B6B', fontSize: 13 }}>Global search →</Link>
+          <Link href={`/${world}/glossary`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>Glossary view →</Link>
+          <Link href={`/${world}/academy`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>Academy →</Link>
+          <Link href="/search" style={{ color: 'var(--foundry-success)', fontSize: 13 }}>Global search →</Link>
         </div>
       </section>
     </main>

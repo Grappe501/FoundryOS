@@ -20,22 +20,22 @@ export default async function OperatorInvitesPage() {
   };
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 960, margin: '0 auto' }}>
-      <Link href="/operator" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
-      <Link href="/operator/beta" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Beta dashboard</Link>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 960, margin: '0 auto' }}>
+      <Link href="/operator" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Mission Control</Link>
+      <Link href="/operator/beta" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Beta dashboard</Link>
 
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Invite + Tester Operations</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
         Review waitlist · approve testers · assign cohort and starting world · copy invite message · track invited / joined / active.
       </p>
 
       <section style={{ marginTop: 20, padding: 16, background: '#1A1A14', borderRadius: 8, border: '1px solid #3A3A2A' }}>
         <p style={{ color: 'var(--foundry-primary)', fontSize: 12, margin: 0, fontWeight: 500 }}>Before first invite — confirm Supabase Auth</p>
-        <ul style={{ color: '#8A8A8E', fontSize: 12, margin: '8px 0 0', paddingLeft: 18, lineHeight: 1.7 }}>
-          <li>Site URL: <code style={{ color: '#E8E8EC' }}>https://foundry-os.netlify.app</code></li>
-          <li>Redirect URL: <code style={{ color: '#E8E8EC' }}>https://foundry-os.netlify.app/auth/callback</code></li>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 12, margin: '8px 0 0', paddingLeft: 18, lineHeight: 1.7 }}>
+          <li>Site URL: <code style={{ color: 'var(--foundry-text)' }}>https://foundry-os.netlify.app</code></li>
+          <li>Redirect URL: <code style={{ color: 'var(--foundry-text)' }}>https://foundry-os.netlify.app/auth/callback</code></li>
         </ul>
-        <p style={{ color: '#6B6B70', fontSize: 11, margin: '8px 0 0' }}>Dashboard → Authentication → URL Configuration</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: '8px 0 0' }}>Dashboard → Authentication → URL Configuration</p>
       </section>
 
       {!isSupabaseConfigured() ? (

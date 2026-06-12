@@ -67,9 +67,9 @@ export function CollectorTrackPicker() {
             style={{
               padding: '10px 18px',
               borderRadius: 8,
-              border: `1px solid ${track === t.id ? ACCENT : '#2A2A2E'}`,
-              background: track === t.id ? '#4A4020' : 'transparent',
-              color: track === t.id ? '#E8E8EC' : '#8A8A8E',
+              border: `1px solid ${track === t.id ? ACCENT : 'var(--foundry-border)'}`,
+              background: track === t.id ? 'var(--foundry-primary-border-dim)' : 'transparent',
+              color: track === t.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -77,12 +77,12 @@ export function CollectorTrackPicker() {
           </button>
         ))}
       </div>
-      <article style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 12 }}>
-        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>{active.title} track</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{active.desc}</p>
+      <article style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: 'var(--foundry-text)' }}>{active.title} track</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{active.desc}</p>
         <div style={{ marginTop: 20, display: 'grid', gap: 8 }}>
           {active.tools.map((tool) => (
-            <Link key={tool.href} href={tool.href} style={{ padding: 14, background: '#0F0F12', borderRadius: 6, color: ACCENT, fontSize: 14, textDecoration: 'none' }}>
+            <Link key={tool.href} href={tool.href} style={{ padding: 14, background: 'var(--foundry-surface)', borderRadius: 6, color: ACCENT, fontSize: 14, textDecoration: 'none' }}>
               {tool.label} →
             </Link>
           ))}

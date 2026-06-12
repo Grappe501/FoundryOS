@@ -37,7 +37,7 @@ function LevelPicker({
   ];
   return (
     <div style={{ marginTop: 16 }}>
-      <p style={{ color: '#6B6B70', fontSize: 12, margin: '0 0 8px' }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '0 0 8px' }}>{label}</p>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         {options.map((o) => (
           <button
@@ -47,10 +47,10 @@ function LevelPicker({
             style={{
               textAlign: 'left',
               padding: '12px 14px',
-              background: value === o.v ? '#1A2A1A' : '#111114',
-              border: `1px solid ${value === o.v ? '#2A4A2A' : '#1A1A1E'}`,
+              background: value === o.v ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface-raised)',
+              border: `1px solid ${value === o.v ? 'var(--foundry-success-bg)' : 'var(--foundry-border-subtle)'}`,
               borderRadius: 6,
-              color: value === o.v ? '#E8E8EC' : '#8A8A8E',
+              color: value === o.v ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
               fontSize: 14,
             }}
@@ -70,31 +70,31 @@ function ResultPanel({ result }: { result: AssessmentResult }) {
       style={{
         marginTop: 28,
         padding: 24,
-        background: '#0F0F12',
-        border: '1px solid #2A4A2A',
+        background: 'var(--foundry-surface)',
+        border: '1px solid var(--foundry-success-bg)',
         borderRadius: 8,
       }}
     >
-      <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
+      <p style={{ color: 'var(--foundry-success)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
         Your Future-Proof read
       </p>
-      <h2 style={{ fontWeight: 300, fontSize: '1.5rem', marginTop: 12, color: '#E8E8EC' }}>
+      <h2 style={{ fontWeight: 300, fontSize: '1.5rem', marginTop: 12, color: 'var(--foundry-text)' }}>
         Start with {result.recommendedLabel}
       </h2>
-      <div style={{ marginTop: 20, fontSize: 14, lineHeight: 1.8, color: '#8A8A8E' }}>
+      <div style={{ marginTop: 20, fontSize: 14, lineHeight: 1.8, color: 'var(--foundry-text-muted)' }}>
         <p>
-          <span style={{ color: '#6B6B70' }}>Where you are: </span>
+          <span style={{ color: 'var(--foundry-text-faint)' }}>Where you are: </span>
           {result.whereYouAre}
         </p>
         <p>
-          <span style={{ color: '#6B6B70' }}>What you&apos;re missing: </span>
+          <span style={{ color: 'var(--foundry-text-faint)' }}>What you&apos;re missing: </span>
           {result.whatYouAreMissing}
         </p>
         <p>
-          <span style={{ color: '#6B6B70' }}>Path to start: </span>
-          <span style={{ color: '#E8E8EC' }}>{result.startPath}</span>
+          <span style={{ color: 'var(--foundry-text-faint)' }}>Path to start: </span>
+          <span style={{ color: 'var(--foundry-text)' }}>{result.startPath}</span>
         </p>
-        <p style={{ color: '#6B9B6B', marginTop: 16 }}>{result.tomorrowHook}</p>
+        <p style={{ color: 'var(--foundry-success)', marginTop: 16 }}>{result.tomorrowHook}</p>
       </div>
       <Link
         href={href}
@@ -105,8 +105,8 @@ function ResultPanel({ result }: { result: AssessmentResult }) {
           display: 'inline-block',
           marginTop: 24,
           padding: '14px 24px',
-          background: '#2A4A2A',
-          color: '#E8E8EC',
+          background: 'var(--foundry-success-bg)',
+          color: 'var(--foundry-text)',
           borderRadius: 6,
           fontSize: 14,
           textDecoration: 'none',
@@ -184,55 +184,55 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
           style={{
             marginTop: 24,
             padding: 20,
-            background: '#1A160F',
-            border: '1px solid #4A4020',
+            background: 'var(--foundry-primary-bg-subtle)',
+            border: '1px solid var(--foundry-primary-border-dim)',
             borderRadius: 8,
           }}
         >
           <p style={{ color: 'var(--foundry-primary)', fontSize: 14, margin: 0 }}>
             Confirm {chooseMeta.label} is your path — take the 2-minute assessment below.
           </p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>
             Or{' '}
-            <Link href={`/explore/${choosePath}`} style={{ color: '#6B9B6B' }}>
+            <Link href={`/explore/${choosePath}`} style={{ color: 'var(--foundry-success)' }}>
               learn more about {chooseMeta.label}
             </Link>
           </p>
         </section>
       )}
 
-      <section style={{ marginTop: 32, padding: 28, background: '#0F0F12', borderRadius: 8 }}>
-        <h1 style={{ fontWeight: 300, fontSize: '2.25rem', margin: 0, color: '#E8E8EC' }}>
+      <section style={{ marginTop: 32, padding: 28, background: 'var(--foundry-surface)', borderRadius: 8 }}>
+        <h1 style={{ fontWeight: 300, fontSize: '2.25rem', margin: 0, color: 'var(--foundry-text)' }}>
           {FUTURE_PROOF_HEADLINE}
         </h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>{FUTURE_PROOF_SUBHEAD}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>{FUTURE_PROOF_SUBHEAD}</p>
       </section>
 
       <section style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
         {trinityCards.map((card) => (
           <div
             key={card.key}
-            style={{ padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}
+            style={{ padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}
           >
-            <p style={{ color: '#6B9B6B', fontSize: 11, margin: 0 }}>{card.question}</p>
-            <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 8 }}>{card.label}</p>
-            <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>{card.outcome}</p>
+            <p style={{ color: 'var(--foundry-success)', fontSize: 11, margin: 0 }}>{card.question}</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 8 }}>{card.label}</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 6 }}>{card.outcome}</p>
           </div>
         ))}
       </section>
 
       {!result ? (
-        <section style={{ marginTop: 32, padding: 24, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 16, fontWeight: 400, color: '#E8E8EC', margin: 0 }}>
+        <section style={{ marginTop: 32, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+          <h2 style={{ fontSize: 16, fontWeight: 400, color: 'var(--foundry-text)', margin: 0 }}>
             Future-Proof Starter Assessment
           </h2>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>
             For parents, students, young professionals, and career changers.
           </p>
 
           {step === 0 && (
             <div style={{ marginTop: 20 }}>
-              <p style={{ color: '#6B6B70', fontSize: 12 }}>Who are you?</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>Who are you?</p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 8, marginTop: 12 }}>
                 {CUSTOMER_SEGMENTS.map((s) => (
                   <button
@@ -250,15 +250,15 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
                     style={{
                       textAlign: 'left',
                       padding: 14,
-                      background: answers.segment === s.id ? '#1A2A1A' : '#0F0F12',
-                      border: '1px solid #1A1A1E',
+                      background: answers.segment === s.id ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface)',
+                      border: '1px solid var(--foundry-border-subtle)',
                       borderRadius: 6,
-                      color: '#E8E8EC',
+                      color: 'var(--foundry-text)',
                       cursor: 'pointer',
                     }}
                   >
                     <div style={{ fontSize: 14 }}>{s.label}</div>
-                    <div style={{ fontSize: 12, color: '#6B6B70', marginTop: 4 }}>{s.description}</div>
+                    <div style={{ fontSize: 12, color: 'var(--foundry-text-faint)', marginTop: 4 }}>{s.description}</div>
                   </button>
                 ))}
               </div>
@@ -283,7 +283,7 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
                 onChange={(v) => setAnswers((a) => ({ ...a, speakingLevel: v }))}
               />
               <div style={{ marginTop: 20 }}>
-                <p style={{ color: '#6B6B70', fontSize: 12 }}>Biggest worry right now?</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>Biggest worry right now?</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 8 }}>
                   {(
                     [
@@ -299,10 +299,10 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
                       onClick={() => setAnswers((a) => ({ ...a, primaryWorry: id }))}
                       style={{
                         padding: '10px 14px',
-                        background: answers.primaryWorry === id ? '#1A2A1A' : '#0F0F12',
-                        border: '1px solid #1A1A1E',
+                        background: answers.primaryWorry === id ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface)',
+                        border: '1px solid var(--foundry-border-subtle)',
                         borderRadius: 6,
-                        color: '#E8E8EC',
+                        color: 'var(--foundry-text)',
                         fontSize: 13,
                         cursor: 'pointer',
                       }}
@@ -318,10 +318,10 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
                 style={{
                   marginTop: 24,
                   padding: '14px 24px',
-                  background: '#2A4A2A',
+                  background: 'var(--foundry-success-bg)',
                   border: 'none',
                   borderRadius: 6,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                   cursor: 'pointer',
                 }}
@@ -344,7 +344,7 @@ export function FutureProofAssessment({ choosePath }: { choosePath?: string }) {
               style={{
                 background: 'none',
                 border: 'none',
-                color: '#6B6B70',
+                color: 'var(--foundry-text-faint)',
                 cursor: 'pointer',
                 fontSize: 13,
                 padding: 0,

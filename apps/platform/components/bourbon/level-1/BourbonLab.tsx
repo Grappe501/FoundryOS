@@ -31,11 +31,11 @@ const PROOFS = [
 function Bar({ label, value, color }: { label: string; value: number; color: string }) {
   return (
     <div style={{ marginBottom: 10 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: '#8A8A8E', marginBottom: 4 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: 'var(--foundry-text-muted)', marginBottom: 4 }}>
         <span>{label}</span>
         <span>{value}%</span>
       </div>
-      <div style={{ height: 8, background: '#1A1A1E', borderRadius: 4, overflow: 'hidden' }}>
+      <div style={{ height: 8, background: 'var(--foundry-border-subtle)', borderRadius: 4, overflow: 'hidden' }}>
         <div style={{ width: `${value}%`, height: '100%', background: color, borderRadius: 4, transition: 'width 0.3s' }} />
       </div>
     </div>
@@ -67,7 +67,7 @@ export function BourbonLab() {
         <div style={{ marginTop: 20 }}>
           <Bar label="Caramel" value={charData.caramel} color="var(--foundry-primary)" />
           <Bar label="Vanilla" value={charData.vanilla} color="#E8D4A0" />
-          <Bar label="Smoke" value={charData.smoke} color="#6B6B70" />
+          <Bar label="Smoke" value={charData.smoke} color="var(--foundry-text-faint)" />
           <Bar label="Oak" value={charData.oak} color="#8B6914" />
           <Bar label="Tannin" value={charData.tannin} color="#4A3020" />
         </div>
@@ -78,7 +78,7 @@ export function BourbonLab() {
         <p style={{ color: ACCENT, fontSize: 14, marginTop: 8 }}>{ageData.label}</p>
         <div style={{ display: 'flex', gap: 4, marginTop: 16 }}>
           {AGES.map((a, i) => (
-            <div key={a.years} style={{ flex: 1, height: 40, background: i <= age ? ACCENT : '#1A1A1E', borderRadius: 4, opacity: i <= age ? 0.4 + i * 0.15 : 0.3 }} title={a.label} />
+            <div key={a.years} style={{ flex: 1, height: 40, background: i <= age ? ACCENT : 'var(--foundry-border-subtle)', borderRadius: 4, opacity: i <= age ? 0.4 + i * 0.15 : 0.3 }} title={a.label} />
           ))}
         </div>
         <div style={{ marginTop: 16 }}>
@@ -86,7 +86,7 @@ export function BourbonLab() {
           <Bar label="Oak influence" value={ageData.oak} color="#8B6914" />
           <Bar label="Tannin / dry" value={ageData.tannin} color="#4A3020" />
         </div>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{ageData.note}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{ageData.note}</p>
       </SimulatorBlock>
 
       <SimulatorBlock title="Proof Simulator" subtitle="What heat and intensity should you expect?">
@@ -95,7 +95,7 @@ export function BourbonLab() {
         <Bar label="Heat / burn" value={proofData.heat} color="#B44" />
         <Bar label="Flavor intensity" value={proofData.flavor} color={ACCENT} />
         <Bar label="Mouthfeel / body" value={proofData.mouthfeel} color="#6B9BC9" />
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{proofData.note}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{proofData.note}</p>
       </SimulatorBlock>
     </div>
   );
@@ -103,9 +103,9 @@ export function BourbonLab() {
 
 function SimulatorBlock({ title, subtitle, children }: { title: string; subtitle: string; children: React.ReactNode }) {
   return (
-    <article style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 12, border: '1px solid #1A1A1E' }}>
-      <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>{title}</h2>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>{subtitle}</p>
+    <article style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12, border: '1px solid var(--foundry-border-subtle)' }}>
+      <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: 'var(--foundry-text)' }}>{title}</h2>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>{subtitle}</p>
       <div style={{ marginTop: 20 }}>{children}</div>
     </article>
   );

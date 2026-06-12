@@ -16,7 +16,7 @@ export default async function DistilleryWarPage({ params }: Props) {
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/wars" style={{ color: '#6B6B70', fontSize: 13 }}>← All wars</Link>
+      <Link href="/bourbon/wars" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← All wars</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>{war.title}</h1>
       <DistilleryWarCompare slug={slug} />
     </section>

@@ -27,21 +27,21 @@ const SECTIONS = [
 
 export default function InvestorsPage() {
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 800, margin: '0 auto' }}>
-      <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 800, margin: '0 auto' }}>
+      <Link href="/" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Mission Control</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Investors</h1>
-      <p style={{ color: '#8A8A8E', marginTop: 8 }}>Vision, roadmap, milestones, architecture — live from the platform.</p>
+      <p style={{ color: 'var(--foundry-text-muted)', marginTop: 8 }}>Vision, roadmap, milestones, architecture — live from the platform.</p>
 
       <div style={{ marginTop: 32 }}>
         {SECTIONS.map((s) => (
-          <section key={s.title} style={{ marginBottom: 28, paddingBottom: 28, borderBottom: '1px solid #1A1A1E' }}>
+          <section key={s.title} style={{ marginBottom: 28, paddingBottom: 28, borderBottom: '1px solid var(--foundry-border-subtle)' }}>
             <h2 style={{ fontSize: 16, color: 'var(--foundry-primary)', fontWeight: 500 }}>{s.title}</h2>
-            <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7, marginTop: 8 }}>{s.body}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, lineHeight: 1.7, marginTop: 8 }}>{s.body}</p>
           </section>
         ))}
       </div>
 
-      <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 24 }}>
+      <p style={{ color: 'var(--foundry-text-dim)', fontSize: 12, marginTop: 24 }}>
         Full pitch: docs/INVESTOR_PITCH.md · Roadmap: docs/ROADMAP.md
       </p>
     </main>

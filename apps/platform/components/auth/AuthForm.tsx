@@ -7,17 +7,17 @@ import { createClient, isAuthConfigured } from '../../lib/supabase/client';
 const inputStyle: React.CSSProperties = {
   width: '100%',
   padding: '12px 14px',
-  background: '#111114',
-  border: '1px solid #1A1A1E',
+  background: 'var(--foundry-surface-raised)',
+  border: '1px solid var(--foundry-border-subtle)',
   borderRadius: 6,
-  color: '#E8E8EC',
+  color: 'var(--foundry-text)',
   fontSize: 14,
   marginTop: 8,
 };
 
 const labelStyle: React.CSSProperties = {
   display: 'block',
-  color: '#8A8A8E',
+  color: 'var(--foundry-text-muted)',
   fontSize: 13,
   marginTop: 16,
 };
@@ -31,9 +31,9 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'create-account' }) {
 
   if (!isAuthConfigured()) {
     return (
-      <p style={{ color: '#8A8A8E', fontSize: 14 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>
         Auth is not configured yet. Join the{' '}
-        <Link href="/beta" style={{ color: '#6B9B6B' }}>beta waitlist</Link> while we finish setup.
+        <Link href="/beta" style={{ color: 'var(--foundry-success)' }}>beta waitlist</Link> while we finish setup.
       </p>
     );
   }
@@ -89,10 +89,10 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'create-account' }) {
         style={{
           marginTop: 24,
           padding: '14px 24px',
-          background: '#2A4A2A',
+          background: 'var(--foundry-success-bg)',
           border: 'none',
           borderRadius: 6,
-          color: '#E8E8EC',
+          color: 'var(--foundry-text)',
           fontSize: 14,
           cursor: loading ? 'wait' : 'pointer',
         }}

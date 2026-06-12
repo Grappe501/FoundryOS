@@ -32,20 +32,20 @@ export function ShelfBuilder() {
         <Chip active={tier === 'advanced'} onClick={() => setTier('advanced')}>Advanced shelf</Chip>
         <Chip active={tier === 'collector'} onClick={() => setTier('collector')}>Collector shelf</Chip>
       </Question>
-      <button type="button" onClick={build} style={{ marginTop: 20, padding: '12px 22px', background: '#4A4020', border: 'none', borderRadius: 8, color: '#E8E8EC', cursor: 'pointer' }}>
+      <button type="button" onClick={build} style={{ marginTop: 20, padding: '12px 22px', background: 'var(--foundry-primary-border-dim)', border: 'none', borderRadius: 8, color: 'var(--foundry-text)', cursor: 'pointer' }}>
         Build my shelf →
       </button>
 
       {built && (
         <section style={{ marginTop: 28 }}>
-          <p style={{ color: '#6B6B70', fontSize: 13 }}>Estimated total ~${total} (budget ${budget})</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>Estimated total ~${total} (budget ${budget})</p>
           <div style={{ marginTop: 16, display: 'grid', gap: 12 }}>
             {built.map(({ bottle, slot, why }) => (
-              <article key={bottle.slug + slot} style={{ padding: 18, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+              <article key={bottle.slug + slot} style={{ padding: 18, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
                 <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{slot}</p>
-                <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 6 }}>{bottle.name}</p>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>${bottle.priceUsd} · {bottle.proof} proof</p>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>{why}</p>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 6 }}>{bottle.name}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>${bottle.priceUsd} · {bottle.proof} proof</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>{why}</p>
               </article>
             ))}
           </div>
@@ -61,7 +61,7 @@ export function ShelfBuilder() {
 function Question({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div style={{ marginTop: 16 }}>
-      <p style={{ color: '#E8E8EC', fontSize: 14, marginBottom: 10 }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginBottom: 10 }}>{label}</p>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>{children}</div>
     </div>
   );
@@ -69,7 +69,7 @@ function Question({ label, children }: { label: string; children: React.ReactNod
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
-    <button type="button" onClick={onClick} style={{ padding: '8px 16px', borderRadius: 999, border: `1px solid ${active ? ACCENT : '#2A2A2E'}`, background: active ? '#4A4020' : 'transparent', color: active ? '#E8E8EC' : '#8A8A8E', fontSize: 13, cursor: 'pointer' }}>
+    <button type="button" onClick={onClick} style={{ padding: '8px 16px', borderRadius: 999, border: `1px solid ${active ? ACCENT : 'var(--foundry-border)'}`, background: active ? 'var(--foundry-primary-border-dim)' : 'transparent', color: active ? 'var(--foundry-text)' : 'var(--foundry-text-muted)', fontSize: 13, cursor: 'pointer' }}>
       {children}
     </button>
   );

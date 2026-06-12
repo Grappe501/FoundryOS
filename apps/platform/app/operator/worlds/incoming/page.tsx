@@ -23,15 +23,15 @@ export default function OperatorIncomingWorldsPage() {
       {roi && (
         <div style={{ marginTop: 24, padding: 20, background: '#1A1410', border: '1px solid #3A3020', borderRadius: 8 }}>
           <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: 0 }}>Highest ROI (computed)</p>
-          <p style={{ color: '#E8E8EC', fontSize: 17, marginTop: 8 }}>{roi.target}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{roi.reasons.join(' · ')}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 17, marginTop: 8 }}>{roi.target}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>{roi.reasons.join(' · ')}</p>
         </div>
       )}
 
       <div style={{ overflowX: 'auto', marginTop: 28 }}>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
           <thead>
-            <tr style={{ color: '#6B6B70', textAlign: 'left', borderBottom: '1px solid #1A1A1E' }}>
+            <tr style={{ color: 'var(--foundry-text-faint)', textAlign: 'left', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
               <th style={{ padding: 10 }}>#</th>
               <th style={{ padding: 10 }}>World</th>
               <th style={{ padding: 10 }}>Status</th>
@@ -42,20 +42,20 @@ export default function OperatorIncomingWorldsPage() {
           </thead>
           <tbody>
             {incoming.map((w) => (
-              <tr key={w.slug} style={{ borderBottom: '1px solid #1A1A1E' }}>
-                <td style={{ padding: 10, color: '#6B6B70' }}>{w.rank}</td>
-                <td style={{ padding: 10, color: '#E8E8EC' }}>{w.name}</td>
-                <td style={{ padding: 10, color: '#8A8A8E' }}>{w.status}</td>
+              <tr key={w.slug} style={{ borderBottom: '1px solid var(--foundry-border-subtle)' }}>
+                <td style={{ padding: 10, color: 'var(--foundry-text-faint)' }}>{w.rank}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-text)' }}>{w.name}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{w.status}</td>
                 <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{w.score}</td>
-                <td style={{ padding: 10, color: '#8A8A8E' }}>{formatAvenues(w.acquisition_avenues)}</td>
-                <td style={{ padding: 10, color: '#6B6B70', fontSize: 11 }}>{w.note}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{formatAvenues(w.acquisition_avenues)}</td>
+                <td style={{ padding: 10, color: 'var(--foundry-text-faint)', fontSize: 11 }}>{w.note}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <Link href="/operator/opportunities" style={{ color: '#6B6B70', fontSize: 12, marginTop: 20, display: 'inline-block' }}>
+      <Link href="/operator/opportunities" style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 20, display: 'inline-block' }}>
         Legacy opportunities view →
       </Link>
     </OperatorShell>

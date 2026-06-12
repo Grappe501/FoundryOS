@@ -27,9 +27,9 @@ export default function OperatorAtlasHealthPage() {
         ]}
       />
 
-      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Six-question model (040B)</h2>
-        <ol style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 2, marginTop: 12, paddingLeft: 20 }}>
+        <ol style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 2, marginTop: 12, paddingLeft: 20 }}>
           <li>Why should I care?</li>
           <li>What should I do next?</li>
           <li>What else is connected?</li>
@@ -41,7 +41,7 @@ export default function OperatorAtlasHealthPage() {
 
       <section style={{ marginTop: 32 }}>
         <h2 style={{ fontSize: 14, color: '#6B9BC9' }}>Knowledge gravity (top rabbit holes)</h2>
-        <ol style={{ marginTop: 12, paddingLeft: 20, color: '#E8E8EC', fontSize: 14, lineHeight: 2 }}>
+        <ol style={{ marginTop: 12, paddingLeft: 20, color: 'var(--foundry-text)', fontSize: 14, lineHeight: 2 }}>
           {snap.knowledge_gravity.map((n, i) => (
             <li key={n.slug}>
               {i + 1}. {n.title} — {n.connections} edges
@@ -50,7 +50,7 @@ export default function OperatorAtlasHealthPage() {
         </ol>
       </section>
 
-      <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 24 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 24 }}>
         Source: {listAtlasEntries().length} bourbon atlas entries · cross-world atlases stubbed until factory scales
       </p>
     </OperatorShell>

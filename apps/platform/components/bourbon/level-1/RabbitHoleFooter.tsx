@@ -15,7 +15,7 @@ export function RabbitHoleFooter({ seed }: Props) {
       style={{
         marginTop: 40,
         padding: 22,
-        background: 'linear-gradient(135deg, #0F0F12 0%, #141418 100%)',
+        background: 'linear-gradient(135deg, var(--foundry-surface) 0%, #141418 100%)',
         borderRadius: 10,
         border: `1px dashed ${ACCENT}44`,
       }}
@@ -25,7 +25,7 @@ export function RabbitHoleFooter({ seed }: Props) {
       </p>
       <Link
         href={hook.href}
-        style={{ display: 'block', color: '#E8E8EC', fontSize: 15, marginTop: 10, lineHeight: 1.5, textDecoration: 'none' }}
+        style={{ display: 'block', color: 'var(--foundry-text)', fontSize: 15, marginTop: 10, lineHeight: 1.5, textDecoration: 'none' }}
       >
         {hook.text} →
       </Link>

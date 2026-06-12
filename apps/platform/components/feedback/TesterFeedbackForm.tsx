@@ -52,8 +52,8 @@ export function TesterFeedbackForm() {
 
   if (status === 'done') {
     return (
-      <section style={{ padding: 24, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-        <p style={{ color: '#6B9B6B', margin: 0 }}>Thank you — your feedback shapes what we build next.</p>
+      <section style={{ padding: 24, background: 'var(--foundry-success-bg-subtle)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+        <p style={{ color: 'var(--foundry-success)', margin: 0 }}>Thank you — your feedback shapes what we build next.</p>
       </section>
     );
   }
@@ -62,10 +62,10 @@ export function TesterFeedbackForm() {
     width: '100%',
     padding: '10px 12px',
     marginTop: 6,
-    background: '#111114',
-    border: '1px solid #1A1A1E',
+    background: 'var(--foundry-surface-raised)',
+    border: '1px solid var(--foundry-border-subtle)',
     borderRadius: 6,
-    color: '#E8E8EC',
+    color: 'var(--foundry-text)',
     fontSize: 14,
     boxSizing: 'border-box',
     fontFamily: 'inherit',
@@ -74,7 +74,7 @@ export function TesterFeedbackForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-        <label style={{ fontSize: 13, color: '#8A8A8E' }}>
+        <label style={{ fontSize: 13, color: 'var(--foundry-text-muted)' }}>
           Segment
           <select value={segment} onChange={(e) => setSegment(e.target.value)} style={fieldStyle}>
             {SEGMENTS.map((s) => (
@@ -82,7 +82,7 @@ export function TesterFeedbackForm() {
             ))}
           </select>
         </label>
-        <label style={{ fontSize: 13, color: '#8A8A8E' }}>
+        <label style={{ fontSize: 13, color: 'var(--foundry-text-muted)' }}>
           World
           <select value={worldSlug} onChange={(e) => setWorldSlug(e.target.value)} style={fieldStyle}>
             {ANALYTICS_WORLDS.map((w) => (
@@ -92,22 +92,22 @@ export function TesterFeedbackForm() {
         </label>
       </div>
 
-      <label style={{ display: 'block', fontSize: 13, color: '#8A8A8E', marginTop: 16 }}>
+      <label style={{ display: 'block', fontSize: 13, color: 'var(--foundry-text-muted)', marginTop: 16 }}>
         Mission (optional)
         <input value={missionSlug} onChange={(e) => setMissionSlug(e.target.value)} placeholder="e.g. homework-assistant" style={fieldStyle} />
       </label>
 
-      <label style={{ display: 'block', fontSize: 13, color: '#8A8A8E', marginTop: 16 }}>
+      <label style={{ display: 'block', fontSize: 13, color: 'var(--foundry-text-muted)', marginTop: 16 }}>
         What confused you?
         <textarea required value={confused} onChange={(e) => setConfused(e.target.value)} rows={3} style={fieldStyle} />
       </label>
 
-      <label style={{ display: 'block', fontSize: 13, color: '#8A8A8E', marginTop: 16 }}>
+      <label style={{ display: 'block', fontSize: 13, color: 'var(--foundry-text-muted)', marginTop: 16 }}>
         What did you like?
         <textarea required value={liked} onChange={(e) => setLiked(e.target.value)} rows={3} style={fieldStyle} />
       </label>
 
-      <label style={{ display: 'block', fontSize: 13, color: '#8A8A8E', marginTop: 16 }}>
+      <label style={{ display: 'block', fontSize: 13, color: 'var(--foundry-text-muted)', marginTop: 16 }}>
         What should we build next?
         <textarea required value={buildNext} onChange={(e) => setBuildNext(e.target.value)} rows={3} style={fieldStyle} />
       </label>
@@ -117,7 +117,7 @@ export function TesterFeedbackForm() {
       <button
         type="submit"
         disabled={status === 'loading'}
-        style={{ marginTop: 20, padding: '12px 24px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 14, cursor: 'pointer' }}
+        style={{ marginTop: 20, padding: '12px 24px', background: 'var(--foundry-success-bg)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14, cursor: 'pointer' }}
       >
         {status === 'loading' ? 'Sending…' : 'Submit feedback'}
       </button>

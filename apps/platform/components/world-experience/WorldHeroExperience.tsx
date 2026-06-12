@@ -49,7 +49,7 @@ export function WorldHeroExperience({ slug }: { slug: string }) {
               padding: '16px 28px',
               background: assets.accent,
               borderRadius: 8,
-              color: '#08080A',
+              color: 'var(--foundry-bg)',
               fontSize: 15,
               textDecoration: 'none',
               fontWeight: 500,
@@ -63,7 +63,7 @@ export function WorldHeroExperience({ slug }: { slug: string }) {
               padding: '16px 28px',
               border: `1px solid ${assets.heroBorder}`,
               borderRadius: 8,
-              color: '#E8E8EC',
+              color: 'var(--foundry-text)',
               fontSize: 14,
               textDecoration: 'none',
             }}
@@ -74,9 +74,9 @@ export function WorldHeroExperience({ slug }: { slug: string }) {
             href={config.communityHref}
             style={{
               padding: '16px 28px',
-              border: '1px solid #1A1A1E',
+              border: '1px solid var(--foundry-border-subtle)',
               borderRadius: 8,
-              color: '#8A8A8E',
+              color: 'var(--foundry-text-muted)',
               fontSize: 14,
               textDecoration: 'none',
             }}
@@ -87,9 +87,9 @@ export function WorldHeroExperience({ slug }: { slug: string }) {
       </section>
 
       <section style={{ marginTop: 20, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
-        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid #1A1A1E' }}>
-          <p style={{ color: '#6B6B70', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>What you will prove</p>
-          <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, paddingLeft: 18, lineHeight: 1.8 }}>
+        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>What you will prove</p>
+          <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, paddingLeft: 18, lineHeight: 1.8 }}>
             {config.collectProof.slice(0, 3).map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -98,13 +98,13 @@ export function WorldHeroExperience({ slug }: { slug: string }) {
             {config.portfolioLabel} →
           </Link>
         </div>
-        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid #1A1A1E' }}>
-          <p style={{ color: '#6B6B70', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>The loop</p>
-          <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 12, lineHeight: 1.7 }}>{FOUNDRY_MISSION_LOOP_TEXT}</p>
+        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>The loop</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 12, lineHeight: 1.7 }}>{FOUNDRY_MISSION_LOOP_TEXT}</p>
         </div>
-        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid #1A1A1E' }}>
-          <p style={{ color: '#6B6B70', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>Community preview</p>
-          <p style={{ color: '#E8E8EC', fontSize: 13, marginTop: 12 }}>{config.community.weeklyChallenge}</p>
+        <div style={{ padding: 20, background: assets.cardBg, borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', margin: 0 }}>Community preview</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 13, marginTop: 12 }}>{config.community.weeklyChallenge}</p>
           <Link href={config.communityHref} style={{ color: assets.accent, fontSize: 12, textDecoration: 'none', marginTop: 8, display: 'inline-block' }}>
             Join the conversation →
           </Link>

@@ -18,8 +18,8 @@ export default function ExplorePage() {
     <main
       style={{
         minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
+        backgroundColor: 'var(--foundry-bg)',
+        color: 'var(--foundry-text)',
         padding: '2rem',
         maxWidth: 960,
         margin: '0 auto',
@@ -32,7 +32,7 @@ export default function ExplorePage() {
       <section style={{ marginTop: 24 }}>
         <p
           style={{
-            color: '#6B9B6B',
+            color: 'var(--foundry-success)',
             fontSize: 11,
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
@@ -44,8 +44,8 @@ export default function ExplorePage() {
         <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 12, lineHeight: 1.25 }}>
           {EXPLORE_HERO.title}
         </h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>{EXPLORE_HERO.subtitle}</p>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>{EXPLORE_HERO.subtitle}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>
           {total} paths catalogued · {live} live now · more opening through 2027
         </p>
         <Link
@@ -54,9 +54,9 @@ export default function ExplorePage() {
             display: 'inline-block',
             marginTop: 20,
             padding: '14px 24px',
-            background: '#2A4A2A',
+            background: 'var(--foundry-success-bg)',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 14,
             fontWeight: 400,
             textDecoration: 'none',
@@ -68,9 +68,9 @@ export default function ExplorePage() {
 
       <ExploreCatalog />
 
-      <section style={{ marginTop: 40, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>New here?</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.6 }}>
+      <section style={{ marginTop: 40, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>New here?</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.6 }}>
           Don&apos;t pick a path blind. The Future-Proof Assessment shows where you are and what to start first.
         </p>
         <Link
@@ -79,9 +79,9 @@ export default function ExplorePage() {
             display: 'inline-block',
             marginTop: 16,
             padding: '12px 20px',
-            background: '#2A4A2A',
+            background: 'var(--foundry-success-bg)',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 14,
             textDecoration: 'none',
           }}

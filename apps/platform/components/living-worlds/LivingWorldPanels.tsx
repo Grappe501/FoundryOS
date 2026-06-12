@@ -24,7 +24,7 @@ import {
   setStoredDisplayName,
 } from '../../lib/living-worlds/client-journey';
 
-const ACCENT = '#6B9B6B';
+const ACCENT = 'var(--foundry-success)';
 
 export function DailyFoundryHook({ compact = false }: { compact?: boolean }) {
   const [mounted, setMounted] = useState(false);
@@ -42,7 +42,7 @@ export function DailyFoundryHook({ compact = false }: { compact?: boolean }) {
       style={{
         marginTop: compact ? 0 : 24,
         padding: compact ? 18 : 24,
-        background: 'linear-gradient(135deg, #0F1210 0%, #111114 100%)',
+        background: 'linear-gradient(135deg, #0F1210 0%, var(--foundry-surface-raised) 100%)',
         border: '1px solid #2A3A2A',
         borderRadius: 10,
       }}
@@ -50,7 +50,7 @@ export function DailyFoundryHook({ compact = false }: { compact?: boolean }) {
       <p style={{ color: ACCENT, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
         For you today
       </p>
-      <p style={{ color: '#E8E8EC', fontSize: compact ? 15 : 17, marginTop: 10, lineHeight: 1.5 }}>
+      <p style={{ color: 'var(--foundry-text)', fontSize: compact ? 15 : 17, marginTop: 10, lineHeight: 1.5 }}>
         <span style={{ color: ACCENT }}>{primary.headline}</span> {primary.body}
       </p>
       {!compact && hooks.length > 1 && (
@@ -62,14 +62,14 @@ export function DailyFoundryHook({ compact = false }: { compact?: boolean }) {
               style={{
                 display: 'block',
                 padding: 12,
-                background: '#0F0F12',
+                background: 'var(--foundry-surface)',
                 borderRadius: 6,
                 textDecoration: 'none',
-                color: '#8A8A8E',
+                color: 'var(--foundry-text-muted)',
                 fontSize: 13,
               }}
             >
-              <span style={{ color: '#E8E8EC' }}>{h.headline}</span> — {h.body.slice(0, 80)}…
+              <span style={{ color: 'var(--foundry-text)' }}>{h.headline}</span> — {h.body.slice(0, 80)}…
             </Link>
           ))}
         </div>
@@ -101,7 +101,7 @@ export function WorldMentorPanel({ worldSlug }: { worldSlug: string }) {
       style={{
         marginTop: 24,
         padding: 22,
-        background: '#111114',
+        background: 'var(--foundry-surface-raised)',
         border: '1px solid #2A3A2A',
         borderRadius: 10,
       }}
@@ -112,27 +112,27 @@ export function WorldMentorPanel({ worldSlug }: { worldSlug: string }) {
       {insight.becoming && (
         <p style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 10, fontStyle: 'italic' }}>Becoming: {insight.becoming}</p>
       )}
-      <h2 style={{ fontSize: 17, fontWeight: 400, marginTop: 10, color: '#E8E8EC', lineHeight: 1.4 }}>{insight.headline}</h2>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{insight.body}</p>
+      <h2 style={{ fontSize: 17, fontWeight: 400, marginTop: 10, color: 'var(--foundry-text)', lineHeight: 1.4 }}>{insight.headline}</h2>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{insight.body}</p>
       {memory.length > 0 && (
         <div style={{ marginTop: 14, padding: 12, background: '#0F1210', borderRadius: 6, borderLeft: `3px solid ${ACCENT}` }}>
-          <p style={{ color: '#6B6B70', fontSize: 10, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>I remember</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>I remember</p>
           {memory.map((m, i) => (
-            <p key={i} style={{ color: '#8A8A8E', fontSize: 13, margin: '6px 0 0', lineHeight: 1.5 }}>{m.text}</p>
+            <p key={i} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '6px 0 0', lineHeight: 1.5 }}>{m.text}</p>
           ))}
         </div>
       )}
       {challenges.map((c) => (
         <div key={c.id} style={{ marginTop: 14, padding: 14, background: '#1A1A20', borderRadius: 6, border: '1px solid #2A2A3A' }}>
           <p style={{ color: '#6B9BD4', fontSize: 11, margin: 0 }}>Challenge · {c.expires_hint}</p>
-          <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 6 }}>{c.title}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6, lineHeight: 1.5 }}>{c.body}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 6 }}>{c.title}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6, lineHeight: 1.5 }}>{c.body}</p>
           <Link href={c.href} style={{ color: ACCENT, fontSize: 12, marginTop: 8, display: 'inline-block' }}>Accept →</Link>
         </div>
       ))}
       {patterns.map((p, i) => (
-        <p key={i} style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, lineHeight: 1.5 }}>
-          <span style={{ color: '#8A8A8E' }}>{p.message}</span>{' '}
+        <p key={i} style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 14, lineHeight: 1.5 }}>
+          <span style={{ color: 'var(--foundry-text-muted)' }}>{p.message}</span>{' '}
           <Link href={p.href} style={{ color: ACCENT }}>{p.next_label} →</Link>
         </p>
       ))}
@@ -143,9 +143,9 @@ export function WorldMentorPanel({ worldSlug }: { worldSlug: string }) {
             href={a.href}
             style={{
               padding: '8px 14px',
-              background: '#2A4A2A',
+              background: 'var(--foundry-success-bg)',
               borderRadius: 6,
-              color: '#E8E8EC',
+              color: 'var(--foundry-text)',
               fontSize: 12,
               textDecoration: 'none',
             }}
@@ -155,10 +155,10 @@ export function WorldMentorPanel({ worldSlug }: { worldSlug: string }) {
         ))}
       </div>
       {adaptive.length > 0 && (
-        <div style={{ marginTop: 18, paddingTop: 16, borderTop: '1px solid #1A1A1E' }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Adaptive next steps</p>
+        <div style={{ marginTop: 18, paddingTop: 16, borderTop: '1px solid var(--foundry-border-subtle)' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Adaptive next steps</p>
           {adaptive.map((a) => (
-            <Link key={a.href + a.title} href={a.href} style={{ display: 'block', marginTop: 8, color: '#8A8A8E', fontSize: 13, textDecoration: 'none' }}>
+            <Link key={a.href + a.title} href={a.href} style={{ display: 'block', marginTop: 8, color: 'var(--foundry-text-muted)', fontSize: 13, textDecoration: 'none' }}>
               → {a.title}
             </Link>
           ))}
@@ -179,7 +179,7 @@ export function LivingJourneyDashboard() {
   }, []);
 
   if (!mounted) {
-    return <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 24 }}>Loading your journey…</p>;
+    return <p style={{ color: 'var(--foundry-text-faint)', fontSize: 14, marginTop: 24 }}>Loading your journey…</p>;
   }
 
   const snapshot = buildLivingJourneySnapshot(name);
@@ -210,18 +210,18 @@ export function LivingJourneyDashboard() {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              style={{ padding: 10, background: '#0F0F12', border: '1px solid #2A2A2E', borderRadius: 6, color: '#E8E8EC', fontSize: 16 }}
+              style={{ padding: 10, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 16 }}
             />
-            <button type="button" onClick={saveName} style={{ padding: '10px 16px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer' }}>
+            <button type="button" onClick={saveName} style={{ padding: '10px 16px', background: 'var(--foundry-success-bg)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', cursor: 'pointer' }}>
               Save
             </button>
           </div>
         ) : (
           <button type="button" onClick={() => setEditingName(true)} style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', textAlign: 'left' }}>
-            <h1 style={{ fontWeight: 300, fontSize: '2.25rem', margin: 0, color: '#E8E8EC' }}>{name}</h1>
+            <h1 style={{ fontWeight: 300, fontSize: '2.25rem', margin: 0, color: 'var(--foundry-text)' }}>{name}</h1>
           </button>
         )}
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.6 }}>
           {ambitions.length > 0
             ? `Trying to become: ${ambitions.map((a) => a.label).join(' · ')}`
             : identities.length === 0
@@ -240,14 +240,14 @@ export function LivingJourneyDashboard() {
       {secretPaths.length > 0 && (
         <section style={{ marginTop: 28 }}>
           <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Hidden paths discovered</h2>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>You did not pick these — Foundry noticed who you are becoming.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>You did not pick these — Foundry noticed who you are becoming.</p>
           <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
             {secretPaths.map((p) => (
-              <div key={p.id} id={`secret-${p.id}`} style={{ padding: 18, background: p.newly_discovered ? '#1A160F' : '#0F0F12', borderRadius: 8, border: `1px solid ${p.newly_discovered ? 'var(--foundry-primary)44' : '#1A1A1E'}` }}>
+              <div key={p.id} id={`secret-${p.id}`} style={{ padding: 18, background: p.newly_discovered ? 'var(--foundry-primary-bg-subtle)' : 'var(--foundry-surface)', borderRadius: 8, border: `1px solid ${p.newly_discovered ? 'var(--foundry-primary)44' : 'var(--foundry-border-subtle)'}` }}>
                 {p.newly_discovered && <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: '0 0 8px' }}>✦ Newly discovered</p>}
-                <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>{p.title}</p>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{p.tagline}</p>
-                <ul style={{ color: '#6B6B70', fontSize: 12, marginTop: 10, paddingLeft: 18 }}>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 16, margin: 0 }}>{p.title}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6 }}>{p.tagline}</p>
+                <ul style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 10, paddingLeft: 18 }}>
                   {p.links_to.map((l) => (
                     <li key={l.world}>{l.label}</li>
                   ))}
@@ -266,10 +266,10 @@ export function LivingJourneyDashboard() {
               const obj = getLegendaryObject(u.object_id);
               if (!obj) return null;
               return (
-                <div key={u.object_id} style={{ padding: 12, background: '#111114', borderRadius: 8, border: '1px solid #2A2520', maxWidth: 200 }}>
+                <div key={u.object_id} style={{ padding: 12, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-warm)', maxWidth: 200 }}>
                   <span style={{ fontSize: 18 }}>{obj.icon}</span>
-                  <p style={{ color: '#E8E8EC', fontSize: 13, margin: '8px 0 0' }}>{obj.title}</p>
-                  <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 4, lineHeight: 1.4 }}>{obj.story}</p>
+                  <p style={{ color: 'var(--foundry-text)', fontSize: 13, margin: '8px 0 0' }}>{obj.title}</p>
+                  <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 4, lineHeight: 1.4 }}>{obj.story}</p>
                 </div>
               );
             })}
@@ -286,10 +286,10 @@ export function LivingJourneyDashboard() {
           <h2 style={{ fontSize: 14, color: '#6B9BD4', fontWeight: 400 }}>Mentor challenges</h2>
           <div style={{ marginTop: 12, display: 'grid', gap: 10 }}>
             {challenges.map((c) => (
-              <Link key={c.id} href={c.href} style={{ display: 'block', padding: 16, background: '#0F1014', borderRadius: 8, textDecoration: 'none', border: '1px solid #1A1A1E' }}>
-                <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>{c.mentor_name} · {c.expires_hint}</p>
-                <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 6 }}>{c.title}</p>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6, lineHeight: 1.5 }}>{c.body.slice(0, 120)}…</p>
+              <Link key={c.id} href={c.href} style={{ display: 'block', padding: 16, background: '#0F1014', borderRadius: 8, textDecoration: 'none', border: '1px solid var(--foundry-border-subtle)' }}>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>{c.mentor_name} · {c.expires_hint}</p>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 6 }}>{c.title}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6, lineHeight: 1.5 }}>{c.body.slice(0, 120)}…</p>
               </Link>
             ))}
           </div>
@@ -301,23 +301,23 @@ export function LivingJourneyDashboard() {
           <h2 style={{ fontSize: 14, color: '#6B9BC9', fontWeight: 400 }}>World crossovers</h2>
           <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
             {crossovers.map((x) => (
-              <Link key={x.id} href={x.href} style={{ padding: 16, background: '#111114', borderRadius: 8, textDecoration: 'none', border: '1px solid #1A1A1E' }}>
-                <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{x.title}</p>
-                <p style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6 }}>{x.description}</p>
-                <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 6 }}>{x.worlds.join(' + ')}</p>
+              <Link key={x.id} href={x.href} style={{ padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8, textDecoration: 'none', border: '1px solid var(--foundry-border-subtle)' }}>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{x.title}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 6 }}>{x.description}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 6 }}>{x.worlds.join(' + ')}</p>
               </Link>
             ))}
           </div>
         </section>
       )}
 
-      <section style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 10, border: '1px solid #2A3A2A' }}>
+      <section style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 10, border: '1px solid #2A3A2A' }}>
         <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{mentor.mentor_name}</p>
-        <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 8, color: '#E8E8EC' }}>{mentor.headline}</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{mentor.body}</p>
+        <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 8, color: 'var(--foundry-text)' }}>{mentor.headline}</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{mentor.body}</p>
         <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {mentor.actions.map((a) => (
-            <Link key={a.href} href={a.href} style={{ padding: '8px 14px', background: '#2A4A2A', borderRadius: 6, color: '#E8E8EC', fontSize: 12, textDecoration: 'none' }}>
+            <Link key={a.href} href={a.href} style={{ padding: '8px 14px', background: 'var(--foundry-success-bg)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 12, textDecoration: 'none' }}>
               {a.label}
             </Link>
           ))}
@@ -327,17 +327,17 @@ export function LivingJourneyDashboard() {
       {cross.length > 0 && (
         <section style={{ marginTop: 28 }}>
           <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400 }}>Foundry expands you — next worlds</h2>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>Cross-world discovery from your evidence, not ads.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>Cross-world discovery from your evidence, not ads.</p>
           <div style={{ marginTop: 16, display: 'grid', gap: 10 }}>
             {cross.map((c) => (
               <Link
                 key={c.world_slug}
                 href={c.href}
-                style={{ display: 'block', padding: 18, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E', textDecoration: 'none', color: 'inherit' }}
+                style={{ display: 'block', padding: 18, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)', textDecoration: 'none', color: 'inherit' }}
               >
-                <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{c.world_name}</p>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{c.world_name}</p>
                 <p style={{ color: ACCENT, fontSize: 13, marginTop: 6 }}>{c.reason}</p>
-                <ul style={{ color: '#6B6B70', fontSize: 12, margin: '10px 0 0', paddingLeft: 18 }}>
+                <ul style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '10px 0 0', paddingLeft: 18 }}>
                   {c.because.map((b) => (
                     <li key={b}>{b}</li>
                   ))}
@@ -349,17 +349,17 @@ export function LivingJourneyDashboard() {
       )}
 
       <section style={{ marginTop: 28 }}>
-        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400 }}>Evidence you&apos;ve left</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Evidence you&apos;ve left</h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
           {snapshot.worlds
             .filter((w) => w.completed_missions.length > 0 || (w.journal_items ?? 0) > 0)
             .map((w) => (
-            <div key={w.world_slug} style={{ padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+            <div key={w.world_slug} style={{ padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
               <div>
                 <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{w.world_name}</p>
               </div>
               {w.completed_missions.slice(0, 3).map((m) => (
-                <p key={m.missionSlug} style={{ color: '#8A8A8E', fontSize: 12, marginTop: 10, lineHeight: 1.5 }}>
+                <p key={m.missionSlug} style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 10, lineHeight: 1.5 }}>
                   {m.missionTitle}
                   {m.reflection && ` — "${m.reflection.slice(0, 80)}${m.reflection.length > 80 ? '…' : ''}"`}
                 </p>
@@ -377,8 +377,8 @@ export function LivingJourneyDashboard() {
           <h2 style={{ fontSize: 14, color: '#6B9BD4', fontWeight: 400 }}>Adaptive learning</h2>
           <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
             {adaptive.map((a) => (
-              <Link key={a.href + a.title} href={a.href} style={{ padding: 14, background: '#0F1014', borderRadius: 6, textDecoration: 'none', color: '#8A8A8E', fontSize: 13 }}>
-                <span style={{ color: '#E8E8EC' }}>{a.title}</span> — {a.reason}
+              <Link key={a.href + a.title} href={a.href} style={{ padding: 14, background: '#0F1014', borderRadius: 6, textDecoration: 'none', color: 'var(--foundry-text-muted)', fontSize: 13 }}>
+                <span style={{ color: 'var(--foundry-text)' }}>{a.title}</span> — {a.reason}
               </Link>
             ))}
           </div>
@@ -386,11 +386,11 @@ export function LivingJourneyDashboard() {
       )}
 
       <section style={{ marginTop: 28 }}>
-        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400 }}>Today&apos;s threads</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Today&apos;s threads</h2>
         <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
           {hooks.map((h) => (
-            <Link key={h.id} href={h.href} style={{ padding: 14, background: '#111114', borderRadius: 6, textDecoration: 'none', color: '#8A8A8E', fontSize: 13 }}>
-              <span style={{ color: '#E8E8EC' }}>{h.headline}</span> {h.body}
+            <Link key={h.id} href={h.href} style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 6, textDecoration: 'none', color: 'var(--foundry-text-muted)', fontSize: 13 }}>
+              <span style={{ color: 'var(--foundry-text)' }}>{h.headline}</span> {h.body}
             </Link>
           ))}
         </div>

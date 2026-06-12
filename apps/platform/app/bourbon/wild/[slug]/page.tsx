@@ -15,12 +15,12 @@ export default async function WildTopicPage({ params }: Props) {
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/beyond-the-bottle" style={{ color: '#6B6B70', fontSize: 13 }}>← Beyond the Bottle</Link>
+      <Link href="/bourbon/beyond-the-bottle" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Beyond the Bottle</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12, lineHeight: 1.25 }}>{topic.title}</h1>
       <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 8 }}>{topic.hook}</p>
 
       {topic.myth && (
-        <div style={{ marginTop: 20, padding: 16, background: '#1A160F', borderRadius: 8 }}>
+        <div style={{ marginTop: 20, padding: 16, background: 'var(--foundry-primary-bg-subtle)', borderRadius: 8 }}>
           <p style={{ color: '#B88', fontSize: 13, margin: 0 }}>Common myth: {topic.myth}</p>
           <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 8 }}>{topic.truth}</p>
         </div>
@@ -28,12 +28,12 @@ export default async function WildTopicPage({ params }: Props) {
 
       <article style={{ marginTop: 28 }}>
         {topic.paragraphs.map((p, i) => (
-          <p key={i} style={{ color: '#8A8A8E', fontSize: 16, lineHeight: 1.75, marginTop: i === 0 ? 0 : 20 }}>{p}</p>
+          <p key={i} style={{ color: 'var(--foundry-text-muted)', fontSize: 16, lineHeight: 1.75, marginTop: i === 0 ? 0 : 20 }}>{p}</p>
         ))}
       </article>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400 }}>Rabbit holes</h2>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Rabbit holes</h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
           {topic.rabbitHoles.map((h) => (
             <Link
@@ -42,14 +42,14 @@ export default async function WildTopicPage({ params }: Props) {
               style={{
                 display: 'block',
                 padding: 16,
-                background: '#111114',
+                background: 'var(--foundry-surface-raised)',
                 borderRadius: 8,
                 textDecoration: 'none',
-                border: '1px solid #1A1A1E',
+                border: '1px solid var(--foundry-border-subtle)',
               }}
             >
-              <span style={{ color: '#E8E8EC', fontSize: 14 }}>{h.title}</span>
-              <span style={{ display: 'block', color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{h.tease}</span>
+              <span style={{ color: 'var(--foundry-text)', fontSize: 14 }}>{h.title}</span>
+              <span style={{ display: 'block', color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>{h.tease}</span>
             </Link>
           ))}
         </div>

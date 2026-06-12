@@ -39,23 +39,23 @@ export default async function EncyclopediaTermPage({ params }: Props) {
   const authority = getEncyclopediaAuthorityLinks(world, entry.term);
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
       <section style={{ marginTop: 24 }}>
-        <Link href={`/${world}/encyclopedia`} style={{ color: '#6B6B70', fontSize: 13 }}>
+        <Link href={`/${world}/encyclopedia`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           ← {bundle.displayName} encyclopedia
         </Link>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>{entry.term}</h1>
-        <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 16, lineHeight: 1.7 }}>{entry.definition}</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 16, lineHeight: 1.7 }}>{entry.definition}</p>
 
-        <article style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 13, color: '#6B6B70', margin: 0 }}>Why it matters</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{entry.whyItMatters}</p>
+        <article style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', margin: 0 }}>Why it matters</h2>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{entry.whyItMatters}</p>
         </article>
 
-        <article style={{ marginTop: 16, padding: 20, background: '#111114', borderRadius: 8 }}>
-          <h2 style={{ fontSize: 13, color: '#6B6B70', margin: 0 }}>Example</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{entry.example}</p>
+        <article style={{ marginTop: 16, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', margin: 0 }}>Example</h2>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{entry.example}</p>
         </article>
 
         {entry.relatedTerms.length > 0 && (
@@ -66,7 +66,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
                 <Link
                   key={rt}
                   href={`/${world}/encyclopedia/${termToSlug(rt)}`}
-                  style={{ padding: '6px 12px', background: '#0F0F12', border: '1px solid #2A2A2E', borderRadius: 999, color: '#8A8A8E', fontSize: 12, textDecoration: 'none' }}
+                  style={{ padding: '6px 12px', background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border)', borderRadius: 999, color: 'var(--foundry-text-muted)', fontSize: 12, textDecoration: 'none' }}
                 >
                   {rt}
                 </Link>
@@ -77,8 +77,8 @@ export default async function EncyclopediaTermPage({ params }: Props) {
 
         {lessonHits.length > 0 && (
           <section style={{ marginTop: 28 }}>
-            <h2 style={{ fontSize: 14, color: '#6B9B6B' }}>Where this appears in academy</h2>
-            <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, paddingLeft: 18 }}>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-success)' }}>Where this appears in academy</h2>
+            <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, paddingLeft: 18 }}>
               {lessonHits.map((l) => (
                 <li key={l.slug}>
                   <Link href={`/${world}/academy/${l.slug}`} style={{ color: '#6B9BC9' }}>{l.title}</Link>
@@ -93,11 +93,11 @@ export default async function EncyclopediaTermPage({ params }: Props) {
             <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Authority layer — go deeper</h2>
             {authority.missions.length > 0 && (
               <>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Missions</p>
-                <ul style={{ color: '#8A8A8E', fontSize: 13, paddingLeft: 18, margin: 0 }}>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Missions</p>
+                <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, paddingLeft: 18, margin: 0 }}>
                   {authority.missions.map((m) => (
                     <li key={m.href}>
-                      <Link href={m.href} style={{ color: '#6B9B6B' }}>{m.title}</Link>
+                      <Link href={m.href} style={{ color: 'var(--foundry-success)' }}>{m.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -105,17 +105,17 @@ export default async function EncyclopediaTermPage({ params }: Props) {
             )}
             {authority.producers.length > 0 && (
               <>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Producer atlas</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Producer atlas</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {authority.producers.map((p) => (
-                    <Link key={p.href} href={p.href} style={{ padding: '6px 12px', background: '#111114', borderRadius: 999, color: 'var(--foundry-primary)', fontSize: 12, textDecoration: 'none' }}>
+                    <Link key={p.href} href={p.href} style={{ padding: '6px 12px', background: 'var(--foundry-surface-raised)', borderRadius: 999, color: 'var(--foundry-primary)', fontSize: 12, textDecoration: 'none' }}>
                       {p.title}
                     </Link>
                   ))}
                 </div>
               </>
             )}
-            <Link href={authority.communityHref} style={{ display: 'inline-block', marginTop: 16, color: '#8A8A8E', fontSize: 13 }}>
+            <Link href={authority.communityHref} style={{ display: 'inline-block', marginTop: 16, color: 'var(--foundry-text-muted)', fontSize: 13 }}>
               Community discussions →
             </Link>
           </section>
@@ -126,8 +126,8 @@ export default async function EncyclopediaTermPage({ params }: Props) {
             <h2 style={{ fontSize: 14, color: '#6B9BD4' }}>Cross-world paths</h2>
             <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
               {authority.relatedWorlds.map((w) => (
-                <Link key={w.href} href={w.href} style={{ padding: 12, background: '#0F0F12', borderRadius: 6, textDecoration: 'none', color: '#8A8A8E', fontSize: 13 }}>
-                  <span style={{ color: '#E8E8EC' }}>{w.title}</span>
+                <Link key={w.href} href={w.href} style={{ padding: 12, background: 'var(--foundry-surface)', borderRadius: 6, textDecoration: 'none', color: 'var(--foundry-text-muted)', fontSize: 13 }}>
+                  <span style={{ color: 'var(--foundry-text)' }}>{w.title}</span>
                 </Link>
               ))}
             </div>
@@ -136,11 +136,11 @@ export default async function EncyclopediaTermPage({ params }: Props) {
 
         {relatedWorlds.length > 0 && (
           <section style={{ marginTop: 28 }}>
-            <h2 style={{ fontSize: 14, color: '#6B6B70' }}>Related worlds</h2>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)' }}>Related worlds</h2>
             <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
               {relatedWorlds.slice(0, 3).map((w) => (
-                <Link key={w.world_slug} href={w.href} style={{ padding: 12, background: '#0F0F12', borderRadius: 6, textDecoration: 'none', color: '#8A8A8E', fontSize: 13 }}>
-                  <span style={{ color: '#E8E8EC' }}>{w.world_name}</span> — {w.reason}
+                <Link key={w.world_slug} href={w.href} style={{ padding: 12, background: 'var(--foundry-surface)', borderRadius: 6, textDecoration: 'none', color: 'var(--foundry-text-muted)', fontSize: 13 }}>
+                  <span style={{ color: 'var(--foundry-text)' }}>{w.world_name}</span> — {w.reason}
                 </Link>
               ))}
             </div>

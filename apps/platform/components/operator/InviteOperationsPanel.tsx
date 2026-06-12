@@ -24,8 +24,8 @@ type Props = {
 };
 
 const STATUS_COLOR: Record<string, string> = {
-  pending: '#8A8A8E',
-  approved: '#6B9B6B',
+  pending: 'var(--foundry-text-muted)',
+  approved: 'var(--foundry-success)',
   invited: 'var(--foundry-primary)',
   joined: '#6B9BC9',
   active: '#6BC96B',
@@ -123,15 +123,15 @@ export function InviteOperationsPanel({ initialRows, stats }: Props) {
         <Stat label="Active" value={stats.active} />
       </div>
 
-      <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 13, color: 'var(--foundry-primary)', margin: '0 0 12px' }}>First 25 tester plan</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
           {FIRST_25_TESTER_PLAN.map((plan) => {
             const cohort = stats.by_cohort[plan.cohort] ?? { invited: 0, joined: 0, active: 0, target: plan.count };
             return (
-              <div key={plan.cohort} style={{ padding: 12, background: '#111114', borderRadius: 6, fontSize: 12 }}>
-                <div style={{ color: '#E8E8EC' }}>{plan.label}</div>
-                <div style={{ color: '#6B6B70', marginTop: 6 }}>
+              <div key={plan.cohort} style={{ padding: 12, background: 'var(--foundry-surface-raised)', borderRadius: 6, fontSize: 12 }}>
+                <div style={{ color: 'var(--foundry-text)' }}>{plan.label}</div>
+                <div style={{ color: 'var(--foundry-text-faint)', marginTop: 6 }}>
                   {cohort.active}/{plan.count} active · {cohort.joined} joined · {cohort.invited} invited
                 </div>
               </div>
@@ -150,9 +150,9 @@ export function InviteOperationsPanel({ initialRows, stats }: Props) {
               padding: '6px 12px',
               fontSize: 12,
               borderRadius: 6,
-              border: `1px solid ${filter === f ? '#2A4A2A' : '#1A1A1E'}`,
-              background: filter === f ? '#1A2A1A' : '#111114',
-              color: filter === f ? '#6B9B6B' : '#8A8A8E',
+              border: `1px solid ${filter === f ? 'var(--foundry-success-bg)' : 'var(--foundry-border-subtle)'}`,
+              background: filter === f ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface-raised)',
+              color: filter === f ? 'var(--foundry-success)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -176,7 +176,7 @@ export function InviteOperationsPanel({ initialRows, stats }: Props) {
           />
         ))}
         {filtered.length === 0 && (
-          <p style={{ color: '#6B6B70', fontSize: 13, padding: 24, textAlign: 'center' }}>No entries for this filter.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, padding: 24, textAlign: 'center' }}>No entries for this filter.</p>
         )}
       </div>
     </div>
@@ -202,18 +202,18 @@ function WaitlistRow({
   const canInvite = !['declined', 'active'].includes(row.status);
 
   return (
-    <article style={{ marginBottom: 12, padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+    <article style={{ marginBottom: 12, padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, alignItems: 'flex-start' }}>
         <div>
-          <span style={{ color: '#E8E8EC', fontSize: 14 }}>{row.email}</span>
-          <span style={{ color: STATUS_COLOR[row.status] ?? '#8A8A8E', marginLeft: 10, fontSize: 11, textTransform: 'uppercase' }}>
+          <span style={{ color: 'var(--foundry-text)', fontSize: 14 }}>{row.email}</span>
+          <span style={{ color: STATUS_COLOR[row.status] ?? 'var(--foundry-text-muted)', marginLeft: 10, fontSize: 11, textTransform: 'uppercase' }}>
             {row.status}
           </span>
         </div>
-        <span style={{ color: '#6B6B70', fontSize: 11 }}>{new Date(row.created_at).toLocaleDateString()}</span>
+        <span style={{ color: 'var(--foundry-text-faint)', fontSize: 11 }}>{new Date(row.created_at).toLocaleDateString()}</span>
       </div>
 
-      <p style={{ color: '#8A8A8E', fontSize: 12, margin: '8px 0 0' }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 12, margin: '8px 0 0' }}>
         Applied: {row.segment.replace(/_/g, ' ')} · Interest: {(row.interested_worlds ?? []).join(', ') || '—'}
       </p>
 
@@ -236,7 +236,7 @@ function WaitlistRow({
           }}
         >
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
-            <label style={{ fontSize: 12, color: '#8A8A8E' }}>
+            <label style={{ fontSize: 12, color: 'var(--foundry-text-muted)' }}>
               Assign segment
               <select
                 name="assigned_segment"
@@ -248,7 +248,7 @@ function WaitlistRow({
                 ))}
               </select>
             </label>
-            <label style={{ fontSize: 12, color: '#8A8A8E' }}>
+            <label style={{ fontSize: 12, color: 'var(--foundry-text-muted)' }}>
               Starting world
               <select name="starting_world_slug" defaultValue={defaultWorld} style={fieldStyle}>
                 {STARTING_WORLDS.map((w) => (
@@ -257,7 +257,7 @@ function WaitlistRow({
               </select>
             </label>
           </div>
-          <label style={{ fontSize: 12, color: '#8A8A8E' }}>
+          <label style={{ fontSize: 12, color: 'var(--foundry-text-muted)' }}>
             Operator notes
             <input name="operator_notes" placeholder="Optional" style={fieldStyle} />
           </label>
@@ -285,19 +285,19 @@ const fieldStyle: React.CSSProperties = {
   width: '100%',
   padding: '8px 10px',
   marginTop: 6,
-  background: '#0F0F12',
-  border: '1px solid #1A1A1E',
+  background: 'var(--foundry-surface)',
+  border: '1px solid var(--foundry-border-subtle)',
   borderRadius: 6,
-  color: '#E8E8EC',
+  color: 'var(--foundry-text)',
   fontSize: 13,
 };
 
 const approveBtn: React.CSSProperties = {
   padding: '8px 16px',
-  background: '#2A4A2A',
+  background: 'var(--foundry-success-bg)',
   border: 'none',
   borderRadius: 6,
-  color: '#E8E8EC',
+  color: 'var(--foundry-text)',
   fontSize: 12,
   cursor: 'pointer',
 };
@@ -314,9 +314,9 @@ const declineBtn: React.CSSProperties = {
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
-    <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
+    <div style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
       <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
-      <div style={{ fontSize: 11, color: '#6B6B70', marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 11, color: 'var(--foundry-text-faint)', marginTop: 4 }}>{label}</div>
     </div>
   );
 }

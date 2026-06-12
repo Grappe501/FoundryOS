@@ -101,17 +101,17 @@ export function PricingTiers() {
           key={tier.name}
           style={{
             padding: 28,
-            background: tier.highlight ? '#0F0F12' : '#111114',
+            background: tier.highlight ? 'var(--foundry-surface)' : 'var(--foundry-surface-raised)',
             borderRadius: 8,
-            border: tier.highlight ? '1px solid #2A4A2A' : '1px solid #1A1A1E',
+            border: tier.highlight ? '1px solid var(--foundry-success-bg)' : '1px solid var(--foundry-border-subtle)',
           }}
         >
-          <p style={{ color: tier.highlight ? '#6B9B6B' : '#6B6B70', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+          <p style={{ color: tier.highlight ? 'var(--foundry-success)' : 'var(--foundry-text-faint)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
             {tier.name}
           </p>
-          <p style={{ fontSize: 32, fontWeight: 300, margin: '12px 0 0', color: '#E8E8EC' }}>{tier.price}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{tier.tagline}</p>
-          <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 20, paddingLeft: 18, lineHeight: 1.8 }}>
+          <p style={{ fontSize: 32, fontWeight: 300, margin: '12px 0 0', color: 'var(--foundry-text)' }}>{tier.price}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{tier.tagline}</p>
+          <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 20, paddingLeft: 18, lineHeight: 1.8 }}>
             {tier.features.map((f) => (
               <li key={f}>{f}</li>
             ))}
@@ -125,10 +125,10 @@ export function PricingTiers() {
                 display: 'inline-block',
                 marginTop: 24,
                 padding: '12px 20px',
-                background: tier.highlight ? '#2A4A2A' : 'transparent',
-                border: tier.highlight ? 'none' : '1px solid #1A1A1E',
+                background: tier.highlight ? 'var(--foundry-success-bg)' : 'transparent',
+                border: tier.highlight ? 'none' : '1px solid var(--foundry-border-subtle)',
                 borderRadius: 6,
-                color: '#E8E8EC',
+                color: 'var(--foundry-text)',
                 fontSize: 14,
                 cursor: 'pointer',
               }}
@@ -144,9 +144,9 @@ export function PricingTiers() {
                 marginTop: 24,
                 padding: '12px 20px',
                 background: 'transparent',
-                border: '1px solid #1A1A1E',
+                border: '1px solid var(--foundry-border-subtle)',
                 borderRadius: 6,
-                color: '#E8E8EC',
+                color: 'var(--foundry-text)',
                 fontSize: 14,
                 textDecoration: 'none',
               }}
@@ -160,7 +160,7 @@ export function PricingTiers() {
         style={{
           gridColumn: '1 / -1',
           padding: 28,
-          background: '#0F0F12',
+          background: 'var(--foundry-surface)',
           borderRadius: 8,
           border: '1px solid #2A3A5A',
         }}
@@ -168,16 +168,16 @@ export function PricingTiers() {
         <p style={{ color: '#6B9BD4', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
           {HOUSEHOLD_PRICING.label}
         </p>
-        <p style={{ fontSize: 28, fontWeight: 300, margin: '12px 0 0', color: '#E8E8EC' }}>
+        <p style={{ fontSize: 28, fontWeight: 300, margin: '12px 0 0', color: 'var(--foundry-text)' }}>
           ${HOUSEHOLD_PRICING.primary_monthly_usd}/mo + ${HOUSEHOLD_PRICING.additional_member_monthly_usd}/mo per member
         </p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{HOUSEHOLD_PRICING.description}</p>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 16, paddingLeft: 18, lineHeight: 1.8 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>{HOUSEHOLD_PRICING.description}</p>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 16, paddingLeft: 18, lineHeight: 1.8 }}>
           {HOUSEHOLD_PRICING.rules.map((r) => (
             <li key={r}>{r}</li>
           ))}
         </ul>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 16 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 16 }}>
           Household checkout coming soon — schema ready in Supabase.
         </p>
       </article>

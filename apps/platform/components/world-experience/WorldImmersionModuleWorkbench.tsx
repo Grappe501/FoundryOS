@@ -47,20 +47,20 @@ export function WorldImmersionModuleWorkbench({
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href={`${basePath}/experiences`} style={{ color: '#6B6B70', fontSize: 13, textDecoration: 'none' }}>
+      <Link href={`${basePath}/experiences`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13, textDecoration: 'none' }}>
         ← All tools
       </Link>
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 16 }}>
         {module.category}
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>{module.title}</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{module.description}</p>
-      <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>~{module.estimatedMinutes} min · saves to this device</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{module.description}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>~{module.estimatedMinutes} min · saves to this device</p>
 
-      <div style={{ marginTop: 28, padding: 24, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+      <div style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
         {(module.fields ?? []).map((f) => (
           <label key={f.key} style={{ display: 'block', marginBottom: 20 }}>
-            <span style={{ color: '#8A8A8E', fontSize: 13 }}>{f.label}</span>
+            <span style={{ color: 'var(--foundry-text-muted)', fontSize: 13 }}>{f.label}</span>
             {f.type === 'textarea' ? (
               <textarea
                 value={values[f.key] ?? ''}
@@ -70,10 +70,10 @@ export function WorldImmersionModuleWorkbench({
                   width: '100%',
                   marginTop: 8,
                   padding: 12,
-                  background: '#111114',
-                  border: '1px solid #2A2A2E',
+                  background: 'var(--foundry-surface-raised)',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 6,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                   fontFamily: 'inherit',
                   boxSizing: 'border-box',
@@ -87,10 +87,10 @@ export function WorldImmersionModuleWorkbench({
                   width: '100%',
                   marginTop: 8,
                   padding: 12,
-                  background: '#111114',
-                  border: '1px solid #2A2A2E',
+                  background: 'var(--foundry-surface-raised)',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 6,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                 }}
               >
@@ -110,10 +110,10 @@ export function WorldImmersionModuleWorkbench({
                   width: '100%',
                   marginTop: 8,
                   padding: 12,
-                  background: '#111114',
-                  border: '1px solid #2A2A2E',
+                  background: 'var(--foundry-surface-raised)',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 6,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                   boxSizing: 'border-box',
                 }}
@@ -122,7 +122,7 @@ export function WorldImmersionModuleWorkbench({
           </label>
         ))}
         {!module.fields?.length && (
-          <p style={{ color: '#6B6B70', fontSize: 13 }}>Open your journal and capture notes for this session.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>Open your journal and capture notes for this session.</p>
         )}
         <button
           type="button"
@@ -133,7 +133,7 @@ export function WorldImmersionModuleWorkbench({
             background: accent,
             border: 'none',
             borderRadius: 6,
-            color: '#08080A',
+            color: 'var(--foundry-bg)',
             fontSize: 14,
             cursor: 'pointer',
             fontWeight: 500,

@@ -14,28 +14,28 @@ export function BourbonPortfolioView() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, lineHeight: 1.7 }}>
         Mission evidence and debrief notes — proof logged from missions, not a consumption diary.
       </p>
       <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 12 }}>
         {BOURBON_PORTFOLIO_SECTIONS.map((section) => (
-          <div key={section.slug} style={{ padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #4A4020' }}>
-            <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{section.title}</p>
-            <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>{section.description}</p>
+          <div key={section.slug} style={{ padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-primary-border-dim)' }}>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{section.title}</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>{section.description}</p>
             <p style={{ color: 'var(--foundry-primary)', fontSize: 20, fontWeight: 300, marginTop: 12 }}>{section.slug === 'tastings' ? entries.length : '—'}</p>
           </div>
         ))}
       </div>
       {entries.length === 0 ? (
-        <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 24 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 14, marginTop: 24 }}>
           No missions yet.{' '}
           <Link href="/bourbon/missions/first-tasting" style={{ color: 'var(--foundry-primary)' }}>Start Mission 1 →</Link>
         </p>
       ) : (
         entries.map((e) => (
-          <div key={e.missionSlug} style={{ padding: 16, marginTop: 12, background: '#0F0F12', borderRadius: 8 }}>
-            <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{e.missionTitle}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{e.reflection}</p>
+          <div key={e.missionSlug} style={{ padding: 16, marginTop: 12, background: 'var(--foundry-surface)', borderRadius: 8 }}>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{e.missionTitle}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>{e.reflection}</p>
           </div>
         ))
       )}

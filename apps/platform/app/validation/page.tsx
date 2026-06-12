@@ -16,12 +16,12 @@ function MetricRow({ label, value }: { label: string; value: string | number }) 
         display: 'flex',
         justifyContent: 'space-between',
         padding: '10px 0',
-        borderBottom: '1px solid #1A1A1E',
+        borderBottom: '1px solid var(--foundry-border-subtle)',
         fontSize: 14,
       }}
     >
-      <span style={{ color: '#8A8A8E' }}>{label}</span>
-      <span style={{ color: '#E8E8EC' }}>{value}</span>
+      <span style={{ color: 'var(--foundry-text-muted)' }}>{label}</span>
+      <span style={{ color: 'var(--foundry-text)' }}>{value}</span>
     </div>
   );
 }
@@ -36,7 +36,7 @@ function Section({
   children: ReactNode;
 }) {
   return (
-    <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8, border: `1px solid ${color}` }}>
+    <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', borderRadius: 8, border: `1px solid ${color}` }}>
       <h2 style={{ fontSize: 14, color, margin: 0 }}>{title}</h2>
       <div style={{ marginTop: 16 }}>{children}</div>
     </section>
@@ -51,14 +51,14 @@ export default async function ValidationPage() {
     <main
       style={{
         minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
+        backgroundColor: 'var(--foundry-bg)',
+        color: 'var(--foundry-text)',
         padding: '2rem',
         maxWidth: 960,
         margin: '0 auto',
       }}
     >
-      <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>
+      <Link href="/" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
         ← Mission Control
       </Link>
       <p
@@ -73,8 +73,8 @@ export default async function ValidationPage() {
         Private Build · Internal Dashboard
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Validation Dashboard</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
-        <strong style={{ fontWeight: 400, color: '#E8E8EC' }}>Private build mode</strong> — vertical depth before
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
+        <strong style={{ fontWeight: 400, color: 'var(--foundry-text)' }}>Private build mode</strong> — vertical depth before
         public beta. Funnel metrics for internal observation. Stranger recruitment paused until PASS-022.
       </p>
 
@@ -82,31 +82,31 @@ export default async function ValidationPage() {
         style={{
           marginTop: 28,
           padding: 24,
-          background: '#111114',
+          background: 'var(--foundry-surface-raised)',
           borderRadius: 8,
-          border: '1px solid #2A2520',
+          border: '1px solid var(--foundry-border-warm)',
         }}
       >
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Private Beta Gate (PASS-022)</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
           No public beta until 3 verticals are consumer-ready, assessment routes cleanly, auth + email capture exist,
           and pricing page is live. Next: PASS-017 AI Builder depth.
         </p>
         <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-          <div style={{ padding: 16, background: '#0F0F12', borderRadius: 6 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Funnel starts (path/project)</p>
-            <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
+          <div style={{ padding: 16, background: 'var(--foundry-surface)', borderRadius: 6 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Funnel starts (path/project)</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
               {metrics?.pass_016_exit.strangers_with_full_funnel ?? 0}
             </p>
           </div>
-          <div style={{ padding: 16, background: '#0F0F12', borderRadius: 6 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Returned visitors</p>
-            <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
+          <div style={{ padding: 16, background: 'var(--foundry-surface)', borderRadius: 6 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Returned visitors</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 28, fontWeight: 300, margin: '8px 0 0' }}>
               {metrics?.pass_016_exit.strangers_returned ?? 0}
             </p>
           </div>
         </div>
-        <p style={{ marginTop: 16, color: '#6B6B70', fontSize: 13 }}>
+        <p style={{ marginTop: 16, color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           Observed during private build — not a launch gate.
         </p>
         {!configured && (
@@ -128,7 +128,7 @@ export default async function ValidationPage() {
             ))}
           </Section>
 
-          <Section title="Activation" color="#2A4A2A">
+          <Section title="Activation" color="var(--foundry-success-bg)">
             <MetricRow label="Assessment started" value={metrics.activation.assessment_started} />
             <MetricRow label="Assessment completed" value={metrics.activation.assessment_completed} />
             <MetricRow label="Path started" value={metrics.activation.path_started} />
@@ -151,16 +151,16 @@ export default async function ValidationPage() {
             <MetricRow label="Paid" value={metrics.conversion.paid} />
           </Section>
 
-          <Section title="Recent events" color="#1A1A1E">
+          <Section title="Recent events" color="var(--foundry-border-subtle)">
             {metrics.recent_events.length === 0 ? (
-              <p style={{ color: '#6B6B70', fontSize: 13 }}>No events yet. Funnel tracks internal visits during private build.</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>No events yet. Funnel tracks internal visits during private build.</p>
             ) : (
               metrics.recent_events.map((e) => (
                 <div
                   key={e.id}
-                  style={{ fontSize: 12, padding: '8px 0', borderBottom: '1px solid #1A1A1E', color: '#8A8A8E' }}
+                  style={{ fontSize: 12, padding: '8px 0', borderBottom: '1px solid var(--foundry-border-subtle)', color: 'var(--foundry-text-muted)' }}
                 >
-                  <span style={{ color: '#6B9B6B' }}>{e.event_type}</span>
+                  <span style={{ color: 'var(--foundry-success)' }}>{e.event_type}</span>
                   {' · '}
                   {e.visitor_id.slice(0, 10)}…
                   {e.landing_page ? ` · ${e.landing_page}` : ''}
@@ -173,32 +173,32 @@ export default async function ValidationPage() {
           </Section>
         </>
       ) : (
-        <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
-          <p style={{ color: '#8A8A8E', fontSize: 14 }}>
-            Run migration <code style={{ color: '#E8E8EC' }}>20260625000000_validation_pass016a.sql</code> and configure
+        <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8 }}>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>
+            Run migration <code style={{ color: 'var(--foundry-text)' }}>20260625000000_validation_pass016a.sql</code> and configure
             Supabase. Funnel entry:{' '}
-            <Link href="/future-proof" style={{ color: '#6B9B6B' }}>
+            <Link href="/future-proof" style={{ color: 'var(--foundry-success)' }}>
               /future-proof
             </Link>
           </p>
         </section>
       )}
 
-      <section style={{ marginTop: 32, padding: 20, background: '#111114', borderRadius: 8 }}>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Vertical depth mode</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
           Build order: AI Builder → Financial Independence → Public Speaking → Civic Engagement → Bourbon polish.
-          Beta wedge: Future-Proof Trinity. See <code style={{ color: '#E8E8EC' }}>docs/VERTICAL_DEPTH_MODE.md</code>.
+          Beta wedge: Future-Proof Trinity. See <code style={{ color: 'var(--foundry-text)' }}>docs/VERTICAL_DEPTH_MODE.md</code>.
         </p>
       </section>
 
-      <p style={{ marginTop: 24, fontSize: 12, color: '#4A4A4E' }}>
+      <p style={{ marginTop: 24, fontSize: 12, color: 'var(--foundry-text-dim)' }}>
         Funnel:{' '}
-        <Link href="/future-proof" style={{ color: '#6B6B70' }}>
+        <Link href="/future-proof" style={{ color: 'var(--foundry-text-faint)' }}>
           /future-proof
         </Link>
         {' → '}
-        <Link href="/ai-builder" style={{ color: '#6B6B70' }}>
+        <Link href="/ai-builder" style={{ color: 'var(--foundry-text-faint)' }}>
           /ai-builder
         </Link>
       </p>

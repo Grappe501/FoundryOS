@@ -16,12 +16,12 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
 
   return (
     <section style={{ marginTop: 16, maxWidth: 720 }}>
-      <p style={{ color: '#6B6B70', fontSize: 12, margin: 0 }}>
-        <Link href={basePath} style={{ color: '#6B6B70' }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: 0 }}>
+        <Link href={basePath} style={{ color: 'var(--foundry-text-faint)' }}>
           {bundle.displayName}
         </Link>
         {' · '}
-        <Link href={`${basePath}/academy`} style={{ color: '#6B6B70' }}>
+        <Link href={`${basePath}/academy`} style={{ color: 'var(--foundry-text-faint)' }}>
           Academy
         </Link>
         {' · '}
@@ -31,12 +31,12 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16, lineHeight: 1.25 }}>{lesson.title}</h1>
 
       {lesson.estimatedMinutes && (
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
           ~{lesson.estimatedMinutes} min {lesson.checkpoint ? '· checkpoint' : ''}
         </p>
       )}
 
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 16, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 16, lineHeight: 1.7 }}>
         {lesson.summary ?? lesson.description}
       </p>
 
@@ -44,7 +44,7 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
         style={{
           marginTop: 20,
           padding: '12px 16px',
-          background: '#0F0F12',
+          background: 'var(--foundry-surface)',
           borderLeft: `3px solid ${bundle.accentColor}`,
           color: '#A8A8AC',
           fontSize: 13,
@@ -56,13 +56,13 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
       </p>
 
       {!hasBody && (
-        <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 24, lineHeight: 1.7 }}>{lesson.description}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 14, marginTop: 24, lineHeight: 1.7 }}>{lesson.description}</p>
       )}
 
       {lesson.sections?.map((section) => (
         <article key={section.heading} style={{ marginTop: 32 }}>
           <h2 style={{ fontSize: 17, color: bundle.accentColor, fontWeight: 400, margin: 0 }}>{section.heading}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.75 }}>{section.body}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.75 }}>{section.body}</p>
         </article>
       ))}
 
@@ -71,22 +71,22 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
           style={{
             marginTop: 32,
             padding: 20,
-            background: '#111114',
-            border: '1px solid #1A1A1E',
+            background: 'var(--foundry-surface-raised)',
+            border: '1px solid var(--foundry-border-subtle)',
             borderRadius: 8,
           }}
         >
           <h2 style={{ fontSize: 14, color: bundle.accentColor, fontWeight: 400, margin: 0 }}>
             {lesson.historyNote.heading}
           </h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.75 }}>{lesson.historyNote.body}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.75 }}>{lesson.historyNote.body}</p>
         </article>
       )}
 
       {lesson.flavorWords && lesson.flavorWords.length > 0 && (
         <article style={{ marginTop: 32 }}>
           <h2 style={{ fontSize: 14, color: bundle.accentColor, fontWeight: 400, margin: 0 }}>Flavor words for this lesson</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>
             {lesson.flavorWords.map((w) => (
               <span
                 key={w}
@@ -95,7 +95,7 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
                   marginRight: 8,
                   marginBottom: 8,
                   padding: '4px 10px',
-                  background: '#0F0F12',
+                  background: 'var(--foundry-surface)',
                   border: `1px solid ${bundle.accentColor}33`,
                   borderRadius: 4,
                   fontSize: 13,
@@ -113,20 +113,20 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
           style={{
             marginTop: 32,
             padding: 20,
-            background: '#0F0F12',
+            background: 'var(--foundry-surface)',
             border: `1px solid ${bundle.accentColor}44`,
             borderRadius: 8,
           }}
         >
-          <h2 style={{ fontSize: 16, color: '#E8E8EC', fontWeight: 400, margin: 0 }}>Try this: {lesson.tryThis.title}</h2>
-          <ol style={{ color: '#8A8A8E', fontSize: 14, marginTop: 16, paddingLeft: 20, lineHeight: 1.8 }}>
+          <h2 style={{ fontSize: 16, color: 'var(--foundry-text)', fontWeight: 400, margin: 0 }}>Try this: {lesson.tryThis.title}</h2>
+          <ol style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 16, paddingLeft: 20, lineHeight: 1.8 }}>
             {lesson.tryThis.steps.map((step) => (
               <li key={step} style={{ marginBottom: 8 }}>
                 {step}
               </li>
             ))}
           </ol>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16, lineHeight: 1.6 }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16, lineHeight: 1.6 }}>
             <strong style={{ color: bundle.accentColor, fontWeight: 400 }}>What to notice: </strong>
             {lesson.tryThis.whatToNotice}
           </p>
@@ -134,7 +134,7 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
       )}
 
       {lesson.glossaryTerms && lesson.glossaryTerms.length > 0 && (
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 28, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 28, lineHeight: 1.6 }}>
           Glossary:{' '}
           {lesson.glossaryTerms.map((term, i) => (
             <span key={term}>
@@ -148,9 +148,9 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
       )}
 
       {lesson.relatedProducers && lesson.relatedProducers.length > 0 && (
-        <article style={{ marginTop: 32, padding: 20, background: '#1A160F', borderRadius: 8, border: `1px solid ${bundle.accentColor}33` }}>
+        <article style={{ marginTop: 32, padding: 20, background: 'var(--foundry-primary-bg-subtle)', borderRadius: 8, border: `1px solid ${bundle.accentColor}33` }}>
           <h2 style={{ fontSize: 14, color: bundle.accentColor, fontWeight: 400, margin: 0 }}>Producer deep dives</h2>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>Read one tonight — history, sweet spot bottles, questions you did not know to ask.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8 }}>Read one tonight — history, sweet spot bottles, questions you did not know to ask.</p>
           <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             {lesson.relatedProducers.map((slug) => (
               <Link
@@ -158,10 +158,10 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
                 href={`${basePath}/producers/${slug}`}
                 style={{
                   padding: '8px 14px',
-                  background: '#111114',
-                  border: '1px solid #2A2A2E',
+                  background: 'var(--foundry-surface-raised)',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 999,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 12,
                   textDecoration: 'none',
                 }}
@@ -176,16 +176,16 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
         </article>
       )}
 
-      <div style={{ marginTop: 40, display: 'flex', gap: 20, flexWrap: 'wrap', paddingTop: 24, borderTop: '1px solid #1A1A1E' }}>
+      <div style={{ marginTop: 40, display: 'flex', gap: 20, flexWrap: 'wrap', paddingTop: 24, borderTop: '1px solid var(--foundry-border-subtle)' }}>
         {lesson.recommendedMission && (
           <Link href={`${basePath}/missions/${lesson.recommendedMission}`} style={{ color: bundle.accentColor, fontSize: 14 }}>
             Enter mission →
           </Link>
         )}
-        <Link href={`${basePath}/experiences/tasting-journal`} style={{ color: '#8A8A8E', fontSize: 14 }}>
+        <Link href={`${basePath}/experiences/tasting-journal`} style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>
           Tasting journal →
         </Link>
-        <Link href={`${basePath}/academy`} style={{ color: '#6B6B70', fontSize: 14 }}>
+        <Link href={`${basePath}/academy`} style={{ color: 'var(--foundry-text-faint)', fontSize: 14 }}>
           All academy levels →
         </Link>
       </div>

@@ -9,9 +9,9 @@ export default function DailyBourbonPage() {
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
+      <Link href="/bourbon/level-1" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Level 1 HQ</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Daily Bourbon</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>One fact · one bottle · one comparison · one challenge · one question.</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8 }}>One fact · one bottle · one comparison · one challenge · one question.</p>
       <DailyBourbonCard />
       <section style={{ marginTop: 32, display: 'grid', gap: 16 }}>
         <DailyRow label="Fact" value={daily.fact.text} />
@@ -26,11 +26,11 @@ export default function DailyBourbonPage() {
 
 function DailyRow({ label, value, href }: { label: string; value: string; href?: string }) {
   return (
-    <div style={{ padding: 18, background: '#111114', borderRadius: 8 }}>
+    <div style={{ padding: 18, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
       <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{label}</p>
-      <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 8, lineHeight: 1.5 }}>{value}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 8, lineHeight: 1.5 }}>{value}</p>
       {href && (
-        <Link href={href} style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, display: 'inline-block' }}>Go →</Link>
+        <Link href={href} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, display: 'inline-block' }}>Go →</Link>
       )}
     </div>
   );

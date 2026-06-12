@@ -16,15 +16,15 @@ function WanderSection({ block }: { block: WanderBlock }) {
       style={{
         marginTop: 24,
         padding: 20,
-        background: '#0F0F12',
+        background: 'var(--foundry-surface)',
         borderRadius: 10,
-        border: '1px solid #1A1A1E',
+        border: '1px solid var(--foundry-border-subtle)',
       }}
     >
       <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', fontWeight: 400, margin: 0 }}>{block.title}</h2>
       <LinkedParagraph
         segments={linkifyParagraph(block.intro, { preferGraph: true })}
-        style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10 }}
+        style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10 }}
       />
       <div style={{ display: 'grid', gap: 10, marginTop: 16 }}>
         {block.items.map((item) => (
@@ -40,15 +40,15 @@ function WanderSection({ block }: { block: WanderBlock }) {
               textDecoration: 'none',
             }}
           >
-            <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
               {item.title}
               {item.confidence && (
-                <span style={{ fontSize: 10, color: '#6B6B70', textTransform: 'lowercase' }}>{item.confidence}</span>
+                <span style={{ fontSize: 10, color: 'var(--foundry-text-faint)', textTransform: 'lowercase' }}>{item.confidence}</span>
               )}
             </p>
             <LinkedParagraph
               segments={linkifyParagraph(item.teaser, { preferGraph: true })}
-              style={{ color: '#8A8A8E', fontSize: 12, marginTop: 8 }}
+              style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 8 }}
             />
           </Link>
         ))}
@@ -63,7 +63,7 @@ export function GraphWanderFooter({ continueWandering, relatedRabbitHoles, peopl
     <div style={{ marginTop: 36 }}>
       <p
         style={{
-          color: '#6B6B70',
+          color: 'var(--foundry-text-faint)',
           fontSize: 11,
           letterSpacing: '0.08em',
           textTransform: 'uppercase',

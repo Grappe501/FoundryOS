@@ -14,10 +14,10 @@ export function DistilleryWarsList() {
         <Link
           key={w.slug}
           href={`/bourbon/wars/${w.slug}`}
-          style={{ display: 'block', padding: 20, background: '#111114', borderRadius: 10, border: '1px solid #1A1A1E', textDecoration: 'none', color: 'inherit' }}
+          style={{ display: 'block', padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 10, border: '1px solid var(--foundry-border-subtle)', textDecoration: 'none', color: 'inherit' }}
         >
-          <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>{w.title}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{w.a.flagship} vs {w.b.flagship}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 16, margin: 0 }}>{w.title}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>{w.a.flagship} vs {w.b.flagship}</p>
         </Link>
       ))}
     </div>
@@ -51,7 +51,7 @@ function WarClient({ war }: { war: DistilleryWar }) {
       </div>
       <article style={{ marginTop: 28, padding: 22, background: '#0F1210', borderRadius: 10, border: `1px solid ${ACCENT}33` }}>
         <p style={{ color: ACCENT, fontSize: 12, margin: 0 }}>Foundry verdict</p>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{war.verdict}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{war.verdict}</p>
       </article>
       <Link href="/bourbon/dna" style={{ display: 'inline-block', marginTop: 20, color: ACCENT, fontSize: 14 }}>
         Your vote shapes Bourbon DNA →
@@ -72,10 +72,10 @@ function Side({
   onVote: () => void;
 }) {
   return (
-    <div style={{ padding: 20, background: '#111114', borderRadius: 10, border: `1px solid ${active ? ACCENT : '#1A1A1E'}` }}>
-      <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>{label}</p>
-      <p style={{ color: '#E8E8EC', fontSize: 17, marginTop: 8 }}>{data.name}</p>
-      <dl style={{ marginTop: 16, fontSize: 12, color: '#8A8A8E' }}>
+    <div style={{ padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 10, border: `1px solid ${active ? ACCENT : 'var(--foundry-border-subtle)'}` }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 17, marginTop: 8 }}>{data.name}</p>
+      <dl style={{ marginTop: 16, fontSize: 12, color: 'var(--foundry-text-muted)' }}>
         <Row k="Flagship" v={data.flagship} />
         <Row k="Mashbill" v={data.mashbill} />
         <Row k="Proof" v={data.proof} />
@@ -83,7 +83,7 @@ function Side({
         <Row k="Best bargain" v={data.bargain} />
         <Row k="Best premium" v={data.premium} />
       </dl>
-      <button type="button" onClick={onVote} style={{ marginTop: 16, padding: '10px 16px', width: '100%', background: active ? '#4A4020' : '#1A1A1E', border: 'none', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer' }}>
+      <button type="button" onClick={onVote} style={{ marginTop: 16, padding: '10px 16px', width: '100%', background: active ? 'var(--foundry-primary-border-dim)' : 'var(--foundry-border-subtle)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', cursor: 'pointer' }}>
         Vote {data.name.split(' ')[0]}
       </button>
       <Link href={`/bourbon/producers/${data.producerSlug}`} style={{ display: 'block', marginTop: 10, color: ACCENT, fontSize: 12, textAlign: 'center' }}>
@@ -96,8 +96,8 @@ function Side({
 function Row({ k, v }: { k: string; v: string }) {
   return (
     <div style={{ marginBottom: 8 }}>
-      <dt style={{ color: '#6B6B70', display: 'inline' }}>{k}: </dt>
-      <dd style={{ display: 'inline', margin: 0, color: '#8A8A8E' }}>{v}</dd>
+      <dt style={{ color: 'var(--foundry-text-faint)', display: 'inline' }}>{k}: </dt>
+      <dd style={{ display: 'inline', margin: 0, color: 'var(--foundry-text-muted)' }}>{v}</dd>
     </div>
   );
 }

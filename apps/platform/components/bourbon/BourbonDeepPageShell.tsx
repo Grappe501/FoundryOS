@@ -15,7 +15,7 @@ export function BourbonDeepPageShell({ content, backHref, backLabel, children }:
   return (
     <article style={{ marginTop: backHref ? 16 : 0 }}>
       {backHref && (
-        <Link href={backHref} style={{ color: '#6B6B70', fontSize: 13 }}>
+        <Link href={backHref} style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           {backLabel ?? '← Back'}
         </Link>
       )}
@@ -57,7 +57,7 @@ function paragraphs(text: string) {
 function DepthSection({ title, body, accent }: { title: string; body: string; accent?: boolean }) {
   return (
     <section style={{ marginTop: 28, maxWidth: 720 }}>
-      <h2 style={{ fontSize: 13, color: accent ? ACCENT : '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
+      <h2 style={{ fontSize: 13, color: accent ? ACCENT : 'var(--foundry-text-faint)', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
         {title}
       </h2>
       <p style={{ color: '#A8A8AC', fontSize: 15, marginTop: 12, lineHeight: 1.8 }}>
@@ -70,17 +70,17 @@ function DepthSection({ title, body, accent }: { title: string; body: string; ac
 function RabbitHoleSection({ links }: { links: BourbonPageDepth['rabbitHoles'] }) {
   if (links.length === 0) return null;
   return (
-    <section style={{ marginTop: 36, padding: 20, background: '#0F0F12', borderRadius: 10, border: '1px solid #1A1A1E', maxWidth: 720 }}>
+    <section style={{ marginTop: 36, padding: 20, background: 'var(--foundry-surface)', borderRadius: 10, border: '1px solid var(--foundry-border-subtle)', maxWidth: 720 }}>
       <h2 style={{ fontSize: 13, color: ACCENT, fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
         Rabbit holes
       </h2>
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 14 }}>
         {links.map((l) => (
           <li key={l.href} style={{ marginTop: 10 }}>
-            <Link href={l.href} style={{ color: '#E8E8EC', fontSize: 15, textDecoration: 'none' }}>
+            <Link href={l.href} style={{ color: 'var(--foundry-text)', fontSize: 15, textDecoration: 'none' }}>
               {l.label} →
             </Link>
-            {l.tease && <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 4 }}>{l.tease}</p>}
+            {l.tease && <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 4 }}>{l.tease}</p>}
           </li>
         ))}
       </ul>
@@ -96,7 +96,7 @@ export function BourbonWorldDepthIntro({ content }: { content: BourbonPageDepth 
         Worth reading before you click anything
       </p>
       <div style={{ marginTop: 16, color: '#B8B8BC', fontSize: 16, lineHeight: 1.85 }}>{paragraphs(content.openingNarrative)}</div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 16, lineHeight: 1.75 }}>{content.whyItMatters}</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 16, lineHeight: 1.75 }}>{content.whyItMatters}</p>
     </section>
   );
 }

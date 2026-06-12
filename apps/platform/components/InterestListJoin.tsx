@@ -28,7 +28,7 @@ export function InterestListJoin({ pathSlug, pathName }: { pathSlug: string; pat
 
   if (done) {
     return (
-      <p style={{ color: '#6B9B6B', fontSize: 14, marginTop: 16 }}>
+      <p style={{ color: 'var(--foundry-success)', fontSize: 14, marginTop: 16 }}>
         Thanks — we&apos;ll notify you when {pathName} opens.
       </p>
     );
@@ -37,21 +37,21 @@ export function InterestListJoin({ pathSlug, pathName }: { pathSlug: string; pat
   return (
     <form onSubmit={handleSubmit} style={{ marginTop: 20, display: 'flex', flexDirection: 'column', gap: 12 }}>
       <div>
-        <p style={{ color: '#6B6B70', fontSize: 12, margin: '0 0 8px' }}>Desired path</p>
-        <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{pathName}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '0 0 8px' }}>Desired path</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{pathName}</p>
       </div>
       <div>
-        <p style={{ color: '#6B6B70', fontSize: 12, margin: '0 0 8px' }}>Who are you?</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '0 0 8px' }}>Who are you?</p>
         <select
           value={segment}
           onChange={(e) => setSegment(e.target.value as CustomerSegment)}
           style={{
             width: '100%',
             padding: '12px 14px',
-            background: '#0F0F12',
-            border: '1px solid #2A2A2E',
+            background: 'var(--foundry-surface)',
+            border: '1px solid var(--foundry-border)',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 14,
           }}
         >
@@ -63,7 +63,7 @@ export function InterestListJoin({ pathSlug, pathName }: { pathSlug: string; pat
         </select>
       </div>
       <div>
-        <p style={{ color: '#6B6B70', fontSize: 12, margin: '0 0 8px' }}>Email (optional)</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '0 0 8px' }}>Email (optional)</p>
         <input
           type="email"
           placeholder="you@example.com"
@@ -72,10 +72,10 @@ export function InterestListJoin({ pathSlug, pathName }: { pathSlug: string; pat
           style={{
             width: '100%',
             padding: '12px 14px',
-            background: '#0F0F12',
-            border: '1px solid #2A2A2E',
+            background: 'var(--foundry-surface)',
+            border: '1px solid var(--foundry-border)',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 14,
             boxSizing: 'border-box',
           }}
@@ -85,10 +85,10 @@ export function InterestListJoin({ pathSlug, pathName }: { pathSlug: string; pat
         type="submit"
         style={{
           padding: '12px 20px',
-          background: '#2A4A2A',
+          background: 'var(--foundry-success-bg)',
           border: 'none',
           borderRadius: 6,
-          color: '#E8E8EC',
+          color: 'var(--foundry-text)',
           fontSize: 14,
           cursor: 'pointer',
           alignSelf: 'flex-start',

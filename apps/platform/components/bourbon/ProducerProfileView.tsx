@@ -21,10 +21,10 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
   return (
     <article>
-      <p style={{ color: '#6B6B70', fontSize: 12, margin: 0 }}>
-        <Link href="/bourbon/producers" style={{ color: '#6B6B70' }}>Producer Atlas</Link>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: 0 }}>
+        <Link href="/bourbon/producers" style={{ color: 'var(--foundry-text-faint)' }}>Producer Atlas</Link>
         {' · '}
-        <Link href="/bourbon/academy" style={{ color: '#6B6B70' }}>Academy</Link>
+        <Link href="/bourbon/academy" style={{ color: 'var(--foundry-text-faint)' }}>Academy</Link>
       </p>
 
       <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 16, lineHeight: 1.2 }}>{p.name}</h1>
@@ -35,7 +35,7 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
           margin: '24px 0 0',
           padding: '18px 20px',
           borderLeft: `3px solid ${ACCENT}`,
-          background: '#0F0F12',
+          background: 'var(--foundry-surface)',
           color: '#A8A8AC',
           fontSize: 15,
           fontStyle: 'italic',
@@ -54,8 +54,8 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
       <section style={{ marginTop: 36 }}>
         <h2 style={{ fontSize: 14, color: ACCENT, fontWeight: 400, letterSpacing: '0.06em' }}>WHAT MAKES THEM DIFFERENT</h2>
-        <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{p.differentiator}</p>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 16, lineHeight: 1.7 }}>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{p.differentiator}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 16, lineHeight: 1.7 }}>
           <strong style={{ color: ACCENT, fontWeight: 400 }}>Mash signature: </strong>
           {p.mashBillSignature}
         </p>
@@ -65,15 +65,15 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
         <>
           <section style={{ marginTop: 36 }}>
             <h2 style={{ fontSize: 14, color: ACCENT, fontWeight: 400, letterSpacing: '0.06em' }}>HOW THE COMPANY CAME TO BE</h2>
-            <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{depth.foundingStory}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{depth.foundingStory}</p>
           </section>
           <section style={{ marginTop: 32 }}>
-            <h2 style={{ fontSize: 14, color: '#E8E8EC', fontWeight: 400 }}>How they survived</h2>
-            <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{depth.survivalStory}</p>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-text)', fontWeight: 400 }}>How they survived</h2>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.85 }}>{depth.survivalStory}</p>
           </section>
           <section style={{ marginTop: 32 }}>
-            <h2 style={{ fontSize: 13, color: '#6B6B70' }}>Distinguishing facts</h2>
-            <ul style={{ color: '#E8E8EC', fontSize: 14, lineHeight: 1.8, marginTop: 12 }}>
+            <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)' }}>Distinguishing facts</h2>
+            <ul style={{ color: 'var(--foundry-text)', fontSize: 14, lineHeight: 1.8, marginTop: 12 }}>
               {depth.distinguishingFacts.map((f) => (
                 <li key={f}>{f}</li>
               ))}
@@ -84,18 +84,18 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
       {p.history.map((block) => (
         <section key={block.heading} style={{ marginTop: 32 }}>
-          <h2 style={{ fontSize: 17, color: '#E8E8EC', fontWeight: 400, margin: 0 }}>{block.heading}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>{block.body}</p>
+          <h2 style={{ fontSize: 17, color: 'var(--foundry-text)', fontWeight: 400, margin: 0 }}>{block.heading}</h2>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>{block.body}</p>
         </section>
       ))}
 
-      <section style={{ marginTop: 36, padding: 24, background: '#0F0F12', borderRadius: 10, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 36, padding: 24, background: 'var(--foundry-surface)', borderRadius: 10, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Timeline</h2>
         <div style={{ marginTop: 16 }}>
           {p.timeline.map((t) => (
-            <div key={t.year} style={{ display: 'flex', gap: 16, padding: '10px 0', borderBottom: '1px solid #1A1A1E' }}>
+            <div key={t.year} style={{ display: 'flex', gap: 16, padding: '10px 0', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
               <span style={{ color: ACCENT, fontSize: 13, minWidth: 48 }}>{t.year}</span>
-              <span style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.6 }}>{t.event}</span>
+              <span style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.6 }}>{t.event}</span>
             </div>
           ))}
         </div>
@@ -103,25 +103,25 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
       <section style={{ marginTop: 36 }}>
         <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Sweet spot shelf — where to spend your money</h2>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>{p.priceLadder.tier} · {p.priceLadder.range}</p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{p.priceLadder.note}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8 }}>{p.priceLadder.tier} · {p.priceLadder.range}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{p.priceLadder.note}</p>
         <div style={{ marginTop: 20, display: 'grid', gap: 12 }}>
           {p.sweetSpot.map((b) => (
             <div
               key={b.name}
               style={{
                 padding: 18,
-                background: '#111114',
+                background: 'var(--foundry-surface-raised)',
                 borderRadius: 8,
-                border: b.role === 'daily' ? `1px solid ${ACCENT}44` : '1px solid #1A1A1E',
+                border: b.role === 'daily' ? `1px solid ${ACCENT}44` : '1px solid var(--foundry-border-subtle)',
               }}
             >
               <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8 }}>
-                <span style={{ color: '#E8E8EC', fontSize: 15 }}>{b.name}</span>
+                <span style={{ color: 'var(--foundry-text)', fontSize: 15 }}>{b.name}</span>
                 <span style={{ color: ACCENT, fontSize: 12 }}>{b.priceUsd} · {b.proof} proof</span>
               </div>
-              <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 6, textTransform: 'uppercase' }}>{b.role.replace('-', ' ')}</p>
-              <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 10, lineHeight: 1.65 }}>{b.whatToExpect}</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 6, textTransform: 'uppercase' }}>{b.role.replace('-', ' ')}</p>
+              <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 10, lineHeight: 1.65 }}>{b.whatToExpect}</p>
             </div>
           ))}
         </div>
@@ -131,28 +131,28 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
         style={{
           marginTop: 32,
           padding: 24,
-          background: 'linear-gradient(135deg, #1A160F 0%, #111114 100%)',
+          background: 'linear-gradient(135deg, var(--foundry-primary-bg-subtle) 0%, var(--foundry-surface-raised) 100%)',
           border: `1px solid ${ACCENT}33`,
           borderRadius: 10,
         }}
       >
         <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Crown jewel — best they produce</h2>
-        <p style={{ color: '#E8E8EC', fontSize: 17, marginTop: 12 }}>{p.crownJewel.name}</p>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>{p.crownJewel.priceUsd} · {p.crownJewel.proof} proof</p>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{p.crownJewel.whatToExpect}</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 17, marginTop: 12 }}>{p.crownJewel.name}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>{p.crownJewel.priceUsd} · {p.crownJewel.proof} proof</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{p.crownJewel.whatToExpect}</p>
       </section>
 
       <section style={{ marginTop: 36 }}>
-        <h2 style={{ fontSize: 14, color: '#E8E8EC', margin: 0 }}>Your first pour from this house</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>{p.firstPourExpectation}</p>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-text)', margin: 0 }}>Your first pour from this house</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.8 }}>{p.firstPourExpectation}</p>
       </section>
 
       <section style={{ marginTop: 36 }}>
         <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Questions you did not know to ask</h2>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>Tap each — these are the rabbit holes stewards live in.</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8 }}>Tap each — these are the rabbit holes stewards live in.</p>
         <div style={{ marginTop: 16, display: 'grid', gap: 8 }}>
           {p.hiddenQuestions.map((hq, i) => (
-            <div key={hq.question} style={{ background: '#111114', borderRadius: 8, overflow: 'hidden', border: '1px solid #1A1A1E' }}>
+            <div key={hq.question} style={{ background: 'var(--foundry-surface-raised)', borderRadius: 8, overflow: 'hidden', border: '1px solid var(--foundry-border-subtle)' }}>
               <button
                 type="button"
                 onClick={() => setOpenQuestion(openQuestion === i ? null : i)}
@@ -162,7 +162,7 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
                   padding: '14px 16px',
                   background: 'transparent',
                   border: 'none',
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                   cursor: 'pointer',
                 }}
@@ -170,7 +170,7 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
                 {openQuestion === i ? '−' : '+'} {hq.question}
               </button>
               {openQuestion === i && (
-                <p style={{ color: '#8A8A8E', fontSize: 13, margin: 0, padding: '0 16px 16px', lineHeight: 1.75 }}>{hq.answer}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: 0, padding: '0 16px 16px', lineHeight: 1.75 }}>{hq.answer}</p>
               )}
             </div>
           ))}
@@ -182,25 +182,25 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
           <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Masters & makers</h2>
           <div style={{ marginTop: 16, display: 'grid', gap: 12 }}>
             {masters.map((m) => (
-              <Link key={m.slug} href={`/bourbon/people/${m.slug}`} style={{ display: 'block', padding: 18, background: '#111114', borderRadius: 8, textDecoration: 'none', border: '1px solid #1A1A1E' }}>
-                <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{m.name}</p>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6, lineHeight: 1.6 }}>{m.hook}</p>
+              <Link key={m.slug} href={`/bourbon/people/${m.slug}`} style={{ display: 'block', padding: 18, background: 'var(--foundry-surface-raised)', borderRadius: 8, textDecoration: 'none', border: '1px solid var(--foundry-border-subtle)' }}>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{m.name}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6, lineHeight: 1.6 }}>{m.hook}</p>
               </Link>
             ))}
           </div>
-          <Link href="/bourbon/people" style={{ display: 'inline-block', marginTop: 12, color: '#6B6B70', fontSize: 13 }}>All masters →</Link>
+          <Link href="/bourbon/people" style={{ display: 'inline-block', marginTop: 12, color: 'var(--foundry-text-faint)', fontSize: 13 }}>All masters →</Link>
         </section>
       )}
 
       {depth && depth.pairings.length > 0 && (
-        <section style={{ marginTop: 36, padding: 24, background: '#0F1018', borderRadius: 10, border: '1px solid #2A2520' }}>
+        <section style={{ marginTop: 36, padding: 24, background: '#0F1018', borderRadius: 10, border: '1px solid var(--foundry-border-warm)' }}>
           <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>When is this house best?</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{depth.whenBest}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{depth.whenBest}</p>
           <div style={{ marginTop: 20, display: 'grid', gap: 14 }}>
             {depth.pairings.map((pair) => (
-              <div key={pair.occasion} style={{ padding: 16, background: '#111114', borderRadius: 8 }}>
-                <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{pair.occasion}</p>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.65 }}>{pair.why}</p>
+              <div key={pair.occasion} style={{ padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{pair.occasion}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.65 }}>{pair.why}</p>
                 {pair.serve && <p style={{ color: ACCENT, fontSize: 12, marginTop: 8 }}>{pair.serve}</p>}
               </div>
             ))}
@@ -210,14 +210,14 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
       {depth?.competitorView && (
         <section style={{ marginTop: 28 }}>
-          <h2 style={{ fontSize: 13, color: '#6B6B70' }}>What rivals say</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.75, fontStyle: 'italic' }}>{depth.competitorView}</p>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)' }}>What rivals say</h2>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.75, fontStyle: 'italic' }}>{depth.competitorView}</p>
         </section>
       )}
 
       {compareTargets.length > 0 && (
         <section style={{ marginTop: 36 }}>
-          <h2 style={{ fontSize: 14, color: '#6B6B70', margin: 0 }}>Compare side-by-side</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', margin: 0 }}>Compare side-by-side</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
             {compareTargets.map((c) => (
               <Link
@@ -228,7 +228,7 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
                   background: '#1A2530',
                   border: `1px solid ${ACCENT}44`,
                   borderRadius: 999,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 12,
                   textDecoration: 'none',
                 }}
@@ -242,7 +242,7 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
       {compareTargets.length > 0 && (
         <section style={{ marginTop: 16 }}>
-          <h2 style={{ fontSize: 14, color: '#6B6B70', margin: 0 }}>Read next house</h2>
+          <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', margin: 0 }}>Read next house</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 12 }}>
             {compareTargets.map((c) => (
               <Link
@@ -250,10 +250,10 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
                 href={`/bourbon/producers/${c.slug}`}
                 style={{
                   padding: '8px 14px',
-                  background: '#0F0F12',
-                  border: '1px solid #2A2A2E',
+                  background: 'var(--foundry-surface)',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 999,
-                  color: '#8A8A8E',
+                  color: 'var(--foundry-text-muted)',
                   fontSize: 12,
                   textDecoration: 'none',
                 }}
@@ -265,16 +265,16 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
         </section>
       )}
 
-      <div style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid #1A1A1E', display: 'flex', flexWrap: 'wrap', gap: 16 }}>
+      <div style={{ marginTop: 40, paddingTop: 24, borderTop: '1px solid var(--foundry-border-subtle)', display: 'flex', flexWrap: 'wrap', gap: 16 }}>
         <Link href="/bourbon/experiences/tasting-journal" style={{ color: ACCENT, fontSize: 14 }}>
           Log a pour in your journal →
         </Link>
         {p.academyLessonSlug && (
-          <Link href={`/bourbon/academy/${p.academyLessonSlug}`} style={{ color: '#8A8A8E', fontSize: 14 }}>
+          <Link href={`/bourbon/academy/${p.academyLessonSlug}`} style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>
             Related academy lesson →
           </Link>
         )}
-        <Link href="/bourbon/academy/build-your-producer-triangle" style={{ color: '#8A8A8E', fontSize: 14 }}>
+        <Link href="/bourbon/academy/build-your-producer-triangle" style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>
           Build your producer triangle →
         </Link>
       </div>
@@ -285,9 +285,9 @@ export function ProducerProfileView({ producer: p, compareTargets, depth, master
 
 function MetaChip({ label, value }: { label: string; value: string }) {
   return (
-    <div style={{ padding: 12, background: '#111114', borderRadius: 6 }}>
-      <p style={{ color: '#6B6B70', fontSize: 10, margin: 0, textTransform: 'uppercase' }}>{label}</p>
-      <p style={{ color: '#E8E8EC', fontSize: 12, marginTop: 6, lineHeight: 1.4 }}>{value}</p>
+    <div style={{ padding: 12, background: 'var(--foundry-surface-raised)', borderRadius: 6 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0, textTransform: 'uppercase' }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 12, marginTop: 6, lineHeight: 1.4 }}>{value}</p>
     </div>
   );
 }

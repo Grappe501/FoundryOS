@@ -15,7 +15,7 @@ export function ChessSubNav() {
   const pathname = usePathname() ?? '';
   return (
     <nav
-      style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12, paddingBottom: 12, borderBottom: '1px solid #1A1A1E' }}
+      style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 12, paddingBottom: 12, borderBottom: '1px solid var(--foundry-border-subtle)' }}
       aria-label="Chess world"
     >
       {LINKS.map(({ href, label, ...rest }) => {
@@ -30,7 +30,7 @@ export function ChessSubNav() {
               fontSize: 12,
               borderRadius: 6,
               textDecoration: 'none',
-              color: active ? '#E8E8EC' : '#6B6B70',
+              color: active ? 'var(--foundry-text)' : 'var(--foundry-text-faint)',
               background: active ? '#3A4A3A' : 'transparent',
               border: `1px solid ${active ? '#3A4A3A' : 'transparent'}`,
             }}

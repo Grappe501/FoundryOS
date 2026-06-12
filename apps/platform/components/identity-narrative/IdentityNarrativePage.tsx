@@ -22,16 +22,16 @@ export function IdentityNarrativePage() {
 
   return (
     <>
-      <Link href="/" style={{ color: '#6B6B70', fontSize: 13 }}>← Home</Link>
+      <Link href="/" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Home</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Foundry Identity</h1>
-      <p style={{ color: '#8A8A8E', marginTop: 8, fontSize: 14 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', marginTop: 8, fontSize: 14 }}>
         Not an account — who you are becoming across every world.
       </p>
 
       {recognition && (
-        <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
+        <section style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 8 }}>
           <div style={{ fontSize: 22, fontWeight: 300 }}>{name}</div>
-          <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 16, lineHeight: 1.75 }}>{recognition}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 16, lineHeight: 1.75 }}>{recognition}</p>
           <Link href="/passport" style={{ display: 'inline-block', marginTop: 16, color: 'var(--foundry-primary)', fontSize: 13 }}>
             Foundry Passport →
           </Link>
@@ -40,17 +40,17 @@ export function IdentityNarrativePage() {
 
       <IdentityStoryPanel />
 
-      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #1E1E22', borderRadius: 8 }}>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-subtle)', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Share — {VIRAL_SHARE_HOOK}</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.6 }}>
           {name} is becoming someone worth following — not what they consumed, what they are mastering.
         </p>
       </section>
 
-      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 8 }}>
-        <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0, lineHeight: 1.7 }}>{FOUNDRY_VISION_STATEMENT.headline}</p>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 8 }}>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0, lineHeight: 1.7 }}>{FOUNDRY_VISION_STATEMENT.headline}</p>
         {FOUNDRY_VISION_STATEMENT.lines.map((line) => (
-          <p key={line} style={{ color: '#8A8A8E', fontSize: 14, margin: '8px 0 0', lineHeight: 1.6 }}>{line}</p>
+          <p key={line} style={{ color: 'var(--foundry-text-muted)', fontSize: 14, margin: '8px 0 0', lineHeight: 1.6 }}>{line}</p>
         ))}
       </section>
     </>

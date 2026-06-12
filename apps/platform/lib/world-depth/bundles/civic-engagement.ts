@@ -69,7 +69,7 @@ const GLOSSARY_SEEDS: Parameters<typeof buildGlossary>[0] = [
 export const CIVIC_DEPTH: WorldDepthBundle = {
   slug: 'civic-engagement',
   displayName: 'Civic Engagement World',
-  accentColor: '#6B9B6B',
+  accentColor: 'var(--foundry-success)',
   portfolioLabel: 'My Civic Portfolio',
   academyLessons: buildAcademyLessons(
     CIVIC_ENGAGEMENT_ACADEMY_LEVELS.map((level) => ({

@@ -33,12 +33,12 @@ export default function OperatorBourbonInventoryPage() {
         ]}
       />
 
-      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Legal spine (27 CFR Part 5)</h2>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.9, marginTop: 12, paddingLeft: 20 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.9, marginTop: 12, paddingLeft: 20 }}>
           {LEGAL_STANDARDS.map((s) => (
             <li key={s.slug}>
-              <span style={{ color: '#E8E8EC' }}>{s.title}</span>
+              <span style={{ color: 'var(--foundry-text)' }}>{s.title}</span>
               {' — '}
               {s.requirements[0]?.value.toString().slice(0, 120)}…
             </li>
@@ -47,26 +47,26 @@ export default function OperatorBourbonInventoryPage() {
       </section>
 
       <section style={{ marginTop: 24, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3520' }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Inventory chain model</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Inventory chain model</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
           Bottle → Producer → Master Distiller → Mash Bill → Grain/Terroir → Barrel → Flavor family → Comparables →
           Artifacts (040A) → Reviews (040E)
         </p>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
           Confidence labels: verified · producer_disclosed · commonly_reported · editorial · unknown
         </p>
       </section>
 
       <section style={{ marginTop: 24 }}>
         <h2 style={{ fontSize: 14, color: '#6B9BC9' }}>Sample graph: Wild Turkey 101</h2>
-        <ul style={{ marginTop: 12, paddingLeft: 20, color: '#E8E8EC', fontSize: 13, lineHeight: 1.9 }}>
+        <ul style={{ marginTop: 12, paddingLeft: 20, color: 'var(--foundry-text)', fontSize: 13, lineHeight: 1.9 }}>
           {inv.relationships
             .filter((e: InventoryRelationship) => e.from.slug === 'wild-turkey-101' || e.to.slug === 'wild-turkey-101')
             .slice(0, 12)
             .map((e: InventoryRelationship) => (
               <li key={e.id}>
                 {e.from.entity_type}:{e.from.slug} → {e.relation} → {e.to.entity_type}:{e.to.slug}
-                <span style={{ color: '#6B6B70' }}> ({e.confidence})</span>
+                <span style={{ color: 'var(--foundry-text-faint)' }}> ({e.confidence})</span>
               </li>
             ))}
         </ul>
@@ -78,7 +78,7 @@ export default function OperatorBourbonInventoryPage() {
         </section>
       )}
 
-      <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 24 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 24 }}>
         Package: @foundry/bourbon-intelligence v{inv.version} · Pages generate from registry — do not bulk-author copy
       </p>
     </OperatorShell>

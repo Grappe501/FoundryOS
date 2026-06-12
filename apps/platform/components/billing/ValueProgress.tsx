@@ -12,8 +12,8 @@ type Props = {
 };
 
 const tierColor: Record<string, string> = {
-  free: '#6B6B70',
-  build: '#6B9B6B',
+  free: 'var(--foundry-text-faint)',
+  build: 'var(--foundry-success)',
   mastery: 'var(--foundry-primary)',
 };
 
@@ -22,7 +22,7 @@ export function ValueProgress({ worldSlug, missionsCompleted, portfolioItems, co
 
   return (
     <section style={{ marginTop: 24 }}>
-      <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Your progress</h2>
+      <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Your progress</h2>
       <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 12 }}>
         <Stat label="Missions completed" value={String(missionsCompleted)} />
         <Stat label="Portfolio items" value={String(portfolioItems)} />
@@ -33,7 +33,7 @@ export function ValueProgress({ worldSlug, missionsCompleted, portfolioItems, co
       {nextSteps && (
         <div style={{ marginTop: 28 }}>
           <h3 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>What comes next?</h3>
-          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Some steps are premium — visible, not hidden.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>Some steps are premium — visible, not hidden.</p>
           {nextSteps.steps.map((step) => (
             <NextStepRow key={step.href} step={step} currentTier={currentTier} />
           ))}
@@ -45,9 +45,9 @@ export function ValueProgress({ worldSlug, missionsCompleted, portfolioItems, co
 
 function Stat({ label, value }: { label: string; value: string }) {
   return (
-    <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
-      <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>{label}</p>
-      <p style={{ color: '#E8E8EC', fontSize: 22, fontWeight: 300, margin: '6px 0 0' }}>{value}</p>
+    <div style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 22, fontWeight: 300, margin: '6px 0 0' }}>{value}</p>
     </div>
   );
 }
@@ -59,12 +59,12 @@ function NextStepRow({ step, currentTier }: { step: NextStep; currentTier: strin
     (step.tier === 'mastery' && currentTier === 'mastery');
 
   return (
-    <div style={{ marginTop: 12, padding: 14, background: '#0F0F12', borderRadius: 8, display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
+    <div style={{ marginTop: 12, padding: 14, background: 'var(--foundry-surface)', borderRadius: 8, display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'center', flexWrap: 'wrap' }}>
       <div>
-        <Link href={step.href} style={{ color: hasAccess ? '#E8E8EC' : '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+        <Link href={step.href} style={{ color: hasAccess ? 'var(--foundry-text)' : 'var(--foundry-text-muted)', fontSize: 14, textDecoration: 'none' }}>
           {step.label} →
         </Link>
-        {step.description && <p style={{ color: '#6B6B70', fontSize: 12, margin: '4px 0 0' }}>{step.description}</p>}
+        {step.description && <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '4px 0 0' }}>{step.description}</p>}
       </div>
       <span style={{ fontSize: 11, color: tierColor[step.tier], letterSpacing: '0.05em' }}>{tierBadge(step.tier)}</span>
     </div>

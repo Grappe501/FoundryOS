@@ -12,7 +12,7 @@ export function WorldLoreTeaser({ worldSlug, accent = 'var(--foundry-primary)' }
       style={{
         marginTop: 24,
         padding: 28,
-        background: 'linear-gradient(135deg, #0F0F12 0%, #141418 100%)',
+        background: 'linear-gradient(135deg, var(--foundry-surface) 0%, #141418 100%)',
         border: `1px solid ${accent}33`,
         borderRadius: 12,
       }}
@@ -20,20 +20,20 @@ export function WorldLoreTeaser({ worldSlug, accent = 'var(--foundry-primary)' }
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
         Most people never learn this
       </p>
-      <h2 style={{ fontSize: 20, fontWeight: 400, marginTop: 12, color: '#E8E8EC', lineHeight: 1.35 }}>
+      <h2 style={{ fontSize: 20, fontWeight: 400, marginTop: 12, color: 'var(--foundry-text)', lineHeight: 1.35 }}>
         Mythology that pulls you back — not lessons
       </h2>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.65, maxWidth: 560 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.65, maxWidth: 560 }}>
         {lore.tagline}
       </p>
       <div style={{ marginTop: 20, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
         {lore.heroes.slice(0, 3).map((h) => (
-          <span key={h.id} style={{ padding: '6px 12px', fontSize: 12, borderRadius: 999, border: '1px solid #2A2A2E', color: '#8A8A8E' }}>
+          <span key={h.id} style={{ padding: '6px 12px', fontSize: 12, borderRadius: 999, border: '1px solid var(--foundry-border)', color: 'var(--foundry-text-muted)' }}>
             {h.name}
           </span>
         ))}
         {lore.mysteries.length > 0 && (
-          <span style={{ padding: '6px 12px', fontSize: 12, borderRadius: 999, border: '1px solid #2A2A2E', color: '#8A8A8E' }}>
+          <span style={{ padding: '6px 12px', fontSize: 12, borderRadius: 999, border: '1px solid var(--foundry-border)', color: 'var(--foundry-text-muted)' }}>
             {lore.mysteries.length} mysteries
           </span>
         )}

@@ -13,7 +13,7 @@ import {
 export const FI_DEPTH: WorldDepthBundle = {
   slug: 'financial-independence',
   displayName: 'Financial Independence',
-  accentColor: '#6B9B6B',
+  accentColor: 'var(--foundry-success)',
   portfolioLabel: 'My Wealth Portfolio',
 
   academyLessons: buildAcademyLessons(

@@ -22,8 +22,8 @@ export default async function FutureProofPage({
     <main
       style={{
         minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
+        backgroundColor: 'var(--foundry-bg)',
+        color: 'var(--foundry-text)',
         padding: '2rem',
         maxWidth: 900,
         margin: '0 auto',
@@ -34,7 +34,7 @@ export default async function FutureProofPage({
       <FutureProofAssessment choosePath={choosePath} />
       <section style={{ marginTop: 32 }}>
         <TrinityHub compact />
-        <Link href="/trinity" style={{ display: 'inline-block', marginTop: 16, color: '#6B9B6B', fontSize: 14, textDecoration: 'none' }}>
+        <Link href="/trinity" style={{ display: 'inline-block', marginTop: 16, color: 'var(--foundry-success)', fontSize: 14, textDecoration: 'none' }}>
           Learn about the Trinity →
         </Link>
       </section>

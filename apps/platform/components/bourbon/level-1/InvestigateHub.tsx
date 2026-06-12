@@ -21,13 +21,13 @@ export function InvestigateHub({ toolsOnly = false }: { toolsOnly?: boolean }) {
   return (
     <div>
       {!toolsOnly && (
-        <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7, maxWidth: 640, marginTop: 0 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7, maxWidth: 640, marginTop: 0 }}>
           Tools below assume you read the narrative above — each card explains why it exists, not just what it does.
         </p>
       )}
 
       <section style={{ marginTop: toolsOnly ? 0 : 28 }}>
-        <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
           Living intelligence
         </h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>
@@ -38,7 +38,7 @@ export function InvestigateHub({ toolsOnly = false }: { toolsOnly?: boolean }) {
       </section>
 
       <section style={{ marginTop: 32 }}>
-        <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400, letterSpacing: '0.06em', textTransform: 'uppercase', margin: 0 }}>
           Investigate
         </h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))' }}>

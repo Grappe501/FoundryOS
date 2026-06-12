@@ -38,7 +38,7 @@ export function FoundryAccessOptions({ compact }: { compact?: boolean }) {
 
   if (installed) {
     return (
-      <p style={{ color: '#6B9B6B', fontSize: compact ? 12 : 13, margin: compact ? '12px 0 0' : '16px 0 0' }}>
+      <p style={{ color: 'var(--foundry-success)', fontSize: compact ? 12 : 13, margin: compact ? '12px 0 0' : '16px 0 0' }}>
         Running as installed app · same account, all worlds
       </p>
     );
@@ -49,18 +49,18 @@ export function FoundryAccessOptions({ compact }: { compact?: boolean }) {
       style={{
         marginTop: compact ? 12 : 20,
         padding: compact ? 14 : 18,
-        background: '#111114',
-        border: '1px solid #2A2520',
+        background: 'var(--foundry-surface-raised)',
+        border: '1px solid var(--foundry-border-warm)',
         borderRadius: 8,
       }}
     >
       <p style={{ color: ACCENT, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
         Use anywhere
       </p>
-      <p style={{ color: '#8A8A8E', fontSize: compact ? 13 : 14, marginTop: 8, lineHeight: 1.6 }}>
-        <strong style={{ color: '#E8E8EC', fontWeight: 500 }}>Web</strong> — use in any browser now.
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: compact ? 13 : 14, marginTop: 8, lineHeight: 1.6 }}>
+        <strong style={{ color: 'var(--foundry-text)', fontWeight: 500 }}>Web</strong> — use in any browser now.
         {' '}
-        <strong style={{ color: '#E8E8EC', fontWeight: 500 }}>Phone</strong> — install to home screen; artifacts and passport sync when you sign in.
+        <strong style={{ color: 'var(--foundry-text)', fontWeight: 500 }}>Phone</strong> — install to home screen; artifacts and passport sync when you sign in.
       </p>
       <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 12 }}>
         {deferred && (
@@ -69,10 +69,10 @@ export function FoundryAccessOptions({ compact }: { compact?: boolean }) {
             onClick={install}
             style={{
               padding: '10px 16px',
-              background: '#2A2520',
+              background: 'var(--foundry-border-warm)',
               border: `1px solid ${ACCENT}55`,
               borderRadius: 6,
-              color: '#E8E8EC',
+              color: 'var(--foundry-text)',
               fontSize: 13,
               cursor: 'pointer',
             }}
@@ -81,12 +81,12 @@ export function FoundryAccessOptions({ compact }: { compact?: boolean }) {
           </button>
         )}
         {isIos && !deferred && (
-          <span style={{ color: '#6B6B70', fontSize: 12 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>
             iPhone/iPad: Share → Add to Home Screen
           </span>
         )}
         {!deferred && !isIos && (
-          <span style={{ color: '#6B6B70', fontSize: 12 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>
             Android/desktop Chrome: Install when your browser offers it
           </span>
         )}

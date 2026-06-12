@@ -49,7 +49,7 @@ export function JourneyContinuityPanel() {
       style={{
         marginTop: 28,
         padding: 24,
-        background: 'linear-gradient(135deg, #0F1018 0%, #111114 100%)',
+        background: 'linear-gradient(135deg, #0F1018 0%, var(--foundry-surface-raised) 100%)',
         border: '1px solid #2A3A4A',
         borderRadius: 10,
       }}
@@ -57,14 +57,14 @@ export function JourneyContinuityPanel() {
       <p style={{ color: ACCENT, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
         {snapshot.headline}
       </p>
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{snapshot.intro}</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{snapshot.intro}</p>
 
       {snapshot.lines.length > 0 && (
-        <ul style={{ margin: '20px 0 0', paddingLeft: 18, color: '#E8E8EC', fontSize: 14, lineHeight: 1.85 }}>
+        <ul style={{ margin: '20px 0 0', paddingLeft: 18, color: 'var(--foundry-text)', fontSize: 14, lineHeight: 1.85 }}>
           {snapshot.lines.map((line) => (
             <li key={line.id} style={{ marginBottom: 6 }}>
               {line.href ? (
-                <Link href={line.href} style={{ color: '#E8E8EC', textDecoration: 'none' }}>
+                <Link href={line.href} style={{ color: 'var(--foundry-text)', textDecoration: 'none' }}>
                   {line.text}
                 </Link>
               ) : (
@@ -77,10 +77,10 @@ export function JourneyContinuityPanel() {
 
       {snapshot.since_then.length > 0 && hasStory && (
         <div style={{ marginTop: 20 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
             Since then
           </p>
-          <ul style={{ margin: '10px 0 0', paddingLeft: 18, color: '#8A8A8E', fontSize: 13, lineHeight: 1.7 }}>
+          <ul style={{ margin: '10px 0 0', paddingLeft: 18, color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.7 }}>
             {snapshot.since_then.map((line) => (
               <li key={line}>{line}</li>
             ))}
@@ -96,7 +96,7 @@ export function JourneyContinuityPanel() {
           <ul style={{ margin: '10px 0 0', paddingLeft: 18 }}>
             {snapshot.active_memory.slice(0, 5).map((t) => (
               <li key={t.id} style={{ marginTop: 6 }}>
-                <Link href={t.href} style={{ color: '#E8E8EC', fontSize: 13, textDecoration: 'none' }}>
+                <Link href={t.href} style={{ color: 'var(--foundry-text)', fontSize: 13, textDecoration: 'none' }}>
                   {t.label} →
                 </Link>
               </li>
@@ -107,11 +107,11 @@ export function JourneyContinuityPanel() {
 
       {snapshot.anticipation && (
         <div style={{ marginTop: 20, padding: 16, background: '#0A1218', borderRadius: 8, border: '1px solid #2A3A4A' }}>
-          <p style={{ color: '#6B9B6B', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
+          <p style={{ color: 'var(--foundry-success)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: 0 }}>
             Anticipation
           </p>
-          <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{snapshot.anticipation.curiosity}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.65 }}>{snapshot.anticipation.suggestion}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>{snapshot.anticipation.curiosity}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.65 }}>{snapshot.anticipation.suggestion}</p>
           <Link href={snapshot.anticipation.href} style={{ color: ACCENT, fontSize: 13, marginTop: 12, display: 'inline-block' }}>
             {snapshot.anticipation.label} →
           </Link>
@@ -124,7 +124,7 @@ export function JourneyContinuityPanel() {
             <span
               key={m.id}
               title={m.story}
-              style={{ padding: '6px 12px', background: '#1A160F', borderRadius: 4, fontSize: 11, color: 'var(--foundry-primary)' }}
+              style={{ padding: '6px 12px', background: 'var(--foundry-primary-bg-subtle)', borderRadius: 4, fontSize: 11, color: 'var(--foundry-primary)' }}
             >
               {m.title}
             </span>
@@ -141,7 +141,7 @@ export function JourneyContinuityPanel() {
             padding: '10px 16px',
             background: '#1A2530',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 13,
             textDecoration: 'none',
             border: '1px solid #2A3A4A',
@@ -151,7 +151,7 @@ export function JourneyContinuityPanel() {
         </Link>
       )}
 
-      <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 16, marginLeft: hasStory ? 16 : 0, color: '#6B6B70', fontSize: 12 }}>
+      <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 16, marginLeft: hasStory ? 16 : 0, color: 'var(--foundry-text-faint)', fontSize: 12 }}>
         View memory timeline →
       </Link>
     </section>
@@ -185,11 +185,11 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
 
   if (isEmpty) {
     return (
-      <section style={{ marginTop: 24, padding: 18, background: '#111114', borderRadius: 8, border: `1px solid ${accent}33` }}>
+      <section style={{ marginTop: 24, padding: 18, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: `1px solid ${accent}33` }}>
         <p style={{ color: accent, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
           Last time you were here…
         </p>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.6 }}>
           Leave evidence here — a graph hallway, a saved rabbit hole, a collection almost done — and Foundry will remember where you left off.
         </p>
         <Link href={`/${worldSlug}/today`} style={{ color: accent, fontSize: 13, marginTop: 10, display: 'inline-block' }}>
@@ -200,16 +200,16 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
   }
 
   return (
-    <section style={{ marginTop: 24, padding: 22, background: '#111114', borderRadius: 10, border: `1px solid ${accent}44` }}>
+    <section style={{ marginTop: 24, padding: 22, background: 'var(--foundry-surface-raised)', borderRadius: 10, border: `1px solid ${accent}44` }}>
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
         {snapshot.headline}
       </p>
 
-      <ul style={{ margin: '16px 0 0', paddingLeft: 18, color: '#E8E8EC', fontSize: 15, lineHeight: 1.85 }}>
+      <ul style={{ margin: '16px 0 0', paddingLeft: 18, color: 'var(--foundry-text)', fontSize: 15, lineHeight: 1.85 }}>
         {snapshot.lines.map((line) => (
           <li key={line.id} style={{ marginBottom: 8 }}>
             {line.href ? (
-              <Link href={line.href} style={{ color: '#E8E8EC', textDecoration: 'none' }}>
+              <Link href={line.href} style={{ color: 'var(--foundry-text)', textDecoration: 'none' }}>
                 {line.text}
               </Link>
             ) : (
@@ -221,11 +221,11 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
 
       {snapshot.since_then.length > 0 && (
         <div style={{ marginTop: 16 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
             Since then
           </p>
           {snapshot.since_then.map((line) => (
-            <p key={line} style={{ color: '#8A8A8E', fontSize: 13, margin: '6px 0 0', lineHeight: 1.6 }}>
+            <p key={line} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '6px 0 0', lineHeight: 1.6 }}>
               • {line}
             </p>
           ))}
@@ -234,10 +234,10 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
 
       {snapshot.anticipation && (
         <div style={{ marginTop: 18, padding: 14, background: '#0A1218', borderRadius: 8 }}>
-          <p style={{ color: '#6B9B6B', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+          <p style={{ color: 'var(--foundry-success)', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
             What comes next
           </p>
-          <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 8, lineHeight: 1.65 }}>{snapshot.anticipation.suggestion}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 8, lineHeight: 1.65 }}>{snapshot.anticipation.suggestion}</p>
         </div>
       )}
 
@@ -249,7 +249,7 @@ export function WorldContinuityReturnPanel({ worldSlug, accent = ACCENT }: { wor
           padding: '10px 16px',
           background: '#1A2530',
           borderRadius: 6,
-          color: '#E8E8EC',
+          color: 'var(--foundry-text)',
           fontSize: 13,
           textDecoration: 'none',
           border: `1px solid ${accent}55`,
@@ -281,7 +281,7 @@ export function MemoryTimelinePanel() {
   return (
     <section style={{ marginTop: 28 }}>
       {entries.length === 0 ? (
-        <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.75 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.75 }}>
           Your memory timeline starts when you leave evidence — a first tasting, a graph hallway, a closed mystery, a completed collection.
           Not activity. Stories.
         </p>
@@ -292,18 +292,18 @@ export function MemoryTimelinePanel() {
             {items.map((e) => (
               <div
                 key={e.id}
-                style={{ marginBottom: 16, paddingLeft: 16, borderLeft: `2px solid ${e.kind === 'story' ? '#2A2520' : '#1A2530'}` }}
+                style={{ marginBottom: 16, paddingLeft: 16, borderLeft: `2px solid ${e.kind === 'story' ? 'var(--foundry-border-warm)' : '#1A2530'}` }}
               >
                 {e.href ? (
-                  <Link href={e.href} style={{ color: '#E8E8EC', fontSize: 15, textDecoration: 'none' }}>
+                  <Link href={e.href} style={{ color: 'var(--foundry-text)', fontSize: 15, textDecoration: 'none' }}>
                     {e.title}
                   </Link>
                 ) : (
-                  <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{e.title}</p>
+                  <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{e.title}</p>
                 )}
-                <p style={{ color: '#6B6B70', fontSize: 12, margin: '4px 0 0' }}>{e.world_name}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: '4px 0 0' }}>{e.world_name}</p>
                 {e.story && (
-                  <p style={{ color: '#8A8A8E', fontSize: 13, margin: '6px 0 0', lineHeight: 1.6 }}>{e.story}</p>
+                  <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '6px 0 0', lineHeight: 1.6 }}>{e.story}</p>
                 )}
               </div>
             ))}

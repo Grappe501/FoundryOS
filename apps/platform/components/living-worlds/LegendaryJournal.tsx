@@ -42,12 +42,12 @@ export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' 
   const activeSection = schema.sections.find((s) => s.id === section);
 
   return (
-    <section style={{ marginTop: 32, padding: 24, background: '#0F0F12', borderRadius: 10, border: `1px solid ${accent}33` }}>
+    <section style={{ marginTop: 32, padding: 24, background: 'var(--foundry-surface)', borderRadius: 10, border: `1px solid ${accent}33` }}>
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
         Legendary collection
       </p>
-      <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 8, color: '#E8E8EC' }}>{schema.label}</h2>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>
+      <h2 style={{ fontSize: 18, fontWeight: 400, marginTop: 8, color: 'var(--foundry-text)' }}>{schema.label}</h2>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>
         Obsession-grade journal — hours well spent. Syncs on this device until account sync ships.
       </p>
 
@@ -61,9 +61,9 @@ export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' 
               padding: '8px 12px',
               fontSize: 12,
               borderRadius: 999,
-              border: `1px solid ${section === s.id ? accent : '#2A2A2E'}`,
-              background: section === s.id ? '#1A160F' : 'transparent',
-              color: section === s.id ? accent : '#8A8A8E',
+              border: `1px solid ${section === s.id ? accent : 'var(--foundry-border)'}`,
+              background: section === s.id ? 'var(--foundry-primary-bg-subtle)' : 'transparent',
+              color: section === s.id ? accent : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -73,7 +73,7 @@ export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' 
       </div>
 
       {activeSection && (
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 14 }}>{activeSection.description}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 14 }}>{activeSection.description}</p>
       )}
 
       <div style={{ marginTop: 16, display: 'grid', gap: 10 }}>
@@ -81,19 +81,19 @@ export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' 
           placeholder="Title — e.g. Evan Williams BiB, Feb tasting"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          style={{ padding: 12, background: '#111114', border: '1px solid #1A1A1E', borderRadius: 6, color: '#E8E8EC', fontSize: 14 }}
+          style={{ padding: 12, background: 'var(--foundry-surface-raised)', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14 }}
         />
         <textarea
           placeholder="Notes — nose, palate, finish, what surprised you…"
           value={body}
           onChange={(e) => setBody(e.target.value)}
           rows={4}
-          style={{ padding: 12, background: '#111114', border: '1px solid #1A1A1E', borderRadius: 6, color: '#E8E8EC', fontSize: 14, resize: 'vertical' }}
+          style={{ padding: 12, background: 'var(--foundry-surface-raised)', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14, resize: 'vertical' }}
         />
         <button
           type="button"
           onClick={addEntry}
-          style={{ padding: '12px 18px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', fontSize: 13, cursor: 'pointer', justifySelf: 'start' }}
+          style={{ padding: '12px 18px', background: 'var(--foundry-success-bg)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 13, cursor: 'pointer', justifySelf: 'start' }}
         >
           Add to journal
         </button>
@@ -101,13 +101,13 @@ export function LegendaryJournal({ worldSlug, accent = 'var(--foundry-primary)' 
 
       <div style={{ marginTop: 24, display: 'grid', gap: 10 }}>
         {entries.length === 0 ? (
-          <p style={{ color: '#6B6B70', fontSize: 13 }}>No entries yet in this section.</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>No entries yet in this section.</p>
         ) : (
           entries.map((e) => (
-            <article key={e.id} style={{ padding: 14, background: '#111114', borderRadius: 6, border: '1px solid #1A1A1E' }}>
-              <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{e.title}</p>
-              <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 4 }}>{new Date(e.createdAt).toLocaleDateString()}</p>
-              {e.body && <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>{e.body}</p>}
+            <article key={e.id} style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 6, border: '1px solid var(--foundry-border-subtle)' }}>
+              <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{e.title}</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 4 }}>{new Date(e.createdAt).toLocaleDateString()}</p>
+              {e.body && <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>{e.body}</p>}
             </article>
           ))
         )}

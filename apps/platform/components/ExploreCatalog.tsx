@@ -45,8 +45,8 @@ function PathRow({ path }: { path: ExplorePath }) {
       style={{
         display: 'block',
         padding: '16px 18px',
-        background: '#111114',
-        border: '1px solid #1A1A1E',
+        background: 'var(--foundry-surface-raised)',
+        border: '1px solid var(--foundry-border-subtle)',
         borderRadius: 8,
         textDecoration: 'none',
         transition: 'border-color 0.15s',
@@ -55,17 +55,17 @@ function PathRow({ path }: { path: ExplorePath }) {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12, flexWrap: 'wrap' }}>
         <div style={{ flex: 1, minWidth: 200 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
-            <span style={{ color: '#E8E8EC', fontSize: 16, fontWeight: 400 }}>{path.name}</span>
+            <span style={{ color: 'var(--foundry-text)', fontSize: 16, fontWeight: 400 }}>{path.name}</span>
             <StatusBadge status={path.status} />
           </div>
-          <p style={{ color: '#8A8A8E', fontSize: 13, margin: '8px 0 0', lineHeight: 1.5 }}>{path.outcome}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '8px 0 0', lineHeight: 1.5 }}>{path.outcome}</p>
         </div>
-        <div style={{ textAlign: 'right', fontSize: 11, color: '#6B6B70' }}>
+        <div style={{ textAlign: 'right', fontSize: 11, color: 'var(--foundry-text-faint)' }}>
           <div>{path.tier}</div>
           {path.launch_rank != null && <div style={{ marginTop: 4 }}>Launch #{path.launch_rank}</div>}
         </div>
       </div>
-      <p style={{ color: '#6B9B6B', fontSize: 12, marginTop: 12 }}>
+      <p style={{ color: 'var(--foundry-success)', fontSize: 12, marginTop: 12 }}>
         {path.status === 'live' || path.status === 'validating' || path.status === 'in_build'
           ? 'View path →'
           : 'Learn more →'}
@@ -94,7 +94,7 @@ export function ExploreCatalog() {
 
   return (
     <div>
-      <label style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 20, color: '#8A8A8E', fontSize: 13 }}>
+      <label style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 20, color: 'var(--foundry-text-muted)', fontSize: 13 }}>
         <input
           type="checkbox"
           checked={studentSafeOnly}
@@ -119,9 +119,9 @@ export function ExploreCatalog() {
               padding: '8px 14px',
               fontSize: 12,
               borderRadius: 999,
-              border: `1px solid ${category === f.id ? '#2A4A2A' : '#1A1A1E'}`,
-              background: category === f.id ? '#1A2A1A' : '#0F0F12',
-              color: category === f.id ? '#E8E8EC' : '#8A8A8E',
+              border: `1px solid ${category === f.id ? 'var(--foundry-success-bg)' : 'var(--foundry-border-subtle)'}`,
+              background: category === f.id ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface)',
+              color: category === f.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -130,7 +130,7 @@ export function ExploreCatalog() {
         ))}
       </div>
 
-      <div style={{ marginTop: 12, display: 'flex', gap: 16, flexWrap: 'wrap', fontSize: 11, color: '#6B6B70' }}>
+      <div style={{ marginTop: 12, display: 'flex', gap: 16, flexWrap: 'wrap', fontSize: 11, color: 'var(--foundry-text-faint)' }}>
         {(Object.keys(EXPLORE_STATUS_LABELS) as ExplorePath['status'][]).map((s) => (
           <span key={s} style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
             <span
@@ -148,7 +148,7 @@ export function ExploreCatalog() {
 
       <div style={{ marginTop: 32, display: 'flex', flexDirection: 'column', gap: 16 }}>
         {groups.length === 0 ? (
-          <p style={{ color: '#8A8A8E', fontSize: 14 }}>No paths in this category yet.</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>No paths in this category yet.</p>
         ) : (
           groups.map(({ section, paths }) => {
             const open = openSections[section.id] !== false;
@@ -156,7 +156,7 @@ export function ExploreCatalog() {
               <section
                 key={section.id}
                 style={{
-                  border: '1px solid #1A1A1E',
+                  border: '1px solid var(--foundry-border-subtle)',
                   borderRadius: 8,
                   overflow: 'hidden',
                   background: '#0A0A0C',
@@ -169,18 +169,18 @@ export function ExploreCatalog() {
                     width: '100%',
                     textAlign: 'left',
                     padding: '18px 20px',
-                    background: '#0F0F12',
+                    background: 'var(--foundry-surface)',
                     border: 'none',
                     cursor: 'pointer',
-                    color: '#E8E8EC',
+                    color: 'var(--foundry-text)',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span style={{ fontSize: 15, fontWeight: 400 }}>{section.title}</span>
-                    <span style={{ color: '#6B6B70', fontSize: 18 }}>{open ? '−' : '+'}</span>
+                    <span style={{ color: 'var(--foundry-text-faint)', fontSize: 18 }}>{open ? '−' : '+'}</span>
                   </div>
                   {open && (
-                    <p style={{ color: '#8A8A8E', fontSize: 13, margin: '10px 0 0', lineHeight: 1.5 }}>
+                    <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '10px 0 0', lineHeight: 1.5 }}>
                       {section.description}
                     </p>
                   )}

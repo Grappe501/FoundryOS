@@ -11,14 +11,14 @@ import { assembleAllSignalBundles, assembleSignalBundle } from '../../lib/identi
 import { getStoredDisplayName } from '../../lib/living-worlds/client-journey';
 import { getActiveWorld } from '../../lib/living-worlds/active-worlds';
 
-const ACCENT = '#6B9B6B';
+const ACCENT = 'var(--foundry-success)';
 
 function NarrativeBlock({ narrative, accent = ACCENT }: { narrative: IdentityNarrative; accent?: string }) {
   return (
     <article
       style={{
         padding: 22,
-        background: '#111114',
+        background: 'var(--foundry-surface-raised)',
         borderRadius: 10,
         border: '1px solid #2A3A2A',
       }}
@@ -26,30 +26,30 @@ function NarrativeBlock({ narrative, accent = ACCENT }: { narrative: IdentityNar
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
         {narrative.mentor_name}
       </p>
-      <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 14, lineHeight: 1.75 }}>{narrative.origin}</p>
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{narrative.recent_pattern}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 14, lineHeight: 1.75 }}>{narrative.origin}</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{narrative.recent_pattern}</p>
       <p style={{ color: 'var(--foundry-primary)', fontSize: 14, marginTop: 16, lineHeight: 1.7, fontStyle: 'italic' }}>
         {narrative.mentor_notice}
       </p>
       {narrative.recognition && (
-        <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 14, lineHeight: 1.7, paddingLeft: 12, borderLeft: `3px solid ${accent}` }}>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 14, lineHeight: 1.7, paddingLeft: 12, borderLeft: `3px solid ${accent}` }}>
           {narrative.recognition}
         </p>
       )}
-      <div style={{ marginTop: 18, paddingTop: 16, borderTop: '1px solid #1A1A1E' }}>
-        <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+      <div style={{ marginTop: 18, paddingTop: 16, borderTop: '1px solid var(--foundry-border-subtle)' }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
           Suggested next step
         </p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{narrative.suggested_next.reason}</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.6 }}>{narrative.suggested_next.reason}</p>
         <Link
           href={narrative.suggested_next.href}
           style={{
             display: 'inline-block',
             marginTop: 10,
             padding: '8px 14px',
-            background: '#2A4A2A',
+            background: 'var(--foundry-success-bg)',
             borderRadius: 6,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 13,
             textDecoration: 'none',
           }}
@@ -90,13 +90,13 @@ export function IdentityStoryPanel() {
   return (
     <section style={{ marginTop: 28 }}>
       <h2 style={{ fontSize: 14, color: ACCENT, fontWeight: 400, margin: 0 }}>{story.headline}</h2>
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{story.opening}</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.75 }}>{story.opening}</p>
       <div style={{ marginTop: 20, display: 'grid', gap: 16 }}>
         {(story.primary_world ? [story.primary_world, ...activeWorlds.filter((w) => w.world_slug !== story.primary_world?.world_slug)] : activeWorlds)
           .slice(0, 3)
           .map((n) => (
             <div key={n.world_slug}>
-              <p style={{ color: '#6B6B70', fontSize: 11, margin: '0 0 8px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: '0 0 8px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                 {n.world_name}
               </p>
               <NarrativeBlock narrative={n} />

@@ -29,24 +29,24 @@ export function FlavorWheelBuilder() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         Drag intensity with +/− — your wheel saves into Bourbon DNA flavor lean.
       </p>
       <div style={{ marginTop: 24, display: 'grid', gap: 12, gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))' }}>
         {FLAVOR_WHEEL_NOTES.map((note) => (
-          <div key={note} style={{ padding: 14, background: '#111114', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ color: '#E8E8EC', fontSize: 14, textTransform: 'capitalize' }}>{note}</span>
+          <div key={note} style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <span style={{ color: 'var(--foundry-text)', fontSize: 14, textTransform: 'capitalize' }}>{note}</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-              <button type="button" onClick={() => adjust(note, -1)} style={{ width: 28, height: 28, borderRadius: 4, border: '1px solid #2A2A2E', background: 'transparent', color: '#8A8A8E', cursor: 'pointer' }}>−</button>
+              <button type="button" onClick={() => adjust(note, -1)} style={{ width: 28, height: 28, borderRadius: 4, border: '1px solid var(--foundry-border)', background: 'transparent', color: 'var(--foundry-text-muted)', cursor: 'pointer' }}>−</button>
               <span style={{ color: ACCENT, minWidth: 20, textAlign: 'center' }}>{profile.notes[note] ?? 0}</span>
-              <button type="button" onClick={() => adjust(note, 1)} style={{ width: 28, height: 28, borderRadius: 4, border: '1px solid #2A2A2E', background: 'transparent', color: ACCENT, cursor: 'pointer' }}>+</button>
+              <button type="button" onClick={() => adjust(note, 1)} style={{ width: 28, height: 28, borderRadius: 4, border: '1px solid var(--foundry-border)', background: 'transparent', color: ACCENT, cursor: 'pointer' }}>+</button>
             </div>
           </div>
         ))}
       </div>
       {mounted && (
-        <article style={{ marginTop: 24, padding: 18, background: '#2A2520', borderRadius: 10 }}>
-          <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{flavorWheelSummary(profile)}</p>
+        <article style={{ marginTop: 24, padding: 18, background: 'var(--foundry-border-warm)', borderRadius: 10 }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{flavorWheelSummary(profile)}</p>
           <Link href="/bourbon/dna" style={{ display: 'inline-block', marginTop: 12, color: ACCENT, fontSize: 13 }}>View Bourbon DNA →</Link>
         </article>
       )}

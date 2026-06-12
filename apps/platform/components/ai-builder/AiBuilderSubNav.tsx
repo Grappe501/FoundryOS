@@ -26,7 +26,7 @@ export function AiBuilderSubNav() {
         gap: 6,
         marginTop: 12,
         paddingBottom: 12,
-        borderBottom: '1px solid #1A1A1E',
+        borderBottom: '1px solid var(--foundry-border-subtle)',
       }}
       aria-label="AI Builder world"
     >
@@ -42,9 +42,9 @@ export function AiBuilderSubNav() {
               fontSize: 12,
               borderRadius: 6,
               textDecoration: 'none',
-              color: active ? '#E8E8EC' : '#6B6B70',
-              background: active ? '#1A2A1A' : 'transparent',
-              border: `1px solid ${active ? '#2A4A2A' : 'transparent'}`,
+              color: active ? 'var(--foundry-text)' : 'var(--foundry-text-faint)',
+              background: active ? 'var(--foundry-success-bg-subtle)' : 'transparent',
+              border: `1px solid ${active ? 'var(--foundry-success-bg)' : 'transparent'}`,
             }}
           >
             {label}

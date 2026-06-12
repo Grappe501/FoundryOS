@@ -1,26 +1,421 @@
 /**
- * Foundry global theme — single switch for primary brand color.
- * TEMP PASS-040B2: blue primary (revert to #C8A96E after this round).
+ * Foundry Design System v2 — Forge palette
+ * Warm gold primary · obsidian surfaces · expert typography
  */
+
 :root {
-  --foundry-primary: #4a90d9;
-  --foundry-accent: #7cb4f0;
-  --foundry-bg: #0a0a0b;
-  --foundry-surface: #141416;
-  --foundry-text: #f0f0f2;
-  --foundry-text-muted: #8a8a8e;
+  /* Brand */
+  --foundry-primary: #d4a853;
+  --foundry-primary-bright: #e8c078;
+  --foundry-primary-dim: #a8823f;
+  --foundry-primary-glow: rgba(212, 168, 83, 0.18);
+  --foundry-primary-bg-subtle: rgba(212, 168, 83, 0.08);
+  --foundry-primary-border-dim: rgba(212, 168, 83, 0.22);
+
+  --foundry-accent: #e8895b;
+  --foundry-accent-glow: rgba(232, 137, 91, 0.14);
+
+  --foundry-success: #6aab88;
+  --foundry-success-bright: #7ec4a0;
+  --foundry-success-bg: rgba(106, 171, 136, 0.12);
+  --foundry-success-bg-subtle: rgba(106, 171, 136, 0.06);
+
+  /* Surfaces */
+  --foundry-bg: #060608;
+  --foundry-bg-elevated: #0a0a0e;
+  --foundry-surface: #101014;
+  --foundry-surface-raised: #18181f;
+  --foundry-surface-glass: rgba(16, 16, 20, 0.72);
+
+  /* Borders */
+  --foundry-border: #2a2a34;
+  --foundry-border-subtle: #1c1c24;
+  --foundry-border-warm: rgba(212, 168, 83, 0.14);
+
+  /* Text */
+  --foundry-text: #f2f2f6;
+  --foundry-text-secondary: #c8c8d0;
+  --foundry-text-muted: #9494a0;
+  --foundry-text-faint: #636370;
+  --foundry-text-dim: #484852;
+
+  /* Typography */
+  --foundry-font-sans: var(--font-sans, "DM Sans"), system-ui, sans-serif;
+  --foundry-font-display: var(--font-display, "Instrument Serif"), Georgia, serif;
+
+  /* Radii & depth */
+  --foundry-radius-sm: 6px;
+  --foundry-radius-md: 10px;
+  --foundry-radius-lg: 16px;
+  --foundry-radius-xl: 22px;
+  --foundry-shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.35);
+  --foundry-shadow-md: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --foundry-shadow-glow: 0 0 48px var(--foundry-primary-glow);
+
+  /* Layout */
+  --foundry-page-max: 960px;
+  --foundry-page-wide: 1100px;
+
+  /* Background mesh */
+  --foundry-bg-gradient:
+    radial-gradient(ellipse 90% 55% at 50% -15%, rgba(212, 168, 83, 0.11), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 100% 0%, rgba(232, 137, 91, 0.06), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 0% 100%, rgba(106, 171, 136, 0.04), transparent 45%),
+    var(--foundry-bg);
+}
+
+/* ── Base ───────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
 body {
-  background-color: var(--foundry-bg);
+  background: var(--foundry-bg-gradient);
+  background-attachment: fixed;
   color: var(--foundry-text);
+  font-family: var(--foundry-font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.foundry-body {
+  margin: 0;
+  min-height: 100vh;
 }
 
 a {
+  color: var(--foundry-primary-bright);
+  transition: color 0.15s ease;
+}
+
+a:hover {
   color: var(--foundry-primary);
 }
 
 ::selection {
   background: color-mix(in srgb, var(--foundry-primary) 35%, transparent);
+  color: var(--foundry-text);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--foundry-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--foundry-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foundry-primary-dim);
+}
+
+/* ── Page shells ────────────────────────────── */
+
+.foundry-page {
+  min-height: 100vh;
+  color: var(--foundry-text);
+  padding: 2rem;
+  max-width: var(--foundry-page-max);
+  margin: 0 auto;
+}
+
+.foundry-page--wide {
+  max-width: var(--foundry-page-wide);
+}
+
+.foundry-page--fluid {
+  max-width: none;
+}
+
+/* ── Typography ─────────────────────────────── */
+
+.foundry-eyebrow {
+  color: var(--foundry-primary);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+}
+
+.foundry-eyebrow--success {
+  color: var(--foundry-success);
+}
+
+.foundry-display {
+  font-family: var(--foundry-font-display);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.foundry-h1 {
+  font-family: var(--foundry-font-display);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  margin-top: 12px;
+}
+
+.foundry-lead {
+  color: var(--foundry-text-muted);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+.foundry-muted {
+  color: var(--foundry-text-muted);
+}
+
+.foundry-faint {
+  color: var(--foundry-text-faint);
+}
+
+/* ── Cards & panels ─────────────────────────── */
+
+.foundry-card {
+  background: var(--foundry-surface);
+  border: 1px solid var(--foundry-border-subtle);
+  border-radius: var(--foundry-radius-md);
+  box-shadow: var(--foundry-shadow-sm);
+}
+
+.foundry-card--hero {
+  margin-top: 24px;
+  padding: 36px;
+  background: linear-gradient(145deg, var(--foundry-surface) 0%, var(--foundry-surface-raised) 100%);
+  border: 1px solid var(--foundry-border-warm);
+  border-radius: var(--foundry-radius-lg);
+  box-shadow: var(--foundry-shadow-md), var(--foundry-shadow-glow);
+  position: relative;
+  overflow: hidden;
+}
+
+.foundry-card--hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 20% 0%, var(--foundry-primary-glow), transparent 60%);
+  pointer-events: none;
+}
+
+.foundry-card--glass {
+  background: var(--foundry-surface-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--foundry-border-warm);
+  border-radius: var(--foundry-radius-md);
+}
+
+.foundry-stat {
+  padding: 1rem;
+  background: var(--foundry-surface);
+  border: 1px solid var(--foundry-border-subtle);
+  border-radius: var(--foundry-radius-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.foundry-stat:hover {
+  border-color: var(--foundry-border-warm);
+  box-shadow: var(--foundry-shadow-glow);
+}
+
+.foundry-stat__value {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--foundry-primary);
+}
+
+.foundry-stat__label {
+  font-size: 11px;
+  color: var(--foundry-text-faint);
+  margin-top: 4px;
+}
+
+/* ── Buttons & links ────────────────────────── */
+
+.foundry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 24px;
+  border-radius: var(--foundry-radius-sm);
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.foundry-btn:active {
+  transform: scale(0.98);
+}
+
+.foundry-btn--primary {
+  background: linear-gradient(135deg, var(--foundry-primary-dim) 0%, var(--foundry-primary) 100%);
+  color: var(--foundry-bg);
+  font-weight: 500;
+  border-color: var(--foundry-primary);
+}
+
+.foundry-btn--primary:hover {
+  background: linear-gradient(135deg, var(--foundry-primary) 0%, var(--foundry-primary-bright) 100%);
+  color: var(--foundry-bg);
+}
+
+.foundry-btn--secondary {
+  background: transparent;
+  border-color: var(--foundry-border);
+  color: var(--foundry-text-muted);
+}
+
+.foundry-btn--secondary:hover {
+  border-color: var(--foundry-border-warm);
+  color: var(--foundry-text);
+}
+
+.foundry-btn--success {
+  background: var(--foundry-success-bg);
+  border-color: rgba(106, 171, 136, 0.35);
+  color: var(--foundry-success-bright);
+}
+
+.foundry-btn--ghost {
+  background: transparent;
+  border-color: var(--foundry-border-subtle);
+  color: var(--foundry-text-faint);
+}
+
+.foundry-btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+/* ── Navigation ─────────────────────────────── */
+
+.foundry-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--foundry-border-subtle);
+  margin-bottom: 8px;
+}
+
+.foundry-nav__brand {
+  padding: 8px 14px;
+  font-size: 15px;
+  font-family: var(--foundry-font-display);
+  font-weight: 400;
+  border-radius: var(--foundry-radius-sm);
+  text-decoration: none;
+  color: var(--foundry-text-faint);
+  margin-right: 8px;
+  letter-spacing: 0.02em;
+}
+
+.foundry-nav__brand--active {
+  color: var(--foundry-primary);
+}
+
+.foundry-nav__link {
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: var(--foundry-radius-sm);
+  text-decoration: none;
+  color: var(--foundry-text-muted);
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.foundry-nav__link:hover {
+  color: var(--foundry-text);
+  background: var(--foundry-primary-bg-subtle);
+}
+
+.foundry-nav__link--active {
+  color: var(--foundry-text);
+  background: var(--foundry-primary-bg-subtle);
+  border-color: var(--foundry-primary-border-dim);
+}
+
+.foundry-nav__action {
+  padding: 8px 14px;
+  font-size: 12px;
+  border-radius: var(--foundry-radius-sm);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.foundry-nav__action--primary {
+  color: var(--foundry-bg);
+  background: linear-gradient(135deg, var(--foundry-primary-dim), var(--foundry-primary));
+  border: 1px solid var(--foundry-primary);
+  font-weight: 500;
+}
+
+.foundry-nav__action--primary:hover {
+  color: var(--foundry-bg);
+  background: linear-gradient(135deg, var(--foundry-primary), var(--foundry-primary-bright));
+}
+
+.foundry-nav__action--secondary {
+  color: var(--foundry-text-faint);
+  background: transparent;
+  border: 1px solid var(--foundry-border-subtle);
+}
+
+.foundry-nav__spacer {
+  flex: 1;
+  min-width: 8px;
+}
+
+/* ── Operator / Mission Control ─────────────── */
+
+.foundry-mc-header {
+  border-bottom: 1px solid var(--foundry-border-subtle);
+  padding: 1.5rem 2rem;
+  background: linear-gradient(180deg, var(--foundry-surface) 0%, transparent 100%);
+}
+
+.foundry-mc-title {
+  font-family: var(--foundry-font-display);
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin: 4px 0 0;
+}
+
+.foundry-section-label {
+  font-size: 11px;
+  color: var(--foundry-text-faint);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.foundry-link-accent {
+  color: var(--foundry-primary);
+  text-decoration: none;
+}
+
+.foundry-link-accent:hover {
+  color: var(--foundry-primary-bright);
+}
+
+.foundry-link-success {
+  color: var(--foundry-success);
 }

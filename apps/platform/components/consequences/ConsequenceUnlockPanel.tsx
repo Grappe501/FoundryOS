@@ -9,7 +9,7 @@ const ACCENT = 'var(--foundry-primary)';
 const KIND_COLORS: Record<string, string> = {
   unlock_debate: '#9B6B9B',
   unlock_legendary_object: 'var(--foundry-primary)',
-  unlock_collector_progress: '#6B9B6B',
+  unlock_collector_progress: 'var(--foundry-success)',
   unlock_rabbit_hole: '#6B8EBD',
   mentor_memory: '#BD8E6B',
   unlock_path: '#8E6BBD',
@@ -24,7 +24,7 @@ export function ConsequenceUnlockPanel({ bundle }: { bundle: ConsequenceBundle }
       <p style={{ color: '#8E6BBD', fontSize: 11, margin: 0, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
         The world changed
       </p>
-      <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 10, lineHeight: 1.5 }}>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 10, lineHeight: 1.5 }}>
         Because you completed <strong style={{ fontWeight: 500 }}>{bundle.chain.title}</strong>, new doors opened:
       </p>
       <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
@@ -34,22 +34,22 @@ export function ConsequenceUnlockPanel({ bundle }: { bundle: ConsequenceBundle }
             style={{
               marginTop: 10,
               padding: '12px 14px',
-              background: '#111114',
+              background: 'var(--foundry-surface-raised)',
               borderRadius: 8,
-              borderLeft: `3px solid ${KIND_COLORS[node.kind] ?? '#4A4A4E'}`,
+              borderLeft: `3px solid ${KIND_COLORS[node.kind] ?? 'var(--foundry-text-dim)'}`,
             }}
           >
-            <span style={{ color: KIND_COLORS[node.kind] ?? '#6B6B70', fontSize: 10, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+            <span style={{ color: KIND_COLORS[node.kind] ?? 'var(--foundry-text-faint)', fontSize: 10, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
               {effectKindLabel(node.kind)}
             </span>
             {node.href ? (
-              <Link href={node.href} style={{ display: 'block', color: '#E8E8EC', fontSize: 14, marginTop: 4, textDecoration: 'none' }}>
+              <Link href={node.href} style={{ display: 'block', color: 'var(--foundry-text)', fontSize: 14, marginTop: 4, textDecoration: 'none' }}>
                 {node.label} →
               </Link>
             ) : (
-              <p style={{ color: '#E8E8EC', fontSize: 14, margin: '4px 0 0' }}>{node.label}</p>
+              <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: '4px 0 0' }}>{node.label}</p>
             )}
-            {node.description && <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{node.description}</p>}
+            {node.description && <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>{node.description}</p>}
           </li>
         ))}
       </ul>

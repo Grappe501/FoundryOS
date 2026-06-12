@@ -37,20 +37,20 @@ export default async function AccountPage({ searchParams }: Props) {
   }
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
       {upgraded && (upgraded === 'build' || upgraded === 'mastery') && (
-        <section style={{ marginTop: 16, padding: 16, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-          <p style={{ color: '#6B9B6B', margin: 0, fontSize: 14 }}>
+        <section style={{ marginTop: 16, padding: 16, background: 'var(--foundry-success-bg-subtle)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+          <p style={{ color: 'var(--foundry-success)', margin: 0, fontSize: 14 }}>
             Welcome to {TIER_PRICING[upgraded].label}! Your subscription is being confirmed.
           </p>
         </section>
       )}
-      <section style={{ marginTop: 24, padding: 32, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-        <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>Your account</p>
+      <section style={{ marginTop: 24, padding: 32, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+        <p style={{ color: 'var(--foundry-success)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>Your account</p>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>{displayName}</h1>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>{user.email}</p>
-        <p style={{ color: tierLevel > 1 ? 'var(--foundry-primary)' : '#6B6B70', fontSize: 13, marginTop: 16 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8 }}>{user.email}</p>
+        <p style={{ color: tierLevel > 1 ? 'var(--foundry-primary)' : 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>
           Tier: {tierName.charAt(0).toUpperCase() + tierName.slice(1)}
           {tierLevel === 1 && ' (free)'}
           {tierLevel === 2 && ' — $4/mo'}
@@ -70,18 +70,18 @@ export default async function AccountPage({ searchParams }: Props) {
         </section>
       )}
 
-      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Mission progress synced</h2>
+      <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Mission progress synced</h2>
         {completions.length === 0 ? (
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12 }}>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12 }}>
             No synced missions yet.{' '}
-            <Link href="/ai-builder/missions/homework-assistant" style={{ color: '#6B9B6B' }}>Start Mission 1 →</Link>
+            <Link href="/ai-builder/missions/homework-assistant" style={{ color: 'var(--foundry-success)' }}>Start Mission 1 →</Link>
           </p>
         ) : (
           completions.slice(0, 10).map((c) => (
-            <div key={c.id} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E' }}>
-              <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{c.mission_title}</p>
-              <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>
+            <div key={c.id} style={{ padding: '12px 0', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
+              <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{c.mission_title}</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>
                 {c.world_slug} · {new Date(c.completed_at).toLocaleDateString()}
               </p>
             </div>
@@ -90,14 +90,14 @@ export default async function AccountPage({ searchParams }: Props) {
       </section>
 
       <div style={{ marginTop: 24, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-        <Link href="/my-journey" style={{ padding: '12px 20px', background: '#2A4A2A', borderRadius: 6, color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
+        <Link href="/my-journey" style={{ padding: '12px 20px', background: 'var(--foundry-success-bg)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14, textDecoration: 'none' }}>
           My journey →
         </Link>
-        <Link href="/pricing" style={{ padding: '12px 20px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+        <Link href="/pricing" style={{ padding: '12px 20px', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text-muted)', fontSize: 14, textDecoration: 'none' }}>
           View pricing
         </Link>
         <form action={signOut}>
-          <button type="submit" style={{ padding: '12px 20px', background: 'transparent', border: '1px solid #1A1A1E', borderRadius: 6, color: '#6B6B70', fontSize: 14, cursor: 'pointer' }}>
+          <button type="submit" style={{ padding: '12px 20px', background: 'transparent', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text-faint)', fontSize: 14, cursor: 'pointer' }}>
             Sign out
           </button>
         </form>

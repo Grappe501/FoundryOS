@@ -20,7 +20,7 @@ export function RabbitHolePanel({ topicKey, term, producerSlug, accent = 'var(--
   if (holes.length === 0) return null;
 
   return (
-    <section style={{ marginTop: 28, padding: 22, background: '#0F0F12', borderRadius: 10, border: `1px solid ${accent}33` }}>
+    <section style={{ marginTop: 28, padding: 22, background: 'var(--foundry-surface)', borderRadius: 10, border: `1px solid ${accent}33` }}>
       <p style={{ color: accent, fontSize: 11, letterSpacing: '0.08em', textTransform: 'uppercase', margin: 0 }}>
         Rabbit holes — disappear for an hour
       </p>
@@ -32,14 +32,14 @@ export function RabbitHolePanel({ topicKey, term, producerSlug, accent = 'var(--
             style={{
               display: 'block',
               padding: 14,
-              background: '#111114',
+              background: 'var(--foundry-surface-raised)',
               borderRadius: 6,
               textDecoration: 'none',
-              border: '1px solid #1A1A1E',
+              border: '1px solid var(--foundry-border-subtle)',
             }}
           >
-            <span style={{ color: '#E8E8EC', fontSize: 14 }}>{h.title}</span>
-            <span style={{ display: 'block', color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{h.tease}</span>
+            <span style={{ color: 'var(--foundry-text)', fontSize: 14 }}>{h.title}</span>
+            <span style={{ display: 'block', color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>{h.tease}</span>
           </Link>
         ))}
       </div>

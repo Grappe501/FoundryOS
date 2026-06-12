@@ -24,20 +24,20 @@ function ResultRow({ r }: { r: SearchResult }) {
       style={{
         display: 'block',
         padding: '14px 16px',
-        background: '#111114',
-        border: '1px solid #1A1A1E',
+        background: 'var(--foundry-surface-raised)',
+        border: '1px solid var(--foundry-border-subtle)',
         borderRadius: 8,
         textDecoration: 'none',
         color: 'inherit',
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
-        <span style={{ color: '#E8E8EC', fontSize: 15 }}>{r.title}</span>
-        <span style={{ color: '#6B6B70', fontSize: 11 }}>{TYPE_LABELS[r.type] ?? r.type}</span>
+        <span style={{ color: 'var(--foundry-text)', fontSize: 15 }}>{r.title}</span>
+        <span style={{ color: 'var(--foundry-text-faint)', fontSize: 11 }}>{TYPE_LABELS[r.type] ?? r.type}</span>
       </div>
-      <p style={{ color: '#8A8A8E', fontSize: 13, margin: '8px 0 0', lineHeight: 1.5 }}>{r.summary}</p>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '8px 0 0', lineHeight: 1.5 }}>{r.summary}</p>
       {r.world_slug && (
-        <p style={{ color: '#6B9B6B', fontSize: 11, marginTop: 8 }}>{r.world_slug.replace(/-/g, ' ')}</p>
+        <p style={{ color: 'var(--foundry-success)', fontSize: 11, marginTop: 8 }}>{r.world_slug.replace(/-/g, ' ')}</p>
       )}
     </Link>
   );
@@ -70,10 +70,10 @@ export function GlobalSearchPanel() {
           style={{
             flex: '1 1 280px',
             padding: '12px 16px',
-            background: '#0F0F12',
-            border: '1px solid #2A2A2E',
+            background: 'var(--foundry-surface)',
+            border: '1px solid var(--foundry-border)',
             borderRadius: 8,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 15,
           }}
         />
@@ -82,10 +82,10 @@ export function GlobalSearchPanel() {
           onChange={(e) => setWorldFilter(e.target.value)}
           style={{
             padding: '12px 16px',
-            background: '#0F0F12',
-            border: '1px solid #2A2A2E',
+            background: 'var(--foundry-surface)',
+            border: '1px solid var(--foundry-border)',
             borderRadius: 8,
-            color: '#E8E8EC',
+            color: 'var(--foundry-text)',
             fontSize: 14,
           }}
         >
@@ -96,7 +96,7 @@ export function GlobalSearchPanel() {
             </option>
           ))}
         </select>
-        <label style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#8A8A8E', fontSize: 13 }}>
+        <label style={{ display: 'flex', alignItems: 'center', gap: 8, color: 'var(--foundry-text-muted)', fontSize: 13 }}>
           <input
             type="checkbox"
             checked={studentSafeOnly}
@@ -108,7 +108,7 @@ export function GlobalSearchPanel() {
 
       {response.related_worlds.length > 0 && query && (
         <section style={{ marginTop: 24 }}>
-          <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400 }}>Related worlds</h2>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Related worlds</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 10 }}>
             {response.related_worlds.map((w) => (
               <Link
@@ -119,7 +119,7 @@ export function GlobalSearchPanel() {
                   background: '#0F1210',
                   border: '1px solid #2A3A2A',
                   borderRadius: 999,
-                  color: '#6B9B6B',
+                  color: 'var(--foundry-success)',
                   fontSize: 12,
                   textDecoration: 'none',
                 }}
@@ -132,7 +132,7 @@ export function GlobalSearchPanel() {
       )}
 
       <section style={{ marginTop: 28, display: 'grid', gap: 10 }}>
-        <p style={{ color: '#6B6B70', fontSize: 13, margin: 0 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, margin: 0 }}>
           {response.total} result{response.total === 1 ? '' : 's'}
           {query ? ` for “${query}”` : ''}
         </p>
@@ -140,7 +140,7 @@ export function GlobalSearchPanel() {
           <ResultRow key={r.id} r={r} />
         ))}
         {response.results.length === 0 && (
-          <p style={{ color: '#8A8A8E', fontSize: 14 }}>Try a world name, glossary term, or lesson topic.</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14 }}>Try a world name, glossary term, or lesson topic.</p>
         )}
       </section>
 

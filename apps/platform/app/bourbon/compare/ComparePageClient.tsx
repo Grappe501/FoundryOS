@@ -13,9 +13,9 @@ export default function ComparePageClient() {
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
+      <Link href="/bourbon/investigate" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Investigate HQ</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Compare bourbon</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7, marginTop: 10 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7, marginTop: 10 }}>
         Side-by-side charts — any two bottles or any two distilleries. Not star ratings. Differences that matter.
       </p>
 
@@ -26,8 +26,8 @@ export default function ComparePageClient() {
         </div>
       </section>
 
-      <section style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid #1A1A1E' }}>
-        <h2 style={{ fontSize: 17, color: '#E8E8EC', fontWeight: 400 }}>Compare up to five bottles</h2>
+      <section style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid var(--foundry-border-subtle)' }}>
+        <h2 style={{ fontSize: 17, color: 'var(--foundry-text)', fontWeight: 400 }}>Compare up to five bottles</h2>
         <CompareFiveTool />
       </section>
     </section>

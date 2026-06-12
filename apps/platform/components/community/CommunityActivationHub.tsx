@@ -125,7 +125,7 @@ export function CommunityActivationHub({
     }
   }
 
-  const accent = '#6B9B6B';
+  const accent = 'var(--foundry-success)';
   const sortedMembers = [...members].sort((a, b) => {
     if (a.role === 'mentor') return -1;
     if (b.role === 'mentor') return 1;
@@ -137,10 +137,10 @@ export function CommunityActivationHub({
       <header style={{ marginTop: 16 }}>
         <p style={{ color: accent, fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>Living community</p>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>{config.name}</h1>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
           Belong here. Discussions · weekly challenges · showcases · {config.mentorTitle} recognition.
         </p>
-        <div style={{ marginTop: 16, display: 'flex', gap: 12, flexWrap: 'wrap', fontSize: 12, color: '#6B6B70' }}>
+        <div style={{ marginTop: 16, display: 'flex', gap: 12, flexWrap: 'wrap', fontSize: 12, color: 'var(--foundry-text-faint)' }}>
           <span>{stats.member_count} members</span>
           <span>{stats.discussion_posts ?? discussionPosts.length} discussions</span>
           <span>{stats.posts_this_week} posts this week</span>
@@ -150,21 +150,21 @@ export function CommunityActivationHub({
       </header>
 
       {mentorProfile && (
-        <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #1A2A1A' }}>
+        <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-success-bg-subtle)' }}>
           <p style={{ color: accent, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>{config.mentorTitle}</p>
-          <h2 style={{ color: '#E8E8EC', fontSize: 18, fontWeight: 400, margin: '8px 0 0' }}>{mentorProfile.display_name}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{mentorProfile.bio}</p>
-          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>{mentorProfile.recognition} · {mentorProfile.help_count} helps</p>
+          <h2 style={{ color: 'var(--foundry-text)', fontSize: 18, fontWeight: 400, margin: '8px 0 0' }}>{mentorProfile.display_name}</h2>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{mentorProfile.bio}</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 12 }}>{mentorProfile.recognition} · {mentorProfile.help_count} helps</p>
         </section>
       )}
 
       {!isMember ? (
-        <section style={{ marginTop: 24, padding: 24, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-          <p style={{ color: '#E8E8EC', margin: 0 }}>Join {config.name} to participate in discussions, challenges, and showcases.</p>
-          <button type="button" onClick={handleJoin} disabled={busy} style={{ marginTop: 16, padding: '12px 24px', background: '#2A4A2A', border: 'none', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer' }}>
+        <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-success-bg-subtle)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+          <p style={{ color: 'var(--foundry-text)', margin: 0 }}>Join {config.name} to participate in discussions, challenges, and showcases.</p>
+          <button type="button" onClick={handleJoin} disabled={busy} style={{ marginTop: 16, padding: '12px 24px', background: 'var(--foundry-success-bg)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', cursor: 'pointer' }}>
             {busy ? 'Joining…' : 'Join community →'}
           </button>
-          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 12 }}>
             <Link href="/create-account" style={{ color: accent }}>Sign in</Link> to save your membership across devices.
           </p>
         </section>
@@ -182,9 +182,9 @@ export function CommunityActivationHub({
               padding: '8px 16px',
               fontSize: 12,
               borderRadius: 6,
-              border: `1px solid ${tab === t ? '#2A4A2A' : '#1A1A1E'}`,
-              background: tab === t ? '#1A2A1A' : '#111114',
-              color: tab === t ? accent : '#8A8A8E',
+              border: `1px solid ${tab === t ? 'var(--foundry-success-bg)' : 'var(--foundry-border-subtle)'}`,
+              background: tab === t ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface-raised)',
+              color: tab === t ? accent : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -194,9 +194,9 @@ export function CommunityActivationHub({
       </div>
 
       {tab === 'discussions' && (
-        <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <section style={{ marginTop: 20, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
           <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Community discussions</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>Starter conversations — add your voice.</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>Starter conversations — add your voice.</p>
           {isMember && (
             <>
               <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Discussion topic" style={{ ...fieldStyle, marginTop: 16 }} />
@@ -215,9 +215,9 @@ export function CommunityActivationHub({
       )}
 
       {tab === 'challenge' && (
-        <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <section style={{ marginTop: 20, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
           <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>This week: {weeklyChallenge.theme}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{weeklyChallenge.prompt}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{weeklyChallenge.prompt}</p>
           {myChallengeDone ? (
             <p style={{ color: accent, fontSize: 13, marginTop: 16 }}>You submitted this week&apos;s challenge. Come back next week.</p>
           ) : isMember ? (
@@ -228,22 +228,22 @@ export function CommunityActivationHub({
               </button>
             </>
           ) : (
-            <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>Join to submit.</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>Join to submit.</p>
           )}
           <div style={{ marginTop: 20 }}>
-            <h3 style={{ fontSize: 12, color: '#6B6B70', margin: 0 }}>This week ({weekKey})</h3>
+            <h3 style={{ fontSize: 12, color: 'var(--foundry-text-faint)', margin: 0 }}>This week ({weekKey})</h3>
             {challengePosts.map((p) => (
               <PostCard key={p.id} post={p} config={config} feedbackComment={feedbackComment} setFeedbackComment={setFeedbackComment} onFeedback={handleFeedback} isMember={isMember} userSlug={effectiveSlug} busy={busy} />
             ))}
           </div>
           {weeklyChallenges.length > 1 && (
             <div style={{ marginTop: 28 }}>
-              <h3 style={{ fontSize: 12, color: '#6B6B70', margin: 0 }}>12-week challenge archive</h3>
+              <h3 style={{ fontSize: 12, color: 'var(--foundry-text-faint)', margin: 0 }}>12-week challenge archive</h3>
               {weeklyChallenges.map((w) => (
-                <div key={w.week_key ?? w.theme} style={{ marginTop: 12, padding: 12, background: '#0F0F12', borderRadius: 6 }}>
-                  <p style={{ margin: 0, fontSize: 11, color: '#6B6B70' }}>{w.week_key ?? 'Week'}</p>
+                <div key={w.week_key ?? w.theme} style={{ marginTop: 12, padding: 12, background: 'var(--foundry-surface)', borderRadius: 6 }}>
+                  <p style={{ margin: 0, fontSize: 11, color: 'var(--foundry-text-faint)' }}>{w.week_key ?? 'Week'}</p>
                   <p style={{ margin: '4px 0 0', color: 'var(--foundry-primary)', fontSize: 13 }}>{w.theme}</p>
-                  <p style={{ margin: '6px 0 0', color: '#8A8A8E', fontSize: 13, lineHeight: 1.5 }}>{w.prompt}</p>
+                  <p style={{ margin: '6px 0 0', color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.5 }}>{w.prompt}</p>
                 </div>
               ))}
             </div>
@@ -252,9 +252,9 @@ export function CommunityActivationHub({
       )}
 
       {tab === 'showcase' && (
-        <section style={{ marginTop: 20, padding: 24, background: '#111114', borderRadius: 8 }}>
+        <section style={{ marginTop: 20, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
           <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>{config.showcaseLabel}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{config.peerReviewLabel}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>{config.peerReviewLabel}</p>
           {isMember && (
             <>
               <input value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title (optional)" style={{ ...fieldStyle, marginTop: 16 }} />
@@ -280,25 +280,25 @@ export function CommunityActivationHub({
         </section>
       )}
 
-      <section style={{ marginTop: 32, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
+      <section style={{ marginTop: 32, padding: 24, background: 'var(--foundry-surface)', borderRadius: 8 }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Members & {config.mentorTitle} recognition</h2>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Not badges — recognition for helping others.</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>Not badges — recognition for helping others.</p>
         {sortedMembers.map((m) => {
           const tier = getMentorTier(m.help_count ?? 0);
           return (
-            <div key={m.id} style={{ padding: '10px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13, display: 'flex', justifyContent: 'space-between', gap: 12 }}>
-              <span style={{ color: '#E8E8EC' }}>
+            <div key={m.id} style={{ padding: '10px 0', borderBottom: '1px solid var(--foundry-border-subtle)', fontSize: 13, display: 'flex', justifyContent: 'space-between', gap: 12 }}>
+              <span style={{ color: 'var(--foundry-text)' }}>
                 {m.display_name ?? m.user_slug}
                 {m.role === 'mentor' && <span style={{ color: accent, marginLeft: 8, fontSize: 11 }}>mentor</span>}
               </span>
-              <span style={{ color: m.help_count >= 3 ? accent : '#6B6B70' }}>{tier.label}</span>
+              <span style={{ color: m.help_count >= 3 ? accent : 'var(--foundry-text-faint)' }}>{tier.label}</span>
             </div>
           );
         })}
       </section>
 
-      <p style={{ marginTop: 24, fontSize: 13, color: '#6B6B70' }}>
-        <Link href={`/${config.slug}`} style={{ color: '#6B6B70' }}>← {config.slug.replace(/-/g, ' ')} world</Link>
+      <p style={{ marginTop: 24, fontSize: 13, color: 'var(--foundry-text-faint)' }}>
+        <Link href={`/${config.slug}`} style={{ color: 'var(--foundry-text-faint)' }}>← {config.slug.replace(/-/g, ' ')} world</Link>
         {' · '}
         <Link href={`/${config.slug}/missions`} style={{ color: accent }}>Missions</Link>
       </p>
@@ -329,12 +329,12 @@ function PostCard({
 }) {
   const showFeedback = post.post_type === 'showcase' || post.post_type === 'challenge';
   return (
-    <article style={{ marginTop: 16, padding: 16, background: '#111114', borderRadius: 8, border: '1px solid #1A1A1E' }}>
-      <p style={{ margin: 0, fontSize: 11, color: '#6B6B70' }}>
+    <article style={{ marginTop: 16, padding: 16, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
+      <p style={{ margin: 0, fontSize: 11, color: 'var(--foundry-text-faint)' }}>
         {post.post_type} · {post.author_label ?? post.user_slug} · {new Date(post.created_at).toLocaleDateString()}
       </p>
-      {post.title && <h3 style={{ color: '#E8E8EC', fontSize: 15, margin: '8px 0 0' }}>{post.title}</h3>}
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>{post.body}</p>
+      {post.title && <h3 style={{ color: 'var(--foundry-text)', fontSize: 15, margin: '8px 0 0' }}>{post.title}</h3>}
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>{post.body}</p>
       {(post.feedback_count ?? 0) > 0 && (
         <p style={{ color: accentMuted, fontSize: 12, marginTop: 8 }}>{post.feedback_count} feedback</p>
       )}
@@ -355,16 +355,16 @@ function PostCard({
   );
 }
 
-const accentMuted = '#6B9B6B';
+const accentMuted = 'var(--foundry-success)';
 
 const fieldStyle: React.CSSProperties = {
   width: '100%',
   padding: '12px 14px',
   marginTop: 8,
-  background: '#0F0F12',
-  border: '1px solid #1A1A1E',
+  background: 'var(--foundry-surface)',
+  border: '1px solid var(--foundry-border-subtle)',
   borderRadius: 6,
-  color: '#E8E8EC',
+  color: 'var(--foundry-text)',
   fontSize: 14,
   boxSizing: 'border-box',
   fontFamily: 'inherit',
@@ -372,10 +372,10 @@ const fieldStyle: React.CSSProperties = {
 
 const btnStyle: React.CSSProperties = {
   padding: '12px 20px',
-  background: '#2A4A2A',
+  background: 'var(--foundry-success-bg)',
   border: 'none',
   borderRadius: 6,
-  color: '#E8E8EC',
+  color: 'var(--foundry-text)',
   fontSize: 14,
   cursor: 'pointer',
 };

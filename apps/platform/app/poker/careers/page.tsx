@@ -5,9 +5,9 @@ export default function PokerCareersPage() {
     <section style={{ marginTop: 16 }}>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>What careers use this?</h1>
       {POKER_CAREERS.map((c) => (
-        <article key={c.title} style={{ padding: 20, marginTop: 10, background: '#0F0F12', borderRadius: 8 }}>
+        <article key={c.title} style={{ padding: 20, marginTop: 10, background: 'var(--foundry-surface)', borderRadius: 8 }}>
           <h2 style={{ fontSize: 15, fontWeight: 400, margin: 0 }}>{c.title}</h2>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>{c.connection}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>{c.connection}</p>
         </article>
       ))}
     </section>

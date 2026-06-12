@@ -25,7 +25,7 @@ export function BeyondTheBottleHub() {
         <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 12, lineHeight: 1.25 }}>
           Bourbon in the wild
         </h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
           Unexpected connections — Bourbon Street was not named after whiskey. The Derby serves juleps for a reason.
           Explore the universe, not the syllabus.
         </p>
@@ -41,21 +41,21 @@ export function BeyondTheBottleHub() {
             style={{
               display: 'block',
               padding: 18,
-              background: '#111114',
+              background: 'var(--foundry-surface-raised)',
               borderRadius: 10,
-              border: '1px solid #1A1A1E',
+              border: '1px solid var(--foundry-border-subtle)',
               textDecoration: 'none',
               color: 'inherit',
             }}
           >
-            <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{l.title}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{l.hook}</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{l.title}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6 }}>{l.hook}</p>
           </Link>
         ))}
       </section>
 
       <section style={{ marginTop: 36 }}>
-        <h2 style={{ fontSize: 14, color: '#6B6B70', fontWeight: 400, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-text-faint)', fontWeight: 400, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
           How is this connected to bourbon?
         </h2>
         <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
@@ -66,13 +66,13 @@ export function BeyondTheBottleHub() {
               style={{
                 display: 'block',
                 padding: 18,
-                background: '#0F0F12',
+                background: 'var(--foundry-surface)',
                 borderRadius: 8,
                 textDecoration: 'none',
-                border: '1px solid #1A1A1E',
+                border: '1px solid var(--foundry-border-subtle)',
               }}
             >
-              <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{t.title}</p>
+              <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{t.title}</p>
               <p style={{ color: ACCENT, fontSize: 13, marginTop: 6 }}>{t.hook}</p>
             </Link>
           ))}

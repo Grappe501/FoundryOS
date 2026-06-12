@@ -47,15 +47,15 @@ export function BlindTastingLeague() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         Monthly blind league — guess mashbill, proof, age. Return every month. Track performance.
       </p>
       <p style={{ color: ACCENT, fontSize: 12, marginTop: 8 }}>{challenge.monthKey} · {challenge.title}</p>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 4 }}>{challenge.description}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 4 }}>{challenge.description}</p>
 
       {challenge.questions.map((q, qi) => (
-        <article key={qi} style={{ marginTop: 20, padding: 18, background: '#111114', borderRadius: 10 }}>
-          <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{q.prompt}</p>
+        <article key={qi} style={{ marginTop: 20, padding: 18, background: 'var(--foundry-surface-raised)', borderRadius: 10 }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{q.prompt}</p>
           <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             {q.options.map((opt, oi) => {
               const selected = answers[qi] === oi;
@@ -70,9 +70,9 @@ export function BlindTastingLeague() {
                     padding: '8px 14px',
                     fontSize: 12,
                     borderRadius: 6,
-                    border: `1px solid ${showResult && correct ? '#6B9B6B' : selected ? ACCENT : '#2A2A2E'}`,
-                    background: selected ? '#2A2520' : 'transparent',
-                    color: '#E8E8EC',
+                    border: `1px solid ${showResult && correct ? 'var(--foundry-success)' : selected ? ACCENT : 'var(--foundry-border)'}`,
+                    background: selected ? 'var(--foundry-border-warm)' : 'transparent',
+                    color: 'var(--foundry-text)',
                     cursor: submitted ? 'default' : 'pointer',
                   }}
                 >
@@ -85,7 +85,7 @@ export function BlindTastingLeague() {
       ))}
 
       {!submitted && (
-        <button type="button" disabled={!allAnswered} onClick={submit} style={{ marginTop: 24, padding: '12px 20px', borderRadius: 8, border: `1px solid ${ACCENT}`, background: allAnswered ? '#2A2520' : 'transparent', color: ACCENT, cursor: allAnswered ? 'pointer' : 'not-allowed', fontSize: 14 }}>
+        <button type="button" disabled={!allAnswered} onClick={submit} style={{ marginTop: 24, padding: '12px 20px', borderRadius: 8, border: `1px solid ${ACCENT}`, background: allAnswered ? 'var(--foundry-border-warm)' : 'transparent', color: ACCENT, cursor: allAnswered ? 'pointer' : 'not-allowed', fontSize: 14 }}>
           Submit league score
         </button>
       )}
@@ -98,9 +98,9 @@ export function BlindTastingLeague() {
 
       {past.length > 0 && (
         <section style={{ marginTop: 28 }}>
-          <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400 }}>League history</h2>
+          <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>League history</h2>
           {past.map((s) => (
-            <p key={s.monthKey} style={{ color: '#8A8A8E', fontSize: 13, marginTop: 8 }}>
+            <p key={s.monthKey} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8 }}>
               {s.monthKey}: {s.score}/{s.total}
             </p>
           ))}

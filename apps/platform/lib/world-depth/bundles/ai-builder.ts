@@ -13,7 +13,7 @@ import {
 export const AI_BUILDER_DEPTH: WorldDepthBundle = {
   slug: 'ai-builder',
   displayName: 'AI Builder',
-  accentColor: '#6B9B6B',
+  accentColor: 'var(--foundry-success)',
   portfolioLabel: AI_BUILDER_PORTFOLIO_SECTIONS[0].title,
 
   academyLessons: buildAcademyLessons(

@@ -8,14 +8,14 @@ const ACCENT = 'var(--foundry-primary)';
 export function LoreLegendView({ worldSlug, legendId }: { worldSlug: string; legendId: string }) {
   const lore = getWorldLore(worldSlug);
   const legend = lore?.legends?.find((l) => l.id === legendId);
-  if (!legend) return <p style={{ color: '#8A8A8E' }}>Legend not found.</p>;
+  if (!legend) return <p style={{ color: 'var(--foundry-text-muted)' }}>Legend not found.</p>;
   return <StoryPage backHref={`/${worldSlug}/lore`} backLabel="Mythology" item={legend} type="legend" />;
 }
 
 export function LoreObjectView({ worldSlug, objectId }: { worldSlug: string; objectId: string }) {
   const lore = getWorldLore(worldSlug);
   const obj = lore?.legendaryObjects?.find((o) => o.id === objectId);
-  if (!obj) return <p style={{ color: '#8A8A8E' }}>Object not found.</p>;
+  if (!obj) return <p style={{ color: 'var(--foundry-text-muted)' }}>Object not found.</p>;
   return <StoryPage backHref={`/${worldSlug}/lore`} backLabel="Mythology" item={obj} type="object" />;
 }
 
@@ -39,24 +39,24 @@ function StoryPage({
 
   return (
     <div>
-      <Link href={backHref} style={{ color: '#6B6B70', fontSize: 13 }}>← {backLabel}</Link>
+      <Link href={backHref} style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← {backLabel}</Link>
       <p style={{ color: ACCENT, fontSize: 11, marginTop: 16, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         {type === 'legend' ? 'Legend' : 'Legendary object — not a review'}
       </p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8, lineHeight: 1.25 }}>{title}</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 16, marginTop: 12, lineHeight: 1.6 }}>{hook}</p>
-      {story && <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 16, lineHeight: 1.65 }}>{story}</p>}
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 16, marginTop: 12, lineHeight: 1.6 }}>{hook}</p>
+      {story && <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 16, lineHeight: 1.65 }}>{story}</p>}
 
       {chapters.map((ch) => (
-        <article key={ch.heading} style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 10 }}>
-          <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>{ch.heading}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{ch.body}</p>
+        <article key={ch.heading} style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 10 }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 16, margin: 0 }}>{ch.heading}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{ch.body}</p>
         </article>
       ))}
 
-      <article style={{ marginTop: 28, padding: 20, background: '#2A2520', borderRadius: 10, border: `1px solid ${ACCENT}44` }}>
+      <article style={{ marginTop: 28, padding: 20, background: 'var(--foundry-border-warm)', borderRadius: 10, border: `1px solid ${ACCENT}44` }}>
         <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>Why people remember this</p>
-        <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 10, lineHeight: 1.6 }}>{footer}</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 10, lineHeight: 1.6 }}>{footer}</p>
       </article>
 
       {extraHref && (

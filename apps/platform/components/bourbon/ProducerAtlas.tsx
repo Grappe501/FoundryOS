@@ -62,7 +62,7 @@ export function ProducerAtlas() {
         style={{
           marginTop: 24,
           padding: 24,
-          background: 'linear-gradient(135deg, #1A160F 0%, #0F0F12 100%)',
+          background: 'linear-gradient(135deg, var(--foundry-primary-bg-subtle) 0%, var(--foundry-surface) 100%)',
           border: `1px solid ${ACCENT}44`,
           borderRadius: 12,
         }}
@@ -73,12 +73,12 @@ export function ProducerAtlas() {
         <h2 style={{ fontWeight: 300, fontSize: '1.75rem', marginTop: 12, lineHeight: 1.3 }}>
           Every house has a story — and a sweet spot on the shelf.
         </h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
           Deep dives on history, mash bills, price ladders, and the questions you did not know to ask.
           Explore one producer tonight; your tasting notes will sound different tomorrow.
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 20, alignItems: 'center' }}>
-          <span style={{ color: '#6B6B70', fontSize: 13 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
             {visited.length}/{producers.length} houses explored
           </span>
           <button
@@ -89,7 +89,7 @@ export function ProducerAtlas() {
               background: '#2A4020',
               border: 'none',
               borderRadius: 8,
-              color: '#E8E8EC',
+              color: 'var(--foundry-text)',
               fontSize: 13,
               cursor: 'pointer',
             }}
@@ -105,15 +105,15 @@ export function ProducerAtlas() {
               display: 'block',
               marginTop: 16,
               padding: 16,
-              background: '#111114',
+              background: 'var(--foundry-surface-raised)',
               borderRadius: 8,
               textDecoration: 'none',
               color: 'inherit',
             }}
           >
             <p style={{ color: ACCENT, fontSize: 12, margin: 0 }}>Tonight&apos;s rabbit hole</p>
-            <p style={{ color: '#E8E8EC', fontSize: 16, margin: '8px 0 0' }}>{rabbit.name}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6, fontStyle: 'italic' }}>{rabbit.hookQuestion}</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 16, margin: '8px 0 0' }}>{rabbit.name}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6, fontStyle: 'italic' }}>{rabbit.hookQuestion}</p>
           </Link>
         )}
       </div>
@@ -128,9 +128,9 @@ export function ProducerAtlas() {
               padding: '8px 14px',
               fontSize: 12,
               borderRadius: 999,
-              border: `1px solid ${filter === f.id ? ACCENT : '#2A2A2E'}`,
-              background: filter === f.id ? '#1A160F' : 'transparent',
-              color: filter === f.id ? ACCENT : '#8A8A8E',
+              border: `1px solid ${filter === f.id ? ACCENT : 'var(--foundry-border)'}`,
+              background: filter === f.id ? 'var(--foundry-primary-bg-subtle)' : 'transparent',
+              color: filter === f.id ? ACCENT : 'var(--foundry-text-muted)',
               cursor: 'pointer',
             }}
           >
@@ -166,8 +166,8 @@ function ProducerCard({
       style={{
         display: 'block',
         padding: '20px 22px',
-        background: '#111114',
-        border: `1px solid ${visited ? `${ACCENT}55` : '#1A1A1E'}`,
+        background: 'var(--foundry-surface-raised)',
+        border: `1px solid ${visited ? `${ACCENT}55` : 'var(--foundry-border-subtle)'}`,
         borderRadius: 10,
         textDecoration: 'none',
         color: 'inherit',
@@ -178,17 +178,17 @@ function ProducerCard({
           {visited && (
             <span style={{ color: ACCENT, fontSize: 10, letterSpacing: '0.08em' }}>EXPLORED</span>
           )}
-          <h3 style={{ fontSize: 18, fontWeight: 400, margin: visited ? '4px 0 0' : 0, color: '#E8E8EC' }}>{p.name}</h3>
-          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{p.headquarters} · est. {p.founded}</p>
+          <h3 style={{ fontSize: 18, fontWeight: 400, margin: visited ? '4px 0 0' : 0, color: 'var(--foundry-text)' }}>{p.name}</h3>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>{p.headquarters} · est. {p.founded}</p>
         </div>
         <div style={{ textAlign: 'right' }}>
           <p style={{ color: ACCENT, fontSize: 12, margin: 0 }}>Sweet spot</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 4 }}>{entry?.name}</p>
-          <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 2 }}>{entry?.priceUsd}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 4 }}>{entry?.name}</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 2 }}>{entry?.priceUsd}</p>
         </div>
       </div>
       <p style={{ color: '#A8A8AC', fontSize: 13, marginTop: 14, fontStyle: 'italic', lineHeight: 1.5 }}>{p.hookQuestion}</p>
-      <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 12 }}>{p.styleTags.join(' · ')}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 12 }}>{p.styleTags.join(' · ')}</p>
     </Link>
   );
 }

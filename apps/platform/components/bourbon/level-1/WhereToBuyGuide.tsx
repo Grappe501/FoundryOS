@@ -11,7 +11,7 @@ export function WhereToBuyGuide() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         Where to hunt bottles — regional tips, not affiliate links. Laws and allocation vary; always verify locally.
       </p>
 
@@ -24,9 +24,9 @@ export function WhereToBuyGuide() {
             style={{
               padding: '8px 14px',
               borderRadius: 999,
-              border: `1px solid ${regionId === r.id ? ACCENT : '#2A2A2E'}`,
-              background: regionId === r.id ? '#2A2520' : 'transparent',
-              color: regionId === r.id ? '#E8E8EC' : '#8A8A8E',
+              border: `1px solid ${regionId === r.id ? ACCENT : 'var(--foundry-border)'}`,
+              background: regionId === r.id ? 'var(--foundry-border-warm)' : 'transparent',
+              color: regionId === r.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               fontSize: 12,
               cursor: 'pointer',
             }}
@@ -36,26 +36,26 @@ export function WhereToBuyGuide() {
         ))}
       </div>
 
-      <article style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 12 }}>
-        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>{region.region}</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{region.context}</p>
+      <article style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: 'var(--foundry-text)' }}>{region.region}</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.65 }}>{region.context}</p>
 
         <p style={{ color: ACCENT, fontSize: 12, marginTop: 20, marginBottom: 8 }}>Best bets</p>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
           {region.bestBets.map((b) => (
             <li key={b}>{b}</li>
           ))}
         </ul>
 
         <p style={{ color: ACCENT, fontSize: 12, marginTop: 16, marginBottom: 8 }}>Tips</p>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
           {region.tips.map((t) => (
             <li key={t}>{t}</li>
           ))}
         </ul>
 
         <p style={{ color: '#B88', fontSize: 12, marginTop: 16, marginBottom: 8 }}>Watch for</p>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, paddingLeft: 18, lineHeight: 1.7 }}>
           {region.watchFor.map((w) => (
             <li key={w}>{w}</li>
           ))}

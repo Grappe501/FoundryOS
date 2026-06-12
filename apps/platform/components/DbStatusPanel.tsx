@@ -14,7 +14,7 @@ export function DbStatusPanel({ status }: Props) {
       style={{
         marginBottom: 24,
         padding: 16,
-        background: '#0F0F12',
+        background: 'var(--foundry-surface)',
         border: `1px solid ${borderColor}`,
         borderRadius: 8,
         fontSize: 13,
@@ -25,12 +25,12 @@ export function DbStatusPanel({ status }: Props) {
           Database: {connected ? 'Connected' : status.configured ? 'Unreachable' : 'Not Configured'}
         </span>
         {status.latency_ms !== null && (
-          <span style={{ color: '#6B6B70' }}>{status.latency_ms}ms</span>
+          <span style={{ color: 'var(--foundry-text-faint)' }}>{status.latency_ms}ms</span>
         )}
       </div>
 
       {!status.configured && (
-        <p style={{ color: '#8A8A8E', margin: '12px 0 0' }}>
+        <p style={{ color: 'var(--foundry-text-muted)', margin: '12px 0 0' }}>
           Copy <code style={{ color: 'var(--foundry-primary)' }}>.env.example</code> to{' '}
           <code style={{ color: 'var(--foundry-primary)' }}>.env.local</code> — see docs/SUPABASE_SETUP.md
         </p>
@@ -41,7 +41,7 @@ export function DbStatusPanel({ status }: Props) {
       )}
 
       {connected && (
-        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 8, color: '#8A8A8E' }}>
+        <div style={{ marginTop: 12, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 8, color: 'var(--foundry-text-muted)' }}>
           <div>Verticals: {status.tables.verticals ?? '—'}</div>
           <div>Topics: {status.tables.topics ?? '—'}</div>
           <div>Entities: {status.tables.entities ?? '—'}</div>

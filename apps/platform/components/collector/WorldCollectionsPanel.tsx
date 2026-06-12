@@ -29,7 +29,7 @@ export function WorldCollectionsPanel({
   worldSlug,
   title,
   subtitle,
-  accent = '#6B9B6B',
+  accent = 'var(--foundry-success)',
   maxItems,
   showEmpty = true,
   compact = false,
@@ -56,7 +56,7 @@ export function WorldCollectionsPanel({
       style={{
         marginTop: compact ? 20 : 28,
         padding: compact ? 18 : 22,
-        background: '#111114',
+        background: 'var(--foundry-surface-raised)',
         borderRadius: 10,
         border: '1px solid #2A2A3A',
       }}
@@ -65,10 +65,10 @@ export function WorldCollectionsPanel({
         {heading}
       </p>
       {subtitle && (
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8, lineHeight: 1.5 }}>{subtitle}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8, lineHeight: 1.5 }}>{subtitle}</p>
       )}
       {!worldSlug && (
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8, lineHeight: 1.5 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8, lineHeight: 1.5 }}>
           Identity objects earned across worlds — not badges, but proof of who you are becoming.
         </p>
       )}
@@ -87,7 +87,7 @@ export function WorldCollectionsPanel({
       </div>
 
       {!worldSlug && hasProgress && (
-        <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 16, marginBottom: 0 }}>
+        <p style={{ color: 'var(--foundry-text-dim)', fontSize: 12, marginTop: 16, marginBottom: 0 }}>
           {views.filter((v) => v.unlocked_count > 0).length} collections in progress across{' '}
           {new Set(views.filter((v) => v.unlocked_count > 0).map((v) => v.definition.world_slug)).size} worlds
         </p>
@@ -113,11 +113,11 @@ function CollectionCard({
   const inner = (
     <>
       {!compact && (
-        <p style={{ color: '#6B6B70', fontSize: 10, margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0, letterSpacing: '0.06em', textTransform: 'uppercase' }}>
           {worldLabel}
         </p>
       )}
-      <p style={{ color: '#E8E8EC', fontSize: compact ? 15 : 16, margin: compact ? 0 : '6px 0 0', fontWeight: 400 }}>
+      <p style={{ color: 'var(--foundry-text)', fontSize: compact ? 15 : 16, margin: compact ? 0 : '6px 0 0', fontWeight: 400 }}>
         {definition.title}
       </p>
       <p style={{ color: accent, fontSize: 13, marginTop: 8 }}>{progress_label}</p>
@@ -125,7 +125,7 @@ function CollectionCard({
         style={{
           marginTop: 10,
           height: 3,
-          background: '#1A1A1E',
+          background: 'var(--foundry-border-subtle)',
           borderRadius: 2,
           overflow: 'hidden',
         }}
@@ -141,12 +141,12 @@ function CollectionCard({
         />
       </div>
       {latest && (
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 10, lineHeight: 1.4 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 10, lineHeight: 1.4 }}>
           Latest: {latest.label}
         </p>
       )}
       {!latest && unlocked_count === 0 && (
-        <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 10, lineHeight: 1.4, fontStyle: 'italic' }}>
+        <p style={{ color: 'var(--foundry-text-dim)', fontSize: 12, marginTop: 10, lineHeight: 1.4, fontStyle: 'italic' }}>
           {definition.story.slice(0, 80)}…
         </p>
       )}
@@ -163,9 +163,9 @@ function CollectionCard({
         style={{
           display: 'block',
           padding: compact ? 14 : 16,
-          background: '#0F0F12',
+          background: 'var(--foundry-surface)',
           borderRadius: 8,
-          border: `1px solid ${unlocked_count > 0 ? '#2A3A2A' : '#1A1A1E'}`,
+          border: `1px solid ${unlocked_count > 0 ? '#2A3A2A' : 'var(--foundry-border-subtle)'}`,
           textDecoration: 'none',
           color: 'inherit',
         }}
@@ -179,9 +179,9 @@ function CollectionCard({
     <div
       style={{
         padding: compact ? 14 : 16,
-        background: '#0F0F12',
+        background: 'var(--foundry-surface)',
         borderRadius: 8,
-        border: `1px solid ${unlocked_count > 0 ? '#2A3A2A' : '#1A1A1E'}`,
+        border: `1px solid ${unlocked_count > 0 ? '#2A3A2A' : 'var(--foundry-border-subtle)'}`,
       }}
     >
       {inner}
@@ -203,13 +203,13 @@ export function CrossWorldCollectionsSummary() {
 
   return (
     <section style={{ marginTop: 28 }}>
-      <h2 style={{ fontSize: 14, color: '#6B9B6B', fontWeight: 400 }}>Collections in progress</h2>
-      <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>
+      <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', fontWeight: 400 }}>Collections in progress</h2>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 6 }}>
         Earned through action — each item is evidence, not a sticker.
       </p>
       <div style={{ marginTop: 14, display: 'grid', gap: 10 }}>
         {views.slice(0, 12).map((view) => (
-          <CollectionCard key={view.definition.id} view={view} accent="#6B9B6B" compact />
+          <CollectionCard key={view.definition.id} view={view} accent="var(--foundry-success)" compact />
         ))}
       </div>
     </section>

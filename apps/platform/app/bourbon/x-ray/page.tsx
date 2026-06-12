@@ -7,7 +7,7 @@ export default async function XRayPage({ searchParams }: { searchParams: Promise
   const { bottle } = await searchParams;
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/investigate" style={{ color: '#6B6B70', fontSize: 13 }}>← Investigate HQ</Link>
+      <Link href="/bourbon/investigate" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Investigate HQ</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Bottle X-Ray</h1>
       <BottleXRayTool initialSlug={bottle} />
     </section>

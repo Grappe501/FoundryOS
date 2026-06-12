@@ -18,7 +18,7 @@ function groupByTrack(missions: (WorldMission & { track?: string; trackLabel?: s
 export function WorldMissionTracks({
   missions,
   basePath,
-  accent = '#6B9B6B',
+  accent = 'var(--foundry-success)',
   subtitle,
 }: {
   missions: (WorldMission & { track?: string; trackLabel?: string })[];
@@ -32,10 +32,10 @@ export function WorldMissionTracks({
   return (
     <section style={{ marginTop: 16 }}>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>Missions</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
         {subtitle ?? FOUNDRY_MISSION_TRACKS_SUBTITLE}
       </p>
-      <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
         {missions.length} missions · ~{Math.round(totalHours)}+ hours of immersion · 30+ days of engagement
       </p>
 
@@ -53,8 +53,8 @@ export function WorldMissionTracks({
                   display: 'block',
                   padding: 20,
                   marginBottom: 10,
-                  background: m.number === 1 ? '#0F0F12' : '#111114',
-                  border: m.number === 1 ? `1px solid ${accent}44` : '1px solid #1A1A1E',
+                  background: m.number === 1 ? 'var(--foundry-surface)' : 'var(--foundry-surface-raised)',
+                  border: m.number === 1 ? `1px solid ${accent}44` : '1px solid var(--foundry-border-subtle)',
                   borderRadius: 8,
                   textDecoration: 'none',
                   color: 'inherit',
@@ -63,9 +63,9 @@ export function WorldMissionTracks({
                 <p style={{ color: accent, fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
                   Mission {m.number}
                 </p>
-                <h3 style={{ fontSize: 17, fontWeight: 400, marginTop: 8, color: '#E8E8EC' }}>{m.title}</h3>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{m.subtitle}</p>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 10 }}>{m.timeEstimate}</p>
+                <h3 style={{ fontSize: 17, fontWeight: 400, marginTop: 8, color: 'var(--foundry-text)' }}>{m.title}</h3>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6 }}>{m.subtitle}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 10 }}>{m.timeEstimate}</p>
               </Link>
             ))}
           </div>

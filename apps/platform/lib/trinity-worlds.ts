@@ -28,8 +28,8 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     portfolioKey: 'foundry-ai-portfolio',
     portfolioLabel: 'My AI Portfolio',
     missionCount: getMissionCount('ai-builder'),
-    accent: '#6B9B6B',
-    border: '#2A4A2A',
+    accent: 'var(--foundry-success)',
+    border: 'var(--foundry-success-bg)',
     nextWorld: 'financial-independence',
   },
   {
@@ -42,7 +42,7 @@ export const TRINITY_WORLDS: TrinityWorld[] = [
     portfolioLabel: 'My Wealth Portfolio',
     missionCount: getMissionCount('financial-independence'),
     accent: 'var(--foundry-primary)',
-    border: '#4A4020',
+    border: 'var(--foundry-primary-border-dim)',
     nextWorld: 'public-speaking',
   },
   {

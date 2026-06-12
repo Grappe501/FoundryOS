@@ -57,16 +57,16 @@ export function BetaJoinForm() {
 
   if (status === 'done') {
     return (
-      <section style={{ padding: 28, background: '#1A2A1A', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-        <p style={{ color: '#6B9B6B', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>You&apos;re on the list</p>
-        <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 12, lineHeight: 1.6 }}>
+      <section style={{ padding: 28, background: 'var(--foundry-success-bg-subtle)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+        <p style={{ color: 'var(--foundry-success)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>You&apos;re on the list</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 12, lineHeight: 1.6 }}>
           We&apos;ll invite handpicked testers soon. Meanwhile, explore worlds or create an account to save progress.
         </p>
         <div style={{ marginTop: 20, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-          <Link href="/create-account" style={{ padding: '12px 20px', background: '#2A4A2A', borderRadius: 6, color: '#E8E8EC', fontSize: 14, textDecoration: 'none' }}>
+          <Link href="/create-account" style={{ padding: '12px 20px', background: 'var(--foundry-success-bg)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14, textDecoration: 'none' }}>
             Create account →
           </Link>
-          <Link href="/explore" style={{ padding: '12px 20px', border: '1px solid #1A1A1E', borderRadius: 6, color: '#8A8A8E', fontSize: 14, textDecoration: 'none' }}>
+          <Link href="/explore" style={{ padding: '12px 20px', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text-muted)', fontSize: 14, textDecoration: 'none' }}>
             Explore paths
           </Link>
         </div>
@@ -76,24 +76,24 @@ export function BetaJoinForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label style={{ display: 'block', color: '#8A8A8E', fontSize: 13 }}>
+      <label style={{ display: 'block', color: 'var(--foundry-text-muted)', fontSize: 13 }}>
         Email
         <input
           type="email"
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          style={{ width: '100%', padding: '12px 14px', marginTop: 8, background: '#111114', border: '1px solid #1A1A1E', borderRadius: 6, color: '#E8E8EC', fontSize: 14 }}
+          style={{ width: '100%', padding: '12px 14px', marginTop: 8, background: 'var(--foundry-surface-raised)', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14 }}
           placeholder="you@example.com"
         />
       </label>
 
-      <label style={{ display: 'block', color: '#8A8A8E', fontSize: 13, marginTop: 20 }}>
+      <label style={{ display: 'block', color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 20 }}>
         I am a…
         <select
           value={segment}
           onChange={(e) => setSegment(e.target.value)}
-          style={{ width: '100%', padding: '12px 14px', marginTop: 8, background: '#111114', border: '1px solid #1A1A1E', borderRadius: 6, color: '#E8E8EC', fontSize: 14 }}
+          style={{ width: '100%', padding: '12px 14px', marginTop: 8, background: 'var(--foundry-surface-raised)', border: '1px solid var(--foundry-border-subtle)', borderRadius: 6, color: 'var(--foundry-text)', fontSize: 14 }}
         >
           {SEGMENTS.map((s) => (
             <option key={s.value} value={s.value}>{s.label}</option>
@@ -102,7 +102,7 @@ export function BetaJoinForm() {
       </label>
 
       <fieldset style={{ border: 'none', padding: 0, marginTop: 20 }}>
-        <legend style={{ color: '#8A8A8E', fontSize: 13 }}>Interested worlds</legend>
+        <legend style={{ color: 'var(--foundry-text-muted)', fontSize: 13 }}>Interested worlds</legend>
         <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {WORLDS.map((w) => {
             const active = worlds.includes(w.slug);
@@ -115,9 +115,9 @@ export function BetaJoinForm() {
                   padding: '8px 14px',
                   fontSize: 12,
                   borderRadius: 6,
-                  border: `1px solid ${active ? '#2A4A2A' : '#1A1A1E'}`,
-                  background: active ? '#1A2A1A' : '#111114',
-                  color: active ? '#6B9B6B' : '#8A8A8E',
+                  border: `1px solid ${active ? 'var(--foundry-success-bg)' : 'var(--foundry-border-subtle)'}`,
+                  background: active ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface-raised)',
+                  color: active ? 'var(--foundry-success)' : 'var(--foundry-text-muted)',
                   cursor: 'pointer',
                 }}
               >
@@ -136,10 +136,10 @@ export function BetaJoinForm() {
         style={{
           marginTop: 24,
           padding: '14px 28px',
-          background: '#2A4A2A',
+          background: 'var(--foundry-success-bg)',
           border: 'none',
           borderRadius: 6,
-          color: '#E8E8EC',
+          color: 'var(--foundry-text)',
           fontSize: 14,
           cursor: status === 'loading' ? 'wait' : 'pointer',
         }}

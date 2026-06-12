@@ -6,7 +6,7 @@ export const metadata = { title: 'Bourbon Universe Map | Foundry' };
 export default function BourbonUniversePage() {
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/lore" style={{ color: '#6B6B70', fontSize: 13 }}>← Mythology</Link>
+      <Link href="/bourbon/lore" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Mythology</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>The bourbon universe</h1>
       <BourbonUniverseMap />
     </section>

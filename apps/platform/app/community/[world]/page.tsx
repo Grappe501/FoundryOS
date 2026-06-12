@@ -54,9 +54,9 @@ export default async function CommunityWorldPage({ params }: Props) {
   const challengePrompt = currentChallenge?.prompt ?? config.weeklyChallengePrompt;
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
-      <CommunityEventsStrip worldSlug={config.slug} accent="#6B9B6B" />
+      <CommunityEventsStrip worldSlug={config.slug} accent="var(--foundry-success)" />
       <CommunityFeedTracker worldSlug={config.slug} />
       <CommunityActivationHub
         config={config}

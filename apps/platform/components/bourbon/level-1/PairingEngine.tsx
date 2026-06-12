@@ -20,9 +20,9 @@ export function PairingEngine() {
             style={{
               padding: '10px 16px',
               borderRadius: 999,
-              border: `1px solid ${pick.slug === p.slug ? ACCENT : '#2A2A2E'}`,
-              background: pick.slug === p.slug ? '#4A4020' : 'transparent',
-              color: pick.slug === p.slug ? '#E8E8EC' : '#8A8A8E',
+              border: `1px solid ${pick.slug === p.slug ? ACCENT : 'var(--foundry-border)'}`,
+              background: pick.slug === p.slug ? 'var(--foundry-primary-border-dim)' : 'transparent',
+              color: pick.slug === p.slug ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
               cursor: 'pointer',
               fontSize: 13,
             }}
@@ -32,16 +32,16 @@ export function PairingEngine() {
         ))}
       </div>
 
-      <section style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 12 }}>
-        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: '#E8E8EC' }}>Pour with {pick.food}</h2>
+      <section style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 400, margin: 0, color: 'var(--foundry-text)' }}>Pour with {pick.food}</h2>
         {pick.bourbons.map((b) => (
-          <article key={b.bottleSlug} style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid #1A1A1E' }}>
+          <article key={b.bottleSlug} style={{ marginTop: 20, paddingTop: 16, borderTop: '1px solid var(--foundry-border-subtle)' }}>
             <p style={{ color: ACCENT, fontSize: 15, margin: 0 }}>{b.name}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.65 }}>{b.why}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.65 }}>{b.why}</p>
           </article>
         ))}
         {pick.lessonSlug && (
-          <Link href={`/bourbon/academy/${pick.lessonSlug}`} style={{ display: 'inline-block', marginTop: 20, color: '#6B6B70', fontSize: 13 }}>
+          <Link href={`/bourbon/academy/${pick.lessonSlug}`} style={{ display: 'inline-block', marginTop: 20, color: 'var(--foundry-text-faint)', fontSize: 13 }}>
             Related lesson (optional) →
           </Link>
         )}

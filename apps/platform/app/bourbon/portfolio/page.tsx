@@ -12,7 +12,7 @@ export default function PortfolioPage() {
   const bundle = getWorldDepthOrThrow('bourbon');
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
+      <Link href="/bourbon/level-1" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Level 1 HQ</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: '12px 0 0' }}>{bundle.portfolioLabel}</h1>
       <BourbonShelfTracker />
       <WorldCollectionsPanel

@@ -78,7 +78,7 @@ export default function PassportPage() {
   }, [mounted, artifactTick]);
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <ConsumerNav />
       <p style={{ color: 'var(--foundry-primary)', fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>
         Foundry Passport · Preview
@@ -86,37 +86,37 @@ export default function PassportPage() {
       <h1 style={{ fontWeight: 300, fontSize: '2.25rem', marginTop: 8 }}>
         {mounted && data ? data.name : 'Your Passport'}
       </h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>
         Not a profile — evidence of who you are becoming across worlds.
       </p>
 
       {mounted && data && (
         <>
-          <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 10 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+          <section style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 10 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               Evidence wall
             </p>
-            <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '12px 0 0' }}>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 28, fontWeight: 300, margin: '12px 0 0' }}>
               {data.evidence.total} artifact{data.evidence.total === 1 ? '' : 's'}
             </p>
             {data.evidence.total === 0 ? (
-              <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
+              <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
                 Save a tasting note, comparison, or shelf entry — artifacts appear here as proof, not levels.
               </p>
             ) : (
               <>
                 {Object.entries(data.evidence.by_world).map(([slug, count]) => (
-                  <p key={slug} style={{ color: '#8A8A8E', fontSize: 14, margin: '8px 0 0' }}>
+                  <p key={slug} style={{ color: 'var(--foundry-text-muted)', fontSize: 14, margin: '8px 0 0' }}>
                     <span style={{ color: 'var(--foundry-primary)' }}>{WORLD_LABELS[slug] ?? slug}</span>
                     {' · '}
                     {count} artifact{count === 1 ? '' : 's'}
                   </p>
                 ))}
                 {data.evidence.latest && (
-                  <div style={{ marginTop: 16, padding: 14, background: '#111114', borderRadius: 8 }}>
-                    <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Latest artifact</p>
-                    <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 6 }}>{data.evidence.latest.metadata.title}</p>
-                    <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>
+                  <div style={{ marginTop: 16, padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+                    <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Latest artifact</p>
+                    <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 6 }}>{data.evidence.latest.metadata.title}</p>
+                    <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>
                       {data.evidence.latest.type.replace('_', ' ')} ·{' '}
                       {WORLD_LABELS[data.evidence.latest.metadata.world_slug] ??
                         data.evidence.latest.metadata.world_slug}
@@ -127,22 +127,22 @@ export default function PassportPage() {
             )}
           </section>
 
-          <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 10 }}>
-            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+          <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 10 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               Activity
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
               {['Explorer', 'Collector', data.stats.challenges > 0 ? 'Participant' : null].filter(Boolean).map((s) => (
-                <span key={s} style={{ padding: '6px 12px', background: '#111114', borderRadius: 4, fontSize: 12, color: 'var(--foundry-primary)' }}>
+                <span key={s} style={{ padding: '6px 12px', background: 'var(--foundry-surface-raised)', borderRadius: 4, fontSize: 12, color: 'var(--foundry-primary)' }}>
                   {s}
                 </span>
               ))}
             </div>
             {data.worldTitles.length > 0 && (
               <div style={{ marginTop: 20 }}>
-                <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Worlds</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Worlds</p>
                 {data.worldTitles.map((t) => (
-                  <p key={t} style={{ color: '#E8E8EC', fontSize: 14, margin: '8px 0 0' }}>
+                  <p key={t} style={{ color: 'var(--foundry-text)', fontSize: 14, margin: '8px 0 0' }}>
                     {t}
                   </p>
                 ))}
@@ -150,26 +150,26 @@ export default function PassportPage() {
             )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12, marginTop: 20, fontSize: 13 }}>
               <div>
-                Artifacts <span style={{ color: '#E8E8EC' }}>{data.stats.artifacts}</span>
+                Artifacts <span style={{ color: 'var(--foundry-text)' }}>{data.stats.artifacts}</span>
               </div>
               <div>
-                Collection items <span style={{ color: '#E8E8EC' }}>{data.stats.collections}</span>
+                Collection items <span style={{ color: 'var(--foundry-text)' }}>{data.stats.collections}</span>
               </div>
               <div>
-                Events touched <span style={{ color: '#E8E8EC' }}>{data.stats.events_participated}</span>
+                Events touched <span style={{ color: 'var(--foundry-text)' }}>{data.stats.events_participated}</span>
               </div>
               <div>
-                Weekly votes <span style={{ color: '#E8E8EC' }}>{data.stats.votes}</span>
+                Weekly votes <span style={{ color: 'var(--foundry-text)' }}>{data.stats.votes}</span>
               </div>
               <div>
-                Challenges done <span style={{ color: '#E8E8EC' }}>{data.stats.challenges}</span>
+                Challenges done <span style={{ color: 'var(--foundry-text)' }}>{data.stats.challenges}</span>
               </div>
             </div>
           </section>
 
           {data.story.primary_world && (
             <section style={{ marginTop: 24 }}>
-              <p style={{ color: '#6B9B6B', fontSize: 13, lineHeight: 1.75 }}>
+              <p style={{ color: 'var(--foundry-success)', fontSize: 13, lineHeight: 1.75 }}>
                 {data.story.primary_world.mentor_notice}
               </p>
             </section>
@@ -180,7 +180,7 @@ export default function PassportPage() {
       <Link href="/passport/timeline" style={{ display: 'inline-block', marginTop: 28, color: 'var(--foundry-primary)', fontSize: 14 }}>
         Memory timeline →
       </Link>
-      <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, marginLeft: 20, color: '#6B9B6B', fontSize: 14 }}>
+      <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, marginLeft: 20, color: 'var(--foundry-success)', fontSize: 14 }}>
         ← Full story on My Journey
       </Link>
     </main>

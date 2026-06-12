@@ -9,8 +9,8 @@ const ACCENT = 'var(--foundry-primary)';
 function StatLine({ label, count }: { label: string; count: number }) {
   if (count === 0) return null;
   return (
-    <p style={{ color: '#8A8A8E', fontSize: 13, margin: '6px 0 0' }}>
-      <span style={{ color: '#E8E8EC' }}>{count}</span> {label}
+    <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '6px 0 0' }}>
+      <span style={{ color: 'var(--foundry-text)' }}>{count}</span> {label}
     </p>
   );
 }
@@ -64,7 +64,7 @@ export function ArtifactExperiencePanel({
       <p style={{ color: ACCENT, fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         Knowledge + experience
       </p>
-      <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 8 }}>{entityName}</p>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 8 }}>{entityName}</p>
       <StatLine label="reviews" count={stats.yours.reviews} />
       <StatLine label="comparisons" count={stats.yours.comparisons} />
       <StatLine label="tasting notes" count={stats.yours.journals + stats.yours.notes} />
@@ -73,7 +73,7 @@ export function ArtifactExperiencePanel({
       {stats.yours.collection_entries > 0 && (
         <StatLine label="shelf entries" count={stats.yours.collection_entries} />
       )}
-      <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 12 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 12 }}>
         Community totals sync when artifacts persist to the graph (040D).
       </p>
     </section>

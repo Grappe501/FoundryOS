@@ -40,13 +40,13 @@ export default async function OperatorOpportunitiesPage() {
 
   return (
 
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 1040, margin: '0 auto' }}>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 1040, margin: '0 auto' }}>
 
-      <Link href="/operator" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
+      <Link href="/operator" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Mission Control</Link>
 
       <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 13, marginLeft: 16 }}>Flywheel</Link>
 
-      <Link href="/growth/opportunities" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Traffic registry</Link>
+      <Link href="/growth/opportunities" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Traffic registry</Link>
 
 
 
@@ -54,7 +54,7 @@ export default async function OperatorOpportunitiesPage() {
 
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Incoming Worlds & Acquisition</h1>
 
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
 
         Ranked pipeline for paths Steve is considering — not a build queue. Add worlds here, rank by acquisition potential, then prove channels before depth.
 
@@ -66,7 +66,7 @@ export default async function OperatorOpportunitiesPage() {
 
         <p style={{ color: 'var(--foundry-primary)', fontSize: 13, margin: 0, fontWeight: 500 }}>{FLYWHEEL_STRATEGIC_LOCK.focus}</p>
 
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
 
           {FLYWHEEL_STRATEGIC_LOCK.detail}
 
@@ -80,9 +80,9 @@ export default async function OperatorOpportunitiesPage() {
 
         <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: 0 }}>Incoming worlds (ranked)</h2>
 
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
 
-          Source: <code style={{ color: '#8A8A8E' }}>apps/platform/lib/incoming-worlds.ts</code> · Chess is rank #9 — prototype only.
+          Source: <code style={{ color: 'var(--foundry-text-muted)' }}>apps/platform/lib/incoming-worlds.ts</code> · Chess is rank #9 — prototype only.
 
         </p>
 
@@ -92,7 +92,7 @@ export default async function OperatorOpportunitiesPage() {
 
             <thead>
 
-              <tr style={{ color: '#6B6B70', textAlign: 'left', borderBottom: '1px solid #1A1A1E' }}>
+              <tr style={{ color: 'var(--foundry-text-faint)', textAlign: 'left', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
 
                 <th style={{ padding: 10 }}>#</th>
 
@@ -114,15 +114,15 @@ export default async function OperatorOpportunitiesPage() {
 
               {incoming.map((w) => (
 
-                <tr key={w.slug} style={{ borderBottom: '1px solid #1A1A1E' }}>
+                <tr key={w.slug} style={{ borderBottom: '1px solid var(--foundry-border-subtle)' }}>
 
-                  <td style={{ padding: 10, color: '#6B6B70' }}>{w.rank}</td>
+                  <td style={{ padding: 10, color: 'var(--foundry-text-faint)' }}>{w.rank}</td>
 
-                  <td style={{ padding: 10, color: '#E8E8EC' }}>
+                  <td style={{ padding: 10, color: 'var(--foundry-text)' }}>
 
                     {w.live_href ? (
 
-                      <Link href={w.live_href} style={{ color: '#E8E8EC', textDecoration: 'none' }}>
+                      <Link href={w.live_href} style={{ color: 'var(--foundry-text)', textDecoration: 'none' }}>
 
                         {w.name}
 
@@ -134,7 +134,7 @@ export default async function OperatorOpportunitiesPage() {
 
                     )}
 
-                    <div style={{ color: '#6B6B70', fontSize: 10, marginTop: 2 }}>
+                    <div style={{ color: 'var(--foundry-text-faint)', fontSize: 10, marginTop: 2 }}>
 
                       {w.frame} · {w.outcome}
 
@@ -152,7 +152,7 @@ export default async function OperatorOpportunitiesPage() {
 
                           w.status === 'live'
 
-                            ? '#6B9B6B'
+                            ? 'var(--foundry-success)'
 
                             : w.status === 'in_build'
 
@@ -162,7 +162,7 @@ export default async function OperatorOpportunitiesPage() {
 
                                 ? 'var(--foundry-primary)'
 
-                                : '#6B6B70',
+                                : 'var(--foundry-text-faint)',
 
                       }}
 
@@ -176,9 +176,9 @@ export default async function OperatorOpportunitiesPage() {
 
                   <td style={{ padding: 10, color: 'var(--foundry-primary)' }}>{w.score}</td>
 
-                  <td style={{ padding: 10, color: '#8A8A8E', maxWidth: 200 }}>{formatAvenues(w.acquisition_avenues)}</td>
+                  <td style={{ padding: 10, color: 'var(--foundry-text-muted)', maxWidth: 200 }}>{formatAvenues(w.acquisition_avenues)}</td>
 
-                  <td style={{ padding: 10, color: '#8A8A8E', fontSize: 11 }}>{w.note}</td>
+                  <td style={{ padding: 10, color: 'var(--foundry-text-muted)', fontSize: 11 }}>{w.note}</td>
 
                 </tr>
 
@@ -210,7 +210,7 @@ export default async function OperatorOpportunitiesPage() {
 
               <thead>
 
-                <tr style={{ color: '#6B6B70', textAlign: 'left', borderBottom: '1px solid #1A1A1E' }}>
+                <tr style={{ color: 'var(--foundry-text-faint)', textAlign: 'left', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
 
                   <th style={{ padding: 10 }}>Domain</th>
 
@@ -236,31 +236,31 @@ export default async function OperatorOpportunitiesPage() {
 
                 {domains.map((d) => (
 
-                  <tr key={d.slug} style={{ borderBottom: '1px solid #1A1A1E' }}>
+                  <tr key={d.slug} style={{ borderBottom: '1px solid var(--foundry-border-subtle)' }}>
 
-                    <td style={{ padding: 10, color: '#E8E8EC' }}>
+                    <td style={{ padding: 10, color: 'var(--foundry-text)' }}>
 
                       {d.display_name}
 
-                      <div style={{ color: '#6B6B70', fontSize: 10, marginTop: 2 }}>{d.recommendation}</div>
+                      <div style={{ color: 'var(--foundry-text-faint)', fontSize: 10, marginTop: 2 }}>{d.recommendation}</div>
 
                     </td>
 
                     <td style={{ padding: 10 }}>
 
-                      <span style={{ color: d.status === 'live' ? '#6B9B6B' : '#6B9BC9' }}>{d.status}</span>
+                      <span style={{ color: d.status === 'live' ? 'var(--foundry-success)' : '#6B9BC9' }}>{d.status}</span>
 
                     </td>
 
-                    <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.traffic}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{d.scores.traffic}</td>
 
-                    <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.conversion}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{d.scores.conversion}</td>
 
-                    <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.retention}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{d.scores.retention}</td>
 
-                    <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.revenue}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{d.scores.revenue}</td>
 
-                    <td style={{ padding: 10, color: '#8A8A8E' }}>{d.scores.community_potential}</td>
+                    <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>{d.scores.community_potential}</td>
 
                     <td style={{ padding: 10, color: 'var(--foundry-primary)', fontWeight: 600, fontSize: 15 }}>{d.total_score}</td>
 
@@ -274,7 +274,7 @@ export default async function OperatorOpportunitiesPage() {
 
           </div>
 
-          <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 16 }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 16 }}>
 
             Live worlds scored from validation events · Candidates use baseline until flywheel data exists.
 

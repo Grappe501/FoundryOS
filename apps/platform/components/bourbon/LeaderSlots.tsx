@@ -10,7 +10,7 @@ export function LeaderSlotsIndex() {
 
   return (
     <>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7, maxWidth: 640 }}>
         Spaces for verified leaders, hosts, and reviewers — not fabricated biographies. Profiles appear here when
         community or editorial content passes the publish gate.
       </p>
@@ -21,9 +21,9 @@ export function LeaderSlotsIndex() {
         ))}
       </div>
 
-      <section style={{ marginTop: 36, padding: 20, background: '#111114', borderRadius: 10, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 36, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 10, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 14, color: ACCENT, margin: 0 }}>Reviews (040E)</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>
           Review slots open when the Review Engine ships. Your tasting notes and recommendations will connect into the
           knowledge graph — not marketing copy.
         </p>
@@ -37,14 +37,14 @@ export function LeaderSlotsIndex() {
 
 function LeaderSlotCard({ slot }: { slot: LeaderSlot }) {
   const statusColor =
-    slot.status === 'verified' ? '#6B9B6B' : slot.status === 'editorial' ? '#6B9BC9' : slot.status === 'community' ? 'var(--foundry-primary)' : '#6B6B70';
+    slot.status === 'verified' ? 'var(--foundry-success)' : slot.status === 'editorial' ? '#6B9BC9' : slot.status === 'community' ? 'var(--foundry-primary)' : 'var(--foundry-text-faint)';
 
   return (
-    <div style={{ padding: 16, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+    <div style={{ padding: 16, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12 }}>
         <div>
-          <p style={{ color: '#E8E8EC', fontSize: 15, margin: 0 }}>{slot.label}</p>
-          <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>{slot.role.replace(/_/g, ' ')}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 15, margin: 0 }}>{slot.label}</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 6 }}>{slot.role.replace(/_/g, ' ')}</p>
         </div>
         <span style={{ color: statusColor, fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{slot.status}</span>
       </div>
@@ -54,7 +54,7 @@ function LeaderSlotCard({ slot }: { slot: LeaderSlot }) {
         </Link>
       )}
       {slot.status === 'empty' && (
-        <p style={{ color: '#4A4A4E', fontSize: 12, marginTop: 10, fontStyle: 'italic' }}>
+        <p style={{ color: 'var(--foundry-text-dim)', fontSize: 12, marginTop: 10, fontStyle: 'italic' }}>
           Awaiting verified profile · {slot.graph_reference_count} graph references reserved
         </p>
       )}

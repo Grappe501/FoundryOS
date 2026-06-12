@@ -77,18 +77,18 @@ export function AtlasTerm({ term, children }: Props) {
               zIndex: 40,
               width: 280,
               padding: 14,
-              background: '#0F0F12',
+              background: 'var(--foundry-surface)',
               border: '1px solid #3A3530',
               borderRadius: 8,
               boxShadow: '0 8px 24px rgba(0,0,0,0.45)',
               textAlign: 'left',
             }}
           >
-            <span style={{ display: 'block', color: '#E8E8EC', fontSize: 13, fontWeight: 500 }}>{entry.title}</span>
-            <span style={{ display: 'block', color: '#8A8A8E', fontSize: 12, marginTop: 6, lineHeight: 1.5 }}>
+            <span style={{ display: 'block', color: 'var(--foundry-text)', fontSize: 13, fontWeight: 500 }}>{entry.title}</span>
+            <span style={{ display: 'block', color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 6, lineHeight: 1.5 }}>
               {entry.shortDefinition}
             </span>
-            <span style={{ display: 'block', color: '#6B6B70', fontSize: 11, marginTop: 8, lineHeight: 1.4 }}>
+            <span style={{ display: 'block', color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 8, lineHeight: 1.4 }}>
               {entry.whyItMatters.slice(0, 120)}…
             </span>
             <Link
@@ -123,18 +123,18 @@ export function AtlasTerm({ term, children }: Props) {
               width: '100%',
               maxWidth: 420,
               padding: 20,
-              background: '#111114',
+              background: 'var(--foundry-surface-raised)',
               borderRadius: '12px 12px 0 0',
               border: '1px solid #2A2A3A',
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            <p style={{ color: '#6B6B70', fontSize: 10, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
               The Atlas
             </p>
-            <p style={{ color: '#E8E8EC', fontSize: 18, margin: '8px 0 0', fontWeight: 400 }}>{entry.title}</p>
-            <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.6 }}>{entry.shortDefinition}</p>
-            <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 10, lineHeight: 1.5 }}>{entry.whyItMatters.slice(0, 200)}…</p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 18, margin: '8px 0 0', fontWeight: 400 }}>{entry.title}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.6 }}>{entry.shortDefinition}</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 10, lineHeight: 1.5 }}>{entry.whyItMatters.slice(0, 200)}…</p>
             <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
               <Link
                 href={atlasTermHref(entry.slug)}
@@ -142,9 +142,9 @@ export function AtlasTerm({ term, children }: Props) {
                   flex: 1,
                   textAlign: 'center',
                   padding: '12px 16px',
-                  background: '#2A2520',
+                  background: 'var(--foundry-border-warm)',
                   borderRadius: 8,
-                  color: '#E8E8EC',
+                  color: 'var(--foundry-text)',
                   fontSize: 14,
                   textDecoration: 'none',
                 }}
@@ -157,9 +157,9 @@ export function AtlasTerm({ term, children }: Props) {
                 style={{
                   padding: '12px 16px',
                   background: 'transparent',
-                  border: '1px solid #2A2A2E',
+                  border: '1px solid var(--foundry-border)',
                   borderRadius: 8,
-                  color: '#6B6B70',
+                  color: 'var(--foundry-text-faint)',
                   fontSize: 14,
                   cursor: 'pointer',
                 }}

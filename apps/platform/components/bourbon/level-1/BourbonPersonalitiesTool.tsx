@@ -36,33 +36,33 @@ export function BourbonPersonalitiesTool() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         The Hunter. The Historian. The Host. Which bourbon personality are you building?
       </p>
 
       <div style={{ marginTop: 20, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
         {BOURBON_PERSONALITIES.map((pers) => (
-          <button key={pers.id} type="button" onClick={() => select(pers.id)} style={{ padding: '10px 14px', fontSize: 12, borderRadius: 8, border: `1px solid ${activeId === pers.id ? ACCENT : '#2A2A2E'}`, background: activeId === pers.id ? '#2A2520' : 'transparent', color: activeId === pers.id ? '#E8E8EC' : '#8A8A8E', cursor: 'pointer' }}>
+          <button key={pers.id} type="button" onClick={() => select(pers.id)} style={{ padding: '10px 14px', fontSize: 12, borderRadius: 8, border: `1px solid ${activeId === pers.id ? ACCENT : 'var(--foundry-border)'}`, background: activeId === pers.id ? 'var(--foundry-border-warm)' : 'transparent', color: activeId === pers.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)', cursor: 'pointer' }}>
             {pers.name}
           </button>
         ))}
       </div>
 
       {mounted && (
-        <article style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 12 }}>
+        <article style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12 }}>
           <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{p.name}</p>
-          <p style={{ color: '#E8E8EC', fontSize: 18, marginTop: 10 }}>{p.tagline}</p>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>Signals</p>
-          <ul style={{ color: '#8A8A8E', fontSize: 14, lineHeight: 1.7 }}>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 18, marginTop: 10 }}>{p.tagline}</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>Signals</p>
+          <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 14, lineHeight: 1.7 }}>
             {p.signals.map((s) => (
               <li key={s}>{s}</li>
             ))}
           </ul>
-          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 16 }}>People like you often enjoy</p>
-          <p style={{ color: '#E8E8EC', fontSize: 14 }}>{p.youEnjoy.join(' · ')}</p>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 16 }}>People like you often enjoy</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14 }}>{p.youEnjoy.join(' · ')}</p>
           <div style={{ marginTop: 20, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
             {recs.map((b) => (
-              <Link key={b.slug} href={`/bourbon/bottles/${b.slug}`} style={{ padding: '8px 12px', fontSize: 12, borderRadius: 6, border: '1px solid #2A2A2E', color: ACCENT, textDecoration: 'none' }}>
+              <Link key={b.slug} href={`/bourbon/bottles/${b.slug}`} style={{ padding: '8px 12px', fontSize: 12, borderRadius: 6, border: '1px solid var(--foundry-border)', color: ACCENT, textDecoration: 'none' }}>
                 {b.name}
               </Link>
             ))}

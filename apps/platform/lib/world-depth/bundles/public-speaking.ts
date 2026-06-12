@@ -13,7 +13,7 @@ import {
 export const PS_DEPTH: WorldDepthBundle = {
   slug: 'public-speaking',
   displayName: 'Public Speaking',
-  accentColor: '#6B9B6B',
+  accentColor: 'var(--foundry-success)',
   portfolioLabel: 'My Speaking Portfolio',
 
   academyLessons: buildAcademyLessons(

@@ -9,15 +9,15 @@ export function NextRecommendedWorld({ currentSlug }: { currentSlug: TrinityWorl
       style={{
         marginTop: 24,
         padding: 24,
-        background: '#111114',
+        background: 'var(--foundry-surface-raised)',
         borderRadius: 8,
         border: `1px solid ${next.border}`,
       }}
     >
-      <p style={{ color: '#6B6B70', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
         Next recommended world
       </p>
-      <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 12 }}>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 12 }}>
         Continue with{' '}
         <strong style={{ fontWeight: 400, color: next.accent }}>{next.name}</strong> — {next.frame.toLowerCase()}.
       </p>
@@ -27,7 +27,7 @@ export function NextRecommendedWorld({ currentSlug }: { currentSlug: TrinityWorl
           display: 'inline-block',
           marginTop: 16,
           padding: '12px 20px',
-          background: '#0F0F12',
+          background: 'var(--foundry-surface)',
           border: `1px solid ${next.border}`,
           borderRadius: 6,
           color: next.accent,

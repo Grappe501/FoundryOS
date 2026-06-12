@@ -66,10 +66,10 @@ export const EXPLORE_STATUS_COLORS: Record<
   ExploreStatus,
   { dot: string; border: string; bg: string; text: string }
 > = {
-  live: { dot: '#6B9B6B', border: '#2A4A2A', bg: '#0F1A0F', text: '#6B9B6B' },
+  live: { dot: 'var(--foundry-success)', border: 'var(--foundry-success-bg)', bg: '#0F1A0F', text: 'var(--foundry-success)' },
   in_build: { dot: '#6B9BD4', border: '#2A3A5A', bg: '#0F121A', text: '#6B9BD4' },
-  validating: { dot: 'var(--foundry-primary)', border: '#4A4020', bg: '#1A160F', text: 'var(--foundry-primary)' },
-  planned: { dot: '#8A8A8E', border: '#2A2A2E', bg: '#111114', text: '#8A8A8E' },
+  validating: { dot: 'var(--foundry-primary)', border: 'var(--foundry-primary-border-dim)', bg: 'var(--foundry-primary-bg-subtle)', text: 'var(--foundry-primary)' },
+  planned: { dot: 'var(--foundry-text-muted)', border: 'var(--foundry-border)', bg: 'var(--foundry-surface-raised)', text: 'var(--foundry-text-muted)' },
   paused: { dot: '#B06B6B', border: '#4A2A2A', bg: '#1A0F0F', text: '#B06B6B' },
 };
 

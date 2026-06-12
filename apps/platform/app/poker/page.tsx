@@ -14,8 +14,8 @@ export default function PokerWorldPage() {
   return (
     <>
       <WorldPremiumHub slug={slug} />
-      <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <Link href="/explore/poker" style={{ color: '#6B6B70' }}>Explore path</Link>
+      <p style={{ marginTop: 32, fontSize: 12, color: 'var(--foundry-text-dim)' }}>
+        <Link href="/explore/poker" style={{ color: 'var(--foundry-text-faint)' }}>Explore path</Link>
       </p>
     </>
   );

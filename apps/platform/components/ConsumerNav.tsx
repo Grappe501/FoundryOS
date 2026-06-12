@@ -32,29 +32,10 @@ export function ConsumerNav() {
   const pathname = usePathname() ?? '';
 
   return (
-    <nav
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 8,
-        alignItems: 'center',
-        padding: '12px 0',
-        borderBottom: '1px solid #1A1A1E',
-        marginBottom: 8,
-      }}
-      aria-label="Foundry consumer journey"
-    >
+    <nav className="foundry-nav" aria-label="Foundry consumer journey">
       <Link
         href="/"
-        style={{
-          padding: '8px 14px',
-          fontSize: 13,
-          fontWeight: 300,
-          borderRadius: 6,
-          textDecoration: 'none',
-          color: pathname === '/' ? '#E8E8EC' : '#6B6B70',
-          marginRight: 4,
-        }}
+        className={`foundry-nav__brand${pathname === '/' ? ' foundry-nav__brand--active' : ''}`}
       >
         Foundry
       </Link>
@@ -64,34 +45,18 @@ export function ConsumerNav() {
           <Link
             key={href}
             href={href}
-            style={{
-              padding: '8px 14px',
-              fontSize: 13,
-              borderRadius: 6,
-              textDecoration: 'none',
-              color: active ? '#E8E8EC' : '#8A8A8E',
-              background: active ? '#1A2A1A' : 'transparent',
-              border: `1px solid ${active ? '#2A4A2A' : 'transparent'}`,
-            }}
+            className={`foundry-nav__link${active ? ' foundry-nav__link--active' : ''}`}
           >
             {label}
           </Link>
         );
       })}
-      <span style={{ flex: 1, minWidth: 8 }} />
+      <span className="foundry-nav__spacer" />
       {ACTION_LINKS.map(({ href, label, primary }) => (
         <Link
           key={href}
           href={href}
-          style={{
-            padding: '8px 14px',
-            fontSize: 12,
-            borderRadius: 6,
-            textDecoration: 'none',
-            color: primary ? '#E8E8EC' : '#6B6B70',
-            background: primary ? '#2A4A2A' : 'transparent',
-            border: primary ? '1px solid #2A4A2A' : '1px solid #1A1A1E',
-          }}
+          className={`foundry-nav__action${primary ? ' foundry-nav__action--primary' : ' foundry-nav__action--secondary'}`}
         >
           {label}
         </Link>

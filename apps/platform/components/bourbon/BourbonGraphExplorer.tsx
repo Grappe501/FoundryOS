@@ -31,12 +31,12 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
 
   if (!graph) {
     return (
-      <main style={{ minHeight: '60vh', padding: '2rem', color: '#E8E8EC' }}>
-        <Link href="/bourbon/bottles" style={{ color: '#6B6B70', fontSize: 13 }}>
+      <main style={{ minHeight: '60vh', padding: '2rem', color: 'var(--foundry-text)' }}>
+        <Link href="/bourbon/bottles" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           ← Bourbon
         </Link>
         <h1 style={{ fontWeight: 300, marginTop: 16 }}>Graph node not found</h1>
-        <p style={{ color: '#8A8A8E' }}>No hallway mapped for &quot;{slug}&quot; yet.</p>
+        <p style={{ color: 'var(--foundry-text-muted)' }}>No hallway mapped for &quot;{slug}&quot; yet.</p>
       </main>
     );
   }
@@ -52,17 +52,17 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
   const mysteries = graph.connections.filter((c: GraphConnection) => c.entity_type === 'mystery');
 
   return (
-    <main style={{ minHeight: '60vh', padding: '2rem', maxWidth: 820, margin: '0 auto', color: '#E8E8EC' }}>
-      <Link href="/bourbon/bottles" style={{ color: '#6B6B70', fontSize: 13, textDecoration: 'none' }}>
+    <main style={{ minHeight: '60vh', padding: '2rem', maxWidth: 820, margin: '0 auto', color: 'var(--foundry-text)' }}>
+      <Link href="/bourbon/bottles" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, textDecoration: 'none' }}>
         ← Bourbon
       </Link>
       {graph.entity_type === 'bottle' && (
-        <Link href={`/bourbon/bottles/${slug}`} style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
+        <Link href={`/bourbon/bottles/${slug}`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
           Bottle page →
         </Link>
       )}
       {graph.entity_type === 'atlas_term' && (
-        <Link href={`/bourbon/atlas/${slug}`} style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
+        <Link href={`/bourbon/atlas/${slug}`} style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16, textDecoration: 'none' }}>
           Atlas entry →
         </Link>
       )}
@@ -81,9 +81,9 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
       </div>
 
       <section style={{ marginTop: 28, padding: 20, background: '#0F1018', borderRadius: 10, border: `1px solid ${ACCENT}33` }}>
-        <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Why this matters · click to wander</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Why this matters · click to wander</p>
         <div style={{ marginTop: 10 }}>
-          <LinkedParagraph segments={narrative} style={{ color: '#E8E8EC', fontSize: 15 }} />
+          <LinkedParagraph segments={narrative} style={{ color: 'var(--foundry-text)', fontSize: 15 }} />
         </div>
       </section>
 
@@ -97,10 +97,10 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
         style={{
           marginTop: 16,
           padding: '8px 14px',
-          background: savedHole ? '#1A2A1A' : '#111114',
-          border: `1px solid ${savedHole ? '#6B9B6B' : ACCENT}44`,
+          background: savedHole ? 'var(--foundry-success-bg-subtle)' : 'var(--foundry-surface-raised)',
+          border: `1px solid ${savedHole ? 'var(--foundry-success)' : ACCENT}44`,
           borderRadius: 6,
-          color: savedHole ? '#6B9B6B' : ACCENT,
+          color: savedHole ? 'var(--foundry-success)' : ACCENT,
           fontSize: 12,
           cursor: 'pointer',
         }}
@@ -128,13 +128,13 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
             <ul style={{ margin: '12px 0 0', padding: 0, listStyle: 'none' }}>
               {items.map((c: GraphConnection) => (
                 <li key={c.id} style={{ marginBottom: 10 }}>
-                  <Link href={c.href.startsWith('/bourbon/graph') ? c.href : `/bourbon/graph/${c.slug}`} style={{ color: '#E8E8EC', fontSize: 14, textDecoration: 'none', fontWeight: 500 }}>
+                  <Link href={c.href.startsWith('/bourbon/graph') ? c.href : `/bourbon/graph/${c.slug}`} style={{ color: 'var(--foundry-text)', fontSize: 14, textDecoration: 'none', fontWeight: 500 }}>
                     {c.title} →
                   </Link>
                   <div style={{ marginTop: 4 }}>
                     <LinkedParagraph
                       segments={linkifyParagraph(c.teaser, { preferGraph: true })}
-                      style={{ color: '#8A8A8E', fontSize: 12 }}
+                      style={{ color: 'var(--foundry-text-muted)', fontSize: 12 }}
                     />
                   </div>
                 </li>
@@ -150,7 +150,7 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
         <BourbonGraphHallway graph={graph} compact linkifyTeasers />
       </div>
 
-      <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 24 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 24 }}>
         Groups: {Object.keys(grouped).join(' · ')}
       </p>
     </main>
@@ -159,9 +159,9 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
-    <div style={{ padding: 12, background: '#111114', borderRadius: 8 }}>
+    <div style={{ padding: 12, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
       <p style={{ color: ACCENT, fontSize: 20, margin: 0, fontWeight: 300 }}>{value}</p>
-      <p style={{ color: '#6B6B70', fontSize: 10, marginTop: 4 }}>{label}</p>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, marginTop: 4 }}>{label}</p>
     </div>
   );
 }

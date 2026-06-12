@@ -17,7 +17,7 @@ export function BourbonUniverseMap() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         Wander the bourbon universe — every node is a rabbit hole. Not a syllabus.
       </p>
 
@@ -28,7 +28,7 @@ export function BourbonUniverseMap() {
           height: 420,
           background: 'radial-gradient(circle at center, #1A1814 0%, #0A0A0E 70%)',
           borderRadius: 16,
-          border: '1px solid #1A1A1E',
+          border: '1px solid var(--foundry-border-subtle)',
           overflow: 'hidden',
         }}
       >
@@ -44,8 +44,8 @@ export function BourbonUniverseMap() {
               padding: '14px 20px',
               borderRadius: '50%',
               border: `2px solid ${ACCENT}`,
-              background: active === center.id ? '#2A2520' : '#111114',
-              color: '#E8E8EC',
+              background: active === center.id ? 'var(--foundry-border-warm)' : 'var(--foundry-surface-raised)',
+              color: 'var(--foundry-text)',
               fontSize: 14,
               cursor: 'pointer',
               zIndex: 2,
@@ -73,8 +73,8 @@ export function BourbonUniverseMap() {
                 padding: '8px 12px',
                 borderRadius: 8,
                 border: `1px solid ${active === n.id ? ACCENT : '#3A3A3E'}`,
-                background: active === n.id ? '#2A2520' : '#0F0F12',
-                color: active === n.id ? '#E8E8EC' : '#8A8A8E',
+                background: active === n.id ? 'var(--foundry-border-warm)' : 'var(--foundry-surface)',
+                color: active === n.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
                 fontSize: 11,
                 cursor: 'pointer',
                 maxWidth: 100,
@@ -88,11 +88,11 @@ export function BourbonUniverseMap() {
       </div>
 
       {node && (
-        <article style={{ marginTop: 24, padding: 22, background: '#111114', borderRadius: 12, border: `1px solid ${ACCENT}33` }}>
+        <article style={{ marginTop: 24, padding: 22, background: 'var(--foundry-surface-raised)', borderRadius: 12, border: `1px solid ${ACCENT}33` }}>
           <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>Why this matters</p>
-          <p style={{ color: '#E8E8EC', fontSize: 18, marginTop: 8 }}>{node.label}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{node.tease}</p>
-          <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 14, lineHeight: 1.65 }}>{node.body}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 18, marginTop: 8 }}>{node.label}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6 }}>{node.tease}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 14, lineHeight: 1.65 }}>{node.body}</p>
           {node.href && (
             <Link href={node.href} style={{ display: 'inline-block', marginTop: 16, color: ACCENT, fontSize: 14 }}>
               Go deeper →

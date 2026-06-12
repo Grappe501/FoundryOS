@@ -14,12 +14,12 @@ export function PourImpactGuide() {
 
   return (
     <div>
-      <p style={{ color: '#8A8A8E', fontSize: 15, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, lineHeight: 1.7 }}>
         Same bottle, different serve — completely different experience. Pick your bottle style and how you pour.
       </p>
 
       <section style={{ marginTop: 24 }}>
-        <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400 }}>Bottle style</h2>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Bottle style</h2>
         <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {BOTTLE_STYLES.map((s) => (
             <button
@@ -29,9 +29,9 @@ export function PourImpactGuide() {
               style={{
                 padding: '10px 14px',
                 borderRadius: 8,
-                border: `1px solid ${styleId === s.id ? ACCENT : '#2A2A2E'}`,
-                background: styleId === s.id ? '#2A2520' : 'transparent',
-                color: styleId === s.id ? '#E8E8EC' : '#8A8A8E',
+                border: `1px solid ${styleId === s.id ? ACCENT : 'var(--foundry-border)'}`,
+                background: styleId === s.id ? 'var(--foundry-border-warm)' : 'transparent',
+                color: styleId === s.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
                 fontSize: 12,
                 cursor: 'pointer',
               }}
@@ -40,11 +40,11 @@ export function PourImpactGuide() {
             </button>
           ))}
         </div>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>Examples: {style.examples}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>Examples: {style.examples}</p>
       </section>
 
       <section style={{ marginTop: 24 }}>
-        <h2 style={{ fontSize: 13, color: '#6B6B70', fontWeight: 400 }}>Serve method</h2>
+        <h2 style={{ fontSize: 13, color: 'var(--foundry-text-faint)', fontWeight: 400 }}>Serve method</h2>
         <div style={{ marginTop: 10, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           {SERVE_METHODS.map((m) => (
             <button
@@ -54,9 +54,9 @@ export function PourImpactGuide() {
               style={{
                 padding: '8px 12px',
                 borderRadius: 999,
-                border: `1px solid ${methodId === m.id ? ACCENT : '#2A2A2E'}`,
-                background: methodId === m.id ? '#2A2520' : 'transparent',
-                color: methodId === m.id ? '#E8E8EC' : '#8A8A8E',
+                border: `1px solid ${methodId === m.id ? ACCENT : 'var(--foundry-border)'}`,
+                background: methodId === m.id ? 'var(--foundry-border-warm)' : 'transparent',
+                color: methodId === m.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
                 fontSize: 12,
                 cursor: 'pointer',
               }}
@@ -67,17 +67,17 @@ export function PourImpactGuide() {
         </div>
       </section>
 
-      <article style={{ marginTop: 28, padding: 24, background: '#111114', borderRadius: 12, border: `1px solid ${ACCENT}44` }}>
+      <article style={{ marginTop: 28, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 12, border: `1px solid ${ACCENT}44` }}>
         <p style={{ color: ACCENT, fontSize: 11, margin: 0 }}>{style.label} · {method.label}</p>
-        <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>{method.description}</p>
-        <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 16, lineHeight: 1.7 }}>{advice}</p>
-        <div style={{ marginTop: 16, display: 'flex', gap: 16, fontSize: 11, color: '#6B6B70' }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 8 }}>{method.description}</p>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 16, lineHeight: 1.7 }}>{advice}</p>
+        <div style={{ marginTop: 16, display: 'flex', gap: 16, fontSize: 11, color: 'var(--foundry-text-faint)' }}>
           <span>Dilution: {method.dilution}</span>
           <span>Heat: {method.heat}</span>
         </div>
       </article>
 
-      <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 20, lineHeight: 1.6 }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 20, lineHeight: 1.6 }}>
         Tasting education starts neat or with a splash. Mixed drinks and juleps are a different mode — enjoyable, not inferior.
       </p>
     </div>

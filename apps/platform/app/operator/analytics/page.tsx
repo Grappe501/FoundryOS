@@ -15,14 +15,14 @@ export default async function OperatorAnalyticsPage() {
     : null;
 
   return (
-    <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 1040, margin: '0 auto' }}>
-      <Link href="/operator" style={{ color: '#6B6B70', fontSize: 13 }}>← Mission Control</Link>
-      <Link href="/operator/beta" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Beta dashboard</Link>
-      <Link href="/operator/feedback" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Feedback</Link>
-      <Link href="/operator/revenue" style={{ color: '#6B6B70', fontSize: 13, marginLeft: 16 }}>Revenue</Link>
+    <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 1040, margin: '0 auto' }}>
+      <Link href="/operator" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← Mission Control</Link>
+      <Link href="/operator/beta" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Beta dashboard</Link>
+      <Link href="/operator/feedback" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Feedback</Link>
+      <Link href="/operator/revenue" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Revenue</Link>
 
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>Transformation Analytics</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
         What actually helps people improve? Capture behavior · measure transformation · identify successful patterns.
       </p>
 
@@ -46,12 +46,12 @@ export default async function OperatorAnalyticsPage() {
               <Stat label="Peer feedback" value={analytics.funnel.peer_feedback_given} />
               <Stat label="Paid conversion" value={analytics.funnel.paid_conversion} />
             </div>
-            <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 10 }}>
+            <p style={{ color: 'var(--foundry-text-dim)', fontSize: 11, marginTop: 10 }}>
               {analytics.event_count.toLocaleString()} events · {analytics.mission_sync_count} synced completions · {analytics.beta_active} active testers
             </p>
           </section>
 
-          <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', border: '1px solid #4A4020', borderRadius: 8 }}>
+          <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-primary-border-dim)', borderRadius: 8 }}>
             <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Revenue funnel — PASS-029 (same counts as /operator/revenue)</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(130px, 1fr))', gap: 10 }}>
               <Stat label="Pricing viewed" value={analytics.funnel.pricing_viewed} />
@@ -63,8 +63,8 @@ export default async function OperatorAnalyticsPage() {
           </section>
 
           {analytics.community_activation && (
-            <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8, border: '1px solid #2A4A2A' }}>
-              <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Community activation — PASS-028</h2>
+            <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-success-bg)' }}>
+              <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Community activation — PASS-028</h2>
               <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 10 }}>
                 <Stat label="Challenge participation" value={analytics.community_activation.challenge_participation} />
                 <Stat label="Posts this week" value={analytics.community_activation.community_posts} />
@@ -73,16 +73,16 @@ export default async function OperatorAnalyticsPage() {
               </div>
               <div style={{ marginTop: 16 }}>
                 {Object.entries(analytics.community_activation.by_world).map(([slug, s]) => (
-                  <div key={slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #1A1A1E', fontSize: 12 }}>
-                    <Link href={`/community/${slug}`} style={{ color: '#E8E8EC' }}>{slug}</Link>
-                    <span style={{ color: '#8A8A8E' }}>{s.member_count} members · {s.challenge_submissions} challenges · {s.showcase_posts} showcases</span>
+                  <div key={slug} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid var(--foundry-border-subtle)', fontSize: 12 }}>
+                    <Link href={`/community/${slug}`} style={{ color: 'var(--foundry-text)' }}>{slug}</Link>
+                    <span style={{ color: 'var(--foundry-text-muted)' }}>{s.member_count} members · {s.challenge_submissions} challenges · {s.showcase_posts} showcases</span>
                   </div>
                 ))}
               </div>
             </section>
           )}
 
-          <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8 }}>
+          <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8 }}>
             <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: 0 }}>Transformation velocity (avg hours)</h2>
             <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 12 }}>
               <VelocityStat label="Join → first mission" value={analytics.velocity.join_to_first_mission_hours} />
@@ -90,15 +90,15 @@ export default async function OperatorAnalyticsPage() {
               <VelocityStat label="Completion → portfolio" value={analytics.velocity.completion_to_portfolio_hours} />
               <VelocityStat label="Portfolio → return" value={analytics.velocity.portfolio_to_return_hours} />
             </div>
-            <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 10 }}>Sample size: {analytics.velocity.sample_size}</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 10 }}>Sample size: {analytics.velocity.sample_size}</p>
           </section>
 
-          <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
+          <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
             <h2 style={{ fontSize: 14, color: '#6BC96B', margin: 0 }}>Early success indicators</h2>
             {analytics.success_indicators.map((ind) => (
-              <div key={ind.label} style={{ marginTop: 16, padding: 14, background: '#0F0F12', borderRadius: 6 }}>
-                <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0 }}>{ind.insight}</p>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>
+              <div key={ind.label} style={{ marginTop: 16, padding: 14, background: 'var(--foundry-surface)', borderRadius: 6 }}>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0 }}>{ind.insight}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 6 }}>
                   {ind.label}: {ind.cohort_pct}% vs {ind.baseline_pct}% baseline
                   {ind.multiplier > 0 && ` · ${ind.multiplier}x`}
                 </p>
@@ -106,12 +106,12 @@ export default async function OperatorAnalyticsPage() {
             ))}
           </section>
 
-          <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
+          <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
             <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>World-level analytics</h2>
             <div style={{ marginTop: 12, overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
                 <thead>
-                  <tr style={{ color: '#6B6B70', textAlign: 'left' }}>
+                  <tr style={{ color: 'var(--foundry-text-faint)', textAlign: 'left' }}>
                     <th style={{ padding: '8px 6px' }}>World</th>
                     <th style={{ padding: '8px 6px' }}>Users</th>
                     <th style={{ padding: '8px 6px' }}>Mission rate</th>
@@ -122,8 +122,8 @@ export default async function OperatorAnalyticsPage() {
                 </thead>
                 <tbody>
                   {analytics.worlds.map((w) => (
-                    <tr key={w.slug} style={{ borderTop: '1px solid #1A1A1E' }}>
-                      <td style={{ padding: '10px 6px', color: '#E8E8EC' }}>{w.label}</td>
+                    <tr key={w.slug} style={{ borderTop: '1px solid var(--foundry-border-subtle)' }}>
+                      <td style={{ padding: '10px 6px', color: 'var(--foundry-text)' }}>{w.label}</td>
                       <td style={{ padding: '10px 6px' }}>{w.users}</td>
                       <td style={{ padding: '10px 6px' }}>{w.mission_completion_rate}%</td>
                       <td style={{ padding: '10px 6px' }}>{w.return_rate}%</td>
@@ -136,16 +136,16 @@ export default async function OperatorAnalyticsPage() {
             </div>
           </section>
 
-          <section style={{ marginTop: 24, padding: 20, background: '#111114', borderRadius: 8 }}>
-            <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Mission effectiveness</h2>
+          <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+            <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Mission effectiveness</h2>
             {analytics.missions.length === 0 ? (
-              <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 12 }}>No mission data yet — testers need to start missions.</p>
+              <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 12 }}>No mission data yet — testers need to start missions.</p>
             ) : (
               analytics.missions.slice(0, 20).map((m) => (
-                <div key={`${m.world_slug}-${m.mission_slug}`} style={{ padding: '12px 0', borderBottom: '1px solid #1A1A1E', fontSize: 13 }}>
-                  <span style={{ color: '#E8E8EC' }}>{m.mission_title}</span>
-                  <span style={{ color: '#6B6B70', marginLeft: 8 }}>({m.world_slug})</span>
-                  <div style={{ color: '#8A8A8E', marginTop: 4 }}>
+                <div key={`${m.world_slug}-${m.mission_slug}`} style={{ padding: '12px 0', borderBottom: '1px solid var(--foundry-border-subtle)', fontSize: 13 }}>
+                  <span style={{ color: 'var(--foundry-text)' }}>{m.mission_title}</span>
+                  <span style={{ color: 'var(--foundry-text-faint)', marginLeft: 8 }}>({m.world_slug})</span>
+                  <div style={{ color: 'var(--foundry-text-muted)', marginTop: 4 }}>
                     Started: {m.started} · Completed: {m.completed} · {m.completion_pct}%
                     {m.avg_time_minutes != null && ` · ~${m.avg_time_minutes} min`}
                     {m.drop_off_step && ` · Drop-off: ${m.drop_off_step}`}
@@ -155,9 +155,9 @@ export default async function OperatorAnalyticsPage() {
             )}
           </section>
 
-          <section style={{ marginTop: 24, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #2A2A2A' }}>
+          <section style={{ marginTop: 24, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid #2A2A2A' }}>
             <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>PASS-027 exit criteria</h2>
-            <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8, paddingLeft: 18 }}>
+            <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.8, paddingLeft: 18 }}>
               <li>Which worlds work best? → World table above (mission + return rates)</li>
               <li>Which missions work best? → Mission effectiveness list</li>
               <li>Where do users drop off? → Drop-off step per mission</li>
@@ -173,18 +173,18 @@ export default async function OperatorAnalyticsPage() {
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
-    <div style={{ padding: 14, background: '#111114', borderRadius: 8 }}>
+    <div style={{ padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
       <div style={{ fontSize: 22, fontWeight: 300, color: 'var(--foundry-primary)' }}>{value}</div>
-      <div style={{ fontSize: 10, color: '#6B6B70', marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 10, color: 'var(--foundry-text-faint)', marginTop: 4 }}>{label}</div>
     </div>
   );
 }
 
 function VelocityStat({ label, value }: { label: string; value: number | null }) {
   return (
-    <div style={{ padding: 12, background: '#111114', borderRadius: 6 }}>
+    <div style={{ padding: 12, background: 'var(--foundry-surface-raised)', borderRadius: 6 }}>
       <div style={{ fontSize: 18, color: '#6B9BC9' }}>{value != null ? `${value}h` : '—'}</div>
-      <div style={{ fontSize: 10, color: '#6B6B70', marginTop: 4 }}>{label}</div>
+      <div style={{ fontSize: 10, color: 'var(--foundry-text-faint)', marginTop: 4 }}>{label}</div>
     </div>
   );
 }

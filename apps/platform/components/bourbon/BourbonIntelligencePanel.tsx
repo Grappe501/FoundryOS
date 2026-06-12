@@ -12,8 +12,8 @@ function ConfidenceBadge({ label }: { label: string }) {
         fontSize: 10,
         padding: '2px 6px',
         borderRadius: 4,
-        background: '#1A1A1E',
-        color: '#6B6B70',
+        background: 'var(--foundry-border-subtle)',
+        color: 'var(--foundry-text-faint)',
         marginLeft: 6,
       }}
     >
@@ -44,30 +44,30 @@ export function BourbonIntelligencePanel({ slug }: { slug: string }) {
       <p style={{ color: ACCENT, fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
         Intelligence registry
       </p>
-      <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 10, lineHeight: 1.7 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 10, lineHeight: 1.7 }}>
         Catalog facts with source confidence — grain percentages shown only when disclosed.
       </p>
 
       <div style={{ marginTop: 16, fontSize: 13, lineHeight: 2 }}>
-        <p style={{ margin: 0, color: '#E8E8EC' }}>
+        <p style={{ margin: 0, color: 'var(--foundry-text)' }}>
           Category: {bottle.category.replace(/_/g, ' ')}
           <ConfidenceBadge label="verified legal class" />
         </p>
-        <p style={{ margin: 0, color: '#E8E8EC' }}>
+        <p style={{ margin: 0, color: 'var(--foundry-text)' }}>
           Proof: {bottle.proof.value}
           <ConfidenceBadge label={bottle.proof.confidence} />
         </p>
-        <p style={{ margin: 0, color: '#E8E8EC' }}>
+        <p style={{ margin: 0, color: 'var(--foundry-text)' }}>
           Mash style: {bottle.mashbill_style.value}
           <ConfidenceBadge label={bottle.mashbill_style.confidence} />
         </p>
         {bottle.mash_bill_slug && (
-          <p style={{ margin: 0, color: '#8A8A8E' }}>
+          <p style={{ margin: 0, color: 'var(--foundry-text-muted)' }}>
             Mash bill record: {bottle.mash_bill_slug} · grain %: not publicly disclosed
           </p>
         )}
         {producer && (
-          <p style={{ margin: '8px 0 0', color: '#8A8A8E' }}>
+          <p style={{ margin: '8px 0 0', color: 'var(--foundry-text-muted)' }}>
             Producer:{' '}
             <Link href={`/bourbon/producers/${producer.slug}`} style={{ color: ACCENT, textDecoration: 'none' }}>
               {producer.name.value}
@@ -82,10 +82,10 @@ export function BourbonIntelligencePanel({ slug }: { slug: string }) {
           </p>
         )}
         {people.length > 0 && (
-          <p style={{ margin: '8px 0 0', color: '#8A8A8E' }}>
+          <p style={{ margin: '8px 0 0', color: 'var(--foundry-text-muted)' }}>
             Verified roles:{' '}
             {people.map((p) => (
-              <span key={p.slug} style={{ color: '#E8E8EC' }}>
+              <span key={p.slug} style={{ color: 'var(--foundry-text)' }}>
                 {p.name.value} ({p.roles[0]?.role.replace(/_/g, ' ')})
               </span>
             ))}
@@ -95,8 +95,8 @@ export function BourbonIntelligencePanel({ slug }: { slug: string }) {
 
       {edges.length > 0 && (
         <div style={{ marginTop: 16 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Graph chain (sample)</p>
-          <ul style={{ margin: '8px 0 0', paddingLeft: 18, color: '#8A8A8E', fontSize: 12, lineHeight: 1.8 }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Graph chain (sample)</p>
+          <ul style={{ margin: '8px 0 0', paddingLeft: 18, color: 'var(--foundry-text-muted)', fontSize: 12, lineHeight: 1.8 }}>
             {edges.map((e) => (
               <li key={e.id}>
                 {e.relation} → {e.to.entity_type}:{e.to.slug}
@@ -106,7 +106,7 @@ export function BourbonIntelligencePanel({ slug }: { slug: string }) {
         </div>
       )}
 
-      <Link href="/operator/bourbon/inventory" style={{ display: 'inline-block', marginTop: 14, color: '#6B6B70', fontSize: 11 }}>
+      <Link href="/operator/bourbon/inventory" style={{ display: 'inline-block', marginTop: 14, color: 'var(--foundry-text-faint)', fontSize: 11 }}>
         Operator inventory →
       </Link>
     </section>

@@ -49,9 +49,9 @@ export function OperatorCollectionsViewer() {
               key={def.id}
               style={{
                 padding: 18,
-                background: '#0F0F12',
+                background: 'var(--foundry-surface)',
                 borderRadius: 8,
-                border: '1px solid #1A1A1E',
+                border: '1px solid var(--foundry-border-subtle)',
               }}
             >
               <button
@@ -68,27 +68,27 @@ export function OperatorCollectionsViewer() {
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
                   <div>
-                    <p style={{ color: '#6B6B70', fontSize: 10, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                    <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, margin: 0, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                       {WORLD_LABELS[def.world_slug] ?? def.world_slug} · {def.id}
                     </p>
-                    <p style={{ color: '#E8E8EC', fontSize: 17, margin: '6px 0 0', fontWeight: 400 }}>{def.title}</p>
+                    <p style={{ color: 'var(--foundry-text)', fontSize: 17, margin: '6px 0 0', fontWeight: 400 }}>{def.title}</p>
                   </div>
-                  <p style={{ color: '#6B9B6B', fontSize: 13, margin: 0 }}>{def.items.length} items</p>
+                  <p style={{ color: 'var(--foundry-success)', fontSize: 13, margin: 0 }}>{def.items.length} items</p>
                 </div>
-                <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>{def.story}</p>
+                <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>{def.story}</p>
               </button>
 
               {open && (
-                <div style={{ marginTop: 16, borderTop: '1px solid #1A1A1E', paddingTop: 16 }}>
+                <div style={{ marginTop: 16, borderTop: '1px solid var(--foundry-border-subtle)', paddingTop: 16 }}>
                   <p style={{ color: 'var(--foundry-primary)', fontSize: 11, margin: '0 0 10px', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                     Items
                   </p>
-                  <ul style={{ margin: 0, paddingLeft: 18, color: '#8A8A8E', fontSize: 13, lineHeight: 1.8 }}>
+                  <ul style={{ margin: 0, paddingLeft: 18, color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.8 }}>
                     {def.items.map((item) => (
                       <li key={item.id}>
-                        <span style={{ color: '#E8E8EC' }}>{item.label}</span>
-                        {item.tease && <span style={{ color: '#6B6B70' }}> — {item.tease}</span>}
-                        <span style={{ color: '#4A4A4E', fontSize: 11 }}> ({item.id})</span>
+                        <span style={{ color: 'var(--foundry-text)' }}>{item.label}</span>
+                        {item.tease && <span style={{ color: 'var(--foundry-text-faint)' }}> — {item.tease}</span>}
+                        <span style={{ color: 'var(--foundry-text-dim)', fontSize: 11 }}> ({item.id})</span>
                       </li>
                     ))}
                   </ul>
@@ -97,13 +97,13 @@ export function OperatorCollectionsViewer() {
                     How earned
                   </p>
                   {rules.length === 0 ? (
-                    <p style={{ color: '#6B6B70', fontSize: 13 }}>Via consequence chains or portfolio actions (rule TBD)</p>
+                    <p style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>Via consequence chains or portfolio actions (rule TBD)</p>
                   ) : (
-                    <ul style={{ margin: 0, paddingLeft: 18, color: '#8A8A8E', fontSize: 13, lineHeight: 1.8 }}>
+                    <ul style={{ margin: 0, paddingLeft: 18, color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.8 }}>
                       {rules.map((r) => (
                         <li key={r.id}>
-                          <span style={{ color: '#E8E8EC' }}>{r.label}</span>
-                          <span style={{ color: '#6B6B70' }}>
+                          <span style={{ color: 'var(--foundry-text)' }}>{r.label}</span>
+                          <span style={{ color: 'var(--foundry-text-faint)' }}>
                             {' '}
                             · {r.action_type}
                             {r.action_id ? `:${r.action_id}` : ''}
@@ -121,8 +121,8 @@ export function OperatorCollectionsViewer() {
       </div>
 
       <section style={{ marginTop: 32, padding: 18, background: '#0F1218', border: '1px solid #2A2A3A', borderRadius: 8 }}>
-        <p style={{ color: '#6B6B70', fontSize: 12, margin: 0 }}>Earn rule registry ({COLLECTION_EARN_RULES.length} rules)</p>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, margin: 0 }}>Earn rule registry ({COLLECTION_EARN_RULES.length} rules)</p>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 10, lineHeight: 1.6 }}>
           Consequence Engine emits unlock_collector_progress effects. Collector Engine maps them to collection_progress,
           collection_unlocked, and collection_completed events.
         </p>
@@ -138,10 +138,10 @@ function FilterChip({ active, onClick, label }: { active: boolean; onClick: () =
       onClick={onClick}
       style={{
         padding: '8px 14px',
-        background: active ? '#2A4A2A' : '#111114',
-        border: `1px solid ${active ? '#3A5A3A' : '#1A1A1E'}`,
+        background: active ? 'var(--foundry-success-bg)' : 'var(--foundry-surface-raised)',
+        border: `1px solid ${active ? '#3A5A3A' : 'var(--foundry-border-subtle)'}`,
         borderRadius: 6,
-        color: active ? '#E8E8EC' : '#6B6B70',
+        color: active ? 'var(--foundry-text)' : 'var(--foundry-text-faint)',
         fontSize: 12,
         cursor: 'pointer',
       }}

@@ -21,13 +21,13 @@ export function MythsQuiz() {
 
   return (
     <div>
-      <article style={{ padding: 28, background: '#111114', borderRadius: 12, border: '1px solid #2A2520' }}>
-        <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Myth {idx + 1} of {BOURBON_MYTHS.length}</p>
-        <h2 style={{ fontSize: 20, fontWeight: 400, marginTop: 16, color: '#E8E8EC', lineHeight: 1.4 }}>&ldquo;{myth.statement}&rdquo;</h2>
+      <article style={{ padding: 28, background: 'var(--foundry-surface-raised)', borderRadius: 12, border: '1px solid var(--foundry-border-warm)' }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Myth {idx + 1} of {BOURBON_MYTHS.length}</p>
+        <h2 style={{ fontSize: 20, fontWeight: 400, marginTop: 16, color: 'var(--foundry-text)', lineHeight: 1.4 }}>&ldquo;{myth.statement}&rdquo;</h2>
         {!revealed ? (
           <div style={{ marginTop: 24, display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             {(['true', 'false', 'mostly-true', 'mostly-false'] as const).map((a) => (
-              <button key={a} type="button" onClick={() => answer(a)} style={{ padding: '10px 18px', background: '#0F0F12', border: '1px solid #2A2A2E', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer', fontSize: 13, textTransform: 'capitalize' }}>
+              <button key={a} type="button" onClick={() => answer(a)} style={{ padding: '10px 18px', background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border)', borderRadius: 6, color: 'var(--foundry-text)', cursor: 'pointer', fontSize: 13, textTransform: 'capitalize' }}>
                 {a.replace('-', ' ')}
               </button>
             ))}
@@ -37,9 +37,9 @@ export function MythsQuiz() {
             <p style={{ color: myth.answer.includes('false') ? '#B66' : ACCENT, fontSize: 15, fontWeight: 500, textTransform: 'capitalize' }}>
               {myth.answer.replace('-', ' ')}
             </p>
-            <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{myth.explanation}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 12, lineHeight: 1.7 }}>{myth.explanation}</p>
             <p style={{ color: ACCENT, fontSize: 13, marginTop: 16, fontStyle: 'italic' }}>Surprise: {myth.surprise}</p>
-            <button type="button" onClick={next} style={{ marginTop: 20, padding: '10px 18px', background: '#4A4020', border: 'none', borderRadius: 6, color: '#E8E8EC', cursor: 'pointer' }}>
+            <button type="button" onClick={next} style={{ marginTop: 20, padding: '10px 18px', background: 'var(--foundry-primary-border-dim)', border: 'none', borderRadius: 6, color: 'var(--foundry-text)', cursor: 'pointer' }}>
               Next myth →
             </button>
           </div>

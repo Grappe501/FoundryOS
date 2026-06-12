@@ -41,9 +41,9 @@ export default function OperatorAtlasGraphPage() {
         ]}
       />
 
-      <section style={{ marginTop: 32, padding: 20, background: '#0F0F12', borderRadius: 8, border: '1px solid #1A1A1E' }}>
+      <section style={{ marginTop: 32, padding: 20, background: 'var(--foundry-surface)', borderRadius: 8, border: '1px solid var(--foundry-border-subtle)' }}>
         <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: 0 }}>Graph health</h2>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.9, marginTop: 12, paddingLeft: 20 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.9, marginTop: 12, paddingLeft: 20 }}>
           <li>Nodes under 3 edges: {stats.nodes_under_3_edges}</li>
           <li>Edges missing confidence: {stats.edges_missing_confidence}</li>
           <li>Verified edges missing source: {stats.verified_edges_missing_source}</li>
@@ -54,7 +54,7 @@ export default function OperatorAtlasGraphPage() {
         <h2 style={{ fontSize: 14, color: '#C96B6B' }}>Weak-node queue — what should Burt build next?</h2>
         <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12, marginTop: 12 }}>
           <thead>
-            <tr style={{ color: '#6B6B70', borderBottom: '1px solid #1A1A1E' }}>
+            <tr style={{ color: 'var(--foundry-text-faint)', borderBottom: '1px solid var(--foundry-border-subtle)' }}>
               <th style={{ padding: 10, textAlign: 'left' }}>Node</th>
               <th style={{ padding: 10 }}>Type</th>
               <th style={{ padding: 10 }}>Edges</th>
@@ -65,17 +65,17 @@ export default function OperatorAtlasGraphPage() {
           <tbody>
             {weakQueue.length === 0 ? (
               <tr>
-                <td colSpan={5} style={{ padding: 16, color: '#6B9B6B' }}>
+                <td colSpan={5} style={{ padding: 16, color: 'var(--foundry-success)' }}>
                   No weak nodes — inventory hallways meet minimums.
                 </td>
               </tr>
             ) : (
               weakQueue.map((n) => (
-                <tr key={n.id} style={{ borderBottom: '1px solid #1A1A1E' }}>
-                  <td style={{ padding: 10, color: '#E8E8EC' }}>{n.label}</td>
-                  <td style={{ padding: 10, color: '#8A8A8E', textAlign: 'center' }}>{n.entity_type}</td>
+                <tr key={n.id} style={{ borderBottom: '1px solid var(--foundry-border-subtle)' }}>
+                  <td style={{ padding: 10, color: 'var(--foundry-text)' }}>{n.label}</td>
+                  <td style={{ padding: 10, color: 'var(--foundry-text-muted)', textAlign: 'center' }}>{n.entity_type}</td>
                   <td style={{ padding: 10, color: '#C96B6B', textAlign: 'center' }}>{n.connections}</td>
-                  <td style={{ padding: 10, color: '#8A8A8E' }}>
+                  <td style={{ padding: 10, color: 'var(--foundry-text-muted)' }}>
                     {n.issues.map((i) => ISSUE_LABEL[i] ?? i).join(' · ')}
                   </td>
                   <td style={{ padding: 10, textAlign: 'center' }}>
@@ -91,8 +91,8 @@ export default function OperatorAtlasGraphPage() {
       </section>
 
       <section style={{ marginTop: 32, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3520' }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>BiB weekend exemplar</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>BiB weekend exemplar</h2>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12, lineHeight: 1.8 }}>
           <Link href="/bourbon/graph/bottled-in-bond" style={{ color: 'var(--foundry-primary)' }}>
             bottled-in-bond
           </Link>{' '}
@@ -102,10 +102,10 @@ export default function OperatorAtlasGraphPage() {
 
       <section style={{ marginTop: 32 }}>
         <h2 style={{ fontSize: 14, color: '#6B9BC9' }}>Universe build queue</h2>
-        <ul style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.8, marginTop: 12 }}>
+        <ul style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.8, marginTop: 12 }}>
           {snap.build_queue.slice(0, 8).map((q) => (
             <li key={q.rank}>
-              <strong style={{ color: '#E8E8EC' }}>{q.target}</strong> — {q.reasons[0]}
+              <strong style={{ color: 'var(--foundry-text)' }}>{q.target}</strong> — {q.reasons[0]}
             </li>
           ))}
         </ul>
@@ -114,7 +114,7 @@ export default function OperatorAtlasGraphPage() {
       <Link href="/operator/bourbon/inventory" style={{ color: 'var(--foundry-primary)', fontSize: 13, marginTop: 24, display: 'inline-block' }}>
         Intelligence inventory →
       </Link>
-      <Link href="/operator/universe" style={{ color: '#6B6B70', fontSize: 13, marginTop: 24, marginLeft: 16, display: 'inline-block' }}>
+      <Link href="/operator/universe" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginTop: 24, marginLeft: 16, display: 'inline-block' }}>
         Universe command center →
       </Link>
     </OperatorShell>

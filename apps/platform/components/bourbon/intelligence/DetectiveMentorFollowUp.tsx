@@ -56,15 +56,15 @@ export function DetectiveMentorFollowUp({ caseSlug }: { caseSlug: string }) {
       )}
       {(show || solved) && bundle && <ConsequenceUnlockPanel bundle={bundle} />}
       {(show || solved) && !bundle && followUp && (
-        <article style={{ marginTop: 24, padding: 24, background: 'linear-gradient(135deg, #0F0F12 0%, #1A1814 100%)', borderRadius: 12, border: `1px solid ${ACCENT}` }}>
+        <article style={{ marginTop: 24, padding: 24, background: 'linear-gradient(135deg, var(--foundry-surface) 0%, #1A1814 100%)', borderRadius: 12, border: `1px solid ${ACCENT}` }}>
           <p style={{ color: ACCENT, fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Case closed · Mentor responds</p>
-          <p style={{ color: '#E8E8EC', fontSize: 16, marginTop: 12, lineHeight: 1.55 }}>{followUp.mentorLine}</p>
-          <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 16 }}>{followUp.becauseYouSolved}</p>
+          <p style={{ color: 'var(--foundry-text)', fontSize: 16, marginTop: 12, lineHeight: 1.55 }}>{followUp.mentorLine}</p>
+          <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 16 }}>{followUp.becauseYouSolved}</p>
           <ul style={{ marginTop: 12, paddingLeft: 0, listStyle: 'none' }}>
             {followUp.recommendations.map((r) => (
               <li key={r.href} style={{ marginTop: 10 }}>
                 <Link href={r.href} style={{ color: ACCENT, fontSize: 15, textDecoration: 'none' }}>{r.label} →</Link>
-                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>{r.why}</p>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 4 }}>{r.why}</p>
               </li>
             ))}
           </ul>

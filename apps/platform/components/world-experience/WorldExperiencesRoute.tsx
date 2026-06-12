@@ -13,12 +13,12 @@ export function WorldExperiencesIndex({ slug }: { slug: string }) {
 
   return (
     <section style={{ marginTop: 16 }}>
-      <Link href={basePath} style={{ color: '#6B6B70', fontSize: 13, textDecoration: 'none' }}>
+      <Link href={basePath} style={{ color: 'var(--foundry-text-faint)', fontSize: 13, textDecoration: 'none' }}>
         ← {config.displayName}
       </Link>
       <p style={{ color: assets.accent, fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 16 }}>Immersive tools</p>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 8 }}>Explore the craft</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
+      <p style={{ color: 'var(--foundry-text-muted)', fontSize: 14, marginTop: 8, lineHeight: 1.6 }}>
         Journals, labs, and worksheets — not lessons. Save work to your device; log evidence in your portfolio.
       </p>
 
@@ -37,10 +37,10 @@ export function WorldExperiencesIndex({ slug }: { slug: string }) {
               color: 'inherit',
             }}
           >
-            <span style={{ color: '#6B6B70', fontSize: 10, textTransform: 'uppercase' }}>{m.category}</span>
-            <h2 style={{ fontSize: 17, fontWeight: 400, marginTop: 8, color: '#E8E8EC' }}>{m.title}</h2>
-            <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 6 }}>{m.description}</p>
-            <p style={{ color: '#6B6B70', fontSize: 11, marginTop: 10 }}>~{m.estimatedMinutes} min</p>
+            <span style={{ color: 'var(--foundry-text-faint)', fontSize: 10, textTransform: 'uppercase' }}>{m.category}</span>
+            <h2 style={{ fontSize: 17, fontWeight: 400, marginTop: 8, color: 'var(--foundry-text)' }}>{m.title}</h2>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 6 }}>{m.description}</p>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, marginTop: 10 }}>~{m.estimatedMinutes} min</p>
           </Link>
         ))}
       </div>

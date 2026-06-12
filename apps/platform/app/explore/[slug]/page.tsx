@@ -61,8 +61,8 @@ export default async function ExplorePathPage({ params }: Props) {
     <main
       style={{
         minHeight: '100vh',
-        backgroundColor: '#08080A',
-        color: '#E8E8EC',
+        backgroundColor: 'var(--foundry-bg)',
+        color: 'var(--foundry-text)',
         padding: '2rem',
         maxWidth: 720,
         margin: '0 auto',
@@ -70,7 +70,7 @@ export default async function ExplorePathPage({ params }: Props) {
     >
       <ValidationPageTracker page={`/explore/${slug}`} />
       <ConsumerNav />
-      <section style={{ marginTop: 16, padding: 28, background: '#0F0F12', borderRadius: 8, border: `1px solid ${colors.border}` }}>
+      <section style={{ marginTop: 16, padding: 28, background: 'var(--foundry-surface)', borderRadius: 8, border: `1px solid ${colors.border}` }}>
         <span
           style={{
             display: 'inline-flex',
@@ -88,49 +88,49 @@ export default async function ExplorePathPage({ params }: Props) {
           {openingCopy}
         </span>
         <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 16 }}>{path.name}</h1>
-        <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 12 }}>{path.outcome}</p>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 8 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 15, marginTop: 12 }}>{path.outcome}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 8 }}>
           {path.tier}
           {path.launch_rank != null ? ` · Launch priority #${path.launch_rank}` : ''}
         </p>
       </section>
 
-      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>What this path helps you become</h2>
-        <p style={{ color: '#E8E8EC', fontSize: 15, marginTop: 16, lineHeight: 1.7 }}>{path.become}</p>
+      <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>What this path helps you become</h2>
+        <p style={{ color: 'var(--foundry-text)', fontSize: 15, marginTop: 16, lineHeight: 1.7 }}>{path.become}</p>
       </section>
 
-      <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', borderRadius: 8 }}>
-        <h2 style={{ fontSize: 14, color: '#6B9B6B', margin: 0 }}>Projects you&apos;ll complete</h2>
-        <ul style={{ margin: '16px 0 0', paddingLeft: 20, color: '#8A8A8E', fontSize: 14, lineHeight: 1.9 }}>
+      <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', borderRadius: 8 }}>
+        <h2 style={{ fontSize: 14, color: 'var(--foundry-success)', margin: 0 }}>Projects you&apos;ll complete</h2>
+        <ul style={{ margin: '16px 0 0', paddingLeft: 20, color: 'var(--foundry-text-muted)', fontSize: 14, lineHeight: 1.9 }}>
           {path.planned_projects.map((project) => (
             <li key={project}>{project}</li>
           ))}
         </ul>
-        <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 16 }}>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 16 }}>
           Every project produces evidence — visible progress, not just content consumed.
         </p>
       </section>
 
-      <section style={{ marginTop: 24, padding: 24, background: '#111114', borderRadius: 8, border: '1px solid #2A2520' }}>
+      <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface-raised)', borderRadius: 8, border: '1px solid var(--foundry-border-warm)' }}>
         <h2 style={{ fontSize: 14, color: 'var(--foundry-primary)', margin: 0 }}>Join the interest list</h2>
-        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12 }}>
+        <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 12 }}>
           Be first to know when {path.name} opens. No spam — just a note when the path is live.
         </p>
         <InterestListJoin pathSlug={path.slug} pathName={path.name} />
       </section>
 
-      <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
+      <p style={{ marginTop: 32, fontSize: 12, color: 'var(--foundry-text-dim)' }}>
         Start now:{' '}
-        <Link href="/future-proof" style={{ color: '#6B9B6B' }}>
+        <Link href="/future-proof" style={{ color: 'var(--foundry-success)' }}>
           Future-Proof Assessment
         </Link>
         {' · '}
-        <Link href="/ai-builder" style={{ color: '#6B6B70' }}>
+        <Link href="/ai-builder" style={{ color: 'var(--foundry-text-faint)' }}>
           AI Builder
         </Link>
         {' · '}
-        <Link href="/explore" style={{ color: '#6B6B70' }}>
+        <Link href="/explore" style={{ color: 'var(--foundry-text-faint)' }}>
           Explore all paths
         </Link>
       </p>

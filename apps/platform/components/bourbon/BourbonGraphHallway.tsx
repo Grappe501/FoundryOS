@@ -10,11 +10,11 @@ import { LinkedParagraph } from './LinkedParagraph';
 const ACCENT = 'var(--foundry-primary)';
 
 const CONFIDENCE_COLOR: Record<GraphConfidence, string> = {
-  verified: '#6B9B6B',
+  verified: 'var(--foundry-success)',
   producer_disclosed: '#6B9BC9',
   commonly_reported: 'var(--foundry-primary)',
-  editorial: '#8A8A8E',
-  unknown: '#6B6B70',
+  editorial: 'var(--foundry-text-muted)',
+  unknown: 'var(--foundry-text-faint)',
 };
 
 function ConfidenceBadge({ confidence }: { confidence?: GraphConfidence }) {
@@ -25,7 +25,7 @@ function ConfidenceBadge({ confidence }: { confidence?: GraphConfidence }) {
         fontSize: 10,
         padding: '2px 7px',
         borderRadius: 4,
-        background: '#111114',
+        background: 'var(--foundry-surface-raised)',
         color: CONFIDENCE_COLOR[confidence],
         border: `1px solid ${CONFIDENCE_COLOR[confidence]}44`,
         marginLeft: 8,
@@ -48,25 +48,25 @@ function EdgeLink({ c, linkifyTeasers }: { c: EntityGraphView['connections'][0];
       style={{
         display: 'block',
         padding: '12px 14px',
-        background: '#0F0F12',
+        background: 'var(--foundry-surface)',
         borderRadius: 6,
-        border: '1px solid #1A1A1E',
+        border: '1px solid var(--foundry-border-subtle)',
         textDecoration: 'none',
       }}
     >
-      <p style={{ color: '#E8E8EC', fontSize: 14, margin: 0, display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+      <p style={{ color: 'var(--foundry-text)', fontSize: 14, margin: 0, display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
         {c.title}
         <ConfidenceBadge confidence={c.confidence} />
       </p>
-      <div style={{ color: '#8A8A8E', fontSize: 12, marginTop: 6, lineHeight: 1.55 }}>
+      <div style={{ color: 'var(--foundry-text-muted)', fontSize: 12, marginTop: 6, lineHeight: 1.55 }}>
         {linkifyTeasers ? (
-          <LinkedParagraph segments={linkifyParagraph(c.teaser, { preferGraph: true })} style={{ fontSize: 12, color: '#8A8A8E' }} />
+          <LinkedParagraph segments={linkifyParagraph(c.teaser, { preferGraph: true })} style={{ fontSize: 12, color: 'var(--foundry-text-muted)' }} />
         ) : (
           c.teaser
         )}
       </div>
       {c.source_label && c.confidence === 'verified' && (
-        <p style={{ color: '#6B6B70', fontSize: 10, marginTop: 6, marginBottom: 0 }}>Source: {c.source_label}</p>
+        <p style={{ color: 'var(--foundry-text-faint)', fontSize: 10, marginTop: 6, marginBottom: 0 }}>Source: {c.source_label}</p>
       )}
     </Link>
   );
@@ -118,7 +118,7 @@ export function BourbonGraphHallway({ graph, compact, linkifyTeasers }: { graph:
       style={{
         marginTop: compact ? 0 : 36,
         padding: 24,
-        background: 'linear-gradient(135deg, #0A1218 0%, #111114 100%)',
+        background: 'linear-gradient(135deg, #0A1218 0%, var(--foundry-surface-raised) 100%)',
         border: '1px solid #2A3A4A',
         borderRadius: 10,
       }}
@@ -134,7 +134,7 @@ export function BourbonGraphHallway({ graph, compact, linkifyTeasers }: { graph:
       <div style={{ marginTop: 10 }}>
         <LinkedParagraph
           segments={linkifyTeasers ? enrichGraphNarrative(graph) : [{ type: 'text', value: graph.why_should_i_care ?? graph.why_it_matters ?? '' }]}
-          style={{ color: '#E8E8EC', fontSize: 15 }}
+          style={{ color: 'var(--foundry-text)', fontSize: 15 }}
         />
       </div>
 
@@ -158,7 +158,7 @@ export function BourbonGraphHallway({ graph, compact, linkifyTeasers }: { graph:
         </div>
       )}
 
-      <p style={{ color: '#6B6B70', fontSize: 11, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '24px 0 0' }}>
+      <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, letterSpacing: '0.06em', textTransform: 'uppercase', margin: '24px 0 0' }}>
         The hallway · {graph.connection_count} connections
       </p>
 
@@ -171,11 +171,11 @@ export function BourbonGraphHallway({ graph, compact, linkifyTeasers }: { graph:
 
       {groups.map((group) => (
         <div key={group} style={{ marginTop: 24 }}>
-          <p style={{ color: '#6B6B70', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 6px' }}>
+          <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.06em', margin: '0 0 6px' }}>
             {group}
           </p>
           {SECTION_INTROS[group] && (
-            <p style={{ color: '#8A8A8E', fontSize: 13, lineHeight: 1.65, margin: '0 0 10px' }}>{SECTION_INTROS[group]}</p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, lineHeight: 1.65, margin: '0 0 10px' }}>{SECTION_INTROS[group]}</p>
           )}
           <div style={{ display: 'grid', gap: 8 }}>
             {grouped[group].map((c) => (

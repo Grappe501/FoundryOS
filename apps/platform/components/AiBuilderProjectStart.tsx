@@ -16,11 +16,11 @@ export function AiBuilderProjectStart({ projectName }: { projectName: string }) 
       }}
       style={{
         padding: '12px 20px',
-        background: '#2A4A2A',
+        background: 'var(--foundry-success-bg)',
         border: 'none',
         borderRadius: 6,
         fontSize: 14,
-        color: '#E8E8EC',
+        color: 'var(--foundry-text)',
         cursor: 'pointer',
       }}
     >
