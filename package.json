@@ -39,6 +39,7 @@
     "audit:continuity": "npx tsx scripts/audit-continuity.ts",
     "audit:memory": "npx tsx scripts/audit-memory.ts",
     "audit:persistence": "npx tsx scripts/audit-persistence.ts",
+    "verify:040d": "npx tsx scripts/verify-040d-persistence.ts",
     "audit:universe": "npx tsx scripts/audit-universe.ts",
     "audit:artifacts": "npx tsx scripts/audit-artifacts.ts",
     "audit:bourbon-intelligence": "npx tsx scripts/audit-bourbon-intelligence.ts",

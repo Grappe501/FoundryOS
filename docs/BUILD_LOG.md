@@ -8,8 +8,9 @@
 |-------|-------|
 | **Version** | `0.9.7-world-memory` |
 | **Last Pass** | PASS-034P+ World Continuity Expansion ✅ |
-| **Current Pass** | PASS-040D Personal Database Persistence |
-| **Next Pass** | PASS-040D.5 Memory + Graph Sync |
+| **Current Pass** | PASS-040D v1 deployed ✅ |
+| **Next Pass** | PASS-040D.5 Identity Sync Compound Loop |
+| **Live proof** | `npm run verify:040d` · `/api/identity/hydrate` (401 unsigned, 200 authed) |
 | **Focus** | The world was waiting for you — welcome-back, not activity log |
 | **Live proof** | `/my-journey` · `/bourbon` welcome panel · `/passport/timeline` · `npm run audit:memory` |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |

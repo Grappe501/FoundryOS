@@ -27,8 +27,8 @@ Graph exists. Memory exists. **Next: make both durable across devices.**
 | PASS-040B2 | Bourbon Graph Expansion (hallways) | ✅ deployed |
 | PASS-040B3 | Graph Enrichment + Inline Atlas Links | ✅ deployed |
 | **PASS-034P+** | **World Continuity Expansion** | **✅ deployed** |
-| **PASS-040D** | **Personal Database Persistence** | **← NEXT** |
-| PASS-040D.5 | Memory + Graph Sync | queued (after 040D) |
+| **PASS-040D** | **Personal Database Persistence** | **✅ v1 deployed** |
+| **PASS-040D.5** | **Identity Sync Compound Loop** | **← NEXT** |
 | PASS-040C | Atlas-Aware AI | **blocked until 040D.5** |
 | PASS-040E | Review Engine | queued |
 | PASS-040F | Recommendation Engine | queued |
