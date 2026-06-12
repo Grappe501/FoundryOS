@@ -6,6 +6,8 @@ import { getBottle } from '../../../lib/bourbon-level-1/bottles';
 import { getBottleDepth } from '../../../lib/bourbon-depth/bottle-depth';
 import { resolveBourbonBottleGraph } from '../../../lib/bourbon-atlas/resolve-bottle-graph';
 import { GraphConnectionsPanel } from '../GraphConnectionsPanel';
+import { ArtifactExperiencePanel } from '../../artifacts/ArtifactExperiencePanel';
+import { BourbonIntelligencePanel } from '../BourbonIntelligencePanel';
 import { RabbitHoleFooter } from './RabbitHoleFooter';
 
 const ACCENT = '#C8A96E';
@@ -66,6 +68,15 @@ export function BottleProgressionView({ slug }: { slug: string }) {
       <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 6 }}>${bottle.priceUsd} · {bottle.proof} proof · {bottle.mashbill}</p>
 
       {graph && graph.connection_count >= 10 && <GraphConnectionsPanel graph={graph} />}
+
+      <BourbonIntelligencePanel slug={slug} />
+
+      <ArtifactExperiencePanel
+        worldSlug="bourbon"
+        entityType="bottle"
+        slug={slug}
+        entityName={bottle.name}
+      />
 
       {depth && (
         <>

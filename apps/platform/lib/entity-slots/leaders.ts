@@ -1,7 +1,10 @@
 /**
  * Leader slots — spaces for community/editorial content.
  * NOT fabricated biographies. See docs/CONTENT_INTEGRITY.md
+ * Status synced from @foundry/bourbon-intelligence (PASS-040B1).
  */
+
+import { leaderSlotExport } from '@foundry/bourbon-intelligence';
 
 export type LeaderSlotStatus = 'empty' | 'community' | 'editorial' | 'verified';
 
@@ -17,17 +20,8 @@ export type LeaderSlot = {
   graph_reference_count: number;
 };
 
-/** Bourbon leader slots — one per major producer house, empty until verified content */
-export const BOURBON_LEADER_SLOTS: LeaderSlot[] = [
-  { id: 'wild-turkey-master', world_slug: 'bourbon', label: 'Wild Turkey — master distiller', role: 'master_distiller', linked_producer_slug: 'wild-turkey', status: 'empty', graph_reference_count: 2 },
-  { id: 'buffalo-trace-master', world_slug: 'bourbon', label: 'Buffalo Trace — master distiller', role: 'master_distiller', linked_producer_slug: 'buffalo-trace', status: 'empty', graph_reference_count: 3 },
-  { id: 'heaven-hill-master', world_slug: 'bourbon', label: 'Heaven Hill — master distiller', role: 'master_distiller', linked_producer_slug: 'heaven-hill', status: 'empty', graph_reference_count: 1 },
-  { id: 'four-roses-master', world_slug: 'bourbon', label: 'Four Roses — master distiller', role: 'master_distiller', linked_producer_slug: 'four-roses', status: 'empty', graph_reference_count: 2 },
-  { id: 'makers-mark-master', world_slug: 'bourbon', label: "Maker's Mark — master distiller", role: 'master_distiller', linked_producer_slug: 'makers-mark', status: 'empty', graph_reference_count: 1 },
-  { id: 'jim-beam-master', world_slug: 'bourbon', label: 'Jim Beam — master distiller', role: 'master_distiller', linked_producer_slug: 'jim-beam', status: 'empty', graph_reference_count: 1 },
-  { id: 'review-host', world_slug: 'bourbon', label: 'Community review host', role: 'review_host', status: 'empty', graph_reference_count: 0 },
-  { id: 'tasting-club-lead', world_slug: 'bourbon', label: 'Tasting club leader', role: 'club_host', status: 'empty', graph_reference_count: 0 },
-];
+/** Bourbon leader slots — verified only when people registry has sourced facts */
+export const BOURBON_LEADER_SLOTS: LeaderSlot[] = leaderSlotExport();
 
 export function leaderSlotsForWorld(worldSlug: string): LeaderSlot[] {
   return BOURBON_LEADER_SLOTS.filter((s) => s.world_slug === worldSlug);

@@ -26,3 +26,14 @@ export {
   validateArtifactEngine,
   getArtifactEngineStats,
 } from './engine';
+export {
+  mergeGraphEntities,
+  entitiesToRelations,
+  entitiesFromRelations,
+} from './graph-expand';
+export {
+  aggregateEntityArtifacts,
+  summarizeUserArtifacts,
+  type EntityArtifactStats,
+  type PassportArtifactSummary,
+} from './aggregate';

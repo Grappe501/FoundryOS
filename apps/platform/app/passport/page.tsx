@@ -3,25 +3,49 @@
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { resolveFoundryIdentityStory } from '@foundry/identity-narrative-engine';
+import { summarizeUserArtifacts } from '@foundry/artifact-engine';
 import { assembleAllSignalBundles } from '../../lib/identity-narrative/assemble-signals';
 import { getStoredDisplayName } from '../../lib/living-worlds/client-journey';
 import { getWorldEventsState } from '../../lib/world-events/client-state';
 import { getAllCollections } from '../../lib/collector/client-state';
+import {
+  ARTIFACTS_CHANGED_EVENT,
+  getLocalUserId,
+  listClientArtifacts,
+} from '../../lib/artifacts/client-store';
 import { ConsumerNav } from '../../components/ConsumerNav';
+
+const WORLD_LABELS: Record<string, string> = {
+  bourbon: 'Bourbon',
+  'ai-builder': 'AI Builder',
+  'public-speaking': 'Public Speaking',
+  'civic-engagement': 'Civic',
+  bbq: 'BBQ',
+  poker: 'Poker',
+};
 
 export default function PassportPage() {
   const [mounted, setMounted] = useState(false);
+  const [artifactTick, setArtifactTick] = useState(0);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    setMounted(true);
+    const refresh = () => setArtifactTick((n) => n + 1);
+    window.addEventListener(ARTIFACTS_CHANGED_EVENT, refresh);
+    return () => window.removeEventListener(ARTIFACTS_CHANGED_EVENT, refresh);
+  }, []);
 
   const data = useMemo(() => {
     if (!mounted) return null;
     const name = getStoredDisplayName();
+    const userId = getLocalUserId();
     const bundles = assembleAllSignalBundles();
     const { story, activeCount } = resolveFoundryIdentityStory(bundles, name);
     const events = getWorldEventsState();
     const collections = getAllCollections();
     const collectionItems = collections.reduce((n, c) => n + c.unlocked_count, 0);
+    const artifacts = listClientArtifacts({ user_id: userId });
+    const evidence = summarizeUserArtifacts(artifacts, userId);
     const worldTitles = story.worlds
       .filter((w) =>
         bundles.some(
@@ -36,15 +60,17 @@ export default function PassportPage() {
       name,
       story,
       activeCount,
+      evidence,
       stats: {
         collections: collectionItems,
         events_participated: events.viewed.length,
         votes: Object.keys(events.votes).length,
         challenges: events.completed.length,
+        artifacts: evidence.total,
       },
       worldTitles,
     };
-  }, [mounted]);
+  }, [mounted, artifactTick]);
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
@@ -56,14 +82,49 @@ export default function PassportPage() {
         {mounted && data ? data.name : 'Your Passport'}
       </h1>
       <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 10, lineHeight: 1.7 }}>
-        Not a profile — a living record of who you are across worlds. Full Passport ships with Level 2 engines (PASS-040).
+        Not a profile — evidence of who you are becoming across worlds.
       </p>
 
       {mounted && data && (
         <>
           <section style={{ marginTop: 28, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 10 }}>
             <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-              Stamps forming
+              Evidence wall
+            </p>
+            <p style={{ color: '#E8E8EC', fontSize: 28, fontWeight: 300, margin: '12px 0 0' }}>
+              {data.evidence.total} artifact{data.evidence.total === 1 ? '' : 's'}
+            </p>
+            {data.evidence.total === 0 ? (
+              <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, lineHeight: 1.7 }}>
+                Save a tasting note, comparison, or shelf entry — artifacts appear here as proof, not levels.
+              </p>
+            ) : (
+              <>
+                {Object.entries(data.evidence.by_world).map(([slug, count]) => (
+                  <p key={slug} style={{ color: '#8A8A8E', fontSize: 14, margin: '8px 0 0' }}>
+                    <span style={{ color: '#C8A96E' }}>{WORLD_LABELS[slug] ?? slug}</span>
+                    {' · '}
+                    {count} artifact{count === 1 ? '' : 's'}
+                  </p>
+                ))}
+                {data.evidence.latest && (
+                  <div style={{ marginTop: 16, padding: 14, background: '#111114', borderRadius: 8 }}>
+                    <p style={{ color: '#6B6B70', fontSize: 11, margin: 0 }}>Latest artifact</p>
+                    <p style={{ color: '#E8E8EC', fontSize: 14, marginTop: 6 }}>{data.evidence.latest.metadata.title}</p>
+                    <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 4 }}>
+                      {data.evidence.latest.type.replace('_', ' ')} ·{' '}
+                      {WORLD_LABELS[data.evidence.latest.metadata.world_slug] ??
+                        data.evidence.latest.metadata.world_slug}
+                    </p>
+                  </div>
+                )}
+              </>
+            )}
+          </section>
+
+          <section style={{ marginTop: 24, padding: 24, background: '#0F0F12', border: '1px solid #2A2520', borderRadius: 10 }}>
+            <p style={{ color: '#6B6B70', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              Activity
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
               {['Explorer', 'Collector', data.stats.challenges > 0 ? 'Participant' : null].filter(Boolean).map((s) => (
@@ -83,6 +144,9 @@ export default function PassportPage() {
               </div>
             )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 12, marginTop: 20, fontSize: 13 }}>
+              <div>
+                Artifacts <span style={{ color: '#E8E8EC' }}>{data.stats.artifacts}</span>
+              </div>
               <div>
                 Collection items <span style={{ color: '#E8E8EC' }}>{data.stats.collections}</span>
               </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import type { ImmersionModule } from '../../lib/world-experience/types';
+import { createArtifactFromModuleSave } from '../../lib/artifacts/create-from-action';
 
 type SavedEntry = { savedAt: string; values: Record<string, string> };
 
@@ -39,6 +40,7 @@ export function WorldImmersionModuleWorkbench({
   function save() {
     const entry: SavedEntry = { savedAt: new Date().toISOString(), values };
     localStorage.setItem(storageKey(worldSlug, module.slug), JSON.stringify(entry));
+    createArtifactFromModuleSave(worldSlug, module.slug, module.title, values);
     setSaved(true);
     setTimeout(() => setSaved(false), 2000);
   }
@@ -137,7 +139,7 @@ export function WorldImmersionModuleWorkbench({
             fontWeight: 500,
           }}
         >
-          {saved ? 'Saved ✓' : 'Save to device'}
+          {saved ? 'Saved ✓' : 'Save artifact'}
         </button>
       </div>
 

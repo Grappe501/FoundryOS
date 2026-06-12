@@ -39,6 +39,7 @@
     "audit:continuity": "npx tsx scripts/audit-continuity.ts",
     "audit:universe": "npx tsx scripts/audit-universe.ts",
     "audit:artifacts": "npx tsx scripts/audit-artifacts.ts",
+    "audit:bourbon-intelligence": "npx tsx scripts/audit-bourbon-intelligence.ts",
     "launch:domain": "node scripts/launch-domain.js",
     "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
     "predev": "npm run setup && npm run enforce",

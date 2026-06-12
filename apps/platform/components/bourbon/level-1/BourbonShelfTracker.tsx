@@ -8,6 +8,7 @@ import {
   removeCollectionItem,
   type CollectionItem,
 } from '../../../lib/bourbon-level-1/storage';
+import { createShelfArtifact } from '../../../lib/artifacts/create-from-action';
 import { listBourbonProducers } from '../../../lib/world-depth/bourbon-producers';
 
 const ACCENT = '#C8A96E';
@@ -34,6 +35,7 @@ export function BourbonShelfTracker() {
 
   function add() {
     upsertCollectionItem({ bottleSlug, status, at: new Date().toISOString() });
+    createShelfArtifact(bottleSlug, status);
     setItems(getCollection());
   }
 

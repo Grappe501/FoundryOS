@@ -34,6 +34,7 @@
     "@foundry/identity-narrative-engine": "*",
     "@foundry/world-continuity-engine": "*",
     "@foundry/atlas-graph-engine": "*",
+    "@foundry/bourbon-intelligence": "*",
     "@foundry/artifact-engine": "*",
     "@foundry/universe-registry": "*",
     "@foundry/mastery-engine": "*",
