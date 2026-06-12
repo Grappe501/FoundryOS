@@ -33,6 +33,7 @@
     "@foundry/world-events-engine": "*",
     "@foundry/identity-narrative-engine": "*",
     "@foundry/world-continuity-engine": "*",
+    "@foundry/atlas-graph-engine": "*",
     "@foundry/mastery-engine": "*",
     "@foundry/marketing-factory": "*",
     "@foundry/outcome-engine": "*",

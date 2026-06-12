@@ -1,19 +1,20 @@
 # Atlas Phase 2 — Planning
 
-> **The Atlas is the crown jewel.** Continue depth — build the graph that makes every term a weekend.
+> **Internally: Knowledge Graph. Consumer-facing: Atlas. The crown jewel.**
 
-See `docs/WORLD_ECOSYSTEM_MODEL.md` · **PASS-040B** (034P.5 quiet start in repo)
+See `docs/KNOWLEDGE_GRAPH.md` · **PASS-040B** (034P.5 quiet start in repo)
 
 ## What Atlas Is Becoming
 
-Not a glossary. Not encyclopedia 2.0.
+Not a glossary. Not encyclopedia. Not a filing cabinet.
 
 ```txt
 Knowledge Graph
 + Rabbit Hole Engine
++ Why Should I Care? (first field on every node)
 + Context Engine
 + Continuity / Anticipation Layer
-+ AI Retrieval Layer
++ Atlas-Aware AI (040C)
 + World Relationship Layer
 ```
 
@@ -26,6 +27,7 @@ Bourbon proof today: 103 terms, `AtlasTerm` inline component, rabbit-hole graph.
 ## Full Entry Schema (target — every term)
 
 ```txt
+Why should I care?   ← FIRST
 Definition · History · Geography · Timeline
 People · Organizations · Places
 Debates · Mysteries · Controversies
@@ -51,12 +53,15 @@ Collector collection · Detective case · History article · Atlas cousins
 |------|---------|-----------------|
 | **People** | Figures in the world | Jimmy Russell, Julian Van Winkle |
 | **Organizations** | Houses, regulators | Buffalo Trace, TTB, KDA |
-| **Places** | Geography-linked | Kentucky, Bardstown, Frankfort |
-| **Events** | Historical sequence | Prohibition, BiB Act |
+| **Places / Locations** | Geography-linked | Kentucky, Bardstown, Frankfort |
+| **Events / Eras** | Historical sequence | Prohibition, BiB Act |
+| **Techniques / Traditions** | How and why | Rickhouse rotation, sour mash |
+| **Innovations / Movements** | Change waves | Bottled-in-Bond reform |
 | **Controversies / Debates** | Tensions | age vs NAS, allocation ethics |
-| **Mysteries** | Open questions | Weller ghost, Stitzel-Weller juice |
+| **Mysteries / Questions** | Open questions | Weller ghost, Stitzel-Weller juice |
 | **Collections** | Curated storylines | Wheated Explorer, BiB collection |
 | **Objects / Artifacts** | Things in the world | Barrel char, red wax seal |
+| **Journeys / Experiences** | User paths | Distillery pilgrimage, blind tasting |
 | **Timelines** | Era sequences | Railroad-era warehouses → climate control |
 | **Worlds** | Cross-domain links | BBQ smoke chamber ↔ rickhouse |
 
@@ -70,9 +75,20 @@ Atlas becomes **connective tissue between worlds**:
 
 Package target: `@foundry/atlas-engine` — world configs, not per-world code.
 
-## Operator Surface (034U)
+## Operator Surface (034U — mission critical)
 
-`/operator/atlas` — term counts, depth score, missing definitions, missing rabbit holes, graph edge coverage.
+As the graph scales (500 bottles · 2,000 entries · 50 worlds), operator visibility is not optional.
+
+`/operator/atlas` — term counts, depth score, missing definitions, missing rabbit holes
+
+`/operator/atlas/graph` — **graph command center**:
+
+```txt
+What exists? · What's connected? · What's weak?
+What's missing? · What should Burt build next?
+```
+
+Per-world: entity counts by type · avg connections per node · nodes below threshold · orphaned nodes
 
 ## Implementation Order
 

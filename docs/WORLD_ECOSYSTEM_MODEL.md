@@ -24,16 +24,19 @@ The question is:
 
 ## Energy Ratio (locked)
 
-**Do not stop depth.** Change the ratio.
+**Do not stop depth.** Change the ratio. **Do not become a filing cabinet.**
 
 | Old trap | Correct balance |
 |----------|-----------------|
 | Stop adding content depth | **Continue depth** — worlds must reward lifelong obsession |
+| More pages = more depth | **More connections = more depth** — graph over catalog |
 | Two users see two websites | **Two users see two worlds** — continuity, artifacts, memory personalize depth |
-| More lessons first | **More identity infrastructure** — artifacts, atlas graph, passport |
-| Courses are the product | **Worlds are the product** — courses are on-ramps |
+| More lessons first | **More identity infrastructure** — artifacts, knowledge graph, passport |
+| Courses are the product | **Worlds are the product** — lessons are on-ramps into the graph |
 
-Enough reactive loop exists to prove the concept (034J→P). The next leap: **depth that compounds into identity.**
+Enough reactive loop exists to prove the concept (034J→P). The next leap: **depth that compounds into identity via connections.**
+
+See `docs/KNOWLEDGE_GRAPH.md`.
 
 ---
 

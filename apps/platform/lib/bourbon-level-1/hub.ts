@@ -18,7 +18,7 @@ export const LEVEL_1_TOOLS: Level1Tool[] = [
   { slug: 'chains', href: '/bourbon/chains', title: 'Progression Chains', hook: 'WT101 → Rare Breed → Russell\'s ladders', icon: '⛓', priority: 1.75, category: 'investigate' },
   { slug: 'detective', href: '/bourbon/detective', title: 'Bourbon Detective', hook: 'Close cases — pricing, Weller, DSP, store picks', icon: '🕵', priority: 1.6, category: 'investigate' },
   { slug: 'x-ray', href: '/bourbon/x-ray', title: 'Bottle X-Ray', hook: 'Analyst breakdown — mashbill to flavor sources', icon: '📡', priority: 1.7, category: 'investigate' },
-  { slug: 'compare', href: '/bourbon/compare', title: 'Compare 5 Bottles', hook: 'Bookmark comparison — value, proof, best use', icon: '⚖', priority: 1.8, category: 'investigate' },
+  { slug: 'compare', href: '/bourbon/compare', title: 'Compare Any Two', hook: 'Side-by-side charts — bottles or distilleries', icon: '⚖', priority: 1.8, category: 'investigate' },
   { slug: 'shelf-psych', href: '/bourbon/shelf-psychology', title: 'Shelf Psychology', hook: 'What your shelf says about you — shareable', icon: '🪞', priority: 1.9, category: 'investigate' },
   { slug: 'personalities', href: '/bourbon/personalities', title: 'Bourbon Personalities', hook: 'Hunter, Historian, Host — viral profiles', icon: '🎭', priority: 2.0, category: 'investigate' },
   { slug: 'store-picks', href: '/bourbon/store-picks', title: 'Store Pick Academy', hook: 'Massive rabbit hole — when picks are worth it', icon: '🏪', priority: 2.1, category: 'investigate' },
@@ -48,7 +48,8 @@ export const LEVEL_1_TOOLS: Level1Tool[] = [
   { slug: 'map', href: '/bourbon/map', title: 'Kentucky Map', hook: 'Regions, distilleries, Bourbon Trail planner', icon: '🗺', priority: 15, category: 'explore' },
   { slug: 'myths', href: '/bourbon/myths', title: 'Bourbon Myths', hook: 'Older is better? Kentucky only? True or false.', icon: '❓', priority: 16, category: 'learn' },
   { slug: 'stories', href: '/bourbon/stories', title: 'History Stories', hook: 'Pappy, Prohibition, red wax — narrative rabbit holes', icon: '📖', priority: 17, category: 'learn' },
-  { slug: 'producers', href: '/bourbon/producers', title: 'Producer Atlas', hook: '12 houses — history, sweet spots, hidden questions', icon: '🏭', priority: 18, category: 'explore' },
+  { slug: 'producers', href: '/bourbon/producers', title: 'Producer Atlas', hook: '11 houses — founding stories, pairings, masters', icon: '🏭', priority: 18, category: 'explore' },
+  { slug: 'people', href: '/bourbon/people', title: 'Masters & Makers', hook: 'Jimmy Russell, Elmer Lee — documentary profiles', icon: '👤', priority: 18.5, category: 'explore' },
   { slug: 'collector', href: '/bourbon/collector', title: 'Collector Track', hook: 'Beginner, enthusiast, or collector — different tools', icon: '🏆', priority: 19, category: 'collect' },
   { slug: 'shelf-track', href: '/bourbon/portfolio', title: 'My Bourbon Shelf', hook: 'Owned, tasted, wish list, empty bottles', icon: '🥃', priority: 20, category: 'collect' },
 ];

@@ -256,6 +256,7 @@ export default async function MissionControlHome() {
           <Link href="/operator/discovery" style={{ color: '#8E6BBD', fontSize: 14, fontWeight: 700 }}>Discovery Graph (PASS-034J) →</Link>
           <Link href="/operator/events" style={{ color: '#D4847A', fontSize: 14, fontWeight: 700 }}>World Events (PASS-034L) →</Link>
           <Link href="/search" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 600 }}>Global Search →</Link>
+          <Link href="/operator/universe" style={{ color: '#6B9BC9', fontSize: 14, fontWeight: 700 }}>Universe Command Center (034U) →</Link>
           <Link href="/operator/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Domain Expansion Scoring →</Link>
         </nav>
 

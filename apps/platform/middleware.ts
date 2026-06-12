@@ -59,7 +59,10 @@ export function middleware(request: NextRequest) {
       pathname.startsWith('/operator/marketing') ||
       pathname.startsWith('/operator/flywheel') ||
       pathname.startsWith('/operator/opportunities') ||
-      pathname.startsWith('/operator/learning')
+      pathname.startsWith('/operator/learning') ||
+      pathname.startsWith('/operator/universe') ||
+      pathname.startsWith('/operator/worlds') ||
+      pathname.startsWith('/operator/atlas')
     ) {
       return NextResponse.next();
     }

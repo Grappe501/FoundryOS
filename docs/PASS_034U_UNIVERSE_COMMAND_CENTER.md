@@ -14,7 +14,23 @@ What's closest to launch?
 Where should Burt spend the next 40 hours?
 ```
 
-034U is **resource allocation infrastructure** — not visibility for its own sake.
+**040B makes this worse fast.** Today: 20 bottles · 103 terms · 11 producers · 8 people. Soon: 500 bottles · 2,000 atlas entries · 500 people · 50 worlds.
+
+Without graph visibility, you go **blind inside your own universe.**
+
+034U is **resource allocation infrastructure** — not visibility for its own sake. **Mission critical** once 040B grows.
+
+**Job of this pass:** Build Foundry so Steve can see Foundry — not another 100 lessons.
+
+## Content Integrity (hard rule)
+
+Do **not** count fabricated people profiles as knowledge. See `docs/CONTENT_INTEGRITY.md`.
+
+```txt
+Leader slots        — empty spaces awaiting verified content
+Verified profiles   — must stay 0 until editorial pipeline
+Graph references    — connection intent, not permission to invent bios
+```
 
 ## Sequence Lock
 
@@ -24,6 +40,17 @@ Where should Burt spend the next 40 hours?
 034U  Universe Command Center ← operator (after reactive loop)
 034V  World Architect
 ```
+
+## The Four Questions
+
+| # | Question | Route |
+|---|----------|-------|
+| 1 | What exists? | `/operator/universe` — knowledge inventory from registries |
+| 2 | What is connected? | `/operator/atlas/graph` — graph density, weak nodes |
+| 3 | What is weak? | `/operator/universe` — world × layer heat scores |
+| 4 | What should be built next? | Computed build queue + highest ROI world |
+
+Plus: **Atlas Health** (`/operator/atlas`) · **Knowledge Gravity** (top rabbit holes on universe + atlas pages)
 
 ## Package
 
@@ -134,7 +161,32 @@ Bourbon: 103 terms · 61 deep · 98 linked · 41 rabbit holes
 Total Atlas Entries · Depth Score · Missing Definitions · Missing Rabbit Holes
 ```
 
-Atlas is the crown jewel — Wikipedia + MasterClass + Rabbit-hole Engine + Personal Mentor.
+Atlas is the crown jewel — internally the **Knowledge Graph** (`docs/KNOWLEDGE_GRAPH.md`).
+
+### `/operator/atlas/graph`
+
+**Graph command center** — answers without opening 50 pages:
+
+```txt
+What exists?        entity counts by type per world
+What's connected?   avg edges per node · connection heat map
+What's weak?        nodes below 10 edges · orphaned nodes
+What's missing?     entity types with zero seeds · broken hrefs
+What should Burt    ranked build queue from graph gaps
+  build next?
+```
+
+Example output:
+
+```txt
+Bourbon bottles: 20 seeded · 1 full graph (WT 101) · 19 fallback (4 edges)
+Atlas terms: 103 · 1 multi-identity (BiB) · 102 definition-only
+Producers: 11 pages · 0 graph resolver
+People: 8 profiles · 0 graph edges
+NEXT: seed Old Forester 1920 to 50 edges · BiB compare wire · producer resolver
+```
+
+Data sources: `@foundry/atlas-graph-engine` · `bourbon-depth/` seeds · registry audits.
 
 ### `/operator/factory`
 

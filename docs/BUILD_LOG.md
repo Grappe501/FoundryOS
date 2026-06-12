@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.2-ecosystem-model` |
-| **Last Pass** | PASS-034P World Continuity Engine ✅ |
-| **Next Pass** | PASS-034U Universe Command Center → 040A Artifact Engine |
-| **Focus** | Continue depth + build systems that make depth personal (five layers, artifact-first 040) |
-| **Live proof** | `/bourbon/today` · `/my-journey` · `/passport` · `/operator/events` · 7 world today pages |
+| **Version** | `0.9.3-universe-command` |
+| **Last Pass** | PASS-034U Universe Command Center + 040B graph foundation ✅ |
+| **Next Pass** | PASS-040A Artifact Engine |
+| **Focus** | Knowledge universe infrastructure — graph, artifacts, memory before broad testers |
+| **Live proof** | `/operator/universe` · `/operator/atlas` · `/operator/atlas/graph` · WT101 graph panel · leader slots |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -21,6 +21,27 @@
 | Proof UI on public pages | PASS-021 consumer polish; hide HPI/PASS now where possible |
 | Market domain not outcome | Market **Become Future-Proof**; Trinity is the wedge |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
+
+---
+
+## PASS-034U — Universe Command Center ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-10 |
+| **Package** | `@foundry/universe-registry` |
+| **Principle** | Build Foundry so Steve can see Foundry — CEO dashboard, not admin panel |
+| **Live proof** | `/operator/universe` · `/operator/worlds` · `/operator/atlas` · `/operator/atlas/graph` |
+| **Audit** | `npm run audit:universe` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Universe registry | `packages/universe-registry/` |
+| Snapshot aggregator | `apps/platform/lib/universe-registry/` |
+| Content integrity | `docs/CONTENT_INTEGRITY.md` — leader slots, no fabricated bios |
+| Knowledge graph vision | `docs/KNOWLEDGE_GRAPH.md` |
+
+**Also shipped (same deploy):** `@foundry/atlas-graph-engine` (040B foundation), graph panel on bottles, BiB exemplar, 034Q depth absorbed (not standalone), `npm run audit:universe`.
 
 ---
 
