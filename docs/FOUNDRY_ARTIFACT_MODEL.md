@@ -1,6 +1,22 @@
 # Foundry Artifact Model
 
-> **The business model is Identity Systems — not courses.**
+> **Operating System For Human Interests — not a course platform.**
+
+## The Mental Trap
+
+Do not classify Foundry as:
+
+```txt
+Course Platform → Academy → Certificate
+```
+
+Foundry is becoming:
+
+```txt
+Operating System For Human Interests
+```
+
+The Academy is **one feature** inside Explore — onboarding, not the product. If Foundry succeeds, Academy may be a **surprisingly small %** of engagement. The world keeps them there.
 
 ## What Foundry Is Not
 
@@ -36,15 +52,36 @@ See `docs/WORLD_ECOSYSTEM_MODEL.md`.
 
 ---
 
-## Five Layers
+## Engagement Mix (target — not lesson-heavy)
+
+Example: successful bourbon user time allocation:
 
 ```txt
-Explore    — Atlas, lore, tools, lessons (on-ramps)
-Practice   — Missions, investigations, challenges
-Identity   — Artifacts, Passport, collections, memory
-Influence  — Reviews, recommendations, hosting, groups
-Legacy     — Timeline, decade archive
+ 5%  academy / lessons      ← got them in the door
+10%  missions
+15%  atlas / graph
+20%  collections
+15%  reviews
+10%  recommendations
+10%  detective
+ 5%  events
+ 5%  groups / hosting
 ```
+
+AI Builder follows the same shape: workflows, tool reviews, prompt libraries, workshops, projects, artifacts — Academy becomes onboarding; **the world becomes the product**.
+
+---
+
+## Four Layers (CEO framing)
+
+```txt
+Layer 1 — Explore     Atlas · Lore · Missions · Tools · Academies
+Layer 2 — Identity    Artifacts · Collections · Passport · Memory · Narrative
+Layer 3 — Influence   Reviews · Recommendations · Groups · Hosting · Reputation
+Layer 4 — Legacy      Archives · Mentorship · Teaching · Long-term contribution
+```
+
+Implementation detail uses five layers (Practice between Explore and Identity) — see `docs/WORLD_ECOSYSTEM_MODEL.md`.
 
 **Identity is built through artifacts. Not lessons.**
 
@@ -54,7 +91,41 @@ They say: *I've got 120 tasting notes, 40 bottles on my shelf, and I hosted thre
 
 ---
 
+## Five Layers (implementation)
+
+```txt
+Explore    — Atlas, lore, tools, lessons, missions
+Identity   — Artifacts, Passport, collections, memory
+Influence  — Reviews, recommendations, hosting, groups
+Legacy     — Timeline, decade archive
+```
+
+---
+
+## Artifact Cascade (why 040A compounds)
+
+```txt
+Tasting note → WT101 node → producer → Kentucky → trail
+→ travel artifact → group → hosted tasting → event artifact → reputation
+```
+
+That's not a course. That's a living knowledge ecosystem.
+
+---
+
 ## The Object Hierarchy
+
+**Primary unit is the Knowledge Graph — not the World.**
+
+```txt
+Knowledge Graph
+  ├── Worlds           ← curated entry points
+  ├── Artifacts        ← atoms of identity (040A)
+  ├── Collections · Reviews · Events · Groups
+  ├── People (slots) · Places · Journeys
+```
+
+World-local view:
 
 ```txt
 World
@@ -151,34 +222,19 @@ See `docs/ATLAS_PHASE_2.md`.
 
 ## Pass Sequence (locked)
 
-### Reactive loop
-
 ```txt
-034M  Identity Narrative     ✅
-034P  World Continuity       ✅
-034U  Universe Command Center ← NEXT
-034V  World Architect
+034U  Universe Command Center     ✅
+040A  Artifact Engine             ← NEXT — see PASS_040A_ARTIFACT_ENGINE.md
+040B  Atlas Graph Engine
+034P+ World Memory Expansion
+040C  Atlas-Aware AI
+040D  Personal Database Engine
+040E  Review Engine
+040F  Recommendation Engine
+040G  Passport
 ```
 
-### Ownership + ecosystem (040 block)
-
-```txt
-040A  Artifact Engine              ← build first
-040B  Atlas Phase 2 Graph Layer
-040C  Personal Database Engine
-040D  Review & Recommendation Engine
-040E  Group & Host Engine
-040F  Passport Shell
-040G  Reputation Engine v2
-040H  Legacy Layer
-040I  Mentor Marketplace           — later
-```
-
-After 040A–F, the factory builds **living ecosystems** — not just worlds.
-
-### Pass code migration
-
-Earlier docs placed Artifact at 040H (unifier after other engines). **Reordered:** Artifact is 040A — the primitive everything else produces.
+Then: Group · Host · Legacy · Reputation v2 · Mentor Marketplace
 
 ---
 
@@ -187,5 +243,16 @@ Earlier docs placed Artifact at 040H (unifier after other engines). **Reordered:
 The real product is not education.
 
 It is helping people **build a richer life around the things they care about** — and **preserving the evidence that they did**.
+
+The long-term moat:
+
+```txt
+This system knows what I care about.
+Remembers what I've done.
+Connects ideas I wouldn't have found.
+Stores years of my work.
+Introduces me to people like me.
+Makes me more effective at my passion.
+```
 
 When Foundry stops feeling like a website and starts feeling like a place — **that** is the moat.

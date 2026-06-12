@@ -1,6 +1,6 @@
 # World Ecosystem Model
 
-> **Continue adding depth — but build the systems that make depth matter personally.**
+> **Operating System For Human Interests — not a course platform.**
 
 Most educational platforms:
 
@@ -11,14 +11,14 @@ Content → Course → Certificate
 Foundry:
 
 ```txt
-World → Identity → Influence → Legacy
+Knowledge Graph → Artifacts → Identity → Influence → Legacy
 ```
 
-The question is not *how much content exists* — bourbon enthusiasts, entrepreneurs, and civic organizers can spend **years or decades** inside a world.
+Worlds are **curated entry points into the graph** — not the primary architectural unit.
 
-The question is:
+The question is not *how much content exists* — the question is:
 
-> **How do we make a world feel inexhaustible — and personally meaningful?**
+> **Does this feel alive — or still like a website?**
 
 ---
 
@@ -32,7 +32,7 @@ The question is:
 | More pages = more depth | **More connections = more depth** — graph over catalog |
 | Two users see two websites | **Two users see two worlds** — continuity, artifacts, memory personalize depth |
 | More lessons first | **More identity infrastructure** — artifacts, knowledge graph, passport |
-| Courses are the product | **Worlds are the product** — lessons are on-ramps into the graph |
+| Courses are the product | **Academy is onboarding** — graph + artifacts are the product |
 
 Enough reactive loop exists to prove the concept (034J→P). The next leap: **depth that compounds into identity via connections.**
 
@@ -40,7 +40,20 @@ See `docs/KNOWLEDGE_GRAPH.md`.
 
 ---
 
-## Five Layers
+## Four Layers (CEO framing)
+
+| Layer | Question | Components |
+|-------|----------|------------|
+| **1 — Explore** | What is this world? | Atlas · Lore · Missions · Tools · **Academies** |
+| **2 — Identity** | Who am I here? | Artifacts · Collections · Passport · Memory · Narrative |
+| **3 — Influence** | Who trusts my judgment? | Reviews · Recommendations · Groups · Hosting · Reputation |
+| **4 — Legacy** | What did I build over years? | Archives · Mentorship · Teaching · Contribution |
+
+Academy sits in Layer 1. Important — nowhere near the whole system.
+
+---
+
+## Five Layers (implementation detail)
 
 Every world inherits all five. Not every user reaches Layer 5 — but the architecture must support a lifetime.
 

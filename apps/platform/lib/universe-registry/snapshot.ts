@@ -3,6 +3,7 @@
  */
 
 import { resolveEntityGraph } from '@foundry/atlas-graph-engine';
+import { getArtifactEngineStats } from '@foundry/artifact-engine';
 import { COLLECTION_DEFINITIONS, collectionsForWorld } from '@foundry/collector-engine';
 import { LIVE_EVENT_WORLDS } from '@foundry/world-events-engine';
 import { LIVE_NARRATIVE_WORLDS } from '@foundry/identity-narrative-engine';
@@ -170,6 +171,7 @@ export function getUniverseSnapshot(): UniverseSnapshot {
   const atlasRows = getAtlasHealthRows();
   const worldScores = getWorldLayerScores();
   const leaders = countLeaderSlots('bourbon');
+  const artifactStats = getArtifactEngineStats();
 
   const incomingInput = INCOMING_WORLDS.map((w) => ({
     slug: w.slug,
@@ -210,7 +212,7 @@ export function getUniverseSnapshot(): UniverseSnapshot {
       debates: collectUniqueFromSeeds('controversies').length,
       mysteries: collectUniqueFromSeeds('mysteries').length,
       collections: COLLECTION_DEFINITIONS.length,
-      artifacts: 0,
+      artifacts: artifactStats.user_artifacts,
       reviews: 0,
     },
     graph_density_avg: computeGraphDensityAvg(graphNodes),
@@ -220,6 +222,12 @@ export function getUniverseSnapshot(): UniverseSnapshot {
     atlas_health_summary: summarizeAtlasHealth(atlasRows),
     knowledge_gravity: getKnowledgeGravity(),
     highest_roi_world: pickHighestRoiWorld(buildQueue),
+    artifact_metrics: {
+      user_artifacts: artifactStats.user_artifacts,
+      artifact_types_defined: artifactStats.artifact_types_defined,
+      engine_ready: artifactStats.engine_ready,
+      north_star_label: 'User artifacts — evidence the ecosystem is alive',
+    },
   };
 }
 

@@ -1,6 +1,26 @@
 # Device Strategy
 
-Day 1 architecture supports three surfaces — one identity graph.
+Day 1 architecture supports **web or install on your phone** — one identity graph.
+
+---
+
+## Access Up Front (locked)
+
+Every user chooses:
+
+```txt
+Web     — any browser, any device, foundry-os.netlify.app (and vertical domains)
+Install — Add to Home Screen / PWA now · native Foundry app (App Store / Play) later
+```
+
+Consumer home and layout expose this **before** signup — not buried in settings.
+
+Implementation:
+- `public/manifest.webmanifest` — installable PWA shell
+- `FoundryAccessOptions` — web + install prompt on home
+- Same account, artifacts, passport sync via Supabase auth (040D+)
+
+**Artifacts must work on both surfaces** — tasting notes on phone at the bar, workflows on desktop.
 
 ---
 
@@ -20,10 +40,11 @@ Delivery mechanism for worlds — not separate products.
 
 ## Mobile
 
-**One app: Foundry** (not Foundry Encyclopedia, not Foundry Academy)
+**One app: Foundry** (not per-vertical apps)
 
-- App Store
-- Google Play
+Roadmap:
+1. **Now:** PWA install — home screen, offline-ready shell (see `docs/OFFLINE_SYNC.md`)
+2. **Later:** App Store + Google Play — same codebase, worlds inside
 
 **Do NOT build:** Bourbon App, Movie App, Book App.
 
@@ -34,26 +55,18 @@ First screen: **What are you becoming?**
 NOT Search · NOT Browse Topics · NOT Discover Content
 
 Priority sections:
-1. Active Paths
-2. Current Projects
-3. Club Activity
-4. New Knowledge
-5. Recommended Next Step
+1. Active paths / artifacts
+2. Current projects
+3. Club activity
+4. New knowledge (Atlas)
+5. Recommended next step
 
-Inside Foundry, verticals appear as **worlds:**
-
-```txt
-Bourbon · Movies · Books · Music · BBQ · Genealogy
-```
+Worlds inside one install: Bourbon · AI Builder · BBQ · Poker · …
 
 ### Why One App
 
-- One install
-- One account
-- One notification system
-- One social graph
-- One reputation graph
-- One collection graph
+- One install · one account · one notification system
+- One social · reputation · collection · **artifact** graph
 - One Foundry Identity
 
 ---
@@ -63,19 +76,8 @@ Bourbon · Movies · Books · Music · BBQ · Genealogy
 Supabase Auth:
 
 ```txt
-Google
-Apple
-Email
-Magic Link
+Google · Apple · Email · Magic Link
 ```
-
----
-
-## Home Screen Psychology
-
-People don't pin "Bourbon Encyclopedia."
-
-They pin **Foundry** — their second brain.
 
 ---
 
@@ -84,9 +86,16 @@ They pin **Foundry** — their second brain.
 Users download for offline use:
 
 ```txt
-Collection · Academy · Encyclopedia · Notes
+Collections · Academy · Atlas · Artifacts · Notes
 ```
 
-Especially valuable for: hunting, fishing, travel, genealogy, museums, conventions, festivals.
+Especially valuable for: hunting, travel, distilleries, conventions, festivals.
 
 See `docs/OFFLINE_SYNC.md`
+
+---
+
+## Related
+
+- `docs/PASS_040A_ARTIFACT_ENGINE.md`
+- `docs/FOUNDRY_IDENTITY.md`

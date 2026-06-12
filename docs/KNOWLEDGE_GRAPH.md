@@ -1,8 +1,10 @@
 # Foundry Knowledge Graph
 
-> **Internally: Knowledge Graph. Consumer-facing: Atlas. Never: Encyclopedia.**
+> **Internally: Knowledge Graph. Consumer-facing: Atlas. Never: Encyclopedia. Never: Course Platform.**
 
-Foundry is not a course platform validating topic demand. It is:
+Foundry is an **Operating System For Human Interests**. The Academy is one Explore feature — onboarding, not the product.
+
+Foundry is not validating topic demand. It is:
 
 ```txt
 Knowledge Universe
@@ -15,6 +17,32 @@ Knowledge Universe
 ```
 
 The biggest mistake right now is becoming a **giant filing cabinet** — or pausing architecture to chase testers before the systems that create *aliveness* exist.
+
+## Encyclopedia vs Journey
+
+| Encyclopedia | Foundry Knowledge Graph |
+|--------------|-------------------------|
+| What is this? | **Why should I care?** |
+| Static facts | What does it connect to? |
+| — | Who disagrees? |
+| — | Where does this lead? |
+| — | What should I explore next? |
+
+Wikipedia stores information. **Foundry creates journeys.**
+
+---
+
+## Primary Architecture (not World-first)
+
+```txt
+Knowledge Graph
+  ├── Worlds          ← entry points, not the root
+  ├── Artifacts       ← user evidence (040A)
+  ├── Collections · Reviews · Events · Groups
+  ├── Leader slots · Places · Journeys
+```
+
+034U tracks **nodes · connections · gravity · density · artifacts** — not lesson counts alone.
 
 ---
 
@@ -201,6 +229,7 @@ Foundry stops being a collection of worlds and becomes an **operating system for
 
 ## Related
 
+- `docs/PASS_040A_ARTIFACT_ENGINE.md`
 - `docs/PASS_040B_ATLAS_GRAPH_ENGINE.md`
 - `docs/PASS_034U_UNIVERSE_COMMAND_CENTER.md`
 - `docs/PASS_034Q_ABSORBED.md`

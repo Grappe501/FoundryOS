@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ConsumerNav } from '../components/ConsumerNav';
+import { FoundryAccessOptions } from '../components/FoundryAccessOptions';
 import { DailyFoundryHook } from '../components/living-worlds/LivingWorldPanels';
 import { CrossWorldEventsPanel } from '../components/world-events/WorldEventsToday';
 import { TrinityHub } from '../components/trinity/TrinityHub';
@@ -38,6 +39,7 @@ export default function ConsumerHomePage() {
         <p style={{ color: '#6B6B70', fontSize: 14, marginTop: 14, fontStyle: 'italic', maxWidth: 480 }}>
           Help me become the person I want to be — that is the private intent behind every path.
         </p>
+        <FoundryAccessOptions />
         <div style={{ marginTop: 28, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <Link
             href="/future-proof"

@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.3-universe-command` |
-| **Last Pass** | PASS-034U Universe Command Center + 040B graph foundation ✅ |
-| **Next Pass** | PASS-040A Artifact Engine |
-| **Focus** | Knowledge universe infrastructure — graph, artifacts, memory before broad testers |
-| **Live proof** | `/operator/universe` · `/operator/atlas` · `/operator/atlas/graph` · WT101 graph panel · leader slots |
+| **Version** | `0.9.4-artifact-engine` |
+| **Last Pass** | PASS-040A Artifact Engine (primitive) ✅ |
+| **Next Pass** | Wire tasting journal → createArtifact · 040B graph + artifacts |
+| **Focus** | Artifacts as substrate — evidence of participation, not lesson completion |
+| **Live proof** | `/operator/universe` (user artifacts KPI) · PWA install · `@foundry/artifact-engine` |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -21,6 +21,27 @@
 | Proof UI on public pages | PASS-021 consumer polish; hide HPI/PASS now where possible |
 | Market domain not outcome | Market **Become Future-Proof**; Trinity is the wedge |
 | Bulk thin SEO pages | Publish gate: score >= 70 |
+
+---
+
+## PASS-040A — Artifact Engine (primitive) ✅
+
+| Field | Value |
+|-------|-------|
+| **Date** | 2026-06-10 |
+| **Package** | `@foundry/artifact-engine` |
+| **Principle** | Evidence of participation — Passport displays artifacts; artifacts are reality |
+| **Progression** | World → Artifacts → Collections → Identity → Influence → Legacy |
+| **Audit** | `npm run audit:artifacts` |
+
+| Deliverable | Location |
+|-------------|----------|
+| 14 artifact types + 7 relationship types | `packages/artifact-engine/` |
+| North-star KPI on universe dashboard | `/operator/universe` — User Artifacts largest metric |
+| PWA / web-or-install up front | `FoundryAccessOptions` · `manifest.webmanifest` |
+| Device strategy lock | `docs/DEVICE_STRATEGY.md` |
+
+**Not in 040A:** artifact consumer routes, Supabase persistence (040D), review subtype UI (040E).
 
 ---
 

@@ -129,6 +129,6 @@ See `apps/platform/lib/incoming-worlds.ts`.
 - `docs/KNOWLEDGE_GRAPH.md` — canonical vision (internal name)
 - `docs/WORLD_ECOSYSTEM_MODEL.md` — five layers, nine behaviors
 - `docs/FOUNDRY_ARTIFACT_MODEL.md`
-- `docs/ATLAS_PHASE_2.md`
+- `docs/PASS_040A_ARTIFACT_ENGINE.md`
 - `docs/PASS_040B_ATLAS_GRAPH_ENGINE.md`
 - `docs/PASS_034U_UNIVERSE_COMMAND_CENTER.md`

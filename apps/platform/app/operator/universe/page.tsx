@@ -11,25 +11,51 @@ export default function OperatorUniversePage() {
     <OperatorShell
       pass="PASS-034U · Universe Command Center"
       title="What exists in Foundry?"
-      subtitle="Build Foundry so Steve can see Foundry. Not an admin dashboard — a CEO view of knowledge, connections, weakness, and what to build next. All counts from live registries — no fabricated profiles."
+      subtitle="Build Foundry so Steve can see Foundry. User artifacts are the north-star metric — evidence the ecosystem is alive."
     >
+      <section
+        style={{
+          marginTop: 24,
+          padding: 24,
+          background: 'linear-gradient(135deg, #1A1410 0%, #0F0F12 100%)',
+          border: '1px solid #3A3020',
+          borderRadius: 10,
+        }}
+      >
+        <p style={{ color: '#C8A96E', fontSize: 11, letterSpacing: '0.1em', textTransform: 'uppercase', margin: 0 }}>
+          North star · 040A
+        </p>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginTop: 12, flexWrap: 'wrap' }}>
+          <span style={{ fontSize: 48, fontWeight: 300, color: '#E8E8EC' }}>{snap.artifact_metrics.user_artifacts.toLocaleString()}</span>
+          <div>
+            <p style={{ color: '#E8E8EC', fontSize: 16, margin: 0 }}>User artifacts</p>
+            <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 6 }}>{snap.artifact_metrics.north_star_label}</p>
+          </div>
+        </div>
+        <p style={{ color: '#8A8A8E', fontSize: 13, marginTop: 16, lineHeight: 1.6 }}>
+          Primitive ready: {snap.artifact_metrics.engine_ready ? 'yes' : 'no'} · {snap.artifact_metrics.artifact_types_defined} artifact types defined
+          · Passport displays artifacts — without them, passport is an empty profile
+        </p>
+        <p style={{ color: '#4A4A4E', fontSize: 11, marginTop: 10 }}>
+          Eventually: Atlas 15k · Lessons 8k · Worlds 2k matter less than User Artifacts 4.3M
+        </p>
+      </section>
+
       <section>
-        <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: '24px 0 0' }}>1 · What exists?</h2>
+        <h2 style={{ fontSize: 14, color: '#6B9BC9', margin: '32px 0 0' }}>1 · What exists?</h2>
         <StatGrid
           items={[
+            { label: 'User artifacts', value: snap.artifact_metrics.user_artifacts, note: 'largest KPI' },
+            { label: 'Artifact types', value: snap.artifact_metrics.artifact_types_defined, note: '040A primitive' },
             { label: 'Worlds live', value: snap.knowledge.worlds },
             { label: 'Atlas entries', value: snap.knowledge.atlas_entries, note: 'bourbon v1' },
+            { label: 'Collections', value: snap.knowledge.collections },
             { label: 'Bottles', value: snap.knowledge.bottles },
             { label: 'Producers', value: snap.knowledge.producers },
             { label: 'Leader slots', value: snap.knowledge.leader_slots, note: 'empty until verified' },
-            { label: 'Verified profiles', value: snap.knowledge.verified_profiles, note: 'must stay 0 until editorial' },
-            { label: 'Places (refs)', value: snap.knowledge.places },
-            { label: 'Organizations (refs)', value: snap.knowledge.organizations },
+            { label: 'Verified profiles', value: snap.knowledge.verified_profiles },
             { label: 'Debates (refs)', value: snap.knowledge.debates },
             { label: 'Mysteries (refs)', value: snap.knowledge.mysteries },
-            { label: 'Collections', value: snap.knowledge.collections },
-            { label: 'Artifacts', value: snap.knowledge.artifacts, note: '040A not built' },
-            { label: 'Reviews', value: snap.knowledge.reviews, note: '040E not built' },
           ]}
         />
       </section>

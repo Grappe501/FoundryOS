@@ -96,4 +96,11 @@ export type UniverseSnapshot = {
   };
   knowledge_gravity: KnowledgeGravityNode[];
   highest_roi_world: BuildQueueItem | null;
+  /** North-star metric — user-created evidence (040A) */
+  artifact_metrics: {
+    user_artifacts: number;
+    artifact_types_defined: number;
+    engine_ready: boolean;
+    north_star_label: string;
+  };
 };
