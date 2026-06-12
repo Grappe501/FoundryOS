@@ -9,8 +9,8 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-040B3",
-    "next_pass": "PASS-034P+",
+    "current_pass": "PASS-034P+",
+    "next_pass": "PASS-040D",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
@@ -37,6 +37,7 @@
     "audit:events": "npx tsx scripts/audit-events.ts",
     "audit:identity": "npx tsx scripts/audit-identity.ts",
     "audit:continuity": "npx tsx scripts/audit-continuity.ts",
+    "audit:memory": "npx tsx scripts/audit-memory.ts",
     "audit:universe": "npx tsx scripts/audit-universe.ts",
     "audit:artifacts": "npx tsx scripts/audit-artifacts.ts",
     "audit:bourbon-intelligence": "npx tsx scripts/audit-bourbon-intelligence.ts",

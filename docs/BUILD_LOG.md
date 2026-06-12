@@ -6,12 +6,33 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.6-bourbon-graph` |
-| **Last Pass** | PASS-040B3 Graph Enrichment + Inline Atlas Links ✅ |
-| **Next Pass** | PASS-034P+ World Continuity Expansion |
-| **Focus** | Enter and wander — inline links inside every paragraph |
-| **Live proof** | `/bourbon/graph/bottled-in-bond` · `/operator/atlas/graph` · `npm run audit:graph` |
+| **Version** | `0.9.7-world-memory` |
+| **Last Pass** | PASS-034P+ World Continuity Expansion ✅ |
+| **Next Pass** | PASS-040D Personal Database Persistence |
+| **Focus** | The world was waiting for you — welcome-back, not activity log |
+| **Live proof** | `/my-journey` · `/bourbon` welcome panel · `/passport/timeline` · `npm run audit:memory` |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
+
+---
+
+---
+
+## PASS-034P+ — World Continuity Expansion ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Make the user feel the world was waiting — not a resume of clicks |
+| **Principle** | Last time you were here… · Pick the thread back up · three memory tiers |
+| **Audit** | `npm run audit:memory` |
+
+| Deliverable | Location |
+|-------------|----------|
+| `@foundry/world-memory-engine` | welcome-back · unfinished threads · rabbit-hole resume · first-memory catalog |
+| localStorage v1 | `foundry-world-memory-v1` in `lib/world-memory/memory-store.ts` |
+| Continuity panels | `/my-journey` · `/{world}` hub · `/passport/timeline` |
+| Recorders | BourbonGraphExplorer · CompareAnyTwoTool · save rabbit hole button |
+
+**Next:** 040D Personal Database Persistence · 040D.5 Memory + Graph Sync · 040C Atlas-Aware AI (after persistence)
 
 ---
 

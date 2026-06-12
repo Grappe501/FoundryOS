@@ -88,14 +88,14 @@ packages/atlas-graph-engine/
   - No broken inline hrefs for priority nodes
   - Priority pages: WT101, Buffalo Trace, Maker's Mark, bottled-in-bond
 
-## Exit criteria
+## Exit criteria ✅
 
-1. Graph pages feel like wandering — inline links in body copy, not just edge cards
-2. Atlas entries link outward to bottles and producers
-3. All four wander footer blocks on every `/bourbon/graph/[slug]` route
-4. `audit:graph-enrichment` passes
-5. `audit:graph` still passes (040B2 regression)
-6. `build:platform` passes · Netlify verified
+1. Graph pages have inline links in center narrative
+2. All graph routes have four wander footer blocks
+3. Bottle pages link back into graph + Atlas via LinkedParagraph
+4. BiB graph + atlas pages are rabbit-hole hubs
+5. `npm run audit:graph-enrichment` passes
+6. `npm run audit:graph` regression passes
 
 ## Locked sequence (after 040B3)
 

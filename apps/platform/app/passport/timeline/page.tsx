@@ -22,7 +22,7 @@ export default function PassportTimelinePage() {
         ← Back to Passport
       </Link>
       <Link href="/my-journey" style={{ display: 'inline-block', marginTop: 28, marginLeft: 20, color: '#6B9BC9', fontSize: 14 }}>
-        Continue your journey →
+        Pick the thread back up →
       </Link>
     </main>
   );

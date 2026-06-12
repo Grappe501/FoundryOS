@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   allBottleCompareOptions,
@@ -9,6 +9,7 @@ import {
   compareProducersAny,
 } from '../../../lib/bourbon-depth/compare-any';
 import { createComparisonArtifact } from '../../../lib/artifacts/create-from-action';
+import { recordComparison } from '../../../lib/world-memory/memory-store';
 
 const ACCENT = 'var(--foundry-primary)';
 
@@ -60,6 +61,14 @@ export function CompareAnyTwoTool({ initialMode = 'bottles', initialA, initialB 
 
   const aName = opts.find((o) => o.slug === a)?.name ?? a;
   const bName = opts.find((o) => o.slug === b)?.name ?? b;
+
+  const lastRecorded = useRef('');
+  useEffect(() => {
+    const key = `${mode}:${a}:${b}`;
+    if (key === lastRecorded.current) return;
+    lastRecorded.current = key;
+    recordComparison('bourbon', a, b, aName, bName, mode);
+  }, [mode, a, b, aName, bName]);
 
   function saveComparison() {
     createComparisonArtifact(mode, a, b, aName, bName);

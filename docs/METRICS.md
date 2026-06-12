@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-034P close — World Continuity + ecosystem model locked
+> Updated PASS-034P+ close — World Memory + Layer 1 stack complete; 040D resequenced ahead of 040C
 
 ---
 
@@ -153,13 +153,14 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 34P (reactive loop closed; 034U + 040A next) |
-| Version | `0.9.0-living-worlds` |
+| Passes complete | 034P+ (Layer 1 stack: B1→B2→B3→Continuity) |
+| Version | `0.9.7-world-memory` |
 | Launch readiness | 88% |
 | Reputation + Mastery Engine | ✅ PASS-013 — `/reputation` + `/mastery` |
 | Living Worlds packages | `@foundry/mentor-engine`, `@foundry/lore-engine` |
-| Bourbon tool routes | 30+ Level 1 + intelligence surfaces |
-| Next pass | PASS-035 — Supabase journey sync + LLM mentor v2 |
+| World memory engine | ✅ PASS-034P+ — `@foundry/world-memory-engine` · `npm run audit:memory` |
+| Bourbon tool routes | 30+ Level 1 + intelligence surfaces + graph hallways |
+| Next pass | **PASS-040D** — Personal Database Persistence (040C blocked until 040D.5) |
 
 ---
 

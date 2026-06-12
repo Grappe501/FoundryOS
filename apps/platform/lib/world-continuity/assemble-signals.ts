@@ -12,6 +12,7 @@ import {
   getLatestIntent,
   getLastVisit,
   getMemoryObjectIds,
+  getMemorySignalsForWorld,
   syncMemoryObjects,
 } from './client-state';
 
@@ -201,4 +202,12 @@ export function assembleContinuityBundle(worldSlug: string): ContinuitySignalBun
 
 export function assembleAllContinuityBundles(): ContinuitySignalBundle[] {
   return ACTIVE_WORLDS.map((w) => assembleContinuityBundle(w.slug));
+}
+
+export function assembleMemorySignalsForWorld(worldSlug: string) {
+  return getMemorySignalsForWorld(worldSlug);
+}
+
+export function assembleAllMemorySignals() {
+  return ACTIVE_WORLDS.map((w) => getMemorySignalsForWorld(w.slug));
 }

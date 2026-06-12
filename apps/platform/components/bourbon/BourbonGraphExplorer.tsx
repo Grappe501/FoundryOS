@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import type { GraphConnection } from '@foundry/atlas-graph-engine';
 import { BourbonGraphHallway } from './BourbonGraphHallway';
@@ -13,12 +14,20 @@ import {
 } from '../../lib/bourbon-graph';
 import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
 import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
+import { recordGraphView, recordSavedRabbitHole } from '../../lib/world-memory/memory-store';
 
 const ACCENT = 'var(--foundry-primary)';
 
 export function BourbonGraphExplorer({ slug }: { slug: string }) {
   const ref = inferGraphRef(slug);
   const graph = ref ? resolveBourbonGraph(ref) : null;
+  const [savedHole, setSavedHole] = useState(false);
+
+  useEffect(() => {
+    if (graph) {
+      recordGraphView('bourbon', slug, graph.title);
+    }
+  }, [slug, graph?.title]);
 
   if (!graph) {
     return (
@@ -77,6 +86,27 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
           <LinkedParagraph segments={narrative} style={{ color: '#E8E8EC', fontSize: 15 }} />
         </div>
       </section>
+
+      <button
+        type="button"
+        onClick={() => {
+          recordSavedRabbitHole('bourbon', slug, graph.title);
+          setSavedHole(true);
+          setTimeout(() => setSavedHole(false), 2500);
+        }}
+        style={{
+          marginTop: 16,
+          padding: '8px 14px',
+          background: savedHole ? '#1A2A1A' : '#111114',
+          border: `1px solid ${savedHole ? '#6B9B6B' : ACCENT}44`,
+          borderRadius: 6,
+          color: savedHole ? '#6B9B6B' : ACCENT,
+          fontSize: 12,
+          cursor: 'pointer',
+        }}
+      >
+        {savedHole ? 'Rabbit hole saved — Foundry will remember' : 'Save this rabbit hole'}
+      </button>
 
       {['Bottles', 'Producers', 'Known people', 'Atlas terms', 'Collections', 'Mysteries'].map((label) => {
         const items =

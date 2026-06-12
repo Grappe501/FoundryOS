@@ -315,6 +315,28 @@ export const PASSES: PassEntry[] = [
     status: 'planned' as const,
     summary: 'After immersion — 5×5 segments, no ads. Goal: "Wow, there is way more here than I expected."',
   },
+  {
+    code: 'PASS-040B3',
+    title: 'Graph Enrichment + Inline Atlas Links',
+    status: 'completed' as const,
+    date: '2026-06-10',
+    summary: 'InlineAtlasLink · GraphWanderFooter · link saturation on every graph route. npm run audit:graph-enrichment.',
+  },
+  {
+    code: 'PASS-034P+',
+    title: 'World Continuity Expansion',
+    status: 'completed' as const,
+    date: '2026-06-10',
+    summary:
+      '@foundry/world-memory-engine · welcome-back panels · localStorage v1 · graph/compare/rabbit-hole memory · npm run audit:memory. Layer 1 stack complete.',
+  },
+  {
+    code: 'PASS-040D',
+    title: 'Personal Database Persistence',
+    status: 'planned' as const,
+    summary:
+      'Cross-device durability for artifacts, memory, collections, identity narrative. Foundation before Atlas-Aware AI (040C).',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -440,10 +462,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-021',
-    next_pass: 'PASS-020',
+    last_pass: 'PASS-034P+',
+    next_pass: 'PASS-040D',
     current_focus:
-      'Handpicked private beta — invite testers from waitlist. Factory + depth + auth ready.',
+      'Layer 1 stack complete (B1→B2→B3→Continuity). Next: Personal Database Persistence — real memory before Atlas-Aware AI.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',
