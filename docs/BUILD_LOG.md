@@ -6,14 +6,14 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.8-identity-sync` |
-| **Last Pass** | PASS-040D v1 Personal Database Persistence ✅ |
-| **Current Pass** | PASS-040D.5 Identity Sync Compound Loop ✅ |
-| **Next Pass** | PASS-040C Atlas-Aware AI |
-| **Live proof** | `npm run verify:040d5` · `npm run audit:identity-sync` · compound loop on artifact create |
-| **Focus** | Saving data is not enough — every saved action changes the user's world |
-| **040D proof** | `npm run verify:040d` · `/api/identity/hydrate` (401 unsigned, 200 authed) |
-| **Continuity proof** | `/my-journey` · `/bourbon` welcome panel · `/passport` · `npm run audit:memory` |
+| **Version** | `0.9.9-atlas-aware-ai` |
+| **Last Pass** | PASS-040C Atlas-Aware AI ✅ |
+| **Current Pass** | Design System v2 + stack verification ✅ |
+| **Next Pass** | PASS-040E Review Engine |
+| **Live proof** | `npm run verify:stack` · `npm run verify:040c` · `/operator/ai-context` |
+| **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI |
+| **040D proof** | `npm run verify:040d` · `/api/identity/hydrate` |
+| **Continuity proof** | `/my-journey` · `/bourbon/graph/bottled-in-bond` · Ask the Atlas |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
 ---
@@ -21,6 +21,27 @@
 ---
 
 ---
+
+---
+
+---
+
+## PASS-040C — Atlas-Aware AI ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | AI answers from Foundry's universe first — not generic ChatGPT |
+| **Principle** | Graph + portable identity + confidence honesty |
+| **Audit** | `npm run verify:040c` · `npm run audit:atlas-aware-ai` |
+
+| Deliverable | Location |
+|-------------|----------|
+| `@foundry/atlas-aware-ai` | `buildAtlasContext` · `buildUserIdentityContext` · `generateMentorAnswer` |
+| Operator debugger | `/operator/ai-context` |
+| Consumer panel | Ask the Atlas on `/bourbon/graph/[slug]` |
+| Safety | Unknown source message · forbidden invention topics |
+
+Brief: `docs/PASS_040C_ATLAS_AWARE_AI.md`
 
 ---
 

@@ -153,14 +153,14 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 040D.5 (Portable Identity + compound sync loop) |
-| Version | `0.9.8-identity-sync` |
-| Launch readiness | 90% |
-| Personal database | ✅ PASS-040D — `@foundry/personal-database` · `npm run verify:040d` |
-| Identity sync engine | ✅ PASS-040D.5 — `@foundry/identity-sync-engine` · `npm run verify:040d5` |
-| World memory engine | ✅ PASS-034P+ — `@foundry/world-memory-engine` · `npm run audit:memory` |
-| Bourbon tool routes | 30+ Level 1 + intelligence surfaces + graph hallways |
-| Next pass | **PASS-040C** — Atlas-Aware AI (reads Portable Identity) |
+| Passes complete | 040C (Atlas-Aware AI + identity stack) |
+| Version | `0.9.9-atlas-aware-ai` |
+| Launch readiness | 92% |
+| Personal database | ✅ PASS-040D — `npm run verify:040d` |
+| Identity sync engine | ✅ PASS-040D.5 — `npm run verify:040d5` |
+| Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
+| Full stack verify | `npm run verify:stack` |
+| Next pass | **PASS-040E** — Review Engine |
 
 ---
 

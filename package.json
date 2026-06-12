@@ -22,6 +22,7 @@
     "cleanup:c-emergency": "powershell -ExecutionPolicy Bypass -File ./scripts/emergency-c-cleanup.ps1",
     "verify:c-clean": "powershell -ExecutionPolicy Bypass -File ./scripts/verify-c-drive-clean.ps1",
     "preflight": "node scripts/enforce-h-drive.js && node scripts/preflight.js",
+    "verify:stack": "node scripts/enforce-h-drive.js && npm run preflight && npm run verify:040d && npm run verify:040d5 && npm run verify:040c && npm run audit:persistence && npm run audit:identity-sync && npm run audit:atlas-aware-ai && npm run sandbox",
     "sandbox": "node scripts/sandbox-netlify.js",
     "build:platform": "npm run build -w @foundry/platform",
     "build:topic": "node scripts/build-topic.js",
