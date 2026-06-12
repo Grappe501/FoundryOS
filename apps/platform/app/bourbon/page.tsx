@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { WorldPremiumHub } from '../../components/world-experience/WorldPremiumHub';
+import { BourbonWorldDepthIntro } from '../../components/bourbon/BourbonDeepPageShell';
+import { getBourbonPageDepth } from '../../lib/bourbon-level-1/deep-copy';
 import { getWorldExperienceConfig } from '../../lib/world-experience/registry';
 
 const slug = 'bourbon' as const;
@@ -11,12 +12,11 @@ export const metadata = {
 };
 
 export default function BourbonWorldPage() {
+  const depth = getBourbonPageDepth('bourbon')!;
   return (
     <>
+      <BourbonWorldDepthIntro content={depth} />
       <WorldPremiumHub slug={slug} />
-      <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <Link href="/explore/bourbon" style={{ color: '#6B6B70' }}>Explore path</Link>
-      </p>
     </>
   );
 }

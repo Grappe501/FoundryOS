@@ -8,8 +8,8 @@
 |-------|-------|
 | **Version** | `0.9.0-living-worlds` |
 | **Last Pass** | PASS-034J Living Intelligence + Lore Engine ✅ |
-| **Next Pass** | PASS-035 Supabase journey sync + LLM mentor v2 |
-| **Focus** | Hobby destination — curiosity → investigation → collection → identity |
+| **Next Pass** | PASS-034D Bourbon Depth Writing (in progress) + 034J Consequence Engine |
+| **Focus** | Reactive worlds — action → consequence → identity → return tomorrow |
 | **Live proof** | [/explore](/explore) · [/search](/search) · 7 active worlds · `/bourbon/today` · `/my-future` |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 

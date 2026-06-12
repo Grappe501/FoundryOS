@@ -1,18 +1,17 @@
-import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { Level1Hub } from '../../../components/bourbon/level-1/Level1Hub';
 
 export const metadata = {
   title: 'Bourbon Level 1 | Hobby HQ | Foundry',
-  description: 'Tools, games, and decisions — the best bourbon website, not the best bourbon curriculum.',
+  description: 'Tools, games, and decisions — authoritative bourbon writing worth reading before you click.',
 };
 
 export default function BourbonLevel1Page() {
+  const content = getBourbonPageDepth('level-1')!;
   return (
-    <>
-      <Level1Hub />
-      <p style={{ marginTop: 32, fontSize: 12, color: '#4A4A4E' }}>
-        <Link href="/bourbon" style={{ color: '#6B6B70' }}>← Bourbon world</Link>
-      </p>
-    </>
+    <BourbonDeepPageShell content={content} backHref="/bourbon" backLabel="← Bourbon world">
+      <Level1Hub toolsOnly />
+    </BourbonDeepPageShell>
   );
 }

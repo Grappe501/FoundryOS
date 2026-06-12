@@ -232,7 +232,8 @@ export default async function MissionControlHome() {
           <Link href="/operator/transformation" style={{ color: '#C8A96E', fontSize: 14 }}>Transformation Factory →</Link>
           <Link href="/operator/loop" style={{ color: '#C8A96E', fontSize: 14 }}>Prove the Loop (PASS-010) →</Link>
           <Link href="/operator/evidence" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Evidence Engine (PASS-011) →</Link>
-          <Link href="/operator/collections" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Collections (PASS-012) →</Link>
+          <Link href="/collections" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Knowledge Assets (PASS-012) →</Link>
+          <Link href="/operator/collections" style={{ color: '#6B9B6B', fontSize: 14, fontWeight: 700 }}>Collector Engine (PASS-034K) →</Link>
           <Link href="/operator/community" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Community (PASS-012) →</Link>
           <Link href="/operator/reputation" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Reputation (PASS-013) →</Link>
           <Link href="/operator/mastery" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 500 }}>Mastery (PASS-013) →</Link>
@@ -252,6 +253,7 @@ export default async function MissionControlHome() {
           <Link href="/operator/marketing" style={{ color: '#C8A96E', fontSize: 14, fontWeight: 600 }}>Marketing Factory (PASS-031) →</Link>
           <Link href="/operator/flywheel" style={{ color: '#8B4545', fontSize: 14, fontWeight: 700 }}>Growth Flywheel →</Link>
           <Link href="/operator/ai-brain" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 700 }}>AI Brain (PASS-033) →</Link>
+          <Link href="/operator/discovery" style={{ color: '#8E6BBD', fontSize: 14, fontWeight: 700 }}>Discovery Graph (PASS-034J) →</Link>
           <Link href="/search" style={{ color: '#6B9BD4', fontSize: 14, fontWeight: 600 }}>Global Search →</Link>
           <Link href="/operator/opportunities" style={{ color: '#C8A96E', fontSize: 14 }}>Domain Expansion Scoring →</Link>
         </nav>

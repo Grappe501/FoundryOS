@@ -1,6 +1,7 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { LegendaryJournal } from '../../../components/living-worlds/LegendaryJournal';
+import { WorldCollectionsPanel } from '../../../components/collector/WorldCollectionsPanel';
 import { BourbonShelfTracker } from '../../../components/bourbon/level-1/BourbonShelfTracker';
 import { ShelfIntelligencePanel } from '../../../components/bourbon/intelligence/ShelfIntelligencePanel';
 import { BOURBON_PORTFOLIO_SECTIONS } from '../../../lib/bourbon-world-meta';
@@ -14,6 +15,12 @@ export default function PortfolioPage() {
       <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: '12px 0 0' }}>{bundle.portfolioLabel}</h1>
       <BourbonShelfTracker />
+      <WorldCollectionsPanel
+        worldSlug="bourbon"
+        title="Your Bourbon Collections"
+        subtitle="Themed shelves earned through investigation, pours, and pilgrimages — not stickers."
+        accent="#C8A96E"
+      />
       <ShelfIntelligencePanel />
       <WorldPortfolioDepth
         bundle={bundle}

@@ -58,6 +58,18 @@ apps/platform/components/living-worlds/
 
 `@foundry/ai-orchestration` re-exports mentor-engine via `mentor-bridge.ts` so operator tools and future LLM wiring share one personalization API.
 
+## Deferred — Consequence Stack (034J→034P)
+
+| Pass | Engine | Status |
+|------|--------|--------|
+| 034J/N | Consequence Engine | In progress — `@foundry/consequence-engine`, `/operator/discovery` |
+| 034K | Collector Engine | Planned — platform primitive |
+| 034L | World Events Engine | Planned — state not content |
+| 034M | Identity Progression | Planned — narrative not % |
+| 034P | World Memory Engine | Planned — continuity |
+
+See `docs/PASS_034J_CONSEQUENCE_ENGINE.md`
+
 ## Deferred (PASS-035+)
 
 - Live OpenAI mentor responses (current layer is deterministic rules over user evidence)

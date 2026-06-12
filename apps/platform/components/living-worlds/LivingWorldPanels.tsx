@@ -14,6 +14,7 @@ import {
   buildMentorMemory,
   pickPrimaryMentorInsight,
 } from '@foundry/mentor-engine';
+import { CrossWorldCollectionsSummary } from '../../components/collector/WorldCollectionsPanel';
 import {
   buildLivingJourneySnapshot,
   getStoredDisplayName,
@@ -268,6 +269,8 @@ export function LivingJourneyDashboard() {
           </div>
         </section>
       )}
+
+      <CrossWorldCollectionsSummary />
 
       {challenges.length > 0 && (
         <section style={{ marginTop: 28 }}>

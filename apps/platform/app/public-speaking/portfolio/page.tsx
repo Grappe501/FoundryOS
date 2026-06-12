@@ -1,3 +1,4 @@
+import { WorldCollectionsPanel } from '../../../components/collector/WorldCollectionsPanel';
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
 import { PS_PORTFOLIO_SECTIONS } from '../../../lib/public-speaking-world';
@@ -8,6 +9,7 @@ export default function PortfolioPage() {
   return (
     <section style={{ marginTop: 16 }}>
       <h1 style={{ fontWeight: 300, fontSize: '2rem', margin: 0 }}>{bundle.portfolioLabel}</h1>
+      <WorldCollectionsPanel worldSlug="public-speaking" accent={bundle.accentColor} />
       <WorldPortfolioDepth
         bundle={bundle}
         basePath="/public-speaking"

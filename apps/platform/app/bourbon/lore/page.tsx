@@ -1,3 +1,5 @@
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { WorldLoreHub } from '../../../components/lore/WorldLoreHub';
 
 export const metadata = {
@@ -6,9 +8,10 @@ export const metadata = {
 };
 
 export default function BourbonLorePage() {
+  const content = getBourbonPageDepth('lore')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <WorldLoreHub worldSlug="bourbon" accent="#C8A96E" backHref="/bourbon/level-1" backLabel="Level 1 HQ" />
-    </section>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/level-1" backLabel="← Level 1 HQ">
+      <WorldLoreHub worldSlug="bourbon" accent="#C8A96E" hideHeader />
+    </BourbonDeepPageShell>
   );
 }

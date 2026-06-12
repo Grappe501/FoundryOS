@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { ProgressionChainsView } from '../../../components/bourbon/intelligence/ProgressionChainsView';
 
-export const metadata = { title: 'Bottle Progression Chains | Bourbon | Foundry' };
+export const metadata = { title: 'Progression Chains | Bourbon | Foundry' };
 
 export default function ChainsPage() {
+  const content = getBourbonPageDepth('chains')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/bottles" style={{ color: '#6B6B70', fontSize: 13 }}>← Bottle progression</Link>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Legendary bottle chains</h1>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/investigate" backLabel="← Investigate HQ">
       <ProgressionChainsView />
-    </section>
+    </BourbonDeepPageShell>
   );
 }

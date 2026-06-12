@@ -28,6 +28,8 @@
     "@foundry/launch-factory": "*",
     "@foundry/learning-pyramid": "*",
     "@foundry/lore-engine": "*",
+    "@foundry/consequence-engine": "*",
+    "@foundry/collector-engine": "*",
     "@foundry/mastery-engine": "*",
     "@foundry/marketing-factory": "*",
     "@foundry/outcome-engine": "*",

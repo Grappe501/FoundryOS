@@ -15,6 +15,7 @@ type Props = {
   accent?: string;
   backHref?: string;
   backLabel?: string;
+  hideHeader?: boolean;
 };
 
 const SECTION_ORDER: LoreSection[] = [
@@ -32,7 +33,7 @@ const SECTION_ORDER: LoreSection[] = [
   'experience',
 ];
 
-export function WorldLoreHub({ worldSlug, accent = '#C8A96E', backHref, backLabel }: Props) {
+export function WorldLoreHub({ worldSlug, accent = '#C8A96E', backHref, backLabel, hideHeader }: Props) {
   const lore = getWorldLore(worldSlug);
   if (!lore) {
     return (
@@ -46,6 +47,7 @@ export function WorldLoreHub({ worldSlug, accent = '#C8A96E', backHref, backLabe
 
   return (
     <div>
+      {!hideHeader && (
       <header>
         <p style={{ color: accent, fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', margin: 0 }}>
           Most people never learn this
@@ -65,6 +67,13 @@ export function WorldLoreHub({ worldSlug, accent = '#C8A96E', backHref, backLabe
           What&apos;s alive today →
         </Link>
       </header>
+      )}
+
+      {hideHeader && (
+        <Link href={`/${worldSlug}/today`} style={{ display: 'inline-block', color: accent, fontSize: 13 }}>
+          What&apos;s alive today →
+        </Link>
+      )}
 
       <nav
         style={{

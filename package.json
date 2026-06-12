@@ -32,6 +32,8 @@
     "audit:marketing": "npx tsx packages/marketing-factory/cli/audit.ts",
     "audit:depth": "npx tsx scripts/audit-world-depth.ts",
     "audit:experience": "npx tsx scripts/audit-world-experience.ts",
+    "audit:copy-depth": "npx tsx scripts/audit-copy-depth.ts",
+    "audit:atlas": "npx tsx scripts/audit-atlas.ts",
     "launch:domain": "node scripts/launch-domain.js",
     "end-of-pass": "powershell -ExecutionPolicy Bypass -File ./scripts/end-of-pass.ps1",
     "predev": "npm run setup && npm run enforce",

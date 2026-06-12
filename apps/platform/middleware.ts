@@ -53,6 +53,8 @@ export function middleware(request: NextRequest) {
       pathname.startsWith('/operator/revenue') ||
       pathname.startsWith('/operator/business') ||
       pathname.startsWith('/operator/ai-brain') ||
+      pathname.startsWith('/operator/discovery') ||
+      pathname.startsWith('/operator/collections') ||
       pathname.startsWith('/operator/marketing') ||
       pathname.startsWith('/operator/flywheel') ||
       pathname.startsWith('/operator/opportunities') ||

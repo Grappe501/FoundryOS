@@ -1,15 +1,15 @@
 import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { BOURBON_STORIES } from '../../../lib/bourbon-level-1/stories';
 
 export const metadata = { title: 'Bourbon History Stories | Foundry' };
 
 export default function BourbonStoriesPage() {
+  const content = getBourbonPageDepth('stories')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>History stories</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 14, marginTop: 8 }}>Narrative rabbit holes — not encyclopedia entries.</p>
-      <div style={{ marginTop: 24, display: 'grid', gap: 12 }}>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/level-1" backLabel="← Level 1 HQ">
+      <div style={{ display: 'grid', gap: 12 }}>
         {BOURBON_STORIES.map((s) => (
           <Link
             key={s.slug}
@@ -21,6 +21,6 @@ export default function BourbonStoriesPage() {
           </Link>
         ))}
       </div>
-    </section>
+    </BourbonDeepPageShell>
   );
 }

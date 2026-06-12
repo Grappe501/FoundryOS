@@ -1,15 +1,14 @@
-import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { InvestigateHub } from '../../../components/bourbon/level-1/InvestigateHub';
 
-export const metadata = { title: 'Investigate | Bourbon Level 1 | Foundry', description: 'Detective, X-Ray, Compare — agency not curriculum.' };
+export const metadata = { title: 'Investigate | Bourbon | Foundry', description: 'Agency not curriculum — worth reading before you click.' };
 
 export default function InvestigatePage() {
+  const content = getBourbonPageDepth('investigate')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/level-1" style={{ color: '#6B6B70', fontSize: 13 }}>← Level 1 HQ</Link>
-      <div style={{ marginTop: 12 }}>
-        <InvestigateHub />
-      </div>
-    </section>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/level-1" backLabel="← Level 1 HQ">
+      <InvestigateHub toolsOnly />
+    </BourbonDeepPageShell>
   );
 }

@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/collector-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-034K — Themed collections as identity objects across all worlds",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/consequence-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

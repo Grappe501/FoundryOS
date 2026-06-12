@@ -5,6 +5,7 @@ import { INCOMING_WORLDS } from '../incoming-worlds';
 import { WORLD_DEPTH_BUNDLES } from '../world-depth/registry';
 import { getWorldAudience } from '../world-governance';
 import { listBourbonProducers } from '../world-depth/bourbon-producers';
+import { listAtlasEntries } from '../bourbon-atlas/registry';
 
 export function buildPlatformSearchIndex(): SearchIndexEntry[] {
   const entries: SearchIndexEntry[] = [];
@@ -97,6 +98,19 @@ export function buildPlatformSearchIndex(): SearchIndexEntry[] {
       href: `/bourbon/producers/${producer.slug}`,
       audience_classification: 'adult_21_plus',
       tags: ['producer', 'atlas', ...producer.styleTags],
+    });
+  }
+
+  for (const term of listAtlasEntries()) {
+    entries.push({
+      id: `atlas:bourbon:${term.slug}`,
+      type: 'encyclopedia',
+      title: `${term.title} — The Atlas`,
+      summary: term.shortDefinition,
+      world_slug: 'bourbon',
+      href: `/bourbon/atlas/${term.slug}`,
+      audience_classification: 'adult_21_plus',
+      tags: ['atlas', 'bourbon', ...term.relatedTerms],
     });
   }
 

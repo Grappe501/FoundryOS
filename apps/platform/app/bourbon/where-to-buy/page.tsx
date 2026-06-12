@@ -1,14 +1,14 @@
-import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { WhereToBuyGuide } from '../../../components/bourbon/level-1/WhereToBuyGuide';
 
 export const metadata = { title: 'Where to Buy Bourbon | Foundry' };
 
 export default function WhereToBuyPage() {
+  const content = getBourbonPageDepth('where-to-buy')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/beyond-the-bottle" style={{ color: '#6B6B70', fontSize: 13 }}>← Beyond the Bottle</Link>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Where to buy bourbon</h1>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/beyond-the-bottle" backLabel="← Beyond the Bottle">
       <WhereToBuyGuide />
-    </section>
+    </BourbonDeepPageShell>
   );
 }

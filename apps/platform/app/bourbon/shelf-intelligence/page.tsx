@@ -1,15 +1,14 @@
-import Link from 'next/link';
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { ShelfIntelligencePanel } from '../../../components/bourbon/intelligence/ShelfIntelligencePanel';
 
 export const metadata = { title: 'Shelf Intelligence | Bourbon | Foundry' };
 
 export default function ShelfIntelligencePage() {
+  const content = getBourbonPageDepth('shelf-intelligence')!;
   return (
-    <section style={{ marginTop: 16 }}>
-      <Link href="/bourbon/portfolio" style={{ color: '#6B6B70', fontSize: 13 }}>← My Shelf</Link>
-      <h1 style={{ fontWeight: 300, fontSize: '2rem', marginTop: 12 }}>Shelf intelligence</h1>
-      <p style={{ color: '#8A8A8E', fontSize: 15, marginTop: 8 }}>Your shelf talks back — gaps, next moves, blind spots.</p>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/investigate" backLabel="← Investigate HQ">
       <ShelfIntelligencePanel />
-    </section>
+    </BourbonDeepPageShell>
   );
 }

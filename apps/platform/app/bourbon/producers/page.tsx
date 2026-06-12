@@ -1,5 +1,6 @@
+import { getBourbonPageDepth } from '../../../lib/bourbon-level-1/deep-copy';
+import { BourbonDeepPageShell } from '../../../components/bourbon/BourbonDeepPageShell';
 import { ProducerAtlas } from '../../../components/bourbon/ProducerAtlas';
-import { listBourbonProducers } from '../../../lib/world-depth/bourbon-producers';
 
 export const metadata = {
   title: 'Producer Atlas | Bourbon World',
@@ -7,12 +8,10 @@ export const metadata = {
 };
 
 export default function BourbonProducersPage() {
-  const count = listBourbonProducers().length;
-
+  const content = getBourbonPageDepth('producers')!;
   return (
-    <section style={{ marginTop: 8 }}>
-      <p style={{ color: '#6B6B70', fontSize: 12 }}>{count} major houses · Level 1 curriculum</p>
+    <BourbonDeepPageShell content={content} backHref="/bourbon/level-1" backLabel="← Level 1 HQ">
       <ProducerAtlas />
-    </section>
+    </BourbonDeepPageShell>
   );
 }

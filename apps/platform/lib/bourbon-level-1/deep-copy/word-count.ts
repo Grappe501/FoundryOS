@@ -1,0 +1,1 @@
+export { wordCount } from './types';

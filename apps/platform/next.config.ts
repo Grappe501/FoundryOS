@@ -19,6 +19,8 @@ const nextConfig: NextConfig = {
     '@foundry/learning-pyramid',
     '@foundry/lore-engine',
     '@foundry/mentor-engine',
+    '@foundry/consequence-engine',
+    '@foundry/collector-engine',
     '@foundry/outcome-engine',
   ],
 };
