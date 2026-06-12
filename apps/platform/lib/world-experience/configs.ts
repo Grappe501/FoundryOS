@@ -403,9 +403,10 @@ export const BOURBON_EXPERIENCE: WorldExperienceConfig = {
     'One technique you taught someone',
   ],
   exploreCraft: [
-    { title: 'Tasting Journal', href: '/bourbon/experiences', description: 'Log pours with structured notes' },
-    { title: 'My Bourbon Journey', href: '/bourbon/portfolio', description: 'Tastings, shelves, and distillery trips' },
-    { title: 'Bourbon Circle', href: '/community/bourbon', description: 'Blind nights and shelf showcases' },
+    { title: 'Level 1 Hobby HQ', href: '/bourbon/level-1', description: 'Buy, play, collect — tools over curriculum' },
+    { title: 'What Should I Buy?', href: '/bourbon/what-should-i-buy', description: 'Three bottles for your budget and taste' },
+    { title: 'My Bourbon Shelf', href: '/bourbon/portfolio', description: 'Owned, tasted, wish list, shelf value' },
+    { title: 'Blind Tasting Games', href: '/bourbon/games', description: 'Mystery bottle and distillery match' },
   ],
   mission1Premium: {
     aboutToDo: 'Host a guided tasting of three bourbons — for yourself plus one or two guests.',

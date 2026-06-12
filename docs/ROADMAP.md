@@ -1,6 +1,6 @@
 # FoundryOS — Roadmap
 
-> Updated PASS-016D close — **Vertical Depth Mode**. Private build until beta-ready.
+> Updated PASS-034J close — **Living Worlds + Hobby Destination**. Private build until beta-ready.
 
 **Production launch:** January 2027 · See `docs/JANUARY_2027_TARGETS.md`
 
@@ -36,6 +36,10 @@ PASS-023 ████████████ Bourbon Consumer World (factory) �
 PASS-024 ████████████ Factory Automation ✅ ← multiplier live
 PASS-025 ████████████ World Depth Expansion ✅
 PASS-022 ████████████ Private Beta Readiness ✅
+PASS-023–025 ██████████ Bourbon + Factory + Depth ✅
+PASS-026–032 ██████████ World Experience + Emotional UX ✅
+PASS-033 ████████████ Age-Safe Governance ✅
+PASS-034 ████████████ Living Worlds + Lore + Intelligence ✅
 Private beta invites ← NEXT (handpicked testers)
 ```
 

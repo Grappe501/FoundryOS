@@ -147,6 +147,35 @@ export function WorldAcademyLesson({ bundle, basePath, lessonSlug }: Props) {
         </p>
       )}
 
+      {lesson.relatedProducers && lesson.relatedProducers.length > 0 && (
+        <article style={{ marginTop: 32, padding: 20, background: '#1A160F', borderRadius: 8, border: `1px solid ${bundle.accentColor}33` }}>
+          <h2 style={{ fontSize: 14, color: bundle.accentColor, fontWeight: 400, margin: 0 }}>Producer deep dives</h2>
+          <p style={{ color: '#6B6B70', fontSize: 13, marginTop: 8 }}>Read one tonight — history, sweet spot bottles, questions you did not know to ask.</p>
+          <div style={{ marginTop: 14, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+            {lesson.relatedProducers.map((slug) => (
+              <Link
+                key={slug}
+                href={`${basePath}/producers/${slug}`}
+                style={{
+                  padding: '8px 14px',
+                  background: '#111114',
+                  border: '1px solid #2A2A2E',
+                  borderRadius: 999,
+                  color: '#E8E8EC',
+                  fontSize: 12,
+                  textDecoration: 'none',
+                }}
+              >
+                {slug.replace(/-/g, ' ')} →
+              </Link>
+            ))}
+          </div>
+          <Link href={`${basePath}/producers`} style={{ display: 'inline-block', marginTop: 14, color: bundle.accentColor, fontSize: 13 }}>
+            Open full Producer Atlas →
+          </Link>
+        </article>
+      )}
+
       <div style={{ marginTop: 40, display: 'flex', gap: 20, flexWrap: 'wrap', paddingTop: 24, borderTop: '1px solid #1A1A1E' }}>
         {lesson.recommendedMission && (
           <Link href={`${basePath}/missions/${lesson.recommendedMission}`} style={{ color: bundle.accentColor, fontSize: 14 }}>

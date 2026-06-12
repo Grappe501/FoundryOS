@@ -8,6 +8,7 @@ const LINKS = [
   { href: '/trinity', label: 'Trinity' },
   { href: '/explore', label: 'Explore' },
   { href: '/my-journey', label: 'My Journey' },
+  { href: '/my-future', label: 'My Future' },
   { href: '/parents', label: 'For Parents' },
 ] as const;
 
@@ -21,6 +22,7 @@ function isActive(pathname: string, href: string): boolean {
   if (href === '/explore') return pathname === '/explore' || pathname.startsWith('/explore/');
   if (href === '/trinity') return pathname === '/trinity';
   if (href === '/my-journey') return pathname === '/my-journey' || pathname === '/account';
+  if (href === '/my-future') return pathname === '/my-future';
   if (href === '/parents') return pathname === '/parents';
   if (href === '/future-proof') return pathname === '/future-proof' || pathname === '/';
   return pathname === href || pathname.startsWith(`${href}/`);

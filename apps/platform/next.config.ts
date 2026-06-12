@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
     '@foundry/community-engine',
     '@foundry/domain-registry',
     '@foundry/learning-pyramid',
+    '@foundry/lore-engine',
     '@foundry/mentor-engine',
     '@foundry/outcome-engine',
   ],

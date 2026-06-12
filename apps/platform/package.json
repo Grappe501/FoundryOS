@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@foundry/mentor-engine": "*",
     "@foundry/ai-orchestration": "*",
     "@foundry/recommendation-engine": "*",
     "@foundry/search-engine": "*",
@@ -26,9 +27,9 @@
     "@foundry/factory": "*",
     "@foundry/launch-factory": "*",
     "@foundry/learning-pyramid": "*",
+    "@foundry/lore-engine": "*",
     "@foundry/mastery-engine": "*",
     "@foundry/marketing-factory": "*",
-    "@foundry/mentor-engine": "*",
     "@foundry/outcome-engine": "*",
     "@foundry/ownership-graph": "*",
     "@foundry/path-engine": "*",

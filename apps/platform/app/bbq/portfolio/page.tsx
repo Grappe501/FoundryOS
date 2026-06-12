@@ -1,5 +1,6 @@
 import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
 import { WorldPortfolioDepth } from '../../../components/world-depth/WorldPortfolioDepth';
+import { LegendaryJournal } from '../../../components/living-worlds/LegendaryJournal';
 import { BBQ_PORTFOLIO_SECTIONS } from '../../../lib/bbq-world-meta';
 import { getMissionCount } from '../../../lib/immersion/registry';
 
@@ -16,6 +17,7 @@ export default function PortfolioPage() {
         firstMissionSlug="first-pork-butt"
         sections={BBQ_PORTFOLIO_SECTIONS}
       />
+      <LegendaryJournal worldSlug="bbq" accent={bundle.accentColor} />
     </section>
   );
 }

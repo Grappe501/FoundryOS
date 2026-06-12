@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ConsumerNav } from '../components/ConsumerNav';
+import { DailyFoundryHook } from '../components/living-worlds/LivingWorldPanels';
 import { TrinityHub } from '../components/trinity/TrinityHub';
-import { TrinityJourneyProgress } from '../components/trinity/TrinityJourneyProgress';
 
 export const metadata = {
   title: 'Foundry — Paths to Mastery',
@@ -83,7 +83,7 @@ export default function ConsumerHomePage() {
         </div>
       </section>
 
-      <TrinityJourneyProgress />
+      <DailyFoundryHook />
 
       <TrinityHub />
 

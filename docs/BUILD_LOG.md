@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.8.0-path-engine` |
-| **Last Pass** | PASS-033 Age-Safe Governance ✅ |
-| **Next Pass** | PASS-034 Learning lane + live AI copilot |
-| **Focus** | Depth packs + student safety + global search/intelligence |
-| **Live proof** | [/explore](/explore) · [/search](/search) · 7 active worlds · governance registry |
+| **Version** | `0.9.0-living-worlds` |
+| **Last Pass** | PASS-034J Living Intelligence + Lore Engine ✅ |
+| **Next Pass** | PASS-035 Supabase journey sync + LLM mentor v2 |
+| **Focus** | Hobby destination — curiosity → investigation → collection → identity |
+| **Live proof** | [/explore](/explore) · [/search](/search) · 7 active worlds · `/bourbon/today` · `/my-future` |
 | **Beta gate** | 3 Trinity verticals consumer-ready + auth + email + pricing page |
 
 ### Open Risks
@@ -38,6 +38,28 @@
 | Household schema | `user_households` migration |
 | Steve docs | `START_HERE_FOR_STEVE.md`, `docs/CURRENT_BUILD_STATUS.md` |
 | Depth blueprints | `docs/world-depth/*.md` |
+
+---
+
+## PASS-034 — Living Worlds & AI Mentor Layer ✅
+
+| Deliverable | Location |
+|-------------|----------|
+| Mentor engine | `@foundry/mentor-engine` |
+| Living journey | `/my-journey`, `LivingJourneyDashboard` |
+| Daily hooks | `DailyFoundryHook` on home |
+| World mentors | `WorldMentorPanel` on `WorldPremiumHub` |
+| Cross-world discovery | `discoverCrossWorldPaths()` |
+| Legendary journals | `LegendaryJournal` — bourbon, bbq, poker |
+| Encyclopedia authority | term pages + `encyclopedia-authority.ts` |
+| AI bridge | `@foundry/ai-orchestration/mentor-bridge` |
+| Execution doc | `docs/PASS_034_EXECUTION.md` |
+| **034A** Identity layer | `/my-future`, secret paths, legendary objects, obsession sections |
+| **034H** Lore engine | `@foundry/lore-engine` — legends, debates, universe map |
+| **034I** Living media | `/[world]/today`, `/[world]/lore`, daily feed rotation |
+| **034J** Bourbon intelligence | watchtower, shelf intel, rabbit hole, hunt, chains, detective→mentor |
+| Bourbon Level 1 HQ | `/bourbon/level-1` — tools over lessons (~30 tool routes) |
+| Beyond the Bottle | origins, pop culture, pour guide, myths, wild stories |
 
 ---
 

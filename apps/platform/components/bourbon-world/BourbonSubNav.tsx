@@ -5,14 +5,18 @@ import { usePathname } from 'next/navigation';
 
 const LINKS = [
   { href: '/bourbon', label: 'World', exact: true },
-  { href: '/bourbon/missions', label: 'Missions' },
-  { href: '/bourbon/academy', label: 'Academy' },
-  { href: '/bourbon/playground', label: 'Playground' },
-  { href: '/bourbon/portfolio', label: 'Portfolio' },
-  { href: '/bourbon/parents', label: 'For Parents' },
+  { href: '/bourbon/level-1', label: 'Level 1 HQ' },
+  { href: '/bourbon/investigate', label: 'Investigate' },
+  { href: '/bourbon/detective', label: 'Detective' },
+  { href: '/bourbon/beyond-the-bottle', label: 'Beyond' },
+  { href: '/bourbon/lore', label: 'Lore' },
+  { href: '/bourbon/what-should-i-buy', label: 'Buy' },
+  { href: '/bourbon/games', label: 'Games' },
+  { href: '/bourbon/lab', label: 'Lab' },
+  { href: '/bourbon/producers', label: 'Producers' },
+  { href: '/bourbon/portfolio', label: 'My Shelf' },
+  { href: '/bourbon/daily', label: 'Daily' },
   { href: '/bourbon/glossary', label: 'Glossary' },
-  { href: '/bourbon/learn', label: 'Guides' },
-  { href: '/bourbon/careers', label: 'Careers' },
   { href: '/community/bourbon', label: 'Community' },
 ] as const;
 

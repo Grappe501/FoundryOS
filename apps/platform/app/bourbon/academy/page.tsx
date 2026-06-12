@@ -1,7 +1,6 @@
-import { getWorldDepthOrThrow } from '../../../lib/world-depth/registry';
-import { WorldAcademyDepth } from '../../../components/world-depth/WorldAcademyDepth';
+import { redirect } from 'next/navigation';
 
+/** Academy index → Level 1 Hobby HQ (curriculum lives inside the experience) */
 export default function AcademyPage() {
-  const bundle = getWorldDepthOrThrow('bourbon');
-  return <WorldAcademyDepth bundle={bundle} basePath="/bourbon" />;
+  redirect('/bourbon/level-1');
 }

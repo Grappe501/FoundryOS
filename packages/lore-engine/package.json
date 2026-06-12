@@ -1,0 +1,14 @@
+{
+  "name": "@foundry/lore-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-034H — Reusable world lore: heroes, rivalries, mysteries, pilgrimages, timelines",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

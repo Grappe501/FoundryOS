@@ -4,6 +4,8 @@ import { ConsumerNav } from '../../../../components/ConsumerNav';
 import { getWorldDepth } from '../../../../lib/world-depth/registry';
 import { termToSlug } from '../../../../lib/search/build-index';
 import { recommendWorlds } from '@foundry/recommendation-engine';
+import { getEncyclopediaAuthorityLinks } from '../../../../lib/living-worlds/encyclopedia-authority';
+import { RabbitHolePanel } from '../../../../components/living-worlds/RabbitHolePanel';
 
 type Props = { params: Promise<{ world: string; term: string }> };
 
@@ -33,6 +35,8 @@ export default async function EncyclopediaTermPage({ params }: Props) {
       l.title.toLowerCase().includes(entry.term.toLowerCase()) ||
       (l.glossaryTerms ?? []).some((g) => g.toLowerCase() === entry.term.toLowerCase()),
   );
+
+  const authority = getEncyclopediaAuthorityLinks(world, entry.term);
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#08080A', color: '#E8E8EC', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
@@ -73,7 +77,7 @@ export default async function EncyclopediaTermPage({ params }: Props) {
 
         {lessonHits.length > 0 && (
           <section style={{ marginTop: 28 }}>
-            <h2 style={{ fontSize: 14, color: '#6B9B6B' }}>Where this appears in missions</h2>
+            <h2 style={{ fontSize: 14, color: '#6B9B6B' }}>Where this appears in academy</h2>
             <ul style={{ color: '#8A8A8E', fontSize: 13, marginTop: 12, paddingLeft: 18 }}>
               {lessonHits.map((l) => (
                 <li key={l.slug}>
@@ -81,6 +85,52 @@ export default async function EncyclopediaTermPage({ params }: Props) {
                 </li>
               ))}
             </ul>
+          </section>
+        )}
+
+        {(authority.missions.length > 0 || authority.producers.length > 0) && (
+          <section style={{ marginTop: 28, padding: 20, background: '#0F1210', borderRadius: 8, border: '1px solid #2A3A2A' }}>
+            <h2 style={{ fontSize: 14, color: '#C8A96E', margin: 0 }}>Authority layer — go deeper</h2>
+            {authority.missions.length > 0 && (
+              <>
+                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Missions</p>
+                <ul style={{ color: '#8A8A8E', fontSize: 13, paddingLeft: 18, margin: 0 }}>
+                  {authority.missions.map((m) => (
+                    <li key={m.href}>
+                      <Link href={m.href} style={{ color: '#6B9B6B' }}>{m.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {authority.producers.length > 0 && (
+              <>
+                <p style={{ color: '#6B6B70', fontSize: 12, marginTop: 14, marginBottom: 8 }}>Producer atlas</p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {authority.producers.map((p) => (
+                    <Link key={p.href} href={p.href} style={{ padding: '6px 12px', background: '#111114', borderRadius: 999, color: '#C8A96E', fontSize: 12, textDecoration: 'none' }}>
+                      {p.title}
+                    </Link>
+                  ))}
+                </div>
+              </>
+            )}
+            <Link href={authority.communityHref} style={{ display: 'inline-block', marginTop: 16, color: '#8A8A8E', fontSize: 13 }}>
+              Community discussions →
+            </Link>
+          </section>
+        )}
+
+        {authority.relatedWorlds.length > 0 && (
+          <section style={{ marginTop: 20 }}>
+            <h2 style={{ fontSize: 14, color: '#6B9BD4' }}>Cross-world paths</h2>
+            <div style={{ marginTop: 12, display: 'grid', gap: 8 }}>
+              {authority.relatedWorlds.map((w) => (
+                <Link key={w.href} href={w.href} style={{ padding: 12, background: '#0F0F12', borderRadius: 6, textDecoration: 'none', color: '#8A8A8E', fontSize: 13 }}>
+                  <span style={{ color: '#E8E8EC' }}>{w.title}</span>
+                </Link>
+              ))}
+            </div>
           </section>
         )}
 
@@ -96,6 +146,8 @@ export default async function EncyclopediaTermPage({ params }: Props) {
             </div>
           </section>
         )}
+
+        <RabbitHolePanel term={entry.term} accent="#C8A96E" />
       </section>
     </main>
   );

@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "@foundry/mentor-engine": "*"
   }
 }

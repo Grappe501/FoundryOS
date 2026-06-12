@@ -121,6 +121,7 @@ export const BOURBON_LEVEL_1_LESSONS: AcademyLesson[] = [
       'Complete a structured three-pour lineup using identical note format; choose bottles with intentional variation; ready to run Mission 1: Host First Tasting.',
     estimatedMinutes: 45,
     recommendedMission: 'first-tasting',
+    relatedProducers: ['heaven-hill', 'makers-mark', 'wild-turkey'],
     summary:
       'One bourbon teaches habit. Three bourbons teach comparison. Use the same method on each pour so differences pop — not your changing technique.',
     glossaryTerms: ['Mash bill', 'Wheated bourbon', 'High-rye bourbon', 'Proof'],
@@ -128,7 +129,7 @@ export const BOURBON_LEVEL_1_LESSONS: AcademyLesson[] = [
       {
         heading: 'Pick three with one variable in mind',
         body:
-          'Choose three bottles between roughly $18 and $40. Start simple: (A) entry daily bourbon ~$20; (B) different mash tilt — wheated (softer, honey) OR high-rye (spicier); (C) step up ~$35–45 or higher proof. Examples people often find (swap for local availability): Evan Williams Black Label, Maker’s Mark, Wild Turkey 101. Names matter less than variation — if you cannot find these, match the roles, not the brands.',
+          'Choose three bottles between roughly $18 and $40. Use the Producer Atlas to pick three different houses — not three hype labels from the same distillery. Example triangle: Evan Williams BiB (Heaven Hill) · Maker\'s Mark (wheated) · Wild Turkey 101 (high-rye). Swap for local stock using the same roles.',
       },
       {
         heading: 'Setup that respects the palate',
@@ -230,6 +231,149 @@ export const BOURBON_LEVEL_1_LESSONS: AcademyLesson[] = [
   },
   {
     level: 1,
+    slug: 'know-the-house-before-the-hype',
+    title: 'Know the house before the hype',
+    description:
+      'Brand names lie; distilleries tell the truth. Learn DSP numbers, sourced whiskey, and why the same company makes both your $18 bottle and someone\'s allocation obsession.',
+    outcome:
+      'Read a label for distiller vs bottler; explain why producer literacy matters more than bottle count; pick three houses from the Producer Atlas.',
+    estimatedMinutes: 35,
+    summary:
+      'Buffalo Trace is a campus. Heaven Hill is a value philosophy. Four Roses is a yeast laboratory. You cannot taste American bourbon without tasting houses — the Producer Atlas is your map.',
+    glossaryTerms: ['DSP number', 'Sourcing', 'Bottled in bond', 'Mash bill'],
+    relatedProducers: ['buffalo-trace', 'heaven-hill', 'four-roses'],
+    sections: [
+      {
+        heading: 'Brand ≠ distillery',
+        body:
+          'A label can say "Small Batch Kentucky Straight Bourbon" without naming who distilled it. The DSP number (Distilled Spirits Plant) is the fingerprint. Same DSP on a $20 bottle and a $200 bottle means same still — different age, barrel, or marketing. Level 1 goal: know who made the liquid before you debate who made the hype.',
+      },
+      {
+        heading: 'The major houses (your starting twelve)',
+        body:
+          'Open the Producer Atlas and skim all twelve entries once — do not memorize. You are building a mental map: Buffalo Trace & Barton (Sazerac), Beam & Maker\'s (Beam Suntory), Heaven Hill, Wild Turkey, Four Roses, Old Forester & Woodford (Brown-Forman), Michter\'s, New Riff. Each page answers: history, differentiator, sweet spot, crown jewel, first-pour expectation, and hidden questions.',
+      },
+      {
+        heading: 'Sourced whiskey — no shame, no ignorance',
+        body:
+          'Many brands start by sourcing while building stills. That is not fraud — hiding it is the problem. When you read a Producer Atlas entry like Michter\'s, you learn how revivals work. When you read Heaven Hill, you learn who may have distilled that store brand. Literacy beats snobbery.',
+      },
+      {
+        heading: 'How stewards use the atlas',
+        body:
+          'Before every tasting: pick one house to study for 15 minutes, one bottle from its sweet spot shelf, one hidden question to ask the group. Example: "Why is Evan Williams BiB only $20?" Read the Heaven Hill page — then taste — then teach. That loop is why people stay in the app.',
+      },
+    ],
+    tryThis: {
+      title: 'One house tonight',
+      steps: [
+        'Open /bourbon/producers and pick one unexplored house (or hit Random rabbit hole).',
+        'Read timeline + sweet spot shelf + one hidden question.',
+        'Buy or locate the entry/daily sweet spot bottle listed.',
+        'Write three sentences: what makes this house different from its compare links.',
+        'Mark explored — watch your atlas progress counter move.',
+      ],
+      whatToNotice:
+        'The sweet spot bottle is almost never the crown jewel — stewards buy smart daily drinkers, not trophy bottles.',
+    },
+  },
+  {
+    level: 1,
+    slug: 'producer-atlas-field-guide',
+    title: 'Producer Atlas field guide',
+    description:
+      'How to read each profile: timeline, mash signature, price ladder, crown jewel, and the accordion questions that answer what Google cannot.',
+    outcome:
+      'Navigate any Producer Atlas page; use compare links; log one pour tied to a house story.',
+    estimatedMinutes: 40,
+    relatedProducers: ['old-forester', 'woodford-reserve', 'jim-beam'],
+    summary:
+      'Every atlas page follows the same spine so your brain builds a habit: hook question → differentiator → history → sweet spot shelf → crown jewel → first pour → questions you did not know to ask.',
+    sections: [
+      {
+        heading: 'The hook question',
+        body:
+          'Each producer opens with a question you might not ask yourself — e.g., "Why does a $25 bottle share DNA with allocation madness?" (Buffalo Trace). Use it as a tasting prompt: try to answer after your first sip, not before.',
+      },
+      {
+        heading: 'Sweet spot shelf — three price roles',
+        body:
+          'Entry, daily, step-up/splurge — not "cheap vs expensive." The atlas tells you what to expect at each tier: nose, palate, finish in plain language. Buy the daily tier for learning; admire the crown jewel from afar until Level 2+.',
+      },
+      {
+        heading: 'Hidden questions accordion',
+        body:
+          'These are the rabbit holes — DSP codes, wheated vs high-rye cousins, whether BiB beats NAS marketing. Expand every question on one producer page; write one answer in your own words in the tasting journal.',
+      },
+      {
+        heading: 'Compare links — side-by-side education',
+        body:
+          'At the bottom of each profile, jump to a rival house. Buffalo Trace vs Heaven Hill teaches corporate vs independent. Maker\'s vs Wild Turkey teaches wheated vs high-rye. Do two profiles back-to-back before a flight — you will taste faster.',
+      },
+    ],
+    tryThis: {
+      title: 'Atlas sprint (45 min)',
+      steps: [
+        'Pick two compare-linked producers (e.g., Old Forester + Woodford Reserve — same parent, different ambition).',
+        'Read both sweet spot shelves.',
+        'Pour one bottle from either house (Woodford Select or Old Forester 100 are ideal).',
+        'Answer both hook questions in your journal after tasting.',
+        'Click Compare next on a third house — notice how fast vocabulary returns.',
+      ],
+      whatToNotice:
+        'Brown-Forman houses share banana-forward fermentation — once you expect it, you cannot un-smell it.',
+    },
+  },
+  {
+    level: 1,
+    slug: 'build-your-producer-triangle',
+    title: 'Build your producer triangle',
+    description:
+      'Three houses, three mash philosophies, one flight — the capstone before Mission 1. Uses Producer Atlas picks instead of random shelf grabs.',
+    outcome:
+      'Select three producers from different style tags; match sweet spot bottles; defend your triangle in writing.',
+    estimatedMinutes: 50,
+    recommendedMission: 'first-tasting',
+    relatedProducers: ['buffalo-trace', 'makers-mark', 'wild-turkey', 'heaven-hill', 'four-roses', 'barton-1792'],
+    summary:
+      'Lesson 1.3 taught method. This lesson teaches curation — the habit that keeps enthusiasts in Foundry for years.',
+    sections: [
+      {
+        heading: 'Triangle rules',
+        body:
+          'Pick three producers from three different style tags when possible: one value or balanced (Heaven Hill, Old Forester, Jim Beam), one wheated OR high-rye contrast (Maker\'s vs Wild Turkey — pick the pair), one step-up or heritage (Four Roses Small Batch, Buffalo Trace, Woodford Select). No two bottles from the same house.',
+      },
+      {
+        heading: 'Suggested triangles (swap for stock)',
+        body:
+          'Classic: Evan Williams BiB · Maker\'s Mark · Wild Turkey 101. Heritage: Old Forester 100 · Four Roses Small Batch · Buffalo Trace. Modern: Heaven Hill BiB · New Riff BiB · 1792 Small Batch. Open each atlas page — buy the listed sweet spot tier.',
+      },
+      {
+        heading: 'Write a one-line thesis per house',
+        body:
+          'Before tasting: "I expect Heaven Hill to teach bonded value," "Maker\'s to teach wheat," "WT101 to teach proof." After tasting: mark hits and misses. Wrong predictions are the best learning.',
+      },
+      {
+        heading: 'Why this keeps you coming back',
+        body:
+          'You have eleven more houses in the atlas. Each unlocks new triangles, new compare chains, new journal prompts. Mission 1 is the first flight — not the last. The app grows with you because houses compound, bottles do not.',
+      },
+    ],
+    tryThis: {
+      title: 'Triangle flight + atlas evidence',
+      steps: [
+        'Choose a suggested triangle or build your own from three atlas pages.',
+        'Screenshot or photograph your three bottles with house names visible.',
+        'Run Lesson 1.2 nosing ritual on each — same template as Lesson 1.3.',
+        'Answer one hidden question from each producer profile in your notes.',
+        'Schedule Mission 1 within seven days — you are already prepared.',
+      ],
+      whatToNotice:
+        'If your cheapest pour wins, update your atlas — circle that house as your daily driver.',
+    },
+  },
+  {
+    level: 1,
     slug: 'level-1-checkpoint',
     title: 'Level 1 checkpoint — Curious Drinker',
     description:
@@ -245,7 +389,7 @@ export const BOURBON_LEVEL_1_LESSONS: AcademyLesson[] = [
       {
         heading: 'Checkpoint requirements',
         body:
-          'Complete all four: (1) Three-pour tasting using the Lesson 1.3 template — hosted for 1–2 people OR solo with voice memo walkthrough; (2) Written notes with nose, palate, finish on each pour; (3) Five distinct flavor words used correctly across notes; (4) One paragraph in your own words: “Bourbon is ___ because ___” citing at least three legal requirements.',
+          'Complete all six: (1) Three-pour producer triangle using atlas sweet spots; (2) Written notes with nose, palate, finish on each pour; (3) Five distinct flavor words used correctly; (4) One paragraph: "Bourbon is ___ because ___" with three legal requirements; (5) Three Producer Atlas houses marked explored; (6) One hidden question answered in your own words from an atlas page.',
       },
       {
         heading: 'Evidence to capture',
@@ -255,7 +399,7 @@ export const BOURBON_LEVEL_1_LESSONS: AcademyLesson[] = [
       {
         heading: 'Self-check before you claim Level 1',
         body:
-          'Can you nose without burying your nose in the glass? Can you avoid “smooth”? Can you explain proof as a number? Can you name one way bourbon differs from rye? If yes to all four, you are ready for Level 2: Confident Taster — mash bills, proof comparisons, and your first rye side-by-side.',
+          'Can you nose without burying your nose in the glass? Can you avoid "smooth"? Can you explain proof as a number? Can you name one house from the Producer Atlas and its sweet spot bottle? If yes to all four, you are ready for Level 2.',
       },
       {
         heading: 'What unlocks next',

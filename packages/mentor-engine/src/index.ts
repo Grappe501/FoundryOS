@@ -1,11 +1,18 @@
-export type { MentorTier, MentorMilestone, MasteryRoad, MentorProfile } from './types';
-
-export {
-  ROAD_TO_PHYSICS_EXPERT,
-  ROAD_TO_AI_BUILDER,
-  ROAD_TO_MENTOR,
-  MASTERY_ROAD_CATALOG,
-  getMasteryRoad,
-} from './roads';
-
-export { FOUNDRY_FACTORY_ECOSYSTEM, MENTOR_ENGINE_TAGLINE } from './factories';
+export * from './types';
+export * from './factories';
+export * from './roads';
+export * from './mentor-messages';
+export * from './cross-world-discovery';
+export * from './adaptive-learning';
+export * from './daily-hooks';
+export * from './legendary-collections';
+export * from './legendary-objects';
+export * from './identity';
+export * from './dreams';
+export * from './mentor-memory';
+export * from './secret-paths';
+export * from './world-obsession';
+export * from './rabbit-holes';
+export * from './world-crossovers';
+export * from './mentor-challenges';
+export * from './someone-like-me';

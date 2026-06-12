@@ -27,6 +27,8 @@ export type AcademyLesson = {
   flavorWords?: string[];
   glossaryTerms?: string[];
   checkpoint?: boolean;
+  /** Producer Atlas slugs tied to this lesson */
+  relatedProducers?: string[];
 };
 
 export type DeepGlossaryTerm = {

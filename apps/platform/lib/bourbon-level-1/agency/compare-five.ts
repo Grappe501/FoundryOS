@@ -1,0 +1,73 @@
+import { BOURBON_BOTTLES, getBottle, type BourbonBottle } from '../bottles';
+
+export type BestUse = 'neat' | 'cocktail' | 'gifting' | 'collecting';
+
+export type CompareRow = {
+  slug: string;
+  name: string;
+  priceUsd: number;
+  proof: number;
+  age: string;
+  mashbill: string;
+  distillery: string;
+  flavorProfile: string;
+  availability: string;
+  valueScore: number;
+  bestUse: BestUse[];
+};
+
+function availabilityLabel(b: BourbonBottle): string {
+  if (b.tags.includes('collector') && b.priceUsd >= 45) return 'Allocated / hunted';
+  if (b.slug.includes('weller')) return 'Rare — lottery only';
+  return 'Wide shelf availability';
+}
+
+function valueScore(b: BourbonBottle): number {
+  let score = 70;
+  if (b.tags.includes('value')) score += 15;
+  if (b.proof >= 100 && b.priceUsd < 40) score += 10;
+  if (b.ageYears && b.priceUsd < 50) score += 10;
+  if (b.tags.includes('splurge') && b.priceUsd > 80) score -= 10;
+  if (b.tags.includes('collector')) score -= 5;
+  return Math.min(99, Math.max(40, score));
+}
+
+function bestUseFor(b: BourbonBottle): BestUse[] {
+  const uses: BestUse[] = [];
+  if (b.proof >= 100 || b.tags.includes('oak')) uses.push('neat');
+  if (b.proof <= 95 || b.tags.includes('host')) uses.push('cocktail');
+  if (b.tags.includes('host') || b.tags.includes('beginner')) uses.push('gifting');
+  if (b.tags.includes('collector') || b.tags.includes('splurge')) uses.push('collecting');
+  if (uses.length === 0) uses.push('neat');
+  return uses;
+}
+
+export function compareBottles(slugs: string[]): CompareRow[] {
+  return slugs
+    .map((s) => getBottle(s))
+    .filter(Boolean)
+    .map((b) => ({
+      slug: b!.slug,
+      name: b!.name,
+      priceUsd: b!.priceUsd,
+      proof: b!.proof,
+      age: b!.ageYears ? `${b!.ageYears} yr` : 'NAS',
+      mashbill: b!.mashbill,
+      distillery: b!.producerName,
+      flavorProfile: b!.tags.filter((t) => ['sweet', 'spicy', 'fruity', 'oak', 'smoke'].includes(t)).join(', ') || 'balanced',
+      availability: availabilityLabel(b!),
+      valueScore: valueScore(b!),
+      bestUse: bestUseFor(b!),
+    }));
+}
+
+export const COMPARE_PRESETS: { id: string; label: string; slugs: string[] }[] = [
+  { id: 'daily', label: 'Daily drinkers under $35', slugs: ['evan-williams-black', 'wild-turkey-101', 'makers-mark', 'larceny', 'four-roses-yellow'] },
+  { id: 'wheated', label: 'Wheated showdown', slugs: ['makers-mark', 'larceny', 'weller-special-reserve', 'buffalo-trace', 'woodford-reserve'] },
+  { id: 'high-proof', label: 'High proof education', slugs: ['wild-turkey-101', 'knob-creek-9', 'four-roses-single-barrel', 'old-forester-1920', 'bookers'] },
+  { id: 'step-up', label: 'Step-up shelf ($40–65)', slugs: ['eagle-rare', 'russells-reserve-10', 'four-roses-single-barrel', 'knob-creek-9', 'michters-us1'] },
+];
+
+export function allCompareSlugs(): { slug: string; name: string }[] {
+  return BOURBON_BOTTLES.map((b) => ({ slug: b.slug, name: b.name }));
+}

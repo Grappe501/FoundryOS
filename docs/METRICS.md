@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-014 close — Growth OS greenlit
+> Updated PASS-034J close — Living Worlds + Lore Engine live
 
 ---
 
@@ -153,11 +153,13 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 14 (PASS-000–013) |
-| Version | `0.8.0-path-engine` |
-| Launch readiness | 84% |
+| Passes complete | 34 (PASS-000–034J) |
+| Version | `0.9.0-living-worlds` |
+| Launch readiness | 88% |
 | Reputation + Mastery Engine | ✅ PASS-013 — `/reputation` + `/mastery` |
-| Next pass | PASS-014 — Bourbon proves stack (not content site) |
+| Living Worlds packages | `@foundry/mentor-engine`, `@foundry/lore-engine` |
+| Bourbon tool routes | 30+ Level 1 + intelligence surfaces |
+| Next pass | PASS-035 — Supabase journey sync + LLM mentor v2 |
 
 ---
 
