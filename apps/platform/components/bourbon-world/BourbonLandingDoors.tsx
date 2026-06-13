@@ -60,6 +60,13 @@ export function BourbonLandingDoors({ content }: Props) {
       hrefLabel: 'Level 1 Hobby HQ',
     },
     {
+      label: 'Level 2',
+      teaser: 'Hold one variable — mash bill, category, proof — and taste the difference.',
+      depth: 'Tasting Lab flights, comparison grids, ten academy lessons. Confident Taster unlock.',
+      href: '/bourbon/level-2',
+      hrefLabel: 'Level 2 — Confident Taster',
+    },
+    {
       label: 'Why it sticks',
       teaser: 'Attention compounds. Ordinary bottles get better when you know what to notice.',
       depth: firstSentence(content.whyItMatters, 320),

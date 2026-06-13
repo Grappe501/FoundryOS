@@ -43,6 +43,7 @@ PASS-034 ████████████ Living Worlds + Lore + Intelligenc
 Private beta invites ← NEXT (handpicked testers)
 PASS-040E/F ████████████ Review + Recommendation engines ✅
 PASS-041 ████████████ Bourbon Level 1 depth + v1.0.0 ✅
+PASS-042 ████████████ Bourbon Level 2 Confident Taster ✅
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.

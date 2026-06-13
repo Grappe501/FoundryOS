@@ -1,4 +1,4 @@
-/** Bourbon Academy — Levels 2–7 authored curriculum (replaces templated buildAcademyLessons) */
+/** Bourbon Academy — Levels 3–7 authored curriculum */
 
 import type { AcademyLesson } from './types';
 
@@ -14,37 +14,7 @@ function lesson(
   return { level, slug, title, description, outcome, sections, estimatedMinutes: extra?.estimatedMinutes ?? 20, ...extra };
 }
 
-export const BOURBON_LEVELS_2_7_LESSONS: AcademyLesson[] = [
-  // ── Level 2: Confident Taster ──
-  lesson(2, 'mash-bill-in-the-mouth', 'Mash bill in your mouth', 'Translate grain recipes into flavor — high rye, wheated, and traditional corn-forward profiles.', 'Blind-identify wheated vs high-rye pours and name the grain driving each sensation.', [
-    { heading: 'Three mash bill families', body: 'Traditional bourbon (~10–15% rye) reads corn-sweet with gentle spice. High-rye bourbon pushes pepper, mint, and fruit. Wheated bourbon replaces rye with wheat — softer, bread-and-honey texture. You do not need exact percentages to taste the fork.' },
-    { heading: 'The two-bottle drill', body: 'Pour Maker\'s Mark (wheated) and Wild Turkey 101 (high-rye) at the same proof if possible. Nose both. The wheated pour collapses toward sweetness; the high-rye pour lifts spice on the finish. Write one word per pour that is not "smooth."' },
-    { heading: 'Common trap', body: 'High-rye bourbon is not rye whiskey. Bulleit Bourbon feels spicy but is still corn-majority bourbon. Compare to Rittenhouse Rye in Level 2 lesson 3 for the legal line.' },
-  ], { glossaryTerms: ['Mash bill', 'Wheated bourbon', 'High-rye bourbon'], relatedProducers: ['makers-mark', 'wild-turkey'] }),
-
-  lesson(2, 'flavor-wheel-practice', 'Flavor wheel practice', 'Build a personal flavor vocabulary beyond "good" and "smooth."', 'Use five distinct flavor families in written notes: sweet, spice, fruit, oak, and texture.', [
-    { heading: 'The five families', body: 'Sweet: caramel, honey, brown sugar. Spice: cinnamon, pepper, rye heat. Fruit: cherry, apple, banana esters. Oak: vanilla, tannin, sawdust. Texture: oily, thin, creamy, hot. Force every note into a family before you write it.' },
-    { heading: 'Weekly challenge alignment', body: 'Bourbon Circle asks for one new flavor word per week. Pick from the wheel at /bourbon/experiences — link words to Atlas glossary terms so vocabulary sticks.' },
-    { heading: 'Evidence habit', body: 'Photo your note card after each session. Three pours × three families = nine words minimum per tasting. That journal becomes Level 2 checkpoint proof.' },
-  ], { glossaryTerms: ['Nose', 'Palate', 'Finish'] }),
-
-  lesson(2, 'rye-and-tennessee-cousins', 'Rye and Tennessee as bourbon cousins', 'American whiskey categories share barrels but diverge on grain law and process.', 'Explain why rye whiskey and Tennessee whiskey are not bourbon labels despite similar shelves.', [
-    { heading: 'Rye whiskey rules', body: '≥51% rye grain, new charred oak, same U.S. straight whiskey aging floor. Rittenhouse BiB and Wild Turkey Rye are textbook — compare to WT101 same night.' },
-    { heading: 'Tennessee process', body: 'Jack Daniel\'s and George Dickel use charcoal mellowing before barreling. Mash may qualify as bourbon-class; label says Tennessee whiskey because of process + state identity.' },
-    { heading: 'Category flight homework', body: 'Run the Foundry preset: Buffalo Trace + Rittenhouse Rye + Jack Daniel\'s No. 7. Same proof zone, three categories — write which grain or process drove each difference.' },
-  ], { glossaryTerms: ['Rye whiskey', 'Tennessee whiskey'], relatedProducers: ['jack-daniel', 'heaven-hill'] }),
-
-  lesson(2, 'comparison-grid-basics', 'Comparison grid basics', 'Hold one variable constant so your palate learns cause and effect.', 'Complete a three-pour grid with nose, palate, finish, and rank — one controlled variable.', [
-    { heading: 'Pick the variable', body: 'Same distillery different proof. Same proof different mash bill. Same mash bill different age. Never change everything at once on your first grids.' },
-    { heading: 'Grid columns', body: 'Nose · Palate · Finish length (short/medium/long) · Sweet vs spice balance · Score 1–10 · One sentence why. Five columns, three rows — fits one page.' },
-    { heading: 'Tool link', body: 'Use /bourbon/compare presets or the Comparison Grid in Experiences. Export mental notes to My Bourbon Journey even if you do not screenshot.' },
-  ]),
-
-  lesson(2, 'level-2-checkpoint', 'Level 2 checkpoint — Confident Taster', 'Submit proof you taste with structure and category literacy.', 'Pass Level 2 with a comparison grid, five flavor words, and one category contrast paragraph.', [
-    { heading: 'Requirements', body: '(1) Three-pour grid with one controlled variable. (2) Five flavor words from distinct families. (3) One paragraph: high-rye vs wheated OR bourbon vs rye vs Tennessee from your flight. (4) Two atlas producers explored beyond Level 1.' },
-    { heading: 'Unlocks', body: 'Level 3 Shelf Builder lessons, Tasting Lab tools, and Mission 2 prep. Post one note in Bourbon Circle with your best new flavor word.' },
-  ], { checkpoint: true, estimatedMinutes: 45 }),
-
+export const BOURBON_LEVELS_3_7_LESSONS: AcademyLesson[] = [
   // ── Level 3: Shelf Builder ──
   lesson(3, 'shelf-themes-that-teach', 'Shelf themes that teach', 'Curate 5–8 bottles around a story — not random accumulation.', 'Write a one-sentence shelf theme and assign each bottle a role (daily, step-up, guest, experiment).', [
     { heading: 'Theme examples', body: 'Proof ladder (80 → 100 → barrel proof). Distillery tour (BT, HH, Beam). Mash bill education (wheated row + high-rye row). Under-$35 all-stars. Category flight (bourbon + rye + Tennessee).' },

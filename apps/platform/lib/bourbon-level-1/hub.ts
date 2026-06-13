@@ -28,7 +28,7 @@ export const LEVEL_1_TOOLS: Level1Tool[] = [
   { slug: 'flavor-wheel', href: '/bourbon/flavor-wheel', title: 'Flavor Wheel', hook: 'Build profile — feeds Bourbon DNA', icon: '🎡', priority: 2.4, category: 'investigate' },
   { slug: 'league', href: '/bourbon/league', title: 'Blind Tasting League', hook: 'Monthly challenges — return every month', icon: '🏆', priority: 2.5, category: 'investigate' },
   { slug: 'trail-planner', href: '/bourbon/trail-planner', title: 'Trail Planner', hook: 'Trip builder — days, budget, traveler type', icon: '🛣', priority: 2.6, category: 'investigate' },
-  { slug: 'bottles-db', href: '/bourbon/bottles', title: 'Bottle Progression', hook: '26 bottles — majors + Kentucky craft — what each teaches', icon: '🥃', priority: 2.7, category: 'investigate' },
+  { slug: 'bottles-db', href: '/bourbon/bottles', title: 'Bottle Progression', hook: '32 bottles — majors, craft, rye & Tennessee — what each teaches', icon: '🥃', priority: 2.7, category: 'investigate' },
   { slug: 'daily', href: '/bourbon/daily', title: 'Daily Bourbon', hook: 'One fact, one bottle, one challenge — every day', icon: '☀', priority: 3, category: 'decide' },
   { slug: 'beyond', href: '/bourbon/beyond-the-bottle', title: 'Beyond the Bottle', hook: 'Origins, pop culture, connections — bourbon in the wild', icon: '🌍', priority: 2, category: 'wild' },
   { slug: 'lore', href: '/bourbon/lore', title: 'World Lore', hook: 'Heroes, rivalries, mysteries — mythology that pulls you back', icon: '📜', priority: 2.5, category: 'wild' },

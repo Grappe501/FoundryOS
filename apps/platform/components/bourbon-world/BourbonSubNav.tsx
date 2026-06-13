@@ -7,6 +7,8 @@ import { ThemeToggle } from '../theme/ThemeToggle';
 const LINKS = [
   { href: '/bourbon', label: 'World', exact: true },
   { href: '/bourbon/level-1', label: 'Level 1 HQ' },
+  { href: '/bourbon/level-2', label: 'Level 2 HQ' },
+  { href: '/bourbon/tasting-lab', label: 'Tasting Lab' },
   { href: '/bourbon/investigate', label: 'Investigate' },
   { href: '/bourbon/detective', label: 'Detective' },
   { href: '/bourbon/beyond-the-bottle', label: 'Beyond' },

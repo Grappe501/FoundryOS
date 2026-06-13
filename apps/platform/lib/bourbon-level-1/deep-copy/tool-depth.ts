@@ -242,6 +242,30 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
     explanation: `My bourbon shelf logs relationship types — owned, tasted, wish, gifted, empty — powering intelligence and psychology tools with honest data instead of fantasy collections that never touch a glass. Garbage in, garbage out is literal; log before intel or buy tools pretend to know you.`,
     practicalReason: `Log before intel or buy tools — garbage in, garbage out.`,
   },
+  {
+    slug: 'tasting-lab',
+    hook: 'Guided flights — mash bill, category, proof — with note cards',
+    explanation: `Tasting Lab runs eight curated flights with one variable locked — mash bill triangle, category triangle, proof ladder, BiB transparency. Note cards save locally for Level 2 checkpoint evidence.`,
+    practicalReason: `Run mash bill triangle before your next host night — three pours, one lesson.`,
+  },
+  {
+    slug: 'comparison-grid',
+    hook: 'Hold one variable sacred — nose, palate, finish, rank',
+    explanation: `Comparison grids force spreadsheet honesty — six presets from three mash bills to value blind five. Winner plus lesson sentence saves locally.`,
+    practicalReason: `Fill grid before declaring a favorite bottle — rank reveals bias.`,
+  },
+  {
+    slug: 'mashbill-flight',
+    hook: 'Wheated vs high-rye vs traditional — same proof band',
+    explanation: `Mash bill flight defaults to the triangle flight — the core Level 2 homework before single barrel lottery.`,
+    practicalReason: `Pair with Maker's vs WT101 detective curiosity — taste beats forum.`,
+  },
+  {
+    slug: 'water-lab',
+    hook: 'Neat vs one drop — when heat helps vs hides',
+    explanation: `Proof mode in Tasting Lab — ladder pours with water experiment on highest proof only.`,
+    practicalReason: `One drop on barrel proof before you trade the bottle away.`,
+  },
 ];
 
 export function getToolDepth(slug: string): BourbonToolDepth | undefined {

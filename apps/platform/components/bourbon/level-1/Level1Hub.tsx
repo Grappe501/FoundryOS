@@ -61,6 +61,10 @@ export function Level1Hub({ toolsOnly = false }: { toolsOnly?: boolean }) {
         <Link href="/bourbon/academy/what-bourbon-actually-is" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           All Level 1 lessons
         </Link>
+        <span style={{ color: 'var(--foundry-text-dim)', margin: '0 8px' }}>·</span>
+        <Link href="/bourbon/level-2" style={{ color: 'var(--foundry-primary)', fontSize: 13 }}>
+          Level 2 — Tasting Lab →
+        </Link>
       </section>
     </div>
   );

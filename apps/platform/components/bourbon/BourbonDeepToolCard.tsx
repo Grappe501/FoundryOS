@@ -2,9 +2,11 @@ import Link from 'next/link';
 import type { Level1Tool } from '../../lib/bourbon-level-1/hub';
 import { getToolDepth } from '../../lib/bourbon-level-1/deep-copy';
 
+type ToolCard = Pick<Level1Tool, 'slug' | 'href' | 'title' | 'hook' | 'icon'>;
+
 const ACCENT = 'var(--foundry-primary)';
 
-export function BourbonDeepToolCard({ tool }: { tool: Level1Tool }) {
+export function BourbonDeepToolCard({ tool }: { tool: ToolCard }) {
   const depth = getToolDepth(tool.slug);
   return (
     <Link

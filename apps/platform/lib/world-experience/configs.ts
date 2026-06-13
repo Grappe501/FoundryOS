@@ -435,6 +435,13 @@ export const BOURBON_EXPERIENCE: WorldExperienceConfig = {
       ],
     },
     {
+      slug: 'tasting-lab',
+      title: 'Tasting Lab',
+      description: 'Level 2 guided flights — mash bill, category, proof — with saved note cards.',
+      category: 'lab',
+      estimatedMinutes: 45,
+    },
+    {
       slug: 'flavor-wheel',
       title: 'Flavor Wheel',
       description: 'Map sweet, oak, spice, and fruit — build tasting vocabulary on a wheel.',

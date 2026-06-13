@@ -6,10 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `1.0.0-bourbon-depth` |
-| **Last Pass** | PASS-041 Bourbon Level 1 Depth ✅ |
-| **Current Pass** | System v1.0 deploy ✅ |
-| **Next Pass** | PASS-042 — graph depth + beta wedge |
+| **Version** | `1.1.0-bourbon-level2` |
+| **Last Pass** | PASS-042 Bourbon Level 2 — Confident Taster ✅ |
+| **Current Pass** | Level 2 deploy ✅ |
+| **Next Pass** | PASS-043 — Level 3 Shelf Builder depth |
+| **Level 2 surface** | Tasting Lab · Comparison Grid · Mash bill flight · 10 academy lessons |
 | **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` |
 | **Bourbon catalog** | 32 bottles · 19 producers · 35 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
@@ -44,7 +45,28 @@
 
 ---
 
-## PASS-040F — Recommendation Engine v2 ✅
+## PASS-042 — Bourbon Level 2 Confident Taster ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Tasting Lab, comparison grids, full Level 2 academy + HQ |
+| **Version** | `1.1.0-bourbon-level2` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Level 2 HQ | `/bourbon/level-2` · `Level2Hub` · 10 tools |
+| Tasting Lab | `/bourbon/tasting-lab` — 8 flights, note cards, local save |
+| Comparison Grid | `/bourbon/comparison-grid` — 6 presets, winner + lesson |
+| Mash bill flight | `/bourbon/mashbill-flight` |
+| Academy L2 | 10 lessons with tryThis · `/bourbon/academy/level-2` |
+| Storage | `lib/bourbon-level-2/storage.ts` — sessions + checkpoint hint |
+
+**Architecture Impact**
+- Reusable: flight preset pattern, grid tool, level-tier hub model
+- Benefits: Palate training with evidence — not templated academy stubs
+- Affected launches: bourbon.foundryos.com Level 2 unlock path
+
+---
 
 | Field | Value |
 |-------|-------|

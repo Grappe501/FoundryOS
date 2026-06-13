@@ -2,7 +2,8 @@
 
 import { buildGlossary } from '../build-glossary';
 import { BOURBON_LEVEL_1_LESSONS } from '../bourbon-academy-level-1';
-import { BOURBON_LEVELS_2_7_LESSONS } from '../bourbon-academy-levels-2-7';
+import { BOURBON_LEVEL_2_LESSONS } from '../bourbon-academy-level-2';
+import { BOURBON_LEVELS_3_7_LESSONS } from '../bourbon-academy-levels-2-7';
 import type { WorldDepthBundle } from '../types';
 import { BOURBON_ACADEMY_LEVELS } from '../../bourbon-world';
 
@@ -12,7 +13,7 @@ export const BOURBON_DEPTH: WorldDepthBundle = {
   accentColor: 'var(--foundry-primary)',
   portfolioLabel: 'My Bourbon Journal',
 
-  academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...BOURBON_LEVELS_2_7_LESSONS],
+  academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...BOURBON_LEVEL_2_LESSONS, ...BOURBON_LEVELS_3_7_LESSONS],
 
   academyLevelMeta: BOURBON_ACADEMY_LEVELS.map((l) => ({
     level: l.level,
