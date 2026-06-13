@@ -50,5 +50,11 @@ export function validateGraphEngine(): { ok: boolean; errors: string[] } {
   if (!bib?.identities || bib.identities.length < 5) {
     errors.push('bottled-in-bond must have 5+ multi-identity labels');
   }
+  for (const term of ['mash-bill', 'proof']) {
+    const g = resolveEntityGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: term });
+    if (!g || g.connection_count < 15) {
+      errors.push(`${term} priority seed needs 15+ connections`);
+    }
+  }
   return { ok: errors.length === 0, errors };
 }

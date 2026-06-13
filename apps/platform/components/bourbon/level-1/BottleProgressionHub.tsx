@@ -7,6 +7,8 @@ import { getBottleDepth } from '../../../lib/bourbon-depth/bottle-depth';
 import { resolveBourbonBottleGraph } from '../../../lib/bourbon-atlas/resolve-bottle-graph';
 import { BourbonGraphHallway } from '../BourbonGraphHallway';
 import { ArtifactExperiencePanel } from '../../artifacts/ArtifactExperiencePanel';
+import { FoundryReviewsPanel } from '../../reviews/FoundryReviewsPanel';
+import { FoundryRecommendationsPanel } from '../../recommendations/FoundryRecommendationsPanel';
 import { BourbonIntelligencePanel } from '../BourbonIntelligencePanel';
 import { enrichBottleIntro } from '../../../lib/bourbon-graph/enrich-narrative';
 import { LinkedParagraph } from '../LinkedParagraph';
@@ -77,6 +79,20 @@ export function BottleProgressionView({ slug }: { slug: string }) {
       <BourbonIntelligencePanel slug={slug} />
 
       <ArtifactExperiencePanel
+        worldSlug="bourbon"
+        entityType="bottle"
+        slug={slug}
+        entityName={bottle.name}
+      />
+
+      <FoundryReviewsPanel
+        worldSlug="bourbon"
+        entityType="bottle"
+        slug={slug}
+        entityName={bottle.name}
+      />
+
+      <FoundryRecommendationsPanel
         worldSlug="bourbon"
         entityType="bottle"
         slug={slug}

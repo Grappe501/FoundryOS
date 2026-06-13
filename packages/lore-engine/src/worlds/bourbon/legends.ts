@@ -11,7 +11,7 @@ export const BOURBON_LEGENDS: LoreLegend[] = [
       { heading: 'The line', body: 'By the 2010s, camping outside stores for Pappy became normal. MSRP became folklore. Secondary became religion.' },
     ],
     whyRemembered: 'Pappy is the story of patience weaponized by hype — the hunt matters as much as the pour.',
-    href: '/bourbon/detective/pappy-price',
+    href: '/bourbon/legends/pappy-hunt',
   },
   {
     id: 'lost-stitzel-recipe',
@@ -23,7 +23,7 @@ export const BOURBON_LEGENDS: LoreLegend[] = [
       { heading: 'The pilgrimage', body: 'The site still stands. You cannot taste 1972 — but you can stand where it happened.' },
     ],
     whyRemembered: 'Every hunter knows: some whiskey is gone forever, and that makes the story stronger.',
-    href: '/bourbon/detective/stitzel-weller',
+    href: '/bourbon/stories/pappy-van-winkle',
   },
   {
     id: 'great-shortage',

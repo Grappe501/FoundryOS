@@ -4,7 +4,7 @@ import { getAtlasEntry, getAtlasRabbitHole, listAtlasEntries } from '../../../..
 import { atlasTermHref } from '../../../../lib/bourbon-atlas/slug';
 import { enrichAtlasParagraph } from '../../../../lib/bourbon-graph/enrich-narrative';
 import { bottlesForAtlasTerm } from '../../../../lib/bourbon-graph/inline-links';
-import { inferGraphRef } from '../../../../lib/bourbon-graph';
+import { inferGraphRef, resolveBourbonGraph } from '../../../../lib/bourbon-graph';
 import { LinkedParagraph } from '../../../../components/bourbon/LinkedParagraph';
 
 type Props = { params: Promise<{ term: string }> };
@@ -30,13 +30,14 @@ export default async function BourbonAtlasTermPage({ params }: Props) {
 
   const rabbit = getAtlasRabbitHole(term);
   const graphRef = inferGraphRef(term);
+  const graph = graphRef ? resolveBourbonGraph(graphRef) : null;
   const bottleLinks = bottlesForAtlasTerm(term);
 
   return (
     <main style={{ minHeight: '100vh', backgroundColor: 'var(--foundry-bg)', color: 'var(--foundry-text)', padding: '2rem', maxWidth: 720, margin: '0 auto' }}>
       <Link href="/bourbon/atlas" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>← The Atlas</Link>
       <Link href="/bourbon/level-1" style={{ color: 'var(--foundry-text-faint)', fontSize: 13, marginLeft: 16 }}>Level 1 HQ</Link>
-      {graphRef && (
+      {graph && (
         <Link href={`/bourbon/graph/${term}`} style={{ color: 'var(--foundry-primary)', fontSize: 13, marginLeft: 16 }}>
           Graph hub →
         </Link>

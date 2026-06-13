@@ -15,6 +15,7 @@ import {
 } from '@foundry/atlas-aware-ai';
 import { getBottleRecord, getProducerRecord, getPerson } from '@foundry/bourbon-intelligence';
 import { resolveWorldIdentityNarrative } from '@foundry/identity-narrative-engine';
+import type { FoundryArtifact } from '@foundry/artifact-engine';
 import type { IdentitySignalBundle } from '@foundry/identity-narrative-engine';
 import { emptyPortableMemoryState } from '@foundry/personal-database';
 import { inferGraphRef, resolveBourbonGraph } from '../bourbon-graph';
@@ -99,11 +100,13 @@ export function resolveAtlasContextForRef(ref: GraphEntityRef): AtlasContext | n
 export function buildUserContextFromSignals(
   signals: IdentitySignalBundle,
   memory = emptyPortableMemoryState(),
+  artifacts: FoundryArtifact[] = [],
 ): UserIdentityContext {
   const narrative = resolveWorldIdentityNarrative(signals);
   const input: BuildUserIdentityInput = {
     world_slug: signals.world_slug,
     memory_state: memory,
+    artifacts,
     collections: signals.active_collections,
     narrative: narrative
       ? {

@@ -1,15 +1,13 @@
 import type { EntityGraphView, GraphConnection, GraphEntityRef } from '@foundry/atlas-graph-engine';
 import { resolveEntityGraph, groupConnections } from '@foundry/atlas-graph-engine';
-import {
-  getPerson,
-  getProducerRecord,
-  peopleForProducer,
-  PEOPLE_REGISTRY,
-} from '@foundry/bourbon-intelligence';
+import { getPerson, getProducerRecord } from '@foundry/bourbon-intelligence';
+import { getBourbonPerson } from '../bourbon-depth/people';
+import { mastersForProducer, isKnownPersonSlug } from '../bourbon-people/unified';
 import { BOURBON_BOTTLES, getBottle } from '../bourbon-level-1/bottles';
 import { BOURBON_PRODUCERS } from '../world-depth/bourbon-producers';
 import { listAtlasEntries } from '../bourbon-atlas/registry';
 import { buildBottleGraphFromInventory } from './build-bottle-graph';
+import { buildAtlasTermGraph } from './build-atlas-term-graph';
 
 export type BourbonGraphRef = GraphEntityRef & {
   entity_type: GraphEntityRef['entity_type'] | 'debate';
@@ -25,7 +23,7 @@ function buildProducerGraph(slug: string): EntityGraphView | null {
   if (!producer) return null;
 
   const bottles = BOURBON_BOTTLES.filter((b) => b.producerSlug === slug);
-  const people = peopleForProducer(slug);
+  const people = mastersForProducer(slug);
 
   const connections: GraphConnection[] = [
     conn({
@@ -85,17 +83,17 @@ function buildProducerGraph(slug: string): EntityGraphView | null {
     );
   }
 
-  for (const p of people.filter((x) => x.profile_publishable)) {
+  for (const p of people) {
     connections.push(
       conn({
         relation: 'works_for',
         entity_type: 'person',
         slug: p.slug,
-        title: p.name.value,
-        href: `/bourbon/graph/${p.slug}`,
-        teaser: p.roles[0]?.role.replace(/_/g, ' ') ?? 'Distiller',
+        title: p.name,
+        href: `/bourbon/people/${p.slug}`,
+        teaser: p.hook.slice(0, 120),
         group: 'Known people',
-        confidence: p.name.confidence,
+        confidence: 'commonly_reported',
       }),
     );
   }
@@ -114,6 +112,52 @@ function buildProducerGraph(slug: string): EntityGraphView | null {
 }
 
 function buildPersonGraph(slug: string): EntityGraphView | null {
+  const depth = getBourbonPerson(slug);
+  if (depth) {
+    const connections: GraphConnection[] = [];
+    for (const producerSlug of depth.producerSlugs) {
+      const pr = getProducerRecord(producerSlug);
+      connections.push(
+        conn({
+          relation: 'works_for',
+          entity_type: 'producer',
+          slug: producerSlug,
+          title: pr?.name.value ?? producerSlug,
+          href: `/bourbon/producers/${producerSlug}`,
+          teaser: depth.title,
+          group: 'Producers',
+          confidence: 'commonly_reported',
+        }),
+      );
+    }
+    for (const bSlug of depth.relatedBottleSlugs ?? []) {
+      const b = getBottle(bSlug);
+      connections.push(
+        conn({
+          relation: 'related_to',
+          entity_type: 'bottle',
+          slug: bSlug,
+          title: b?.name ?? bSlug,
+          href: `/bourbon/bottles/${bSlug}`,
+          teaser: depth.hook.slice(0, 120),
+          group: 'Bottles',
+          confidence: 'commonly_reported',
+        }),
+      );
+    }
+    return {
+      world_slug: 'bourbon',
+      entity_type: 'person',
+      slug,
+      title: depth.name,
+      why_should_i_care: depth.hook,
+      why_it_matters: depth.legacy,
+      connections,
+      connection_count: connections.length,
+      suggested_next: connections[0],
+    };
+  }
+
   const person = getPerson(slug);
   if (!person) return null;
 
@@ -268,7 +312,7 @@ export function resolveBourbonGraph(ref: BourbonGraphRef): EntityGraphView | nul
     return buildPersonGraph(ref.slug);
   }
   if (ref.entity_type === 'atlas_term') {
-    return resolveEntityGraph({ world_slug: 'bourbon', entity_type: 'atlas_term', slug: ref.slug });
+    return resolveEntityGraph(ref) ?? buildAtlasTermGraph(ref.slug);
   }
   if (ref.entity_type === 'debate') {
     return buildDebateGraph(ref.slug);
@@ -283,7 +327,7 @@ export function inferGraphRef(slug: string): BourbonGraphRef | null {
   if (BOURBON_PRODUCERS.some((p) => p.slug === slug)) {
     return { world_slug: 'bourbon', entity_type: 'producer', slug };
   }
-  if (PEOPLE_REGISTRY.some((p) => p.slug === slug)) {
+  if (isKnownPersonSlug(slug)) {
     return { world_slug: 'bourbon', entity_type: 'person', slug };
   }
   if (listAtlasEntries().some((e) => e.slug === slug)) {

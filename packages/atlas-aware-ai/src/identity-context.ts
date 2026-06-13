@@ -25,6 +25,34 @@ export function buildUserIdentityContext(input: BuildUserIdentityInput): UserIde
   const { world_slug, memory_state, artifacts = [], collections = [], narrative } = input;
   const worldArtifacts = artifacts.filter((a) => a.metadata.world_slug === world_slug);
 
+  const reviews = worldArtifacts
+    .filter((a) => a.type === 'review')
+    .map((a) => {
+      const p = a.metadata.payload ?? {};
+      return {
+        entity_slug: String(p.entity_slug ?? ''),
+        title: a.metadata.title,
+        who_this_is_for: String(p.who_this_is_for ?? ''),
+        what_surprised_me: String(p.what_surprised_me ?? ''),
+        what_to_try_next: String(p.what_to_try_next ?? ''),
+      };
+    })
+    .filter((r) => r.entity_slug && r.what_surprised_me);
+
+  const recommendations = worldArtifacts
+    .filter((a) => a.type === 'recommendation')
+    .map((a) => {
+      const p = a.metadata.payload ?? {};
+      return {
+        entity_slug: String(p.entity_slug ?? ''),
+        title: a.metadata.title,
+        who_this_is_for: String(p.who_this_is_for ?? ''),
+        recommendation_reason: String(p.recommendation_reason ?? ''),
+        best_next_action: String(p.best_next_action ?? ''),
+      };
+    })
+    .filter((r) => r.entity_slug && r.recommendation_reason);
+
   const curiosity_topics = Object.entries(memory_state.curiosity_weights ?? {})
     .filter(([k]) => k.startsWith(`${world_slug}:`) || !k.includes(':'))
     .map(([key, weight]) => {
@@ -59,6 +87,8 @@ export function buildUserIdentityContext(input: BuildUserIdentityInput): UserIde
       type: a.type,
       at: a.metadata.occurred_at ?? a.created_at,
     })),
+    reviews: reviews.slice(-6),
+    recommendations: recommendations.slice(-6),
     graph_views: graph_views.map((g) => ({ slug: g.slug, title: g.title, at: g.at })),
     saved_rabbit_holes: saved_rabbit_holes.map((h) => ({ slug: h.slug, title: h.title })),
     comparisons,
@@ -74,7 +104,25 @@ export function buildUserIdentityContext(input: BuildUserIdentityInput): UserIde
 export function exampleProofUserContext(): UserIdentityContext {
   return {
     world_slug: 'bourbon',
-    artifacts: [{ title: 'Wild Turkey 101 tasting notes', type: 'journal', at: '2026-06-10T12:00:00Z' }],
+    artifacts: [{ title: 'Wild Turkey 101 review', type: 'review', at: '2026-06-10T12:00:00Z' }],
+    reviews: [
+      {
+        entity_slug: 'wild-turkey-101',
+        title: 'Wild Turkey 101 review',
+        who_this_is_for: 'Value seekers who want proof without hype.',
+        what_surprised_me: 'The balance of proof and value for everyday pours.',
+        what_to_try_next: 'Old Forester 100 or Rare Breed',
+      },
+    ],
+    recommendations: [
+      {
+        entity_slug: 'wild-turkey-101',
+        title: 'Recommend Wild Turkey 101 for beginners',
+        who_this_is_for: 'Beginners who want proof and value.',
+        recommendation_reason: 'Proof and value balance without hype.',
+        best_next_action: 'Pour neat, then compare with Old Forester 100.',
+      },
+    ],
     graph_views: [
       { slug: 'bottled-in-bond', title: 'Bottled-in-Bond', at: '2026-06-09T18:00:00Z' },
       { slug: 'wild-turkey-101', title: 'Wild Turkey 101', at: '2026-06-10T11:00:00Z' },

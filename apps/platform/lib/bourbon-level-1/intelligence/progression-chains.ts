@@ -23,7 +23,7 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
     tagline: 'From 101 proof honesty to Russell legacy.',
     steps: [
       { slug: 'wild-turkey-101', name: 'Wild Turkey 101', note: 'Proof education — rye spice baseline', href: '/bourbon/bottles/wild-turkey-101' },
-      { name: 'Rare Breed', note: 'Barrel proof blend — heat with structure', href: '/bourbon/x-ray?bottle=wild-turkey-101' },
+      { name: 'Rare Breed', note: 'Barrel proof blend — heat with structure', href: '/bourbon/graph/barrel-proof' },
       { slug: 'russells-reserve-10', name: "Russell's Reserve 10", note: 'Decade mellow — Turkey without punch', href: '/bourbon/bottles/russells-reserve-10' },
       { name: "Russell's Reserve Single Barrel", note: 'Picker\'s barrel — floor lottery', href: '/bourbon/store-picks' },
     ],
@@ -35,8 +35,8 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
     tagline: 'Wheated hospitality → intensity.',
     steps: [
       { slug: 'makers-mark', name: "Maker's Mark", note: 'Crowd-pleasing wheat — the host bottle', href: '/bourbon/bottles/makers-mark' },
-      { name: "Maker's 46", note: 'Stave-finishing — oak without age', href: '/bourbon/producers/makers-mark' },
-      { name: "Maker's Mark Cask Strength", note: 'Full volume wheat — add water intentionally', href: '/bourbon/lab' },
+      { name: "Maker's 46", note: 'Stave-finishing — oak without age', href: '/bourbon/atlas/char-level' },
+      { slug: 'bookers', name: "Maker's Mark Cask Strength", note: 'Full volume wheat — add water intentionally', href: '/bourbon/bottles/bookers' },
       { name: 'Private Selection', note: 'Retail pick — stave profile chosen', href: '/bourbon/store-picks' },
     ],
   },
@@ -49,7 +49,7 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
       { slug: 'buffalo-trace', name: 'Buffalo Trace', note: 'House DNA — gateway pour', href: '/bourbon/bottles/buffalo-trace' },
       { slug: 'eagle-rare', name: 'Eagle Rare 10', note: 'Age statement on same mash', href: '/bourbon/bottles/eagle-rare' },
       { slug: 'weller-special-reserve', name: 'Weller Special Reserve', note: 'Wheated allocation — hunt at MSRP only', href: '/bourbon/detective/weller-ghost' },
-      { name: 'E.H. Taylor / Stagg line', note: 'Graduate when blind tastings prove readiness', href: '/bourbon/economy' },
+      { name: 'E.H. Taylor / Stagg line', note: 'Graduate when blind tastings prove readiness', href: '/bourbon/graph/bottled-in-bond' },
     ],
   },
   {
@@ -59,9 +59,9 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
     tagline: 'Honest bourbon from $18 to enthusiast.',
     steps: [
       { slug: 'evan-williams-black', name: 'Evan Williams Black', note: 'Daily pour under $20', href: '/bourbon/bottles/evan-williams-black' },
-      { name: 'Evan Williams BiB', note: 'Green label — BiB discipline', href: '/bourbon/detective/bib-guarantee' },
+      { name: 'Evan Williams BiB', note: 'Green label — BiB discipline', href: '/bourbon/graph/bottled-in-bond' },
       { slug: 'larceny', name: 'Larceny', note: 'Wheated step-up from same house', href: '/bourbon/bottles/larceny' },
-      { name: 'Elijah Craig Barrel Proof', note: 'Heaven Hill heat — when you trust water', href: '/bourbon/producers/heaven-hill' },
+      { slug: 'old-forester-1920', name: 'Elijah Craig Barrel Proof', note: 'Heaven Hill heat — when you trust water', href: '/bourbon/bottles/old-forester-1920' },
     ],
   },
   {

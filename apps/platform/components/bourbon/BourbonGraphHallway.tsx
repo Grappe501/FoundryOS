@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { groupConnections, type EntityGraphView, type GraphConfidence } from '@foundry/atlas-graph-engine';
 import { SECTION_INTROS } from '../../lib/bourbon-graph/edge-copy';
 import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
+import { resolveConnectionHref } from '../../lib/bourbon-graph/connection-href';
 import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
 import { LinkedParagraph } from './LinkedParagraph';
 
@@ -40,11 +41,7 @@ function ConfidenceBadge({ confidence }: { confidence?: GraphConfidence }) {
 function EdgeLink({ c, linkifyTeasers }: { c: EntityGraphView['connections'][0]; linkifyTeasers?: boolean }) {
   return (
     <Link
-      href={
-        c.entity_type === 'bottle' && !c.href.includes('compare')
-          ? `/bourbon/graph/${c.slug}`
-          : c.href
-      }
+      href={resolveConnectionHref(c)}
       style={{
         display: 'block',
         padding: '12px 14px',

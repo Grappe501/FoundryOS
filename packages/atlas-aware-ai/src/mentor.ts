@@ -26,6 +26,14 @@ function hasProofSignals(user: UserIdentityContext): boolean {
   return hasWt101 && hasBib && hasWheated;
 }
 
+function reviewForAnchor(user: UserIdentityContext, anchorSlug: string) {
+  return user.reviews.find((r) => r.entity_slug === anchorSlug || anchorSlug.includes(r.entity_slug));
+}
+
+function recommendationForAnchor(user: UserIdentityContext, anchorSlug: string) {
+  return user.recommendations.find((r) => r.entity_slug === anchorSlug || anchorSlug.includes(r.entity_slug));
+}
+
 export function generateNextBestRabbitHole(
   atlas: AtlasContext,
   user: UserIdentityContext,
@@ -113,7 +121,14 @@ export function generateMentorAnswer(
 
     case 'explore_next': {
       const rabbit = generateNextBestRabbitHole(atlas, user);
-      const answer = `${user.curiosity_summary} A good next path is ${rabbit.path_label}. ${rabbit.reason}`;
+      const anchorReview = reviewForAnchor(user, atlas.anchor.slug);
+      const anchorRec = recommendationForAnchor(user, atlas.anchor.slug);
+      let answer = `${user.curiosity_summary} A good next path is ${rabbit.path_label}. ${rabbit.reason}`;
+      if (anchorRec) {
+        answer = `You recommended ${anchorRec.title} for ${anchorRec.who_this_is_for.toLowerCase()}. That suggests your bourbon judgment is forming around ${anchorRec.recommendation_reason.toLowerCase()}. ${answer}`;
+      } else if (anchorReview) {
+        answer = `You reviewed ${anchorReview.title} and said what surprised you was ${anchorReview.what_surprised_me.toLowerCase()}. That suggests you may enjoy comparing it with ${anchorReview.what_to_try_next} next. ${answer}`;
+      }
       return {
         prompt,
         answer,
@@ -126,6 +141,8 @@ export function generateMentorAnswer(
     }
 
     case 'connect_shelf': {
+      const anchorReview = reviewForAnchor(user, atlas.anchor.slug);
+      const anchorRec = recommendationForAnchor(user, atlas.anchor.slug);
       const collectionBits = user.collections
         .filter((c) => c.unlocked > 0)
         .map((c) => `${c.title} (${c.unlocked}/${c.total})`)
@@ -133,6 +150,11 @@ export function generateMentorAnswer(
       const artifactBits = user.artifacts.slice(-2).map((a) => a.title).join(', ');
       const answer = [
         user.curiosity_summary,
+        anchorRec
+          ? `You recommended this for ${anchorRec.who_this_is_for}: ${anchorRec.recommendation_reason}`
+          : anchorReview
+            ? `Your review notes: best for ${anchorReview.who_this_is_for}; surprised by ${anchorReview.what_surprised_me}.`
+            : '',
         collectionBits ? `Collection progress: ${collectionBits}.` : '',
         artifactBits ? `Recent evidence: ${artifactBits}.` : '',
         `${atlas.anchor.title} connects through the graph — follow ${atlas.edges.slice(0, 2).map((e) => e.title).join(' and ') || 'its hallway edges'} to extend your shelf story with Foundry nodes, not hype.`,

@@ -1,4 +1,6 @@
 export { buildBottleGraphFromInventory, mergeGraphConnections } from './build-bottle-graph';
+export { buildAtlasTermGraph } from './build-atlas-term-graph';
+export { resolveConnectionHref } from './connection-href';
 export {
   resolveBourbonGraph,
   inferGraphRef,

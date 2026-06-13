@@ -7,7 +7,7 @@ export const BOURBON_DEBATES: LoreDebate[] = [
     campA: { label: 'Yes — hype juice', argument: 'Blind flights often favor $40 shelf staples. You are paying for story and scarcity, not magic in the glass.' },
     campB: { label: 'No — special when honest', argument: 'At MSRP, aged wheated stock is genuinely rare and complex. The problem is secondary, not the pour.' },
     whyPeopleReturn: 'Everyone knows someone who loves Pappy and someone who hates the line. Both have tasted evidence.',
-    href: '/bourbon/detective/pappy-price',
+    href: '/bourbon/legends/pappy-hunt',
   },
   {
     id: 'picks-vs-allocations',
@@ -47,7 +47,7 @@ export const BOURBON_LEGENDARY_OBJECTS: LoreLegendaryObject[] = [
       { heading: 'The lesson', body: 'Pappy 23 teaches scarcity economics faster than any business book.' },
     ],
     whyLegendary: 'Whether overrated or transcendent — everyone has an opinion. That is legendary.',
-    href: '/bourbon/detective/pappy-price',
+    href: '/bourbon/legends/pappy-hunt',
   },
   {
     id: 'old-fitz-decanter',

@@ -53,6 +53,20 @@ export type AtlasContext = {
 export type UserIdentityContext = {
   world_slug: string;
   artifacts: { title: string; type: string; at: string }[];
+  reviews: {
+    entity_slug: string;
+    title: string;
+    who_this_is_for: string;
+    what_surprised_me: string;
+    what_to_try_next: string;
+  }[];
+  recommendations: {
+    entity_slug: string;
+    title: string;
+    who_this_is_for: string;
+    recommendation_reason: string;
+    best_next_action: string;
+  }[];
   graph_views: { slug: string; title: string; at: string }[];
   saved_rabbit_holes: { slug: string; title: string }[];
   comparisons: { label_a: string; label_b: string }[];

@@ -67,6 +67,52 @@ export function collectionUpdatesFromArtifact(artifact: FoundryArtifact): Collec
     }
   }
 
+  if (artifact.type === 'review') {
+    const entitySlug = (artifact.metadata.payload?.entity_slug as string) ?? slugs.split(' ')[0] ?? '';
+    if (entitySlug.includes('wild-turkey-101') || artifact.metadata.title.toLowerCase().includes('wild turkey 101')) {
+      updates.push({
+        world_slug: 'bourbon',
+        action_type: 'artifact_review',
+        action_id: 'wild-turkey-101',
+        collection_id: 'blind-tasting-detective',
+        item_id: 'first-review',
+        label: 'Structured review — Wild Turkey 101',
+      });
+    }
+    if (VALUE_SLUGS.some((s) => entitySlug.includes(s) || slugs.includes(s))) {
+      updates.push({
+        world_slug: 'bourbon',
+        action_type: 'artifact_review',
+        action_id: 'value-pour',
+        collection_id: 'blind-tasting-detective',
+        label: 'Value pour review logged',
+      });
+    }
+  }
+
+  if (artifact.type === 'recommendation') {
+    const entitySlug = (artifact.metadata.payload?.entity_slug as string) ?? '';
+    if (entitySlug.includes('wild-turkey-101') || artifact.metadata.title.toLowerCase().includes('wild turkey 101')) {
+      updates.push({
+        world_slug: 'bourbon',
+        action_type: 'artifact_recommendation',
+        action_id: 'wild-turkey-101',
+        collection_id: 'blind-tasting-detective',
+        item_id: 'first-recommendation',
+        label: 'Structured recommendation — Wild Turkey 101',
+      });
+    }
+    if (VALUE_SLUGS.some((s) => entitySlug.includes(s))) {
+      updates.push({
+        world_slug: 'bourbon',
+        action_type: 'artifact_recommendation',
+        action_id: 'value-pour',
+        collection_id: 'blind-tasting-detective',
+        label: 'Value pour recommendation logged',
+      });
+    }
+  }
+
   if (artifact.type === 'journal' || artifact.type === 'note' || artifact.type === 'collection_entry') {
     if (slugs.includes('wild-turkey-101') || artifact.metadata.title.toLowerCase().includes('wild turkey 101')) {
       updates.push({

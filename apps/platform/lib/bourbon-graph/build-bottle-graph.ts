@@ -5,9 +5,9 @@ import {
   BOTTLE_COMPARISON_SETS,
   getBottleRecord,
   getProducerRecord,
-  peopleForProducer,
   type SourceConfidence,
 } from '@foundry/bourbon-intelligence';
+import { mastersForProducer } from '../bourbon-people/unified';
 import { getBottle } from '../bourbon-level-1/bottles';
 import { getBottleProgression } from '../bourbon-level-1/agency/bottle-progression';
 import {
@@ -55,7 +55,7 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
   const record = getBottleRecord(slug);
   const progression = getBottleProgression(slug);
   const producer = getProducerRecord(bottle.producerSlug);
-  const people = peopleForProducer(bottle.producerSlug);
+  const people = mastersForProducer(bottle.producerSlug);
   const comparables = record?.comparable_bottle_slugs ?? BOTTLE_COMPARISON_SETS[slug] ?? [];
   const category = AMERICAN_WHISKEY_CATEGORIES.find((c) => c.slug === record?.category);
 
@@ -66,6 +66,11 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
   const proofCopy = proofParagraph(bottle, record);
   const storePickCopy = storePickParagraph();
   const americanCopy = americanWhiskeyParagraph();
+
+  const legalSlug =
+    category?.legal_standard_slug === 'bourbon-standard-of-identity'
+      ? 'straight-bourbon'
+      : (category?.legal_standard_slug ?? 'straight-bourbon');
 
   const connections: GraphConnection[] = [
     conn({
@@ -121,15 +126,15 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
     conn({
       relation: 'related_to',
       entity_type: 'atlas_term',
-      slug: category?.legal_standard_slug ?? 'straight-bourbon',
+      slug: legalSlug,
       title: category?.label ?? 'Bourbon',
-      href: `/bourbon/atlas/${category?.legal_standard_slug ?? 'straight-bourbon'}`,
+      href: `/bourbon/atlas/${legalSlug}`,
       teaser: category?.summary.value ?? legalCopy.teaser,
       group: 'Legal category',
       confidence: category?.summary.confidence
         ? toConfidence(category.summary.confidence)
         : legalCopy.confidence,
-      source_label: category?.legal_standard_slug ?? '27 CFR Part 5',
+      source_label: legalSlug === 'straight-bourbon' ? '27 CFR Part 5' : (category?.legal_standard_slug ?? '27 CFR Part 5'),
     }),
     conn({
       relation: 'related_to',
@@ -284,26 +289,24 @@ export function buildBottleGraphFromInventory(slug: string): EntityGraphView | n
     );
   }
 
-  for (const p of people.filter((x) => x.profile_publishable)) {
+  for (const p of people) {
     connections.push(
       conn({
         relation: 'works_for',
         entity_type: 'person',
         slug: p.slug,
-        title: p.name.value,
-        href: `/bourbon/graph/${p.slug}`,
-        teaser:
-          p.facts[0]?.claim ??
-          `${p.name.value} — verified distiller role with sourced citations. Leader profiles publish only when facts are producer_disclosed or verified, never invented.`,
+        title: p.name,
+        href: `/bourbon/people/${p.slug}`,
+        teaser: p.hook,
         group: 'Known people',
-        confidence: toConfidence(p.name.confidence),
-        source_label: p.facts[0]?.citations[0]?.label ?? 'intelligence registry',
+        confidence: 'commonly_reported',
+        source_label: 'unified people registry',
       }),
     );
   }
 
   if (producer?.leader_slot_id) {
-    const slotPublishable = people.some((x) => x.profile_publishable);
+    const slotPublishable = people.length > 0;
     connections.push(
       conn({
         relation: 'works_for',

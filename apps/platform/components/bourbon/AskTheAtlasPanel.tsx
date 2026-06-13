@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import type { AtlasAskPrompt, MentorAnswer } from '@foundry/atlas-aware-ai';
 import { getMemoryState } from '../../lib/world-memory/memory-store';
 import { assembleSignalBundle } from '../../lib/identity-narrative/assemble-signals';
+import { getLocalUserId, listClientArtifacts } from '../../lib/artifacts/client-store';
 import { askAtlas, buildUserContextFromSignals } from '../../lib/atlas-aware-ai/assemble';
 
 const PROMPTS: { id: AtlasAskPrompt; label: string }[] = [
@@ -25,7 +26,8 @@ export function AskTheAtlasPanel({ slug, graphTitle }: Props) {
   const userContext = useMemo(() => {
     const memory = getMemoryState();
     const signals = assembleSignalBundle('bourbon');
-    return buildUserContextFromSignals(signals, memory);
+    const artifacts = listClientArtifacts({ user_id: getLocalUserId(), world_slug: 'bourbon' });
+    return buildUserContextFromSignals(signals, memory, artifacts);
   }, [slug]);
 
   function runPrompt(prompt: AtlasAskPrompt) {

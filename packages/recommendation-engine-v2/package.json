@@ -1,0 +1,18 @@
+{
+  "name": "@foundry/recommendation-engine-v2",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-040F — Foundry Recommendation Engine (artifact-backed, world-agnostic)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/artifact-engine": "*",
+    "@foundry/review-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

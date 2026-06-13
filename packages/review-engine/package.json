@@ -1,0 +1,17 @@
+{
+  "name": "@foundry/review-engine",
+  "version": "0.0.1",
+  "private": true,
+  "description": "PASS-040E — Foundry Review Engine (artifact-backed, world-agnostic)",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@foundry/artifact-engine": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

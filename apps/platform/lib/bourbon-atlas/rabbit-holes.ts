@@ -49,7 +49,7 @@ const DETECTIVE: Record<string, AtlasForwardLink[]> = {
   allocation: [{ kind: 'detective', href: '/bourbon/detective/weller-ghost', label: 'Weller ghost case' }],
   'bottled-in-bond': [{ kind: 'detective', href: '/bourbon/detective/bib-guarantee', label: 'BiB guarantee case' }],
   dsp: [{ kind: 'detective', href: '/bourbon/detective/dsp-numbers', label: 'DSP numbers case' }],
-  'warehouse-floor': [{ kind: 'detective', href: '/bourbon/detective/barrel-floor-myth', label: 'Barrel floor case' }],
+  'warehouse-floor': [{ kind: 'detective', href: '/bourbon/detective/barrel-floor', label: 'Barrel floor case' }],
 };
 
 const STORIES: Record<string, AtlasForwardLink[]> = {

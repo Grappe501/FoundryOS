@@ -15,7 +15,10 @@ import {
 import { enrichGraphNarrative } from '../../lib/bourbon-graph/enrich-narrative';
 import { linkifyParagraph } from '../../lib/bourbon-graph/inline-links';
 import { AskTheAtlasPanel } from './AskTheAtlasPanel';
+import { GraphReviewsPanel } from '../reviews/GraphReviewsPanel';
+import { GraphRecommendationsPanel } from '../recommendations/GraphRecommendationsPanel';
 import { recordGraphView, recordSavedRabbitHole } from '../../lib/world-memory/memory-store';
+import { resolveConnectionHref } from '../../lib/bourbon-graph/connection-href';
 
 const ACCENT = 'var(--foundry-primary)';
 
@@ -31,11 +34,17 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
   }, [slug, graph?.title]);
 
   if (!graph) {
+    const atlasEntry = inferGraphRef(slug)?.entity_type === 'atlas_term';
     return (
       <main style={{ minHeight: '60vh', padding: '2rem', color: 'var(--foundry-text)' }}>
         <Link href="/bourbon/bottles" style={{ color: 'var(--foundry-text-faint)', fontSize: 13 }}>
           ← Bourbon
         </Link>
+        {atlasEntry && (
+          <Link href={`/bourbon/atlas/${slug}`} style={{ color: ACCENT, fontSize: 13, marginLeft: 16 }}>
+            Atlas entry →
+          </Link>
+        )}
         <h1 style={{ fontWeight: 300, marginTop: 16 }}>Graph node not found</h1>
         <p style={{ color: 'var(--foundry-text-muted)' }}>No hallway mapped for &quot;{slug}&quot; yet.</p>
       </main>
@@ -82,6 +91,24 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
       </div>
 
       <AskTheAtlasPanel slug={slug} graphTitle={graph.title} />
+
+      <GraphReviewsPanel
+        worldSlug="bourbon"
+        entityType={graph.entity_type}
+        slug={slug}
+        graphTitle={graph.title}
+        relatedBottleSlug={graph.entity_type === 'bottle' ? slug : bottles[0]?.slug}
+        relatedBottleName={graph.entity_type === 'bottle' ? graph.title : bottles[0]?.title}
+      />
+
+      <GraphRecommendationsPanel
+        worldSlug="bourbon"
+        entityType={graph.entity_type}
+        slug={slug}
+        graphTitle={graph.title}
+        relatedBottleSlug={graph.entity_type === 'bottle' ? slug : bottles[0]?.slug}
+        relatedBottleName={graph.entity_type === 'bottle' ? graph.title : bottles[0]?.title}
+      />
 
       <section style={{ marginTop: 28, padding: 20, background: '#0F1018', borderRadius: 10, border: `1px solid ${ACCENT}33` }}>
         <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Why this matters · click to wander</p>
@@ -131,7 +158,7 @@ export function BourbonGraphExplorer({ slug }: { slug: string }) {
             <ul style={{ margin: '12px 0 0', padding: 0, listStyle: 'none' }}>
               {items.map((c: GraphConnection) => (
                 <li key={c.id} style={{ marginBottom: 10 }}>
-                  <Link href={c.href.startsWith('/bourbon/graph') ? c.href : `/bourbon/graph/${c.slug}`} style={{ color: 'var(--foundry-text)', fontSize: 14, textDecoration: 'none', fontWeight: 500 }}>
+                  <Link href={resolveConnectionHref(c)} style={{ color: 'var(--foundry-text)', fontSize: 14, textDecoration: 'none', fontWeight: 500 }}>
                     {c.title} →
                   </Link>
                   <div style={{ marginTop: 4 }}>

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { ProducerProfileView } from '../../../../components/bourbon/ProducerProfileView';
 import { getProducerDepth } from '../../../../lib/bourbon-depth/producer-depth';
-import { peopleForProducer } from '../../../../lib/bourbon-depth/people';
+import { mastersForProducer } from '../../../../lib/bourbon-people/unified';
 import { getBourbonProducer, listBourbonProducers } from '../../../../lib/world-depth/bourbon-producers';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -36,7 +36,7 @@ export default async function BourbonProducerPage({ params }: Props) {
         producer={producer}
         compareTargets={compareTargets}
         depth={getProducerDepth(slug)}
-        masters={peopleForProducer(slug)}
+        masters={mastersForProducer(slug)}
       />
     </section>
   );

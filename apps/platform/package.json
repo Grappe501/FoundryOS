@@ -14,6 +14,8 @@
     "@foundry/mentor-engine": "*",
     "@foundry/ai-orchestration": "*",
     "@foundry/recommendation-engine": "*",
+    "@foundry/recommendation-engine-v2": "*",
+    "@foundry/review-engine": "*",
     "@foundry/search-engine": "*",
     "@foundry/collection-engine": "*",
     "@foundry/community-engine": "*",

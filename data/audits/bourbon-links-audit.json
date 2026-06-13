@@ -1,0 +1,13 @@
+{
+  "pass": "bourbon-links",
+  "timestamp": "2026-06-13T22:41:50.941Z",
+  "ok": true,
+  "passes": [
+    "progression chains hrefs",
+    "priority atlas seeds (15+ edges)",
+    "atlas term graph resolution",
+    "bottle graph edge targets",
+    "unified people registry"
+  ],
+  "errors": []
+}

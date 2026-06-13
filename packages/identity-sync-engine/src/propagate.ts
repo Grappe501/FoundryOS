@@ -41,7 +41,11 @@ export function propagateIdentityEvent(
         text:
           artifact.type === 'comparison'
             ? `You compared ${artifact.metadata.title.replace(' vs ', ' and ')}.`
-            : `You created ${artifact.metadata.title}.`,
+            : artifact.type === 'review'
+              ? `You reviewed ${artifact.metadata.title} — ${String(artifact.metadata.payload?.what_surprised_me ?? 'evidence logged')}.`
+              : artifact.type === 'recommendation'
+                ? `You recommended ${artifact.metadata.title} — ${String(artifact.metadata.payload?.recommendation_reason ?? 'judgment logged')}.`
+                : `You created ${artifact.metadata.title}.`,
         href: artifact.type === 'comparison' ? '/bourbon/compare' : `/${world_slug}/portfolio`,
       });
       result.memory_updates.push(mem);

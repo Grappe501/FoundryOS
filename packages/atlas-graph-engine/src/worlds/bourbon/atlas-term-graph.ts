@@ -1,4 +1,5 @@
 import type { EntityGraphView, GraphConnection } from '../../types';
+import { PRIORITY_ATLAS_TERM_GRAPHS } from './atlas-term-priority-graphs';
 
 function conn(partial: Omit<GraphConnection, 'id'> & { id?: string }): GraphConnection {
   return { id: partial.id ?? `${partial.entity_type}-${partial.slug}`, ...partial };
@@ -70,4 +71,5 @@ BOTTLED_IN_BOND_GRAPH.connection_count = BOTTLED_IN_BOND_GRAPH.connections.lengt
 
 export const BOURBON_ATLAS_TERM_GRAPHS: Record<string, EntityGraphView> = {
   'bottled-in-bond': BOTTLED_IN_BOND_GRAPH,
+  ...PRIORITY_ATLAS_TERM_GRAPHS,
 };

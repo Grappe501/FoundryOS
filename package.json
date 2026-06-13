@@ -9,8 +9,8 @@
   ],
   "foundry": {
     "version": "0.8.0-path-engine",
-    "current_pass": "PASS-040C",
-    "next_pass": "PASS-040E",
+    "current_pass": "PASS-040F",
+    "next_pass": "PASS-040G",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {
@@ -45,10 +45,13 @@
     "verify:040c": "npx tsx scripts/verify-040c.ts",
     "audit:identity-sync": "npx tsx scripts/audit-identity-sync.ts",
     "audit:atlas-aware-ai": "npx tsx scripts/audit-atlas-aware-ai.ts",
+    "audit:reviews": "npx tsx scripts/audit-reviews.ts",
+    "audit:recommendations": "npx tsx scripts/audit-recommendations.ts",
     "audit:universe": "npx tsx scripts/audit-universe.ts",
     "audit:artifacts": "npx tsx scripts/audit-artifacts.ts",
     "audit:bourbon-intelligence": "npx tsx scripts/audit-bourbon-intelligence.ts",
     "audit:bourbon-graph": "npx tsx scripts/audit-bourbon-graph.ts",
+    "audit:bourbon-links": "npx tsx scripts/audit-bourbon-links.ts",
     "audit:graph": "npx tsx scripts/audit-graph.ts",
     "audit:graph-enrichment": "npx tsx scripts/audit-graph-enrichment.ts",
     "audit:weekly-engagement": "npx tsx scripts/audit-weekly-engagement.ts",

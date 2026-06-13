@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { resolveFoundryIdentityStory } from '@foundry/identity-narrative-engine';
 import { summarizeUserArtifacts } from '@foundry/artifact-engine';
+import { summarizeReviewSignals } from '@foundry/review-engine';
+import { summarizeRecommendationSignals } from '@foundry/recommendation-engine-v2';
 import { assembleAllSignalBundles } from '../../lib/identity-narrative/assemble-signals';
 import { getStoredDisplayName } from '../../lib/living-worlds/client-journey';
 import { getWorldEventsState } from '../../lib/world-events/client-state';
@@ -51,6 +53,8 @@ export default function PassportPage() {
     const collectionItems = collections.reduce((n, c) => n + c.unlocked_count, 0);
     const artifacts = listClientArtifacts({ user_id: userId });
     const evidence = summarizeUserArtifacts(artifacts, userId);
+    const reviews = summarizeReviewSignals(artifacts, userId);
+    const recommendations = summarizeRecommendationSignals(artifacts, userId);
     const worldTitles = story.worlds
       .filter((w) =>
         bundles.some(
@@ -66,6 +70,8 @@ export default function PassportPage() {
       story,
       activeCount,
       evidence,
+      reviews,
+      recommendations,
       stats: {
         collections: collectionItems,
         events_participated: events.viewed.length,
@@ -125,6 +131,60 @@ export default function PassportPage() {
                 )}
               </>
             )}
+          </section>
+
+          <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 10 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              Reviews as artifacts
+            </p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 22, fontWeight: 300, margin: '12px 0 0' }}>
+              {data.reviews.total} review{data.reviews.total === 1 ? '' : 's'}
+            </p>
+            {Object.entries(data.reviews.by_world).map(([slug, count]) => (
+              <p key={slug} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '8px 0 0' }}>
+                {WORLD_LABELS[slug] ?? slug}: {count}
+              </p>
+            ))}
+            {data.reviews.latest && (
+              <div style={{ marginTop: 14, padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Latest review</p>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 6 }}>{data.reviews.latest.title}</p>
+              </div>
+            )}
+          </section>
+
+          <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 10 }}>
+            <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+              Evidence of influence
+            </p>
+            <p style={{ color: 'var(--foundry-text-muted)', fontSize: 13, marginTop: 8, lineHeight: 1.65 }}>
+              What you have recommended · where your judgment is forming · what your recommendations connect to.
+            </p>
+            <p style={{ color: 'var(--foundry-text)', fontSize: 22, fontWeight: 300, margin: '12px 0 0' }}>
+              {data.recommendations.total} recommendation{data.recommendations.total === 1 ? '' : 's'}
+            </p>
+            {Object.entries(data.recommendations.by_world).map(([slug, count]) => (
+              <p key={slug} style={{ color: 'var(--foundry-text-muted)', fontSize: 13, margin: '8px 0 0' }}>
+                {WORLD_LABELS[slug] ?? slug}: {count}
+              </p>
+            ))}
+            {data.recommendations.latest && (
+              <div style={{ marginTop: 14, padding: 14, background: 'var(--foundry-surface-raised)', borderRadius: 8 }}>
+                <p style={{ color: 'var(--foundry-text-faint)', fontSize: 11, margin: 0 }}>Latest recommendation</p>
+                <p style={{ color: 'var(--foundry-text)', fontSize: 14, marginTop: 6 }}>{data.recommendations.latest.title}</p>
+                {data.recommendations.narrative && (
+                  <p style={{ color: 'var(--foundry-text-faint)', fontSize: 12, marginTop: 6 }}>
+                    Connects to: {data.recommendations.narrative.connects_to}
+                  </p>
+                )}
+              </div>
+            )}
+            <div style={{ marginTop: 16, display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8, fontSize: 12, color: 'var(--foundry-text-muted)' }}>
+              <div>Graph-linked: {data.recommendations.influence.recommendations_connected_to_graph}</div>
+              <div>Review-backed: {data.recommendations.influence.recommendations_based_on_reviews}</div>
+              <div>Artifact-backed: {data.recommendations.influence.recommendations_based_on_artifacts}</div>
+              <div>Public: {data.recommendations.influence.recommendations_public}</div>
+            </div>
           </section>
 
           <section style={{ marginTop: 24, padding: 24, background: 'var(--foundry-surface)', border: '1px solid var(--foundry-border-warm)', borderRadius: 10 }}>
