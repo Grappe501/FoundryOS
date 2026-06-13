@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ThemeToggle } from '../theme/ThemeToggle';
 
 const LINKS = [
   { href: '/bourbon', label: 'World', exact: true },
@@ -16,7 +17,8 @@ const LINKS = [
   { href: '/bourbon/producers', label: 'Producers' },
   { href: '/bourbon/portfolio', label: 'My Shelf' },
   { href: '/bourbon/daily', label: 'Daily' },
-  { href: '/bourbon/glossary', label: 'Glossary' },
+  { href: '/bourbon/compare', label: 'Compare' },
+  { href: '/bourbon/whiskey-map', label: 'Whiskey Map' },
   { href: '/community/bourbon', label: 'Community' },
 ] as const;
 
@@ -33,6 +35,8 @@ export function BourbonSubNav() {
           </Link>
         );
       })}
+      <span style={{ flex: 1, minWidth: 8 }} />
+      <ThemeToggle compact />
     </nav>
   );
 }

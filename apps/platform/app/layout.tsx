@@ -1,7 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import { DM_Sans, Instrument_Serif } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { PortableIdentityHydrator } from '../components/identity/PortableIdentityHydrator';
+import { ThemeProvider, themeInitScript } from '../components/theme/ThemeProvider';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -38,10 +40,17 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${instrumentSerif.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${instrumentSerif.variable}`} suppressHydrationWarning>
+      <head>
+        <Script id="foundry-theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
+      </head>
       <body className="foundry-body">
-        <PortableIdentityHydrator />
-        {children}
+        <ThemeProvider>
+          <PortableIdentityHydrator />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -45,6 +45,27 @@ const PROGRESSION: Record<string, Omit<BottleProgression, 'slug'>> = {
     nextBottle: { slug: 'michters-us1', name: "Michter's US*1", why: 'Different texture philosophy — mouthfeel education.' },
     thenBottle: { slug: 'old-forester-1920', name: 'Old Forester 1920', why: 'Barrel-proof step-up — heat vs flavor.' },
   },
+  'new-riff-bourbon': {
+    whatItTeaches: ['Grain-to-glass transparency', 'Non-chill filtered texture', 'BiB craft baseline'],
+    whoItsFor: 'Craft-curious drinkers ready to compare modern distilleries to heritage NAS giants.',
+    whenToBuy: 'After 3–5 major-house bottles — when you want to taste ferment and filtering choices.',
+    nextBottle: { slug: 'wilderness-trail-bib', name: 'Wilderness Trail BiB', why: 'Wheated craft BiB — different mash philosophy, same proof law.' },
+    thenBottle: { slug: 'rabbit-hole-cavehill', name: 'Rabbit Hole Cavehill', why: 'Four-grain recipe literacy — leave rye-forward lane.' },
+  },
+  'wilderness-trail-bib': {
+    whatItTeaches: ['Wheated craft', 'BiB discipline at craft scale', 'Sweet mash character'],
+    whoItsFor: 'Wheat fans who want craft transparency with age and proof on the label.',
+    whenToBuy: 'When Maker\'s and Larceny feel familiar — compare wheated craft vs majors.',
+    nextBottle: { slug: 'willett-pot-still', name: 'Willett Pot Still Reserve', why: 'Another wheated craft icon — Bardstown heritage.' },
+    thenBottle: { slug: 'peerless-bourbon', name: 'Peerless Bourbon', why: 'Jump to rich Louisville craft — different body entirely.' },
+  },
+  'castle-key-bourbon': {
+    whatItTeaches: ['Approachable craft entry', 'Historic campus revival', 'Floral gentle bourbon'],
+    whoItsFor: 'Beginners entering craft without barrel-proof intimidation.',
+    whenToBuy: 'First craft bottle after Evan Williams / Buffalo Trace baseline.',
+    nextBottle: { slug: 'bardstown-bourbon', name: 'Bardstown Bourbon Co.', why: 'Compare collaboration-house straight bourbon polish.' },
+    thenBottle: { slug: 'new-riff-bourbon', name: 'New Riff BiB', why: 'Rye-forward craft — proof and NCF texture lesson.' },
+  },
 };
 
 function defaultProgression(b: BourbonBottle): BottleProgression {

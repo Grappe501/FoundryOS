@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { ThemeToggle } from './theme/ThemeToggle';
 
 const LINKS = [
   { href: '/future-proof', label: 'Future-Proof' },
@@ -52,6 +53,7 @@ export function ConsumerNav() {
         );
       })}
       <span className="foundry-nav__spacer" />
+      <ThemeToggle compact />
       {ACTION_LINKS.map(({ href, label, primary }) => (
         <Link
           key={href}

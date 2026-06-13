@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "0.8.0-path-engine",
-    "current_pass": "PASS-040F",
-    "next_pass": "PASS-040G",
+    "version": "1.0.0-bourbon-depth",
+    "current_pass": "PASS-041",
+    "next_pass": "PASS-042",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {

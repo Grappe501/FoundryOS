@@ -1,5 +1,8 @@
 /** Bourbon Producer Atlas — Level 1 deep-dive registry */
 
+import { CRAFT_BOURBON_PRODUCERS } from './craft-producers';
+import { TENNESSEE_PRODUCERS } from './tennessee-producers';
+
 export type ProducerBottle = {
   name: string;
   priceUsd: string;
@@ -962,6 +965,8 @@ export const BOURBON_PRODUCERS: BourbonProducer[] = [
     ],
     compareWith: ['heaven-hill', 'four-roses', 'michters'],
   },
+  ...CRAFT_BOURBON_PRODUCERS,
+  ...TENNESSEE_PRODUCERS,
 ];
 
 export function getBourbonProducer(slug: string): BourbonProducer | undefined {

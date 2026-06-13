@@ -36,7 +36,7 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
     steps: [
       { slug: 'makers-mark', name: "Maker's Mark", note: 'Crowd-pleasing wheat — the host bottle', href: '/bourbon/bottles/makers-mark' },
       { name: "Maker's 46", note: 'Stave-finishing — oak without age', href: '/bourbon/atlas/char-level' },
-      { slug: 'bookers', name: "Maker's Mark Cask Strength", note: 'Full volume wheat — add water intentionally', href: '/bourbon/bottles/bookers' },
+      { slug: 'bookers', name: 'Barrel proof graduate', note: 'Uncut heat — add water intentionally (any house)', href: '/bourbon/bottles/bookers' },
       { name: 'Private Selection', note: 'Retail pick — stave profile chosen', href: '/bourbon/store-picks' },
     ],
   },
@@ -61,7 +61,7 @@ export const PROGRESSION_CHAINS: ProgressionChain[] = [
       { slug: 'evan-williams-black', name: 'Evan Williams Black', note: 'Daily pour under $20', href: '/bourbon/bottles/evan-williams-black' },
       { name: 'Evan Williams BiB', note: 'Green label — BiB discipline', href: '/bourbon/graph/bottled-in-bond' },
       { slug: 'larceny', name: 'Larceny', note: 'Wheated step-up from same house', href: '/bourbon/bottles/larceny' },
-      { slug: 'old-forester-1920', name: 'Elijah Craig Barrel Proof', note: 'Heaven Hill heat — when you trust water', href: '/bourbon/bottles/old-forester-1920' },
+      { slug: 'old-forester-1920', name: 'Barrel proof step-up', note: '115 proof discipline — trust water before you chase hazmat', href: '/bourbon/bottles/old-forester-1920' },
     ],
   },
   {

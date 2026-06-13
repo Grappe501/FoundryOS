@@ -47,7 +47,7 @@ function resolveInternalHref(href: string): boolean {
   if (segment === 'graph' && slug) return inferGraphRef(slug) !== null;
   if (segment === 'people' && slug) return listAllPeopleSlugs().includes(slug);
   if (segment === 'detective' && slug) return true;
-  if (segment === 'store-picks' || segment === 'economy' || segment === 'lab' || segment === 'map') return true;
+  if (segment === 'store-picks' || segment === 'economy' || segment === 'lab' || segment === 'map' || segment === 'whiskey-map') return true;
   if (segment === 'experiences') return true;
   if (segment === 'compare' || segment === 'academy' || segment === 'trail-planner') return true;
   if (segment === 'x-ray') return true;

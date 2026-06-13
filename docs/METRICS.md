@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-034P+ close — World Memory + Layer 1 stack complete; 040D resequenced ahead of 040C
+> Updated PASS-041 close — Bourbon Level 1 depth · system v1.0.0-bourbon-depth
 
 ---
 
@@ -153,14 +153,20 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 040C (Atlas-Aware AI + identity stack) |
-| Version | `0.9.9-atlas-aware-ai` |
-| Launch readiness | 92% |
+| Passes complete | 041 (Bourbon Level 1 depth + v1.0) |
+| Version | `1.0.0-bourbon-depth` |
+| Launch readiness | 96% |
+| Bourbon catalog bottles | 32 |
+| Bourbon static pages | 1,157 |
+| Academy lessons (bourbon) | 35 (8 L1 authored + 27 L2–7) |
+| Campus maps | 11 producers |
+| Detective cases | 13 |
 | Personal database | ✅ PASS-040D — `npm run verify:040d` |
 | Identity sync engine | ✅ PASS-040D.5 — `npm run verify:040d5` |
 | Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
+| Review + recommend | ✅ PASS-040E/F |
 | Full stack verify | `npm run verify:stack` |
-| Next pass | **PASS-040E** — Review Engine |
+| Next pass | **PASS-042** — graph depth + beta wedge |
 
 ---
 

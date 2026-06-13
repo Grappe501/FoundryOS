@@ -6,15 +6,61 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `0.9.9-atlas-aware-ai` |
-| **Last Pass** | PASS-040C Atlas-Aware AI ✅ |
-| **Current Pass** | Design System v2 + stack verification ✅ |
-| **Next Pass** | PASS-040E Review Engine |
-| **Live proof** | `npm run verify:stack` · `npm run verify:040c` · `/operator/ai-context` |
-| **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI |
-| **040D proof** | `npm run verify:040d` · `/api/identity/hydrate` |
-| **Continuity proof** | `/my-journey` · `/bourbon/graph/bottled-in-bond` · Ask the Atlas |
+| **Version** | `1.0.0-bourbon-depth` |
+| **Last Pass** | PASS-041 Bourbon Level 1 Depth ✅ |
+| **Current Pass** | System v1.0 deploy ✅ |
+| **Next Pass** | PASS-042 — graph depth + beta wedge |
+| **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` |
+| **Bourbon catalog** | 32 bottles · 19 producers · 35 academy lessons · 11 campus maps · 13 detective cases |
+| **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
+
+---
+
+## PASS-041 — Bourbon Level 1 Depth + System v1.0 ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Close honest backlog — cross-category catalog, campus, detective, X-Ray, academy |
+| **Version bump** | `1.0.0-bourbon-depth` — Foundry platform semver milestone |
+| **Audit** | `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` · 1,157 static pages |
+
+| Deliverable | Location |
+|-------------|----------|
+| Cross-category catalog | 26 bourbon + 4 rye + 2 Tennessee — `bottles.ts` + `catalog-seeds.ts` |
+| Craft expansion | 6 craft bottles + 6 producers — `craft-producers.ts` |
+| Tennessee producers | `tennessee-producers.ts` — Jack Daniel's, George Dickel |
+| Light/dark theme | `ThemeProvider` · `ThemeToggle` · `[data-theme="light"]` tokens |
+| Whiskey category map | `/bourbon/whiskey-map` · `CompareCategoriesTool` · category compare presets |
+| Campus maps 11/11 | `campus-maps.ts` — BT, HH, Beam, WT, Maker's, 4R, OF, Woodford, New Riff, WT craft, Jack |
+| Detective +6 | 13 cases — rye/TN, craft sourcing, NAS, NCF, secondary math |
+| Bottle X-Ray overrides | `bottle-xray-overrides.ts` — per-bottle entry proof, warehouse, analyst |
+| Academy L2–7 authored | `bourbon-academy-levels-2-7.ts` — 27 lessons with sections (35 total) |
+
+**Architecture Impact**
+- Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
+- Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
+- Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-040F — Recommendation Engine v2 ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Identity-aware recommendations on graph nodes |
+| **Package** | `@foundry/recommendation-engine-v2` |
+| **Operator** | `/operator/recommendations` |
+
+---
+
+## PASS-040E — Review Engine ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Structured reviews tied to graph + identity |
+| **Package** | `@foundry/review-engine` |
+| **Operator** | `/operator/reviews` |
 
 ---
 

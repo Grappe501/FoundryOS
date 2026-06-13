@@ -15,7 +15,7 @@ import { getTransformationAnalytics } from '@foundry/transformation-graph-engine
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
 
-export const PLATFORM_VERSION = '0.8.0-path-engine';
+export const PLATFORM_VERSION = '1.0.0-bourbon-depth';
 
 export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
@@ -354,6 +354,30 @@ export const PASSES: PassEntry[] = [
     summary:
       '@foundry/atlas-aware-ai · buildAtlasContext · portable identity context · Ask the Atlas panel · /operator/ai-context debugger. npm run verify:040c.',
   },
+  {
+    code: 'PASS-040E',
+    title: 'Review Engine',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '@foundry/review-engine · graph reviews · operator /operator/reviews · consumer panels on bourbon graph.',
+  },
+  {
+    code: 'PASS-040F',
+    title: 'Recommendation Engine v2',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '@foundry/recommendation-engine-v2 · identity-aware recommendations · operator /operator/recommendations.',
+  },
+  {
+    code: 'PASS-041',
+    title: 'Bourbon Level 1 Depth + System v1.0',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '32-bottle catalog (craft + rye + TN) · light/dark theme · whiskey category map · 11 campus maps · 13 detective cases · X-Ray overrides · authored academy L2–7 (35 lessons). npm run audit:bourbon-links · audit:bourbon-graph.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -478,11 +502,11 @@ export async function getMissionControlStats() {
     domain_launch_velocity_target: growthKpis.domain_launch_velocity_target,
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
-    launch_readiness_pct: live ? 94 : 52,
-    last_pass: 'PASS-040C',
-    next_pass: 'PASS-040E',
+    launch_readiness_pct: live ? 96 : 54,
+    last_pass: 'PASS-041',
+    next_pass: 'PASS-042',
     current_focus:
-      'PASS-040E Review Engine — social proof on graph nodes. Atlas-Aware AI reads Portable Identity across devices.',
+      'PASS-042 — Bourbon graph depth + beta wedge polish. Level 1 catalog at 32 bottles, 35 academy lessons, 11 campus maps.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

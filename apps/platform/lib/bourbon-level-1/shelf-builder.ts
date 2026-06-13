@@ -33,7 +33,7 @@ export function buildShelf(budget: 100 | 200 | 300, tier: ShelfTier): { bottle: 
         : [
             { slot: 'Heritage flagship', pick: (b) => b.tags.includes('collector') },
             { slot: 'Barrel proof', pick: (b) => b.proof >= 110 },
-            { slot: 'Single barrel / craft', pick: (b) => b.producerSlug === 'new-riff' || b.slug.includes('single') },
+            { slot: 'Single barrel / craft', pick: (b) => b.tags.includes('craft') || b.slug.includes('single') },
             { slot: 'Allocated hunt target', pick: (b) => b.slug.includes('eagle') || b.slug.includes('weller') },
             { slot: 'Splurge night', pick: (b) => b.tags.includes('splurge') },
           ];

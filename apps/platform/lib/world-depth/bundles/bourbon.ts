@@ -1,31 +1,10 @@
 /** PASS-025 — Bourbon world depth bundle */
 
-import { buildAcademyLessons } from '../build-academy';
 import { buildGlossary } from '../build-glossary';
 import { BOURBON_LEVEL_1_LESSONS } from '../bourbon-academy-level-1';
+import { BOURBON_LEVELS_2_7_LESSONS } from '../bourbon-academy-levels-2-7';
 import type { WorldDepthBundle } from '../types';
 import { BOURBON_ACADEMY_LEVELS } from '../../bourbon-world';
-
-const academyLevels = BOURBON_ACADEMY_LEVELS.map((l) => ({
-  level: l.level,
-  title: l.title,
-  tagline: l.tagline,
-  missionSlug:
-    l.level === 1
-      ? 'first-tasting'
-      : l.level === 3
-        ? 'first-shelf'
-        : l.level === 4
-          ? 'compare-five'
-          : l.level === 5
-            ? 'blind-tasting'
-            : l.level === 6
-              ? 'distillery-visit'
-              : undefined,
-}));
-
-const levelsTwoThroughSeven = academyLevels.filter((l) => l.level > 1);
-const templatedUpperLessons = buildAcademyLessons(levelsTwoThroughSeven, 'Bourbon');
 
 export const BOURBON_DEPTH: WorldDepthBundle = {
   slug: 'bourbon',
@@ -33,7 +12,7 @@ export const BOURBON_DEPTH: WorldDepthBundle = {
   accentColor: 'var(--foundry-primary)',
   portfolioLabel: 'My Bourbon Journal',
 
-  academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...templatedUpperLessons],
+  academyLessons: [...BOURBON_LEVEL_1_LESSONS, ...BOURBON_LEVELS_2_7_LESSONS],
 
   academyLevelMeta: BOURBON_ACADEMY_LEVELS.map((l) => ({
     level: l.level,
@@ -206,6 +185,17 @@ export const BOURBON_DEPTH: WorldDepthBundle = {
         { heading: 'Label terms', body: 'Straight bourbon, bottled in bond, single barrel, small batch, cask strength, non-chill filtered, and DSP numbers decode what is in the bottle and who made it.' },
         { heading: 'Tasting terms', body: 'Nose, palate, finish, neat, Glencairn, blind tasting, and flavor families (caramel, vanilla, oak, rye spice) turn sips into sentences.' },
         { heading: 'How to use this glossary', body: 'Pick one term per tasting. Use it in your journal entry. Link related terms until the web sticks — that is how connoisseurs are made, one word at a time.' },
+      ],
+    },
+    {
+      slug: 'whiskey-map',
+      title: 'American Whiskey Map — Categories Compared',
+      summary: 'Bourbon is one branch — rye, Tennessee, wheat, corn, single malt, and blends each have identity rules worth knowing before you buy.',
+      sections: [
+        { heading: 'Why categories matter', body: 'Label words like bourbon, rye whiskey, and Tennessee whiskey are legal identities — not marketing adjectives. Comparing categories teaches you what corn minimums, barrel rules, and charcoal mellowing actually change in the glass.' },
+        { heading: 'Start with three', body: 'Compare bourbon, rye whiskey, and Tennessee whiskey first. You will feel corn sweetness vs rye spice vs charcoal-softened entry — the American core triangle.' },
+        { heading: 'Common traps', body: 'High-rye bourbon is not rye whiskey. Wheated bourbon is not wheat whiskey. Canadian whisky and Scotch use different barrel and blending rules than U.S. straight standards.' },
+        { heading: 'Use the interactive map', body: 'Open /bourbon/whiskey-map for the full category grid and side-by-side compare presets. Link each category to Atlas terms as you taste.' },
       ],
     },
     {

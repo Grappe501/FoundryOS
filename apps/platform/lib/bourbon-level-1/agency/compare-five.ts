@@ -66,6 +66,15 @@ export const COMPARE_PRESETS: { id: string; label: string; slugs: string[] }[] =
   { id: 'wheated', label: 'Wheated showdown', slugs: ['makers-mark', 'larceny', 'weller-special-reserve', 'buffalo-trace', 'woodford-reserve'] },
   { id: 'high-proof', label: 'High proof education', slugs: ['wild-turkey-101', 'knob-creek-9', 'four-roses-single-barrel', 'old-forester-1920', 'bookers'] },
   { id: 'step-up', label: 'Step-up shelf ($40–65)', slugs: ['eagle-rare', 'russells-reserve-10', 'four-roses-single-barrel', 'knob-creek-9', 'michters-us1'] },
+  { id: 'age-flight', label: 'Age statement flight', slugs: ['buffalo-trace', 'eagle-rare', 'knob-creek-9', 'russells-reserve-10', 'rhetoric-24'] },
+  { id: 'craft-modern', label: 'Craft & modern Kentucky', slugs: ['new-riff-bourbon', 'wilderness-trail-bib', 'castle-key-bourbon', 'rabbit-hole-cavehill', 'peerless-bourbon'] },
+  { id: 'craft-wheated', label: 'Craft wheated flight', slugs: ['wilderness-trail-bib', 'willett-pot-still', 'makers-mark', 'larceny', 'michters-us1'] },
+  { id: 'value-blind', label: 'Blind value staples', slugs: ['evan-williams-black', 'old-forester-86', 'wild-turkey-101', 'four-roses-yellow', '1792-small-batch'] },
+  { id: 'wheated-rye', label: 'Wheated vs high-rye', slugs: ['makers-mark', 'larceny', 'wild-turkey-101', 'four-roses-yellow', 'bulleit-bourbon'] },
+  { id: 'splurge', label: 'Splurge & collector', slugs: ['bookers', 'old-forester-1920', 'rhetoric-24', 'eagle-rare', 'weller-special-reserve'] },
+  { id: 'category-flight', label: 'Bourbon · rye · Tennessee', slugs: ['buffalo-trace', 'rittenhouse-rye', 'jack-daniels-old-no-7', 'bulleit-bourbon', 'bulleit-rye'] },
+  { id: 'tennessee-duo', label: 'Tennessee showdown', slugs: ['jack-daniels-old-no-7', 'george-dickel-no-8', 'buffalo-trace', 'makers-mark', 'evan-williams-black'] },
+  { id: 'rye-starter', label: 'Rye whiskey starter flight', slugs: ['rittenhouse-rye', 'wild-turkey-rye', 'old-overholt-bib', 'bulleit-rye', 'wild-turkey-101'] },
 ];
 
 export function allCompareSlugs(): { slug: string; name: string }[] {

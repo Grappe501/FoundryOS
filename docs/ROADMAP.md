@@ -1,6 +1,6 @@
 # FoundryOS — Roadmap
 
-> Updated PASS-034J close — **Living Worlds + Hobby Destination**. Private build until beta-ready.
+> Updated PASS-041 close — **Bourbon Level 1 depth + system v1.0**. Private build until beta-ready.
 
 **Production launch:** January 2027 · See `docs/JANUARY_2027_TARGETS.md`
 
@@ -41,6 +41,8 @@ PASS-026–032 ██████████ World Experience + Emotional UX �
 PASS-033 ████████████ Age-Safe Governance ✅
 PASS-034 ████████████ Living Worlds + Lore + Intelligence ✅
 Private beta invites ← NEXT (handpicked testers)
+PASS-040E/F ████████████ Review + Recommendation engines ✅
+PASS-041 ████████████ Bourbon Level 1 depth + v1.0.0 ✅
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.
