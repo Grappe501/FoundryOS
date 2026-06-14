@@ -437,7 +437,7 @@ export const BOURBON_EXPERIENCE: WorldExperienceConfig = {
     {
       slug: 'tasting-lab',
       title: 'Tasting Lab',
-      description: 'Level 2 guided flights — mash bill, category, proof — with saved note cards.',
+      description: 'Level 2 v2.0 — 16 guided flights, 12 grids, palate journal, water lab.',
       category: 'lab',
       estimatedMinutes: 45,
     },

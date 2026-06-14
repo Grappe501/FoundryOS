@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "1.3.0-bourbon-level2-comprehensive",
-    "current_pass": "PASS-044",
-    "next_pass": "PASS-045",
+    "version": "2.0.0-bourbon-confident-taster",
+    "current_pass": "PASS-045",
+    "next_pass": "PASS-046",
     "vision": "Foundry helps people become who they are capable of becoming."
   },
   "scripts": {

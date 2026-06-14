@@ -1,5 +1,7 @@
 /** Bourbon Level 2 — Confident Taster tool registry */
 
+export const BOURBON_LEVEL_2_VERSION = '2.0.0-bourbon-confident-taster';
+
 export type Level2Tool = {
   slug: string;
   href: string;

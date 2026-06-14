@@ -62,7 +62,7 @@ export function BourbonLandingDoors({ content }: Props) {
     {
       label: 'Level 2',
       teaser: 'Hold one variable — mash bill, category, proof — and taste the difference.',
-      depth: 'Tasting Lab flights, comparison grids, ten academy lessons. Confident Taster unlock.',
+      depth: '16 flights · 12 grids · 15 lessons · Palate Journal · Water Lab. Confident Taster v2.0.',
       href: '/bourbon/level-2',
       hrefLabel: 'Level 2 — Confident Taster',
     },

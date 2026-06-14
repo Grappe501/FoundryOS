@@ -245,13 +245,13 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
   {
     slug: 'tasting-lab',
     hook: 'Guided flights — mash bill, category, proof — with note cards',
-    explanation: `Tasting Lab runs eight curated flights with one variable locked — mash bill triangle, category triangle, proof ladder, BiB transparency. Note cards save locally for Level 2 checkpoint evidence.`,
+    explanation: `Tasting Lab runs sixteen curated flights in five groups — core mash bills, category literacy, proof & BiB, craft & finish, blind prep. Note cards, rank picker, and water notes save locally for Level 2 checkpoint evidence.`,
     practicalReason: `Run mash bill triangle before your next host night — three pours, one lesson.`,
   },
   {
     slug: 'comparison-grid',
     hook: 'Hold one variable sacred — nose, palate, finish, rank',
-    explanation: `Comparison grids force spreadsheet honesty — six presets from three mash bills to value blind five. Winner plus lesson sentence saves locally.`,
+    explanation: `Comparison grids force spreadsheet honesty — twelve presets from mash bills to craft inventory, finish four-way, house ladders, barrel proof, and NCF texture. Winner plus lesson sentence saves locally.`,
     practicalReason: `Fill grid before declaring a favorite bottle — rank reveals bias.`,
   },
   {
@@ -263,8 +263,14 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
   {
     slug: 'water-lab',
     hook: 'Neat vs one drop — when heat helps vs hides',
-    explanation: `Proof mode in Tasting Lab — ladder pours with water experiment on highest proof only.`,
+    explanation: `Water & Proof Lab — dedicated page with proof ladder, barrel proof showdown, and one-drop discipline on highest pours.`,
     practicalReason: `One drop on barrel proof before you trade the bottle away.`,
+  },
+  {
+    slug: 'palate-journal',
+    hook: 'Structured entries — five flavor families, no "smooth"',
+    explanation: `Palate Journal enforces flavor family vocabulary and forbids reflex words. Entries count toward Level 2 checkpoint alongside Tasting Lab saves.`,
+    practicalReason: `Three journal entries plus two flights unlock checkpoint hint.`,
   },
 ];
 

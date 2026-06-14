@@ -6,13 +6,13 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `1.3.0-bourbon-level2-comprehensive` |
-| **Last Pass** | PASS-044 Bourbon Level 2 Comprehensive ✅ |
-| **Current Pass** | Level 2 depth deploy ✅ |
-| **Next Pass** | PASS-045 — Level 3 Shelf Builder depth |
-| **Level 2 surface** | 16 flights · 12 grids · 15 lessons · 16 modules · Palate Journal · Water Lab |
-| **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` · `npm run audit:bourbon-intelligence` |
-| **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 40 academy lessons · 11 campus maps · 13 detective cases |
+| **Version** | `2.0.0-bourbon-confident-taster` |
+| **Last Pass** | PASS-045 Bourbon Level 2 v2.0 Release ✅ |
+| **Current Pass** | Level 2 tier complete ✅ |
+| **Next Pass** | PASS-046 — Level 3 Shelf Builder depth |
+| **Level 2 surface** | v2.0 — 16 flights · 12 grids · 15 lessons · 16 modules · Journal · Water Lab |
+| **Live proof** | `npm run build:platform` · `npm run sandbox` · `audit:bourbon-links` · `audit:bourbon-graph` |
+| **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 45 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
@@ -42,6 +42,27 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-045 — Bourbon Level 2 v2.0 Confident Taster Release ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Formal Level 2 tier semver — production-complete Confident Taster surface |
+| **Version bump** | `2.0.0-bourbon-confident-taster` — Level 2 tier milestone |
+| **Audit** | preflight · sandbox · audit:bourbon-links |
+
+| Deliverable | Location |
+|-------------|----------|
+| Semver | `package.json` · `PLATFORM_VERSION` · `BOURBON_LEVEL_2_VERSION` |
+| Copy sync | Landing doors · tool-depth · mission control |
+| Tier status | Level 2 complete — unlock path to Level 3 Shelf Builder |
+
+**Architecture Impact**
+- Reusable: tier semver pattern (L1 v1.0 · L2 v2.0 · catalog v1.2)
+- Benefits: Mission Control and deploy reports reflect Confident Taster as shipped tier
+- Affected launches: bourbon.foundryos.com Level 2 door · academy · tasting lab
 
 ---
 

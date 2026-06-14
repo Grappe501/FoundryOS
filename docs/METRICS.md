@@ -153,8 +153,9 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 044 (Bourbon Level 2 Comprehensive) |
-| Version | `1.3.0-bourbon-level2-comprehensive` |
+| Passes complete | 045 (Bourbon Level 2 v2.0 Confident Taster) |
+| Version | `2.0.0-bourbon-confident-taster` |
+| Level 2 tier | **v2.0 complete** — Confident Taster production-ready |
 | Launch readiness | 100% |
 | Bourbon catalog bottles | 55 |
 | Bourbon producers | 24 |
@@ -168,7 +169,7 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
 | Review + recommend | ✅ PASS-040E/F |
 | Full stack verify | `npm run verify:stack` |
-| Next pass | **PASS-045** — Level 3 Shelf Builder |
+| Next pass | **PASS-046** — Level 3 Shelf Builder |
 
 ---
 
