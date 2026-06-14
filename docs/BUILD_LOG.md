@@ -6,13 +6,13 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `1.1.0-bourbon-level2` |
-| **Last Pass** | PASS-042 Bourbon Level 2 — Confident Taster ✅ |
-| **Current Pass** | Level 2 deploy ✅ |
-| **Next Pass** | PASS-043 — Level 3 Shelf Builder depth |
+| **Version** | `1.2.0-bourbon-craft-inventory` |
+| **Last Pass** | PASS-043 Bourbon Craft Inventory — 55 Bottle Catalog ✅ |
+| **Current Pass** | Craft inventory deploy ✅ |
+| **Next Pass** | PASS-044 — Level 3 Shelf Builder depth |
 | **Level 2 surface** | Tasting Lab · Comparison Grid · Mash bill flight · 10 academy lessons |
-| **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` |
-| **Bourbon catalog** | 32 bottles · 19 producers · 35 academy lessons · 11 campus maps · 13 detective cases |
+| **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` · `npm run audit:bourbon-intelligence` |
+| **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 40 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
 | **Beta gate** | Tester cohorts wait until graph + artifacts + identity infra feel alive |
 
@@ -42,6 +42,31 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-043 — Bourbon Craft Inventory — 55 Bottle Catalog ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Major house sweet-spot depth + craft inventory expansion to launch-ready catalog |
+| **Version** | `1.2.0-bourbon-craft-inventory` |
+| **Audit** | bourbon-links · bourbon-graph (55 hallways) · bourbon-intelligence (524 edges) · sandbox |
+
+| Deliverable | Location |
+|-------------|----------|
+| Major house depth | +11 bottles — Evan Williams BiB, Elijah Craig, Rare Breed, 1792 BiB/Full Proof, Woodford Double Oaked, E.H. Taylor, etc. |
+| Craft second bottles | New Riff SB, Bardstown Fusion, craft rye (NR, WT, Michter's, Rabbit Hole, Woodford) |
+| New craft producers | `craft-producers-extended.ts` — Angel's Envy, Log Still, Jeptha Creed, Green River, Blue Run |
+| Intelligence mirror | `catalog-seeds.ts` — 55 bottles · 24 producers · comparison sets |
+| Compare presets | +7 — Heaven Hill ladder, Wild Turkey ladder, craft inventory, craft splurge, finish flight, craft rye, Barton proof |
+| Tasting Lab | Craft campus + finish lab flights |
+| X-Ray overrides | All 23 new bottles in `bottle-xray-overrides.ts` |
+
+**Architecture Impact**
+- Reusable: extended craft producer pattern, catalog-seeds sync discipline, craft inventory compare presets
+- Benefits: Producer atlas sweet spots now have shelf bottles; craft is a real inventory layer not one bottle per house
+- Affected launches: bourbon.foundryos.com bottle graph · compare · tasting lab · operator inventory
 
 ---
 

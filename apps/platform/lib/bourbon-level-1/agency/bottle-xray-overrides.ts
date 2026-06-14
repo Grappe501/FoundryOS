@@ -168,4 +168,119 @@ export const BOTTLE_XRAY_OVERRIDES: Record<string, BottleXRayOverride> = {
     warehouse: 'Tullahoma barrel warehouses — Diageo Tennessee value anchor',
     analystTake: 'Jack\'s quiet rival at value pricing — pour both Tennessee bottles blind before picking a camp.',
   },
+  'evan-williams-bib': {
+    entryProof: '100 proof BiB — Heaven Hill white label bond line',
+    warehouse: 'Heaven Hill Bardstown — same campus as Evan Black, bond age floor',
+    analystTake: 'Best BiB value in America — compare to Evan Black same night for proof and age transparency.',
+  },
+  'elijah-craig-small-batch': {
+    entryProof: '~125 proof — charred barrel namesake line',
+    warehouse: 'Heaven Hill off-site rickhouses — NAS small batch selection',
+    analystTake: 'Oak and baking spice step-up — bridges Evan Black to Eagle Rare on the same house ladder.',
+  },
+  'jim-beam-black': {
+    entryProof: '~125 proof — extra-aged Beam traditional mash',
+    warehouse: 'Clermont rickhouses — longer aging than white label',
+    analystTake: 'Beam family age lesson under $25 — compare to Knob Creek 9 for years vs proof.',
+  },
+  'makers-mark-46': {
+    entryProof: '~125 proof — seared French oak staves in barrel',
+    warehouse: 'Rotating barrel program — wood treatment post-primary aging',
+    analystTake: 'Finish via staves, not second barrel — compare to standard Maker\'s and Woodford Double Oaked.',
+  },
+  'four-roses-small-batch': {
+    entryProof: '~120 proof — blend of four recipes',
+    warehouse: 'Cox\'s Creek — recipe blending for consistency',
+    analystTake: 'Bridges Yellow Label to Single Barrel — blending literacy before barrel lottery.',
+  },
+  'old-forester-100': {
+    entryProof: '~125 proof — 100 proof Forester line',
+    warehouse: 'Louisville distillation, Kentucky aging — banana ester house DNA',
+    analystTake: 'Proof ladder on one mash — pour 86, 100, and 1920 in one session when budget allows.',
+  },
+  'woodford-double-oaked': {
+    entryProof: '~125 proof — second new char oak barrel finish',
+    warehouse: 'Heat-cycled Versailles — finish accelerates dark chocolate notes',
+    analystTake: 'Major-house finish reference — dessert bourbon without leaving Brown-Forman campus.',
+  },
+  'rare-breed': {
+    entryProof: 'Barrel proof ~116.8 — Wild Turkey uncut batch blend',
+    warehouse: 'Lawrenceburg upper floors — rye spice at full intensity',
+    analystTake: '101\'s big sibling — blind against 1792 Full Proof for high-rye barrel proof value.',
+  },
+  '1792-bib': {
+    entryProof: '100 proof BiB — Barton high-rye bond line',
+    warehouse: 'Barton 1792 Bardstown — often overlooked pick source',
+    analystTake: 'BiB step between Small Batch and Full Proof — spice locked at 100 proof.',
+  },
+  '1792-full-proof': {
+    entryProof: '125 proof barrel exit — Barton uncut selection',
+    warehouse: 'Barton campus — caramel and fire without BT allocation',
+    analystTake: 'High proof value king — compare to Rare Breed and OF1920 on one night.',
+  },
+  'eh-taylor-small-batch': {
+    entryProof: '100 proof BiB — Buffalo Trace mash bill #1',
+    warehouse: 'Frankfort — collector tier with bond transparency',
+    analystTake: 'BiB at BT campus — gateway before Single Barrel store picks and Eagle Rare hunt.',
+  },
+  'new-riff-single-barrel': {
+    entryProof: 'Varies ~108 — single barrel craft picks',
+    warehouse: 'Newport campus — grain-to-glass, one barrel personality',
+    analystTake: 'After BiB baseline — variation is the product; read store pick details.',
+  },
+  'bardstown-fusion-wheated': {
+    entryProof: '~125 proof — finished wheated fusion line',
+    warehouse: 'Bardstown collaboration campus — cask finish program',
+    analystTake: 'Fusion after straight Bardstown — compare to Angel\'s Envy port finish same night.',
+  },
+  'angels-envy-bourbon': {
+    entryProof: '~125 proof base — port cask finish post-primary aging',
+    warehouse: 'Louisville finish house — ruby port barrels',
+    analystTake: 'Port finish craft gateway — raisin and vanilla dessert pour vs straight bourbon.',
+  },
+  'log-still-diving-bell': {
+    entryProof: '107 proof — Nelson County wheated craft',
+    warehouse: 'Gethsemane on-site rickhouses — Dant family revival',
+    analystTake: 'Wheated craft triangle with Wilderness Trail BiB and Willett — blind rank three.',
+  },
+  'jeptha-creed-bloody-butcher': {
+    entryProof: '~125 proof — heirloom Bloody Butcher corn mash',
+    warehouse: 'Shelbyville farm distillery — estate grain',
+    analystTake: 'Grain variety literacy — blind against Buffalo Trace for corn story vs taste.',
+  },
+  'green-river-kentucky-straight': {
+    entryProof: '~125 proof — Owensboro revival mash',
+    warehouse: 'Green River campus — value craft daily line',
+    analystTake: 'Under-$40 craft daily — heritage name, modern juice; compare to Evan Black.',
+  },
+  'blue-run-8-year': {
+    entryProof: '109 proof — 8 year stated craft stocks',
+    warehouse: 'Georgetown — NCF emphasis, high-rye leaning mash',
+    analystTake: 'Splurge craft homework — blind against Eagle Rare 10 before paying $85+.',
+  },
+  'new-riff-rye': {
+    entryProof: '100 proof BiB rye — same campus as New Riff bourbon',
+    warehouse: 'Newport — NCF craft rye',
+    analystTake: 'Category switch on one DSP — rye vs bourbon legal line from same still philosophy.',
+  },
+  'wilderness-trail-rye': {
+    entryProof: '100 proof BiB rye — sweet mash craft',
+    warehouse: 'Danville campus — science-forward rye program',
+    analystTake: 'Pair with WT wheated BiB bourbon — same house, category contrast.',
+  },
+  'michters-rye': {
+    entryProof: '~103 proof entry — Michter\'s rye line, chill filtered',
+    warehouse: 'Louisville — silky craft rye vs punchy BiB ryes',
+    analystTake: 'Softer rye mouthfeel — compare to Rittenhouse BiB same cocktail night.',
+  },
+  'rabbit-hole-boxergrail': {
+    entryProof: '~125 proof — 100% malted rye mash',
+    warehouse: 'Louisville Rabbit Hole — malted rye craft',
+    analystTake: 'Rye extension after Cavehill — honey and pepper vs bourbon four-grain.',
+  },
+  'woodford-rye': {
+    entryProof: '~125 proof — Woodford rye mash, 53% rye typical',
+    warehouse: 'Versailles heat-cycled warehouses — polished major-house rye',
+    analystTake: 'Woodford bourbon vs rye on same shelf — category literacy from flagship house.',
+  },
 };

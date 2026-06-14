@@ -75,6 +75,13 @@ export const COMPARE_PRESETS: { id: string; label: string; slugs: string[] }[] =
   { id: 'category-flight', label: 'Bourbon · rye · Tennessee', slugs: ['buffalo-trace', 'rittenhouse-rye', 'jack-daniels-old-no-7', 'bulleit-bourbon', 'bulleit-rye'] },
   { id: 'tennessee-duo', label: 'Tennessee showdown', slugs: ['jack-daniels-old-no-7', 'george-dickel-no-8', 'buffalo-trace', 'makers-mark', 'evan-williams-black'] },
   { id: 'rye-starter', label: 'Rye whiskey starter flight', slugs: ['rittenhouse-rye', 'wild-turkey-rye', 'old-overholt-bib', 'bulleit-rye', 'wild-turkey-101'] },
+  { id: 'heaven-hill-ladder', label: 'Heaven Hill value ladder', slugs: ['evan-williams-black', 'evan-williams-bib', 'larceny', 'elijah-craig-small-batch', 'eagle-rare'] },
+  { id: 'wild-turkey-ladder', label: 'Wild Turkey proof ladder', slugs: ['wild-turkey-101', 'russells-reserve-10', 'rare-breed', 'wild-turkey-rye', 'bookers'] },
+  { id: 'craft-inventory', label: 'Craft inventory starter', slugs: ['green-river-kentucky-straight', 'new-riff-bourbon', 'castle-key-bourbon', 'log-still-diving-bell', 'jeptha-creed-bloody-butcher'] },
+  { id: 'craft-splurge', label: 'Craft splurge compare', slugs: ['peerless-bourbon', 'blue-run-8-year', 'angels-envy-bourbon', 'bardstown-fusion-wheated', 'michters-us1'] },
+  { id: 'finish-flight', label: 'Cask finish flight', slugs: ['buffalo-trace', 'woodford-double-oaked', 'angels-envy-bourbon', 'bardstown-fusion-wheated', 'woodford-reserve'] },
+  { id: 'craft-rye', label: 'Craft rye flight', slugs: ['new-riff-rye', 'wilderness-trail-rye', 'rabbit-hole-boxergrail', 'michters-rye', 'rittenhouse-rye'] },
+  { id: 'barton-proof', label: 'Barton 1792 proof ladder', slugs: ['1792-small-batch', '1792-bib', '1792-full-proof', 'wild-turkey-101', 'rare-breed'] },
 ];
 
 export function allCompareSlugs(): { slug: string; name: string }[] {

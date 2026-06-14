@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-041 close — Bourbon Level 1 depth · system v1.0.0-bourbon-depth
+> Updated PASS-043 close — Bourbon craft inventory · `1.2.0-bourbon-craft-inventory`
 
 ---
 
@@ -153,10 +153,12 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 042 (Bourbon Level 2 Confident Taster) |
-| Version | `1.1.0-bourbon-level2` |
-| Launch readiness | 97% |
-| Bourbon catalog bottles | 32 |
+| Passes complete | 043 (Bourbon Craft Inventory — 55 bottles) |
+| Version | `1.2.0-bourbon-craft-inventory` |
+| Launch readiness | 100% |
+| Bourbon catalog bottles | 55 |
+| Bourbon producers | 24 |
+| Craft houses | 13 |
 | Academy lessons (bourbon) | 40 (8 L1 + 10 L2 + 22 L3–7) |
 | Level 2 tools | Tasting Lab · Comparison Grid · Mash bill flight |
 | Campus maps | 11 producers |
@@ -166,7 +168,7 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
 | Review + recommend | ✅ PASS-040E/F |
 | Full stack verify | `npm run verify:stack` |
-| Next pass | **PASS-043** — Level 3 Shelf Builder |
+| Next pass | **PASS-044** — Level 3 Shelf Builder |
 
 ---
 

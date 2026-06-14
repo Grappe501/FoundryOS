@@ -1,6 +1,7 @@
 /** Bourbon Producer Atlas — Level 1 deep-dive registry */
 
 import { CRAFT_BOURBON_PRODUCERS } from './craft-producers';
+import { CRAFT_BOURBON_PRODUCERS_EXTENDED } from './craft-producers-extended';
 import { TENNESSEE_PRODUCERS } from './tennessee-producers';
 
 export type ProducerBottle = {
@@ -966,6 +967,7 @@ export const BOURBON_PRODUCERS: BourbonProducer[] = [
     compareWith: ['heaven-hill', 'four-roses', 'michters'],
   },
   ...CRAFT_BOURBON_PRODUCERS,
+  ...CRAFT_BOURBON_PRODUCERS_EXTENDED,
   ...TENNESSEE_PRODUCERS,
 ];
 

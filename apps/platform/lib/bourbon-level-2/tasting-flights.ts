@@ -116,7 +116,7 @@ export const TASTING_FLIGHTS: TastingFlight[] = [
     title: 'BiB transparency flight',
     tagline: 'Bond rules lock proof and age floor — taste the guarantee.',
     variable: 'Bottled-in-Bond category',
-    bottleSlugs: ['evan-williams-black', 'rittenhouse-rye', 'old-overholt-bib', 'new-riff-bourbon'],
+    bottleSlugs: ['evan-williams-bib', 'rittenhouse-rye', 'old-overholt-bib', 'new-riff-bourbon'],
     steps: [
       'Identify BiB labels on each bottle before pouring.',
       'Note 100 proof alignment — compare mouthfeel at same proof.',
@@ -124,6 +124,34 @@ export const TASTING_FLIGHTS: TastingFlight[] = [
     ],
     whatToNotice: 'BiB is transparency shortcut — not automatic best, but legally specific.',
     academySlug: 'bib-tasting-lab',
+  },
+  {
+    id: 'craft-campus',
+    title: 'Craft campus flight',
+    tagline: 'Value craft → BiB → wheated → farm grain — build a shelf, not a trophy.',
+    variable: 'Craft scale and mash philosophy',
+    bottleSlugs: ['green-river-kentucky-straight', 'new-riff-bourbon', 'wilderness-trail-bib', 'jeptha-creed-bloody-butcher', 'log-still-diving-bell'],
+    steps: [
+      'Pour Green River and New Riff BiB first — note price vs proof transparency.',
+      'Add WT wheated BiB and Jeptha Creed — grain story vs wheat softness.',
+      'Finish with Log Still Diving Bell — rank wheated craft without looking at labels.',
+    ],
+    whatToNotice: 'Craft is not one flavor — value revival, BiB discipline, wheated, heirloom corn, and Nelson County wheat all differ.',
+    academySlug: 'craft-kentucky-tasting',
+  },
+  {
+    id: 'finish-lab',
+    title: 'Finish lab',
+    tagline: 'Straight bourbon vs second-barrel vs port finish — same night homework.',
+    variable: 'Cask finish and secondary aging',
+    bottleSlugs: ['buffalo-trace', 'woodford-double-oaked', 'angels-envy-bourbon', 'bardstown-fusion-wheated', 'woodford-reserve'],
+    steps: [
+      'Baseline with Buffalo Trace and Woodford Reserve straight lines.',
+      'Pour Double Oaked and Angel\'s Envy — name finish sweetness vs oak.',
+      'Add Bardstown Fusion wheated — which finish reads most dessert-forward?',
+    ],
+    whatToNotice: 'Finish adds flavor post-primary barrel — compare to mash bill changes on the same pour night.',
+    academySlug: 'finish-tasting-lab',
   },
 ];
 

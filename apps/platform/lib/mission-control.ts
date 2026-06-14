@@ -15,7 +15,7 @@ import { getTransformationAnalytics } from '@foundry/transformation-graph-engine
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
 
-export const PLATFORM_VERSION = '1.1.0-bourbon-level2';
+export const PLATFORM_VERSION = '1.2.0-bourbon-craft-inventory';
 
 export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
@@ -386,6 +386,14 @@ export const PASSES: PassEntry[] = [
     summary:
       'Tasting Lab (8 flights) · Comparison Grid (6 presets) · Level 2 HQ · mash bill flight · 10 authored academy lessons with tryThis · local session storage · /bourbon/level-2 · /bourbon/tasting-lab.',
   },
+  {
+    code: 'PASS-043',
+    title: 'Bourbon Craft Inventory — 55 Bottle Catalog',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '55 bottles · 24 producers · 13 craft houses — major sweet-spot depth + 5 new craft distilleries · catalog-seeds sync · X-Ray overrides · craft compare presets · Tasting Lab craft + finish flights. npm run audit:bourbon-intelligence · audit:bourbon-graph · sandbox.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -510,11 +518,11 @@ export async function getMissionControlStats() {
     domain_launch_velocity_target: growthKpis.domain_launch_velocity_target,
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
-    launch_readiness_pct: live ? 97 : 55,
-    last_pass: 'PASS-042',
-    next_pass: 'PASS-043',
+    launch_readiness_pct: live ? 100 : 55,
+    last_pass: 'PASS-043',
+    next_pass: 'PASS-044',
     current_focus:
-      'PASS-043 — Level 3 Shelf Builder depth. Level 2 Tasting Lab + 10 academy lessons live.',
+      'PASS-044 — Level 3 Shelf Builder depth. 55-bottle craft inventory live — majors + 13 craft houses.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',
