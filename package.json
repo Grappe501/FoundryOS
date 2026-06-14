@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "5.0.0-bourbon-connoisseur",
+    "version": "6.0.0-ai-orchestration-stack",
     "current_pass": "PASS-045",
     "next_pass": "PASS-046",
     "vision": "Foundry helps people become who they are capable of becoming."
@@ -45,6 +45,7 @@
     "verify:040c": "npx tsx scripts/verify-040c.ts",
     "audit:identity-sync": "npx tsx scripts/audit-identity-sync.ts",
     "audit:atlas-aware-ai": "npx tsx scripts/audit-atlas-aware-ai.ts",
+    "audit:ai-orchestration": "npx tsx scripts/audit-ai-orchestration.ts",
     "audit:reviews": "npx tsx scripts/audit-reviews.ts",
     "audit:recommendations": "npx tsx scripts/audit-recommendations.ts",
     "audit:universe": "npx tsx scripts/audit-universe.ts",

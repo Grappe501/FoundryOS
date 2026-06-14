@@ -1,8 +1,8 @@
 {
   "name": "@foundry/ai-orchestration",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
-  "description": "PASS-033 — Global AI copilot personas and safety-aware orchestration",
+  "description": "PASS-049 — Full AI orchestration stack (copilot + atlas + mentor + review + recommend)",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
@@ -12,6 +12,9 @@
     "typescript": "^5.7.0"
   },
   "dependencies": {
-    "@foundry/mentor-engine": "*"
+    "@foundry/atlas-aware-ai": "*",
+    "@foundry/mentor-engine": "*",
+    "@foundry/recommendation-engine-v2": "*",
+    "@foundry/review-engine": "*"
   }
 }

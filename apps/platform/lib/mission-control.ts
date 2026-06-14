@@ -15,9 +15,10 @@ import { getTransformationAnalytics } from '@foundry/transformation-graph-engine
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
 
-export const PLATFORM_VERSION = '4.0.0-bourbon-shelf-builder';
+export const PLATFORM_VERSION = '6.0.0-ai-orchestration-stack';
 export const BOURBON_LEVEL_2_VERSION = '3.0.0-bourbon-confident-taster-v3';
 export const BOURBON_LEVEL_3_VERSION = '4.0.0-bourbon-shelf-builder';
+export const BOURBON_LEVEL_4_VERSION = '5.0.0-bourbon-connoisseur';
 
 export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
@@ -428,6 +429,22 @@ export const PASSES: PassEntry[] = [
     summary:
       '12 shelf themes · 4 price tiers · 10 academy lessons · 12 curriculum modules · Themed Shelf · Price Ladder · Gap Analysis · Shelf Defense · Level 3 HQ · semver `4.0.0-bourbon-shelf-builder`.',
   },
+  {
+    code: 'PASS-048',
+    title: 'Bourbon Level 4 — Connoisseur depth',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '8 label drills · 12 Compare Five presets · 6 DSP hunts · process labs · 10 academy lessons · Level 4 HQ · semver `5.0.0-bourbon-connoisseur`.',
+  },
+  {
+    code: 'PASS-049',
+    title: 'Full AI Orchestration Stack',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '@foundry/ai-orchestration v1.0 — orchestrateFoundryAI · atlas + mentor + review + recommend · /api/ai/orchestrate · /operator/ai-brain · semver `6.0.0-ai-orchestration-stack`.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -553,10 +570,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 100 : 55,
-    last_pass: 'PASS-048',
-    next_pass: 'PASS-049',
+    last_pass: 'PASS-049',
+    next_pass: 'PASS-050',
     current_focus:
-      'PASS-049 — Level 5 Tasting Host depth. Level 4 Connoisseur tier complete.',
+      'PASS-050 — Level 5 Tasting Host depth. Full AI orchestration stack live.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

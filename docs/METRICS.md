@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-048 close — Bourbon Level 4 Connoisseur · `5.0.0-bourbon-connoisseur`
+> Updated PASS-049 close — Full AI Orchestration Stack · `6.0.0-ai-orchestration-stack`
 
 ---
 
@@ -153,9 +153,9 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 048 (Bourbon Level 4 Connoisseur) |
-| Version | `5.0.0-bourbon-connoisseur` |
-| Level 4 tier | **complete** — label decoder · compare lab · DSP hunts · process labs |
+| Passes complete | 049 (Full AI Orchestration Stack) |
+| Version | `6.0.0-ai-orchestration-stack` |
+| AI orchestration | 13 actions · 5 engines · API + operator debugger |
 | Level 3 tier | **complete** — 12 themes · price ladder · gap · defense |
 | Level 2 tier | v3 — 26 flights · 20 grids · blind · host · program |
 | Launch readiness | 100% |
