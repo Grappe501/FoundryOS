@@ -49,12 +49,13 @@ PASS-044 ████████████ Bourbon Level 2 Comprehensive ✅
 PASS-045 ████████████ Bourbon Level 2 v2.0 Confident Taster ✅
 PASS-046 ████████████ Bourbon Level 2 v3 Massive Confident Taster ✅
 PASS-047 ████████████ Bourbon Level 3 Shelf Builder ✅
+PASS-048 ████████████ Bourbon Level 4 Connoisseur ✅
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.
 > See `docs/VERTICAL_DEPTH_MODE.md`, `docs/PASS_017_022_SEQUENCE.md`.
 
-> **Next:** PASS-048 — Level 4 Connoisseur depth.
+> **Next:** PASS-049 — Level 5 Tasting Host depth.
 
 > Beta wedge: **Future-Proof Trinity** — AI Builder · Financial Independence · Public Speaking.
 

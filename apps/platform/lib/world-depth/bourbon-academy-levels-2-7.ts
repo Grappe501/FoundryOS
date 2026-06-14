@@ -73,6 +73,12 @@ export const BOURBON_LEVELS_3_7_LESSONS: AcademyLesson[] = [
   ], { checkpoint: true, recommendedMission: 'first-shelf', estimatedMinutes: 60 }),
 
   // ── Level 4: Connoisseur ──
+  lesson(4, 'label-anatomy', 'Label anatomy — read before you pour', 'Every label is a contract — DSP, proof, straight, category, age.', 'Decode one bottle cold using Label Decoder — predict nose before X-Ray reveal.', [
+    { heading: 'Front label vs back label', body: 'Brand story lives front. Legal truth lives back — DSP number, bottled by, proof, age if stated, straight if applicable. Read back first when shopping.' },
+    { heading: 'Tool link', body: 'Run Label Decoder drills at /bourbon/label-decoder — eight scenarios from BiB to barrel proof to craft NCF. Save decodes for checkpoint evidence.' },
+    { heading: 'X-Ray pairing', body: 'After reveal, open Bottle X-Ray for entry proof, warehouse notes, analyst take — label literacy plus process context.' },
+  ], { glossaryTerms: ['DSP number', 'Bottled in bond', 'Straight bourbon'] }),
+
   lesson(4, 'kentucky-vs-beyond', 'Kentucky vs beyond — region literacy', 'Most shelf bourbon is Kentucky — know what geography actually changes.', 'Name three non-flavor reasons Kentucky dominates and one thing region does not guarantee.', [
     { heading: 'Why Kentucky', body: 'Limestone water · climate swings · legacy infrastructure · blender talent density. Region explains supply, not automatic quality.' },
     { heading: 'Beyond KY', body: 'Tennessee (charcoal process). Indiana MGP sourced profiles. Texas, Colorado craft — different climate aging experiments. Read DSP, not just state romance.' },
@@ -83,18 +89,43 @@ export const BOURBON_LEVELS_3_7_LESSONS: AcademyLesson[] = [
     { heading: 'Detective link', body: 'Work cases "DSP numbers" and "Craft marketing truth" at /bourbon/detective — then verify with bottles on your shelf.' },
   ], { relatedProducers: ['four-roses', 'bardstown'] }),
 
+  lesson(4, 'age-nas-angels-share', 'Age, NAS, and angel\'s share', 'Age statements cost money — NAS blends hide variance.', 'Run NAS vs Age Lab and Compare Five preset nas-vs-age — rank oak vs polish, not age worship.', [
+    { heading: 'Angel\'s share economics', body: 'Barrels lose volume every year — older whiskey costs more before flavor even enters. NAS lets blenders batch across years for house consistency.' },
+    { heading: 'When NAS wins', body: 'Buffalo Trace NAS often beats age-stated bottles on polish — house style over number. Knob Creek 9 at 100 proof can read older than 90 proof ER.' },
+    { heading: 'Lab link', body: 'NAS vs Age Lab at /bourbon/nas-age-lab — five pairings. Save Compare Five lab session with hypothesis before pour.' },
+  ], { glossaryTerms: ['NAS', 'Angel\'s share'] }),
+
   lesson(4, 'single-barrel-variance', 'Single barrel variance', 'One recipe, many personalities — why picks matter.', 'Compare standard expression vs single barrel (or store pick) from the same house if available.', [
     { heading: 'What changes', body: 'One barrel · one floor · one season. Four Roses Single Barrel vs Yellow Label is the textbook — same campus, different selection philosophy.' },
     { heading: 'Store pick preview', body: 'Level 5 blind work builds on this — for now, taste one single barrel and write how it diverged from the standard bottling.' },
   ], { glossaryTerms: ['Single barrel', 'Small batch'], relatedProducers: ['four-roses'] }),
+
+  lesson(4, 'chill-filtration-lab', 'Chill filtration — mouthfeel fork', 'NCF vs filtered — texture and haze tradeoffs.', 'Run Compare Five preset ncf-vs-filtered — rank mouthfeel before reading marketing.', [
+    { heading: 'What chill filtration does', body: 'Cold-filter to remove fatty esters that cloud at low temp — cleaner shelf stability, sometimes thinner mouthfeel. NCF keeps more texture; may cloud on ice.' },
+    { heading: 'Not morality', body: 'Michter\'s filters deliberately. New Riff ships NCF BiB. Taste the fork — craft NCF vs major filtered at matched proof when possible.' },
+    { heading: 'Tool link', body: 'Compare Five Lab preset ncf-vs-filtered at /bourbon/compare-five-lab — hypothesis first, defend winner in one sentence.' },
+  ], { glossaryTerms: ['Chill filtration', 'NCF'] }),
+
+  lesson(4, 'cask-strength-dilution', 'Cask strength and water discipline', 'Barrel proof rewards tiny pours and intentional water.', 'Run cask-strength-five preset — one drop water, re-nose, re-taste, log change.', [
+    { heading: 'Why barrel proof fights', body: '100+ proof concentrates ethanol — masks fruit until diluted. Rare Breed, KC SiB, barrel picks need water discipline, not hero pours.' },
+    { heading: 'Host rule', body: 'Demonstrate one high-proof pour neat vs one drop for yourself before preaching — credibility beats lectures.' },
+    { heading: 'Compare link', body: 'Cask strength five preset in Compare Five Lab — rank at matched sip volume, note which need water to open.' },
+  ], { glossaryTerms: ['Barrel proof', 'Cask strength'] }),
 
   lesson(4, 'compare-five-mission-prep', 'Compare Five mission prep', 'Structured five-bottle comparison — hold one variable sacred.', 'Plan a five-bottle flight with hypothesis before pouring.', [
     { heading: 'Preset starting points', body: 'Use Foundry compare presets: daily under $35, wheated showdown, category flight, age flight. Customize one slot to your shelf gap.' },
     { heading: 'Hypothesis first', body: 'Write: "I expect ___ to win because ___." Reveal rankings, then check bias. Mission 3 grid is your evidence template.' },
   ], { recommendedMission: 'compare-five' }),
 
-  lesson(4, 'level-4-checkpoint', 'Level 4 checkpoint — Connoisseur', 'Run Compare Five and defend your top pick with process vocabulary.', 'Complete five-bottle grid + DSP scavenger hunt + one single-barrel note.', [
-    { heading: 'Requirements', body: 'Five-pour comparison grid · top pick defended in three sentences · DSP identified on two bottles · one producer atlas deep dive completed · Mission 3 evidence optional but recommended.' },
+  lesson(4, 'store-picks-worth-it', 'Store picks — worth the markup?', 'Lottery literacy — when picks beat standard, when to walk.', 'Run Store Pick Lab — markup test on one pick you have access to.', [
+    { heading: 'Blind before markup', body: 'Store pick premiums only make sense if palate lift is clear over standard expression — rank blind before paying $15–30 over MSRP.' },
+    { heading: 'Red flags', body: 'Pick tastes like higher-proof standard — skip. Unknown DSP on pick label — DSP scavenger first. Allocation FOMO is not flavor data.' },
+    { heading: 'Tool link', body: 'Store Pick Lab at /bourbon/store-pick-lab — four markup scenarios. Pair with DSP hunt before next lottery line.' },
+  ]),
+
+  lesson(4, 'level-4-checkpoint', 'Level 4 checkpoint — Connoisseur', 'Run Compare Five and defend your top pick with process vocabulary.', 'Complete Compare Five lab + two label decodes + one DSP hunt + one single-barrel note.', [
+    { heading: 'Requirements', body: 'One saved Compare Five lab (hypothesis + winner + lesson) · two Label Decoder saves · one DSP scavenger hunt · Single Barrel or NAS lab viewed · optional Mission 3 grid evidence.' },
+    { heading: 'Tool checklist', body: 'Label decode saved · Compare Five lab saved · DSP hunt complete · checkpoint ready flag in Level 4 HQ progress.' },
   ], { checkpoint: true, recommendedMission: 'compare-five', estimatedMinutes: 90 }),
 
   // ── Level 5: Tasting Host ──

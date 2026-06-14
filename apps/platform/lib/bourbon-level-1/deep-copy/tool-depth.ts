@@ -332,6 +332,48 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
     explanation: `Level 3 HQ — twelve themes, price ladder, gap analysis, shelf defense, twelve curriculum modules, ten academy lessons. Unlocks after Level 2 checkpoint.`,
     practicalReason: `Start themed shelf if Level 2 flights feel easy — curation is next.`,
   },
+  {
+    slug: 'level-4',
+    hook: 'Read labels cold — predict the pour before reveal',
+    explanation: `Level 4 HQ — eight label drills, twelve Compare Five presets, six DSP hunts, process labs, ten academy lessons, twelve modules. Connoisseur tier v5.0.`,
+    practicalReason: `Start label decoder after Level 3 shelf — every bottle on your shelf becomes a drill.`,
+  },
+  {
+    slug: 'label-decoder',
+    hook: '8 drills — DSP, proof, age, category',
+    explanation: `Label Decoder — predict pour before Bottle X-Ray reveal. Saves decode sessions for checkpoint.`,
+    practicalReason: `Run one drill per bottle on your shelf this week — cold read before cork.`,
+  },
+  {
+    slug: 'compare-five-lab',
+    hook: '12 presets — hypothesis before pour',
+    explanation: `Compare Five Lab — connoisseur presets with hypothesis prompt, winner pick, lesson save.`,
+    practicalReason: `Write hypothesis before opening — bias exposed when labels stay visible.`,
+  },
+  {
+    slug: 'dsp-scavenger',
+    hook: 'Match bottles to DSP numbers',
+    explanation: `Six scavenger hunts — major campus, craft, sourced, rye, Tennessee, shelf audit.`,
+    practicalReason: `Run major campus hunt before trusting store pick marketing.`,
+  },
+  {
+    slug: 'single-barrel-lab',
+    hook: 'SB vs small batch vs standard',
+    explanation: `Six single barrel labs — Four Roses ladder, BT vs Eagle, Turkey ladder, Heaven Hill fork.`,
+    practicalReason: `Pour standard and SB side-by-side before paying pick markup.`,
+  },
+  {
+    slug: 'nas-age-lab',
+    hook: 'NAS vs stated age — angel\'s share',
+    explanation: `Five NAS vs age pairings with angel's share notes and Compare Five link.`,
+    practicalReason: `Rank oak vs polish — stop age worship without blind evidence.`,
+  },
+  {
+    slug: 'store-pick-lab',
+    hook: 'When picks beat standard — markup test',
+    explanation: `Four store pick scenarios — worth-it rules, skip rules, markup framing.`,
+    practicalReason: `Blind rank before lottery line — markup needs palate lift.`,
+  },
 ];
 
 export function getToolDepth(slug: string): BourbonToolDepth | undefined {

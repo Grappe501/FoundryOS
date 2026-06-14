@@ -1,6 +1,6 @@
 # FoundryOS — Platform Metrics
 
-> Updated PASS-043 close — Bourbon craft inventory · `1.2.0-bourbon-craft-inventory`
+> Updated PASS-048 close — Bourbon Level 4 Connoisseur · `5.0.0-bourbon-connoisseur`
 
 ---
 
@@ -153,15 +153,17 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 047 (Bourbon Level 3 Shelf Builder) |
-| Version | `4.0.0-bourbon-shelf-builder` |
+| Passes complete | 048 (Bourbon Level 4 Connoisseur) |
+| Version | `5.0.0-bourbon-connoisseur` |
+| Level 4 tier | **complete** — label decoder · compare lab · DSP hunts · process labs |
 | Level 3 tier | **complete** — 12 themes · price ladder · gap · defense |
 | Level 2 tier | v3 — 26 flights · 20 grids · blind · host · program |
 | Launch readiness | 100% |
 | Bourbon catalog bottles | 55 |
 | Bourbon producers | 24 |
 | Craft houses | 13 |
-| Academy lessons (bourbon) | 58 (8 L1 + 23 L2 + 27 L3–7) |
+| Academy lessons (bourbon) | 63 (8 L1 + 23 L2 + 10 L3 + 10 L4 + 12 L5–7) |
+| Level 4 tools | 8 drills · 12 compare presets · 6 DSP hunts · 3 process labs |
 | Level 3 tools | 12 themes · 4 tiers · gap analysis · shelf defense |
 | Level 2 tools | 26 flights · 20 grids · 7 blind · 6 host kits · 8-week program |
 | Campus maps | 11 producers |

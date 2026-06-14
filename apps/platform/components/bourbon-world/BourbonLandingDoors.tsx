@@ -74,6 +74,13 @@ export function BourbonLandingDoors({ content }: Props) {
       hrefLabel: 'Level 3 — Shelf Builder',
     },
     {
+      label: 'Level 4',
+      teaser: 'Read labels cold — decoder, Compare Five lab, DSP hunts.',
+      depth: '8 drills · 12 compare presets · 6 DSP hunts · 10 lessons. Connoisseur v5.0.',
+      href: '/bourbon/level-4',
+      hrefLabel: 'Level 4 — Connoisseur',
+    },
+    {
       label: 'Why it sticks',
       teaser: 'Attention compounds. Ordinary bottles get better when you know what to notice.',
       depth: firstSentence(content.whyItMatters, 320),
@@ -91,7 +98,7 @@ export function BourbonLandingDoors({ content }: Props) {
 
   return (
     <section id="bourbon-world-entry" className="bourbon-landing-doors">
-      <p className="foundry-eyebrow">Three doors — not a lecture</p>
+      <p className="foundry-eyebrow">Four doors — not a lecture</p>
       <p className="foundry-muted" style={{ fontSize: 14, marginTop: 8, maxWidth: 520 }}>
         Hover or tap to dig deeper. Everything else waits below when you are ready.
       </p>

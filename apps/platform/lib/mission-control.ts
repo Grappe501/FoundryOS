@@ -553,10 +553,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 100 : 55,
-    last_pass: 'PASS-047',
-    next_pass: 'PASS-048',
+    last_pass: 'PASS-048',
+    next_pass: 'PASS-049',
     current_focus:
-      'PASS-048 — Level 4 Connoisseur depth. Level 3 Shelf Builder tier complete.',
+      'PASS-049 — Level 5 Tasting Host depth. Level 4 Connoisseur tier complete.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

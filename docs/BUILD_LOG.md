@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `4.0.0-bourbon-shelf-builder` |
-| **Last Pass** | PASS-047 Bourbon Level 3 Shelf Builder ✅ |
-| **Current Pass** | Level 3 complete ✅ |
-| **Next Pass** | PASS-048 — Level 4 Connoisseur depth |
-| **Level 3 surface** | 12 themes · 4 price tiers · 10 lessons · 12 modules · Gap · Defense |
+| **Version** | `5.0.0-bourbon-connoisseur` |
+| **Last Pass** | PASS-048 Bourbon Level 4 Connoisseur ✅ |
+| **Current Pass** | Level 4 complete ✅ |
+| **Next Pass** | PASS-049 — Level 5 Tasting Host depth |
+| **Level 4 surface** | 8 drills · 12 compare presets · 6 DSP hunts · 10 lessons · 12 modules |
 | **Live proof** | `npm run build:platform` · `npm run sandbox` · `audit:bourbon-links` · `audit:bourbon-graph` |
 | **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 45 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
@@ -42,6 +42,34 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+---
+
+## PASS-048 — Bourbon Level 4 Connoisseur ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Level 4 Connoisseur — label literacy, Compare Five lab, DSP hunts, process labs |
+| **Version bump** | `5.0.0-bourbon-connoisseur` — Level 4 tier milestone |
+| **Audit** | build:platform |
+
+| Deliverable | Location |
+|-------------|----------|
+| Label decoder | 8 drills — `label-decoder-drills.ts` · `/bourbon/label-decoder` |
+| Compare Five lab | 12 presets — `compare-five-lab.ts` · `/bourbon/compare-five-lab` |
+| DSP scavenger | 6 hunts — `dsp-scavenger.ts` · `/bourbon/dsp-scavenger` |
+| Process labs | SB · NAS · store pick — `single-barrel-lab.ts` · `nas-age-lab.ts` · `store-pick-lab.ts` |
+| Academy L4 | 10 lessons (+5) — label anatomy, NAS, NCF, cask strength, store picks |
+| Curriculum | 12 modules — `curriculum.ts` |
+| Level 4 HQ | `/bourbon/level-4` · `/bourbon/academy/level-4` |
+| Storage | label decodes · compare labs · DSP hunts · checkpoint |
+
+**Architecture Impact**
+- Reusable: label decode session pattern, hypothesis-first compare lab, DSP hunt literacy, process lab trio
+- Benefits: L3 shelf bottles become L4 reading curriculum; checkpoint gates L5 blind hosting without new DB tables
+- Affected launches: bourbon Level 4 HQ · label decoder · compare lab · DSP scavenger · academy L4
 
 ---
 

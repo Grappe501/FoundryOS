@@ -34,6 +34,7 @@ export const BOURBON_PAGE_DEPTH: BourbonPageDepth[] = [
       { label: "Bourbon Detective", href: '/bourbon/detective' },
       { label: "Level 2 — Confident Taster", href: '/bourbon/level-2', tease: "Tasting Lab, grids, mash bill flights" },
       { label: "Level 3 — Shelf Builder", href: '/bourbon/level-3', tease: "Themed shelves, price ladder, gap analysis" },
+      { label: "Level 4 — Connoisseur", href: '/bourbon/level-4', tease: "Label decoder, Compare Five lab, DSP hunts" },
     ],
   },
   {
@@ -73,6 +74,25 @@ export const BOURBON_PAGE_DEPTH: BourbonPageDepth[] = [
       { label: "Shelf defense", href: '/bourbon/shelf-defense' },
       { label: "Budget shelf builder", href: '/bourbon/shelf-builder' },
       { label: "Level 2 bridge", href: '/bourbon/level-2' },
+      { label: "Level 4 — Connoisseur", href: '/bourbon/level-4' },
+    ],
+  },
+  {
+    id: 'level-4',
+    path: '/bourbon/level-4',
+    title: "Bourbon Level 4 — Connoisseur",
+    openingNarrative: `Level 4 is where shelf curation meets label literacy. You built a themed shelf in Level 3 — now read every bottle on it like a document. Eight label decoder drills train cold reads: predict DSP, proof, category, and nose before Bottle X-Ray reveal. Twelve Compare Five lab presets demand hypothesis before pour and winner defense after — NAS vs age, single barrel ladders, NCF mouthfeel, cask strength water discipline. DSP scavenger hunts match bottles to distillery numbers. Single barrel, NAS, and store pick labs isolate process variables that marketing blurs. This is not trivia collection — it is the literacy that stops lottery lines and markup traps from eating your budget.`,
+    whyItMatters: `Label ignorance is the most expensive habit in bourbon. Paying allocation markup for juice that loses blind to shelf staples, buying store picks that taste like higher-proof standards, chasing age statements that polish hides — all preventable with decoder discipline. Level 4 turns your Level 3 shelf into a reading curriculum: every bottle teaches sourcing, process, and house style when you know what to read before the cork comes out.`,
+    beginnerMisunderstanding: `People think connoisseur means expensive bottles and memorized distillery trivia. Wrong. Connoisseur means reading labels cold, holding one variable in Compare Five, and defending choices with process vocabulary — DSP, BiB, NCF, single barrel variance. A $35 BiB decode teaches more than a $200 trophy you cannot explain.`,
+    realWorldExample: `You stand in a store pick aisle — four roses SB, ER10, craft pick with local hype sticker. You run markup test mentally: blind rank vs standard, check DSP on back label, skip if pick equals small batch. You buy Small Batch instead and run Compare Five lab at home with hypothesis saved. Level 4 saved $20 and produced checkpoint evidence — not FOMO, literacy.`,
+    howToUse: `Start Label Decoder — pick drill matching your last confusing purchase. Run Compare Five lab with hypothesis before opening bottles. DSP scavenger before next store pick line. Single barrel lab when SB vs blend confuses you. Academy lessons optional — tools first. Checkpoint when HQ shows ready flag.`,
+    whatToNoticeNext: `When label predictions match X-Ray often, move Level 5 blind hosting — labels hidden, scores locked. When DSP hunts feel easy, detective cases become review not homework. Progress saves locally until portfolio sync expands.`,
+    rabbitHoles: [
+      { label: "Label decoder", href: '/bourbon/label-decoder' },
+      { label: "Compare Five lab", href: '/bourbon/compare-five-lab' },
+      { label: "DSP scavenger", href: '/bourbon/dsp-scavenger' },
+      { label: "Single barrel lab", href: '/bourbon/single-barrel-lab' },
+      { label: "Level 3 bridge", href: '/bourbon/level-3' },
     ],
   },
   {

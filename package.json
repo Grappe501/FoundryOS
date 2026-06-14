@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "4.0.0-bourbon-shelf-builder",
+    "version": "5.0.0-bourbon-connoisseur",
     "current_pass": "PASS-045",
     "next_pass": "PASS-046",
     "vision": "Foundry helps people become who they are capable of becoming."
