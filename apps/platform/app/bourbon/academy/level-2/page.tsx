@@ -4,7 +4,7 @@ import type { AcademyLesson } from '../../../../lib/world-depth/types';
 
 export const metadata = {
   title: 'Level 2 Academy — Confident Taster | Bourbon | Foundry',
-  description: 'Ten lessons: mash bill, flavor wheel, category cousins, checkpoint.',
+  description: 'Fifteen lessons: mash bill, craft, finish, NCF, checkpoint.',
 };
 
 export default function AcademyLevel2Page() {

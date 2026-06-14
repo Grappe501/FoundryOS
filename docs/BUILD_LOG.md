@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `1.2.0-bourbon-craft-inventory` |
-| **Last Pass** | PASS-043 Bourbon Craft Inventory — 55 Bottle Catalog ✅ |
-| **Current Pass** | Craft inventory deploy ✅ |
-| **Next Pass** | PASS-044 — Level 3 Shelf Builder depth |
-| **Level 2 surface** | Tasting Lab · Comparison Grid · Mash bill flight · 10 academy lessons |
+| **Version** | `1.3.0-bourbon-level2-comprehensive` |
+| **Last Pass** | PASS-044 Bourbon Level 2 Comprehensive ✅ |
+| **Current Pass** | Level 2 depth deploy ✅ |
+| **Next Pass** | PASS-045 — Level 3 Shelf Builder depth |
+| **Level 2 surface** | 16 flights · 12 grids · 15 lessons · 16 modules · Palate Journal · Water Lab |
 | **Live proof** | `npm run build:platform` · `npm run audit:bourbon-links` · `npm run audit:bourbon-graph` · `npm run audit:bourbon-intelligence` |
 | **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 40 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
@@ -42,6 +42,30 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-044 — Bourbon Level 2 Comprehensive ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Full Confident Taster surface — curriculum, craft/finish flights, journal, proof lab |
+| **Version** | `1.3.0-bourbon-level2-comprehensive` |
+
+| Deliverable | Location |
+|-------------|----------|
+| Tasting flights | 16 flights · 5 groups — craft, house ladders, barrel proof, NCF |
+| Comparison grids | 12 presets — craft inventory, finish, Heaven Hill, WT, craft rye, barrel proof, NCF |
+| Academy L2 | 15 lessons — craft, finish, craft rye, house ladders, NCF + checkpoint update |
+| Curriculum | `curriculum.ts` — 16 modules wiring flight + grid + lesson |
+| Palate Journal | `/bourbon/palate-journal` — flavor families, forbidden words, local save |
+| Water & Proof Lab | `/bourbon/water-proof-lab` — proof mode, barrel proof links |
+| Level 2 HQ | Curriculum module list · expanded tool registry (15 tools) |
+
+**Architecture Impact**
+- Reusable: curriculum module pattern, journal template, flight grouping, expanded checkpoint logic
+- Benefits: Level 2 is a complete tasting program — not just 3 tools with 10 lessons
+- Affected launches: bourbon.foundryos.com Level 2 unlock path · academy · tasting lab
 
 ---
 

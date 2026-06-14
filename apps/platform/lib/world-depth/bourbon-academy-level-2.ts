@@ -156,7 +156,7 @@ export const BOURBON_LEVEL_2_LESSONS: AcademyLesson[] = [
     'Bottled-in-Bond guarantees specs — taste the transparency shortcut.',
     'Explain BiB rules and pour two bond bottles at 100 proof side by side.',
     [
-      { heading: 'Bond rules recap', body: 'One distilling season · one distiller · 4+ years · 100 proof. Evan Williams White BiB, Rittenhouse Rye BiB, Old Overholt BiB — under-$30 anchors.' },
+      { heading: 'Bond rules recap', body: 'One distilling season · one distiller · 4+ years · 100 proof. Evan Williams BiB, Rittenhouse Rye BiB, Old Overholt BiB — under-$30 anchors.' },
       { heading: 'What BiB does not promise', body: 'BiB is legally specific, not automatically best. It removes mystery about age floor and proof — you still taste for balance.' },
       { heading: 'Compare at equal proof', body: 'New Riff BiB bourbon vs Rittenhouse BiB rye — same proof, different category. Mouthfeel and spice diverge.' },
     ],
@@ -166,6 +166,99 @@ export const BOURBON_LEVEL_2_LESSONS: AcademyLesson[] = [
         title: 'BiB flight',
         steps: ['Tasting Lab → BiB transparency flight.', 'Identify green BiB labels before pour.', 'Compare mouthfeel at 100 proof.', 'Close detective bib-guarantee case if not done.'],
         whatToNotice: 'BiB rye vs BiB bourbon teaches category faster than reading definitions alone.',
+      },
+    },
+  ),
+  lesson(
+    'craft-kentucky-tasting',
+    'Craft Kentucky on the tongue',
+    'Craft is not one flavor — value revival, BiB, wheated, and farm grain differ.',
+    'Run a craft campus flight and rank bottles by transparency vs taste, not hype.',
+    [
+      { heading: 'Craft tiers', body: 'Value craft (Green River) · BiB craft (New Riff, Wilderness Trail) · farm grain (Jeptha Creed) · wheated craft (Log Still, Willett) · splurge craft (Peerless, Blue Run). Each teaches a different lesson.' },
+      { heading: 'Grain-to-glass literacy', body: 'Read DSP on label — same city does not mean same juice. Craft marketing loves romance; your job is palate + label honesty.' },
+      { heading: 'Shelf strategy', body: 'Build craft inventory before chasing fusion finishes — know straight profile before port and wine cask homework.' },
+    ],
+    {
+      glossaryTerms: ['Craft distiller', 'Grain to glass'],
+      relatedProducers: ['new-riff', 'wilderness-trail', 'green-river'],
+      tryThis: {
+        title: 'Craft campus flight',
+        steps: ['Tasting Lab → Craft campus flight.', 'Save session with rank + reflection.', 'Run craft inventory grid preset.', 'Visit one new craft producer in atlas.'],
+        whatToNotice: 'If every craft pour tastes "smooth," your notes are reflexes — pick flavor family words.',
+      },
+    },
+  ),
+  lesson(
+    'finish-tasting-lab',
+    'Cask finish tasting lab',
+    'Finish adds flavor post-primary barrel — learn straight baseline first.',
+    'Compare straight bourbon to one finish pour and name what the second cask added.',
+    [
+      { heading: 'Finish types', body: 'Second new oak (Woodford Double Oaked) · port/wine cask (Angel\'s Envy) · fusion series (Bardstown) · stave finishing (Maker\'s 46). Different mechanics, same homework: what changed after primary aging?' },
+      { heading: 'Dessert bourbon trap', body: 'Finish pours read sweet — great for skeptics, dangerous as only pour you know. Always keep a straight baseline in the flight.' },
+      { heading: 'Price vs finish', body: 'Finish often costs more per proof point — blind against straight Eagle Rare or BT before paying fusion premiums.' },
+    ],
+    {
+      tryThis: {
+        title: 'Finish lab flight',
+        steps: ['Tasting Lab → Finish lab.', 'Baseline with Buffalo Trace first.', 'Name dessert notes on Angel\'s Envy vs Double Oaked.', 'Run finish four-way grid.'],
+        whatToNotice: 'Port finish vs second oak vs stave finish — three different sweetness mechanics.',
+      },
+    },
+  ),
+  lesson(
+    'craft-rye-on-the-shelf',
+    'Craft rye on the shelf',
+    'Rye whiskey craft expanded — BiB, malted rye, major BiB anchor.',
+    'Pour craft rye against Rittenhouse and explain mouthfeel vs spice differences.',
+    [
+      { heading: 'Craft rye landscape', body: 'New Riff BiB rye · Wilderness Trail BiB rye · Rabbit Hole Boxergrail (malted rye) · Michter\'s softer rye · Rittenhouse value BiB anchor.' },
+      { heading: 'Same campus category switch', body: 'New Riff bourbon vs New Riff rye — legal category change on one DSP philosophy.' },
+      { heading: 'Cocktail vs sip', body: 'Rittenhouse punches in Manhattan; Michter\'s rye sips softer — know your use case before splurge craft rye.' },
+    ],
+    {
+      tryThis: {
+        title: 'Craft rye flight',
+        steps: ['Tasting Lab → Craft rye flight.', 'Compare to New Riff bourbon same night.', 'Run craft rye four grid.', 'Close rye-vs-high-rye-bourbon case if open.'],
+        whatToNotice: '100 proof alignment makes craft vs major comparison fair — match bond bottles when possible.',
+      },
+    },
+  ),
+  lesson(
+    'house-proof-ladders',
+    'House proof ladders',
+    'Major houses teach proof on one mash story — climb the ladder before chasing unicorns.',
+    'Run one house ladder flight and explain what proof changed vs what age changed.',
+    [
+      { heading: 'Heaven Hill ladder', body: 'Evan Black → Evan BiB → Larceny (wheated fork) → Elijah Craig — value to step-up on one campus.' },
+      { heading: 'Wild Turkey ladder', body: '101 → Russell\'s 10 → Rare Breed — spice mellowed then returned at barrel proof.' },
+      { heading: 'Old Forester ladder', body: '86 → 100 → 1920 — banana bread house DNA with rising heat.' },
+    ],
+    {
+      relatedProducers: ['heaven-hill', 'wild-turkey', 'old-forester'],
+      tryThis: {
+        title: 'Pick one ladder',
+        steps: ['Tasting Lab → Heaven Hill or Wild Turkey ladder.', 'Water only on highest proof pour.', 'Run matching grid preset.', 'Write one sentence: proof vs age on your palate.'],
+        whatToNotice: 'Larceny fork teaches wheated within a house — not only mash bill across brands.',
+      },
+    },
+  ),
+  lesson(
+    'ncf-and-texture',
+    'NCF and mouthfeel',
+    'Filtration changes texture — taste NCF craft against filtered majors.',
+    'Describe mouthfeel difference between New Riff BiB and Michter\'s US*1 in one sentence.',
+    [
+      { heading: 'Chill filtration', body: 'Removes fatty compounds that can haze with ice — may trim mouthfeel. Michter\'s often filtered for polish; New Riff BiB often NCF for weight.' },
+      { heading: 'Not morality', body: 'NCF is not automatically better — some palates prefer clean exit over oily weight. Notice preference, not forum dogma.' },
+      { heading: 'Ice test optional', body: 'NCF bottles may cloud with ice — feature not flaw. Only run if you serve on rocks regularly.' },
+    ],
+    {
+      tryThis: {
+        title: 'NCF duel',
+        steps: ['Tasting Lab → NCF craft duel.', 'Focus on finish length and palate weight.', 'Run ncf-three grid.', 'Note in journal — texture family word required.'],
+        whatToNotice: 'Same proof, different weight — filtration may explain more than mash bill on some pours.',
       },
     },
   ),
@@ -193,7 +286,7 @@ export const BOURBON_LEVEL_2_LESSONS: AcademyLesson[] = [
     'Submit proof you taste with structure and category literacy.',
     'Pass Level 2 with a comparison grid, five flavor words, and one category contrast paragraph.',
     [
-      { heading: 'Requirements', body: '(1) Two saved Tasting Lab flights OR one flight + one comparison grid. (2) Five distinct flavor family words used correctly across notes. (3) One paragraph: high-rye vs wheated OR bourbon vs rye vs Tennessee. (4) Two atlas producers explored beyond Level 1. (5) Flavor wheel updated at least once.' },
+      { heading: 'Requirements', body: '(1) Three saved Tasting Lab flights OR two flights + two comparison grids. (2) Five distinct flavor family words used correctly across notes. (3) One paragraph: high-rye vs wheated OR bourbon vs rye vs Tennessee. (4) One craft or finish flight completed. (5) Flavor wheel updated · palate journal has 3+ entries.' },
       { heading: 'Evidence to capture', body: 'Tasting Lab save screenshot or exported notes · Comparison grid winner + lesson · flavor wheel profile link · optional: photo of bagged blind pour.' },
       { heading: 'Unlocks', body: 'Level 3 Shelf Builder · pairing lab at Level 3 · Mission 2 prep · Bourbon Circle posting with vocabulary.' },
     ],

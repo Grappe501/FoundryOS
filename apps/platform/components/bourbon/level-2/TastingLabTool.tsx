@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { TASTING_FLIGHTS, getTastingFlight } from '../../../lib/bourbon-level-2/tasting-flights';
+import { TASTING_FLIGHTS, FLIGHT_GROUPS, getTastingFlight } from '../../../lib/bourbon-level-2/tasting-flights';
 import { getBottle } from '../../../lib/bourbon-level-1/bottles';
 import { saveTastingSession, getTastingSessions, type PourNote } from '../../../lib/bourbon-level-2/storage';
 import { RabbitHoleFooter } from '../level-1/RabbitHoleFooter';
@@ -24,12 +24,19 @@ type Props = { initialFlightId?: string; proofMode?: boolean };
 export function TastingLabTool({ initialFlightId, proofMode = false }: Props) {
   const defaultId = proofMode ? 'proof-ladder' : initialFlightId ?? TASTING_FLIGHTS[0].id;
   const [flightId, setFlightId] = useState(defaultId);
+  const [groupFilter, setGroupFilter] = useState<string>('all');
   const flight = getTastingFlight(flightId) ?? TASTING_FLIGHTS[0];
+
+  const visibleFlights = useMemo(() => {
+    if (groupFilter === 'all') return TASTING_FLIGHTS;
+    return TASTING_FLIGHTS.filter((f) => f.group === groupFilter);
+  }, [groupFilter]);
 
   const [pours, setPours] = useState<PourNote[]>(() =>
     flight.bottleSlugs.map((slug) => ({ bottleSlug: slug, nose: '', palate: '', finish: '', flavorWords: [] })),
   );
   const [reflection, setReflection] = useState('');
+  const [rankedSlug, setRankedSlug] = useState('');
   const [saved, setSaved] = useState(false);
   const [historyCount, setHistoryCount] = useState(0);
 
@@ -41,6 +48,7 @@ export function TastingLabTool({ initialFlightId, proofMode = false }: Props) {
     const f = getTastingFlight(flightId) ?? TASTING_FLIGHTS[0];
     setPours(f.bottleSlugs.map((slug) => ({ bottleSlug: slug, nose: '', palate: '', finish: '', flavorWords: [] })));
     setReflection('');
+    setRankedSlug('');
     setSaved(false);
   }, [flightId]);
 
@@ -84,7 +92,43 @@ export function TastingLabTool({ initialFlightId, proofMode = false }: Props) {
       </p>
 
       <div style={{ marginTop: 16, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-        {TASTING_FLIGHTS.map((f) => (
+        <button
+          type="button"
+          onClick={() => setGroupFilter('all')}
+          style={{
+            padding: '6px 12px',
+            fontSize: 11,
+            borderRadius: 6,
+            border: `1px solid ${groupFilter === 'all' ? ACCENT : 'var(--foundry-border)'}`,
+            background: groupFilter === 'all' ? 'var(--foundry-border-warm)' : 'transparent',
+            color: groupFilter === 'all' ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
+            cursor: 'pointer',
+          }}
+        >
+          All ({TASTING_FLIGHTS.length})
+        </button>
+        {FLIGHT_GROUPS.map((g) => (
+          <button
+            key={g.id}
+            type="button"
+            onClick={() => setGroupFilter(g.id!)}
+            style={{
+              padding: '6px 12px',
+              fontSize: 11,
+              borderRadius: 6,
+              border: `1px solid ${groupFilter === g.id ? ACCENT : 'var(--foundry-border)'}`,
+              background: groupFilter === g.id ? 'var(--foundry-border-warm)' : 'transparent',
+              color: groupFilter === g.id ? 'var(--foundry-text)' : 'var(--foundry-text-muted)',
+              cursor: 'pointer',
+            }}
+          >
+            {g.label}
+          </button>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 12, display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        {visibleFlights.map((f) => (
           <button
             key={f.id}
             type="button"
@@ -190,6 +234,17 @@ export function TastingLabTool({ initialFlightId, proofMode = false }: Props) {
                     ))}
                   </div>
                 </div>
+                {proofMode && (
+                  <label style={{ display: 'block', marginTop: 10 }}>
+                    <span style={{ color: 'var(--foundry-text-faint)', fontSize: 11 }}>Water note (one drop?)</span>
+                    <input
+                      value={pour.waterNote ?? ''}
+                      onChange={(e) => updatePour(idx, { waterNote: e.target.value })}
+                      placeholder="What opened or collapsed after one drop"
+                      style={{ width: '100%', marginTop: 4, padding: '8px 10px', fontSize: 13, borderRadius: 6, border: '1px solid var(--foundry-border)', background: 'var(--foundry-surface-raised)', color: 'var(--foundry-text)' }}
+                    />
+                  </label>
+                )}
               </div>
             );
           })}
@@ -197,6 +252,22 @@ export function TastingLabTool({ initialFlightId, proofMode = false }: Props) {
       </section>
 
       <section style={{ marginTop: 24 }}>
+        <label style={{ display: 'block', marginBottom: 12 }}>
+          <span style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>Rank #1 tonight</span>
+          <select
+            value={rankedSlug}
+            onChange={(e) => setRankedSlug(e.target.value)}
+            style={{ width: '100%', maxWidth: 360, marginTop: 6, padding: '8px 10px', fontSize: 13, borderRadius: 6, border: '1px solid var(--foundry-border)', background: 'var(--foundry-surface-raised)', color: 'var(--foundry-text)' }}
+          >
+            <option value="">Select winner…</option>
+            {flight.bottleSlugs.map((slug) => {
+              const b = getBottle(slug);
+              return (
+                <option key={slug} value={slug}>{b?.name ?? slug}</option>
+              );
+            })}
+          </select>
+        </label>
         <label style={{ display: 'block' }}>
           <span style={{ color: 'var(--foundry-text-faint)', fontSize: 12 }}>Flight reflection — which pour won and why?</span>
           <textarea

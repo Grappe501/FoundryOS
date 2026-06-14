@@ -153,14 +153,14 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 043 (Bourbon Craft Inventory — 55 bottles) |
-| Version | `1.2.0-bourbon-craft-inventory` |
+| Passes complete | 044 (Bourbon Level 2 Comprehensive) |
+| Version | `1.3.0-bourbon-level2-comprehensive` |
 | Launch readiness | 100% |
 | Bourbon catalog bottles | 55 |
 | Bourbon producers | 24 |
 | Craft houses | 13 |
-| Academy lessons (bourbon) | 40 (8 L1 + 10 L2 + 22 L3–7) |
-| Level 2 tools | Tasting Lab · Comparison Grid · Mash bill flight |
+| Academy lessons (bourbon) | 45 (8 L1 + 15 L2 + 22 L3–7) |
+| Level 2 tools | 16 flights · 12 grids · Palate Journal · Water Lab |
 | Campus maps | 11 producers |
 | Detective cases | 13 |
 | Personal database | ✅ PASS-040D — `npm run verify:040d` |
@@ -168,7 +168,7 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
 | Review + recommend | ✅ PASS-040E/F |
 | Full stack verify | `npm run verify:stack` |
-| Next pass | **PASS-044** — Level 3 Shelf Builder |
+| Next pass | **PASS-045** — Level 3 Shelf Builder |
 
 ---
 
