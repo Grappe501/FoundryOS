@@ -15,8 +15,9 @@ import { getTransformationAnalytics } from '@foundry/transformation-graph-engine
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
 
-export const PLATFORM_VERSION = '3.0.0-bourbon-confident-taster-v3';
+export const PLATFORM_VERSION = '4.0.0-bourbon-shelf-builder';
 export const BOURBON_LEVEL_2_VERSION = '3.0.0-bourbon-confident-taster-v3';
+export const BOURBON_LEVEL_3_VERSION = '4.0.0-bourbon-shelf-builder';
 
 export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
@@ -419,6 +420,14 @@ export const PASSES: PassEntry[] = [
     summary:
       '26 flights · 20 grids · 23 lessons · 24 modules · Blind Flight Lab (7) · Host Night Kits (6) · 8-week program · Flight builder · Progress dashboard · semver `3.0.0-bourbon-confident-taster-v3`.',
   },
+  {
+    code: 'PASS-047',
+    title: 'Bourbon Level 3 — Shelf Builder depth',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '12 shelf themes · 4 price tiers · 10 academy lessons · 12 curriculum modules · Themed Shelf · Price Ladder · Gap Analysis · Shelf Defense · Level 3 HQ · semver `4.0.0-bourbon-shelf-builder`.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -544,10 +553,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 100 : 55,
-    last_pass: 'PASS-046',
-    next_pass: 'PASS-047',
+    last_pass: 'PASS-047',
+    next_pass: 'PASS-048',
     current_focus:
-      'PASS-047 — Level 3 Shelf Builder depth. Level 2 v3 Confident Taster tier complete.',
+      'PASS-048 — Level 4 Connoisseur depth. Level 3 Shelf Builder tier complete.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

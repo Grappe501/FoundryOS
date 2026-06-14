@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `3.0.0-bourbon-confident-taster-v3` |
-| **Last Pass** | PASS-046 Bourbon Level 2 v3 Massive Confident Taster ✅ |
-| **Current Pass** | Level 2 v3 complete ✅ |
-| **Next Pass** | PASS-047 — Level 3 Shelf Builder depth |
-| **Level 2 surface** | v3 — 26 flights · 20 grids · 23 lessons · 24 modules · Blind · Host · 8-week program · Flight builder · Progress dashboard |
+| **Version** | `4.0.0-bourbon-shelf-builder` |
+| **Last Pass** | PASS-047 Bourbon Level 3 Shelf Builder ✅ |
+| **Current Pass** | Level 3 complete ✅ |
+| **Next Pass** | PASS-048 — Level 4 Connoisseur depth |
+| **Level 3 surface** | 12 themes · 4 price tiers · 10 lessons · 12 modules · Gap · Defense |
 | **Live proof** | `npm run build:platform` · `npm run sandbox` · `audit:bourbon-links` · `audit:bourbon-graph` |
 | **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 45 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
@@ -42,6 +42,35 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-047 — Bourbon Level 3 Shelf Builder ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Level 3 Shelf Builder — themed curation, price ladder, gap analysis, shelf defense |
+| **Version bump** | `4.0.0-bourbon-shelf-builder` — Level 3 tier milestone |
+| **Audit** | build:platform |
+
+| Deliverable | Location |
+|-------------|----------|
+| Shelf themes | 12 presets · 8 roles — `shelf-themes.ts` |
+| Price ladder | 4 tiers + exercises — `price-tiers.ts` |
+| Gap analysis | Theme vs owned — `gap-analysis.ts` |
+| Academy L3 | 10 lessons (+5) — price, hype-free, daily/occasion, vertical, corn whiskey |
+| Curriculum | 12 modules — `curriculum.ts` |
+| Themed Shelf | `/bourbon/themed-shelf` |
+| Price Ladder | `/bourbon/price-ladder` |
+| Gap Analysis | `/bourbon/shelf-gap` |
+| Shelf Defense | `/bourbon/shelf-defense` |
+| Level 3 HQ | `/bourbon/level-3` · `/bourbon/academy/level-3` |
+| Storage | themed shelves · defense · gap runs · checkpoint |
+
+**Architecture Impact**
+- Reusable: shelf theme + role pattern, price tier classifier, gap analyzer, shelf defense evidence
+- Benefits: Curation layer bridges L2 palate to L4 label literacy without new DB tables; portfolio integration for owned bottles
+- Affected launches: bourbon Level 3 HQ · themed shelf · price ladder · shelf defense · academy L3
 
 ---
 

@@ -38,9 +38,38 @@ export const BOURBON_LEVELS_3_7_LESSONS: AcademyLesson[] = [
     { heading: 'When to reach for BiB', body: 'When you want proof and age floor without NDP mystery. BiB is not "best" — it is legally specific.' },
   ], { glossaryTerms: ['Bottled in bond'] }),
 
+  lesson(3, 'price-ladder-full', 'The full price ladder', 'Entry through ultra — what you pay for vs what marketing sells.', 'Classify six shelf bottles into tiers and write one sentence per tier about value trap.', [
+    { heading: 'Tier table', body: 'Entry $15–25: house style, repeatability. Standard $25–40: blending skill, BiB. Premium $40–70: age, small batch. Ultra $70+: scarcity, occasion — must beat blind rank.' },
+    { heading: 'Exercise', body: 'Open /bourbon/price-ladder — match four bottles before reveal. Splurge must earn rank vs $30 BT.' },
+  ], { tryThis: { title: 'Price ladder tool', steps: ['Open price ladder.', 'Run match-four exercise.', 'Write one value trap you almost fell for.'], whatToNotice: 'Premium tier loses blind to WT101 often — shelf theme should include value anchor.' } }),
+
+  lesson(3, 'building-without-hype', 'Building without hype', 'Allocation, MSRP, secondary — stay grounded when curating.', 'Write one sentence why your most expensive bottle earned shelf space blind.', [
+    { heading: 'Hype traps', body: 'Allocated status · secondary markup · Instagram scores · "everyone says" lists. Shelf defense requires palate jury, not forum consensus.' },
+    { heading: 'Economy homework', body: 'Read /bourbon/economy before splurge tier. Detective cases allocated-worth-it and secondary-market-math optional fuel.' },
+    { heading: 'Splurge discipline', body: 'Run Level 2 splurge blind or themed splurge-worth-it shelf before ultra tier permanent slot.' },
+  ]),
+
+  lesson(3, 'daily-vs-occasion', 'Daily vs occasion pours', 'Palate fatigue and shelf roles — not every bottle is a daily driver.', 'Tag each shelf bottle daily or occasion and remove one redundant daily.', [
+    { heading: 'Daily drinker criteria', body: 'Wide availability · forgiving proof · repeat buy without regret · under $40 usually.' },
+    { heading: 'Occasion criteria', body: 'Splurge · gift · host impress · learning milestone — tiny pours, not Tuesday night default.' },
+    { heading: 'Shelf hygiene', body: 'If you have five dailies and zero occasion, you are optimized for consumption not learning. If all occasion, you are performing collection not palate.' },
+  ]),
+
+  lesson(3, 'vertical-thinking-shelf', 'Vertical thinking on a shelf', 'Same house, rising proof or age — ladder without unicorn chasing.', 'Build proof-ladder or house-universe theme and explain what changed between tiers.', [
+    { heading: 'Proof ladder', body: 'OF86 → OF100 → OF1920 or BT → KC9 → Rare Breed — heat and oak without brand chaos.' },
+    { heading: 'Age vertical', body: 'When accessible: NAS BT vs Eagle Rare 10 vs age-statement craft — time in oak as one variable.' },
+    { heading: 'Level 2 link', body: 'Run Tasting Lab house ladders before buying vertical duplicates from same house.' },
+  ], { relatedProducers: ['old-forester', 'buffalo-trace', 'wild-turkey'] }),
+
+  lesson(3, 'corn-whiskey-line', 'Corn whiskey — not bourbon', 'Legal line: 80%+ corn, can be unaged — label literacy beyond bourbon row.', 'Explain corn whiskey vs bourbon in one paragraph using label category only.', [
+    { heading: 'Legal distinction', body: 'Bourbon ≥51% corn + new charred oak + straight aging rules. Corn whiskey ≥80% corn — may be unaged or used oak. Rare on bourbon shelves but appears in craft conversations.' },
+    { heading: 'Why it matters for shelves', body: 'Category literacy prevents mislabeling craft experiments. Your category shelf (bourbon + rye + TN) is the practical homework — corn whiskey is edge-case reading.' },
+  ], { glossaryTerms: ['Corn whiskey', 'Kentucky straight bourbon'] }),
+
   lesson(3, 'level-3-checkpoint', 'Level 3 checkpoint — Shelf Builder', 'Photograph your themed shelf and defend every bottle\'s role.', 'Complete Mission 2 evidence: shelf photo, theme statement, gift recommendation.', [
-    { heading: 'Requirements', body: '5–8 bottles · written theme · one bottle you would gift with three-sentence rationale · photo with labels visible · gap analysis ("what bottle fills my next slot?").' },
+    { heading: 'Requirements', body: '5–8 bottles · written theme · one bottle you would gift with three-sentence rationale · photo with labels visible · gap analysis ("what bottle fills my next slot?") · saved shelf defense in /bourbon/shelf-defense.' },
     { heading: 'Mission link', body: 'Open /bourbon/missions/first-shelf and submit evidence to My Bourbon Journey. Unlock Level 4 Connoisseur path.' },
+    { heading: 'Tool checklist', body: 'Themed shelf saved · gap analysis run · price ladder exercise · shelf defense saved.' },
   ], { checkpoint: true, recommendedMission: 'first-shelf', estimatedMinutes: 60 }),
 
   // ── Level 4: Connoisseur ──

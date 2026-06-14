@@ -48,12 +48,13 @@ PASS-043 ████████████ Bourbon Craft Inventory (55 bottle
 PASS-044 ████████████ Bourbon Level 2 Comprehensive ✅
 PASS-045 ████████████ Bourbon Level 2 v2.0 Confident Taster ✅
 PASS-046 ████████████ Bourbon Level 2 v3 Massive Confident Taster ✅
+PASS-047 ████████████ Bourbon Level 3 Shelf Builder ✅
 ```
 
 > **Mode:** Private build — no public beta until 3 verticals consumer-ready.
 > See `docs/VERTICAL_DEPTH_MODE.md`, `docs/PASS_017_022_SEQUENCE.md`.
 
-> **Next:** PASS-047 — Level 3 Shelf Builder depth.
+> **Next:** PASS-048 — Level 4 Connoisseur depth.
 
 > Beta wedge: **Future-Proof Trinity** — AI Builder · Financial Independence · Public Speaking.
 

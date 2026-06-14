@@ -33,6 +33,7 @@ export const BOURBON_PAGE_DEPTH: BourbonPageDepth[] = [
       { label: "Investigate HQ", href: '/bourbon/investigate' },
       { label: "Bourbon Detective", href: '/bourbon/detective' },
       { label: "Level 2 — Confident Taster", href: '/bourbon/level-2', tease: "Tasting Lab, grids, mash bill flights" },
+      { label: "Level 3 — Shelf Builder", href: '/bourbon/level-3', tease: "Themed shelves, price ladder, gap analysis" },
     ],
   },
   {
@@ -53,6 +54,25 @@ export const BOURBON_PAGE_DEPTH: BourbonPageDepth[] = [
       { label: "Comparison grid", href: '/bourbon/comparison-grid' },
       { label: "Flight builder", href: '/bourbon/flight-builder' },
       { label: "Progress dashboard", href: '/bourbon/level-2-progress' },
+    ],
+  },
+  {
+    id: 'level-3',
+    path: '/bourbon/level-3',
+    title: "Bourbon Level 3 — Shelf Builder",
+    openingNarrative: `Level 3 is where palate meets curation. You passed Level 2 — you can name mash bills, run blind flights, host skeptics. Now the question shifts: what belongs on your shelf, and why? Twelve themed shelves assign every bottle a role — daily drinker, host pour, BiB anchor, craft representative, splurge occasion. The price ladder maps entry through ultra tiers so you stop paying for allocation stories without palate defense. Gap analysis compares what you own against a theme ideal — missing roles, redundant mash bills, price spread. Shelf defense is checkpoint prep: theme statement, gift pick, next bottle rationale. This is not collecting trophies. It is building a autobiography in glass that teaches you every time you pull a cork.`,
+    whyItMatters: `Random accumulation is the most expensive way to learn bourbon. Three bottles from the same mash profile, zero rye category, all occasion pours and no daily driver — the shelf looks impressive and teaches nothing. Themed curation forces intention: every bottle answers "why are you here?" Level 3 matches how stewards actually improve — buy with a gap in mind, defend choices blind, revise after humility sessions. When you can photograph a shelf and explain each bottle's role in one sentence, you are ready for Level 4 label literacy and Level 5 blind hosting without impostor syndrome.`,
+    beginnerMisunderstanding: `People think Shelf Builder requires a dedicated room, custom woodworking, or forty bottles before you belong. Wrong. Five bottles with defensible roles beat twenty redundant labels. Level 3 describes curation skill, not inventory size — if you can theme a under-$120 value shelf and run gap analysis on what you own, you belong here. Collectors with full racks still run price ladder exercises when a new splurge fights a $30 daily.`,
+    realWorldExample: `You run gap analysis on your owned bottles against the mash bill education theme. You own three traditional corn-forward bottles and zero wheated. Recommendation: add Larceny or Maker's Mark as host pour. You save shelf defense — theme statement "teach grain fork to guests," gift pick Buffalo Trace for skeptics, next buy Larceny. Next store trip you skip a fourth redundant BT variant and buy the gap. Level 3 turned aisle anxiety into one intentional purchase.`,
+    howToUse: `Start at Themed Shelf — pick the theme matching your last confusion. Value under $40 if budget matters. Proof ladder if heat confuses you. Craft vs major if BT fatigue set in. Run gap analysis after logging owned bottles in portfolio. Price ladder before any splurge over $60. Shelf defense when you have 5+ bottles with roles. Read academy lessons when you want vocabulary before buying — order does not matter.`,
+    whatToNoticeNext: `When you predict gap analysis results before running and get surprised, your shelf awareness is waking up. When you stop buying duplicates because mash bill row already filled, Level 4 label decoder is next. Progress saves locally — screenshots and shelf photos count for checkpoint evidence.`,
+    rabbitHoles: [
+      { label: "Themed shelf", href: '/bourbon/themed-shelf' },
+      { label: "Price ladder", href: '/bourbon/price-ladder' },
+      { label: "Gap analysis", href: '/bourbon/shelf-gap' },
+      { label: "Shelf defense", href: '/bourbon/shelf-defense' },
+      { label: "Budget shelf builder", href: '/bourbon/shelf-builder' },
+      { label: "Level 2 bridge", href: '/bourbon/level-2' },
     ],
   },
   {

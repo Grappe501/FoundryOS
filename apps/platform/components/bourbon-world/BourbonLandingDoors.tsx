@@ -62,9 +62,16 @@ export function BourbonLandingDoors({ content }: Props) {
     {
       label: 'Level 2',
       teaser: 'Hold one variable — mash bill, category, proof — and taste the difference.',
-      depth: '16 flights · 12 grids · 15 lessons · Palate Journal · Water Lab. Confident Taster v2.0.',
+      depth: '26 flights · 20 grids · 23 lessons · Blind · Host · 8-week program. Confident Taster v3.',
       href: '/bourbon/level-2',
       hrefLabel: 'Level 2 — Confident Taster',
+    },
+    {
+      label: 'Level 3',
+      teaser: 'Curate 5–8 bottles around a theme — daily, host, splurge, gap analysis.',
+      depth: '12 shelf themes · price ladder · gap analysis · shelf defense. Shelf Builder v4.0.',
+      href: '/bourbon/level-3',
+      hrefLabel: 'Level 3 — Shelf Builder',
     },
     {
       label: 'Why it sticks',

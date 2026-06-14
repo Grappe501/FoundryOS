@@ -302,6 +302,36 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
     explanation: `Progress dashboard aggregates local storage — flights, grids, journal, blind sessions, program weeks, host nights — with checkpoint hint paths.`,
     practicalReason: `Open dashboard before claiming Level 2 complete — evidence beats memory.`,
   },
+  {
+    slug: 'themed-shelf',
+    hook: '12 shelf themes — role per bottle',
+    explanation: `Themed Shelf ships twelve presets with eight role types — daily, host, learning, splurge, BiB anchor, craft, category, backup. Save themed shelves and link to gap analysis.`,
+    practicalReason: `Pick value-under-40 before your next store trip — four roles, one lesson.`,
+  },
+  {
+    slug: 'price-ladder',
+    hook: 'Entry → ultra — match bottles to tier',
+    explanation: `Four price tiers with pay-for / don't-pay-for guidance, catalog bottles per tier, and tier-match exercises with reveal.`,
+    practicalReason: `Run match-four before splurge — premium tier must beat WT101 blind.`,
+  },
+  {
+    slug: 'shelf-gap',
+    hook: 'Owned vs theme — missing roles',
+    explanation: `Gap analysis compares selected owned bottles against theme ideal — missing roles, redundant mash, price spread, recommendations.`,
+    practicalReason: `Log portfolio first — gap analysis beats gut feeling on next buy.`,
+  },
+  {
+    slug: 'shelf-defense',
+    hook: 'Theme, gift, next bottle — checkpoint evidence',
+    explanation: `Shelf defense captures theme statement, gift bottle rationale, next buy, gap notes — saves locally for Level 3 checkpoint.`,
+    practicalReason: `Write defense before photographing shelf — words clarify roles.`,
+  },
+  {
+    slug: 'level-3',
+    hook: 'Curate 5–8 bottles around a defensible theme',
+    explanation: `Level 3 HQ — twelve themes, price ladder, gap analysis, shelf defense, twelve curriculum modules, ten academy lessons. Unlocks after Level 2 checkpoint.`,
+    practicalReason: `Start themed shelf if Level 2 flights feel easy — curation is next.`,
+  },
 ];
 
 export function getToolDepth(slug: string): BourbonToolDepth | undefined {

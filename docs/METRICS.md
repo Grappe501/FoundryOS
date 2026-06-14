@@ -153,15 +153,17 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Mentorship connections | 0 |
 | Evidence profiles | 3 exemplars (PASS-011) |
 | Reflection templates | 3 exemplars (PASS-010) |
-| Passes complete | 046 (Bourbon Level 2 v3 Massive Confident Taster) |
-| Version | `3.0.0-bourbon-confident-taster-v3` |
-| Level 2 tier | **v3 complete** — blind · host · program · flight builder · progress dashboard |
+| Passes complete | 047 (Bourbon Level 3 Shelf Builder) |
+| Version | `4.0.0-bourbon-shelf-builder` |
+| Level 3 tier | **complete** — 12 themes · price ladder · gap · defense |
+| Level 2 tier | v3 — 26 flights · 20 grids · blind · host · program |
 | Launch readiness | 100% |
 | Bourbon catalog bottles | 55 |
 | Bourbon producers | 24 |
 | Craft houses | 13 |
-| Academy lessons (bourbon) | 53 (8 L1 + 23 L2 + 22 L3–7) |
-| Level 2 tools | 26 flights · 20 grids · 7 blind · 6 host kits · 8-week program · Flight builder · Progress dashboard |
+| Academy lessons (bourbon) | 58 (8 L1 + 23 L2 + 27 L3–7) |
+| Level 3 tools | 12 themes · 4 tiers · gap analysis · shelf defense |
+| Level 2 tools | 26 flights · 20 grids · 7 blind · 6 host kits · 8-week program |
 | Campus maps | 11 producers |
 | Detective cases | 13 |
 | Personal database | ✅ PASS-040D — `npm run verify:040d` |
@@ -169,7 +171,7 @@ See `docs/SEO_PUBLISH_POLICY.md`
 | Atlas-aware AI | ✅ PASS-040C — `npm run verify:040c` |
 | Review + recommend | ✅ PASS-040E/F |
 | Full stack verify | `npm run verify:stack` |
-| Next pass | **PASS-047** — Level 3 Shelf Builder |
+| Next pass | **PASS-048** — Level 4 Connoisseur |
 
 ---
 
