@@ -6,11 +6,11 @@
 
 | Field | Value |
 |-------|-------|
-| **Version** | `2.0.0-bourbon-confident-taster` |
-| **Last Pass** | PASS-045 Bourbon Level 2 v2.0 Release ✅ |
-| **Current Pass** | Level 2 tier complete ✅ |
-| **Next Pass** | PASS-046 — Level 3 Shelf Builder depth |
-| **Level 2 surface** | v2.0 — 16 flights · 12 grids · 15 lessons · 16 modules · Journal · Water Lab |
+| **Version** | `3.0.0-bourbon-confident-taster-v3` |
+| **Last Pass** | PASS-046 Bourbon Level 2 v3 Massive Confident Taster ✅ |
+| **Current Pass** | Level 2 v3 complete ✅ |
+| **Next Pass** | PASS-047 — Level 3 Shelf Builder depth |
+| **Level 2 surface** | v3 — 26 flights · 20 grids · 23 lessons · 24 modules · Blind · Host · 8-week program · Flight builder · Progress dashboard |
 | **Live proof** | `npm run build:platform` · `npm run sandbox` · `audit:bourbon-links` · `audit:bourbon-graph` |
 | **Bourbon catalog** | 55 bottles · 24 producers · 13 craft houses · 45 academy lessons · 11 campus maps · 13 detective cases |
 | **Identity stack** | 040D hydrate · 040D.5 compound loop · 040C Atlas-Aware AI · 040E/F review + recommend |
@@ -42,6 +42,34 @@
 - Reusable: `WhiskeyBottleCategory`, category compare flight, X-Ray override pattern, authored academy tier
 - Benefits: Cross-category bottle flights without fake inventory; static academy pages L2–7; deployment-ready bourbon proof
 - Affected launches: bourbon.foundryos.com Level 1 consumer surface
+
+---
+
+## PASS-046 — Bourbon Level 2 v3 Massive Confident Taster ✅
+
+| Field | Value |
+|-------|-------|
+| **Mission** | Massive Level 2 v3 — blind hosting, program, flight builder, expanded curriculum |
+| **Version bump** | `3.0.0-bourbon-confident-taster-v3` — Level 2 v3 tier milestone |
+| **Audit** | preflight · build:platform · audit:bourbon-links |
+
+| Deliverable | Location |
+|-------------|----------|
+| Tasting flights | 26 flights · 7 groups — host, advanced, house universe, age/splurge |
+| Comparison grids | 20 presets — wheated four, splurge craft, age statement, host-friendly, cocktail, TN four |
+| Academy L2 | 23 lessons (+8) — blind hosting, host checklist, splurge test, 8-week program |
+| Curriculum | 24 modules (+8) — blind, host, splurge, flight builder, program |
+| Blind Flight Lab | `/bourbon/blind-flight` · 7 presets · `blind-flights.ts` |
+| Host Night Kits | `/bourbon/host-night` · 6 scenarios · `host-night-kits.ts` |
+| 8-week program | `/bourbon/tasting-program` · `tasting-program.ts` |
+| Flight builder | `/bourbon/flight-builder` · catalog filters · `flight-builder.ts` |
+| Progress dashboard | `/bourbon/level-2-progress` · blinds · program weeks · host nights |
+| Storage | blind sessions · program week · host night completion · expanded checkpoint |
+
+**Architecture Impact**
+- Reusable: blind preset pattern, host kit scenario, catalog flight builder, structured tasting program
+- Benefits: Level 2 scales from solo taster to host-steward without new niche tables; one progress model across flights/grids/blinds/program
+- Affected launches: bourbon.foundryos.com Level 2 HQ · blind · host · program · flight builder
 
 ---
 

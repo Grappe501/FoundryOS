@@ -15,8 +15,8 @@ import { getTransformationAnalytics } from '@foundry/transformation-graph-engine
 import { getLoopKpiSnapshot } from '@foundry/transformation-loop';
 import { getNorthStarMetrics } from '@foundry/path-engine';
 
-export const PLATFORM_VERSION = '2.0.0-bourbon-confident-taster';
-export const BOURBON_LEVEL_2_VERSION = '2.0.0-bourbon-confident-taster';
+export const PLATFORM_VERSION = '3.0.0-bourbon-confident-taster-v3';
+export const BOURBON_LEVEL_2_VERSION = '3.0.0-bourbon-confident-taster-v3';
 
 export type PassStatus = 'completed' | 'in_progress' | 'planned' | 'paused';
 
@@ -411,6 +411,14 @@ export const PASSES: PassEntry[] = [
     summary:
       'Level 2 tier semver `2.0.0-bourbon-confident-taster` — copy sync, landing doors, tool-depth, sandbox verified. Confident Taster surface production-complete.',
   },
+  {
+    code: 'PASS-046',
+    title: 'Bourbon Level 2 — v3 Massive Confident Taster',
+    status: 'completed' as const,
+    date: '2026-06-13',
+    summary:
+      '26 flights · 20 grids · 23 lessons · 24 modules · Blind Flight Lab (7) · Host Night Kits (6) · 8-week program · Flight builder · Progress dashboard · semver `3.0.0-bourbon-confident-taster-v3`.',
+  },
 ];
 
 const TOPIC_COUNT = catalogIndex.total_apps;
@@ -536,10 +544,10 @@ export async function getMissionControlStats() {
     indexed_pages: growthKpis.indexed_pages,
     public_catalog_paths: growthKpis.public_catalog_paths,
     launch_readiness_pct: live ? 100 : 55,
-    last_pass: 'PASS-045',
-    next_pass: 'PASS-046',
+    last_pass: 'PASS-046',
+    next_pass: 'PASS-047',
     current_focus:
-      'PASS-046 — Level 3 Shelf Builder depth. Level 2 v2.0 Confident Taster tier complete.',
+      'PASS-047 — Level 3 Shelf Builder depth. Level 2 v3 Confident Taster tier complete.',
     open_risks: [
       'Enable email confirmation in Supabase for production auth',
       'Stripe billing when ready to charge Build/Mastery tiers',

@@ -286,7 +286,7 @@ export const BOURBON_LEVEL_2_LESSONS: AcademyLesson[] = [
     'Submit proof you taste with structure and category literacy.',
     'Pass Level 2 with a comparison grid, five flavor words, and one category contrast paragraph.',
     [
-      { heading: 'Requirements', body: '(1) Three saved Tasting Lab flights OR two flights + two comparison grids. (2) Five distinct flavor family words used correctly across notes. (3) One paragraph: high-rye vs wheated OR bourbon vs rye vs Tennessee. (4) One craft or finish flight completed. (5) Flavor wheel updated · palate journal has 3+ entries.' },
+      { heading: 'Requirements', body: '(1) Three saved Tasting Lab flights OR two flights + two comparison grids OR 6+ program weeks + 2 flights. (2) Five distinct flavor family words used correctly across notes. (3) One paragraph: high-rye vs wheated OR bourbon vs rye vs Tennessee. (4) One craft or finish flight completed. (5) Flavor wheel updated · palate journal has 3+ entries · optional: one blind session saved.' },
       { heading: 'Evidence to capture', body: 'Tasting Lab save screenshot or exported notes · Comparison grid winner + lesson · flavor wheel profile link · optional: photo of bagged blind pour.' },
       { heading: 'Unlocks', body: 'Level 3 Shelf Builder · pairing lab at Level 3 · Mission 2 prep · Bourbon Circle posting with vocabulary.' },
     ],
@@ -297,6 +297,151 @@ export const BOURBON_LEVEL_2_LESSONS: AcademyLesson[] = [
         title: 'Checkpoint checklist',
         steps: ['Verify Tasting Lab history (2+ flights or 1 flight + 1 grid).', 'Write category contrast paragraph in journal.', 'Mark Level 2 complete in portfolio.', 'Post one note in Bourbon Circle with best new flavor word.'],
         whatToNotice: 'Checkpoint is evidence, not ego — $20 bottles count if notes are specific.',
+      },
+    },
+  ),
+  lesson(
+    'house-universe-flights',
+    'House universe flights',
+    'Major campuses teach tier progression — same mash family, different age and proof.',
+    'Run Buffalo Trace universe or Four Roses ladder and explain what changed between tiers.',
+    [
+      { heading: 'Buffalo Trace tree', body: 'BT → Eagle Rare → E.H. Taylor → Weller — allocation noise aside, the lesson is tier and age on one campus philosophy.' },
+      { heading: 'Four Roses system', body: 'Yellow → Small Batch → Single Barrel — ten recipes hidden in blends; single barrel reveals one recipe personality.' },
+      { heading: 'Avoid unicorn chasing', body: 'Universe flights work with shelf bottles — you do not need Pappy to learn wheated fork within BT.' },
+    ],
+    {
+      relatedProducers: ['buffalo-trace', 'four-roses'],
+      tryThis: {
+        title: 'Pick one universe',
+        steps: ['Tasting Lab → Buffalo Trace universe or Four Roses ladder.', 'Read label proof and age before nosing.', 'Run buffalo-universe-four grid if four bottles available.', 'Write one sentence: tier vs mash bill on your palate.'],
+        whatToNotice: 'Weller fork is wheated within BT — compare to Maker\'s same night for wheat vs wheat across houses.',
+      },
+    },
+  ),
+  lesson(
+    'age-vs-proof-debate',
+    'Age vs proof debate',
+    'Age statements and barrel proof both change the pour — learn which variable moved tonight.',
+    'Score age-statement flight and write whether oak or heat drove your ranking.',
+    [
+      { heading: 'Age is not quality', body: 'Knob Creek 9 and Eagle Rare 10 teach stated age — Blue Run 8 shows craft age. NAS BT can beat over-oak on some palates.' },
+      { heading: 'Proof density', body: 'Rare Breed at NAS may feel older than OF86 — heat and oak compete. Hold one variable when comparing age flight to proof ladder.' },
+      { heading: 'Label literacy', body: 'Age statement is one data point — entry proof, warehouse, and filtration still matter after the number.' },
+    ],
+    {
+      tryThis: {
+        title: 'Age statement flight',
+        steps: ['Tasting Lab → Age statement flight.', 'Run age-statement-four grid.', 'Compare winner to proof-ladder winner same week.', 'Journal: oak family word required on each pour.'],
+        whatToNotice: 'Young craft with transparency can beat NAS majors — age worship is a common trap.',
+      },
+    },
+  ),
+  lesson(
+    'blind-hosting-etiquette',
+    'Blind hosting etiquette',
+    'Hosts bag bottles — guests rank, you teach after the reveal.',
+    'Run value four blind solo or host night blind five and save blind session evidence.',
+    [
+      { heading: 'Bag discipline', body: 'Number glasses — no label hints on table. Score before reveal. Flavor words only during tasting, brands after.' },
+      { heading: 'Host posture', body: 'You take notes, not scores, when guests rank — humility training for the room, not performance for you.' },
+      { heading: 'Reveal ritual', body: 'Reveal price after rank on value flights — winner buys next round story, not loser shame.' },
+    ],
+    {
+      tryThis: {
+        title: 'Value blind solo',
+        steps: ['Open /bourbon/blind-flight → Value four blind.', 'Bag bottles — complete setup checklist.', 'Save blind session when ranks locked.', 'Optional: run host kit value showdown with friends.'],
+        whatToNotice: 'Cheapest bottle winning is success — it means your palate is honest, not that expensive juice failed.',
+      },
+    },
+  ),
+  lesson(
+    'splurge-worth-it-test',
+    'Splurge worth-it test',
+    'Splurge bottles must beat value on your palate — blind rank vs price order.',
+    'Run splurge worth-it flight blind and justify #1 in one sentence if it costs more than $60.',
+    [
+      { heading: 'Splurge jury', body: 'Peerless, Blue Run 8, Eagle Rare vs BT — marketing cannot vote, only your rank.' },
+      { heading: 'Shelf consequence', body: 'If splurge loses blind to BT, it is a occasion pour — not daily shelf. No shame — clarity is the win.' },
+      { heading: 'Craft splurge', body: 'Craft transparency (age, proof, NCF) earns trust — still must beat value on taste.' },
+    ],
+    {
+      tryThis: {
+        title: 'Splurge blind',
+        steps: ['Blind Flight → Craft splurge blind.', 'Tasting Lab → Splurge worth-it as visible prep.', 'Run splurge-craft-four grid.', 'Journal splurge paragraph for checkpoint.'],
+        whatToNotice: 'Preference order vs price order divergence is the lesson — write both sequences before forgetting.',
+      },
+    },
+  ),
+  lesson(
+    'host-night-checklist',
+    'Host night checklist',
+    'Pre-built host kits — skeptic three, mash bill education, value showdown, craft intro.',
+    'Run one host kit end-to-end and mark complete — guests rank before you lecture.',
+    [
+      { heading: 'Kit selection', body: 'Skeptic three for "I hate whiskey" friends. Mash bill education when room is curious. Value showdown when budgets mix.' },
+      { heading: 'Timing', body: '45–75 min — three to four pours max for first-timers. Dessert finish kit is post-dinner only.' },
+      { heading: 'Avoid list', body: 'Each kit lists avoid traps — barrel proof openers, allocation flex, mash bill lecture before first sip.' },
+    ],
+    {
+      tryThis: {
+        title: 'Skeptic three tonight',
+        steps: ['Open /bourbon/host-night → Skeptic three.', 'Follow flight order and talking points.', 'Mark host night complete.', 'Send one guest to Level 1 buy engine with their winner mash bill.'],
+        whatToNotice: 'Host wins when someone says "I didn\'t know I liked that" — not when you name ten yeast strains.',
+      },
+    },
+  ),
+  lesson(
+    'cocktail-pour-vs-neat',
+    'Cocktail pour vs neat sip',
+    'Some bottles earn shelf space for Manhattan duty — not neat score alone.',
+    'Run cocktail vs sip flight and write which bottle earns which job.',
+    [
+      { heading: 'Role clarity', body: 'Rittenhouse BiB punches in cocktails; Michter\'s rye sips softer. Evan Black value neat; WT101 both.' },
+      { heading: 'Neat first', body: 'Always score neat before mixing — you need baseline to assign cocktail role honestly.' },
+      { heading: 'Shelf taxonomy', body: 'Level 3 shelf themes split sipper vs mixer — Level 2 teaches the question.' },
+    ],
+    {
+      tryThis: {
+        title: 'Cocktail three grid',
+        steps: ['Tasting Lab → Cocktail vs sip flight.', 'Neat score all pours.', 'One Manhattan with Rittenhouse.', 'Run cocktail-three grid — note role column mentally.'],
+        whatToNotice: 'BiB rye often loses neat battle but wins cocktail — both belong, different slots.',
+      },
+    },
+  ),
+  lesson(
+    'flight-builder-discipline',
+    'Flight builder discipline',
+    'Build custom flights from catalog filters — one variable, your shelf reality.',
+    'Use flight builder templates and pour a wheated or value-under-30 custom flight.',
+    [
+      { heading: 'Filter logic', body: 'Mash bill, category, tag, price band, proof band — stack filters until list is pourable in one evening.' },
+      { heading: 'Templates', body: 'Wheated shelf, under $30, full craft, 100+ proof, rye category — starting points, not prescriptions.' },
+      { heading: 'Variable lock', body: 'Custom flight still needs one lesson — do not change mash bill and proof and age same session.' },
+    ],
+    {
+      tryThis: {
+        title: 'Build one flight',
+        steps: ['Open /bourbon/flight-builder.', 'Pick value-under-30 or wheated-shelf template.', 'Pour results — save Tasting Lab session if you map bottles manually.', 'Write one sentence: why this filter for your shelf gap.'],
+        whatToNotice: 'Catalog filter reveals gaps — all wheated and you only own Maker\'s means buy engine homework.',
+      },
+    },
+  ),
+  lesson(
+    'eight-week-program-overview',
+    '8-week Confident Taster program',
+    'Structured path — mash bill to host night to checkpoint in eight weeks.',
+    'Complete week 1 homework and mark week complete — or jump to your confusion week.',
+    [
+      { heading: 'Program arc', body: 'Week 1 mash · 2 vocabulary · 3 category · 4 proof · 5 blind · 6 craft · 7 finish/splurge · 8 host + checkpoint.' },
+      { heading: 'Flexible pace', body: 'One week per week is ideal — two weeks per module is fine. Mark weeks complete when homework done, not when calendar says.' },
+      { heading: 'Evidence stack', body: 'Program weeks link flights, grids, blinds, host kits — progress dashboard shows completion.' },
+    ],
+    {
+      tryThis: {
+        title: 'Start week 1',
+        steps: ['Open /bourbon/tasting-program.', 'Complete week 1 flight + grid.', 'One journal entry — wheated vs high-rye sentence.', 'Mark week 1 complete.'],
+        whatToNotice: 'Week 5 blind humility is the hinge — skip early and category literacy stays theoretical.',
       },
     },
   ),

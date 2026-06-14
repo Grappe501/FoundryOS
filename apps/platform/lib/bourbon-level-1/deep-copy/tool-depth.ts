@@ -245,13 +245,13 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
   {
     slug: 'tasting-lab',
     hook: 'Guided flights — mash bill, category, proof — with note cards',
-    explanation: `Tasting Lab runs sixteen curated flights in five groups — core mash bills, category literacy, proof & BiB, craft & finish, blind prep. Note cards, rank picker, and water notes save locally for Level 2 checkpoint evidence.`,
+    explanation: `Tasting Lab runs twenty-six curated flights in seven groups — core mash bills, category literacy, proof & BiB, craft & finish, blind prep, host nights, and advanced age/splurge. Note cards, rank picker, and water notes save locally for Level 2 checkpoint evidence.`,
     practicalReason: `Run mash bill triangle before your next host night — three pours, one lesson.`,
   },
   {
     slug: 'comparison-grid',
     hook: 'Hold one variable sacred — nose, palate, finish, rank',
-    explanation: `Comparison grids force spreadsheet honesty — twelve presets from mash bills to craft inventory, finish four-way, house ladders, barrel proof, and NCF texture. Winner plus lesson sentence saves locally.`,
+    explanation: `Comparison grids force spreadsheet honesty — twenty presets from mash bills to craft inventory, finish four-way, house ladders, barrel proof, NCF texture, splurge blind, and host-friendly four. Winner plus lesson sentence saves locally.`,
     practicalReason: `Fill grid before declaring a favorite bottle — rank reveals bias.`,
   },
   {
@@ -271,6 +271,36 @@ export const BOURBON_TOOL_DEPTH: BourbonToolDepth[] = [
     hook: 'Structured entries — five flavor families, no "smooth"',
     explanation: `Palate Journal enforces flavor family vocabulary and forbids reflex words. Entries count toward Level 2 checkpoint alongside Tasting Lab saves.`,
     practicalReason: `Three journal entries plus two flights unlock checkpoint hint.`,
+  },
+  {
+    slug: 'blind-flight',
+    hook: 'Bag bottles — rank before reveal',
+    explanation: `Blind Flight Lab ships seven presets from value four blind to craft splurge humility. Setup checklists, rank fields, reveal toggle, and saved blind sessions count toward checkpoint.`,
+    practicalReason: `Run value four blind before your next store splurge — price order vs preference order.`,
+  },
+  {
+    slug: 'host-night',
+    hook: 'Six host scenarios — skeptics to craft intro',
+    explanation: `Host Night Kits include pour order, talking points, avoid traps, and links to matching flights and blind presets. Mark complete when guests rank before you lecture.`,
+    practicalReason: `Skeptic three kit — Maker's, BT, Jack — wins when someone says they didn't know they liked whiskey.`,
+  },
+  {
+    slug: 'tasting-program',
+    hook: '8-week Confident Taster arc',
+    explanation: `Structured program from mash bill fork through blind humility, craft inventory, finish/splurge, and host night checkpoint. Mark weeks complete when homework done — flexible pace.`,
+    practicalReason: `Week 5 blind humility is the hinge — skip it and category literacy stays theoretical.`,
+  },
+  {
+    slug: 'flight-builder',
+    hook: 'Catalog filters — custom flights from your shelf reality',
+    explanation: `Flight Builder templates filter the fifty-five-bottle catalog by mash bill, category, tag, price band, and proof — wheated shelf, under $30, full craft, 100+ proof, rye category, splurge tier.`,
+    practicalReason: `Run wheated-shelf template — reveals gaps before buy engine homework.`,
+  },
+  {
+    slug: 'level-2-progress',
+    hook: 'Flights, grids, blinds, program — checkpoint readiness',
+    explanation: `Progress dashboard aggregates local storage — flights, grids, journal, blind sessions, program weeks, host nights — with checkpoint hint paths.`,
+    practicalReason: `Open dashboard before claiming Level 2 complete — evidence beats memory.`,
   },
 ];
 

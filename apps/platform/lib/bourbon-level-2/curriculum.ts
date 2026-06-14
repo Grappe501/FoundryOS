@@ -6,6 +6,8 @@ export type Level2Module = {
   goal: string;
   flightId?: string;
   gridId?: string;
+  blindId?: string;
+  hostKitId?: string;
   academySlug: string;
   detectiveSlug?: string;
   order: number;
@@ -147,6 +149,74 @@ export const LEVEL_2_MODULES: Level2Module[] = [
     goal: 'Submit evidence — flights, grid, category paragraph.',
     academySlug: 'level-2-checkpoint',
     order: 16,
+  },
+  {
+    id: 'house-universe',
+    title: 'House universe flights',
+    goal: 'Buffalo Trace · Four Roses — same campus, tier literacy.',
+    flightId: 'buffalo-trace-universe',
+    gridId: 'buffalo-universe-four',
+    academySlug: 'house-universe-flights',
+    order: 17,
+  },
+  {
+    id: 'age-proof-debate',
+    title: 'Age vs proof',
+    goal: 'Stated age vs NAS — oak vs heat.',
+    flightId: 'age-statement-flight',
+    gridId: 'age-statement-four',
+    academySlug: 'age-vs-proof-debate',
+    order: 18,
+  },
+  {
+    id: 'blind-hosting',
+    title: 'Blind hosting etiquette',
+    goal: 'Bag pours — score before reveal, teach after rank.',
+    blindId: 'value-four-blind',
+    flightId: 'value-blind-prep',
+    academySlug: 'blind-hosting-etiquette',
+    order: 19,
+  },
+  {
+    id: 'splurge-test',
+    title: 'Splurge worth-it test',
+    goal: 'Blind rank vs price — splurge must earn shelf space.',
+    flightId: 'splurge-worth-it',
+    gridId: 'splurge-craft-four',
+    academySlug: 'splurge-worth-it-test',
+    order: 20,
+  },
+  {
+    id: 'host-night',
+    title: 'Host night kit',
+    goal: 'Run skeptic three or value showdown — guests rank first.',
+    hostKitId: 'skeptic-three',
+    flightId: 'host-skeptic-flight',
+    academySlug: 'host-night-checklist',
+    order: 21,
+  },
+  {
+    id: 'cocktail-role',
+    title: 'Cocktail vs sip role',
+    goal: 'Neat score vs Manhattan job — both belong on shelf.',
+    flightId: 'cocktail-vs-sip',
+    gridId: 'cocktail-three',
+    academySlug: 'cocktail-pour-vs-neat',
+    order: 22,
+  },
+  {
+    id: 'flight-builder',
+    title: 'Flight builder',
+    goal: 'Catalog filters — custom flights from your shelf reality.',
+    academySlug: 'flight-builder-discipline',
+    order: 23,
+  },
+  {
+    id: 'eight-week-program',
+    title: '8-week program',
+    goal: 'Structured Confident Taster — week 1–8 with homework.',
+    academySlug: 'eight-week-program-overview',
+    order: 24,
   },
 ];
 

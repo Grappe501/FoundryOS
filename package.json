@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "foundry": {
-    "version": "2.0.0-bourbon-confident-taster",
+    "version": "3.0.0-bourbon-confident-taster-v3",
     "current_pass": "PASS-045",
     "next_pass": "PASS-046",
     "vision": "Foundry helps people become who they are capable of becoming."

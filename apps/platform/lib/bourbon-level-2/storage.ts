@@ -33,6 +33,9 @@ export type Level2Progress = {
   flightsCompleted: string[];
   gridsCompleted: string[];
   journalEntries: number;
+  blindsCompleted: string[];
+  programWeeksCompleted: number[];
+  hostNightsCompleted: string[];
   checkpointReady: boolean;
   updatedAt: string;
 };
@@ -42,6 +45,7 @@ const KEYS = {
   grids: 'foundry-bourbon-l2-grids',
   journal: 'foundry-bourbon-l2-journal',
   progress: 'foundry-bourbon-l2-progress',
+  blinds: 'foundry-bourbon-l2-blinds',
 } as const;
 
 function read<T>(key: string, fallback: T): T {
@@ -57,14 +61,38 @@ function write(key: string, value: unknown) {
   localStorage.setItem(key, JSON.stringify(value));
 }
 
+export type BlindSession = {
+  presetId: string;
+  ranks: string[];
+  notes: string;
+  completedAt: string;
+};
+
+function normalizeProgress(raw: Partial<Level2Progress>, journalLen: number): Level2Progress {
+  return {
+    flightsCompleted: raw.flightsCompleted ?? [],
+    gridsCompleted: raw.gridsCompleted ?? [],
+    journalEntries: journalLen,
+    blindsCompleted: raw.blindsCompleted ?? [],
+    programWeeksCompleted: raw.programWeeksCompleted ?? [],
+    hostNightsCompleted: raw.hostNightsCompleted ?? [],
+    checkpointReady: raw.checkpointReady ?? false,
+    updatedAt: raw.updatedAt ?? new Date().toISOString(),
+  };
+}
+
 function recomputeCheckpoint(p: Level2Progress): Level2Progress {
   const flights = p.flightsCompleted.length;
   const grids = p.gridsCompleted.length;
   const journal = p.journalEntries;
+  const blinds = p.blindsCompleted.length;
+  const programWeeks = p.programWeeksCompleted.length;
   p.checkpointReady =
     flights >= 3 ||
     (flights >= 2 && grids >= 2) ||
-    (flights >= 2 && grids >= 1 && journal >= 3);
+    (flights >= 2 && grids >= 1 && journal >= 3) ||
+    (programWeeks >= 6 && flights >= 2) ||
+    (blinds >= 2 && flights >= 1 && grids >= 1);
   p.updatedAt = new Date().toISOString();
   return p;
 }
@@ -118,15 +146,37 @@ function markGridComplete(presetId: string) {
 
 export function getLevel2Progress(): Level2Progress {
   const journal = read<(JournalEntryTemplate & { savedAt: string })[]>(KEYS.journal, []);
-  const base = read<Level2Progress>(KEYS.progress, {
-    flightsCompleted: [],
-    gridsCompleted: [],
-    journalEntries: journal.length,
-    checkpointReady: false,
-    updatedAt: new Date().toISOString(),
-  });
-  base.journalEntries = journal.length;
+  const base = normalizeProgress(read<Partial<Level2Progress>>(KEYS.progress, {}), journal.length);
   return recomputeCheckpoint(base);
+}
+
+export function saveBlindSession(session: BlindSession) {
+  const all = read<BlindSession[]>(KEYS.blinds, []);
+  all.unshift(session);
+  write(KEYS.blinds, all.slice(0, 50));
+  markBlindComplete(session.presetId);
+}
+
+export function getBlindSessions(): BlindSession[] {
+  return read<BlindSession[]>(KEYS.blinds, []);
+}
+
+function markBlindComplete(presetId: string) {
+  const p = getLevel2Progress();
+  if (!p.blindsCompleted.includes(presetId)) p.blindsCompleted.push(presetId);
+  write(KEYS.progress, recomputeCheckpoint(p));
+}
+
+export function markProgramWeekComplete(week: number) {
+  const p = getLevel2Progress();
+  if (!p.programWeeksCompleted.includes(week)) p.programWeeksCompleted.push(week);
+  write(KEYS.progress, recomputeCheckpoint(p));
+}
+
+export function markHostNightComplete(kitId: string) {
+  const p = getLevel2Progress();
+  if (!p.hostNightsCompleted.includes(kitId)) p.hostNightsCompleted.push(kitId);
+  write(KEYS.progress, recomputeCheckpoint(p));
 }
 
 export function getLevel2Stats() {
@@ -135,8 +185,12 @@ export function getLevel2Stats() {
     flights: p.flightsCompleted.length,
     grids: p.gridsCompleted.length,
     journal: p.journalEntries,
+    blinds: p.blindsCompleted.length,
+    programWeeks: p.programWeeksCompleted.length,
+    hostNights: p.hostNightsCompleted.length,
     sessions: getTastingSessions().length,
     gridSessions: getGridSessions().length,
+    blindSessions: getBlindSessions().length,
     checkpointReady: p.checkpointReady,
   };
 }

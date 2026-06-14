@@ -9,7 +9,7 @@ export type TastingFlight = {
   steps: string[];
   whatToNotice: string;
   academySlug?: string;
-  group?: 'core' | 'category' | 'proof' | 'craft' | 'blind';
+  group?: 'core' | 'category' | 'proof' | 'craft' | 'blind' | 'host' | 'advanced';
 };
 
 export const FLIGHT_GROUPS: { id: NonNullable<TastingFlight['group']>; label: string }[] = [
@@ -18,6 +18,8 @@ export const FLIGHT_GROUPS: { id: NonNullable<TastingFlight['group']>; label: st
   { id: 'proof', label: 'Proof & BiB' },
   { id: 'craft', label: 'Craft & finish' },
   { id: 'blind', label: 'Blind prep' },
+  { id: 'host', label: 'Host nights' },
+  { id: 'advanced', label: 'Advanced — age & splurge' },
 ];
 
 export const TASTING_FLIGHTS: TastingFlight[] = [
@@ -261,6 +263,155 @@ export const TASTING_FLIGHTS: TastingFlight[] = [
     ],
     whatToNotice: 'Wheat softens — but proof and craft scale still move the pour dramatically.',
     academySlug: 'craft-kentucky-tasting',
+  },
+  {
+    id: 'buffalo-trace-universe',
+    title: 'Buffalo Trace universe',
+    tagline: 'BT · Eagle Rare · E.H. Taylor · Weller — same campus, four tiers.',
+    variable: 'Buffalo Trace house progression',
+    group: 'advanced',
+    bottleSlugs: ['buffalo-trace', 'eagle-rare', 'eh-taylor-small-batch', 'weller-special-reserve'],
+    steps: [
+      'Pour BT baseline — NAS gateway.',
+      'Eagle Rare age statement — note oak vs BT.',
+      'E.H. Taylor BiB — collector tier transparency.',
+      'Weller wheated fork — lottery vs MSRP story after pour.',
+    ],
+    whatToNotice: 'Same mash family branches — age, proof, and wheated fork move the pour.',
+    academySlug: 'house-universe-flights',
+  },
+  {
+    id: 'four-roses-ladder',
+    title: 'Four Roses ladder',
+    tagline: 'Yellow → Small Batch → Single Barrel — recipe blending literacy.',
+    variable: 'Four Roses house progression',
+    group: 'core',
+    bottleSlugs: ['four-roses-yellow', 'four-roses-small-batch', 'four-roses-single-barrel', 'bulleit-bourbon'],
+    steps: [
+      'Line up Yellow, Small Batch, Single Barrel.',
+      'Note proof rise and fruit-spice balance.',
+      'Bulleit as sourced high-rye cousin — optional fourth.',
+    ],
+    whatToNotice: 'Ten-recipe system hidden in blends — single barrel reveals one recipe personality.',
+    academySlug: 'house-universe-flights',
+  },
+  {
+    id: 'old-forester-ladder',
+    title: 'Old Forester proof ladder',
+    tagline: '86 → 100 → 1920 — banana bread at rising heat.',
+    variable: 'Old Forester proof progression',
+    group: 'proof',
+    bottleSlugs: ['old-forester-86', 'old-forester-100', 'old-forester-1920', 'buffalo-trace'],
+    steps: [
+      'Pour OF86, OF100, OF1920 — tiny pours on 1920.',
+      'BT as non-Forester baseline at 90 proof.',
+      'Water one drop on 1920 only.',
+    ],
+    whatToNotice: 'Same house DNA — proof changes delivery, not just heat.',
+    academySlug: 'house-proof-ladders',
+  },
+  {
+    id: 'barton-1792-ladder',
+    title: 'Barton 1792 ladder',
+    tagline: 'Small Batch → BiB → Full Proof — rye heat climb.',
+    variable: 'Barton 1792 progression',
+    group: 'proof',
+    bottleSlugs: ['1792-small-batch', '1792-bib', '1792-full-proof', 'wild-turkey-101'],
+    steps: [
+      'Three Barton pours — note proof and spice rise.',
+      'WT101 as high-rye peer comparison.',
+    ],
+    whatToNotice: 'BiB locks 100 proof — Full Proof shows uncut Barton fire.',
+    academySlug: 'house-proof-ladders',
+  },
+  {
+    id: 'age-statement-flight',
+    title: 'Age statement flight',
+    tagline: 'Knob Creek 9 · Eagle Rare 10 · Russell\'s 10 · Blue Run 8 — time in oak.',
+    variable: 'Age stated vs NAS',
+    group: 'advanced',
+    bottleSlugs: ['knob-creek-9', 'eagle-rare', 'russells-reserve-10', 'blue-run-8-year'],
+    steps: [
+      'Read age on each label before nosing.',
+      'Score oak vs youth — not age worship.',
+      'Compare Blue Run craft age to Eagle Rare major age.',
+    ],
+    whatToNotice: 'Age is one variable — over-oak and NAS polish both happen.',
+    academySlug: 'age-vs-proof-debate',
+  },
+  {
+    id: 'host-skeptic-flight',
+    title: 'Host skeptic flight',
+    tagline: 'Maker\'s · BT · Jack — three skeptics, three gateways.',
+    variable: 'Host-friendly pours at gentle proof',
+    group: 'host',
+    bottleSlugs: ['makers-mark', 'buffalo-trace', 'jack-daniels-old-no-7'],
+    steps: [
+      'Pour small — ½ oz max for skeptics.',
+      'One word per pour — no lecture until after rank.',
+      'Reveal categories on Jack — Tennessee process one sentence.',
+    ],
+    whatToNotice: 'Host wins when someone says "I didn\'t know I liked that."',
+    academySlug: 'blind-hosting-etiquette',
+  },
+  {
+    id: 'splurge-worth-it',
+    title: 'Splurge worth-it test',
+    tagline: 'BT · Eagle Rare · Peerless · Blue Run 8 — blind rank vs price.',
+    variable: 'Splurge vs value — palate jury',
+    group: 'advanced',
+    bottleSlugs: ['buffalo-trace', 'eagle-rare', 'peerless-bourbon', 'blue-run-8-year'],
+    steps: [
+      'Bag all four — rank blind before price reveal.',
+      'Write splurge justification in one sentence if #1 is >$60.',
+    ],
+    whatToNotice: 'Splurge must beat $30 BT on your palate to stay on shelf.',
+    academySlug: 'splurge-worth-it-test',
+  },
+  {
+    id: 'cocktail-vs-sip',
+    title: 'Cocktail vs sip flight',
+    tagline: 'Rittenhouse · Evan Black · WT101 — Manhattan vs neat homework.',
+    variable: 'Use case — cocktail backbone vs sipper',
+    group: 'host',
+    bottleSlugs: ['rittenhouse-rye', 'evan-williams-black', 'wild-turkey-101', 'bulleit-bourbon'],
+    steps: [
+      'Neat sip each — score 1–10.',
+      'Mix one Manhattan with Rittenhouse — re-score sipper vs cocktail role.',
+      'Write which bottle earns shelf space for which job.',
+    ],
+    whatToNotice: 'BiB rye often beats sip score but wins cocktail — both belong.',
+    academySlug: 'cocktail-pour-vs-neat',
+  },
+  {
+    id: 'makers-46-flight',
+    title: 'Maker\'s family flight',
+    tagline: 'Maker\'s · Maker\'s 46 · Woodford Reserve — wheat and wood treatment.',
+    variable: 'Wheated + wood treatment',
+    group: 'craft',
+    bottleSlugs: ['makers-mark', 'makers-mark-46', 'woodford-reserve', 'larceny'],
+    steps: [
+      'Standard Maker\'s baseline.',
+      '46 stave finish vs Woodford pot still texture.',
+      'Larceny as Heaven Hill wheated compare.',
+    ],
+    whatToNotice: 'Wheat softens — wood treatment and house yeast still diverge.',
+    academySlug: 'finish-tasting-lab',
+  },
+  {
+    id: 'tennessee-rye-bourbon-five',
+    title: 'TN · rye · bourbon five-way',
+    tagline: 'Full American whiskey category spread in one session.',
+    variable: 'Category + proof spread',
+    group: 'category',
+    bottleSlugs: ['buffalo-trace', 'rittenhouse-rye', 'jack-daniels-old-no-7', 'wild-turkey-101', 'george-dickel-no-8'],
+    steps: [
+      'Pour five — read label category before each nose.',
+      'Rank by preference — write category of winner.',
+      'One paragraph: grain vs process vs proof.',
+    ],
+    whatToNotice: 'Five bottles, three categories, multiple houses — organize before opinion.',
+    academySlug: 'rye-and-tennessee-cousins',
   },
 ];
 
