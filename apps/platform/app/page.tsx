@@ -73,6 +73,19 @@ export default function ConsumerHomePage() {
         </Link>
       </section>
 
+      <section className="foundry-card" style={{ marginTop: 20, padding: 24 }}>
+        <p className="foundry-eyebrow">Company Foundry</p>
+        <h2 className="foundry-h1" style={{ fontSize: 28, marginTop: 6 }}>
+          Product & IP Inventory
+        </h2>
+        <p className="foundry-lead" style={{ fontSize: 15, marginTop: 10, maxWidth: 760 }}>
+          See the full company portfolio in one operating picture: readiness, source repositories, customer problem, remaining build work, revenue scenarios, replacement value, risk-adjusted IP value, and commercial potential.
+        </p>
+        <Link href="/inventory" className="foundry-link-success" style={{ display: 'inline-block', marginTop: 14, fontSize: 14 }}>
+          Open company inventory →
+        </Link>
+      </section>
+
       <p style={{ marginTop: 32, fontSize: 12, color: 'var(--foundry-text-dim)' }}>
         <Link href="/trinity" className="foundry-faint">
           The Trinity
@@ -84,6 +97,10 @@ export default function ConsumerHomePage() {
         {' · '}
         <Link href="/future-proof" className="foundry-faint">
           Future-Proof assessment
+        </Link>
+        {' · '}
+        <Link href="/inventory" className="foundry-faint">
+          Company inventory
         </Link>
       </p>
     </main>
