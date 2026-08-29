@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { companyInventory, inventorySummary, inventoryValuationDoctrine } from "../../lib/company-inventory";
 
 const money = (value: number) => {
@@ -8,7 +9,7 @@ const money = (value: number) => {
 
 const range = (low: number, high: number) => `${money(low)}–${money(high)}`;
 
-const card: React.CSSProperties = {
+const card: CSSProperties = {
   border: "1px solid rgba(148,163,184,.28)",
   borderRadius: 18,
   background: "rgba(15,23,42,.72)",
@@ -16,7 +17,7 @@ const card: React.CSSProperties = {
   boxShadow: "0 10px 30px rgba(2,6,23,.16)",
 };
 
-const label: React.CSSProperties = {
+const label: CSSProperties = {
   color: "#94a3b8",
   textTransform: "uppercase",
   letterSpacing: ".08em",
