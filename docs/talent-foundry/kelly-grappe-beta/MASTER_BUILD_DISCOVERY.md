@@ -48,6 +48,27 @@ Do not create a hidden political-belief or ideological screening test. Assessmen
 
 The software may organize applications and surface factual, job-related evidence for human review. Final political-campaign hiring decisions and any comparative candidate ranking should remain with authorized campaign humans rather than an AI-generated political preference score.
 
+## Discovery Answer 02 — Real-world availability and operating pattern
+
+The ideal first hire is based in Little Rock or close enough to Little Rock to perform regular in-person work at campaign headquarters.
+
+The role requires unusually high schedule flexibility because campaign operations change quickly. Desired operating pattern:
+
+- Approximately 30–40 paid hours per week initially, with workload determined by actual campaign needs and available funding.
+- Regular day-to-day presence and work at the Little Rock campaign office.
+- Ability to drive Kelly when needed, subject to appropriate license, insurance, campaign policy, and safety requirements.
+- Ability to travel to campaign events and help with setup, execution, and breakdown.
+- Ability to answer campaign phone calls and route questions or provide approved responses appropriately.
+- Ability to help motivate, coordinate, and mobilize volunteers.
+- Flexibility for evenings, weekends, changing schedules, travel, and occasional overnight campaign trips.
+- Comfortable with campaign rhythms in which some periods may be very intense while other days may intentionally be lighter or off.
+- Desire to become deeply embedded in the campaign rather than treating the internship as a narrow desk assignment.
+- As Election Day approaches, the campaign expects workload and operational intensity to increase substantially if mutually workable and financially sustainable.
+
+The product should capture availability factually rather than telling applicants which availability pattern will score best. Relevant fields can include location/proximity, earliest start date, typical weekly availability, transportation/driving ability, evening/weekend availability, travel availability, overnight-travel availability, and maximum desired weekly hours.
+
+Important employment-design note: the application and eventual scheduling system should distinguish enthusiasm from lawful/sustainable work scheduling. Paid interns should have paid hours tracked, and the campaign should not design the recruiting experience to reward unpaid off-the-clock labor or imply that extreme hours are required to prove commitment.
+
 ## Emerging product architecture
 
 Beta #1: Kelly Grappe campaign paid-intern + volunteer pipeline.
@@ -56,4 +77,4 @@ Commercial product: configurable employer onboarding + reusable recruiting/asses
 
 ## Next discovery question
 
-Determine the real-world schedule and availability requirements for the first campaign hire, without revealing a preferred answer inside the candidate question.
+Determine what observable qualities would make Steve say, after one week of working with someone, “This is exactly the person I was looking for.”
