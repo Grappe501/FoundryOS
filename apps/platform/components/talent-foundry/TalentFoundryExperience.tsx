@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { kellyCampaign, kellyCopy } from '../../lib/talent-foundry/campaigns/kelly';
 import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/doors';
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
@@ -19,6 +19,7 @@ import type {
   WillingnessChoice,
 } from '../../lib/talent-foundry/types';
 import { KellyVideoStage } from './KellyVideoStage';
+import { ShareQrTakeover } from './ShareQrTakeover';
 import { ScenarioRunner } from './ScenarioRunner';
 import { OpeningScreens } from './screens/OpeningScreens';
 import {
@@ -84,6 +85,8 @@ export function TalentFoundryExperience() {
   const [idRetry, setIdRetry] = useState<string | null>(null);
   const [continueSaving, setContinueSaving] = useState(false);
   const [continueRetry, setContinueRetry] = useState<string | null>(null);
+  const [shareOpen, setShareOpen] = useState(false);
+  const closeShare = useCallback(() => setShareOpen(false), []);
 
   useEffect(() => {
     const loaded = loadSession(kellyCampaign);
@@ -404,22 +407,34 @@ export function TalentFoundryExperience() {
 
   return (
     <>
-      <button
-        type="button"
-        className="tf-reset"
-        onClick={() => {
-          setChangeText('');
-          setCommitmentGrace(false);
-          setRevisionAnswer(null);
-          setRevisionText('');
-          setIdForm(emptyIdentity);
-          setIdErrors({});
-          setIdRetry(null);
-          go(resetSession(kellyCampaign));
-        }}
-      >
-        Start over
-      </button>
+      <nav className="tf-nav" aria-label="Talent Foundry">
+        <button
+          type="button"
+          className="tf-nav-share"
+          aria-haspopup="dialog"
+          aria-expanded={shareOpen}
+          onClick={() => setShareOpen(true)}
+        >
+          Share
+        </button>
+        <button
+          type="button"
+          className="tf-reset"
+          onClick={() => {
+            setChangeText('');
+            setCommitmentGrace(false);
+            setRevisionAnswer(null);
+            setRevisionText('');
+            setIdForm(emptyIdentity);
+            setIdErrors({});
+            setIdRetry(null);
+            go(resetSession(kellyCampaign));
+          }}
+        >
+          Start over
+        </button>
+      </nav>
+      <ShareQrTakeover open={shareOpen} onClose={closeShare} />
       <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}`}>
         <OpeningScreens
           stateId={session.stateId}

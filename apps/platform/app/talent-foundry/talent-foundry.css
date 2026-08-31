@@ -36,7 +36,7 @@ body:has(.tf) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: max(28px, env(safe-area-inset-top)) 22px max(28px, env(safe-area-inset-bottom));
+  padding: max(64px, calc(env(safe-area-inset-top) + 52px)) 22px max(28px, env(safe-area-inset-bottom));
   max-width: 440px;
   width: 100%;
   margin: 0 auto;
@@ -46,7 +46,7 @@ body:has(.tf) {
   .tf-stage {
     justify-content: center;
     max-width: 520px;
-    padding-top: 64px;
+    padding-top: 88px;
     padding-bottom: 64px;
   }
 }
@@ -214,10 +214,40 @@ body:has(.tf) {
   }
 }
 
-.tf-reset {
+.tf-nav {
   position: absolute;
-  top: max(12px, env(safe-area-inset-top));
-  right: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: max(10px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 8px max(16px, env(safe-area-inset-left));
+  pointer-events: none;
+}
+
+.tf-nav > * {
+  pointer-events: auto;
+}
+
+.tf-nav-share {
+  appearance: none;
+  border: 1px solid var(--tf-line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--tf-ink);
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.tf-reset {
   border: 0;
   background: transparent;
   color: var(--tf-faint);
@@ -227,6 +257,133 @@ body:has(.tf) {
   text-transform: uppercase;
   cursor: pointer;
   min-height: 44px;
+}
+
+.tf-share {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.tf-share-backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  padding: 0;
+  background: rgba(7, 7, 10, 0.72);
+  cursor: pointer;
+}
+
+.tf-share-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: max(20px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(20px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  background: var(--tf-bg);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.tf-share-title {
+  font-family: var(--foundry-font-display, "Instrument Serif", Georgia, serif);
+  font-size: clamp(1.55rem, 7vw, 2.4rem);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.tf-share-qr-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 390px);
+  max-width: 100%;
+  min-height: 0;
+}
+
+.tf-share-qr {
+  display: block;
+  width: min(100%, 72svh, calc(100svh - 260px));
+  height: auto;
+  max-width: 100%;
+  max-height: min(390px, calc(100svh - 260px));
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 18px;
+  padding: 6%;
+  box-sizing: border-box;
+}
+
+.tf-share-lead {
+  font-size: 1.15rem;
+  margin: 16px 0 6px;
+  text-align: center;
+}
+
+.tf-share-rule {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--tf-gold);
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.tf-share-status {
+  font-size: 0.9rem;
+  color: var(--tf-muted);
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.tf-share-actions {
+  width: min(100%, 390px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tf-share-actions .tf-btn {
+  text-align: center;
+}
+
+@media (max-width: 390px) {
+  .tf-share-title {
+    margin-bottom: 12px;
+  }
+
+  .tf-share-qr {
+    width: min(100%, calc(100vw - 40px), calc(100svh - 248px));
+    max-height: calc(100svh - 248px);
+  }
+}
+
+@media (max-width: 320px) {
+  .tf-share-panel {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .tf-share-title {
+    font-size: 1.35rem;
+  }
+
+  .tf-share-qr {
+    width: min(100%, calc(100vw - 24px), calc(100svh - 236px));
+    max-height: calc(100svh - 236px);
+  }
 }
 
 .tf-shell {
@@ -249,7 +406,7 @@ body:has(.tf) {
 
 .tf-stage-flow {
   justify-content: flex-start;
-  padding-top: max(56px, calc(env(safe-area-inset-top) + 44px));
+  padding-top: max(72px, calc(env(safe-area-inset-top) + 56px));
   overflow-y: auto;
 }
 
@@ -260,6 +417,7 @@ body:has(.tf) {
 .tf-btn:focus-visible,
 .tf-video-ctl:focus-visible,
 .tf-door:focus-visible,
+.tf-nav-share:focus-visible,
 .tf-reset:focus-visible,
 .tf-field:focus-visible,
 .tf-input:focus-visible {
