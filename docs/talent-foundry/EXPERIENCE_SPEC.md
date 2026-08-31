@@ -227,6 +227,18 @@ Legal: skip optional doors. Skipping does **not** reduce eligibility except Key 
 - If asset missing: still frame + short written greeting from config.
 - Advance: after play or “continue.”
 
+**Approved video asset contract (do not invent the file):**
+
+| Item | Value |
+|------|--------|
+| File | `apps/platform/public/talent-foundry/kelly-grappe-intro.mp4` |
+| URL once dropped in | `/talent-foundry/kelly-grappe-intro.mp4` |
+| Config switch | `kellyCampaign.kellyVideoUrl` in `apps/platform/lib/talent-foundry/campaigns/kelly.ts` |
+| Format | H.264 MP4, ~30 seconds, phone-first (9:16 source preferred; desktop crops to 16:10) |
+| Optional poster | `apps/platform/public/talent-foundry/kelly-grappe-intro.jpg` |
+| Optional captions | `apps/platform/public/talent-foundry/kelly-grappe-intro.vtt` |
+| Transcript | already in `kellyCopy.kellyScript` — keep in sync with the spoken words |
+
 ### `volunteer_commitment`
 
 - “This work is real. It starts as volunteering.”

@@ -4,6 +4,12 @@ export const kellyCampaign: CampaignConfig = {
   id: 'kelly',
   sessionKey: 'tf.kelly.v1',
   implementedThrough: 'handoff',
+  // Drop the approved 30s direct-to-camera MP4 at
+  // apps/platform/public/talent-foundry/kelly-grappe-intro.mp4
+  // then set this to "/talent-foundry/kelly-grappe-intro.mp4".
+  // Optional poster: /talent-foundry/kelly-grappe-intro.jpg
+  // Optional captions: /talent-foundry/kelly-grappe-intro.vtt
+  // Transcript already lives in kellyCopy.kellyScript. Do not invent a fake video.
   kellyVideoUrl: null,
   flags: {
     layer2Enabled: false,

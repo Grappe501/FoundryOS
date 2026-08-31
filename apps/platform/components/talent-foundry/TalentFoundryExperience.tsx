@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { kellyCampaign, kellyCopy } from '../../lib/talent-foundry/campaigns/kelly';
 import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/doors';
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
-import { advanceSession, completeOptionalDoor, excerptText, patchSession } from '../../lib/talent-foundry/journey';
+import { advanceSession, completeOptionalDoor, createSession, excerptText, patchSession } from '../../lib/talent-foundry/journey';
 import { pickMission, suggestPathway } from '../../lib/talent-foundry/routing';
 import { createRun } from '../../lib/talent-foundry/scenario-engine';
 import { loadSession, resetSession, saveSession } from '../../lib/talent-foundry/session';
@@ -72,7 +72,8 @@ function ensureRun(session: TalentFoundrySession, scenarioId: string): ScenarioR
 }
 
 export function TalentFoundryExperience() {
-  const [session, setSession] = useState<TalentFoundrySession | null>(null);
+  const [session, setSession] = useState<TalentFoundrySession>(() => createSession(kellyCampaign));
+  const [hydrated, setHydrated] = useState(false);
   const [changeText, setChangeText] = useState('');
   const [commitmentGrace, setCommitmentGrace] = useState(false);
   const [revisionAnswer, setRevisionAnswer] = useState<'yes' | 'no' | null>(null);
@@ -105,11 +106,13 @@ export function TalentFoundryExperience() {
         startWhen: loaded.identity.startWhen,
       });
     }
+    setHydrated(true);
   }, []);
 
   useEffect(() => {
-    if (session) saveSession(kellyCampaign, session);
-  }, [session]);
+    if (!hydrated) return;
+    saveSession(kellyCampaign, session);
+  }, [hydrated, session]);
 
   useEffect(() => {
     if (session?.stateId !== 'key_one') return;
@@ -122,10 +125,6 @@ export function TalentFoundryExperience() {
   }, [session?.stateId]);
 
   const acknowledgment = useMemo(() => excerptText(changeText) || 'Even the pause says something.', [changeText]);
-
-  if (!session) {
-    return <div className="tf-stage" aria-hidden />;
-  }
 
   const go = (next: TalentFoundrySession) => setSession(next);
   const continueSpine = () => go(advanceSession(session, kellyCampaign));
