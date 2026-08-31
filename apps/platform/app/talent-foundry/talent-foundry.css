@@ -416,6 +416,12 @@ body:has(.tf) {
   margin-bottom: 18px;
 }
 
+@media (max-width: 360px) {
+  .tf-doors {
+    grid-template-columns: 1fr;
+  }
+}
+
 .tf-door {
   min-height: 96px;
   border: 1px solid var(--tf-line);
@@ -477,7 +483,7 @@ body:has(.tf) {
   background: rgba(255, 255, 255, 0.03);
   color: var(--tf-ink);
   font: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   letter-spacing: 0;
   text-transform: none;
   padding: 12px 14px;

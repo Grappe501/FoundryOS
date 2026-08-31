@@ -176,7 +176,18 @@ export function excerptText(value: string, max = 72): string {
   return `${cleaned.slice(0, max - 1).trimEnd()}…`;
 }
 
+const RECOVERABLE_STATES = new Set<string>([
+  ...P0_SPINE,
+  'key_one',
+  'door_room',
+  'door_call',
+  'door_breakdown',
+  'door_ask',
+  'opening_hold',
+]);
+
 export function migrateSessionState(stateId: JourneyStateId): JourneyStateId {
   if (stateId === 'opening_hold') return 'kelly_video';
+  if (!RECOVERABLE_STATES.has(stateId)) return 'entry';
   return stateId;
 }

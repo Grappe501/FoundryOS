@@ -591,6 +591,28 @@ export function TalentFoundryExperience() {
             mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
           />
         ) : null}
+
+        {(session.stateId === 'youre_in' && !session.identity) ||
+        ((session.stateId === 'mission_one' || session.stateId === 'handoff') && !session.missionId) ? (
+          <div className="tf-hold">
+            <p className="tf-kicker">Hold</p>
+            <h1 className="tf-display tf-display-sm">This step needs a clean start.</h1>
+            <p className="tf-body">Your progress on this phone got interrupted. Nothing was lost on the campaign side if you already stepped in.</p>
+            <div className="tf-actions">
+              <button
+                type="button"
+                className="tf-btn tf-btn-primary"
+                onClick={() => {
+                  setChangeText('');
+                  setIdForm(emptyIdentity);
+                  go(resetSession(kellyCampaign));
+                }}
+              >
+                Start over
+              </button>
+            </div>
+          </div>
+        ) : null}
       </div>
     </>
   );

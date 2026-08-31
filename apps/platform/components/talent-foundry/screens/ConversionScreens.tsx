@@ -46,6 +46,8 @@ export function IdentifyFormScreen({
             className="tf-input"
             name="firstName"
             autoComplete="given-name"
+            autoCapitalize="words"
+            enterKeyHint="next"
             value={values.firstName}
             onChange={(e) => onChange('firstName', e.target.value)}
           />
@@ -57,6 +59,8 @@ export function IdentifyFormScreen({
             className="tf-input"
             name="lastName"
             autoComplete="family-name"
+            autoCapitalize="words"
+            enterKeyHint="next"
             value={values.lastName}
             onChange={(e) => onChange('lastName', e.target.value)}
           />
@@ -94,6 +98,8 @@ export function IdentifyFormScreen({
             name="zip"
             inputMode="numeric"
             autoComplete="postal-code"
+            enterKeyHint="next"
+            maxLength={12}
             value={values.zip}
             onChange={(e) => onChange('zip', e.target.value)}
           />
