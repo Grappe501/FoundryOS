@@ -87,6 +87,21 @@ export type TalentFoundryFlags = {
   layer3Enabled: boolean;
 };
 
+export type ScenarioDecision = {
+  beatId: string;
+  choiceId: string;
+  choiceLabel: string;
+  reasoning?: string;
+  order: number;
+  at: string;
+};
+
+export type ScenarioRunState = {
+  scenarioId: string;
+  beatIndex: number;
+  decisions: ScenarioDecision[];
+};
+
 export type TalentFoundrySession = {
   v: 1;
   campaignId: string;
@@ -94,6 +109,7 @@ export type TalentFoundrySession = {
   startedAt: string;
   evidence: EvidenceItem[];
   flags: TalentFoundryFlags;
+  runs: Record<string, ScenarioRunState>;
   identity: IdentityRecord | null;
   pathwayId: string | null;
   missionId: string | null;
@@ -105,10 +121,61 @@ export type WillingnessChoice = {
   willingToAct: boolean;
 };
 
+export type CommitmentChoice = {
+  id: VolunteerCommitment;
+  label: string;
+};
+
+export type ScenarioChoice = {
+  id: string;
+  label: string;
+};
+
+export type ScenarioPerson = {
+  name: string;
+  line: string;
+};
+
+export type ScenarioBeat = {
+  id: string;
+  kind: 'reveal' | 'decision' | 'complication' | 'prompt';
+  kicker?: string;
+  title?: string;
+  body?: string;
+  lines?: string[];
+  people?: ScenarioPerson[];
+  choices?: ScenarioChoice[];
+  allowReasoning?: boolean;
+  reasoningLabel?: string;
+  dimensions?: EvidenceDimension[];
+};
+
+export type ScenarioDef = {
+  id: string;
+  title: string;
+  beats: ScenarioBeat[];
+};
+
+export type ConsequenceCard = {
+  title: string;
+  body: string;
+};
+
+export type OptionalDoorId = 'room' | 'call' | 'breakdown' | 'ask';
+
+export type OptionalDoor = {
+  id: OptionalDoorId;
+  stateId: Extract<JourneyStateId, 'door_room' | 'door_call' | 'door_breakdown' | 'door_ask'>;
+  title: string;
+  scenarioId: string;
+};
+
 export type CampaignConfig = {
   id: string;
   sessionKey: string;
   implementedThrough: JourneyStateId;
   willingnessChoices: WillingnessChoice[];
+  commitmentChoices: CommitmentChoice[];
+  kellyVideoUrl: string | null;
   flags: Pick<TalentFoundryFlags, 'layer2Enabled' | 'layer3Enabled'>;
 };

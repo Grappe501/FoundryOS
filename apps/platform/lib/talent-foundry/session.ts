@@ -1,5 +1,5 @@
 import type { CampaignConfig, TalentFoundrySession } from './types';
-import { createSession } from './journey';
+import { createSession, migrateSessionState } from './journey';
 
 function isSession(value: unknown, campaignId: string): value is TalentFoundrySession {
   if (!value || typeof value !== 'object') return false;
@@ -13,7 +13,14 @@ export function loadSession(campaign: CampaignConfig): TalentFoundrySession {
     const raw = window.sessionStorage.getItem(campaign.sessionKey);
     if (!raw) return createSession(campaign);
     const parsed: unknown = JSON.parse(raw);
-    if (isSession(parsed, campaign.id)) return parsed;
+    if (!isSession(parsed, campaign.id)) return createSession(campaign);
+    return {
+      ...createSession(campaign, new Date(parsed.startedAt || Date.now())),
+      ...parsed,
+      stateId: migrateSessionState(parsed.stateId),
+      runs: parsed.runs ?? {},
+      flags: { ...createSession(campaign).flags, ...parsed.flags },
+    };
   } catch {
     /* start clean */
   }
