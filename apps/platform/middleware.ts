@@ -19,6 +19,7 @@ const CONSUMER_PREFIXES = [
   '/search',
   '/auth',
   '/api',
+  '/talent-foundry',
   ...FACTORY_CONSUMER_ROUTES,
 ];
 
