@@ -5,11 +5,15 @@ import { kellyCampaign, kellyCopy } from '../../lib/talent-foundry/campaigns/kel
 import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/doors';
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
 import { advanceSession, completeOptionalDoor, excerptText, patchSession } from '../../lib/talent-foundry/journey';
+import { pickMission, suggestPathway } from '../../lib/talent-foundry/routing';
 import { createRun } from '../../lib/talent-foundry/scenario-engine';
 import { loadSession, resetSession, saveSession } from '../../lib/talent-foundry/session';
 import type {
   CommitmentChoice,
+  ConversionState,
+  IdentityRecord,
   OptionalDoor,
+  PaidInterest,
   ScenarioRunState,
   TalentFoundrySession,
   WillingnessChoice,
@@ -20,13 +24,21 @@ import { OpeningScreens } from './screens/OpeningScreens';
 import {
   CommitmentScreen,
   ConsequencesScreen,
-  IdentifyThresholdScreen,
   KeyOneScreen,
   LeadChallengeScreen,
   OptionalDoorsScreen,
   RevisionScreen,
   ScenarioBriefScreen,
 } from './screens/SpineScreens';
+import {
+  AvailabilityScreen,
+  HandoffScreen,
+  IdentifyFormScreen,
+  MissionScreen,
+  OpportunityScreen,
+  PathwayScreen,
+  YoureInScreen,
+} from './screens/ConversionScreens';
 
 const FLOW_STATES = new Set([
   'scenario_volunteers',
@@ -37,7 +49,21 @@ const FLOW_STATES = new Set([
   'door_breakdown',
   'door_ask',
   'identify',
+  'opportunity',
+  'availability',
+  'pathway',
+  'mission_one',
+  'handoff',
 ]);
+
+const emptyIdentity = {
+  firstName: '',
+  lastName: '',
+  phone: '',
+  email: '',
+  zip: '',
+  startWhen: '',
+};
 
 const BRIEF_ID = 'scenario-brief';
 
@@ -51,6 +77,12 @@ export function TalentFoundryExperience() {
   const [commitmentGrace, setCommitmentGrace] = useState(false);
   const [revisionAnswer, setRevisionAnswer] = useState<'yes' | 'no' | null>(null);
   const [revisionText, setRevisionText] = useState('');
+  const [idForm, setIdForm] = useState(emptyIdentity);
+  const [idErrors, setIdErrors] = useState<Record<string, string>>({});
+  const [idSubmitting, setIdSubmitting] = useState(false);
+  const [idRetry, setIdRetry] = useState<string | null>(null);
+  const [continueSaving, setContinueSaving] = useState(false);
+  const [continueRetry, setContinueRetry] = useState<string | null>(null);
 
   useEffect(() => {
     const loaded = loadSession(kellyCampaign);
@@ -62,6 +94,16 @@ export function TalentFoundryExperience() {
       const v = revision.value as { answer?: 'yes' | 'no'; explanation?: string };
       if (v.answer) setRevisionAnswer(v.answer);
       if (v.explanation) setRevisionText(v.explanation);
+    }
+    if (loaded.identity) {
+      setIdForm({
+        firstName: loaded.identity.firstName,
+        lastName: loaded.identity.lastName,
+        phone: loaded.identity.phone,
+        email: loaded.identity.email,
+        zip: loaded.identity.zip,
+        startWhen: loaded.identity.startWhen,
+      });
     }
   }, []);
 
@@ -255,6 +297,89 @@ export function TalentFoundryExperience() {
     );
   };
 
+  const submitIdentify = async (consent: boolean) => {
+    setIdSubmitting(true);
+    setIdRetry(null);
+    setIdErrors({});
+    try {
+      const res = await fetch('/api/talent-foundry/identify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...idForm, consent, session }),
+      });
+      const json = (await res.json()) as {
+        ok?: boolean;
+        error?: string;
+        fields?: Record<string, string>;
+        submissionId?: string;
+        userId?: string | null;
+        workflowIntakeId?: string;
+      };
+      if (!res.ok || !json.ok) {
+        if (json.fields) setIdErrors(json.fields);
+        setIdRetry(
+          json.error === 'validation'
+            ? null
+            : "We couldn't finish that connection yet. Your progress is still here. Try again.",
+        );
+        return;
+      }
+      const identity: IdentityRecord = {
+        ...idForm,
+        submissionId: json.submissionId,
+        userId: json.userId ?? undefined,
+        workflowIntakeId: json.workflowIntakeId,
+      };
+      go(
+        patchSession(session, {
+          stateId: 'youre_in',
+          identity,
+          flags: { identified: true },
+        }),
+      );
+    } catch {
+      setIdRetry("We couldn't finish that connection yet. Your progress is still here. Try again.");
+    } finally {
+      setIdSubmitting(false);
+    }
+  };
+
+  const submitContinue = async () => {
+    setContinueSaving(true);
+    setContinueRetry(null);
+    try {
+      const res = await fetch('/api/talent-foundry/continue', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session }),
+      });
+      const json = (await res.json()) as { ok?: boolean };
+      if (!res.ok || !json.ok) {
+        setContinueRetry("We couldn't finish that connection yet. Your progress is still here. Try again.");
+        return;
+      }
+      go(
+        patchSession(session, {
+          stateId: 'handoff',
+          flags: { missionOneComplete: true },
+          evidence: [
+            {
+              stateId: 'mission_one',
+              kind: 'mission',
+              label: 'First mission',
+              value: session.missionId,
+              dimensions: ['follow_through'],
+            },
+          ],
+        }),
+      );
+    } catch {
+      setContinueRetry("We couldn't finish that connection yet. Your progress is still here. Try again.");
+    } finally {
+      setContinueSaving(false);
+    }
+  };
+
   const doorDef =
     session.stateId === 'door_room'
       ? doorScenarios['door-room']
@@ -288,6 +413,9 @@ export function TalentFoundryExperience() {
           setCommitmentGrace(false);
           setRevisionAnswer(null);
           setRevisionText('');
+          setIdForm(emptyIdentity);
+          setIdErrors({});
+          setIdRetry(null);
           go(resetSession(kellyCampaign));
         }}
       >
@@ -386,7 +514,84 @@ export function TalentFoundryExperience() {
 
         {session.stateId === 'key_one' ? <KeyOneScreen onContinue={finishKey} /> : null}
 
-        {session.stateId === 'identify' ? <IdentifyThresholdScreen /> : null}
+        {session.stateId === 'identify' ? (
+          <IdentifyFormScreen
+            values={idForm}
+            errors={idErrors}
+            submitting={idSubmitting}
+            retryMessage={idRetry}
+            onChange={(field, value) => setIdForm((prev) => ({ ...prev, [field]: value }))}
+            onSubmit={(consent) => void submitIdentify(consent)}
+          />
+        ) : null}
+
+        {session.stateId === 'youre_in' && session.identity ? (
+          <YoureInScreen firstName={session.identity.firstName} onContinue={continueSpine} />
+        ) : null}
+
+        {session.stateId === 'opportunity' ? (
+          <OpportunityScreen
+            onChoose={(paidInterest: PaidInterest) => {
+              go(
+                patchSession(session, {
+                  stateId: 'availability',
+                  conversion: { paidInterest },
+                  evidence: [
+                    {
+                      stateId: 'opportunity',
+                      kind: 'choice',
+                      label: 'Paid opportunity interest',
+                      value: paidInterest,
+                      dimensions: ['availability', 'leadership_desire'],
+                    },
+                  ],
+                }),
+              );
+            }}
+          />
+        ) : null}
+
+        {session.stateId === 'availability' ? (
+          <AvailabilityScreen
+            conversion={session.conversion}
+            onPatch={(patch: Partial<ConversionState>) => go(patchSession(session, { conversion: patch }))}
+            onContinue={() => go(patchSession(session, { stateId: 'pathway' }))}
+          />
+        ) : null}
+
+        {session.stateId === 'pathway' ? (
+          <PathwayScreen
+            conversion={session.conversion}
+            pathwayId={suggestPathway(session.conversion, session.flags)}
+            onToggleArea={(id) => {
+              const areas = session.conversion.areas.includes(id)
+                ? session.conversion.areas.filter((a) => a !== id)
+                : [...session.conversion.areas, id];
+              go(patchSession(session, { conversion: { areas } }));
+            }}
+            onContinue={() => {
+              const pathwayId = suggestPathway(session.conversion, session.flags);
+              const mission = pickMission(session.conversion.areas, pathwayId);
+              go(patchSession(session, { stateId: 'mission_one', pathwayId, missionId: mission.id }));
+            }}
+          />
+        ) : null}
+
+        {session.stateId === 'mission_one' && session.missionId ? (
+          <MissionScreen
+            mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
+            saving={continueSaving}
+            retryMessage={continueRetry}
+            onContinue={() => void submitContinue()}
+          />
+        ) : null}
+
+        {session.stateId === 'handoff' && session.missionId ? (
+          <HandoffScreen
+            areas={session.conversion.areas}
+            mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
+          />
+        ) : null}
       </div>
     </>
   );

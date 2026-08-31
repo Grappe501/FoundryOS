@@ -14,12 +14,14 @@ export function loadSession(campaign: CampaignConfig): TalentFoundrySession {
     if (!raw) return createSession(campaign);
     const parsed: unknown = JSON.parse(raw);
     if (!isSession(parsed, campaign.id)) return createSession(campaign);
+    const fresh = createSession(campaign, new Date(parsed.startedAt || Date.now()));
     return {
-      ...createSession(campaign, new Date(parsed.startedAt || Date.now())),
+      ...fresh,
       ...parsed,
       stateId: migrateSessionState(parsed.stateId),
       runs: parsed.runs ?? {},
-      flags: { ...createSession(campaign).flags, ...parsed.flags },
+      flags: { ...fresh.flags, ...parsed.flags },
+      conversion: { ...fresh.conversion, ...parsed.conversion },
     };
   } catch {
     /* start clean */

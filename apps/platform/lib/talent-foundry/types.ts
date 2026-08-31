@@ -22,6 +22,7 @@ export type JourneyStateId =
   | 'identify'
   | 'youre_in'
   | 'opportunity'
+  | 'availability'
   | 'pathway'
   | 'mission_one'
   | 'handoff'
@@ -102,6 +103,22 @@ export type ScenarioRunState = {
   decisions: ScenarioDecision[];
 };
 
+export type PaidInterest = 'yes' | 'volunteer' | 'both' | 'unsure';
+
+export type ConversionState = {
+  paidInterest: PaidInterest | null;
+  weekly: string | null;
+  times: string[];
+  littleRock: string | null;
+  driving: string | null;
+  travel: string | null;
+  remote: string | null;
+  campus: string;
+  student: boolean;
+  leadership: string | null;
+  areas: string[];
+};
+
 export type TalentFoundrySession = {
   v: 1;
   campaignId: string;
@@ -111,6 +128,7 @@ export type TalentFoundrySession = {
   flags: TalentFoundryFlags;
   runs: Record<string, ScenarioRunState>;
   identity: IdentityRecord | null;
+  conversion: ConversionState;
   pathwayId: string | null;
   missionId: string | null;
 };

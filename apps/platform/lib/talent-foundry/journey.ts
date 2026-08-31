@@ -25,6 +25,12 @@ const P0_SPINE: JourneyStateId[] = [
   'scenario_revision',
   'optional_doors',
   'identify',
+  'youre_in',
+  'opportunity',
+  'availability',
+  'pathway',
+  'mission_one',
+  'handoff',
 ];
 
 const DEFAULT_FLAGS: TalentFoundryFlags = {
@@ -55,6 +61,19 @@ export function createSession(campaign: CampaignConfig, now = new Date()): Talen
     },
     runs: {},
     identity: null,
+    conversion: {
+      paidInterest: null,
+      weekly: null,
+      times: [],
+      littleRock: null,
+      driving: null,
+      travel: null,
+      remote: null,
+      campus: '',
+      student: false,
+      leadership: null,
+      areas: [],
+    },
     pathwayId: null,
     missionId: null,
   };
@@ -84,6 +103,10 @@ export function patchSession(
     evidence?: Omit<EvidenceItem, 'id' | 'at'>[];
     flags?: Partial<TalentFoundryFlags>;
     runs?: TalentFoundrySession['runs'];
+    identity?: TalentFoundrySession['identity'];
+    conversion?: Partial<TalentFoundrySession['conversion']>;
+    pathwayId?: string | null;
+    missionId?: string | null;
   },
   now = new Date(),
 ): TalentFoundrySession {
@@ -94,6 +117,10 @@ export function patchSession(
     evidence: extras.length ? [...session.evidence, ...extras] : session.evidence,
     flags: input.flags ? { ...session.flags, ...input.flags } : session.flags,
     runs: input.runs ?? session.runs,
+    identity: input.identity !== undefined ? input.identity : session.identity,
+    conversion: input.conversion ? { ...session.conversion, ...input.conversion } : session.conversion,
+    pathwayId: input.pathwayId !== undefined ? input.pathwayId : session.pathwayId,
+    missionId: input.missionId !== undefined ? input.missionId : session.missionId,
   };
 }
 

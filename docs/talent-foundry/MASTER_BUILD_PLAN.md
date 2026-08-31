@@ -129,7 +129,15 @@ Goal: a phone user can finish the cinematic journey, become a canonical RedDirt 
 
 ---
 
-### P0-S4 — Identity checkpoint + canonical RedDirt write
+### P0-S4 — Identity checkpoint + canonical RedDirt write — IMPLEMENTED with P0-S5
+
+**Implemented 2026-08-31.** See `REDDIRT_INTEGRATION_AUDIT.md` for live contract.
+
+- Browser → `POST /api/talent-foundry/identify` → RedDirt `POST /api/forms` (`formType: volunteer`, `sourceCampaign: talent-foundry-kelly-beta`)
+- Continue (routing/mission) → `POST /api/talent-foundry/continue` → same `/api/forms` with `talentFoundry.phase: continue` + `submissionId` (updates same Submission/Intake; email must match User)
+- Env: `REDDIRT_FORMS_URL`
+
+### P0-S4 — Identity checkpoint + canonical RedDirt write (original plan)
 
 **Objective:** `WHO ARE YOU?` creates/links the same RedDirt volunteer person used by the public volunteer form.
 

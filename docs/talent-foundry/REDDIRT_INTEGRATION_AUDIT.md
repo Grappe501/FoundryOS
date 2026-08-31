@@ -1,5 +1,22 @@
 # Talent Foundry — RedDirt Integration Audit
 
+## Implementation truth (P0-S4/S5, 2026-08-31)
+
+| Item | Value |
+|------|--------|
+| Source identifier | `talent-foundry-kelly-beta` (`TALENT_FOUNDRY_SOURCE`) |
+| Evidence schema | `{ v: 1, source, campaignId, phase, journeyVersion, startWhen?, flags, evidence[], routing? }` |
+| Identify | Foundry `POST /api/talent-foundry/identify` → RedDirt `POST /api/forms` → `persistFormSubmission` (new User upsert + VolunteerProfile + Commitment + Submission + WorkflowIntake) |
+| Continue | Foundry `POST /api/talent-foundry/continue` → same `/api/forms` with `talentFoundry.phase: "continue"` + `submissionId`. Updates **the same** Submission/Intake if `submission.userId` matches upserted User (email). **No second Commitment/Submission.** |
+| Env | FoundryOS `REDDIRT_FORMS_URL`. Optional `NEXT_PUBLIC_CAMPAIGN_PRIVACY_URL`. |
+| Prisma | **No migration.** JSON on existing columns. |
+| Duplicate identity | Unchanged: `User.upsert` by lowercased email. Repeat identify creates a **new** Submission/Commitment/Intake on that User. Continue never creates a second person. |
+| P0 limits | Continue authorization is email + submissionId (unguessable cuid). No shared HMAC required. Dashboard (S6) not built. |
+
+---
+
+# Talent Foundry — RedDirt Integration Audit
+
 **Audited:** 2026-08-31  
 **Canonical RedDirt path:** `H:\SOSWebsite\RedDirt`  
 **Ignored clone:** `H:\RedDirt` (git remote exists, **zero commits** — do not use)  

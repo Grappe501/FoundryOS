@@ -1,5 +1,17 @@
 # Talent Foundry — Experience Spec
 
+## Implementation truth (P0-S4/S5)
+
+Post-identity spine now implemented:
+
+`identify` → `youre_in` → `opportunity` → `availability` → `pathway` → `mission_one` → `handoff`
+
+Identity POST must succeed before `youre_in`. Routing/mission attach via continue POST to the same RedDirt submission. Missions are deterministic (no OpenAI). Handoff ends P0 automation.
+
+---
+
+# Talent Foundry — Experience Spec
+
 **Campaign config:** `kelly` (Kelly Grappe for Arkansas Secretary of State)  
 **Public route:** `/talent-foundry`  
 **Entry:** QR → `https://foundry-os.netlify.app/talent-foundry`  

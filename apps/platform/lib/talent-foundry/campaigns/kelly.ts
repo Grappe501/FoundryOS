@@ -3,7 +3,7 @@ import type { CampaignConfig, OptionalDoor } from '../types';
 export const kellyCampaign: CampaignConfig = {
   id: 'kelly',
   sessionKey: 'tf.kelly.v1',
-  implementedThrough: 'identify',
+  implementedThrough: 'handoff',
   kellyVideoUrl: null,
   flags: {
     layer2Enabled: false,
@@ -73,9 +73,8 @@ export const kellyCopy = {
   keyBody: "You'll know when you need it.",
   identifyEyebrow: 'A threshold',
   identifyTitle: 'Who are you?',
-  identifyBody:
-    'If you step through, the campaign will know how to find you. That is participation — not a job, not a finalist list, not a promise.',
-  identifyPending: 'The next door writes this into the campaign volunteer record. Not this one.',
+  identifyBody: "You've shown us how you think. Now we'd like to know who you are.",
+  identifyPending: 'The campaign record is written when you step in.',
 };
 
 export const kellyDoors: OptionalDoor[] = [
