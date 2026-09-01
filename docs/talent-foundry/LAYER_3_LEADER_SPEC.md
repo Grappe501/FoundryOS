@@ -69,10 +69,12 @@ Seats: headquarters · small-town recruiting · campus · remote digital · hold
 Funding exists for **one additional paid position**.
 
 1. What work does the campaign need?
-2. Who would you recommend — and how will you develop them?
+2. Who would you recommend — **Why this person?** and **How will you develop them?** as separate fields.
 3. What do the people you did not choose hear?
 
-A thin “why” does not advance. The name is not the test.
+This is a simulation. It is not a real hiring decision and is never applied to a real candidate.
+
+Advancement is deterministic length only: each of `paidWhy` and `paidPlan` must be at least 40 trimmed characters. No AI scoring.
 
 ---
 
@@ -98,7 +100,7 @@ No scores. Staff tags only.
 | Protection without shrinking | people_development, logic_judgment |
 | Development investment | people_development, follow_through, big_picture |
 | Paid-role work needed | big_picture, logic_judgment |
-| Paid-role recommendation | people_development, leadership_readiness, written_communication |
+| Paid-role recommendation `{ who, need, why, developmentPlan }` | people_development, leadership_readiness, written_communication |
 | Plan for people not chosen | people_development, interpersonal, written_communication |
 | Self-coaching | follow_through, logic_judgment, leadership_desire |
 | Layer 3 completed | follow_through, people_development |

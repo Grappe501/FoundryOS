@@ -115,6 +115,9 @@ export const leaderCopy = {
   paidNeedBody: 'What work does the campaign actually need — not who you like most.',
   paidWhoTitle: 'Who would you recommend, and how will you develop them?',
   paidWhoBody: 'The name matters less than the plan. If the plan is thin, the hire is theater.',
+  paidWhyLabel: 'Why this person?',
+  paidPlanLabel: 'How will you develop them?',
+  paidSimulation: 'This is a simulation. It is not a real hiring decision, and it is never applied to a real candidate.',
   leftoverTitle: 'The other three will hear about this.',
   leftoverBody: 'What do you tell the people you did not choose — so they still have a future here?',
   mirrorLines: [

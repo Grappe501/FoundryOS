@@ -11,6 +11,7 @@ import {
   canEnterLayer3,
   createLeaderRun,
   nextLeaderPhase,
+  PAID_REASON_MIN,
   setPlacement,
 } from './engine';
 import { layer3Evidence } from './evidence';
@@ -59,14 +60,44 @@ assert.equal(canAdvanceLeader(run), true, 'invest ready');
 
 run = applyLeaderPatch(run, { phase: 'paid_need', paidNeed: 'statewide' });
 assert.equal(canAdvanceLeader(run), true, 'need chosen');
-assert.equal(canAdvanceLeader(applyLeaderPatch(run, { phase: 'paid_who', paidWho: 'noelle', paidWhy: 'short' })), false, 'thin why blocked');
+assert.equal(PAID_REASON_MIN, 40, 'paid gate is length-only');
+assert.equal(
+  canAdvanceLeader(applyLeaderPatch(run, { phase: 'paid_who', paidWho: 'noelle', paidWhy: 'They work hard.' })),
+  false,
+  'shallow why blocked',
+);
+assert.equal(
+  canAdvanceLeader(
+    applyLeaderPatch(run, {
+      phase: 'paid_who',
+      paidWho: 'noelle',
+      paidWhy: 'She already grows people where they live without needing the room.',
+      paidPlan: 'short',
+    }),
+  ),
+  false,
+  'thin development plan blocked',
+);
+assert.equal(
+  canAdvanceLeader(
+    applyLeaderPatch(run, {
+      phase: 'paid_who',
+      paidWho: 'noelle',
+      paidWhy: 'short',
+      paidPlan: 'Weekly coaching and one stretch assignment that is actually hers to own.',
+    }),
+  ),
+  false,
+  'thin why with a plan still blocked',
+);
 
 run = applyLeaderPatch(run, {
   phase: 'paid_who',
   paidWho: 'noelle',
-  paidWhy: 'The campaign needs someone who already grows people where they live, and a plan to make her visible without making her loud.',
+  paidWhy: 'She already grows people where they live without needing the room.',
+  paidPlan: 'Weekly coaching and one stretch assignment that is actually hers to own.',
 });
-assert.equal(canAdvanceLeader(run), true, 'paid plan ready');
+assert.equal(canAdvanceLeader(run), true, 'paid why + plan ready');
 
 run = applyLeaderPatch(run, { phase: 'leftover', leftoverNote: 'Cam still has a path. Imani has a campus seat that is hers. Wes gets the stretch.' });
 assert.equal(canAdvanceLeader(run), true, 'leftover ready');
@@ -108,6 +139,18 @@ assert.equal(migrateSessionState('layer3_leader'), 'layer3_leader', 'refresh rec
 assert.equal(migrateSessionState('people_rule_close'), 'people_rule_close', 'refresh recovers close');
 assert.equal(layer3HookRendersOn(migrateSessionState('people_rule_close'), true), false, 'recovered close is not the hook');
 assert.equal(afterLayer3Hook(), 'people_rule_close', 'disabled-flag hook still exits to close');
+
+const paid = evidence.find((e) => e.label === 'Paid-role recommendation');
+assert.deepEqual(
+  paid?.value,
+  {
+    who: 'noelle',
+    need: 'statewide',
+    why: 'She already grows people where they live without needing the room.',
+    developmentPlan: 'Weekly coaching and one stretch assignment that is actually hers to own.',
+  },
+  'paid evidence is descriptive only',
+);
 
 const incomplete = layer3Evidence(createLeaderRun(), false).map((e) => e.label);
 assert.equal(incomplete.includes('Layer 3 completed'), false, 'no complete before self-coach');

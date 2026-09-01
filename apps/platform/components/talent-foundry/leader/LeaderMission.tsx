@@ -200,7 +200,8 @@ export function LeaderMission({
   const coachId = useId();
   const correctId = useId();
   const investId = useId();
-  const paidId = useId();
+  const paidWhyId = useId();
+  const paidPlanId = useId();
   const leftoverId = useId();
   const selfId = useId();
   const phase: LeaderPhase = run.phase;
@@ -331,17 +332,25 @@ export function LeaderMission({
         <p className="tf-kicker">{leaderCopy.kicker}</p>
         <h1 className="tf-display tf-display-sm">{leaderCopy.paidWhoTitle}</h1>
         <p className="tf-body">{leaderCopy.paidWhoBody}</p>
+        <p className="tf-latin">{leaderCopy.paidSimulation}</p>
         <Choices
           options={leaderMission.people.map((p) => ({ id: p.id, label: p.name }))}
           selected={run.paidWho}
           onPick={(paidWho) => onChange({ ...run, paidWho })}
         />
         <Field
-          id={paidId}
-          label="Why them — and how you will develop them in the role."
+          id={paidWhyId}
+          label={leaderCopy.paidWhyLabel}
           value={run.paidWhy}
           onChange={(paidWhy) => onChange({ ...run, paidWhy })}
-          rows={4}
+          rows={3}
+        />
+        <Field
+          id={paidPlanId}
+          label={leaderCopy.paidPlanLabel}
+          value={run.paidPlan}
+          onChange={(paidPlan) => onChange({ ...run, paidPlan })}
+          rows={3}
         />
         <Continue run={run} onAdvance={onAdvance} />
       </div>

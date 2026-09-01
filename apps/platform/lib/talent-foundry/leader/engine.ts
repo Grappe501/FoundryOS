@@ -19,6 +19,9 @@ export const LEADER_PHASES: LeaderPhase[] = [
 
 const PHASE_SET = new Set<string>(LEADER_PHASES);
 
+/** Deterministic length only. No scoring. */
+export const PAID_REASON_MIN = 40;
+
 export function createLeaderRun(missionId = leaderMission.id): LeaderRunState {
   return {
     missionId,
@@ -37,6 +40,7 @@ export function createLeaderRun(missionId = leaderMission.id): LeaderRunState {
     paidNeed: null,
     paidWho: null,
     paidWhy: '',
+    paidPlan: '',
     leftoverNote: '',
     selfCoach: '',
     persistAt: 'none',
@@ -121,7 +125,11 @@ export function canAdvanceLeader(run: LeaderRunState): boolean {
     case 'paid_need':
       return Boolean(run.paidNeed);
     case 'paid_who':
-      return Boolean(run.paidWho && run.paidWhy.trim().length >= 12);
+      return Boolean(
+        run.paidWho &&
+          run.paidWhy.trim().length >= PAID_REASON_MIN &&
+          run.paidPlan.trim().length >= PAID_REASON_MIN,
+      );
     case 'leftover':
       return run.leftoverNote.trim().length >= 4;
     case 'self':
@@ -148,6 +156,7 @@ export function normalizeLeaderRun(value: unknown, missionId = leaderMission.id)
     correctNote: typeof raw.correctNote === 'string' ? raw.correctNote : '',
     investPlan: typeof raw.investPlan === 'string' ? raw.investPlan : '',
     paidWhy: typeof raw.paidWhy === 'string' ? raw.paidWhy : '',
+    paidPlan: typeof raw.paidPlan === 'string' ? raw.paidPlan : '',
     leftoverNote: typeof raw.leftoverNote === 'string' ? raw.leftoverNote : '',
     selfCoach: typeof raw.selfCoach === 'string' ? raw.selfCoach : '',
     protectWho: typeof raw.protectWho === 'string' ? raw.protectWho : 'imani',

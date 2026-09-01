@@ -60,6 +60,7 @@ export type LeaderRunState = {
   paidNeed: string | null;
   paidWho: string | null;
   paidWhy: string;
+  paidPlan: string;
   leftoverNote: string;
   selfCoach: string;
   persistAt: LeaderPersistAt;

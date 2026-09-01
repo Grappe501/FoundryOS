@@ -61,7 +61,12 @@ export function layer3Evidence(run: LeaderRunState, completed: boolean): Omit<Ev
   if (run.paidWho) {
     items.push({
       label: 'Paid-role recommendation',
-      value: { who: run.paidWho, why: run.paidWhy.trim() || undefined },
+      value: {
+        who: run.paidWho,
+        need: run.paidNeed ?? undefined,
+        why: run.paidWhy.trim() || undefined,
+        developmentPlan: run.paidPlan.trim() || undefined,
+      },
       dimensions: ['people_development', 'leadership_readiness', 'written_communication'],
       kind: 'decision',
     });
