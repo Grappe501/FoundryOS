@@ -6,11 +6,14 @@ import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/door
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
 import { advanceSession, completeOptionalDoor, createSession, excerptText, patchSession } from '../../lib/talent-foundry/journey';
 import {
+  afterKeyTwo,
+  afterLayer3Hook,
   applyOperatorPatch,
   canEnterLayer2,
   createOperatorRun,
   isTalentFoundryDev,
   layer2Evidence,
+  layer2PublicSurface,
   markLayer2DevSession,
   readLayer2DevIntent,
   seedLayer2DevSession,
@@ -51,7 +54,7 @@ import {
   PathwayScreen,
   YoureInScreen,
 } from './screens/ConversionScreens';
-import { KeyTwoScreen, Layer3HookScreen, OperatorMission } from './operator/OperatorMission';
+import { KeyTwoScreen, Layer3HookScreen, OperatorMission, PeopleRuleCloseScreen } from './operator/OperatorMission';
 
 const FLOW_STATES = new Set([
   'scenario_volunteers',
@@ -696,13 +699,15 @@ export function TalentFoundryExperience() {
           </div>
         ) : null}
 
-        {session.stateId === 'key_two' ? (
-          <KeyTwoScreen onContinue={() => go(patchSession(session, { stateId: 'layer3_leader' }))} />
+        {layer2PublicSurface(session.stateId) === 'key_two' ? (
+          <KeyTwoScreen onContinue={() => go(patchSession(session, { stateId: afterKeyTwo() }))} />
         ) : null}
 
-        {session.stateId === 'layer3_leader' || session.stateId === 'people_rule_close' ? (
-          <Layer3HookScreen onHold={() => go(patchSession(session, { stateId: 'people_rule_close' }))} />
+        {layer2PublicSurface(session.stateId) === 'layer3_hook' ? (
+          <Layer3HookScreen onHold={() => go(patchSession(session, { stateId: afterLayer3Hook() }))} />
         ) : null}
+
+        {layer2PublicSurface(session.stateId) === 'people_rule_close' ? <PeopleRuleCloseScreen /> : null}
 
         {(session.stateId === 'youre_in' && !session.identity) ||
         ((session.stateId === 'mission_one' || session.stateId === 'handoff') && !session.missionId) ? (

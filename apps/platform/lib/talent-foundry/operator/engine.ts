@@ -1,5 +1,5 @@
 import { shiftMission } from '../campaigns/operator/shift';
-import type { TalentFoundrySession } from '../types';
+import type { JourneyStateId, TalentFoundrySession } from '../types';
 import type {
   OperatorMissionDef,
   OperatorPersistAt,
@@ -126,6 +126,29 @@ export function selfLoad(run: OperatorRunState): number {
 
 export function missionComplete(run: OperatorRunState): boolean {
   return run.phase === 'reflect_team' && Boolean(run.reflectTeam.trim() || run.reflectSelf.trim() || run.handoffNote);
+}
+
+export type Layer2PublicSurface = 'operator' | 'key_two' | 'layer3_hook' | 'people_rule_close' | 'none';
+
+/** One screen per post-Layer-2 state. The hook must not also own the close. */
+export function layer2PublicSurface(stateId: JourneyStateId | string): Layer2PublicSurface {
+  if (stateId === 'layer2_operator') return 'operator';
+  if (stateId === 'key_two') return 'key_two';
+  if (stateId === 'layer3_leader') return 'layer3_hook';
+  if (stateId === 'people_rule_close') return 'people_rule_close';
+  return 'none';
+}
+
+export function afterKeyTwo(): JourneyStateId {
+  return 'layer3_leader';
+}
+
+export function afterLayer3Hook(): JourneyStateId {
+  return 'people_rule_close';
+}
+
+export function layer3HookRendersOn(stateId: JourneyStateId | string): boolean {
+  return layer2PublicSurface(stateId) === 'layer3_hook';
 }
 
 export function normalizeOperatorRun(value: unknown, missionId = shiftMission.id): OperatorRunState {

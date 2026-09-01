@@ -371,7 +371,8 @@ P0 minimum: 5 decisions.
 - After identity + handoff, Key One holders see an understated “You found something earlier” control. **Use the key** opens THE SHIFT.
 - `layer2_operator`: 10–15 minute phone-first operating shift (notice, delegate, incomplete information, communication, interruption, people-first, unknown problem, handoff, reflection). Completing sets `keyTwo`.
 - `key_two`: KEY 02 ACQUIRED. Responsibility changes the view.
-- `layer3_leader` / `people_rule_close`: hook only — “Next, the people are yours to develop.” **Not yet.** No unfinished Layer 3 UI.
+- `layer3_leader`: hook only — “Next, the people are yours to develop.” **Not yet.** No unfinished Layer 3 UI.
+- `people_rule_close`: terminal People Rule close. Does **not** re-render the Layer 3 hook.
 
 ---
 

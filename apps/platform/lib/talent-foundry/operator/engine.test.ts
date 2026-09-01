@@ -4,9 +4,13 @@ import { createSession, migrateSessionState } from '../journey';
 import { kellyCampaign } from '../campaigns/kelly';
 import { deriveWorld } from './consequences';
 import {
+  afterKeyTwo,
+  afterLayer3Hook,
   applyOperatorPatch,
   canEnterLayer2,
   createOperatorRun,
+  layer2PublicSurface,
+  layer3HookRendersOn,
   nextOperatorPhase,
   setAssignment,
 } from './engine';
@@ -95,5 +99,22 @@ assert.equal(migrateSessionState('layer3_leader'), 'layer3_leader', 'resume hook
 
 const incomplete = layer2Evidence(createOperatorRun(), false).map((e) => e.label);
 assert.equal(incomplete.includes('KEY 02 ACQUIRED'), false, 'no key two before completion');
+
+assert.ok(labels.includes('KEY 02 ACQUIRED') && labels.includes('Layer 2 completed'), 'layer 2 complete awards key two');
+assert.equal(layer2PublicSurface('key_two'), 'key_two', 'key two surface');
+assert.equal(afterKeyTwo(), 'layer3_leader', 'key two continue → layer 3 hook');
+assert.equal(layer2PublicSurface(afterKeyTwo()), 'layer3_hook', 'hook after key two');
+assert.equal(afterLayer3Hook(), 'people_rule_close', 'hook hold → people rule close');
+assert.equal(layer2PublicSurface(afterLayer3Hook()), 'people_rule_close', 'close is not the hook');
+assert.equal(layer3HookRendersOn('layer3_leader'), true, 'hook renders once');
+assert.equal(layer3HookRendersOn('people_rule_close'), false, 'hook does not render on close');
+assert.notEqual(layer2PublicSurface('people_rule_close'), layer2PublicSurface('layer3_leader'), 'close ≠ hook');
+assert.deepEqual(
+  ['layer2_operator', 'key_two', afterKeyTwo(), afterLayer3Hook()],
+  ['layer2_operator', 'key_two', 'layer3_leader', 'people_rule_close'],
+  'Layer 2 complete → Key Two → Layer 3 hook → people_rule_close',
+);
+assert.equal(migrateSessionState('people_rule_close'), 'people_rule_close', 'refresh recovers close');
+assert.equal(layer3HookRendersOn(migrateSessionState('people_rule_close')), false, 'recovered close is not the hook');
 
 console.log('operator-engine: ok');

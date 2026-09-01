@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useId, useState } from 'react';
+import { kellyCopy } from '../../../lib/talent-foundry/campaigns/kelly';
 import { shiftCopy, shiftMission } from '../../../lib/talent-foundry/campaigns/operator/shift';
 import { deriveWorld, finaleFacts } from '../../../lib/talent-foundry/operator/consequences';
 import {
@@ -666,6 +667,18 @@ export function Layer3HookScreen({ onHold }: { onHold: () => void }) {
           {shiftCopy.continueWhenReady}
         </button>
       </div>
+    </div>
+  );
+}
+
+/** Terminal People Rule close. No continue back into the Layer 3 hook. */
+export function PeopleRuleCloseScreen() {
+  return (
+    <div className="tf-hold">
+      <p className="tf-kicker">{kellyCopy.peopleRuleEyebrow}</p>
+      <h1 className="tf-display">{kellyCopy.peopleRuleTitle}</h1>
+      <p className="tf-latin">{kellyCopy.peopleRuleLatin}</p>
+      <p className="tf-body">{kellyCopy.peopleRuleBody}</p>
     </div>
   );
 }

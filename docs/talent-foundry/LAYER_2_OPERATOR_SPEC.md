@@ -150,7 +150,7 @@ After Key Two:
 
 - Copy: You’ve been the volunteer. You’ve run the shift. Next, the people are yours to develop.
 - Control: **Not yet** / **Continue when ready**
-- State: `layer3_leader` → `people_rule_close`
+- State: `layer3_leader` (hook once) → `people_rule_close` (People Rule end, not the hook again)
 - `flags.layer3Enabled` remains **false**
 - Do not render unfinished Layer 3 UI
 
