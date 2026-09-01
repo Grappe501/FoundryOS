@@ -44,6 +44,7 @@ import {
 } from '../../lib/talent-foundry/operator';
 import { pickMission, suggestPathway } from '../../lib/talent-foundry/routing';
 import { createRun } from '../../lib/talent-foundry/scenario-engine';
+import { tfHaptic } from '../../lib/talent-foundry/haptic';
 import { loadSession, resetSession, saveSession } from '../../lib/talent-foundry/session';
 import type { LeaderRunState } from '../../lib/talent-foundry/leader/types';
 import type { OperatorRunState } from '../../lib/talent-foundry/operator/types';
@@ -89,7 +90,9 @@ import {
   VisitCompleteScreen,
   VolunteerRouteScreen,
 } from './screens/VisitScreens';
+import { KeyOneShareScreen } from './screens/KeyOneShareScreen';
 import { PeopleDrawer } from './PeopleDrawer';
+import { SaveMyPlace } from './SaveMyPlace';
 import { LeaderMission } from './leader/LeaderMission';
 import { KeyTwoScreen, Layer3HookScreen, OperatorMission, PeopleRuleCloseScreen } from './operator/OperatorMission';
 
@@ -111,6 +114,7 @@ const FLOW_STATES = new Set([
   'handoff',
   'still_in',
   'visit_complete',
+  'key_one_share',
   'layer2_offer',
   'layer2_operator',
   'key_two',
@@ -183,7 +187,14 @@ export function TalentFoundryExperience() {
         startWhen: loaded.identity.startWhen,
       });
     }
-    setResumeOpen(Boolean(loaded.flags.identified && loaded.stateId !== 'entry'));
+    const justRestored =
+      typeof window !== 'undefined' && window.sessionStorage.getItem('tf.kelly.resumeJustRestored') === '1';
+    if (justRestored) {
+      window.sessionStorage.removeItem('tf.kelly.resumeJustRestored');
+      setResumeOpen(false);
+    } else {
+      setResumeOpen(Boolean(loaded.flags.identified && loaded.stateId !== 'entry'));
+    }
     setHydrated(true);
   }, []);
 
@@ -194,12 +205,7 @@ export function TalentFoundryExperience() {
 
   useEffect(() => {
     if (session?.stateId !== 'key_one') return;
-    if (typeof navigator === 'undefined' || !navigator.vibrate) return;
-    try {
-      navigator.vibrate([20, 30, 40]);
-    } catch {
-      /* ignore */
-    }
+    tfHaptic('key');
   }, [session?.stateId]);
 
   const acknowledgment = useMemo(() => excerptText(changeText) || 'Even the pause says something.', [changeText]);
@@ -383,7 +389,7 @@ export function TalentFoundryExperience() {
     const sawKey = session.evidence.some((item) => item.stateId === 'key_one');
     go(
       patchSession(session, {
-        stateId: session.flags.keyOne && !sawKey ? 'key_one' : 'identify',
+        stateId: session.flags.keyOne && !sawKey ? 'key_one' : session.flags.keyOneSharePromptSeen ? 'identify' : 'key_one_share',
       }),
     );
   };
@@ -391,7 +397,7 @@ export function TalentFoundryExperience() {
   const finishKey = () => {
     go(
       patchSession(session, {
-        stateId: 'identify',
+        stateId: session.flags.keyOneSharePromptSeen ? 'identify' : 'key_one_share',
         flags: { keyOne: true },
         evidence: session.evidence.some((e) => e.stateId === 'key_one')
           ? undefined
@@ -741,6 +747,18 @@ export function TalentFoundryExperience() {
 
         {session.stateId === 'key_one' ? <KeyOneScreen onContinue={finishKey} /> : null}
 
+        {session.stateId === 'key_one_share' ? (
+          <KeyOneShareScreen
+            onShare={() => {
+              go(patchSession(session, { flags: { keyOneSharePromptSeen: true } }));
+              setShareOpen(true);
+            }}
+            onKeepGoing={() =>
+              go(patchSession(session, { stateId: 'identify', flags: { keyOne: true, keyOneSharePromptSeen: true } }))
+            }
+          />
+        ) : null}
+
         {session.stateId === 'identify' ? (
           <IdentifyFormScreen
             values={idForm}
@@ -849,7 +867,10 @@ export function TalentFoundryExperience() {
         ) : null}
 
         {session.stateId === 'visit_complete' ? (
-          <VisitCompleteScreen hasMission={Boolean(session.missionId)} />
+          <>
+            <VisitCompleteScreen hasMission={Boolean(session.missionId)} />
+            <SaveMyPlace session={session} />
+          </>
         ) : null}
 
         {session.stateId === 'layer2_operator' && canEnterLayer2(session) ? (
@@ -864,6 +885,7 @@ export function TalentFoundryExperience() {
             }}
             onFinish={finishLayer2}
           />
+          <SaveMyPlace session={session} />
           </>
         ) : null}
 
@@ -904,6 +926,7 @@ export function TalentFoundryExperience() {
             }}
             onFinish={finishLayer3}
           />
+          <SaveMyPlace session={session} />
           </>
         ) : null}
 

@@ -112,6 +112,9 @@ body:has(.tf) {
   font-size: 1rem;
   text-align: left;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
   transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
 }
 
@@ -978,6 +981,16 @@ button.tf-ld-card {
     border-top: none;
     border-left: 1px solid var(--tf-line);
   }
+}
+
+.tf-save-place {
+  margin-top: 28px;
+  padding-top: 8px;
+}
+
+.tf-save-link {
+  word-break: break-all;
+  font-size: 0.82rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

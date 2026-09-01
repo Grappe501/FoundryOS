@@ -5,7 +5,7 @@
 **Live FoundryOS:** https://foundry-os.netlify.app/  
 **QR target (after P0):** `https://foundry-os.netlify.app/talent-foundry`
 
-**V1 spine is live on `main`** (`4565796a`). V1.1 compression is isolated on `feat/talent-foundry-v1-1-compression` (`H:\FoundryOS-tf-v1-1`). See `V1_1_COMPRESSION_SPEC.md`.
+**V1.1 is live on `main`** (`eb9c948`). V1.2 resume + Key One share is isolated on `feat/talent-foundry-v1-2-resume-share` (`H:\FoundryOS-tf-v1-2`). See `V1_2_SAVE_MY_PLACE_SPEC.md` and `V1_2_SHARE_MOMENT_SPEC.md`. Do not revert V1.1.
 
 This plan is executable. Campaign-specific copy lives in configuration. FoundryOS owns the reusable journey engine. RedDirt remains the only person database.
 

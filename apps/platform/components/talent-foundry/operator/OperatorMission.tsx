@@ -9,17 +9,8 @@ import {
   nextOperatorPhase,
   setAssignment,
 } from '../../../lib/talent-foundry/operator/engine';
+import { tfHaptic } from '../../../lib/talent-foundry/haptic';
 import type { OperatorPhase, OperatorRunState } from '../../../lib/talent-foundry/operator/types';
-
-function haptic(kind: 'time' | 'interrupt' | 'key') {
-  if (typeof navigator === 'undefined' || !navigator.vibrate) return;
-  if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  try {
-    navigator.vibrate(kind === 'key' ? [20, 30, 40] : kind === 'interrupt' ? [16, 24, 16] : [12]);
-  } catch {
-    /* ignore */
-  }
-}
 
 function Field({
   id,
@@ -183,8 +174,7 @@ export function OperatorMission({
   const teamId = useId();
 
   useEffect(() => {
-    if (run.phase === 'wave_one' || run.phase === 'wave_two' || run.phase === 'finale') haptic('time');
-    if (run.phase === 'interruption') haptic('interrupt');
+    if (run.phase === 'interruption') tfHaptic('interrupt');
   }, [run.phase]);
 
   const go = (phase: OperatorPhase, patch: Partial<OperatorRunState> = {}) => {
@@ -631,7 +621,7 @@ export function OperatorMission({
 
 export function KeyTwoScreen({ onContinue }: { onContinue: () => void }) {
   useEffect(() => {
-    haptic('key');
+    tfHaptic('key');
   }, []);
   return (
     <div className="tf-hold tf-key">

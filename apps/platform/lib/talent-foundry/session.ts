@@ -22,7 +22,11 @@ export function loadSession(campaign: CampaignConfig): TalentFoundrySession {
       ...parsed,
       stateId: migrateSessionState(parsed.stateId),
       runs: parsed.runs ?? {},
-      flags: { ...fresh.flags, ...parsed.flags },
+      flags: {
+        ...fresh.flags,
+        ...parsed.flags,
+        keyOneSharePromptSeen: Boolean(parsed.flags?.keyOneSharePromptSeen),
+      },
       conversion: { ...fresh.conversion, ...parsed.conversion },
       operator: parsed.operator ? normalizeOperatorRun(parsed.operator) : null,
       leader: parsed.leader ? normalizeLeaderRun(parsed.leader) : null,

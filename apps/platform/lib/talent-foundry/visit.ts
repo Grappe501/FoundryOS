@@ -55,7 +55,8 @@ export function chapterFor(stateId: JourneyStateId | string): ChapterId | null {
     stateId === 'door_call' ||
     stateId === 'door_breakdown' ||
     stateId === 'door_ask' ||
-    stateId === 'key_one'
+    stateId === 'key_one' ||
+    stateId === 'key_one_share'
   ) {
     return 'show_us';
   }
@@ -110,6 +111,8 @@ export function nextVisitState(session: TalentFoundrySession): JourneyStateId {
     case 'optional_doors':
       return session.flags.keyOne ? 'key_one' : 'identify';
     case 'key_one':
+      return session.flags.keyOneSharePromptSeen ? 'identify' : 'key_one_share';
+    case 'key_one_share':
       return 'identify';
     case 'identify':
       return 'youre_in';

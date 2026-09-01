@@ -1,10 +1,8 @@
 'use client';
 
 import { useEffect, useId, useRef, useState } from 'react';
-import {
-  TALENT_FOUNDRY_QR_SVG,
-  TALENT_FOUNDRY_SHARE_URL,
-} from '../../lib/talent-foundry/constants';
+import { TALENT_FOUNDRY_QR_SVG, TALENT_FOUNDRY_SHARE_URL } from '../../lib/talent-foundry/constants';
+import { tfHaptic } from '../../lib/talent-foundry/haptic';
 
 function focusableIn(root: HTMLElement): HTMLElement[] {
   return [
@@ -37,6 +35,7 @@ export function ShareQrTakeover({ open, onClose }: { open: boolean; onClose: () 
       return;
     }
     setNativeShare(typeof navigator.share === 'function');
+    tfHaptic('share');
     const prev = document.activeElement as HTMLElement | null;
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
