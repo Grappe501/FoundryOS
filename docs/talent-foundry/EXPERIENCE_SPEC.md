@@ -8,6 +8,14 @@ Post-identity spine now implemented:
 
 Identity POST must succeed before `youre_in`. Routing/mission attach via continue POST to the same RedDirt submission. Missions are deterministic (no OpenAI). Handoff ends P0 automation.
 
+## Implementation truth (P1-S1 Layer 2)
+
+On `feat/talent-foundry-layer-2-operator` only:
+
+`handoff` → `layer2_operator` (Key One + `layer2Enabled`) → `key_two` → `layer3_leader` (hook) → `people_rule_close`
+
+Kelly campaign flag `layer2Enabled: true`. THE SHIFT is a nested operator phase machine. Key Two is awarded on mission completion, not a score. Layer 3 remains a placeholder. Full contract: `LAYER_2_OPERATOR_SPEC.md`.
+
 ---
 
 # Talent Foundry — Experience Spec
@@ -356,12 +364,15 @@ P0 minimum: 5 decisions.
 - A human on the campaign will be in touch. No automated Mission Two.
 - Optional: “If you want the public volunteer page later, it lives on the campaign site” — do not dump them into a long form now.
 
-### Layer 2 / Layer 3 (architected, gated)
+### Layer 2 / Layer 3
 
-`flags.layer2Enabled` / `layer3Enabled` default **false** for P0.
+`flags.layer2Enabled` is **true** on the Layer 2 feature branch. `layer3Enabled` stays **false**.
 
-- `layer2_operator`: 10–15 minute phone-first outcome mission (ops + people + incomplete information). Completing may set `keyTwo`.
-- `layer3_leader`: coach **fictional/composite** profiles only. Never real applicants. Ends with self-coaching prompt and **THE PEOPLE RULE**. No AI score after.
+- After identity + handoff, Key One holders see an understated “You found something earlier” control. **Use the key** opens THE SHIFT.
+- `layer2_operator`: 10–15 minute phone-first operating shift (notice, delegate, incomplete information, communication, interruption, people-first, unknown problem, handoff, reflection). Completing sets `keyTwo`.
+- `key_two`: KEY 02 ACQUIRED. Responsibility changes the view.
+- `layer3_leader`: hook only — “Next, the people are yours to develop.” **Not yet.** No unfinished Layer 3 UI.
+- `people_rule_close`: terminal People Rule close. Does **not** re-render the Layer 3 hook.
 
 ---
 
@@ -391,7 +402,7 @@ Used as tags on evidence items. Never rolled into a hidden hire score.
 
 ```ts
 {
-  layer2Enabled: false,
+    layer2Enabled: true,
   layer3Enabled: false,
   optionalDoorsOpen: {
     room: false,

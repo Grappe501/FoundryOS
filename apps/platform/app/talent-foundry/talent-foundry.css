@@ -708,6 +708,102 @@ body:has(.tf) {
   to { opacity: 1; transform: none; }
 }
 
+.tf-key-mark-sm {
+  font-size: clamp(2.4rem, 14vw, 4rem);
+}
+
+.tf-op-found {
+  margin-top: 28px;
+  padding-top: 8px;
+}
+
+.tf-op-board {
+  margin: 0 0 22px;
+}
+
+.tf-op-clock {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tf-gold);
+  margin: 0 0 14px;
+}
+
+.tf-op-needs {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tf-op-need {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--tf-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  border-radius: 14px;
+  min-height: 56px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tf-op-need:disabled {
+  cursor: default;
+}
+
+.tf-op-need strong {
+  font-size: 0.95rem;
+}
+
+.tf-op-need em {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--tf-muted);
+}
+
+.tf-op-need-done {
+  border-color: rgba(212, 168, 83, 0.45);
+}
+
+.tf-op-need-risk,
+.tf-op-need-missed {
+  border-color: rgba(232, 180, 160, 0.45);
+}
+
+.tf-op-need-assigned {
+  border-color: var(--tf-gold-dim);
+}
+
+.tf-op-pick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0 4px;
+}
+
+.tf-op-need:focus-visible {
+  outline: 2px solid var(--tf-gold);
+  outline-offset: 3px;
+}
+
+@media (max-width: 320px) {
+  .tf-op-clock {
+    letter-spacing: 0.1em;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tf-hold,
   .tf-pulse,

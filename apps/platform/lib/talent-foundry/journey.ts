@@ -76,6 +76,7 @@ export function createSession(campaign: CampaignConfig, now = new Date()): Talen
     },
     pathwayId: null,
     missionId: null,
+    operator: null,
   };
 }
 
@@ -107,6 +108,7 @@ export function patchSession(
     conversion?: Partial<TalentFoundrySession['conversion']>;
     pathwayId?: string | null;
     missionId?: string | null;
+    operator?: TalentFoundrySession['operator'];
   },
   now = new Date(),
 ): TalentFoundrySession {
@@ -121,6 +123,7 @@ export function patchSession(
     conversion: input.conversion ? { ...session.conversion, ...input.conversion } : session.conversion,
     pathwayId: input.pathwayId !== undefined ? input.pathwayId : session.pathwayId,
     missionId: input.missionId !== undefined ? input.missionId : session.missionId,
+    operator: input.operator !== undefined ? input.operator : session.operator,
   };
 }
 
@@ -184,6 +187,10 @@ const RECOVERABLE_STATES = new Set<string>([
   'door_breakdown',
   'door_ask',
   'opening_hold',
+  'layer2_operator',
+  'key_two',
+  'layer3_leader',
+  'people_rule_close',
 ]);
 
 export function migrateSessionState(stateId: JourneyStateId): JourneyStateId {

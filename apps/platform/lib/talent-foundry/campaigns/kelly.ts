@@ -3,7 +3,7 @@ import type { CampaignConfig, OptionalDoor } from '../types';
 export const kellyCampaign: CampaignConfig = {
   id: 'kelly',
   sessionKey: 'tf.kelly.v1',
-  implementedThrough: 'handoff',
+  implementedThrough: 'layer3_leader',
   // Drop the approved 30s direct-to-camera MP4 at
   // apps/platform/public/talent-foundry/kelly-grappe-intro.mp4
   // then set this to "/talent-foundry/kelly-grappe-intro.mp4".
@@ -12,7 +12,7 @@ export const kellyCampaign: CampaignConfig = {
   // Transcript already lives in kellyCopy.kellyScript. Do not invent a fake video.
   kellyVideoUrl: null,
   flags: {
-    layer2Enabled: false,
+    layer2Enabled: true,
     layer3Enabled: false,
   },
   willingnessChoices: [
