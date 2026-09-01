@@ -10,6 +10,8 @@ export type JourneyStateId =
   | 'willingness'
   | 'opening_hold'
   | 'kelly_video'
+  | 'intent'
+  | 'paid_brief'
   | 'volunteer_commitment'
   | 'lead_challenge'
   | 'scenario_brief'
@@ -29,8 +31,11 @@ export type JourneyStateId =
   | 'pathway'
   | 'mission_one'
   | 'handoff'
+  | 'still_in'
+  | 'layer2_offer'
   | 'layer2_operator'
   | 'key_two'
+  | 'layer3_offer'
   | 'layer3_leader'
   | 'people_rule_close';
 
@@ -65,6 +70,10 @@ export type EvidenceItem = {
 
 export type VolunteerCommitment = 'yes' | 'limited' | 'not_now';
 
+export type VisitIntent = 'volunteer' | 'paid' | 'both' | 'exploring';
+
+export type ChapterId = 'discover' | 'show_us' | 'step_in' | 'your_path' | 'operator' | 'leader';
+
 export type IdentityRecord = {
   firstName: string;
   lastName: string;
@@ -89,6 +98,10 @@ export type TalentFoundryFlags = {
   missionOneComplete: boolean;
   layer2Enabled: boolean;
   layer3Enabled: boolean;
+  visitIntent: VisitIntent | null;
+  firstVisitComplete: boolean;
+  layer2Deferred: boolean;
+  layer3Deferred: boolean;
 };
 
 export type ScenarioDecision = {

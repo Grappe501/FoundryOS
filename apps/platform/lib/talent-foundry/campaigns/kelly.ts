@@ -36,7 +36,7 @@ export const kellyCopy = {
   peopleRuleEyebrow: 'Arkansas',
   peopleRuleTitle: 'The People Rule.',
   peopleRuleLatin: 'Regnat Populus',
-  peopleRuleBody: 'Power does not live in a building. It lives with people — including the person holding this phone.',
+  peopleRuleBody: 'Power lives with people — including the person holding this phone.',
   willingnessPrompt: 'If you had a chance to help, what would you actually do?',
   kellyName: 'Kelly Grappe',
   kellyRole: 'Arkansas',
@@ -58,10 +58,10 @@ export const kellyCopy = {
   commitmentBody: 'It starts with people who will contribute — from a living room, a campus, a small town, or a headquarters. Can you be one of them, even a little?',
   commitmentAfterNo:
     "That's all right. You can still see what this is. Nothing here is a job offer, and nothing you do next is a promise.",
-  leadEyebrow: 'A shift',
-  leadLine1: 'Think you can lead this?',
+  leadEyebrow: 'Show us',
+  leadLine1: 'Think you can help build this?',
   leadLine2: 'Show us.',
-  leadBody: "There aren't perfect answers. We want to see how you think.",
+  leadBody: 'A few decisions. Not a test.',
   leadCta: "I'm in",
   briefEyebrow: 'Headquarters',
   revisionEyebrow: 'A pause',
@@ -79,7 +79,7 @@ export const kellyCopy = {
   keyBody: "You'll know when you need it.",
   identifyEyebrow: 'A threshold',
   identifyTitle: 'Who are you?',
-  identifyBody: "You've shown us how you think. Now we'd like to know who you are.",
+  identifyBody: "You've shown us enough. Who are you?",
   identifyPending: 'The campaign record is written when you step in.',
 };
 

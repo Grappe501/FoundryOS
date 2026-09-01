@@ -6,29 +6,25 @@ import type {
   TalentFoundryFlags,
   TalentFoundrySession,
 } from './types';
+import { nextVisitState } from './visit';
 
 export const OPTIONAL_DOOR_IDS: OptionalDoorId[] = ['room', 'call', 'breakdown', 'ask'];
 
 const P0_SPINE: JourneyStateId[] = [
   'entry',
-  'mystery',
   'change_prompt',
-  'acknowledgment',
   'people_rule',
-  'willingness',
   'kelly_video',
-  'volunteer_commitment',
+  'intent',
+  'paid_brief',
   'lead_challenge',
-  'scenario_brief',
   'scenario_volunteers',
   'scenario_consequences',
-  'scenario_revision',
   'optional_doors',
   'identify',
   'youre_in',
   'opportunity',
   'availability',
-  'pathway',
   'mission_one',
   'handoff',
 ];
@@ -45,6 +41,10 @@ const DEFAULT_FLAGS: TalentFoundryFlags = {
   missionOneComplete: false,
   layer2Enabled: false,
   layer3Enabled: false,
+  visitIntent: null,
+  firstVisitComplete: false,
+  layer2Deferred: false,
+  layer3Deferred: false,
 };
 
 export function createSession(campaign: CampaignConfig, now = new Date()): TalentFoundrySession {
@@ -137,7 +137,7 @@ export function advanceSession(
   flagPatch?: Partial<TalentFoundryFlags>,
   now = new Date(),
 ): TalentFoundrySession {
-  const next = nextStateOnSpine(session.stateId);
+  const next = nextVisitState(session);
   return patchSession(
     session,
     {
@@ -161,14 +161,13 @@ export function completeOptionalDoor(
   const completed = session.flags.optionalDoorsCompleted.includes(doorId)
     ? session.flags.optionalDoorsCompleted
     : [...session.flags.optionalDoorsCompleted, doorId];
-  const unlockKey = allOptionalDoorsComplete(completed);
   return patchSession(
     session,
     {
-      stateId: unlockKey && !session.flags.keyOne ? 'key_one' : 'optional_doors',
+      stateId: session.flags.keyOne ? 'key_one' : 'identify',
       flags: {
         optionalDoorsCompleted: completed,
-        keyOne: unlockKey || session.flags.keyOne,
+        keyOne: session.flags.keyOne,
       },
     },
     now,
@@ -190,14 +189,31 @@ const RECOVERABLE_STATES = new Set<string>([
   'door_breakdown',
   'door_ask',
   'opening_hold',
+  'still_in',
+  'layer2_offer',
   'layer2_operator',
   'key_two',
+  'layer3_offer',
   'layer3_leader',
   'people_rule_close',
+  'mystery',
+  'acknowledgment',
+  'willingness',
+  'volunteer_commitment',
+  'scenario_brief',
+  'scenario_revision',
+  'pathway',
 ]);
 
 export function migrateSessionState(stateId: JourneyStateId): JourneyStateId {
   if (stateId === 'opening_hold') return 'kelly_video';
+  if (stateId === 'mystery') return 'change_prompt';
+  if (stateId === 'acknowledgment') return 'people_rule';
+  if (stateId === 'willingness') return 'kelly_video';
+  if (stateId === 'volunteer_commitment') return 'intent';
+  if (stateId === 'scenario_brief') return 'lead_challenge';
+  if (stateId === 'scenario_revision') return 'optional_doors';
+  if (stateId === 'pathway') return 'mission_one';
   if (!RECOVERABLE_STATES.has(stateId)) return 'entry';
   return stateId;
 }

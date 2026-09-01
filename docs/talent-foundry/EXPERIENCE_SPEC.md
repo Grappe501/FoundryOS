@@ -364,9 +364,13 @@ P0 minimum: 5 decisions.
 - A human on the campaign will be in touch. No automated Mission Two.
 - Optional: “If you want the public volunteer page later, it lives on the campaign site” — do not dump them into a long form now.
 
+### V1.1 Visit One
+
+Compressed first session: Discover → intent → compact scenario → identity → route → mission → handoff. Layer 2/3 are opt-in after Key One / Key Two.
+
 ### Layer 2 / Layer 3
 
-`flags.layer2Enabled` and `flags.layer3Enabled` are **true** on the Layer 3 feature branch.
+`flags.layer2Enabled` and `flags.layer3Enabled` remain **true**. Sequencing, not flags, governs first-visit access.
 
 - After identity + handoff, Key One holders see an understated “You found something earlier” control. **Use the key** opens THE SHIFT.
 - `layer2_operator`: 10–15 minute phone-first operating shift. Completing sets `keyTwo`.

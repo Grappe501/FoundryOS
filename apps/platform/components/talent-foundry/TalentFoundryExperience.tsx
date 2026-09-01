@@ -1,10 +1,20 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { kellyCampaign, kellyCopy } from '../../lib/talent-foundry/campaigns/kelly';
+import { kellyCampaign, kellyCopy, kellyDoors } from '../../lib/talent-foundry/campaigns/kelly';
 import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/doors';
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
 import { advanceSession, completeOptionalDoor, createSession, excerptText, patchSession } from '../../lib/talent-foundry/journey';
+import { LAYER1_PEOPLE, LAYER2_PEOPLE, LAYER3_PEOPLE } from '../../lib/talent-foundry/people-memory';
+import {
+  FIRST_VISIT_DOOR,
+  INTENT_TO_PAID,
+  chapterFor,
+  intentSummary,
+  resumeCopy,
+  wantsPaid,
+  youreInCopy,
+} from '../../lib/talent-foundry/visit';
 import {
   afterLayer3,
   applyLeaderPatch,
@@ -39,9 +49,9 @@ import type {
   ConversionState,
   IdentityRecord,
   OptionalDoor,
-  PaidInterest,
   ScenarioRunState,
   TalentFoundrySession,
+  VisitIntent,
   WillingnessChoice,
 } from '../../lib/talent-foundry/types';
 import { KellyVideoStage } from './KellyVideoStage';
@@ -53,7 +63,6 @@ import {
   ConsequencesScreen,
   KeyOneScreen,
   LeadChallengeScreen,
-  OptionalDoorsScreen,
   RevisionScreen,
   ScenarioBriefScreen,
 } from './screens/SpineScreens';
@@ -62,10 +71,20 @@ import {
   HandoffScreen,
   IdentifyFormScreen,
   MissionScreen,
-  OpportunityScreen,
-  PathwayScreen,
   YoureInScreen,
 } from './screens/ConversionScreens';
+import {
+  ChapterMark,
+  ExploreRouteScreen,
+  IntentScreen,
+  Layer3OfferScreen,
+  OneDoorScreen,
+  PaidBriefScreen,
+  ResumeBanner,
+  StillInScreen,
+  VolunteerRouteScreen,
+} from './screens/VisitScreens';
+import { PeopleDrawer } from './PeopleDrawer';
 import { LeaderMission } from './leader/LeaderMission';
 import { KeyTwoScreen, Layer3HookScreen, OperatorMission, PeopleRuleCloseScreen } from './operator/OperatorMission';
 
@@ -77,14 +96,19 @@ const FLOW_STATES = new Set([
   'door_call',
   'door_breakdown',
   'door_ask',
+  'intent',
+  'paid_brief',
   'identify',
   'opportunity',
   'availability',
   'pathway',
   'mission_one',
   'handoff',
+  'still_in',
+  'layer2_offer',
   'layer2_operator',
   'key_two',
+  'layer3_offer',
   'layer3_leader',
 ]);
 
@@ -117,6 +141,7 @@ export function TalentFoundryExperience() {
   const [continueSaving, setContinueSaving] = useState(false);
   const [continueRetry, setContinueRetry] = useState<string | null>(null);
   const [shareOpen, setShareOpen] = useState(false);
+  const [resumeOpen, setResumeOpen] = useState(false);
   const closeShare = useCallback(() => setShareOpen(false), []);
 
   useEffect(() => {
@@ -152,6 +177,7 @@ export function TalentFoundryExperience() {
         startWhen: loaded.identity.startWhen,
       });
     }
+    setResumeOpen(Boolean(loaded.flags.identified && loaded.stateId !== 'entry'));
     setHydrated(true);
   }, []);
 
@@ -186,6 +212,30 @@ export function TalentFoundryExperience() {
           dimensions: ['written_communication', 'passion'],
         },
       ]),
+    );
+  };
+
+  const chooseIntent = (intent: VisitIntent) => {
+    go(
+      patchSession(session, {
+        stateId: wantsPaid(intent) ? 'paid_brief' : 'lead_challenge',
+        flags: {
+          visitIntent: intent,
+          willingToAct: intent !== 'exploring',
+          volunteerCommitment: intent === 'exploring' ? 'not_now' : 'yes',
+          internPathwayEligible: wantsPaid(intent),
+        },
+        conversion: { paidInterest: INTENT_TO_PAID[intent] },
+        evidence: [
+          {
+            stateId: 'intent',
+            kind: 'choice',
+            label: 'What brings you here?',
+            value: intent,
+            dimensions: ['willingness_to_volunteer', 'leadership_desire'],
+          },
+        ],
+      }),
     );
   };
 
@@ -255,6 +305,7 @@ export function TalentFoundryExperience() {
       patchSession(session, {
         stateId: 'scenario_consequences',
         runs: { ...session.runs, [run.scenarioId]: run },
+        flags: { requiredScenarioComplete: true, keyOne: true },
         evidence: run.decisions.map((d) => ({
           stateId: 'scenario_volunteers' as const,
           kind: 'decision' as const,
@@ -264,6 +315,19 @@ export function TalentFoundryExperience() {
         })),
       }),
     );
+  };
+
+  const finishFirstSession = (deeper?: 'layer2' | 'layer3' | 'none') => {
+    const next = patchSession(session, {
+      stateId: deeper === 'layer2' ? 'layer2_operator' : deeper === 'layer3' ? 'layer3_leader' : 'still_in',
+      flags: {
+        firstVisitComplete: true,
+        layer2Deferred: deeper === 'none' && session.flags.keyOne && !session.flags.keyTwo ? true : session.flags.layer2Deferred,
+        layer3Deferred: deeper === 'none' && session.flags.keyTwo ? true : session.flags.layer3Deferred,
+      },
+    });
+    go(next);
+    persistQuiet(next);
   };
 
   const submitRevision = () => {
@@ -558,6 +622,16 @@ export function TalentFoundryExperience() {
       </nav>
       <ShareQrTakeover open={shareOpen} onClose={closeShare} />
       <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}-${operatorRun.phase}-${leaderRun.phase}`}>
+        <ChapterMark chapter={chapterFor(session.stateId)} />
+        {resumeOpen && resumeCopy(session) ? (
+          <ResumeBanner
+            title={resumeCopy(session)!.title}
+            body={resumeCopy(session)!.body}
+            onContinue={() => setResumeOpen(false)}
+          />
+        ) : null}
+        {resumeOpen && resumeCopy(session) ? null : (
+        <>
         <OpeningScreens
           stateId={session.stateId}
           changeText={changeText}
@@ -572,6 +646,9 @@ export function TalentFoundryExperience() {
         {session.stateId === 'kelly_video' ? (
           <KellyVideoStage videoUrl={kellyCampaign.kellyVideoUrl} onContinue={continueSpine} />
         ) : null}
+
+        {session.stateId === 'intent' ? <IntentScreen onChoose={chooseIntent} /> : null}
+        {session.stateId === 'paid_brief' ? <PaidBriefScreen onContinue={continueSpine} /> : null}
 
         {session.stateId === 'volunteer_commitment' && !commitmentGrace ? (
           <CommitmentScreen onChoose={chooseCommitment} />
@@ -612,6 +689,7 @@ export function TalentFoundryExperience() {
           <ScenarioRunner
             def={volunteersScenario}
             run={volunteerRun}
+            people={LAYER1_PEOPLE}
             onChange={(run) => setRun(run)}
             onComplete={finishVolunteers}
           />
@@ -632,10 +710,12 @@ export function TalentFoundryExperience() {
         ) : null}
 
         {session.stateId === 'optional_doors' ? (
-          <OptionalDoorsScreen
-            completed={session.flags.optionalDoorsCompleted}
-            onEnter={enterDoor}
-            onContinue={leaveDoors}
+          <OneDoorScreen
+            onOpen={() => {
+              const found = kellyDoors.find((d) => d.id === FIRST_VISIT_DOOR) ?? kellyDoors[0];
+              enterDoor(found);
+            }}
+            onSkip={leaveDoors}
           />
         ) : null}
 
@@ -643,6 +723,7 @@ export function TalentFoundryExperience() {
           <ScenarioRunner
             def={doorDef}
             run={ensureRun(session, doorDef.id)}
+            people={LAYER1_PEOPLE}
             onChange={(run) => setRun(run)}
             onComplete={(run) => finishDoor(doorId, doorDef.id, run)}
           />
@@ -662,25 +743,37 @@ export function TalentFoundryExperience() {
         ) : null}
 
         {session.stateId === 'youre_in' && session.identity ? (
-          <YoureInScreen firstName={session.identity.firstName} onContinue={continueSpine} />
+          <YoureInScreen
+            firstName={session.identity.firstName}
+            title={youreInCopy(session.flags.visitIntent, session.identity.firstName).title}
+            body={youreInCopy(session.flags.visitIntent, session.identity.firstName).body}
+            onContinue={continueSpine}
+          />
         ) : null}
 
-        {session.stateId === 'opportunity' ? (
-          <OpportunityScreen
-            onChoose={(paidInterest: PaidInterest) => {
+        {session.stateId === 'opportunity' && session.flags.visitIntent === 'exploring' ? (
+          <ExploreRouteScreen
+            onSeeWays={() => {
+              const pathwayId = suggestPathway(session.conversion, session.flags);
+              const mission = pickMission(session.conversion.areas, pathwayId);
+              go(patchSession(session, { stateId: 'mission_one', pathwayId, missionId: mission.id, conversion: { areas: session.conversion.areas.length ? session.conversion.areas : ['community'] } }));
+            }}
+            onGoodForNow={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true } }))}
+          />
+        ) : null}
+
+        {session.stateId === 'opportunity' && session.flags.visitIntent !== 'exploring' ? (
+          <VolunteerRouteScreen
+            conversion={session.conversion}
+            onPatch={(patch) => go(patchSession(session, { conversion: patch }))}
+            onContinue={() => {
+              const pathwayId = suggestPathway(session.conversion, session.flags);
+              const mission = pickMission(session.conversion.areas, pathwayId);
               go(
                 patchSession(session, {
-                  stateId: 'availability',
-                  conversion: { paidInterest },
-                  evidence: [
-                    {
-                      stateId: 'opportunity',
-                      kind: 'choice',
-                      label: 'Paid opportunity interest',
-                      value: paidInterest,
-                      dimensions: ['availability', 'leadership_desire'],
-                    },
-                  ],
+                  stateId: wantsPaid(session.flags.visitIntent) ? 'availability' : 'mission_one',
+                  pathwayId,
+                  missionId: mission.id,
                 }),
               );
             }}
@@ -691,20 +784,6 @@ export function TalentFoundryExperience() {
           <AvailabilityScreen
             conversion={session.conversion}
             onPatch={(patch: Partial<ConversionState>) => go(patchSession(session, { conversion: patch }))}
-            onContinue={() => go(patchSession(session, { stateId: 'pathway' }))}
-          />
-        ) : null}
-
-        {session.stateId === 'pathway' ? (
-          <PathwayScreen
-            conversion={session.conversion}
-            pathwayId={suggestPathway(session.conversion, session.flags)}
-            onToggleArea={(id) => {
-              const areas = session.conversion.areas.includes(id)
-                ? session.conversion.areas.filter((a) => a !== id)
-                : [...session.conversion.areas, id];
-              go(patchSession(session, { conversion: { areas } }));
-            }}
             onContinue={() => {
               const pathwayId = suggestPathway(session.conversion, session.flags);
               const mission = pickMission(session.conversion.areas, pathwayId);
@@ -724,14 +803,38 @@ export function TalentFoundryExperience() {
 
         {session.stateId === 'handoff' && session.missionId ? (
           <HandoffScreen
+            firstName={session.identity?.firstName}
+            interest={intentSummary(session.flags.visitIntent)}
             areas={session.conversion.areas}
             mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
             keyOneOpen={canEnterLayer2(session) && !session.flags.keyTwo}
             onUseKey={startLayer2}
+            onSaveKey={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true, layer2Deferred: true } }))}
+            onFinish={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true } }))}
+          />
+        ) : null}
+
+        {session.stateId === 'still_in' ? (
+          <StillInScreen
+            firstName={session.identity?.firstName}
+            intent={session.flags.visitIntent}
+            pathwayId={session.pathwayId}
+            mission={session.missionId ? pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags)) : null}
+            onDeeper={
+              canEnterLayer2(session) && !session.flags.keyTwo
+                ? startLayer2
+                : canEnterLayer3(session)
+                  ? startLayer3
+                  : undefined
+            }
+            deeperLabel={canEnterLayer2(session) && !session.flags.keyTwo ? 'Use the key' : canEnterLayer3(session) ? 'Keep going' : undefined}
+            onFinish={() => go(patchSession(session, { flags: { firstVisitComplete: true } }))}
           />
         ) : null}
 
         {session.stateId === 'layer2_operator' && canEnterLayer2(session) ? (
+          <>
+          <PeopleDrawer people={LAYER2_PEOPLE} />
           <OperatorMission
             run={operatorRun}
             onChange={(nextRun) => setOperator(nextRun)}
@@ -741,6 +844,7 @@ export function TalentFoundryExperience() {
             }}
             onFinish={finishLayer2}
           />
+          </>
         ) : null}
 
         {session.stateId === 'layer2_operator' && !canEnterLayer2(session) ? (
@@ -754,13 +858,23 @@ export function TalentFoundryExperience() {
         {layer2PublicSurface(session.stateId) === 'key_two' ? (
           <KeyTwoScreen
             onContinue={() => {
-              if (canEnterLayer3({ ...session, flags: { ...session.flags, keyTwo: true } })) startLayer3();
-              else go(patchSession(session, { stateId: afterKeyTwo() }));
+              if (canEnterLayer3({ ...session, flags: { ...session.flags, keyTwo: true } })) {
+                go(patchSession(session, { stateId: 'layer3_offer' }));
+              } else go(patchSession(session, { stateId: afterKeyTwo() }));
             }}
           />
         ) : null}
 
+        {session.stateId === 'layer3_offer' ? (
+          <Layer3OfferScreen
+            onKeep={startLayer3}
+            onSave={() => go(patchSession(session, { stateId: 'still_in', flags: { layer3Deferred: true, firstVisitComplete: true } }))}
+          />
+        ) : null}
+
         {session.stateId === 'layer3_leader' && canEnterLayer3(session) ? (
+          <>
+          <PeopleDrawer people={LAYER3_PEOPLE} />
           <LeaderMission
             run={leaderRun}
             onChange={(nextRun) => setLeader(nextRun)}
@@ -770,6 +884,7 @@ export function TalentFoundryExperience() {
             }}
             onFinish={finishLayer3}
           />
+          </>
         ) : null}
 
         {session.stateId === 'layer3_leader' && !canEnterLayer3(session) && layer3HookRendersOn(session.stateId, session.flags.layer3Enabled) ? (
@@ -807,6 +922,8 @@ export function TalentFoundryExperience() {
             </div>
           </div>
         ) : null}
+        </>
+        )}
       </div>
     </>
   );
