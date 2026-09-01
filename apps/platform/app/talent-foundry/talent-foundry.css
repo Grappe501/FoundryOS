@@ -798,6 +798,70 @@ body:has(.tf) {
   outline-offset: 3px;
 }
 
+.tf-ld-stack,
+.tf-ld-roster {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tf-ld-card {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--tf-line);
+  background: rgba(255, 255, 255, 0.03);
+  color: inherit;
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  font: inherit;
+  text-align: left;
+}
+
+button.tf-ld-card {
+  cursor: pointer;
+}
+
+.tf-ld-card strong {
+  font-size: 1.05rem;
+}
+
+.tf-ld-from,
+.tf-ld-card em,
+.tf-ld-card b {
+  font-style: normal;
+  font-size: 0.82rem;
+  color: var(--tf-muted);
+}
+
+.tf-ld-card b {
+  color: var(--tf-gold);
+  letter-spacing: 0.04em;
+}
+
+.tf-ld-card ul {
+  margin: 8px 0 0;
+  padding: 0 0 0 1.1em;
+  color: var(--tf-muted);
+  font-size: 0.9rem;
+}
+
+.tf-ld-card-on,
+.tf-ld-card-set {
+  border-color: var(--tf-gold-dim);
+}
+
+.tf-ld-card:focus-visible {
+  outline: 2px solid var(--tf-gold);
+  outline-offset: 3px;
+}
+
 @media (max-width: 320px) {
   .tf-op-clock {
     letter-spacing: 0.1em;

@@ -6,6 +6,16 @@ import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/door
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
 import { advanceSession, completeOptionalDoor, createSession, excerptText, patchSession } from '../../lib/talent-foundry/journey';
 import {
+  afterLayer3,
+  applyLeaderPatch,
+  canEnterLayer3,
+  createLeaderRun,
+  layer3Evidence,
+  markLayer3DevSession,
+  readLayer3DevIntent,
+  seedLayer3DevSession,
+} from '../../lib/talent-foundry/leader';
+import {
   afterKeyTwo,
   afterLayer3Hook,
   applyOperatorPatch,
@@ -14,6 +24,7 @@ import {
   isTalentFoundryDev,
   layer2Evidence,
   layer2PublicSurface,
+  layer3HookRendersOn,
   markLayer2DevSession,
   readLayer2DevIntent,
   seedLayer2DevSession,
@@ -21,6 +32,7 @@ import {
 import { pickMission, suggestPathway } from '../../lib/talent-foundry/routing';
 import { createRun } from '../../lib/talent-foundry/scenario-engine';
 import { loadSession, resetSession, saveSession } from '../../lib/talent-foundry/session';
+import type { LeaderRunState } from '../../lib/talent-foundry/leader/types';
 import type { OperatorRunState } from '../../lib/talent-foundry/operator/types';
 import type {
   CommitmentChoice,
@@ -54,6 +66,7 @@ import {
   PathwayScreen,
   YoureInScreen,
 } from './screens/ConversionScreens';
+import { LeaderMission } from './leader/LeaderMission';
 import { KeyTwoScreen, Layer3HookScreen, OperatorMission, PeopleRuleCloseScreen } from './operator/OperatorMission';
 
 const FLOW_STATES = new Set([
@@ -107,6 +120,12 @@ export function TalentFoundryExperience() {
   const closeShare = useCallback(() => setShareOpen(false), []);
 
   useEffect(() => {
+    if (isTalentFoundryDev() && readLayer3DevIntent()) {
+      markLayer3DevSession();
+      setSession(seedLayer3DevSession(kellyCampaign));
+      setHydrated(true);
+      return;
+    }
     if (isTalentFoundryDev() && readLayer2DevIntent()) {
       markLayer2DevSession();
       setSession(seedLayer2DevSession(kellyCampaign));
@@ -382,6 +401,13 @@ export function TalentFoundryExperience() {
   };
 
   const operatorRun = session.operator ?? createOperatorRun();
+  const leaderRun = session.leader ?? createLeaderRun();
+
+  const setLeader = (nextRun: LeaderRunState, extras?: Parameters<typeof patchSession>[1]) => {
+    const next = patchSession(session, { leader: nextRun, ...extras });
+    go(next);
+    return next;
+  };
 
   const setOperator = (nextRun: OperatorRunState, extras?: Parameters<typeof patchSession>[1]) => {
     const next = patchSession(session, { operator: nextRun, ...extras });
@@ -410,6 +436,32 @@ export function TalentFoundryExperience() {
       stateId: 'key_two',
       operator: nextRun,
       flags: { keyTwo: true },
+      evidence,
+    });
+    go(next);
+    persistQuiet(next);
+  };
+
+  const startLayer3 = () => {
+    const started = applyLeaderPatch(session.leader ?? createLeaderRun(), { phase: 'opening', persistAt: 'start' });
+    const next = patchSession(session, {
+      stateId: 'layer3_leader',
+      leader: started,
+      evidence: session.evidence.some((e) => e.label === 'Layer 3 started')
+        ? undefined
+        : layer3Evidence(started, false).filter((e) => e.label === 'Layer 3 started'),
+    });
+    go(next);
+    persistQuiet(next);
+  };
+
+  const finishLayer3 = (nextRun: LeaderRunState) => {
+    const evidence = layer3Evidence(nextRun, true).filter(
+      (item) => !session.evidence.some((e) => e.label === item.label),
+    );
+    const next = patchSession(session, {
+      stateId: afterLayer3(),
+      leader: nextRun,
       evidence,
     });
     go(next);
@@ -505,7 +557,7 @@ export function TalentFoundryExperience() {
         </button>
       </nav>
       <ShareQrTakeover open={shareOpen} onClose={closeShare} />
-      <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}-${operatorRun.phase}`}>
+      <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}-${operatorRun.phase}-${leaderRun.phase}`}>
         <OpeningScreens
           stateId={session.stateId}
           changeText={changeText}
@@ -700,11 +752,36 @@ export function TalentFoundryExperience() {
         ) : null}
 
         {layer2PublicSurface(session.stateId) === 'key_two' ? (
-          <KeyTwoScreen onContinue={() => go(patchSession(session, { stateId: afterKeyTwo() }))} />
+          <KeyTwoScreen
+            onContinue={() => {
+              if (canEnterLayer3({ ...session, flags: { ...session.flags, keyTwo: true } })) startLayer3();
+              else go(patchSession(session, { stateId: afterKeyTwo() }));
+            }}
+          />
         ) : null}
 
-        {layer2PublicSurface(session.stateId) === 'layer3_hook' ? (
+        {session.stateId === 'layer3_leader' && canEnterLayer3(session) ? (
+          <LeaderMission
+            run={leaderRun}
+            onChange={(nextRun) => setLeader(nextRun)}
+            onAdvance={(nextRun) => {
+              const next = setLeader(nextRun, { stateId: 'layer3_leader' });
+              if (nextRun.persistAt === 'start' || nextRun.persistAt === 'mid') persistQuiet(next);
+            }}
+            onFinish={finishLayer3}
+          />
+        ) : null}
+
+        {session.stateId === 'layer3_leader' && !canEnterLayer3(session) && layer3HookRendersOn(session.stateId, session.flags.layer3Enabled) ? (
           <Layer3HookScreen onHold={() => go(patchSession(session, { stateId: afterLayer3Hook() }))} />
+        ) : null}
+
+        {session.stateId === 'layer3_leader' && session.flags.layer3Enabled && !session.flags.keyTwo ? (
+          <div className="tf-hold">
+            <p className="tf-kicker">Closed</p>
+            <h1 className="tf-display tf-display-sm">This door is not open.</h1>
+            <p className="tf-body">The people are for someone who already finished the shift.</p>
+          </div>
         ) : null}
 
         {layer2PublicSurface(session.stateId) === 'people_rule_close' ? <PeopleRuleCloseScreen /> : null}

@@ -366,13 +366,13 @@ P0 minimum: 5 decisions.
 
 ### Layer 2 / Layer 3
 
-`flags.layer2Enabled` is **true** on the Layer 2 feature branch. `layer3Enabled` stays **false**.
+`flags.layer2Enabled` and `flags.layer3Enabled` are **true** on the Layer 3 feature branch.
 
 - After identity + handoff, Key One holders see an understated “You found something earlier” control. **Use the key** opens THE SHIFT.
-- `layer2_operator`: 10–15 minute phone-first operating shift (notice, delegate, incomplete information, communication, interruption, people-first, unknown problem, handoff, reflection). Completing sets `keyTwo`.
+- `layer2_operator`: 10–15 minute phone-first operating shift. Completing sets `keyTwo`.
 - `key_two`: KEY 02 ACQUIRED. Responsibility changes the view.
-- `layer3_leader`: hook only — “Next, the people are yours to develop.” **Not yet.** No unfinished Layer 3 UI.
-- `people_rule_close`: terminal People Rule close. Does **not** re-render the Layer 3 hook.
+- `layer3_leader`: THE LEADER — fictional composite team only. Place, coach, correct, protect, invest. Paid-seat climax cares about the development plan. Then self-coaching. No AI score.
+- `people_rule_close`: terminal People Rule close. Does **not** re-render Layer 3.
 
 ---
 
@@ -403,7 +403,7 @@ Used as tags on evidence items. Never rolled into a hidden hire score.
 ```ts
 {
     layer2Enabled: true,
-  layer3Enabled: false,
+  layer3Enabled: true,
   optionalDoorsOpen: {
     room: false,
     call: false,
@@ -414,7 +414,7 @@ Used as tags on evidence items. Never rolled into a hidden hire score.
 }
 ```
 
-P0 ships with flags off except the required spine through `handoff`.
+P0 shipped with flags off through `handoff`. Layer 2 and Layer 3 flags are on for Kelly on this branch.
 
 ---
 

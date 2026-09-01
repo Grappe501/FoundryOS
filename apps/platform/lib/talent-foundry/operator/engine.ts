@@ -147,7 +147,8 @@ export function afterLayer3Hook(): JourneyStateId {
   return 'people_rule_close';
 }
 
-export function layer3HookRendersOn(stateId: JourneyStateId | string): boolean {
+export function layer3HookRendersOn(stateId: JourneyStateId | string, layer3Enabled = false): boolean {
+  if (layer3Enabled) return false;
   return layer2PublicSurface(stateId) === 'layer3_hook';
 }
 

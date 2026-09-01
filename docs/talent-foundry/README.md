@@ -171,7 +171,7 @@ Completing the intended Layer 2 path can reveal **Key Two**.
 
 ## Layer 3 — Leader
 
-Key Two opens a loop back to Layer 1, but the participant is now the coach/leader.
+Key Two opens THE LEADER. The shift is over. Tomorrow they are not getting tasks. They are getting people.
 
 Present fictional/composite profiles based on patterns the assessment is designed to reveal. Do NOT expose real applicants to other applicants and do NOT let one applicant make a real employment decision about another.
 
