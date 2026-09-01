@@ -141,15 +141,24 @@ export function IdentifyFormScreen({
   );
 }
 
-export function YoureInScreen({ firstName, onContinue }: { firstName: string; onContinue: () => void }) {
+export function YoureInScreen({
+  firstName,
+  title,
+  body,
+  onContinue,
+}: {
+  firstName: string;
+  title?: string;
+  body?: string;
+  onContinue: () => void;
+}) {
   return (
     <div className="tf-hold">
       <p className="tf-kicker">In</p>
-      <h1 className="tf-display">
-        {firstName}, you’re in.
-      </h1>
+      <h1 className="tf-display">{title ?? `${firstName}, you’re in.`}</h1>
       <p className="tf-body">
-        You stepped forward to participate. That is belonging — not a job, not a finalist list, not a promise of pay.
+        {body ??
+          'You stepped forward to participate. That is belonging — not a job, not a finalist list, not a promise of pay.'}
       </p>
       <div className="tf-actions">
         <button type="button" className="tf-btn tf-btn-primary" onClick={onContinue}>
@@ -441,38 +450,49 @@ export function MissionScreen({
 export function HandoffScreen({
   areas,
   mission,
+  interest,
+  firstName,
   keyOneOpen,
-  onUseKey,
+  onGoDeeper,
+  onFinish,
 }: {
   areas: string[];
   mission: MissionDef;
+  interest?: string;
+  firstName?: string;
   keyOneOpen?: boolean;
-  onUseKey?: () => void;
+  onGoDeeper?: () => void;
+  onFinish?: () => void;
 }) {
   const labels = AREA_OPTIONS.filter((a) => areas.includes(a.id)).map((a) => a.label);
   return (
     <div className="tf-hold">
-      <p className="tf-kicker">Handoff</p>
+      <p className="tf-kicker">{firstName ? firstName : 'Handoff'}</p>
       <h1 className="tf-display">You showed up. Now we do.</h1>
-      <p className="tf-body">
-        A campaign team member will follow up. There is no automated next mission after this. That is the point.
-      </p>
-      {labels.length ? <p className="tf-body">You asked to help with: {labels.join(', ')}.</p> : null}
+      {interest ? <p className="tf-body">{interest}</p> : null}
+      {labels.length ? <p className="tf-body">Your path: {labels.join(', ')}.</p> : null}
       <div className="tf-mission">
         <strong>First mission</strong>
         <p>
           {mission.title}. {mission.body}
         </p>
       </div>
-      {keyOneOpen && onUseKey ? (
+      {keyOneOpen && onGoDeeper ? (
         <div className="tf-op-found">
           <p className="tf-kicker">Earlier</p>
           <p className="tf-echo">You found something earlier.</p>
           <div className="tf-actions">
-            <button type="button" className="tf-btn tf-btn-primary" onClick={onUseKey}>
-              Use the key
+            <button type="button" className="tf-btn tf-btn-primary" onClick={onGoDeeper}>
+              Go deeper
             </button>
           </div>
+        </div>
+      ) : null}
+      {onFinish ? (
+        <div className="tf-actions">
+          <button type="button" className="tf-btn" onClick={onFinish}>
+            Finish for now
+          </button>
         </div>
       ) : null}
     </div>

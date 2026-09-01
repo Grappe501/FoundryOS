@@ -7,18 +7,22 @@ import {
   isScenarioComplete,
   recordDecision,
 } from '../../lib/talent-foundry/scenario-engine';
+import type { MemoryPerson } from '../../lib/talent-foundry/people-memory';
 import type { ScenarioDef, ScenarioRunState } from '../../lib/talent-foundry/types';
+import { PeopleDrawer } from './PeopleDrawer';
 
 export function ScenarioRunner({
   def,
   run,
   onChange,
   onComplete,
+  people,
 }: {
   def: ScenarioDef;
   run: ScenarioRunState;
   onChange: (next: ScenarioRunState) => void;
   onComplete: (next: ScenarioRunState) => void;
+  people?: MemoryPerson[];
 }) {
   const [reasoning, setReasoning] = useState('');
   const beat = currentBeat(def, run);
@@ -42,6 +46,7 @@ export function ScenarioRunner({
 
   return (
     <div className="tf-hold">
+      {people?.length ? <PeopleDrawer people={people} /> : null}
       {beat.kicker ? <p className="tf-kicker">{beat.kicker}</p> : null}
       {beat.title ? <h1 className="tf-display tf-display-sm">{beat.title}</h1> : null}
       {beat.lines?.length ? (

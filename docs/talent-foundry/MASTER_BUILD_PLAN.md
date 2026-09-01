@@ -5,7 +5,7 @@
 **Live FoundryOS:** https://foundry-os.netlify.app/  
 **QR target (after P0):** `https://foundry-os.netlify.app/talent-foundry`
 
-**P0 operational MVP and Layer 2 are live on `main`** (`aa443ceb`). Layer 3 is isolated on `feat/talent-foundry-layer-3-leader` (`H:\FoundryOS-tf-layer3`). See `LAYER_3_LEADER_SPEC.md`.
+**V1 spine is live on `main`** (`4565796a`). V1.1 compression is isolated on `feat/talent-foundry-v1-1-compression` (`H:\FoundryOS-tf-v1-1`). See `V1_1_COMPRESSION_SPEC.md`.
 
 This plan is executable. Campaign-specific copy lives in configuration. FoundryOS owns the reusable journey engine. RedDirt remains the only person database.
 

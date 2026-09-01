@@ -22,7 +22,7 @@ export function OpeningScreens({
   onSubmitChange: () => void;
   onWillingness: (choice: WillingnessChoice) => void;
 }) {
-  if (stateId === 'entry') {
+  if (stateId === 'entry' || stateId === 'mystery') {
     return (
       <div className="tf-hold">
         <div className="tf-pulse" aria-hidden />
@@ -31,22 +31,6 @@ export function OpeningScreens({
         <div className="tf-actions">
           <button type="button" className="tf-btn tf-btn-primary" onClick={onBegin}>
             Begin
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (stateId === 'mystery') {
-    return (
-      <div className="tf-hold">
-        <div className="tf-lines">
-          <p>Something is happening in Arkansas.</p>
-          <p>It does not start with a form.</p>
-        </div>
-        <div className="tf-actions" style={{ marginTop: 32 }}>
-          <button type="button" className="tf-btn tf-btn-primary" onClick={onContinue}>
-            Continue
           </button>
         </div>
       </div>
@@ -79,32 +63,13 @@ export function OpeningScreens({
     );
   }
 
-  if (stateId === 'acknowledgment') {
-    return (
-      <div className="tf-hold">
-        <p className="tf-kicker">Heard</p>
-        {changeText.trim() ? <p className="tf-echo">“{acknowledgment}”</p> : null}
-        <p className="tf-body">
-          {changeText.trim()
-            ? 'You named something real. Hold that. The rest of this is about whether you will do something with it.'
-            : 'Even the pause says something. Not everyone is ready to name it out loud. You can still walk forward.'}
-        </p>
-        <div className="tf-actions">
-          <button type="button" className="tf-btn tf-btn-primary" onClick={onContinue}>
-            Continue
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  if (stateId === 'people_rule') {
+  if (stateId === 'acknowledgment' || stateId === 'people_rule') {
     return (
       <div className="tf-hold">
         <p className="tf-kicker">{kellyCopy.peopleRuleEyebrow}</p>
+        {changeText.trim() ? <p className="tf-echo">“{acknowledgment}”</p> : null}
         <h1 className="tf-display">{kellyCopy.peopleRuleTitle}</h1>
         <p className="tf-latin">{kellyCopy.peopleRuleLatin}</p>
-        <p className="tf-body">{kellyCopy.peopleRuleBody}</p>
         <div className="tf-actions">
           <button type="button" className="tf-btn tf-btn-primary" onClick={onContinue}>
             Continue

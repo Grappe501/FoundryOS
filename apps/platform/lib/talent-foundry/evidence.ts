@@ -45,6 +45,8 @@ export function buildIdentifyPayload(session: TalentFoundrySession, startWhen: s
       keyTwo: session.flags.keyTwo,
       layer2Enabled: session.flags.layer2Enabled,
       layer3Enabled: session.flags.layer3Enabled,
+      visitIntent: session.flags.visitIntent,
+      firstVisitComplete: session.flags.firstVisitComplete,
     },
     evidence: slimEvidence(session),
   };
@@ -57,6 +59,7 @@ export function buildContinuePayload(session: TalentFoundrySession): TalentFound
     submissionId: session.identity?.submissionId,
     routing: {
       paidInterest: session.conversion.paidInterest,
+      visitIntent: session.flags.visitIntent,
       weekly: session.conversion.weekly,
       times: session.conversion.times,
       littleRock: session.conversion.littleRock,
