@@ -32,6 +32,7 @@ export type JourneyStateId =
   | 'mission_one'
   | 'handoff'
   | 'still_in'
+  | 'visit_complete'
   | 'layer2_offer'
   | 'layer2_operator'
   | 'key_two'

@@ -9,7 +9,10 @@ import { LAYER1_PEOPLE, LAYER2_PEOPLE, LAYER3_PEOPLE } from '../../lib/talent-fo
 import {
   FIRST_VISIT_DOOR,
   INTENT_TO_PAID,
+  afterHandoff,
+  afterResume,
   chapterFor,
+  finishVisitOne,
   intentSummary,
   resumeCopy,
   wantsPaid,
@@ -81,7 +84,9 @@ import {
   OneDoorScreen,
   PaidBriefScreen,
   ResumeBanner,
+  Layer2OfferScreen,
   StillInScreen,
+  VisitCompleteScreen,
   VolunteerRouteScreen,
 } from './screens/VisitScreens';
 import { PeopleDrawer } from './PeopleDrawer';
@@ -105,6 +110,7 @@ const FLOW_STATES = new Set([
   'mission_one',
   'handoff',
   'still_in',
+  'visit_complete',
   'layer2_offer',
   'layer2_operator',
   'key_two',
@@ -317,14 +323,10 @@ export function TalentFoundryExperience() {
     );
   };
 
-  const finishFirstSession = (deeper?: 'layer2' | 'layer3' | 'none') => {
+  const closeVisit = (flags?: Parameters<typeof patchSession>[1]['flags']) => {
     const next = patchSession(session, {
-      stateId: deeper === 'layer2' ? 'layer2_operator' : deeper === 'layer3' ? 'layer3_leader' : 'still_in',
-      flags: {
-        firstVisitComplete: true,
-        layer2Deferred: deeper === 'none' && session.flags.keyOne && !session.flags.keyTwo ? true : session.flags.layer2Deferred,
-        layer3Deferred: deeper === 'none' && session.flags.keyTwo ? true : session.flags.layer3Deferred,
-      },
+      stateId: finishVisitOne(),
+      flags: { firstVisitComplete: true, ...flags },
     });
     go(next);
     persistQuiet(next);
@@ -627,7 +629,15 @@ export function TalentFoundryExperience() {
           <ResumeBanner
             title={resumeCopy(session)!.title}
             body={resumeCopy(session)!.body}
-            onContinue={() => setResumeOpen(false)}
+            onContinue={() => {
+              setResumeOpen(false);
+              const nextState = afterResume(session);
+              if (nextState !== session.stateId) {
+                const next = patchSession(session, { stateId: nextState });
+                go(next);
+                persistQuiet(next);
+              }
+            }}
           />
         ) : null}
         {resumeOpen && resumeCopy(session) ? null : (
@@ -758,7 +768,7 @@ export function TalentFoundryExperience() {
               const mission = pickMission(session.conversion.areas, pathwayId);
               go(patchSession(session, { stateId: 'mission_one', pathwayId, missionId: mission.id, conversion: { areas: session.conversion.areas.length ? session.conversion.areas : ['community'] } }));
             }}
-            onGoodForNow={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true } }))}
+            onGoodForNow={() => closeVisit()}
           />
         ) : null}
 
@@ -808,9 +818,15 @@ export function TalentFoundryExperience() {
             areas={session.conversion.areas}
             mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
             keyOneOpen={canEnterLayer2(session) && !session.flags.keyTwo}
-            onUseKey={startLayer2}
-            onSaveKey={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true, layer2Deferred: true } }))}
-            onFinish={() => go(patchSession(session, { stateId: 'still_in', flags: { firstVisitComplete: true } }))}
+            onGoDeeper={() => go(patchSession(session, { stateId: afterHandoff(session) }))}
+            onFinish={() => closeVisit()}
+          />
+        ) : null}
+
+        {session.stateId === 'layer2_offer' ? (
+          <Layer2OfferScreen
+            onUse={startLayer2}
+            onSave={() => closeVisit({ layer2Deferred: true })}
           />
         ) : null}
 
@@ -822,14 +838,18 @@ export function TalentFoundryExperience() {
             mission={session.missionId ? pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags)) : null}
             onDeeper={
               canEnterLayer2(session) && !session.flags.keyTwo
-                ? startLayer2
+                ? () => go(patchSession(session, { stateId: 'layer2_offer' }))
                 : canEnterLayer3(session)
-                  ? startLayer3
+                  ? () => go(patchSession(session, { stateId: 'layer3_offer' }))
                   : undefined
             }
-            deeperLabel={canEnterLayer2(session) && !session.flags.keyTwo ? 'Use the key' : canEnterLayer3(session) ? 'Keep going' : undefined}
-            onFinish={() => go(patchSession(session, { flags: { firstVisitComplete: true } }))}
+            deeperLabel={canEnterLayer2(session) && !session.flags.keyTwo ? 'Go deeper' : canEnterLayer3(session) ? 'Keep going' : undefined}
+            onFinish={() => closeVisit()}
           />
+        ) : null}
+
+        {session.stateId === 'visit_complete' ? (
+          <VisitCompleteScreen hasMission={Boolean(session.missionId)} />
         ) : null}
 
         {session.stateId === 'layer2_operator' && canEnterLayer2(session) ? (
@@ -868,7 +888,7 @@ export function TalentFoundryExperience() {
         {session.stateId === 'layer3_offer' ? (
           <Layer3OfferScreen
             onKeep={startLayer3}
-            onSave={() => go(patchSession(session, { stateId: 'still_in', flags: { layer3Deferred: true, firstVisitComplete: true } }))}
+            onSave={() => closeVisit({ layer3Deferred: true })}
           />
         ) : null}
 

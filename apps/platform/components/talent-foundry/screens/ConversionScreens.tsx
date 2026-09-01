@@ -453,8 +453,7 @@ export function HandoffScreen({
   interest,
   firstName,
   keyOneOpen,
-  onUseKey,
-  onSaveKey,
+  onGoDeeper,
   onFinish,
 }: {
   areas: string[];
@@ -462,8 +461,7 @@ export function HandoffScreen({
   interest?: string;
   firstName?: string;
   keyOneOpen?: boolean;
-  onUseKey?: () => void;
-  onSaveKey?: () => void;
+  onGoDeeper?: () => void;
   onFinish?: () => void;
 }) {
   const labels = AREA_OPTIONS.filter((a) => areas.includes(a.id)).map((a) => a.label);
@@ -479,19 +477,14 @@ export function HandoffScreen({
           {mission.title}. {mission.body}
         </p>
       </div>
-      {keyOneOpen && onUseKey ? (
+      {keyOneOpen && onGoDeeper ? (
         <div className="tf-op-found">
           <p className="tf-kicker">Earlier</p>
-          <p className="tf-echo">You found something earlier. This next experience takes about 10 minutes.</p>
+          <p className="tf-echo">You found something earlier.</p>
           <div className="tf-actions">
-            <button type="button" className="tf-btn tf-btn-primary" onClick={onUseKey}>
-              Use the key
+            <button type="button" className="tf-btn tf-btn-primary" onClick={onGoDeeper}>
+              Go deeper
             </button>
-            {onSaveKey ? (
-              <button type="button" className="tf-btn" onClick={onSaveKey}>
-                Save it for later
-              </button>
-            ) : null}
           </div>
         </div>
       ) : null}

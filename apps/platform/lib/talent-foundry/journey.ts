@@ -190,6 +190,7 @@ const RECOVERABLE_STATES = new Set<string>([
   'door_ask',
   'opening_hold',
   'still_in',
+  'visit_complete',
   'layer2_offer',
   'layer2_operator',
   'key_two',
@@ -214,6 +215,7 @@ export function migrateSessionState(stateId: JourneyStateId): JourneyStateId {
   if (stateId === 'scenario_brief') return 'lead_challenge';
   if (stateId === 'scenario_revision') return 'optional_doors';
   if (stateId === 'pathway') return 'mission_one';
+  if (stateId === 'still_in') return 'visit_complete';
   if (!RECOVERABLE_STATES.has(stateId)) return 'entry';
   return stateId;
 }

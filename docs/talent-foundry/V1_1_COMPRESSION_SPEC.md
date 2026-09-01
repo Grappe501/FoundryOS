@@ -28,7 +28,8 @@ entry → change → People Rule → Kelly → INTENT
   → Key One (discovered) → identify
   → you’re in (intent-specific) → route (only what they need)
   → first mission → YOU SHOWED UP. NOW WE DO.
-  → Finish for now  |  Use the key (opt-in, ~10 min)
+  → Finish for now → visit_complete (YOU'RE IN.)
+  OR Go deeper → layer2_offer → Use the key | Save it for later
 ```
 
 Layer 2 and Layer 3 are **not deleted**. They are Visit Two and Visit Three.
@@ -58,8 +59,9 @@ THE LEADER: Noelle, Cam, Imani, Wes
 
 ## Offboard
 
-**I’m good for now** / **Finish for now** → **You’re still in.**  
-No guilt. Progress saved. Go deeper only if a key is waiting.
+**I’m good for now** / **Finish for now** / **Save it for later** → `visit_complete`  
+**YOU'RE IN.** We've got what we need for now. No more questions.  
+Key One / Key Two stay saved. Returning later may show welcome-back, then the offer — never auto-start THE SHIFT or THE LEADER.
 
 ---
 

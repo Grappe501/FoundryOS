@@ -67,6 +67,7 @@ export function chapterFor(stateId: JourneyStateId | string): ChapterId | null {
     stateId === 'mission_one' ||
     stateId === 'handoff' ||
     stateId === 'still_in' ||
+    stateId === 'visit_complete' ||
     stateId === 'layer2_offer'
   ) {
     return 'your_path';
@@ -122,16 +123,50 @@ export function nextVisitState(session: TalentFoundrySession): JourneyStateId {
     case 'mission_one':
       return 'handoff';
     case 'handoff':
-      return session.flags.keyOne && !session.flags.keyTwo ? 'layer2_offer' : 'still_in';
+      return session.flags.keyOne && !session.flags.keyTwo ? 'layer2_offer' : 'visit_complete';
     case 'layer2_offer':
-      return 'still_in';
+      return 'visit_complete';
+    case 'still_in':
+      return 'visit_complete';
     case 'key_two':
-      return session.flags.layer3Enabled && !session.flags.layer3Deferred ? 'layer3_offer' : 'still_in';
+      return session.flags.layer3Enabled && !session.flags.layer3Deferred ? 'layer3_offer' : 'visit_complete';
     case 'layer3_offer':
-      return 'still_in';
+      return 'visit_complete';
+    case 'visit_complete':
+      return 'visit_complete';
     default:
       return session.stateId;
   }
+}
+
+/** Terminal first-visit close. Not an offer. Not Layer 2. */
+export function finishVisitOne(): JourneyStateId {
+  return 'visit_complete';
+}
+
+export function afterHandoff(session: TalentFoundrySession): JourneyStateId {
+  if (session.flags.keyOne && !session.flags.keyTwo) return 'layer2_offer';
+  return 'visit_complete';
+}
+
+/** After welcome-back, let them choose. Never auto-start a deeper layer. */
+export function afterResume(session: TalentFoundrySession): JourneyStateId {
+  if (session.stateId === 'layer2_operator' || session.stateId === 'layer3_leader') {
+    return session.stateId;
+  }
+  const atTerminal = session.stateId === 'visit_complete' || session.stateId === 'still_in';
+  if (!atTerminal) return session.stateId;
+  if (session.flags.keyOne && !session.flags.keyTwo) return 'layer2_offer';
+  if (session.flags.keyTwo && session.flags.layer3Enabled) return 'layer3_offer';
+  return 'visit_complete';
+}
+
+export function afterLayer2Offer(choice: 'use' | 'save'): JourneyStateId {
+  return choice === 'use' ? 'layer2_operator' : 'visit_complete';
+}
+
+export function afterLayer3Offer(choice: 'use' | 'save'): JourneyStateId {
+  return choice === 'use' ? 'layer3_leader' : 'visit_complete';
 }
 
 export function youreInCopy(intent: VisitIntent | null, firstName: string): { title: string; body: string } {
@@ -165,10 +200,23 @@ export function resumeCopy(session: TalentFoundrySession): { kicker: string; tit
   if (session.stateId === 'layer3_leader') {
     return { kicker: 'Welcome back', title: 'The people are still yours to develop.', body: 'Pick up where you stopped.' };
   }
-  if ((session.stateId === 'handoff' || session.stateId === 'layer2_offer' || session.stateId === 'still_in') && session.flags.keyOne && !session.flags.keyTwo) {
+  if (
+    (session.stateId === 'handoff' ||
+      session.stateId === 'layer2_offer' ||
+      session.stateId === 'still_in' ||
+      session.stateId === 'visit_complete') &&
+    session.flags.keyOne &&
+    !session.flags.keyTwo
+  ) {
     return { kicker: 'Welcome back', title: 'You still have Key One.', body: 'Ready to use it?' };
   }
-  if ((session.stateId === 'key_two' || session.stateId === 'layer3_offer' || session.stateId === 'still_in') && session.flags.keyTwo) {
+  if (
+    (session.stateId === 'key_two' ||
+      session.stateId === 'layer3_offer' ||
+      session.stateId === 'still_in' ||
+      session.stateId === 'visit_complete') &&
+    session.flags.keyTwo
+  ) {
     return { kicker: 'Welcome back', title: 'You still have Key Two.', body: 'The next door is about the people you lead.' };
   }
   if (session.flags.identified && session.stateId !== 'entry') {

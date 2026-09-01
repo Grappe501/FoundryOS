@@ -17,7 +17,7 @@ Estimates assume a motivated phone user. Visit One no longer includes Layer 2/3 
 | 11 | Older/nontechnical | 7 min | Identity form | Medium | Drawer helps | Need large type | Volunteer | Phone/email | Human follow-up |
 | 12 | Experienced organizer | 5 min | Scenario may feel simple | “Too easy?” | Low | Clear | Both | Boredom — then they take the key | Layer 2 opt-in |
 | 13 | First-time volunteer | 6 min | None | Kelly slot if no video | Low | Clear | Volunteer | After People Rule | Mission |
-| 14 | Impatient mobile | 4 min | Still ~14 beats | Any extra Continue | Low | Finish for now | Exploring/volunteer | Kelly transcript | Still in |
+| 14 | Impatient mobile | 4 min | Still ~14 beats | Any extra Continue | Low | Finish for now | Exploring/volunteer | Kelly transcript | visit_complete |
 | 15 | Thoughtful long-form | 7 min | Wants more why | Low | Low | Clear | Paid | None | Evidence is richer |
 | 16 | Weak writer / strong thinker | 5 min | Reasoning optional | Low | Low | Clear | Volunteer | Identity writing | Choices carry them |
 | 17 | Highly technical | 5 min | Wants a map | Chapter mark helps | Low | Clear | Any | Mystery vs progress | Operator later |

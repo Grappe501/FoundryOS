@@ -233,6 +233,18 @@ export function StillInScreen({
   );
 }
 
+export function VisitCompleteScreen({ hasMission }: { hasMission: boolean }) {
+  return (
+    <div className="tf-hold">
+      <p className="tf-kicker">In</p>
+      <h1 className="tf-display">You’re in.</h1>
+      <p className="tf-body">We’ve got what we need for now.</p>
+      {hasMission ? <p className="tf-body">Your mission is yours whenever you’re ready.</p> : null}
+      <p className="tf-latin">The People Rule.</p>
+    </div>
+  );
+}
+
 export function Layer2OfferScreen({
   onUse,
   onSave,
