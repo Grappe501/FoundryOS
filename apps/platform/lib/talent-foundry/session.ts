@@ -1,3 +1,4 @@
+import { normalizeLeaderRun } from './leader/engine';
 import { normalizeOperatorRun } from './operator/engine';
 import type { CampaignConfig, TalentFoundrySession } from './types';
 import { createSession, migrateSessionState } from './journey';
@@ -24,6 +25,7 @@ export function loadSession(campaign: CampaignConfig): TalentFoundrySession {
       flags: { ...fresh.flags, ...parsed.flags },
       conversion: { ...fresh.conversion, ...parsed.conversion },
       operator: parsed.operator ? normalizeOperatorRun(parsed.operator) : null,
+      leader: parsed.leader ? normalizeLeaderRun(parsed.leader) : null,
     };
   } catch {
     /* start clean */

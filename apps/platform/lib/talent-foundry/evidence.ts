@@ -44,6 +44,7 @@ export function buildIdentifyPayload(session: TalentFoundrySession, startWhen: s
       keyOne: session.flags.keyOne,
       keyTwo: session.flags.keyTwo,
       layer2Enabled: session.flags.layer2Enabled,
+      layer3Enabled: session.flags.layer3Enabled,
     },
     evidence: slimEvidence(session),
   };

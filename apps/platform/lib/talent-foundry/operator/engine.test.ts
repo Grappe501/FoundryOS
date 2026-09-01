@@ -106,7 +106,8 @@ assert.equal(afterKeyTwo(), 'layer3_leader', 'key two continue → layer 3 hook'
 assert.equal(layer2PublicSurface(afterKeyTwo()), 'layer3_hook', 'hook after key two');
 assert.equal(afterLayer3Hook(), 'people_rule_close', 'hook hold → people rule close');
 assert.equal(layer2PublicSurface(afterLayer3Hook()), 'people_rule_close', 'close is not the hook');
-assert.equal(layer3HookRendersOn('layer3_leader'), true, 'hook renders once');
+assert.equal(layer3HookRendersOn('layer3_leader'), true, 'hook renders once when Layer 3 is off');
+assert.equal(layer3HookRendersOn('layer3_leader', true), false, 'hook yields when Layer 3 is live');
 assert.equal(layer3HookRendersOn('people_rule_close'), false, 'hook does not render on close');
 assert.notEqual(layer2PublicSurface('people_rule_close'), layer2PublicSurface('layer3_leader'), 'close ≠ hook');
 assert.deepEqual(

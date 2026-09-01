@@ -77,6 +77,7 @@ export function createSession(campaign: CampaignConfig, now = new Date()): Talen
     pathwayId: null,
     missionId: null,
     operator: null,
+    leader: null,
   };
 }
 
@@ -109,6 +110,7 @@ export function patchSession(
     pathwayId?: string | null;
     missionId?: string | null;
     operator?: TalentFoundrySession['operator'];
+    leader?: TalentFoundrySession['leader'];
   },
   now = new Date(),
 ): TalentFoundrySession {
@@ -124,6 +126,7 @@ export function patchSession(
     pathwayId: input.pathwayId !== undefined ? input.pathwayId : session.pathwayId,
     missionId: input.missionId !== undefined ? input.missionId : session.missionId,
     operator: input.operator !== undefined ? input.operator : session.operator,
+    leader: input.leader !== undefined ? input.leader : session.leader,
   };
 }
 

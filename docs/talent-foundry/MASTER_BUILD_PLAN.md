@@ -5,7 +5,7 @@
 **Live FoundryOS:** https://foundry-os.netlify.app/  
 **QR target (after P0):** `https://foundry-os.netlify.app/talent-foundry`
 
-**P0 operational MVP is live on `main`.** Layer 2 is implemented on `feat/talent-foundry-layer-2-operator` (`H:\FoundryOS-tf-layer2`) and must not merge until Ernie review. See `LAYER_2_OPERATOR_SPEC.md`.
+**P0 operational MVP and Layer 2 are live on `main`** (`aa443ceb`). Layer 3 is isolated on `feat/talent-foundry-layer-3-leader` (`H:\FoundryOS-tf-layer3`). See `LAYER_3_LEADER_SPEC.md`.
 
 This plan is executable. Campaign-specific copy lives in configuration. FoundryOS owns the reusable journey engine. RedDirt remains the only person database.
 
@@ -256,8 +256,8 @@ Staff can open `/admin/talent-foundry`, inspect evidence, assign an owner, rank,
 |----|------|
 | PL-1 | Real Kelly video asset + poster in campaign media |
 | PL-2 | Full optional door scenarios (Room / Call / Breakdown / Ask) |
-| PL-3 | Key One ceremony + Layer 2 operator mission — **implemented on feature branch** (`LAYER_2_OPERATOR_SPEC.md`). Do not merge over live `main` without review. |
-| PL-4 | Layer 3 leader loop (composite profiles only). Key Two is awarded at Layer 2 completion. |
+| PL-3 | Key One ceremony + Layer 2 operator mission — **live on `main`**. |
+| PL-4 | Layer 3 leader loop (composite profiles only) — isolated branch `feat/talent-foundry-layer-3-leader`. |
 | PL-5 | Voice capture with text fallback |
 | PL-6 | Dedicated Prisma `TalentFoundryReview` model (additive migration) once JSON metadata proves the shape |
 | PL-7 | Follow-up evidence PATCH without a second volunteer Commitment |

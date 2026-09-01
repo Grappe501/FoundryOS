@@ -1,3 +1,4 @@
+import type { LeaderRunState } from './leader/types';
 import type { OperatorRunState } from './operator/types';
 
 export type JourneyStateId =
@@ -135,6 +136,8 @@ export type TalentFoundrySession = {
   missionId: string | null;
   /** Layer 2 operator mission. Absent on P0 sessions. */
   operator?: OperatorRunState | null;
+  /** Layer 3 leader mission. Absent until Key Two. */
+  leader?: LeaderRunState | null;
 };
 
 export type WillingnessChoice = {

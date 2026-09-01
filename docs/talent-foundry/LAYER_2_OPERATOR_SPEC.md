@@ -150,11 +150,9 @@ After Key Two:
 
 - Copy: You’ve been the volunteer. You’ve run the shift. Next, the people are yours to develop.
 - Control: **Not yet** / **Continue when ready**
-- State: `layer3_leader` (hook once) → `people_rule_close` (People Rule end, not the hook again)
-- `flags.layer3Enabled` remains **false**
-- Do not render unfinished Layer 3 UI
-
-Layer 3 will flip the perspective: tomorrow they get people, not tasks — fictional composite records only.
+- If Layer 3 is off: `layer3_leader` (hook once) → `people_rule_close`
+- If Layer 3 is on: `layer3_leader` is THE LEADER mission → `people_rule_close`
+- The hook must never re-render on `people_rule_close`
 
 ---
 

@@ -3,7 +3,7 @@ import type { CampaignConfig, OptionalDoor } from '../types';
 export const kellyCampaign: CampaignConfig = {
   id: 'kelly',
   sessionKey: 'tf.kelly.v1',
-  implementedThrough: 'layer3_leader',
+  implementedThrough: 'people_rule_close',
   // Drop the approved 30s direct-to-camera MP4 at
   // apps/platform/public/talent-foundry/kelly-grappe-intro.mp4
   // then set this to "/talent-foundry/kelly-grappe-intro.mp4".
@@ -13,7 +13,7 @@ export const kellyCampaign: CampaignConfig = {
   kellyVideoUrl: null,
   flags: {
     layer2Enabled: true,
-    layer3Enabled: false,
+    layer3Enabled: true,
   },
   willingnessChoices: [
     { id: 'where_i_live', label: 'Help from where I live', willingToAct: true },
