@@ -441,9 +441,13 @@ export function MissionScreen({
 export function HandoffScreen({
   areas,
   mission,
+  keyOneOpen,
+  onUseKey,
 }: {
   areas: string[];
   mission: MissionDef;
+  keyOneOpen?: boolean;
+  onUseKey?: () => void;
 }) {
   const labels = AREA_OPTIONS.filter((a) => areas.includes(a.id)).map((a) => a.label);
   return (
@@ -460,6 +464,17 @@ export function HandoffScreen({
           {mission.title}. {mission.body}
         </p>
       </div>
+      {keyOneOpen && onUseKey ? (
+        <div className="tf-op-found">
+          <p className="tf-kicker">Earlier</p>
+          <p className="tf-echo">You found something earlier.</p>
+          <div className="tf-actions">
+            <button type="button" className="tf-btn tf-btn-primary" onClick={onUseKey}>
+              Use the key
+            </button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

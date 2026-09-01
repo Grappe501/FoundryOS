@@ -1,3 +1,5 @@
+import type { OperatorRunState } from './operator/types';
+
 export type JourneyStateId =
   | 'entry'
   | 'mystery'
@@ -131,6 +133,8 @@ export type TalentFoundrySession = {
   conversion: ConversionState;
   pathwayId: string | null;
   missionId: string | null;
+  /** Layer 2 operator mission. Absent on P0 sessions. */
+  operator?: OperatorRunState | null;
 };
 
 export type WillingnessChoice = {

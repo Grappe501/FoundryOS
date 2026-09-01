@@ -1,3 +1,4 @@
+import { normalizeOperatorRun } from './operator/engine';
 import type { CampaignConfig, TalentFoundrySession } from './types';
 import { createSession, migrateSessionState } from './journey';
 
@@ -22,6 +23,7 @@ export function loadSession(campaign: CampaignConfig): TalentFoundrySession {
       runs: parsed.runs ?? {},
       flags: { ...fresh.flags, ...parsed.flags },
       conversion: { ...fresh.conversion, ...parsed.conversion },
+      operator: parsed.operator ? normalizeOperatorRun(parsed.operator) : null,
     };
   } catch {
     /* start clean */

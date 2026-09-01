@@ -5,9 +5,20 @@ import { kellyCampaign, kellyCopy } from '../../lib/talent-foundry/campaigns/kel
 import { doorScenarios } from '../../lib/talent-foundry/campaigns/scenarios/doors';
 import { volunteerConsequences, volunteersScenario, VOLUNTEERS_SCENARIO_ID } from '../../lib/talent-foundry/campaigns/scenarios/volunteers';
 import { advanceSession, completeOptionalDoor, createSession, excerptText, patchSession } from '../../lib/talent-foundry/journey';
+import {
+  applyOperatorPatch,
+  canEnterLayer2,
+  createOperatorRun,
+  isTalentFoundryDev,
+  layer2Evidence,
+  markLayer2DevSession,
+  readLayer2DevIntent,
+  seedLayer2DevSession,
+} from '../../lib/talent-foundry/operator';
 import { pickMission, suggestPathway } from '../../lib/talent-foundry/routing';
 import { createRun } from '../../lib/talent-foundry/scenario-engine';
 import { loadSession, resetSession, saveSession } from '../../lib/talent-foundry/session';
+import type { OperatorRunState } from '../../lib/talent-foundry/operator/types';
 import type {
   CommitmentChoice,
   ConversionState,
@@ -40,6 +51,7 @@ import {
   PathwayScreen,
   YoureInScreen,
 } from './screens/ConversionScreens';
+import { KeyTwoScreen, Layer3HookScreen, OperatorMission } from './operator/OperatorMission';
 
 const FLOW_STATES = new Set([
   'scenario_volunteers',
@@ -55,6 +67,9 @@ const FLOW_STATES = new Set([
   'pathway',
   'mission_one',
   'handoff',
+  'layer2_operator',
+  'key_two',
+  'layer3_leader',
 ]);
 
 const emptyIdentity = {
@@ -89,6 +104,12 @@ export function TalentFoundryExperience() {
   const closeShare = useCallback(() => setShareOpen(false), []);
 
   useEffect(() => {
+    if (isTalentFoundryDev() && readLayer2DevIntent()) {
+      markLayer2DevSession();
+      setSession(seedLayer2DevSession(kellyCampaign));
+      setHydrated(true);
+      return;
+    }
     const loaded = loadSession(kellyCampaign);
     setSession(loaded);
     const prior = loaded.evidence.find((item) => item.stateId === 'change_prompt' && item.kind === 'text');
@@ -346,6 +367,52 @@ export function TalentFoundryExperience() {
     }
   };
 
+  const persistQuiet = (next: TalentFoundrySession) => {
+    if (!next.identity?.submissionId) return;
+    void fetch('/api/talent-foundry/continue', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ session: next }),
+    }).catch(() => {
+      /* local progress remains */
+    });
+  };
+
+  const operatorRun = session.operator ?? createOperatorRun();
+
+  const setOperator = (nextRun: OperatorRunState, extras?: Parameters<typeof patchSession>[1]) => {
+    const next = patchSession(session, { operator: nextRun, ...extras });
+    go(next);
+    return next;
+  };
+
+  const startLayer2 = () => {
+    const started = applyOperatorPatch(session.operator ?? createOperatorRun(), { phase: 'unlock', persistAt: 'start' });
+    const next = patchSession(session, {
+      stateId: 'layer2_operator',
+      operator: started,
+      evidence: session.evidence.some((e) => e.label === 'Layer 2 started')
+        ? undefined
+        : layer2Evidence(started, false).filter((e) => e.label === 'Layer 2 started'),
+    });
+    go(next);
+    persistQuiet(next);
+  };
+
+  const finishLayer2 = (nextRun: OperatorRunState) => {
+    const evidence = layer2Evidence(nextRun, true).filter(
+      (item) => !session.evidence.some((e) => e.label === item.label),
+    );
+    const next = patchSession(session, {
+      stateId: 'key_two',
+      operator: nextRun,
+      flags: { keyTwo: true },
+      evidence,
+    });
+    go(next);
+    persistQuiet(next);
+  };
+
   const submitContinue = async () => {
     setContinueSaving(true);
     setContinueRetry(null);
@@ -435,7 +502,7 @@ export function TalentFoundryExperience() {
         </button>
       </nav>
       <ShareQrTakeover open={shareOpen} onClose={closeShare} />
-      <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}`}>
+      <div className={stageClass} key={`${session.stateId}-${briefRun.beatIndex}-${volunteerRun.beatIndex}-${operatorRun.phase}`}>
         <OpeningScreens
           stateId={session.stateId}
           changeText={changeText}
@@ -604,7 +671,37 @@ export function TalentFoundryExperience() {
           <HandoffScreen
             areas={session.conversion.areas}
             mission={pickMission(session.conversion.areas, suggestPathway(session.conversion, session.flags))}
+            keyOneOpen={canEnterLayer2(session) && !session.flags.keyTwo}
+            onUseKey={startLayer2}
           />
+        ) : null}
+
+        {session.stateId === 'layer2_operator' && canEnterLayer2(session) ? (
+          <OperatorMission
+            run={operatorRun}
+            onChange={(nextRun) => setOperator(nextRun)}
+            onAdvance={(nextRun) => {
+              const next = setOperator(nextRun, { stateId: 'layer2_operator' });
+              if (nextRun.persistAt === 'start' || nextRun.persistAt === 'mid') persistQuiet(next);
+            }}
+            onFinish={finishLayer2}
+          />
+        ) : null}
+
+        {session.stateId === 'layer2_operator' && !canEnterLayer2(session) ? (
+          <div className="tf-hold">
+            <p className="tf-kicker">Closed</p>
+            <h1 className="tf-display tf-display-sm">This door is not open.</h1>
+            <p className="tf-body">The shift is for someone who already found the first key.</p>
+          </div>
+        ) : null}
+
+        {session.stateId === 'key_two' ? (
+          <KeyTwoScreen onContinue={() => go(patchSession(session, { stateId: 'layer3_leader' }))} />
+        ) : null}
+
+        {session.stateId === 'layer3_leader' || session.stateId === 'people_rule_close' ? (
+          <Layer3HookScreen onHold={() => go(patchSession(session, { stateId: 'people_rule_close' }))} />
         ) : null}
 
         {(session.stateId === 'youre_in' && !session.identity) ||
