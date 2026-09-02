@@ -1,11 +1,13 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { PHASE_1_NOTICE } from '../../../../lib/talent-foundry/implementations/company/scenarios/lab';
 import { echoNotice } from '../../../../lib/talent-foundry/implementations/company/echo';
 
 export function NoticeWrite({
   notice,
   change,
+  opened,
   onNotice,
   onChange,
   onTyping,
@@ -13,11 +15,28 @@ export function NoticeWrite({
 }: {
   notice: string;
   change: string;
+  opened: boolean;
   onNotice: (value: string) => void;
   onChange: (value: string) => void;
   onTyping: () => void;
   onSubmit: () => void;
 }) {
+  const [allowAsk, setAllowAsk] = useState(opened);
+
+  useEffect(() => {
+    if (opened) {
+      setAllowAsk(true);
+      return;
+    }
+    const reduce =
+      typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const wait = reduce ? 0 : 5000;
+    const t = window.setTimeout(() => setAllowAsk(true), wait);
+    return () => window.clearTimeout(t);
+  }, [opened]);
+
+  if (!allowAsk) return null;
+
   return (
     <>
       <p className="ws-prompt">{PHASE_1_NOTICE.prompts.notice}</p>
@@ -46,9 +65,11 @@ export function NoticeWrite({
         autoComplete="off"
         rows={3}
       />
-      <button type="button" className="ws-next" onClick={onSubmit} disabled={!notice.trim() || !change.trim()}>
-        Continue
-      </button>
+      {notice.trim() && change.trim() ? (
+        <button type="button" className="ws-threshold" onClick={onSubmit} aria-label="Continue">
+          <span className="ws-threshold-mark" aria-hidden />
+        </button>
+      ) : null}
     </>
   );
 }
@@ -57,8 +78,8 @@ export function NoticeAck({ notice, onContinue }: { notice: string; onContinue: 
   return (
     <>
       <p className="ws-echo">{echoNotice(notice)}</p>
-      <button type="button" className="ws-next" onClick={onContinue}>
-        Continue
+      <button type="button" className="ws-threshold" onClick={onContinue} aria-label="Continue">
+        <span className="ws-threshold-mark" aria-hidden />
       </button>
     </>
   );

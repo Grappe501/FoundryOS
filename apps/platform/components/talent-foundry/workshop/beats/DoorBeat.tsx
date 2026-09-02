@@ -19,6 +19,7 @@ export function DoorBeat({
   onEnter: () => void;
 }) {
   const [shown, setShown] = useState(1);
+  const [threshold, setThreshold] = useState(false);
 
   useEffect(() => {
     onReveal('line1');
@@ -26,6 +27,7 @@ export function DoorBeat({
       typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduce) {
       setShown(3);
+      setThreshold(true);
       onReveal('line2');
       onReveal('line3');
       return;
@@ -33,31 +35,45 @@ export function DoorBeat({
     const t2 = window.setTimeout(() => {
       setShown(2);
       onReveal('line2');
-    }, 2200);
+    }, 2800);
     const t3 = window.setTimeout(() => {
       setShown(3);
       onReveal('line3');
-    }, 4400);
+    }, 6000);
+    const t4 = window.setTimeout(() => setThreshold(true), 7800);
     return () => {
       window.clearTimeout(t2);
       window.clearTimeout(t3);
+      window.clearTimeout(t4);
     };
   }, [onReveal]);
 
-  const ready = shown >= 3 || Boolean(session.doorPacing.line3At);
+  const ready = threshold || Boolean(session.doorPacing.line3At);
+  const visible = Math.max(shown, session.doorPacing.line2At ? 2 : 1, session.doorPacing.line3At ? 3 : 1);
+
+  useEffect(() => {
+    if (!ready) return;
+    function onKey(event: KeyboardEvent) {
+      if (event.key === 'Enter' && !event.metaKey && !event.ctrlKey && !event.altKey) {
+        event.preventDefault();
+        onEnter();
+      }
+    }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [ready, onEnter]);
 
   return (
     <>
-      {LINES.slice(0, Math.max(shown, session.doorPacing.line2At ? 2 : 1, session.doorPacing.line3At ? 3 : 1)).map(
-        (line, i) => (
-          <p key={line.id} className={i === 0 ? 'ws-line' : 'ws-line ws-line--quiet'}>
-            {line.text}
-          </p>
-        ),
-      )}
+      {LINES.slice(0, visible).map((line, i) => (
+        <p key={line.id} className={i === 0 ? 'ws-line' : 'ws-line ws-line--quiet'}>
+          {line.text}
+        </p>
+      ))}
       {ready ? (
-        <button type="button" className="ws-enter" onClick={onEnter}>
-          Enter
+        <button type="button" className="ws-threshold" onClick={onEnter} aria-label="Enter">
+          <span className="ws-threshold-mark" aria-hidden />
+          <span className="ws-threshold-word">Enter</span>
         </button>
       ) : null}
     </>

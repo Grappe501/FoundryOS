@@ -19,6 +19,12 @@ import {
   saveWorkshopSession,
 } from '../../../lib/talent-foundry/implementations/company/persist';
 import { roomDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import {
+  attendedRegionIds,
+  draftPresence,
+  draftTrace,
+  pulsePresence,
+} from '../../../lib/talent-foundry/implementations/company/traces';
 import type { DoorLineId, WorkshopSession } from '../../../lib/talent-foundry/implementations/company/types';
 import { DoorBeat } from './beats/DoorBeat';
 import { LingerRest, NamedReveal } from './beats/NamedBeat';
@@ -69,30 +75,26 @@ export function WorkshopExperience() {
     apply((current) => revealDoorLine(current, line));
   }, [apply]);
 
+  const onEnter = useCallback(() => {
+    apply((current) => enterWorkshop(current));
+  }, [apply]);
+
   if (!session) {
-    return (
-      <WorkshopRoom depth="void" voice={<p className="ws-line">YOU FOUND THE WORKSHOP.</p>} />
-    );
+    return <WorkshopRoom depth="void" stateId="boot" voice={<p className="ws-line">YOU FOUND THE WORKSHOP.</p>} />;
   }
 
   const depth = roomDepth(session.stateId);
-  const showPulse = session.stateId === 'notice' || session.stateId === 'notice_ack';
-  const showDraft = session.stateId === 'mess' || session.stateId === 'mess_consequence';
+  const attended = attendedRegionIds(session);
 
   let voice = null;
   if (session.stateId === 'door') {
-    voice = (
-      <DoorBeat
-        session={session}
-        onReveal={onReveal}
-        onEnter={() => apply((current) => enterWorkshop(current))}
-      />
-    );
+    voice = <DoorBeat session={session} onReveal={onReveal} onEnter={onEnter} />;
   } else if (session.stateId === 'notice') {
     voice = (
       <NoticeWrite
         notice={notice}
         change={change}
+        opened={attended.length > 0}
         onNotice={setNotice}
         onChange={setChange}
         onTyping={() => apply((current) => noteTyping(current, 'notice'))}
@@ -135,14 +137,19 @@ export function WorkshopExperience() {
   return (
     <WorkshopRoom
       depth={depth}
-      object={
-        showPulse ? (
+      stateId={session.stateId}
+      traces={
+        <>
           <PulseFirstRun
-            onAttend={(regionId, dwellMs) => apply((current) => markNoticeRegion(current, regionId, new Date(), dwellMs))}
+            presence={pulsePresence(session.stateId)}
+            attended={attended}
+            interactive={session.stateId === 'notice'}
+            onAttend={(regionId, dwellMs) =>
+              apply((current) => markNoticeRegion(current, regionId, new Date(), dwellMs))
+            }
           />
-        ) : showDraft ? (
-          <LastDraft />
-        ) : undefined
+          <LastDraft presence={draftPresence(session.stateId)} trace={draftTrace(session)} />
+        </>
       }
       voice={voice}
     />

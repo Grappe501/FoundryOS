@@ -24,6 +24,8 @@ Phase 1 implication: do not store anything we would be ashamed to show them late
 
 The workshop changes because of **facts**, not points.
 
+**The room should remember more than the participant realizes** (Phase 1.1). Something they touched stays touched. A deleted draft stays gone. Not a score. A place.
+
 | Fact on the tape | Room may |
 |---|---|
 | They finished NOTICE | A second pane gets a faint grid |

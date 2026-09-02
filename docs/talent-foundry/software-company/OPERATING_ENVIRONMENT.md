@@ -4,7 +4,8 @@
 
 **Door:** `/workshop`  
 **Rule:** Do not tell them they entered an internship funnel. Let them discover they walked into something larger.  
-**Standard:** they should rarely feel trained. They should feel they are becoming capable. See `CAPABILITY_REVEAL_ENGINE.md`.
+**Standard:** they should rarely feel trained. They should feel they are becoming capable. See `CAPABILITY_REVEAL_ENGINE.md`.  
+**Place:** the room should remember more than the participant realizes — environmental continuity, not surveillance. See `PHASE_1_1_EXPERIENCE_PROOF.md`.
 
 ---
 

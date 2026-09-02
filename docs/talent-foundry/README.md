@@ -5,7 +5,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 | Implementation | Public question | Route | Person store | Status |
 |---|---|---|---|---|
 | **Campaign Foundry** | Will you show up? | `/talent-foundry` | RedDirt | **Live V1.2** |
-| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` | FoundryOS `foundry_people` → later `user_profiles` | **Phase 0 + 0.5 CANON.** Phase 1 door cleared. Cohort 01: 3–5 start **2026-11-15** (staff only) |
+| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` | FoundryOS `foundry_people` → later `user_profiles` | **Phase 1.1 experience proof.** Phase 2 held. Cohort 01: 3–5 start **2026-11-15** (staff only) |
 | **Employer Foundry** | Configurable | TBD | Tenant | Future (Phase 8) |
 
 **Campaign Foundry (this file below):** Kelly Grappe beta. Do not treat it as the company product. Live QR remains `https://foundry-os.netlify.app/talent-foundry`.
@@ -25,6 +25,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 - `docs/talent-foundry/software-company/COHORT_MODEL.md`
 - `docs/talent-foundry/software-company/EVIDENCE_AND_HUMAN_DECISION_MODEL.md`
 - `docs/talent-foundry/software-company/PHASE_1_BUILD_SPEC.md`
+- `docs/talent-foundry/software-company/PHASE_1_1_EXPERIENCE_PROOF.md`
 - `docs/talent-foundry/software-company/THINKING_TRACE_MODEL.md`
 - `docs/talent-foundry/software-company/SCENARIO_LAB.md`
 - `docs/talent-foundry/software-company/FUTURE_SURFACES.md`

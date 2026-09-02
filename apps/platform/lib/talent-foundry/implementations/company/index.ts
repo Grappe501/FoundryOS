@@ -36,6 +36,7 @@ export { assertPlainThinkingEvent, closeBeatIgnores, recordThinking, thinkingMov
 export { coverageFact, textMetrics } from './clocks';
 export { echoNotice } from './echo';
 export { roomDepth } from './room';
+export { draftTrace, pulsePresence, draftPresence } from './traces';
 export {
   loadWorkshopSession,
   resetWorkshopSession,

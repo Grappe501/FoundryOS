@@ -1,6 +1,6 @@
 # Company Foundry — Phase 1 Build Spec
 
-**Status:** **CLEARED** (Ernie 2026-09-02). Build the door on this branch. Do not merge PR #5 yet.  
+**Status:** Door **built**. Current work is **Phase 1.1** (`PHASE_1_1_EXPERIENCE_PROOF.md`). Do not start Phase 2. Do not merge PR #5 yet.  
 **Governing architecture:** Phase 0 + Phase 0.5 (`PHASE_0_5_TALENT_TO_OWNERSHIP.md`) + `CAPABILITY_REVEAL_ENGINE.md`.  
 **Contracts:** `apps/platform/lib/talent-foundry/implementations/company/`  
 **Lab lock:** NOTICE **N1**, MESS **M1** (`SCENARIO_LAB.md`).  

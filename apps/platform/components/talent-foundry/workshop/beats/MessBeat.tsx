@@ -5,7 +5,6 @@ import { PHASE_1_MESS } from '../../../../lib/talent-foundry/implementations/com
 export function MessChoices({ onChoose }: { onChoose: (choiceId: string) => void }) {
   return (
     <>
-      <p className="ws-kicker">{PHASE_1_MESS.title}</p>
       <ul className="ws-facts">
         {PHASE_1_MESS.facts.map((fact) => (
           <li key={fact}>{fact}</li>
@@ -24,8 +23,8 @@ export function MessAftermath({ consequence, onContinue }: { consequence: string
   return (
     <>
       <p className="ws-consequence">{consequence}</p>
-      <button type="button" className="ws-next" onClick={onContinue}>
-        Continue
+      <button type="button" className="ws-threshold" onClick={onContinue} aria-label="Continue">
+        <span className="ws-threshold-mark" aria-hidden />
       </button>
     </>
   );

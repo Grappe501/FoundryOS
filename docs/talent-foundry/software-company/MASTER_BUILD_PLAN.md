@@ -3,7 +3,7 @@
 **Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
 **Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
-**Now:** Phase 0 + 0.5 **approved**. Phase 1 door is cleared. Keep building on this branch; **do not merge PR #5 yet**.
+**Now:** Phase 0 + 0.5 **approved**. Phase 1 door exists. **Phase 1.1 Experience Proof** — do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.
 
 This is **not** the Kelly Grappe experience with different copy.  
 This is **not** an internship funnel, a bootcamp, or a course catalog.
@@ -38,7 +38,7 @@ People demonstrate capability. Humans decide placement, employment, compensation
 | Implementation | Status | Index |
 |---|---|---|
 | Campaign Foundry | Live V1.2 on `/talent-foundry` | `docs/talent-foundry/README.md` |
-| **Company Foundry** | Phase 0 + **0.5** (this directory) | this file |
+| **Company Foundry** | Phase 1.1 experience proof (this directory) | this file |
 | Employer Foundry | Future Phase 8 | `PARALLEL_ARCHITECTURE.md` |
 
 Campaign architecture lock (“not a lifelong world,” RedDirt identity) remains **campaign-scoped**. Company Foundry reopens the world question: this implementation **is** a FoundryOS-world flywheel.
@@ -64,7 +64,8 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `ACADEMY_CURRICULUM.md` | What they eventually learn — as missions, not a course |
 | `OPERATING_ENVIRONMENT.md` | `/workshop` becomes the bench; GitHub feeds the record |
 | `AI_PARTNERS.md` | Burt (Cursor), Ernie (ChatGPT), Oscar (later) |
-| `PHASE_1_BUILD_SPEC.md` | **CLEARED** — `/workshop` through linger |
+| `PHASE_1_BUILD_SPEC.md` | Door spec — built |
+| `PHASE_1_1_EXPERIENCE_PROOF.md` | **Now.** Gravity, linger metric, room remembers. No Phase 2. |
 | this file | Phases 0–8 and sequencing |
 
 **Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
@@ -77,8 +78,9 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 |---|---|---|---|
 | **0** | Recovery + architecture | Docs, family index, spine contracts through DELIVER, isolated PR | In this PR. Ernie review still open. |
 | **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. **CANON.** | Approved 2026-09-02 |
-| **1** | Mysterious front door | `/workshop` through NOTICE + THE MESS + first revelation. Anonymous. Room left able to become an environment. | **Cleared. Building now.** |
-| **2** | First artifact + method turn | MAKE, “how we make things here,” Remember Me, first setup missions | After the door fascinates |
+| **1** | Mysterious front door | `/workshop` through linger. Anonymous. Room can become an environment. | Built. Gravity not yet proven. |
+| **1.1** | Experience proof | Cinematic / polish on the existing door. Linger = unfinished business. Room remembers. **No new journey.** | **This pass. Do not start Phase 2.** |
+| **2** | First artifact + method turn | MAKE, observed → equipped, Capability Reveal starts | Only after the door has gravity |
 | **3** | Deeper work + training repo | Return, fictional collaborate/respond/deliver, clone / branch / broken build / inspect-data | After they can return |
 | **4** | Cohort becomes real | They meet another participant. Cohort objects. GitHub org. Shared repos. | After they can work without destroying the bench |
 | **5** | Real-work bridge | Sandbox → supervised Foundry products. Paid **gates** (not payroll) | After real collaboration exists |
@@ -119,6 +121,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass L — MULTIPLY fill.** Fictional newer person Nia. Help + what unblocks them. Not a cohort. Not a mentor badge. No UI. LEAD still stub.
 - [x] **Pass M — Phase 0.5 accepted.** E0.5-1–7 locked. Capability Reveal Engine. Becoming-capable standard. Training repo must feel like a young product. Phase 1 door cleared. PR #5 stays open.
 - [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
+- [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 
 ---
 
@@ -139,11 +142,10 @@ Do not attempt the entire system in one code pass.
 
 ## Recommended sequence
 
-1. **Phase 0.5 accepted.** Keep building on `feat/talent-foundry-company-phase-0`. Do not merge PR #5 yet.
-2. Build Phase 1 door only (`/workshop` through linger). Local session. No identity, GitHub, Cursor, API, Oscar, cohort.
-3. The room is the future environment — do not throw it away after the puzzle.
-4. Phone-width walkthrough: stranger → ENTER → notice → mess → revelation → leave fascinated.
-5. Do not merge on the same day as campaign changes.
+1. **Phase 1.1.** Walk `/workshop`. Five tests in `PHASE_1_1_EXPERIENCE_PROOF.md`. Linger is the metric.
+2. Ernie visual review. Do not start MAKE until the door has gravity.
+3. Only then Phase 2: first artifact, observed → equipped, Capability Reveal Engine.
+4. Keep building on this branch. Do not merge PR #5 yet.
 
 ---
 
