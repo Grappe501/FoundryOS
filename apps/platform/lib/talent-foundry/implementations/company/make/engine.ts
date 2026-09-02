@@ -1,5 +1,5 @@
 import { markFirstInput, submitBeat, textMetrics } from '../clocks';
-import { tryEnterStage } from '../spine/kernel';
+import { syncEnvelope, tryEnterStage } from '../spine/kernel';
 import type { ArtifactTrack } from '../spine/envelope';
 import { recordThinking } from '../thinking-trace';
 import type { WorkshopSession } from '../types';
@@ -80,7 +80,7 @@ export function submitMake(
   const progress = { ...next.envelope.progress };
   if (input.finished) progress.make = 'complete';
 
-  return {
+  return syncEnvelope({
     ...next,
     envelope: {
       ...next.envelope,
@@ -111,5 +111,5 @@ export function submitMake(
         },
       },
     ],
-  };
+  });
 }

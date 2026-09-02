@@ -30,6 +30,7 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
   if (session.flags.messComplete) progress.solve = session.stateId === 'linger' || session.flags.named ? 'complete' : 'open';
   if (session.flags.named && session.stateId === 'linger') progress.solve = 'complete';
   if (progress.solve === 'complete' && progress.make === 'locked') progress.make = 'open';
+  if (progress.make === 'complete' && progress.remember === 'locked') progress.remember = 'open';
 
   const pastSolve =
     SPINE_STAGE_IDS.indexOf(envelope.spineStage) >= SPINE_STAGE_IDS.indexOf('make');
@@ -46,6 +47,7 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
 }
 
 export function tryEnterStage(session: WorkshopSession, stage: SpineStageId, now = new Date()): EnterStageResult {
+  session = syncEnvelope(session);
   const def = stageDef(stage);
   const current = session.envelope ?? createEnvelope();
   const progress = current.progress[stage];

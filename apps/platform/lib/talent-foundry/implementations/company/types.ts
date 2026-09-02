@@ -54,7 +54,8 @@ export type WorkshopEvidenceType =
   | 'consequence'
   | 'access_event'
   | 'thinking'
-  | 'clock';
+  | 'clock'
+  | 'identity';
 
 export type WorkshopEvidence = {
   id: string;

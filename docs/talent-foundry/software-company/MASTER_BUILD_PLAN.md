@@ -98,6 +98,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass C — Observation clocks + Cohort 01 lock.** Silent linger / hesitation / coverage (read vs skim as facts). M1 is **The last draft** — no Tuesday. `COHORT_01`: 3–5 people, work starts **2026-11-15**. Never a seriousness score.
 - [x] **Pass D — Master spine + uniform layer.** All 14 stages exist. Ernie-zone (door → linger) is frozen. Uniform beat/envelope lifts every stage equally. Stages 4–14 are stubs; 12–14 also require human gates. No `/workshop` UI. See `SPINE_AND_LAYERS.md`.
 - [x] **Pass E — MAKE fill.** Seven interest tracks + artifact submit/abandon. After linger, MAKE is enterable in the envelope; Ernie `stateId` stays `linger`. No UI. REMEMBER still stub.
+- [x] **Pass F — REMEMBER fill.** You’ve left something behind. Remember Me (name, email, optional location/school-work) or Keep Exploring. `placeEligible` flag only — no resume table, no account, no UI. RETURN still stub.
 
 ---
 

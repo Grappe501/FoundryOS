@@ -39,6 +39,8 @@ export type { SpineStageId } from './spine/stages';
 export { tryAdvanceSpine, tryEnterStage, recordHumanGate } from './spine/kernel';
 export { chooseMakeTrack, openMake, submitMake } from './make/engine';
 export { MAKE_TRACKS, makeTrack } from './make/tracks';
+export { keepExploring, openRemember, rememberMe } from './remember/engine';
+export { REMEMBER_COPY } from './remember/copy';
 export {
   MESS_M1,
   MESS_SEEDS,

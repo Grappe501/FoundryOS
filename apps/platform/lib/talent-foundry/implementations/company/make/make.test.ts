@@ -60,9 +60,10 @@ assert.equal(made.thinking.some((e) => e.move === 'finish'), true);
 assert.ok((made.clocks.make?.lingerMs ?? 0) >= 60_000);
 
 const next = tryAdvanceSpine(made);
-assert.equal(next.ok, false);
-assert.equal(next.reason, 'stub');
-assert.equal(next.stage, 'remember');
+assert.equal(next.ok, true);
+if (!next.ok) throw new Error('remember');
+assert.equal(next.session.envelope.spineStage, 'remember');
+assert.equal(next.session.stateId, 'linger');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {
   assert.equal(nextWorkshopState(state), ERNIE_ZONE_NEXT[state]);

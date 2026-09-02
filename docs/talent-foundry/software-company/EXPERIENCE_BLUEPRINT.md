@@ -258,6 +258,8 @@ Remember Me fields:
 
 Keep Exploring leaves the artifact on the local session. They may hit this checkpoint again.
 
+Kernel: `remember/engine.ts` + `REMEMBER_COPY`. No public screen until Phase 1 UI exists.
+
 ---
 
 ## SAVE MY PLACE (Phase 2+)

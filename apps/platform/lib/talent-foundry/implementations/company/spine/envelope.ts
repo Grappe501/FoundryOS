@@ -21,6 +21,8 @@ export type RememberFields = {
   schoolOrWork?: string;
 };
 
+export type RememberChoice = 'remember_me' | 'keep_exploring';
+
 export type HumanGateKind =
   | 'cohort_invite'
   | 'interview'
@@ -43,6 +45,9 @@ export type SpineEnvelope = {
   spineStage: SpineStageId;
   progress: Record<SpineStageId, StageProgress>;
   remember: RememberFields | null;
+  rememberChoice: RememberChoice | null;
+  /** True after Remember Me. Token/table come later — no account yet. */
+  placeEligible: boolean;
   artifactTrack: ArtifactTrack | null;
   artifact: ArtifactDraft | null;
   gates: HumanGateRecord[];
@@ -62,6 +67,8 @@ export function createEnvelope(): SpineEnvelope {
     spineStage: 'discover',
     progress: emptyProgress(),
     remember: null,
+    rememberChoice: null,
+    placeEligible: false,
     artifactTrack: null,
     artifact: null,
     gates: [],
