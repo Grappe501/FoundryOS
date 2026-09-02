@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { MAKE_COPY } from '../../../../lib/talent-foundry/implementations/company/make/copy';
-import { trackLure } from '../../../../lib/talent-foundry/implementations/company/make/surface';
+import { scrapsFor } from '../../../../lib/talent-foundry/implementations/company/make/scraps';
 import { makeTrack } from '../../../../lib/talent-foundry/implementations/company/make/tracks';
 import type { ArtifactTrack } from '../../../../lib/talent-foundry/implementations/company/spine/envelope';
 
@@ -15,9 +15,11 @@ export function MakeNeed({
 }) {
   return (
     <div className="ws-object-notes">
-      {tracks.map((id) => (
-        <button key={id} type="button" className="ws-choice" onClick={() => onChoose(id)}>
-          {trackLure(id)}
+      {scrapsFor(tracks).map((scrap) => (
+        <button key={scrap.id} type="button" className="ws-scrap" onClick={() => onChoose(scrap.id)}>
+          <span className="ws-scrap-when">{scrap.when}</span>
+          <span className="ws-scrap-struck">{scrap.struck}</span>
+          <span className="ws-scrap-lure">{scrap.lure}</span>
         </button>
       ))}
     </div>

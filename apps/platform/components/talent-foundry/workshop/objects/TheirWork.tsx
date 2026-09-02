@@ -3,7 +3,14 @@ import type { ObjectPresence } from '../../../../lib/talent-foundry/implementati
 export function TheirWork({ presence, body }: { presence: ObjectPresence; body: string }) {
   if (presence === 'absent' || !body.trim()) return null;
   return (
-    <aside className="ws-object ws-draft" data-presence={presence} data-trace="restored" aria-label="What they made">
+    <aside
+      className="ws-object ws-draft"
+      data-presence={presence}
+      data-place="made"
+      data-origin="made"
+      data-trace="restored"
+      aria-label="What they made"
+    >
       <pre>{body}</pre>
     </aside>
   );

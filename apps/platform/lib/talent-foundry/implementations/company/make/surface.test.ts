@@ -10,6 +10,7 @@ import {
 } from '../journey';
 import { chooseMakeTrack, openMake, submitMake } from './engine';
 import { MAKE_COPY } from './copy';
+import { scrapsFor } from './scraps';
 import { composeBuildBody, makeEligible, makeSurface, objectForTrack, trackLure, tracksOn } from './surface';
 
 assert.equal(/tuesday|november|salary|oscar|academy|kelly|module|course|onboarding/i.test(JSON.stringify(MAKE_COPY)), false);
@@ -52,6 +53,7 @@ assert.equal(tracksOn('pulse').includes('operate'), false);
 assert.equal(objectForTrack('build'), 'pulse');
 assert.equal(objectForTrack('operate'), 'draft');
 assert.equal(composeBuildBody('Start', 'Opens an empty bench.'), 'Start\nOpens an empty bench.');
+assert.equal(/tuesday|hiring|academy|congratulations|module/i.test(JSON.stringify(scrapsFor(['build', 'design']))), false);
 
 const made = submitMake(
   chosen,

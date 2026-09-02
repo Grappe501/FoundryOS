@@ -24,7 +24,16 @@ export function DraftWork({
   if (trace === 'copy') prior = `${NOTES}\n\n— copy`;
 
   return (
-    <aside className="ws-object ws-draft" data-presence="focus" data-work="true" data-trace={trace} aria-label="The last draft">
+    <aside
+      className="ws-object ws-draft"
+      data-presence="focus"
+      data-place="draft"
+      data-origin="found"
+      data-object-state="opened"
+      data-work="true"
+      data-trace={trace}
+      aria-label="The last draft"
+    >
       {prior ? <pre className="ws-draft-prior">{prior}</pre> : <p className="ws-draft-empty"> </p>}
       <textarea
         className="ws-field"

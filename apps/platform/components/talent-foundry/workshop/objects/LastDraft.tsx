@@ -30,6 +30,8 @@ export function LastDraft({
     <aside
       className="ws-object ws-draft"
       data-presence={presence}
+      data-place="draft"
+      data-origin="found"
       data-trace={trace}
       data-reachable={reachable ? 'true' : 'false'}
       aria-label="The last draft"

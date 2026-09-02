@@ -16,6 +16,10 @@ body:has(.ws) {
   --ws-grid: 0;
   --ws-bench: 0;
   --ws-trace: 0;
+  --ws-machine: 0;
+  --ws-far: 0;
+  --ws-depth-z: 0px;
+  --ws-material: rgba(8, 8, 10, 0.55);
   width: 100%;
   min-height: 100dvh;
   min-height: 100svh;
@@ -42,6 +46,7 @@ body:has(.ws) {
   overflow: hidden;
   min-height: 100dvh;
   min-height: 100svh;
+  perspective: 1600px;
   padding:
     max(32px, env(safe-area-inset-top))
     20px
@@ -53,18 +58,24 @@ body:has(.ws) {
   --ws-grid: 0;
   --ws-bench: 0;
   --ws-trace: 0;
+  --ws-machine: 0;
+  --ws-far: 0.12;
 }
 
 .ws-room[data-depth='object'] {
   --ws-light: 0.065;
   --ws-grid: 0.035;
   --ws-bench: 0.22;
+  --ws-far: 0.22;
+  --ws-machine: 0.12;
 }
 
 .ws-room[data-depth='aftermath'] {
   --ws-light: 0.08;
   --ws-grid: 0.05;
   --ws-bench: 0.32;
+  --ws-far: 0.28;
+  --ws-machine: 0.18;
 }
 
 .ws-room[data-depth='named'] {
@@ -72,6 +83,8 @@ body:has(.ws) {
   --ws-grid: 0.03;
   --ws-bench: 0.4;
   --ws-trace: 0.7;
+  --ws-far: 0.34;
+  --ws-machine: 0.22;
 }
 
 .ws-room[data-depth='linger'] {
@@ -79,20 +92,29 @@ body:has(.ws) {
   --ws-grid: 0.045;
   --ws-bench: 0.78;
   --ws-trace: 1;
+  --ws-far: 0.42;
+  --ws-machine: 0.28;
+  --ws-depth-z: 12px;
 }
 
 .ws-room[data-depth='make'] {
-  --ws-light: 0.055;
-  --ws-grid: 0.08;
-  --ws-bench: 0.86;
+  --ws-light: 0.052;
+  --ws-grid: 0.1;
+  --ws-bench: 0.94;
   --ws-trace: 1;
+  --ws-far: 0.55;
+  --ws-machine: 0.62;
+  --ws-depth-z: 28px;
 }
 
 .ws-room[data-depth='equipped'] {
-  --ws-light: 0.058;
-  --ws-grid: 0.16;
-  --ws-bench: 0.94;
+  --ws-light: 0.048;
+  --ws-grid: 0.14;
+  --ws-bench: 0.96;
   --ws-trace: 1;
+  --ws-far: 0.7;
+  --ws-machine: 0.88;
+  --ws-depth-z: 36px;
 }
 
 .ws-room[data-depth='equipped'] .ws-atmosphere::before {
@@ -107,6 +129,82 @@ body:has(.ws) {
   );
   pointer-events: none;
 }
+
+.ws-far,
+.ws-rail,
+.ws-coords {
+  pointer-events: none;
+  position: absolute;
+}
+
+.ws-far {
+  inset: -8% -18% 38% -6%;
+  opacity: var(--ws-far);
+  transform: rotate(-7deg) translate3d(4%, -6%, calc(var(--ws-depth-z) * -2));
+  transition: opacity 2.8s ease, transform 2.8s ease;
+}
+
+.ws-far-frame {
+  position: absolute;
+  right: 8%;
+  top: 12%;
+  width: 34%;
+  height: 46%;
+  border: 1px solid rgba(207, 203, 195, 0.12);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.ws-far-stub {
+  position: absolute;
+  left: 4%;
+  bottom: 8%;
+  width: 22%;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.16);
+}
+
+.ws-rail--left {
+  top: 8%;
+  bottom: 18%;
+  left: 4%;
+  width: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.28));
+  transform: scaleY(calc(0.35 + var(--ws-machine) * 0.65));
+  transform-origin: top center;
+  transition: background 2.4s ease, transform 2.6s ease;
+}
+
+.ws-rail--deep {
+  right: 11%;
+  top: 22%;
+  bottom: 28%;
+  width: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.2));
+  opacity: calc(var(--ws-machine) * 0.9);
+  transform: scaleY(var(--ws-machine));
+  transform-origin: bottom center;
+  transition: opacity 2.8s ease, transform 2.8s ease, background 2.8s ease;
+}
+
+.ws-room[data-machine='equipped'] .ws-rail--deep {
+  right: 9%;
+}
+
+.ws-coords {
+  inset: 0;
+}
+
+.ws-coords i {
+  position: absolute;
+  width: 5px;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.45));
+}
+
+.ws-coords i:nth-child(1) { top: 11%; left: 7%; }
+.ws-coords i:nth-child(2) { top: 14%; right: 16%; width: 3px; }
+.ws-coords i:nth-child(3) { bottom: 31%; left: 13%; width: 7px; }
 
 .ws-atmosphere {
   pointer-events: none;
@@ -133,14 +231,41 @@ body:has(.ws) {
 .ws-bench {
   pointer-events: none;
   position: absolute;
-  left: 0;
-  right: 0;
+  left: -6%;
+  right: -6%;
   bottom: 0;
-  height: 28%;
-  border-top: 1px solid rgba(207, 203, 195, calc(var(--ws-bench) * 0.28));
-  background: linear-gradient(to bottom, rgba(8, 8, 10, calc(var(--ws-bench) * 0.7)), transparent);
+  height: 31%;
   opacity: var(--ws-bench);
-  transition: opacity 2s ease, border-color 2s ease;
+  transform: translateY(calc((1 - var(--ws-bench)) * 18px));
+  transition: opacity 2.2s ease, height 2.4s ease, transform 2.4s ease;
+}
+
+.ws-bench-plate {
+  position: absolute;
+  inset: 0;
+  background: var(--ws-material);
+  border-top: 1px solid rgba(207, 203, 195, calc(var(--ws-bench) * 0.32));
+  transform: perspective(900px) rotateX(58deg);
+  transform-origin: bottom center;
+}
+
+.ws-bench-edge {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 0;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-bench) * 0.4));
+}
+
+.ws-room[data-surface='need'] .ws-bench,
+.ws-room[data-surface='attempt'] .ws-bench,
+.ws-room[data-depth='make'] .ws-bench {
+  height: 38%;
+}
+
+.ws-room[data-machine='equipped'] .ws-bench {
+  height: 40%;
 }
 
 .ws-slot-traces {
@@ -150,10 +275,12 @@ body:has(.ws) {
   flex-wrap: wrap;
   align-items: flex-end;
   align-content: flex-end;
-  gap: 12px;
-  width: min(100%, 440px);
+  gap: 14px 18px;
+  width: min(100%, 520px);
   margin: 0 auto;
   min-height: 0;
+  transform: translateZ(var(--ws-depth-z));
+  transition: transform 2.4s ease;
 }
 
 .ws-slot-voice {
@@ -173,9 +300,32 @@ body:has(.ws) {
 }
 
 @media (max-width: 420px) {
+  .ws-room {
+    perspective: 900px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .ws-far {
+    inset: -4% -28% 42% -14%;
+  }
+
   .ws-object[data-presence='ghost'] {
-    flex: 1 1 100%;
+    flex: 1 1 58%;
     transform: scale(0.97);
+  }
+
+  .ws-object[data-place='pulse'] {
+    margin-left: -16%;
+  }
+
+  .ws-object[data-place='draft'] {
+    margin-right: -20%;
+  }
+
+  .ws-slot-traces,
+  .ws-slot-voice {
+    width: min(100%, 100%);
   }
 }
 
@@ -269,6 +419,7 @@ body:has(.ws) {
 
 .ws-threshold:focus-visible,
 .ws-choice:focus-visible,
+.ws-scrap:focus-visible,
 .ws-ghost:focus-visible,
 .ws-region:focus-visible,
 .ws-field:focus-visible {
@@ -311,9 +462,45 @@ body:has(.ws) {
 }
 
 .ws-object {
+  position: relative;
   border: 1px solid rgba(207, 203, 195, 0.08);
   background: transparent;
-  transition: opacity 1.6s ease, transform 1.6s ease;
+  transition: opacity 1.8s ease, transform 2s ease, margin 2s ease, border-color 1.8s ease;
+}
+
+.ws-object[data-origin='found'] {
+  border-color: rgba(207, 203, 195, 0.08);
+}
+
+.ws-object[data-origin='made'] {
+  border-color: rgba(141, 115, 76, 0.28);
+}
+
+.ws-object[data-place='pulse'] {
+  margin-left: -6%;
+}
+
+.ws-object[data-place='draft'] {
+  margin-right: -10%;
+  margin-bottom: 6px;
+}
+
+.ws-object[data-place='made'] {
+  flex: 1 1 100%;
+}
+
+.ws-object[data-object-state='opened'] {
+  border-color: rgba(207, 203, 195, 0.18);
+}
+
+.ws-room[data-machine='equipped'] .ws-object[data-origin='made']::after {
+  content: '';
+  position: absolute;
+  right: -12%;
+  top: 40%;
+  width: 18%;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.16);
 }
 
 .ws-object[data-presence='focus'] {
@@ -354,12 +541,53 @@ body:has(.ws) {
 }
 
 .ws-object-notes {
-  margin-top: 8px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.ws-object-notes .ws-choice {
+.ws-scrap {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 8px 0 8px 10px;
+  border: 0;
+  border-left: 1px solid rgba(207, 203, 195, 0.14);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ws-scrap-when {
+  display: block;
+  font-family: ui-monospace, 'Cascadia Mono', 'SF Mono', Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--ws-faint);
+  margin-bottom: 3px;
+}
+
+.ws-scrap-struck {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ws-faint);
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.ws-scrap-lure {
+  display: block;
   font-size: 0.86rem;
-  padding: 8px 0 8px 12px;
+  color: var(--ws-mute);
+}
+
+.ws-scrap:hover .ws-scrap-lure,
+.ws-scrap:focus-visible .ws-scrap-lure {
+  color: var(--ws-ink);
 }
 
 .ws-primary-edit {
@@ -580,8 +808,12 @@ body:has(.ws) {
   .ws-atmosphere,
   .ws-atmosphere::before,
   .ws-atmosphere::after,
+  .ws-far,
+  .ws-rail,
   .ws-bench,
+  .ws-bench-plate,
   .ws-object,
+  .ws-slot-traces,
   .ws-line,
   .ws-echo,
   .ws-prompt,

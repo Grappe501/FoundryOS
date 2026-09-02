@@ -134,6 +134,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass C0.2 — Cohort vacancy intelligence.** After a human assignment, that function closes. Evidence stays on the record. Expansion observations for Witness/Reframer are retained without ranking. No auto-invite.
 - [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. **APPROVED.**
 - [x] **Pass V — Phase 2 MAKE open.** Linger bench becomes work. First artifact. Method turn. Observed → equipped. No brochure. No Remember Me. No auto-advance. PR #5 stays open.
+- [x] **Pass W — Workshop Visual System 2.0.** Same journey. Spatial bench, machine state, scraps, object writing, equipped rail. Review stills in `review/phase-2/`.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 - [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 

@@ -18,7 +18,15 @@ export function PulseWork({
   onTyping: () => void;
 }) {
   return (
-    <aside className="ws-object ws-fragment" data-presence="focus" data-work="true" aria-label="Pulse">
+    <aside
+      className="ws-object ws-fragment"
+      data-presence="focus"
+      data-place="pulse"
+      data-origin="found"
+      data-object-state="opened"
+      data-work="true"
+      aria-label="Pulse"
+    >
       <div className="ws-frag-top">
         <p className="ws-frag-name">Get started with Pulse</p>
         <span className="ws-badge">Draft · 14 conflicts</span>

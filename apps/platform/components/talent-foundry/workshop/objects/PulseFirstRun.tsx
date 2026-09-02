@@ -26,6 +26,8 @@ export function PulseFirstRun({
     <aside
       className="ws-object ws-fragment"
       data-presence={presence}
+      data-place="pulse"
+      data-origin="found"
       data-reachable={reachable ? 'true' : 'false'}
       aria-label={PHASE_1_NOTICE.title}
       aria-hidden={presence === 'ghost' && !reachable}
