@@ -1,0 +1,27 @@
+---
+description: Company Foundry slice close-out — preview, not production
+alwaysApply: true
+---
+
+# Company Foundry — Build Discipline
+
+LOCKED. Every meaningful Company Foundry slice:
+
+```txt
+build locally → validate → commit → push → Netlify preview → review → only then advance
+```
+
+**Done** = local works + tests pass + committed + pushed + preview exists + inspectable.
+
+- Active branch: `feat/talent-foundry-company-phase-0`
+- Active PR: **#5** — do not merge until Ernie says so
+- One pass → one conventional commit → push immediately
+- GitHub = history. Netlify preview = visual/test surface
+- Production only on explicit PR approve + merge
+- If not pushed, slice is not closed
+- If preview failed, slice is not closed
+- Do not sit on 10–15 unpushed local changes
+
+Return report must include: branch, SHA, push confirmed, PR #, preview URL/status, validation commands, **production touched? (no)**.
+
+Do not close a Company Foundry pass by pushing `main` or deploying production. See `docs/talent-foundry/software-company/BUILD_DISCIPLINE.md`.

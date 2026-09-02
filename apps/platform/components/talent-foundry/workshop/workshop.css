@@ -1,0 +1,1439 @@
+html:has(.ws),
+body:has(.ws) {
+  background: #050506 !important;
+  color: #d8d6d0;
+}
+
+.ws {
+  --ws-bg: #050506;
+  --ws-ink: #cfcbc3;
+  --ws-mute: rgba(207, 203, 195, 0.5);
+  --ws-faint: rgba(207, 203, 195, 0.26);
+  --ws-line: rgba(207, 203, 195, 0.1);
+  --ws-warm: #8d734c;
+  --ws-fill: #101012;
+  --ws-metal: rgba(14, 14, 16, 0.88);
+  --ws-paper: rgba(22, 19, 14, 0.62);
+  --ws-light: 0.03;
+  --ws-grid: 0;
+  --ws-bench: 0;
+  --ws-trace: 0;
+  --ws-machine: 0;
+  --ws-far: 0;
+  --ws-depth-z: 0px;
+  --ws-look-x: 0;
+  --ws-look-y: 0;
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100svh;
+  isolation: isolate;
+  color-scheme: dark;
+  background: var(--ws-bg);
+  color: var(--ws-ink);
+  font-family: var(--foundry-font-sans, "DM Sans", system-ui, sans-serif);
+  display: flex;
+  flex-direction: column;
+}
+
+.ws *,
+.ws *::before,
+.ws *::after {
+  box-sizing: border-box;
+}
+
+.ws-room {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  min-height: 100dvh;
+  min-height: 100svh;
+  perspective: 1480px;
+  transform-style: preserve-3d;
+  --ws-look-x: 0;
+  --ws-look-y: 0;
+}
+
+.ws-room[data-depth='void'] {
+  --ws-light: 0.016;
+  --ws-grid: 0;
+  --ws-bench: 0;
+  --ws-trace: 0;
+  --ws-machine: 0;
+  --ws-far: 0.1;
+}
+
+.ws-room[data-depth='object'] {
+  --ws-light: 0.07;
+  --ws-grid: 0.04;
+  --ws-bench: 0.34;
+  --ws-far: 0.2;
+  --ws-machine: 0.14;
+}
+
+.ws-room[data-depth='aftermath'] {
+  --ws-light: 0.078;
+  --ws-grid: 0.05;
+  --ws-bench: 0.42;
+  --ws-far: 0.26;
+  --ws-machine: 0.2;
+}
+
+.ws-room[data-depth='named'] {
+  --ws-light: 0.066;
+  --ws-grid: 0.03;
+  --ws-bench: 0.5;
+  --ws-trace: 0.7;
+  --ws-far: 0.32;
+  --ws-machine: 0.24;
+}
+
+.ws-room[data-depth='linger'] {
+  --ws-light: 0.046;
+  --ws-grid: 0.055;
+  --ws-bench: 0.86;
+  --ws-trace: 1;
+  --ws-far: 0.46;
+  --ws-machine: 0.3;
+}
+
+.ws-room[data-depth='make'] {
+  --ws-light: 0.054;
+  --ws-grid: 0.12;
+  --ws-bench: 0.96;
+  --ws-trace: 1;
+  --ws-far: 0.58;
+  --ws-machine: 0.72;
+}
+
+.ws-room[data-depth='equipped'] {
+  --ws-light: 0.036;
+  --ws-grid: 0.16;
+  --ws-bench: 0.98;
+  --ws-trace: 1;
+  --ws-far: 0.78;
+  --ws-machine: 1;
+}
+
+.ws-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+
+.ws-layer--back {
+  z-index: 0;
+  transform:
+    translate3d(calc(var(--ws-look-x) * -10px), calc(var(--ws-look-y) * -6px), -120px)
+    rotateX(calc(var(--ws-look-y) * -0.6deg));
+  transition: opacity 2.8s ease, transform 2.8s ease;
+}
+
+.ws-layer--mid {
+  z-index: 1;
+  transform: translate3d(calc(var(--ws-look-x) * 4px), calc(var(--ws-look-y) * 2px), -24px);
+  transition: transform 2.4s ease;
+}
+
+.ws-layer--fore {
+  z-index: 2;
+  transform: translate3d(calc(var(--ws-look-x) * 12px), calc(var(--ws-look-y) * 5px), 16px);
+  transition: transform 1.8s ease;
+}
+
+.ws-layer--air {
+  z-index: 4;
+}
+
+.ws-far-frame,
+.ws-far-stub,
+.ws-rear-bay,
+.ws-rail,
+.ws-join,
+.ws-node,
+.ws-coords,
+.ws-align {
+  pointer-events: none;
+  position: absolute;
+}
+
+.ws-far-frame {
+  right: 2%;
+  top: 7%;
+  width: 38%;
+  height: 42%;
+  border: 1px solid rgba(207, 203, 195, calc(var(--ws-far) * 0.28));
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  opacity: var(--ws-far);
+  transform: rotate(-8deg) translate3d(6%, -4%, 0);
+  transition: opacity 2.8s ease, transform 2.8s ease, border-color 2.8s ease;
+}
+
+.ws-far-frame--rear {
+  left: -12%;
+  top: 18%;
+  right: auto;
+  width: 28%;
+  height: 30%;
+  transform: rotate(11deg);
+  border-right-color: transparent;
+  border-left-color: rgba(207, 203, 195, calc(var(--ws-far) * 0.22));
+}
+
+.ws-far-stub {
+  left: 8%;
+  top: 28%;
+  width: 16%;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-far) * 0.35));
+  opacity: var(--ws-far);
+}
+
+.ws-rear-bay {
+  left: 18%;
+  top: 11%;
+  width: 22%;
+  height: 16%;
+  border: 1px solid rgba(207, 203, 195, calc(var(--ws-machine) * 0.12));
+  opacity: calc(var(--ws-machine) * 0.55);
+  transform: perspective(700px) rotateX(64deg) rotateZ(-6deg);
+  transform-origin: bottom center;
+  transition: opacity 2.6s ease, border-color 2.6s ease;
+}
+
+.ws-room[data-machine='equipped'] .ws-far-frame {
+  transform: rotate(-3deg) translate3d(2%, -1%, 0);
+}
+
+.ws-room[data-machine='equipped'] .ws-far-frame--rear {
+  transform: rotate(5deg);
+}
+
+.ws-room[data-machine='equipped'] .ws-rear-bay {
+  opacity: 0.7;
+  border-color: rgba(207, 203, 195, 0.16);
+}
+
+.ws-rail--left {
+  top: 6%;
+  bottom: 16%;
+  left: 5.5%;
+  width: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.3));
+  transform: scaleY(calc(0.28 + var(--ws-machine) * 0.72));
+  transform-origin: top center;
+  transition: background 2.4s ease, transform 2.6s ease, left 2.2s ease, bottom 2.2s ease;
+}
+
+.ws-rail--deep {
+  right: 13%;
+  top: 20%;
+  bottom: 26%;
+  width: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.22));
+  opacity: calc(var(--ws-machine) * 0.85);
+  transform: scaleY(var(--ws-machine));
+  transform-origin: bottom center;
+  transition: opacity 2.8s ease, transform 2.8s ease, right 2.4s ease, bottom 2.4s ease;
+}
+
+.ws-room[data-open='pulse'] .ws-rail--left {
+  left: 4%;
+  bottom: 10%;
+}
+
+.ws-room[data-open='draft'] .ws-rail--deep {
+  right: 6%;
+  bottom: 12%;
+}
+
+.ws-room[data-machine='equipped'] .ws-rail--deep {
+  right: 8%;
+  bottom: 18%;
+}
+
+.ws-join {
+  left: 18%;
+  right: 22%;
+  bottom: 29%;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.18));
+  transform: scaleX(calc(0.2 + var(--ws-machine) * 0.8));
+  transform-origin: left center;
+  opacity: calc(var(--ws-machine) * 0.7);
+  transition: transform 2.2s ease, left 2.2s ease, right 2.2s ease, opacity 2.2s ease, bottom 2.2s ease;
+}
+
+.ws-room[data-open='pulse'] .ws-join {
+  left: 12%;
+  right: 48%;
+  bottom: 24%;
+  transform-origin: left center;
+}
+
+.ws-room[data-open='draft'] .ws-join {
+  left: 42%;
+  right: 10%;
+  bottom: 22%;
+  transform-origin: right center;
+}
+
+.ws-room[data-machine='equipped'] .ws-join {
+  left: 16%;
+  right: 28%;
+  bottom: 21%;
+}
+
+.ws-node {
+  width: 5px;
+  height: 5px;
+  border: 1px solid rgba(207, 203, 195, calc(var(--ws-machine) * 0.4));
+  opacity: calc(var(--ws-machine) * 0.55);
+  transition: opacity 2s ease, left 2.2s ease, right 2.2s ease, bottom 2.2s ease, transform 2.2s ease;
+}
+
+.ws-node--pulse { left: 16%; bottom: 28%; }
+.ws-node--draft { right: 20%; bottom: 28%; }
+.ws-node--persist {
+  left: 36%;
+  bottom: 18%;
+  opacity: 0;
+}
+
+.ws-room[data-open='pulse'] .ws-node--pulse {
+  left: 11%;
+  bottom: 23%;
+  opacity: 0.9;
+}
+
+.ws-room[data-open='draft'] .ws-node--draft {
+  right: 9%;
+  bottom: 21%;
+  opacity: 0.9;
+}
+
+.ws-room[data-machine='equipped'] .ws-node--persist {
+  opacity: 0.85;
+  transform: translateY(-4px);
+}
+
+.ws-coords i,
+.ws-align i {
+  position: absolute;
+  background: rgba(207, 203, 195, calc(var(--ws-machine) * 0.42));
+}
+
+.ws-coords {
+  inset: 0;
+}
+
+.ws-coords i {
+  width: 6px;
+  height: 1px;
+}
+
+.ws-coords i:nth-child(1) { top: 10%; left: 8%; }
+.ws-coords i:nth-child(2) { top: 13%; right: 18%; width: 3px; }
+.ws-coords i:nth-child(3) { bottom: 34%; left: 14%; width: 8px; }
+
+.ws-align {
+  left: 8%;
+  right: 8%;
+  bottom: 17%;
+  height: 8px;
+}
+
+.ws-align i {
+  width: 1px;
+  height: 6px;
+  opacity: calc(var(--ws-machine) * 0.5);
+}
+
+.ws-align i:nth-child(1) { left: 8%; }
+.ws-align i:nth-child(2) { left: 34%; }
+.ws-align i:nth-child(3) { left: 61%; }
+.ws-align i:nth-child(4) { left: 88%; }
+
+.ws-atmosphere {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background:
+    radial-gradient(ellipse 70% 36% at 48% -10%, rgba(255, 248, 236, var(--ws-light)), transparent 62%);
+  transition: background 2.4s ease;
+}
+
+.ws-atmosphere::after {
+  content: '';
+  position: absolute;
+  left: 8%;
+  right: 10%;
+  bottom: 19%;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-trace) * 0.2));
+  transform: scaleX(var(--ws-trace));
+  transform-origin: left center;
+  transition: transform 2.6s ease, background 2.6s ease;
+}
+
+.ws-room[data-depth='equipped'] .ws-atmosphere::before {
+  content: '';
+  position: absolute;
+  inset: 12% 10% 28%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 31px,
+    rgba(207, 203, 195, 0.035) 32px
+  );
+  pointer-events: none;
+}
+
+.ws-bench {
+  pointer-events: none;
+  position: absolute;
+  left: -14%;
+  right: -14%;
+  bottom: -4%;
+  height: 36%;
+  opacity: var(--ws-bench);
+  transform: translateY(calc((1 - var(--ws-bench)) * 22px));
+  transition: opacity 2.2s ease, height 2.4s ease, transform 2.4s ease;
+}
+
+.ws-bench-plate {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(18, 18, 20, 0.35), rgba(8, 8, 10, 0.82)),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 47px,
+      rgba(207, 203, 195, 0.015) 48px
+    );
+  border-top: 1px solid rgba(207, 203, 195, calc(var(--ws-bench) * 0.3));
+  transform: perspective(980px) rotateX(62deg);
+  transform-origin: bottom center;
+}
+
+.ws-bench-grain {
+  position: absolute;
+  inset: 8% 6% 0;
+  background-image: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent 9px,
+    rgba(207, 203, 195, calc(var(--ws-grid) * 0.35)) 10px
+  );
+  opacity: var(--ws-bench);
+  transform: perspective(980px) rotateX(62deg);
+  transform-origin: bottom center;
+}
+
+.ws-bench-edge {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 0;
+  height: 1px;
+  background: rgba(207, 203, 195, calc(var(--ws-bench) * 0.42));
+}
+
+.ws-room[data-surface='need'] .ws-bench,
+.ws-room[data-surface='attempt'] .ws-bench,
+.ws-room[data-depth='make'] .ws-bench {
+  height: 44%;
+}
+
+.ws-room[data-machine='equipped'] .ws-bench {
+  height: 46%;
+}
+
+.ws-slot-traces {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ws-slot-traces > * {
+  pointer-events: auto;
+}
+
+.ws-slot-voice {
+  position: absolute;
+  left: 8%;
+  bottom: 5%;
+  width: min(28rem, 42vw);
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.ws-room[data-state='door'],
+.ws-room[data-state='boot'] {
+  --ws-voice-x: 50%;
+}
+
+.ws-room[data-state='door'] .ws-slot-voice,
+.ws-room[data-state='boot'] .ws-slot-voice {
+  left: 50%;
+  top: 40%;
+  bottom: auto;
+  transform: translateX(-50%);
+  width: min(28rem, 86vw);
+  text-align: left;
+}
+
+.ws-room[data-depth='object'] .ws-slot-voice,
+.ws-room[data-depth='aftermath'] .ws-slot-voice,
+.ws-room[data-depth='named'] .ws-slot-voice {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  width: min(28rem, 86vw);
+}
+
+.ws-room[data-state='linger'] .ws-slot-voice {
+  left: 7%;
+  bottom: 6%;
+  width: min(22rem, 36vw);
+}
+
+.ws-room[data-surface='need'] .ws-slot-voice {
+  display: none;
+}
+
+.ws-room[data-surface='attempt'] .ws-slot-voice {
+  left: auto;
+  right: 8%;
+  bottom: 6%;
+  width: min(22rem, 32vw);
+}
+
+.ws-room[data-surface='attempt'][data-open='draft'] .ws-slot-voice {
+  left: 7%;
+  right: auto;
+}
+
+.ws-room[data-surface='equipped'] .ws-slot-voice {
+  left: 22%;
+  bottom: 42%;
+  width: min(22rem, 34vw);
+}
+
+.ws-object {
+  position: absolute;
+  transition:
+    opacity 1.8s ease,
+    transform 2s ease,
+    left 2s ease,
+    right 2s ease,
+    bottom 2s ease,
+    width 2s ease,
+    border-color 1.8s ease;
+}
+
+.ws-object[data-place='pulse'] {
+  left: 1%;
+  bottom: 22%;
+  width: min(26rem, 42vw);
+  z-index: 3;
+}
+
+.ws-object[data-place='draft'] {
+  right: -12%;
+  bottom: 16%;
+  width: min(23rem, 36vw);
+  z-index: 2;
+}
+
+.ws-object[data-place='made'] {
+  left: 20%;
+  bottom: 10%;
+  width: min(30rem, 48vw);
+  z-index: 4;
+}
+
+.ws-room[data-depth='object'] .ws-object[data-place='pulse'] {
+  left: 50%;
+  bottom: 26%;
+  width: min(28rem, 84vw);
+  transform: translateX(-50%);
+}
+
+.ws-room[data-depth='aftermath'] .ws-object[data-place='draft'],
+.ws-room[data-depth='named'] .ws-object[data-place='draft'] {
+  left: 50%;
+  right: auto;
+  bottom: 24%;
+  width: min(26rem, 80vw);
+  transform: translateX(-50%) rotate(-0.4deg);
+}
+
+.ws-room[data-open='pulse'] .ws-object[data-place='pulse'] {
+  left: 8%;
+  bottom: 16%;
+  width: min(34rem, 56vw);
+}
+
+.ws-room[data-open='pulse'] .ws-object[data-place='draft'] {
+  right: -22%;
+  bottom: 28%;
+  opacity: 0.28;
+}
+
+.ws-room[data-open='draft'] .ws-object[data-place='draft'] {
+  right: 7%;
+  bottom: 14%;
+  width: min(34rem, 54vw);
+  transform: rotate(-0.3deg);
+}
+
+.ws-room[data-open='draft'] .ws-object[data-place='pulse'] {
+  left: -12%;
+  bottom: 30%;
+  opacity: 0.3;
+}
+
+.ws-room[data-surface='equipped'] .ws-object[data-place='pulse'] {
+  left: -16%;
+  bottom: 42%;
+  width: min(18rem, 26vw);
+  opacity: 0.12;
+}
+
+.ws-room[data-surface='equipped'] .ws-object[data-place='draft'] {
+  right: -20%;
+  bottom: 46%;
+  width: min(16rem, 24vw);
+  opacity: 0.1;
+}
+
+.ws-room[data-surface='equipped'] .ws-object[data-place='made'] {
+  left: 18%;
+  bottom: 14%;
+  width: min(32rem, 50vw);
+}
+
+.ws-object[data-presence='focus'] {
+  opacity: 1;
+}
+
+.ws-object[data-presence='ghost'] {
+  opacity: 0.36;
+  pointer-events: none;
+}
+
+.ws-room[data-state='linger'] .ws-object[data-presence='ghost'] {
+  opacity: 0.62;
+}
+
+.ws-room[data-state='linger'] .ws-object[data-reachable='true'] {
+  pointer-events: auto;
+  opacity: 0.88;
+}
+
+.ws-instrument {
+  background: var(--ws-metal);
+  border: 1px solid rgba(207, 203, 195, 0.12);
+  border-left-width: 3px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.ws-instrument[data-life='touched'] {
+  border-color: rgba(207, 203, 195, 0.2);
+}
+
+.ws-instrument[data-life='opened'],
+.ws-instrument[data-life='changed'] {
+  border-color: rgba(207, 203, 195, 0.28);
+}
+
+.ws-chassis {
+  position: relative;
+  padding: 16px 16px 14px;
+}
+
+.ws-chassis-seam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 9px;
+  border-bottom: 1px solid rgba(207, 203, 195, 0.08);
+  background: linear-gradient(90deg, rgba(207, 203, 195, 0.06), transparent 40%, transparent 70%, rgba(207, 203, 195, 0.05));
+}
+
+.ws-chassis-face {
+  padding-top: 6px;
+}
+
+.ws-chassis-bay {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  transition: max-height 1.6s ease, opacity 1.1s ease, margin 1.6s ease;
+}
+
+.ws-chassis-bay[data-awake='true'] {
+  max-height: 18rem;
+  opacity: 1;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(207, 203, 195, 0.1);
+}
+
+.ws-leaf {
+  background: var(--ws-paper);
+  border: 1px solid rgba(141, 115, 76, 0.16);
+  transform: rotate(-1.3deg);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.2);
+}
+
+.ws-room[data-depth='aftermath'] .ws-leaf,
+.ws-room[data-depth='named'] .ws-leaf {
+  transform: translateX(-50%) rotate(-0.4deg);
+}
+
+.ws-leaf[data-life='touched'] {
+  border-color: rgba(141, 115, 76, 0.28);
+}
+
+.ws-leaf[data-life='opened'],
+.ws-leaf[data-life='changed'] {
+  border-color: rgba(141, 115, 76, 0.38);
+  transform: rotate(-0.4deg);
+}
+
+.ws-leaf-age {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 28%;
+  height: 1px;
+  background: rgba(141, 115, 76, 0.28);
+}
+
+.ws-leaf-back {
+  position: absolute;
+  inset: 7px -5px -6px 8px;
+  border: 1px solid rgba(141, 115, 76, 0.1);
+  background: rgba(16, 14, 10, 0.4);
+  z-index: -1;
+  transform: rotate(1.1deg);
+}
+
+.ws-leaf-face {
+  position: relative;
+  padding: 16px 16px 14px;
+}
+
+.ws-leaf-margin {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 1.6s ease, opacity 1.1s ease, padding 1.6s ease;
+}
+
+.ws-leaf-margin[data-awake='true'] {
+  max-height: 16rem;
+  opacity: 1;
+  padding: 0 14px 12px;
+}
+
+.ws-persist {
+  background: rgba(16, 14, 11, 0.78);
+  border: 1px solid rgba(141, 115, 76, 0.34);
+  padding: 16px 18px 14px;
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.3);
+}
+
+.ws-persist pre {
+  margin: 0;
+  font-family: ui-monospace, 'Cascadia Mono', 'SF Mono', Menlo, monospace;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ws-ink);
+  white-space: pre-wrap;
+}
+
+.ws-persist-dock {
+  position: absolute;
+  left: -14%;
+  top: 42%;
+  width: 14%;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.2);
+}
+
+.ws-room[data-machine='equipped'] .ws-persist-dock {
+  width: 22%;
+  left: -20%;
+  background: rgba(207, 203, 195, 0.28);
+}
+
+.ws-object[data-life='found'][data-origin='found'] {
+  filter: saturate(0.86);
+}
+
+.ws-object[data-life='touched'] {
+  filter: none;
+}
+
+.ws-object-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ws-scrap {
+  appearance: none;
+  display: block;
+  width: 100%;
+  padding: 7px 0 7px 10px;
+  border: 0;
+  border-left: 1px solid rgba(207, 203, 195, 0.14);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ws-scrap-when {
+  display: block;
+  font-family: ui-monospace, 'Cascadia Mono', 'SF Mono', Menlo, monospace;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--ws-faint);
+  margin-bottom: 3px;
+}
+
+.ws-scrap-struck {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ws-faint);
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.ws-scrap-lure {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--ws-mute);
+}
+
+.ws-scrap:hover .ws-scrap-lure,
+.ws-scrap:focus-visible .ws-scrap-lure {
+  color: var(--ws-ink);
+}
+
+.ws-line {
+  margin: 0 0 18px;
+  font-size: clamp(1.08rem, 3.8vw, 1.36rem);
+  line-height: 1.35;
+  letter-spacing: -0.012em;
+  font-weight: 400;
+  color: var(--ws-ink);
+  animation: ws-in 1400ms ease both;
+}
+
+.ws-line--quiet {
+  font-size: 0.98rem;
+  letter-spacing: 0;
+  color: var(--ws-mute);
+  margin-bottom: 14px;
+}
+
+.ws-line--linger {
+  font-size: 0.98rem;
+  color: var(--ws-mute);
+  margin-bottom: 10px;
+}
+
+.ws-soul {
+  margin: 18px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--ws-mute);
+  animation: ws-in 1600ms ease both;
+}
+
+.ws-memory-mark {
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background: rgba(207, 203, 195, 0.35);
+}
+
+.ws-mystery {
+  position: absolute;
+  left: 28%;
+  top: 9%;
+  width: 11%;
+  height: 9%;
+  border: 1px solid rgba(207, 203, 195, 0.14);
+  opacity: 0;
+  transform: perspective(700px) rotateX(70deg);
+  transform-origin: bottom center;
+  transition: opacity 2.8s ease;
+}
+
+.ws-room[data-mystery~='far-tool'] .ws-mystery,
+.ws-mystery[data-mark='far-tool'] {
+  opacity: 0.55;
+}
+
+.ws-room[data-mystery~='join-to-draft'] .ws-join {
+  opacity: 0.85;
+  background: rgba(207, 203, 195, 0.28);
+}
+
+.ws-room[data-mystery~='empty-bay'] .ws-node--draft {
+  opacity: 0.2;
+}
+
+.ws-object[data-remembered='noticed'] .ws-primary-wrong {
+  box-shadow: none;
+}
+
+.ws-room[data-rhythm='silence'] .ws-slot-voice .ws-line--linger {
+  color: rgba(207, 203, 195, 0.42);
+}
+
+.ws-room[data-trust='capable'] .ws-rear-bay {
+  opacity: 0.8;
+  border-color: rgba(207, 203, 195, 0.2);
+}
+
+.ws-trail {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+.ws-object[data-place='trail'] {
+  left: 8%;
+  bottom: 7%;
+  width: min(16rem, 28vw);
+  z-index: 4;
+}
+
+.ws-room[data-open='pulse'] .ws-object[data-place='trail'] {
+  left: 44%;
+  bottom: 8%;
+}
+
+.ws-room[data-open='draft'] .ws-object[data-place='trail'] {
+  left: auto;
+  right: 42%;
+  bottom: 8%;
+}
+
+.ws-room[data-surface='equipped'] .ws-object[data-place='trail'] {
+  left: 52%;
+  bottom: 18%;
+}
+
+.ws-bit {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: rgba(207, 203, 195, 0.4);
+  border-left: 1px solid rgba(207, 203, 195, 0.16);
+  padding: 0 0 0 8px;
+}
+
+.ws-bit[data-kind='rejected'],
+.ws-bit[data-kind='tested'] {
+  opacity: 0.55;
+}
+
+.ws-bit[data-kind='works'] {
+  color: rgba(207, 203, 195, 0.58);
+}
+
+.ws-bit[data-kind='looked'] {
+  opacity: 0.42;
+}
+
+.ws-scratch {
+  position: absolute;
+  left: 36%;
+  top: 61%;
+  width: 9%;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.14);
+  transform: rotate(-9deg);
+  pointer-events: none;
+}
+
+.ws-room[data-history] .ws-bench-grain {
+  opacity: 0.9;
+}
+
+.ws-room[data-history] .ws-join,
+.ws-room[data-mystery~='old-join'] .ws-join {
+  opacity: 0.62;
+  background: rgba(207, 203, 195, 0.18);
+}
+
+.ws-room[data-inquiry='away'] .ws-object[data-work='true'] {
+  opacity: 0.7;
+}
+
+.ws-room[data-inquiry='away'] .ws-bench-plate {
+  opacity: 0.78;
+}
+
+.ws-field--line {
+  min-height: 0;
+  resize: none;
+}
+
+.ws-receipt {
+  margin-top: 22px;
+}
+
+.ws-receipt .ws-prompt {
+  font-size: 0.82rem;
+}
+
+.ws-room[data-surface='equipped'] .ws-line {
+  font-size: 1rem;
+  color: var(--ws-mute);
+}
+
+.ws-echo {
+  margin: 0 0 18px;
+  font-size: 1.02rem;
+  color: var(--ws-mute);
+  padding-left: 12px;
+  border-left: 1px solid var(--ws-line);
+  animation: ws-in 700ms ease both;
+}
+
+.ws-threshold,
+.ws-choice,
+.ws-ghost,
+.ws-region {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  touch-action: manipulation;
+}
+
+.ws-threshold {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 10px 0;
+  width: auto;
+}
+
+.ws-threshold-mark {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.38);
+  transition: width 700ms ease, background 700ms ease;
+}
+
+.ws-threshold:hover .ws-threshold-mark,
+.ws-threshold:focus-visible .ws-threshold-mark {
+  width: 32px;
+  background: rgba(207, 203, 195, 0.7);
+}
+
+.ws-threshold-word {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(207, 203, 195, 0.2);
+}
+
+.ws-threshold:focus-visible,
+.ws-choice:focus-visible,
+.ws-scrap:focus-visible,
+.ws-ghost:focus-visible,
+.ws-region:focus-visible,
+.ws-field:focus-visible {
+  outline: 1px solid rgba(207, 203, 195, 0.4);
+  outline-offset: 4px;
+}
+
+.ws-ghost {
+  margin-top: 72px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: rgba(207, 203, 195, 0.1);
+}
+
+.ws-field {
+  width: 100%;
+  min-height: 64px;
+  margin: 0 0 16px;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid var(--ws-line);
+  background: transparent;
+  color: var(--ws-ink);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.45;
+  resize: none;
+  field-sizing: content;
+}
+
+.ws-field::placeholder {
+  color: var(--ws-faint);
+}
+
+.ws-prompt {
+  margin: 16px 0 4px;
+  font-size: 0.9rem;
+  color: var(--ws-mute);
+  animation: ws-in 800ms ease both;
+}
+
+.ws-primary-edit {
+  display: block;
+  width: min(100%, 16rem);
+  margin: 8px 0 8px;
+  padding: 8px 14px;
+  border: 0;
+  background: #e8e4dc;
+  color: #141414;
+  font: inherit;
+  font-size: 0.86rem;
+}
+
+.ws-primary-edit:focus-visible {
+  outline: 1px solid rgba(207, 203, 195, 0.4);
+  outline-offset: 4px;
+}
+
+.ws-same {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: var(--ws-ink);
+}
+
+.ws-draft-prior {
+  opacity: 0.42;
+  margin-bottom: 10px;
+}
+
+.ws-reach {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px 12px 4px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.ws-frag-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ws-frag-name {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.ws-badge {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ws-warm);
+  white-space: nowrap;
+}
+
+.ws-region {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+}
+
+.ws-region[data-kind='buried'] {
+  color: var(--ws-faint);
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.ws-region[data-attended='true'] {
+  color: var(--ws-ink);
+}
+
+.ws-region[data-kind='buried'][data-attended='true'] {
+  color: var(--ws-mute);
+}
+
+.ws-primary-wrong {
+  display: inline-block;
+  margin: 8px 0 2px;
+  padding: 8px 14px;
+  background: #e8e4dc;
+  color: #141414;
+  font-size: 0.86rem;
+}
+
+.ws-region[data-attended='true'] .ws-primary-wrong {
+  transform: translateY(1px);
+  opacity: 0.82;
+}
+
+.ws-helper {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ws-faint);
+}
+
+.ws-draft pre,
+.ws-draft-empty {
+  margin: 0;
+  font-family: ui-monospace, 'Cascadia Mono', 'SF Mono', Menlo, monospace;
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--ws-mute);
+  white-space: pre-wrap;
+}
+
+.ws-draft[data-trace='gone'] .ws-leaf-face {
+  min-height: 72px;
+}
+
+.ws-draft[data-trace='question'] {
+  border-style: dashed;
+}
+
+.ws-draft[data-trace='copy'] pre {
+  opacity: 0.88;
+}
+
+.ws-draft[data-trace='gone'] .ws-draft-empty {
+  min-height: 48px;
+}
+
+.ws-draft[data-trace='restored'] {
+  border-color: rgba(141, 115, 76, 0.28);
+}
+
+.ws-facts {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+}
+
+.ws-facts li {
+  margin: 0 0 8px;
+  font-size: 0.92rem;
+  color: var(--ws-mute);
+}
+
+.ws-choice {
+  display: block;
+  width: 100%;
+  padding: 11px 0 11px 14px;
+  border: 0;
+  border-left: 1px solid transparent;
+  color: var(--ws-mute);
+  font-size: 0.94rem;
+}
+
+.ws-choice + .ws-choice {
+  margin-top: 2px;
+}
+
+.ws-choice:hover,
+.ws-choice:focus-visible {
+  color: var(--ws-ink);
+  border-left-color: rgba(207, 203, 195, 0.32);
+}
+
+.ws-consequence {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.45;
+  animation: ws-in 800ms ease both;
+}
+
+.ws-named {
+  font-family: inherit;
+  font-size: clamp(1.08rem, 3.8vw, 1.36rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.012em;
+  margin: 0 0 18px;
+  animation: ws-in 1400ms ease both;
+}
+
+.ws .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes ws-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .ws-object[data-place='pulse'] {
+    left: -10%;
+    bottom: 28%;
+    width: 86vw;
+  }
+
+  .ws-object[data-place='draft'] {
+    right: -48%;
+    bottom: 22%;
+    width: 78vw;
+  }
+
+  .ws-object[data-place='made'] {
+    left: 8%;
+    bottom: 18%;
+    width: 82vw;
+  }
+
+  .ws-object[data-place='trail'],
+  .ws-room[data-open='pulse'] .ws-object[data-place='trail'],
+  .ws-room[data-open='draft'] .ws-object[data-place='trail'],
+  .ws-room[data-surface='equipped'] .ws-object[data-place='trail'] {
+    left: 6%;
+    right: auto;
+    bottom: 4%;
+    width: 70vw;
+  }
+
+  .ws-slot-voice,
+  .ws-room[data-state='linger'] .ws-slot-voice,
+  .ws-room[data-surface='equipped'] .ws-slot-voice {
+    left: 6%;
+    width: 88vw;
+    transform: none;
+  }
+
+  .ws-room[data-surface='attempt'] .ws-slot-voice {
+    left: auto;
+    right: 4%;
+    width: 72vw;
+    transform: none;
+  }
+
+  .ws-room[data-surface='equipped'] .ws-slot-voice {
+    bottom: 40%;
+  }
+
+  .ws-room[data-depth='object'] .ws-object[data-place='pulse'],
+  .ws-room[data-depth='aftermath'] .ws-object[data-place='draft'],
+  .ws-room[data-depth='named'] .ws-object[data-place='draft'] {
+    width: 86vw;
+  }
+
+  .ws-room[data-open='pulse'] .ws-object[data-place='pulse'] {
+    left: 4%;
+    width: 88vw;
+  }
+
+  .ws-room[data-open='pulse'] .ws-object[data-place='draft'] {
+    right: -48%;
+  }
+
+  .ws-room[data-open='draft'] .ws-object[data-place='draft'] {
+    right: 4%;
+    width: 88vw;
+  }
+
+  .ws-room[data-open='draft'] .ws-object[data-place='pulse'] {
+    left: -46%;
+  }
+
+  .ws-far-frame {
+    right: -18%;
+  }
+
+  .ws-far-frame--rear {
+    left: -22%;
+  }
+
+  .ws-layer--back {
+    transform: translate3d(-8px, 0, -80px);
+  }
+
+  .ws-layer--fore {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ws-atmosphere,
+  .ws-atmosphere::before,
+  .ws-atmosphere::after,
+  .ws-layer,
+  .ws-far-frame,
+  .ws-rail,
+  .ws-join,
+  .ws-node,
+  .ws-bench,
+  .ws-bench-plate,
+  .ws-object,
+  .ws-chassis-bay,
+  .ws-leaf-margin,
+  .ws-line,
+  .ws-echo,
+  .ws-prompt,
+  .ws-named,
+  .ws-consequence,
+  .ws-soul,
+  .ws-mystery,
+  .ws-trail,
+  .ws-bit,
+  .ws-scratch,
+  .ws-threshold-mark {
+    transition: none;
+    animation: none;
+  }
+
+  .ws-layer--back,
+  .ws-layer--mid,
+  .ws-layer--fore {
+    transform: none;
+  }
+}

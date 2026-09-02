@@ -43,3 +43,13 @@ Architecture Impact
 - Never push with failing **platform build** (Netlify uses `build:platform`)
 - Never commit `.env.local`
 - See `docs/NETLIFY_DEPLOY.md`, `docs/ARCHITECTURE_COMPLIANCE.md`
+
+## Company Foundry carve-out (LOCKED)
+
+Work on `feat/talent-foundry-company-phase-0` / PR **#5** does **not** close on `main` or production.
+
+```txt
+validate → commit → push PR branch → Netlify Preview Deploy → inspect → then advance
+```
+
+If the preview failed, the slice is not closed. Do not merge PR #5. See `docs/talent-foundry/software-company/BUILD_DISCIPLINE.md`.

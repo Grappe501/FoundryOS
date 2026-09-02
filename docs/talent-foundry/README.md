@@ -1,11 +1,51 @@
-# Talent Foundry — Kelly Grappe Campaign Beta
+# Talent Foundry
 
-Status: **MVP BUILD NOW**
-Date: 2026-08-31
-Lead engineer: ChatGPT
-Implementation engineer: Cursor
+Talent Foundry is a FoundryOS **product family**: one core, parallel implementations. It is not a single campaign funnel.
+
+| Implementation | Public question | Route | Person store | Status |
+|---|---|---|---|---|
+| **Campaign Foundry** | Will you show up? | `/talent-foundry` | RedDirt | **Live V1.2** |
+| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` | FoundryOS `foundry_people` → later `user_profiles` | **Phase 1.2 polish.** Phase 1.1 HOLD. Phase 2 held. Cohort 01: 3–5 start **2026-11-15** (staff only) |
+| **Employer Foundry** | Configurable | TBD | Tenant | Future (Phase 8) |
+
+**Campaign Foundry (this file below):** Kelly Grappe beta. Do not treat it as the company product. Live QR remains `https://foundry-os.netlify.app/talent-foundry`.
+
+**Company Foundry:** software-company talent-to-ownership academy and operating environment. Not a reskin of Kelly. Not an internship funnel. Phase 0 + 0.5 architecture (Phase 1 screens held):
+
+- `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md`
+- `docs/talent-foundry/software-company/PHASE_0_5_TALENT_TO_OWNERSHIP.md`
+- `docs/talent-foundry/software-company/CAPABILITY_REVEAL_ENGINE.md`
+- `docs/talent-foundry/software-company/ACADEMY_CURRICULUM.md`
+- `docs/talent-foundry/software-company/OPERATING_ENVIRONMENT.md`
+- `docs/talent-foundry/software-company/AI_PARTNERS.md`
+- `docs/talent-foundry/software-company/ORIGINAL_MISSION_RECOVERY.md`
+- `docs/talent-foundry/software-company/PARALLEL_ARCHITECTURE.md`
+- `docs/talent-foundry/software-company/EXPERIENCE_BLUEPRINT.md`
+- `docs/talent-foundry/software-company/FLYWHEEL_MODEL.md`
+- `docs/talent-foundry/software-company/COHORT_MODEL.md`
+- `docs/talent-foundry/software-company/EVIDENCE_AND_HUMAN_DECISION_MODEL.md`
+- `docs/talent-foundry/software-company/PHASE_1_BUILD_SPEC.md`
+- `docs/talent-foundry/software-company/PHASE_1_1_EXPERIENCE_PROOF.md`
+- `docs/talent-foundry/software-company/PHASE_1_2_EXPERIENCE_POLISH.md`
+- `docs/talent-foundry/software-company/BUILD_DISCIPLINE.md`
+- `docs/talent-foundry/software-company/review/phase-1-1/README.md`
+- `docs/talent-foundry/software-company/COHORT_COMPOSITION.md`
+- `docs/talent-foundry/software-company/THINKING_TRACE_MODEL.md`
+- `docs/talent-foundry/software-company/SCENARIO_LAB.md`
+- `docs/talent-foundry/software-company/FUTURE_SURFACES.md`
+- `docs/talent-foundry/software-company/SPINE_AND_LAYERS.md`
+
+Company Foundry must not write RedDirt. Do not alter the live Kelly route to build it.
+
+---
+
+# Campaign Foundry — Kelly Grappe Campaign Beta
+
+Status: **LIVE (V1.2)** — SAVE MY PLACE + Key One share on `main` (`4ed26c0`)  
+Date: 2026-08-31 (campaign MVP docs) · family index added 2026-09-01  
+Lead engineer: ChatGPT  
+Implementation engineer: Cursor  
 Primary beta: Kelly Grappe for Arkansas Secretary of State campaign
-Deadline: ship usable MVP today; campaign office opens September 1.
 
 ## Mission
 
