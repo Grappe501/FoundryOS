@@ -20,6 +20,7 @@ export function DoorBeat({
 }) {
   const [shown, setShown] = useState(1);
   const [threshold, setThreshold] = useState(false);
+  const [word, setWord] = useState(false);
 
   useEffect(() => {
     onReveal('line1');
@@ -28,6 +29,7 @@ export function DoorBeat({
     if (reduce) {
       setShown(3);
       setThreshold(true);
+      setWord(true);
       onReveal('line2');
       onReveal('line3');
       return;
@@ -35,16 +37,18 @@ export function DoorBeat({
     const t2 = window.setTimeout(() => {
       setShown(2);
       onReveal('line2');
-    }, 2800);
+    }, 3200);
     const t3 = window.setTimeout(() => {
       setShown(3);
       onReveal('line3');
-    }, 6000);
-    const t4 = window.setTimeout(() => setThreshold(true), 7800);
+    }, 7000);
+    const t4 = window.setTimeout(() => setThreshold(true), 9200);
+    const t5 = window.setTimeout(() => setWord(true), 10400);
     return () => {
       window.clearTimeout(t2);
       window.clearTimeout(t3);
       window.clearTimeout(t4);
+      window.clearTimeout(t5);
     };
   }, [onReveal]);
 
@@ -73,7 +77,7 @@ export function DoorBeat({
       {ready ? (
         <button type="button" className="ws-threshold" onClick={onEnter} aria-label="Enter">
           <span className="ws-threshold-mark" aria-hidden />
-          <span className="ws-threshold-word">Enter</span>
+          {word || Boolean(session.doorPacing.line3At) ? <span className="ws-threshold-word">Enter</span> : null}
         </button>
       ) : null}
     </>

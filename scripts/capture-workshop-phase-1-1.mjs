@@ -62,7 +62,7 @@ async function walk(page, prefix) {
 
   await page.locator('.ws-threshold').click({ force: true });
   await page.waitForSelector('.ws-named');
-  await page.waitForTimeout(4800);
+  await page.waitForTimeout(6500);
   await shot(page, `${prefix}-07-named-reveal`);
 
   await page.locator('.ws-threshold').click({ force: true });

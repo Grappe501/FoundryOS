@@ -1,6 +1,6 @@
 # Company Foundry — Phase 1.1 Experience Proof
 
-**Status:** READY FOR ERNIE VISUAL. Stills in `review/phase-1-1/`. Contracts frozen. Phase 2 held until the door is walked and approved.
+**Status:** **HOLD** (Ernie 2026-09-02). Direction is right. Stills cannot prove linger pull. Next is Phase 1.2 polish only. Phase 2 held.
 
 Phase 1 proved the room can run. It did **not** prove the experience has gravity.
 

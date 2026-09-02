@@ -3,7 +3,7 @@
 **Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
 **Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
-**Now:** Phase 0 + 0.5 **approved**. Phase 1 door exists. **Phase 1.1 Experience Proof** — do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.  
+**Now:** Phase 1.1 **HOLD**. **Phase 1.2 experience polish** on the existing door. Do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.  
 **Discipline:** `BUILD_DISCIPLINE.md` — build locally → validate → commit → push → Netlify preview → review → only then advance. Preview is the close gate. Production is not.
 
 This is **not** the Kelly Grappe experience with different copy.  
@@ -39,7 +39,7 @@ People demonstrate capability. Humans decide placement, employment, compensation
 | Implementation | Status | Index |
 |---|---|---|
 | Campaign Foundry | Live V1.2 on `/talent-foundry` | `docs/talent-foundry/README.md` |
-| **Company Foundry** | Phase 1.1 experience proof (this directory) | this file |
+| **Company Foundry** | Phase 1.2 experience polish (this directory) | this file |
 | Employer Foundry | Future Phase 8 | `PARALLEL_ARCHITECTURE.md` |
 
 Campaign architecture lock (“not a lifelong world,” RedDirt identity) remains **campaign-scoped**. Company Foundry reopens the world question: this implementation **is** a FoundryOS-world flywheel.
@@ -66,7 +66,8 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `OPERATING_ENVIRONMENT.md` | `/workshop` becomes the bench; GitHub feeds the record |
 | `AI_PARTNERS.md` | Burt (Cursor), Ernie (ChatGPT), Oscar (later) |
 | `PHASE_1_BUILD_SPEC.md` | Door spec — built |
-| `PHASE_1_1_EXPERIENCE_PROOF.md` | **Now.** Gravity, linger metric, room remembers. No Phase 2. |
+| `PHASE_1_1_EXPERIENCE_PROOF.md` | **HOLD.** Direction right. Linger pull not proven from stills. |
+| `PHASE_1_2_EXPERIENCE_POLISH.md` | **Now.** Room exists without the visitor. Leaving feels premature. |
 | `BUILD_DISCIPLINE.md` | **LOCKED.** Preview-close every slice. PR #5. No unpushed pile-up. |
 | `COHORT_COMPOSITION.md` | **LOCKED.** 1000-sim 3+2 mix. Learn the work before anyone is chosen. |
 | this file | Phases 0–8 and sequencing |
@@ -82,7 +83,8 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | **0** | Recovery + architecture | Docs, family index, spine contracts through DELIVER, isolated PR | In this PR. Ernie review still open. |
 | **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. **CANON.** | Approved 2026-09-02 |
 | **1** | Mysterious front door | `/workshop` through linger. Anonymous. Room can become an environment. | Built. Gravity not yet proven. |
-| **1.1** | Experience proof | Cinematic / polish on the existing door. Linger = unfinished business. Room remembers. **No new journey.** | **This pass. Do not start Phase 2.** |
+| **1.1** | Experience proof | Cinematic / polish on the existing door. Linger = unfinished business. Room remembers. **No new journey.** | **HOLD.** Direction right. |
+| **1.2** | Experience polish | Same door. Silence, type, threshold, linger pull. Nothing designed to impress. | **This pass. Do not start Phase 2.** |
 | **2** | First artifact + method turn | MAKE, observed → equipped, Capability Reveal starts | Only after the door has gravity |
 | **3** | Deeper work + training repo | Return, fictional collaborate/respond/deliver, clone / branch / broken build / inspect-data | After they can return |
 | **4** | Cohort becomes real | They meet another participant. Cohort objects. GitHub org. Shared repos. | After they can work without destroying the bench |
@@ -127,6 +129,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass Q — BUILD fill.** Supervised sandbox on a real-shaped product. Requires `real_work_access`. Changed / left untouched. Not a job. Not live prod. No UI. EARN still stub + human gate.
 - [x] **Pass R — EARN fill.** Classified pay after a human gate (`paid_project` / term / employment). Work + accept. Not a prize. No rate. No UI. OWN still stub + human gate.
 - [x] **Pass S — Cohort composition.** 1000 simulations. Starter 3 = navigator / builder / connector. Expand 2 = witness / reframer. Staff organize tapes. Humans still invite. No personality on the door.
+- [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. Phase 2 held.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 - [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 
@@ -149,7 +152,7 @@ Do not attempt the entire system in one code pass.
 
 ## Recommended sequence
 
-1. **Phase 1.1.** Walk `/workshop`. Five tests in `PHASE_1_1_EXPERIENCE_PROOF.md`. Linger is the metric.
+1. **Phase 1.2.** Walk `/workshop`. Sit at linger. Leaving should feel premature. See `PHASE_1_2_EXPERIENCE_POLISH.md`.
 2. Ernie visual review. Do not start MAKE until the door has gravity.
 3. Only then Phase 2: first artifact, observed → equipped, Capability Reveal Engine.
 4. Keep building on this branch. Do not merge PR #5 yet.

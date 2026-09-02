@@ -30,7 +30,7 @@ export function NoticeWrite({
     }
     const reduce =
       typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const wait = reduce ? 0 : 5000;
+    const wait = reduce ? 0 : 7000;
     const t = window.setTimeout(() => setAllowAsk(true), wait);
     return () => window.clearTimeout(t);
   }, [opened]);

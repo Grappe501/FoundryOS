@@ -12,8 +12,8 @@ export function NamedReveal({ onContinue }: { onContinue: () => void }) {
       setStep(3);
       return;
     }
-    const t2 = window.setTimeout(() => setStep(2), 2200);
-    const t3 = window.setTimeout(() => setStep(3), 4400);
+    const t2 = window.setTimeout(() => setStep(2), 2800);
+    const t3 = window.setTimeout(() => setStep(3), 5800);
     return () => {
       window.clearTimeout(t2);
       window.clearTimeout(t3);
@@ -22,7 +22,7 @@ export function NamedReveal({ onContinue }: { onContinue: () => void }) {
 
   return (
     <>
-      <h1 className="ws-named">THIS IS TALENT FOUNDRY.</h1>
+      <p className="ws-line">THIS IS TALENT FOUNDRY.</p>
       {step >= 2 ? <p className="ws-line ws-line--quiet">We don’t start with résumés.</p> : null}
       {step >= 3 ? <p className="ws-line ws-line--quiet">We start with the work.</p> : null}
       {step >= 3 ? (
@@ -46,8 +46,8 @@ export function LingerRest({ onReset }: { onReset: () => void }) {
       const t = window.setTimeout(() => setLate(true), 4000);
       return () => window.clearTimeout(t);
     }
-    const bench = window.setTimeout(() => setStep(2), 2400);
-    const reset = window.setTimeout(() => setLate(true), 14000);
+    const bench = window.setTimeout(() => setStep(2), 4200);
+    const reset = window.setTimeout(() => setLate(true), 24000);
     return () => {
       window.clearTimeout(bench);
       window.clearTimeout(reset);
@@ -56,8 +56,8 @@ export function LingerRest({ onReset }: { onReset: () => void }) {
 
   return (
     <>
-      <p className="ws-line">You can go.</p>
-      {step >= 2 ? <p className="ws-line ws-line--quiet">The bench will still be here.</p> : null}
+      <p className="ws-line ws-line--linger">You can go.</p>
+      {step >= 2 ? <p className="ws-line ws-line--quiet ws-line--linger">The bench will still be here.</p> : null}
       {late ? (
         <button type="button" className="ws-ghost" onClick={onReset}>
           Start over
