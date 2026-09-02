@@ -3,7 +3,8 @@
 **Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
 **Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
-**Now:** Phase 0 + 0.5 **approved**. Phase 1 door exists. **Phase 1.1 Experience Proof** — do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.
+**Now:** Phase 0 + 0.5 **approved**. Phase 1 door exists. **Phase 1.1 Experience Proof** — do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.  
+**Discipline:** `BUILD_DISCIPLINE.md` — build locally → validate → commit → push → Netlify preview → review → only then advance. Preview is the close gate. Production is not.
 
 This is **not** the Kelly Grappe experience with different copy.  
 This is **not** an internship funnel, a bootcamp, or a course catalog.
@@ -66,6 +67,7 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `AI_PARTNERS.md` | Burt (Cursor), Ernie (ChatGPT), Oscar (later) |
 | `PHASE_1_BUILD_SPEC.md` | Door spec — built |
 | `PHASE_1_1_EXPERIENCE_PROOF.md` | **Now.** Gravity, linger metric, room remembers. No Phase 2. |
+| `BUILD_DISCIPLINE.md` | **LOCKED.** Preview-close every slice. PR #5. No unpushed pile-up. |
 | this file | Phases 0–8 and sequencing |
 
 **Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
@@ -122,6 +124,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass M — Phase 0.5 accepted.** E0.5-1–7 locked. Capability Reveal Engine. Becoming-capable standard. Training repo must feel like a young product. Phase 1 door cleared. PR #5 stays open.
 - [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
+- [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 
 ---
 
@@ -161,7 +164,9 @@ Do not attempt the entire system in one code pass.
 
 ## Git
 
-- Isolated branch only.
-- Conventional commits.
+- Isolated branch only. PR **#5** while Phase 1 is under review.
+- One meaningful pass → one conventional commit → **push immediately**.
+- Close gate is the **Netlify Preview Deploy**, not production.
 - Do not commit `.env`, secrets, `tsconfig.tsbuildinfo`.
 - Do not merge until Ernie says so.
+- See `BUILD_DISCIPLINE.md`.

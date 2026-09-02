@@ -22,7 +22,7 @@ Humans remain the only authority on hire, pay, access, and ownership.
 
 ```txt
 Ernie: problem, research, architecture, master build plan, slice definition, critique
-Burt:  implement the slice, validate, document, hand off, commit after meaningful work
+Burt:  implement the slice, validate, commit, push, confirm Netlify preview, report proof points. See `BUILD_DISCIPLINE.md`.
 Human: gates, taste, production, people, money, equity
 Oscar: later — a deeper pass over Foundry knowledge. Still not a hiring manager.
 ```

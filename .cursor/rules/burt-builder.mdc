@@ -48,4 +48,6 @@ Build → sandbox → fix → commit → push → Netlify deploy → verify → 
 
 See `.cursor/rules/end-of-pass-deploy.mdc` and `docs/NETLIFY_DEPLOY.md`
 
+**Company Foundry:** close on the PR **#5** Netlify preview, not production. Push the feature branch after every meaningful pass. Do not merge until Ernie says so. See `.cursor/rules/company-foundry-build-discipline.mdc`.
+
 Steve is the relay between Ernie and Burt — not the approval gate for git or deploy.

@@ -70,6 +70,8 @@ npx netlify deploy --build --prod
 
 Netlify creates preview URLs for pull requests automatically.
 
+**Company Foundry (PR #5):** the Preview Deploy is the close gate. Inspect `/workshop` there. Do not treat production as the review surface. See `docs/talent-foundry/software-company/BUILD_DISCIPLINE.md`.
+
 ---
 
 ## Post-Deploy Verify
