@@ -1,17 +1,33 @@
 # Talent Foundry — Master Build Plan
 
-**Date:** 2026-08-31  
-**Repos:** `H:\FoundryOS` (public experience) · `H:\SOSWebsite\RedDirt` (canonical identity + staff review)  
+**Date:** 2026-08-31 (campaign P0) · family update 2026-09-01  
+**Repos:** `H:\FoundryOS` (public experience) · `H:\SOSWebsite\RedDirt` (Campaign Foundry identity + staff review only)  
 **Live FoundryOS:** https://foundry-os.netlify.app/  
-**QR target (after P0):** `https://foundry-os.netlify.app/talent-foundry`
+**Campaign QR (locked):** `https://foundry-os.netlify.app/talent-foundry`
 
-**V1.1 is live on `main`** (`eb9c948`). V1.2 resume + Key One share is isolated on `feat/talent-foundry-v1-2-resume-share` (`H:\FoundryOS-tf-v1-2`). See `V1_2_SAVE_MY_PLACE_SPEC.md` and `V1_2_SHARE_MOMENT_SPEC.md`. Do not revert V1.1.
+**Campaign Foundry is live on `main` through V1.2** (`4ed26c0`) — Visit One compression, Layers 2–3, SAVE MY PLACE, Key One share. See `V1_2_SAVE_MY_PLACE_SPEC.md` and `V1_2_SHARE_MOMENT_SPEC.md`. Do not revert V1.1/V1.2.
 
-This plan is executable. Campaign-specific copy lives in configuration. FoundryOS owns the reusable journey engine. RedDirt remains the only person database.
+This file remains the **Campaign Foundry** executable plan. Campaign-specific copy lives in configuration. FoundryOS owns the reusable journey engine. **RedDirt remains the only person database for the Kelly campaign.**
 
 ---
 
-## Architecture lock (do not reopen unless a hard blocker appears)
+## Parallel implementations (official)
+
+Talent Foundry is no longer only the Kelly beta.
+
+| Implementation | Plan | Person store | Do not |
+|---|---|---|---|
+| **Campaign Foundry** | this file + `README.md` | RedDirt | Change live `/talent-foundry` or campaign QR while building Company Foundry |
+| **Company Foundry** | `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md` | FoundryOS (not RedDirt) | Reskin Kelly copy; write campaign people into RedDirt |
+| **Employer Foundry** | Phase 8 in the company plan | Tenant | Productize before the internal flywheel is real |
+
+**Architecture lock below is campaign-scoped.** Company Foundry reopens “not a lifelong world”: the software-company implementation is a FoundryOS-world flywheel. See `software-company/PARALLEL_ARCHITECTURE.md`.
+
+**PL-8 / PL-11** (multi-tenant registry, commercial packaging) remain post-launch for *campaign* tenancy. Company Foundry is Beta #2 from `kelly-grappe-beta/MASTER_BUILD_DISCOVERY.md`, not a Kelly config swap.
+
+---
+
+## Architecture lock — Campaign Foundry only (do not reopen unless a hard blocker appears)
 
 | Concern | Decision |
 |---------|----------|

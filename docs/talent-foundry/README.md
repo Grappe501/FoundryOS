@@ -1,11 +1,37 @@
-# Talent Foundry — Kelly Grappe Campaign Beta
+# Talent Foundry
 
-Status: **MVP BUILD NOW**
-Date: 2026-08-31
-Lead engineer: ChatGPT
-Implementation engineer: Cursor
+Talent Foundry is a FoundryOS **product family**: one core, parallel implementations. It is not a single campaign funnel.
+
+| Implementation | Public question | Route | Person store | Status |
+|---|---|---|---|---|
+| **Campaign Foundry** | Will you show up? | `/talent-foundry` | RedDirt | **Live V1.2** |
+| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` (proposed) | FoundryOS `foundry_people` → later `user_profiles` | **Phase 0** — docs only |
+| **Employer Foundry** | Configurable | TBD | Tenant | Future (Phase 8) |
+
+**Campaign Foundry (this file below):** Kelly Grappe beta. Do not treat it as the company product. Live QR remains `https://foundry-os.netlify.app/talent-foundry`.
+
+**Company Foundry:** software-company talent flywheel. Not a reskin of Kelly. Phase 0 architecture:
+
+- `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md`
+- `docs/talent-foundry/software-company/ORIGINAL_MISSION_RECOVERY.md`
+- `docs/talent-foundry/software-company/PARALLEL_ARCHITECTURE.md`
+- `docs/talent-foundry/software-company/EXPERIENCE_BLUEPRINT.md`
+- `docs/talent-foundry/software-company/FLYWHEEL_MODEL.md`
+- `docs/talent-foundry/software-company/COHORT_MODEL.md`
+- `docs/talent-foundry/software-company/EVIDENCE_AND_HUMAN_DECISION_MODEL.md`
+- `docs/talent-foundry/software-company/PHASE_1_BUILD_SPEC.md`
+
+Company Foundry must not write RedDirt. Do not alter the live Kelly route to build it.
+
+---
+
+# Campaign Foundry — Kelly Grappe Campaign Beta
+
+Status: **LIVE (V1.2)** — SAVE MY PLACE + Key One share on `main` (`4ed26c0`)  
+Date: 2026-08-31 (campaign MVP docs) · family index added 2026-09-01  
+Lead engineer: ChatGPT  
+Implementation engineer: Cursor  
 Primary beta: Kelly Grappe for Arkansas Secretary of State campaign
-Deadline: ship usable MVP today; campaign office opens September 1.
 
 ## Mission
 
