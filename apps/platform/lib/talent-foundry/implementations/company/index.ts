@@ -81,6 +81,7 @@ export {
   assignFunction,
   describeVacancies,
   emptyComposition,
+  evidenceForPerson,
   retainExpansionEvidence,
 } from './cohort/vacancy';
 export { runCohortSimulations } from './cohort/simulate';

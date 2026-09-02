@@ -121,6 +121,8 @@ Witness / Reframer evidence seen while the founding three is still forming is re
 
 When Navigator, Builder, and Connector are filled: **Founding composition complete.** The software still does not invite.
 
+Evidence stays on the **person tape**. The function assignment stays on the **cohort**. The same person may later show Witness-related moves without becoming a Navigator-type.
+
 Never stored on a participant: score, trait, fit, rank, personality, grit, seriousness.
 
 `cohortId` stays empty until a human invite. Phase 2 MAKE is open. Remember Me still held.

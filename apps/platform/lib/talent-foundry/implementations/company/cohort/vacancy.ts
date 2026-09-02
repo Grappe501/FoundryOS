@@ -37,6 +37,12 @@ export type ExpansionObservation = {
   };
 };
 
+/** Evidence belongs to the person. A function assignment belongs to the cohort. */
+export type PersonTape = {
+  personRef: string;
+  evidence: ThinkingMove[];
+};
+
 export type CohortCompositionState = {
   cohortId: string;
   targetSize: 3 | 5;
@@ -44,6 +50,7 @@ export type CohortCompositionState = {
   open: FoundingFunction[];
   expansionReserve: ExpansionFunction[];
   expansionHeld: ExpansionObservation[];
+  people: PersonTape[];
   foundingComplete: boolean;
   humanInviteStillRequired: true;
   assignsSeats: false;
@@ -79,6 +86,7 @@ export function emptyComposition(
     open: [...FOUNDING],
     expansionReserve: ['witness', 'reframer'],
     expansionHeld: [],
+    people: [],
     foundingComplete: false,
     humanInviteStillRequired: true,
     assignsSeats: false,
@@ -96,6 +104,23 @@ export function filledFunctions(state: CohortCompositionState): CohortFunction[]
 
 export function openFunctions(state: CohortCompositionState): FoundingFunction[] {
   return [...state.open];
+}
+
+export function evidenceForPerson(state: CohortCompositionState, personRef: string): ThinkingMove[] {
+  return state.people.find((p) => p.personRef === personRef)?.evidence ?? [];
+}
+
+function withPersonEvidence(
+  people: PersonTape[],
+  personRef: string,
+  evidence: ThinkingMove[],
+): PersonTape[] {
+  const prior = people.find((p) => p.personRef === personRef)?.evidence ?? [];
+  const next = [...prior];
+  for (const move of evidence) {
+    if (!next.includes(move)) next.push(move);
+  }
+  return [...people.filter((p) => p.personRef !== personRef), { personRef, evidence: next }];
 }
 
 export function assignFunction(
@@ -146,6 +171,7 @@ export function assignFunction(
     filled,
     open,
     expansionReserve,
+    people: withPersonEvidence(state.people, input.personRef, input.evidence),
     foundingComplete,
     humanInviteStillRequired: true,
     assignsSeats: false,
@@ -187,6 +213,7 @@ export function retainExpansionEvidence(
 
   return {
     ...state,
+    people: withPersonEvidence(state.people, input.personRef, evidence),
     expansionHeld: [...state.expansionHeld, observation],
     humanInviteStillRequired: true,
     assignsSeats: false,

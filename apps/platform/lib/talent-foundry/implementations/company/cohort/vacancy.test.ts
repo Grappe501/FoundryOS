@@ -9,6 +9,7 @@ import {
   assignFunction,
   describeVacancies,
   emptyComposition,
+  evidenceForPerson,
   filledFunctions,
   openFunctions,
   retainExpansionEvidence,
@@ -119,6 +120,18 @@ assert.equal(held.open.includes('navigator'), false);
 assert.equal(JSON.stringify(held).includes('92'), false);
 assert.equal(/score|rank|percent|suitable for/i.test(JSON.stringify(held.expansionHeld)), false);
 assert.equal(approvedPersonRefs(held).includes('person-d'), false);
+
+const both = retainExpansionEvidence(afterNav, {
+  personRef: 'person-a',
+  functions: ['witness'],
+  evidence: ['notice', 'question', 'attention'],
+  decision: { actor: 'ernie', at: '2026-09-02T12:16:00.000Z' },
+});
+assert.ok(evidenceForPerson(both, 'person-a').includes('decide'));
+assert.ok(evidenceForPerson(both, 'person-a').includes('notice'));
+assert.equal(filledFunctions(both).includes('navigator'), true);
+assert.equal('postureId' in (both.people[0] ?? {}), false);
+assert.equal(both.people[0]?.personRef === 'navigator', false);
 
 const dump = JSON.stringify({ empty, afterNav, founding, held, gapsDone });
 assert.equal(/personality|grit|employability|auto_invite|recommended_candidate|fit_score/i.test(dump), false);
