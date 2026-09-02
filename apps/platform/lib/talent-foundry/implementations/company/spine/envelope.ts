@@ -44,6 +44,16 @@ export type RespondTurn = {
   submittedAt: string | null;
 };
 
+export type DeliverOutcome = 'complete' | 'abandon';
+
+export type DeliverTurn = {
+  barId: string;
+  outcome: DeliverOutcome | null;
+  body: string;
+  openedAt: string;
+  submittedAt: string | null;
+};
+
 export type ReturnVisit = {
   challengeId: string;
   gapMs: number | null;
@@ -83,6 +93,7 @@ export type SpineEnvelope = {
   returnVisit: ReturnVisit | null;
   collaborate: CollaborateTurn | null;
   respond: RespondTurn | null;
+  deliver: DeliverTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -107,6 +118,7 @@ export function createEnvelope(): SpineEnvelope {
     returnVisit: null,
     collaborate: null,
     respond: null,
+    deliver: null,
     gates: [],
     cohortId: null,
   };
