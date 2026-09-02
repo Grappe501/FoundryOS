@@ -51,7 +51,7 @@ export const SPINE_STAGES: SpineStageDef[] = [
   { id: 'deliver', n: 9, name: 'DELIVER', buildPhase: 3, owner: 'spine', fill: 'live', identity: 'remembered', advance: 'participant' },
   { id: 'multiply', n: 10, name: 'MULTIPLY', buildPhase: 4, owner: 'spine', fill: 'live', identity: 'remembered', advance: 'participant' },
   { id: 'lead', n: 11, name: 'LEAD', buildPhase: 4, owner: 'spine', fill: 'live', identity: 'remembered', advance: 'participant' },
-  { id: 'build', n: 12, name: 'BUILD', buildPhase: 5, owner: 'spine', fill: 'stub', identity: 'remembered_plus_gate', advance: 'human_gate' },
+  { id: 'build', n: 12, name: 'BUILD', buildPhase: 5, owner: 'spine', fill: 'live', identity: 'remembered_plus_gate', advance: 'human_gate' },
   { id: 'earn', n: 13, name: 'EARN', buildPhase: 5, owner: 'spine', fill: 'stub', identity: 'remembered_plus_gate', advance: 'human_gate' },
   { id: 'own', n: 14, name: 'OWN', buildPhase: 7, owner: 'spine', fill: 'stub', identity: 'remembered_plus_gate', advance: 'human_gate' },
 ];

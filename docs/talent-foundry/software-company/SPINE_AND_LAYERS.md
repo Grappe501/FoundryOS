@@ -38,7 +38,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 9 deliver    LIVE spine   remembered (contract only — definition of done, no UI)
 10 multiply  LIVE spine   remembered (contract only — fictional newer person, no UI)
 11 lead      LIVE spine   remembered (contract only — constraint + people, no UI)
-12 build     STUB  spine   human gate
+12 build     LIVE  spine   human gate (contract only — sandbox product, no UI)
 13 earn      STUB  spine   human gate
 14 own       STUB  spine   human gate
 ```
@@ -59,7 +59,9 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `multiply` is live after DELIVER is finished. A fictional newer person (Nia) is stuck where they already were. They write what they give and what would let that person continue without them. Not a cohort. Not a mentor badge. `cohortId` stays empty. `stateId` stays `linger`.
 
-`lead` is live after MULTIPLY is finished. The outcome is theirs; the hour is not. Fictional Rafi and Nia. They keep, assign, and cut. Not a title. Not a leadership appointment. `gates` stay empty. BUILD / EARN / OWN remain stubs behind human gates.
+`lead` is live after MULTIPLY is finished. The outcome is theirs; the hour is not. Fictional Rafi and Nia. They keep, assign, and cut. Not a title. Not a leadership appointment. `gates` stay empty.
+
+`build` is live after LEAD is finished **and** a human records `real_work_access`. A sandbox surface of a real-shaped Foundry product. They write what they changed and what they left untouched. Not a job. Not live FoundryOS. Not the campaign. Completing BUILD does not open EARN. EARN / OWN remain stubs behind human gates. `stateId` stays `linger`.
 
 Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) **attach to stages 4–12** as work objects. They do not add a 15th stage and they do not start in Ernie’s door. A real cohort is not Rafi or Nia — it starts when they meet another participant. See `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
 
