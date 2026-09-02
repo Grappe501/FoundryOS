@@ -33,7 +33,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 4 make       LIVE  spine   anonymous  (contract only — no UI)
 5 remember   LIVE  spine   optional identity (contract only — no UI)
 6 return     LIVE  spine   optional (contract only — no UI)
-7 collaborate STUB spine   remembered
+7 collaborate LIVE spine   remembered (contract only — fictional partner, no UI)
 8 respond    STUB  spine   remembered
 9 deliver    STUB  spine   remembered
 10 multiply  STUB  spine   remembered
@@ -49,7 +49,9 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `remember` is live as a contract after MAKE is finished. `openRemember` / Remember Me / Keep Exploring do not change Ernie `stateId`. Keep Exploring leaves the artifact and keeps REMEMBER open. Remember Me stores name + email (+ optional location / school-or-work), sets `placeEligible`, and never takes a résumé or phone.
 
-`return` is live after Remember Me **or** Keep Exploring. `openReturn` records the gap since last activity and opens a deeper challenge on their MAKE track. `stateId` stays `linger`. Collaborate and beyond remain stubs.
+`return` is live after Remember Me **or** Keep Exploring. `openReturn` records the gap since last activity and opens a deeper challenge on their MAKE track. `stateId` stays `linger`.
+
+`collaborate` is live only after RETURN is finished **and** Remember Me (not Keep Exploring). The other person is a **fictional** bench partner (Rafi). Not a cohort. Not a real applicant. They write what they send and what they need back. RESPOND and beyond remain stubs.
 
 ---
 

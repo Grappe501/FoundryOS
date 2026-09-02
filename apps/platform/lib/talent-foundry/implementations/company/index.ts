@@ -43,6 +43,8 @@ export { keepExploring, openRemember, rememberMe } from './remember/engine';
 export { REMEMBER_COPY } from './remember/copy';
 export { openReturn, submitReturn } from './return/engine';
 export { RETURN_COPY } from './return/copy';
+export { openCollaborate, submitCollaborate } from './collaborate/engine';
+export { COLLABORATE_COPY } from './collaborate/copy';
 export {
   MESS_M1,
   MESS_SEEDS,

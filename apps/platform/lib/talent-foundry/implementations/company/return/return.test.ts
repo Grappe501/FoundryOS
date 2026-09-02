@@ -74,7 +74,7 @@ assert.equal(namedReturn.session.envelope.spineStage, 'return');
 
 const onward = tryAdvanceSpine(finished);
 assert.equal(onward.ok, false);
-assert.equal(onward.reason, 'stub');
+assert.equal(onward.reason, 'identity_required');
 assert.equal(onward.stage, 'collaborate');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {

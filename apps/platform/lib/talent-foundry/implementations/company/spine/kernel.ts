@@ -7,7 +7,11 @@ import { ERNIE_ZONE_NEXT, SPINE_STAGE_IDS, nextSpineStage, stageDef, workshopSta
 
 export type EnterStageResult =
   | { ok: true; session: WorkshopSession }
-  | { ok: false; reason: 'ernie_zone' | 'stub' | 'human_gate' | 'locked' | 'already_complete'; stage: SpineStageId };
+  | {
+      ok: false;
+      reason: 'ernie_zone' | 'stub' | 'human_gate' | 'locked' | 'already_complete' | 'identity_required';
+      stage: SpineStageId;
+    };
 
 export function withEnvelope(session: WorkshopSession, envelope: SpineEnvelope = createEnvelope()): WorkshopSession {
   return { ...session, envelope };
@@ -37,6 +41,9 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
   ) {
     progress.return = 'open';
   }
+  if (progress.return === 'complete' && progress.collaborate === 'locked' && envelope.rememberChoice === 'remember_me') {
+    progress.collaborate = 'open';
+  }
 
   const pastSolve =
     SPINE_STAGE_IDS.indexOf(envelope.spineStage) >= SPINE_STAGE_IDS.indexOf('make');
@@ -63,6 +70,12 @@ export function tryEnterStage(session: WorkshopSession, stage: SpineStageId, now
   }
   if (def.fill === 'stub') {
     return { ok: false, reason: 'stub', stage };
+  }
+  if (
+    (def.identity === 'remembered' || def.identity === 'remembered_plus_gate') &&
+    (current.rememberChoice !== 'remember_me' || !current.remember)
+  ) {
+    return { ok: false, reason: 'identity_required', stage };
   }
   if (def.advance === 'human_gate') {
     const allowed = session.envelope?.gates.some((g) => gateUnlocks(g.kind, stage));
