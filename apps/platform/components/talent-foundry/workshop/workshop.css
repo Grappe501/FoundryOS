@@ -339,11 +339,59 @@ body:has(.ws) {
   opacity: 0.82;
 }
 
-.ws-room[data-surface='need'] .ws-slot-voice,
+.ws-room[data-surface='need'] .ws-slot-traces {
+  min-height: 42vh;
+}
+
+.ws-room[data-surface='need'] .ws-slot-voice {
+  padding-top: 0;
+}
+
 .ws-room[data-surface='attempt'] .ws-slot-voice {
   overflow-y: auto;
-  max-height: 46vh;
-  padding-top: 20px;
+  max-height: 38vh;
+  padding-top: 16px;
+}
+
+.ws-object-notes {
+  margin-top: 8px;
+}
+
+.ws-object-notes .ws-choice {
+  font-size: 0.86rem;
+  padding: 8px 0 8px 12px;
+}
+
+.ws-primary-edit {
+  display: block;
+  width: min(100%, 16rem);
+  margin: 8px 0 8px;
+  padding: 8px 14px;
+  border: 0;
+  background: #e8e4dc;
+  color: #141414;
+  font: inherit;
+  font-size: 0.86rem;
+}
+
+.ws-primary-edit:focus-visible {
+  outline: 1px solid rgba(207, 203, 195, 0.4);
+  outline-offset: 4px;
+}
+
+.ws-same {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: var(--ws-ink);
+}
+
+.ws-draft-prior {
+  opacity: 0.42;
+  margin-bottom: 10px;
+}
+
+.ws-object[data-work='true'] {
+  flex: 1 1 100%;
 }
 
 .ws-reach {

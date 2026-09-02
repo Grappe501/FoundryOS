@@ -39,9 +39,9 @@ Do not explain the whole system just because the reveal was earned. “This is T
 |---|---|
 | Need | Pulse still offers Delete. The last draft is still a mess. They already saw this. |
 | Friction | They can go. The unfinished work is still here. |
-| Discovery | They touch the bench. Jobs appear as notes, not a catalog. |
-| Tool | A writing surface. Not a form. |
-| Attempt | They write on one job. |
+| Discovery | They touch Pulse or the last draft. Notes appear on that object — not a seven-track catalog. |
+| Tool | The object becomes the tool. Pulse’s Delete control. The draft itself. |
+| Attempt | They change the thing in the room. |
 | Evidence | The artifact stays in the room. |
 | Feedback | Method turn. The room changes. |
 | Increased Access | They are equipped. The next problem can wait. Not a badge. Not Remember Me yet. |

@@ -10,7 +10,7 @@ import {
 } from '../journey';
 import { chooseMakeTrack, openMake, submitMake } from './engine';
 import { MAKE_COPY } from './copy';
-import { makeEligible, makeSurface, trackLure } from './surface';
+import { composeBuildBody, makeEligible, makeSurface, objectForTrack, trackLure, tracksOn } from './surface';
 
 assert.equal(/tuesday|november|salary|oscar|academy|kelly|module|course|onboarding/i.test(JSON.stringify(MAKE_COPY)), false);
 assert.equal(MAKE_COPY.methodArrived, 'You made something.');
@@ -46,6 +46,12 @@ assert.equal(makeEligible(opened.session), false);
 const chosen = chooseMakeTrack(opened.session, 'build', new Date('2026-09-02T05:01:05.000Z'));
 assert.equal(makeSurface(chosen), 'attempt');
 assert.ok(trackLure('build').includes('Delete'));
+assert.deepEqual([...tracksOn('pulse')], ['build', 'design']);
+assert.equal(tracksOn('draft').includes('operate'), true);
+assert.equal(tracksOn('pulse').includes('operate'), false);
+assert.equal(objectForTrack('build'), 'pulse');
+assert.equal(objectForTrack('operate'), 'draft');
+assert.equal(composeBuildBody('Start', 'Opens an empty bench.'), 'Start\nOpens an empty bench.');
 
 const made = submitMake(
   chosen,

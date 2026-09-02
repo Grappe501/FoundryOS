@@ -3,37 +3,34 @@
 import { useEffect, useState } from 'react';
 import { MAKE_COPY } from '../../../../lib/talent-foundry/implementations/company/make/copy';
 import { trackLure } from '../../../../lib/talent-foundry/implementations/company/make/surface';
-import { MAKE_TRACKS, makeTrack } from '../../../../lib/talent-foundry/implementations/company/make/tracks';
+import { makeTrack } from '../../../../lib/talent-foundry/implementations/company/make/tracks';
 import type { ArtifactTrack } from '../../../../lib/talent-foundry/implementations/company/spine/envelope';
 
-export function MakeNeed({ onChoose }: { onChoose: (trackId: ArtifactTrack) => void }) {
+export function MakeNeed({
+  tracks,
+  onChoose,
+}: {
+  tracks: readonly ArtifactTrack[];
+  onChoose: (trackId: ArtifactTrack) => void;
+}) {
   return (
-    <>
-      {MAKE_TRACKS.map((track) => (
-        <button
-          key={track.id}
-          type="button"
-          className="ws-choice"
-          onClick={() => onChoose(track.id)}
-        >
-          {trackLure(track.id)}
+    <div className="ws-object-notes">
+      {tracks.map((id) => (
+        <button key={id} type="button" className="ws-choice" onClick={() => onChoose(id)}>
+          {trackLure(id)}
         </button>
       ))}
-    </>
+    </div>
   );
 }
 
-export function MakeAttempt({
+export function MakeAttemptVoice({
   trackId,
-  body,
-  onBody,
-  onTyping,
+  ready,
   onFinish,
 }: {
   trackId: ArtifactTrack;
-  body: string;
-  onBody: (value: string) => void;
-  onTyping: () => void;
+  ready: boolean;
   onFinish: () => void;
 }) {
   const track = makeTrack(trackId);
@@ -41,15 +38,7 @@ export function MakeAttempt({
     <>
       <p className="ws-line ws-line--quiet">{track.job}</p>
       <p className="ws-prompt">{track.definitionOfDone}</p>
-      <textarea
-        className="ws-field"
-        value={body}
-        onChange={(e) => onBody(e.target.value)}
-        onInput={onTyping}
-        rows={5}
-        aria-label="The work"
-      />
-      {body.trim() ? (
+      {ready ? (
         <button type="button" className="ws-threshold" onClick={onFinish} aria-label="Leave it on the bench">
           <span className="ws-threshold-mark" aria-hidden />
         </button>

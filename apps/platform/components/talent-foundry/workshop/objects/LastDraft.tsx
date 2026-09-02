@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { DraftTrace, ObjectPresence } from '../../../../lib/talent-foundry/implementations/company/traces';
 
 const NOTES = `last night
@@ -10,11 +11,13 @@ export function LastDraft({
   trace,
   reachable = false,
   onReach,
+  notes,
 }: {
   presence: ObjectPresence;
   trace: DraftTrace;
   reachable?: boolean;
   onReach?: () => void;
+  notes?: ReactNode;
 }) {
   if (presence === 'absent') return null;
 
@@ -33,7 +36,8 @@ export function LastDraft({
       aria-hidden={presence === 'ghost' && !reachable}
     >
       {trace === 'gone' ? <p className="ws-draft-empty"> </p> : <pre>{body}</pre>}
-      {reachable ? (
+      {notes}
+      {reachable && !notes ? (
         <button type="button" className="ws-reach" onClick={onReach} aria-label="The last draft is still on the bench">
           <span className="ws-threshold-mark" aria-hidden />
         </button>

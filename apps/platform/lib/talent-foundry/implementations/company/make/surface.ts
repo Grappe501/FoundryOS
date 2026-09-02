@@ -1,7 +1,12 @@
+import type { ArtifactTrack } from '../spine/envelope';
 import type { WorkshopSession } from '../types';
 import { MAKE_TRACKS } from './tracks';
 
 export type MakeSurface = 'rest' | 'need' | 'attempt' | 'equipped';
+export type BenchObject = 'pulse' | 'draft';
+
+export const PULSE_TRACKS: readonly ArtifactTrack[] = ['build', 'design'];
+export const DRAFT_TRACKS: readonly ArtifactTrack[] = ['explain', 'investigate', 'operate', 'grow', 'organize'];
 
 /** UI surface while Ernie stateId stays linger. Not a new journey state. */
 export function makeSurface(session: WorkshopSession): MakeSurface {
@@ -23,6 +28,19 @@ export function trackLure(trackId: string): string {
   return stop > 0 ? track.job.slice(0, stop + 1) : track.job;
 }
 
+export function tracksOn(object: BenchObject): readonly ArtifactTrack[] {
+  return object === 'pulse' ? PULSE_TRACKS : DRAFT_TRACKS;
+}
+
+export function objectForTrack(trackId: string | null): BenchObject {
+  if (trackId && (PULSE_TRACKS as readonly string[]).includes(trackId)) return 'pulse';
+  return 'draft';
+}
+
 export function pulseSided(trackId: string | null): boolean {
-  return trackId === 'build' || trackId === 'design' || trackId === 'investigate';
+  return objectForTrack(trackId) === 'pulse';
+}
+
+export function composeBuildBody(label: string, happens: string): string {
+  return `${label.trim()}\n${happens.trim()}`.trim();
 }

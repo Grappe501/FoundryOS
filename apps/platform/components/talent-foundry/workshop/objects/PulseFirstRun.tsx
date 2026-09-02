@@ -11,6 +11,7 @@ export function PulseFirstRun({
   onAttend,
   reachable = false,
   onReach,
+  notes,
 }: {
   presence: ObjectPresence;
   attended: string[];
@@ -18,6 +19,7 @@ export function PulseFirstRun({
   onAttend: (regionId: string, dwellMs: number) => void;
   reachable?: boolean;
   onReach?: () => void;
+  notes?: ReactNode;
 }) {
   if (presence === 'absent') return null;
   return (
@@ -45,7 +47,8 @@ export function PulseFirstRun({
       <Region id="import" kind="buried" attended={attended} interactive={interactive} onAttend={onAttend}>
         Import from last night
       </Region>
-      {reachable ? (
+      {notes}
+      {reachable && !notes ? (
         <button type="button" className="ws-reach" onClick={onReach} aria-label="Pulse is still on the bench">
           <span className="ws-threshold-mark" aria-hidden />
         </button>

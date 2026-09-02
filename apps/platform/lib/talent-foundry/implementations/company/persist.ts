@@ -18,9 +18,11 @@ export type WorkshopDrafts = {
   notice: string;
   change: string;
   artifact: string;
+  reach: 'pulse' | 'draft' | '';
+  happens: string;
 };
 
-const EMPTY_DRAFTS: WorkshopDrafts = { notice: '', change: '', artifact: '' };
+const EMPTY_DRAFTS: WorkshopDrafts = { notice: '', change: '', artifact: '', reach: '', happens: '' };
 
 function isWorkshopSession(value: unknown): value is WorkshopSession {
   if (!value || typeof value !== 'object') return false;
@@ -71,6 +73,8 @@ export function loadWorkshopDrafts(): WorkshopDrafts {
       notice: typeof parsed.notice === 'string' ? parsed.notice : '',
       change: typeof parsed.change === 'string' ? parsed.change : '',
       artifact: typeof parsed.artifact === 'string' ? parsed.artifact : '',
+      reach: parsed.reach === 'pulse' || parsed.reach === 'draft' ? parsed.reach : '',
+      happens: typeof parsed.happens === 'string' ? parsed.happens : '',
     };
   } catch {
     return { ...EMPTY_DRAFTS };
