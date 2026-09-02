@@ -1,6 +1,6 @@
 # Company Foundry — Phase 1.1 Experience Proof
 
-**Status:** READY FOR ERNIE VISUAL. Cinematic / polish pass on the existing `/workshop` door. Contracts frozen. Phase 2 held.
+**Status:** READY FOR ERNIE VISUAL. Stills in `review/phase-1-1/`. Contracts frozen. Phase 2 held until the door is walked and approved.
 
 Phase 1 proved the room can run. It did **not** prove the experience has gravity.
 
