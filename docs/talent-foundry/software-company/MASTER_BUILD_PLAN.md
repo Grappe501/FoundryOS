@@ -68,6 +68,7 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `PHASE_1_BUILD_SPEC.md` | Door spec — built |
 | `PHASE_1_1_EXPERIENCE_PROOF.md` | **Now.** Gravity, linger metric, room remembers. No Phase 2. |
 | `BUILD_DISCIPLINE.md` | **LOCKED.** Preview-close every slice. PR #5. No unpushed pile-up. |
+| `COHORT_COMPOSITION.md` | **LOCKED.** 1000-sim 3+2 mix. Learn the work before anyone is chosen. |
 | this file | Phases 0–8 and sequencing |
 
 **Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
@@ -125,6 +126,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
 - [x] **Pass Q — BUILD fill.** Supervised sandbox on a real-shaped product. Requires `real_work_access`. Changed / left untouched. Not a job. Not live prod. No UI. EARN still stub + human gate.
 - [x] **Pass R — EARN fill.** Classified pay after a human gate (`paid_project` / term / employment). Work + accept. Not a prize. No rate. No UI. OWN still stub + human gate.
+- [x] **Pass S — Cohort composition.** 1000 simulations. Starter 3 = navigator / builder / connector. Expand 2 = witness / reframer. Staff organize tapes. Humans still invite. No personality on the door.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 - [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 

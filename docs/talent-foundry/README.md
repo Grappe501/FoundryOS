@@ -28,6 +28,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 - `docs/talent-foundry/software-company/PHASE_1_1_EXPERIENCE_PROOF.md`
 - `docs/talent-foundry/software-company/BUILD_DISCIPLINE.md`
 - `docs/talent-foundry/software-company/review/phase-1-1/README.md`
+- `docs/talent-foundry/software-company/COHORT_COMPOSITION.md`
 - `docs/talent-foundry/software-company/THINKING_TRACE_MODEL.md`
 - `docs/talent-foundry/software-company/SCENARIO_LAB.md`
 - `docs/talent-foundry/software-company/FUTURE_SURFACES.md`

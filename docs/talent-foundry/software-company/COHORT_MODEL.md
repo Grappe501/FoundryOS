@@ -10,6 +10,8 @@ Recovered adjacent shape: Pass 026 `beta_waitlist` tester cohorts (segment, invi
 
 A cohort is a **time-bounded group of people developing work together** under named mentors, with projects, evidence, and explicit human decisions.
 
+**Composition (staff only):** start with Navigator + Builder + Connector. Grow to five with Witness + Reframer. See `COHORT_COMPOSITION.md`. Never a personality score. Human invite still required.
+
 The company should be able to open:
 
 **FOUNDry Cohort 01**
