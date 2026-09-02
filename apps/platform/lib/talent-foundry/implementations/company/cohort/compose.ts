@@ -180,7 +180,7 @@ export function compositionGaps(
   }
 
   const openCaps = composition
-    ? new Set(composition.open.map((id) => FUNCTION_CAPABILITY[id]))
+    ? new Set<CapabilityId>(composition.open.map((id) => FUNCTION_CAPABILITY[id]))
     : null;
   const catalog = openCaps ? CAPABILITIES.filter((cap) => openCaps.has(cap.id)) : CAPABILITIES;
   const needs = catalog.map((cap) => describeCapability(invitedTapes, cap));
