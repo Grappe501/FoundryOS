@@ -115,6 +115,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass I — RESPOND fill.** Fictional note from Rafi. Incorporate / hold / ask. Stance is a fact, not a score. No UI. DELIVER still stub.
 - [x] **Pass J — DELIVER fill.** Definition of done on their track. Complete or abandon — both close the beat. No grade. No UI. MULTIPLY still stub.
 - [x] **Pass K — Phase 0.5 talent-to-ownership architecture.** Academy + operating environment. Curriculum as missions. Burt / Ernie / Oscar. GitHub feeds the record. Partner throughout (posture, not a prize). **Phase 1 screens held.** MULTIPLY / LEAD still stub.
+- [x] **Pass L — MULTIPLY fill.** Fictional newer person Nia. Help + what unblocks them. Not a cohort. Not a mentor badge. No UI. LEAD still stub.
 
 ---
 

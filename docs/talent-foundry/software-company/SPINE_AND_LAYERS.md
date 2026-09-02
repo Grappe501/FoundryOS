@@ -36,7 +36,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 7 collaborate LIVE spine   remembered (contract only — fictional partner, no UI)
 8 respond    LIVE spine   remembered (contract only — fictional note, no UI)
 9 deliver    LIVE spine   remembered (contract only — definition of done, no UI)
-10 multiply  STUB  spine   remembered
+10 multiply  LIVE spine   remembered (contract only — fictional newer person, no UI)
 11 lead      STUB  spine   remembered
 12 build     STUB  spine   human gate
 13 earn      STUB  spine   human gate
@@ -55,9 +55,11 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `respond` is live after COLLABORATE is finished. A fictional note comes back on their track. They incorporate, hold, or ask. We record the stance — not whether they agreed, not a growth score. `stateId` stays `linger`.
 
-`deliver` is live after RESPOND is finished. They see a definition of done on their track and call it finished or leave it. Both outcomes close the beat. Not a grade. MULTIPLY and beyond remain stubs.
+`deliver` is live after RESPOND is finished. They see a definition of done on their track and call it finished or leave it. Both outcomes close the beat. Not a grade.
 
-Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) **attach to stages 4–12** as work objects. They do not add a 15th stage and they do not start in Ernie’s door. A real cohort is not Rafi — it starts when they meet another participant. See `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
+`multiply` is live after DELIVER is finished. A fictional newer person (Nia) is stuck where they already were. They write what they give and what would let that person continue without them. Not a cohort. Not a mentor badge. `cohortId` stays empty. `stateId` stays `linger`. LEAD and beyond remain stubs.
+
+Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) **attach to stages 4–12** as work objects. They do not add a 15th stage and they do not start in Ernie’s door. A real cohort is not Rafi or Nia — it starts when they meet another participant. See `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
 
 ---
 

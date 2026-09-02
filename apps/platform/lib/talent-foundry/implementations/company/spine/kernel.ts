@@ -50,6 +50,9 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
   if (progress.respond === 'complete' && progress.deliver === 'locked') {
     progress.deliver = 'open';
   }
+  if (progress.deliver === 'complete' && progress.multiply === 'locked') {
+    progress.multiply = 'open';
+  }
 
   const pastSolve =
     SPINE_STAGE_IDS.indexOf(envelope.spineStage) >= SPINE_STAGE_IDS.indexOf('make');

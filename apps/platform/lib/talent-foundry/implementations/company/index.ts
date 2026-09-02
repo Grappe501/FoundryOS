@@ -49,6 +49,8 @@ export { openRespond, submitRespond } from './respond/engine';
 export { RESPOND_COPY } from './respond/copy';
 export { openDeliver, submitDeliver } from './deliver/engine';
 export { DELIVER_COPY } from './deliver/copy';
+export { openMultiply, submitMultiply } from './multiply/engine';
+export { MULTIPLY_COPY } from './multiply/copy';
 export {
   MESS_M1,
   MESS_SEEDS,

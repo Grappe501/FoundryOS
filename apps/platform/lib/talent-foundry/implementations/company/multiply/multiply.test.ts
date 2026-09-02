@@ -14,12 +14,13 @@ import { openRemember, rememberMe } from '../remember/engine';
 import { openReturn, submitReturn } from '../return/engine';
 import { openCollaborate, submitCollaborate } from '../collaborate/engine';
 import { openRespond, submitRespond } from '../respond/engine';
+import { openDeliver, submitDeliver } from '../deliver/engine';
 import { ERNIE_ZONE_NEXT } from '../spine/stages';
 import { tryAdvanceSpine, tryEnterStage } from '../spine/kernel';
-import { DELIVER_BARS } from './bars';
-import { openDeliver, submitDeliver } from './engine';
+import { MULTIPLY_PROMPTS } from './newer';
+import { openMultiply, submitMultiply } from './engine';
 
-assert.equal(/tuesday|hiring|november|salary|intern/i.test(JSON.stringify(DELIVER_BARS)), false);
+assert.equal(/tuesday|hiring|november|salary|intern|oscar|academy/i.test(JSON.stringify(MULTIPLY_PROMPTS)), false);
 
 function throughMake() {
   let s = createWorkshopSession(new Date('2026-09-02T09:00:00.000Z'));
@@ -36,7 +37,7 @@ function throughMake() {
   return submitMake(s, { body: '1 A\n2 B\n3 C\n4 D\n5 E', finished: true }, new Date('2026-09-02T09:01:20.000Z'));
 }
 
-function throughRespond() {
+function throughDeliver() {
   let s = throughMake();
   const rem = openRemember(s, new Date('2026-09-02T09:02:00.000Z'));
   if (!rem.ok) throw new Error('remember');
@@ -61,7 +62,7 @@ function throughRespond() {
   );
   const resp = openRespond(s, new Date('2026-09-02T10:02:00.000Z'));
   if (!resp.ok) throw new Error('respond');
-  return submitRespond(
+  s = submitRespond(
     resp.session,
     {
       stance: 'incorporate',
@@ -70,47 +71,50 @@ function throughRespond() {
     },
     new Date('2026-09-02T10:02:30.000Z'),
   );
+  const del = openDeliver(s, new Date('2026-09-02T10:03:00.000Z'));
+  if (!del.ok) throw new Error('deliver');
+  return submitDeliver(
+    del.session,
+    {
+      body: 'Five lines. Pat owns line 2. I own the join.',
+      outcome: 'complete',
+    },
+    new Date('2026-09-02T10:03:20.000Z'),
+  );
 }
 
-assert.equal(tryEnterStage(throughMake(), 'deliver').reason, 'identity_required');
+assert.equal(tryEnterStage(throughMake(), 'multiply').reason, 'identity_required');
 
-const ready = throughRespond();
-assert.equal(ready.envelope.progress.deliver, 'open');
-const opened = openDeliver(ready, new Date('2026-09-02T10:03:00.000Z'));
+const ready = throughDeliver();
+assert.equal(ready.envelope.progress.multiply, 'open');
+assert.equal(ready.envelope.cohortId, null);
+const opened = openMultiply(ready, new Date('2026-09-02T10:04:00.000Z'));
 assert.equal(opened.ok, true);
-if (!opened.ok) throw new Error('deliver');
-assert.equal(opened.session.envelope.spineStage, 'deliver');
+if (!opened.ok) throw new Error('multiply');
+assert.equal(opened.session.envelope.spineStage, 'multiply');
 assert.equal(opened.session.stateId, 'linger');
-assert.equal(opened.session.envelope.deliver?.barId, 'D-operate');
+assert.equal(opened.session.envelope.multiply?.newerId, 'nia');
+assert.equal(opened.session.envelope.multiply?.promptId, 'N-operate');
+assert.equal(opened.session.envelope.cohortId, null);
 
-const done = submitDeliver(
+const done = submitMultiply(
   opened.session,
   {
-    body: 'Five lines. Pat owns line 2. I own the join.',
-    outcome: 'complete',
+    help: 'Write five lines. You own line 1. Ask one person to own line 2. Cut the rest if they stay empty.',
+    unblocks: 'They can run tomorrow without asking you who owns the join.',
+    finished: true,
   },
-  new Date('2026-09-02T10:03:20.000Z'),
+  new Date('2026-09-02T10:04:30.000Z'),
 );
-assert.equal(done.envelope.progress.deliver, 'complete');
-assert.equal(done.envelope.deliver?.outcome, 'complete');
-assert.equal(done.thinking.some((e) => e.move === 'finish' && e.beatId === 'deliver'), true);
-
-const left = submitDeliver(
-  opened.session,
-  {
-    body: 'Line 2 is still empty. I am leaving the bench.',
-    outcome: 'abandon',
-  },
-  new Date('2026-09-02T10:03:20.000Z'),
-);
-assert.equal(left.envelope.progress.deliver, 'complete');
-assert.equal(left.envelope.deliver?.outcome, 'abandon');
-assert.equal(left.thinking.some((e) => e.move === 'abandon' && e.beatId === 'deliver'), true);
+assert.equal(done.envelope.progress.multiply, 'complete');
+assert.equal(done.envelope.cohortId, null);
+assert.equal(done.thinking.some((e) => e.move === 'help' && e.beatId === 'multiply'), true);
+assert.equal(done.thinking.some((e) => e.move === 'handoff' && e.beatId === 'multiply'), true);
 
 const onward = tryAdvanceSpine(done);
-assert.equal(onward.ok, true);
-if (!onward.ok) throw new Error('multiply');
-assert.equal(onward.session.envelope.spineStage, 'multiply');
+assert.equal(onward.ok, false);
+assert.equal(onward.reason, 'stub');
+assert.equal(onward.stage, 'lead');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {
   assert.equal(nextWorkshopState(state), ERNIE_ZONE_NEXT[state]);
