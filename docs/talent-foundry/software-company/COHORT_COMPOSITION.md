@@ -1,26 +1,32 @@
 # Company Foundry — Cohort Composition
 
-**Status:** LOCKED from 1000 simulations (seed `20261115`). Staff only. Not a door. Not a personality test.  
+**Status:** MODEL APPROVED. Automated person recommendation **held and removed** (Phase C0.1, 2026-09-02). Staff only. Not a door. Not a personality test.  
 **Code:** `apps/platform/lib/talent-foundry/implementations/company/cohort/`
 
-People **learn the work before anyone chooses who can do the job.** Completing the Foundry does not earn a seat. A human still invites. This pass only organizes complementary tapes so Cohort 01 can lift itself.
+People **learn the work before anyone chooses who can do the job.** Completing the Foundry does not earn a seat. A human still invites. The software may describe **missing capability evidence**. It may not shortlist people.
+
+```txt
+Candidate tape → demonstrated moves → human-readable evidence → cohort needs → human composition decision
+```
+
+No candidate ranking. No automated seat assignment. No hidden best applicant.
 
 ---
 
-## What the simulations asked
+## What the simulations taught (research)
 
-1,000 possible people (noisy mixes of 12 working postures).  
-1,000 hiring pools of 18.  
+1,000 working-posture mixes (noisy mixes of 12 demonstrated postures).  
+1,000 pools of 18.  
 Each pool: compose a 3, then add 2. Compare to a random 3 and a random 5.
 
-Internal lift is coverage of needed moves + one followable plan + help/handoff + ship − abandon. That number is **not** written onto a person.
+`teamLift()` remains a **simulation / research utility**. It is not a production hiring score and is not written onto a person.
 
 | | Composed | Random | Lift |
 |---|---|---|---|
 | 3 seats | 0.591 | 0.371 | **+0.220** |
 | 5 seats | 0.613 | 0.419 | **+0.194** |
 
-Almost nobody who drifted or worked only alone won a starter seat (drifter 1, solo 6 of 3,000 starter seats).
+Almost nobody who drifted or worked only alone won a starter seat in the research search (drifter 1, solo 6 of 3,000 starter seats).
 
 ---
 
@@ -33,6 +39,8 @@ The seats that won most often when the question was: *who follows one plan and s
 | 1 | **Navigator** | A plan others can follow. Fence, decide, explain. |
 | 2 | **Builder** | They change the object and finish. |
 | 3 | **Connector** | Help + handoff. The team exists because of them. |
+
+**The Connector is not an optional soft-skill seat. It is load-bearing.** A Navigator + Builder pair can produce output. The Connector is what begins converting individual productivity into an organization.
 
 Witness was fourth, not third. A founding three that only sees and builds, without a connector, does not lift as hard as a three that can hand work to each other.
 
@@ -50,6 +58,20 @@ When the question became: *what expands thought without breaking the plan?*
 | 5 | **Reframer** | Renames the problem. Opens a path the first plan missed. |
 
 Helper was close. Critic, solo, and drifter stay off the invite list unless a human overrules the tape.
+
+---
+
+## What production may say
+
+The system may say:
+
+- Cohort 01 still needs demonstrated evidence of clean handoff/help.
+- Current invited group strongly covers planning and shipping; collaboration evidence is thin.
+- Adding someone whose tape contains notice/question behavior would broaden this group.
+
+It must **not** say: invite Steve, Maya, and Carlos.
+
+The human chooses the person.
 
 ---
 
@@ -71,10 +93,12 @@ Forbidden public copy: personality type, score, grit, apply for Cohort 01, Nov 1
 ## What this pass built
 
 - 12 staff postures mapped from thinking **moves**
-- Team lift (internal)
-- `compositionLock()` — the 3 + 2
-- `recommendSeats(tapes)` — organizes candidates; **does not invite**
+- `teamLift()` — research / simulation only
+- `compositionLock()` — the 3 + 2, Connector load-bearing, human invite still required
+- `compositionGaps(invitedTapes)` — missing / thin / covered demonstrated moves. **No person IDs.**
 - 1000-sim test, seed locked
+
+Removed from production: `recommendSeats()`, candidate-ID shortlists, production ranking.
 
 Never stored on a participant: score, trait, fit, rank, personality, grit, seriousness.
 

@@ -1,9 +1,10 @@
+/** Research only. Draws posture mixes and compares composed vs random rooms. Not a hiring pipeline. */
 import { teamLift, type PostureMix, dominantPosture } from './lift';
 import { POSTURE_IDS, type PostureId } from './postures';
 
 export type SimSummary = {
   runs: number;
-  personalities: number;
+  postureMixes: number;
   poolSize: number;
   composed3Mean: number;
   random3Mean: number;
@@ -31,8 +32,8 @@ function emptyCounts(): Record<PostureId, number> {
   return out;
 }
 
-/** One of 1000 possible people: a noisy mix of 2–4 postures. */
-export function drawPersonality(rand: () => number): PostureMix {
+/** One of 1000 possible working-posture mixes. Research only. Not a personality. */
+export function drawPostureMix(rand: () => number): PostureMix {
   const mix: PostureMix = {};
   for (const id of POSTURE_IDS) mix[id] = 0;
   const n = 2 + Math.floor(rand() * 3);
@@ -59,6 +60,7 @@ function pickRandom<T>(items: T[], n: number, rand: () => number): T[] {
   return out;
 }
 
+/** Research greedy search. Not a production seat assigner. */
 function greedyCompose(pool: PostureMix[], n: number, already: PostureMix[] = []): PostureMix[] {
   const unused = pool.filter((p) => !already.includes(p));
   const picked: PostureMix[] = [...already];
@@ -79,7 +81,7 @@ function greedyCompose(pool: PostureMix[], n: number, already: PostureMix[] = []
 
 export function runCohortSimulations(runs = 1000, seed = 20261115): SimSummary {
   const rand = rng(seed);
-  const people: PostureMix[] = Array.from({ length: 1000 }, () => drawPersonality(rand));
+  const people: PostureMix[] = Array.from({ length: 1000 }, () => drawPostureMix(rand));
   const starterWins = emptyCounts();
   const expandWins = emptyCounts();
   let composed3 = 0;
@@ -108,7 +110,7 @@ export function runCohortSimulations(runs = 1000, seed = 20261115): SimSummary {
 
   return {
     runs,
-    personalities: 1000,
+    postureMixes: 1000,
     poolSize,
     composed3Mean: round4(composed3 / runs),
     random3Mean: round4(random3 / runs),

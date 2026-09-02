@@ -39,6 +39,7 @@ export function teamMoves(members: PostureMix[]): Record<string, number> {
   return out;
 }
 
+/** Research / simulation utility. Not a production hiring score. Do not rank people with this. */
 export function teamLift(members: PostureMix[]): TeamLift {
   if (members.length === 0) {
     return { coverage: 0, planFollow: 0, lift: 0, ship: 0, thought: 0, combined: 0 };

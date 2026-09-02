@@ -1,18 +1,40 @@
 import type { ThinkingMove } from '../types';
-import { teamLift, type PostureMix, dominantPosture } from './lift';
+import type { PostureMix } from './lift';
 import { POSTURE_IDS, POSTURES, type PostureId } from './postures';
 
-/** Locked after the 1000-sim pass. Plan + make + glue. */
+/** Locked after the 1000-sim pass. Plan + make + glue. Connector is load-bearing. */
 export const STARTER_THREE: readonly PostureId[] = ['navigator', 'builder', 'connector'];
 
 /** Locked after the 1000-sim pass. See clearly, then open a second path. */
 export const EXPAND_TWO: readonly PostureId[] = ['witness', 'reframer'];
+
+export const CONNECTOR_NOTE =
+  'The Connector is not an optional soft-skill seat. Help and handoff convert individual output into an organization.';
+
+export type CapabilityId = 'planning' | 'shipping' | 'collaboration' | 'noticing' | 'reframing';
+
+export type CapabilityNeed = {
+  capability: CapabilityId;
+  kind: 'missing' | 'thin' | 'covered' | 'overrepresented';
+  moves: ThinkingMove[];
+  loadBearing: boolean;
+  note: string;
+};
+
+export type CompositionGaps = {
+  needs: CapabilityNeed[];
+  notes: string[];
+  humanInviteStillRequired: true;
+  assignsSeats: false;
+  selectsPeople: false;
+};
 
 export type CohortSeat = {
   seat: 'start' | 'expand';
   postureId: PostureId;
   staffName: string;
   why: string;
+  loadBearing: boolean;
 };
 
 export type CohortComposition = {
@@ -20,8 +42,62 @@ export type CohortComposition = {
   expand: CohortSeat[];
   coveredMoves: ThinkingMove[];
   followOnePlan: boolean;
+  connectorLoadBearing: true;
+  connectorNote: typeof CONNECTOR_NOTE;
   humanInviteStillRequired: true;
+  assignsSeats: false;
+  selectsPeople: false;
 };
+
+const CAPABILITIES: {
+  id: CapabilityId;
+  moves: ThinkingMove[];
+  loadBearing: boolean;
+  missing: string;
+  thin: string;
+  covered: string;
+}[] = [
+  {
+    id: 'planning',
+    moves: ['decide', 'constraint_seek', 'explain', 'scope_cut'],
+    loadBearing: true,
+    missing: 'Cohort 01 still needs demonstrated evidence of planning — a followable plan, a fence, a decision.',
+    thin: 'Planning evidence is thin. The room still needs a plan others can follow.',
+    covered: 'Planning evidence is present.',
+  },
+  {
+    id: 'shipping',
+    moves: ['revise', 'finish'],
+    loadBearing: true,
+    missing: 'Cohort 01 still needs demonstrated evidence of shipping — they change the object and finish.',
+    thin: 'Shipping evidence is thin. Revise and finish are scarce.',
+    covered: 'Shipping evidence is present.',
+  },
+  {
+    id: 'collaboration',
+    moves: ['help', 'handoff'],
+    loadBearing: true,
+    missing: 'Cohort 01 still needs demonstrated evidence of clean handoff/help.',
+    thin: 'Collaboration evidence is thin. Help and handoff are what begin an organization.',
+    covered: 'Collaboration evidence is present.',
+  },
+  {
+    id: 'noticing',
+    moves: ['notice', 'question', 'attention'],
+    loadBearing: false,
+    missing: 'Adding someone whose tape contains notice/question behavior would broaden this group.',
+    thin: 'Notice and question behavior is thin. The room may miss what is actually on the bench.',
+    covered: 'Notice and question evidence is present.',
+  },
+  {
+    id: 'reframing',
+    moves: ['reframe', 'question'],
+    loadBearing: false,
+    missing: 'Adding someone whose tape contains reframe behavior would open a path the first plan missed.',
+    thin: 'Reframe evidence is thin. The first plan may stay the only plan.',
+    covered: 'Reframe evidence is present.',
+  },
+];
 
 export function compositionLock(): CohortComposition {
   const start = STARTER_THREE.map((id) => seat('start', id));
@@ -43,7 +119,11 @@ export function compositionLock(): CohortComposition {
       'explain',
     ],
     followOnePlan: true,
+    connectorLoadBearing: true,
+    connectorNote: CONNECTOR_NOTE,
     humanInviteStillRequired: true,
+    assignsSeats: false,
+    selectsPeople: false,
   };
 }
 
@@ -54,6 +134,7 @@ function seat(kind: 'start' | 'expand', id: PostureId): CohortSeat {
     postureId: id,
     staffName: def.staffName,
     why: def.whatTheyDo,
+    loadBearing: id === 'connector',
   };
 }
 
@@ -74,39 +155,77 @@ export function mixFromMoves(moves: ThinkingMove[]): PostureMix {
   return counts;
 }
 
-export function recommendSeats(candidates: { id: string; mix: PostureMix }[]): {
-  start: string[];
-  expand: string[];
-  note: string;
-} {
-  const start = pickBest(candidates, 3, STARTER_THREE);
-  const remain = candidates.filter((c) => !start.includes(c.id));
-  const expand = pickBest(remain, 2, EXPAND_TWO);
+/**
+ * Production composition helper. Describes missing and thin demonstrated
+ * evidence in an already-invited group. Does not name, rank, or assign people.
+ */
+export function compositionGaps(invitedTapes: readonly ThinkingMove[][]): CompositionGaps {
+  const needs = CAPABILITIES.map((cap) => describeCapability(invitedTapes, cap));
   return {
-    start,
-    expand,
-    note: 'Human invite still required. This organizes complementary tapes. It does not choose people.',
+    needs,
+    notes: synthesizeNotes(needs),
+    humanInviteStillRequired: true,
+    assignsSeats: false,
+    selectsPeople: false,
   };
 }
 
-function pickBest(pool: { id: string; mix: PostureMix }[], n: number, prefer: readonly PostureId[]): string[] {
-  if (pool.length === 0 || n <= 0) return [];
-  const picked: { id: string; mix: PostureMix }[] = [];
-  const unused = [...pool];
-  while (picked.length < n && unused.length) {
-    let bestI = 0;
-    let best = -1;
-    for (let i = 0; i < unused.length; i++) {
-      const trial = [...picked, unused[i]!];
-      const lift = teamLift(trial.map((t) => t.mix)).combined;
-      const preferBonus = prefer.includes(dominantPosture(unused[i]!.mix)) ? 0.04 : 0;
-      const v = lift + preferBonus;
-      if (v > best) {
-        best = v;
-        bestI = i;
-      }
-    }
-    picked.push(unused.splice(bestI, 1)[0]!);
+function describeCapability(
+  invitedTapes: readonly ThinkingMove[][],
+  cap: (typeof CAPABILITIES)[number],
+): CapabilityNeed {
+  const hits = invitedTapes.reduce((n, tape) => n + tape.filter((m) => cap.moves.includes(m)).length, 0);
+  const tapesWith = invitedTapes.filter((tape) => tape.some((m) => cap.moves.includes(m))).length;
+  const kind = kindFor(hits, tapesWith, invitedTapes.length);
+  const note =
+    kind === 'covered' || kind === 'overrepresented'
+      ? cap.covered
+      : kind === 'thin'
+        ? cap.thin
+        : cap.missing;
+  return {
+    capability: cap.id,
+    kind,
+    moves: [...cap.moves],
+    loadBearing: cap.loadBearing,
+    note,
+  };
+}
+
+function kindFor(hits: number, tapesWith: number, invited: number): CapabilityNeed['kind'] {
+  if (hits === 0) return 'missing';
+  if (invited >= 2 && tapesWith === invited && hits >= invited * 2) return 'overrepresented';
+  if (hits < 2) return 'thin';
+  return 'covered';
+}
+
+function synthesizeNotes(needs: CapabilityNeed[]): string[] {
+  const byId = Object.fromEntries(needs.map((n) => [n.capability, n])) as Record<CapabilityId, CapabilityNeed>;
+  const notes: string[] = [];
+  const plan = byId.planning;
+  const ship = byId.shipping;
+  const collab = byId.collaboration;
+  const notice = byId.noticing;
+  const reframe = byId.reframing;
+
+  const planPresent = plan.kind === 'covered' || plan.kind === 'overrepresented' || plan.kind === 'thin';
+  const shipPresent = ship.kind === 'covered' || ship.kind === 'overrepresented' || ship.kind === 'thin';
+  const planStrong = plan.kind === 'covered' || plan.kind === 'overrepresented';
+  const shipStrong = ship.kind === 'covered' || ship.kind === 'overrepresented';
+
+  if (planStrong && shipStrong && (collab.kind === 'missing' || collab.kind === 'thin')) {
+    notes.push('Current invited group strongly covers planning and shipping; collaboration evidence is thin.');
+    notes.push(CONNECTOR_NOTE);
+  } else if (collab.kind === 'missing' || collab.kind === 'thin') {
+    notes.push(collab.note);
+    notes.push(CONNECTOR_NOTE);
   }
-  return picked.map((p) => p.id);
+
+  if (!planPresent) notes.push(plan.note);
+  if (!shipPresent) notes.push(ship.note);
+
+  if (notice.kind === 'missing' || notice.kind === 'thin') notes.push(notice.note);
+  else if (reframe.kind === 'missing' || reframe.kind === 'thin') notes.push(reframe.note);
+
+  return notes;
 }

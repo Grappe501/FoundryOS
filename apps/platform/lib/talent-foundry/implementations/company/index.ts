@@ -67,7 +67,14 @@ export { openEarn, submitEarn } from './earn/engine';
 export { EARN_COPY } from './earn/copy';
 export { openOwn, submitOwn } from './own/engine';
 export { OWN_COPY } from './own/copy';
-export { compositionLock, EXPAND_TWO, STARTER_THREE, recommendSeats, mixFromMoves } from './cohort/compose';
+export {
+  compositionGaps,
+  compositionLock,
+  CONNECTOR_NOTE,
+  EXPAND_TWO,
+  STARTER_THREE,
+  mixFromMoves,
+} from './cohort/compose';
 export { runCohortSimulations } from './cohort/simulate';
 export {
   MESS_M1,

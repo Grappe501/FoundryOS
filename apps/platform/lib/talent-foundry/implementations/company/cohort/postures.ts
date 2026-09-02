@@ -62,7 +62,8 @@ export const POSTURES: PostureDef[] = [
   {
     id: 'connector',
     staffName: 'Connector',
-    whatTheyDo: 'Makes the next person faster. Hands off clean. Helps without taking the work.',
+    whatTheyDo:
+      'Makes the next person faster. Hands off clean. Helps without taking the work. Load-bearing for a founding three.',
     moves: { help: 3, handoff: 3 },
     lifts: true,
     canHoldPlan: false,
