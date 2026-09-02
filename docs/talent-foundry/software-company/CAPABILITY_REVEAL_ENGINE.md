@@ -35,8 +35,16 @@ That distinction is what makes this more sophisticated than Campaign Foundry.
 
 ## The loop
 
+Capability still arrives as:
+
 ```txt
 Need → Friction → Discovery → Tool → Attempt → Evidence → Feedback → Increased Access
+```
+
+The psychology underneath is the Soul loop. See `FOUNDRY_SOUL.md`.
+
+```txt
+Curiosity → Agency → Friction → Discovery → Attempt → Competence → Consequence → Recognition → Increased Capability → New Mystery
 ```
 
 The participant encounters a **need** before being given the **tool**.

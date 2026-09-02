@@ -19,10 +19,19 @@ export function MessChoices({ onChoose }: { onChoose: (choiceId: string) => void
   );
 }
 
-export function MessAftermath({ consequence, onContinue }: { consequence: string; onContinue: () => void }) {
+export function MessAftermath({
+  consequence,
+  soulLine = null,
+  onContinue,
+}: {
+  consequence: string;
+  soulLine?: string | null;
+  onContinue: () => void;
+}) {
   return (
     <>
       <p className="ws-consequence">{consequence}</p>
+      {soulLine ? <p className="ws-soul">{soulLine}</p> : null}
       <button type="button" className="ws-threshold" onClick={onContinue} aria-label="Continue">
         <span className="ws-threshold-mark" aria-hidden />
       </button>

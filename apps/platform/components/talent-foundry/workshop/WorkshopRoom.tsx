@@ -3,6 +3,7 @@
 import { useEffect, useRef, type ReactNode } from 'react';
 import type { BenchObject, MakeSurface } from '../../../lib/talent-foundry/implementations/company/make/surface';
 import type { RoomDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import type { SoulState } from '../../../lib/talent-foundry/implementations/company/soul/engine';
 import type { WorkshopStateId } from '../../../lib/talent-foundry/implementations/company/types';
 
 function machineOf(surface: MakeSurface, depth: RoomDepth): 'dormant' | 'aware' | 'equipped' {
@@ -17,6 +18,7 @@ export function WorkshopRoom({
   stateId,
   surface = 'rest',
   open = '',
+  soul,
   traces,
   voice,
 }: {
@@ -24,6 +26,7 @@ export function WorkshopRoom({
   stateId: WorkshopStateId | 'boot';
   surface?: MakeSurface;
   open?: BenchObject | '';
+  soul?: SoulState;
   traces?: ReactNode;
   voice: ReactNode;
 }) {
@@ -56,12 +59,18 @@ export function WorkshopRoom({
       data-surface={surface}
       data-open={open || undefined}
       data-machine={machine}
+      data-soul={soul?.presence}
+      data-rhythm={soul?.rhythm}
+      data-trust={soul?.trust}
+      data-loop={soul?.loop}
+      data-mystery={soul?.mystery.join(' ') || undefined}
     >
       <div className="ws-layer ws-layer--back" aria-hidden>
         <span className="ws-far-frame" />
         <span className="ws-far-frame ws-far-frame--rear" />
         <span className="ws-far-stub" />
         <span className="ws-rear-bay" />
+        {soul?.mystery.includes('far-tool') ? <span className="ws-mystery" data-mark="far-tool" /> : null}
       </div>
       <div className="ws-layer ws-layer--mid" aria-hidden>
         <span className="ws-rail ws-rail--left" />

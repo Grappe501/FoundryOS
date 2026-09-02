@@ -37,9 +37,11 @@ export function NamedReveal({ onContinue }: { onContinue: () => void }) {
 export function LingerRest({
   onReset,
   onBenchPresent,
+  soulLine = null,
 }: {
   onReset: () => void;
   onBenchPresent?: () => void;
+  soulLine?: string | null;
 }) {
   const [step, setStep] = useState(1);
   const [late, setLate] = useState(false);
@@ -68,6 +70,7 @@ export function LingerRest({
     <>
       <p className="ws-line ws-line--linger">You can go.</p>
       {step >= 2 ? <p className="ws-line ws-line--quiet ws-line--linger">The bench will still be here.</p> : null}
+      {step >= 2 && soulLine ? <p className="ws-soul">{soulLine}</p> : null}
       {late ? (
         <button type="button" className="ws-ghost" onClick={onReset}>
           Start over

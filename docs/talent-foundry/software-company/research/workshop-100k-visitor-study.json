@@ -1,0 +1,339 @@
+{
+  "runs": 100000,
+  "seed": 20260902,
+  "funnel": {
+    "arrivals": 100000,
+    "entered": 75182,
+    "noticeDone": 43815,
+    "messDone": 43815,
+    "named": 40549,
+    "lingered": 37792,
+    "openedMake": 26288,
+    "finishedArtifact": 19415,
+    "wantedParticipate": 23417
+  },
+  "funnelPct": {
+    "entered": 75.18,
+    "noticeDone": 43.82,
+    "messDone": 43.82,
+    "named": 40.55,
+    "lingered": 37.79,
+    "openedMake": 26.29,
+    "finishedArtifact": 19.42,
+    "wantedParticipate": 23.42
+  },
+  "dropAt": {
+    "notice": 31367,
+    "linger": 11504,
+    "door": 24818,
+    "completed": 19415,
+    "make": 6873,
+    "mess": 3266,
+    "named": 2757
+  },
+  "dropAtPct": {
+    "notice": 31.37,
+    "linger": 11.5,
+    "door": 24.82,
+    "completed": 19.42,
+    "make": 6.87,
+    "mess": 3.27,
+    "named": 2.76
+  },
+  "arrivals": {
+    "passerby": 26003,
+    "job_seeker": 20000,
+    "maker": 15995,
+    "skeptic": 11998,
+    "student": 10006,
+    "lurker": 9000,
+    "operator": 6998
+  },
+  "participateOfArrivals": 23.42,
+  "participateOfEntered": 31.15,
+  "participateOfLinger": 61.96,
+  "participateOfFinished": 92.24,
+  "participateByArrival": {
+    "passerby": {
+      "n": 26003,
+      "wanted": 2340,
+      "pct": 9
+    },
+    "job_seeker": {
+      "n": 20000,
+      "wanted": 2107,
+      "pct": 10.54
+    },
+    "maker": {
+      "n": 15995,
+      "wanted": 10043,
+      "pct": 62.79
+    },
+    "skeptic": {
+      "n": 11998,
+      "wanted": 1871,
+      "pct": 15.59
+    },
+    "student": {
+      "n": 10006,
+      "wanted": 3500,
+      "pct": 34.98
+    },
+    "lurker": {
+      "n": 9000,
+      "wanted": 569,
+      "pct": 6.32
+    },
+    "operator": {
+      "n": 6998,
+      "wanted": 2987,
+      "pct": 42.68
+    }
+  },
+  "polls": {
+    "understood": {
+      "mean": 3.07
+    },
+    "wantedToContinue": {
+      "mean": 2.96
+    },
+    "feltLikeAPlace": {
+      "mean": 3.55
+    },
+    "feltLikeATest": {
+      "mean": 2.98
+    },
+    "feltLikeAWebsite": {
+      "mean": 3.23
+    },
+    "feltLikeWork": {
+      "mean": 3.53
+    },
+    "caredAboutResidue": {
+      "mean": 3.31
+    },
+    "wantedToParticipate": {
+      "mean": 2.93
+    }
+  },
+  "pollMeansReached": {},
+  "tags": {
+    "door_mystery_held_me": {
+      "n": 38254,
+      "pctOfRuns": 38.25,
+      "pctOfReached": 38.25,
+      "reach": "door"
+    },
+    "door_expected_a_website": {
+      "n": 45940,
+      "pctOfRuns": 45.94,
+      "pctOfReached": 45.94,
+      "reach": "door"
+    },
+    "door_wanted_the_job_ask": {
+      "n": 26007,
+      "pctOfRuns": 26.01,
+      "pctOfReached": 26.01,
+      "reach": "door"
+    },
+    "notice_object_felt_real": {
+      "n": 50005,
+      "pctOfRuns": 50.01,
+      "pctOfReached": 66.51,
+      "reach": "notice"
+    },
+    "notice_felt_like_a_test": {
+      "n": 25447,
+      "pctOfRuns": 25.45,
+      "pctOfReached": 33.85,
+      "reach": "notice"
+    },
+    "notice_did_not_know_the_ask": {
+      "n": 30508,
+      "pctOfRuns": 30.51,
+      "pctOfReached": 40.58,
+      "reach": "notice"
+    },
+    "mess_i_cared_about_the_draft": {
+      "n": 28313,
+      "pctOfRuns": 28.31,
+      "pctOfReached": 64.62,
+      "reach": "mess"
+    },
+    "mess_felt_like_a_trick": {
+      "n": 9449,
+      "pctOfRuns": 9.45,
+      "pctOfReached": 21.57,
+      "reach": "mess"
+    },
+    "named_landing_felt_earned": {
+      "n": 24614,
+      "pctOfRuns": 24.61,
+      "pctOfReached": 60.7,
+      "reach": "named"
+    },
+    "named_felt_like_bait": {
+      "n": 11756,
+      "pctOfRuns": 11.76,
+      "pctOfReached": 28.99,
+      "reach": "named"
+    },
+    "linger_permission_to_leave": {
+      "n": 29963,
+      "pctOfRuns": 29.96,
+      "pctOfReached": 79.28,
+      "reach": "linger"
+    },
+    "linger_room_felt_empty": {
+      "n": 13544,
+      "pctOfRuns": 13.54,
+      "pctOfReached": 35.84,
+      "reach": "linger"
+    },
+    "linger_wanted_to_touch": {
+      "n": 22798,
+      "pctOfRuns": 22.8,
+      "pctOfReached": 60.32,
+      "reach": "linger"
+    },
+    "make_object_opened_not_ui": {
+      "n": 16618,
+      "pctOfRuns": 16.62,
+      "pctOfReached": 63.22,
+      "reach": "make"
+    },
+    "make_notes_felt_like_exercises": {
+      "n": 7406,
+      "pctOfRuns": 7.41,
+      "pctOfReached": 28.17,
+      "reach": "make"
+    },
+    "make_notes_felt_like_leftover_work": {
+      "n": 15553,
+      "pctOfRuns": 15.55,
+      "pctOfReached": 59.16,
+      "reach": "make"
+    },
+    "method_wanted_to_be_shown": {
+      "n": 14129,
+      "pctOfRuns": 14.13,
+      "pctOfReached": 72.77,
+      "reach": "method"
+    },
+    "method_no_next_step": {
+      "n": 10719,
+      "pctOfRuns": 10.72,
+      "pctOfReached": 55.21,
+      "reach": "method"
+    },
+    "wanted_to_be_remembered": {
+      "n": 8235,
+      "pctOfRuns": 8.24,
+      "pctOfReached": 42.42,
+      "reach": "method"
+    },
+    "would_tell_someone": {
+      "n": 15470,
+      "pctOfRuns": 15.47,
+      "pctOfReached": 40.93,
+      "reach": "linger"
+    }
+  },
+  "universal": [
+    {
+      "tag": "linger_permission_to_leave",
+      "pct": 79.28,
+      "among": "linger"
+    },
+    {
+      "tag": "method_wanted_to_be_shown",
+      "pct": 72.77,
+      "among": "method"
+    }
+  ],
+  "messChoices": {
+    "split": 7316,
+    "continue": 11888,
+    "restore": 15472,
+    "ask": 9139
+  },
+  "messChoicePct": {
+    "split": 16.7,
+    "continue": 27.13,
+    "restore": 35.31,
+    "ask": 20.86
+  },
+  "benches": {
+    "pulse": 11760,
+    "draft": 14528
+  },
+  "tracks": {
+    "build": 5815,
+    "design": 5945,
+    "explain": 7684,
+    "organize": 1946,
+    "operate": 2127,
+    "grow": 813,
+    "investigate": 1958
+  },
+  "thoughtItWas": {
+    "place": 25875,
+    "workspace": 728,
+    "machine": 417,
+    "application": 10861,
+    "course": 22063,
+    "hiring_funnel": 27360,
+    "art_piece": 1134,
+    "website": 11562
+  },
+  "thoughtPct": {
+    "place": 25.88,
+    "workspace": 0.73,
+    "machine": 0.42,
+    "application": 10.86,
+    "course": 22.06,
+    "hiring_funnel": 27.36,
+    "art_piece": 1.13,
+    "website": 11.56
+  },
+  "improvements": [
+    {
+      "id": "door-wait",
+      "title": "Door mystery filters the impatient before they ever see work",
+      "why": "A large share of arrivals bounce before ENTER. That is partly the point. It also means the first object is never seen by the people who needed one concrete thing on the bench sooner.",
+      "evidence": "24.82% drop at the door. 45.94% of door-reachers expected a website."
+    },
+    {
+      "id": "notice-write",
+      "title": "The first write is the steepest wall after the door",
+      "why": "Notice asks for two sentences on a conflicting object with no explanation. Makers stay. Lurkers and job-seekers leave. The object is doing its job. The ask still needs to be more obvious from the object itself.",
+      "evidence": "31.37% drop at notice. 40.58% of notice-reachers did not know the ask."
+    },
+    {
+      "id": "linger-empty",
+      "title": "Linger permission is right. The empty-room reading is the cost.",
+      "why": "“You can go” is working. A slice of people who would have touched Pulse read the room as finished and leave.",
+      "evidence": "79.28% felt they could leave. 35.84% of linger-reachers said the room felt empty."
+    },
+    {
+      "id": "method-dead-end",
+      "title": "The method turn creates want and then has nowhere to put it",
+      "why": "Remember Me is held. After “now we are going to show you how we make things here,” the built system has no next handle. Finishers want to continue and then stall.",
+      "evidence": "72.77% of finishers wanted to be shown. 55.21% said there was no next step. 42.42% wanted to be remembered."
+    },
+    {
+      "id": "notes-taxonomy",
+      "title": "Some still read the notes as exercises",
+      "why": "Contextual notes helped. Two notes on Pulse still look like a pair of assignments to students and some skeptics.",
+      "evidence": "28.17% of people who opened MAKE read notes as exercises. 59.16% read them as leftover work."
+    }
+  ],
+  "learnings": [
+    "Of 100,000 arrivals, 23.42% wanted to participate in what is being laid down — stay, make, and be shown the method.",
+    "Of people who entered, 31.15% wanted that. Of people who reached linger, 61.96%. Of people who finished an artifact, 92.24%.",
+    "The door is doing its job as a filter, not a landing page. 24.82% never enter. Most of those wanted a website or a job ask.",
+    "Permission to leave at linger is the most universal positive. 79.28% of people who got there felt they could go.",
+    "The method turn is the most universal want among finishers, and the missing next step is the most universal complaint among them.",
+    "People do not agree what they found. That disagreement is the current product, not a failure of copy."
+  ]
+}

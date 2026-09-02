@@ -857,6 +857,63 @@ body:has(.ws) {
   margin-bottom: 10px;
 }
 
+.ws-soul {
+  margin: 18px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--ws-mute);
+  animation: ws-in 1600ms ease both;
+}
+
+.ws-memory-mark {
+  display: inline-block;
+  width: 5px;
+  height: 1px;
+  margin-left: 8px;
+  vertical-align: middle;
+  background: rgba(207, 203, 195, 0.35);
+}
+
+.ws-mystery {
+  position: absolute;
+  left: 28%;
+  top: 9%;
+  width: 11%;
+  height: 9%;
+  border: 1px solid rgba(207, 203, 195, 0.14);
+  opacity: 0;
+  transform: perspective(700px) rotateX(70deg);
+  transform-origin: bottom center;
+  transition: opacity 2.8s ease;
+}
+
+.ws-room[data-mystery~='far-tool'] .ws-mystery,
+.ws-mystery[data-mark='far-tool'] {
+  opacity: 0.55;
+}
+
+.ws-room[data-mystery~='join-to-draft'] .ws-join {
+  opacity: 0.85;
+  background: rgba(207, 203, 195, 0.28);
+}
+
+.ws-room[data-mystery~='empty-bay'] .ws-node--draft {
+  opacity: 0.2;
+}
+
+.ws-object[data-remembered='noticed'] .ws-primary-wrong {
+  box-shadow: none;
+}
+
+.ws-room[data-rhythm='silence'] .ws-slot-voice .ws-line--linger {
+  color: rgba(207, 203, 195, 0.42);
+}
+
+.ws-room[data-trust='capable'] .ws-rear-bay {
+  opacity: 0.8;
+  border-color: rgba(207, 203, 195, 0.2);
+}
+
 .ws-room[data-surface='equipped'] .ws-line {
   font-size: 1rem;
   color: var(--ws-mute);
@@ -1257,6 +1314,8 @@ body:has(.ws) {
   .ws-prompt,
   .ws-named,
   .ws-consequence,
+  .ws-soul,
+  .ws-mystery,
   .ws-threshold-mark {
     transition: none;
     animation: none;

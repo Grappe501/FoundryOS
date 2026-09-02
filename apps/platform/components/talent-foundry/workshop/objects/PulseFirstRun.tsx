@@ -12,6 +12,7 @@ export function PulseFirstRun({
   reachable = false,
   onReach,
   notes,
+  remembered,
 }: {
   presence: ObjectPresence;
   attended: string[];
@@ -20,6 +21,7 @@ export function PulseFirstRun({
   reachable?: boolean;
   onReach?: () => void;
   notes?: ReactNode;
+  remembered?: 'noticed';
 }) {
   if (presence === 'absent') return null;
   const life = objectLife({ reachable, opened: Boolean(notes) });
@@ -30,6 +32,7 @@ export function PulseFirstRun({
       data-place="pulse"
       data-origin="found"
       data-life={life}
+      data-remembered={remembered}
       data-reachable={reachable ? 'true' : 'false'}
       aria-label={PHASE_1_NOTICE.title}
       aria-hidden={presence === 'ghost' && !reachable}
@@ -46,7 +49,10 @@ export function PulseFirstRun({
             </Region>
           </div>
           <Region id="primary" kind="conflict" attended={attended} interactive={interactive} onAttend={onAttend}>
-            <span className="ws-primary-wrong">Delete workspace</span>
+            <span className="ws-primary-wrong">
+              Delete workspace
+              {remembered === 'noticed' ? <i className="ws-memory-mark" aria-hidden /> : null}
+            </span>
           </Region>
           <Region id="helper" kind="surface" attended={attended} interactive={interactive} onAttend={onAttend}>
             <span className="ws-helper">You’re all set.</span>

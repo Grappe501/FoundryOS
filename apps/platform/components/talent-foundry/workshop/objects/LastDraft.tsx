@@ -12,12 +12,14 @@ export function LastDraft({
   reachable = false,
   onReach,
   notes,
+  remembered,
 }: {
   presence: ObjectPresence;
   trace: DraftTrace;
   reachable?: boolean;
   onReach?: () => void;
   notes?: ReactNode;
+  remembered?: 'gone' | 'question' | 'copy' | 'restored';
 }) {
   if (presence === 'absent') return null;
 
@@ -35,6 +37,7 @@ export function LastDraft({
       data-place="draft"
       data-origin="found"
       data-life={life}
+      data-remembered={remembered}
       data-trace={trace}
       data-reachable={reachable ? 'true' : 'false'}
       aria-label="The last draft"

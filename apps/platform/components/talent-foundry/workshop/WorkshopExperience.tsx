@@ -29,6 +29,8 @@ import {
   saveWorkshopSession,
 } from '../../../lib/talent-foundry/implementations/company/persist';
 import { workshopDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import { hasFact } from '../../../lib/talent-foundry/implementations/company/soul/memory';
+import { readSoul } from '../../../lib/talent-foundry/implementations/company/soul/engine';
 import type { ArtifactTrack } from '../../../lib/talent-foundry/implementations/company/spine/envelope';
 import {
   artifactPresence,
@@ -187,6 +189,7 @@ export function WorkshopExperience() {
     voice = (
       <MessAftermath
         consequence={messConsequence(session)}
+        soulLine={readSoul(session).voice.line}
         onContinue={() => apply((current) => advanceWorkshop(current))}
       />
     );
@@ -207,11 +210,18 @@ export function WorkshopExperience() {
       />
     );
   } else if (surface === 'equipped') {
-    voice = <MakeEquipped onReset={reset} />;
+    voice = <MakeEquipped onReset={reset} soulLine={readSoul(session).voice.line} />;
   } else {
-    voice = <LingerRest onReset={reset} onBenchPresent={() => setBenchPresent(true)} />;
+    voice = (
+      <LingerRest
+        onReset={reset}
+        onBenchPresent={() => setBenchPresent(true)}
+        soulLine={readSoul(session).voice.line}
+      />
+    );
   }
 
+  const soul = readSoul(session);
   const pulseNotes =
     surface === 'need' && bench === 'pulse' ? (
       <MakeNeed tracks={tracksVisibleOn('pulse')} onChoose={(id) => apply((current) => chooseMakeTrack(current, id))} />
@@ -230,6 +240,7 @@ export function WorkshopExperience() {
       stateId={session.stateId}
       surface={surface}
       open={surface === 'need' || surface === 'attempt' ? bench : ''}
+      soul={soul}
       traces={
         <>
           {workingPulse && trackId ? (
@@ -252,6 +263,7 @@ export function WorkshopExperience() {
                 apply((current) => markNoticeRegion(current, regionId, new Date(), dwellMs))
               }
               notes={pulseNotes}
+              remembered={hasFact(soul.facts, 'noticed-delete') ? 'noticed' : undefined}
             />
           )}
           {workingDraft ? (
@@ -268,6 +280,17 @@ export function WorkshopExperience() {
               reachable={reachable && bench !== 'draft'}
               onReach={() => onReachBench('draft')}
               notes={draftNotes}
+              remembered={
+                hasFact(soul.facts, 'notes-gone')
+                  ? 'gone'
+                  : hasFact(soul.facts, 'question-stays')
+                    ? 'question'
+                    : hasFact(soul.facts, 'copy-exists')
+                      ? 'copy'
+                      : hasFact(soul.facts, 'notes-back')
+                        ? 'restored'
+                        : undefined
+              }
             />
           )}
           <TheirWork presence={artifactPresence(session)} body={session.envelope.artifact?.body ?? artifact} />

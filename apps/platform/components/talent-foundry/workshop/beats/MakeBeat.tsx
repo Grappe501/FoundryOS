@@ -49,7 +49,7 @@ export function MakeAttemptVoice({
   );
 }
 
-export function MakeEquipped({ onReset }: { onReset: () => void }) {
+export function MakeEquipped({ onReset, soulLine = null }: { onReset: () => void; soulLine?: string | null }) {
   const [step, setStep] = useState(1);
   const [late, setLate] = useState(false);
 
@@ -73,6 +73,7 @@ export function MakeEquipped({ onReset }: { onReset: () => void }) {
     <>
       <p className="ws-line">{MAKE_COPY.methodArrived}</p>
       {step >= 2 ? <p className="ws-line ws-line--quiet">{MAKE_COPY.methodTurn}</p> : null}
+      {step >= 2 && soulLine ? <p className="ws-soul">{soulLine}</p> : null}
       {late ? (
         <button type="button" className="ws-ghost" onClick={onReset}>
           Start over

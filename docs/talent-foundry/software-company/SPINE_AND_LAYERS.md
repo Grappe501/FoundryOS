@@ -71,6 +71,10 @@ Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) *
 
 ---
 
+## Foundry Soul (under the room, not a stage)
+
+`FOUNDRY_SOUL.md` is a permanent architecture layer. It does not add a 15th stage. It governs memory, presence, consequence, recognition, mystery, trust, relationship, rhythm, and voice. The room remembers what happened here. It does not infer who someone is. Remember Me, GitHub, Cursor, and Oscar stay held.
+
 ## The layer that lifts everything equally
 
 **Uniform Beat Layer** — already on every stage:

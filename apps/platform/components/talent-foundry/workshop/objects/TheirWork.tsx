@@ -9,6 +9,7 @@ export function TheirWork({ presence, body }: { presence: ObjectPresence; body: 
       data-place="made"
       data-origin="made"
       data-life="persisted"
+      data-remembered="stayed"
       aria-label="What they made"
     >
       <i className="ws-persist-dock" aria-hidden />
