@@ -30,7 +30,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 1 discover   LIVE  Ernie   anonymous
 2 notice     LIVE  Ernie   anonymous
 3 solve      LIVE  Ernie   anonymous
-4 make       STUB  spine   anonymous
+4 make       LIVE  spine   anonymous  (contract only — no UI)
 5 remember   STUB  spine   optional identity
 6 return     STUB  spine   optional
 7 collaborate STUB spine   remembered
@@ -43,7 +43,11 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 14 own       STUB  spine   human gate
 ```
 
-After linger, the participant is **done with Ernie’s first visit**. `tryAdvanceSpine` refuses `make` with `reason: 'stub'`. It does not invent a screen. Stages 12–14 refuse with `reason: 'human_gate'` even after they are filled, until a human gate record exists.
+After linger, the participant is **done with Ernie’s first visit**. `make` is **open** in the envelope (eligible). `openMake` / `tryAdvanceSpine` may enter MAKE **without changing** `stateId` (`linger` stays linger). That is the contract fill. There is still no `/workshop` MAKE screen.
+
+`chooseMakeTrack` + `submitMake` record interest routing and a small artifact. They do not type the person as Builder/Designer.
+
+`remember` and beyond remain stubs. Stages 12–14 refuse with `human_gate` (or `stub`) until filled **and** gated.
 
 ---
 

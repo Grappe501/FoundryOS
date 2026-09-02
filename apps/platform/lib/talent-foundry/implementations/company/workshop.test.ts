@@ -92,7 +92,7 @@ assert.equal(named.clocks.mess.afterSubmitLingerMs, 8_000);
 const done = linger(named, new Date('2026-09-02T03:01:22.000Z'));
 assert.equal(done.stateId, 'linger');
 assert.equal(done.envelope.progress.solve, 'complete');
-assert.equal(done.envelope.progress.make, 'locked');
+assert.equal(done.envelope.progress.make, 'open');
 
 for (const event of done.thinking) {
   assertPlainThinkingEvent(event);

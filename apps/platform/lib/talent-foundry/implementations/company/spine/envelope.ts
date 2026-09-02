@@ -5,6 +5,14 @@ export type StageProgress = 'locked' | 'open' | 'complete';
 
 export type ArtifactTrack = 'build' | 'explain' | 'investigate' | 'design' | 'operate' | 'grow' | 'organize';
 
+export type ArtifactDraft = {
+  track: ArtifactTrack;
+  body: string;
+  finished: boolean;
+  chosenAt: string;
+  submittedAt: string | null;
+};
+
 export type RememberFields = {
   firstName: string;
   lastName: string;
@@ -36,6 +44,7 @@ export type SpineEnvelope = {
   progress: Record<SpineStageId, StageProgress>;
   remember: RememberFields | null;
   artifactTrack: ArtifactTrack | null;
+  artifact: ArtifactDraft | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -54,6 +63,7 @@ export function createEnvelope(): SpineEnvelope {
     progress: emptyProgress(),
     remember: null,
     artifactTrack: null,
+    artifact: null,
     gates: [],
     cohortId: null,
   };

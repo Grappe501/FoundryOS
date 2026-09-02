@@ -14,7 +14,7 @@ import { ERNIE_ZONE_NEXT, ERNIE_ZONE_STATES, SPINE_STAGES, SPINE_STAGE_IDS, stag
 
 assert.equal(SPINE_STAGE_IDS.length, 14);
 assert.equal(SPINE_STAGES.filter((s) => s.owner === 'ernie').length, 3);
-assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 11);
+assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 10);
 assert.equal(stageDef('build').advance, 'human_gate');
 assert.equal(stageDef('earn').advance, 'human_gate');
 assert.equal(stageDef('own').advance, 'human_gate');
@@ -32,7 +32,7 @@ assert.equal(s.envelope.remember, null);
 assert.equal(s.envelope.cohortId, null);
 
 assert.equal(tryEnterStage(s, 'notice').reason, 'ernie_zone');
-assert.equal(tryEnterStage(s, 'make').reason, 'stub');
+assert.equal(tryEnterStage(s, 'make').reason, 'locked');
 assert.equal(tryAdvanceSpine(s).reason, 'ernie_zone', 'next live stage is still Ernie NOTICE');
 
 s = advanceWorkshop(s, new Date('2026-09-02T04:00:10.000Z'));
@@ -49,12 +49,13 @@ s = linger(s, new Date('2026-09-02T04:00:50.000Z'));
 assert.equal(s.stateId, 'linger');
 assert.equal(s.envelope.spineStage, 'solve');
 assert.equal(s.envelope.progress.solve, 'complete');
-assert.equal(s.envelope.progress.make, 'locked');
+assert.equal(s.envelope.progress.make, 'open');
 
 const pastLinger = tryAdvanceSpine(s);
-assert.equal(pastLinger.ok, false);
-assert.equal(pastLinger.reason, 'stub');
-assert.equal(pastLinger.stage, 'make');
+assert.equal(pastLinger.ok, true);
+if (!pastLinger.ok) throw new Error('expected make');
+assert.equal(pastLinger.session.envelope.spineStage, 'make');
+assert.equal(pastLinger.session.stateId, 'linger');
 
 const gated = recordHumanGate(s, {
   kind: 'paid_project',

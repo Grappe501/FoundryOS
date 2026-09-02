@@ -137,7 +137,7 @@ Moves: `reframe`, `scope_cut`, `assertion`, `explain`
 
 ---
 
-## Artifact-track seeds (Phase 2 — bank only)
+## Artifact-track seeds (MAKE contract — live in kernel, no UI)
 
 Each track is interest routing. Tag the *moves* the small artifact can show.
 
@@ -165,6 +165,6 @@ AI may generate **variations of these seeds** for staff approval. It may not gen
 
 - NOTICE: **N1**
 - MESS: **M1**
-- Artifacts: none
+- Artifacts: **MAKE tracks live as contracts** (`make/tracks.ts`). No public screen until Ernie’s door ships.
 
 Contracts: `implementations/company/scenarios/lab.ts`

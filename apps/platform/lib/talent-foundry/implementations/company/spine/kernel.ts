@@ -3,7 +3,7 @@ import type { WorkshopSession, WorkshopStateId } from '../types';
 import type { HumanGateKind, HumanGateRecord, SpineEnvelope } from './envelope';
 import { createEnvelope } from './envelope';
 import type { SpineStageId } from './stages';
-import { ERNIE_ZONE_NEXT, nextSpineStage, stageDef, workshopStateToStage } from './stages';
+import { ERNIE_ZONE_NEXT, SPINE_STAGE_IDS, nextSpineStage, stageDef, workshopStateToStage } from './stages';
 
 export type EnterStageResult =
   | { ok: true; session: WorkshopSession }
@@ -29,12 +29,17 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
   }
   if (session.flags.messComplete) progress.solve = session.stateId === 'linger' || session.flags.named ? 'complete' : 'open';
   if (session.flags.named && session.stateId === 'linger') progress.solve = 'complete';
+  if (progress.solve === 'complete' && progress.make === 'locked') progress.make = 'open';
+
+  const pastSolve =
+    SPINE_STAGE_IDS.indexOf(envelope.spineStage) >= SPINE_STAGE_IDS.indexOf('make');
+  const spineStage = pastSolve ? envelope.spineStage : stage;
 
   return {
     ...session,
     envelope: {
       ...envelope,
-      spineStage: stage,
+      spineStage,
       progress,
     },
   };
