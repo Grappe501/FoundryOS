@@ -40,7 +40,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 11 lead      LIVE spine   remembered (contract only — constraint + people, no UI)
 12 build     LIVE  spine   human gate (contract only — sandbox product, no UI)
 13 earn      LIVE  spine   human gate (contract only — classified pay, no UI)
-14 own       STUB  spine   human gate
+14 own       LIVE  spine   human gate (contract only — founder conversation, no UI)
 ```
 
 After linger, the participant is **done with Ernie’s first visit**. `make` is **open** in the envelope (eligible). `openMake` / `tryAdvanceSpine` may enter MAKE **without changing** `stateId` (`linger` stays linger). That is the contract fill. There is still no `/workshop` MAKE screen.
@@ -63,7 +63,9 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `build` is live after LEAD is finished **and** a human records `real_work_access`. A sandbox surface of a real-shaped Foundry product. They write what they changed and what they left untouched. Not a job. Not live FoundryOS. Not the campaign. `stateId` stays `linger`.
 
-`earn` is live after BUILD is finished **and** a human records `paid_project`, `internship`, or `employment`. They name the work and whether they accept that classification. Pay is not a stage prize. No rate. No equity. Completing EARN does not open OWN. OWN remains stub behind `ownership_conversation`. `stateId` stays `linger`.
+`earn` is live after BUILD is finished **and** a human records `paid_project`, `internship`, or `employment`. They name the work and whether they accept that classification. Pay is not a stage prize. No rate. No equity. `stateId` stays `linger`.
+
+`own` is live after EARN is finished **and** a human records `ownership_conversation`. They name what is being discussed and whether they enter that conversation. Completing OWN does not grant equity and does not announce a partner track. There is no next stage. `stateId` stays `linger`.
 
 Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) **attach to stages 4–12** as work objects. They do not add a 15th stage and they do not start in Ernie’s door. A real cohort is not Rafi or Nia — it starts when they meet another participant. See `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
 
@@ -71,13 +73,13 @@ Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) *
 
 ## The layer that lifts everything equally
 
-**Uniform Beat Layer** — already on every stage, including stubs:
+**Uniform Beat Layer** — already on every stage:
 
 - beat clock (open / hesitation / linger / aftermath)
 - thinking events
 - evidence items
 - coverage / ignore when the beat has named regions
-- envelope: `spineStage`, `progress`, `remember`, `artifactTrack`, `gates`, `cohortId`
+- envelope: `spineStage`, `progress`, `remember`, `artifactTrack`, `returnVisit`, `collaborate`, `respond`, `deliver`, `multiply`, `lead`, `build`, `earn`, `own`, `gates`, `cohortId`
 
 Filling a later stage means **implementing the beat body** (what they see and submit). It does not mean a new session type, a new person store, or a new clock system.
 
@@ -91,24 +93,23 @@ Other envelopes sit on the same spine (types now, UI later):
 | `gates` | Human decision | Phase 4–7 |
 | `cohortId` | Cohort 01 | Phase 4 (staff invite) |
 
-Each layer lands on **all stages at once** as a field on the session. A stub stage can receive a clock the day we open it, without rewriting Discover.
+Each layer lands on **all stages at once** as a field on the session.
 
 ---
 
-## How to fill the next stub (when Ernie is done with the door)
+## Next fill is UI, not another stub
+
+All 14 stage contracts are live. There is no stage 15. Next work is Phase 2 MAKE UI after linger gravity is approved — not another spine contract.
 
 1. Leave Ernie-zone states alone.
-2. Set that stage’s `fill` from `stub` → `live` in `spine/stages.ts`.
-3. Implement beat body in a new module (`spine/make.ts`, etc.).
-4. Call `tryEnterStage` — it will start allowing entry.
-5. Wire clocks + thinking through the existing helpers.
-6. Add tests. Do not add a Tuesday. Do not mention Nov 15 on the public beat.
+2. Do not invent a 15th stage.
+3. Do not add a Tuesday. Do not mention Nov 15 on the public beat.
 
 ---
 
 ## What this pass does *not* do
 
-- No `/workshop` page
+- No `/workshop` MAKE screen
 - No Remember Me UI
 - No SAVE MY PLACE table
 - No cohort invite emails

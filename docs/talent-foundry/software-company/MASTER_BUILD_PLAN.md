@@ -128,6 +128,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
 - [x] **Pass Q — BUILD fill.** Supervised sandbox on a real-shaped product. Requires `real_work_access`. Changed / left untouched. Not a job. Not live prod. No UI. EARN still stub + human gate.
 - [x] **Pass R — EARN fill.** Classified pay after a human gate (`paid_project` / term / employment). Work + accept. Not a prize. No rate. No UI. OWN still stub + human gate.
+- [x] **Pass U — OWN fill.** Founder conversation after `ownership_conversation`. Subject + enter. Not equity granted. Not a partner track. No UI. Spine contracts complete. Phase 2 still held.
 - [x] **Pass S — Cohort composition.** 1000 simulations. Starter 3 = navigator / builder / connector. Expand 2 = witness / reframer. Staff organize tapes. Humans still invite. No personality on the door.
 - [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. Phase 2 held.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.

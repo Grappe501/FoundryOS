@@ -1,7 +1,7 @@
 /**
  * Master spine — all 14 stages exist now.
  * Ernie owns the live Phase 1 fill (discover → notice → solve).
- * Later stages are stubs with the same beat envelope.
+ * Later stages share the same beat envelope. All fourteen fills are live contracts.
  */
 
 export const SPINE_STAGE_IDS = [
@@ -53,7 +53,7 @@ export const SPINE_STAGES: SpineStageDef[] = [
   { id: 'lead', n: 11, name: 'LEAD', buildPhase: 4, owner: 'spine', fill: 'live', identity: 'remembered', advance: 'participant' },
   { id: 'build', n: 12, name: 'BUILD', buildPhase: 5, owner: 'spine', fill: 'live', identity: 'remembered_plus_gate', advance: 'human_gate' },
   { id: 'earn', n: 13, name: 'EARN', buildPhase: 5, owner: 'spine', fill: 'live', identity: 'remembered_plus_gate', advance: 'human_gate' },
-  { id: 'own', n: 14, name: 'OWN', buildPhase: 7, owner: 'spine', fill: 'stub', identity: 'remembered_plus_gate', advance: 'human_gate' },
+  { id: 'own', n: 14, name: 'OWN', buildPhase: 7, owner: 'spine', fill: 'live', identity: 'remembered_plus_gate', advance: 'human_gate' },
 ];
 
 /** Phase 1 workshop states — do not add Company stages here. Ernie's UI zone. */

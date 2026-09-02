@@ -93,6 +93,15 @@ export type EarnTurn = {
   submittedAt: string | null;
 };
 
+export type OwnTurn = {
+  conversationId: string;
+  subject: string;
+  entered: boolean;
+  finished: boolean;
+  openedAt: string;
+  submittedAt: string | null;
+};
+
 export type ReturnVisit = {
   challengeId: string;
   gapMs: number | null;
@@ -137,6 +146,7 @@ export type SpineEnvelope = {
   lead: LeadTurn | null;
   build: BuildTurn | null;
   earn: EarnTurn | null;
+  own: OwnTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -166,6 +176,7 @@ export function createEnvelope(): SpineEnvelope {
     lead: null,
     build: null,
     earn: null,
+    own: null,
     gates: [],
     cohortId: null,
   };
