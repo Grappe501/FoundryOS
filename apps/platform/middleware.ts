@@ -20,6 +20,7 @@ const CONSUMER_PREFIXES = [
   '/auth',
   '/api',
   '/talent-foundry',
+  '/workshop',
   ...FACTORY_CONSUMER_ROUTES,
 ];
 
@@ -37,6 +38,10 @@ export function middleware(request: NextRequest) {
 
   if (isStaticAsset(pathname)) {
     return NextResponse.next();
+  }
+
+  if (pathname === '/talent-foundry/build' || pathname === '/talent-foundry/build/') {
+    return NextResponse.redirect(new URL('/workshop', request.url));
   }
 
   if (pathname.startsWith('/community/')) {

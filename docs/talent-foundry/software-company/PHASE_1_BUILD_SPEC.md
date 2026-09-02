@@ -1,10 +1,14 @@
 # Company Foundry — Phase 1 Build Spec
 
-**Status:** **HOLD.** Spec for the eventual door only. Do **not** start `/workshop` UI until Ernie reviews Phase 0.5 (`PHASE_0_5_TALENT_TO_OWNERSHIP.md`).  
-**Why held:** Phase 1 as previously specified is still the right *first visit* — it is no longer the whole product we would be locking. The room must be able to become an academy and operating environment later.  
+**Status:** **CLEARED** (Ernie 2026-09-02). Build the door on this branch. Do not merge PR #5 yet.  
+**Governing architecture:** Phase 0 + Phase 0.5 (`PHASE_0_5_TALENT_TO_OWNERSHIP.md`) + `CAPABILITY_REVEAL_ENGINE.md`.  
 **Contracts:** `apps/platform/lib/talent-foundry/implementations/company/`  
-**Lab lock:** NOTICE **N1**, MESS **M1** (`SCENARIO_LAB.md`) unless Ernie swaps.  
-**Goal:** A stranger can walk into a dark workshop, do two meaningful things, learn the name Talent Foundry, and leave a readable thinking tape — still anonymous. Linger is the end of visit one, not the end of the Foundry.
+**Lab lock:** NOTICE **N1**, MESS **M1** (`SCENARIO_LAB.md`).  
+**Goal:** A stranger walks into a dark workshop, does two meaningful things, learns the name Talent Foundry, and leaves a readable thinking tape — still anonymous. Linger is the end of visit one, not the end of the Foundry.
+
+**Design target:** it should feel like somebody accidentally discovered a piece of software they weren't supposed to know existed.
+
+**Experience standard:** they should rarely feel trained. They should feel they are becoming capable. Phase 1 is observation, not a lesson.
 
 Optimize for: **the right person becomes fascinated with the workshop.**  
 Do not optimize for: application completion, identity capture, or share conversion.
@@ -138,13 +142,16 @@ No company name. No hiring. No cohort. No pay.
 
 ---
 
-## Files Phase 1 should add (not in Phase 0)
+## Files Phase 1 added
 
 ```txt
 apps/platform/app/workshop/page.tsx
 apps/platform/app/workshop/layout.tsx
-apps/platform/lib/talent-foundry/implementations/company/  (journey, session, evidence, copy)
-apps/platform/components/talent-foundry/workshop/
+apps/platform/app/talent-foundry/build/page.tsx   (redirects to /workshop)
+apps/platform/components/talent-foundry/workshop/  (room + beats + objects)
+apps/platform/lib/talent-foundry/implementations/company/persist.ts
+apps/platform/lib/talent-foundry/implementations/company/echo.ts
+apps/platform/lib/talent-foundry/implementations/company/room.ts
 ```
 
 Touch `middleware.ts` only to add `/workshop`.  
@@ -202,4 +209,4 @@ Keyboard, focus, semantic controls, no color-only meaning, reduced motion, no ti
 | E6 | Phase 1 share | **Omit** share in Phase 1 (mystery first; share in Phase 2 after artifact) |
 | E7 | `/talent-foundry/build` | Redirect, don’t dual-render, unless staff need a Foundry-prefixed URL on preview |
 
-None of these block merging **Phase 0 / 0.5 docs**. They block starting Phase 1 code. **E0.5 decisions in `PHASE_0_5_TALENT_TO_OWNERSHIP.md` also block starting Phase 1 code.**
+E1–E7 proceed as written. E0.5-1 through E0.5-7 are locked. Do not merge this PR until Ernie says so; keep building on `feat/talent-foundry-company-phase-0`.

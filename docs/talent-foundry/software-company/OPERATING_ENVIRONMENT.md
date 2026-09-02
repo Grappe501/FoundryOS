@@ -3,7 +3,8 @@
 **Status:** Phase 0.5 NEW. Design only. The workshop becomes the place they work — not a marketing site with a hidden LMS.
 
 **Door:** `/workshop`  
-**Rule:** Do not tell them they entered an internship funnel. Let them discover they walked into something larger.
+**Rule:** Do not tell them they entered an internship funnel. Let them discover they walked into something larger.  
+**Standard:** they should rarely feel trained. They should feel they are becoming capable. See `CAPABILITY_REVEAL_ENGINE.md`.
 
 ---
 
@@ -57,7 +58,7 @@ The room changes because of **facts** (`FUTURE_SURFACES.md`). Never XP. Never KE
 
 | Surface | Who touches it | When |
 |---|---|---|
-| Isolated **training** repository | Remembered participants on missions | Stages 6–9 (sandbox) |
+| Isolated **training** repository (young imperfect product — not a tutorial) | Remembered participants on missions | Stages 6–9 (sandbox) |
 | Cohort sandbox repos | Invited members | After they have met another person |
 | Actual Foundry products | Human-gated BUILD | Stage 12+ |
 | Live campaign / production FoundryOS | **Never** as a classroom | Not a mission. Not a broken-build toy. |

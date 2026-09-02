@@ -63,6 +63,8 @@ See `AI_PARTNERS.md`. Early missions use Cursor as hands and ChatGPT as reasonin
 
 Filesystem, terminal, clone, branches / worktrees, `.env`, npm, dev servers, localhost, builds, logs, debugging.
 
+**Training repository (E0.5-5):** isolated. Never live FoundryOS or campaign production. Must **not feel like a tutorial repo**. It should resemble a real, slightly imperfect young product — commit history, decisions, technical debt, issues, data, unfinished work. They graduate later into supervised Foundry product work.
+
 **First setup mission:** the tools exist on their machine. The workshop can see a *fact* that the environment reported ready — not a vibe that they “seem technical.”
 
 **Done when:** they can start the training app locally and read a log without asking the room to do it for them.

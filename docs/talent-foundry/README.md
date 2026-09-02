@@ -5,7 +5,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 | Implementation | Public question | Route | Person store | Status |
 |---|---|---|---|---|
 | **Campaign Foundry** | Will you show up? | `/talent-foundry` | RedDirt | **Live V1.2** |
-| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` (proposed) | FoundryOS `foundry_people` → later `user_profiles` | **Phase 0 + 0.5** — docs + contracts. Academy / operating environment specified. **Phase 1 screens held.** Cohort 01: 3–5 start **2026-11-15** (staff only) |
+| **Company Foundry** | What can you build, improve, lead, and multiply? | `/workshop` | FoundryOS `foundry_people` → later `user_profiles` | **Phase 0 + 0.5 CANON.** Phase 1 door cleared. Cohort 01: 3–5 start **2026-11-15** (staff only) |
 | **Employer Foundry** | Configurable | TBD | Tenant | Future (Phase 8) |
 
 **Campaign Foundry (this file below):** Kelly Grappe beta. Do not treat it as the company product. Live QR remains `https://foundry-os.netlify.app/talent-foundry`.
@@ -14,6 +14,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 
 - `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md`
 - `docs/talent-foundry/software-company/PHASE_0_5_TALENT_TO_OWNERSHIP.md`
+- `docs/talent-foundry/software-company/CAPABILITY_REVEAL_ENGINE.md`
 - `docs/talent-foundry/software-company/ACADEMY_CURRICULUM.md`
 - `docs/talent-foundry/software-company/OPERATING_ENVIRONMENT.md`
 - `docs/talent-foundry/software-company/AI_PARTNERS.md`
@@ -23,7 +24,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 - `docs/talent-foundry/software-company/FLYWHEEL_MODEL.md`
 - `docs/talent-foundry/software-company/COHORT_MODEL.md`
 - `docs/talent-foundry/software-company/EVIDENCE_AND_HUMAN_DECISION_MODEL.md`
-- `docs/talent-foundry/software-company/PHASE_1_BUILD_SPEC.md` (HOLD)
+- `docs/talent-foundry/software-company/PHASE_1_BUILD_SPEC.md`
 - `docs/talent-foundry/software-company/THINKING_TRACE_MODEL.md`
 - `docs/talent-foundry/software-company/SCENARIO_LAB.md`
 - `docs/talent-foundry/software-company/FUTURE_SURFACES.md`

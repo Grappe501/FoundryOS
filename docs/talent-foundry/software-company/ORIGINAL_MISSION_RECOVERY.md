@@ -267,6 +267,8 @@ These expand Phase 0. They are **not** recovered mission. They are the current p
 
 18. Oscar is mystery and late. Not at the door. Still organize, never hire.
 
+**Ernie accepted Phase 0.5 on 2026-09-02** (E0.5-1–7 locked). Added CANON: Capability Reveal Engine (`Need → Friction → Discovery → Tool → …`); becoming-capable standard; training repo must feel like a young product, not a tutorial. Phase 1 door cleared. PR #5 stays open.
+
 ---
 
 ## What was *not* found

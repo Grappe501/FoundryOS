@@ -1,9 +1,9 @@
 # Company Foundry — Phase 0.5 Talent-to-Ownership Experience Architecture
 
-**Status:** NEW (Ernie review). Docs only. No `/workshop` UI. No production migrations.  
+**Status:** **CANON** (Ernie accepted 2026-09-02). Phase 0 remains intact — this expands it.  
 **Date:** 2026-09-02  
-**Branch:** `feat/talent-foundry-company-phase-0`  
-**Rule:** Do not start Phase 1 screens until this pass is reviewed. Do not lock the product into the current Phase 1 spec as if it were the whole thing.
+**Branch:** `feat/talent-foundry-company-phase-0` (keep building here; do not merge PR #5 yet)  
+**Rule:** Phase 1 door is cleared. Build only `/workshop` through linger. See `PHASE_1_BUILD_SPEC.md` and `CAPABILITY_REVEAL_ENGINE.md`.
 
 This is **not** a rewrite of Phase 0. Phase 0 recovered the mission, the 14-stage spine, the cohort/evidence/gate models, and the `/workshop` door. Phase 0.5 **expands what the workshop becomes**.
 
@@ -53,7 +53,7 @@ The public door still must not say any of that.
 5. **Burt + Ernie + Oscar** are named partners in the method. Oscar stays mysterious until later.
 6. **GitHub activity feeds the Foundry record.** Branch, PR, review, revision, contribution — a living body of demonstrated work. Not a résumé.
 7. **They remain potential partners the entire time.** Staff posture, never a public promise, never an auto-banner.
-8. **Do not start coding current Phase 1** until Ernie reviews this architecture. The door spec remains useful; it must not lock the product into a one-sitting puzzle.
+8. **Phase 1 screens were held until this pass was accepted.** The door is now cleared. Linger is the end of visit one, not the product.
 
 ---
 
@@ -151,17 +151,19 @@ Do not attempt the entire academy in one code pass.
 
 ---
 
-## Ernie decisions (do not start Phase 1 without these)
+## Ernie decisions — LOCKED 2026-09-02
 
-| ID | Decision | Burt recommendation |
+| ID | Status | Lock |
 |---|---|---|
-| E0.5-1 | Hold Phase 1 screens until 0.5 is reviewed | **Yes.** Door contracts stay; screens wait. |
-| E0.5-2 | Public door | **`/workshop`**. Never “academy” or “intern” in the URL or first minutes. |
-| E0.5-3 | Method turn copy | After first artifact: “You made something. Now we’re going to show you how we make things here.” |
-| E0.5-4 | When a cohort exists | When they encounter another **real** participant — not when they finish Rafi. |
-| E0.5-5 | Training repo | Isolated training repository first. Never live FoundryOS / campaign production. |
-| E0.5-6 | Oscar | Named later. Not at the door. Mystery is part of progression. |
-| E0.5-7 | Partner language | Staff posture only. No public “partner track.” |
+| E0.5-1 | **APPROVED** | Phase 0.5 is governing architecture. Phase 0 is not rewritten. Phase 1 screens were correctly held. |
+| E0.5-2 | **APPROVED** | Public door is **`/workshop`**. Product name, academy, internship, hiring, and ownership stay out of the opening. What they *think* they entered should evolve. |
+| E0.5-3 | **APPROVED** | Method turn copy stands. Treat it as a **major environmental transition** — the interface must visibly change. Observed → equipped. |
+| E0.5-4 | **APPROVED** | Rafi is preparation. A cohort becomes real when another actual participant enters their working environment. |
+| E0.5-5 | **APPROVED** | Isolated training repo first. It must **feel like a real, slightly imperfect young product** (history, debt, issues, data, unfinished work) — not a tutorial repo. Then supervised Foundry work. |
+| E0.5-6 | **APPROVED** | Oscar stays hidden. Burt and Ernie may become understandable as the method. Oscar is discovering a larger intelligence behind the workshop. |
+| E0.5-7 | **APPROVED** | Everyone is a potential future partner internally. Nobody is promised a partner track. Ownership stays human, legal, relational. |
+
+**Added principle (Ernie):** they should rarely feel trained. They should feel they are **becoming capable**. See `CAPABILITY_REVEAL_ENGINE.md`.
 
 ---
 

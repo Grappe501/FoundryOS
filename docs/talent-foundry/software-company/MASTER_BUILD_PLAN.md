@@ -3,7 +3,7 @@
 **Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
 **Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
-**Now:** Phase 0.5 architecture. **Do not start Phase 1 screens** until Ernie reviews `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
+**Now:** Phase 0 + 0.5 **approved**. Phase 1 door is cleared. Keep building on this branch; **do not merge PR #5 yet**.
 
 This is **not** the Kelly Grappe experience with different copy.  
 This is **not** an internship funnel, a bootcamp, or a course catalog.
@@ -59,11 +59,12 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `SCENARIO_LAB.md` | NOTICE / MESS / artifact seeds tagged by thinking moves |
 | `FUTURE_SURFACES.md` | Transparent tape, living room, interview-from-tape |
 | `SPINE_AND_LAYERS.md` | 14-stage spine; Ernie isolation; uniform beat layer |
-| `PHASE_0_5_TALENT_TO_OWNERSHIP.md` | **0.5 thesis** — academy + operating environment; hold Phase 1 screens |
+| `PHASE_0_5_TALENT_TO_OWNERSHIP.md` | **CANON** — academy + operating environment; E0.5-1–7 locked |
+| `CAPABILITY_REVEAL_ENGINE.md` | Need → tool. Becoming capable, not being trained |
 | `ACADEMY_CURRICULUM.md` | What they eventually learn — as missions, not a course |
 | `OPERATING_ENVIRONMENT.md` | `/workshop` becomes the bench; GitHub feeds the record |
 | `AI_PARTNERS.md` | Burt (Cursor), Ernie (ChatGPT), Oscar (later) |
-| `PHASE_1_BUILD_SPEC.md` | Eventual door spec — **HOLD**. Do not code until 0.5 is reviewed |
+| `PHASE_1_BUILD_SPEC.md` | **CLEARED** — `/workshop` through linger |
 | this file | Phases 0–8 and sequencing |
 
 **Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
@@ -75,8 +76,8 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | Phase | Name | Outcome | Est. after this pass |
 |---|---|---|---|
 | **0** | Recovery + architecture | Docs, family index, spine contracts through DELIVER, isolated PR | In this PR. Ernie review still open. |
-| **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. Master plan revised. **No UI.** | **This pass. Review before any screens.** |
-| **1** | Mysterious front door | `/workshop` through NOTICE + THE MESS + first revelation. Anonymous. Room left able to become an environment. | After Ernie reviews 0.5 **and** door decisions |
+| **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. **CANON.** | Approved 2026-09-02 |
+| **1** | Mysterious front door | `/workshop` through NOTICE + THE MESS + first revelation. Anonymous. Room left able to become an environment. | **Cleared. Building now.** |
 | **2** | First artifact + method turn | MAKE, “how we make things here,” Remember Me, first setup missions | After the door fascinates |
 | **3** | Deeper work + training repo | Return, fictional collaborate/respond/deliver, clone / branch / broken build / inspect-data | After they can return |
 | **4** | Cohort becomes real | They meet another participant. Cohort objects. GitHub org. Shared repos. | After they can work without destroying the bench |
@@ -116,6 +117,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass J — DELIVER fill.** Definition of done on their track. Complete or abandon — both close the beat. No grade. No UI. MULTIPLY still stub.
 - [x] **Pass K — Phase 0.5 talent-to-ownership architecture.** Academy + operating environment. Curriculum as missions. Burt / Ernie / Oscar. GitHub feeds the record. Partner throughout (posture, not a prize). **Phase 1 screens held.** MULTIPLY / LEAD still stub.
 - [x] **Pass L — MULTIPLY fill.** Fictional newer person Nia. Help + what unblocks them. Not a cohort. Not a mentor badge. No UI. LEAD still stub.
+- [x] **Pass M — Phase 0.5 accepted.** E0.5-1–7 locked. Capability Reveal Engine. Becoming-capable standard. Training repo must feel like a young product. Phase 1 door cleared. PR #5 stays open.
 
 ---
 
@@ -136,12 +138,11 @@ Do not attempt the entire system in one code pass.
 
 ## Recommended sequence
 
-1. **Ernie reviews Phase 0.5** (`PHASE_0_5_TALENT_TO_OWNERSHIP.md` + curriculum / environment / partners). Do not start `/workshop` UI before this.
-2. Ernie door decisions in `PHASE_1_BUILD_SPEC.md` (route, opening copy, first mess) — still valid as the *door*, now required to leave room for the environment.
-3. Isolated branch `feat/talent-foundry-company-phase-1` from updated `main` or this branch.
-4. Build Phase 1 only. Local session. No identity API. No RedDirt. No course nav. No Oscar.
-5. Phone-width walkthrough: stranger → ENTER → notice → mess → revelation → leave fascinated.
-6. Separate PR. Do not merge on the same day as campaign changes.
+1. **Phase 0.5 accepted.** Keep building on `feat/talent-foundry-company-phase-0`. Do not merge PR #5 yet.
+2. Build Phase 1 door only (`/workshop` through linger). Local session. No identity, GitHub, Cursor, API, Oscar, cohort.
+3. The room is the future environment — do not throw it away after the puzzle.
+4. Phone-width walkthrough: stranger → ENTER → notice → mess → revelation → leave fascinated.
+5. Do not merge on the same day as campaign changes.
 
 ---
 
