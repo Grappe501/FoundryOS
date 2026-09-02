@@ -76,3 +76,13 @@ docs(talent-foundry): lock Company Foundry build discipline
 - Do not alter live Campaign Foundry (`/talent-foundry`, QR, share).
 - Do not write Company people to RedDirt.
 - Do not create production migrations until an approved later slice.
+
+---
+
+## Known debt (do not mix into a product slice)
+
+**EnterStageResult test typing.** `npm run typecheck -w @foundry/platform` (`tsc --noEmit`) fails in pre-existing stage tests that read `.reason` on `EnterStageResult` without narrowing `ok === false`. `next build` typecheck still passes. Soul 1.0 and the research loop are not implicated.
+
+Fix in a dedicated `test(workshop):` pass only. Do not fold it into a Soul, MAKE, or visual slice.
+
+Logged 2026-09-02 on closeout of Soul 1.0 (`db45977`).

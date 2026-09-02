@@ -194,3 +194,19 @@ They should want to return because they have unfinished work here, something the
 - Linger still says they can go.
 
 Remember Me is still held. Identity is still not the relationship.
+
+---
+
+## 1.0 closeout
+
+Architecture is live on PR #5 from `db45977`. Phase 2B visual remains HOLD. This is a clean closeout, not a failure.
+
+The room can now reward **research behavior, tool use, bringing knowledge back, and changing the work** — not merely completion.
+
+The next review is not “does it compile?” Walk the lived loop on the preview:
+
+```txt
+I don't know → I go learn → I use whatever tools help → I come back → the room remembers what I learned → my work changes → the environment responds
+```
+
+That is the behavior we want to make irresistible.
