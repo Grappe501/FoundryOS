@@ -41,6 +41,8 @@ export { chooseMakeTrack, openMake, submitMake } from './make/engine';
 export { MAKE_TRACKS, makeTrack } from './make/tracks';
 export { keepExploring, openRemember, rememberMe } from './remember/engine';
 export { REMEMBER_COPY } from './remember/copy';
+export { openReturn, submitReturn } from './return/engine';
+export { RETURN_COPY } from './return/copy';
 export {
   MESS_M1,
   MESS_SEEDS,

@@ -78,9 +78,10 @@ assert.throws(() =>
 );
 
 const onward = tryAdvanceSpine(named);
-assert.equal(onward.ok, false);
-assert.equal(onward.reason, 'stub');
-assert.equal(onward.stage, 'return');
+assert.equal(onward.ok, true);
+if (!onward.ok) throw new Error('return');
+assert.equal(onward.session.envelope.spineStage, 'return');
+assert.equal(onward.session.stateId, 'linger');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {
   assert.equal(nextWorkshopState(state), ERNIE_ZONE_NEXT[state]);

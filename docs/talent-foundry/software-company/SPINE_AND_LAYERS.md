@@ -32,7 +32,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 3 solve      LIVE  Ernie   anonymous
 4 make       LIVE  spine   anonymous  (contract only — no UI)
 5 remember   LIVE  spine   optional identity (contract only — no UI)
-6 return     STUB  spine   optional
+6 return     LIVE  spine   optional (contract only — no UI)
 7 collaborate STUB spine   remembered
 8 respond    STUB  spine   remembered
 9 deliver    STUB  spine   remembered
@@ -49,7 +49,7 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `remember` is live as a contract after MAKE is finished. `openRemember` / Remember Me / Keep Exploring do not change Ernie `stateId`. Keep Exploring leaves the artifact and keeps REMEMBER open. Remember Me stores name + email (+ optional location / school-or-work), sets `placeEligible`, and never takes a résumé or phone.
 
-`return` and beyond remain stubs. Stages 12–14 refuse with `human_gate` (or `stub`) until filled **and** gated.
+`return` is live after Remember Me **or** Keep Exploring. `openReturn` records the gap since last activity and opens a deeper challenge on their MAKE track. `stateId` stays `linger`. Collaborate and beyond remain stubs.
 
 ---
 

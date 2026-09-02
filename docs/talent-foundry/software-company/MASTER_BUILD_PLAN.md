@@ -99,6 +99,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass D — Master spine + uniform layer.** All 14 stages exist. Ernie-zone (door → linger) is frozen. Uniform beat/envelope lifts every stage equally. Stages 4–14 are stubs; 12–14 also require human gates. No `/workshop` UI. See `SPINE_AND_LAYERS.md`.
 - [x] **Pass E — MAKE fill.** Seven interest tracks + artifact submit/abandon. After linger, MAKE is enterable in the envelope; Ernie `stateId` stays `linger`. No UI. REMEMBER still stub.
 - [x] **Pass F — REMEMBER fill.** You’ve left something behind. Remember Me (name, email, optional location/school-work) or Keep Exploring. `placeEligible` flag only — no resume table, no account, no UI. RETURN still stub.
+- [x] **Pass G — RETURN fill.** Deeper challenge on their track. Gap since last activity is a fact. Anonymous or remembered. No UI. COLLABORATE still stub.
 
 ---
 

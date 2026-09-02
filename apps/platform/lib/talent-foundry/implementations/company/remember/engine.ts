@@ -46,7 +46,7 @@ export function keepExploring(session: WorkshopSession, now = new Date()): Works
     fact: { choice: 'keep_exploring', copy: REMEMBER_COPY.keepExploring },
     now,
   });
-  return {
+  return syncEnvelope({
     ...next,
     envelope: {
       ...next.envelope,
@@ -65,7 +65,7 @@ export function keepExploring(session: WorkshopSession, now = new Date()): Works
         value: { artifactKept: Boolean(next.envelope.artifact) },
       },
     ],
-  };
+  });
 }
 
 export function rememberMe(

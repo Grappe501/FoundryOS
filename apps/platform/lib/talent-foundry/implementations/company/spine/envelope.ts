@@ -23,6 +23,15 @@ export type RememberFields = {
 
 export type RememberChoice = 'remember_me' | 'keep_exploring';
 
+export type ReturnVisit = {
+  challengeId: string;
+  gapMs: number | null;
+  body: string;
+  finished: boolean;
+  returnedAt: string;
+  submittedAt: string | null;
+};
+
 export type HumanGateKind =
   | 'cohort_invite'
   | 'interview'
@@ -50,6 +59,7 @@ export type SpineEnvelope = {
   placeEligible: boolean;
   artifactTrack: ArtifactTrack | null;
   artifact: ArtifactDraft | null;
+  returnVisit: ReturnVisit | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -71,6 +81,7 @@ export function createEnvelope(): SpineEnvelope {
     placeEligible: false,
     artifactTrack: null,
     artifact: null,
+    returnVisit: null,
     gates: [],
     cohortId: null,
   };

@@ -31,6 +31,12 @@ export function syncEnvelope(session: WorkshopSession): WorkshopSession {
   if (session.flags.named && session.stateId === 'linger') progress.solve = 'complete';
   if (progress.solve === 'complete' && progress.make === 'locked') progress.make = 'open';
   if (progress.make === 'complete' && progress.remember === 'locked') progress.remember = 'open';
+  if (
+    progress.return === 'locked' &&
+    (progress.remember === 'complete' || envelope.rememberChoice === 'keep_exploring')
+  ) {
+    progress.return = 'open';
+  }
 
   const pastSolve =
     SPINE_STAGE_IDS.indexOf(envelope.spineStage) >= SPINE_STAGE_IDS.indexOf('make');
