@@ -22,7 +22,8 @@ The system may discover interns, builders, designers, researchers, operators, pr
 **Those labels are never assigned psychologically or automatically.**  
 People demonstrate capability. Humans decide placement, employment, compensation, leadership, and ownership.
 
-**Don’t ask people what they are. Give them something worth doing and watch what they do.**
+**Don’t ask people what they are. Give them something worth doing and watch what they do.**  
+**Don’t ask them how they think. Give them unfinished work and keep the tape.**
 
 ---
 
@@ -48,8 +49,13 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `FLYWHEEL_MODEL.md` | Operational loop |
 | `COHORT_MODEL.md` | Cohort objects and progression |
 | `EVIDENCE_AND_HUMAN_DECISION_MODEL.md` | Ledger, gates, AI, real-work bridge |
+| `THINKING_TRACE_MODEL.md` | How they think — flight recorder, not a score |
+| `SCENARIO_LAB.md` | NOTICE / MESS / artifact seeds tagged by thinking moves |
+| `FUTURE_SURFACES.md` | Transparent tape, living room, interview-from-tape |
 | `PHASE_1_BUILD_SPEC.md` | Exact next build |
 | this file | Phases 0–8 and sequencing |
+
+**Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
 
 ---
 
@@ -83,6 +89,12 @@ Do not attempt the entire system in one code pass.
 - [ ] Ernie review (do not merge)
 
 **Out of scope for Phase 0:** visual implementation, production migrations, frontend, RedDirt, campaign route/copy/QR.
+
+### Waiting passes (this slice — still no UI)
+
+- [x] **Pass A — Thinking trace.** How they think is a first-class flight recorder (`THINKING_TRACE_MODEL.md` + `thinking-trace.ts`). Moves, not types. No score/trait/fit.
+- [x] **Pass B — Contracts + lab + future surfaces.** Workshop journey engine, N1/M1 seeds, `workshop.test.ts`, `SCENARIO_LAB.md`, `FUTURE_SURFACES.md`. Phase 1 renders the room against these contracts.
+- [x] **Pass C — Observation clocks + Cohort 01 lock.** Silent linger / hesitation / coverage (read vs skim as facts). M1 is **The last draft** — no Tuesday. `COHORT_01`: 3–5 people, work starts **2026-11-15**. Never a seriousness score.
 
 ---
 

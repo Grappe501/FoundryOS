@@ -70,6 +70,8 @@ Every participant (anonymous session, then `foundry_person`) accumulates an appe
 | `identity_remembered` | Timestamp they chose Remember Me (PII lives on the person record) |
 | `place_saved` | Resume token created (hash id only) |
 | `access_event` | Workshop opening / access language shown |
+| `thinking` | A `ThinkingEvent` (move + fact). See `THINKING_TRACE_MODEL.md` |
+| `clock` | Beat linger / hesitation / aftermath linger (milliseconds). Never a seriousness score |
 
 Store: timestamp, stage, implementation=`company`, session id, optional `foundry_person_id`, payload, artifact pointer.
 

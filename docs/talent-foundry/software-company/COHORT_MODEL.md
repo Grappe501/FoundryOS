@@ -20,6 +20,24 @@ Participants must not be told that walking in the workshop places them in a coho
 
 ---
 
+## Operating lock — Cohort 01 (staff only)
+
+Source: `apps/platform/lib/talent-foundry/implementations/company/constants.ts` → `COHORT_01`
+
+| Fact | Value |
+|---|---|
+| Name | FOUNDry Cohort 01 |
+| Seats | **3–5 people** |
+| Work starts | **November 15, 2026** |
+| How they get there | Human invite after demonstrated workshop work — not a door banner |
+| Public workshop | Must **not** mention Nov 15, hiring, seats, or “apply for the cohort” |
+
+This is the first real company hiring cohort. The anonymous top of the funnel is larger. **Three to five** are selected and start work on that date. Completing the Foundry does not earn a seat.
+
+Staff timeline (from 2026-09-01): roughly ten weeks of door → tape → remember → artifact → human gates → offer → **start 2026-11-15**. If the door is late, the start date does not move unless founders explicitly move it.
+
+---
+
 ## Funnel (human-governed)
 
 ```txt

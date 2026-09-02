@@ -1,7 +1,9 @@
 # Company Foundry — Phase 1 Build Spec
 
-**Status:** Spec only. Do not implement in the Phase 0 PR.  
-**Goal:** A stranger can walk into a dark workshop, do two meaningful things, learn the name Talent Foundry, and leave fascinated — still anonymous.
+**Status:** Spec only for UI. Journey + thinking-trace **contracts already exist** — implement the screens against them; do not invent a second session shape.  
+**Contracts:** `apps/platform/lib/talent-foundry/implementations/company/`  
+**Lab lock:** NOTICE **N1**, MESS **M1** (`SCENARIO_LAB.md`) unless Ernie swaps.  
+**Goal:** A stranger can walk into a dark workshop, do two meaningful things, learn the name Talent Foundry, and leave a readable thinking tape — still anonymous.
 
 Optimize for: **the right person becomes fascinated with the workshop.**  
 Do not optimize for: application completion, identity capture, or share conversion.
@@ -15,12 +17,13 @@ Do not optimize for: application completion, identity capture, or share conversi
 3. New session key `workshop.v1`. Separate types. No Kelly `JourneyStateId` reuse.
 4. Opening: YOU FOUND THE WORKSHOP → pause → most people tell us… → we’d rather see it → ENTER.
 5. NOTICE: one flawed object + “What do you notice?” + “What would you change first?” + non-judging acknowledgment.
-6. THE MESS: one imperfect situation, one decision, one consequence. No correctness reveal.
+6. THE MESS: **M1 The last draft** — Continue can destroy last night’s notes. One decision, one consequence. No correctness reveal. No calendar. No Tuesday.
 7. First revelation: THIS IS TALENT FOUNDRY / We don’t start with résumés / We start with the work.
 8. A quiet way to leave. No “Apply now.” No Remember Me yet (Phase 2).
 9. Local persistence across refresh. Start Over exists but is not the hero.
-10. Tests for state transitions and “campaign session is untouched.”
-11. Docs update: mark Phase 1 implemented when it ships.
+10. **Silent clocks** from the first frame: `revealDoorLine` on each opening line; `markNoticeRegion(..., dwellMs)` on region focus; `noteTyping` on first keystroke; existing submits close linger / aftermath linger. Never show a timer. Never store seriousness.
+11. Tests for state transitions, clocks, no Tuesday in M1, and campaign session untouched.
+12. Docs update: mark Phase 1 implemented when it ships.
 
 ## Out of scope
 
@@ -88,18 +91,20 @@ Acknowledgment: short, specific echo of *a* thing they said — not a grade, not
 
 ---
 
-## THE MESS — recommended situation (Ernie may swap)
+## THE MESS — M1 The last draft (Ernie may swap the object, not the rule)
 
-Proposal: **contradictory launch notes** for a tiny fictional tool (three bullets that cannot all be true). One decision:
+The control says Continue. Continue replaces the draft. Last night’s notes live only there. There is no copy.
 
-- Ship the date
-- Slip the date
-- Ask one question before deciding
-- Cut one promise and ship the rest
+One decision:
 
-Consequence: show what happened next in the room (a message, a broken link, a relieved teammate, a silent channel). Deterministic from the choice. **Do not** say correct/incorrect.
+- Continue and replace the draft
+- Restore last night’s notes first
+- Ask who the draft belongs to
+- Save a copy, then continue
 
-Store `decision` + `consequence` locally.
+Consequence: show what happened to the notes. Deterministic. **Do not** say correct/incorrect. **Do not** use a calendar or a public launch date.
+
+Store `decision` + `consequence` + mess clock locally.
 
 ---
 
@@ -188,7 +193,7 @@ Keyboard, focus, semantic controls, no color-only meaning, reduced motion, no ti
 | E1 | Public route | **`/workshop`** as the door. `/talent-foundry/build` redirects to it |
 | E2 | Opening copy | Use the three-line workshop copy as written |
 | E3 | NOTICE object | Fictional flawed product fragment (not campaign, not political) |
-| E4 | MESS situation | Contradictory launch notes, one decision, silent correctness |
+| E4 | MESS situation | **M1 The last draft** (no Tuesday / no calendar). Silent correctness |
 | E5 | Linger copy | “You can go. The bench will still be here.” |
 | E6 | Phase 1 share | **Omit** share in Phase 1 (mystery first; share in Phase 2 after artifact) |
 | E7 | `/talent-foundry/build` | Redirect, don’t dual-render, unless staff need a Foundry-prefixed URL on preview |

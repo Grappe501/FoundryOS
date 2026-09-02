@@ -3,7 +3,10 @@
 **Status:** Phase 0. The product is optimized to make the right person **fascinated with the workshop**, not to complete an application.
 
 Campaign question: **Will you show up?**  
-Company question: **What can you build, improve, lead, and multiply?**
+Company question: **What can you build, improve, lead, and multiply?**  
+Thinking-trace question: **How did they work when the thing was still unfinished?**
+
+The workshop records a flight recorder of moves (see `THINKING_TRACE_MODEL.md`). It does not type the person.
 
 ---
 
@@ -82,7 +85,7 @@ The product discloses itself through progress. Do not explain everything with pa
 | **A company exists** and this is its workshop | Stage 6–7, only after return work has started | Indirect: tools, unfinished diagrams, internal names on artifacts — not an About page | Jobs, salary, equity |
 | **Other people** are in here | Stage 7 Collaborate | Real or tightly-scoped cohort contact | That this is selection |
 | **Hiring / placement opportunities exist** | Stage 9–11, after delivery + feedback | Human-authored invitation, never an auto banner | Compensation amounts as bait |
-| **A named cohort exists** | When a human opens a cohort and invites them | Explicit invite: FOUNDry Cohort 01 | That completion earns a seat |
+| **A named cohort exists** | When a human invites them | Explicit invite to FOUNDry Cohort 01 (3–5 seats, work starts **2026-11-15**). Not on the public door. | That walking in earned a seat |
 | **Paid opportunities exist** | Stage 13 gate | Explicit human offer + agreement. Copy may say work can become paid **only** as a factual staff-initiated conversation | Equity |
 | **Ownership / partner path exists** | Stage 14 | Separate founder conversation after sustained value. Foundry preserves evidence; it does not offer equity | Nothing is “earned” by finishing stages |
 

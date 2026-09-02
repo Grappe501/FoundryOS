@@ -4,6 +4,8 @@
 
 This is the loop the company must be able to **run**, not merely describe.
 
+**First spin (staff):** FOUNDry Cohort 01 is **3–5 people**, work starts **15 November 2026**. The workshop is how we find them. The door does not advertise the date.
+
 ---
 
 ## The loop
