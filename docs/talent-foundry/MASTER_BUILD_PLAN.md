@@ -18,7 +18,7 @@ Talent Foundry is no longer only the Kelly beta.
 | Implementation | Plan | Person store | Do not |
 |---|---|---|---|
 | **Campaign Foundry** | this file + `README.md` | RedDirt | Change live `/talent-foundry` or campaign QR while building Company Foundry |
-| **Company Foundry** | `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md` | FoundryOS (not RedDirt) | Reskin Kelly copy; write campaign people into RedDirt |
+| **Company Foundry** | `docs/talent-foundry/software-company/MASTER_BUILD_PLAN.md` + `PHASE_0_5_TALENT_TO_OWNERSHIP.md` | FoundryOS (not RedDirt) | Reskin Kelly copy; write campaign people into RedDirt; start `/workshop` UI before 0.5 review |
 | **Employer Foundry** | Phase 8 in the company plan | Tenant | Productize before the internal flywheel is real |
 
 **Architecture lock below is campaign-scoped.** Company Foundry reopens “not a lifelong world”: the software-company implementation is a FoundryOS-world flywheel. See `software-company/PARALLEL_ARCHITECTURE.md`.

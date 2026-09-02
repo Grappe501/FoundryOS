@@ -36,7 +36,9 @@ Each arrow is an **operation** with an owner, an input, an output, and (where ma
 
 Recruiting software optimizes: stranger → application → interview → hire / reject.
 
-This flywheel optimizes: stranger → demonstrated work → developed capability → created company value → that person develops the next stranger.
+This flywheel optimizes: stranger → demonstrated work → **learned method** → developed capability → created company value → that person develops the next stranger.
+
+Phase 0.5: the workshop is also the academy and the operating environment. Curriculum is missions on the same bench. GitHub facts feed the same record. They remain potential partners as posture, never as an auto-track. If we only ship a course catalog next to a puzzle, the flywheel has failed the same way an applicant inbox would.
 
 The last realization the experience is designed for:
 

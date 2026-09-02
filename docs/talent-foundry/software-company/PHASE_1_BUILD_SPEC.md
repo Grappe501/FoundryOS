@@ -1,9 +1,10 @@
 # Company Foundry — Phase 1 Build Spec
 
-**Status:** Spec only for UI. Journey + thinking-trace **contracts already exist** — implement the screens against them; do not invent a second session shape.  
+**Status:** **HOLD.** Spec for the eventual door only. Do **not** start `/workshop` UI until Ernie reviews Phase 0.5 (`PHASE_0_5_TALENT_TO_OWNERSHIP.md`).  
+**Why held:** Phase 1 as previously specified is still the right *first visit* — it is no longer the whole product we would be locking. The room must be able to become an academy and operating environment later.  
 **Contracts:** `apps/platform/lib/talent-foundry/implementations/company/`  
 **Lab lock:** NOTICE **N1**, MESS **M1** (`SCENARIO_LAB.md`) unless Ernie swaps.  
-**Goal:** A stranger can walk into a dark workshop, do two meaningful things, learn the name Talent Foundry, and leave a readable thinking tape — still anonymous.
+**Goal:** A stranger can walk into a dark workshop, do two meaningful things, learn the name Talent Foundry, and leave a readable thinking tape — still anonymous. Linger is the end of visit one, not the end of the Foundry.
 
 Optimize for: **the right person becomes fascinated with the workshop.**  
 Do not optimize for: application completion, identity capture, or share conversion.
@@ -38,7 +39,10 @@ Do not optimize for: application completion, identity capture, or share conversi
 - Operator/leader campaign missions
 - Talent Command Center
 - Visual “full workshop” — Phase 1 is dark / minimal / cinematic only
+- Course catalog, LMS, setup missions, GitHub login wall, Oscar
 - Employer productization
+
+**Phase 1 must leave open:** a later pane for the thing they made, a method turn after MAKE, training-repo facts, and another person. Do not ship a finished “thanks for playing” wall. See `OPERATING_ENVIRONMENT.md`.
 
 ---
 
@@ -198,4 +202,4 @@ Keyboard, focus, semantic controls, no color-only meaning, reduced motion, no ti
 | E6 | Phase 1 share | **Omit** share in Phase 1 (mystery first; share in Phase 2 after artifact) |
 | E7 | `/talent-foundry/build` | Redirect, don’t dual-render, unless staff need a Foundry-prefixed URL on preview |
 
-None of these block merging **Phase 0 docs**. They block starting Phase 1 code.
+None of these block merging **Phase 0 / 0.5 docs**. They block starting Phase 1 code. **E0.5 decisions in `PHASE_0_5_TALENT_TO_OWNERSHIP.md` also block starting Phase 1 code.**

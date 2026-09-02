@@ -251,6 +251,22 @@ Phase 0 proposals for Ernie review. Not found in history. Not current campaign c
 
 12. AI may organize, summarize, compare revisions, and coach instructions. AI may not infer protected traits, ideology, personality, mental health, or produce employability scores / auto decisions.
 
+### Phase 0.5 NEW (2026-09-02) — not found in history
+
+These expand Phase 0. They are **not** recovered mission. They are the current proposed product.
+
+13. Company Foundry is a **premium talent-to-ownership academy and operating environment**, not a recruiting funnel with homework. People remain potential partners throughout as **staff posture**, never as a public track or auto-banner.
+
+14. **Do not start Phase 1 screens** until this expansion is reviewed. The door spec stays; linger is the end of visit one, not the product.
+
+15. Curriculum is **missions**, not a course: Foundry method; Burt (Cursor) + Ernie (ChatGPT) + Oscar (later); local dev; GitHub; OpenAI API; databases; architecture; product engineering; AI discipline; production discipline; Foundry operating rhythm. See `ACADEMY_CURRICULUM.md`.
+
+16. `/workshop` **becomes** their development environment. After they make something: “Now we're going to show you how we make things here.” Then setup, clone, branch, broken build, inspect data, then another participant. GitHub facts feed the same room. A living body of work replaces the résumé.
+
+17. A cohort exists for the participant when they meet another **real** person. Rafi is not a cohort. Completing missions does not mint a seat.
+
+18. Oscar is mystery and late. Not at the door. Still organize, never hire.
+
 ---
 
 ## What was *not* found

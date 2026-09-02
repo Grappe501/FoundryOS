@@ -1,10 +1,12 @@
 # Company Foundry — Master Build Plan
 
-**Program:** Talent Foundry implementation #2 — software-company talent flywheel  
+**Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
-**Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.
+**Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
+**Now:** Phase 0.5 architecture. **Do not start Phase 1 screens** until Ernie reviews `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
 
-This is **not** the Kelly Grappe experience with different copy.
+This is **not** the Kelly Grappe experience with different copy.  
+This is **not** an internship funnel, a bootcamp, or a course catalog.
 
 ---
 
@@ -19,6 +21,10 @@ DISCOVER → ENGAGE → CREATE → COLLABORATE → PROVE → DEVELOP
 
 The system may discover interns, builders, designers, researchers, operators, product thinkers, marketers, organizers, technical generalists, future employees, future leads, potential long-term partners.
 
+They remain **potential future partners throughout**. That is staff posture. The software never announces a partner track. Ownership stays a separate legal conversation.
+
+They do not merely apply. They enter `/workshop`, demonstrate how they think, learn the Foundry method, form cohorts, work through GitHub on Foundry products, and earn trust in public only as far as human gates allow.
+
 **Those labels are never assigned psychologically or automatically.**  
 People demonstrate capability. Humans decide placement, employment, compensation, leadership, and ownership.
 
@@ -32,14 +38,14 @@ People demonstrate capability. Humans decide placement, employment, compensation
 | Implementation | Status | Index |
 |---|---|---|
 | Campaign Foundry | Live V1.2 on `/talent-foundry` | `docs/talent-foundry/README.md` |
-| **Company Foundry** | Phase 0 (this directory) | this file |
+| **Company Foundry** | Phase 0 + **0.5** (this directory) | this file |
 | Employer Foundry | Future Phase 8 | `PARALLEL_ARCHITECTURE.md` |
 
 Campaign architecture lock (“not a lifelong world,” RedDirt identity) remains **campaign-scoped**. Company Foundry reopens the world question: this implementation **is** a FoundryOS-world flywheel.
 
 ---
 
-## Document set (Phase 0)
+## Document set (Phase 0 + 0.5)
 
 | Doc | Role |
 |---|---|
@@ -53,7 +59,11 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `SCENARIO_LAB.md` | NOTICE / MESS / artifact seeds tagged by thinking moves |
 | `FUTURE_SURFACES.md` | Transparent tape, living room, interview-from-tape |
 | `SPINE_AND_LAYERS.md` | 14-stage spine; Ernie isolation; uniform beat layer |
-| `PHASE_1_BUILD_SPEC.md` | Exact next build |
+| `PHASE_0_5_TALENT_TO_OWNERSHIP.md` | **0.5 thesis** — academy + operating environment; hold Phase 1 screens |
+| `ACADEMY_CURRICULUM.md` | What they eventually learn — as missions, not a course |
+| `OPERATING_ENVIRONMENT.md` | `/workshop` becomes the bench; GitHub feeds the record |
+| `AI_PARTNERS.md` | Burt (Cursor), Ernie (ChatGPT), Oscar (later) |
+| `PHASE_1_BUILD_SPEC.md` | Eventual door spec — **HOLD**. Do not code until 0.5 is reviewed |
 | this file | Phases 0–8 and sequencing |
 
 **Code contracts (no UI):** `apps/platform/lib/talent-foundry/implementations/company/` — workshop session, journey, thinking trace, N1/M1 lab seeds, tests. Campaign Kelly types are not imported.
@@ -64,14 +74,15 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 
 | Phase | Name | Outcome | Est. after this pass |
 |---|---|---|---|
-| **0** | Recovery + architecture | Docs, family index, isolated PR | **This PR. Ready for Ernie review.** |
-| **1** | Mysterious front door | `/workshop` through NOTICE + THE MESS + first revelation. Anonymous. No identity. No Kelly code path | Next implementation slice |
-| **2** | First artifact + identity | Track choice, small creation, Remember Me, SAVE MY PLACE (company token space) | After Phase 1 feels fascinating |
-| **3** | Deeper work | Return challenge, feedback, revision, delivery | After artifacts exist |
-| **4** | Cohort engine | Cohort / members / mentors / projects / invites | After return work exists |
-| **5** | Real-work bridge | Sandbox → supervised → paid **gates** (not the full payroll system) | After cohort proves collaboration |
-| **6** | Talent Command Center | Funnel, people, work, cohorts, auditable decisions | Can start thin in 4–5; full in 6 |
-| **7** | Flywheel | Leaders develop next cohort; ownership evidence trail | After command center is usable |
+| **0** | Recovery + architecture | Docs, family index, spine contracts through DELIVER, isolated PR | In this PR. Ernie review still open. |
+| **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. Master plan revised. **No UI.** | **This pass. Review before any screens.** |
+| **1** | Mysterious front door | `/workshop` through NOTICE + THE MESS + first revelation. Anonymous. Room left able to become an environment. | After Ernie reviews 0.5 **and** door decisions |
+| **2** | First artifact + method turn | MAKE, “how we make things here,” Remember Me, first setup missions | After the door fascinates |
+| **3** | Deeper work + training repo | Return, fictional collaborate/respond/deliver, clone / branch / broken build / inspect-data | After they can return |
+| **4** | Cohort becomes real | They meet another participant. Cohort objects. GitHub org. Shared repos. | After they can work without destroying the bench |
+| **5** | Real-work bridge | Sandbox → supervised Foundry products. Paid **gates** (not payroll) | After real collaboration exists |
+| **6** | Talent Command Center | Funnel, tape, GitHub facts, auditable decisions | Thin from 4; full in 6 |
+| **7** | Flywheel | Leaders develop next cohort; Oscar may appear; ownership evidence trail | After command center is usable |
 | **8** | Employer productization | Configurable commercial product | Only after internal proof |
 
 Do not attempt the entire system in one code pass.
@@ -103,6 +114,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass H — COLLABORATE fill.** Requires Remember Me. Fictional partner Rafi. Handoff + what they need back. No real cohort. No UI. RESPOND still stub.
 - [x] **Pass I — RESPOND fill.** Fictional note from Rafi. Incorporate / hold / ask. Stance is a fact, not a score. No UI. DELIVER still stub.
 - [x] **Pass J — DELIVER fill.** Definition of done on their track. Complete or abandon — both close the beat. No grade. No UI. MULTIPLY still stub.
+- [x] **Pass K — Phase 0.5 talent-to-ownership architecture.** Academy + operating environment. Curriculum as missions. Burt / Ernie / Oscar. GitHub feeds the record. Partner throughout (posture, not a prize). **Phase 1 screens held.** MULTIPLY / LEAD still stub.
 
 ---
 
@@ -115,16 +127,20 @@ Do not attempt the entire system in one code pass.
 - Do not auto hire / reject / pay / grant equity.
 - Do not port KEY 01 / KEY 02.
 - Do not use AI as hiring authority.
+- Do not teach the academy as a conventional course catalog or LMS.
+- Do not use live FoundryOS / campaign production as a classroom.
+- Do not announce a partner track, internship funnel, or Oscar at the public door.
 
 ---
 
-## Recommended sequence after Ernie approves Phase 0
+## Recommended sequence
 
-1. Ernie decisions in `PHASE_1_BUILD_SPEC.md` (route, opening copy, first mess).
-2. Isolated branch `feat/talent-foundry-company-phase-1` from updated `main` or this branch.
-3. Build Phase 1 only. Local session. No identity API. No RedDirt.
-4. Phone-width walkthrough: stranger → ENTER → notice → mess → revelation → leave fascinated.
-5. Separate PR. Do not merge on the same day as campaign changes.
+1. **Ernie reviews Phase 0.5** (`PHASE_0_5_TALENT_TO_OWNERSHIP.md` + curriculum / environment / partners). Do not start `/workshop` UI before this.
+2. Ernie door decisions in `PHASE_1_BUILD_SPEC.md` (route, opening copy, first mess) — still valid as the *door*, now required to leave room for the environment.
+3. Isolated branch `feat/talent-foundry-company-phase-1` from updated `main` or this branch.
+4. Build Phase 1 only. Local session. No identity API. No RedDirt. No course nav. No Oscar.
+5. Phone-width walkthrough: stranger → ENTER → notice → mess → revelation → leave fascinated.
+6. Separate PR. Do not merge on the same day as campaign changes.
 
 ---
 

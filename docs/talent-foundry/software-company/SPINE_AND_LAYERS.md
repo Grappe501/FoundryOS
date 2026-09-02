@@ -1,6 +1,6 @@
 # Company Foundry — Master Spine and Layers
 
-**Status:** Waiting-pass D. Full 14-stage spine exists as a kernel. Phase 1 UI is **Ernie’s isolation zone**.  
+**Status:** Waiting-pass D + Phase 0.5. Full 14-stage spine exists as a kernel. Phase 1 UI is **Ernie’s isolation zone** and is **held** until 0.5 review. Academy missions attach to stages 4–12; they do not add a 15th stage.  
 **Code:** `apps/platform/lib/talent-foundry/implementations/company/spine/`
 
 This is how we move while Ernie builds the door: we do **not** fill his screens. We lay the highway and one uniform layer over every exit.
@@ -56,6 +56,8 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 `respond` is live after COLLABORATE is finished. A fictional note comes back on their track. They incorporate, hold, or ask. We record the stance — not whether they agreed, not a growth score. `stateId` stays `linger`.
 
 `deliver` is live after RESPOND is finished. They see a definition of done on their track and call it finished or leave it. Both outcomes close the beat. Not a grade. MULTIPLY and beyond remain stubs.
+
+Phase 0.5: academy missions (method, setup, clone, broken build, inspect data) **attach to stages 4–12** as work objects. They do not add a 15th stage and they do not start in Ernie’s door. A real cohort is not Rafi — it starts when they meet another participant. See `PHASE_0_5_TALENT_TO_OWNERSHIP.md`.
 
 ---
 

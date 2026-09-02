@@ -31,6 +31,9 @@ The workshop changes because of **facts**, not points.
 | They returned after a day | The bench light is already on |
 | They revised after feedback | The object shows both versions |
 | A human invited them to a cohort | Other benches appear |
+| They finished a training-repo mission | A repo / branch / log can sit on the bench |
+| They opened a PR | The PR is an object, not a link dumped in a form |
+| They met another participant | The cohort begins to exist in the room |
 
 Never: XP, levels, KEY 02, “thinking score unlocked the east wing.”
 
@@ -95,6 +98,14 @@ It is not “Kelly config with your logo.” Designing the tape now is what make
 
 ---
 
+## 9. The room becomes the development environment
+
+Phase 0.5: `/workshop` is not a marketing wrapper around an LMS. Setup, clone, broken build, schema inspection, and GitHub facts happen **in the same room** that started as a puzzle. See `OPERATING_ENVIRONMENT.md`.
+
+Phase 1 must not paint a finished ending that cannot grow those objects.
+
+---
+
 ## What would make this *less* futuristic (reject)
 
 - Adding a founder video so people “understand”
@@ -104,5 +115,8 @@ It is not “Kelly config with your logo.” Designing the tape now is what make
 - Recording the face
 - Typing people after the first artifact
 - Optimizing time-on-site as success
+- Teaching the method as a conventional course catalog
+- Putting Oscar or “academy” on the first screen
+- Requiring GitHub to ENTER
 
 Fascination + a readable tape + human judgment is the future version of hiring. Speed-to-apply is the past version.

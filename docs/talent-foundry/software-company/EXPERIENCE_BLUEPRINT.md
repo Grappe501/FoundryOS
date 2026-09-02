@@ -1,10 +1,11 @@
 # Company Foundry — Experience Blueprint
 
-**Status:** Phase 0. The product is optimized to make the right person **fascinated with the workshop**, not to complete an application.
+**Status:** Phase 0 + 0.5. The product is optimized to make the right person **fascinated with the workshop**, not to complete an application.
 
 Campaign question: **Will you show up?**  
 Company question: **What can you build, improve, lead, and multiply?**  
-Thinking-trace question: **How did they work when the thing was still unfinished?**
+Thinking-trace question: **How did they work when the thing was still unfinished?**  
+Internal product (0.5): a **talent-to-ownership academy and operating environment**. Never say that at the door.
 
 The workshop records a flight recorder of moves (see `THINKING_TRACE_MODEL.md`). It does not type the person.
 
@@ -36,9 +37,10 @@ Participant realizations (in this order, over time — not one sitting):
 
 1. Wait. They're watching how I work.
 2. Wait. I could actually build something here.
-3. Wait. There are other people doing this.
-4. Wait. This could become paid work.
-5. This isn't merely a hiring funnel. They're building the company out of the people who come through it.
+3. Wait. There is a method here — and they will show it to me.
+4. Wait. There are other people doing this.
+5. Wait. This could become paid work.
+6. This isn't merely a hiring funnel. They're building the company out of the people who come through it. I might be one of them for a long time.
 
 ---
 
@@ -61,6 +63,8 @@ The company experience stays mysterious **much longer** than Campaign Foundry.
 - Enumerable `KEY 01` / `KEY 02`
 - Intent picker that names intern / employee / partner
 - Any sentence that says this is an application
+- Academy / bootcamp / internship funnel language
+- Course catalog, module list, Oscar, GitHub login wall
 
 ### Opening feel
 
@@ -80,16 +84,17 @@ The product discloses itself through progress. Do not explain everything with pa
 | Their judgment has consequence | Stage 3 Solve | One decision → a result. Not told if “correct” | Company, jobs |
 | **This is Talent Foundry** | After Stage 3, before or as Stage 4 begins | First revelation: “We don't start with résumés. We start with the work.” | Company identity, hiring, pay, ownership |
 | They can **make** something | Stage 4 Make | Interest routing + first artifact | Who we are |
+| **How we make things here** | After first artifact | “You made something. Now we're going to show you how we make things here.” | Company, jobs, Oscar |
 | The work can be **remembered** | Stage 5 Remember | “YOU’VE LEFT SOMETHING BEHIND.” | Hiring pitch |
 | The workshop **continues** | Stage 6 Return | A deeper challenge appears | Cohort, pay |
 | **A company exists** and this is its workshop | Stage 6–7, only after return work has started | Indirect: tools, unfinished diagrams, internal names on artifacts — not an About page | Jobs, salary, equity |
-| **Other people** are in here | Stage 7 Collaborate | Real or tightly-scoped cohort contact | That this is selection |
+| **Other people** are in here | When they meet a real participant (after training missions; fictional Rafi is not this) | Another bench. Shared work. | That walking in earned a cohort seat |
 | **Hiring / placement opportunities exist** | Stage 9–11, after delivery + feedback | Human-authored invitation, never an auto banner | Compensation amounts as bait |
 | **A named cohort exists** | When a human invites them | Explicit invite to FOUNDry Cohort 01 (3–5 seats, work starts **2026-11-15**). Not on the public door. | That walking in earned a seat |
 | **Paid opportunities exist** | Stage 13 gate | Explicit human offer + agreement. Copy may say work can become paid **only** as a factual staff-initiated conversation | Equity |
 | **Ownership / partner path exists** | Stage 14 | Separate founder conversation after sustained value. Foundry preserves evidence; it does not offer equity | Nothing is “earned” by finishing stages |
 
-If a screen would make revelation 5 appear before revelation 1–3, it is wrong.
+If a screen would make the method turn, GitHub, Oscar, or company identity appear before revelations 1–3, it is wrong.
 
 ---
 
@@ -281,8 +286,9 @@ The workshop should physically seem to open as the participant progresses.
 | Moment | Visual |
 |---|---|
 | Early (1–3) | Dark, minimal, unknown |
-| After first work (4–6) | Traces of machinery, grids, workbench, unfinished diagrams |
-| After return / collaborate (7–11) | Workshop, projects, people, tools |
+| After first work (4–6) | Traces of machinery, grids, workbench, unfinished diagrams. Method turn. Room can grow a pane. |
+| After setup / training repo | Repo / branch / log / schema as objects on the bench — not a course nav |
+| After return / collaborate (7–11) | Workshop, projects, people, tools. Another person only after they exist. |
 | After human gates (12–14) | Cohort, company, real work surfaces |
 
 **THE PRODUCT DISCLOSES ITSELF THROUGH PROGRESS.**
@@ -317,9 +323,9 @@ First share beat: after the first revelation or after the first artifact — **n
 | Visit | Stages | Target feel |
 |---|---|---|
 | First walk-in | 1–3, maybe glimpse of 4 | Fascination. They almost understand. |
-| First making | 4–5 | I made something. They might remember me. |
-| Return | 6–9 | The workshop got more real. |
-| Cohort | 7, 10–11 | There are others. |
+| First making | 4–5 | I made something. They might remember me. Then: how we make things here. |
+| Return + training missions | 6–9 | Clone, branch, broken build, inspect data. Still maybe alone. |
+| Cohort | When they meet someone; then 10–11 | There are others. |
 | Real work | 12–13 | This is the company. |
 | Ownership talk | 14 | Rare, human, legal. |
 

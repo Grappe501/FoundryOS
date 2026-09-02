@@ -1,6 +1,6 @@
 # Company Foundry — Cohort Model
 
-**Status:** Phase 0 complete conceptual model. Do not build every backend table in the first slice.
+**Status:** Phase 0 complete conceptual model. Phase 0.5 addition: a cohort **begins to exist for the participant** when they encounter another real person — not when they finish a fictional partner, and not when they complete a course. Do not build every backend table in the first slice.
 
 Recovered adjacent shape: Pass 026 `beta_waitlist` tester cohorts (segment, invite, lifecycle). **Wrong meaning.** Hiring cohorts are selected by demonstrated work and human decision, not by demographic tester slot.
 
@@ -17,6 +17,8 @@ The company should be able to open:
 with a configurable number of participants.
 
 Participants must not be told that walking in the workshop places them in a cohort.
+
+Fictional bench partners (Rafi) are training wheels. **The cohort is not real until another participant is in the room.** Staff invite still governs FOUNDry Cohort 01 seats. Meeting someone in the workshop is not an automatic invite.
 
 ---
 
@@ -176,6 +178,8 @@ Invited
 - Not a guaranteed paid seat
 - Not a class with grades
 - Not a personality-sorted house
+- Not a bootcamp section
+- Not created by finishing Rafi or a setup mission
 
 ---
 

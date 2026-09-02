@@ -22,7 +22,7 @@ Talent Foundry Core
 | Person store | RedDirt `User` | FoundryOS `foundry_people` → later `user_profiles` | Tenant people |
 | Identity timing | After Visit One scenario + Key One | After first meaningful artifact | Configurable |
 | Opening reveal | People Rule → Kelly video | Workshop notices you. Company stays hidden | Tenant brand later |
-| Work type | Decisions, simulated shift, fictional people | Observation → artifact → cohort → real work | Tenant work |
+| Work type | Decisions, simulated shift, fictional people | Observation → artifact → method → training repo → cohort → Foundry products | Tenant work |
 | Staff surface | RedDirt `/admin/talent-foundry` | FoundryOS Talent Command Center | Tenant console |
 | Writes RedDirt | Yes (identify / continue) | **Never** | Never |
 
