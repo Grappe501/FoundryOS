@@ -3,6 +3,22 @@ import type { WorkshopSession, WorkshopStateId } from './types';
 /** How an object sits in the room. UI only. Not a score. */
 export type ObjectPresence = 'absent' | 'focus' | 'ghost';
 
+/** Foundry object grammar. How the thing has been handled — not a person grade. */
+export type ObjectLife = 'found' | 'touched' | 'opened' | 'changed' | 'persisted';
+
+export function objectLife(input: {
+  reachable?: boolean;
+  opened?: boolean;
+  changed?: boolean;
+  persisted?: boolean;
+}): ObjectLife {
+  if (input.persisted) return 'persisted';
+  if (input.changed) return 'changed';
+  if (input.opened) return 'opened';
+  if (input.reachable) return 'touched';
+  return 'found';
+}
+
 /** What the last draft looks like after their decision. A place-fact, not a grade. */
 export type DraftTrace = 'intact' | 'gone' | 'restored' | 'question' | 'copy';
 

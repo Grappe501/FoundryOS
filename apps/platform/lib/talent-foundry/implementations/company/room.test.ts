@@ -10,6 +10,7 @@ import {
 } from './journey';
 import { openMake } from './make/engine';
 import { roomDepth, workshopDepth } from './room';
+import { objectLife } from './traces';
 
 assert.equal(roomDepth('door'), 'void');
 assert.equal(roomDepth('notice'), 'object');
@@ -30,3 +31,9 @@ assert.equal(workshopDepth(s), 'linger');
 const opened = openMake(s, new Date('2026-09-02T05:01:00.000Z'));
 assert.equal(opened.ok, true);
 if (opened.ok) assert.equal(workshopDepth(opened.session), 'make');
+
+assert.equal(objectLife({}), 'found');
+assert.equal(objectLife({ reachable: true }), 'touched');
+assert.equal(objectLife({ reachable: true, opened: true }), 'opened');
+assert.equal(objectLife({ opened: true, changed: true }), 'changed');
+assert.equal(objectLife({ changed: true, persisted: true }), 'persisted');

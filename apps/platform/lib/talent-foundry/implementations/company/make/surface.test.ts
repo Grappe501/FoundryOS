@@ -11,7 +11,7 @@ import {
 import { chooseMakeTrack, openMake, submitMake } from './engine';
 import { MAKE_COPY } from './copy';
 import { scrapsFor } from './scraps';
-import { composeBuildBody, makeEligible, makeSurface, objectForTrack, trackLure, tracksOn } from './surface';
+import { composeBuildBody, makeEligible, makeSurface, objectForTrack, trackLure, tracksOn, tracksVisibleOn } from './surface';
 
 assert.equal(/tuesday|november|salary|oscar|academy|kelly|module|course|onboarding/i.test(JSON.stringify(MAKE_COPY)), false);
 assert.equal(MAKE_COPY.methodArrived, 'You made something.');
@@ -48,8 +48,15 @@ const chosen = chooseMakeTrack(opened.session, 'build', new Date('2026-09-02T05:
 assert.equal(makeSurface(chosen), 'attempt');
 assert.ok(trackLure('build').includes('Delete'));
 assert.deepEqual([...tracksOn('pulse')], ['build', 'design']);
+assert.equal(tracksOn('draft').length, 5);
 assert.equal(tracksOn('draft').includes('operate'), true);
 assert.equal(tracksOn('pulse').includes('operate'), false);
+assert.deepEqual([...tracksVisibleOn('pulse')], ['build', 'design']);
+assert.deepEqual([...tracksVisibleOn('draft', 'copy')], ['explain', 'grow']);
+assert.deepEqual([...tracksVisibleOn('draft', 'gone')], ['operate']);
+assert.equal(tracksVisibleOn('draft', 'copy').length <= 2, true);
+assert.equal(tracksVisibleOn('draft', 'question').includes('investigate'), true);
+assert.equal(tracksVisibleOn('draft', 'intact').includes('grow'), false);
 assert.equal(objectForTrack('build'), 'pulse');
 assert.equal(objectForTrack('operate'), 'draft');
 assert.equal(composeBuildBody('Start', 'Opens an empty bench.'), 'Start\nOpens an empty bench.');

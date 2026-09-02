@@ -48,7 +48,7 @@ export { tryAdvanceSpine, tryEnterStage, recordHumanGate } from './spine/kernel'
 export { chooseMakeTrack, openMake, submitMake } from './make/engine';
 export { MAKE_TRACKS, makeTrack } from './make/tracks';
 export { MAKE_COPY } from './make/copy';
-export { makeEligible, makeSurface, tracksOn } from './make/surface';
+export { makeEligible, makeSurface, tracksOn, tracksVisibleOn } from './make/surface';
 export { keepExploring, openRemember, rememberMe } from './remember/engine';
 export { REMEMBER_COPY } from './remember/copy';
 export { openReturn, submitReturn } from './return/engine';

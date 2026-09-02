@@ -18,7 +18,7 @@ import {
   makeSurface,
   objectForTrack,
   pulseSided,
-  tracksOn,
+  tracksVisibleOn,
   type BenchObject,
 } from '../../../lib/talent-foundry/implementations/company/make/surface';
 import {
@@ -214,11 +214,14 @@ export function WorkshopExperience() {
 
   const pulseNotes =
     surface === 'need' && bench === 'pulse' ? (
-      <MakeNeed tracks={tracksOn('pulse')} onChoose={(id) => apply((current) => chooseMakeTrack(current, id))} />
+      <MakeNeed tracks={tracksVisibleOn('pulse')} onChoose={(id) => apply((current) => chooseMakeTrack(current, id))} />
     ) : undefined;
   const draftNotes =
     surface === 'need' && bench === 'draft' ? (
-      <MakeNeed tracks={tracksOn('draft')} onChoose={(id) => apply((current) => chooseMakeTrack(current, id))} />
+      <MakeNeed
+        tracks={tracksVisibleOn('draft', draftTrace(session))}
+        onChoose={(id) => apply((current) => chooseMakeTrack(current, id))}
+      />
     ) : undefined;
 
   return (
@@ -226,6 +229,7 @@ export function WorkshopExperience() {
       depth={depth}
       stateId={session.stateId}
       surface={surface}
+      open={surface === 'need' || surface === 'attempt' ? bench : ''}
       traces={
         <>
           {workingPulse && trackId ? (

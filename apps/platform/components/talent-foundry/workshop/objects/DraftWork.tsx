@@ -25,24 +25,29 @@ export function DraftWork({
 
   return (
     <aside
-      className="ws-object ws-draft"
+      className="ws-object ws-leaf ws-draft"
       data-presence="focus"
       data-place="draft"
       data-origin="found"
+      data-life="changed"
       data-object-state="opened"
       data-work="true"
       data-trace={trace}
       aria-label="The last draft"
     >
-      {prior ? <pre className="ws-draft-prior">{prior}</pre> : <p className="ws-draft-empty"> </p>}
-      <textarea
-        className="ws-field"
-        value={body}
-        onChange={(e) => onBody(e.target.value)}
-        onInput={onTyping}
-        rows={5}
-        aria-label="The work"
-      />
+      <i className="ws-leaf-age" aria-hidden />
+      <i className="ws-leaf-back" aria-hidden />
+      <div className="ws-leaf-face">
+        {prior ? <pre className="ws-draft-prior">{prior}</pre> : <p className="ws-draft-empty"> </p>}
+        <textarea
+          className="ws-field"
+          value={body}
+          onChange={(e) => onBody(e.target.value)}
+          onInput={onTyping}
+          rows={5}
+          aria-label="The work"
+        />
+      </div>
     </aside>
   );
 }

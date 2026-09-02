@@ -1,4 +1,5 @@
 import type { ArtifactTrack } from '../spine/envelope';
+import type { DraftTrace } from '../traces';
 import type { WorkshopSession } from '../types';
 import { MAKE_TRACKS } from './tracks';
 
@@ -30,6 +31,16 @@ export function trackLure(trackId: string): string {
 
 export function tracksOn(object: BenchObject): readonly ArtifactTrack[] {
   return object === 'pulse' ? PULSE_TRACKS : DRAFT_TRACKS;
+}
+
+/** What the object currently exposes. Inventory stays on tracksOn. */
+export function tracksVisibleOn(object: BenchObject, trace?: DraftTrace): readonly ArtifactTrack[] {
+  if (object === 'pulse') return PULSE_TRACKS;
+  if (trace === 'gone') return ['operate'];
+  if (trace === 'question') return ['investigate', 'organize'];
+  if (trace === 'copy') return ['explain', 'grow'];
+  if (trace === 'restored') return ['explain'];
+  return ['operate'];
 }
 
 export function objectForTrack(trackId: string | null): BenchObject {
