@@ -4,6 +4,7 @@ import { useEffect, useRef, type ReactNode } from 'react';
 import type { BenchObject, MakeSurface } from '../../../lib/talent-foundry/implementations/company/make/surface';
 import type { RoomDepth } from '../../../lib/talent-foundry/implementations/company/room';
 import type { SoulState } from '../../../lib/talent-foundry/implementations/company/soul/engine';
+import type { InquirySurface } from '../../../lib/talent-foundry/implementations/company/soul/research';
 import type { WorkshopStateId } from '../../../lib/talent-foundry/implementations/company/types';
 
 function machineOf(surface: MakeSurface, depth: RoomDepth): 'dormant' | 'aware' | 'equipped' {
@@ -19,6 +20,8 @@ export function WorkshopRoom({
   surface = 'rest',
   open = '',
   soul,
+  inquiry = 'rest',
+  history = false,
   traces,
   voice,
 }: {
@@ -27,6 +30,8 @@ export function WorkshopRoom({
   surface?: MakeSurface;
   open?: BenchObject | '';
   soul?: SoulState;
+  inquiry?: InquirySurface;
+  history?: boolean;
   traces?: ReactNode;
   voice: ReactNode;
 }) {
@@ -64,6 +69,8 @@ export function WorkshopRoom({
       data-trust={soul?.trust}
       data-loop={soul?.loop}
       data-mystery={soul?.mystery.join(' ') || undefined}
+      data-inquiry={inquiry !== 'rest' ? inquiry : undefined}
+      data-history={history ? 'trail' : undefined}
     >
       <div className="ws-layer ws-layer--back" aria-hidden>
         <span className="ws-far-frame" />
@@ -94,6 +101,7 @@ export function WorkshopRoom({
           <span className="ws-bench-plate" />
           <span className="ws-bench-grain" />
           <span className="ws-bench-edge" />
+          {history ? <span className="ws-scratch" /> : null}
         </div>
       </div>
       <div className="ws-atmosphere" aria-hidden />

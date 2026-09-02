@@ -2,7 +2,90 @@
  * Foundry Soul Contract.
  * Permanent. The environment has a personality. It is not a chatbot.
  * It does not infer who someone is. It remembers what happened here.
+ * It does not teach answers. It teaches how to go get better answers.
  */
+
+/** FoundryOS does not teach people answers. It teaches them how to go get better answers. */
+export const FOUNDRY_DOCTRINE =
+  'FoundryOS does not teach people answers. It teaches them how to go get better answers.' as const;
+
+/** Culture, not a door poster. Lived as permission to leave and bring work back. */
+export const FOUNDRY_CULTURE =
+  'Use every tool you have. Bring back what you learned. Show us what changed.' as const;
+
+export const FOUNDRY_NOT_SCHOOL = 'Am I allowed to use ChatGPT?' as const;
+export const FOUNDRY_PERMISSION = 'Use everything you have. Then show us how you used it.' as const;
+
+/**
+ * ChatGPT is an intelligence interface: question → answer.
+ * FoundryOS is a persistent intelligence environment:
+ * problem → environment → history → research → AI → human collaboration → artifact → consequence → reflection → increased capability
+ */
+export const FOUNDRY_IS_NOT = 'a better chat box' as const;
+export const FOUNDRY_IS = 'a persistent intelligence environment' as const;
+
+/** Underneath nearly every mission. Not a bibliography form. */
+export const RESEARCH_LOOP = [
+  'encounter',
+  'wonder',
+  'search',
+  'compare',
+  'test',
+  'bring_back',
+  'apply',
+  'explain',
+] as const;
+
+export type ResearchLoopPhase = (typeof RESEARCH_LOOP)[number];
+
+/**
+ * Domains of endless inquiry. The problem generates the lesson.
+ * Never a visible module list.
+ */
+export const INQUIRY_DOMAINS = [
+  'product',
+  'design',
+  'human_behavior',
+  'engineering',
+  'ai',
+  'data',
+  'business',
+  'operations',
+  'communication',
+  'research',
+  'systems_thinking',
+  'ethics_and_judgment',
+  'leadership',
+] as const;
+
+export type InquiryDomain = (typeof INQUIRY_DOMAINS)[number];
+
+/**
+ * What the room may do. Default is nothing.
+ * No chatbot. No Oscar. No fake personification.
+ */
+export const SOUL_RESPONSE_KINDS = [
+  'silence',
+  'reveal',
+  'ask',
+  'acknowledge',
+  'expose',
+] as const;
+
+export type SoulResponseKind = (typeof SOUL_RESPONSE_KINDS)[number];
+
+/** Next emotions after the first ten. The room never says "you're talented." */
+export const SOUL_NEXT_FEELINGS = [
+  'curiosity_about_capability',
+  'productive_uncertainty',
+  'permission',
+  'discovery',
+  'competence',
+  'recognition_of_work',
+  'belonging',
+  'trust',
+  'identity_through_evidence',
+] as const;
 
 export const SOUL_TRAITS = [
   'observant',
@@ -51,6 +134,11 @@ export const SOUL_NEVER = [
   'confetti',
   'points',
   'badges',
+  'bibliography_form',
+  'tool_privilege',
+  'token_logging',
+  'score_research',
+  'personality_scoring',
 ] as const;
 
 export const SOUL_VOICE_FORBIDDEN = [

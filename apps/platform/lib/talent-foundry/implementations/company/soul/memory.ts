@@ -1,11 +1,12 @@
 import { messChoiceId } from '../traces';
 import type { WorkshopSession } from '../types';
+import { inquiryOf, inquirySurface } from './research';
 
 /** A fact the room can truthfully remember. Never a type on a person. */
 export type PlaceFact = {
   id: string;
   about: 'pulse' | 'draft' | 'made' | 'room';
-  kind: 'attended' | 'named' | 'chose' | 'left' | 'finished' | 'changed';
+  kind: 'attended' | 'named' | 'chose' | 'left' | 'finished' | 'changed' | 'looked' | 'brought';
   /** One restrained line. May be spoken or kept as a mark. */
   line: string;
 };
@@ -103,6 +104,49 @@ export function placeFacts(session: WorkshopSession): PlaceFact[] {
         line: 'You fixed the symptom.',
       });
     }
+  }
+
+  const inquiry = inquiryOf(session);
+  const surface = inquirySurface(session);
+  if (surface === 'away') {
+    facts.push({
+      id: 'went-to-look',
+      about: 'room',
+      kind: 'looked',
+      line: 'The work is still on the bench.',
+    });
+  }
+  if (inquiry.history.length > 0) {
+    facts.push({
+      id: 'brought-back',
+      about: 'made',
+      kind: 'brought',
+      line: 'You brought something back.',
+    });
+  }
+  if (inquiry.history.some((turn) => turn.rejected.trim()) || inquiry.receipts.some((r) => /reject|wrong|fail/i.test(r.usedFor))) {
+    facts.push({
+      id: 'rejected-something',
+      about: 'made',
+      kind: 'changed',
+      line: 'You rejected something.',
+    });
+  }
+  if (inquiry.history.some((turn) => turn.changed.trim())) {
+    facts.push({
+      id: 'changed-because',
+      about: 'made',
+      kind: 'changed',
+      line: 'Something changed because of it.',
+    });
+  }
+  if (inquiry.receipts.length > 0 || inquiry.history.some((turn) => turn.tools.length > 0)) {
+    facts.push({
+      id: 'used-a-tool',
+      about: 'room',
+      kind: 'brought',
+      line: 'You used a tool.',
+    });
   }
 
   return facts;

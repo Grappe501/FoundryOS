@@ -30,6 +30,8 @@ assert.equal(s.envelope.progress.discover, 'open');
 assert.equal(s.envelope.progress.make, 'locked');
 assert.equal(s.envelope.remember, null);
 assert.equal(s.envelope.cohortId, null);
+assert.equal(s.envelope.inquiry.current, null);
+assert.equal(s.envelope.inquiry.history.length, 0);
 
 assert.equal(tryEnterStage(s, 'notice').reason, 'ernie_zone');
 assert.equal(tryEnterStage(s, 'make').reason, 'locked');

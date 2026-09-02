@@ -914,6 +914,103 @@ body:has(.ws) {
   border-color: rgba(207, 203, 195, 0.2);
 }
 
+.ws-trail {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  pointer-events: none;
+}
+
+.ws-object[data-place='trail'] {
+  left: 8%;
+  bottom: 7%;
+  width: min(16rem, 28vw);
+  z-index: 4;
+}
+
+.ws-room[data-open='pulse'] .ws-object[data-place='trail'] {
+  left: 44%;
+  bottom: 8%;
+}
+
+.ws-room[data-open='draft'] .ws-object[data-place='trail'] {
+  left: auto;
+  right: 42%;
+  bottom: 8%;
+}
+
+.ws-room[data-surface='equipped'] .ws-object[data-place='trail'] {
+  left: 52%;
+  bottom: 18%;
+}
+
+.ws-bit {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  line-height: 1.35;
+  color: rgba(207, 203, 195, 0.4);
+  border-left: 1px solid rgba(207, 203, 195, 0.16);
+  padding: 0 0 0 8px;
+}
+
+.ws-bit[data-kind='rejected'],
+.ws-bit[data-kind='tested'] {
+  opacity: 0.55;
+}
+
+.ws-bit[data-kind='works'] {
+  color: rgba(207, 203, 195, 0.58);
+}
+
+.ws-bit[data-kind='looked'] {
+  opacity: 0.42;
+}
+
+.ws-scratch {
+  position: absolute;
+  left: 36%;
+  top: 61%;
+  width: 9%;
+  height: 1px;
+  background: rgba(207, 203, 195, 0.14);
+  transform: rotate(-9deg);
+  pointer-events: none;
+}
+
+.ws-room[data-history] .ws-bench-grain {
+  opacity: 0.9;
+}
+
+.ws-room[data-history] .ws-join,
+.ws-room[data-mystery~='old-join'] .ws-join {
+  opacity: 0.62;
+  background: rgba(207, 203, 195, 0.18);
+}
+
+.ws-room[data-inquiry='away'] .ws-object[data-work='true'] {
+  opacity: 0.7;
+}
+
+.ws-room[data-inquiry='away'] .ws-bench-plate {
+  opacity: 0.78;
+}
+
+.ws-field--line {
+  min-height: 0;
+  resize: none;
+}
+
+.ws-receipt {
+  margin-top: 22px;
+}
+
+.ws-receipt .ws-prompt {
+  font-size: 0.82rem;
+}
+
 .ws-room[data-surface='equipped'] .ws-line {
   font-size: 1rem;
   color: var(--ws-mute);
@@ -1235,6 +1332,16 @@ body:has(.ws) {
     width: 82vw;
   }
 
+  .ws-object[data-place='trail'],
+  .ws-room[data-open='pulse'] .ws-object[data-place='trail'],
+  .ws-room[data-open='draft'] .ws-object[data-place='trail'],
+  .ws-room[data-surface='equipped'] .ws-object[data-place='trail'] {
+    left: 6%;
+    right: auto;
+    bottom: 4%;
+    width: 70vw;
+  }
+
   .ws-slot-voice,
   .ws-room[data-state='linger'] .ws-slot-voice,
   .ws-room[data-surface='equipped'] .ws-slot-voice {
@@ -1316,6 +1423,9 @@ body:has(.ws) {
   .ws-consequence,
   .ws-soul,
   .ws-mystery,
+  .ws-trail,
+  .ws-bit,
+  .ws-scratch,
   .ws-threshold-mark {
     transition: none;
     animation: none;

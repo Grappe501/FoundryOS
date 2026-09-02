@@ -14,6 +14,8 @@ import {
 } from '../journey';
 import { chooseMakeTrack, openMake, submitMake } from '../make/engine';
 import {
+  FOUNDRY_CULTURE,
+  FOUNDRY_DOCTRINE,
   SOUL_DEFAULT_RESPONSE,
   SOUL_NEVER,
   SOUL_NOT_RELATIONSHIP,
@@ -40,6 +42,8 @@ assert.equal(SOUL_NEVER.includes('punish_leaving'), true);
 assert.equal(SOUL_NEVER.includes('fake_human_messages'), true);
 assert.equal(SOUL_NEVER.includes('streak_loss'), true);
 assert.equal(SOUL_DEFAULT_RESPONSE, 'silence');
+assert.ok(FOUNDRY_DOCTRINE.includes('better answers'));
+assert.ok(FOUNDRY_CULTURE.startsWith('Use every tool you have'));
 assert.ok(SOUL_TRAITS.includes('observant'));
 assert.ok(SOUL_PLACE_ATTACHMENT.some((line) => line.includes('unfinished work')));
 
@@ -101,7 +105,9 @@ const mid = readSoul(chosen);
 assert.equal(mid.trust, 'worker');
 assert.equal(mid.rhythm, 'agency');
 assert.equal(hasFact(mid.facts, 'left-unfinished'), true);
-assert.equal(mid.voice.kind, 'silence');
+assert.equal(mid.voice.kind, 'permission');
+assert.equal(mid.voice.line, 'Go look.');
+assert.equal(mid.voice.response, 'expose');
 
 const made = submitMake(
   chosen,

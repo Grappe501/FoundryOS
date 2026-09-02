@@ -1,4 +1,5 @@
 import { createWorkshopSession } from './journey';
+import { emptyInquiry } from './spine/envelope';
 import type { WorkshopSession, WorkshopStateId } from './types';
 import { WORKSHOP_IMPLEMENTATION, WORKSHOP_SESSION_KEY, WORKSHOP_SESSION_VERSION } from './types';
 
@@ -20,9 +21,35 @@ export type WorkshopDrafts = {
   artifact: string;
   reach: 'pulse' | 'draft' | '';
   happens: string;
+  finding: string;
+  inquiryChanged: string;
+  inquiryRejected: string;
+  inquiryTools: string;
+  receiptTool: string;
+  receiptUsedFor: string;
 };
 
-const EMPTY_DRAFTS: WorkshopDrafts = { notice: '', change: '', artifact: '', reach: '', happens: '' };
+const EMPTY_DRAFTS: WorkshopDrafts = {
+  notice: '',
+  change: '',
+  artifact: '',
+  reach: '',
+  happens: '',
+  finding: '',
+  inquiryChanged: '',
+  inquiryRejected: '',
+  inquiryTools: '',
+  receiptTool: '',
+  receiptUsedFor: '',
+};
+
+function hydrateInquiry(session: WorkshopSession): WorkshopSession {
+  if (session.envelope.inquiry) return session;
+  return {
+    ...session,
+    envelope: { ...session.envelope, inquiry: emptyInquiry() },
+  };
+}
 
 function isWorkshopSession(value: unknown): value is WorkshopSession {
   if (!value || typeof value !== 'object') return false;
@@ -45,7 +72,7 @@ export function loadWorkshopSession(): WorkshopSession {
     if (!raw) return createWorkshopSession();
     const parsed: unknown = JSON.parse(raw);
     if (!isWorkshopSession(parsed)) return createWorkshopSession();
-    return parsed;
+    return hydrateInquiry(parsed);
   } catch {
     return createWorkshopSession();
   }
@@ -75,6 +102,12 @@ export function loadWorkshopDrafts(): WorkshopDrafts {
       artifact: typeof parsed.artifact === 'string' ? parsed.artifact : '',
       reach: parsed.reach === 'pulse' || parsed.reach === 'draft' ? parsed.reach : '',
       happens: typeof parsed.happens === 'string' ? parsed.happens : '',
+      finding: typeof parsed.finding === 'string' ? parsed.finding : '',
+      inquiryChanged: typeof parsed.inquiryChanged === 'string' ? parsed.inquiryChanged : '',
+      inquiryRejected: typeof parsed.inquiryRejected === 'string' ? parsed.inquiryRejected : '',
+      inquiryTools: typeof parsed.inquiryTools === 'string' ? parsed.inquiryTools : '',
+      receiptTool: typeof parsed.receiptTool === 'string' ? parsed.receiptTool : '',
+      receiptUsedFor: typeof parsed.receiptUsedFor === 'string' ? parsed.receiptUsedFor : '',
     };
   } catch {
     return { ...EMPTY_DRAFTS };

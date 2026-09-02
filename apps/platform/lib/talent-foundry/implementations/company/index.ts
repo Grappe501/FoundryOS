@@ -51,7 +51,17 @@ export { MAKE_COPY } from './make/copy';
 export { makeEligible, makeSurface, tracksOn, tracksVisibleOn } from './make/surface';
 export { readSoul } from './soul/engine';
 export { placeFacts } from './soul/memory';
-export { SOUL_LOOP, SOUL_OPTIMIZES_FOR, SOUL_RELATIONSHIP, SOUL_TRAITS } from './soul/contract';
+export { addReceipt, bringBack, comeBack, inquirySurface, leaveToLook } from './soul/research';
+export { fragmentsFromSession } from './soul/fragments';
+export {
+  FOUNDRY_CULTURE,
+  FOUNDRY_DOCTRINE,
+  RESEARCH_LOOP,
+  SOUL_LOOP,
+  SOUL_OPTIMIZES_FOR,
+  SOUL_RELATIONSHIP,
+  SOUL_TRAITS,
+} from './soul/contract';
 export { keepExploring, openRemember, rememberMe } from './remember/engine';
 export { REMEMBER_COPY } from './remember/copy';
 export { openReturn, submitReturn } from './return/engine';

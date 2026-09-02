@@ -29,7 +29,9 @@ import {
   saveWorkshopSession,
 } from '../../../lib/talent-foundry/implementations/company/persist';
 import { workshopDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import { fragmentsFromSession } from '../../../lib/talent-foundry/implementations/company/soul/fragments';
 import { hasFact } from '../../../lib/talent-foundry/implementations/company/soul/memory';
+import { addReceipt, bringBack, comeBack, inquiryOf, inquirySurface, leaveToLook } from '../../../lib/talent-foundry/implementations/company/soul/research';
 import { readSoul } from '../../../lib/talent-foundry/implementations/company/soul/engine';
 import type { ArtifactTrack } from '../../../lib/talent-foundry/implementations/company/spine/envelope';
 import {
@@ -42,6 +44,7 @@ import {
 import type { DoorLineId, WorkshopSession } from '../../../lib/talent-foundry/implementations/company/types';
 import { DoorBeat } from './beats/DoorBeat';
 import { MakeAttemptVoice, MakeEquipped, MakeNeed } from './beats/MakeBeat';
+import { ResearchAway, ResearchBack, ResearchLook, ResearchReceipt } from './beats/ResearchBeat';
 import { LingerRest, NamedReveal } from './beats/NamedBeat';
 import { MessAftermath, MessChoices } from './beats/MessBeat';
 import { NoticeAck, NoticeWrite } from './beats/NoticeBeat';
@@ -49,6 +52,7 @@ import { DraftWork } from './objects/DraftWork';
 import { LastDraft } from './objects/LastDraft';
 import { PulseFirstRun } from './objects/PulseFirstRun';
 import { PulseWork } from './objects/PulseWork';
+import { FragmentTrail } from './objects/FragmentTrail';
 import { TheirWork } from './objects/TheirWork';
 import { WorkshopRoom } from './WorkshopRoom';
 
@@ -76,6 +80,12 @@ export function WorkshopExperience() {
   const [artifact, setArtifact] = useState('');
   const [happens, setHappens] = useState('');
   const [reach, setReach] = useState<BenchObject | ''>('');
+  const [finding, setFinding] = useState('');
+  const [inquiryChanged, setInquiryChanged] = useState('');
+  const [inquiryRejected, setInquiryRejected] = useState('');
+  const [inquiryTools, setInquiryTools] = useState('');
+  const [receiptTool, setReceiptTool] = useState('');
+  const [receiptUsedFor, setReceiptUsedFor] = useState('');
   const [benchPresent, setBenchPresent] = useState(false);
   const [ready, setReady] = useState(false);
 
@@ -87,6 +97,12 @@ export function WorkshopExperience() {
     setArtifact(drafts.artifact);
     setHappens(drafts.happens);
     setReach(drafts.reach);
+    setFinding(drafts.finding);
+    setInquiryChanged(drafts.inquiryChanged);
+    setInquiryRejected(drafts.inquiryRejected);
+    setInquiryTools(drafts.inquiryTools);
+    setReceiptTool(drafts.receiptTool);
+    setReceiptUsedFor(drafts.receiptUsedFor);
     setReady(true);
   }, []);
 
@@ -95,8 +111,22 @@ export function WorkshopExperience() {
   }, [session]);
 
   useEffect(() => {
-    if (ready) saveWorkshopDrafts({ notice, change, artifact, reach, happens });
-  }, [notice, change, artifact, reach, happens, ready]);
+    if (ready) {
+      saveWorkshopDrafts({
+        notice,
+        change,
+        artifact,
+        reach,
+        happens,
+        finding,
+        inquiryChanged,
+        inquiryRejected,
+        inquiryTools,
+        receiptTool,
+        receiptUsedFor,
+      });
+    }
+  }, [notice, change, artifact, reach, happens, finding, inquiryChanged, inquiryRejected, inquiryTools, receiptTool, receiptUsedFor, ready]);
 
   useEffect(() => {
     const opened = session?.clocks.linger?.openedAt;
@@ -133,6 +163,12 @@ export function WorkshopExperience() {
     setArtifact('');
     setHappens('');
     setReach('');
+    setFinding('');
+    setInquiryChanged('');
+    setInquiryRejected('');
+    setInquiryTools('');
+    setReceiptTool('');
+    setReceiptUsedFor('');
     setBenchPresent(false);
     setSession(resetWorkshopSession());
   }, []);
@@ -157,6 +193,9 @@ export function WorkshopExperience() {
     workingDraft || (surface === 'need' && bench === 'draft')
       ? 'focus'
       : draftPresence(session.stateId);
+  const looking = inquirySurface(session);
+  const researched = inquiryOf(session).history.length > 0 || inquiryOf(session).receipts.length > 0;
+  const trail = fragmentsFromSession(session);
 
   let voice = null;
   if (session.stateId === 'door') {
@@ -197,17 +236,64 @@ export function WorkshopExperience() {
     voice = <NamedReveal onContinue={() => apply((current) => linger(current))} />;
   } else if (surface === 'need') {
     voice = null;
-  } else if (surface === 'attempt' && trackId) {
+  } else if (surface === 'attempt' && trackId && looking === 'away') {
+    voice = <ResearchAway onBack={() => apply((current) => comeBack(current))} />;
+  } else if (surface === 'attempt' && trackId && looking === 'back') {
     voice = (
-      <MakeAttemptVoice
-        trackId={trackId as ArtifactTrack}
-        ready={artifactReady(trackId, artifact, happens)}
-        onFinish={() => {
-          const body = trackId === 'build' ? composeBuildBody(artifact, happens) : artifact;
-          if (!body.trim()) return;
-          apply((current) => submitMake(current, { body, finished: true }));
+      <ResearchBack
+        finding={finding}
+        changed={inquiryChanged}
+        rejected={inquiryRejected}
+        tools={inquiryTools}
+        onFinding={setFinding}
+        onChanged={setInquiryChanged}
+        onRejected={setInquiryRejected}
+        onTools={setInquiryTools}
+        onBring={() => {
+          if (!finding.trim()) return;
+          apply((current) =>
+            bringBack(current, {
+              finding,
+              changed: inquiryChanged,
+              rejected: inquiryRejected,
+              tools: inquiryTools,
+            }),
+          );
+          setFinding('');
+          setInquiryChanged('');
+          setInquiryRejected('');
+          setInquiryTools('');
         }}
       />
+    );
+  } else if (surface === 'attempt' && trackId) {
+    voice = (
+      <>
+        <MakeAttemptVoice
+          trackId={trackId as ArtifactTrack}
+          ready={artifactReady(trackId, artifact, happens)}
+          onFinish={() => {
+            const body = trackId === 'build' ? composeBuildBody(artifact, happens) : artifact;
+            if (!body.trim()) return;
+            apply((current) => submitMake(current, { body, finished: true }));
+          }}
+        />
+        <ResearchLook soulLine={readSoul(session).voice.line} onLook={() => apply((current) => leaveToLook(current))} />
+        {researched ? (
+          <ResearchReceipt
+            tool={receiptTool}
+            usedFor={receiptUsedFor}
+            onTool={setReceiptTool}
+            onUsedFor={setReceiptUsedFor}
+            onLeave={() => {
+              if (!receiptTool.trim() || !receiptUsedFor.trim()) return;
+              apply((current) => addReceipt(current, { tool: receiptTool, usedFor: receiptUsedFor }));
+              setReceiptTool('');
+              setReceiptUsedFor('');
+            }}
+          />
+        ) : null}
+      </>
     );
   } else if (surface === 'equipped') {
     voice = <MakeEquipped onReset={reset} soulLine={readSoul(session).voice.line} />;
@@ -241,6 +327,8 @@ export function WorkshopExperience() {
       surface={surface}
       open={surface === 'need' || surface === 'attempt' ? bench : ''}
       soul={soul}
+      inquiry={looking}
+      history={trail.length > 0}
       traces={
         <>
           {workingPulse && trackId ? (
@@ -294,6 +382,7 @@ export function WorkshopExperience() {
             />
           )}
           <TheirWork presence={artifactPresence(session)} body={session.envelope.artifact?.body ?? artifact} />
+          <FragmentTrail fragments={trail} />
         </>
       }
       voice={voice}

@@ -43,6 +43,14 @@ Need → Friction → Discovery → Tool → Attempt → Evidence → Feedback �
 
 The psychology underneath is the Soul loop. See `FOUNDRY_SOUL.md`.
 
+Underneath nearly every mission the participant may also run the research loop:
+
+```txt
+Encounter → Wonder → Search → Compare → Test → Bring Back → Apply → Explain
+```
+
+FoundryOS does not teach answers. It teaches them how to go get better answers. AI is a tool inside that loop, not the product.
+
 ```txt
 Curiosity → Agency → Friction → Discovery → Attempt → Competence → Consequence → Recognition → Increased Capability → New Mystery
 ```

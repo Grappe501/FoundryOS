@@ -128,6 +128,38 @@ export type HumanGateRecord = {
   note?: string;
 };
 
+/** One time they left the bench to find something out. No score. */
+export type InquiryTurn = {
+  id: string;
+  question: string;
+  finding: string;
+  changed: string;
+  rejected: string;
+  tools: string[];
+  leftAt: string;
+  returnedAt: string | null;
+  broughtAt: string | null;
+};
+
+/** Voluntary. Attached to work, not a profile badge. */
+export type ToolReceipt = {
+  id: string;
+  at: string;
+  tool: string;
+  usedFor: string;
+  about: 'pulse' | 'draft' | 'made' | 'room';
+};
+
+export type InquiryState = {
+  current: InquiryTurn | null;
+  history: InquiryTurn[];
+  receipts: ToolReceipt[];
+};
+
+export function emptyInquiry(): InquiryState {
+  return { current: null, history: [], receipts: [] };
+}
+
 /** Uniform layer over every spine stage. Stubs carry the same shape. */
 export type SpineEnvelope = {
   spineStage: SpineStageId;
@@ -149,6 +181,7 @@ export type SpineEnvelope = {
   own: OwnTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
+  inquiry: InquiryState;
 };
 
 export function emptyProgress(): Record<SpineStageId, StageProgress> {
@@ -179,5 +212,6 @@ export function createEnvelope(): SpineEnvelope {
     own: null,
     gates: [],
     cohortId: null,
+    inquiry: emptyInquiry(),
   };
 }

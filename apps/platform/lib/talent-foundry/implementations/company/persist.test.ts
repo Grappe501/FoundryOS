@@ -8,3 +8,6 @@ assert.equal(s.implementation, WORKSHOP_IMPLEMENTATION);
 assert.notEqual(s.sessionKey, 'tf.kelly.v1');
 assert.equal(JSON.stringify(s).includes('reddirt'), false);
 assert.equal(JSON.stringify(s).includes('kelly'), false);
+assert.equal(s.envelope.inquiry.current, null);
+assert.equal(s.envelope.inquiry.history.length, 0);
+assert.equal(s.envelope.inquiry.receipts.length, 0);
