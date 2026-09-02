@@ -52,6 +52,7 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | `THINKING_TRACE_MODEL.md` | How they think — flight recorder, not a score |
 | `SCENARIO_LAB.md` | NOTICE / MESS / artifact seeds tagged by thinking moves |
 | `FUTURE_SURFACES.md` | Transparent tape, living room, interview-from-tape |
+| `SPINE_AND_LAYERS.md` | 14-stage spine; Ernie isolation; uniform beat layer |
 | `PHASE_1_BUILD_SPEC.md` | Exact next build |
 | this file | Phases 0–8 and sequencing |
 
@@ -95,6 +96,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass A — Thinking trace.** How they think is a first-class flight recorder (`THINKING_TRACE_MODEL.md` + `thinking-trace.ts`). Moves, not types. No score/trait/fit.
 - [x] **Pass B — Contracts + lab + future surfaces.** Workshop journey engine, N1/M1 seeds, `workshop.test.ts`, `SCENARIO_LAB.md`, `FUTURE_SURFACES.md`. Phase 1 renders the room against these contracts.
 - [x] **Pass C — Observation clocks + Cohort 01 lock.** Silent linger / hesitation / coverage (read vs skim as facts). M1 is **The last draft** — no Tuesday. `COHORT_01`: 3–5 people, work starts **2026-11-15**. Never a seriousness score.
+- [x] **Pass D — Master spine + uniform layer.** All 14 stages exist. Ernie-zone (door → linger) is frozen. Uniform beat/envelope lifts every stage equally. Stages 4–14 are stubs; 12–14 also require human gates. No `/workshop` UI. See `SPINE_AND_LAYERS.md`.
 
 ---
 

@@ -23,6 +23,7 @@ Talent Foundry is a FoundryOS **product family**: one core, parallel implementat
 - `docs/talent-foundry/software-company/THINKING_TRACE_MODEL.md`
 - `docs/talent-foundry/software-company/SCENARIO_LAB.md`
 - `docs/talent-foundry/software-company/FUTURE_SURFACES.md`
+- `docs/talent-foundry/software-company/SPINE_AND_LAYERS.md`
 
 Company Foundry must not write RedDirt. Do not alter the live Kelly route to build it.
 

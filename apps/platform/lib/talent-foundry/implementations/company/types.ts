@@ -3,6 +3,8 @@
  * Isolated from Campaign Foundry — do not import Kelly journey types.
  */
 
+import type { SpineEnvelope } from './spine/envelope';
+
 export const WORKSHOP_IMPLEMENTATION = 'company' as const;
 export const WORKSHOP_SESSION_KEY = 'workshop.v1';
 export const WORKSHOP_SESSION_VERSION = 1 as const;
@@ -130,6 +132,8 @@ export type WorkshopSession = {
   clocks: Record<string, BeatClock>;
   regionDwells: Record<string, RegionDwell>;
   doorPacing: DoorPacing;
+  /** Uniform layer over all 14 spine stages. Ernie-zone UI does not render this. */
+  envelope: SpineEnvelope;
 };
 
 export type NoticeRegion = {

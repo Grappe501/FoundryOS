@@ -27,6 +27,7 @@ const s0 = createWorkshopSession(new Date('2026-09-02T03:00:00.000Z'));
 assert.equal(s0.implementation, 'company');
 assert.equal(s0.sessionKey, 'workshop.v1');
 assert.equal(s0.stateId, 'door');
+assert.equal(s0.envelope.spineStage, 'discover');
 assert.equal(s0.noticeId, 'N1');
 assert.equal(s0.messId, 'M1');
 assert.ok(s0.clocks.door);
@@ -90,6 +91,8 @@ assert.equal(named.clocks.mess.afterSubmitLingerMs, 8_000);
 
 const done = linger(named, new Date('2026-09-02T03:01:22.000Z'));
 assert.equal(done.stateId, 'linger');
+assert.equal(done.envelope.progress.solve, 'complete');
+assert.equal(done.envelope.progress.make, 'locked');
 
 for (const event of done.thinking) {
   assertPlainThinkingEvent(event);

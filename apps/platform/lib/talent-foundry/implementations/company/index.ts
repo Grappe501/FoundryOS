@@ -34,6 +34,9 @@ export {
 } from './journey';
 export { assertPlainThinkingEvent, closeBeatIgnores, recordThinking, thinkingMoves } from './thinking-trace';
 export { coverageFact, textMetrics } from './clocks';
+export { SPINE_STAGE_IDS, SPINE_STAGES, ERNIE_ZONE_STATES } from './spine/stages';
+export type { SpineStageId } from './spine/stages';
+export { tryAdvanceSpine, tryEnterStage, recordHumanGate } from './spine/kernel';
 export {
   MESS_M1,
   MESS_SEEDS,

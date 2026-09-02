@@ -8,9 +8,15 @@ import {
   touchRegion,
 } from './clocks';
 import { PHASE_1_MESS, PHASE_1_NOTICE, messChoice } from './scenarios/lab';
+import { createEnvelope } from './spine/envelope';
+import { syncEnvelope } from './spine/kernel';
 import { closeBeatIgnores, recordThinking } from './thinking-trace';
 import type { DoorLineId, WorkshopSession, WorkshopStateId } from './types';
 import { WORKSHOP_IMPLEMENTATION, WORKSHOP_SESSION_KEY, WORKSHOP_SESSION_VERSION } from './types';
+
+function emit(session: WorkshopSession): WorkshopSession {
+  return syncEnvelope(session);
+}
 
 const NEXT: Record<WorkshopStateId, WorkshopStateId | null> = {
   door: 'notice',
@@ -26,7 +32,7 @@ const EMPTY_DOOR = { line1At: null, line2At: null, line3At: null, enterAt: null 
 
 export function createWorkshopSession(now = new Date()): WorkshopSession {
   const startedAt = now.toISOString();
-  return {
+  const created: WorkshopSession = {
     v: WORKSHOP_SESSION_VERSION,
     implementation: WORKSHOP_IMPLEMENTATION,
     sessionKey: WORKSHOP_SESSION_KEY,
@@ -57,7 +63,9 @@ export function createWorkshopSession(now = new Date()): WorkshopSession {
     },
     regionDwells: {},
     doorPacing: { ...EMPTY_DOOR, line1At: startedAt },
+    envelope: createEnvelope(),
   };
+  return emit(created);
 }
 
 export function nextWorkshopState(stateId: WorkshopStateId): WorkshopStateId | null {
@@ -84,22 +92,23 @@ export function enterWorkshop(session: WorkshopSession, now = new Date()): Works
   let next = revealDoorLine(session, 'enter', now);
   next = submitBeat(next, 'door', now);
   next = openBeat(next, 'notice', now);
-  return {
+  const entered = {
     ...next,
-    stateId: 'notice',
+    stateId: 'notice' as const,
     flags: { ...next.flags, entered: true },
     evidence: [
       ...next.evidence,
       {
         id: `enter-${at}`,
         at,
-        stateId: 'door',
-        type: 'access_event',
+        stateId: 'door' as const,
+        type: 'access_event' as const,
         label: 'ENTER',
         value: { doorLingerMs: next.clocks.door?.lingerMs, doorPacing: next.doorPacing },
       },
     ],
   };
+  return emit(entered);
 }
 
 export function markNoticeRegion(
@@ -148,7 +157,7 @@ export function submitNotice(
   );
   next = submitBeat(next, 'notice', now);
   const coverage = coverageFact(next, PHASE_1_NOTICE, `${input.notice} ${input.change}`);
-  return {
+  return emit({
     ...next,
     stateId: 'notice_ack',
     flags: { ...next.flags, noticeComplete: true },
@@ -168,7 +177,7 @@ export function submitNotice(
         },
       },
     ],
-  };
+  });
 }
 
 export function submitMess(session: WorkshopSession, choiceId: string, now = new Date()): WorkshopSession {
@@ -185,7 +194,7 @@ export function submitMess(session: WorkshopSession, choiceId: string, now = new
     });
   }
   next = submitBeat(next, 'mess', now);
-  return {
+  return emit({
     ...next,
     stateId: 'mess_consequence',
     flags: { ...next.flags, messComplete: true },
@@ -208,14 +217,14 @@ export function submitMess(session: WorkshopSession, choiceId: string, now = new
         value: choice.consequence,
       },
     ],
-  };
+  });
 }
 
 export function revealName(session: WorkshopSession, now = new Date()): WorkshopSession {
   const at = now.toISOString();
   let next = markAfterSubmitLinger(session, 'mess', now);
   next = openBeat(next, 'named', now);
-  return {
+  return emit({
     ...next,
     stateId: 'named',
     flags: { ...next.flags, named: true },
@@ -230,13 +239,13 @@ export function revealName(session: WorkshopSession, now = new Date()): Workshop
         value: { messAftermathLingerMs: next.clocks.mess?.afterSubmitLingerMs },
       },
     ],
-  };
+  });
 }
 
 export function linger(session: WorkshopSession, now = new Date()): WorkshopSession {
   let next = submitBeat(session, 'named', now);
   next = openBeat(next, 'linger', now);
-  return { ...next, stateId: 'linger' };
+  return emit({ ...next, stateId: 'linger' });
 }
 
 export function advanceWorkshop(session: WorkshopSession, now = new Date()): WorkshopSession {
@@ -245,7 +254,7 @@ export function advanceWorkshop(session: WorkshopSession, now = new Date()): Wor
       return enterWorkshop(session, now);
     case 'notice_ack': {
       const leftAck = markAfterSubmitLinger(session, 'notice', now);
-      return openBeat({ ...leftAck, stateId: 'mess' }, 'mess', now);
+      return emit(openBeat({ ...leftAck, stateId: 'mess' }, 'mess', now));
     }
     case 'mess_consequence':
       return revealName(session, now);
