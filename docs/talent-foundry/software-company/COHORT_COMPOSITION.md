@@ -100,6 +100,27 @@ Forbidden public copy: personality type, score, grit, apply for Cohort 01, Nov 1
 
 Removed from production: `recommendSeats()`, candidate-ID shortlists, production ranking.
 
+---
+
+## Vacancy after a human decision (C0.2)
+
+Searching for a cohort is not the same as bringing someone in.
+
+After a human invite, staff may record which **demonstrated function** that person is expected to fill. That closes the vacancy. It does not write a type onto the person.
+
+```txt
+For Cohort 01, staff assigned this person to fulfill the Navigator function
+based on demonstrated evidence.
+```
+
+Not: `Steve = Navigator`.
+
+`assignFunction()` requires a human decision record. Navigator filled → open needs become Builder + Connector. `compositionGaps()` evaluates remaining openings only. All demonstrated evidence on the assignment is retained — a later tape may still show a second planning voice.
+
+Witness / Reframer evidence seen while the founding three is still forming is retained as an **expansion observation**. Factual moves only. No score. No reserved seat. No ranked waitlist. Human review if the cohort expands to five.
+
+When Navigator, Builder, and Connector are filled: **Founding composition complete.** The software still does not invite.
+
 Never stored on a participant: score, trait, fit, rank, personality, grit, seriousness.
 
 `cohortId` stays empty until a human invite. Phase 2 MAKE is open. Remember Me still held.

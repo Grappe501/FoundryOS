@@ -131,6 +131,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass U — OWN fill.** Founder conversation after `ownership_conversation`. Subject + enter. Not equity granted. Not a partner track. No UI. Spine contracts complete. Phase 2 still held.
 - [x] **Pass S — Cohort composition.** 1000 simulations. Starter 3 = navigator / builder / connector. Expand 2 = witness / reframer. Staff organize tapes. Humans still invite. No personality on the door.
 - [x] **Pass C0.1 — Composition without automated selection.** Model approved. Production describes missing evidence (`compositionGaps`). No candidate IDs. No ranking. Connector is load-bearing. `teamLift` remains research-only. Phase 2 held.
+- [x] **Pass C0.2 — Cohort vacancy intelligence.** After a human assignment, that function closes. Evidence stays on the record. Expansion observations for Witness/Reframer are retained without ranking. No auto-invite.
 - [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. **APPROVED.**
 - [x] **Pass V — Phase 2 MAKE open.** Linger bench becomes work. First artifact. Method turn. Observed → equipped. No brochure. No Remember Me. No auto-advance. PR #5 stays open.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.

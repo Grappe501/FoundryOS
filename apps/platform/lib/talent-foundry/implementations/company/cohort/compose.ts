@@ -1,6 +1,7 @@
 import type { ThinkingMove } from '../types';
 import type { PostureMix } from './lift';
 import { POSTURE_IDS, POSTURES, type PostureId } from './postures';
+import { FUNCTION_CAPABILITY, type CohortCompositionState, type FoundingFunction } from './vacancy';
 
 /** Locked after the 1000-sim pass. Plan + make + glue. Connector is load-bearing. */
 export const STARTER_THREE: readonly PostureId[] = ['navigator', 'builder', 'connector'];
@@ -27,6 +28,8 @@ export type CompositionGaps = {
   humanInviteStillRequired: true;
   assignsSeats: false;
   selectsPeople: false;
+  foundingComplete?: boolean;
+  openFunctions?: FoundingFunction[];
 };
 
 export type CohortSeat = {
@@ -159,14 +162,36 @@ export function mixFromMoves(moves: ThinkingMove[]): PostureMix {
  * Production composition helper. Describes missing and thin demonstrated
  * evidence in an already-invited group. Does not name, rank, or assign people.
  */
-export function compositionGaps(invitedTapes: readonly ThinkingMove[][]): CompositionGaps {
-  const needs = CAPABILITIES.map((cap) => describeCapability(invitedTapes, cap));
+export function compositionGaps(
+  invitedTapes: readonly ThinkingMove[][],
+  options?: { composition?: CohortCompositionState },
+): CompositionGaps {
+  const composition = options?.composition;
+  if (composition?.foundingComplete) {
+    return {
+      needs: [],
+      notes: ['Founding composition complete.'],
+      humanInviteStillRequired: true,
+      assignsSeats: false,
+      selectsPeople: false,
+      foundingComplete: true,
+      openFunctions: [],
+    };
+  }
+
+  const openCaps = composition
+    ? new Set(composition.open.map((id) => FUNCTION_CAPABILITY[id]))
+    : null;
+  const catalog = openCaps ? CAPABILITIES.filter((cap) => openCaps.has(cap.id)) : CAPABILITIES;
+  const needs = catalog.map((cap) => describeCapability(invitedTapes, cap));
   return {
     needs,
-    notes: synthesizeNotes(needs),
+    notes: synthesizeNotes(needs, Boolean(openCaps)),
     humanInviteStillRequired: true,
     assignsSeats: false,
     selectsPeople: false,
+    foundingComplete: false,
+    openFunctions: composition ? [...composition.open] : undefined,
   };
 }
 
@@ -199,8 +224,8 @@ function kindFor(hits: number, tapesWith: number, invited: number): CapabilityNe
   return 'covered';
 }
 
-function synthesizeNotes(needs: CapabilityNeed[]): string[] {
-  const byId = Object.fromEntries(needs.map((n) => [n.capability, n])) as Record<CapabilityId, CapabilityNeed>;
+function synthesizeNotes(needs: CapabilityNeed[], openingsOnly = false): string[] {
+  const byId = Object.fromEntries(needs.map((n) => [n.capability, n])) as Partial<Record<CapabilityId, CapabilityNeed>>;
   const notes: string[] = [];
   const plan = byId.planning;
   const ship = byId.shipping;
@@ -208,24 +233,25 @@ function synthesizeNotes(needs: CapabilityNeed[]): string[] {
   const notice = byId.noticing;
   const reframe = byId.reframing;
 
-  const planPresent = plan.kind === 'covered' || plan.kind === 'overrepresented' || plan.kind === 'thin';
-  const shipPresent = ship.kind === 'covered' || ship.kind === 'overrepresented' || ship.kind === 'thin';
-  const planStrong = plan.kind === 'covered' || plan.kind === 'overrepresented';
-  const shipStrong = ship.kind === 'covered' || ship.kind === 'overrepresented';
+  const present = (n?: CapabilityNeed) =>
+    n && (n.kind === 'covered' || n.kind === 'overrepresented' || n.kind === 'thin');
+  const strong = (n?: CapabilityNeed) => n && (n.kind === 'covered' || n.kind === 'overrepresented');
 
-  if (planStrong && shipStrong && (collab.kind === 'missing' || collab.kind === 'thin')) {
+  if (plan && ship && collab && strong(plan) && strong(ship) && (collab.kind === 'missing' || collab.kind === 'thin')) {
     notes.push('Current invited group strongly covers planning and shipping; collaboration evidence is thin.');
     notes.push(CONNECTOR_NOTE);
-  } else if (collab.kind === 'missing' || collab.kind === 'thin') {
+  } else if (collab && (collab.kind === 'missing' || collab.kind === 'thin')) {
     notes.push(collab.note);
     notes.push(CONNECTOR_NOTE);
   }
 
-  if (!planPresent) notes.push(plan.note);
-  if (!shipPresent) notes.push(ship.note);
+  if (plan && !present(plan)) notes.push(plan.note);
+  if (ship && !present(ship)) notes.push(ship.note);
 
-  if (notice.kind === 'missing' || notice.kind === 'thin') notes.push(notice.note);
-  else if (reframe.kind === 'missing' || reframe.kind === 'thin') notes.push(reframe.note);
+  if (!openingsOnly) {
+    if (notice && (notice.kind === 'missing' || notice.kind === 'thin')) notes.push(notice.note);
+    else if (reframe && (reframe.kind === 'missing' || reframe.kind === 'thin')) notes.push(reframe.note);
+  }
 
   return notes;
 }

@@ -77,6 +77,12 @@ export {
   STARTER_THREE,
   mixFromMoves,
 } from './cohort/compose';
+export {
+  assignFunction,
+  describeVacancies,
+  emptyComposition,
+  retainExpansionEvidence,
+} from './cohort/vacancy';
 export { runCohortSimulations } from './cohort/simulate';
 export {
   MESS_M1,
