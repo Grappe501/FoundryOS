@@ -102,4 +102,4 @@ Removed from production: `recommendSeats()`, candidate-ID shortlists, production
 
 Never stored on a participant: score, trait, fit, rank, personality, grit, seriousness.
 
-`cohortId` stays empty until a human invite. Phase 2 door still held.
+`cohortId` stays empty until a human invite. Phase 2 MAKE is open. Remember Me still held.

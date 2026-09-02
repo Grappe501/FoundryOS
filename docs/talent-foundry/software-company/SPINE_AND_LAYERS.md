@@ -43,7 +43,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 14 own       LIVE  spine   human gate (contract only — founder conversation, no UI)
 ```
 
-After linger, the participant is **done with Ernie’s first visit**. `make` is **open** in the envelope (eligible). `openMake` / `tryAdvanceSpine` may enter MAKE **without changing** `stateId` (`linger` stays linger). That is the contract fill. There is still no `/workshop` MAKE screen.
+After linger, the participant is **done with Ernie’s first visit**. `make` is **open** in the envelope (eligible). `openMake` / `tryAdvanceSpine` may enter MAKE **without changing** `stateId` (`linger` stays linger). Phase 2 mounts MAKE on that bench. They touch the unfinished work. No auto-advance.
 
 `chooseMakeTrack` + `submitMake` record interest routing and a small artifact. They do not type the person as Builder/Designer.
 
@@ -99,7 +99,7 @@ Each layer lands on **all stages at once** as a field on the session.
 
 ## Next fill is UI, not another stub
 
-All 14 stage contracts are live. There is no stage 15. Next work is Phase 2 MAKE UI after linger gravity is approved — not another spine contract.
+All 14 stage contracts are live. There is no stage 15. Phase 2 MAKE UI is open on the linger bench.
 
 1. Leave Ernie-zone states alone.
 2. Do not invent a 15th stage.
@@ -109,7 +109,6 @@ All 14 stage contracts are live. There is no stage 15. Next work is Phase 2 MAKE
 
 ## What this pass does *not* do
 
-- No `/workshop` MAKE screen
 - No Remember Me UI
 - No SAVE MY PLACE table
 - No cohort invite emails

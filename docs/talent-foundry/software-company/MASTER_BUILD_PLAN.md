@@ -3,7 +3,7 @@
 **Program:** Talent Foundry implementation #2 — software-company talent-to-ownership academy and operating environment  
 **Branch:** `feat/talent-foundry-company-phase-0`  
 **Rule:** Do not alter live Campaign Foundry. Do not modify RedDirt. Do not merge until Ernie reviews.  
-**Now:** Phase 1.1 **HOLD**. **Phase 1.2 experience polish** on the existing door. Do not start Phase 2. Keep building on this branch; **do not merge PR #5 yet**.  
+**Now:** Phase 1.2 **APPROVED**. **Phase 2 / MAKE** open — first artifact, observed → equipped. Keep building on this branch; **do not merge PR #5 yet**.  
 **Discipline:** `BUILD_DISCIPLINE.md` — build locally → validate → commit → push → Netlify preview → review → only then advance. Preview is the close gate. Production is not.
 
 This is **not** the Kelly Grappe experience with different copy.  
@@ -84,8 +84,8 @@ Campaign architecture lock (“not a lifelong world,” RedDirt identity) remain
 | **0.5** | Talent-to-ownership experience | Academy + environment + curriculum-as-missions + AI partners. **CANON.** | Approved 2026-09-02 |
 | **1** | Mysterious front door | `/workshop` through linger. Anonymous. Room can become an environment. | Built. Gravity not yet proven. |
 | **1.1** | Experience proof | Cinematic / polish on the existing door. Linger = unfinished business. Room remembers. **No new journey.** | **HOLD.** Direction right. |
-| **1.2** | Experience polish | Same door. Silence, type, threshold, linger pull. Nothing designed to impress. | **This pass. Do not start Phase 2.** |
-| **2** | First artifact + method turn | MAKE, observed → equipped, Capability Reveal starts | Only after the door has gravity |
+| **1.2** | Experience polish | Same door. Silence, type, threshold, linger pull. Nothing designed to impress. | **APPROVED** 2026-09-02 |
+| **2** | First artifact + method turn | MAKE, observed → equipped, Capability Reveal starts | **This pass.** Remember Me held. |
 | **3** | Deeper work + training repo | Return, fictional collaborate/respond/deliver, clone / branch / broken build / inspect-data | After they can return |
 | **4** | Cohort becomes real | They meet another participant. Cohort objects. GitHub org. Shared repos. | After they can work without destroying the bench |
 | **5** | Real-work bridge | Sandbox → supervised Foundry products. Paid **gates** (not payroll) | After real collaboration exists |
@@ -131,7 +131,8 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass U — OWN fill.** Founder conversation after `ownership_conversation`. Subject + enter. Not equity granted. Not a partner track. No UI. Spine contracts complete. Phase 2 still held.
 - [x] **Pass S — Cohort composition.** 1000 simulations. Starter 3 = navigator / builder / connector. Expand 2 = witness / reframer. Staff organize tapes. Humans still invite. No personality on the door.
 - [x] **Pass C0.1 — Composition without automated selection.** Model approved. Production describes missing evidence (`compositionGaps`). No candidate IDs. No ranking. Connector is load-bearing. `teamLift` remains research-only. Phase 2 held.
-- [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. Phase 2 held.
+- [x] **Pass T — Phase 1.2 experience polish.** Same door. Silence, type, threshold, linger pull. Nothing designed to impress. **APPROVED.**
+- [x] **Pass V — Phase 2 MAKE open.** Linger bench becomes work. First artifact. Method turn. Observed → equipped. No brochure. No Remember Me. No auto-advance. PR #5 stays open.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 - [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 
@@ -154,9 +155,9 @@ Do not attempt the entire system in one code pass.
 
 ## Recommended sequence
 
-1. **Phase 1.2.** Walk `/workshop`. Sit at linger. Leaving should feel premature. See `PHASE_1_2_EXPERIENCE_POLISH.md`.
-2. Ernie visual review. Do not start MAKE until the door has gravity.
-3. Only then Phase 2: first artifact, observed → equipped, Capability Reveal Engine.
+1. **Phase 1.2 APPROVED.** Linger gravity accepted. See `PHASE_1_2_EXPERIENCE_POLISH.md`.
+2. **Phase 2 MAKE.** First artifact on the existing bench. Observed → equipped. See `PHASE_2_MAKE.md`.
+3. Remember Me and setup missions wait for a later Phase 2 slice.
 4. Keep building on this branch. Do not merge PR #5 yet.
 
 ---

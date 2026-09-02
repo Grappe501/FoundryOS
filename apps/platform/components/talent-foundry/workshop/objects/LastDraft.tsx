@@ -5,7 +5,17 @@ keep the import path
 do not wipe the bench
 ask before replace`;
 
-export function LastDraft({ presence, trace }: { presence: ObjectPresence; trace: DraftTrace }) {
+export function LastDraft({
+  presence,
+  trace,
+  reachable = false,
+  onReach,
+}: {
+  presence: ObjectPresence;
+  trace: DraftTrace;
+  reachable?: boolean;
+  onReach?: () => void;
+}) {
   if (presence === 'absent') return null;
 
   let body = NOTES;
@@ -18,10 +28,16 @@ export function LastDraft({ presence, trace }: { presence: ObjectPresence; trace
       className="ws-object ws-draft"
       data-presence={presence}
       data-trace={trace}
+      data-reachable={reachable ? 'true' : 'false'}
       aria-label="The last draft"
-      aria-hidden={presence === 'ghost'}
+      aria-hidden={presence === 'ghost' && !reachable}
     >
       {trace === 'gone' ? <p className="ws-draft-empty"> </p> : <pre>{body}</pre>}
+      {reachable ? (
+        <button type="button" className="ws-reach" onClick={onReach} aria-label="The last draft is still on the bench">
+          <span className="ws-threshold-mark" aria-hidden />
+        </button>
+      ) : null}
     </aside>
   );
 }

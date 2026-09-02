@@ -18,6 +18,12 @@ export function draftPresence(stateId: WorkshopStateId): ObjectPresence {
   return 'ghost';
 }
 
+export function artifactPresence(session: WorkshopSession): ObjectPresence {
+  if (session.envelope.progress.make === 'complete' && session.envelope.artifact?.body) return 'focus';
+  if (session.envelope.artifact?.body) return 'ghost';
+  return 'absent';
+}
+
 export function attendedRegionIds(session: WorkshopSession): string[] {
   return session.addressedRegionIds;
 }

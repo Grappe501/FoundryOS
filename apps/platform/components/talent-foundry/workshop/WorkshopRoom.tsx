@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import type { MakeSurface } from '../../../lib/talent-foundry/implementations/company/make/surface';
 import type { RoomDepth } from '../../../lib/talent-foundry/implementations/company/room';
 import type { WorkshopStateId } from '../../../lib/talent-foundry/implementations/company/types';
 
@@ -6,16 +7,18 @@ import type { WorkshopStateId } from '../../../lib/talent-foundry/implementation
 export function WorkshopRoom({
   depth,
   stateId,
+  surface = 'rest',
   traces,
   voice,
 }: {
   depth: RoomDepth;
   stateId: WorkshopStateId | 'boot';
+  surface?: MakeSurface;
   traces?: ReactNode;
   voice: ReactNode;
 }) {
   return (
-    <div className="ws-room" data-depth={depth} data-state={stateId}>
+    <div className="ws-room" data-depth={depth} data-state={stateId} data-surface={surface}>
       <div className="ws-atmosphere" aria-hidden />
       <div className="ws-bench" aria-hidden />
       <div className="ws-slot-traces">{traces}</div>

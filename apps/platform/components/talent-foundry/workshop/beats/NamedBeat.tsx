@@ -34,7 +34,13 @@ export function NamedReveal({ onContinue }: { onContinue: () => void }) {
   );
 }
 
-export function LingerRest({ onReset }: { onReset: () => void }) {
+export function LingerRest({
+  onReset,
+  onBenchPresent,
+}: {
+  onReset: () => void;
+  onBenchPresent?: () => void;
+}) {
   const [step, setStep] = useState(1);
   const [late, setLate] = useState(false);
 
@@ -53,6 +59,10 @@ export function LingerRest({ onReset }: { onReset: () => void }) {
       window.clearTimeout(reset);
     };
   }, []);
+
+  useEffect(() => {
+    if (step >= 2) onBenchPresent?.();
+  }, [step, onBenchPresent]);
 
   return (
     <>

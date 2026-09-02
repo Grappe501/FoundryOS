@@ -81,6 +81,33 @@ body:has(.ws) {
   --ws-trace: 1;
 }
 
+.ws-room[data-depth='make'] {
+  --ws-light: 0.055;
+  --ws-grid: 0.08;
+  --ws-bench: 0.86;
+  --ws-trace: 1;
+}
+
+.ws-room[data-depth='equipped'] {
+  --ws-light: 0.058;
+  --ws-grid: 0.16;
+  --ws-bench: 0.94;
+  --ws-trace: 1;
+}
+
+.ws-room[data-depth='equipped'] .ws-atmosphere::before {
+  content: '';
+  position: absolute;
+  inset: 16% 12% 32%;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 27px,
+    rgba(207, 203, 195, 0.04) 28px
+  );
+  pointer-events: none;
+}
+
 .ws-atmosphere {
   pointer-events: none;
   position: absolute;
@@ -307,6 +334,30 @@ body:has(.ws) {
   opacity: 0.64;
 }
 
+.ws-room[data-state='linger'] .ws-object[data-reachable='true'] {
+  pointer-events: auto;
+  opacity: 0.82;
+}
+
+.ws-room[data-surface='need'] .ws-slot-voice,
+.ws-room[data-surface='attempt'] .ws-slot-voice {
+  overflow-y: auto;
+  max-height: 46vh;
+  padding-top: 20px;
+}
+
+.ws-reach {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: inherit;
+}
+
 .ws-fragment {
   padding: 16px 16px 14px;
 }
@@ -479,6 +530,7 @@ body:has(.ws) {
 
 @media (prefers-reduced-motion: reduce) {
   .ws-atmosphere,
+  .ws-atmosphere::before,
   .ws-atmosphere::after,
   .ws-bench,
   .ws-object,

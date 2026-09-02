@@ -9,19 +9,24 @@ export function PulseFirstRun({
   attended,
   interactive,
   onAttend,
+  reachable = false,
+  onReach,
 }: {
   presence: ObjectPresence;
   attended: string[];
   interactive: boolean;
   onAttend: (regionId: string, dwellMs: number) => void;
+  reachable?: boolean;
+  onReach?: () => void;
 }) {
   if (presence === 'absent') return null;
   return (
     <aside
       className="ws-object ws-fragment"
       data-presence={presence}
+      data-reachable={reachable ? 'true' : 'false'}
       aria-label={PHASE_1_NOTICE.title}
-      aria-hidden={presence === 'ghost'}
+      aria-hidden={presence === 'ghost' && !reachable}
     >
       <div className="ws-frag-top">
         <Region id="heading" kind="surface" attended={attended} interactive={interactive} onAttend={onAttend}>
@@ -40,6 +45,11 @@ export function PulseFirstRun({
       <Region id="import" kind="buried" attended={attended} interactive={interactive} onAttend={onAttend}>
         Import from last night
       </Region>
+      {reachable ? (
+        <button type="button" className="ws-reach" onClick={onReach} aria-label="Pulse is still on the bench">
+          <span className="ws-threshold-mark" aria-hidden />
+        </button>
+      ) : null}
     </aside>
   );
 }

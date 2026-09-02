@@ -1,6 +1,6 @@
 # Company Foundry — Phase 1.1 Experience Proof
 
-**Status:** **HOLD** (Ernie 2026-09-02). Direction is right. Stills cannot prove linger pull. Next is Phase 1.2 polish only. Phase 2 held.
+**Status:** HOLD resolved by Phase 1.2 **APPROVED** (Ernie 2026-09-02). Phase 2 / MAKE is open.
 
 Phase 1 proved the room can run. It did **not** prove the experience has gravity.
 

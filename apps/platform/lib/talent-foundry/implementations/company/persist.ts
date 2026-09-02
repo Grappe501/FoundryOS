@@ -17,9 +17,10 @@ const STATES: WorkshopStateId[] = [
 export type WorkshopDrafts = {
   notice: string;
   change: string;
+  artifact: string;
 };
 
-const EMPTY_DRAFTS: WorkshopDrafts = { notice: '', change: '' };
+const EMPTY_DRAFTS: WorkshopDrafts = { notice: '', change: '', artifact: '' };
 
 function isWorkshopSession(value: unknown): value is WorkshopSession {
   if (!value || typeof value !== 'object') return false;
@@ -69,6 +70,7 @@ export function loadWorkshopDrafts(): WorkshopDrafts {
     return {
       notice: typeof parsed.notice === 'string' ? parsed.notice : '',
       change: typeof parsed.change === 'string' ? parsed.change : '',
+      artifact: typeof parsed.artifact === 'string' ? parsed.artifact : '',
     };
   } catch {
     return { ...EMPTY_DRAFTS };

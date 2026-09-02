@@ -11,6 +11,8 @@ import {
   submitMess,
   submitNotice,
 } from '../../../lib/talent-foundry/implementations/company/journey';
+import { chooseMakeTrack, openMake, submitMake } from '../../../lib/talent-foundry/implementations/company/make/engine';
+import { makeEligible, makeSurface, pulseSided } from '../../../lib/talent-foundry/implementations/company/make/surface';
 import {
   loadWorkshopDrafts,
   loadWorkshopSession,
@@ -18,8 +20,10 @@ import {
   saveWorkshopDrafts,
   saveWorkshopSession,
 } from '../../../lib/talent-foundry/implementations/company/persist';
-import { roomDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import { workshopDepth } from '../../../lib/talent-foundry/implementations/company/room';
+import type { ArtifactTrack } from '../../../lib/talent-foundry/implementations/company/spine/envelope';
 import {
+  artifactPresence,
   attendedRegionIds,
   draftPresence,
   draftTrace,
@@ -27,11 +31,13 @@ import {
 } from '../../../lib/talent-foundry/implementations/company/traces';
 import type { DoorLineId, WorkshopSession } from '../../../lib/talent-foundry/implementations/company/types';
 import { DoorBeat } from './beats/DoorBeat';
+import { MakeAttempt, MakeEquipped, MakeNeed } from './beats/MakeBeat';
 import { LingerRest, NamedReveal } from './beats/NamedBeat';
 import { MessAftermath, MessChoices } from './beats/MessBeat';
 import { NoticeAck, NoticeWrite } from './beats/NoticeBeat';
 import { LastDraft } from './objects/LastDraft';
 import { PulseFirstRun } from './objects/PulseFirstRun';
+import { TheirWork } from './objects/TheirWork';
 import { WorkshopRoom } from './WorkshopRoom';
 
 function messConsequence(session: WorkshopSession): string {
@@ -49,6 +55,8 @@ export function WorkshopExperience() {
   const [session, setSession] = useState<WorkshopSession | null>(null);
   const [notice, setNotice] = useState('');
   const [change, setChange] = useState('');
+  const [artifact, setArtifact] = useState('');
+  const [benchPresent, setBenchPresent] = useState(false);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
@@ -56,6 +64,7 @@ export function WorkshopExperience() {
     const drafts = loadWorkshopDrafts();
     setNotice(drafts.notice);
     setChange(drafts.change);
+    setArtifact(drafts.artifact);
     setReady(true);
   }, []);
 
@@ -64,8 +73,13 @@ export function WorkshopExperience() {
   }, [session]);
 
   useEffect(() => {
-    if (ready) saveWorkshopDrafts({ notice, change });
-  }, [notice, change, ready]);
+    if (ready) saveWorkshopDrafts({ notice, change, artifact });
+  }, [notice, change, artifact, ready]);
+
+  useEffect(() => {
+    const opened = session?.clocks.linger?.openedAt;
+    if (opened && Date.now() - Date.parse(opened) >= 4200) setBenchPresent(true);
+  }, [session?.clocks.linger?.openedAt]);
 
   const apply = useCallback((fn: (current: WorkshopSession) => WorkshopSession) => {
     setSession((current) => (current ? fn(current) : current));
@@ -79,12 +93,33 @@ export function WorkshopExperience() {
     apply((current) => enterWorkshop(current));
   }, [apply]);
 
+  const onReachBench = useCallback(() => {
+    setSession((current) => {
+      if (!current || !makeEligible(current)) return current;
+      const opened = openMake(current);
+      return opened.ok ? opened.session : current;
+    });
+  }, []);
+
+  const reset = useCallback(() => {
+    setNotice('');
+    setChange('');
+    setArtifact('');
+    setBenchPresent(false);
+    setSession(resetWorkshopSession());
+  }, []);
+
   if (!session) {
     return <WorkshopRoom depth="void" stateId="boot" voice={<p className="ws-line">YOU FOUND THE WORKSHOP.</p>} />;
   }
 
-  const depth = roomDepth(session.stateId);
+  const surface = makeSurface(session);
+  const depth = workshopDepth(session);
   const attended = attendedRegionIds(session);
+  const trackId = session.envelope.artifactTrack;
+  const reachable = makeEligible(session) && benchPresent;
+  const pulse = surface === 'attempt' && pulseSided(trackId) ? 'focus' : pulsePresence(session.stateId);
+  const draft = surface === 'attempt' && trackId && !pulseSided(trackId) ? 'focus' : draftPresence(session.stateId);
 
   let voice = null;
   if (session.stateId === 'door') {
@@ -122,33 +157,55 @@ export function WorkshopExperience() {
     );
   } else if (session.stateId === 'named') {
     voice = <NamedReveal onContinue={() => apply((current) => linger(current))} />;
-  } else {
+  } else if (surface === 'need') {
     voice = (
-      <LingerRest
-        onReset={() => {
-          setNotice('');
-          setChange('');
-          setSession(resetWorkshopSession());
+      <MakeNeed
+        onChoose={(id) => apply((current) => chooseMakeTrack(current, id))}
+      />
+    );
+  } else if (surface === 'attempt' && trackId) {
+    voice = (
+      <MakeAttempt
+        trackId={trackId as ArtifactTrack}
+        body={artifact}
+        onBody={setArtifact}
+        onTyping={() => apply((current) => noteTyping(current, 'make'))}
+        onFinish={() => {
+          if (!artifact.trim()) return;
+          apply((current) => submitMake(current, { body: artifact, finished: true }));
         }}
       />
     );
+  } else if (surface === 'equipped') {
+    voice = <MakeEquipped onReset={reset} />;
+  } else {
+    voice = <LingerRest onReset={reset} onBenchPresent={() => setBenchPresent(true)} />;
   }
 
   return (
     <WorkshopRoom
       depth={depth}
       stateId={session.stateId}
+      surface={surface}
       traces={
         <>
           <PulseFirstRun
-            presence={pulsePresence(session.stateId)}
+            presence={pulse}
             attended={attended}
             interactive={session.stateId === 'notice'}
+            reachable={reachable}
+            onReach={onReachBench}
             onAttend={(regionId, dwellMs) =>
               apply((current) => markNoticeRegion(current, regionId, new Date(), dwellMs))
             }
           />
-          <LastDraft presence={draftPresence(session.stateId)} trace={draftTrace(session)} />
+          <LastDraft
+            presence={draft}
+            trace={draftTrace(session)}
+            reachable={reachable}
+            onReach={onReachBench}
+          />
+          <TheirWork presence={artifactPresence(session)} body={session.envelope.artifact?.body ?? artifact} />
         </>
       }
       voice={voice}

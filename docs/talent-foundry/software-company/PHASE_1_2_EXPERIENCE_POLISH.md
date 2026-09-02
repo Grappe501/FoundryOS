@@ -1,9 +1,7 @@
 # Company Foundry — Phase 1.2 Experience Polish
 
-**Status:** IN REVIEW. Polish only on the existing `/workshop` door.  
-**Parent:** Phase 1.1 **HOLD** (productive). Phase 2 / MAKE still held.
-
-Ernie 2026-09-02: the stills have the right restraint. They cannot prove pacing, silence, motion, threshold weight, or linger pull. This pass does not add journey.
+**Status:** **APPROVED** (Ernie 2026-09-02). PR comment [5505686270](https://github.com/Grappe501/FoundryOS/pull/5#issuecomment-5505686270).  
+**Parent:** Phase 1.1 HOLD was productive. Phase 2 / MAKE is now **cleared**.
 
 ---
 
@@ -11,16 +9,7 @@ Ernie 2026-09-02: the stills have the right restraint. They cannot prove pacing,
 
 > **Nothing should look “designed to impress.” It should look like the system has a reason to exist without the visitor.**
 
-That is what makes it discovered instead of marketed.
-
-Linger is the metric. It should not merely be elegant. **Leaving should feel slightly premature.**
-
----
-
-## Frozen
-
-Contracts, narrative order, anonymous state, N1/M1, Ernie-zone signatures.  
-No identity, GitHub, Cursor, Oscar, cohort, APIs, migrations, or training content.
+Linger is the metric. Leaving should feel slightly premature.
 
 ---
 
@@ -35,7 +24,6 @@ No identity, GitHub, Cursor, Oscar, cohort, APIs, migrations, or training conten
 
 ---
 
-## After this pass
+## After approval
 
-Walk the preview. Desktop and mobile. Sit at linger.  
-If leaving still feels like “done,” stay in 1.2. Do not open Phase 2.
+Phase 2 opens on the same bench. Observed → equipped. Work, not a brochure. See `PHASE_2_MAKE.md`.

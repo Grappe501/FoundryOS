@@ -35,8 +35,8 @@ export {
 export { assertPlainThinkingEvent, closeBeatIgnores, recordThinking, thinkingMoves } from './thinking-trace';
 export { coverageFact, textMetrics } from './clocks';
 export { echoNotice } from './echo';
-export { roomDepth } from './room';
-export { draftTrace, pulsePresence, draftPresence } from './traces';
+export { roomDepth, workshopDepth } from './room';
+export { draftTrace, pulsePresence, draftPresence, artifactPresence } from './traces';
 export {
   loadWorkshopSession,
   resetWorkshopSession,
@@ -47,6 +47,8 @@ export type { SpineStageId } from './spine/stages';
 export { tryAdvanceSpine, tryEnterStage, recordHumanGate } from './spine/kernel';
 export { chooseMakeTrack, openMake, submitMake } from './make/engine';
 export { MAKE_TRACKS, makeTrack } from './make/tracks';
+export { MAKE_COPY } from './make/copy';
+export { makeEligible, makeSurface } from './make/surface';
 export { keepExploring, openRemember, rememberMe } from './remember/engine';
 export { REMEMBER_COPY } from './remember/copy';
 export { openReturn, submitReturn } from './return/engine';
