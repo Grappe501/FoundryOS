@@ -128,8 +128,16 @@ try {
     colorScheme: 'dark',
   });
   await walkPulse(phone, 'mobile');
-  await walkDraftOpening(phone, 'mobile');
   await phone.close();
+
+  const phoneDraft = await browser.newPage({
+    viewport: { width: 390, height: 844 },
+    isMobile: true,
+    hasTouch: true,
+    colorScheme: 'dark',
+  });
+  await walkDraftOpening(phoneDraft, 'mobile');
+  await phoneDraft.close();
 } finally {
   await browser.close();
 }
