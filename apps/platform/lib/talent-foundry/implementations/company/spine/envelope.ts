@@ -64,6 +64,16 @@ export type MultiplyTurn = {
   submittedAt: string | null;
 };
 
+export type LeadTurn = {
+  constraintId: string;
+  keep: string;
+  assign: string;
+  cut: string;
+  finished: boolean;
+  openedAt: string;
+  submittedAt: string | null;
+};
+
 export type ReturnVisit = {
   challengeId: string;
   gapMs: number | null;
@@ -105,6 +115,7 @@ export type SpineEnvelope = {
   respond: RespondTurn | null;
   deliver: DeliverTurn | null;
   multiply: MultiplyTurn | null;
+  lead: LeadTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -131,6 +142,7 @@ export function createEnvelope(): SpineEnvelope {
     respond: null,
     deliver: null,
     multiply: null,
+    lead: null,
     gates: [],
     cohortId: null,
   };

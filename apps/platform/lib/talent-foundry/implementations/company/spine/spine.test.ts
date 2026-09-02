@@ -14,7 +14,7 @@ import { ERNIE_ZONE_NEXT, ERNIE_ZONE_STATES, SPINE_STAGES, SPINE_STAGE_IDS, stag
 
 assert.equal(SPINE_STAGE_IDS.length, 14);
 assert.equal(SPINE_STAGES.filter((s) => s.owner === 'ernie').length, 3);
-assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 4);
+assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 3);
 assert.equal(stageDef('build').advance, 'human_gate');
 assert.equal(stageDef('earn').advance, 'human_gate');
 assert.equal(stageDef('own').advance, 'human_gate');

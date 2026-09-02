@@ -118,6 +118,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass K — Phase 0.5 talent-to-ownership architecture.** Academy + operating environment. Curriculum as missions. Burt / Ernie / Oscar. GitHub feeds the record. Partner throughout (posture, not a prize). **Phase 1 screens held.** MULTIPLY / LEAD still stub.
 - [x] **Pass L — MULTIPLY fill.** Fictional newer person Nia. Help + what unblocks them. Not a cohort. Not a mentor badge. No UI. LEAD still stub.
 - [x] **Pass M — Phase 0.5 accepted.** E0.5-1–7 locked. Capability Reveal Engine. Becoming-capable standard. Training repo must feel like a young product. Phase 1 door cleared. PR #5 stays open.
+- [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
 
 ---
 

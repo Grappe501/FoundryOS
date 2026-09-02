@@ -15,12 +15,13 @@ import { openReturn, submitReturn } from '../return/engine';
 import { openCollaborate, submitCollaborate } from '../collaborate/engine';
 import { openRespond, submitRespond } from '../respond/engine';
 import { openDeliver, submitDeliver } from '../deliver/engine';
+import { openMultiply, submitMultiply } from '../multiply/engine';
 import { ERNIE_ZONE_NEXT } from '../spine/stages';
 import { tryAdvanceSpine, tryEnterStage } from '../spine/kernel';
-import { MULTIPLY_PROMPTS } from './newer';
-import { openMultiply, submitMultiply } from './engine';
+import { LEAD_CONSTRAINTS } from './constraints';
+import { openLead, submitLead } from './engine';
 
-assert.equal(/tuesday|hiring|november|salary|intern|oscar|academy/i.test(JSON.stringify(MULTIPLY_PROMPTS)), false);
+assert.equal(/tuesday|hiring|november|salary|intern|oscar|academy/i.test(JSON.stringify(LEAD_CONSTRAINTS)), false);
 
 function throughMake() {
   let s = createWorkshopSession(new Date('2026-09-02T09:00:00.000Z'));
@@ -37,7 +38,7 @@ function throughMake() {
   return submitMake(s, { body: '1 A\n2 B\n3 C\n4 D\n5 E', finished: true }, new Date('2026-09-02T09:01:20.000Z'));
 }
 
-function throughDeliver() {
+function throughMultiply() {
   let s = throughMake();
   const rem = openRemember(s, new Date('2026-09-02T09:02:00.000Z'));
   if (!rem.ok) throw new Error('remember');
@@ -73,7 +74,7 @@ function throughDeliver() {
   );
   const del = openDeliver(s, new Date('2026-09-02T10:03:00.000Z'));
   if (!del.ok) throw new Error('deliver');
-  return submitDeliver(
+  s = submitDeliver(
     del.session,
     {
       body: 'Five lines. Pat owns line 2. I own the join.',
@@ -81,40 +82,52 @@ function throughDeliver() {
     },
     new Date('2026-09-02T10:03:20.000Z'),
   );
+  const mul = openMultiply(s, new Date('2026-09-02T10:04:00.000Z'));
+  if (!mul.ok) throw new Error('multiply');
+  return submitMultiply(
+    mul.session,
+    {
+      help: 'Write five lines. You own line 1.',
+      unblocks: 'They can run without asking you who owns the join.',
+      finished: true,
+    },
+    new Date('2026-09-02T10:04:30.000Z'),
+  );
 }
 
-assert.equal(tryEnterStage(throughMake(), 'multiply').reason, 'identity_required');
+assert.equal(tryEnterStage(throughMake(), 'lead').reason, 'identity_required');
 
-const ready = throughDeliver();
-assert.equal(ready.envelope.progress.multiply, 'open');
+const ready = throughMultiply();
+assert.equal(ready.envelope.progress.lead, 'open');
 assert.equal(ready.envelope.cohortId, null);
-const opened = openMultiply(ready, new Date('2026-09-02T10:04:00.000Z'));
+const opened = openLead(ready, new Date('2026-09-02T10:05:00.000Z'));
 assert.equal(opened.ok, true);
-if (!opened.ok) throw new Error('multiply');
-assert.equal(opened.session.envelope.spineStage, 'multiply');
+if (!opened.ok) throw new Error('lead');
+assert.equal(opened.session.envelope.spineStage, 'lead');
 assert.equal(opened.session.stateId, 'linger');
-assert.equal(opened.session.envelope.multiply?.newerId, 'nia');
-assert.equal(opened.session.envelope.multiply?.promptId, 'N-operate');
+assert.equal(opened.session.envelope.lead?.constraintId, 'L-operate');
 assert.equal(opened.session.envelope.cohortId, null);
 
-const done = submitMultiply(
+const done = submitLead(
   opened.session,
   {
-    help: 'Write five lines. You own line 1. Ask one person to own line 2. Cut the rest if they stay empty.',
-    unblocks: 'They can run tomorrow without asking you who owns the join.',
+    keep: 'The join. I stay on it until it has an owner.',
+    assign: 'Rafi owns line 3. Nia writes line 1.',
+    cut: 'Lines 4 and 5 wait. They are not this hour.',
     finished: true,
   },
-  new Date('2026-09-02T10:04:30.000Z'),
+  new Date('2026-09-02T10:05:40.000Z'),
 );
-assert.equal(done.envelope.progress.multiply, 'complete');
+assert.equal(done.envelope.progress.lead, 'complete');
 assert.equal(done.envelope.cohortId, null);
-assert.equal(done.thinking.some((e) => e.move === 'help' && e.beatId === 'multiply'), true);
-assert.equal(done.thinking.some((e) => e.move === 'handoff' && e.beatId === 'multiply'), true);
+assert.equal(done.envelope.gates.length, 0);
+assert.equal(done.thinking.some((e) => e.move === 'scope_cut' && e.beatId === 'lead'), true);
+assert.equal(done.thinking.some((e) => e.move === 'decide' && e.beatId === 'lead'), true);
 
 const onward = tryAdvanceSpine(done);
-assert.equal(onward.ok, true);
-if (!onward.ok) throw new Error('lead');
-assert.equal(onward.session.envelope.spineStage, 'lead');
+assert.equal(onward.ok, false);
+assert.equal(onward.reason, 'stub');
+assert.equal(onward.stage, 'build');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {
   assert.equal(nextWorkshopState(state), ERNIE_ZONE_NEXT[state]);
