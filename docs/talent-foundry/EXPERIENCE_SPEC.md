@@ -1,5 +1,20 @@
 # Talent Foundry — Experience Spec
 
+## Implementation truth (V1.2 resume + Key One share)
+
+On `feat/talent-foundry-v1-2-resume-share` only until merge:
+
+`key_one` → `key_one_share` (once) → `identify`  
+Identified participants may **SAVE MY PLACE** → `/talent-foundry/resume/<opaque-token>`  
+Share QR is unchanged: `https://foundry-os.netlify.app/talent-foundry`
+
+Full contract: `V1_2_SAVE_MY_PLACE_SPEC.md` · `V1_2_SHARE_MOMENT_SPEC.md`
+
+## Implementation truth (V1.1 live)
+
+`intent` → … → `handoff` → `visit_complete` or `layer2_offer`  
+Layer 2/3 are opt-in. See `V1_1_COMPRESSION_SPEC.md`.
+
 ## Implementation truth (P0-S4/S5)
 
 Post-identity spine now implemented:

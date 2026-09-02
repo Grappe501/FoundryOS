@@ -45,6 +45,7 @@ const DEFAULT_FLAGS: TalentFoundryFlags = {
   firstVisitComplete: false,
   layer2Deferred: false,
   layer3Deferred: false,
+  keyOneSharePromptSeen: false,
 };
 
 export function createSession(campaign: CampaignConfig, now = new Date()): TalentFoundrySession {
@@ -184,6 +185,7 @@ export function excerptText(value: string, max = 72): string {
 const RECOVERABLE_STATES = new Set<string>([
   ...P0_SPINE,
   'key_one',
+  'key_one_share',
   'door_room',
   'door_call',
   'door_breakdown',

@@ -24,6 +24,7 @@ export type JourneyStateId =
   | 'door_breakdown'
   | 'door_ask'
   | 'key_one'
+  | 'key_one_share'
   | 'identify'
   | 'youre_in'
   | 'opportunity'
@@ -103,6 +104,7 @@ export type TalentFoundryFlags = {
   firstVisitComplete: boolean;
   layer2Deferred: boolean;
   layer3Deferred: boolean;
+  keyOneSharePromptSeen: boolean;
 };
 
 export type ScenarioDecision = {

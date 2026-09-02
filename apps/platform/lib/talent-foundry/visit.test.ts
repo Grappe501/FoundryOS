@@ -59,6 +59,7 @@ assert.equal(decisions.length, 4, 'required scenario is 4 decisions');
 assert.equal(chapterFor('intent'), 'discover');
 assert.equal(chapterFor('scenario_volunteers'), 'show_us');
 assert.equal(chapterFor('identify'), 'step_in');
+assert.equal(chapterFor('key_one_share'), 'show_us');
 assert.equal(chapterFor('handoff'), 'your_path');
 assert.equal(chapterFor('visit_complete'), 'your_path');
 assert.equal(chapterFor('layer2_offer'), 'your_path');
@@ -71,6 +72,10 @@ assert.equal(migrateSessionState('scenario_revision'), 'optional_doors');
 assert.equal(migrateSessionState('still_in'), 'visit_complete');
 assert.equal(migrateSessionState('visit_complete'), 'visit_complete');
 assert.equal(migrateSessionState('layer3_offer'), 'layer3_offer');
+assert.equal(migrateSessionState('key_one_share'), 'key_one_share');
+assert.equal(nextVisitState(sess({ keyOne: true }, 'key_one')), 'key_one_share');
+assert.equal(nextVisitState(sess({ keyOne: true, keyOneSharePromptSeen: true }, 'key_one')), 'identify');
+assert.equal(nextVisitState(sess({ keyOneSharePromptSeen: true }, 'key_one_share')), 'identify');
 
 const afterDoor = completeOptionalDoor(sess({ keyOne: true }, 'optional_doors'), FIRST_VISIT_DOOR);
 assert.equal(afterDoor.stateId, 'key_one');
