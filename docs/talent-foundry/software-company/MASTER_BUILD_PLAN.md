@@ -124,6 +124,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass M — Phase 0.5 accepted.** E0.5-1–7 locked. Capability Reveal Engine. Becoming-capable standard. Training repo must feel like a young product. Phase 1 door cleared. PR #5 stays open.
 - [x] **Pass N — LEAD fill.** Outcome + hour + two fictional people. Keep / assign / cut. Not a title. Not an appointment. No UI. BUILD still stub + human gate.
 - [x] **Pass Q — BUILD fill.** Supervised sandbox on a real-shaped product. Requires `real_work_access`. Changed / left untouched. Not a job. Not live prod. No UI. EARN still stub + human gate.
+- [x] **Pass R — EARN fill.** Classified pay after a human gate (`paid_project` / term / employment). Work + accept. Not a prize. No rate. No UI. OWN still stub + human gate.
 - [x] **Pass O — Phase 1.1 experience proof.** Do not advance the journey. Polish the door. Linger metric. Room remembers more than they realize. Phase 2 held.
 - [x] **Pass P — Build discipline locked.** Every slice: validate → commit → push → Netlify preview → review. PR #5. Production only on explicit merge.
 

@@ -83,6 +83,16 @@ export type BuildTurn = {
   submittedAt: string | null;
 };
 
+export type EarnTurn = {
+  agreementId: string;
+  gateKind: 'paid_project' | 'internship' | 'employment';
+  work: string;
+  accepted: boolean;
+  finished: boolean;
+  openedAt: string;
+  submittedAt: string | null;
+};
+
 export type ReturnVisit = {
   challengeId: string;
   gapMs: number | null;
@@ -126,6 +136,7 @@ export type SpineEnvelope = {
   multiply: MultiplyTurn | null;
   lead: LeadTurn | null;
   build: BuildTurn | null;
+  earn: EarnTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -154,6 +165,7 @@ export function createEnvelope(): SpineEnvelope {
     multiply: null,
     lead: null,
     build: null,
+    earn: null,
     gates: [],
     cohortId: null,
   };

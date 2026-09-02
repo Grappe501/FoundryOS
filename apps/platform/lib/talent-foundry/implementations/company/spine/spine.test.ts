@@ -14,7 +14,7 @@ import { ERNIE_ZONE_NEXT, ERNIE_ZONE_STATES, SPINE_STAGES, SPINE_STAGE_IDS, stag
 
 assert.equal(SPINE_STAGE_IDS.length, 14);
 assert.equal(SPINE_STAGES.filter((s) => s.owner === 'ernie').length, 3);
-assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 2);
+assert.equal(SPINE_STAGES.filter((s) => s.fill === 'stub').length, 1);
 assert.equal(stageDef('build').advance, 'human_gate');
 assert.equal(stageDef('earn').advance, 'human_gate');
 assert.equal(stageDef('own').advance, 'human_gate');
@@ -62,6 +62,6 @@ const gated = recordHumanGate(s, {
   at: '2026-09-02T04:01:00.000Z',
   actor: 'ernie',
 });
-assert.equal(tryEnterStage(gated, 'earn').reason, 'stub');
+assert.equal(tryEnterStage(gated, 'earn').reason, 'identity_required');
 assert.equal(gated.envelope.gates.length, 1);
 assert.equal(s.stateId, 'linger', 'human gate does not move Ernie-zone state');
