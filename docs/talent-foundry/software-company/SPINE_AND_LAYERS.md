@@ -34,7 +34,7 @@ If a change is required for the spine, **add fields**. Do not rename or reorder 
 5 remember   LIVE  spine   optional identity (contract only — no UI)
 6 return     LIVE  spine   optional (contract only — no UI)
 7 collaborate LIVE spine   remembered (contract only — fictional partner, no UI)
-8 respond    STUB  spine   remembered
+8 respond    LIVE spine   remembered (contract only — fictional note, no UI)
 9 deliver    STUB  spine   remembered
 10 multiply  STUB  spine   remembered
 11 lead      STUB  spine   remembered
@@ -51,7 +51,9 @@ After linger, the participant is **done with Ernie’s first visit**. `make` is 
 
 `return` is live after Remember Me **or** Keep Exploring. `openReturn` records the gap since last activity and opens a deeper challenge on their MAKE track. `stateId` stays `linger`.
 
-`collaborate` is live only after RETURN is finished **and** Remember Me (not Keep Exploring). The other person is a **fictional** bench partner (Rafi). Not a cohort. Not a real applicant. They write what they send and what they need back. RESPOND and beyond remain stubs.
+`collaborate` is live only after RETURN is finished **and** Remember Me (not Keep Exploring). The other person is a **fictional** bench partner (Rafi). Not a cohort. Not a real applicant. They write what they send and what they need back.
+
+`respond` is live after COLLABORATE is finished. A fictional note comes back on their track. They incorporate, hold, or ask. We record the stance — not whether they agreed, not a growth score. `stateId` stays `linger`. DELIVER and beyond remain stubs.
 
 ---
 

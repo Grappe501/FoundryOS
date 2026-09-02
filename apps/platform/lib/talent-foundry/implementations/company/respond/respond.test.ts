@@ -10,14 +10,15 @@ import {
   submitNotice,
 } from '../journey';
 import { chooseMakeTrack, openMake, submitMake } from '../make/engine';
-import { keepExploring, openRemember, rememberMe } from '../remember/engine';
+import { openRemember, rememberMe } from '../remember/engine';
 import { openReturn, submitReturn } from '../return/engine';
+import { openCollaborate, submitCollaborate } from '../collaborate/engine';
 import { ERNIE_ZONE_NEXT } from '../spine/stages';
 import { tryAdvanceSpine, tryEnterStage } from '../spine/kernel';
-import { COLLABORATE_PROMPTS } from './partners';
-import { openCollaborate, submitCollaborate } from './engine';
+import { RESPOND_NOTES } from './notes';
+import { openRespond, submitRespond } from './engine';
 
-assert.equal(/tuesday|hiring|november|salary|intern/i.test(JSON.stringify(COLLABORATE_PROMPTS)), false);
+assert.equal(/tuesday|hiring|november|salary|intern/i.test(JSON.stringify(RESPOND_NOTES)), false);
 
 function throughMake() {
   let s = createWorkshopSession(new Date('2026-09-02T09:00:00.000Z'));
@@ -34,7 +35,7 @@ function throughMake() {
   return submitMake(s, { body: '1 A\n2 B\n3 C\n4 D\n5 E', finished: true }, new Date('2026-09-02T09:01:20.000Z'));
 }
 
-function throughReturnRemembered() {
+function throughCollaborate() {
   let s = throughMake();
   const rem = openRemember(s, new Date('2026-09-02T09:02:00.000Z'));
   if (!rem.ok) throw new Error('remember');
@@ -45,46 +46,60 @@ function throughReturnRemembered() {
   );
   const ret = openReturn(s, new Date('2026-09-02T10:00:00.000Z'));
   if (!ret.ok) throw new Error('return');
-  return submitReturn(ret.session, { body: 'Pat owns line 2.', finished: true }, new Date('2026-09-02T10:00:20.000Z'));
+  s = submitReturn(ret.session, { body: 'Pat owns line 2.', finished: true }, new Date('2026-09-02T10:00:20.000Z'));
+  const collab = openCollaborate(s, new Date('2026-09-02T10:01:00.000Z'));
+  if (!collab.ok) throw new Error('collab');
+  return submitCollaborate(
+    collab.session,
+    {
+      sent: 'Line 2 is yours if you want it.',
+      needBack: 'Tell me when line 2 has an owner.',
+      finished: true,
+    },
+    new Date('2026-09-02T10:01:40.000Z'),
+  );
 }
 
-assert.equal(tryEnterStage(throughMake(), 'collaborate').reason, 'identity_required');
+assert.equal(tryEnterStage(throughMake(), 'respond').reason, 'identity_required');
 
-const anon = throughMake();
-const remOpen = openRemember(anon, new Date('2026-09-02T09:02:00.000Z'));
-if (!remOpen.ok) throw new Error('rem');
-const exploring = keepExploring(remOpen.session, new Date('2026-09-02T09:02:10.000Z'));
-const anonReturn = openReturn(exploring, new Date('2026-09-02T10:00:00.000Z'));
-if (!anonReturn.ok) throw new Error('anon return');
-const anonDone = submitReturn(anonReturn.session, { body: 'Cut line 2.', finished: true }, new Date('2026-09-02T10:00:20.000Z'));
-assert.equal(tryEnterStage(anonDone, 'collaborate').reason, 'identity_required');
-
-const ready = throughReturnRemembered();
-assert.equal(ready.envelope.progress.collaborate, 'open');
-const opened = openCollaborate(ready, new Date('2026-09-02T10:01:00.000Z'));
+const ready = throughCollaborate();
+assert.equal(ready.envelope.progress.respond, 'open');
+const opened = openRespond(ready, new Date('2026-09-02T10:02:00.000Z'));
 assert.equal(opened.ok, true);
-if (!opened.ok) throw new Error('collab');
-assert.equal(opened.session.envelope.spineStage, 'collaborate');
+if (!opened.ok) throw new Error('respond');
+assert.equal(opened.session.envelope.spineStage, 'respond');
 assert.equal(opened.session.stateId, 'linger');
-assert.equal(opened.session.envelope.collaborate?.partnerId, 'rafi');
-assert.equal(opened.session.envelope.collaborate?.promptId, 'C-operate');
+assert.equal(opened.session.envelope.respond?.noteId, 'F-operate');
 
-const done = submitCollaborate(
+const done = submitRespond(
   opened.session,
   {
-    sent: 'Line 2 is yours if you want it. I will join at the handoff.',
-    needBack: 'Tell me when line 2 has an owner.',
+    stance: 'incorporate',
+    body: 'Line 2 is mine until Pat takes it. The join waits.',
     finished: true,
   },
-  new Date('2026-09-02T10:01:40.000Z'),
+  new Date('2026-09-02T10:02:30.000Z'),
 );
-assert.equal(done.envelope.progress.collaborate, 'complete');
-assert.equal(done.thinking.some((e) => e.move === 'handoff'), true);
+assert.equal(done.envelope.progress.respond, 'complete');
+assert.equal(done.envelope.respond?.stance, 'incorporate');
+assert.equal(done.thinking.some((e) => e.move === 'revise'), true);
+
+const held = submitRespond(
+  opened.session,
+  {
+    stance: 'hold',
+    body: 'The join is correct. Line 2 stays empty on purpose.',
+    finished: true,
+  },
+  new Date('2026-09-02T10:02:30.000Z'),
+);
+assert.equal(held.envelope.respond?.stance, 'hold');
+assert.equal(held.thinking.some((e) => e.move === 'decide' && e.beatId === 'respond'), true);
 
 const onward = tryAdvanceSpine(done);
-assert.equal(onward.ok, true);
-if (!onward.ok) throw new Error('respond');
-assert.equal(onward.session.envelope.spineStage, 'respond');
+assert.equal(onward.ok, false);
+assert.equal(onward.reason, 'stub');
+assert.equal(onward.stage, 'deliver');
 
 for (const state of Object.keys(ERNIE_ZONE_NEXT) as (keyof typeof ERNIE_ZONE_NEXT)[]) {
   assert.equal(nextWorkshopState(state), ERNIE_ZONE_NEXT[state]);

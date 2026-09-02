@@ -33,6 +33,17 @@ export type CollaborateTurn = {
   submittedAt: string | null;
 };
 
+export type RespondStance = 'incorporate' | 'hold' | 'ask';
+
+export type RespondTurn = {
+  noteId: string;
+  stance: RespondStance | null;
+  body: string;
+  finished: boolean;
+  openedAt: string;
+  submittedAt: string | null;
+};
+
 export type ReturnVisit = {
   challengeId: string;
   gapMs: number | null;
@@ -71,6 +82,7 @@ export type SpineEnvelope = {
   artifact: ArtifactDraft | null;
   returnVisit: ReturnVisit | null;
   collaborate: CollaborateTurn | null;
+  respond: RespondTurn | null;
   gates: HumanGateRecord[];
   cohortId: string | null;
 };
@@ -94,6 +106,7 @@ export function createEnvelope(): SpineEnvelope {
     artifact: null,
     returnVisit: null,
     collaborate: null,
+    respond: null,
     gates: [],
     cohortId: null,
   };

@@ -101,6 +101,7 @@ Do not attempt the entire system in one code pass.
 - [x] **Pass F — REMEMBER fill.** You’ve left something behind. Remember Me (name, email, optional location/school-work) or Keep Exploring. `placeEligible` flag only — no resume table, no account, no UI. RETURN still stub.
 - [x] **Pass G — RETURN fill.** Deeper challenge on their track. Gap since last activity is a fact. Anonymous or remembered. No UI. COLLABORATE still stub.
 - [x] **Pass H — COLLABORATE fill.** Requires Remember Me. Fictional partner Rafi. Handoff + what they need back. No real cohort. No UI. RESPOND still stub.
+- [x] **Pass I — RESPOND fill.** Fictional note from Rafi. Incorporate / hold / ask. Stance is a fact, not a score. No UI. DELIVER still stub.
 
 ---
 
